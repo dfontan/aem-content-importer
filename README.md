@@ -1,5 +1,6 @@
 AEM Content Importer
 ==============
+branch 'master' of https://github.com/Adobe-Marketing-Cloud/aem-content-importer.git
 
 Maven Builds:
 
