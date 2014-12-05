@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:ClientLibraryFolder"
+    categories="[apps.geometrixx-outdoors.mobile.all]"
+    embed="[jquery,granite.utils,granite.jquery,cq.jquery,granite.shared,cq.shared,jquery-ui,underscore,cq.jquery.ui,cq.foundation,cq.commerce,cq.commerce.mobile,cq.collab.comments,cq.collab.feedlink,cq.collab.ratings,cq.collab.toggle,cq.collab.forum,apps.geometrixx-outdoors,apps.geometrixx-outdoors.mobile,cq.social.poll,cq.social.voting,cq.social.rating,cq.social.reviews,personalization.core.kernel,personalization.clientcontext.kernel,personalization.stores.kernel,personalization.kernel,cq.commerce.hovercart]"/>

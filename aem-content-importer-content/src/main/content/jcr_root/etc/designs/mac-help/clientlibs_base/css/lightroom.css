@@ -1,0 +1,567 @@
+meta.foundation-version {
+  font-family: "/5.2.2/"; }
+
+meta.foundation-mq-small {
+  font-family: "/only screen/";
+  width: 0em; }
+
+meta.foundation-mq-medium {
+  font-family: "/only screen and (min-width:40.063em)/";
+  width: 40.063em; }
+
+meta.foundation-mq-large {
+  font-family: "/only screen and (min-width:64.063em)/";
+  width: 64.063em; }
+
+meta.foundation-mq-xlarge {
+  font-family: "/only screen and (min-width:90.063em)/";
+  width: 90.063em; }
+
+meta.foundation-mq-xxlarge {
+  font-family: "/only screen and (min-width:120.063em)/";
+  width: 120.063em; }
+
+meta.foundation-data-attribute-namespace {
+  font-family: false; }
+
+/*body {
+  background-color: #101820; }*/
+
+main {
+  background-color: white; }
+
+.purchase-bar ul li:not(.group), .purchase-bar ul li li {
+  border-color: #878b8f; }
+
+.dom-content {
+  background-color: inherit; }
+
+.dom-footer-container, footer {
+  background-color: inherit; }
+
+.dom-footer-container {
+  border-color: #3f464c; }
+
+.header-container--fixed {
+  background: #101820; }
+
+#lightroom-hero {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0;
+  width: 100%;
+  min-height: 88vm;
+  min-height: 88vmin;
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-shadow: 0 0 1.25em rgba(0, 0, 0, 0.25), 0 -0.1ex 0 rgba(255, 255, 255, 0.125), 0 0.1ex 0 rgba(0, 0, 0, 0.25);
+  background-color: transparent; }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    #lightroom-hero {
+      height: 88vm;
+      height: 88vmin; } }
+  #lightroom-hero:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 88vm;
+    min-height: 88vmin; }
+  #lightroom-hero:before {
+    background-position: 36% 60%; }
+  #lightroom-hero > nav {
+    font-size: inherit;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    min-height: 52vmin;
+    min-width: 36%;
+    margin: 0 auto auto auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      #lightroom-hero > nav {
+        height: 52vmin; } }
+    #lightroom-hero > nav[dir=rtl] {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+  #lightroom-hero > figcaption {
+    font-size: inherit;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    min-height: 35vmin;
+    min-width: 36%;
+    margin: auto auto 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      #lightroom-hero > figcaption {
+        height: 52vmin; } }
+    #lightroom-hero > figcaption[dir=rtl] {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+  #lightroom-hero:before {
+    background-image: url('/shared/reimagine/assets/base/img/products/lightroom/marquee-lr-1440x810.jpg');
+    min-height: 16em; }
+  #lightroom-hero .figcaption--flow {
+    padding: 1em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    max-width: 39em; }
+
+.tabbed-features figure {
+  color: white;
+  text-shadow: 0 0 1.25em rgba(0, 0, 0, 0.25), 0 -0.1ex 0 rgba(255, 255, 255, 0.125), 0 0.1ex 0 rgba(0, 0, 0, 0.25);
+  background-color: transparent; }
+
+#tabbed-feature-section-lightroommobile figure {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0;
+  width: 100%;
+  min-height: 88vm;
+  min-height: 88vmin;
+  position: relative;
+  z-index: 1; }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    #tabbed-feature-section-lightroommobile figure {
+      height: 88vm;
+      height: 88vmin; } }
+  #tabbed-feature-section-lightroommobile figure:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 88vm;
+    min-height: 88vmin; }
+  #tabbed-feature-section-lightroommobile figure:before {
+    background-position: 50% 50%; }
+  #tabbed-feature-section-lightroommobile figure > figcaption {
+    font-size: inherit;
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    min-width: 50%;
+    min-height: 44vmin;
+    margin: auto auto 0 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      #tabbed-feature-section-lightroommobile figure > figcaption {
+        height: 44vmin; } }
+    #tabbed-feature-section-lightroommobile figure > figcaption[dir=rtl] {
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+      justify-content: flex-end; }
+  #tabbed-feature-section-lightroommobile figure:before {
+    background-image: url('/shared/reimagine/assets/base/img/products/lightroom/mobile.jpg');
+    min-height: 26em; }
+
+#tabbed-feature-section-whatislightroom figure {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0;
+  width: 100%;
+  min-height: 88vm;
+  min-height: 88vmin;
+  position: relative;
+  z-index: 1; }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    #tabbed-feature-section-whatislightroom figure {
+      height: 88vm;
+      height: 88vmin; } }
+  #tabbed-feature-section-whatislightroom figure:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 88vm;
+    min-height: 88vmin; }
+  #tabbed-feature-section-whatislightroom figure:before {
+    background-position: 50% 50%; }
+  #tabbed-feature-section-whatislightroom figure > figcaption {
+    font-size: inherit;
+    -webkit-align-self: flex-end;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    min-width: 50%;
+    min-height: 44vmin;
+    margin: auto 0 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      #tabbed-feature-section-whatislightroom figure > figcaption {
+        height: 44vmin; } }
+    #tabbed-feature-section-whatislightroom figure > figcaption[dir=rtl] {
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+      justify-content: flex-end; }
+  #tabbed-feature-section-whatislightroom figure:before {
+    background-image: url('/shared/reimagine/assets/base/img/products/lightroom/what-is-lightroom.jpg');
+    min-height: 26em; }
+
+#tabbed-feature-section-uprighttool figure {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0;
+  width: 100%;
+  min-height: 50vm;
+  min-height: 50vmin;
+  position: relative;
+  z-index: 1;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  #tabbed-feature-section-uprighttool figure .fig-leaf {
+    width: 100%;
+    max-width: 60em; }
+  #tabbed-feature-section-uprighttool figure .fig--flow {
+    max-width: none;
+    margin: 0 7%; }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    #tabbed-feature-section-uprighttool figure {
+      height: 50vm;
+      height: 50vmin; } }
+  #tabbed-feature-section-uprighttool figure:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 50vm;
+    min-height: 50vmin; }
+  #tabbed-feature-section-uprighttool figure:before {
+    background-position: 100% 100%; }
+  #tabbed-feature-section-uprighttool figure > figcaption {
+    font-size: inherit;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    min-height: 50vmin;
+    min-width: 100%;
+    margin: auto auto auto auto; }
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      #tabbed-feature-section-uprighttool figure > figcaption {
+        height: 50vmin; } }
+  #tabbed-feature-section-uprighttool figure:before {
+    background-image: url('/shared/reimagine/assets/base/img/products/lightroom/upright-tool.jpg');
+    min-height: 24em; }
+  #tabbed-feature-section-uprighttool figure:before {
+    position: relative;
+    height: auto; }
+  #tabbed-feature-section-uprighttool figure > :nth-child(n) {
+    margin: auto;
+    min-height: 0;
+    height: auto; }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    #tabbed-feature-section-uprighttool figure {
+      height: auto; } }
+
+#tabbed-feature-section-smartpreviews figure {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0;
+  width: 100%;
+  min-height: 50vm;
+  min-height: 50vmin;
+  position: relative;
+  z-index: 1;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  #tabbed-feature-section-smartpreviews figure .fig-leaf {
+    width: 100%;
+    max-width: 60em; }
+  #tabbed-feature-section-smartpreviews figure .fig--flow {
+    max-width: none;
+    margin: 0 7%; }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    #tabbed-feature-section-smartpreviews figure {
+      height: 50vm;
+      height: 50vmin; } }
+  #tabbed-feature-section-smartpreviews figure:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 50vm;
+    min-height: 50vmin; }
+  #tabbed-feature-section-smartpreviews figure:before {
+    background-position: 50% 50%; }
+  #tabbed-feature-section-smartpreviews figure > figcaption {
+    font-size: inherit;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    min-height: 25vmin;
+    min-width: 50%;
+    margin: auto auto auto auto; }
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      #tabbed-feature-section-smartpreviews figure > figcaption {
+        height: 25vmin; } }
+  #tabbed-feature-section-smartpreviews figure:before {
+    background-image: url('/shared/reimagine/assets/base/img/products/lightroom/smartpreviews.jpg');
+    min-height: 24em; }
+  #tabbed-feature-section-smartpreviews figure:before {
+    position: relative;
+    height: auto; }
+  #tabbed-feature-section-smartpreviews figure > :nth-child(n) {
+    margin: auto;
+    min-height: 0;
+    height: auto; }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    #tabbed-feature-section-smartpreviews figure {
+      height: auto; } }
+
+#tabbed-feature-section-lightroommobile {
+  padding: 0; }
+  #tabbed-feature-section-lightroommobile .fig--flow {
+    color: white;
+    text-shadow: 0 0 1.25em rgba(0, 0, 0, 0.25), 0 -0.1ex 0 rgba(255, 255, 255, 0.125), 0 0.1ex 0 rgba(0, 0, 0, 0.25);
+    background-color: transparent; }
+    @media screen and (max-width: 45em) {
+      #tabbed-feature-section-lightroommobile .fig--flow {
+        color: white;
+        text-shadow: 0 0 1.25em rgba(0, 0, 0, 0.25), 0 -0.1ex 0 rgba(255, 255, 255, 0.125), 0 0.1ex 0 rgba(0, 0, 0, 0.25);
+        background-color: transparent; } }
+  #tabbed-feature-section-lightroommobile .fig--flow {
+    max-width: 26em;
+    padding: 0; }
+  #tabbed-feature-section-lightroommobile figure {
+    padding: 0 7%; }
+    @media screen and (max-width: 45em) {
+      #tabbed-feature-section-lightroommobile figure {
+        padding-left: 0;
+        padding-right: 0;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+        #tabbed-feature-section-lightroommobile figure .fig-leaf {
+          width: 100%;
+          display: block; }
+        #tabbed-feature-section-lightroommobile figure .fig--flow {
+          padding-left: 7%;
+          padding-right: 7%;
+          max-width: none; }
+        #tabbed-feature-section-lightroommobile figure:before {
+          position: relative;
+          height: auto; }
+        #tabbed-feature-section-lightroommobile figure > :nth-child(n) {
+          margin: auto;
+          min-height: 0;
+          height: auto; }
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+          #tabbed-feature-section-lightroommobile figure {
+            height: auto; } } }
+  #tabbed-feature-section-lightroommobile, #tabbed-feature-section-lightroommobile figure {
+    padding-top: 15em;
+    margin-top: -15em; }
+    @media only screen and (max-width: 45em) {
+      #tabbed-feature-section-lightroommobile, #tabbed-feature-section-lightroommobile figure {
+        margin-top: 0;
+        padding-top: 0; } }
+
+#tabbed-feature-section-whatislightroom {
+  padding: 0; }
+  #tabbed-feature-section-whatislightroom .fig--flow {
+    color: white;
+    text-shadow: 0 0 1.25em rgba(0, 0, 0, 0.25), 0 -0.1ex 0 rgba(255, 255, 255, 0.125), 0 0.1ex 0 rgba(0, 0, 0, 0.25);
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5); }
+    @media screen and (max-width: 45em) {
+      #tabbed-feature-section-whatislightroom .fig--flow {
+        color: white;
+        text-shadow: 0 0 1.25em rgba(0, 0, 0, 0.25), 0 -0.1ex 0 rgba(255, 255, 255, 0.125), 0 0.1ex 0 rgba(0, 0, 0, 0.25);
+        background-color: transparent; } }
+  #tabbed-feature-section-whatislightroom .fig--flow {
+    max-width: 26em;
+    padding: 0 2em; }
+  #tabbed-feature-section-whatislightroom figure {
+    padding: 0 7%; }
+    @media screen and (max-width: 45em) {
+      #tabbed-feature-section-whatislightroom figure {
+        padding-left: 0;
+        padding-right: 0;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+        #tabbed-feature-section-whatislightroom figure .fig-leaf {
+          width: 100%;
+          display: block; }
+        #tabbed-feature-section-whatislightroom figure .fig--flow {
+          padding-left: 7%;
+          padding-right: 7%;
+          max-width: none; }
+        #tabbed-feature-section-whatislightroom figure:before {
+          position: relative;
+          height: auto; }
+        #tabbed-feature-section-whatislightroom figure > :nth-child(n) {
+          margin: auto;
+          min-height: 0;
+          height: auto; }
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+          #tabbed-feature-section-whatislightroom figure {
+            height: auto; } } }
+  #tabbed-feature-section-whatislightroom, #tabbed-feature-section-whatislightroom figure {
+    padding-top: 15em;
+    margin-top: -15em; }
+    @media only screen and (max-width: 45em) {
+      #tabbed-feature-section-whatislightroom, #tabbed-feature-section-whatislightroom figure {
+        margin-top: 0;
+        padding-top: 0; } }
+/*# sourceMappingURL=lightroom.css.map */

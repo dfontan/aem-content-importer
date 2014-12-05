@@ -1,0 +1,599 @@
+/* line 2, ../../src/sass/ccl_base/_reset.scss */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  /* outline:0; */
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* line 3, ../../src/sass/ccl_base/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 4, ../../src/sass/ccl_base/_reset.scss */
+input {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 9, ../../src/sass/ccl_base/_reset.scss */
+img {
+  margin: 0;
+  line-height: 0;
+}
+
+/* line 14, ../../src/sass/ccl_base/_reset.scss */
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* line 16, ../../src/sass/ccl_base/_reset.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 17, ../../src/sass/ccl_base/_reset.scss */
+em {
+  font-style: oblique;
+}
+
+/* line 19, ../../src/sass/ccl_base/_reset.scss */
+::-moz-selection {
+  background: #ddd;
+  color: #000;
+  text-shadow: none;
+}
+
+/* line 20, ../../src/sass/ccl_base/_reset.scss */
+::selection {
+  background: #ddd;
+  color: #000;
+  text-shadow: none;
+}
+
+/* line 25, ../../src/sass/ccl_base/_reset.scss */
+body,
+body *,
+body *:before,
+body *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 2, ../../src/sass/ccl_base/_reimagine-reset.scss */
+html,
+body {
+  height: auto;
+}
+
+/* line 6, ../../src/sass/ccl_base/_reimagine-reset.scss */
+header {
+  position: static;
+}
+
+/* line 10, ../../src/sass/ccl_base/_reimagine-reset.scss */
+.header-container header {
+  color: inherit;
+  text-shadow: inherit;
+}
+
+/* line 15, ../../src/sass/ccl_base/_reimagine-reset.scss */
+header {
+  color: inherit;
+  text-shadow: none;
+}
+
+/* line 20, ../../src/sass/ccl_base/_reimagine-reset.scss */
+.dom-footer-container {
+  top: auto;
+}
+
+/* line 7, ../../src/sass/ccl_base/_typography.scss */
+body {
+  font-family: adobe-clean, "HelveticaNeue-light", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: #333333;
+  font-size: 16px;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  line-height: 1;
+}
+
+/* line 19, ../../src/sass/ccl_base/_typography.scss */
+p {
+  font-size: 22px;
+  font-size: 1.375rem;
+  line-height: 1.375;
+}
+
+/* line 24, ../../src/sass/ccl_base/_typography.scss */
+h1, h2, h3, h4, h5 {
+  color: #666666;
+  font-weight: 500;
+}
+
+/* line 3, ../../src/sass/ccl_base/_links.scss */
+a, :visited {
+  color: #2b9af3;
+  text-decoration: none;
+}
+
+/* line 8, ../../src/sass/ccl_base/_links.scss */
+a:hover {
+  color: #33ccff;
+  text-decoration: underline;
+}
+
+/* line 1, ../../src/sass/ccl_base/_layout.scss */
+body {
+  width: 100%;
+}
+
+/* line 1, ../../src/sass/ccl_base/_decoration.scss */
+body {
+  background: #fff;
+}
+
+/* line 2, ../../src/sass/ccl_base/_js.scss */
+.js .hide-on-load,
+html.js .hide {
+  display: none;
+}
+
+/* line 2, ../../src/sass/ccl_base/components/_header-container.scss */
+.header-container {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 10px;
+}
+
+/* line 4, ../../src/sass/ccl_base/components/_global-nav.scss */
+.global-nav-placeholder {
+  text-align: right;
+  margin-right: -0.75em;
+}
+
+@media only screen and (max-width: 960px) {
+  /* line 11, ../../src/sass/ccl_base/components/_global-nav.scss */
+  .global-nav-placeholder {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+}
+/* line 1, ../../src/sass/ccl_base/components/_mnemonics.scss */
+.mnemonic {
+  background-repeat: no-repeat;
+}
+
+/* line 5, ../../src/sass/ccl_base/components/_mnemonics.scss */
+.mnemonic.acrobat {
+  background-image: url(//www.stage.adobe.com/special/ri/assets/en/img/icon-96.fp-fda6c0992b3299f0def8330d053a059b.png);
+}
+
+/* line 8, ../../src/sass/ccl_base/components/_mnemonics.scss */
+.mnemonic.after-effects {
+  background-image: url(https://wwwimages2.adobe.com/content/dam/Adobe/images/shared/product_mnemonics/48x48/ae-cc-app-ccm-48x48.png);
+}
+
+/* line 11, ../../src/sass/ccl_base/components/_mnemonics.scss */
+.mnemonic.audition {
+  background-image: url(//www.stage.adobe.com/special/ri/assets/en/img/icon-96.fp-ab3fb0ef8e82df7d0ded9a21e47804e8.png);
+}
+
+/* line 14, ../../src/sass/ccl_base/components/_mnemonics.scss */
+.mnemonic.brush {
+  background-image: url(https://wwwimages2.adobe.com/content/dam/Adobe/images/shared/product_mnemonics/48x48/brush-app-ccm-48x48.png);
+}
+
+/* line 17, ../../src/sass/ccl_base/components/_mnemonics.scss */
+.mnemonic.color {
+  background-image: url(https://wwwimages2.adobe.com/content/dam/Adobe/images/shared/product_mnemonics/48x48/color-app-ccm-48x48.png);
+}
+
+/* line 20, ../../src/sass/ccl_base/components/_mnemonics.scss */
+.mnemonic.dreamweaver {
+  background-image: url(https://wwwimages2.adobe.com/content/dam/Adobe/images/shared/product_mnemonics/48x48/dw-cc-app-ccm-48x48.png);
+}
+
+/* line 23, ../../src/sass/ccl_base/components/_mnemonics.scss */
+.mnemonic.edge-reflow {
+  background-image: url(//www.stage.adobe.com/special/ri/assets/en/img/icon-96.fp-5b3633c57068df3770b894131abe423b.png);
+}
+
+/* line 26, ../../src/sass/ccl_base/components/_mnemonics.scss */
+.mnemonic.flash {
+  background-image: url(https://wwwimages2.adobe.com/content/dam/Adobe/images/shared/product_mnemonics/48x48/fl-cc-app-ccm-48x48.png);
+}
+
+/* line 29, ../../src/sass/ccl_base/components/_mnemonics.scss */
+.mnemonic.illustrator {
+  background-image: url(https://wwwimages2.adobe.com/content/dam/Adobe/images/shared/product_mnemonics/48x48/ai-cc-app-ccm-48x48.png);
+}
+
+/* line 32, ../../src/sass/ccl_base/components/_mnemonics.scss */
+.mnemonic.illustrator-draw {
+  background-image: url(https://wwwimages2.adobe.com/content/dam/Adobe/images/shared/product_mnemonics/48x48/ai-draw-app-ccm-48x48.png);
+}
+
+/* line 35, ../../src/sass/ccl_base/components/_mnemonics.scss */
+.mnemonic.illustrator-line {
+  background-image: url(https://wwwimages2.adobe.com/content/dam/Adobe/images/shared/product_mnemonics/48x48/ai-line-app-ccm-48x48.png);
+}
+
+/* line 38, ../../src/sass/ccl_base/components/_mnemonics.scss */
+.mnemonic.indesign {
+  background-image: url(https://wwwimages2.adobe.com/content/dam/Adobe/images/shared/product_mnemonics/48x48/id-cc-app-ccm-48x48.png);
+}
+
+/* line 41, ../../src/sass/ccl_base/components/_mnemonics.scss */
+.mnemonic.ink-and-slide {
+  background-image: url(https://wwwimages2.adobe.com/content/dam/Adobe/images/shared/product_mnemonics/122x92/cc-logo-122x92.png);
+}
+
+/* line 44, ../../src/sass/ccl_base/components/_mnemonics.scss */
+.mnemonic.lightroom {
+/*  background-image: url(https://wwwimages2.adobe.com/content/dam/Adobe/images/shared/product_mnemonics/48x48/lr-cc-app-ccm-48x48.png);*/
+  background-image: url({{ "/img/amc-main-icon-48x48.png" | prepend: site.baseurl }});
+}
+
+/* line 47, ../../src/sass/ccl_base/components/_mnemonics.scss */
+.mnemonic.lightroom-mobile {
+  background-image: url(https://wwwimages2.adobe.com/content/dam/Adobe/images/shared/product_mnemonics/122x92/cc-logo-122x92.png);
+}
+
+/* line 50, ../../src/sass/ccl_base/components/_mnemonics.scss */
+.mnemonic.muse {
+  background-image: url(https://wwwimages2.adobe.com/content/dam/Adobe/images/shared/product_mnemonics/48x48/mu-cc-app-ccm-48x48.png);
+}
+
+/* line 53, ../../src/sass/ccl_base/components/_mnemonics.scss */
+.mnemonic.mobile-apps {
+  background-image: url(https://wwwimages2.adobe.com/content/dam/Adobe/images/shared/product_mnemonics/122x92/cc-logo-122x92.png);
+}
+
+/* line 56, ../../src/sass/ccl_base/components/_mnemonics.scss */
+.mnemonic.photoshop {
+  background-image: url(https://wwwimages2.adobe.com/content/dam/Adobe/images/shared/product_mnemonics/48x48/ps-cc-app-ccm-48x48.png);
+}
+
+/* line 59, ../../src/sass/ccl_base/components/_mnemonics.scss */
+.mnemonic.photoshop-mix {
+  background-image: url(https://wwwimages2.adobe.com/content/dam/Adobe/images/shared/product_mnemonics/48x48/ps-mix-app-ccm-48x48.png);
+}
+
+/* line 62, ../../src/sass/ccl_base/components/_mnemonics.scss */
+.mnemonic.photoshop-sketch {
+  background-image: url(https://wwwimages2.adobe.com/content/dam/Adobe/images/shared/product_mnemonics/48x48/ps-sketch-app-ccm-48x48.png);
+}
+
+/* line 65, ../../src/sass/ccl_base/components/_mnemonics.scss */
+.mnemonic.premiere-pro {
+  background-image: url(https://wwwimages2.adobe.com/content/dam/Adobe/images/shared/product_mnemonics/48x48/pr-cc-app-ccm-48x48.png);
+}
+
+/* line 68, ../../src/sass/ccl_base/components/_mnemonics.scss */
+.mnemonic.premiere-clip {
+  background-image: url(https://wwwimages2.adobe.com/content/dam/Adobe/images/shared/product_mnemonics/48x48/pr-clip-app-ccm-48x48.png);
+}
+
+/* line 71, ../../src/sass/ccl_base/components/_mnemonics.scss */
+.mnemonic.shape {
+  background-image: url(https://wwwimages2.adobe.com/content/dam/Adobe/images/shared/product_mnemonics/48x48/shape-app-ccm-48x48.png);
+}
+
+/* line 74, ../../src/sass/ccl_base/components/_mnemonics.scss */
+.mnemonic.behance {
+  background-image: url(//www.adobe.com/content/dam/Adobe/images/shared/product_mnemonics/48x48/behance-no-shadow-48x48.png);
+}
+
+/* line 77, ../../src/sass/ccl_base/components/_mnemonics.scss */
+.mnemonic.bridge {
+  background-image: url(//www.adobe.com/content/dam/Adobe/images/shared/product_mnemonics/48x48/bridge-no-shadow-48x48.png);
+}
+
+/* line 80, ../../src/sass/ccl_base/components/_mnemonics.scss */
+.mnemonic.business-catalyst {
+  background-image: url(//www.adobe.com/content/dam/Adobe/images/shared/product_mnemonics/48x48/business-catalyst-no-shadow-48x48.png);
+}
+
+/* line 83, ../../src/sass/ccl_base/components/_mnemonics.scss */
+.mnemonic.creative-cloud {
+  background-image: url(https://wwwimages2.adobe.com/content/dam/Adobe/images/shared/product_mnemonics/122x92/cc-logo-122x92.png);
+}
+
+/* line 86, ../../src/sass/ccl_base/components/_mnemonics.scss */
+.mnemonic.digital-publishing-suite-single {
+  background-image: url(//www.adobe.com/content/dam/Adobe/images/shared/product_mnemonics/48x48/digital-publishing-suite-no-shadow-48x48.png);
+}
+
+/* line 89, ../../src/sass/ccl_base/components/_mnemonics.scss */
+.mnemonic.edge-animate {
+  background-image: url(//www.adobe.com/content/dam/Adobe/images/shared/product_mnemonics/48x48/edge-animate-no-shadow-48x48.png);
+}
+
+/* line 92, ../../src/sass/ccl_base/components/_mnemonics.scss */
+.mnemonic.fireworks {
+  background-image: url(//www.adobe.com/content/dam/Adobe/images/shared/product_mnemonics/48x48/fireworks-no-shadow-48x48.png);
+}
+
+/* line 95, ../../src/sass/ccl_base/components/_mnemonics.scss */
+.mnemonic.kuler {
+  background-image: url(//www.adobe.com/content/dam/Adobe/images/shared/product_mnemonics/48x48/kuler-no-shadow-48x48.png);
+}
+
+/* line 98, ../../src/sass/ccl_base/components/_mnemonics.scss */
+.mnemonic.phonegap-build {
+  background-image: url(//www.adobe.com/content/dam/Adobe/images/shared/product_mnemonics/48x48/phonegap-build-no-shadow-48x48.png);
+}
+
+/* line 101, ../../src/sass/ccl_base/components/_mnemonics.scss */
+.mnemonic.photoshop-touch {
+  background-image: url(//www.adobe.com/content/dam/Adobe/images/shared/product_mnemonics/48x48/photoshop-touch-no-shadow-48x48.png);
+}
+
+/* line 104, ../../src/sass/ccl_base/components/_mnemonics.scss */
+.mnemonic.prelude {
+  background-image: url(//www.adobe.com/content/dam/Adobe/images/shared/product_mnemonics/48x48/prelude-no-shadow-48x48.png);
+}
+
+/* line 107, ../../src/sass/ccl_base/components/_mnemonics.scss */
+.mnemonic.speedgrade {
+  background-image: url(//www.adobe.com/content/dam/Adobe/images/shared/product_mnemonics/48x48/speedgrade-no-shadow-48x48.png);
+}
+
+/* line 110, ../../src/sass/ccl_base/components/_mnemonics.scss */
+.mnemonic.story {
+  background-image: url(//www.adobe.com/content/dam/Adobe/images/shared/product_mnemonics/48x48/story-no-shadow-48x48.png);
+}
+
+/* line 113, ../../src/sass/ccl_base/components/_mnemonics.scss */
+.mnemonic.typekit {
+  background-image: url(//www.adobe.com/content/dam/Adobe/images/shared/product_mnemonics/48x48/typekit-no-shadow-48x48.png);
+}
+
+/* line 2, ../../src/sass/base-classes/_reset-list.scss */
+.legal ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 7, ../../src/sass/ccl_base/components/_adobe-footer.scss */
+.legal {
+  font-size: 12px;
+  font-weight: 500;
+  color: #999;
+  margin-top: 48px;
+  padding-bottom: 28px;
+}
+
+/* line 15, ../../src/sass/ccl_base/components/_adobe-footer.scss */
+.legal:before {
+  content: '';
+  display: block;
+  width: 100%;
+  border-top: 1px solid #cccccc;
+  padding-top: 13px;
+}
+
+/* line 23, ../../src/sass/ccl_base/components/_adobe-footer.scss */
+.legal .copy {
+  float: right;
+  margin-top: 2px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+
+/* line 34, ../../src/sass/ccl_base/components/_adobe-footer.scss */
+.legal li {
+  display: inline-block;
+  margin-right: 24px;
+  line-height: 1.375;
+}
+
+/* line 40, ../../src/sass/ccl_base/components/_adobe-footer.scss */
+.legal li a {
+  color: inherit;
+}
+
+/* These breakpoint sizes are exceptions to the norm, but match the Adobe CC site */
+@media only screen and (max-width: 768px) {
+  /* line 47, ../../src/sass/ccl_base/components/_adobe-footer.scss */
+  .legal .copy {
+    float: none;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 57, ../../src/sass/ccl_base/components/_adobe-footer.scss */
+  .legal li {
+    width: 100%;
+    display: block;
+  }
+}
+/* line 3, ../../src/sass/base-classes/_button.scss */
+.buy-button {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  display: inline-block;
+  padding: 2px 5px 3px 5px;
+  border: 0;
+  border-radius: 4px;
+  background: #2b9af3;
+  white-space: nowrap;
+}
+/* line 14, ../../src/sass/base-classes/_button.scss */
+.buy-button:hover {
+  text-decoration: none;
+}
+
+
+
+/* line 40, ../../src/sass/ccl_search_results/_layout.scss */
+.serp-search {
+  width: 100%;
+  margin-bottom: 36px;
+  margin-bottom: 2.25rem;
+}
+
+/* line 3, ../../src/sass/base-classes/_hide-on-load-visibility.scss */
+.js .serp-search.hide-on-load {
+  visibility: hidden;
+}
+
+/* line 5, ../../src/sass/base-classes/_sprite-icons.scss */
+.serp-search:before {
+  background: url('/etc/designs/mac-help/img/icons.png') no-repeat;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  /* line 10, ../../src/sass/base-classes/_sprite-icons.scss */
+  .serp-search:before {
+    background: url('/etc/designs/mac-help/img/icons-2x.png') no-repeat;
+    background-size: 134px;
+  }
+}
+/* line 19, ../../src/sass/ccl_search_results/_search-input.scss */
+.serp-search {
+  position: relative;
+}
+
+/* line 23, ../../src/sass/ccl_search_results/_search-input.scss */
+.js .serp-search.hide-on-load {
+  display: block;
+}
+
+/* line 29, ../../src/sass/ccl_search_results/_search-input.scss */
+.serp-search-input,
+.serp-search-btn {
+  display: inline-block;
+}
+
+/* line 33, ../../src/sass/ccl_search_results/_search-input.scss */
+.serp-search-input {
+  padding-top: 30px;
+  padding-bottom: 33px;
+  padding-left: 30px;
+  width: 100%;
+}
+@media only screen and (max-width: 479px) {
+  /* line 33, ../../src/sass/ccl_search_results/_search-input.scss */
+  .serp-search-input {
+    padding-top: 10px;
+    padding-bottom: 11px;
+    padding-left: 10px;
+  }
+}
+
+/* line 47, ../../src/sass/ccl_search_results/_search-input.scss */
+.serp-search-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 94px;
+}
+@media only screen and (max-width: 479px) {
+  /* line 47, ../../src/sass/ccl_search_results/_search-input.scss */
+  .serp-search-btn {
+    width: 34px;
+  }
+}
+
+/* line 63, ../../src/sass/ccl_search_results/_search-input.scss */
+.serp-search-input {
+  color: #333333;
+  font-size: 26px;
+  font-size: 1.625rem;
+  font-weight: 300;
+}
+@media only screen and (max-width: 479px) {
+  /* line 63, ../../src/sass/ccl_search_results/_search-input.scss */
+  .serp-search-input {
+    font-size: 18px;
+    font-size: 1.125rem;
+  }
+}
+/* line 3, ../../src/sass/mixins/_input-placeholder-color.scss */
+.serp-search-input::-webkit-input-placeholder {
+  color: #777777;
+}
+/* line 7, ../../src/sass/mixins/_input-placeholder-color.scss */
+.serp-search-input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #777777;
+}
+/* line 11, ../../src/sass/mixins/_input-placeholder-color.scss */
+.serp-search-input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #777777;
+}
+/* line 15, ../../src/sass/mixins/_input-placeholder-color.scss */
+.serp-search-input:-ms-input-placeholder {
+  color: #777777;
+}
+/* line 19, ../../src/sass/mixins/_input-placeholder-color.scss */
+.serp-search-input::input-placeholder {
+  color: #777777;
+}
+
+/* line 81, ../../src/sass/ccl_search_results/_search-input.scss */
+.serp-search {
+  background-color: #fff;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+}
+
+/* line 87, ../../src/sass/ccl_search_results/_search-input.scss */
+.serp-search:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  right: 32px;
+  background-position: -64px 0;
+  width: 30px;
+  height: 30px;
+}
+@media only screen and (max-width: 479px) {
+  /* line 87, ../../src/sass/ccl_search_results/_search-input.scss */
+  .serp-search:before {
+    right: 10px;
+    background-position: -13px 0;
+    width: 15px;
+    height: 15px;
+  }
+}
+
+/* line 104, ../../src/sass/ccl_search_results/_search-input.scss */
+.serp-search-input,
+.serp-search-btn {
+  border: 0 none;
+  background: transparent;
+}
+
+/* line 110, ../../src/sass/ccl_search_results/_search-input.scss */
+.serp-search-input::-ms-clear {
+  display: none;
+}
+
+/* line 114, ../../src/sass/ccl_search_results/_search-input.scss */
+.serp-search-btn:hover {
+  cursor: pointer;
+}

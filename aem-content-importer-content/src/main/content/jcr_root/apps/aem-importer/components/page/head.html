@@ -1,0 +1,61 @@
+<!--/*
+
+  ADOBE CONFIDENTIAL
+  __________________
+
+   Copyright 2014 Adobe Systems Incorporated
+   All Rights Reserved.
+
+  NOTICE:  All information contained herein is, and remains
+  the property of Adobe Systems Incorporated and its suppliers,
+  if any.  The intellectual and technical concepts contained
+  herein are proprietary to Adobe Systems Incorporated and its
+  suppliers and are protected by trade secret or copyright law.
+  Dissemination of this information or reproduction of this material
+  is strictly forbidden unless prior written permission is obtained
+  from Adobe Systems Incorporated.
+  
+*/-->
+<head data-sly-use.head="head.js"
+      data-sly-use.headlibRenderer="headlibs.html"
+      data-sly-use.stats="stats.js"
+      data-sly-use.wcmInit="initwcm.js"
+      data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}">
+    <meta charset="utf-8" />
+    <title>${head.title}</title>
+    <link rel="canonical" href="${head.pagePath}" />
+    <link data-sly-test="${head.faviconPath}" rel="shortcut icon" href="${head.faviconPath}" />
+    <meta data-sly-test="${head.keywords}" name="keywords" content="${head.keywords}" />
+    <meta data-sly-test="${head.description}" name="description" content="${head.description}" />
+    
+    <!--/* Include jQuery as a single lib (instead of 3 separate libs, as the stats components would later do) */-->
+    <meta data-sly-call="${clientLib.all @ categories='cq.wcm.foundation-main'}" data-sly-unwrap></meta>
+    <meta data-sly-call="${headlibRenderer.headlibs @ designPath=head.designPath}" data-sly-unwrap></meta>
+    <meta data-sly-resource="${'config' @ resourceType='cq/personalization/components/clientcontext_optimized/config'}" data-sly-unwrap></meta>
+    <meta data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}" data-sly-unwrap></meta>
+    <!-- Support for page view statistics and MVT start -->
+    <meta data-sly-call="${clientLib.all @ categories='cq.jquery'}" data-sly-unwrap></meta>
+
+    <link rel="stylesheet" href="/etc/designs/mac-help/clientlibs_base/css/main.css"/>
+    <link rel="stylesheet" href="/etc/designs/mac-help/clientlibs_base/css/ccl_base.css"/>
+    <link rel="stylesheet" href="/etc/designs/mac-help/clientlibs_base/css/ccl_search_results.css"/>
+    <link rel="stylesheet" href="/etc/designs/mac-help/clientlibs_base/css/learn-support.css"/>
+    <link rel="stylesheet" href="/etc/designs/mac-help/clientlibs_base/css/globalnav.css"/>
+    <link rel="stylesheet" href="/etc/designs/mac-help/clientlibs_base/css/lightroom.css"/>
+    <link rel="stylesheet" href="/etc/designs/mac-help/clientlibs_base/css/overrides.css"/>
+
+<script>
+    function getContext() {
+        if (location.search.indexOf('mySolutions=') >= 0) {
+            document.getElementById('target-card').classList.add('cardOff');
+            document.getElementById('social-card').classList.add('cardOff');
+            document.getElementById('amo-card').classList.add('cardOff');
+            document.getElementById('mobile-card').style.display="block";
+            document.getElementById('assets-card').style.display="block";
+            document.getElementById('audiences-card').style.display="block";
+            document.getElementById('datasources-card').style.display="block";
+        }
+    }
+</script>
+
+</head>

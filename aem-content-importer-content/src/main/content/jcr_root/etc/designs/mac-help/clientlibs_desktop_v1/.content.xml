@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:ClientLibraryFolder"
+    categories="[apps.mac-help.desktop.all]"
+    dependencies="[apps.mac-help.jquery]"
+    embed="[jquery-ui,cq.jquery.ui,underscore,cq.underscore,cq.moment,granite.shared,cq.shared,cq.foundation,cq.backbone,cq.handlebars,handlebars,cq.commerce,cq.commerce.desktop,cq.commerce.hovercart,cq.social.comments,cq.authoring.page,cq.social.commons,cq.social.qna,,cq.social.rating,cq.social.reviews,cq.social.forum,cq.social.forum.pagination,apps.mac-help,apps.mac-help.desktop,cq.social.group,cq.social.poll,cq.social.voting,personalization.core.kernel,personalization.clientcontext.kernel,personalization.stores.kernel,personalization.kernel,cq.social.tagging,cq.ckeditor]"/>

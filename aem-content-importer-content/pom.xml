@@ -79,9 +79,15 @@
    <dependencies>
        <dependency>
            <groupId>com.adobe.aem.importer</groupId>
-				   <artifactId>aem-content-importer-bundle</artifactId>
-				   <version>0.0.1-SNAPSHOT</version>
+			<artifactId>aem-content-importer-bundle</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
        </dependency>
+       <dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.4</version>
+			<scope>provided</scope>
+		</dependency>
        <dependency>
            <groupId>net.sf.saxon</groupId>
            <artifactId>saxon-all.osgi</artifactId>
