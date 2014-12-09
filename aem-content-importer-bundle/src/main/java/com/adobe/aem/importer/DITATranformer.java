@@ -9,26 +9,29 @@ package com.adobe.aem.importer;
 
 import java.util.Properties;
 
+import javax.jcr.Node;
+
 /**
  * DITA Transformer Interface
  */
 public interface DITATranformer {
 
 	/**
-	 * Initialize the transformer setting configuration parameters
-	 * @param masterFile
-	 * @param srcPath
-	 * @param destPath
-	 * @param properties
+	 * Initialize the DITA transformer 
+	 * @param resourceResolver resolver for CRX access
+	 * @param srcPath crx source node path
+	 * @param properties custom properties configuration
 	 * @throws Exception
 	 */
-	public void initialize(String masterFile, String srcPath, String destPath, Properties properties) throws Exception;
+	public void initialize(Node srcPath,Properties properties) throws Exception;
 	
 	
 	/**
-	 * Execute tranformation and import resulting content
+	 * Execute tranformation using master file (if available) and import content into destination path
+	 * @param masterFile master file to use as map reference
+	 * @param destPath crx destination path 
 	 * @throws Exception
 	 */
-	public void execute() throws Exception;
+	public void execute(String masterFile, String destPath) throws Exception;
 	
 }

@@ -23,6 +23,8 @@
 
 <article class="learn-support-page">
 
+ AVAILABLE TRANSFORMERS === <%=availableTransformers.length %>
+
 	<section class="learn-section">
 		<div class="learn">
 			<img src="/etc/designs/mac-help/img/learn-icon.png" class="top-image" />
