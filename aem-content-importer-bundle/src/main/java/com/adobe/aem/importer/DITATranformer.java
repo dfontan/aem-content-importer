@@ -18,7 +18,6 @@ public interface DITATranformer {
 
 	/**
 	 * Initialize the DITA transformer 
-	 * @param resourceResolver resolver for CRX access
 	 * @param srcPath crx source node path
 	 * @param properties custom properties configuration
 	 * @throws Exception

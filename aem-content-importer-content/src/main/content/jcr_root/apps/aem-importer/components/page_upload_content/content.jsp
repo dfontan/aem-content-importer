@@ -1,29 +1,16 @@
-<%@page import="com.day.cq.i18n.I18n"%>
-<%@page import="com.sun.imageio.plugins.common.I18N"%>
 <%@page import="com.adobe.aem.importer.DITATransformerHelper"%>
+<%@page import="com.day.cq.i18n.I18n"%>
 <%@page import="java.util.HashMap"%>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@include file="/libs/foundation/global.jsp"%>
 
 <%
-	Class<?>[] availableTransformers = DITATransformerHelper.getAvailableTransformers();
-
-	if (availableTransformers.length > 0) {
-		//TODO: Populate data in map
-	}
-	
-	HashMap<String,String> tranformerTypes = new HashMap<String,String>();
- 	tranformerTypes.put("XSLT", "xslt");
- 	
  	String urlValidation = request.getRequestURL().toString();
- 	
  	urlValidation = urlValidation.replace(".html", "");
 %>
 
 <article class="learn-support-page">
-
- AVAILABLE TRANSFORMERS === <%=availableTransformers.length %>
 
 	<section class="learn-section">
 		<div class="learn">
@@ -34,7 +21,7 @@
 				<p>Get started uploading new content in website.</p>
 				<br />
 			</div>
-			<form id="uploadForm" style="" action="<%=currentNode.getPath()%>"
+			<form id="uploadContent" style="" action="<%=currentNode.getPath()%>"
 				method="POST" enctype="multipart/form-data">
 				<div class="serp-search">
 
@@ -49,15 +36,14 @@
 				<div class="serp-search custom-params" style="margin-top: 15px">
 					<label for="transformer">Transformer to apply</label> <select
 						class="serp-search-input" name="transformer" id="transformer">
-						<option value="">Choose a transfomer</option>
-						<%
-							for (String type : tranformerTypes.keySet()) {
+						<option value="">Empty</option>
+						<% 
+						  Class<?>[] availableTransformers = DITATransformerHelper.getAvailableTransformers();
+							for(Class<?> transformer : availableTransformers) {
 						%>
-						<option value="<%=tranformerTypes.get(type)%>"><%=type%></option>
+						<option value="<%=transformer.getName()%>"><%=transformer.getSimpleName().replace("Impl", "")%></option>
 
-						<%
-							}
-						%>
+						<% } %>
 					</select> <label for="src">Src</label> <input class="serp-search-input"
 						id="src" name="src"
 						placeholder="Path where pick up files to transform"
@@ -167,6 +153,8 @@ div.serp-search label {
 
 <script>
 
+	$("#execute").removeAttr("disabled");
+
 	var formData = new FormData();
 	var docToUpload = false;
 
@@ -175,12 +163,12 @@ div.serp-search label {
 		$("#success").css("display","none");
 		$(this).html("Executing...");
 		$(this).attr("disabled","disabled");
-        var url = "<%=currentPage.getPath()%>.validation.html";
 		$.ajax({
             data: {"transformer": $("#transformer").val(),"src": $("#src").val(), "target":$("#target").val(), "docToUpload":docToUpload},
             url: "<%=urlValidation%>.validation.html",
 			success: function(result) {
-                var jsonResult = $.parseJSON(result);
+				 var r = result.replace(/<!--.*-->/g, ""); 
+	                var jsonResult = $.parseJSON(r);
                if (jsonResult['error'] == "true") {
             	  $("#error").html(jsonResult['message']);
                   $("#error").css("display","block");
@@ -189,9 +177,6 @@ div.serp-search label {
                     return false;
                } else {
             	   submitForm();
-            	   $("#execute").removeAttr("disabled");
-                   $("#execute").html("Execute");
-                  // $("#uploadForm").submit();
                }
 			},
             error: function (xhr, ajaxOptions, thrownError) {
@@ -245,13 +230,23 @@ div.serp-search label {
 				console.log('result=', result);
 
 				if (result == 'true') {
-					console.log('failed to upload file');
-					$("#error").html(data['message']);
+					$("#error").html("Process failed! Check config file params. Src and target must exist in repository. If it persists, contact with the administrator");
+					$("#error").css("display","block");
+					$("#success").css("display","none");
+					$("#execute").html("Execute");
+					$("#execute").removeAttr("disabled");
+					
 				} else {
 					console.log('successfully uploaded file');
-                    $("#success").html("Transformation done properly");
+                    $("#success").html("Sent it the information correctly. Workflow is going to lauch.");
                     $("#success").css("display","block");
+	                 $("#execute").html("Reloading page...");
+	                 
+	                 setTimeout(function() {
+	                	 location.reload(true);
+	               }, 2000);
 				}
+				
 			}
 		}
 
@@ -294,6 +289,7 @@ div.serp-search label {
              if ("application/zip" != file.type) {
                 $("#error").css("display","block").html("The file has to be a zip.");
                  $("#messages").css("display","none");
+                 $("#success").css("display","none");
                  formData = new FormData();
                  
                  $("#execute").attr("disabled","disabled");
@@ -305,6 +301,7 @@ div.serp-search label {
                  $("#error").css("display","none");
 				m.innerHTML = "<p>File information: <strong>" + file.name + "</strong> ";
                  $("#messages").css("display","block");
+                 $("#success").css("display","none");
                  $("#execute").removeAttr("disabled");
                  docToUpload = true;
              }
