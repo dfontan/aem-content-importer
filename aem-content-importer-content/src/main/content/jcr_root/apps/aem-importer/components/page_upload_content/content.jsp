@@ -55,14 +55,9 @@
 					<label for="transformer">Transformer to apply</label> <select
 						class="serp-search-input" name="transformer" id="transformer">
 						<option value="">Empty</option>
-<<<<<<< HEAD
 						<% 
 						  Class<?>[] availableTransformers = DITATransformerHelper.getAvailableTransformers();
 							for(Class<?> transformer : availableTransformers) {
-=======
-						<%
-							for (String type : tranformerTypes.keySet()) {
->>>>>>> refs/remotes/origin/master
 						%>
 						<option value="<%=transformer.getName()%>"><%=transformer.getSimpleName().replace("Impl", "")%></option>
 
