@@ -34,7 +34,7 @@
 				<p>Get started uploading new content in website.</p>
 				<br />
 			</div>
-			<form id="uploadForm" style="" action="<%=currentNode.getPath()%>"
+			<form id="uploadContent" style="" action="<%=currentNode.getPath()%>"
 				method="POST" enctype="multipart/form-data">
 				<div class="serp-search">
 
@@ -167,6 +167,8 @@ div.serp-search label {
 
 <script>
 
+	$("#execute").removeAttr("disabled");
+
 	var formData = new FormData();
 	var docToUpload = false;
 
@@ -175,7 +177,6 @@ div.serp-search label {
 		$("#success").css("display","none");
 		$(this).html("Executing...");
 		$(this).attr("disabled","disabled");
-        var url = "<%=currentPage.getPath()%>.validation.html";
 		$.ajax({
             data: {"transformer": $("#transformer").val(),"src": $("#src").val(), "target":$("#target").val(), "docToUpload":docToUpload},
             url: "<%=urlValidation%>.validation.html",
@@ -190,9 +191,6 @@ div.serp-search label {
                     return false;
                } else {
             	   submitForm();
-            	   $("#execute").removeAttr("disabled");
-                   $("#execute").html("Execute");
-                  // $("#uploadForm").submit();
                }
 			},
             error: function (xhr, ajaxOptions, thrownError) {
@@ -246,13 +244,23 @@ div.serp-search label {
 				console.log('result=', result);
 
 				if (result == 'true') {
-					console.log('failed to upload file');
-					$("#error").html(data['message']);
+					$("#error").html("Process failed! Check config file params. Src and target must exist in repository. If it persists, contact with the administrator");
+					$("#error").css("display","block");
+					$("#success").css("display","none");
+					$("#execute").html("Execute");
+					$("#execute").removeAttr("disabled");
+					
 				} else {
 					console.log('successfully uploaded file');
-                    $("#success").html("Transformation done properly");
+                    $("#success").html("Sent it the information correctly. Workflow is going to lauch.");
                     $("#success").css("display","block");
+	                 $("#execute").html("Reloading page...");
+	                 
+	                 setTimeout(function() {
+	                	 location.reload(true);
+	               }, 2000);
 				}
+				
 			}
 		}
 

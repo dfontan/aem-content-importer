@@ -48,7 +48,7 @@ com.day.cq.commons.jcr.*" %>
 		
 		if (src.length() == 0 || target.length() == 0 || transformer.length() == 0) {
 			error = true;
-			messageError = "If you don't add a zip file, params transformer type, src, target are required. Check them";
+			messageError = "If you don't add a zip file or params transformer type, src, target are required. Check them";
 		}
 		
 		

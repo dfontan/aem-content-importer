@@ -1,3 +1,7 @@
+<%@page import="com.adobe.aem.importer.Config"%>
+<%@page import="com.adobe.aem.importer.utils.Utils"%>
+<%@page import="org.apache.jackrabbit.commons.JcrUtils"%>
+<%@page import="com.adobe.aem.importer.zip.ZipParser"%>
 <%@page import="java.util.Properties"%>
 <%@page import="javax.jcr.Node"%>
 <%@page import="org.apache.sling.api.resource.Resource"%>
@@ -23,10 +27,15 @@ final boolean isMultipart = ServletFileUpload.isMultipartContent(request);
  String transformer = "";
  String masterFile = "";
  
+ ZipParser zipParser = null;
+ 
+ boolean uploadZip = false;
+ 
 try {
 	PrintWriter pout = response.getWriter();
 if (isMultipart) {
 	final Map<String, RequestParameter[]> params = slingRequest.getRequestParameterMap();
+	final InputStream zip = null; 
     for (final Map.Entry<String, RequestParameter[]> pairs : params.entrySet()) {
       final String k = pairs.getKey();
       final RequestParameter[] pArr = pairs.getValue();
@@ -34,43 +43,48 @@ if (isMultipart) {
       final InputStream stream = param.getInputStream();
       if (param.isFormField()) {
     	  
-    	  if ("src".equalsIgnoreCase(k)) {
+    	  if ("src".equalsIgnoreCase(k) && !uploadZip) {
     		  src = Streams.asString(stream);
     	  }
     	  
-    	  if ("target".equalsIgnoreCase(k)) {
+    	  if ("target".equalsIgnoreCase(k) && !uploadZip) {
     		  target = Streams.asString(stream);
     	  }
     	  
-    	  if ("transformer".equalsIgnoreCase(k)) {
+    	  if ("transformer".equalsIgnoreCase(k) && !uploadZip) {
     		  transformer = Streams.asString(stream);
     	  }
     	  
-    	  if ("master".equalsIgnoreCase(k)) {
+    	  if ("master".equalsIgnoreCase(k) && !uploadZip) {
     		  masterFile = Streams.asString(stream);
     	  }
       } else {
 //         out.println("File field " + k + " with file name " + param.getFileName() + " detected.");
+		    zipParser = new ZipParser(param.getInputStream(),slingRequest);
+			
+		    zipParser.unzip();
+			
+			src = zipParser.getSrc();
+			target = zipParser.getTarget();
+			transformer = zipParser.getTransformer();
+			masterFile = zipParser.getMasterFile();
+			
+			uploadZip = true;
       }
 	}
     
-    //TODO: Invoke the corresponding transformer
-    DITATranformer dt = DITATransformerHelper.getDITATransformer(transformer);
+    
+    if (!uploadZip) {
+	    Config configFileXml = new Config();
+	    
+	    configFileXml.setSrc(src);
+	    configFileXml.setTransformer(transformer);
+	    configFileXml.setTarget(target);
+	    configFileXml.setMasterFile(masterFile);
+    	Utils.putConfigFileToJCR(slingRequest, configFileXml);
+		    	
+    }
 	
-    Resource resources = slingRequest.getResourceResolver().getResource(src);
-
-    Node srcPath = resources.adaptTo(Node.class);
-
-    Properties p = new Properties();
-
-    //TODO: Prepare the right manner to assign the template and the other params
-    p.put("xslt", "/apps/aem-importer/resources/dita-to-content.xsl");
-    p.put("transformer","net.sf.saxon.TransformerFactoryImpl");
-    p.put("packageTpl","/apps/aem-importer/resources/package-tpl");
-
-    dt.initialize(srcPath, p);
-
-    dt.execute(masterFile,target);
     
     %>
     
@@ -82,6 +96,11 @@ if (isMultipart) {
     
 }
 } catch(Exception e) {
+	
+	if (zipParser != null && zipParser.getSource() != null) {
+		zipParser.getSource().close();
+	}
+	
 	%>
 	
 	{"error": "true", "message": "<%=e.getMessage() %>"}
