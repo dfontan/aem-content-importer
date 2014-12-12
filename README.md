@@ -14,9 +14,18 @@ Pay attention to aem-content-importer-bundle, the /apps/${project.folder}/instal
 
 AEM Content Importer -  Upload Page
 ===================================
-
-1) Upload page: http://<HOST>:<PORT>/content/resources/help/en/upload-content.html
-2) You have two options: upload a zip file with all information, source files,config file (transformer, src, target) and master file) clicking the button or dragging and dropping. If
-you don't want to create a zip file, you are able to fill out form params indicating transformer, repository source files (it must exist), repository target(it must exist)
-and master file name if it's necessary.
+- Upload page: http://HOST:PORT/content/resources/help/en/upload-content.html
+- You have two options: 
+	* Upload a zip file with all information in it. Source files,config file (transformer, src, target, master file name) clicking the button or dragging and dropping. Config file 
+	  has to be the first file in the zip and has priority over form params.
+	* Fill out form params
+  It's important to mention that src and target must exist in repository
+- Format of config file in zip:
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+<transformer>package path of transformer to be executed</transformer>
+<src>Repository path to upload source files inside zip</src>
+<target>Repository path to import transformation result</target>
+<masterFile>master file if transformation type needs it</masterFile>
+</config>
 
