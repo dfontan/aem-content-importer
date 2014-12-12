@@ -12,7 +12,7 @@
 				<transformer jcr:primaryType="cq:Widget" 
 										 fieldLabel="Transformer"
 										 name="./metaData/transformer" 
-										 options="$PATH.transformers.json"
+										 options="$PATH.transformers.html"
 										 type="select" 
 										 xtype="selection">
 				</transformer>
