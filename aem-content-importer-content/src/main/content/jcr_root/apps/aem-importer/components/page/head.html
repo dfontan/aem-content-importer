@@ -24,13 +24,10 @@
     <meta data-sly-test="${head.keywords}" name="keywords" content="${head.keywords}" />
     <meta data-sly-test="${head.description}" name="description" content="${head.description}" />
     
-    <!--/* Include jQuery as a single lib (instead of 3 separate libs, as the stats components would later do) */-->
-    <meta data-sly-call="${clientLib.all @ categories='cq.wcm.foundation-main'}" data-sly-unwrap></meta>
-    <meta data-sly-call="${headlibRenderer.headlibs @ designPath=head.designPath}" data-sly-unwrap></meta>
-    <meta data-sly-resource="${'config' @ resourceType='cq/personalization/components/clientcontext_optimized/config'}" data-sly-unwrap></meta>
-    <meta data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}" data-sly-unwrap></meta>
-    <!-- Support for page view statistics and MVT start -->
-    <meta data-sly-call="${clientLib.all @ categories='cq.jquery'}" data-sly-unwrap></meta>
+    <script type="text/javascript" src="/etc/clientlibs/granite/jquery.js"></script>
+<script type="text/javascript" src="/etc/clientlibs/granite/utils.js"></script>
+<script type="text/javascript" src="/etc/clientlibs/granite/jquery/granite.js"></script>
+<script type="text/javascript" src="/etc/clientlibs/foundation/jquery.js"></script>
 
     <link rel="stylesheet" href="/etc/designs/mac-help/clientlibs_base/css/main.css"/>
     <link rel="stylesheet" href="/etc/designs/mac-help/clientlibs_base/css/ccl_base.css"/>
