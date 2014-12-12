@@ -21,7 +21,6 @@ AEM Content Importer -  Upload Page
 	* Fill out form params
   It's important to mention that src and target must exist in repository
 - Format of config file in zip:
-
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
 &lt;config&gt;
 &lt;transformer&gt;com.adobe.aem.importer.impl.DITATransformerXSLTImpl&lt;/transformer&gt;
