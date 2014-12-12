@@ -21,11 +21,18 @@ AEM Content Importer -  Upload Page
 	* Fill out form params
   It's important to mention that src and target must exist in repository
 - Format of config file in zip:
-<?xml version="1.0" encoding="utf-8"?>
-<config>
-<transformer>package path of transformer to be executed</transformer>
-<src>Repository path to upload source files inside zip</src>
-<target>Repository path to import transformation result</target>
-<masterFile>master file if transformation type needs it</masterFile>
-</config>
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;config&gt;
+&lt;transformer&gt;com.adobe.aem.importer.impl.DITATransformerXSLTImpl&lt;/transformer&gt;
+&lt;src&gt;/var/aem-importer/import2&lt;/src&gt;
+&lt;target&gt;/content/pando&lt;/target&gt;
+&lt;masterFile&gt;mcloud.ditamap&lt;/masterFile&gt;
+&lt;/config&gt;&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;config&gt;
+&lt;transformer&gt;com.adobe.aem.importer.impl.DITATransformerXSLTImpl&lt;/transformer&gt;
+&lt;src&gt;/var/aem-importer/import2&lt;/src&gt;
+&lt;target&gt;/content/pando&lt;/target&gt;
+&lt;masterFile&gt;mcloud.ditamap&lt;/masterFile&gt;
+&lt;/config&gt;
 
