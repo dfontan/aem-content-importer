@@ -1,29 +1,11 @@
 <%@page import="com.adobe.aem.importer.DITATransformerHelper"%>
 <%@page import="com.day.cq.i18n.I18n"%>
-<<<<<<< HEAD
-=======
-<%@page import="com.sun.imageio.plugins.common.I18N"%>
->>>>>>> refs/remotes/origin/master
 <%@page import="java.util.HashMap"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@include file="/libs/foundation/global.jsp"%>
 
 <%
-<<<<<<< HEAD
-=======
-	Class<?>[] availableTransformers = DITATransformerHelper.getAvailableTransformers();
-	HashMap<String,String> tranformerTypes = new HashMap<String,String>();
-	if (availableTransformers.length > 0) {
-		
-		for (Class<?> cl : availableTransformers) {
-		 	tranformerTypes.put(cl.getSimpleName().replace("Impl", ""), cl.getName());
-		}
-		
-	}
-	
- 	
->>>>>>> refs/remotes/origin/master
  	String urlValidation = request.getRequestURL().toString();
  	urlValidation = urlValidation.replace(".html", "");
 %>

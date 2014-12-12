@@ -52,28 +52,7 @@ com.day.cq.commons.jcr.*" %>
 		}
 		
 		
-	} else {
-		if (src != null && src != "") {
-			try {
-				Resource resources = slingRequest.getResourceResolver().getResource(src);
-				Node node = resources.adaptTo(Node.class);
-			} catch(Exception e) {
-				error = true;
-				messageError = "Check src/target. Some of them don't exist in repository.";
-			}
-		}
-		
-		if (target != null && target != "") {
-			try {
-				Resource resources = slingRequest.getResourceResolver().getResource(target);
-				Node node = resources.adaptTo(Node.class);
-			} catch(Exception e) {
-				error = true;
-				messageError = "Check src/target. Some of them don't exist in repository.";
-			}
-		}
-	}
-	
+	} 
 	
 	
 	

@@ -1,7 +1,7 @@
-<%@page import="com.adobe.aem.importer.Config"%>
+<%@page import="com.adobe.aem.importer.xml.Config"%>
 <%@page import="com.adobe.aem.importer.utils.Utils"%>
 <%@page import="org.apache.jackrabbit.commons.JcrUtils"%>
-<%@page import="com.adobe.aem.importer.zip.ZipParser"%>
+<%@page import="com.adobe.aem.importer.utils.ZipParser"%>
 <%@page import="java.util.Properties"%>
 <%@page import="javax.jcr.Node"%>
 <%@page import="org.apache.sling.api.resource.Resource"%>
