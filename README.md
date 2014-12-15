@@ -3,7 +3,7 @@
 Maven Builds:
 
 * Complete (content+bundle+saxon)
-  Using profile `distribution` from either root or aem-content-importer-content.
+  Using profile `distribution` from either root or `aem-content-importer-content`.
   Assumes AEM 6.0 running on `localhost:4502`.
 
   For example:
