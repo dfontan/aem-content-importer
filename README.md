@@ -1,12 +1,10 @@
 # AEM Content Importer - Build
 
-Branch 'master' of https://github.com/Adobe-Marketing-Cloud/aem-content-importer.git
-
 Maven Builds:
 
 * Complete (content+bundle+saxon)
-  Using profile "distribution" from either root or aem-content-importer-content.
-  Assumes AEM 6.0 running on ```localhost:4502```.
+  Using profile `distribution` from either root or aem-content-importer-content.
+  Assumes AEM 6.0 running on `localhost:4502`.
 
   For example:
 
@@ -17,28 +15,28 @@ Maven Builds:
 
 * Standard (only the selected project)
   With no profile specified maven installs only the selected project.
-  Pay attention to aem-content-importer-bundle, the ```/apps/${project.folder}/install`` crx folder must exist
+  Pay attention to aem-content-importer-bundle, the `/apps/${project.folder}/install` crx folder must exist
 
 
 # AEM Content Importer -  Upload Page
-Go to the upload page: ```http://<host>:<port>/content/resources/help/en/upload-content.html```
+Go to the upload page: `http://<host>:<port>/content/resources/help/en/upload-content.html`
 
 You have two options:
 
 * Fill out form parameters:
-    * *Transformer*: Select from list (currently only one, ```DITATransformerXSLT```).
+    * *Transformer*: Select from list (currently only one, `DITATransformerXSLT`).
 	* *Source folder*: Specify the source path in the repository. The folder must be already created and populated with
-	  all the source files (including the ```ditamap``` file), for example, through dragging and dropping the files into
-	  the repository using a WebDAV client. A typical location for the source directory is ```/var/aem-importer/import```.
+	  all the source files (including the `ditamap` file), for example, through dragging and dropping the files into
+	  the repository using a WebDAV client. A typical location for the source directory is `/var/aem-importer/import`.
 	* *Destination folder*: Specify the destination folder in the repository. The destination directory must already exist
-	  in the repository. *Currently this path must be set to ```content/pando```.*
-	* *Master File*: The name of the master file. For example, ```mcloud.ditamap```.
+	  in the repository. *Currently this path must be set to `content/pando`.*
+	* *Master File*: The name of the master file. For example, `mcloud.ditamap`.
 
-* Upload a zip file containing all source files (including the master ```ditamap``` file) and a
-  ```config_params.xml``` file. Note that the configuration file must be the first file in the ```zip``` package.
-  The upload can be performed either by dragging and dropping the ```zip``` file or by clicking the *Upload* button.
+* Upload a zip file containing all source files (including the master `ditamap` file) and a
+  `config_params.xml` file. Note that the configuration file must be the first file in the `zip` package.
+  The upload can be performed either by dragging and dropping the `zip` file or by clicking the *Upload* button.
 
-  An example ```config_params.xml```:
+  An example `config_params.xml`:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
