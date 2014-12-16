@@ -1,8 +1,7 @@
 <%@page import="com.adobe.aem.importer.DITATransformerHelper"%>
 <%@page import="com.day.cq.i18n.I18n"%>
 <%@page import="java.util.HashMap"%>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"	pageEncoding="UTF-8"%>
 <%@include file="/libs/foundation/global.jsp"%>
 
 <%
@@ -51,8 +50,8 @@
 						<% } %>
 					</select> 
 					
-					<label for="master">Master
-						file</label> <input class="serp-search-input" name="master" id="master"
+					<label for="masterFile">Master
+						file</label> <input class="serp-search-input" name="masterFile" id="masterFile"
 						placeholder="..." autocomplete="off" type="text" />
 					<label for="target">Target
 						of results</label> <input class="serp-search-input" name="target"
