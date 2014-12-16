@@ -51,8 +51,8 @@
 						<% } %>
 					</select> 
 					
-					<label for="master">Master
-						file</label> <input class="serp-search-input" name="master" id="master"
+					<label for="masterFile">Master
+						file</label> <input class="serp-search-input" name="masterFile" id="masterFile"
 						placeholder="..." autocomplete="off" type="text" />
 					<label for="target">Target
 						of results</label> <input class="serp-search-input" name="target"

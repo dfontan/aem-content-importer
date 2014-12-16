@@ -10,21 +10,17 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
 import javax.jcr.Node;
-import javax.jcr.RepositoryException;
 import javax.jcr.Session;
 
 import org.apache.jackrabbit.commons.JcrUtils;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
-import com.adobe.aem.importer.constant.Constant;
-import com.adobe.aem.importer.xml.Config;
+import com.adobe.aem.importer.DITATransformerHelper;
 
 public class ZipParser {
-
-	private static final Logger log = LoggerFactory.getLogger(ZipParser.class);
+	
+	private static final int BUFFER_SIZE = 4096;
 
 	private ZipInputStream source;
 	private SlingHttpServletRequest request;
@@ -39,13 +35,18 @@ public class ZipParser {
 		this.request = request;
 	}
 
-	public void unzipAndUploadJCR() throws Exception {
+	/**
+	 * unzipAndUploadJCR
+	 * @param encoding
+	 * @throws Exception
+	 */
+	public void unzipAndUploadJCR(String encoding) throws Exception {
 		ZipEntry entry;
 		entry = source.getNextEntry();
 		ByteArrayInputStream configFile = null;
 		// First file of zip must to be the config file
 		if (entry != null) {
-			configFile = extractConfigFile(source);
+			configFile = extractConfigFile(source,encoding);
 			entry = source.getNextEntry();
 
 		}
@@ -62,11 +63,10 @@ public class ZipParser {
 			entry = source.getNextEntry();
 		}
 
-		resources = request.getResourceResolver().getResource(
-				Constant.DEFAULT_FOLDER_SRC);
+		resources = request.getResourceResolver().getResource(DITATransformerHelper.DEFAULT_CONFIG_PARAM_SRC);
 		Node workflowNode = resources.adaptTo(Node.class);
 
-		JcrUtils.putFile(workflowNode, Constant.CONFIG_PARAMS_NAME, "text/xml",
+		JcrUtils.putFile(workflowNode, DITATransformerHelper.CONFIG_FILENAME, "text/xml",
 				configFile);
 
 		session.save();
@@ -85,7 +85,7 @@ public class ZipParser {
 			throws IOException {
 		ByteArrayOutputStream baout = new ByteArrayOutputStream();
 		BufferedOutputStream bos = new BufferedOutputStream(baout);
-		byte[] bytesIn = new byte[Constant.BUFFER_SIZE];
+		byte[] bytesIn = new byte[ZipParser.BUFFER_SIZE];
 		int read = 0;
 		while ((read = zipIn.read(bytesIn)) != -1) {
 			bos.write(bytesIn, 0, read);
@@ -100,16 +100,17 @@ public class ZipParser {
 	 * extractConfigFile
 	 * 
 	 * @param configFile
+	 * @param encoding
 	 * @return
 	 * @throws IOException
 	 */
-	private ByteArrayInputStream extractConfigFile(ZipInputStream configFile)
+	private ByteArrayInputStream extractConfigFile(ZipInputStream configFile, String encoding)
 			throws IOException {
 		// get the factory
 
 		ByteArrayOutputStream baout = new ByteArrayOutputStream();
 		BufferedOutputStream bos = new BufferedOutputStream(baout);
-		byte[] bytesIn = new byte[Constant.BUFFER_SIZE];
+		byte[] bytesIn = new byte[ZipParser.BUFFER_SIZE];
 		int read = 0;
 		while ((read = configFile.read(bytesIn)) != -1) {
 			bos.write(bytesIn, 0, read);
@@ -124,13 +125,13 @@ public class ZipParser {
 
 		p.loadFromXML(bytesConfigFile);
 
-		src = p.getProperty(Constant.SRC);
-		transformer = p.getProperty(Constant.TRANSFORMER);
-		masterFile = p.getProperty(Constant.MASTER_FILE);
-		target = p.getProperty(Constant.TARGET);
+		src = p.getProperty(DITATransformerHelper.CONFIG_PARAM_SRC);
+		transformer = p.getProperty(DITATransformerHelper.CONFIG_PARAM_TRANSFORMER);
+		masterFile = p.getProperty(DITATransformerHelper.CONFIG_PARAM_MASTER_FILE);
+		target = p.getProperty(DITATransformerHelper.CONFIG_PARAM_TARGET);
 
 		baout = new ByteArrayOutputStream();
-		p.storeToXML(baout, null, Constant.ENCODING);
+		p.storeToXML(baout, null, encoding);
 
 		bytesConfigFile = new ByteArrayInputStream(baout.toByteArray());
 		return bytesConfigFile;

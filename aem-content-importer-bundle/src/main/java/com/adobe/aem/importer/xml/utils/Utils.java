@@ -7,9 +7,6 @@ import java.util.Properties;
 
 import javax.jcr.Node;
 import javax.jcr.Session;
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBException;
-import javax.xml.bind.Marshaller;
 
 import org.apache.jackrabbit.commons.JcrUtils;
 import org.apache.sling.api.SlingHttpServletRequest;
@@ -17,7 +14,7 @@ import org.apache.sling.api.resource.Resource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.adobe.aem.importer.constant.Constant;
+import com.adobe.aem.importer.DITATransformerHelper;
 import com.adobe.aem.importer.xml.Config;
 
 public class Utils {
@@ -28,31 +25,31 @@ public class Utils {
 	 * putConfigFileToJCR
 	 * @param request
 	 * @param config
+	 * @param encoding
 	 */
-	public static void putConfigFileToJCR(SlingHttpServletRequest request,
-			Config config)  {
+	public static void putConfigFileToJCR(SlingHttpServletRequest request, Config config, String encoding)  {
 		
 		try {
-			Resource resources = request.getResourceResolver().getResource(Constant.DEFAULT_FOLDER_SRC);
+			Resource resources = request.getResourceResolver().getResource(DITATransformerHelper.DEFAULT_CONFIG_PARAM_SRC);
 			Node srcNode = resources.adaptTo(Node.class);
 			
 			Session session = srcNode.getSession();
 			
 			StringWriter w = new StringWriter();
 			Properties p = new Properties();
-			p.put(Constant.TRANSFORMER, config.getTransformer());
-			p.put(Constant.SRC, config.getSrc());
-			p.put(Constant.TARGET, config.getTarget());
-			p.put(Constant.MASTER_FILE, config.getMasterFile());
+			p.put(DITATransformerHelper.CONFIG_PARAM_TRANSFORMER, config.getTransformer());
+			p.put(DITATransformerHelper.CONFIG_PARAM_SRC, config.getSrc());
+			p.put(DITATransformerHelper.CONFIG_PARAM_TARGET, config.getTarget());
+			p.put(DITATransformerHelper.CONFIG_PARAM_MASTER_FILE, config.getMasterFile());
 			
 			
 			ByteArrayOutputStream baout = new ByteArrayOutputStream();
-			p.storeToXML(baout,null,Constant.ENCODING);
-			w.append(baout.toString(Constant.ENCODING));
+			p.storeToXML(baout,null,encoding);
+			w.append(baout.toString(encoding));
 			
 			ByteArrayInputStream bis = new ByteArrayInputStream(w.toString().getBytes("UTF-8"));
 			
-			JcrUtils.putFile(srcNode, Constant.CONFIG_PARAMS_NAME, "text/xml", bis);
+			JcrUtils.putFile(srcNode, DITATransformerHelper.CONFIG_FILENAME, "text/xml", bis);
 			
 			session.save();
 			

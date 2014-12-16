@@ -39,13 +39,19 @@ You have two options:
   An example `config_params.xml`:
 
 ```xml
-<?xml version="1.0" encoding="utf-8"?>
-<config>
-    <transformer>com.adobe.aem.importer.impl.DITATransformerXSLTImpl</transformer>
-    <src>/var/aem-importer/import</src>
-    <target>/content/pando</target>
-    <masterFile>mcloud.ditamap</masterFile>
-</config>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+ <entry key="dita-transformer">com.adobe.aem.importer.impl.DITATransformerXSLTImpl</entry>
+ <entry key="src">/var/aem-importer/import2</entry>
+ <entry key="target">/content/pando</entry>
+ <entry key="masterFile">mcloud.ditamap</entry>
+ <entry key="xslt-transformer">net.sf.saxon.TransformerFactoryImpl</entry>
+ <entry key="xslt-file">/apps/aem-importer/resources/dita-to-content.xsl</entry>
+ <entry key="tempFolder">/var/aem-importer/tmp</entry>
+ <entry key="packageTpl">/apps/aem-importer/resources/package-tpl</entry>
+ <entry key="graphicFolders">images,graphics,Graphics</entry>
+</properties>
 ```
 
 
