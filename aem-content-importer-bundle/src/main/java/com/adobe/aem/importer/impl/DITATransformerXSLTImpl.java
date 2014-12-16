@@ -40,8 +40,8 @@ import com.day.jcr.vault.util.RejectingEntityResolver;
 
 public class DITATransformerXSLTImpl implements DITATranformer, URIResolver {
 
-	public static final String 		CONFIG_PARAM_TRANSFORMER_CLASS 		= "transformer";
-	public static final String 		CONFIG_PARAM_XSLT_FILE 						= "xslt";
+	public static final String 		CONFIG_PARAM_TRANSFORMER_CLASS 		= "xslt-transformer";
+	public static final String 		CONFIG_PARAM_XSLT_FILE 						= "xslt-file";
 	public static final String 		CONFIG_PARAM_TEMP_FOLDER					= "tempFolder";
 	public static final String 		CONFIG_PARAM_PACKAGE_TPL 					= "packageTpl";
 	public static final String 		CONFIG_PARAM_GRAPHIC_FOLDERS			= "graphicFolders";
