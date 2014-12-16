@@ -16,6 +16,14 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class DITATransformerHelper {
+	
+	public static final String CONFIG_FILENAME 					= "config_params.xml";
+	public static final String CONFIG_PARAM_SRC 				= "src";
+	public static final String CONFIG_PARAM_TARGET 			= "target";
+	public static final String CONFIG_PARAM_TRANSFORMER = "dita-transformer";
+	public static final String CONFIG_PARAM_MASTER_FILE = "masterFile";
+	public static final String DEFAULT_CONFIG_PARAM_SRC = "/var/aem-importer/import";
+	
 
 	private static final Logger log = LoggerFactory.getLogger(DITATransformerHelper.class);
 	private static final String CLASS_EXTENSION = ".class";

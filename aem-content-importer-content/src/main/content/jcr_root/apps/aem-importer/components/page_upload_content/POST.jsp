@@ -62,7 +62,7 @@ if (isMultipart) {
 //         out.println("File field " + k + " with file name " + param.getFileName() + " detected.");
 		    zipParser = new ZipParser(param.getInputStream(),slingRequest);
 			
-		    zipParser.unzipAndUploadJCR();
+		    zipParser.unzipAndUploadJCR("UTF-8");
 		    
 		    src = zipParser.getSrc();
 			target = zipParser.getTarget();
@@ -81,7 +81,7 @@ if (isMultipart) {
 	    configFileXml.setTransformer(transformer);
 	    configFileXml.setTarget(target);
 	    configFileXml.setMasterFile(masterFile);
-    	Utils.putConfigFileToJCR(slingRequest, configFileXml);
+    	Utils.putConfigFileToJCR(slingRequest, configFileXml, "UTF-8");
 		    	
     }
 	
