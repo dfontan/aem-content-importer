@@ -55,7 +55,7 @@ if (isMultipart) {
     		  transformer = Streams.asString(stream);
     	  }
     	  
-    	  if ("master".equalsIgnoreCase(k) && !uploadZip) {
+    	  if ("masterFile".equalsIgnoreCase(k) && !uploadZip) {
     		  masterFile = Streams.asString(stream);
     	  }
       } else {

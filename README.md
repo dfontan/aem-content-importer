@@ -24,7 +24,7 @@ Go to the upload page: `http://<host>:<port>/content/resources/help/en/upload-co
 You have two options:
 
 * Fill out form parameters:
-    * *Transformer*: Select from list (currently only one, `DITATransformerXSLT`).
+    * *Transformer*: Select from list (currently only one, `DITATransformerXSLT`). The value saved it'll be the whole package(`com.adobe.aem.importer.impl.DITATransformerXSLTImpl`).
 	* *Source folder*: Specify the source path in the repository. The folder must be already created and populated with
 	  all the source files (including the `ditamap` file), for example, through dragging and dropping the files into
 	  the repository using a WebDAV client. A typical location for the source directory is `/var/aem-importer/import`.
@@ -35,17 +35,24 @@ You have two options:
 * Upload a zip file containing all source files (including the master `ditamap` file) and a
   `config_params.xml` file. Note that the configuration file must be the first file in the `zip` package.
   The upload can be performed either by dragging and dropping the `zip` file or by clicking the *Upload* button.
+  Notice that config file values override the corresponding form param if it's filled it out.
 
   An example `config_params.xml`:
 
 ```xml
-<?xml version="1.0" encoding="utf-8"?>
-<config>
-    <transformer>com.adobe.aem.importer.impl.DITATransformerXSLTImpl</transformer>
-    <src>/var/aem-importer/import</src>
-    <target>/content/pando</target>
-    <masterFile>mcloud.ditamap</masterFile>
-</config>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+ <entry key="dita-transformer">com.adobe.aem.importer.impl.DITATransformerXSLTImpl</entry>
+ <entry key="src">/var/aem-importer/import2</entry>
+ <entry key="target">/content/pando</entry>
+ <entry key="masterFile">mcloud.ditamap</entry>
+ <entry key="xslt-transformer">net.sf.saxon.TransformerFactoryImpl</entry>
+ <entry key="xslt-file">/apps/aem-importer/resources/dita-to-content.xsl</entry>
+ <entry key="tempFolder">/var/aem-importer/tmp</entry>
+ <entry key="packageTpl">/apps/aem-importer/resources/package-tpl</entry>
+ <entry key="graphicFolders">images,graphics,Graphics</entry>
+</properties>
 ```
 
 
