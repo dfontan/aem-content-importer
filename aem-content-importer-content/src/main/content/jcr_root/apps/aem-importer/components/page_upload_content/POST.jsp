@@ -1,7 +1,7 @@
 <%@page import="com.adobe.aem.importer.xml.Config"%>
-<%@page import="com.adobe.aem.importer.utils.Utils"%>
+<%@page import="com.adobe.aem.importer.xml.utils.Utils"%>
 <%@page import="org.apache.jackrabbit.commons.JcrUtils"%>
-<%@page import="com.adobe.aem.importer.utils.ZipParser"%>
+<%@page import="com.adobe.aem.importer.xml.utils.ZipParser"%>
 <%@page import="java.util.Properties"%>
 <%@page import="javax.jcr.Node"%>
 <%@page import="org.apache.sling.api.resource.Resource"%>
@@ -62,13 +62,13 @@ if (isMultipart) {
 //         out.println("File field " + k + " with file name " + param.getFileName() + " detected.");
 		    zipParser = new ZipParser(param.getInputStream(),slingRequest);
 			
-		    zipParser.unzip();
-			
-			src = zipParser.getSrc();
+		    zipParser.unzipAndUploadJCR();
+		    
+		    src = zipParser.getSrc();
 			target = zipParser.getTarget();
 			transformer = zipParser.getTransformer();
 			masterFile = zipParser.getMasterFile();
-			
+						
 			uploadZip = true;
       }
 	}
@@ -103,17 +103,9 @@ if (isMultipart) {
 	
 	%>
 	
-	{"error": "true", "message": "<%=e.getMessage() %>"}
+	{'error': 'true', 'message': '<%=e.getMessage() %>'}
 	
 	<%
 }
 
  %>
-
-
-
-<%
-
-//    response.setStatus(response.SC_MOVED_TEMPORARILY);
-//    response.setHeader("Location", currentPage.getPath() + ".html"); 
-%>

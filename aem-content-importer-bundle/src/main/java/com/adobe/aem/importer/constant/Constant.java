@@ -10,4 +10,6 @@ public class Constant {
 	public static final String TRANSFORMER = "dita-transformer";
 	public static final String MASTER_FILE = "masterFile";
 	public static final String DEFAULT_FOLDER_SRC = "/var/aem-importer/import";
+	public static final String ENCODING = "UTF-8";
+	
 }

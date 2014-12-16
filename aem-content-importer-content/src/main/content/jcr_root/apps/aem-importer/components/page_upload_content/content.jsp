@@ -26,14 +26,19 @@
 				<div class="serp-search">
 
 					<label for="fileselect">File to upload data:</label> <input
-                    type="file" id="fileselect" name="fileselect"/>
+						type="file" id="fileselect" name="fileselect" />
 					<div id="filedrag">or drop files here</div>
-                     <button id="clearFile" type="button">Clear</button> 
+					<div style="clear: both"></div>
+					<button id="clearFile" type="button">Clear</button>
 					<div id="messages" style="display: none;">
 					</div>
 				</div>
 
 				<div class="serp-search custom-params" style="margin-top: 15px">
+				<label for="src">Src</label> <input class="serp-search-input"
+						id="src" name="src"
+						placeholder="Path where pick up files to transform"
+						autocomplete="off" type="text" />
 					<label for="transformer">Transformer to apply</label> <select
 						class="serp-search-input" name="transformer" id="transformer">
 						<option value="">Empty</option>
@@ -44,20 +49,21 @@
 						<option value="<%=transformer.getName()%>"><%=transformer.getSimpleName().replace("Impl", "")%></option>
 
 						<% } %>
-					</select> <label for="src">Src</label> <input class="serp-search-input"
-						id="src" name="src"
-						placeholder="Path where pick up files to transform"
-						autocomplete="off" type="text" /> <label for="target">Target
-						of results</label> <input class="serp-search-input" name="target"
-						id="target" placeholder="Path where store the result"
-						autocomplete="off" type="text" /> <label for="master">Master
+					</select> 
+					
+					<label for="master">Master
 						file</label> <input class="serp-search-input" name="master" id="master"
 						placeholder="..." autocomplete="off" type="text" />
+					<label for="target">Target
+						of results</label> <input class="serp-search-input" name="target"
+						id="target" placeholder="Path where store the result"
+						autocomplete="off" type="text" /> 
 				</div>
 
-				<button id="execute" type="submit" style="margin-top: 15px">Execute</button>
-                    <div id="error" style="display: none"></div>
-            <div id="success" style="display: none"></div>
+				<input id="execute" type="submit" class="button" style="margin-top: 15px" value="Execute"/>
+				<progress id="progress" min="0" max="100" value="0" style="display: none;">0</progress>
+				<div id="error" style="display: none"></div>
+				<div id="success" style="display: none"></div>
 			</form>
 
 
@@ -121,23 +127,28 @@ div.serp-search label {
 	padding: 0 10px;
 }
 
-    #messages p {
-        font-size: 1.1rem;
-    }
+ #messages p {
+    font-size: 1.1rem;
+}
 
-    #error {
-        border: 1px solid red;
-        background: none repeat scroll 0 0 #f75464;
-    }
+#progress {
+	width: 20%;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
 
-    #success {
-        border: 1px solid green;
-        background: none repeat scroll 0 0 #4BD446;
-    }
+#error {
+	border: 1px solid red;
+	background: none repeat scroll 0 0 #f75464;
+}
 
+#success {
+	border: 1px solid green;
+	background: none repeat scroll 0 0 #4BD446;
+}
 
 #error, #success {
-
 	font-size: 1.2rem;
 	color: white;
 	width: 80%;
@@ -146,7 +157,7 @@ div.serp-search label {
 	margin-right: auto;
 }
 
-    #execute:disabled {
+#execute:disabled {
 	background-color: grey;
 }
 </style>
@@ -163,6 +174,7 @@ div.serp-search label {
 		$("#success").css("display","none");
 		$(this).html("Executing...");
 		$(this).attr("disabled","disabled");
+		$("#progress").css("display","block");
 		$.ajax({
             data: {"transformer": $("#transformer").val(),"src": $("#src").val(), "target":$("#target").val(), "docToUpload":docToUpload},
             url: "<%=urlValidation%>.validation.html",
@@ -214,6 +226,7 @@ div.serp-search label {
 
 	
 	function submitForm() {
+		
 		// now post a new XHR request
 		var xhr = new XMLHttpRequest();
 		xhr.open('POST', '<%=currentNode.getPath()%>');
@@ -235,20 +248,36 @@ div.serp-search label {
 					$("#success").css("display","none");
 					$("#execute").html("Execute");
 					$("#execute").removeAttr("disabled");
+					$("#progress").css("display","none");
 					
 				} else {
 					console.log('successfully uploaded file');
                     $("#success").html("Sent it the information correctly. Workflow is going to lauch.");
                     $("#success").css("display","block");
-	                 $("#execute").html("Reloading page...");
+                    
+                    $("#execute").html("Execute");
+					$("#execute").removeAttr("disabled");
+	                 /*$("#execute").html("Reloading page...");
 	                 
 	                 setTimeout(function() {
 	                	 location.reload(true);
-	               }, 2000);
+	               }, 2000);*/
 				}
 				
 			}
 		}
+		
+		xhr.upload.onprogress = function (event) {
+			  if (event.lengthComputable) {
+			    var complete = (event.loaded / event.total * 100 | 0);
+			    progress.value = progress.innerHTML = complete;
+			  }
+			};
+
+			xhr.onload = function () {
+			  // just in case we get stuck around 99%
+			  progress.value = progress.innerHTML = 100;
+			};
 
 		xhr.send(formData);
 	}
@@ -287,25 +316,19 @@ div.serp-search label {
 		// output file information
 		function ParseFile(file) {
              if ("application/zip" != file.type) {
-                $("#error").css("display","block").html("The file has to be a zip.");
+                $("#error").css("display","block").html("The file has to be a zip. Do you want to continue?");
                  $("#messages").css("display","none");
                  $("#success").css("display","none");
-                 formData = new FormData();
-                 
-                 $("#execute").attr("disabled","disabled");
-                 
-                 docToUpload = false;
-
              } else {
-                 var m = $id("messages");
-                 $("#error").css("display","none");
-				m.innerHTML = "<p>File information: <strong>" + file.name + "</strong> ";
-                 $("#messages").css("display","block");
-                 $("#success").css("display","none");
-                 $("#execute").removeAttr("disabled");
-                 docToUpload = true;
+	             $("#error").css("display","none");
              }
 
+             var m = $id("messages");
+		     m.innerHTML = "<p>File added: <strong>" + file.name + "</strong> ";
+             $("#messages").css("display","block");
+             $("#success").css("display","none");
+
+             docToUpload = true;
 
 
 		}
@@ -338,4 +361,5 @@ div.serp-search label {
 		}
 
 	})();
+	
 </script>

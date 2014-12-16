@@ -1,25 +1,10 @@
 package com.adobe.aem.importer.xml;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-
-
-@XmlRootElement(name = "config")
-@XmlAccessorType(XmlAccessType.FIELD)
 public class Config {
 	
-	public static final String CONFIG_PARAMS_NAME = "config_params.xml";
-	public static final String DEFAULT_FOLDER_SRC = "/var/aem-importer/import";
-	
-	@XmlElement(name = "transfomer")
 	private String transformer;
-	@XmlElement(name = "src")
 	private String src;
-	@XmlElement(name = "target")
 	private String target;
-	@XmlElement(name = "masterFile")
 	private String masterFile;
 	public String getTransformer() {
 		return transformer;

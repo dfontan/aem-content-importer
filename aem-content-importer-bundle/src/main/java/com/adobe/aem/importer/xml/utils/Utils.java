@@ -1,7 +1,9 @@
-package com.adobe.aem.importer.utils;
+package com.adobe.aem.importer.xml.utils;
 
 import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
 import java.io.StringWriter;
+import java.util.Properties;
 
 import javax.jcr.Node;
 import javax.jcr.Session;
@@ -15,6 +17,7 @@ import org.apache.sling.api.resource.Resource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.adobe.aem.importer.constant.Constant;
 import com.adobe.aem.importer.xml.Config;
 
 public class Utils {
@@ -30,35 +33,26 @@ public class Utils {
 			Config config)  {
 		
 		try {
-			Resource resources = request.getResourceResolver().getResource(Config.DEFAULT_FOLDER_SRC);
+			Resource resources = request.getResourceResolver().getResource(Constant.DEFAULT_FOLDER_SRC);
 			Node srcNode = resources.adaptTo(Node.class);
 			
 			Session session = srcNode.getSession();
 			
-			Thread.currentThread().setContextClassLoader(
-					Marshaller.class.getClassLoader());
-			JAXBContext jaxbCtx = null;
-			Marshaller marshaller = null;
-			try {
-				jaxbCtx = JAXBContext.newInstance(Config.class);
-				marshaller = jaxbCtx.createMarshaller();
-			} catch (JAXBException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} 
-			
-			marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-			marshaller.setProperty(Marshaller.JAXB_FRAGMENT, true);
-			
 			StringWriter w = new StringWriter();
-			w.append("<?xml version=\"1.0\" encoding=\"utf-8\"?>");
-			marshaller.marshal(config, w);
+			Properties p = new Properties();
+			p.put(Constant.TRANSFORMER, config.getTransformer());
+			p.put(Constant.SRC, config.getSrc());
+			p.put(Constant.TARGET, config.getTarget());
+			p.put(Constant.MASTER_FILE, config.getMasterFile());
 			
-			log.debug("CONFIG CREATED: " + w.toString());
+			
+			ByteArrayOutputStream baout = new ByteArrayOutputStream();
+			p.storeToXML(baout,null,Constant.ENCODING);
+			w.append(baout.toString(Constant.ENCODING));
 			
 			ByteArrayInputStream bis = new ByteArrayInputStream(w.toString().getBytes("UTF-8"));
 			
-			JcrUtils.putFile(srcNode, Config.CONFIG_PARAMS_NAME, "text/xml", bis);
+			JcrUtils.putFile(srcNode, Constant.CONFIG_PARAMS_NAME, "text/xml", bis);
 			
 			session.save();
 			
