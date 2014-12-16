@@ -24,7 +24,7 @@ Go to the upload page: `http://<host>:<port>/content/resources/help/en/upload-co
 You have two options:
 
 * Fill out form parameters:
-    * *Transformer*: Select from list (currently only one, `DITATransformerXSLT`).
+    * *Transformer*: Select from list (currently only one, `DITATransformerXSLT`). The value saved it'll be the whole package(`com.adobe.aem.importer.impl.DITATransformerXSLTImpl`).
 	* *Source folder*: Specify the source path in the repository. The folder must be already created and populated with
 	  all the source files (including the `ditamap` file), for example, through dragging and dropping the files into
 	  the repository using a WebDAV client. A typical location for the source directory is `/var/aem-importer/import`.
@@ -35,6 +35,7 @@ You have two options:
 * Upload a zip file containing all source files (including the master `ditamap` file) and a
   `config_params.xml` file. Note that the configuration file must be the first file in the `zip` package.
   The upload can be performed either by dragging and dropping the `zip` file or by clicking the *Upload* button.
+  Notice that config file values override the corresponding form param if it's filled it out.
 
   An example `config_params.xml`:
 
