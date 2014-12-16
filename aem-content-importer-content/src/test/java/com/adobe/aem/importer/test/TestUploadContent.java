@@ -18,7 +18,7 @@ public class TestUploadContent {
 	private final String PASSWORD = "admin";
 	private File zipFile = null;
 	
-	@BeforeClass
+	//@BeforeClass
 	public void init() {
 		ClassLoader classLoader = getClass().getClassLoader();
 		zipFile = new File(classLoader.getResource("example.zip").getFile());
@@ -27,7 +27,7 @@ public class TestUploadContent {
 	/**
 	 * Test creation content by filling out a POST to upload component
 	 */
-	@Test
+	//@Test
 	public void createContentByFillingOutForm() {
 		
 		Config config = new Config();
@@ -44,7 +44,7 @@ public class TestUploadContent {
 		}
 	}
 	
-	@Test
+	//@Test
 	public void createContentByZipFile() {
 		try {
 			assertFalse(HttpClientUtils.post(URL, USERNAME, PASSWORD, null, zipFile));
@@ -53,7 +53,7 @@ public class TestUploadContent {
 		}
 	}
 	
-	@Test
+	//@Test
 	public void createContentByFillingOutFormAndZipFile() {
 		try {
 			

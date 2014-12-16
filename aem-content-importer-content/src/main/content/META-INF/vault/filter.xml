@@ -4,6 +4,7 @@
     <filter root="/apps/aem-importer/resources"/>
     <filter root="/apps/aem-importer/templates"/>
     <filter root="/etc/workflow/models/aem-content-importer"/>
+    <filter root="/etc/workflow/launcher/config/aem-content-importer"/>
     <filter root="/etc/designs/mac-help"/>
      <filter root="/content/resources/help/en/upload-content"/>
 </workspaceFilter>
