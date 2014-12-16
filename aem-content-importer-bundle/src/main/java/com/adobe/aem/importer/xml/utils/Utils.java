@@ -49,7 +49,11 @@ public class Utils {
 			
 			ByteArrayInputStream bis = new ByteArrayInputStream(w.toString().getBytes("UTF-8"));
 			
+<<<<<<< HEAD
 			JcrUtils.putFile(srcNode, DITATransformerHelper.CONFIG_FILENAME, "text/xml", bis);
+=======
+			JcrUtils.putFile(srcNode, DITATransformerHelper.CONFIG_FILENAME, "text/xml", bis);
+>>>>>>> branch 'master' of git@github.com:Adobe-Marketing-Cloud/aem-content-importer.git
 			
 			session.save();
 			
