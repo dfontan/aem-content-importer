@@ -67,9 +67,14 @@ public class TransformerWorkflowProcess implements WorkflowProcess  {
           	if (ditaTransformerClass.equals(""))
           		throw new WorkflowException("Configuration error: Transformer property cannot be null");
           	
+          	// Check Source Node
+          	String src = configFile.getProperty(DITATransformerHelper.CONFIG_PARAM_SRC,DITATransformerHelper.DEFAULT_CONFIG_PARAM_SRC);
+          	if (!session.itemExists(src))
+          		throw new Exception("Configuration error: Source folder doesn't exist --> "+src);
+          	
           	// Start Transform process
           	DITATranformer ditaTransformer = DITATransformerHelper.getDITATransformer(ditaTransformerClass);
-          	ditaTransformer.initialize(node.getParent().getParent(), configFile);
+          	ditaTransformer.initialize(session.getNode(src), configFile);
           	ditaTransformer.execute(configFile.getProperty(DITATransformerHelper.CONFIG_PARAM_MASTER_FILE), configFile.getProperty(DITATransformerHelper.CONFIG_PARAM_TARGET, "/"));
           }
         } catch (Exception e) {
