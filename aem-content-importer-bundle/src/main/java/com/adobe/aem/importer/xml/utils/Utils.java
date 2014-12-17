@@ -2,7 +2,9 @@ package com.adobe.aem.importer.xml.utils;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
+import java.io.StringReader;
 import java.io.StringWriter;
+import java.util.Map.Entry;
 import java.util.Properties;
 
 import javax.jcr.Node;
@@ -16,6 +18,7 @@ import org.slf4j.LoggerFactory;
 
 import com.adobe.aem.importer.DITATransformerHelper;
 import com.adobe.aem.importer.xml.Config;
+import com.day.cq.commons.jcr.JcrUtil;
 
 public class Utils {
 	
@@ -30,15 +33,7 @@ public class Utils {
 	public static void putConfigFileToJCR(SlingHttpServletRequest request, Config config, String encoding)  {
 		
 		try {
-			Resource resources = request.getResourceResolver().getResource(DITATransformerHelper.DEFAULT_CONFIG_PARAM_SRC);
-			Node srcNode = resources.adaptTo(Node.class);
-			
-			Session session = srcNode.getSession();
-			
-			if (session.itemExists(srcNode.getPath() + "/" + DITATransformerHelper.CONFIG_FILENAME)) {
-				session.removeItem(srcNode.getPath() + "/" + DITATransformerHelper.CONFIG_FILENAME);
-				session.save();
-			}
+			Node srcNode = JcrUtil.createPath(DITATransformerHelper.DEFAULT_CONFIG_PARAM_SRC, "nt:folder", request.getResourceResolver().adaptTo(Session.class));
 			
 			StringWriter w = new StringWriter();
 			Properties p = new Properties();
@@ -46,6 +41,7 @@ public class Utils {
 			p.put(DITATransformerHelper.CONFIG_PARAM_SRC, config.getSrc());
 			p.put(DITATransformerHelper.CONFIG_PARAM_TARGET, config.getTarget());
 			p.put(DITATransformerHelper.CONFIG_PARAM_MASTER_FILE, config.getMasterFile());
+			Utils.appendCustomProperties(p, config.getCustomProps());
 			
 			
 			ByteArrayOutputStream baout = new ByteArrayOutputStream();
@@ -54,17 +50,30 @@ public class Utils {
 			
 			ByteArrayInputStream bis = new ByteArrayInputStream(w.toString().getBytes("UTF-8"));
 			
-			JcrUtils.putFile(srcNode, DITATransformerHelper.CONFIG_FILENAME, "text/xml", bis);
+			JcrUtils.putFile(srcNode, System.currentTimeMillis()+".dita", "text/xml", bis);
 			
-			session.save();
+			srcNode.getSession().save();
 			
 		} catch (Exception e) {
 			log.error(e.getMessage(),e);
 		}
-		
-		
-		
-
 	}
 
+	
+	/**
+	 * appendCustomProperties
+	 * @param configProp
+	 * @param customProperties
+	 */
+	public static void appendCustomProperties(Properties configProp, String customProperties) {
+		Properties custom = new Properties();
+		try {
+			custom.load(new StringReader(customProperties));
+		} catch(Exception e) {
+			log.error("Error on loading custom properties: "+customProperties);
+		}
+		for(Entry<Object, Object> entry : custom.entrySet())
+			configProp.put(entry.getKey(), entry.getValue());
+		
+	}
 }

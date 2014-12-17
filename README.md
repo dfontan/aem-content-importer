@@ -16,6 +16,8 @@ Maven Builds:
 * Standard (only the selected project)
   With no profile specified maven installs only the selected project.
   Pay attention to aem-content-importer-bundle, the `/apps/${project.folder}/install` crx folder must exist
+  
+  IMPORTANT: First install has to be done using profile `distribution` 
 
 
 # AEM Content Importer -  Upload Page

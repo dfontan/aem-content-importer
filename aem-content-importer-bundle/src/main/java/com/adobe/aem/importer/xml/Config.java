@@ -6,6 +6,9 @@ public class Config {
 	private String src;
 	private String target;
 	private String masterFile;
+	private String customProps;
+	
+	
 	public String getTransformer() {
 		return transformer;
 	}
@@ -30,5 +33,17 @@ public class Config {
 	public void setMasterFile(String masterFile) {
 		this.masterFile = masterFile;
 	}
-
+	/**
+	 * @return the customProps
+	 */
+	public String getCustomProps() {
+		return customProps;
+	}
+	/**
+	 * @param customProps the customProps to set
+	 */
+	public void setCustomProps(String customProps) {
+		this.customProps = customProps;
+	}
+	
 }

@@ -13,6 +13,7 @@ import java.util.Map.Entry;
 
 import com.adobe.aem.importer.DITATranformer;
 import com.adobe.aem.importer.DITATransformerHelper;
+import com.adobe.aem.importer.xml.utils.Utils;
 import com.adobe.granite.workflow.WorkflowException;
 import com.adobe.granite.workflow.WorkflowSession;
 import com.adobe.granite.workflow.exec.WorkItem;
@@ -68,8 +69,8 @@ public class TransformerWorkflowProcess implements WorkflowProcess  {
           		throw new WorkflowException("Configuration error: Transformer property cannot be null");
           	
           	// Check Source Node
-          	String src = configFile.getProperty(DITATransformerHelper.CONFIG_PARAM_SRC,DITATransformerHelper.DEFAULT_CONFIG_PARAM_SRC);
-          	if (!session.itemExists(src))
+          	String src = configFile.getProperty(DITATransformerHelper.CONFIG_PARAM_SRC,"");
+          	if (src.trim().equals("") || !session.itemExists(src))
           		throw new Exception("Configuration error: Source folder doesn't exist --> "+src);
           	
           	// Start Transform process
@@ -115,11 +116,8 @@ public class TransformerWorkflowProcess implements WorkflowProcess  {
 			configProp.put(DITATransformerHelper.CONFIG_PARAM_MASTER_FILE, master);
 		String customProp = meta.get("customProperties","");
 		if (!customProp.trim().equals(""))
-			try {
-				configProp.load(new StringReader(customProp));
-			} catch(Exception e) {
-				log.error("An error has occurred reading custom properties: "+customProp,e);
-			}
+			Utils.appendCustomProperties(configProp, customProp);
+		
 		return configProp;
 	}
 

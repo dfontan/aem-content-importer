@@ -28,6 +28,7 @@ final boolean isMultipart = ServletFileUpload.isMultipartContent(request);
  String target = "";
  String transformer = "";
  String masterFile = "";
+ String customProps = "";
  
  ZipParser zipParser = null;
  
@@ -60,6 +61,11 @@ if (isMultipart) {
     	  if ("masterFile".equalsIgnoreCase(k) && !uploadZip) {
     		  masterFile = Streams.asString(stream);
     	  }
+    	  
+    	  if ("customProps".equalsIgnoreCase(k) && !uploadZip) {
+    	  	customProps = Streams.asString(stream);
+    	  }
+    	  
       } else {
 //         out.println("File field " + k + " with file name " + param.getFileName() + " detected.");
 		    zipParser = new ZipParser(param.getInputStream(),slingRequest);
@@ -84,6 +90,7 @@ if (isMultipart) {
 	    configFileXml.setTransformer(transformer);
 	    configFileXml.setTarget(target);
 	    configFileXml.setMasterFile(masterFile);
+	    configFileXml.setCustomProps(customProps);
     	Utils.putConfigFileToJCR(slingRequest, configFileXml, "UTF-8");
     }
 	
@@ -99,6 +106,7 @@ if (isMultipart) {
 }
 } catch(Exception e) {
 	
+	log.error("Error on DITA Importer tool",e);
 	if (zipParser != null && zipParser.getSource() != null) {
 		zipParser.getSource().close();
 	}

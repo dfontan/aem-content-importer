@@ -57,6 +57,9 @@
 						of results</label> <input class="serp-search-input" name="target"
 						id="target" placeholder="Path where store the result"
 						autocomplete="off" type="text" /> 
+					<label for=customProps>Custom properties</label> 
+					<textarea rows="3" class="serp-search-input" name="customProps"
+						id="customProps" placeholder="Custom properties"></textarea>
 				</div>
 
 				<input id="execute" type="submit" class="button" style="margin-top: 15px" value="Execute"/>
@@ -208,6 +211,7 @@ div.serp-search label {
 		formData.append("src", $("#src").val());
 		formData.append("target", $("#target").val());
 		formData.append("masterFile", $("#masterFile").val());
+		formData.append("customProps", $("#customProps").val());
 
 		xhr.onreadystatechange = function() {
 			if (xhr.readyState == 4 && xhr.status == 200) {
@@ -289,7 +293,7 @@ div.serp-search label {
 		// output file information
 		function ParseFile(file) {
              if ("application/zip" != file.type) {
-                $("#error").css("display","block").html("The file has to be a zip. Do you want to continue?");
+                $("#error").css("display","block").html("The file don't seem to be a zip. Do you want to continue?");
                  $("#messages").css("display","none");
                  $("#success").css("display","none");
              } else {

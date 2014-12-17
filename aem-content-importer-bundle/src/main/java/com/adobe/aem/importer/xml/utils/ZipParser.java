@@ -71,16 +71,10 @@ public class ZipParser {
 					extractFile(source));
 			entry = source.getNextEntry();
 		}
-
-		resources = request.getResourceResolver().getResource(DITATransformerHelper.DEFAULT_CONFIG_PARAM_SRC);
-		Node workflowNode = resources.adaptTo(Node.class);
 		
-		if (session.itemExists(workflowNode.getPath() + "/" + DITATransformerHelper.CONFIG_FILENAME)) {
-			session.removeItem(workflowNode.getPath() + "/" + DITATransformerHelper.CONFIG_FILENAME);
-			session.save();
-		}
+		Node workflowNode = JcrUtil.createPath(DITATransformerHelper.DEFAULT_CONFIG_PARAM_SRC, "nt:folder", request.getResourceResolver().adaptTo(Session.class));
 		
-		JcrUtils.putFile(workflowNode, DITATransformerHelper.CONFIG_FILENAME, "text/xml",
+		JcrUtils.putFile(workflowNode, System.currentTimeMillis()+".dita", "text/xml",
 				configFile);
 
 		session.save();

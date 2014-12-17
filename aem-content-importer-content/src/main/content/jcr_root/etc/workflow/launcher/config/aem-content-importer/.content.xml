@@ -6,7 +6,7 @@
     enabled="{Boolean}true"
     eventType="{Long}1"
     excludeList=""
-    glob="/var/aem-importer/import(/.*)dita-import-config.xml"
+    glob="/var/aem-importer/import(/.*).dita"
     nodetype="nt:file"
     runModes="author"
     workflow="/etc/workflow/models/aem-content-importer/jcr:content/model"/>

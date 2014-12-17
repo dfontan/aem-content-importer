@@ -32,3 +32,28 @@ When you've added this file and it's the first in the zip, you're able to upload
 it's fit for that. Click execute button to start the process. If everything it's ok a green box indicated that will be appeared. Or else, an error red box message.
 
 P.S: Notice that if you added a zip file with the corresponding configuration and fill out some form params, they'll be overrided by zip file config values.
+
+
+----------------
+1) Drop example.zip Zip file into upload and click execute
+/var/arm-importer/import -> config file (payload)
+/var/aem-importer/tmp -> used for temporary files
+/var/aem-importer/zip -> zip files extracted
+/content/dita-import -> imported files
+
+2) Set in form parameters manually
+Src = /var/aem-importer/zip
+Transformer = DITATransformerXSLT
+Master file = mcloud.ditamap
+Target = /content/dita-import-2
+Custom = 
+xslt-transformer=net.sf.saxon.TransformerFactoryImpl
+xslt-file=/apps/aem-importer/resources/dita-to-content.xsl
+tempFolder=/var/aem-importer/tmp
+packageTpl=/apps/aem-importer/resources/package-tpl
+graphicFolders=images,graphics,Graphics
+
+/content/dita-import-2 -> imported files
+
+3) Drop example.zip Zip file into unpload page and click execute but before change workflow step setting anothoer target path /content/dita-import-3
+
