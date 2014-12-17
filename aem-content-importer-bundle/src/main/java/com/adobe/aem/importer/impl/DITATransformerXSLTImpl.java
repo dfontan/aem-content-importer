@@ -155,7 +155,8 @@ public class DITATransformerXSLTImpl implements DITATranformer, URIResolver {
     // Prepare package folders and copy transformed content stream
     final Node packageFolderNode = JcrUtil.copy(packageTplNode, tmpFolderNode, PACKAGE_FOLDER);
     JcrUtils.putFile(packageFolderNode.getNode(PACKAGE_VAULT), FILTER_XML_FILE, CONTENT_XML_MIME, FilterXmlBuilder.fromRoot(destPath+"/").toStream(srcPath.getName()));
-    final Node contentFolder = tmpFolderNode.getNode(PACKAGE_FOLDER+"/jcr_root"+destPath).addNode(srcPath.getName(),"nt:folder");
+    Node contentFolder = JcrUtil.createPath(packageFolderNode+"/jcr_root"+destPath, "nt:folder", "nt:folder", srcPath.getSession(), true);
+    contentFolder = contentFolder.addNode(srcPath.getName(),"nt:folder");
     JcrUtils.putFile(contentFolder, ".content.xml", CONTENT_XML_MIME, stream);
 
     // Copy graphic resources
@@ -170,6 +171,9 @@ public class DITATransformerXSLTImpl implements DITATranformer, URIResolver {
     // Run importer
     Importer importer = new Importer();
     importer.run(archive, srcPath.getSession().getNode("/"));
+    
+    // Save all
+    srcPath.getSession().save();
 	}
 	
 	
