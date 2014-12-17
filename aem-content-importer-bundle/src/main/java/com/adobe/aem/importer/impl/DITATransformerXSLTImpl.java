@@ -143,7 +143,9 @@ public class DITATransformerXSLTImpl implements DITATranformer, URIResolver {
 			throw new Exception("Destination path cannot be NULL");
 		
 		// Tmp Destination Folder
-		Node tmpFolderNode = JcrUtil.createPath(this.tmpFolder+"/"+srcPath.getName(), "nt:folder", "nt:folder", srcPath.getSession(), true);
+		Node tmpFolderNode = JcrUtil.createPath(this.tmpFolder, "nt:folder", "nt:folder", srcPath.getSession(), true);
+		tmpFolderNode = JcrUtil.createUniqueNode(tmpFolderNode, srcPath.getName(), "nt:folder", srcPath.getSession());
+		srcPath.getSession().save();
 		
 		// Transform
 		final ByteArrayOutputStream output = new ByteArrayOutputStream();
@@ -171,6 +173,9 @@ public class DITATransformerXSLTImpl implements DITATranformer, URIResolver {
     // Run importer
     Importer importer = new Importer();
     importer.run(archive, srcPath.getSession().getNode("/"));
+    
+    // Delete tmp folder
+    tmpFolderNode.remove();
     
     // Save all
     srcPath.getSession().save();
