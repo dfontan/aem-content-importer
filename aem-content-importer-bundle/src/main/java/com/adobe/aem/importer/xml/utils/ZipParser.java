@@ -74,6 +74,12 @@ public class ZipParser {
 
 		resources = request.getResourceResolver().getResource(DITATransformerHelper.DEFAULT_CONFIG_PARAM_SRC);
 		Node workflowNode = resources.adaptTo(Node.class);
+		
+		if (session.itemExists(workflowNode.getPath() + "/" + DITATransformerHelper.CONFIG_FILENAME)) {
+			session.removeItem(workflowNode.getPath() + "/" + DITATransformerHelper.CONFIG_FILENAME);
+			session.save();
+		}
+		
 		JcrUtils.putFile(workflowNode, DITATransformerHelper.CONFIG_FILENAME, "text/xml",
 				configFile);
 

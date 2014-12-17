@@ -35,6 +35,11 @@ public class Utils {
 			
 			Session session = srcNode.getSession();
 			
+			if (session.itemExists(srcNode.getPath() + "/" + DITATransformerHelper.CONFIG_FILENAME)) {
+				session.removeItem(srcNode.getPath() + "/" + DITATransformerHelper.CONFIG_FILENAME);
+				session.save();
+			}
+			
 			StringWriter w = new StringWriter();
 			Properties p = new Properties();
 			p.put(DITATransformerHelper.CONFIG_PARAM_TRANSFORMER, config.getTransformer());

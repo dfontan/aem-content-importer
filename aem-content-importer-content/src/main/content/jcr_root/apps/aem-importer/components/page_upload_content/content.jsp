@@ -191,6 +191,8 @@ div.serp-search label {
         $("#success").html("");
 
         $("#execute").removeAttr("disabled");
+        
+        $("#progress").css("display","none");
 
         formData = new FormData();
     });

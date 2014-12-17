@@ -1,0 +1,34 @@
+UPLOAD CONTENT TOOL TUTORIAL
+----------------------------
+
+1) You don't have any zip file created and don't want to create it. So, you have to upload source files to transform in the
+repository (for example using WEBDAV) and create the path where it's going to be saved the transformation files. After
+that, you have to fill out form params with corresponding src (source files uploaded in repository), select the transformer,
+the corresponding target in the repository you've just created, indicate the master file if it's necessary and 
+click execute button to start the process. If everything it's ok a green box indicated that will be appeared. Or else, an error red box message.
+
+2)You have created a zip file with all necessary source files to transform. Remember that you have to add a new file inside
+the zip it must become the first one in it with the necessary information for making the transformation to work properly the process. Here an example of config file:
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+ <entry key="dita-transformer">com.adobe.aem.importer.impl.DITATransformerXSLTImpl</entry> --> Transformer to apply (It's necessary the whole package name of transformer class it'll be in charge of it)
+ <entry key="src">/var/aem-importer/import2</entry> --> Source path to import files from zip
+ <entry key="target">/content/pando</entry> -> Target path where store transformation files
+ <entry key="masterFile">mcloud.ditamap</entry> -> Name of master file
+ 
+ 
+ EXPLAIN BETTER THIS PARAMS
+ 
+ <entry key="xslt-transformer">net.sf.saxon.TransformerFactoryImpl</entry> -> Right now it's constant, because it's used this class to the transformation Dita XSLT.
+ <entry key="xslt-file">/apps/aem-importer/resources/dita-to-content.xsl</entry>
+ <entry key="tempFolder">/var/aem-importer/tmp</entry>
+ <entry key="packageTpl">/apps/aem-importer/resources/package-tpl</entry>
+ <entry key="graphicFolders">images,graphics,Graphics</entry>
+</properties>
+
+When you've added this file and it's the first in the zip, you're able to uploaded using the button or dragging and dropping the file in the box that
+it's fit for that. Click execute button to start the process. If everything it's ok a green box indicated that will be appeared. Or else, an error red box message.
+
+P.S: Notice that if you added a zip file with the corresponding configuration and fill out some form params, they'll be overrided by zip file config values.

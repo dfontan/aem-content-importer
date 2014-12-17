@@ -17,7 +17,7 @@ import org.slf4j.LoggerFactory;
 
 public class DITATransformerHelper {
 	
-	public static final String CONFIG_FILENAME 					= "config_params.xml";
+	public static final String CONFIG_FILENAME 					= "dita-import-config.xml";
 	public static final String CONFIG_PARAM_SRC 				= "src";
 	public static final String CONFIG_PARAM_TARGET 			= "target";
 	public static final String CONFIG_PARAM_TRANSFORMER = "dita-transformer";
