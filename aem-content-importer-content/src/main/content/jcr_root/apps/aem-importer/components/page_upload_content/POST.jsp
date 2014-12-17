@@ -1,6 +1,8 @@
+<%@page import="javax.jcr.Session"%>
+<%@page import="com.day.cq.commons.jcr.JcrUtil"%>
+<%@page import="org.apache.jackrabbit.commons.JcrUtils"%>
 <%@page import="com.adobe.aem.importer.xml.Config"%>
 <%@page import="com.adobe.aem.importer.xml.utils.Utils"%>
-<%@page import="org.apache.jackrabbit.commons.JcrUtils"%>
 <%@page import="com.adobe.aem.importer.xml.utils.ZipParser"%>
 <%@page import="java.util.Properties"%>
 <%@page import="javax.jcr.Node"%>
@@ -74,6 +76,7 @@ if (isMultipart) {
 	}
     
     
+		
     if (!uploadZip) {
 	    Config configFileXml = new Config();
 	    
@@ -82,15 +85,14 @@ if (isMultipart) {
 	    configFileXml.setTarget(target);
 	    configFileXml.setMasterFile(masterFile);
     	Utils.putConfigFileToJCR(slingRequest, configFileXml, "UTF-8");
-		    	
     }
 	
     
     %>
-    
-    {"error": "false"}
-    
-    <%
+
+{"error": "false"}
+
+<%
     
     
     
@@ -102,10 +104,10 @@ if (isMultipart) {
 	}
 	
 	%>
-	
-	{'error': 'true', 'message': '<%=e.getMessage() %>'}
-	
-	<%
+
+{"error": "true"}
+
+<%
 }
 
  %>

@@ -35,7 +35,7 @@ You have two options:
 * Upload a zip file containing all source files (including the master `ditamap` file) and a
   `config_params.xml` file. Note that the configuration file must be the first file in the `zip` package.
   The upload can be performed either by dragging and dropping the `zip` file or by clicking the *Upload* button.
-  Notice that config file values override the corresponding form param if it's filled it out.
+  Notice that config file values override the corresponding form param if they're filled them out.
 
   An example `config_params.xml`:
 

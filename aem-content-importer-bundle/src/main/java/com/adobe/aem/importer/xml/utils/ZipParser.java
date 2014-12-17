@@ -17,6 +17,7 @@ import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
 
 import com.adobe.aem.importer.DITATransformerHelper;
+import com.day.cq.commons.jcr.JcrUtil;
 
 public class ZipParser {
 	
@@ -51,9 +52,17 @@ public class ZipParser {
 
 		}
 
+		
 		Resource resources = request.getResourceResolver().getResource(src);
 
-		Node srcNode = resources.adaptTo(Node.class);
+		Node srcNode = null;
+		try {
+			srcNode = resources.adaptTo(Node.class);
+		} catch (Exception e) {
+			Session jcrSession = request.getResourceResolver().adaptTo(Session.class);
+    		srcNode = JcrUtil.createPath(src, "nt:folder", jcrSession);
+    		jcrSession.save();
+		}
 
 		Session session = srcNode.getSession();
 
@@ -65,7 +74,6 @@ public class ZipParser {
 
 		resources = request.getResourceResolver().getResource(DITATransformerHelper.DEFAULT_CONFIG_PARAM_SRC);
 		Node workflowNode = resources.adaptTo(Node.class);
-
 		JcrUtils.putFile(workflowNode, DITATransformerHelper.CONFIG_FILENAME, "text/xml",
 				configFile);
 

@@ -174,37 +174,9 @@ div.serp-search label {
 		$(this).html("Executing...");
 		$(this).attr("disabled","disabled");
 		$("#progress").css("display","block");
-		$.ajax({
-            data: {"transformer": $("#transformer").val(),"src": $("#src").val(), "target":$("#target").val(), "docToUpload":docToUpload},
-            url: "<%=urlValidation%>.validation.html",
-			success: function(result) {
-				 var r = result.replace(/<!--.*-->/g, ""); 
-	                var jsonResult = $.parseJSON(r);
-               if (jsonResult['error'] == "true") {
-            	  $("#error").html(jsonResult['message']);
-                  $("#error").css("display","block");
-                  $("#execute").removeAttr("disabled");
-                  $("#execute").html("Execute");
-                    return false;
-               } else {
-            	   submitForm();
-               }
-			},
-            error: function (xhr, ajaxOptions, thrownError) {
-        		$("#error").css("display","block");
-        		 $(this).removeAttr("disabled");
-                 $(this).html("Execute");
-                    return false;
-			}
-	});
+		submitForm();
 
-	return false;
-
-
-
-
-
-
+		return false;
     });
 
     $("#clearFile").click(function() {
@@ -233,7 +205,7 @@ div.serp-search label {
 		formData.append("transformer", $("#transformer").val());
 		formData.append("src", $("#src").val());
 		formData.append("target", $("#target").val());
-		formData.append("master", $("#master").val());
+		formData.append("masterFile", $("#masterFile").val());
 
 		xhr.onreadystatechange = function() {
 			if (xhr.readyState == 4 && xhr.status == 200) {
@@ -242,7 +214,7 @@ div.serp-search label {
 				console.log('result=', result);
 
 				if (result == 'true') {
-					$("#error").html("Process failed! Check config file params. Src and target must exist in repository. If it persists, contact with the administrator");
+					$("#error").html("Process failed! Contact with the administrator");
 					$("#error").css("display","block");
 					$("#success").css("display","none");
 					$("#execute").html("Execute");
