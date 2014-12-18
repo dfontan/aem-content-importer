@@ -1,10 +1,10 @@
-/**
- * CodeBay Innovation SL 2014
- * aem-content-importer-bundle
- * com.adobe.aem.importer / DITATransformerHelper.java 
- * Dec 5, 2014
- * @author Gaetano
- */
+/*******************************************************************************
+* Copyright (c) 2014 Adobe Systems Incorporated. All rights reserved.
+*
+* Licensed under the Apache License 2.0.
+* http://www.apache.org/licenses/LICENSE-2.0
+******************************************************************************/
+
 package com.adobe.aem.importer;
 
 import java.net.URL;

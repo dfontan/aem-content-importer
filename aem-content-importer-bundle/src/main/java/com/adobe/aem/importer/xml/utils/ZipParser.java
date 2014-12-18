@@ -1,3 +1,10 @@
+/*******************************************************************************
+* Copyright (c) 2014 Adobe Systems Incorporated. All rights reserved.
+*
+* Licensed under the Apache License 2.0.
+* http://www.apache.org/licenses/LICENSE-2.0
+******************************************************************************/
+
 package com.adobe.aem.importer.xml.utils;
 
 import java.io.BufferedOutputStream;
