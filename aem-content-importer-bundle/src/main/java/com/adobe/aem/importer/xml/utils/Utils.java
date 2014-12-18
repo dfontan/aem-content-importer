@@ -30,8 +30,9 @@ public class Utils {
 	 * @param config
 	 * @param encoding
 	 */
-	public static void putConfigFileToJCR(SlingHttpServletRequest request, Config config, String encoding)  {
+	public static String putConfigFileToJCR(SlingHttpServletRequest request, Config config, String encoding)  {
 		
+		String nameConfigFile = "";
 		try {
 			Node srcNode = JcrUtil.createPath(DITATransformerHelper.DEFAULT_CONFIG_PARAM_SRC, "nt:folder", request.getResourceResolver().adaptTo(Session.class));
 			
@@ -50,13 +51,18 @@ public class Utils {
 			
 			ByteArrayInputStream bis = new ByteArrayInputStream(w.toString().getBytes("UTF-8"));
 			
-			JcrUtils.putFile(srcNode, System.currentTimeMillis()+".dita", "text/xml", bis);
+			nameConfigFile = System.currentTimeMillis()+".dita";
+			JcrUtils.putFile(srcNode, nameConfigFile, "text/xml", bis);
 			
 			srcNode.getSession().save();
+			
+			return srcNode.getPath() + "/" +nameConfigFile;
 			
 		} catch (Exception e) {
 			log.error(e.getMessage(),e);
 		}
+		
+		return nameConfigFile;
 	}
 
 	

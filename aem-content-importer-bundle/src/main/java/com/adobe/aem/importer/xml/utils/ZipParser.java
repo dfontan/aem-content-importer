@@ -27,10 +27,7 @@ public class ZipParser {
 	private SlingHttpServletRequest request;
 
 	private String src = "";
-	private String transformer = "";
-	private String target = "";
-	private String masterFile = "";
-
+	
 	public ZipParser(InputStream source, SlingHttpServletRequest request) {
 		this.source = new ZipInputStream(source);
 		this.request = request;
@@ -41,7 +38,8 @@ public class ZipParser {
 	 * @param encoding
 	 * @throws Exception
 	 */
-	public void unzipAndUploadJCR(String encoding) throws Exception {
+	public String unzipAndUploadJCR(String encoding) throws Exception {
+		String nameConfigFile = "";
 		ZipEntry entry;
 		entry = source.getNextEntry();
 		ByteArrayInputStream configFile = null;
@@ -74,12 +72,15 @@ public class ZipParser {
 		
 		Node workflowNode = JcrUtil.createPath(DITATransformerHelper.DEFAULT_CONFIG_PARAM_SRC, "nt:folder", request.getResourceResolver().adaptTo(Session.class));
 		
-		JcrUtils.putFile(workflowNode, System.currentTimeMillis()+".dita", "text/xml",
+		nameConfigFile = System.currentTimeMillis()+".dita";
+		JcrUtils.putFile(workflowNode, nameConfigFile, "text/xml",
 				configFile);
 
 		session.save();
 
 		source.close();
+		
+		return workflowNode.getPath() + "/" +nameConfigFile;
 	}
 
 	/**
@@ -134,9 +135,6 @@ public class ZipParser {
 		p.loadFromXML(bytesConfigFile);
 
 		src = p.getProperty(DITATransformerHelper.CONFIG_PARAM_SRC);
-		transformer = p.getProperty(DITATransformerHelper.CONFIG_PARAM_TRANSFORMER);
-		masterFile = p.getProperty(DITATransformerHelper.CONFIG_PARAM_MASTER_FILE);
-		target = p.getProperty(DITATransformerHelper.CONFIG_PARAM_TARGET);
 
 		baout = new ByteArrayOutputStream();
 		p.storeToXML(baout, null, encoding);
@@ -154,36 +152,5 @@ public class ZipParser {
 		this.source = source;
 	}
 
-	public String getSrc() {
-		return src;
-	}
-
-	public void setSrc(String src) {
-		this.src = src;
-	}
-
-	public String getTransformer() {
-		return transformer;
-	}
-
-	public void setTransformer(String transformer) {
-		this.transformer = transformer;
-	}
-
-	public String getTarget() {
-		return target;
-	}
-
-	public void setTarget(String target) {
-		this.target = target;
-	}
-
-	public String getMasterFile() {
-		return masterFile;
-	}
-
-	public void setMasterFile(String masterFile) {
-		this.masterFile = masterFile;
-	}
 
 }

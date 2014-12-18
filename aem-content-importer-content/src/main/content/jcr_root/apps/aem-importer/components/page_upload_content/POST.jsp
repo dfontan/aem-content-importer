@@ -4,7 +4,6 @@
 <%@page import="com.adobe.aem.importer.xml.Config"%>
 <%@page import="com.adobe.aem.importer.xml.utils.Utils"%>
 <%@page import="com.adobe.aem.importer.xml.utils.ZipParser"%>
-<%@page import="java.util.Properties"%>
 <%@page import="javax.jcr.Node"%>
 <%@page import="org.apache.sling.api.resource.Resource"%>
 <%@page import="com.adobe.aem.importer.DITATransformerHelper"%>
@@ -29,6 +28,8 @@ final boolean isMultipart = ServletFileUpload.isMultipartContent(request);
  String transformer = "";
  String masterFile = "";
  String customProps = "";
+ 
+ String configPathResult = "";
  
  ZipParser zipParser = null;
  
@@ -66,17 +67,16 @@ if (isMultipart) {
     	  	customProps = Streams.asString(stream);
     	  }
     	  
+    	  if ("customCommandProps".equalsIgnoreCase(k) && !uploadZip) {
+    		  String customCommandProps = Streams.asString(stream);
+    		  customProps = customCommandProps.replaceAll("#", "\r\n");
+      	  }
+    	  
+    	  
       } else {
-//         out.println("File field " + k + " with file name " + param.getFileName() + " detected.");
 		    zipParser = new ZipParser(param.getInputStream(),slingRequest);
 			
-		    zipParser.unzipAndUploadJCR("UTF-8");
-		    
-		    src = zipParser.getSrc();
-			target = zipParser.getTarget();
-			transformer = zipParser.getTransformer();
-			masterFile = zipParser.getMasterFile();
-						
+		    configPathResult = zipParser.unzipAndUploadJCR("UTF-8");
 			uploadZip = true;
       }
 	}
@@ -90,14 +90,16 @@ if (isMultipart) {
 	    configFileXml.setTransformer(transformer);
 	    configFileXml.setTarget(target);
 	    configFileXml.setMasterFile(masterFile);
+	    
 	    configFileXml.setCustomProps(customProps);
-    	Utils.putConfigFileToJCR(slingRequest, configFileXml, "UTF-8");
+	    
+	    configPathResult = Utils.putConfigFileToJCR(slingRequest, configFileXml, "UTF-8");
     }
 	
     
     %>
 
-{"error": "false"}
+{"error": "false", "configPath":"<%=configPathResult %>"}
 
 <%
     

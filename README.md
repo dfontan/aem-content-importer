@@ -159,3 +159,7 @@ An example of `config_params.xml` containing DITATransformerXSLT properties also
 * read and analyze master file `/var/aem-importer/zip/mcloud.ditamap`
 * use the folder `/var/aem-importer/tmp` (creating an unique subfolder) as temporary repository (it will be deleted at the end)
 * save final contents into `/content/dita-import-3`
+
+# AEM Content Importer -  Command Line
+* There are two scripts, one for linux (script.sh) and the other one for windows (script.bat) in folder `tools-files/` showing two examples: passing parameters or passing zip file that it's in that folder as well.
+* For a success execution it's important to have curl command defined in S.O path. Moreover, if it's necessary to pass custom properties using customCommandProps param it's a mandatory to separate properties using the special character '#'.

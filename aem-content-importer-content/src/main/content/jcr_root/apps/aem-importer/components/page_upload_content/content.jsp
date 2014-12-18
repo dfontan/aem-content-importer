@@ -217,8 +217,6 @@ div.serp-search label {
 			if (xhr.readyState == 4 && xhr.status == 200) {
 				var data = $.parseJSON(xhr.responseText);
 				var result = data['error'];
-				console.log('result=', result);
-
 				if (result == 'true') {
 					$("#error").html("Process failed! Contact with the administrator");
 					$("#error").css("display","block");
@@ -228,7 +226,6 @@ div.serp-search label {
 					$("#progress").css("display","none");
 					
 				} else {
-					console.log('successfully uploaded file');
                     $("#success").html("Sent it the information correctly. Workflow is going to lauch.");
                     $("#success").css("display","block");
                     

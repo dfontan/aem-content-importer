@@ -28,7 +28,7 @@ import com.adobe.aem.importer.xml.Config;
 
 public class HttpClientUtils {
 
-	public static Boolean post(String url, String username, String password, Config config, File file) throws Exception {
+	public static JSONObject post(String url, String username, String password, Config config, File file) throws Exception {
 		CredentialsProvider credentialsProvider = new BasicCredentialsProvider();
 		credentialsProvider.setCredentials(AuthScope.ANY,
 				new UsernamePasswordCredentials(username, password));
@@ -45,6 +45,7 @@ public class HttpClientUtils {
 			entity.addPart("transformer", new StringBody(config.getTransformer()));
 			entity.addPart("masterFile", new StringBody(config.getMasterFile()));
 			entity.addPart("target", new StringBody(config.getTarget()));
+			entity.addPart("customProps", new StringBody(config.getCustomProps()));
 		}
 		
 		
@@ -70,7 +71,7 @@ public class HttpClientUtils {
 		
 		JSONObject jsonResult = new JSONObject(result.toString());
 		
-		return Boolean.parseBoolean(jsonResult.getString("error"));
+		return jsonResult;
 	}
 
 }
