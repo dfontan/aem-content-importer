@@ -43,7 +43,7 @@ You have two options:
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
- <entry key="dita-transformer">com.adobe.aem.importer.impl.DITATransformerXSLTImpl</entry>
+ <entry key="xml-transformer">com.adobe.aem.importer.impl.DITATransformerXSLTImpl</entry>
  <entry key="src">/var/aem-importer/import2</entry>
  <entry key="target">/content/pando</entry>
  <entry key="masterFile">mcloud.ditamap</entry>
@@ -81,7 +81,7 @@ An example of `config_params.xml` containing DITATransformerXSLT properties also
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
- <entry key="dita-transformer">com.adobe.aem.importer.impl.DITATransformerXSLTImpl</entry>
+ <entry key="xml-transformer">com.adobe.aem.importer.impl.DITATransformerXSLTImpl</entry>
  <entry key="src">/var/aem-importer/import2</entry>
  <entry key="target">/content/pando</entry>
  <entry key="masterFile">mcloud.ditamap</entry>

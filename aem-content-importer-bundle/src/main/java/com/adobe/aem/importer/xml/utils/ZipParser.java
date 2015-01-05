@@ -23,7 +23,7 @@ import org.apache.jackrabbit.commons.JcrUtils;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
 
-import com.adobe.aem.importer.DITATransformerHelper;
+import com.adobe.aem.importer.XMLTransformerHelper;
 import com.day.cq.commons.jcr.JcrUtil;
 
 public class ZipParser {
@@ -77,9 +77,9 @@ public class ZipParser {
 			entry = source.getNextEntry();
 		}
 		
-		Node workflowNode = JcrUtil.createPath(DITATransformerHelper.DEFAULT_CONFIG_PARAM_SRC, "nt:folder", request.getResourceResolver().adaptTo(Session.class));
+		Node workflowNode = JcrUtil.createPath(XMLTransformerHelper.DEFAULT_CONFIG_PARAM_SRC, "nt:folder", request.getResourceResolver().adaptTo(Session.class));
 		
-		nameConfigFile = System.currentTimeMillis()+".dita";
+		nameConfigFile = System.currentTimeMillis()+".xml";
 		JcrUtils.putFile(workflowNode, nameConfigFile, "text/xml",
 				configFile);
 
@@ -141,7 +141,7 @@ public class ZipParser {
 
 		p.loadFromXML(bytesConfigFile);
 
-		src = p.getProperty(DITATransformerHelper.CONFIG_PARAM_SRC);
+		src = p.getProperty(XMLTransformerHelper.CONFIG_PARAM_SRC);
 
 		baout = new ByteArrayOutputStream();
 		p.storeToXML(baout, null, encoding);

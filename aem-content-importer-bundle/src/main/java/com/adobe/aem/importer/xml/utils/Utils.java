@@ -24,7 +24,7 @@ import org.apache.sling.api.resource.Resource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.adobe.aem.importer.DITATransformerHelper;
+import com.adobe.aem.importer.XMLTransformerHelper;
 import com.adobe.aem.importer.xml.Config;
 import com.day.cq.commons.jcr.JcrUtil;
 
@@ -42,14 +42,14 @@ public class Utils {
 		
 		String nameConfigFile = "";
 		try {
-			Node srcNode = JcrUtil.createPath(DITATransformerHelper.DEFAULT_CONFIG_PARAM_SRC, "nt:folder", request.getResourceResolver().adaptTo(Session.class));
+			Node srcNode = JcrUtil.createPath(XMLTransformerHelper.DEFAULT_CONFIG_PARAM_SRC, "nt:folder", request.getResourceResolver().adaptTo(Session.class));
 			
 			StringWriter w = new StringWriter();
 			Properties p = new Properties();
-			p.put(DITATransformerHelper.CONFIG_PARAM_TRANSFORMER, config.getTransformer());
-			p.put(DITATransformerHelper.CONFIG_PARAM_SRC, config.getSrc());
-			p.put(DITATransformerHelper.CONFIG_PARAM_TARGET, config.getTarget());
-			p.put(DITATransformerHelper.CONFIG_PARAM_MASTER_FILE, config.getMasterFile());
+			p.put(XMLTransformerHelper.CONFIG_PARAM_TRANSFORMER, config.getTransformer());
+			p.put(XMLTransformerHelper.CONFIG_PARAM_SRC, config.getSrc());
+			p.put(XMLTransformerHelper.CONFIG_PARAM_TARGET, config.getTarget());
+			p.put(XMLTransformerHelper.CONFIG_PARAM_MASTER_FILE, config.getMasterFile());
 			Utils.appendCustomProperties(p, config.getCustomProps());
 			
 			
@@ -59,7 +59,7 @@ public class Utils {
 			
 			ByteArrayInputStream bis = new ByteArrayInputStream(w.toString().getBytes("UTF-8"));
 			
-			nameConfigFile = System.currentTimeMillis()+".dita";
+			nameConfigFile = System.currentTimeMillis()+".xml";
 			JcrUtils.putFile(srcNode, nameConfigFile, "text/xml", bis);
 			
 			srcNode.getSession().save();

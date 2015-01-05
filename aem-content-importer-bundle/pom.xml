@@ -43,10 +43,6 @@
 					</execution>
 				</executions>
 			</plugin>
-			<plugin>
-				<groupId>org.apache.felix</groupId>
-				<artifactId>maven-scr-plugin</artifactId>
-			</plugin>
 			<!-- Compile for Java 6 -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

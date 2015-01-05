@@ -10,6 +10,8 @@ package com.adobe.aem.importer.impl;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Properties;
 
 import javax.jcr.Node;
@@ -33,12 +35,12 @@ import org.xml.sax.InputSource;
 import org.xml.sax.XMLReader;
 import org.xml.sax.helpers.XMLReaderFactory;
 
-import com.adobe.aem.importer.DITATranformer;
+import com.adobe.aem.importer.XMLTranformer;
 import com.adobe.aem.importer.xml.FilterXmlBuilder;
 import com.day.cq.commons.jcr.JcrUtil;
 import com.day.jcr.vault.util.RejectingEntityResolver;
 
-public class DITATransformerXSLTImpl implements DITATranformer, URIResolver {
+public class DITATransformerXSLTImpl implements XMLTranformer, URIResolver {
 
 	public static final String 		CONFIG_PARAM_TRANSFORMER_CLASS 		= "xslt-transformer";
 	public static final String 		CONFIG_PARAM_XSLT_FILE 						= "xslt-file";
@@ -49,9 +51,9 @@ public class DITATransformerXSLTImpl implements DITATranformer, URIResolver {
 	private static final String 	DEFAULT_TEMP_FOLDER								= "/var/aem-importer/tmp";
 	private static final String[] DEFAULT_GRAPHIC_FOLDERS						= {"images", "graphics", "Graphics"};
 	private static final String 	PACKAGE_FOLDER 										= "package";
-  private static final String 	PACKAGE_VAULT 										= "META-INF/vault/";
-  private static final String 	FILTER_XML_FILE 									= "filter.xml";
-  private static final String 	CONTENT_XML_MIME									= "application/xml";
+	private static final String 	PACKAGE_VAULT 										= "META-INF/vault/";
+	private static final String 	FILTER_XML_FILE 									= "filter.xml";
+	private static final String 	CONTENT_XML_MIME									= "application/xml";
 	
 	/* crx source path */
 	private Node srcPath = null;
@@ -72,10 +74,9 @@ public class DITATransformerXSLTImpl implements DITATranformer, URIResolver {
 	/* init flag */
 	private boolean init = false;
 	
-	
 
 	/* (non-Javadoc)
-	 * @see com.adobe.aem.importer.DITATranformer#initialize(javax.jcr.Node, java.util.Properties)
+	 * @see com.adobe.aem.importer.XMLTranformer#initialize(javax.jcr.Node, java.util.Properties)
 	 */
 	@Override
 	public void initialize(Node srcPath, Properties properties) throws Exception {
@@ -120,12 +121,15 @@ public class DITATransformerXSLTImpl implements DITATranformer, URIResolver {
 		/* XSLT Transform init */
 		initTranformer(transformerClass);
 		
+		
+			
+		
 		// Init done
 		this.init = true;
 	}
 
 	/* (non-Javadoc)
-	 * @see com.adobe.aem.importer.DITATranformer#execute(java.lang.String, java.lang.String)
+	 * @see com.adobe.aem.importer.XMLTranformer#execute(java.lang.String, java.lang.String)
 	 */
 	@Override
 	public void execute(String masterFile, String destPath) throws Exception {
@@ -193,7 +197,7 @@ public class DITATransformerXSLTImpl implements DITATranformer, URIResolver {
 	      throw new TransformerException("Cannot resolve " + href + " in either [parent of " + this.xsltNode + " or " + this.srcPath + "]");
 	  }
 	}
-
+	
 	/**
 	 * Initialize XSLT Transformer
 	 * @param className
@@ -212,5 +216,5 @@ public class DITATransformerXSLTImpl implements DITATranformer, URIResolver {
 		} else
 			throw new ClassNotFoundException("Class "+className+" is not an instance of "+TransformerFactoryImpl.class.getName());
 	}
-
+	
 }

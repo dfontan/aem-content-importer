@@ -36,6 +36,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.7</version>
 				<configuration>
 					<includeEmptyDirs>true</includeEmptyDirs>
 				</configuration>
@@ -44,16 +45,13 @@
 			<plugin>
 				<groupId>com.day.jcr.vault</groupId>
 				<artifactId>content-package-maven-plugin</artifactId>
+				<version>0.0.23</version>
 				<extensions>true</extensions>
 				<configuration>
 					<group>com.adobe.aem.importer</group>
 					<filterSource>src/main/content/META-INF/vault/filter.xml</filterSource>
 					<targetURL>http://${crx.host}:${crx.port}/crx/packmgr/service.jsp</targetURL>
 				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>com.day.jcr.vault</groupId>
-				<artifactId>content-package-maven-plugin</artifactId>
 				<executions>
 					<execution>
 						<id>install-content-package</id>
@@ -98,18 +96,6 @@
 			<scope>provided</scope>
 		</dependency>
 
-		<dependency>
-			<groupId>commons-fileupload</groupId>
-			<artifactId>commons-fileupload</artifactId>
-			<version>1.2</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>javax.jcr</groupId>
-			<artifactId>jcr</artifactId>
-			<version>2.0</version>
-			<scope>provided</scope>
-		</dependency>
 		<dependency>
 			<groupId>net.sf.saxon</groupId>
 			<artifactId>saxon-all.osgi</artifactId>

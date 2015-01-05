@@ -7,12 +7,11 @@
 
 package com.adobe.aem.importer.process;
 
-import java.io.StringReader;
 import java.util.Properties;
 import java.util.Map.Entry;
 
-import com.adobe.aem.importer.DITATranformer;
-import com.adobe.aem.importer.DITATransformerHelper;
+import com.adobe.aem.importer.XMLTranformer;
+import com.adobe.aem.importer.XMLTransformerHelper;
 import com.adobe.aem.importer.xml.utils.Utils;
 import com.adobe.granite.workflow.WorkflowException;
 import com.adobe.granite.workflow.WorkflowSession;
@@ -37,7 +36,7 @@ import org.slf4j.LoggerFactory;
 @Component
 @Service
 @org.apache.felix.scr.annotations.Properties({
-	@Property(name = Constants.SERVICE_DESCRIPTION, value = "Adobe - DITA Transformer"),
+	@Property(name = Constants.SERVICE_DESCRIPTION, value = "Adobe - XML Transformer"),
 	@Property(name = Constants.SERVICE_VENDOR, value = "Adobe") })
 public class TransformerWorkflowProcess implements WorkflowProcess  {
 	
@@ -64,19 +63,19 @@ public class TransformerWorkflowProcess implements WorkflowProcess  {
           		debugTraceConfig(configFile);
           	
           	// Check DITA Transformer
-          	String ditaTransformerClass = configFile.getProperty(DITATransformerHelper.CONFIG_PARAM_TRANSFORMER, "");
-          	if (ditaTransformerClass.equals(""))
+          	String xmlTransformerClass = configFile.getProperty(XMLTransformerHelper.CONFIG_PARAM_TRANSFORMER, "");
+          	if (xmlTransformerClass.equals(""))
           		throw new WorkflowException("Configuration error: Transformer property cannot be null");
           	
           	// Check Source Node
-          	String src = configFile.getProperty(DITATransformerHelper.CONFIG_PARAM_SRC,"");
+          	String src = configFile.getProperty(XMLTransformerHelper.CONFIG_PARAM_SRC,"");
           	if (src.trim().equals("") || !session.itemExists(src))
           		throw new Exception("Configuration error: Source folder doesn't exist --> "+src);
           	
           	// Start Transform process
-          	DITATranformer ditaTransformer = DITATransformerHelper.getDITATransformer(ditaTransformerClass);
-          	ditaTransformer.initialize(session.getNode(src), configFile);
-          	ditaTransformer.execute(configFile.getProperty(DITATransformerHelper.CONFIG_PARAM_MASTER_FILE), configFile.getProperty(DITATransformerHelper.CONFIG_PARAM_TARGET, "/"));
+          	XMLTranformer xmlTransformer = XMLTransformerHelper.getXMLTransformer(xmlTransformerClass);
+          	xmlTransformer.initialize(session.getNode(src), configFile);
+          	xmlTransformer.execute(configFile.getProperty(XMLTransformerHelper.CONFIG_PARAM_MASTER_FILE), configFile.getProperty(XMLTransformerHelper.CONFIG_PARAM_TARGET, "/"));
           }
         } catch (Exception e) {
         	throw new WorkflowException(e.getMessage(), e);
@@ -104,16 +103,16 @@ public class TransformerWorkflowProcess implements WorkflowProcess  {
 	private Properties overrideConfiParam(Properties configProp, MetaDataMap meta) {
 		String transformer = meta.get("transformer", "");
 		if (!transformer.trim().equals(""))
-			configProp.put(DITATransformerHelper.CONFIG_PARAM_TRANSFORMER, transformer);
+			configProp.put(XMLTransformerHelper.CONFIG_PARAM_TRANSFORMER, transformer);
 		String src = meta.get("src", "");
 		if (!src.trim().equals(""))
-			configProp.put(DITATransformerHelper.CONFIG_PARAM_SRC, src);
+			configProp.put(XMLTransformerHelper.CONFIG_PARAM_SRC, src);
 		String target = meta.get("target", "");
 		if (!target.trim().equals(""))
-			configProp.put(DITATransformerHelper.CONFIG_PARAM_TARGET, target);
+			configProp.put(XMLTransformerHelper.CONFIG_PARAM_TARGET, target);
 		String master = meta.get("masterFile", "");
 		if (!master.trim().equals(""))
-			configProp.put(DITATransformerHelper.CONFIG_PARAM_MASTER_FILE, master);
+			configProp.put(XMLTransformerHelper.CONFIG_PARAM_MASTER_FILE, master);
 		String customProp = meta.get("customProperties","");
 		if (!customProp.trim().equals(""))
 			Utils.appendCustomProperties(configProp, customProp);

@@ -7,5 +7,5 @@
         cq:template="/apps/aem-importer/templates/page_upload_content"
         jcr:primaryType="cq:PageContent"
         jcr:title="Page Upload Content"
-        sling:resourceType="aem-importer/components/page_upload_content"/>
+        sling:resourceType="aem-importer/components/upload-content"/>
 </jcr:root>
