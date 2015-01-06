@@ -13,46 +13,8 @@
     <xsl:output method="xml" indent="yes"/>
     <xsl:strip-space elements="*"/>
 
-    <xsl:function name="pd:removeTrailingSlash">
-        <xsl:param name="path"/>
-        <xsl:value-of select="replace($path, '/+$', '')"/>
-    </xsl:function>
 
-    <xsl:function name="pd:removeExtension">
-        <xsl:param name="path"/>
-        <xsl:value-of select="replace($path, '\.[^\.]*$', '')"/>
-    </xsl:function>
-
-    <xsl:function name="pd:getFragment">
-        <xsl:param name="path"/>
-        <xsl:value-of select="tokenize($path, '#')[2]"/>
-    </xsl:function>
-
-    <xsl:function name="pd:removeFragment">
-        <xsl:param name="path"/>
-        <xsl:value-of select="tokenize($path, '#')[1]"/>
-    </xsl:function>
-
-    <xsl:function name="pd:pathToFileName">
-        <xsl:param name="path"/>
-        <xsl:value-of select="tokenize(pd:removeTrailingSlash($path), '/')[last()]"/>
-    </xsl:function>
-
-    <xsl:function name="pd:replaceNonAlphanum">
-        <xsl:param name="name"/>
-        <xsl:variable name="alphanum" select="'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz_0123456789'"/>
-        <xsl:variable name="underscores" select="'_____________________________________'"/>
-        <xsl:variable name="xmlName" select="translate($name, translate($name, $alphanum, ''), $underscores)"/>
-        <xsl:if test="$xmlName=''">
-            <xsl:value-of select="'_dummy'"/>
-        </xsl:if>
-        <xsl:value-of select="$xmlName"/>
-    </xsl:function>
-
-    <xsl:function name="pd:pathToXMLElementName">
-        <xsl:param name="path"/>
-        <xsl:value-of select="pd:replaceNonAlphanum(pd:removeExtension(pd:pathToFileName($path)))"/>
-    </xsl:function>
+    <!-- Templates -->
 
     <xsl:template match="/">
         <xsl:apply-templates select="map"/>
@@ -148,59 +110,6 @@
         </par>
     </xsl:template>
 
-    <!-- MAP DITA TO HTML -->
-    <xsl:function name="pd:convert">
-        <xsl:param name="dita-el"/>
-        <xsl:variable name="mapping">
-            <entry key="keyword">b</entry>
-            <entry key="filepath">i</entry>
-            <entry key="codeph">i</entry>
-            <entry key="steps">ul</entry>
-            <entry key="step">li</entry>
-            <entry key="stepresult">p</entry>
-            <entry key="choices">ul</entry>
-            <entry key="choice">li</entry>
-            <entry key="postreq">p</entry>
-            <entry key="cmd">b</entry>
-            <entry key="context">p</entry>
-            <entry key="info">p</entry>
-            <entry key="result">p</entry>
-            <entry key="ul">ul</entry>
-            <entry key="ol">ol</entry>
-            <entry key="li">li</entry>
-            <entry key="sl">dl</entry>
-            <entry key="sli">dt</entry>
-            <entry key="xref">a</entry>
-            <entry key="term">b</entry>
-            <entry key="b">b</entry>
-            <entry key="title">title</entry>
-            <entry key="table">table</entry>
-            <entry key="thead">thead</entry>
-            <entry key="tbody">tbody</entry>
-            <entry key="row ">tr</entry>
-            <entry key="entry">td</entry>
-            <entry key="codeblock">code</entry>
-            <entry key="menucascade">p</entry>
-            <entry key="uicontrol">b</entry>
-            <entry key="wintitle">b</entry>
-            <entry key="image">img</entry>
-            <entry key="note">p</entry>
-            <!-- TODO
-            <entry key="tgroup">?</entry>
-            <entry key="colspec">?</entry>
-            -->
-        </xsl:variable>
-        <xsl:variable name="html-el" select="$mapping/entry[@key=$dita-el]"/>
-        <xsl:choose>
-            <xsl:when test="$html-el">
-                <xsl:value-of select="$html-el"/>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:value-of select="$dita-el"/>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:function>
-
     <!--  ELEMENTS -->
     <!-- xref element -->
     <xsl:template match="xref" mode="serialize">
@@ -290,5 +199,104 @@
     <xsl:template match="text()" mode="serialize">
         <xsl:value-of select="."/>
     </xsl:template>
+
+
+    <!-- Helper Functions -->
+
+    <xsl:function name="pd:removeTrailingSlash">
+        <xsl:param name="path"/>
+        <xsl:value-of select="replace($path, '/+$', '')"/>
+    </xsl:function>
+
+    <xsl:function name="pd:removeExtension">
+        <xsl:param name="path"/>
+        <xsl:value-of select="replace($path, '\.[^\.]*$', '')"/>
+    </xsl:function>
+
+    <xsl:function name="pd:getFragment">
+        <xsl:param name="path"/>
+        <xsl:value-of select="tokenize($path, '#')[2]"/>
+    </xsl:function>
+
+    <xsl:function name="pd:removeFragment">
+        <xsl:param name="path"/>
+        <xsl:value-of select="tokenize($path, '#')[1]"/>
+    </xsl:function>
+
+    <xsl:function name="pd:pathToFileName">
+        <xsl:param name="path"/>
+        <xsl:value-of select="tokenize(pd:removeTrailingSlash($path), '/')[last()]"/>
+    </xsl:function>
+
+    <xsl:function name="pd:replaceNonAlphanum">
+        <xsl:param name="name"/>
+        <xsl:variable name="alphanum" select="'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz_0123456789'"/>
+        <xsl:variable name="underscores" select="'_____________________________________'"/>
+        <xsl:variable name="xmlName" select="translate($name, translate($name, $alphanum, ''), $underscores)"/>
+        <xsl:if test="$xmlName=''">
+            <xsl:value-of select="'_dummy'"/>
+        </xsl:if>
+        <xsl:value-of select="$xmlName"/>
+    </xsl:function>
+
+    <xsl:function name="pd:pathToXMLElementName">
+        <xsl:param name="path"/>
+        <xsl:value-of select="pd:replaceNonAlphanum(pd:removeExtension(pd:pathToFileName($path)))"/>
+    </xsl:function>
+
+
+    <!-- Map DITA To HTML -->
+
+    <xsl:function name="pd:convert">
+        <xsl:param name="dita-el"/>
+        <xsl:variable name="mapping">
+            <entry key="keyword">b</entry>
+            <entry key="filepath">i</entry>
+            <entry key="codeph">i</entry>
+            <entry key="steps">ul</entry>
+            <entry key="step">li</entry>
+            <entry key="stepresult">p</entry>
+            <entry key="choices">ul</entry>
+            <entry key="choice">li</entry>
+            <entry key="postreq">p</entry>
+            <entry key="cmd">b</entry>
+            <entry key="context">p</entry>
+            <entry key="info">p</entry>
+            <entry key="result">p</entry>
+            <entry key="ul">ul</entry>
+            <entry key="ol">ol</entry>
+            <entry key="li">li</entry>
+            <entry key="sl">dl</entry>
+            <entry key="sli">dt</entry>
+            <entry key="xref">a</entry>
+            <entry key="term">b</entry>
+            <entry key="b">b</entry>
+            <entry key="title">title</entry>
+            <entry key="table">table</entry>
+            <entry key="thead">thead</entry>
+            <entry key="tbody">tbody</entry>
+            <entry key="row ">tr</entry>
+            <entry key="entry">td</entry>
+            <entry key="codeblock">code</entry>
+            <entry key="menucascade">p</entry>
+            <entry key="uicontrol">b</entry>
+            <entry key="wintitle">b</entry>
+            <entry key="image">img</entry>
+            <entry key="note">p</entry>
+            <!-- TODO
+            <entry key="tgroup">?</entry>
+            <entry key="colspec">?</entry>
+            -->
+        </xsl:variable>
+        <xsl:variable name="html-el" select="$mapping/entry[@key=$dita-el]"/>
+        <xsl:choose>
+            <xsl:when test="$html-el">
+                <xsl:value-of select="$html-el"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="$dita-el"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:function>
 
 </xsl:stylesheet>
