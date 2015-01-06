@@ -25,13 +25,13 @@
             <jcr:content
                     jcr:primaryType="nt:unstructured"
                     jcr:title="{title}"
-                    sling:resourceType="mac-help/components/page_section">
+                    sling:resourceType="wcm/foundation/components/page">
                 <par
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="wcm/foundation/components/parsys">
                     <sitemap
                             jcr:primaryType="nt:unstructured"
-                            sling:resourceType="mac-help/components/sitemap"
+                            sling:resourceType="foundation/components/sitemap"
                             rootPath="/content/pando"/>
                 </par>
             </jcr:content>
@@ -85,7 +85,7 @@
         <jcr:content
                 jcr:primaryType="nt:unstructured"
                 jcr:title="{title}"
-                sling:resourceType="mac-help/components/page_article">
+                sling:resourceType="wcm/foundation/components/page">
             <xsl:apply-templates select="conbody | taskbody">
                 <xsl:with-param name="pathPrefix" select="$pathPrefix"/>
             </xsl:apply-templates>
