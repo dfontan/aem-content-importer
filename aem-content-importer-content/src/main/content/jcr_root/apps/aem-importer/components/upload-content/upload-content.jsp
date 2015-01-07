@@ -1,3 +1,8 @@
+<%-- 
+	Copyright (c) 2014 Adobe Systems Incorporated. All rights reserved.
+	Licensed under the Apache License 2.0.
+ 	http://www.apache.org/licenses/LICENSE-2.0
+ --%>
 <%@page import="com.adobe.aem.importer.XMLTransformerHelper"%>
 <%@page import="com.day.cq.i18n.I18n"%>
 <%@page import="java.util.HashMap"%>
@@ -9,8 +14,7 @@
 
 <% boolean jQuery = false; %>
 <script type="text/javascript">
-	<c:set var="isjQuery" value="true"/>
-	if (typeof jQuery == 'undefined') {
+	if (typeof jQuery === "undefined") { 
 		<% jQuery = false; %>
 	} else {
 		<% jQuery = true; %>
@@ -27,7 +31,7 @@ if (!jQuery) {
 	jQuery library is a mandatory to be added in page to work this component
 </div>
 <%
-} else  {
+}
 %>
 
 <div>
@@ -355,4 +359,3 @@ if (!jQuery) {
 
 	})();
 </script>
-<% } %>
