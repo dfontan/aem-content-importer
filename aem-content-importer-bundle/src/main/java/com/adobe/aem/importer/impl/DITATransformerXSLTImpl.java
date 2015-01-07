@@ -10,8 +10,7 @@ package com.adobe.aem.importer.impl;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Properties;
 
 import javax.jcr.Node;
@@ -118,11 +117,12 @@ public class DITATransformerXSLTImpl implements XMLTranformer, URIResolver {
 		this.xmlReader = XMLReaderFactory.createXMLReader();
 		this.xmlReader.setEntityResolver(new RejectingEntityResolver());
 		
-		/* XSLT Transform init */
+		/* XSLT Transformer init */
 		initTranformer(transformerClass);
 		
-		
-			
+		/* Pass all properties to XSLT transformer */
+		for(Entry<Object, Object> entry : properties.entrySet())
+			this.xsltTransformer.setParameter(entry.getKey().toString(), entry.getValue());
 		
 		// Init done
 		this.init = true;

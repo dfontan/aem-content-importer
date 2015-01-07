@@ -5,4 +5,5 @@
     <filter root="/apps/aem-importer/templates"/>
     <filter root="/etc/workflow/models/aem-content-importer"/>
     <filter root="/etc/workflow/launcher/config/aem-content-importer"/>
+    <filter root="/content/resources/importer-tool"/>
 </workspaceFilter>
