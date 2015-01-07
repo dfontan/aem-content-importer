@@ -74,6 +74,7 @@ public class TestUploadContent {
 			
 
 		} catch (RepositoryException e) {
+			e.printStackTrace();
 			System.out.println(e.getMessage());
 		}
 

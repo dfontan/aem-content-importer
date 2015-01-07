@@ -6,7 +6,8 @@
 	herein are proprietary to Adobe Systems Incorporated and its * suppliers 
 	and are protected by trade secret or copyright law. * Dissemination of this 
 	information or reproduction of this material * is strictly forbidden unless 
-	prior written permission is obtained * from Adobe Systems Incorporated. **************************************************************************/ -->
+	prior written permission is obtained * from Adobe Systems Incorporated. 
+	**************************************************************************/ -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
@@ -98,11 +99,17 @@
 
 		<dependency>
 			<groupId>net.sf.saxon</groupId>
-			<artifactId>saxon-all.osgi</artifactId>
-			<version>8.9.0.4</version>
-			<scope>system</scope>
-			<systemPath>${basedir}/libs/saxon-all.osgi-8.9.0.4.jar</systemPath>
+			<artifactId>Saxon-HE</artifactId>
+			<version>9.6.0-3</version>
 		</dependency>
+			<!-- <dependency> -->
+			<!-- <groupId>net.sf.saxon</groupId> -->
+			<!-- <artifactId>saxon-all.osgi</artifactId> -->
+			<!-- <version>8.9.0.4</version> -->
+			<!-- <scope>system</scope> -->
+			<!-- <systemPath>${basedir}/libs/saxon-all.osgi-8.9.0.4.jar</systemPath> -->
+			<!-- </dependency> -->
+		<!-- TEST  -->
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpclient</artifactId>
@@ -125,6 +132,12 @@
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
 			<version>1.6.0</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>1.7.9</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
@@ -176,7 +189,8 @@
 								</embedded>
 								<embedded>
 									<groupId>net.sf.saxon</groupId>
-									<artifactId>saxon-all.osgi</artifactId>
+									<artifactId>Saxon-HE</artifactId>
+									<!-- <artifactId>saxon-all.osgi</artifactId> -->
 									<target>/apps/${project.folder}/install</target>
 								</embedded>
 							</embeddeds>

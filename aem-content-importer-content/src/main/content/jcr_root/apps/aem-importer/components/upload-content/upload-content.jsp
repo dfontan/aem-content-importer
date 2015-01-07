@@ -12,30 +12,15 @@
 <%@taglib prefix="cq" uri="http://www.day.com/taglibs/cq/1.0"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-<% boolean jQuery = false; %>
 <script type="text/javascript">
 	if (typeof jQuery === "undefined") { 
-		<% jQuery = false; %>
-	} else {
-		<% jQuery = true; %>
-	}
+		var divElement = document.createElement('div');
+		divElement.innerHtml('jQuery library is a mandatory to be added in page to work this component');
+	} 
 </script>
 
-
-<%
-
-if (!jQuery) {
-	%>
-	
 <div>
-	jQuery library is a mandatory to be added in page to work this component
-</div>
-<%
-}
-%>
-
-<div>
-	<form id="uploadContent" style="" action="<%=currentNode.getPath()%>">
+	<form id="uploadContent" style="" action="<%=resource.getPath()%>">
 		<div class="title section cq-element-par_47title">
 			<h3>Zip upload section</h3>
 			<label for="fileselect">File to upload data:</label> <input
@@ -231,7 +216,7 @@ if (!jQuery) {
 		
 		// now post a new XHR request
 		var xhr = new XMLHttpRequest();
-		xhr.open('POST', '<%=currentNode.getPath()%>');
+		xhr.open('POST', '<%=resource.getPath()%>');
 
 		formData.append("transformer", $("#transformer").val());
 		formData.append("src", $("#src").val());
