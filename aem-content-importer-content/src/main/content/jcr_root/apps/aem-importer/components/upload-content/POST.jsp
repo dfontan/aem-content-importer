@@ -1,3 +1,8 @@
+<%-- 
+	Copyright (c) 2014 Adobe Systems Incorporated. All rights reserved.
+	Licensed under the Apache License 2.0.
+ 	http://www.apache.org/licenses/LICENSE-2.0
+ --%>
 <%@page import="javax.jcr.Session"%>
 <%@page import="com.day.cq.commons.jcr.JcrUtil"%>
 <%@page import="org.apache.jackrabbit.commons.JcrUtils"%>
@@ -108,7 +113,7 @@ if (isMultipart) {
 }
 } catch(Exception e) {
 	
-	log.error("Error on DITA Importer tool",e);
+	log.error("Error on XML Importer tool",e);
 	if (zipParser != null && zipParser.getSource() != null) {
 		zipParser.getSource().close();
 	}

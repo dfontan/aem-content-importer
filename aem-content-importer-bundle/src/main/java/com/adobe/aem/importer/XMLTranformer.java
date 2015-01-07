@@ -12,7 +12,7 @@ import java.util.Properties;
 import javax.jcr.Node;
 
 /**
- * DITA Transformer Interface
+ * XML Transformer Interface
  */
 public interface XMLTranformer {
 

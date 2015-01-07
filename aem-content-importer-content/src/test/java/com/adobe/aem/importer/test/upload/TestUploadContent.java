@@ -26,10 +26,7 @@ import javax.jcr.SimpleCredentials;
 
 import org.apache.commons.codec.binary.Base64;
 import org.apache.jackrabbit.commons.JcrUtils;
-import org.apache.sling.commons.json.JSONException;
 import org.apache.sling.commons.json.JSONObject;
-import org.junit.After;
-import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -39,6 +36,7 @@ import com.adobe.aem.importer.xml.Config;
 public class TestUploadContent {
 
 	private final static String PATH_NODE = "/content/aem-importer-test/upload-content";
+	private final static String SLING_RESOURCETYPE = "aem-importer/components/upload-content";
 	private final String POST_URL = "http://localhost:4502" + PATH_NODE + "/_jcr_content";
 	private final String CONFIG_PARAM_SERVER = "http://localhost:4502";
 	private final static String URL_REPO = "http://localhost:4502/crx/server";
@@ -65,10 +63,14 @@ public class TestUploadContent {
 					PASSWORD.toCharArray());
 			session = repo.login(creds, "crx.default");
 			
-			Node page = JcrUtils.getOrCreateByPath(PATH_NODE, "cq:Page", session);
-			Node jcrContent = page.addNode("jcr:content", "cq:PageContent");
-			jcrContent.setProperty("sling:resourceType", "aem-importer/components/upload-content");
-			session.save();
+			
+			if (!session.itemExists(PATH_NODE)) {
+				Node page = JcrUtils.getOrCreateByPath(PATH_NODE, "cq:Page", session);
+				Node jcrContent = page.addNode("jcr:content", "cq:PageContent");
+				jcrContent.setProperty("sling:resourceType", SLING_RESOURCETYPE);
+				session.save();
+			}
+			
 			
 
 		} catch (RepositoryException e) {
@@ -80,7 +82,7 @@ public class TestUploadContent {
 	/**
 	 * Test creation content by filling out a POST to upload component
 	 */
-//	@Test
+	@Test
 	public void createContentByFillingOutForm() {
 
 		Config config = new Config();
@@ -116,7 +118,7 @@ public class TestUploadContent {
 		}
 	}
 
-//	@Test
+	@Test
 	public void createContentByZipFile() {
 		JSONObject jsonResult = null;
 		Properties expectedProperties = null;
@@ -145,7 +147,7 @@ public class TestUploadContent {
 		}
 	}
 
-//	 @Test
+	@Test
 	public void createContentByFillingOutFormAndZipFile() {
 		JSONObject jsonResult = null;
 		Properties expectedProperties = null;

@@ -9,9 +9,6 @@ import org.slf4j.LoggerFactory;
 
 import com.adobe.aem.importer.XMLTranformer;
 import com.adobe.aem.importer.XMLTransformerHelper;
-import com.adobe.aem.importer.process.TransformerWorkflowProcess;
-
-
 
 public class TestRetrieveTransformer {
 	
@@ -21,12 +18,12 @@ public class TestRetrieveTransformer {
 	
 	
 	
-//	@BeforeClass
+	@BeforeClass
 	public static void init() {
 		
 	}
 	
-//	@Test
+	@Test
 	public void retrieveDITATransformerXLST() {
 		
 		try {
