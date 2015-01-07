@@ -97,19 +97,14 @@
 			<scope>provided</scope>
 		</dependency>
 
-		<dependency>
+		<!-- TEST -->
+			<dependency>
 			<groupId>net.sf.saxon</groupId>
-			<artifactId>Saxon-HE</artifactId>
-			<version>9.6.0-3</version>
+			<artifactId>saxon-dom</artifactId>
+			<version>8.7</version>
+			<scope>test</scope>
 		</dependency>
-			<!-- <dependency> -->
-			<!-- <groupId>net.sf.saxon</groupId> -->
-			<!-- <artifactId>saxon-all.osgi</artifactId> -->
-			<!-- <version>8.9.0.4</version> -->
-			<!-- <scope>system</scope> -->
-			<!-- <systemPath>${basedir}/libs/saxon-all.osgi-8.9.0.4.jar</systemPath> -->
-			<!-- </dependency> -->
-		<!-- TEST  -->
+		
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpclient</artifactId>
@@ -185,12 +180,6 @@
 								<embedded>
 									<groupId>${project.groupId}</groupId>
 									<artifactId>aem-content-importer-bundle</artifactId>
-									<target>/apps/${project.folder}/install</target>
-								</embedded>
-								<embedded>
-									<groupId>net.sf.saxon</groupId>
-									<artifactId>Saxon-HE</artifactId>
-									<!-- <artifactId>saxon-all.osgi</artifactId> -->
 									<target>/apps/${project.folder}/install</target>
 								</embedded>
 							</embeddeds>

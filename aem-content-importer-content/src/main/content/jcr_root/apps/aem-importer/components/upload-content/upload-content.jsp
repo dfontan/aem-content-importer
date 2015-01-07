@@ -14,10 +14,12 @@
 
 <script type="text/javascript">
 	if (typeof jQuery === "undefined") { 
-		var divElement = document.createElement('div');
-		divElement.innerHtml('jQuery library is a mandatory to be added in page to work this component');
+		var div = document.createElement("div");
+		div.innerHTML = "jQuery library is a mandatory to be added in page to work this component";
+		document.body.appendChild(div);
 	} 
 </script>
+
 
 <div>
 	<form id="uploadContent" style="" action="<%=resource.getPath()%>">

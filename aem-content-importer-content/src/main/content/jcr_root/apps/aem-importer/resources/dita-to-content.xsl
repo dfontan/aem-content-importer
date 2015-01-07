@@ -32,7 +32,7 @@
                     <sitemap
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="foundation/components/sitemap"
-                            rootPath="/content/pando"/>
+                            rootPath="/content/dita-import"/>
                 </par>
             </jcr:content>
             <xsl:apply-templates select="topicref | mapref" mode="subpage">

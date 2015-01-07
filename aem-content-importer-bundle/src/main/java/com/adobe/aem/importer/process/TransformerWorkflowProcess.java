@@ -78,6 +78,7 @@ public class TransformerWorkflowProcess implements WorkflowProcess  {
           	xmlTransformer.execute(configFile.getProperty(XMLTransformerHelper.CONFIG_PARAM_MASTER_FILE), configFile.getProperty(XMLTransformerHelper.CONFIG_PARAM_TARGET, "/"));
           }
         } catch (Exception e) {
+        	log.error(e.getMessage(),e);
         	throw new WorkflowException(e.getMessage(), e);
 				}
     }

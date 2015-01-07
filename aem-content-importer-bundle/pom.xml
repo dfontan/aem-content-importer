@@ -65,6 +65,8 @@
 						<Bundle-Category>${project.groupId}</Bundle-Category>
 						<Bundle-SymbolicName>${project.groupId}.${project.artifactId}</Bundle-SymbolicName>
 						<Bundle-Activator>com.adobe.aem.importer.Activator</Bundle-Activator>
+						<Private-Package>net.sf.saxon.*</Private-Package>
+						<Import-Package>com.adobe.aem.importer.*;org.apache.xml.*;resolution:=optional,*</Import-Package>
 					</instructions>
 				</configuration>
 			</plugin>
@@ -157,10 +159,10 @@
        <scope>provided</scope>
     </dependency>
     <dependency>
-       <groupId>net.sf.saxon</groupId>
-       <artifactId>saxon</artifactId>
-       <version>8.7</version>
-    </dependency>
+		  <groupId>net.sf.saxon</groupId>
+		  <artifactId>Saxon-HE</artifactId>
+		  <version>9.6.0-3</version>
+		</dependency>
     <dependency>
        <groupId>org.slf4j</groupId>
        <artifactId>slf4j-api</artifactId>
