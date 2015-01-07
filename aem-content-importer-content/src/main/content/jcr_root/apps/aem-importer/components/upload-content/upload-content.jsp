@@ -35,7 +35,7 @@ if (!jQuery) {
 %>
 
 <div>
-	<form id="uploadContent" style="" action="<%=currentNode.getPath()%>">
+	<form id="uploadContent" style="" action="<%=resource.getPath()%>">
 		<div class="title section cq-element-par_47title">
 			<h3>Zip upload section</h3>
 			<label for="fileselect">File to upload data:</label> <input
@@ -231,7 +231,7 @@ if (!jQuery) {
 		
 		// now post a new XHR request
 		var xhr = new XMLHttpRequest();
-		xhr.open('POST', '<%=currentNode.getPath()%>');
+		xhr.open('POST', '<%=resource.getPath()%>');
 
 		formData.append("transformer", $("#transformer").val());
 		formData.append("src", $("#src").val());
