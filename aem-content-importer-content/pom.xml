@@ -98,11 +98,6 @@
 		</dependency>
 
 		<dependency>
-		  <groupId>net.sf.saxon</groupId>
-		  <artifactId>Saxon-HE</artifactId>
-		  <version>9.6.0-3</version>
-		</dependency>
-		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpclient</artifactId>
 			<version>4.3.6</version>
@@ -171,11 +166,6 @@
 								<embedded>
 									<groupId>${project.groupId}</groupId>
 									<artifactId>aem-content-importer-bundle</artifactId>
-									<target>/apps/${project.folder}/install</target>
-								</embedded>
-								<embedded>
-									<groupId>net.sf.saxon</groupId>
-									<artifactId>Saxon-HE</artifactId>
 									<target>/apps/${project.folder}/install</target>
 								</embedded>
 							</embeddeds>
