@@ -66,7 +66,7 @@
 						<Bundle-SymbolicName>${project.groupId}.${project.artifactId}</Bundle-SymbolicName>
 						<Bundle-Activator>com.adobe.aem.importer.Activator</Bundle-Activator>
 						<Private-Package>net.sf.saxon.*</Private-Package>
-						<Import-Package>com.adobe.aem.importer.*;org.apache.xml.*;resolution:=optional,*</Import-Package>
+						<Import-Package>org.apache.xml.*;resolution:=optional,*</Import-Package>
 					</instructions>
 				</configuration>
 			</plugin>
