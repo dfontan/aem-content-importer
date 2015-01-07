@@ -98,11 +98,9 @@
 		</dependency>
 
 		<dependency>
-			<groupId>net.sf.saxon</groupId>
-			<artifactId>saxon-all.osgi</artifactId>
-			<version>8.9.0.4</version>
-			<scope>system</scope>
-			<systemPath>${basedir}/libs/saxon-all.osgi-8.9.0.4.jar</systemPath>
+		  <groupId>net.sf.saxon</groupId>
+		  <artifactId>Saxon-HE</artifactId>
+		  <version>9.6.0-3</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
@@ -177,7 +175,7 @@
 								</embedded>
 								<embedded>
 									<groupId>net.sf.saxon</groupId>
-									<artifactId>saxon-all.osgi</artifactId>
+									<artifactId>Saxon-HE</artifactId>
 									<target>/apps/${project.folder}/install</target>
 								</embedded>
 							</embeddeds>
