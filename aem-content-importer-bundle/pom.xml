@@ -153,10 +153,10 @@
        <scope>provided</scope>
     </dependency>
     <dependency>
-       <groupId>net.sf.saxon</groupId>
-       <artifactId>saxon</artifactId>
-       <version>8.7</version>
-    </dependency>
+		  <groupId>net.sf.saxon</groupId>
+		  <artifactId>Saxon-HE</artifactId>
+		  <version>9.6.0-3</version>
+		</dependency>
     <dependency>
        <groupId>org.slf4j</groupId>
        <artifactId>slf4j-api</artifactId>
