@@ -13,7 +13,7 @@
             <process
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Content Transformer Process"
-                sling:resourceType="aem-importer/components/workflow/transformer_process">
+                sling:resourceType="aem-importer/components/workflow/transformer-process">
                 <metaData
                     jcr:primaryType="nt:unstructured"
                     PROCESS="com.adobe.aem.importer.process.TransformerWorkflowProcess"
