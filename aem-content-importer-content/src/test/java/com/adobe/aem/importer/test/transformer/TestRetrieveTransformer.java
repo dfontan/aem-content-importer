@@ -7,7 +7,7 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.adobe.aem.importer.XMLTranformer;
+import com.adobe.aem.importer.XMLTransformer;
 import com.adobe.aem.importer.XMLTransformerHelper;
 
 public class TestRetrieveTransformer {
@@ -27,7 +27,7 @@ public class TestRetrieveTransformer {
 	public void retrieveDITATransformerXLST() {
 		
 		try {
-			XMLTranformer ditaTransformer = XMLTransformerHelper.getXMLTransformer(DITATRANSFORMER_CLASS);
+			XMLTransformer ditaTransformer = XMLTransformerHelper.getXMLTransformer(DITATRANSFORMER_CLASS);
 			
 			boolean exist = false;
 			if (ditaTransformer != null) {

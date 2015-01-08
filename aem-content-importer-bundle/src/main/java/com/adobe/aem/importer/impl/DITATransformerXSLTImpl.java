@@ -27,19 +27,28 @@ import javax.xml.transform.stream.StreamSource;
 
 import net.sf.saxon.TransformerFactoryImpl;
 
+import org.apache.felix.scr.annotations.Component;
+import org.apache.felix.scr.annotations.Property;
+import org.apache.felix.scr.annotations.Service;
 import org.apache.jackrabbit.commons.JcrUtils;
 import org.apache.jackrabbit.vault.fs.io.Importer;
 import org.apache.jackrabbit.vault.fs.io.JcrArchive;
+import org.osgi.framework.Constants;
 import org.xml.sax.InputSource;
 import org.xml.sax.XMLReader;
 import org.xml.sax.helpers.XMLReaderFactory;
 
-import com.adobe.aem.importer.XMLTranformer;
+import com.adobe.aem.importer.XMLTransformer;
 import com.adobe.aem.importer.xml.FilterXmlBuilder;
 import com.day.cq.commons.jcr.JcrUtil;
 import com.day.jcr.vault.util.RejectingEntityResolver;
 
-public class DITATransformerXSLTImpl implements XMLTranformer, URIResolver {
+@Component
+@Service(value=XMLTransformer.class)
+@org.apache.felix.scr.annotations.Properties({
+	@Property(name = Constants.SERVICE_DESCRIPTION, value = "Adobe - DITA XSLT Transformer Service"),
+	@Property(name = Constants.SERVICE_VENDOR, value = "Adobe") })
+public class DITATransformerXSLTImpl implements XMLTransformer, URIResolver {
 
 	public static final String 		CONFIG_PARAM_TRANSFORMER_CLASS 		= "xslt-transformer";
 	public static final String 		CONFIG_PARAM_XSLT_FILE 						= "xslt-file";
@@ -72,6 +81,8 @@ public class DITATransformerXSLTImpl implements XMLTranformer, URIResolver {
 	private XMLReader xmlReader = null;
 	/* init flag */
 	private boolean init = false;
+	
+	
 	
 
 	/* (non-Javadoc)

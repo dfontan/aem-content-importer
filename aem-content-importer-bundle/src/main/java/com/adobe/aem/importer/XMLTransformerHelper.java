@@ -7,14 +7,18 @@
 
 package com.adobe.aem.importer;
 
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.Enumeration;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
 
-import org.osgi.framework.Bundle;
+import org.apache.felix.scr.annotations.Component;
+import org.apache.felix.scr.annotations.Reference;
+import org.apache.felix.scr.annotations.ReferenceCardinality;
+import org.apache.felix.scr.annotations.ReferencePolicy;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+@Component
 public class XMLTransformerHelper {
 	
 	public static final String CONFIG_PARAM_SRC 				= "src";
@@ -25,80 +29,55 @@ public class XMLTransformerHelper {
 	
 
 	private static final Logger log = LoggerFactory.getLogger(XMLTransformerHelper.class);
-	private static final String CLASS_EXTENSION = ".class";
-	private static Class<?>[] availableTransformers = {};
+
+	
+	@Reference(referenceInterface = XMLTransformer.class,cardinality = ReferenceCardinality.OPTIONAL_MULTIPLE, policy = ReferencePolicy.DYNAMIC)
+	private static Map<Class<?>, XMLTransformer> availableTransformers = new HashMap<Class<?>, XMLTransformer>();
 	
 	
 	/**
-	 * Read and store available transformer class
-	 * @param bundle
+	 * Get a set collection of available transformers
+	 * @param slingScriptHelper
+	 * @return list of available transformers (class name)
 	 */
-	public static void init(Bundle bundle) {
-		try {
-			ArrayList<Class<?>> classes = new ArrayList<Class<?>>();
-			String packageName = (XMLTransformerHelper.class.getPackage().getName()+".impl");
-			log.debug("Process the seeking of tranformer classes under []",packageName);
-			for(Enumeration<URL> e = bundle.findEntries(packageName.replace(".", "/"), "*.class", false); e.hasMoreElements();) {
-				Class<?> classObj = checkCompliantClassFile(e.nextElement().getPath());
-				if (classObj!=null)
-					classes.add(classObj);
-			}
-			XMLTransformerHelper.availableTransformers = classes.toArray(new Class<?>[classes.size()]);
-		} catch(Exception e) {
-			log.error("An error has occurred retrieving available transformers",e);
-		}
-	}
-	
-	/**
-	 * Get array of available transformers
-	 * @return list of available transformers
-	 */
-	public static Class<?>[] getAvailableTransformers() {
-		return XMLTransformerHelper.availableTransformers;
-	}
-	
-	/**
-	 * Get XMLTransformer from the className
-	 * @param className (qualified name)
-	 * @return the instatiated class or null in case of error
-	 */
-	public static XMLTranformer getXMLTransformer(String className) {
-		try {
-			Class<?> implClass = Class.forName(className);
-			if (!XMLTranformer.class.isAssignableFrom(implClass)) {
-				log.warn("Requested "+className+" class doesn't implement "+XMLTranformer.class.getName()+" interface");
-				return null;
-			}
-			return (XMLTranformer)implClass.newInstance();
-		} catch(ClassNotFoundException e) {
-			log.error("Class not found exception for "+className,e);
-		} catch (InstantiationException e) {
-			log.error("Error on instantiating class "+className,e);
-		} catch (IllegalAccessException e) {
-			log.error("Illegal access to class "+className,e);
-		}
-		return null;
+	public static Set<Class<?>> getAvailableTransformers() {
+		return XMLTransformerHelper.availableTransformers.keySet();
 	}
 	
 	/**
 	 * 
-	 * Check if the class is valid and compliant with XMLTransformer interface
-	 * @param pathName
-	 * @return the resulting class or null in case of error
+	 * Get XMLTransformer from the className
+	 * @param className (qualified name)
+	 * @return the XML transformer service
+	 * @throws Exception
 	 */
-	private static Class<?> checkCompliantClassFile(String pathName) {
-		String className = pathName.substring(1, pathName.length()-CLASS_EXTENSION.length()).replace("/", ".");
-		try {
-			Class<?> implClass = Class.forName(className);
-			if (!XMLTranformer.class.isAssignableFrom(implClass)) {
-				log.warn(className+" class doesn't implement "+XMLTranformer.class.getName()+" interface");
-				return null;
-			}
-			return implClass;
-		} catch(ClassNotFoundException clE) {
-			log.error("Class not found exception for "+className,clE);
-		}
-		return null;
+	public static XMLTransformer getXMLTransformer(String className) throws Exception {
+		XMLTransformer xmlTransformer = XMLTransformerHelper.availableTransformers.get(className);
+		if (xmlTransformer==null)
+			throw new Exception("Transformer Class "+className+" not found");
+		return xmlTransformer;
 	}
 	
+	
+	/**
+	 * Trace new registered transformer
+	 * @param xmlTransformer
+	 */
+	protected void bindAvailableTransformers(final XMLTransformer xmlTransformer) {
+		log.debug("Bind transformer "+xmlTransformer.getClass().toString());
+		synchronized (XMLTransformerHelper.availableTransformers) {
+			XMLTransformerHelper.availableTransformers.put(xmlTransformer.getClass(), xmlTransformer);
+		}
+	}
+	
+	/**
+	 * Trace removed transformer
+	 * @param xmlTransformer
+	 */
+	protected void unbindAvailableTransformers(final XMLTransformer xmlTransformer) {
+		log.debug("Unbind transformer "+xmlTransformer.getClass().toString());
+		synchronized (XMLTransformerHelper.availableTransformers) {
+			XMLTransformerHelper.availableTransformers.remove(xmlTransformer.getClass());
+		}
+	}
 }

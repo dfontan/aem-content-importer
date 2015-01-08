@@ -10,7 +10,7 @@ package com.adobe.aem.importer.process;
 import java.util.Properties;
 import java.util.Map.Entry;
 
-import com.adobe.aem.importer.XMLTranformer;
+import com.adobe.aem.importer.XMLTransformer;
 import com.adobe.aem.importer.XMLTransformerHelper;
 import com.adobe.aem.importer.xml.utils.Utils;
 import com.adobe.granite.workflow.WorkflowException;
@@ -36,7 +36,7 @@ import org.slf4j.LoggerFactory;
 @Component
 @Service
 @org.apache.felix.scr.annotations.Properties({
-	@Property(name = Constants.SERVICE_DESCRIPTION, value = "Adobe - XML Transformer"),
+	@Property(name = Constants.SERVICE_DESCRIPTION, value = "Adobe - XML Transformer Process"),
 	@Property(name = Constants.SERVICE_VENDOR, value = "Adobe") })
 public class TransformerWorkflowProcess implements WorkflowProcess  {
 	
@@ -73,7 +73,7 @@ public class TransformerWorkflowProcess implements WorkflowProcess  {
           		throw new Exception("Configuration error: Source folder doesn't exist --> "+src);
           	
           	// Start Transform process
-          	XMLTranformer xmlTransformer = XMLTransformerHelper.getXMLTransformer(xmlTransformerClass);
+          	XMLTransformer xmlTransformer = XMLTransformerHelper.getXMLTransformer(xmlTransformerClass);
           	xmlTransformer.initialize(session.getNode(src), configFile);
           	xmlTransformer.execute(configFile.getProperty(XMLTransformerHelper.CONFIG_PARAM_MASTER_FILE), configFile.getProperty(XMLTransformerHelper.CONFIG_PARAM_TARGET, "/"));
           }

@@ -6,6 +6,7 @@
 <%@page import="com.adobe.aem.importer.XMLTransformerHelper"%>
 <%@page import="com.day.cq.i18n.I18n"%>
 <%@page import="java.util.HashMap"%>
+<%@page import="java.util.Set"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@include file="/libs/foundation/global.jsp"%>
@@ -19,7 +20,6 @@
 		document.body.appendChild(div);
 	} 
 </script>
-
 
 <div>
 	<form id="uploadContent" style="" action="<%=resource.getPath()%>">
@@ -60,7 +60,7 @@
 				name="transformer" id="transformer">
 				<option value="">Empty</option>
 				<%
-					Class<?>[] availableTransformers = XMLTransformerHelper.getAvailableTransformers();
+					Set<Class<?>> availableTransformers = XMLTransformerHelper.getAvailableTransformers();
 														for(Class<?> transformer : availableTransformers) {
 				%>
 				<option value="<%=transformer.getName()%>"><%=transformer.getSimpleName().replace("Impl", "")%></option>

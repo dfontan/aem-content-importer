@@ -46,6 +46,7 @@
   <modules>
   	<module>aem-content-importer-bundle</module>
   	<module>aem-content-importer-content</module>
+  	<module>aem-content-importer-bundle-2</module>
   </modules>
   
 </project>

@@ -12,7 +12,7 @@
 <%@page import="javax.jcr.Node"%>
 <%@page import="org.apache.sling.api.resource.Resource"%>
 <%@page import="com.adobe.aem.importer.XMLTransformerHelper"%>
-<%@page import="com.adobe.aem.importer.XMLTranformer"%>
+<%@page import="com.adobe.aem.importer.XMLTransformer%>
 <%@page import="org.apache.sling.api.request.RequestParameter"%>
 <%@page import="org.apache.commons.fileupload.servlet.ServletFileUpload"%>
 <%@page import="java.util.Map"%>

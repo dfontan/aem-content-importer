@@ -1,12 +1,13 @@
 <%@page import="com.adobe.aem.importer.XMLTransformerHelper"%>
 <%@page import="org.apache.sling.commons.json.io.JSONWriter"%>
+<%@page import="java.util.Set"%>
 <%@page contentType="text/html; charset=utf-8"%>
 <%@include file="/libs/foundation/global.jsp"%>
 
 <%
 	response.setContentType("application/json");
 response.setCharacterEncoding("utf-8");
-Class<?>[] transformers = XMLTransformerHelper.getAvailableTransformers();
+Set<Class<?>> transformers = XMLTransformerHelper.getAvailableTransformers();
 JSONWriter w = new JSONWriter(response.getWriter());
 w.array();
 for(Class<?> transformer : transformers) {
