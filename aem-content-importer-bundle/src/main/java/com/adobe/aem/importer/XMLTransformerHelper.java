@@ -52,7 +52,7 @@ public class XMLTransformerHelper {
 	 * @throws Exception
 	 */
 	public static XMLTransformer getXMLTransformer(String className) throws Exception {
-		XMLTransformer xmlTransformer = XMLTransformerHelper.availableTransformers.get(className);
+		XMLTransformer xmlTransformer = XMLTransformerHelper.availableTransformers.get(Class.forName(className));
 		if (xmlTransformer==null)
 			throw new Exception("Transformer Class "+className+" not found");
 		return xmlTransformer;
