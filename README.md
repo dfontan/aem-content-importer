@@ -21,7 +21,7 @@ Maven Builds:
 
 
 # AEM Content Importer -  Upload Page
-Go to the upload page: `http://<host>:<port>/content/resources/help/en/upload-content.html`
+Go to the upload page: `http://<host>:<port>/content/resources/importer-tool.html`
 
 You have two options:
 
@@ -92,6 +92,10 @@ An example of `config_params.xml` containing DITATransformerXSLT properties also
  <entry key="graphicFolders">images,graphics,Graphics</entry>
 </properties>
 ```
+
+### NoActionTransformer
+Dummy transformer for testing service registration from external bundle
+
 
 # Walkthrough test cases
 
