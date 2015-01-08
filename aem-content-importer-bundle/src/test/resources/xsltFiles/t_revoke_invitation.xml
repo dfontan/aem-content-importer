@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_CA080CCA6CBF46908D1E4FC53B7E640E">
+  <title>Remove or revoke users</title>
+  <shortdesc>Remove existing users, or revoke invited (pending) users from a
+	 Marketing Cloud organization. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Marketing Cloud" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <context id="context_851C8ED1A6814E9B9C74FF99E192D7F9">
+      <note>When removing a user, the user's details are removed from your
+		  organization. However, the Adobe ID remains valid and can still be used for
+		  other Adobe services. 
+		</note>
+    </context>
+    <steps id="steps_E06423583662407F8B788EAFE30BDACB">
+      <step id="step_DA834DF151F84C759505CF56826856A5">
+        <cmd>Click 
+			 <uicontrol>Tools</uicontrol>, then click 
+			 <uicontrol>User Management</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_A6288B82F6D743819BA73163CB22CEE8">
+        <cmd>To remove an existing user, select the box next to the user's name
+			 on the 
+			 <uicontrol>Active Users</uicontrol> tab. 
+		  </cmd>
+        <stepresult>
+          <?xm-replace_text Step Result?>
+        </stepresult>
+      </step>
+      <step id="step_84A0C03117F54FDC91E2C88F04247173">
+        <cmd>Click 
+			 <uicontrol>Remove</uicontrol>. 
+			 <image href="graphics/remove_user_icon.png" id="image_E546D4B8282E422489F6FB0A9E8456D9"></image></cmd>
+        <info>
+          <p>To revoke a pending invitation, click the 
+				<uicontrol>Pending Users</uicontrol> tab, then click 
+				<uicontrol>Revoke</uicontrol>. 
+				<image href="graphics/revoke_icon.png" id="image_774DCDFADA9340AFB4A9EACABB9747DB"></image></p>
+        </info>
+      </step>
+    </steps>
+  </taskbody>
+</task>

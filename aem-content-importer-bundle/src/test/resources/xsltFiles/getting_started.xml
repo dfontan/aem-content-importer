@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_CB06FE80465A4C55866FC9DCC1A7B640"> 
+  <title>Getting Started with Adobe Marketing Cloud</title> 
+  <shortdesc>Information to help you sign in to the Adobe Marketing Cloud and
+	 to link one or more 
+	 <keyword>Adobe Marketing Cloud</keyword> solutions with your Adobe ID. 
+  </shortdesc> 
+  <conbody> 
+	 <table id="table_DF3A0DFCA34C4A40BD7930E07FB28C00"> 
+		<tgroup cols="3"> 
+		  <colspec colname="col01" colnum="1" colwidth="1.00*"/> 
+		  <colspec colnum="2" colname="col1" colwidth="1.89*"/> 
+		  <colspec colnum="3" colname="col2" colwidth="3.53*"/> 
+		  <thead> 
+			 <row> 
+				<entry colname="col01">Step 
+				</entry> 
+				<entry colname="col1">Task 
+				</entry> 
+				<entry colname="col2">Description 
+				</entry> 
+			 </row> 
+		  </thead> 
+		  <tbody> 
+			 <row> 
+				<entry colname="col01"> 
+				  <b>Step 1</b> 
+				</entry> 
+				<entry colname="col1"> 
+				  <p><xref
+					 href="t_sign_in.xml#task_6DA95CE477914FA88A2F1FEAB3F9D50C" format="dita"
+					 scope="local">Sign in</xref>.
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>Go to 
+					 <xref href="http://www.marketing.adobe.com"
+					  format="http" scope="external">http://www.marketing.adobe.com</xref>. 
+				  </p> 
+				  <p>Use your Adobe ID credentials to sign in. 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col01"> 
+				  <b>Step 2</b> 
+				</entry> 
+				<entry colname="col1"> 
+				  <p> 
+					 <xref
+					  href="t_link_accounts.xml#task_6DA95CE477914FA88A2F1FEAB3F9D50C" format="dita"
+					  scope="local">Link your solution accounts</xref>. 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>Solutions include Analytics, Social, Target, and so on. You
+					 can enable single sign-on between the Marketing Cloud interface and Adobe
+					 solutions like Analytics, Social, and Target. 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col01"> 
+				  <b>Step 3</b> 
+				</entry> 
+				<entry colname="col1"> 
+				  <p>Begin sharing assets.
+				  </p> 
+				</entry> 
+				<entry colname="col2"> Share assets and reports from 
+				  <p>See 
+					 <xref
+					  href="http://microsite.omniture.com/t2/help/en_US/cloud/home/#mc-marketing-cloud"
+					  format="http" scope="external">Marketing Cloud Help</xref> (Help &gt; Help
+					 Home) for information the interface. 
+				  </p> 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+  </conbody>
+</concept>

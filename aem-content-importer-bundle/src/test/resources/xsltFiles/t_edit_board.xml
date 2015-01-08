@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_8DB84F87287545BCBFB374365BB0A02C">
+  <title>Edit a board</title>
+  <shortdesc>Edit a board to rename it, and add or remove users who you have
+	 invited to share the board. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Marketing Cloud" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <steps id="steps_3733DF5C92584DF7A94332D37B908DD8">
+      <step id="step_F723E008F0CC4421BC0BEE6FE48EA398">
+        <cmd>In the left navigation menu, click 
+			 <uicontrol>Boards</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_DF8708A5B2E84EB3B01C8BFD28F43DA9">
+        <cmd>Click the desired board to display its contents. 
+		  </cmd>
+      </step>
+      <step id="step_3E13833A3F1547728FBEE73AD46F1A6C">
+        <cmd>Click 
+			 <image href="graphics/icon_edit_board.png" id="image_232793C3073D4AF7B359ECA9F45159F0"></image> to display the 
+			 <wintitle>Edit Board</wintitle> page. 
+		  </cmd>
+        <stepresult>
+          <p>
+            <image href="graphics/edit_board.png" id="image_B8D8A87283224D2FA54635E541F345C5">
+              <?xm-replace_text Step Result?>
+            </image>
+          </p>
+        </stepresult>
+      </step>
+      <step id="step_3F01EF371BEE40EEB37FA75DF0C4B850">
+        <cmd>Edit in the fields as needed: 
+		  </cmd>
+        <stepresult>
+          <p>
+            <b>Board Name: 
+				</b>Edit the name of the board. 
+			 </p>
+          <p>
+            <b>Invite: 
+				</b>From the drop-down list, select a user with whom you want to
+				share the board, then click 
+				<uicontrol>Add</uicontrol>. 
+			 </p>
+          <p>Or 
+			 </p>
+          <p>Click the 
+				<uicontrol>Remove</uicontrol> icon (<image href="graphics/icon_remove.png" id="image_E995D3272F0C4768B8FA111E66BAF623"></image>) next a user's name to
+				un-share the board from that user. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_1B228865D8664940B3F5FFDF436445A3">
+        <cmd>Click 
+			 <uicontrol>Save</uicontrol>. 
+		  </cmd>
+      </step>
+    </steps>
+  </taskbody>
+</task>

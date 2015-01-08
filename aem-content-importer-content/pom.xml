@@ -6,8 +6,7 @@
 	herein are proprietary to Adobe Systems Incorporated and its * suppliers 
 	and are protected by trade secret or copyright law. * Dissemination of this 
 	information or reproduction of this material * is strictly forbidden unless 
-	prior written permission is obtained * from Adobe Systems Incorporated. 
-	**************************************************************************/ -->
+	prior written permission is obtained * from Adobe Systems Incorporated. **************************************************************************/ -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
@@ -95,69 +94,6 @@
 			<artifactId>jcr</artifactId>
 			<version>2.0</version>
 			<scope>provided</scope>
-		</dependency>
-
-		<!-- TEST -->
-		<dependency>
-			<groupId>net.sf.saxon</groupId>
-			<artifactId>saxon-dom</artifactId>
-			<version>8.7</version>
-			<scope>test</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>org.apache.httpcomponents</groupId>
-			<artifactId>httpclient</artifactId>
-			<version>4.3.6</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.httpcomponents</groupId>
-			<artifactId>httpmime</artifactId>
-			<version>4.0.1</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.11</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-api</artifactId>
-			<version>1.6.0</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-simple</artifactId>
-			<version>1.7.9</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.jackrabbit</groupId>
-			<artifactId>jackrabbit-jcr-commons</artifactId>
-			<version>2.2.0</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.jackrabbit</groupId>
-			<artifactId>jackrabbit-jcr2dav</artifactId>
-			<version>2.6.0</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.felix</groupId>
-			<artifactId>org.apache.felix.scr.annotations</artifactId>
-			<version>1.9.8</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.adobe.aem.importer</groupId>
-			<artifactId>aem-content-importer-bundle-2</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-			<scope>test</scope>
 		</dependency>
 	</dependencies>
 

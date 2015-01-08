@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_BE333E6033964C0DAA079CC51160265D"> 
+  <title>Manage organizations</title> 
+  <shortdesc>Link or unlink accounts, or add an organization.
+  </shortdesc> 
+  <taskbody> 
+	 <context id="context_2A77FA2236024E5D908EEE4B149EA951">
+		<p><?xm-replace_text Task Context?>
+		</p>
+	 </context>
+	 <steps id="steps_FC5F3324C2E64CF5A9A27DC3F0E71D41"> 
+		<step id="step_12B8679B48A546C298F4368A62532625">
+		  <cmd><?xm-replace_text Step?>
+		  </cmd> 
+		</step> 
+	 </steps> 
+  </taskbody>
+</task>

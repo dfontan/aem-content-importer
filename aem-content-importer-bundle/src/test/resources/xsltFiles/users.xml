@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_54E77D5A22E64307BCB4AB2510A6450F">
+  <title>User Management </title>
+  <shortdesc>Information about inviting users to the Marketing Cloud.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>audience services</keyword>
+      </keywords>
+      <othermeta name="solution" content="Marketing Cloud" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>
+      <menucascade>
+        <uicontrol>Tools</uicontrol>
+        <uicontrol>User
+			 Management</uicontrol>
+      </menucascade>
+    </p>
+  </conbody>
+</concept>

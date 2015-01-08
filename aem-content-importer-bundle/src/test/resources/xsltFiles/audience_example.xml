@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_9588E880E0C7438E8B29AC7685AD0346"> 
+  <title>Audience Rules - Example</title> 
+  <shortdesc>In the Audience Library you can create a composite audience
+	 defined by rules. In a rule definition, you can use raw Analytics collected
+	 data, Marketing Cloud data, or both. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Marketing Cloud"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The following image illustrates a defined audience. Each circle
+		represents a rule in the audience. Visitors that qualify as members in both
+		rules will overlap to become the 
+		<term>defined audience</term>.
+	 </p>
+	 <p> 
+		<image href="graphics/audience_sharing.png"
+		 id="image_13C8A0D48ACD4E508FD173FBA273DF94"> <?xm-replace_text Paragraph?>
+		</image> 
+	 </p> 
+	 <note>The audience is fully defined after data collection for the specified
+		period completes.
+	 </note>
+	 <section id="section_3920F83DFC1F41FC84DCA7B29D290352">
+		<title> Combined Audience Example</title> 
+		<p>The following example shows how to use rules to 
+		  <xref
+			href="t_audience_create.xml#task_37F407F58BF9459493BB8E968CDFE737"
+			format="dita" scope="local">create an audience</xref> from combined audience
+		  sources. 
+		</p>
+		<p>This example tracks browser compatibility with a site. This audience
+		  is comprised of raw 
+		  <keyword>Analytics</keyword> data (Home &amp; Garden section), as well
+		  as Chrome and Safari users (from an 
+		  <keyword>Analytics</keyword> segment shared to the 
+		  <keyword>Marketing Cloud</keyword>). 
+		</p> 
+		<p> 
+		  <image href="graphics/audience_create.png"
+			id="image_15B758E687374CDCABD3751A9BF3E55E"> <?xm-replace_text Paragraph?>
+		  </image> 
+		</p> 
+		<p> 
+		  <b>Rule Components</b> 
+		</p> 
+		<p>The 
+		  <term>Home &amp; Garden</term> attribute selections are: 
+		</p> 
+		<ul id="ul_52553A6032C446F4984F342EA567BE27"> 
+		  <li id="li_BEEEC7DA95B34E57A6288511FBFDCFEE"> 
+			 <uicontrol>Attribute Source:</uicontrol> Raw Analytics Data 
+		  </li> 
+		  <li id="li_ABF106983838462FB1175EB98E6E924C"> 
+			 <uicontrol>Report Suite:</uicontrol> Report Suite 31 
+		  </li> 
+		  <li id="li_9709D1FCC7724942A31122B950661F06">Dimension = 
+			 <menucascade><uicontrol>Store (Merch)
+				  (v6)</uicontrol><uicontrol>Equals</uicontrol><uicontrol>Home &amp;
+				  Garden</uicontrol></menucascade> 
+		  </li> 
+		</ul> 
+		<p> 
+		  <image href="graphics/home_garden.png"
+			id="image_1A30BD536FDE4B1CAB684B576977033E"> <?xm-replace_text Paragraph?>
+		  </image> 
+		</p> 
+		<p>The 
+		  <term>Chrome &amp; Safari Visitors</term> is an audience segment shared
+		  from Analytics: 
+		</p> 
+		<ul id="ul_AF3D6F4836E9454CBEC5F36A12DB4EE4"> 
+		  <li id="li_5F137824BE32453EB9CB07C9335FDA08"> 
+			 <uicontrol>Attribute Source:</uicontrol> Marketing Cloud 
+		  </li> 
+		  <li id="li_6E5E2FC54C6B4CF3B71FFE3C08526159"> 
+			 <uicontrol>Dimension:</uicontrol> Chrome &amp; Safari Visitors 
+		  </li> 
+		</ul> 
+		<p> 
+		  <image href="graphics/chrome_safari.png"
+			id="image_87246CDFCBA846E294FD9163E0C57AB3"> <?xm-replace_text Paragraph?>
+		  </image> 
+		</p> 
+		<p>For comparison, you might add an 
+		  <term>OR</term> rule to see all visitors to a site section, such as
+		  Patio &amp; Furniture. 
+		</p> 
+		<p> 
+		  <image href="graphics/audiences_rule_patio.png"
+			id="image_5BDE532B07D04F9A85E3926A2E7DF741"> <?xm-replace_text Paragraph?>
+		  </image> 
+		</p> 
+		<p> 
+		  <b>Result - The Defined Audience</b> 
+		</p> 
+		<p>The resulting rule is a defined audience comprising Chrome &amp;
+		  Safari users who visited Home &amp; Garden. The Patio &amp; Furniture segment
+		  provides additional insight into all visitors visiting that site section. 
+		</p> 
+		<p> 
+		  <image href="graphics/defined_audience.png"
+			id="image_8BAA9859565C49CD83FB13D688CB053A"> <?xm-replace_text Paragraph?>
+		  </image> 
+		</p> 
+		<p> 
+		  <b>Historical Estimate:</b> (Dotted circle) Represents rules created
+		  based on 
+		  <keyword>Analytics</keyword> data. 
+		</p> 
+		<p> 
+		  <b>Actual Audience:</b> (Solid circle) Any rule created that has 30
+		  days of data from audience management. When the audience management data
+		  reaches 30 days, the line becomes solid and represents actual numbers. 
+		</p> 
+		<p>After the data collection completes for the specified period, the
+		  circles combine to show a defined audience. 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 
