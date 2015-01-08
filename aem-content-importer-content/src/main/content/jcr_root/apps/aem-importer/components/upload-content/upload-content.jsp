@@ -13,6 +13,8 @@
 <%@taglib prefix="cq" uri="http://www.day.com/taglibs/cq/1.0"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
+<cq:includeClientLib categories="cq.jquery"/>
+
 <script type="text/javascript">
 	if (typeof jQuery === "undefined") { 
 		var div = document.createElement("div");
