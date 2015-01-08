@@ -22,7 +22,7 @@ public interface XMLTransformer {
 	 * @param properties custom properties configuration
 	 * @throws Exception
 	 */
-	public void initialize(Node srcPath,Properties properties) throws Exception;
+	//public void initialize(Node srcPath,Properties properties) throws Exception;
 	
 	
 	/**
@@ -31,6 +31,15 @@ public interface XMLTransformer {
 	 * @param destPath crx destination path 
 	 * @throws Exception
 	 */
-	public void execute(String masterFile, String destPath) throws Exception;
+	//public void execute(String masterFile, String destPath) throws Exception;
+	
+	
+	/**
+	 * Initialize and execute service tranformation using master file (if available) and import content into the destination path
+	 * @param srcPath crx source node path
+	 * @param properties custom properties configuration
+	 * @throws Exception
+	 */
+	public void transform(Node srcPath, Properties properties) throws Exception;
 	
 }

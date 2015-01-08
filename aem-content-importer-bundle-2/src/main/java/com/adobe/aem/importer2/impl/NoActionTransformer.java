@@ -26,20 +26,12 @@ import com.adobe.aem.importer.XMLTransformer;
 public class NoActionTransformer implements XMLTransformer {
 
 	/* (non-Javadoc)
-	 * @see com.adobe.aem.importer.XMLTransformer#initialize(javax.jcr.Node, java.util.Properties)
+	 * @see com.adobe.aem.importer.XMLTransformer#transform(javax.jcr.Node, java.util.Properties)
 	 */
 	@Override
-	public void initialize(Node srcPath, Properties properties) throws Exception {
-		// Do nothing
+	public void transform(Node srcPath, Properties properties) throws Exception {
+		// Do Nothing
 	}
 
-	/* (non-Javadoc)
-	 * @see com.adobe.aem.importer.XMLTransformer#execute(java.lang.String, java.lang.String)
-	 */
-	@Override
-	public void execute(String masterFile, String destPath) throws Exception {
-		// Do nothing
-
-	}
-
+	
 }
