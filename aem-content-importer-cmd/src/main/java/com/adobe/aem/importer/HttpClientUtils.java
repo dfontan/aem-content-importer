@@ -47,7 +47,7 @@ public class HttpClientUtils {
 			entity.addPart("transformer", new StringBody(config.getTransformer()));
 			entity.addPart("masterFile", new StringBody(config.getMasterFile()));
 			entity.addPart("target", new StringBody(config.getTarget()));
-			entity.addPart("customProps", new StringBody(config.getCustomProps()));
+			entity.addPart("customCommandProps", new StringBody(config.getCustomProps()));
 		}
 		
 		

@@ -2,16 +2,24 @@ package com.adobe.aem.importer.test.transformer;
 
 import static org.junit.Assert.*;
 
+import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.NotActiveException;
 import java.util.Properties;
 import java.util.Set;
 import java.util.Map.Entry;
 
+import javax.jcr.Node;
+import javax.jcr.RepositoryException;
+import javax.xml.transform.Source;
 import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.URIResolver;
 import javax.xml.transform.sax.SAXSource;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
@@ -19,6 +27,8 @@ import javax.xml.transform.stream.StreamSource;
 import net.sf.saxon.TransformerFactoryImpl;
 
 import org.apache.jackrabbit.commons.JcrUtils;
+import org.custommonkey.xmlunit.Diff;
+import org.custommonkey.xmlunit.XMLUnit;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.slf4j.Logger;
@@ -45,7 +55,7 @@ public class TransformerTest {
 		th.addTransformer(new DITATransformerXSLTImpl());
 	}
 	
-//	@Test
+	@Test
 	public void retrieveDITATransformerXSLT() {
 		
 		try {
@@ -73,7 +83,15 @@ public class TransformerTest {
 				File xsltFile = new File(classLoader.getResource("dita-to-content.xsl").getFile());
 				InputStream xsltInput = new FileInputStream(xsltFile);
 				
-				Transformer xsltTransformer = new TransformerFactoryImpl().newTransformer(new StreamSource(xsltInput));
+				// Create XML Reader
+				XMLReader xmlReader = XMLReaderFactory.createXMLReader();
+				xmlReader.setEntityResolver(new RejectingEntityResolver());
+				
+				TransformerFactoryImpl transformFactory = new TransformerFactoryImpl();
+				
+				transformFactory.setURIResolver(new DITATransformerXSLTResolverTest(xsltFile.getPath(), "", xmlReader));
+				
+				Transformer xsltTransformer = transformFactory.newTransformer(new StreamSource(xsltInput));
 				
 				File configExpectedParams = new File(classLoader.getResource(
 						"config_params.xml").getFile());
@@ -86,9 +104,6 @@ public class TransformerTest {
 				for(Entry<Object, Object> entry : configProperties.entrySet())
 					xsltTransformer.setParameter(entry.getKey().toString(), entry.getValue());
 				
-				// Create XML Reader
-				XMLReader xmlReader = XMLReaderFactory.createXMLReader();
-				xmlReader.setEntityResolver(new RejectingEntityResolver());
 				
 				// Transform
 				final ByteArrayOutputStream output = new ByteArrayOutputStream();
@@ -96,6 +111,15 @@ public class TransformerTest {
 				InputStream input = new FileInputStream(masterFile);
 				
 				xsltTransformer.transform(new SAXSource(xmlReader, new InputSource(input)), new StreamResult(output));
+				
+				XMLUnit.setIgnoreWhitespace(true);
+				File content = new File(classLoader.getResource("content.xml").getFile());
+				InputStream contentInput = new FileInputStream(content);
+				
+				InputStream bis = new ByteArrayInputStream(output.toByteArray());
+				
+				Diff diff = XMLUnit.compareXML(new InputSource(contentInput), new InputSource(bis));
+				success = diff.identical();
 				
 			}
 			assertTrue(success);
@@ -105,7 +129,46 @@ public class TransformerTest {
 		}
 	}
 	
-	
+	private class DITATransformerXSLTResolverTest implements URIResolver {
+		/* XSLT Node */
+		private String xslt;
+		/* Source Node */
+		private String src;
+		/* XML Reader */
+		private XMLReader xmlReader;
+		
+		/**
+		 * Constructor
+		 * @param xsltNode
+		 * @param src
+		 * @param xmlReader
+		 */
+		public DITATransformerXSLTResolverTest(String xslt, String src, XMLReader xmlReader) {
+			this.xslt = xslt;
+			this.src = src;
+			this.xmlReader = xmlReader;
+		}
+
+		/* (non-Javadoc)
+		 * @see javax.xml.transform.URIResolver#resolve(java.lang.String, java.lang.String)
+		 */
+		@Override
+		public Source resolve(String href, String base) throws TransformerException {
+			try {
+				
+				ClassLoader classLoader = UploadContentIntegrationTest.class.getClassLoader();
+				
+				File resource = new File(classLoader.getResource("xsltFiles/"+href).getFile());
+				InputStream inputResource = new FileInputStream(resource);
+				
+				return new SAXSource(this.xmlReader, new InputSource(inputResource));
+		  } catch (FileNotFoundException e) {
+			throw new TransformerException("Cannot resolve href=[" + href + "]");
+		}
+		}
+		
+		
+	}
 	
 	
 	

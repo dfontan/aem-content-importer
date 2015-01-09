@@ -59,12 +59,11 @@ public class ZipParser {
 
 		
 		Resource resources = request.getResourceResolver().getResource(src);
-
+		Session jcrSession = request.getResourceResolver().adaptTo(Session.class);
 		Node srcNode = null;
 		try {
 			srcNode = resources.adaptTo(Node.class);
 		} catch (Exception e) {
-			Session jcrSession = request.getResourceResolver().adaptTo(Session.class);
     		srcNode = JcrUtil.createPath(src, "nt:folder", jcrSession);
     		jcrSession.save();
 		}
@@ -72,8 +71,25 @@ public class ZipParser {
 		Session session = srcNode.getSession();
 
 		while (entry != null) {
-			JcrUtils.putFile(srcNode, entry.getName(), "text/xml",
-					extractFile(source));
+			
+			String name[] = entry.getName().split("/");
+			
+			if (name.length > 1) {
+				Node n = srcNode;
+				for (int i = 0; i <= (name.length - 1); i++) {
+					if (i == (name.length - 1)) {
+						JcrUtils.putFile(n, name[i], "text/xml",
+								extractFile(source));
+					} else {
+						n = JcrUtil.createPath(n.getPath() + "/" + name[i], "nt:folder", jcrSession);
+						jcrSession.save();
+					}
+				}
+			} else {
+				JcrUtils.putFile(srcNode, entry.getName(), "text/xml",
+						extractFile(source));
+			}
+			
 			entry = source.getNextEntry();
 		}
 		
