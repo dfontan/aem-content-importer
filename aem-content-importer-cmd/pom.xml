@@ -34,7 +34,7 @@
 							<goal>copy-dependencies</goal>
 						</goals>
 						<configuration>
-							<outputDirectory>${project.build.directory}/lib</outputDirectory>
+							<outputDirectory>${project.parent.basedir}/tools-files/lib</outputDirectory>
 							<overWriteReleases>false</overWriteReleases>
 							<overWriteSnapshots>false</overWriteSnapshots>
 							<overWriteIfNewer>true</overWriteIfNewer>
@@ -47,6 +47,7 @@
 				<artifactId>maven-jar-plugin</artifactId>
 				<version>2.5</version>
 				<configuration>
+					<outputDirectory>${project.parent.basedir}/tools-files</outputDirectory>
 					<archive>
 						<manifest>
 							<addClasspath>true</addClasspath>

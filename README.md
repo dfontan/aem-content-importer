@@ -19,9 +19,14 @@ Maven Builds:
   
   *IMPORTANT: First install has to be done using profile `distribution`* 
 
+Maven tests:
+
+* Unit-tests are executed by default.
+* For launching integration-tests, it's necessary to use profile `integration-tests`.
+
 
 # AEM Content Importer -  Upload Page
-Go to the upload page: `http://<host>:<port>/content/resources/help/en/upload-content.html`
+Go to the upload page: `http://<host>:<port>/content/resources/import-tool.html`
 
 You have two options:
 
@@ -161,11 +166,13 @@ An example of `config_params.xml` containing DITATransformerXSLT properties also
 * save final contents into `/content/dita-import-3`
 
 # AEM Content Importer -  Command Line
-* There are two scripts, one for linux (script.sh) and the other one for windows (script.bat) in folder `tools-files/` showing two examples: passing parameters or passing zip file that it's in that folder as well.
-* For a success execution it's important to have curl command defined in S.O path. Moreover, if it's necessary to pass custom properties using customCommandProps param it's a mandatory to separate properties using the special character '#'.
+* Maven install project aem-content-importer-cmd, that it's going to generate a lib folder with all necessary libraries and the runnable jar
+file to execute inside project folder `aem-content-importer\tools-files`.
+* There are two scripts in that project folder, one for linux (script.sh) and the other one for windows (script.bat) showing two examples: passing parameters or passing zip file that it's in that folder as well.
+* If it's necessary to pass custom properties using customCommandProps param it's a mandatory to separate properties using the special character '#'. You can see it in script examples.
 
 An example:
 
 ````
-curl -u username:password -F src=/var/aem-importer/import1 -F transformer=com.adobe.aem.importer.impl.DITATransformerXSLTImpl -F masterFile=mcloud.ditamap -F target=/content/pando -F customCommandProps="xslt-transformer=net.sf.saxon.TransformerFactoryImpl#xslt-file=/apps/aem-importer/resources/dita-to-content.xsl#tempFolder=/var/aem-importer/tmp#packageTpl=/apps/aem-importer/resources/package-tpl#graphicFolders=images,graphics,Graphics" http://localhost:4502/content/resources/help/en/upload-content/_jcr_content
+java -jar aem-content-importer-cmd-0.0.1-SNAPSHOT.jar -src /var/aem-importer/import1 -transformer com.adobe.aem.importer.impl.DITATransformerXSLTImpl -masterFile mcloud.ditamap -target /content/pando -customProps xslt-transformer=net.sf.saxon.TransformerFactoryImpl#xslt-file=/apps/aem-importer/resources/dita-to-content.xsl#tempFolder=/var/aem-importer/tmp#packageTpl=/apps/aem-importer/resources/package-tpl#graphicFolders=images,graphics,Graphics
 ````
