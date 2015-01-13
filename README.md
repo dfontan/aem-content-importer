@@ -169,7 +169,7 @@ An example of `config_params.xml` containing DITATransformerXSLT properties also
 * Maven install project aem-content-importer-cmd, that it's going to generate a lib folder with all necessary libraries and the runnable jar
 file to execute inside project folder `aem-content-importer\tools-files`.
 * There are two scripts in that project folder, one for linux (script.sh) and the other one for windows (script.bat) showing two examples: passing parameters or passing zip file that it's in that folder as well.
-* If it's necessary to pass custom properties using customCommandProps param it's a mandatory to separate properties using the special character '#'. You can see it in script examples.
+* If it's necessary to pass custom properties, it's a mandatory to separate properties using the special character '#'. You can see it in script examples.
 
 An example:
 
