@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_0105453AD71847B8BFCAF4A40915F157">
+  <title>Notifications</title>
+  <shortdesc>Marketing Cloud notifications appear in the header. They provide
+	 information about workflow actions, tasks, and projects. For example, see the
+	 boards to which you have been added, view pending approvals, activate pages,
+	 and so on. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Marketing Cloud" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>
+      <image href="graphics/notifications.png" id="image_D8274C722F544EF4B3DCF14178AB659A">
+        <?xm-replace_text Paragraph?>
+      </image>
+    </p>
+  </conbody>
+</concept>

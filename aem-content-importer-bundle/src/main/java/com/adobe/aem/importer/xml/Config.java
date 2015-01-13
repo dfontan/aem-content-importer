@@ -9,11 +9,11 @@ package com.adobe.aem.importer.xml;
 
 public class Config {
 	
-	private String transformer;
-	private String src;
-	private String target;
-	private String masterFile;
-	private String customProps;
+	private String transformer = "";
+	private String src = "";
+	private String target = "";
+	private String masterFile = "";
+	private String customProps = "";
 	
 	
 	public String getTransformer() {

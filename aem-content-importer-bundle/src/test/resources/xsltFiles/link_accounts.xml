@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_DFCB29A3B4834FC59AA29E0BBA301584"> 
+  <title>Join the Marketing Cloud from a Solution</title> 
+  <shortdesc>(The preferred method for account linking.) When you click 
+	 <term>Join Marketing Cloud</term>, you can step through a wizard that helps
+	 you link your solution account credentials to your Adobe ID. Your Adobe ID
+	 becomes your single login for all of the 
+	 <keyword>Marketing Cloud</keyword> solutions and services. Linking accounts
+	 is generally a similar process between in all solutions. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Marketing Cloud"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <ul id="ul_B39F43C6E272475982988E631505C5EF">
+		<li id="li_EDEADD1CC5A84E51AE07ACB538897683"><xref
+		  href="link_accounts.xml#concept_DFCB29A3B4834FC59AA29E0BBA301584/section_0540A6C5055540FD826ED7D9CC1120BC"
+		  format="dita" scope="local"><?xm-replace_text Join Marketing Cloud?></xref>
+		</li>
+		<li id="li_BAAC79C30DC34C36ADC785B94E4F8035"><xref
+		  href="link_accounts.xml#concept_DFCB29A3B4834FC59AA29E0BBA301584/section_2D15D6B7EDF54989A557FF59B4354057"
+		  format="dita" scope="local"><?xm-replace_text Having Trouble - Password Recovery?></xref>
+		</li>
+	 </ul>
+	 <section id="section_0540A6C5055540FD826ED7D9CC1120BC">
+		<title>Join Marketing Cloud</title> 
+		<p>If you see the Join Marketing Cloud button in a solution, your
+		  organization has been correctly provisioned, and the solution you are in can be
+		  linked to that organization. 
+		</p>
+		<p> 
+		  <image href="graphics/join_mc_button.png"
+			id="image_17F1736286334ACAA6A3821D07CEF33E"></image> 
+		</p> 
+		<p>Clicking this button displays a wizard for you to link accounts. This
+		  process 
+		  <xref
+			href="access.xml#concept_04341546E8B44CDF833F9DDF351A50B9" format="dita"
+			scope="local">maps</xref> your solution credentials to your Adobe ID. 
+		</p> 
+		<p><image href="graphics/join_mc_wizard.png"
+		  id="image_34ED31DAF0094D6CA8B2FC340C601DED"><?xm-replace_text Paragraph?></image>
+		  
+		</p> 
+		<note> 
+		  <keyword>Adobe Target</keyword> users can be similarly link email and
+		  password accounts to the Marketing Cloud. See 
+		  <xref
+			href="http://microsite.omniture.com/t2/help/en_US/target/admin/t_user_roles.html"
+			format="http" scope="external">Set Up Users and Roles</xref> in 
+		  <keyword>Target</keyword> Help for more information. 
+		</note>
+	 </section>
+	 <section id="section_2D15D6B7EDF54989A557FF59B4354057">
+		<title>Having Trouble - Password Recovery</title>
+		<p>If you receive an error when linking accounts, you might need to
+		  recover your solution password. Depending on the solution you are using, you
+		  may have a different password recovery process.
+		</p>
+		<p>Generally, to recover a password:
+		</p>
+		<ol id="ol_EB9B4710BA794FD8B29F05E5B8301882">
+		  <li id="li_78466C01057342A89E5C0CA43B774E91">Navigate to your solution
+			 login page.
+		  </li>
+		  <li id="li_A678558F45884CF49A344F345C0D5ECD">Click 
+			 <uicontrol>Forgot Password</uicontrol>.
+			 <p>For Adobe Analytics users, navigate to 
+				<xref href="sc2.omniture.com/password_recovery.html"
+				 scope="external">sc2.omniture.com/password_recovery.html</xref>.
+			 </p>
+		  </li>
+		</ol>
+		<p>Resetting a solution password should resolve password linking issues
+		  for Marketing Cloud account linking.
+		</p>
+	 </section><!--<section id="section_8B127A20EDCB434580AA2F68A5A1C210"> 
+		<title>Ways to Link Accounts</title> 
+		<p>There are three ways you can link accounts: 
+		</p> 
+		<table id="table_426F7DCCFFCA4C4589D916FCBC3D7644"> 
+		  <tgroup cols="3"> 
+			 <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+			 <colspec colname="col02" colnum="2" colwidth="1.02*"/> 
+			 <colspec colnum="3" colname="col2" colwidth="1.85*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col1">Method 
+				  </entry> 
+				  <entry colname="col02">Who / Where 
+				  </entry> 
+				  <entry colname="col2">Description 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Join Marketing Cloud button 
+					 </p> 
+					 <p>(<b>Recommended method</b>) 
+					 </p> 
+				  </entry> 
+				  <entry colname="col02"> 
+					 <p>In solutions (<keyword>Analytics</keyword>, 
+						<keyword>Social</keyword>, 
+						<keyword>Target</keyword>, etc.)
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Log in to your solution, then click 
+						<xref href="t_link_accounts.xml#task_6DA95CE477914FA88A2F1FEAB3F9D50C" format="dita" scope="local">Join Marketing Cloud</xref>.
+					 </p>
+					 <p> 
+						<image href="graphics/join_mc_button.png" id="image_0B56E378D2F8435C9B283FF2A30B79CA"></image> 
+					 </p>
+					 <note>You will not see this button until your company has been 
+						<xref href="admin_getting_started.xml#concept_A9A190B372C5450CA53D60431D362143" format="dita" scope="local">provisioned by Adobe</xref>.
+					 </note> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> Email invitation 
+					 </p> 
+				  </entry> 
+				  <entry colname="col02"> 
+					 <p>Users of solutions 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>The email invitation process occurs as follows: 
+					 </p> 
+					 <ol id="ol_F6B327DE82CE413E845CEE129182311F"> 
+						<li id="li_B319E33C07734F2AB81E41B01C5A217B">An administrator
+						  invites users to the 
+						  <xref href="groups.xml#concept_418F1B6DA1904E1CB316103F350BE3A8" format="dita" scope="local">group</xref>, which automatically sends an invitation email to
+						  the user.
+						</li> 
+						<li id="li_79AF457FAD724DA894ED1F83D6F984B6">Users accept the
+						  email and create an account in the 
+						  <wintitle>Marketing Cloud</wintitle>. 
+						</li> 
+					 </ol> 
+					 <draft-comment>
+						<p>Still valid?
+						</p>
+					 </draft-comment> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Add an organization (manual link / unlink)
+					 </p> 
+				  </entry> 
+				  <entry colname="col02"> 
+					 <p> Marketing Cloud
+					 </p>
+					 <draft-comment>
+						<p>Admins only?
+						</p>
+					 </draft-comment>
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>See 
+						<xref href="organizations.xml#concept_6D5C8402C03C4698BB37823A73B7AC11" format="dita" scope="local"><?xm-replace_text Manage Organizations?></xref>. 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </section>-->
+  </conbody> 
+  <related-links> 
+	 <link
+	  href="http://microsite.omniture.com/t2/help/en_US/target/admin/t_user_roles.html"
+	  format="http" scope="external"> 
+		<linktext>Set Up Target Users in the Marketing Cloud 
+		</linktext> 
+	 </link> 
+	 <link href="faq.xml#concept_13219B4E51784577B6FF78AAA203DE91" format="dita"
+	  scope="local"> 
+		<linktext> <?xm-replace_text Frequently Asked Questions about the Marketing Cloud?>
+		</linktext> 
+	 </link> 
+	 <link href="home.xml#concept_A9A190B372C5450CA53D60431D362143"
+	  format="dita" scope="local"> 
+		<linktext>Videos - Getting Started in the Adobe Marketing Cloud 
+		</linktext> 
+	 </link> 
+	 <link href="admin.xml#concept_A9A190B372C5450CA53D60431D362143"
+	  format="dita" scope="local"> 
+		<linktext>Administration 
+		</linktext> 
+	 </link> 
+  </related-links> 
+</concept> 

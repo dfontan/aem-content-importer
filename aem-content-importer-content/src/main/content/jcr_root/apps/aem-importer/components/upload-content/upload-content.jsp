@@ -303,7 +303,7 @@
 				$("#error")
 						.css("display", "block")
 						.html(
-								"The file don't seem to be a zip. Do you want to continue?");
+								"The file doesn't seem to be a zip. Do you want to continue?");
 				$("#messages").css("display", "none");
 				$("#success").css("display", "none");
 			} else {
