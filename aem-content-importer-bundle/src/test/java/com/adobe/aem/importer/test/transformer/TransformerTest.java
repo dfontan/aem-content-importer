@@ -39,7 +39,7 @@ import org.xml.sax.helpers.XMLReaderFactory;
 
 import com.adobe.aem.importer.XMLTransformer;
 import com.adobe.aem.importer.XMLTransformerHelper;
-import com.adobe.aem.importer.impl.DITATransformerXSLTImpl;
+import com.adobe.aem.importer.impl.XMLTransformerDITAImpl;
 import com.adobe.aem.importer.test.integration.upload.UploadContentIntegrationTest;
 import com.day.jcr.vault.util.RejectingEntityResolver;
 
@@ -52,14 +52,14 @@ public class TransformerTest {
 	
 	@BeforeClass
 	public static void init() {
-		th.addTransformer(new DITATransformerXSLTImpl());
+		th.addTransformer(new XMLTransformerDITAImpl());
 	}
 	
 	@Test
 	public void retrieveDITATransformerXSLT() {
 		
 		try {
-			XMLTransformer ditaTransformer = XMLTransformerHelper.getXMLTransformer(DITATransformerXSLTImpl.class.getName());
+			XMLTransformer ditaTransformer = XMLTransformerHelper.getXMLTransformer(XMLTransformerDITAImpl.class.getName());
 			boolean exist = false;
 			if (ditaTransformer != null) {
 				exist = true;
@@ -75,7 +75,7 @@ public class TransformerTest {
 	@Test
 	public void makeDITATransformerXSLT() {
 		try {
-			XMLTransformer ditaTransformer = XMLTransformerHelper.getXMLTransformer(DITATransformerXSLTImpl.class.getName());
+			XMLTransformer ditaTransformer = XMLTransformerHelper.getXMLTransformer(XMLTransformerDITAImpl.class.getName());
 			boolean success = false;
 			if (ditaTransformer != null) {
 				ClassLoader classLoader = UploadContentIntegrationTest.class.getClassLoader();
