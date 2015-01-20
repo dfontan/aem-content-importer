@@ -92,7 +92,7 @@ public class UploadContentIntegrationTest {
 			config.setSrc("/var/aem-importer/importTest1");
 			config.setMasterFile("mcloud.ditamap");
 			config.setTarget("/content/pando");
-			config.setTransformer("com.adobe.aem.importer.impl.DITATransformerXSLTImpl");
+			config.setTransformer("com.adobe.aem.importer.impl.XMLTransformerDITAImpl");
 			config.setCustomProps("xslt-transformer=net.sf.saxon.TransformerFactoryImpl\r\nxslt-file=/apps/aem-importer/resources/dita-to-content.xsl\r\ntempFolder=/var/aem-importer/tmp\r\npackageTpl=/apps/aem-importer/resources/package-tpl\r\ngraphicFolders=images,graphics,Graphics");
 			
 			Properties expectedProperties = createExpectedProperties(config);
@@ -161,7 +161,7 @@ public class UploadContentIntegrationTest {
 			config.setSrc("/var/aem-importer/importTest2");
 			config.setMasterFile("mcloud.ditamap");
 			config.setTarget("/content/pando");
-			config.setTransformer("com.adobe.aem.importer.impl.DITATransformerXSLTImpl");
+			config.setTransformer("com.adobe.aem.importer.impl.XMLTransformerDITAImpl");
 			config.setCustomProps("xslt-transformer=net.sf.saxon.TransformerFactoryImpl\r\nxslt-file=/apps/aem-importer/resources/dita-to-content.xsl\r\ntempFolder=/var/aem-importer/tmp\r\npackageTpl=/apps/aem-importer/resources/package-tpl\r\ngraphicFolders=images,graphics,Graphics");
 
 			jsonResult = HttpClientUtils.post(POST_URL, USERNAME, PASSWORD,

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
- <entry key="xml-transformer">com.adobe.aem.importer.impl.DITATransformerXSLTImpl</entry>
+ <entry key="xml-transformer">com.adobe.aem.importer.impl.XMLTransformerDITAImpl</entry>
  <entry key="src">/var/aem-importer/importTestZip</entry>
  <entry key="target">/content/pando</entry>
  <entry key="masterFile">mcloud.ditamap</entry>

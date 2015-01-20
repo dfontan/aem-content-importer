@@ -31,7 +31,7 @@ Go to the upload page: `http://<host>:<port>/content/resources/importer-tool.htm
 You have two options:
 
 * Fill out form parameters:
-    * *Transformer*: Select from list (currently only one, `DITATransformerXSLT`). The value saved it'll be the whole package(`com.adobe.aem.importer.impl.DITATransformerXSLTImpl`).
+    * *Transformer*: Select from list (currently only one, `XMLTransformerDITA`). The value saved it'll be the whole package(`com.adobe.aem.importer.impl.XMLTransformerDITAImpl`).
 	* *Source folder*: Specify the source path in the repository. The folder must be already created and populated with
 	  all the source files (including the `ditamap` file), for example, through dragging and dropping the files into
 	  the repository using a WebDAV client. A typical location for the source directory is `/var/aem-importer/import`.
@@ -48,7 +48,7 @@ You have two options:
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
- <entry key="xml-transformer">com.adobe.aem.importer.impl.DITATransformerXSLTImpl</entry>
+ <entry key="xml-transformer">com.adobe.aem.importer.impl.XMLTransformerDITAImpl</entry>
  <entry key="src">/var/aem-importer/import2</entry>
  <entry key="target">/content/pando</entry>
  <entry key="masterFile">mcloud.ditamap</entry>
@@ -62,9 +62,9 @@ The result of upload page tool is to save a `.dita` file containing all configur
 
 # Available Transformers
 
-### DITATransformerXSLT
+### XMLTransformerDITA
 
-The DITATransformerXSLT transformer is currently the only one available and permits to import contents using an XSLT schema.
+The XMLTransformerDITA transformer is currently the only one available and permits to import contents using an XSLT schema.
 Here shown below the available parameters to set either in the form (custom properties input) or in zip (dita file):
 * xslt-transformer: then class name of xslt transformer to use (i.e. net.sf.saxon.TransformerFactoryImpl). It's assume to be exported by an osgi bundle (it's available after first installation with `distribution` profile)
 * xslt-file: the xslt file to use
@@ -81,12 +81,12 @@ An example of custom properties input in the form:
     graphicFolders=images,graphics,Graphics
 ````
     
-An example of `config_params.xml` containing DITATransformerXSLT properties also:
+An example of `config_params.xml` containing XMLTransformerDITA properties also:
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
- <entry key="xml-transformer">com.adobe.aem.importer.impl.DITATransformerXSLTImpl</entry>
+ <entry key="xml-transformer">com.adobe.aem.importer.impl.XMLTransformerDITAImpl</entry>
  <entry key="src">/var/aem-importer/import2</entry>
  <entry key="target">/content/pando</entry>
  <entry key="masterFile">mcloud.ditamap</entry>
@@ -126,7 +126,7 @@ Dummy transformer for testing service registration from external bundle
 * Fill in the **src** input the same folder used for previous test:
 `/var/aem-importer/zip`
 * Select from the **transformer** dropdown list:
-`DITATransformerXSLT`
+`XMLTransformerDITA`
 * Fill in the **master file** input:
 `mcloud.ditamap`
 * Fill in the **target** input a new destination path:
@@ -178,5 +178,5 @@ file to execute inside project folder `aem-content-importer\tools-files`.
 An example:
 
 ````
-java -jar aem-content-importer-cmd-0.0.1-SNAPSHOT.jar -src /var/aem-importer/import1 -transformer com.adobe.aem.importer.impl.DITATransformerXSLTImpl -masterFile mcloud.ditamap -target /content/pando -customProps xslt-transformer=net.sf.saxon.TransformerFactoryImpl#xslt-file=/apps/aem-importer/resources/dita-to-content.xsl#tempFolder=/var/aem-importer/tmp#packageTpl=/apps/aem-importer/resources/package-tpl#graphicFolders=images,graphics,Graphics
+java -jar aem-content-importer-cmd-0.0.1-SNAPSHOT.jar -src /var/aem-importer/import1 -transformer com.adobe.aem.importer.impl.XMLTransformerDITAImpl -masterFile mcloud.ditamap -target /content/pando -customProps xslt-transformer=net.sf.saxon.TransformerFactoryImpl#xslt-file=/apps/aem-importer/resources/dita-to-content.xsl#tempFolder=/var/aem-importer/tmp#packageTpl=/apps/aem-importer/resources/package-tpl#graphicFolders=images,graphics,Graphics
 ````
