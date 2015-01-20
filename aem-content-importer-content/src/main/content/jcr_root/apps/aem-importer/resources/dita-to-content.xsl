@@ -106,7 +106,7 @@
                 sling:resourceType="wcm/foundation/components/parsys">
 
             <xsl:variable name="html">
-                <xsl:apply-templates select="*" mode="html">
+                <xsl:apply-templates select="* | processing-instruction()" mode="html">
                     <xsl:with-param name="pathPrefix" select="$pathPrefix"/>
                 </xsl:apply-templates>
             </xsl:variable>
@@ -114,8 +114,8 @@
             <!-- debug
             <xsl:result-document
                     method="html"
-                    href="{concat('/Users/ppiegaze/work/aem-content-importer/tmp/', $pageName, '.html')}">
-                <xsl:apply-templates select="*" mode="html">
+                    href="{concat('/Users/ppiegaze/work/aem-content-importer/tmp/out/', $pageName, '.html')}">
+                <xsl:apply-templates select="* | processing-instruction()" mode="html">
                     <xsl:with-param name="pathPrefix" select="$pathPrefix"/>
                 </xsl:apply-templates>
             </xsl:result-document>
@@ -132,16 +132,27 @@
         </par>
     </xsl:template>
 
+
+
+
+
     <!--  HTML Conversion -->
+
+    <!-- Processing Instructions -->
+    <xsl:template match="processing-instruction()" mode="html">
+        <xsl:text>[?</xsl:text>
+        <xsl:value-of select="name()"/>
+        <xsl:text> </xsl:text>
+        <xsl:value-of select="."/>
+        <xsl:text>?]</xsl:text>
+    </xsl:template>
 
     <!-- Elements -->
     <xsl:template match="*" mode="html">
         <xsl:param name="pathPrefix"/>
         <xsl:element name="{pd:convert(name())}">
-            <xsl:apply-templates select="@*" mode="html">
-                <xsl:with-param name="dita-el" select="name()"/>
-            </xsl:apply-templates>
-            <xsl:apply-templates select="*|text()" mode="html">
+            <xsl:apply-templates select="@*" mode="html"/>
+            <xsl:apply-templates select="* | text() | processing-instruction()" mode="html">
                 <xsl:with-param name="pathPrefix" select="$pathPrefix"/>
             </xsl:apply-templates>
         </xsl:element>
@@ -153,7 +164,7 @@
             <xsl:attribute name="href">
                 <xsl:choose>
                     <xsl:when test="@scope='local'">
-                        <xsl:value-of select="pd:xrefToAnchor(@href, $pathPrefix, $ditamapUri)"/>
+                        <xsl:value-of select="pd:xrefToAnchor(@href, $pathPrefix)"/>
                     </xsl:when>
                     <xsl:otherwise>
                         <xsl:value-of select="@href"/>
@@ -163,7 +174,7 @@
             <xsl:apply-templates select="@* except @href" mode="html">
                 <xsl:with-param name="dita-el" select="name()"/>
             </xsl:apply-templates>
-            <xsl:apply-templates select="*|text()" mode="html">
+            <xsl:apply-templates select="* | text() | processing-instruction()" mode="html">
                 <xsl:with-param name="pathPrefix" select="$pathPrefix"/>
             </xsl:apply-templates>
         </xsl:element>
@@ -178,7 +189,7 @@
             <xsl:apply-templates select="@* except @href" mode="html">
                 <xsl:with-param name="dita-el" select="name()"/>
             </xsl:apply-templates>
-            <xsl:apply-templates select="*|text()" mode="html">
+            <xsl:apply-templates select="* | text() | processing-instruction()" mode="html">
                 <xsl:with-param name="pathPrefix" select="$pathPrefix"/>
             </xsl:apply-templates>
         </xsl:element>
@@ -191,19 +202,13 @@
         </xsl:attribute>
     </xsl:template>
 
-    <xsl:template match="@class" mode="html">
-        <xsl:param name="dita-el"/>
-        <xsl:attribute name="class">
-            <xsl:value-of select="."/>
-            <xsl:text> dita-</xsl:text>
-            <xsl:value-of select="$dita-el"/>
-        </xsl:attribute>
-    </xsl:template>
-
     <!-- Text -->
     <xsl:template match="text()" mode="html">
         <xsl:value-of select="."/>
     </xsl:template>
+
+
+
 
     <!-- Serialize -->
 
@@ -339,7 +344,6 @@
     <xsl:function name="pd:xrefToAnchor">
         <xsl:param name="targetUri"/>
         <xsl:param name="pathPrefix"/>
-        <xsl:param name="ditamapUri"/>
 
         <xsl:variable name="ancestorHrefPath">
             <xsl:for-each select="document($ditamapUri)//*[@href=pd:removeFragment($targetUri)]/ancestor::*">
