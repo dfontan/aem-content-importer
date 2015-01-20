@@ -180,6 +180,7 @@ public class XMLTransformerDITAImpl implements XMLTransformer {
 		Object transfInsance = Class.forName(className).newInstance();
 		if (transfInsance instanceof TransformerFactoryImpl) {
 			TransformerFactoryImpl transformFactory = (TransformerFactoryImpl)transfInsance;
+<<<<<<< HEAD
 			transformFactory.setURIResolver(new XMLTransformerDITAResolver(xsltNode, srcPathNode, xmlReader));
 			return transformFactory.newTransformer(new StreamSource(JcrUtils.readFile(xsltNode)));
 		} else
@@ -210,6 +211,38 @@ public class XMLTransformerDITAImpl implements XMLTransformer {
 		 * @param xmlReader
 		 */
 		public XMLTransformerDITAResolver(Node xsltNode, Node srcNode, XMLReader xmlReader) {
+=======
+			transformFactory.setURIResolver(new DITATransformerXSLTResolver(xsltNode, srcPathNode, xmlReader));
+			return transformFactory.newTransformer(new StreamSource(JcrUtils.readFile(xsltNode)));
+		} else
+			throw new ClassNotFoundException("Class "+className+" is not an instance of "+TransformerFactoryImpl.class.getName());
+	}
+	
+	
+	
+	
+	
+	/*********************************************
+	 *                                           *
+	 *        DITATransformerXSLTResolver        *
+	 *                                           *
+	 *********************************************/
+	private class DITATransformerXSLTResolver implements URIResolver {
+		/* XSLT Node */
+		private Node xsltNode;
+		/* Source Node */
+		private Node srcNode;
+		/* XML Reader */
+		private XMLReader xmlReader;
+		
+		/**
+		 * Constructor
+		 * @param xsltNode
+		 * @param srcNode
+		 * @param xmlReader
+		 */
+		public DITATransformerXSLTResolver(Node xsltNode, Node srcNode, XMLReader xmlReader) {
+>>>>>>> branch 'master' of https://github.com/Adobe-Marketing-Cloud/aem-content-importer.git
 			this.xsltNode = xsltNode;
 			this.srcNode = srcNode;
 			this.xmlReader = xmlReader;
