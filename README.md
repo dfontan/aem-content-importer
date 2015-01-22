@@ -174,6 +174,7 @@ Dummy transformer for testing service registration from external bundle
 file to execute inside project folder `aem-content-importer\tools-files`.
 * There are two scripts in that project folder, one for linux (script.sh) and the other one for windows (script.bat) showing two examples: passing parameters or passing zip file that it's in that folder as well.
 * If it's necessary to pass custom properties, it's a mandatory to separate properties using the special character '#'. You can see it in script examples.
+* Option -sources has to be a zip file or local folder with all source files for making the transformation.
 
 An example:
 

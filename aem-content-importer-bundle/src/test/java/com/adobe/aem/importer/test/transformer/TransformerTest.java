@@ -7,10 +7,15 @@ import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.InputStream;
+import java.io.NotActiveException;
 import java.util.Properties;
+import java.util.Set;
 import java.util.Map.Entry;
 
+import javax.jcr.Node;
+import javax.jcr.RepositoryException;
 import javax.xml.transform.Source;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerException;
@@ -21,6 +26,7 @@ import javax.xml.transform.stream.StreamSource;
 
 import net.sf.saxon.TransformerFactoryImpl;
 
+import org.apache.jackrabbit.commons.JcrUtils;
 import org.custommonkey.xmlunit.Diff;
 import org.custommonkey.xmlunit.XMLUnit;
 import org.junit.BeforeClass;
@@ -83,7 +89,7 @@ public class TransformerTest {
 				
 				TransformerFactoryImpl transformFactory = new TransformerFactoryImpl();
 				
-				transformFactory.setURIResolver(new XMLTransformerDITAResolverTest(xmlReader));
+				transformFactory.setURIResolver(new DITATransformerXSLTResolverTest(xsltFile.getPath(), "", xmlReader));
 				
 				Transformer xsltTransformer = transformFactory.newTransformer(new StreamSource(xsltInput));
 				
@@ -123,15 +129,23 @@ public class TransformerTest {
 		}
 	}
 	
-	private class XMLTransformerDITAResolverTest implements URIResolver {
+	private class DITATransformerXSLTResolverTest implements URIResolver {
+		/* XSLT Node */
+		private String xslt;
+		/* Source Node */
+		private String src;
 		/* XML Reader */
 		private XMLReader xmlReader;
 		
 		/**
 		 * Constructor
+		 * @param xsltNode
+		 * @param src
 		 * @param xmlReader
 		 */
-		public XMLTransformerDITAResolverTest(XMLReader xmlReader) {
+		public DITATransformerXSLTResolverTest(String xslt, String src, XMLReader xmlReader) {
+			this.xslt = xslt;
+			this.src = src;
 			this.xmlReader = xmlReader;
 		}
 
