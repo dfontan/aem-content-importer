@@ -145,7 +145,7 @@ public class UploadContentServlet extends SlingAllMethodsServlet {
 
 		} catch (Exception e) {
 			log.error(e.getMessage(), e);
-			result.put("error", "false");
+			result.put("error", "true");
 		}
 		
 		response.getOutputStream().write(result.toString().getBytes());

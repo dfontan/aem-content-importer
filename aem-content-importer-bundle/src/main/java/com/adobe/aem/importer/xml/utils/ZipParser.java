@@ -16,14 +16,18 @@ import java.util.Properties;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
+import javax.activation.MimetypesFileTypeMap;
 import javax.jcr.Node;
 import javax.jcr.Session;
 
 import org.apache.jackrabbit.commons.JcrUtils;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.adobe.aem.importer.XMLTransformerHelper;
+import com.adobe.aem.importer.servlet.UploadContentServlet;
 import com.day.cq.commons.jcr.JcrUtil;
 
 public class ZipParser {
@@ -34,6 +38,9 @@ public class ZipParser {
 	private SlingHttpServletRequest request;
 
 	private String src = "";
+	
+	private static Logger log = LoggerFactory
+			.getLogger(ZipParser.class);
 	
 	public ZipParser(InputStream source, SlingHttpServletRequest request) {
 		this.source = new ZipInputStream(source);
@@ -46,6 +53,7 @@ public class ZipParser {
 	 * @throws Exception
 	 */
 	public String unzipAndUploadJCR(String encoding) throws Exception {
+		log.debug("Unzipping and uploading files to repository");
 		String nameConfigFile = "";
 		ZipEntry entry;
 		entry = source.getNextEntry();
@@ -69,7 +77,7 @@ public class ZipParser {
 		}
 
 		Session session = srcNode.getSession();
-
+		MimetypesFileTypeMap mimeTypesMap = new MimetypesFileTypeMap();
 		while (entry != null) {
 			
 			String name[] = entry.getName().split("/");
@@ -78,16 +86,30 @@ public class ZipParser {
 				Node n = srcNode;
 				for (int i = 0; i <= (name.length - 1); i++) {
 					if (i == (name.length - 1)) {
-						JcrUtils.putFile(n, name[i], "text/xml",
+						String mimeType = mimeTypesMap.getContentType(entry.getName());
+						JcrUtils.putFile(n, name[i], mimeType,
 								extractFile(source));
 					} else {
-						n = JcrUtil.createPath(n.getPath() + "/" + name[i], "nt:folder", jcrSession);
+						String path = n.getPath() + "/" + name[i];
+						if (!jcrSession.itemExists(path)) {
+							n = n.addNode(name[i], "nt:folder");
+						} else {
+							n = jcrSession.getNode(path);
+						}
 						jcrSession.save();
 					}
 				}
 			} else {
-				JcrUtils.putFile(srcNode, entry.getName(), "text/xml",
-						extractFile(source));
+				if(!entry.getName().endsWith("/")) {
+					String mimeType = mimeTypesMap.getContentType(entry.getName());
+					JcrUtils.putFile(srcNode, entry.getName(), mimeType,
+							extractFile(source));
+				} else {
+					String path = entry.getName();
+					JcrUtil.createPath(path, "nt:folder", jcrSession);
+					jcrSession.save();
+				}
+				
 			}
 			
 			entry = source.getNextEntry();

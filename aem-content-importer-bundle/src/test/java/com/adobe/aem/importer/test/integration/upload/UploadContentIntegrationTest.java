@@ -42,6 +42,7 @@ public class UploadContentIntegrationTest {
 	private final static String URL_REPO = "http://localhost:4502/crx/server";
 	private final static String USERNAME = "admin";
 	private final static String PASSWORD = "admin";
+	private final String CONFIG_PATH_RESULT = "configPathResult";
 	private static File zipFile = null;
 	private static File configExpectedParams = null;
 	private static Session session = null;
@@ -92,7 +93,7 @@ public class UploadContentIntegrationTest {
 			config.setSrc("/var/aem-importer/importTest1");
 			config.setMasterFile("mcloud.ditamap");
 			config.setTarget("/content/pando");
-			config.setTransformer("com.adobe.aem.importer.impl.DITATransformerXSLTImpl");
+			config.setTransformer("com.adobe.aem.importer.impl.XMLTransformerDITAImpl");
 			config.setCustomProps("xslt-transformer=net.sf.saxon.TransformerFactoryImpl\r\nxslt-file=/apps/aem-importer/resources/dita-to-content.xsl\r\ntempFolder=/var/aem-importer/tmp\r\npackageTpl=/apps/aem-importer/resources/package-tpl\r\ngraphicFolders=images,graphics,Graphics");
 			
 			Properties expectedProperties = createExpectedProperties(config);
@@ -101,7 +102,7 @@ public class UploadContentIntegrationTest {
 					PASSWORD, config, null);
 
 			URLConnection urlConnection = new URL(CONFIG_PARAM_SERVER
-					+ jsonResult.get("configPath")).openConnection();
+					+ jsonResult.get(CONFIG_PATH_RESULT)).openConnection();
 			String userpass = USERNAME + ":" + PASSWORD;
 			String basicAuth = "Basic "
 					+ new String(new Base64().encode(userpass.getBytes()));
@@ -130,7 +131,7 @@ public class UploadContentIntegrationTest {
 					null, zipFile);
 
 			URLConnection urlConnection = new URL(CONFIG_PARAM_SERVER
-					+ jsonResult.get("configPath")).openConnection();
+					+ jsonResult.get(CONFIG_PATH_RESULT)).openConnection();
 			String userpass = USERNAME + ":" + PASSWORD;
 			String basicAuth = "Basic "
 					+ new String(new Base64().encode(userpass.getBytes()));
@@ -161,14 +162,14 @@ public class UploadContentIntegrationTest {
 			config.setSrc("/var/aem-importer/importTest2");
 			config.setMasterFile("mcloud.ditamap");
 			config.setTarget("/content/pando");
-			config.setTransformer("com.adobe.aem.importer.impl.DITATransformerXSLTImpl");
+			config.setTransformer("com.adobe.aem.importer.impl.XMLTransformerDITAImpl");
 			config.setCustomProps("xslt-transformer=net.sf.saxon.TransformerFactoryImpl\r\nxslt-file=/apps/aem-importer/resources/dita-to-content.xsl\r\ntempFolder=/var/aem-importer/tmp\r\npackageTpl=/apps/aem-importer/resources/package-tpl\r\ngraphicFolders=images,graphics,Graphics");
 
 			jsonResult = HttpClientUtils.post(POST_URL, USERNAME, PASSWORD,
 					config, zipFile);
 
 			URLConnection urlConnection = new URL(CONFIG_PARAM_SERVER
-					+ jsonResult.get("configPath")).openConnection();
+					+ jsonResult.get(CONFIG_PATH_RESULT)).openConnection();
 			String userpass = USERNAME + ":" + PASSWORD;
 			String basicAuth = "Basic "
 					+ new String(new Base64().encode(userpass.getBytes()));

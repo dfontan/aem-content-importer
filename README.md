@@ -106,7 +106,7 @@ Dummy transformer for testing service registration from external bundle
 
 ### 1 - Zip File
 *Manual steps*
-* Go to page `http://<host>:<port>/content/resources/help/en/upload-content.html`
+* Go to page `http://<host>:<port>/content/resources/importer-tool.html`
 * Drop in or load the file `tools-files/example.zip` which can find in the project
 * Click Execute
 
@@ -122,7 +122,7 @@ Dummy transformer for testing service registration from external bundle
 
 ### 2 - Input Form
 *Manual steps*
-* Go to page `http://<host>:<port>/content/resources/help/en/upload-content.html`
+* Go to page `http://<host>:<port>/content/resources/importer-tool.html`
 * Fill in the **src** input the same folder used for previous test:
 `/var/aem-importer/zip`
 * Select from the **transformer** dropdown list:
@@ -155,7 +155,7 @@ Dummy transformer for testing service registration from external bundle
 * Open edit dialog of `Content Transformer Process` step and select the tab `arguments`
 * Insert into the input `target` the path `/content/dita-import-3`
 * Click Save button on the top left corner
-* Go to page `http://<host>:<port>/content/resources/help/en/upload-content.html`
+* Go to page `http://<host>:<port>/content/resources/importer-tool.html`
 * Drop in or load the file `tools-files/example.zip` which can find in the project
 * Click Execute
 
@@ -172,10 +172,9 @@ Dummy transformer for testing service registration from external bundle
 # AEM Content Importer -  Command Line
 * Maven install project aem-content-importer-cmd, that it's going to generate a lib folder with all necessary libraries and the runnable jar
 file to execute inside project folder `aem-content-importer\tools-files`.
-* There are two scripts in that project folder, one for linux (script.sh) and the other one for windows (script.bat) showing two examples: passing parameters or passing zip file that it's in that folder as well.
+* There are two scripts in that project folder, one for linux (script.sh) and the other one for windows (script.bat) showing two examples: passing parameters, passing zip file that it's in that folder as well or a local folder with all source files for making the transformation.
 * If it's necessary to pass custom properties, it's a mandatory to separate properties using the special character '#'. You can see it in script examples.
-* Option -sources has to be a zip file or local folder with all source files for making the transformation.
-
+* If you have some doubts related to how to pass parameters execute the runnable jar without params. It'll be showed and explanation of each possible parameter.
 An example:
 
 ````
