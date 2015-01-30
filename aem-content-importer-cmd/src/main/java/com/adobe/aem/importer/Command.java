@@ -16,6 +16,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.adobe.aem.importer.xml.Config;
+import com.adobe.aem.importer.xml.utils.ZipHelper;
 
 public class Command {
 
@@ -64,10 +65,8 @@ public class Command {
 
 				log.info("Sending sources to AEM...");
 				if (sources.isDirectory()) {
-
-					ZipHelper zipHelper = new ZipHelper();
 					zipName = System.currentTimeMillis() + ".zip";
-					zipHelper.zipDir(params.get(SOURCES_OPTION), zipName);
+					ZipHelper.zipDir(params.get(SOURCES_OPTION), zipName);
 					
 					sources = new File(zipName);
 

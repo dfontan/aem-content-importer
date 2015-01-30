@@ -80,7 +80,11 @@ public class TransformerTest {
 			if (ditaTransformer != null) {
 				ClassLoader classLoader = UploadContentIntegrationTest.class.getClassLoader();
 				
-				File xsltFile = new File(classLoader.getResource("dita-to-content.xsl").getFile());
+				String currentPath = UploadContentIntegrationTest.class.getProtectionDomain().getCodeSource().getLocation().getPath();
+				File file = new File(currentPath);
+				
+				File xsltFile = new File(file.getParentFile().getParentFile().getParentFile().getPath() + "/aem-content-importer-content/src/main/content/jcr_root/apps/aem-importer/resources/dita-to-content.xsl");
+				
 				InputStream xsltInput = new FileInputStream(xsltFile);
 				
 				// Create XML Reader

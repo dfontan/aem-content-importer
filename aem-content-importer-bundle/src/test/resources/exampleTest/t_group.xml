@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_AB1A6256AFA745B3B8B8BF8EBC2F2209">
+  <title>Create a group in the Marketing Cloud</title>
+  <shortdesc>Create a Marketing Cloud group and add users while creating the
+	 group. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Marketing Cloud" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <steps id="steps_997D7FD4CC2D4A9ABF0B77DD528DA6BE">
+      <step id="step_4FB0226F159145CA8318D7CD04A5BEF5">
+        <cmd>
+          <xref href="t_sign_in.xml#task_1BFE87E20DCB44078CAC82F3CD44B985" format="dita" scope="local">
+            <?xm-replace_text Sign in to the Adobe Marketing Cloud?>
+          </xref> as an administrator. 
+		  </cmd>
+      </step>
+      <step id="step_3A8664DDBDB44F29894F712F288ED13A">
+        <cmd>In the 
+			 <keyword>Marketing Cloud</keyword>, click 
+			 <uicontrol>Tools</uicontrol>, then click 
+			 <uicontrol>Group Management</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_46ECECA1E70A414D831E180E39EC692B">
+        <cmd>Click 
+			 <uicontrol>Add</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_4B87AECC315C48B8B75F5E939A5461C3">
+        <cmd>Type a name for the group, and an optional description. 
+		  </cmd>
+      </step>
+      <step id="step_727950DB20C84B35BAE136B044713702">
+        <cmd>To add (invite) users to the group, type the user's email address
+			 in the 
+			 <uicontrol>Add New Members to the Group</uicontrol> field. 
+		  </cmd>
+        <info>
+          <p> When you add users, they are invited by email. The email
+				recipient must click 
+				<uicontrol>Accept</uicontrol> in the email, which confirms the
+				address. At that point, the account is registered. 
+			 </p>
+        </info>
+      </step>
+      <step id="step_DAA2F49170E348358222264F07C7A026">
+        <cmd>Under 
+			 <wintitle>Solution Access</wintitle>, enable the solution to which
+			 you want the group to have access. 
+		  </cmd>
+      </step>
+      <step id="step_D6136452529F40B59517E3B37CC20303">
+        <cmd>Click 
+			 <uicontrol>Save</uicontrol>. 
+		  </cmd>
+        <stepresult>
+          <p>The new group displays on the 
+				<wintitle>Group Management</wintitle> page. 
+			 </p>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+</task>

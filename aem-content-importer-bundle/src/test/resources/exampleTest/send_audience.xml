@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_A78C75EC12784A739FE1232923508A22"> 
+  <title>Send an audience</title> 
+  <shortdesc>Send audience membership data to Analytics.
+  </shortdesc> 
+  <taskbody> 
+	 <steps id="steps_0672CE96A8EA4E458F97803282FF8BDF"> 
+		<step id="step_B7A5A93141834DEC9C92CB835CD466BE">
+		  <cmd>Log in to the 
+			 <keyword>Marketing Cloud</keyword>, then click 
+			 <uicontrol>Audiences</uicontrol>.
+		  </cmd> 
+		</step> 
+		<step id="step_3AD1D1E2CC814DBD9675120D699F65D9">
+		  <cmd>Select the audience, then click 
+			 <uicontrol>Send</uicontrol>.
+		  </cmd>
+		  <stepresult>
+			 <p><image href="graphics/send_audience.png"
+				id="image_37B1F1E4BE5C42669182A8BBB4A32F49"><?xm-replace_text Step Result?></image>
+			 </p>
+		  </stepresult>
+		</step>
+		<step id="step_3D8FFD7766C5403BB1948D25B2BBD31D">
+		  <cmd>Select a solution.
+		  </cmd>
+		</step>
+		<step id="step_DF91A0FCEBAB449BBAD1380DCCFF45EB">
+		  <cmd>Select the report suite destination.
+		  </cmd>
+		  <stepresult>
+			 <p><image href="graphics/send_audience_rs.png"
+				id="image_AB1E9B0DFEEC4ADA94AB093CD52B9487"><?xm-replace_text Step Result?></image>
+			 </p>
+		  </stepresult>
+		</step>
+		<step id="step_043C85F5D36C4093B8A1C27079544BCB">
+		  <cmd>Click 
+			 <uicontrol>Save</uicontrol>.
+		  </cmd>
+		  <stepresult><?xm-replace_text Step Result?>
+		  </stepresult>
+		</step>
+	 </steps> 
+  </taskbody> 
+</task> 

@@ -30,7 +30,7 @@ import org.slf4j.LoggerFactory;
 
 import com.adobe.aem.importer.xml.Config;
 import com.adobe.aem.importer.xml.utils.Utils;
-import com.adobe.aem.importer.xml.utils.ZipParser;
+import com.adobe.aem.importer.xml.utils.ZipHelper;
 
 @SlingServlet(resourceTypes = "aem-importer/components/upload-content", methods = { "POST" })
 @Properties({
@@ -73,8 +73,6 @@ public class UploadContentServlet extends SlingAllMethodsServlet {
 		String customProps = "";
 
 		String configPathResult = "";
-
-		ZipParser zipParser = null;
 
 		boolean uploadZip = false;
 		
@@ -122,10 +120,7 @@ public class UploadContentServlet extends SlingAllMethodsServlet {
 						}
 
 					} else {
-						zipParser = new ZipParser(param.getInputStream(),
-								request);
-
-						configPathResult = zipParser.unzipAndUploadJCR("UTF-8");
+						configPathResult = ZipHelper.unzipAndUploadJCR("UTF-8", request, param.getInputStream());
 						uploadZip = true;
 					}
 				}
@@ -155,5 +150,7 @@ public class UploadContentServlet extends SlingAllMethodsServlet {
 		}
 		
 		response.getOutputStream().write(result.toString().getBytes());
+		response.getOutputStream().close();
+		
 	}
 }

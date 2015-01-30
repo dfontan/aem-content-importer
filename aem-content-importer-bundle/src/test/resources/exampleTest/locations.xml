@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_F37DFE3AFE4E4ED6B74640E97946255B">
+  <title>Locations</title>
+  <shortdesc>Locations are where Content is being seen (and can be interacted
+	 with) its Audiences. The association between Locations and Content can be more
+	 or less static, or can be managed dynamically according to the rules of a
+	 Campaign. A location always belongs to a specific Channel that determines how
+	 Content can be delivered and how Metrics can be collected. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Marketing Cloud" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>
+      <b>Examples</b>
+    </p>
+    <p> Different point products and digital marketing disciplines have
+		different terms for locations, such as
+	 </p>
+    <ul id="ul_7515FC3DC8F24C1FAD7784F50C9B0A61">
+      <li id="li_8D5D5531724347E885549B38932BD911">Sites
+		</li>
+      <li id="li_8BF2E5C848684313BF643AEEAEBC9837">Properties (Social)
+		</li>
+      <li id="li_995EE3F1D07B4BE9A06844B216090610"> Display inventory
+		</li>
+      <li id="li_3D8240B6055642D49AB434A209EB6F7B">Landing pages
+		</li>
+      <li id="li_C88AF738690C4276BB31325D02F7795C">Mobile applications
+		</li>
+      <li id="li_D4849D3DD46145B3B5EAF2EE36C694EE">Slots (video)
+		</li>
+    </ul>
+  </conbody>
+</concept>

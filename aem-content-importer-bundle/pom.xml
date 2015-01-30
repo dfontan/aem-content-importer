@@ -256,6 +256,71 @@
 			<id>integration-tests</id>
 			<build>
 				<plugins>
+<!-- 					<plugin> -->
+<!-- 						<artifactId>maven-antrun-plugin</artifactId> -->
+<!-- 						<version>1.7</version> -->
+<!-- 						<executions> -->
+<!-- 							<execution> -->
+<!-- 								<phase>generate-sources</phase> -->
+<!-- 								<configuration> -->
+<!-- 									<target> -->
+<!-- 										<delete> -->
+<!-- 											<fileset dir="src/test/resources" includes="exampleTest.zip" /> -->
+<!-- 										</delete> -->
+<!-- 										<zip destfile="src/test/resources/exampleTest.zip" -->
+<!-- 											basedir="src/test/resources/exampleTest" includes="**/*" /> -->
+<!-- 									</target> -->
+<!-- 								</configuration> -->
+<!-- 								<goals> -->
+<!-- 									<goal>run</goal> -->
+<!-- 								</goals> -->
+<!-- 							</execution> -->
+<!-- 						</executions> -->
+<!-- 					</plugin> -->
+<plugin>
+						<groupId>com.adobe.granite.maven</groupId>
+						<artifactId>quickstart-maven-plugin</artifactId>
+						<version>1.15.0</version>
+						<configuration>
+							<quickstartReadyTimeOutSec>1200</quickstartReadyTimeOutSec>
+							<quickstartConfigurations>
+								<quickstartConfiguration>
+									<runmode>author</runmode>
+									<port>4502</port>
+								</quickstartConfiguration>
+							</quickstartConfigurations>
+							<quickstartDependency>
+								<groupId>com.day.cq</groupId>
+								<artifactId>cq-quickstart</artifactId>
+								<version>6.1</version>
+							</quickstartDependency>
+						</configuration>
+						<executions>
+							<execution>
+								<id>start-cq-quickstart</id>
+								<phase>generate-resources</phase>
+								<goals>
+									<goal>start-multiple</goal>
+								</goals>
+								<configuration>
+									<testBundles>
+										<bundle>
+											<groupId>com.adobe.aem.importer</groupId>
+											<artifactId>aem-content-importer</artifactId>
+											<version>0.0.1-SNAPSHOT</version>
+										</bundle>
+									</testBundles>
+								</configuration>
+							</execution>
+							<execution>
+								<id>stop-cq-quickstart</id>
+								<phase>package</phase>
+								<goals>
+									<goal>stop-multiple</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-failsafe-plugin</artifactId>

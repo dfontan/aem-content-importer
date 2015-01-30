@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_E63C846F460B4982AE1ACBDE18D81030">
+  <title>Campaigns</title>
+  <shortdesc>Campaigns determine what content is displayed to whom (audience),
+	 where (locations), and when. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Marketing Cloud" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p> A campaign has a specific goal, which is tracked by metrics. To run, a
+		campaign requires the matching of the visitor's context with the rules set in
+		the campaign, and the delivery of content according to the technical
+		constraints of the location's channel. 
+	 </p>
+    <p> Sometimes campaigns are organized in programs (called portfolios in the
+		Adobe Marketing Cloud). Typically, campaign is used in a specific channel
+		instead of a cross-channel campaign. This is due to the evolution of campaign
+		management tools, which are very channel-oriented. 
+	 </p>
+  </conbody>
+</concept>

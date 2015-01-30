@@ -27,11 +27,13 @@ import javax.jcr.SimpleCredentials;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.jackrabbit.commons.JcrUtils;
 import org.apache.sling.commons.json.JSONObject;
+import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import com.adobe.aem.importer.test.utils.HttpClientUtils;
 import com.adobe.aem.importer.xml.Config;
+import com.adobe.aem.importer.xml.utils.ZipHelper;
 
 public class UploadContentIntegrationTest {
 
@@ -48,9 +50,13 @@ public class UploadContentIntegrationTest {
 	private static Session session = null;
 
 	@BeforeClass
-	public static void init() {
+	public static void init() throws IOException {
 		ClassLoader classLoader = UploadContentIntegrationTest.class.getClassLoader();
-		zipFile = new File(classLoader.getResource("exampleTest.zip").getFile());
+		
+		String zipName = System.currentTimeMillis() + ".zip";
+		ZipHelper.zipDir(classLoader.getResource("exampleTest").getFile(), zipName);
+		
+		zipFile = new File(zipName);
 		
 		configExpectedParams = new File(classLoader.getResource(
 				"config_params.xml").getFile());
@@ -130,17 +136,23 @@ public class UploadContentIntegrationTest {
 			jsonResult = HttpClientUtils.post(POST_URL, USERNAME, PASSWORD,
 					null, zipFile);
 
-			URLConnection urlConnection = new URL(CONFIG_PARAM_SERVER
-					+ jsonResult.get(CONFIG_PATH_RESULT)).openConnection();
-			String userpass = USERNAME + ":" + PASSWORD;
-			String basicAuth = "Basic "
-					+ new String(new Base64().encode(userpass.getBytes()));
-			urlConnection.setRequestProperty("Authorization", basicAuth);
-
-			Properties properties = new Properties();
-			properties.loadFromXML(urlConnection.getInputStream());
-
-			assertTrue(checkProperties(expectedProperties,properties));
+			
+			if("false".equalsIgnoreCase((String)jsonResult.get("error"))) {
+				URLConnection urlConnection = new URL(CONFIG_PARAM_SERVER
+						+ jsonResult.get(CONFIG_PATH_RESULT)).openConnection();
+				String userpass = USERNAME + ":" + PASSWORD;
+				String basicAuth = "Basic "
+						+ new String(new Base64().encode(userpass.getBytes()));
+				urlConnection.setRequestProperty("Authorization", basicAuth);
+				
+				Properties properties = new Properties();
+				properties.loadFromXML(urlConnection.getInputStream());
+				
+				assertTrue(checkProperties(expectedProperties,properties));
+			} else {
+				assertTrue(false);
+			}
+			
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 			assertTrue(false);
@@ -181,6 +193,13 @@ public class UploadContentIntegrationTest {
 			assertTrue(checkProperties(expectedProperties,properties));
 		} catch (Exception e) {
 			assertTrue(false);
+		}
+	}
+	
+	@AfterClass
+	public static void finish() {
+		if (zipFile != null) {
+			zipFile.delete();
 		}
 	}
 	
