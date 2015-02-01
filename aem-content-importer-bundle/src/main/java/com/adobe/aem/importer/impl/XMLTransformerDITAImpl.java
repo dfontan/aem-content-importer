@@ -28,8 +28,6 @@ import org.apache.felix.scr.annotations.Property;
 import org.apache.felix.scr.annotations.Service;
 import org.apache.jackrabbit.commons.JcrUtils;
 import org.osgi.framework.Constants;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.xml.sax.InputSource;
 import org.xml.sax.XMLReader;
 import org.xml.sax.helpers.XMLReaderFactory;
@@ -48,8 +46,6 @@ import com.day.jcr.vault.util.RejectingEntityResolver;
 	@Property(name = Constants.SERVICE_VENDOR, value = "Adobe") })
 public class XMLTransformerDITAImpl extends AbstractXmlTransformer implements XMLTransformer  {
 	
-	private static final Logger log = LoggerFactory.getLogger(XMLTransformerDITAImpl.class);
-
 	/* (non-Javadoc)
 	 * @see com.adobe.aem.importer.XMLTransformer#transform(javax.jcr.Node, java.util.Properties)
 	 */
