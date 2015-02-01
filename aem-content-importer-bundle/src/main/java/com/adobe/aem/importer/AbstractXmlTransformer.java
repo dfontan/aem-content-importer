@@ -7,9 +7,11 @@
 
 package com.adobe.aem.importer;
 
+import java.io.IOException;
 import java.util.Properties;
 
 import javax.jcr.Node;
+import javax.jcr.PathNotFoundException;
 import javax.jcr.RepositoryException;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerConfigurationException;
@@ -19,6 +21,11 @@ import javax.xml.transform.stream.StreamSource;
 import net.sf.saxon.TransformerFactoryImpl;
 
 import org.apache.jackrabbit.commons.JcrUtils;
+import org.apache.jackrabbit.vault.fs.api.ImportMode;
+import org.apache.jackrabbit.vault.fs.config.ConfigurationException;
+import org.apache.jackrabbit.vault.fs.io.AccessControlHandling;
+import org.apache.jackrabbit.vault.fs.io.Importer;
+import org.apache.jackrabbit.vault.fs.io.JcrArchive;
 import org.xml.sax.XMLReader;
 
 public abstract class AbstractXmlTransformer {
@@ -72,5 +79,31 @@ public abstract class AbstractXmlTransformer {
 			return transformFactory.newTransformer(new StreamSource(JcrUtils.readFile(xsltNode)));
 		} else
 			throw new ClassNotFoundException("Class "+className+" is not an instance of "+TransformerFactoryImpl.class.getName());
+	}
+	
+	
+	/**
+	 * 
+	 * Create Archive & import contents
+	 * @param packageNode
+	 * @throws IOException
+	 * @throws PathNotFoundException
+	 * @throws RepositoryException
+	 * @throws ConfigurationException
+	 */
+	protected void importArchive(Node packageNode) throws IOException, PathNotFoundException, RepositoryException, ConfigurationException {
+		// Create Archive
+    JcrArchive archive = new JcrArchive(packageNode, "/");
+    archive.open(true);
+    
+    // Run importer
+    Importer importer = new Importer();
+    importer.getOptions().setImportMode(ImportMode.MERGE);
+    importer.getOptions().setAccessControlHandling(AccessControlHandling.MERGE);
+    
+    importer.run(archive, packageNode.getSession().getNode("/"));
+    
+    // Save all
+    packageNode.getSession().save();
 	}
 }

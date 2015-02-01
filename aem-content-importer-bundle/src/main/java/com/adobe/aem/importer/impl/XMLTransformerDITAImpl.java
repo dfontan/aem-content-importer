@@ -27,9 +27,9 @@ import org.apache.felix.scr.annotations.Component;
 import org.apache.felix.scr.annotations.Property;
 import org.apache.felix.scr.annotations.Service;
 import org.apache.jackrabbit.commons.JcrUtils;
-import org.apache.jackrabbit.vault.fs.io.Importer;
-import org.apache.jackrabbit.vault.fs.io.JcrArchive;
 import org.osgi.framework.Constants;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.xml.sax.InputSource;
 import org.xml.sax.XMLReader;
 import org.xml.sax.helpers.XMLReaderFactory;
@@ -47,6 +47,8 @@ import com.day.jcr.vault.util.RejectingEntityResolver;
 	@Property(name = Constants.SERVICE_DESCRIPTION, value = "Adobe - DITA XSLT Transformer Service"),
 	@Property(name = Constants.SERVICE_VENDOR, value = "Adobe") })
 public class XMLTransformerDITAImpl extends AbstractXmlTransformer implements XMLTransformer  {
+	
+	private static final Logger log = LoggerFactory.getLogger(XMLTransformerDITAImpl.class);
 
 	/* (non-Javadoc)
 	 * @see com.adobe.aem.importer.XMLTransformer#transform(javax.jcr.Node, java.util.Properties)
@@ -107,35 +109,23 @@ public class XMLTransformerDITAImpl extends AbstractXmlTransformer implements XM
 		// Copy transformed output stream to input
 		InputStream stream = new ByteArrayInputStream(output.toByteArray());
 
-	    // Prepare package folders and copy transformed content stream
-	    final Node packageFolderNode = JcrUtil.copy(packageTplNode, tmpFolderNode, PACKAGE_FOLDER);
-	    Node contentFolder = JcrUtil.createPath(packageFolderNode.getPath()+"/jcr_root"+destPath, "nt:folder", "nt:folder", srcPath.getSession(), true);
-	    JcrUtils.putFile(contentFolder, ".content.xml", CONTENT_XML_MIME, stream);
-	    
-	    // Copy graphic resources
-	    for(String candidate : graphicFolders)
-	    	if(srcPath.hasNode(candidate)) {
-	    		JcrUtil.copy(srcPath.getNode(candidate), contentFolder, candidate);
-	    		JcrUtils.putFile(packageFolderNode.getNode(PACKAGE_VAULT), FILTER_XML_FILE, CONTENT_XML_MIME, FilterXmlBuilder.fromRoot(destPath+"/").toStream(candidate));
-	    	}
+    // Prepare package folders and copy transformed content stream
+    final Node packageFolderNode = JcrUtil.copy(packageTplNode, tmpFolderNode, PACKAGE_FOLDER);
+    Node contentFolder = JcrUtil.createPath(packageFolderNode.getPath()+"/jcr_root"+destPath, "nt:folder", "nt:folder", srcPath.getSession(), true);
+    JcrUtils.putFile(contentFolder, ".content.xml", CONTENT_XML_MIME, stream);
     
+    // Copy graphic resources
+    for(String candidate : graphicFolders)
+    	if(srcPath.hasNode(candidate)) {
+    		JcrUtil.copy(srcPath.getNode(candidate), contentFolder, candidate);
+    		JcrUtils.putFile(packageFolderNode.getNode(PACKAGE_VAULT), FILTER_XML_FILE, CONTENT_XML_MIME, FilterXmlBuilder.fromRoot(destPath+"/").toStream(candidate));
+    	}
+  
+    importArchive(packageFolderNode);
     
-	    // Create Archive
-	    JcrArchive archive = new JcrArchive(packageFolderNode, "/");
-	    archive.open(true);
-	    
-	    // Run importer
-	    Importer importer = new Importer();
-	    
-	    importer.run(archive, srcPath.getSession().getNode("/"));
-	    
-	    
-	    // Delete tmp folder
-	    tmpFolderNode.remove();
-	    
-	    // Save all
-	    srcPath.getSession().save();
-			
+    // Delete tmp folder
+    tmpFolderNode.remove();
+    tmpFolderNode.getSession().save();
 	}
 	
 	/*********************************************

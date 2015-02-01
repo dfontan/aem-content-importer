@@ -107,36 +107,23 @@ public class XMLTransformerDocbookImpl extends AbstractXmlTransformer implements
 		// Copy transformed output stream to input
 		InputStream stream = new ByteArrayInputStream(output.toByteArray());
 
-	    // Prepare package folders and copy transformed content stream
-	    final Node packageFolderNode = JcrUtil.copy(packageTplNode, tmpFolderNode, PACKAGE_FOLDER);
-	    Node contentFolder = JcrUtil.createPath(packageFolderNode.getPath()+"/jcr_root"+destPath, "nt:folder", "nt:folder", srcPath.getSession(), true);
-	    JcrUtils.putFile(contentFolder, ".content.xml", CONTENT_XML_MIME, stream);
-	
-	    // Copy graphic resources
-	    for(String candidate : graphicFolders)
-	    	if(srcPath.hasNode(candidate)) {
-	    		JcrUtil.copy(srcPath.getNode(candidate), contentFolder, candidate);
-	    		JcrUtils.putFile(packageFolderNode.getNode(PACKAGE_VAULT), FILTER_XML_FILE, CONTENT_XML_MIME, FilterXmlBuilder.fromRoot(destPath+"/").toStream(candidate));
-	    	}
+    // Prepare package folders and copy transformed content stream
+    final Node packageFolderNode = JcrUtil.copy(packageTplNode, tmpFolderNode, PACKAGE_FOLDER);
+    Node contentFolder = JcrUtil.createPath(packageFolderNode.getPath()+"/jcr_root"+destPath, "nt:folder", "nt:folder", srcPath.getSession(), true);
+    JcrUtils.putFile(contentFolder, ".content.xml", CONTENT_XML_MIME, stream);
+
+    // Copy graphic resources
+    for(String candidate : graphicFolders)
+    	if(srcPath.hasNode(candidate)) {
+    		JcrUtil.copy(srcPath.getNode(candidate), contentFolder, candidate);
+    		JcrUtils.putFile(packageFolderNode.getNode(PACKAGE_VAULT), FILTER_XML_FILE, CONTENT_XML_MIME, FilterXmlBuilder.fromRoot(destPath+"/").toStream(candidate));
+    	}
+  
+    importArchive(packageFolderNode);
     
-    
-	    // Create Archive
-	    JcrArchive archive = new JcrArchive(packageFolderNode, "/");
-	    archive.open(true);
-	
-	    // Run importer
-	    Importer importer = new Importer();
-	    
-	    importer.run(archive, srcPath.getSession().getNode("/"));
-	    
-	    
-	    
-	    // Delete tmp folder
-	    tmpFolderNode.remove();
-	    
-	    // Save all
-	    srcPath.getSession().save();
-			
+    // Delete tmp folder
+    tmpFolderNode.remove();
+    tmpFolderNode.getSession().save();
 	}
 	
 	/*********************************************
