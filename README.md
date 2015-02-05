@@ -38,7 +38,7 @@ You have two options:
 	* *Destination folder*: Specify the destination folder in the repository. Whether destination directory doesn't exist it will be created. i.e `content/dita-import`. 
 	* *Master File*: The name of the master file. For example, `mcloud.ditamap`.
 
-* Upload a zip file containing all source files (contents+master+config). Note that the configuration file, which contains at least the same properties available in the form, must be the first file in the `zip` package (alphabetical order).
+* Upload a zip file containing all source files (contents+master+config) directly in the root or inside a folder. Note that the configuration file, which contains at least the same properties available in the form, must be the first file in the `zip` or `folder inside zip` package (alphabetical order).
   The upload can be performed either by dragging and dropping the `zip` file or by clicking the *Upload* button.
   Notice that config file values override the corresponding form parameters if they're filled them out.
 
@@ -107,7 +107,8 @@ Dummy transformer for testing service registration from external bundle
 ### 1 - Zip File
 *Manual steps*
 * Go to page `http://<host>:<port>/content/resources/importer-tool.html`
-* Drop in or load the file `tools-files/example.zip` which can find in the project
+* Zip folder `aem-content-importer-bundle/src/test/resources/exampleTest` 
+* Drop in or load the zip file just created.
 * Click Execute
 
 *Automatic steps*
@@ -156,7 +157,8 @@ Dummy transformer for testing service registration from external bundle
 * Insert into the input `target` the path `/content/dita-import-3`
 * Click Save button on the top left corner
 * Go to page `http://<host>:<port>/content/resources/importer-tool.html`
-* Drop in or load the file `tools-files/example.zip` which can find in the project
+* Zip folder `aem-content-importer-bundle/src/test/resources/exampleTest` 
+* Drop in or load the zip file just created.
 * Click Execute
 
 *Automatic steps*

@@ -56,6 +56,14 @@ public class ZipHelper {
 		String nameConfigFile = "";
 		ZipEntry entry;
 		entry = source.getNextEntry();
+		
+		String folder = "";
+		
+		if (entry.isDirectory()) {
+			folder = entry.getName();
+			entry = source.getNextEntry();
+		}
+		
 		ByteArrayInputStream configFile = null;
 		StringBuilder src = new StringBuilder();
 		// First file of zip must to be the config file
@@ -80,7 +88,9 @@ public class ZipHelper {
 		MimetypesFileTypeMap mimeTypesMap = new MimetypesFileTypeMap();
 		while (entry != null) {
 			
-			String name[] = entry.getName().split("/");
+			String entryName = entry.getName().replace(folder, "");
+			
+			String name[] = entryName.split("/");
 			
 			if (name.length > 1) {
 				Node n = srcNode;
@@ -102,7 +112,7 @@ public class ZipHelper {
 			} else {
 				if(!entry.getName().endsWith("/")) {
 					String mimeType = mimeTypesMap.getContentType(entry.getName());
-					JcrUtils.putFile(srcNode, entry.getName(), mimeType,
+					JcrUtils.putFile(srcNode, entryName, mimeType,
 							extractFile(source));
 				} else {
 					String path = entry.getName();
