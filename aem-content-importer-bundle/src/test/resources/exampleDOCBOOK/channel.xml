@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_3B25E8E2F15F495098ECB12C23E389EC">
+  <title>Channel</title>
+  <shortdesc>An attribute of a location, an activity in a Campaign
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Marketing Cloud" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>See 
+	 </p>
+    <p> Web
+	 </p>
+    <p> Mobile app
+	 </p>
+    <p> Email
+	 </p>
+    <p> Social
+	 </p>
+    <p> SEO
+	 </p>
+    <p> Organic social
+	 </p>
+    <p> Display
+	 </p>
+    <p> SEM
+	 </p>
+    <p> Social ads
+	 </p>
+  </conbody>
+</concept>

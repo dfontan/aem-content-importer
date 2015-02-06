@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_99C26998BDBE423ABEAACD3FD34F8777"> 
+  <title>Solutions Page</title> 
+  <shortdesc>Launch your Marketing Cloud solutions from the Solutions page. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Marketing Cloud"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p> Using the Share feature in solutions, you can 
+		<xref
+		 href="t_share_analytics_usecase.xml#task_F7AE118436FA4E01BFAF79B485482820"
+		 format="dita" scope="local">pin a report</xref> to a 
+		<keyword>Marketing Cloud</keyword> board with a single click. This means
+		designers or agencies who are creating digital assets no longer need to email
+		these deliverables to their clients. 
+	 </p> 
+	 <p>Marketing Cloud solutions include: 
+	 </p> 
+	 <table id="table_1320E8921743411D9825AE67F8D1A604"> 
+		<tgroup cols="4"> 
+		  <colspec colnum="1" colname="col1" colwidth="*"/> 
+		  <colspec colnum="2" colname="col2" colwidth="*"/> 
+		  <colspec colnum="3" colname="col3" colwidth="*"/> 
+		  <colspec colnum="4" colname="col4" colwidth="*"/> 
+		  <thead> 
+			 <row> 
+				<entry colname="col1">Solution 
+				</entry> 
+				<entry colname="col2">Description 
+				</entry> 
+				<entry colname="col3">Capabilities 
+				</entry> 
+				<entry colname="col4">Benefits 
+				</entry> 
+			 </row> 
+		  </thead> 
+		  <tbody> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p> 
+					 <xref
+					  href="http://microsite.omniture.com/t2/help/en_US/reference/home.html"
+					  format="http" scope="external">Adobe Analytics</xref> 
+				  </p> 
+				  <p> 
+					 <image href="graphics/mc_analytics_128.png"
+					  id="image_3001BF7917E741D88F6F3D61C52D0607"> <?xm-replace_text Paragraph?>
+					 </image> 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>Get real-time analytics across online and offline channels to
+					 continuously improve the performance of marketing activities. 
+				  </p> 
+				</entry> 
+				<entry colname="col3"> 
+				  <ul id="ul_5C21AA9666964386B457B279C63291FD"> 
+					 <li id="li_9CC5B1DD534A48DCB50192B60A1EB38B">Real-time web,
+						social and mobile analytics 
+					 </li> 
+					 <li id="li_572579ABCB1E45C7BCB0CD91D827FBB8">Advanced, ad hoc
+						segmentation 
+					 </li> 
+					 <li id="li_B5AF96B4BB444F0FBB70D85B5C098319">Data integration
+						with offline and third-party sources 
+					 </li> 
+				  </ul> 
+				</entry> 
+				<entry colname="col4"> 
+				  <ul id="ul_5DD571CEECAD467CB730CC0661BA37D0"> 
+					 <li id="li_96F7DAD7D5E74877B46D5AC7C4CCD929">Align marketing
+						initiatives with business objectives 
+					 </li> 
+					 <li id="li_8632FC87E14B47CE8053D8D52A982605"> Gain real-time
+						insights into customer behavior 
+					 </li> 
+					 <li id="li_ADA27117B57D4D29A298EF06F0C3CAC0"> Drives conversion
+						and relevant consumer experiences 
+					 </li> 
+				  </ul> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p> 
+					 <xref
+					  href="http://microsite.omniture.com/t2/help/en_US/tnt/help/tnt_home.html"
+					  format="http" scope="external">Adobe Target</xref> 
+				  </p> 
+				  <p> 
+					 <image href="graphics/mc_target_128.png"
+					  id="image_FA4A9CF508CE40CE9858DA2D53F9F044"> <?xm-replace_text Paragraph?>
+					 </image> 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>Test and target digital experiences to maximize business
+					 results. 
+				  </p> 
+				</entry> 
+				<entry colname="col3"> 
+				  <p>Paves a path from simple testing to targeting to true
+					 segmentation and optimization through: 
+				  </p> 
+				  <ul id="ul_7DB45CF9048D4C05BAE7F4C7C8705749"> 
+					 <li id="li_A0A5938BCAB8434D9DDABF099B4214DC"> A/B and
+						multivariate testing 
+					 </li> 
+					 <li id="li_69007125BF8648DD96AB9F42380DB141">Rules-based
+						targeting 
+					 </li> 
+					 <li id="li_4B92874551E1484F8C74201977E2CAC1">Automated
+						decision-making and targeting 
+					 </li> 
+				  </ul> 
+				</entry> 
+				<entry colname="col4"> 
+				  <ul id="ul_957246F5C4B14BC49119409318C82359"> 
+					 <li id="li_F23E66D883C24854BD7B9589EA1EAFD8">Increase web and
+						mobile site conversations 
+					 </li> 
+					 <li id="li_618FED7D893248088EB1EB5C1B4D3042">Create
+						differentiated personalized experiences 
+					 </li> 
+					 <li id="li_F5B48199BA1A490D9EDF07E572E944D6">Optimize customer
+						engagement and loyalty 
+					 </li> 
+				  </ul> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p> 
+					 <xref
+					  href="http://microsite.omniture.com/t2/help/en_US/social/home.html"
+					  format="http" scope="external">Adobe Social</xref> 
+				  </p> 
+				  <p> 
+					 <image href="graphics/mc_social_128.png"
+					  id="image_EA670616778D47D4894D8E4A6010E54C"> <?xm-replace_text Paragraph?>
+					 </image> 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>Manage social marketing with a comprehensive platform that
+					 enables social listening, publishing, and analytics. 
+				  </p> 
+				</entry> 
+				<entry colname="col3"> 
+				  <ul id="ul_834B7671FB2C4A778A94F26236C88398"> 
+					 <li id="li_C347DC1386D7400C99ACCFDD09665DB4">Manage social
+						content and activities across multiple social networks and profile pages 
+					 </li> 
+					 <li id="li_65CEA1D8808B4365836851526F8281CA">Listen and respond
+						to customer conversations in real time 
+					 </li> 
+					 <li id="li_2AAAA93119384F56BA988A960C84B474">Create social
+						campaigns and track performance with integrated analytics 
+					 </li> 
+				  </ul> 
+				</entry> 
+				<entry colname="col4"> 
+				  <ul id="ul_0C721D68222A41F9BA8759D79B7811C1"> 
+					 <li id="li_24CDE15733DF44A7990AB43842277EDB">Scale social
+						across the enterprise and retain oversight at an executive level 
+					 </li> 
+					 <li id="li_C4AC2420E6F34452A6920A423698671C"> Identify trends,
+						opportunities, and threats pertinent to your brand 
+					 </li> 
+					 <li id="li_FDA7016AB2BA4C5D83EF77C85C833DDA">Connect the dots
+						between social interactions and business results 
+					 </li> 
+				  </ul> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p> 
+					 <xref
+					  href="http://microsite.omniture.com/t2/help/en_US/em/home.html" format="http"
+					  scope="external">Adobe Experience Manager</xref> 
+				  </p> 
+				  <p> 
+					 <image href="graphics/mc_experiencemanager_128.png"
+					  id="image_238205AC0B6F4B0D972CCB10073FD5D2"> <?xm-replace_text Paragraph?>
+					 </image> 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>Organize, manage, and deliver creative assets and other
+					 content across digital marketing channels. 
+				  </p> 
+				</entry> 
+				<entry colname="col3"> 
+				  <ul id="ul_8BFF90FCFE0A45F6B5A09F3CC1568BDF"> 
+					 <li id="li_E62DCFA34D4A408CBF1C0E55093143E9">Digital asset
+						management 
+					 </li> 
+					 <li id="li_CEAB3CE8E87140FCA691F1C890B90A6B"> Web content
+						management 
+					 </li> 
+					 <li id="li_D35282BF646745ADAA69E480F1F2E159"> Social
+						communities 
+					 </li> 
+				  </ul> 
+				</entry> 
+				<entry colname="col4"> 
+				  <ul id="ul_5EAF77105C9047CC99BF625E65E3F544"> 
+					 <li id="li_F746CFBA97064473999E101CDF5C1170">Improve market and
+						brand perception 
+					 </li> 
+					 <li id="li_B904815DA01446C9A488C1FF7EBC8724">Share and
+						collaborate on digital assets and campaigns 
+					 </li> 
+					 <li id="li_89B6E2AC1D4347F9806B92D22155F5D3">Improve marketing
+						and IT agility operational excellence 
+					 </li> 
+				  </ul> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p> 
+					 <xref
+					  href="http://microsite.omniture.com/t2/help/en_US/mo/home.html" format="http"
+					  scope="external">Adobe Media Optimizer</xref> 
+				  </p> 
+				  <p> 
+					 <image href="graphics/mc_optimize_128.png"
+					  id="image_A1593AB399A948878DBD94ACA97382A2"> <?xm-replace_text Paragraph?>
+					 </image> 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>Manage, forecast, and optimize your media mix to deliver peak
+					 return on your investment. 
+				  </p> 
+				</entry> 
+				<entry colname="col3"> 
+				  <ul id="ul_A8B01DD9EF8549BC86F1D49683610EDB"> 
+					 <li id="li_B87D2F21D5B34CC4BBBFF4A3741F3ABE">Cross-channel
+						optimization 
+					 </li> 
+					 <li id="li_12CD07B2575C4D8C86F51E0A0787547C">Search engine
+						marketing management 
+					 </li> 
+					 <li id="li_214752D315454F9FAFD53F787AFB8EE6">Display and social
+						advertising management 
+					 </li> 
+				  </ul> 
+				</entry> 
+				<entry colname="col4"> 
+				  <ul id="ul_74E766E604964C92829FB9487BC4F2B9"> 
+					 <li id="li_169CB6D904D545B0AEC706A8AB9CBB0A">Determine the most
+						effective overall marketing mix 
+					 </li> 
+					 <li id="li_55EB0B52AE4545D88C4A09F8D8AF217B">Drive higher ROI
+						within each marketing channel 
+					 </li> 
+					 <li id="li_FA674FE95EFE48829FD25DE51C57EA76">Optimize customer
+						interactions across channels 
+					 </li> 
+				  </ul> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p> 
+					 <xref
+					  href="http://www.adobe.com/solutions/campaign-management.html?promoid=KFKQI"
+					  format="http" scope="external">Adobe Campaign</xref> 
+				  </p> 
+				  <p> 
+					 <image href="graphics/mc_campaign_128.png"
+					  id="image_6AE3AF3214F6409B88B529BEEBF11A32"> <?xm-replace_text Paragraph?>
+					 </image> 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>Plan and execute orchestrated campaigns across all channels. 
+				  </p> 
+				</entry> 
+				<entry colname="col3"> 
+				  <ul id="ul_A96B68F9EEF842B38996A99E2A0AB197"> 
+					 <li id="li_8A75110B308745BC932967F644955AA3">Plan and execute
+						cross-channel campaigns from a single environment 
+					 </li> 
+					 <li id="li_6D7CF5A1BD284B6984773964FC74C431">Manage plans,
+						offers, activities, budgets and results 
+					 </li> 
+					 <li id="li_85B24EADE40645BDB1EF438154DCB639">Market to your
+						customers individually based on a centralized, real-time customer profile
+						including preferences, purchase behavior, loyalty and more 
+					 </li> 
+				  </ul> 
+				</entry> 
+				<entry colname="col4"> 
+				  <ul id="ul_F7D0B073DB3E41B78BF71669C3752664"> 
+					 <li id="li_B106DA59B9A14DAEADA96D84BA8D2E9F">Improve customer
+						satisfaction and retention, and reduce opt-out rates 
+					 </li> 
+					 <li id="li_DB46379431FA4B87B334F6826D28CCF0">Increase revenue
+						and business performance by automating and optimizing personalized campaigns 
+					 </li> 
+					 <li id="li_116D820EB9414B3594AE5CEC3C860884">Make the most of
+						each customer touch point with timely and effective remarking, cross-sell and
+						up-sell communications and every step of the customer lifecycle 
+					 </li> 
+				  </ul> 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+  </conbody>
+  <related-links>
+	 <link
+	  href="solutions_capability_names.xml#concept_C5F77A107915434084ADE1A13EF0A868"
+	  format="dita" scope="local">
+		<linktext><?xm-replace_text About Solution and Capability Names?>
+		</linktext>
+	 </link>
+  </related-links> 
+</concept>

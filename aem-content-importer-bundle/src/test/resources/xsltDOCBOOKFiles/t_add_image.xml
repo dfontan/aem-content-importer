@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_2317E2F69D2F4C3AA5CCE28E61345936"> 
+  <title>Create a Card from a File</title> 
+  <shortdesc>Create a card by adding an image file to a board. 
+  </shortdesc> 
+  <taskbody> 
+	 <steps id="steps_1047006EC77743B4A800EB99086FD0E4"> 
+		<step id="step_F723E008F0CC4421BC0BEE6FE48EA398"> 
+		  <cmd>In the left navigation menu, click 
+			 <uicontrol>Boards</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_DF8708A5B2E84EB3B01C8BFD28F43DA9"> 
+		  <cmd>Click the desired board to display its contents. 
+		  </cmd> 
+		</step> 
+		<step id="step_659DEFE3F67E4FA3BF7C91D2DFD330B8"> 
+		  <cmd>Drag-and-drop an image file from your computer onto the board. 
+		  </cmd> 
+		  <info> 
+			 <p>Or 
+			 </p> 
+			 <p>Click 
+				<image href="graphics/icon_create_card_from_file.png"
+				 id="image_AE6C12559A554082B49B512D1F36E29D"></image> to browse to and select an
+				image file. 
+			 </p> 
+		  </info> 
+		</step> 
+	 </steps> 
+  </taskbody>
+</task>

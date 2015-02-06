@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_04341546E8B44CDF833F9DDF351A50B9"> 
+  <title>Accessing the Marketing Cloud</title> 
+  <shortdesc>Accessing the Marketing Cloud involves linking or mapping your
+	 solution account with your Adobe ID. For example, in 
+	 <keyword>Analytics</keyword> and 
+	 <keyword>Social</keyword>, you can link (or map) the Company, Username, and
+	 Password values to your Adobe ID. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<keywords> 
+		  <keyword>mobile</keyword> 
+		</keywords> 
+		<othermeta content="Marketing Cloud,Analytics" name="solution"/> 
+		<othermeta content="Metrics" name="topic"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p> 
+		<image href="graphics/link_accounts_image.png"
+		 id="image_6ED5A1913A7E429FA58408736DCBB8DA"> <?xm-replace_text Paragraph?>
+		</image> 
+	 </p> 
+	 <p>After you link your accounts, you can access all of your Adobe Digital
+		Marketing products and services at 
+		<filepath><term>&lt;your
+			 company&gt;</term>.marketing.adobe.com</filepath>. 
+	 </p> 
+	 <note>Before you can join the Marketing Cloud, your must be provisioned by
+		Adobe. Administrators, see 
+		<xref href="admin.xml#concept_FEACCBC246744C0B83C2CD190FAE2A71"
+		 format="dita" scope="local"><?xm-replace_text Administration and Implementation?></xref>.
+	 </note>
+	 <p>After implementation and provisioning has occurred, you can link
+		accounts by using the 
+		<xref href="link_accounts.xml#concept_DFCB29A3B4834FC59AA29E0BBA301584"
+		 format="dita" scope="local">Join the Marketing Cloud</xref> wizard, or by 
+		<xref href="t_get_access.xml#task_6DB30ED75E4E47A58A7C66E0367C5877"
+		 format="dita" scope="local">getting access</xref> on the Organizations page.
+	 </p>
+  </conbody>
+</concept>

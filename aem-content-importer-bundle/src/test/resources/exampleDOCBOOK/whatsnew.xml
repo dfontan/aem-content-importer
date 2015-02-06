@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_CC54A053E7D2442E8AA55245C9F52807"> 
+  <title>What's New in the Marketing Cloud</title> 
+  <shortdesc> <?xm-replace_text Short Description?>
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Marketing Cloud"/> </metadata>
+  </prolog> 
+  <conbody>
+    <!--<p>Not in TOC</p>-->
+	 <section id="section_35ADF0D5C799491E880C65557DC71A55"> 
+		<title>Creative Cloud Asset Sharing in Marketing Cloud</title> 
+		<p>Creating Cloud users who have joined the Marketing Cloud can share
+		  folders and assets. To share assets, users must be members of the tenant (your
+		  company name) in the Marketing Cloud. For example, if you log in at 
+		  <filepath>&lt;yourcompany&gt;.marketing.adobe.com</filepath>, users
+		  must belong to the 
+		  <filepath>&lt;yourcompany&gt;</filepath> tenant. 
+		</p> 
+		<p>• Folder share set up in Marketing Cloud 
+		</p> 
+		<p>• MAC login as Assets admin, with access to solutions/assets. 
+		</p> 
+		<p>• MAC Assets Admin creates whitelist of Creative Cloud users,
+		  add/remove/edit list (using Adobe ID), with invitation status. 
+		</p> 
+		<p>• MAC user can create a folder, add assets, and prepare to share with
+		  creatives.
+		</p> 
+		<p>• Select and invite Creative Cloud users to shared folder 
+		</p> 
+		<p>• Select sharing action and choose from Admin managed creative user
+		  list. 
+		</p> 
+		<p>• Invitations sent to creative users, includes link to folder (both
+		  web and email). 
+		</p> 
+		<p>• Creative Cloud users sync assets to shared folders 
+		</p> 
+		<p>• Creatives can start adding assets to shared folder (replicated to
+		  MAC) via both desktop and web. 
+		</p> 
+		<p>• Collaboration takes place at assets level through shared commenting.
+		  
+		</p> 
+		<p>• MAC users can unshare a folder, when project is completed, and may
+		  re-share with others to continue workflows. 
+		</p> 
+		<p>• MAC users can then leverage MAC/Asset integrations with Target and
+		  Social to execute complete optimization and social media campaigns. 
+		</p> 
+		<p>Overall benefits include: 
+		</p> 
+		<p>• Reduced time to market 
+		</p> 
+		<p>• Streamlined creative production workflows (incl. external agencies)
+		  by reducing coordination time for review/ approve/ publish phases. 
+		</p> 
+		<p>• Easy to save, share, and send files between creatives and marketers 
+		</p> 
+		<p>• Spend less time managing in-process files/versions in multiple
+		  locations 
+		</p> 
+		<p>• Streamline marketing campaign workflows with centralized access to
+		  shared approved assets for MC solutions, i.e., Target &amp; Social. 
+		</p> 
+		<p>• Reduced costs 
+		</p> 
+		<p>• Ability to track and manage creative assets more efficiently. 
+		</p> 
+		<p>• Reduced asset duplication across repositories 
+		</p> 
+		<p>• Reduce administrative tasks of data migration as users come &amp; go
+		  
+		</p> 
+		<p>• Higher levels of IP security/ protection 
+		</p> 
+		<p>• Security and enterprise ownership is key 
+		</p> 
+		<p>• Retain control and protection over company IP (CC/MC enterprise
+		  owned) 
+		</p> 
+		<p>• Retain creative IP as creatives come and go. 
+		</p>
+	 </section> 
+	 <section id="section_1C0DD9DB99444BDAAA67AD548DA3E5B7"> 
+		<p> 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

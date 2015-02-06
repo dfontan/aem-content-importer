@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_59FBC0185FDB43E495E7984D672BA468"> 
+  <title>Data Sources</title> 
+  <shortdesc><?xm-replace_text Short Description?>
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta content="Marketing Cloud" name="solution"/> </metadata>
+  </prolog> 
+  <conbody>
+	 <p><?xm-replace_text Paragraph?>
+	 </p>
+  </conbody>
+</concept>

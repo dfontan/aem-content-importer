@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_5ABA511718914F5FB7B786B502E85A1F"> 
+  <title>Customer Record Sources</title> 
+  <shortdesc>The Customer Record Sources page displays the attributes uploaded
+	 from your customer resource management or other third-party database.
+	 Attributes can include age, gender, loyalty level, products own, interests, and
+	 Lifetime Value, and so on. You can leverage this data for reporting,
+	 segmentation, activities, and campaigns. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta content="Marketing Cloud" name="solution"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <draft-comment> 
+		<p>Coachmarks: https://issues.adobe.com/browse/MAC-21280 
+		</p> 
+	 </draft-comment> 
+	 <p>You can upload the attribute data via FTP to the Marketing Cloud, then
+		leverage the data for reporting, segmentation, activities, and campaigns. 
+	 </p> 
+	 <p> 
+		<menucascade><uicontrol>Marketing Cloud</uicontrol><uicontrol>Customer
+			 Record Resources</uicontrol></menucascade> 
+	 </p> 
+	 <p><image href="graphics/crs_home.png"
+		id="image_E569E48C37494069921D5EF611B0B812"><?xm-replace_text Paragraph?></image>
+		
+	 </p> 
+  </conbody>
+</concept>

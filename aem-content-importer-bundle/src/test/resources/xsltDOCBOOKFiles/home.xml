@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_ECC89F305B804372B63C3CE67448FB07"> 
+  <title>Getting Started with Adobe Marketing Cloud</title> 
+  <shortdesc> <?xm-replace_text Short Description?>
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Marketing Cloud"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The Marketing Cloud is an integrated family of digital marketing
+		solutions, as well as an intuitive interface for new resources and
+		capabilities, called 
+		<term>core services</term>, for your business. 
+	 </p> 
+	 <p> Marketing Cloud Core Services include: 
+	 </p> 
+	 <ul id="ul_C816F881A57549AF82160ADB0CC903B5"> 
+		<li id="li_690A6006ACBE4F63A6ACD5D25362E5A3"><xref
+		  href="access.xml#concept_DFCB29A3B4834FC59AA29E0BBA301584" format="dita"
+		  scope="local">Single sign-on</xref> with your Adobe ID to all your digital
+		  marketing solutions 
+		</li> 
+		<li id="li_AB5BD3A35D404CDB8499929E32B5EF5D"><xref
+		  href="boards.xml#concept_52E7E7B015D14E2C852D9618CF76860F" format="dita"
+		  scope="local">Collaboration features</xref> 
+		</li> 
+		<li id="li_E09B137668BC4612AD6ABA5C0976935E"><xref
+		  href="asset.xml#concept_AD6B33B2C36B4AB38343E0FE1DE18E3B" format="dita"
+		  scope="local">Asset sharing</xref> 
+		</li> 
+		<li id="li_96512257DF6248F2B41FACA8B1523CA6"><xref
+		  href="https://marketing.adobe.com/resources/help/en_US/dtm/" format="https"
+		  scope="external">Dynamic tag management</xref> 
+		</li> 
+		<li id="li_3F246466C1E64FF0A9BDF8863733E3E1"><xref
+		  href="audiences.xml#concept_F31D8B62FD5144E181979C3A300336A5" format="dita"
+		  scope="local">Audience services</xref> 
+		</li> 
+		<li id="li_61B02BA4AC7845E992372E6BEFE5B045">Authentication using 
+		  <xref
+			href="https://developer.omniture.com/en_US/documentation/authentication/auth-overview"
+			format="https" scope="external">OAuth2</xref>, calling the web services APIs 
+		</li> 
+	 </ul> 
+	 <p> 
+		<xref
+		 href="http://www.adobe.com/solutions/digital-marketing.html" format="http"
+		 scope="external">View an overview video of the Marketing Cloud</xref>. 
+	 </p> 
+	 <section id="section_AFFBC9EDDE5B4E4493A7C2896121A773"> 
+		<table outputclass="simpletable"
+		 id="table_5E612F746A704FE095B809A013EE977F"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="*"/> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p outputclass="head"> 
+						<b>Getting Access</b> 
+					 </p> 
+					 <ul id="ul_47C012F6AB3E4B73BA357027F4D15369"> 
+						<li id="li_2364E5490452427981008D3F859837F8"><xref
+						  href="access.xml#concept_04341546E8B44CDF833F9DDF351A50B9" format="dita"
+						  scope="local"><?xm-replace_text Accessing the Marketing Cloud?></xref> 
+						  <p>Learn about joining the 
+							 <keyword>Marketing Cloud</keyword>, logging in, linking
+							 accounts, and managing organizations. (Admins: Provisioning is a prerequisite.)
+							 
+						  </p> 
+						</li> 
+						<li id="li_1310DC29A84C490A9AF919DFA36A5CAB"> 
+						  <xref
+							href="admin_getting_started.xml#concept_A9A190B372C5450CA53D60431D362143"
+							format="dita" scope="local"> Administrators</xref> 
+						  <p>Learn about provisioning your company and becoming an
+							 administrator in the 
+							 <keyword>Marketing Cloud</keyword>. 
+						  </p> 
+						</li> 
+						<li id="li_E106C1467B2F42DFA1F870B4C353085F"><xref
+						  href="faq.xml#concept_13219B4E51784577B6FF78AAA203DE91" format="dita"
+						  scope="local"><?xm-replace_text Frequently Asked Questions - Marketing Cloud?></xref>
+						  
+						  <p>Questions and answers about the 
+							 <keyword>Marketing Cloud</keyword>. (Recommended for
+							 administrators.) 
+						  </p> 
+						</li> 
+						<li id="li_F7DEBE7B1DF3491D86E1DA64554D5361"> 
+						  <xref
+							href="https://developer.omniture.com/en_US/documentation/authentication/auth-overview"
+							format="https" scope="external">Developers</xref> 
+						  <p>Learn how to authenticate using OAuth2 when calling the
+							 web services APIs. 
+						  </p> 
+						</li> 
+					 </ul> 
+					 <p class="- topic/p " outputclass="head"> 
+						<b class="+ topic/ph hi-d/b ">Using the Marketing Cloud</b> 
+					 </p> 
+					 <ul id="ul_04ED8CEEE1A745A5935656140584D0FE"> 
+						<li id="li_7269A959934F4C3E9F13B9719D51F93E"> 
+						  <xref
+							href="faq.xml#concept_13219B4E51784577B6FF78AAA203DE91" format="dita"
+							scope="local"><?xm-replace_text Frequently Asked Questions - Marketing Cloud?></xref>
+						  
+						  <p>Admins - get answers to common questions about the 
+							 <keyword>Marketing Cloud</keyword>. 
+						  </p> 
+						</li> 
+						<li id="li_DE5978CB535D4BB299A428B791799E86"> 
+						  <xref
+							href="feed.xml#concept_9256B8768A294009A777282DD8719213" format="dita"
+							scope="local">Feeds</xref> 
+						  <p>A 
+							 <term>Feed</term> is where you see all that is happening.
+							 You can monitor the latest changes in your assets and campaigns, and navigate
+							 to a more detailed view in an individual 
+							 <xref
+							  href="cards.xml#concept_0A2472B530E04930BCE5CC23A8BEF9E0" format="dita"
+							  scope="local">card</xref>. 
+						  </p> 
+						</li> 
+						<li id="li_E06CDD18D9564DD097FE2F0A39FC82BB"> 
+						  <xref
+							href="boards.xml#concept_52E7E7B015D14E2C852D9618CF76860F" format="dita"
+							scope="local">Boards</xref> 
+						  <p>A 
+							 <term>Board</term> is where you collaborate around
+							 marketing campaigns, and 
+							 <xref
+							  href="t_share_analytics_usecase.xml#task_F7AE118436FA4E01BFAF79B485482820"
+							  format="dita" scope="local">share</xref> reports or a creative asset. 
+						  </p> 
+						</li> 
+					 </ul> 
+					 <p outputclass="head"> 
+						<b>Release Notes &amp; Solution Help</b> 
+					 </p> 
+					 <ul id="ul_723B64B3B36E423F92D204DB6ADC431E"> 
+						<li id="li_2A8575F36DFD495A853CB174D4D095AC"> 
+						  <xref
+							href="release_notes.xml#concept_F5C9FF69A5B44395BB5FA0552F4E9175" format="dita"
+							scope="local"> <?xm-replace_text Release Notes?>
+						  </xref> 
+						  <p>Learn about known issues and what's new in the Marketing
+							 Cloud interface. 
+						  </p> 
+						</li> 
+						<li id="li_D9C1262A714A46F0ADAD05A984127AC9"> 
+						  <xref
+						  href="https://marketing.adobe.com/resources/help/en_US/whatsnew/"
+						  format="https" scope="external">Release Notes - All Solutions</xref> 
+						  <p>Learn about this month's new features and fixes for all
+							 Marketing Cloud solutions. 
+						  </p> 
+						</li> 
+						<li id="li_B3B35F1E4D104B7397A35DC956D190F9"> 
+						  <xref
+							href="https://marketing.adobe.com/resources/help/en_US/home/" format="https"
+							scope="external">Product Documentation Home</xref> 
+						  <p>Search and browse for help across all product
+							 documentation topics. 
+						  </p> 
+						</li> 
+					 </ul> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p class="- topic/p " outputclass="head"> 
+						<b class="+ topic/ph hi-d/b ">Core Services Help</b> 
+					 </p> 
+					 <ul id="ul_B16BCA80511C4F7AB5A34524988227DD"> 
+						<li id="li_DF5D71FCFEAB4154A4C1FDEF70AA0A9C"> 
+						  <xref
+							href="audiences.xml#concept_F31D8B62FD5144E181979C3A300336A5" format="dita"
+							scope="local"> <?xm-replace_text Audiences Services - Master Marketing Profile?>
+						  </xref> 
+						  <p>Implement and start using shared audiences. Creating and
+							 managing audiences is similar to creating and using segments, with the addition
+							 of the ability to share them to 
+							 <keyword>Marketing Cloud</keyword> solutions. 
+						  </p> 
+						</li> 
+						<li id="li_7FC28F9BA24A4007B0C396C376C214C6"> 
+						  <xref
+							href="https://marketing.adobe.com/resources/help/en_US/dtm/" format="https"
+							scope="external">Dynamic Tag Management</xref>: Adobe now offers dynamic tag
+						  management, the market-leading solution that reduces the need for IT resources
+						  and allows you to quickly manage tags and distribute data. It is part of 
+						  <keyword>Adobe Marketing Cloud</keyword>, and available to
+						  customers at no additional cost. 
+						</li> 
+						<li id="li_38CCE4019F4B4A1991DDE1F5D918E681"> 
+						  <xref
+							href="https://marketing.adobe.com/resources/help/en_US/mobile/" format="https"
+							scope="external">Adobe Mobile Services</xref>: Bring together mobile marketing
+						  capabilities for mobile applications from across the Marketing Cloud. 
+						</li> 
+					 </ul> 
+					 <p outputclass="head"> 
+						<b>News</b> 
+					 </p> 
+					 <ul id="ul_45F8DAB6A2FE45459583E7F312B29102"> 
+						<li id="li_90EA11A968BD4352A738AD33EF199984"> 
+						  <xref
+							href="https://marketing.adobe.com/resources/help/en_US/tnt/help/"
+							format="https" scope="external">Adobe Testing and Targeting Classic</xref> is
+						  now accessible from the Marketing Cloud interface. You can visually create and
+						  manage A/B tests and rules-based targeting activities, and connect to the 
+						  <keyword>Adobe Marketing Cloud</keyword>. 
+						  <keyword>Target Classic</keyword> offers a simplified
+						  implementation strategy with your digital properties: just a single line of
+						  code on each page manages all communication required between your site and 
+						  <keyword>Adobe Target</keyword>. 
+						</li> 
+					 </ul> 
+					 <p outputclass="head"> 
+						<b>Community Resources 
+						</b> 
+					 </p> 
+					 <ul id="ul_45F23E53135A4343911B8D5B13A06155"> 
+						<li id="li_7D2C12CFE7B449D5ADA2B20E90464A20"> 
+						  <xref
+							href="http://help-forums.adobe.com/content/adobeforums/en/marketing-cloud-forum/adobe-marketing-cloud.html"
+							format="http" scope="external">Marketing Cloud Forum</xref> 
+						</li> 
+						<li id="li_EF0F8E3F26CE4733820A466EAAB8D88F"> 
+						  <xref
+							href="http://helpx.adobe.com/marketing-cloud.html?promoid=KAWSE" format="http"
+							scope="external">Adobe Marketing Cloud Community</xref> 
+						</li> 
+						<li id="li_B1B09B20848C4507A4B734DD5B81BFA8"> 
+						  <xref
+							href="http://ideas.omniture.com/t5/Adobe-Idea-Exchange-for-Omniture/idb-p/IdeaExchange3"
+							scope="external" format="html">Idea Exchange</xref> 
+						</li> 
+						<li id="li_CC7CAB2BA16B4EE0BC9359FF982703EA"> 
+						  <xref
+							href="http://helpx.adobe.com/learning.html?promoid=KAUDK" scope="external"
+							format="http">Adobe Training and Tutorials</xref> 
+						</li> 
+						<li id="li_6E5F841AB3CA4548A08CA4BD2317AB54"> 
+						  <xref
+							href="http://www.omniture.com/en/products/online_business_optimization"
+							scope="external" format="html">Featured Solutions Center</xref> 
+						</li> 
+					 </ul> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </section> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_208FEB02C299484C9E70605C410E8E53"> 
+  <title>Share data from solutions</title> 
+  <shortdesc>Steps that describe how to share data from solutions.
+  </shortdesc> 
+  <taskbody> 
+	 <steps id="steps_75FCCEA3A4FE4DD7AAEE0372AC1179DF"> 
+		<step id="step_215D21AC23B045FAA89ADF0100A87E81"> 
+		  <cmd><xref href="t_sign_in.xml#task_1BFE87E20DCB44078CAC82F3CD44B985"
+			 format="dita" scope="local"><?xm-replace_text Sign in to the Adobe Marketing Cloud?></xref>.
+		  </cmd> 
+		</step> 
+		<step id="step_6E70E3AD59F44751B2CF78E1F4108C5B">
+		  <cmd><xref
+			 href="t_solution_launch.xml#task_C8C885FFBCAF4F7DBFB76E852F6E1C17"
+			 format="dita" scope="local"><?xm-replace_text Launch a solution?></xref>.
+		  </cmd>
+		  <stepresult>
+			 <p>See 
+				<xref href="http://dev.day.com/docs/en/marketing-cloud/boards.html"
+				 format="http" scope="external">Boards</xref> for information about
+				configuration and sharing.
+			 </p>
+		  </stepresult>
+		</step>
+	 </steps> 
+  </taskbody>
+</task>

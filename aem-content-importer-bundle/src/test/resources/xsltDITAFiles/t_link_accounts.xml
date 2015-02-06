@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_6DA95CE477914FA88A2F1FEAB3F9D50C"> 
+  <title>Link accounts from within a solution</title> 
+  <shortdesc>Join the 
+	 <keyword>Marketing Cloud</keyword> (link accounts) from within solutions
+	 like 
+	 <keyword>Analytics</keyword>, 
+	 <keyword>Social</keyword>, and 
+	 <keyword>Target</keyword>. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Marketing Cloud"/> </metadata>
+  </prolog> 
+  <taskbody> 
+	 <context id="context_CA5338762F2045299608DEBBF079F154"> 
+		<p>This procedure maps your solution credentials to your Adobe ID and is
+		  a similar process among solutions. 
+		</p> 
+	 </context> 
+	 <steps id="steps_4DD2C8C41DBA4735B1795016E8EA55C1"> 
+		<step id="step_15F92C2349A74F7C85060FBEC107BC0D"> 
+		  <cmd>Log in to your solution. 
+		  </cmd> 
+		</step> 
+		<step id="step_0CEC1F60E8FF4BFB82C6C26041EE024A"> 
+		  <cmd>Click 
+			 <uicontrol>Join Marketing Cloud</uicontrol>. 
+		  </cmd> 
+		  <stepresult> 
+			 <p> 
+				<image href="graphics/join_mc_button.png"
+				 id="image_0B56E378D2F8435C9B283FF2A30B79CA"></image> 
+			 </p> 
+			 <note>This button displays in your solution after your company has
+				been provisioned by Adobe. (See 
+				<xref
+				 href="admin_getting_started.xml#concept_A9A190B372C5450CA53D60431D362143"
+				 format="dita" scope="local"><?xm-replace_text Administrators - Getting Started?></xref>.)
+				
+			 </note> 
+		  </stepresult> 
+		</step> 
+		<step id="step_2205C3D7318640E388576388E856869E"> 
+		  <cmd>Step through the 
+			 <wintitle>Link Accounts</wintitle> wizard. 
+		  </cmd> 
+		  <stepresult>
+			 <p><image href="graphics/join_mc_wizard.png"
+				id="image_8049AA53F2D14285BDE0D9A83CCB4B3D"><?xm-replace_text Paragraph?></image>
+			 </p>
+		  </stepresult>
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

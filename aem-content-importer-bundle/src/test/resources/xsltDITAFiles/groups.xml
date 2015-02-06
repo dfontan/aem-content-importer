@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_418F1B6DA1904E1CB316103F350BE3A8"> 
+  <title>Group Management</title> 
+  <shortdesc>Information about managing groups in the Marketing Cloud. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Marketing Cloud"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p> A Group is a container for users. You add users to the group, then
+		enable access to a solution at the group level. For example, you can create a
+		group that has 
+		<keyword>Analytics</keyword> rights, and add users to the group. Contact
+		Customer Care if you are an administrator but do not see the 
+		<wintitle>Tools</wintitle> link. 
+	 </p> 
+	 <p> 
+		<menucascade> 
+		  <uicontrol>Tools</uicontrol> 
+		  <uicontrol>Group Management</uicontrol> 
+		</menucascade> 
+	 </p> 
+	 <p>The following table describes the interface elements available on the 
+		<wintitle>Group Management</wintitle> page and when adding or editing a
+		group. 
+	 </p> 
+	 <table id="table_7847B9608277473E885556A924F74D4C"> 
+		<tgroup cols="2"> 
+		  <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+		  <colspec colnum="2" colname="col2" colwidth="2.65*"/> 
+		  <thead> 
+			 <row> 
+				<entry colname="col1">Element 
+				</entry> 
+				<entry colname="col2">Description 
+				</entry> 
+			 </row> 
+		  </thead> 
+		  <tbody> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p>Group Name 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>(Required) The name of the group account. This name is
+					 displayed on the 
+					 <wintitle>Group Management</wintitle> page. 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p>Description 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>A user-defined description of your group. This description
+					 displays in 
+					 <wintitle>Group Management</wintitle>. 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p>Group Members 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>Names, username (email), and the titles for group members. 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p>Add New Members to Group 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>Lets you specify the email of an existing 
+					 <keyword>Marketing Cloud</keyword> user to add to this group. 
+				  </p> 
+				  <p>See 
+					 <xref href="t_user.xml#task_9942F3064467431596AD51AD92449827"
+					  format="dita" scope="local"><?xm-replace_text Invite a user to the Marketing Cloud?></xref>.
+					 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p>Solution Access 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>Lets you assign the group access to the 
+					 <keyword>Marketing Cloud</keyword> and solutions. 
+				  </p> 
+				  <note>To enable single sign-on between the 
+					 <keyword>Marketing Cloud</keyword> and a solution, users must
+					 join the marketing cloud by 
+					 <xref
+					  href="link_accounts.xml#concept_DFCB29A3B4834FC59AA29E0BBA301584" format="dita"
+					  scope="local">linking the accounts</xref>. 
+				  </note> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p>Number of users 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>The number of users in the group. 
+				  </p> 
+				  <p> When you add users, they are invited by email. The email
+					 recipient must click 
+					 <uicontrol>Accept</uicontrol> in the email, which confirms the
+					 address. At that point, the account is registered. 
+				  </p> 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+  </conbody> 
+</concept>

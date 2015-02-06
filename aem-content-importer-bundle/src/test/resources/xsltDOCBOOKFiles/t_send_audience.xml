@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<task id="task_D957CD23869C4C12961FF68C8FDB7073"> 
+  <title>Send audiences to solutions</title> 
+  <shortdesc>Steps that describe how to send audiences to a solution. Sending
+	 audience segments to Analytics lets you see in reporting the audiences to which
+	 visitors belong. Audience membership is appended to an audience management hit.
+	 The audience is shared with a selected reports suite, using the ListVar. 
+  </shortdesc> 
+  <taskbody> 
+	 <steps id="steps_F39C5F784D124EFFBAD10E597476EAC2"> 
+		<step id="step_A7633E8B842347E88F7A508801504792"> 
+		  <cmd>On the 
+			 <wintitle>Audience Library</wintitle> page, select one or more
+			 audiences. 
+		  </cmd> 
+		</step> 
+		<step id="step_CA4EF1305FBE4041810518DFC13F40AA"> 
+		  <cmd>Slick 
+			 <uicontrol>Send</uicontrol>. 
+		  </cmd> 
+		  <stepresult><?xm-replace_text Step Result?>
+		  </stepresult> 
+		</step> 
+		<step id="step_A83739F0DD714232813E74C3AE409979"> 
+		  <cmd>On the 
+			 <wintitle>Send Audience</wintitle> page, select the destination. 
+		  </cmd> 
+		  <info> 
+			 <p>If you choose 
+				<keyword>Analytics</keyword>, select one or more report suites. 
+			 </p> 
+		  </info> 
+		</step> 
+		<step id="step_1EFFCF3BAEF9474A8C0202D461951E30"> 
+		  <cmd>Click 
+			 <uicontrol>Save</uicontrol>. 
+		  </cmd> 
+		  <stepresult><?xm-replace_text Step Result?>
+		  </stepresult> 
+		</step> 
+	 </steps> 
+  </taskbody>
+</task>

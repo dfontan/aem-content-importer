@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_E07F16F070544B82B56527A845C41D59"> 
+  <title>Exchange Marketplace</title> 
+  <shortdesc>The Marketing Cloud Exchange Marketplace is a single destination
+	 where you can search, browse, select, pay, and download Digital Marketing
+	 extensions via apps. Apps include data connectors, custom configurations to
+	 Adobe's core product, 3rd party applications, reports, and Marketing Cloud
+	 cards. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Marketing Cloud"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p> 
+		<uicontrol>Marketing Cloud</uicontrol> &gt; 
+		<uicontrol>Help</uicontrol> &gt; 
+		<uicontrol>Exchange</uicontrol>
+	 </p> 
+	 <draft-comment> 
+		<p>https://wiki.corp.adobe.com/display/marketingcloud/Marketing+Cloud+Exchange
+		  
+		</p> 
+		<p>https://wiki.corp.adobe.com/display/marketingcloud/Marketplace+Implementation#MarketplaceImplementation-Anonymousvsauthenticatedexperience
+		  
+		</p> 
+	 </draft-comment> 
+	 <ul id="ul_BCE07E4FA5E741FBBACBE8B6075927B5"> 
+		<li id="li_75138539725C4F6CACF966F306E27082">Download SDKs, read
+		  documentation, and submit applications to Digital Marketing for review. 
+		</li> 
+		<li id="li_A3E212F490284BB590205A25D2F57A6F">Customers can search,
+		  select, and install Digital Marketing extensions. 
+		</li> 
+		<li id="li_CFB5B2360D314D5B8C08C112CF004DA0">Administrators can configure
+		  downloaded applications. 
+		</li> 
+		<li id="li_33D11212C1024EAD90779159C9A4902D">Review developer
+		  submissions, browse application, and comment or rate each application. 
+		</li> 
+		<li id="li_F7D7FE20331D498AA9EE75EC466119DA">Decline or approve
+		  applications. 
+		</li> 
+		<li id="li_826B4E40CA594AD18C6239580872044A">Publish in the Marketing
+		  Cloud. 
+		</li> 
+		<li id="li_C650292CCCCC4C6084658EE62E09BFB0">Search and filter by
+		  category, company, type, user, and more. 
+		</li> 
+	 </ul> 
+	 <p>See 
+		<xref href="https://marketing.adobe.com/exchange" format="https"
+		scope="external">Marketing Cloud Exchange</xref> for more information.
+	 </p>
+  </conbody> 
+</concept>
