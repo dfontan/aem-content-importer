@@ -256,27 +256,6 @@
 			<id>integration-tests</id>
 			<build>
 				<plugins>
-					<plugin>
-						<artifactId>maven-antrun-plugin</artifactId>
-						<version>1.7</version>
-						<executions>
-							<execution>
-								<phase>generate-sources</phase>
-								<configuration>
-									<target>
-										<delete>
-											<fileset dir="src/test/resources" includes="exampleTest.zip" />
-										</delete>
-										<zip destfile="src/test/resources/exampleTest.zip"
-											basedir="src/test/resources/exampleTest" includes="**/*" />
-									</target>
-								</configuration>
-								<goals>
-									<goal>run</goal>
-								</goals>
-							</execution>
-						</executions>
-					</plugin>
 <!-- <plugin> -->
 <!-- 						<groupId>com.adobe.granite.maven</groupId> -->
 <!-- 						<artifactId>quickstart-maven-plugin</artifactId> -->

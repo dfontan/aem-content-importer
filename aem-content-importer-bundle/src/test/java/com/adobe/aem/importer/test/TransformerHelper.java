@@ -1,4 +1,4 @@
-package com.adobe.aem.importer.test.transformer;
+package com.adobe.aem.importer.test;
 
 import com.adobe.aem.importer.XMLTransformer;
 import com.adobe.aem.importer.XMLTransformerHelper;

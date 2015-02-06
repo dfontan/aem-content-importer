@@ -230,7 +230,7 @@ public class ZipHelper {
 	 * @param zip
 	 * @throws IOException
 	 */
-	private static void addFolderToZip(String path, String srcFolder,
+	public static void addFolderToZip(String path, String srcFolder,
 			ZipOutputStream zip) throws IOException {
 		File folder = new File(srcFolder);
 		if (folder.list().length == 0) {
@@ -257,7 +257,7 @@ public class ZipHelper {
 	 * @param flag
 	 * @throws IOException
 	 */
-	private static void addFileToZip(String path, String srcFile, ZipOutputStream zip,
+	public static void addFileToZip(String path, String srcFile, ZipOutputStream zip,
 			boolean flag) throws IOException {
 		File resource = new File(srcFile);
 		if (flag) {

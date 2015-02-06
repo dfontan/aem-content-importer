@@ -46,7 +46,7 @@ import com.day.jcr.vault.util.RejectingEntityResolver;
 @org.apache.felix.scr.annotations.Properties({
 	@Property(name = Constants.SERVICE_DESCRIPTION, value = "Adobe - DOCBOOK XSLT Transformer Service"),
 	@Property(name = Constants.SERVICE_VENDOR, value = "Adobe") })
-public class XMLTransformerDocbookImpl extends AbstractXmlTransformer implements XMLTransformer  {
+public class XMLTransformerDOCBOOKImpl extends AbstractXmlTransformer implements XMLTransformer  {
 
 	/* (non-Javadoc)
 	 * @see com.adobe.aem.importer.XMLTransformer#transform(javax.jcr.Node, java.util.Properties)
