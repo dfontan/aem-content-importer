@@ -107,7 +107,7 @@ Dummy transformer for testing service registration from external bundle
 ### 1 - Zip File
 *Manual steps*
 * Go to page `http://<host>:<port>/content/resources/importer-tool.html`
-* Zip folder `aem-content-importer-bundle/src/test/resources/exampleTest` 
+* Zip folder `aem-content-importer-bundle/src/test/resources/exampleDITA` 
 * Drop in or load the zip file just created.
 * Click Execute
 
@@ -157,7 +157,7 @@ Dummy transformer for testing service registration from external bundle
 * Insert into the input `target` the path `/content/dita-import-3`
 * Click Save button on the top left corner
 * Go to page `http://<host>:<port>/content/resources/importer-tool.html`
-* Zip folder `aem-content-importer-bundle/src/test/resources/exampleTest` 
+* Zip folder `aem-content-importer-bundle/src/test/resources/exampleDITA` 
 * Drop in or load the zip file just created.
 * Click Execute
 
