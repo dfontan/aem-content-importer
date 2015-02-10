@@ -8,6 +8,7 @@
 package com.adobe.aem.importer;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.Properties;
 
 import javax.jcr.Node;
@@ -26,9 +27,14 @@ import org.apache.jackrabbit.vault.fs.config.ConfigurationException;
 import org.apache.jackrabbit.vault.fs.io.AccessControlHandling;
 import org.apache.jackrabbit.vault.fs.io.Importer;
 import org.apache.jackrabbit.vault.fs.io.JcrArchive;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.xml.sax.XMLReader;
 
 public abstract class AbstractXmlTransformer {
+	
+	/* log */
+	private final Logger log = LoggerFactory.getLogger(this.getClass());
 
 	protected static final String 		CONFIG_PARAM_TRANSFORMER_CLASS 		= "xslt-transformer";
 	protected static final String 		CONFIG_PARAM_XSLT_FILE 						= "xslt-file";
@@ -53,6 +59,7 @@ public abstract class AbstractXmlTransformer {
 	 */
 	protected String getMandatoryProperty(Properties properties, String key) throws Exception {
 		final String xslt = properties.getProperty(key);
+		log.debug("Get mandatory property {}: {}",key,xslt);
 		if (xslt==null)
 			throw new Exception("Mandatory property "+key+" not supplied");
 		return xslt;
@@ -72,6 +79,7 @@ public abstract class AbstractXmlTransformer {
 	 * @throws RepositoryException
 	 */
 	protected Transformer initTransformer(String className, Node xsltNode, Node srcPathNode, XMLReader xmlReader, URIResolver uriResolver) throws InstantiationException, IllegalAccessException, ClassNotFoundException, TransformerConfigurationException, RepositoryException {
+		log.debug("Init XML transformer {}",className);
 		Object transfInsance = Class.forName(className).newInstance();
 		if (transfInsance instanceof TransformerFactoryImpl) {
 			TransformerFactoryImpl transformFactory = (TransformerFactoryImpl)transfInsance;
@@ -93,6 +101,7 @@ public abstract class AbstractXmlTransformer {
 	 */
 	protected void importArchive(Node packageNode) throws IOException, PathNotFoundException, RepositoryException, ConfigurationException {
 		// Create Archive
+		log.debug("Create the archive on node {}", packageNode.getPath());
     JcrArchive archive = new JcrArchive(packageNode, "/");
     archive.open(true);
     
@@ -101,9 +110,26 @@ public abstract class AbstractXmlTransformer {
     importer.getOptions().setImportMode(ImportMode.MERGE);
     importer.getOptions().setAccessControlHandling(AccessControlHandling.MERGE);
     
+    log.debug("Run the archive importer");
     importer.run(archive, packageNode.getSession().getNode("/"));
     
     // Save all
     packageNode.getSession().save();
+	}
+
+	/**
+	 * 
+	 * Get XML Filter content file
+	 * @param paths
+	 * @return
+	 */
+	protected String xmlPackageFilter(List<String> paths) {
+		StringBuilder sb = new StringBuilder();
+    sb.append("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n");
+    sb.append(" <workspaceFilter version=\"1.0\">\r\n");
+    for(String path : paths)
+    	sb.append("  <filter root=\"").append(path).append("\" />\r\n");
+    sb.append(" </workspaceFilter>");
+    return sb.toString();
 	}
 }
