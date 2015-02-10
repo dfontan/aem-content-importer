@@ -24,6 +24,7 @@ import javax.jcr.Node;
 import javax.jcr.Session;
 
 import org.apache.jackrabbit.commons.JcrUtils;
+import org.apache.jackrabbit.oak.commons.IOUtils;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
 import org.slf4j.Logger;
@@ -273,16 +274,20 @@ public class ZipHelper {
 			} else {
 				byte[] buf = new byte[1024];
 				int len;
-				FileInputStream in = new FileInputStream(srcFile);
-				
-				if (path.equals("")) {
-					zip.putNextEntry(new ZipEntry(resource.getName()));
-				} else {
-					zip.putNextEntry(new ZipEntry(path + "/" + resource.getName()));
-				}
-				
-				while ((len = in.read(buf)) > 0) {
-					zip.write(buf, 0, len);
+				FileInputStream in = null;
+				try {
+					in = new FileInputStream(srcFile);
+					if (path.equals("")) {
+						zip.putNextEntry(new ZipEntry(resource.getName()));
+					} else {
+						zip.putNextEntry(new ZipEntry(path + "/" + resource.getName()));
+					}
+					
+					while ((len = in.read(buf)) > 0) {
+						zip.write(buf, 0, len);
+					}
+				} finally {
+					IOUtils.closeQuietly(in);
 				}
 			}
 		}

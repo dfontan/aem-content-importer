@@ -39,7 +39,6 @@ import org.xml.sax.helpers.XMLReaderFactory;
 import com.adobe.aem.importer.XMLTransformer;
 import com.adobe.aem.importer.XMLTransformerHelper;
 import com.adobe.aem.importer.AbstractXmlTransformer;
-import com.adobe.aem.importer.xml.FilterXmlBuilder;
 import com.day.cq.commons.jcr.JcrUtil;
 import com.day.jcr.vault.util.RejectingEntityResolver;
 
@@ -138,7 +137,7 @@ public class XMLTransformerDITAImpl extends AbstractXmlTransformer implements XM
     importArchive(packageFolderNode);
     
     // Delete tmp folder
-    //tmpFolderNode.remove();
+    tmpFolderNode.remove();
     tmpFolderNode.getSession().save();
     log.info("XMLTransformerDITA transformation is completed");
 	}
@@ -175,6 +174,7 @@ public class XMLTransformerDITAImpl extends AbstractXmlTransformer implements XM
 		public Source resolve(String href, String base) throws TransformerException {
 			try {
 	      final Node node = (href.endsWith("xsl") ?  this.xsltNode.getParent().getNode(href) : this.srcNode.getNode(href)); 
+	      XMLTransformerDITAImpl.log.debug("Resolving resource {}",node.getPath());
 	      return new SAXSource(this.xmlReader, new InputSource(JcrUtils.readFile(node)));
 		  } catch (RepositoryException e) {
 		      throw new TransformerException("Cannot resolve " + href + " in either [parent of " + this.xsltNode + " or " + this.srcNode + "]");

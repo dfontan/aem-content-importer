@@ -11,7 +11,6 @@ import java.io.InputStream;
 import java.util.Properties;
 import java.util.Map.Entry;
 
-import javax.jcr.Node;
 import javax.xml.transform.Source;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerException;
@@ -123,8 +122,7 @@ public class TransformerTest {
 				TransformerFactoryImpl transformFactory = new TransformerFactoryImpl();
 
 				transformFactory
-						.setURIResolver(new DITATransformerXSLTResolverTest(
-								xsltFile.getPath(), "", xmlReader));
+						.setURIResolver(new DITATransformerXSLTResolverTest(xmlReader));
 
 				Transformer xsltTransformer = transformFactory
 						.newTransformer(new StreamSource(xsltInput));
@@ -198,8 +196,7 @@ public class TransformerTest {
 				TransformerFactoryImpl transformFactory = new TransformerFactoryImpl();
 
 				transformFactory
-						.setURIResolver(new DOCBOOKTransformerXSLTResolverTest(
-								xsltFile.getPath(), "", xmlReader));
+						.setURIResolver(new DOCBOOKTransformerXSLTResolverTest(xmlReader));
 
 				Transformer xsltTransformer = transformFactory
 						.newTransformer(new StreamSource(xsltInput));
@@ -245,24 +242,15 @@ public class TransformerTest {
 	}
 
 	private class DITATransformerXSLTResolverTest implements URIResolver {
-		/* XSLT Node */
-		private String xslt;
-		/* Source Node */
-		private String src;
 		/* XML Reader */
 		private XMLReader xmlReader;
 
 		/**
 		 * Constructor
 		 * 
-		 * @param xsltNode
-		 * @param src
 		 * @param xmlReader
 		 */
-		public DITATransformerXSLTResolverTest(String xslt, String src,
-				XMLReader xmlReader) {
-			this.xslt = xslt;
-			this.src = src;
+		public DITATransformerXSLTResolverTest(XMLReader xmlReader) {
 			this.xmlReader = xmlReader;
 		}
 
@@ -296,24 +284,15 @@ public class TransformerTest {
 	}
 
 	private class DOCBOOKTransformerXSLTResolverTest implements URIResolver {
-		/* XSLT Node */
-		private String xslt;
-		/* Source Node */
-		private String src;
 		/* XML Reader */
 		private XMLReader xmlReader;
 
 		/**
 		 * Constructor
 		 * 
-		 * @param xsltNode
-		 * @param src
 		 * @param xmlReader
 		 */
-		public DOCBOOKTransformerXSLTResolverTest(String xslt, String src,
-				XMLReader xmlReader) {
-			this.xslt = xslt;
-			this.src = src;
+		public DOCBOOKTransformerXSLTResolverTest(XMLReader xmlReader) {
 			this.xmlReader = xmlReader;
 		}
 

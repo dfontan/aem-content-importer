@@ -16,7 +16,6 @@ import java.util.Properties;
 
 import javax.jcr.Node;
 import javax.jcr.Repository;
-import javax.jcr.RepositoryException;
 import javax.jcr.Session;
 import javax.jcr.SimpleCredentials;
 
