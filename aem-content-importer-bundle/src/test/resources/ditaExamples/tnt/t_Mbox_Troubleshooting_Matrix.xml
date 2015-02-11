@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_9EEE14582E5443278B1A39CC1E00D6B4" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Mbox Troubleshooting Matrix</title>
+  <shortdesc class="- topic/shortdesc ">Use the Mbox Troubleshooting Matrix to
+	 help you identify problems with your mboxes. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <steps id="steps_F9F5170493EF49A4A53E377FB5BCBCC2" class="- topic/ol task/steps ">
+      <step id="step_CCEFDE16908740BDA2892002B183BA11" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Browse to the page with your mbox. 
+		  </cmd>
+      </step>
+      <step id="step_05275E1058A243099F32D1C0ED20274E" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">If the mbox appears blank in the
+			 browser, check and fix the potential errors listed for that symptom, using the
+			 troubleshooting response flow below. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">
+            <b class="+ topic/ph hi-d/b ">Tip:</b> After
+				fixing the errors, delete your cookies and clear cache. Close and reopen a
+				browser and reload the page. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_7B532FDD055F4DDE865350FCF10C2F07" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Ensure pop-ups are enabled, then
+			 append 
+			 <codeph class="+ topic/ph pr-d/codeph ">?mboxDebug=1</codeph> to the
+			 end of the URL. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p "> If the Debug window reports any of the
+				symptoms listed in the left column, check and fix the root cause errors. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_189C90630B664C8988414DECE5853175" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Again, clear cookies and cache, close
+			 browser and reload the page to verify the errors have been fixed. 
+		  </cmd>
+      </step>
+    </steps>
+    <result id="result_9F197649D7314217ADC3CAD71A43990A" class="- topic/section task/result ">
+      <p class="- topic/p ">
+        <b class="+ topic/ph hi-d/b ">Potential Root Cause
+			 Errors</b>
+      </p>
+      <p class="- topic/p ">The following table helps to discover the possible
+		  causes of mbox errors. 
+		</p>
+      <p class="- topic/p ">
+        <image href="graphics/mbox_errors.png" id="image_2441CDFBE03742559578F0FF2F9F1CC8" placement="inline" class="- topic/image "></image>
+      </p>
+      <p class="- topic/p ">
+        <b class="+ topic/ph hi-d/b ">Troubleshooting Resources</b>
+      </p>
+      <p class="- topic/p ">The Mozilla Firefox browser includes a JavaScript
+		  console that quickly finds and lists the JavaScript errors in your page.
+		  Firefox also offers an extension (<xref href="https://addons.mozilla.org/en-US/firefox/addon/remove-cookies-for-site/" scope="external" format="html" class="- topic/xref "><?xm-replace_text https://addons.mozilla.org/en-US/firefox/addon/remove-cookies-for-site/?></xref>)
+		  that allows you to clear cookies from the site you are on. This helps you test
+		  your campaigns without removing all of your browser cookies. 
+		</p>
+      <p class="- topic/p ">See 
+		  <xref href="r_Troubleshooting_Mboxes.xml#reference_FAA5B3A0FE1542219E004263BF4015E3" type="reference" format="dita" scope="local" class="- topic/xref ">Troubleshooting Mboxes 
+		  </xref> for detailed mbox troubleshooting steps. 
+		</p>
+    </result>
+  </taskbody>
+  <related-links class="- topic/related-links ">
+    <link href="c_About_Mboxes.xml#concept_E01933A6CEDE481BBAC25F95FE3C6FD9" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Using Mboxes?>
+    </link>
+    <link href="c_Downloading_and_Setting_Up_MboxJs.xml#concept_9429FEF054734D3AA0CE7E3F25ED0B9E" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Downloading and Setting Up mbox.js?>
+    </link>
+    <link href="c_Creating_and_Placing_Mboxes.xml#concept_B0EC432377C244B79DB47783B3170E22" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Creating and Placing Mboxes?>
+    </link>
+    <link href="c_Using_a_Redirector.xml#concept_451731358AA64789AD0DA3BAAF2DF72C" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Using a Redirector?>
+    </link>
+    <link href="t_Validating_an_Mbox.xml#task_4BB8E090CBBF4C56A39BB63BF1ADB964" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Validating an Mbox?>
+    </link>
+    <link href="t_Deactivating_an_Mbox.xml#task_536C6C87631D4BC3B3829117DE4D55FE" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Deactivating an Mbox?>
+    </link>
+    <link href="t_Clearing_Deleting_an_Mbox.xml#task_26DA102117A24CDA8A642690366488D7" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Clearing (Deleting) an Mbox?>
+    </link>
+    <link href="r_Troubleshooting_Mboxes.xml#reference_FAA5B3A0FE1542219E004263BF4015E3" type="reference" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Troubleshooting Mboxes?>
+    </link>
+    <link href="t_Mbox_Reporting.xml#task_BF6F059DE4CA4769AD5408471731E206" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Mbox Request Report?>
+    </link>
+  </related-links>
+</task>

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_1BFE87E20DCB44078CAC82F3CD44B985"> 
+  <title>Sign in to the Adobe Marketing Cloud</title> 
+  <shortdesc>Learn how to sign in to the Adobe Marketing Cloud. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Marketing Cloud"/> </metadata>
+  </prolog> 
+  <taskbody> 
+	 <steps id="steps_11856D53567544B898323143E5016C29"> 
+		<step id="step_E3E5046F0EB2407FADF75CFC7BD09008"> 
+		  <cmd>Verify with your administrator that your company has been
+			 provisioned in the 
+			 <keyword>Marketing Cloud</keyword>. 
+		  </cmd> 
+		  <info> 
+			 <p>See 
+				<xref
+				 href="admin_getting_started.xml#concept_A9A190B372C5450CA53D60431D362143"
+				 format="dita" scope="local"><?xm-replace_text Administration?></xref>. 
+			 </p> 
+		  </info> 
+		</step> 
+		<step id="step_3A9FCDBA802E4ABA8B3D19B0EB352BA4"> 
+		  <cmd>Navigate to the 
+			 <keyword>Adobe Marketing Cloud</keyword> at 
+			 <filepath>&lt;yourcompany&gt;.marketing.adobe.com</filepath>. 
+		  </cmd> 
+		</step> 
+		<step id="step_33A5B656626843D5B52DE7D1B851CB21"> 
+		  <cmd>Click 
+			 <uicontrol>Sign In With Adobe ID</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_90B677D6A4C0466197F83E1C36E5AD8D"> 
+		  <cmd>Type your credentials, then click 
+			 <uicontrol>Sign In</uicontrol>. 
+		  </cmd> 
+		  <stepresult> 
+			 <p><image href="graphics/welcom_mac.png"
+				id="image_A1857136953C44E5B10BAD216398F850"><?xm-replace_text Step Result?></image>
+				
+			 </p> 
+			 <p>If you have solutions that remain unlinked, you can link them on
+				this page. 
+			 </p> 
+		  </stepresult> 
+		</step> 
+		<step id="step_8A6CAA274DE34126A7D16F370E1EE2D4"> 
+		  <cmd>Click 
+			 <uicontrol>Continue to Marketing Cloud</uicontrol>. 
+		  </cmd> 
+		  <stepresult><?xm-replace_text Step Result?>
+		  </stepresult> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

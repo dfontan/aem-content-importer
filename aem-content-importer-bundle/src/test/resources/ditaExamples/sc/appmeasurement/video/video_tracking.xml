@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_ADA4B5C612D24280955BD0B7E79B4271">
+  <title>Measuring Video in Adobe Analytics</title>
+  <shortdesc></shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>media</keyword>
+        <keyword>milestone</keyword>
+        <keyword>sdk</keyword>
+        <keyword>video</keyword>
+      </keywords>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <simpletable id="simpletable_BE59B7500EDB418B8130EAC344DBADB4">
+      <strow>
+        <stentry></stentry>
+        <stentry>
+          <p>
+            <b>New!</b> Adobe has released a new way to measure video. See 
+				<xref href="https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/" format="http" scope="external">Heartbeat Video</xref>.
+			 </p>
+        </stentry>
+      </strow>
+    </simpletable>
+    <p>Adobe Analytics provides native support for measuring the most popular
+		video formats on the Web. Almost any other player and video format can be
+		measured using JavaScript. You can start measuring video using your existing
+		video player and content. 
+	 </p>
+    <p>The first section of this guide walks you through the analytics
+		decisions you need to make to measure video, and then finishes with an
+		implementation worksheet to deliver to the video developer. The second section
+		provides the in-depth details for the video developer who implements the
+		measurement code. 
+	 </p>
+    <p>Video measurement tips, tricks and best practices on the Digital
+		Marketing Blog: 
+	 </p>
+    <ul id="ul_8457D08E1870477397B2746FF94EA8DA">
+      <li id="li_56F7A5A83DF14ED9A373BE0EF1EC87B9">
+        <xref href="http://blogs.adobe.com/digitalmarketing/industries/media-and-entertainment/why-video-measurement-matters/" format="http" scope="external">Why Video Measurement Matters</xref>
+      </li>
+      <li id="li_505A85C1E6724BF0AE2EC8FD181975AB">
+        <xref href="http://blogs.adobe.com/digitalmarketing/analytics/creating-the-perfect-plan-for-video-measurement/" format="http" scope="external">Creating The Perfect Plan for Video
+			 Measurement</xref>
+      </li>
+      <li id="li_43B0CEFF2EDE4F7483B759CD7FAD449A">
+        <xref href="http://blogs.adobe.com/digitalmarketing/analytics/understanding-video-measurement-implementation/" format="http" scope="external">Understanding Video Measurement
+			 Implementation</xref>
+      </li>
+      <li id="li_FE4D7FA035E04268954729E5333DD78C">
+        <xref href="http://blogs.adobe.com/digitalmarketing/analytics/initializing-video-measurement-success/" format="http" scope="external">Initializing Video Measurement Success</xref>
+      </li>
+      <li id="li_39800E3F2F124087972FB3456AACBBD5">
+        <xref href="http://blogs.adobe.com/digitalmarketing/analytics/navigating-video-measurement-analysis/" format="http" scope="external">Navigating Video Measurement Analysis</xref>
+      </li>
+    </ul>
+    <p>Recent updates to this guide: 
+	 </p>
+    <table id="table_48F889A10B68461FB675246FE148607D">
+      <tgroup cols="2">
+        <colspec colnum="1" colname="col1" colwidth="1.00*" />
+        <colspec colnum="2" colname="col2" colwidth="4.94*" />
+        <thead>
+          <row>
+            <entry colname="col1">
+              <p>Date 
+				  </p>
+            </entry>
+            <entry colname="col2">
+              <p>Update 
+				  </p>
+            </entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry colname="col1">
+              <p>02/21/2013 
+				  </p>
+            </entry>
+            <entry colname="col2">
+              <p>Added 
+					 <codeph>Media.openAd</codeph>, 
+					 <codeph>Media.click</codeph>, and several 
+					 <codeph>media.ad</codeph> contextData variables to support a
+					 video ad tracking. See 
+					 <xref href="video_ads.xml#concept_045DCEBBB82144309DF95CF3C4A6B6A8" format="dita" scope="local"><?xm-replace_text VAST Video Ad Tracking?></xref>. 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <p>9/13/2012 
+				  </p>
+            </entry>
+            <entry colname="col2">
+              <p>Added a note that in order for JavaScript AutoTrack to work,
+					 you must have the 
+					 <codeph>classid</codeph> attribute set on the object you want
+					 to track. The 
+					 <codeph>classid</codeph> is required to expose the event
+					 handlers used by the Media Module to automatically track the video. 
+				  </p>
+              <p>Added a note that autoTrack for Windows Media Player works
+					 only with Internet Explorer. Manual tracking for Windows Media Player is
+					 required to support other browsers. 
+				  </p>
+              <p>Added details on the OSMF XML 
+					 <codeph>autoBind</codeph> attribute that lets you start and end
+					 string literals using curly braces. See 
+					 <xref href="video_osmf_override_name.xml#concept_C5BCD5DE06CA47BFB9D390F52FBCD70A" format="dita" scope="local"><?xm-replace_text Using OSMF Metadata to Override a Video Name?></xref>.
+					 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <p>8/6/2012 
+				  </p>
+            </entry>
+            <entry colname="col2">
+              <p>We now recommend setting the 
+					 <codeph>trackVars</codeph> and 
+					 <codeph>trackEvents</codeph> variables for all implementations,
+					 even if 
+					 <codeph>Media.monitor</codeph> is not being used. Populate 
+					 <codeph>trackVars</codeph> with a list of each prop and eVar
+					 used in your implementation, along with the string "events": 
+				  </p>
+              <codeblock>s.Media.trackVars="events,prop2,eVar1,eVar2,eVar3";</codeblock>
+              <p>. Populate 
+					 <codeph>trackEvents</codeph> with a list of all events used in
+					 your implementation: 
+				  </p>
+              <codeblock>s.Media.trackEvents="event1,event2,event3,event4,event5,event6,event7"</codeblock>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <p>7/19/2012 
+				  </p>
+            </entry>
+            <entry colname="col2">
+              <p>Added links to the iOS and Android 3.x video documentation. 
+				  </p>
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <section id="section_E9F4400A966A4264B34E0A0FC8B17779">
+      <title>January 2012: New Process to Track Video Completes</title>
+      <p>You must make a small modification to your tracking code to enable the
+		  new functionality. 
+		</p>
+      <p>
+        <b>Why is this change needed?</b>
+      </p>
+      <p>Previously the 100% milestone was used to indicate a complete view.
+		  However, due to the granular nature of time tracking in video, some players
+		  never reported an offset that equaled the total length of the video. This
+		  prevented the 100% milestone from being reached even when the complete video
+		  was viewed. 
+		</p>
+      <p>To avoid this, completes are now tracked using an offset from the end
+		  of the video. This change should result in more accurate tracking of video
+		  completes. 
+		</p>
+      <p>
+        <b>What do I need to change?</b>
+      </p>
+      <p>After you update to the new version of the libraries, the new method
+		  of tracking completes is enabled with an offset equal to 1 second. In you code,
+		  you need to change your contextDataMapping to define the event that is used to
+		  track completes using the new 
+		  <codeph>a.media.complete</codeph> variable. 
+		</p>
+      <p>To make this change in your code, find the 
+		  <codeph>Media.contextDataMapping</codeph> section: 
+		</p>
+      <codeblock>    s.Media.contextDataMapping = {
+      </codeblock>
+      <p> Remove the 100% milestone (or whatever percentage you defined as
+		  complete) from 
+		  <codeph>a.media.milestones</codeph>. Save the event value (event7 in
+		  this example) as it is used in the next step: 
+		</p>
+      <codeblock>     "a.media.milestones":{
+         25:"event4",
+         50:"event5",
+         75:"event6",
+         100:"event7" (remove this line)
+     };</codeblock>
+      <p>Add 
+		  <codeph>a.media.complete</codeph> and map the event value previously
+		  defined for the complete milestone. The 
+		  <codeph>Media.contextDataMapping</codeph> section should appear similar
+		  to the following: 
+		</p>
+      <codeblock>    s.Media.contextDataMapping = {
+      "a.media.name":"eVar2,prop2",
+      "a.media.segment":"eVar3",
+      "a.contentType":"eVar1",
+      "a.media.timePlayed":"event3",
+      "a.media.view":"event1",
+      "a.media.segmentView":"event2",
+ <b>     "a.media.complete":"event7",</b>
+      "a.media.milestones":{
+         25:"event4",
+         50:"event5",
+         75:"event6"
+     };</codeblock>
+      <p>If you aren't sure which event is used to track completes, you can
+		  check your SiteCatalyst video configuration in the Admin Console. 
+		</p>
+      <p>After you make this change the complete event is sent 1 second before
+		  the end of a video. 
+		</p>
+    </section>
+  </conbody>
+</concept>

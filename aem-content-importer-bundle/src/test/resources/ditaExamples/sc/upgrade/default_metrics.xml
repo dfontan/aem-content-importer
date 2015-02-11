@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_D6A21256F7554066B8014F8F6CA22E88"> 
+  <title>Default Metrics on Reports</title> 
+  <shortdesc>Administrators can apply default metrics at the report level. 
+  </shortdesc> 
+  <conbody> 
+	 <p><image href="graphics/default_metrics.png"
+		id="image_EE871496FE5148DFA20540761F875BAC"><?xm-replace_text Paragraph?></image>
+		
+	 </p> 
+	 <p>In a report, click 
+		<uicontrol>Add Metrics</uicontrol> &gt; 
+		<uicontrol>Set as Default</uicontrol>. 
+	 </p> 
+  </conbody>
+</concept>

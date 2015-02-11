@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_FED4C36127D74D10A636FB18B21AD53C"> 
+  <title>Run Analytics reports on customer attribute data</title> 
+  <shortdesc>Create metrics and run Analytics reports on uploaded customer
+	 attribute data.
+  </shortdesc> 
+  <conbody> 
+	 <p>After you upload customer attributes and 
+		<xref href="validate_schema.xml#concept_B3A01A15D04E4F998118E09B3A9B5043"
+		 format="dita" scope="local">validate the schema</xref>, the system creates
+		metrics based on the friendly names (like 
+		<term>age</term> or 
+		<term>gender</term>) that you map to the attribute strings and integers.
+		These metrics appear in Visitor Profile &gt; Customer Attributes reports. 
+	 </p> 
+	 <p>For example: 
+	 </p> 
+	 <p><uicontrol>Visitor Profile</uicontrol> &gt;<uicontrol> Customer
+		  Attributes</uicontrol> &gt; 
+		<uicontrol>Age</uicontrol> 
+	 </p> 
+	 <p><image href="graphics/report_age.png"
+		id="image_EE21EE2C56B6462982D806D8064E3A90"><?xm-replace_text Paragraph?></image>
+		
+	 </p> 
+	 <p><b>Example - Age Metrics</b> 
+	 </p> 
+	 <p>If you specify a string as 
+		<term>age</term>, the system creates the following metrics and
+		dimensions: 
+	 </p> 
+	 <ul id="ul_440E42AA177241589E5F7E259ED61CE7"> 
+		<li id="li_7094C18BFD1C4A0EA51D8B3FD43A707E">Age dimension: Lets you run
+		  a report based on the Age attribute. 
+		</li> 
+		<li id="li_F30148DF24FE4D2A94DF51E9DB86F53E">Age metric: A metric you can
+		  add to a report, such as a Unique Visitors report. 
+		</li> 
+		<li id="li_DD9A5AEAB01A4C61B402F2998033D54E">Count of Age metric: Lets
+		  you understand, for example, if visitors specified an 
+		  <term>age</term> value on a form. 
+		</li> 
+	 </ul> 
+	 <p>Because metrics are sums in a report table, you should create a
+		calculated metric that tells you the average age. The formula for this metric
+		is 
+		<codeph>Age / Count of Age</codeph>, as shown below: 
+	 </p> 
+	 <p><image href="graphics/count_of_age_metric.png"
+		id="image_F3BDBD5416814AC9AE73102218DBED7F"><?xm-replace_text Paragraph?></image>
+		
+	 </p> 
+	 <p>Metric: Age. You have to make a calculated metric, because metrics are
+		sums. Age divided by Count of Age. Age is created as a dimension and a metric
+		(for data types Interger and Number in the validate schema). You'll only ever
+		see an average age. Using Age as a dimension displays Age as the basis of the
+		report (Customer Attributes &gt; Age.) "Count of Age" for example would tell
+		you if visitors specified an age value on a form. 
+	 </p> 
+	 <p>Add attribute limit (?) to docs, if it isn't there. 
+	 </p> 
+  </conbody>
+</concept>

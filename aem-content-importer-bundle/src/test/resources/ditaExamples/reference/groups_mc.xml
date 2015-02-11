@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_CF195162FF284457AB516DC92086E6F0">
+  <title>New Marketing Cloud Users</title>
+  <shortdesc>When a new Analytics user is created in the Marketing Cloud
+	 (marketing.adobe.com), he or she is automatically added to the New Marketing
+	 Cloud Users group. The New Marketing Cloud Users group has no privileges. After
+	 account creation, you must move users from this group to another Analytics
+	 group according to the privilege level you want assigned. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>new marketing cloud users</keyword>
+      </keywords>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Admin tools" />
+      <othermeta name="subtopic" content="Users and groups" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>If a user attempts to launch marketing reports &amp; analytics before he
+		or she is added to a different group, an "Access for this account is
+		unavailable" error is displayed. 
+	 </p>
+    <p>To provision these users, see 
+		<xref href="t_add_user_to_group.xml#task_0EE07E66139C4477B8505F3EB4BB05B8" format="dita" scope="local"><?xm-replace_text Add a user to a group?></xref>.
+		After you add these users to a different group, we recommend removing these
+		users from the New Marketing Cloud Users groups. This helps you keep track of
+		which users have additional group access and which users still need to be
+		provisioned. 
+	 </p>
+  </conbody>
+</concept>

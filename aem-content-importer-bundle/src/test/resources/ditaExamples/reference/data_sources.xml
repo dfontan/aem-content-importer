@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_D7EEE4097DF04856AF6D94A5C98C9E9D">
+  <title>Data Sources</title>
+  <shortdesc>The Data Sources feature allows you to import data to Analytics
+	 from offline sources. Once imported, this data can be treated and handled
+	 similarly to data that was collected natively. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Admin tools" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Use Data Sources to: 
+	 </p>
+    <ul id="ul_931E5036E35B4980A114BEB286654DE9">
+      <li id="li_D297DA0410944A0EABDF24AF0B7AD0AF">Integrate offline data with
+		  data collected from your web site. 
+		</li>
+      <li id="li_D38E64FF0CA54B5FA4ACE14B726DAB5E">Collect data from web
+		  servers, call centers, or other systems. Then import it into the Marketing
+		  Cloud to see conversion from all avenues of your organization. 
+		</li>
+      <li id="li_057F001AD74A4A0889038E2BDD0C0465">Optimize keyword bid
+		  management based on offline lead fulfillment through SearchCenter. 
+		</li>
+    </ul>
+    <p>When Data Sources is activated on a report suite, an FTP location is
+		provided so you can upload files to be integrated into reporting. Once
+		uploaded, Adobe servers automatically process the data and integrate it into
+		your report suite. 
+	 </p>
+    <p>See 
+		<xref href="http://marketing.adobe.com/resources/help/en_US/sc/datasources/" format="http" scope="external">Data Sources Help</xref>. 
+	 </p>
+  </conbody>
+</concept>

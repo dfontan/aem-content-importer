@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_13713685F7764833A6ECE39580167502">
+  <title>Conditional Execution using Firing Rules</title>
+  <shortdesc>Tags defined in custom code tags can be fired conditionally based
+	 on matching criteria. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Tag management" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>All conditions that you define for a custom code tag must be met for the
+		code to execute. For example, if you provide a Host Match and Path Match, both
+		conditions must match. 
+	 </p>
+    <p>The following match parameters are available:
+	 </p>
+    <ul id="ul_66F8457A4A354C56ADEE0050D6FCBB21">
+      <li id="li_BC8ADC881489401B82FC22375D8EFEBE">Host
+		</li>
+      <li id="li_C83DC00698504D3E9C01AAFEB239E1AE">Path
+		</li>
+      <li id="li_0B4BA42C2E3B4A6C9253D7D7271F5BC5">Cookie
+		</li>
+      <li id="li_097969956BCC419C8087AEF08AB0B339">Query Parameter
+		</li>
+      <li id="li_86C9FCD5C8964763B82F055E917E3960">Date
+		</li>
+    </ul>
+    <p>The following match conditions are available:
+	 </p>
+    <ul id="ul_17324EA6493347A58B96EF164FC7E692">
+      <li id="li_3D80409FC07744F5BE3FDE876ED12BA2">Contains
+		</li>
+      <li id="li_047C86B34B8A4A2D9D85D66F09E6E738">Matches RegEx
+		</li>
+      <li id="li_695049B862B94A56A9E2A23CCB2BD199">Does not contain
+		</li>
+      <li id="li_EC76C3E9779842F6955F21A080C68746">Does not match RegEx
+		</li>
+    </ul>
+    <p>RegEx conditions use standard JavaScript 
+		<xref href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions" format="https" scope="external">RegEx patterns</xref>.
+	 </p>
+    <p>Match strings in contains and does not contain conditions are
+		case-sensitive. 
+	 </p>
+  </conbody>
+</concept>

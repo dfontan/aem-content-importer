@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_FDADF0E0F2C941EABA0520B743693CB9"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"
+ ditaarch:DITAArchVersion="1.1"
+ domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)
+                         (topic ut-d) (topic indexing-d)"
+ class="- topic/topic concept/concept "> 
+  <title class="- topic/title ">Scorer</title> 
+  <shortdesc class="- topic/shortdesc ">The scorer determines the best option
+	 to show to a visitor in real-time.
+  </shortdesc> 
+  <conbody class="- topic/body  concept/conbody ">
+	 <p class="- topic/p ">The scorer compares the visitor's profile and
+		behavior with the training data, scores each content option, and selects the
+		best set of offers, or experience, to return to the visitor's page. It is
+		important to note that 10% of traffic is set to be randomly served content. The
+		model serves randomly to avoid becoming stuck on one option. For example, if
+		one option began with a higher probability of conversion, the algorithm would
+		favor that option and begin to re-enforce its decision with excessive serves of
+		that option. To ensure the algorithm continues to consider the possibility of
+		other options, these options are randomly explored to gauge their performance.
+		For the other 90%, the scorer follows a series of steps to choose the best
+		content option for each mbox in the campaign.
+	 </p>
+	 <p class="- topic/p "> Scoring decisions are made at the modeling group
+		level. A modeling group is a set of offers with similar marketing themes.
+		Test&amp;Target users have complete control over the modeling groups, and can
+		determine which offers should go in which group. More detail is available in
+		the campaign setup portion of the 1:1 documentation.
+	 </p>
+	 <p class="- topic/p "> Two scores per modeling group are determined for
+		each person: a personalized profile score and a generalized score. The
+		personalized score is how the model expects each person to react to the content
+		based on his individual variables. The generalized score is the sum of all the
+		response rates of all offers within a modeling group for users in the random
+		serve group. This establishes a general popularity hierarchy of modeling
+		groups. The personalized score and generalized score are added together, and
+		this combined score is used to determine the score for each modeling group for
+		which the visitor is eligible. Because the generalized score includes more
+		traffic, temporal changes are reflected much more quickly than in the
+		personalized score. Adding them together provides the best opportunity for
+		lift, as indicated in this graphic:
+	 </p>
+	 <p class="- topic/p ">
+		<image id="image_608ABBB9340F43BC85410A4FEFAED9BF"
+		 href="../graphics/11_generalized.jpg" placement="inline"
+		 class="- topic/image "></image>
+	 </p>
+	 <p class="- topic/p "> If a visitor has no profile values that match the
+		variables in the model, then the generalized score is used.
+	 </p>
+	 <p class="- topic/p "> Once the model runs, content is chosen for new
+		visits based on what the model predicts these new visitors will respond to
+		favorably. The score from the model is evaluated with a real-time reaction
+		update model to choose the best content to deliver.
+	 </p>
+	 <p class="- topic/p "> Targeting criteria must be met for each offer first,
+		and then the modeling group with the top score is selected. If there are
+		multiple locations in the campaign, the scorer picks the top-scored modeling
+		group for the second location, ignoring any options that are not allowed due to
+		experience exclusions. Through this process, a modeling group is selected for
+		each location in the campaign. If multiple offers exist in the winning modeling
+		group, then one of those offers is chosen randomly for delivery. Targeting
+		criteria and experience exclusions are described in the campaign setup portion
+		of the 1:1 documentation.
+	 </p>
+	 <p class="- topic/p "> Sophisticated algorithms are used to determine the
+		"best score" for a particular profile and offer set. When a campaign launches,
+		the model does not know what is the best to serve, so each option is served an
+		equal amount. However, the system learns very quickly, so a strictly equal
+		split happens only at the very beginning of a new campaign. As the system's
+		knowledge quickly increases, it begins to favor the options that indicate
+		success. It takes input from the lower performing modeling groups as well, via
+		the exploration traffic, to ensure that its decisions are correct. Finally, the
+		model score is influenced by the real-time reaction tracking to reach a final
+		score for each modeling group and mbox combination to determine the experience
+		to deliver to each visitor.
+	 </p>
+  </conbody>
+</concept>

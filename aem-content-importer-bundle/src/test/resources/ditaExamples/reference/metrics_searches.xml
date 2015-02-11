@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_18634694311B4DE9AF2754697F15D157">
+  <title>Searches</title>
+  <shortdesc>The recommended default metric for search engines and keywords.
+	 This metric represents instances of a click-through, and shows the page that is
+	 associated with a specific engine or keyword. Searches metric data can be
+	 reported retroactively to the beginning of the data set.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Metrics" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p></p>
+    <p></p>
+  </conbody>
+</concept>

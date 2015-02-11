@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_84569227BFCD494886C0AFF524A4690C"> 
+  <title>Create a Customer Record Source</title> 
+  <shortdesc>Create a customer record data source and specify how to upload the
+	 data to the Marketing Cloud. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta content="Marketing Cloud" name="solution"/> </metadata>
+  </prolog> 
+  <taskbody> 
+	 <steps id="steps_275F2B28947F4EEC89F3136C3AC5A847"> 
+		<step id="step_C8DADA54BC694E24BC2CE31AC95A6386"> 
+		  <cmd>In the Marketing Cloud, click 
+			 <uicontrol>Customer Record Sources</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_80F5A0AE8BC14EEC85A21A16A695F324"> 
+		  <cmd>Click 
+			 <uicontrol>New</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_42D4928F406B452797584E5352514712"> 
+		  <cmd>Type a name and description. 
+		  </cmd> 
+		  <stepresult> 
+			 <p>This information displays on the 
+				<wintitle>Customer Record Sources</wintitle> page and helps you
+				identify the source. 
+			 </p> 
+		  </stepresult> 
+		</step> 
+		<step id="step_41634906968C458C8713A6DACA5E9070"> 
+		  <cmd>Click FTP Account 
+		  </cmd> 
+		</step> 
+	 </steps> 
+  </taskbody>
+</task>

@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_E7B20E1D00E84E2AAA9520F35B6F9A2F">
+  <title>Recency of Purchase, Visit, Photo Upload, Etc.</title>
+  <shortdesc>If a month has gone by since a shopper bought a pack of 30-day
+	 disposable contact lenses, maybe it's time to offer it at a discount. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>How about reminding a user who hasn't uploaded a photo to your site in
+		three weeks that their gallery is getting stale? 
+	 </p>
+    <p>For a profile attribute, write a script that calculates how many days
+		elapsed since the last conversion. A conversion doesn't have to be a purchase.
+		It could be uploading a video, visit to a lead generation form, etc. You'll
+		then reference the script profile parameter in several expression targeters
+		(target tab), which will be used in the campaign edit page. Note that the
+		"<codeph>new Date()</codeph>" function brings back time in EDT. Here is the
+		script: 
+	 </p>
+    <p>
+      <codeblock outputclass="syntax html">user.recency
+
+if (mbox.name == 'orderThankyouPage') {
+
+   user.setLocal('lastPurchaseTime', new Date().getTime());
+
+}
+
+if (mbox.name == 'someMbox') {
+
+   var lastPurchaseTime = user.getLocal('lastPurchaseTime');
+
+   if (lastPurchaseTime) {
+
+      return ((new Date()).getTime()-lastPurchaseTime) / (3600 * 24 * 1000);
+
+   }
+
+}</codeblock>
+    </p>
+    <p>Create some expression targets: 
+	 </p>
+    <p>
+      <codeblock outputclass="syntax html">no_purchases:
+return typeof(user.get('recency')) == 'undefined';
+
+within_1day:
+return user.get('recency') &lt; 1;
+
+within_1week:
+return user.get('recency') &gt;= 1 &amp;&amp; user.get('recency') &lt; 7;
+
+within_1month:
+return user.get('recency') &gt;= 7 &amp;&amp; user.get('recency') &lt; 31;
+
+over_1month:
+return user.get('recency') &gt;= 31</codeblock>
+    </p>
+    <p>For more information, see the 
+		<xref href="http://marketing.adobe.com/resources/help/en_US/tnt/pdf/js_expression_cheat_sheet.pdf" format="http" scope="external">JavaScript Expression Cheat Sheet (PDF)</xref>. 
+	 </p>
+  </conbody>
+  <!--<related-links>
+    <link href="r_Behavioral_Targeting_Basic_Steps.xml#reference_26AAC9E3D2734CA7B48CF141A68D6030" type="reference" format="dita" scope="local">
+      <?xm-replace_text Behavioral Targeting Basic Steps?>
+    </link>
+    <link href="c_Number_of_Visits.xml#concept_2F5EFE2725434BB2861545D38F3D40E5" type="concept" format="dita" scope="local">
+      <?xm-replace_text Number of Visits?>
+    </link>
+    <link href="c_Frequency.xml#concept_8BCEBA6DFDA54251BE4E833BBA98C1D4" type="concept" format="dita" scope="local">
+      <?xm-replace_text Frequency?>
+    </link>
+    <link href="c_New_or_Returning_Visitor.xml#concept_5770B59C5C884CA2BE8554B4AD808EF9" type="concept" format="dita" scope="local">
+      <?xm-replace_text New or Returning Visitor?>
+    </link>
+    <link href="c_Active_or_Passive_User.xml#concept_8FFD3C333196441EB0125C69B6D2564F" type="concept" format="dita" scope="local">
+      <?xm-replace_text Active or Passive User?>
+    </link>
+    <link href="c_Total_Amount_Purchased.xml#concept_BB18B8B9C1474930BFB460B30B410556" type="concept" format="dita" scope="local">
+      <?xm-replace_text Total Amount Purchased?>
+    </link>
+    <link href="c_Highest_Amount_Spent_in_a_Single_Order.xml#concept_79EF6AB3EE8645429D735830FF2B6057" type="concept" format="dita" scope="local">
+      <?xm-replace_text Highest Amount Spent in a Single Order?>
+    </link>
+    <link href="c_Time_of_Day_and_Day_of_Week.xml#concept_54D8899EB05B477895EB1309DB164438" type="concept" format="dita" scope="local">
+      <?xm-replace_text Time of Day and Day of Week?>
+    </link>
+  </related-links>
+-->
+</concept>

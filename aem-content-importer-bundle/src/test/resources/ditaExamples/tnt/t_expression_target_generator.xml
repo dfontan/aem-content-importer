@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_ADBA6658ABD745669E321E211EF9E119" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Expression Target Generator</title>
+  <shortdesc class="- topic/shortdesc ">The Expression Target Generator helps
+	 you create an expression target with the parameters you specify. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <prereq id="prereq_4E5A48DEC1934415A95AABDF2A9796B0" class="- topic/section task/prereq ">
+      <p class="- topic/p "> The Expression Target Generator is a useful tool
+		  for understanding how to build expression targets, but is not a replacement for
+		  a person who knows exactly what to do with the code. It can help you get
+		  started with expression targets, but you should still go through your normal
+		  campaign QA process before launch. 
+		</p>
+      <p class="- topic/p ">
+        <note class="- topic/note ">All parameters and values are case
+			 sensitive. 
+		  </note>
+      </p>
+    </prereq>
+    <steps id="steps_6B8041E990C34A908E19E8F9C5125257" class="- topic/ol task/steps ">
+      <step id="step_2CF6516DA915461EB089EF0D658955DE" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Open the Expression Target Generator
+			 at 
+			 <xref href="http://adobetarget.com/tools/targets/#" format="dita" scope="local">http://adobetarget.com/tools/targets/</xref>. 
+		  </cmd>
+      </step>
+      <step id="step_1C4E94A7DE57486F97E709A63EBC04DC" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Select the parameter type for the
+			 expression target you want to generate. 
+		  </cmd>
+      </step>
+      <step id="step_1F312EB5DEE5480C8BFAF43EF0F80F67" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Enter the parameter name. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">The available parameter names for the selected
+				type appear in the box next to the 
+				<wintitle class="+ topic/keyword ui-d/wintitle ">Parameter
+				  Name</wintitle> field. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_A8C196F420BC461EAABD01BBE91FDDFE" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Selecting how the parameter type and
+			 name should match the values. 
+		  </cmd>
+      </step>
+      <step id="step_360DA979D4D34148B10FDD576CA1B776" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Type the values that the parameter
+			 must match. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">When entering multiple values, place each value
+				on its own line. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_31F5A605D0D24A42A9DF83D91B527362" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">To add another parameter to the
+			 expression target, click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Add Additional
+				Parameter</uicontrol>, select a condition (<uicontrol class="+ topic/ph ui-d/uicontrol ">And</uicontrol> or 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Or</uicontrol>), and
+			 enter the information for the additional parameter. 
+		  </cmd>
+      </step>
+      <step id="step_E26F134DB21740398B98317E3B67958D" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Generate Expression
+				Target</uicontrol>. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">The expression target is generated. 
+			 </p>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+  <!--<related-links class="- topic/related-links ">
+    <link href="t_Expressions_Targets.xml#task_32DD2FC06FC84FD1B6D9011FE2009AAA" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Expression Targets?>
+    </link>
+    <link href="c_Using_Regular_Expressions_in_Targeting_Groups.xml#concept_320777558B7F45C5AEC2D548BA2E380D" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Using Regular Expressions in Targeting   Groups?>
+    </link>
+    <link href="r_Regular_Expression_and_JavaScript_References.xml#reference_3CB56C733F1E42B1B47C5961DD09DBF8" type="reference" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Regular Expression and JavaScript   References?>
+    </link>
+  </related-links>
+-->
+</task>

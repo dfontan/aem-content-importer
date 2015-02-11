@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_D3010C3EC94941F79166DF5285647445" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Campaign Change Log</title>
+  <shortdesc class="- topic/shortdesc ">The campaign change log provides a
+	 record of who changed your campaigns and when the changes occurred. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <steps id="steps_D0E651A8607649B3A567E410E9E830A1" class="- topic/ol task/steps ">
+      <step id="step_C38C0ED725A640A1A8C4DF3ED9A96177" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">From the Campaign Home page, click
+			 the campaign name, then click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Change Log</uicontrol>.
+			 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">The date and editor are listed anytime a
+				campaign is saved, approved, deactivated, or closed. Changes to custom targets
+				and offers used in the campaign are also listed. 
+			 </p>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links class="- topic/related-links ">
+    <link href="c_Using_the_Campaign_Launch_Pad.xml#concept_632502DD0A6A44E9BC0E96150B531BED" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Campaigns Launch Pad?>
+    </link>
+    <link href="c_Using_the_Campaign_Spotlight.xml#concept_B7F1D4C409D7489FB7A5F8E4FDCE2075" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Campaign Spotlight?>
+    </link>
+    <link href="c_Using_the_Campaign_List_Page.xml#concept_30B4222387784C64A5DCC95E357F35C3" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Campaign List?>
+    </link>
+    <link href="t_Viewing_Campaign_Reports.xml#task_3F3DA568D6704D92B9502A491E231D23" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Campaign Reports?>
+    </link>
+    <link href="t_Using_the_Campaign_View_API.xml#task_F9984F9B30CD4BF096503B245B530C95" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Using the Campaign View API?>
+    </link>
+    <link href="t_Bookmarking_a_Location.xml#task_BBF6C9B9C67D4BA8B3799D00F3EC7509" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Bookmarking a Location?>
+    </link>
+  </related-links>
+</task>

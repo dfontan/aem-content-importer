@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_43A2AB6859FC4395A5011D1875240358"> 
+  <title>Categories for Targeting</title> 
+  <shortdesc>You can target on any of several categories. Each category
+	 functions as a tab that enables you to create targeting rules (or groups) for
+	 each category. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Target"/> 
+		<othermeta name="topic" content="Advanced"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>You can create targeting rules for each of the following categories. 
+	 </p> 
+	 <p> 
+	 <table id="table_5DF220B45BC14BACA55F0A9F2214D3E6"> 
+		<tgroup cols="2"> 
+		  <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+		  <colspec colnum="2" colname="col2" colwidth="3.48*"/> 
+		  <thead> 
+			 <row> 
+				<entry colname="col1">Category 
+				</entry> 
+				<entry colname="col2">Description 
+				</entry> 
+			 </row> 
+		  </thead> 
+		  <tbody> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p>Site Pages 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>Target visitors who are on a specific page or have a specific
+					 mbox parameter. 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p>Visitor Behavior 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>Target visitors based on their behavior. Examples of visitor
+					 behavior include their choice of operating system or browser, number of times
+					 they visit the site, and the number of conversions. 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p>Traffic Sources 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>Target visitors based on the search engine or landing page
+					 that refers them to your site. 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p>Social 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>Target visitors who arrive on your site from Facebook,
+					 Twitter, Pinterest, and URL shorteners. 
+				  </p> 
+				  <p>URL shorteners include any landing page referrer URL that
+					 contains bit.ly, tinyurl.com, is.gd, cli.gs, tr.im, ow.ly, zi.ma, nn.nf,
+					 pnt.me, url.ie, snipurl.com, doiop.com, dwarfurl.com, or ad.vu. 
+				  </p> 
+				  <p>For a complete list of social sites included in the
+					 Test&amp;Target social sites suite segment see the 
+					 <xref
+					  href="http://marketing.adobe.com/resources/help/en_US/tnt/csv/social_sites.xlsx"
+					  scope="external" format="html">Social Sites spreadsheet</xref>. 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p>Geo 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>Target users based on their geographical location. This option
+					 is only available for accounts configured with the geo option. Contact your
+					 account manager for details. 
+				  </p> 
+				  <p>A visitor's IP address is passed with an mbox request, once
+					 per visit (session), to resolve geo targeting parameters for that visitor. 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p>Success Metrics 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>Target users based on entries and conversions. 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p>Target Library 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>Target users based on your saved target rules. Target rules
+					 are set under 
+					 <uicontrol>Locations</uicontrol> &gt; 
+					 <uicontrol>targets</uicontrol>. 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p>Mobile 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>Target mobile devices based on parameters such as screen width
+					 and height, cookie acceptance, operating system, device vendor, and more. 
+				  </p> 
+				  <p>Mobile targeting is delivered by 
+					 <xref
+					 href="http://deviceatlas.com/resourcecentre/explore+deviceatlas+data/devices"
+					 scope="external" format="html">DeviceAtlas</xref>, a service of DotMobi.
+					 DeviceAtlas is a comprehensive database of mobile devices built on data
+					 compiled from numerous sources, including manufacturers and network operators.
+					 This data is then verified, cross-referenced, and validated to build a large
+					 and accurate mobile device database available. 
+				  </p> 
+				  <p> 
+					 <draft-comment>Use the 
+						<xref
+						href="http://marketing.adobe.com/resources/help/en_US/tnt/1.3/sample/index.php"
+						scope="external" format="html">Mobile Help Content Simulator</xref> to see what
+						values match for different mobile devices. 
+					 </draft-comment> "False" in the Device Atlas data set is
+					 interpreted as 0. "True" is interpreted as 1. Use 0 and 1 when setting up
+					 targeting. There is a value for each attribute for every device (0 if it is
+					 false for that device). Therefore, 
+					 <parmname>parameter is present</parmname> or 
+					 <parmname>value is present</parmname> should not be used for
+					 mobile device targeting. 
+				  </p> 
+				  <p>When configuring mobile targeting in a profile script, use the
+					 following syntax: 
+				  </p> 
+				  <p> 
+					 <codeph> .add("targeting.mobile.displayWidth", "displayWidth",
+						NUMBER)</codeph> 
+				  </p> 
+				  <p> "displayWidth" is the name of the attribute you can use in
+					 profile scripts. The value is a number. To use this, the value is 
+					 <codeph>profile.mobile.displayWidth</codeph>. This is not
+					 available directly for token replace in an offer; instead, it must first be set
+					 as a profile script. 
+				  </p> 
+				  <p>View the 
+					 <xref href="https://my.adobeconnect.com/p2gadkumugl/"
+					 format="https" scope="external">Mobile Testing &amp; Optimization Webinar
+						Recording</xref> and the accompanying slide deck to learn about mobile testing
+					 and optimization best practices, and access links to tools that will help you
+					 develop your testing program for mobile website and applications. 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p>Suite Segments 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>Segment and target against the same populations you measure
+					 against in other Marketing Cloud products (within the limitations of each
+					 product) such as Analytics and Discover, giving you a consistent view of your
+					 website visitors. The same segments exist in all products in the suite. These
+					 segments are defined in Target using Target profile information. This means
+					 that the definition is the same for all of these segments across the suite, but
+					 the populations included in each segment might vary slightly. 
+				  </p> 
+				  <p>Purchasers and non-Purchasers are determined by using the
+					 orderTotal mbox parameter to see if they have ever spent money on the site. See
+					 
+					 <xref
+					 href="c_About_Conversion_Mboxes.xml#concept_890181F7D16A4352A789DB06B048D58A"
+					 type="concept" format="dita" scope="local">About Conversion Mboxes</xref>. 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p>Data Workbench Segments 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>(Requires Data Workbench and Analytics.) If enabled, Data
+					 Workbench segment integration allows you to identify populations of your
+					 visitors across channels via Insight and then push those segments to Target.
+					 Once in Target, you can use those segments to deliver more meaningful campaigns
+					 to those visitors with messaging that resonates better. 
+				  </p> 
+				  <p>A Data Workbench user can analyze populations within Data
+					 Workbench for meaningful segments using all of the available data (including
+					 off-line conversions through channels such as phone, a store, and so on). For
+					 example, a visitor looks for shoes on your website. The visitor doesn’t convert
+					 but downloads a coupon for 20% off their next purchase. The visitor then
+					 purchases a shirt in your store. Data Workbench can be used to gather that data
+					 then push profile data to Target showing that the visitor purchased a shirt off
+					 line. You can then target a campaign offering a necktie to that visitor, when
+					 normally Target might try to remarket shoes to that visitor. 
+				  </p> 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+	 </p> 
+	 <p>For information about setting the parameters in each category, refer to 
+		<xref
+		href="t_Setting_Targeting_Rules.xml#task_75C6702BE0AC45E9A0B9DB26FDBB18B2"
+		type="task" format="dita" scope="local">Setting Targeting Rules</xref> For
+		information about target pages, see<xref
+		href="t_Targeting_Based_on_Site_Pages.xml#task_61256378FA2D402E93856DCAA09BE3A4"
+		type="task" format="dita" scope="local"> Targeting Based on Site Pages</xref>. 
+	 </p> 
+	 <p>When a particular category is selected, you can apply one or more
+		targeting conditions. For example, in the Geo category, define a rule like
+		City=San Francisco. Adding multiple values creates an OR condition. The visitor
+		only has to match one of the values to meet the targeting condition. For AND
+		conditions on the same parameter, create a custom expression target, 
+	 </p> 
+	 <p>After you have created a rule, click 
+		<uicontrol>Done</uicontrol>. A summary of the rule displays next to the
+		targeting link for the level you are targeting. The following example shows the
+		rule created above, at the Campaign level: 
+	 </p> 
+	 <p> 
+		<image id="image_8D09E58258AB4FDDA3E5F932E42E7E91"
+		href="graphics/target_sent1.png"></image> 
+	 </p> 
+	 <p>You can further refine a rule by adding more conditions, or by creating
+		additional rules in other categories. For example, to target only Firefox users
+		from San Francisco who accessed your site from Google, set the Geo category to
+		target users from San Francisco, the Visitor Behavior category to Firefox, and
+		the Traffic Sources category to Google. All of the rules created across
+		categories are combined with "AND." To create complex targeting rules that
+		include "OR" operations across categories, create an expression target. 
+	 </p> 
+  </conbody> 
+</concept>

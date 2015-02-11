@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_65FAACB658344FEBACA8DF1D842CABFB">
+  <title>Path Views</title>
+  <shortdesc>The 
+	 <wintitle>Path Views</wintitle> metric is based on pathing data, which is
+	 tracked for all users who accept persistent
+	 cookies. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Metrics" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>The term 
+		<wintitle>Path View</wintitle> is used to indicate the number of times a
+		page was viewed, given the constraints of the displayed path(s). This metric
+		reports the number of page views for the given page that occurred within the
+		selected path. This metric is available on the 
+		<wintitle>Paths</wintitle> report. 
+		<wintitle>Path Views</wintitle> shows you how many times a particular
+		sequence of pages were viewed. 
+	 </p>
+    <table id="table_8FB11DE8A0454F20AB4233994258E060">
+      <tgroup cols="2">
+        <colspec colnum="1" colname="col1" colwidth="1.00*" />
+        <colspec colnum="2" colname="col2" colwidth="2.07*" />
+        <thead>
+          <row>
+            <entry colname="col1">Uses 
+				</entry>
+            <entry colname="col2">Description 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry colname="col1">Traffic 
+				</entry>
+            <entry colname="col2">Not an entire visit length. Usually a
+				  collection of paths, each of which is usually 3-4 pages long. Shows the
+				  frequency of visits on that particular path. 
+				</entry>
+          </row>
+          <row>
+            <entry colname="col1">Conversion 
+				</entry>
+            <entry colname="col2">N/A 
+				</entry>
+          </row>
+          <row>
+            <entry colname="col1">Ad Hoc Analysis 
+				</entry>
+            <entry colname="col2">Not an entire visit length. Usually a
+				  collection of paths, each of which is usually 3-4 pages long. Shows the
+				  frequency of visits on that particular path. 
+				</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </conbody>
+  <related-links>
+    <link href="reports_paths.xml#topic_39F11BCBEDC3495EA1300149FC6D4F14" format="dita" scope="local">
+      <linktext>
+        <?xm-replace_text Paths Reports?>
+      </linktext>
+    </link>
+  </related-links>
+</concept>

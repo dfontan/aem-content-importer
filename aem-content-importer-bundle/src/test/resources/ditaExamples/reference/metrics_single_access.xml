@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_D951157836C24928BE2711CC7BBEC025"> 
+  <title>Single Access</title> 
+  <shortdesc> 
+	 <wintitle>Single Access</wintitle> is defined by the number of visits to
+	 your site that contained a single unique 
+	 <wintitle>Page Name</wintitle> value. If a user comes to your site and
+	 clicks a tracked link, triggers an event (such as a 
+	 <wintitle>video view</wintitle>), or reloads the page, the visit is still
+	 considered a 
+	 <wintitle>Single Access</wintitle> visit. As long as value for the 
+	 <wintitle>pageName</wintitle> variable does not change, any number of
+	 requests can be sent and the visit is still considered a 
+	 <wintitle>Single Access</wintitle>. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Metrics"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <table id="table_00B26B47AA724D808F4C337750D7C9C7"> 
+		<tgroup cols="2"> 
+		  <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+		  <colspec colnum="2" colname="col2" colwidth="2.20*"/> 
+		  <thead> 
+			 <row> 
+				<entry colname="col1">Uses 
+				</entry> 
+				<entry colname="col2">Description 
+				</entry> 
+			 </row> 
+		  </thead> 
+		  <tbody> 
+			 <row> 
+				<entry colname="col1">Traffic 
+				</entry> 
+				<entry colname="col2">The number of times a page or value is
+				  captured as the only value. For example, page A is the only page visited, and
+				  then the visitor left your site. 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Conversion 
+				</entry> 
+				<entry colname="col2">Single access is not a conversion metric. 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Ad Hoc Analysis 
+				</entry> 
+				<entry colname="col2">Like traffic, 
+				  <wintitle>Single Page Visits</wintitle> is the number of times a
+				  single page or value is captured as the only value in a visit. 
+				  <p>This metric is equivalent to both 
+					 <wintitle>Single Access</wintitle> AND 
+					 <wintitle>Bounces</wintitle> in Reports &amp; Analytics,
+					 depending on whether<wintitle> Count Repeat Instances</wintitle> is set to Yes
+					 or No.
+				  </p>
+				  <p>This setting also affects pathing reports like Flows, Next
+					 Page, Fallout, etc.
+				  </p>
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+  </conbody> 
+</concept>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_F22B1C8A978C44B1A0D97F8F0AD752EA">
+  <title>Allocation</title>
+  <shortdesc>Conversion variables (eVars) allow Adobe Analytics to attribute
+	 success events to specific variable values. Sometimes, variables encounter more
+	 than one value before hitting a success event. For these cases, allocation
+	 determines which variable value gets credit for the event.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <ul id="ul_0AD144274ADC4E908A7E31C0E2523D65">
+      <li id="li_10A1EA3DDED54CE09868678D47793D59">
+        <b>Original Value
+			 (First)</b>: The first value seen gets full credit, no matter what subsequent
+		  values for that variable are.
+		</li>
+      <li id="li_59C6FEA8101A47BA9271D209959FAC11">
+        <b>Most Recent (Last)</b>:
+		  The last seen value gets full credit for the success event, no matter what
+		  variables were fired before it.
+		</li>
+      <li id="li_85F3374BDCE445088A6726E4613D4540">
+        <b>Linear</b>: All variable
+		  values within the visit of the success event receive equal divided credit. If
+		  the success event was a currency amount, the currency is split. If it is a
+		  counter event, each conversion variable value receives a fraction of the single
+		  instance. These fractions are summed then rounded in reporting.
+		</li>
+    </ul>
+    <section id="section_E2E25B81BD9F4C5E80DB55E72CAF8AE2">
+      <title>Allocation in Ad Hoc Analysis</title>
+      <p>Ad Hoc Analysis has the unique ability to report different allocations
+		  for conversion variables: the default allocation, last allocation, and linear
+		  allocation. If Ad Hoc Analysis is your organization's primary reporting tool,
+		  having all conversion variables set to first allocation gives you all available
+		  allocation values.
+		</p>
+    </section>
+    <section id="section_DCF2AB2BE63C4A8CB1A5B9ECA7CF39BB">
+      <title>Allocation in Data Warehouse</title>
+      <p>Data Warehouse uses the same allocation settings as reports &amp;
+		  analytics.
+		</p>
+    </section>
+  </conbody>
+</concept>

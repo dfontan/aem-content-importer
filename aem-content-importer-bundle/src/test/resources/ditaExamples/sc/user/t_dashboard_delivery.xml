@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_639361A35E044B2DB9D50FCABEC776FF"> 
+  <title> Schedule a dashboard for delivery</title> 
+  <shortdesc> In the 
+	 <wintitle>Dashboard Manager</wintitle>, you can see whether a dashboard is
+	 scheduled for delivery, and edit the schedule. The dashboard delivery options
+	 are identical to the report delivery options. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Reports and analytics"/> 
+		<othermeta name="subtopic" content="Dashboards"/> </metadata>
+  </prolog> 
+  <taskbody> 
+	 <steps id="steps_F9150089F78747CBA9A824A616A23C3A"> 
+		<step id="step_106DA0ED857841AE8212210E42C85A2C"> 
+		  <cmd>Open a dashboard. 
+		  </cmd> 
+		</step> 
+		<step id="step_F91BD8A875244E87BC359671B4E5A952"> 
+		  <cmd>Click 
+			 <uicontrol>More</uicontrol> &gt; 
+			 <uicontrol>Send</uicontrol>. 
+		  </cmd> 
+		  <info> 
+			 <p>See 
+				<xref
+				 href="scheduling.xml#concept_4EA333DFC7FD4E9CA086385A3DA10BE9" type="concept"
+				 format="dita" scope="local"><?xm-replace_text Schedule and Distribution?></xref>
+				for more information. 
+			 </p> 
+		  </info> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task>

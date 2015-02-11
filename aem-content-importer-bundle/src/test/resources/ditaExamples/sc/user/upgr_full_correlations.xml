@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_2A282C2609A24642A123ADB9F5D43336">
+  <title>Correlations on all Traffic Variables</title>
+  <shortdesc>Correlations are enabled on all traffic reports, which enables you
+	 to break down any traffic variable by any other in traffic
+	 reports.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports and analytics" />
+      <othermeta name="subtopic" content="Upgrading from V14" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>
+      <image placement="break" align="center" href="graphics/correlations.png" width="368px" height="247px" id="image_D27CB42349D94E4692745CB02A844086"></image>
+    </p>
+  </conbody>
+</concept>

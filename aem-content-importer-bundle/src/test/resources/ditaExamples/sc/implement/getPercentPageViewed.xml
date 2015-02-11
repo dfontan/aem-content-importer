@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_CDA36BC34777436C997732D3713703EE"> 
+  <title>getPercentPageViewed</title> 
+  <shortdesc>Record the portion of a page (0-100%) that the user views and pass
+	 the value into a variable on the next page view. This plugin lets you determine
+	 how much of your content users are seeing on average, so that you can optimize
+	 your page lengths and layouts based on user behaviors. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Developer and implementation"/> 
+		<othermeta name="subtopic" content="Plug-ins"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p> You can also use classifications to group percentages (such as 
+		<term>Less than 25%</term> or 
+		<term>Less than 50%</term>) so that you can identify page-viewing trends.
+		
+	 </p> 
+	 <note>The following instructions require you to alter the data collection
+		code on your site. This can affect data collection on your site, and should
+		only be done by a developer with experience using and implementing 
+		<keyword>Analytics</keyword>. 
+	 </note> 
+	 <section id="section_92E94A96A4764113B5588F1B83E3DE2C"> 
+		<title>Plug-in Code and Implementation</title> 
+		<p> 
+		  <b>Config Section</b>: No changes required for this section. 
+		</p> 
+		<p> 
+		  <b>Sample Calls</b> 
+		</p> 
+		<codeblock outputclass="syntax javascript">/*
+ * Add one of the following examples in s.doPlugins(), after s.pageName has been assigned:
+ */
+ 
+//         &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; IMPORTANT NOTE - PLEASE READ! &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+//
+// The getPercentPageViewed plugin returns an integer if the pageID argument is unspecified
+// or is set to an empty string or evaluates to false, as shown in example 1 below. If the
+// PageID is specified, the plugin returns an array as shown in example 2.
+ 
+// Example 1: Get maximum percent viewed only, using s.pageName as an implicit identifier
+ 
+s.prop21 = s.getPreviousValue(s.pageName,'s_ppn'); //prop21: prev page name
+s.prop22 = s.getPercentPageViewed(); //prop22: max % viewed of prev page
+if(!s.prop21||s.prop21=='no value')s.prop22=''; //clear max % viewed if no prev page view
+ 
+//Example 2: Get entire percent page viewed array and save metrics
+ 
+s.prop21 = s.getPreviousValue(s.pageName,'s_ppn'); //prop21: prev page name
+var ppv = s.getPercentPageViewed(s.pageName); //get array of data on prev page % viewed
+if( ppv &amp;&amp; typeof ppv=='object' &amp;&amp; ppv[0] == s.prop21 ) { //if ppv array returned and prev page id matches prev page name
+  s.prop22 = ppv[1] + '|' + ppv[2]; //prop22: prev page max and initial % viewed, delimited by "|". (Use classifications to separate values)
+  s.prop23 = ppv[4] + 'x' + ppv[5]; //prop23: viewport width x height in CSS pixels
+  s.prop24 = ppv[6] + 'x' + ppv[7]; //prop24: display width x height in real pixels
+  s.prop25 = ppv[8]; //prop25: pixel density, i.e. number of virtual pixels per real pixel
+  s.prop26 = ppv[9]; //prop26: device orientation: initial and final (final only present if rotation occurred)
+}</codeblock>
+		<p> 
+		  <b>Returns</b> 
+		</p> 
+		<ul id="ul_45F197FCF0B5404ABDA965A76D1F4F22"> 
+		  <li id="li_CC4CAD6E0F5F44F187C85E90360D93C7">If there was not a
+			 previous page view in this visit, an empty string is returned 
+		  </li> 
+		  <li id="li_BC6445B8722E4128895C64E85D942FB1">If pid is "-", or
+			 unspecified, an integer containing the last page's maximum percent viewed is
+			 returned 
+		  </li> 
+		  <li id="li_347A5969BFD149118DCB8D3190563971">Otherwise, an array is
+			 returned with the following elements: 
+			 <ul id="ul_F391D141EADF48D9A28809B46FDD7C6A"> 
+				<li id="li_03DFA1849C8B4236B810F092B71E32D2">array[0] - Page ID 
+				</li> 
+				<li id="li_DC2D65CB94BF4EEABE96206DBDD3976A">array[1] - Maximum
+				  percent viewed 
+				</li> 
+				<li id="li_1CC9A3AD48334E06B9D83B30E2AF9FD4">array[2] - Initial
+				  percent viewed 
+				</li> 
+				<li id="li_05B866DFC76241EA86F94504F5FFFAC3">array[3] - Maximum
+				  vertical pixels viewed 
+				</li> 
+				<li id="li_2C14B2EA0D194B16BB8D89859F2A0AA8">array[4] - Viewport
+				  width in CSS pixels new 
+				</li> 
+				<li id="li_8CE6C67B560E45C18E4CF9CDC7652344">array[5] - Viewport
+				  height in CSS pixels new 
+				</li> 
+				<li id="li_5ACB60B8BF5A4391816265B554590593">array[6] - Display
+				  width in real pixels (reflecting orientation) new 
+				</li> 
+				<li id="li_E576426F851141DA99AEF1FCF84E2C2A">array[7] - Display
+				  height in real pixels (reflecting orientation) new 
+				</li> 
+				<li id="li_F8C7C5A3FF644C959BB15FBBD6248596">array[8] - Final pixel
+				  density new 
+				</li> 
+				<li id="li_234DB9CDC4DF4A05845BBF52B8C8F883">array[9] - Device
+				  orientation, set to one of the following text strings: new 
+				  <ul id="ul_8350D4E68D944B26BEF3474652F0831E"> 
+					 <li id="li_F95E163285AE41AC9F9D2B3661C3941E">"L" - Landscape
+						(rotation did not occur) 
+					 </li> 
+					 <li id="li_62F2B36C5FCE48AA81961C6B5D1FA730">"P" - Portrait
+						(rotation did not occur) 
+					 </li> 
+					 <li id="li_167AECFFD4364D3A8AC72E3CC5C2E05D">"LP" - started
+						landscape, ended portrait 
+					 </li> 
+					 <li id="li_3824FA2A88764B31B4F91A3D6C45C562">"PL" - started
+						portrait, ended landscape 
+					 </li> 
+				  </ul> 
+				</li> 
+			 </ul> 
+		  </li> 
+		</ul> 
+		<p> 
+		  <b>Plugins Section</b>: Add the following code to the area of the 
+		  <filepath>s_code.js</filepath> file labeled PLUGINS SECTION. Do not
+		  make any changes to this portion of the plug-in code. 
+		</p> 
+		<codeblock outputclass="syntax javascript">
+/*
+ * Plugin: getPercentPageViewed v1.71
+ */
+s.getPercentPageViewed=new Function("n",""
++"var s=this,W=window,EL=W.addEventListener,AE=W.attachEvent,E=['load"
++"','unload','scroll','resize','zoom','keyup','mouseup','touchend','o"
++"rientationchange','pan'];W.s_Obj=s;s_PPVid=(n=='-'?s.pageName:n)||s"
++".pageName||location.href;if(!W.s_PPVevent){s.s_PPVg=function(n,r){v"
++"ar k='s_ppv',p=k+'l',c=s.c_r(n||r?k:p),a=c.indexOf(',')&gt;-1?c.split("
++"',',10):[''],l=a.length,i;a[0]=unescape(a[0]);r=r||(n&amp;&amp;n!=a[0])||0;"
++"a.length=10;if(typeof a[0]!='string')a[0]='';for(i=1;i&lt;10;i++)a[i]="
++"!r&amp;&amp;i&lt;l?parseInt(a[i])||0:0;if(l&lt;10||typeof a[9]!='string')a[9]='';"
++"if(r){s.c_w(p,c);s.c_w(k,'?')}return a};W.s_PPVevent=function(e){va"
++"r W=window,D=document,B=D.body,E=D.documentElement,S=window.screen|"
++"|0,Ho='offsetHeight',Hs='scrollHeight',Ts='scrollTop',Wc='clientWid"
++"th',Hc='clientHeight',C=100,M=Math,J='object',N='number',s=W.s_Obj|"
++"|W.s||0;e=e&amp;&amp;typeof e==J?e.type||'':'';if(!e.indexOf('on'))e=e.subs"
++"tring(2);s_PPVi=W.s_PPVi||0;if(W.s_PPVt&amp;&amp;!e){clearTimeout(s_PPVt);s"
++"_PPVt=0;if(s_PPVi&lt;2)s_PPVi++}if(typeof s==J){var h=M.max(B[Hs]||E[H"
++"s],B[Ho]||E[Ho],B[Hc]||E[Hc]),X=W.innerWidth||E[Wc]||B[Wc]||0,Y=W.i"
++"nnerHeight||E[Hc]||B[Hc]||0,x=S?S.width:0,y=S?S.height:0,r=M.round("
++"C*(W.devicePixelRatio||1))/C,b=(D.pageYOffset||E[Ts]||B[Ts]||0)+Y,p"
++"=h&gt;0&amp;&amp;b&gt;0?M.round(C*b/h):0,O=W.orientation,o=!isNaN(O)?M.abs(o)%180"
++":Y&gt;X?0:90,L=e=='load'||s_PPVi&lt;1,a=s.s_PPVg(s_PPVid,L),V=function(i,"
++"v,f,n){i=parseInt(typeof a==J&amp;&amp;a.length&gt;i?a[i]:'0')||0;v=typeof v!="
++"N?i:v;v=f||v&gt;i?v:i;return n?v:v&gt;C?C:v&lt;0?0:v};if(new RegExp('(iPod|i"
++"Pad|iPhone)').exec(navigator.userAgent||'')&amp;&amp;o){o=x;x=y;y=o}o=o?'P'"
++":'L';a[9]=L?'':a[9].substring(0,1);s.c_w('s_ppv',escape(W.s_PPVid)+"
++"','+V(1,p,L)+','+(L||!V(2)?p:V(2))+','+V(3,b,L,1)+','+X+','+Y+','+x"
++"+','+y+','+r+','+a[9]+(a[9]==o?'':o))}if(!W.s_PPVt&amp;&amp;e!='unload')W.s"
++"_PPVt=setTimeout(W.s_PPVevent,333)};for(var f=W.s_PPVevent,i=0;i&lt;E."
++"length;i++)if(EL)EL(E[i],f,false);else if(AE)AE('on'+E[i],f);f()};v"
++"ar a=s.s_PPVg();return!n||n=='-'?a[1]:a");</codeblock> 
+		<p> 
+		  <b>Notes</b> 
+		</p> 
+		<ul id="ul_9E3EDDA91BC54CF1B62E9D4F0113343F"> 
+		  <li id="li_A058C935A5244394B64813693DAE3FE5">Always test plug-in
+			 installations to ensure that data collection is as expected before deploying in
+			 a production environment. 
+		  </li> 
+		  <li id="li_D413786988664012BA15C6104C8B42DD">Because the plug-in passes
+			 the percentage of page viewed on the previous page, data is not collected for
+			 the final page view of the visit. One way around this is to use a function on
+			 all exit links to call 
+			 <varname>s.getPercentPageViewed()</varname>. 
+		  </li> 
+		  <li id="li_343D8094D3CE4A06A220AE21F5B2101A">This plug-in relies on the
+			 ability to set cookies in the user's web browser. If the user does not accept
+			 first-party cookies, the plug-in will not pass data into 
+			 <keyword>Analytics</keyword>. 
+		  </li> 
+		  <li id="li_03C5526C1F3449819A0A23063C968AD0">The plug-in creates its
+			 own first-party cookie named 
+			 <filepath>s_ppv</filepath>. 
+		  </li> 
+		  <li id="li_73905B9D0732406B91EB433FB7ECE039">A very small percentage of
+			 users will not pass percentage of page viewed data due to browser limitations.
+			 However, this plug-in has been successfully tested in IE, Firefox, Chrome,
+			 Safari, and Opera. 
+		  </li> 
+		</ul> 
+	 </section> 
+  </conbody> 
+</concept> 

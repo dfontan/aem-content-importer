@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_998FA134524243A6BE8ECD322649BDC8" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Viewing Campaign Performance</title>
+  <shortdesc class="- topic/shortdesc ">The iPhone app lets you check the
+	 performance of your campaigns. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>mbox</keyword>
+      </keywords>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <steps id="steps_6FD98718C2904FE0B86FD73ECC94C16F" class="- topic/ol task/steps ">
+      <step id="step_A086E6B675244B99A2AEB07F92513D18" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Start the app, then press the name of
+			 the campaign you want to view. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">The app opens to show your active campaigns.
+				Press 
+				<uicontrol class="+ topic/ph ui-d/uicontrol ">All
+				  Campaigns</uicontrol> to view all active and inactive campaigns. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_475F1A78689347EEA21AB866CABE43B6" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Select the time period of the data
+			 you want to view. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">You can select from the following: 
+			 </p>
+          <p class="- topic/p ">
+            <ul id="ul_3B921C9A66994AA3A764123709297DD1" class="- topic/ul ">
+              <li id="li_2612F4E9DD2646A1BD9EEC7B9E1F8ADA" class="- topic/li ">
+				  Today 
+				</li>
+              <li id="li_ABD35753EDB949ADAAF935F1B74408D7" class="- topic/li ">
+				  Last 7 days 
+				</li>
+              <li id="li_7820508FE30E4072B3A33A289B35CC4A" class="- topic/li ">
+				  Last 30 Days 
+				</li>
+            </ul>
+          </p>
+        </stepresult>
+      </step>
+      <step id="step_279CA9383BCA440F9558F1E7EB9F896A" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Select the metric you want to view. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">Available options are: 
+			 </p>
+          <p class="- topic/p ">
+            <ul id="ul_37DC800F9E9F49E8A8C6B9873DCC3C16" class="- topic/ul ">
+              <li id="li_B9AB19DD11704F1FBB42CDD4B696A40B" class="- topic/li ">
+				  CR (Conversion Rate) 
+				</li>
+              <li id="li_2429A7D499024451B569DF19CF5DE028" class="- topic/li ">
+				  RPV (Revenue Per Visitor) 
+				</li>
+              <li id="li_F69F167CB1CC4798BC6ACC0286002143" class="- topic/li ">
+				  AOV (Average Order Value) 
+				</li>
+              <li id="li_BB36D505842A45F194D0A659DC623B89" class="- topic/li ">
+				  Visitors 
+				</li>
+              <li id="li_4CD9FC1CF06A42D2A3E74E9933F1ED48" class="- topic/li ">
+				  Engagement 
+				</li>
+            </ul>
+          </p>
+          <p class="- topic/p ">The graph changes to show the statistics for
+				the selected metric. 
+			 </p>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links class="- topic/related-links ">
+    <link href="t_iphone_Changing_Campaign_Status.xml#task_C98156B45ED3428185F3F32C7CDB1002" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Changing Campaign Status?>
+    </link>
+    <link href="t_iphone_Viewing_Campaign_Details.xml#task_914BEF76C5DC4D2BA2E2A885905AC635" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Viewing Campaign Details?>
+    </link>
+  </related-links>
+</task>

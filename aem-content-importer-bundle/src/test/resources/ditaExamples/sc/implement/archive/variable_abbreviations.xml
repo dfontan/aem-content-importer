@@ -1,0 +1,579 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_F9A14EEF882F4234BFC8173CDF9290DA"> 
+  <title>Data Collection Query String Parameters</title> 
+  <shortdesc> A comprehensive list of query string parameters that contain
+	 analytics data with their associated variable and explanation.
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Developer and implementation"/> 
+		<othermeta name="subtopic" content="Debugger"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>This list is useful when defining 
+		<xref
+		 href="dynvars_overview.xml#concept_B016789733A94070A9EAB209EEC05262"
+		 format="dita" scope="local"><?xm-replace_text Dynamic Variables?></xref> and
+		debugging.
+	 </p> 
+	 <table id="table_5442E15BF0AE4BDA92DDADD1C08F7C13"> 
+		<tgroup cols="4"> 
+		  <colspec colnum="1" colname="col1" colwidth="*"/> 
+		  <colspec colnum="2" colname="col2" colwidth="*"/> 
+		  <colspec colnum="3" colname="col3" colwidth="*"/> 
+		  <colspec colnum="4" colname="col4" colwidth="*"/> 
+		  <thead> 
+			 <row> 
+				<entry> Parameter 
+				</entry> 
+				<entry> Analytics Variable 
+				</entry> 
+				<entry> Report Populated 
+				</entry> 
+				<entry> Description 
+				</entry> 
+			 </row> 
+		  </thead> 
+		  <tbody> 
+			 <row>
+				<entry colname="col1">aamlh
+				</entry>
+				<entry colname="col2">None
+				</entry>
+				<entry colname="col3">None
+				</entry>
+				<entry colname="col4">Audience Manager Location Hint (used in
+				  Marketing Cloud Shared Profile integration)
+				</entry>
+			 </row>
+			 <row>
+				<entry colname="col1">aamb
+				</entry>
+				<entry colname="col2">None
+				</entry>
+				<entry colname="col3">None
+				</entry>
+				<entry colname="col4">Audience Manager Blob (used in Marketing
+				  Cloud Shared Profile integration)
+				</entry>
+			 </row>
+			 <row>
+				<entry colname="col1">aid
+				</entry>
+				<entry colname="col2">None
+				</entry>
+				<entry colname="col3">None
+				</entry>
+				<entry colname="col4">Analytics visitor ID
+				</entry>
+			 </row>
+			 <row> 
+				<entry> AQB 
+				</entry> 
+				<entry> None 
+				</entry> 
+				<entry> None 
+				</entry> 
+				<entry> Indicates the beginning of an image request. 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> AQE 
+				</entry> 
+				<entry> None 
+				</entry> 
+				<entry> None 
+				</entry> 
+				<entry> Indicates the end of an image request, meaning the request
+				  was not truncated. 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> bh 
+				</entry> 
+				<entry> None 
+				</entry> 
+				<entry> Visitor Profile | Technology | Browser Height 
+				</entry> 
+				<entry> Browser window height (in pixels) 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> bw 
+				</entry> 
+				<entry> None 
+				</entry> 
+				<entry> Visitor Profile | Technology | Browser Width 
+				</entry> 
+				<entry> Browser window width (in pixels) 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> c 
+				</entry> 
+				<entry> None 
+				</entry> 
+				<entry> Visitor Profile | Technology | Monitor Color Depths 
+				</entry> 
+				<entry> Color quality (in bits) 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> c1-c75 
+				</entry> 
+				<entry> s.prop1-s.prop75 
+				</entry> 
+				<entry> All Custom Traffic reports 
+				</entry> 
+				<entry> Traffic variables used in custom traffic reporting 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> cc 
+				</entry> 
+				<entry> s.currencyCode 
+				</entry> 
+				<entry> None 
+				</entry> 
+				<entry> The type of currency used on the site 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> ce 
+				</entry> 
+				<entry> s.charSet 
+				</entry> 
+				<entry> None 
+				</entry> 
+				<entry> The character encoding of the image request 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> cdp 
+				</entry> 
+				<entry> s.cookieDomainPeriods 
+				</entry> 
+				<entry> None 
+				</entry> 
+				<entry> Indicates the number of periods in a domain for cookie
+				  tracking; manually set. 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> ch 
+				</entry> 
+				<entry> s.channel 
+				</entry> 
+				<entry> Site Content | Site Sections 
+				</entry> 
+				<entry> The Site Sections variable used in traffic reporting 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> ct 
+				</entry> 
+				<entry> None 
+				</entry> 
+				<entry> Visitor Profile | Technology | Connection Types 
+				</entry> 
+				<entry> Connection Type (Modem, LAN, etc; can only populate in IE
+				  browsers) 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> events 
+				</entry> 
+				<entry> s.events 
+				</entry> 
+				<entry> Site Traffic | Purchases, Shopping Cart, Custom Events 
+				</entry> 
+				<entry> The commerce and custom events that occurred on the page;
+				  used in conversion reports 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> g 
+				</entry> 
+				<entry> None 
+				</entry> 
+				<entry> None 
+				</entry> 
+				<entry> The current URL of the page, up to 255 bytes. 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> -g 
+				</entry> 
+				<entry> None 
+				</entry> 
+				<entry> None 
+				</entry> 
+				<entry> URLs longer than 255 bytes are split, with the first 255
+				  bytes appearing in the g parameter, with the remaining bytes appearing later in
+				  the query string in the -g= query parameter. 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> h1-h5 
+				</entry> 
+				<entry> s.hier1-s.hier5 
+				</entry> 
+				<entry> Site Content | Hierarchy reports 
+				</entry> 
+				<entry> Hierarchy variables; used in traffic reporting 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> hp 
+				</entry> 
+				<entry> None 
+				</entry> 
+				<entry> Visitor Profile | Visitor Home Page 
+				</entry> 
+				<entry> Indicates if current page is browser's home page (Y or N;
+				  can only populate in IE browsers) 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> j 
+				</entry> 
+				<entry> None 
+				</entry> 
+				<entry> Visitor Profile | Technology | Javascript Version 
+				</entry> 
+				<entry> Shows the current Javascript version installed (generally
+				  1.x) 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> k 
+				</entry> 
+				<entry> None 
+				</entry> 
+				<entry> Visitor Profile | Technology | Cookies 
+				</entry> 
+				<entry> Are cookies supported in the browser (Y, N or U) 
+				</entry> 
+			 </row>
+			 <row>
+				<entry>mid
+				</entry>
+				<entry>None
+				</entry>
+				<entry>None
+				</entry>
+				<entry>Marketing Cloud Visitor ID
+				</entry>
+			 </row> 
+			 <row> 
+				<entry> ndh 
+				</entry> 
+				<entry> None 
+				</entry> 
+				<entry> None 
+				</entry> 
+				<entry> Indicates whether the image request originated from JS file
+				  (1 or 0) 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> ns 
+				</entry> 
+				<entry> s.visitorNameSpace 
+				</entry> 
+				<entry> None 
+				</entry> 
+				<entry> Specifies what domain the cookies are set on 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> oid 
+				</entry> 
+				<entry> s.objectID 
+				</entry> 
+				<entry> Site Content | Links | ClickMap 
+				</entry> 
+				<entry> Object identifier for last page; used in ClickMap 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> ot 
+				</entry> 
+				<entry> None 
+				</entry> 
+				<entry> Site Content | Links | ClickMap 
+				</entry> 
+				<entry> Object tag name for last page; used in ClickMap 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> p 
+				</entry> 
+				<entry> None 
+				</entry> 
+				<entry> Visitor Profile | Technology | Netscape Plug-Ins 
+				</entry> 
+				<entry> Semicolon delimited browser plug-in names 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> pageName 
+				</entry> 
+				<entry> s.pageName 
+				</entry> 
+				<entry> Site Content | Pages 
+				</entry> 
+				<entry> The page's designated name in reporting 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> pageType 
+				</entry> 
+				<entry> s.pageType 
+				</entry> 
+				<entry> Site Content | Pages Not Foun 
+				</entry> 
+				<entry> Indicates whether it is a 404 page or not (Either 'error'
+				  or blank) 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> pccr 
+				</entry> 
+				<entry> None 
+				</entry> 
+				<entry> None 
+				</entry> 
+				<entry> Only occurs for new visitors; prevents infinite redirects
+				  (Always true) 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> pe 
+				</entry> 
+				<entry> s.linkType 
+				</entry> 
+				<entry> Site Content | Links | Exit Links, File Downloads, Custom
+				  Links 
+				</entry> 
+				<entry> Determines the type of custom link hit fired 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> pev1 
+				</entry> 
+				<entry> None 
+				</entry> 
+				<entry> Site Content | Links | Exit Links, File Downloads, Custom
+				  Links 
+				</entry> 
+				<entry> URL the custom link hit occurred on 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> pev2 
+				</entry> 
+				<entry> None 
+				</entry> 
+				<entry> Site Content | Links | Exit Links, File Downloads, Custom
+				  Links 
+				</entry> 
+				<entry> Custom link friendly name 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> pev3 
+				</entry> 
+				<entry> None 
+				</entry> 
+				<entry> All video reports 
+				</entry> 
+				<entry> Used to track milestones in legacy video reporting;
+				  deprecated with v15 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> pid 
+				</entry> 
+				<entry> None 
+				</entry> 
+				<entry> Site Content | Links | ClickMap 
+				</entry> 
+				<entry> Page identifier for last page; used in ClickMap 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> pidt 
+				</entry> 
+				<entry> None 
+				</entry> 
+				<entry> Site Content | Links | ClickMap 
+				</entry> 
+				<entry> Page identifier type for last page; used in ClickMap 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> products 
+				</entry> 
+				<entry> s.products 
+				</entry> 
+				<entry> Products | Products 
+				</entry> 
+				<entry> Products variable used in conversion reporting 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> purchaseID 
+				</entry> 
+				<entry> s.purchaseID 
+				</entry> 
+				<entry> None 
+				</entry> 
+				<entry> Used to deduplicate purchases, preventing revenue inflation
+				  
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> r 
+				</entry> 
+				<entry> s.referrer 
+				</entry> 
+				<entry> All traffic sources reports 
+				</entry> 
+				<entry> Referring URL 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> s 
+				</entry> 
+				<entry> None 
+				</entry> 
+				<entry> Visitor Profile | Technology | Monitor Resolutions 
+				</entry> 
+				<entry> Screen resolution (width × height) 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> server 
+				</entry> 
+				<entry> s.server 
+				</entry> 
+				<entry> Site Content | Servers 
+				</entry> 
+				<entry> The page's server; used in traffic reporting 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> state 
+				</entry> 
+				<entry> s.state 
+				</entry> 
+				<entry> Visitor Profile | Visitor State 
+				</entry> 
+				<entry> Specifies the state as defined by the variable; deprecated
+				  with v15 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> t 
+				</entry> 
+				<entry> None 
+				</entry> 
+				<entry> None 
+				</entry> 
+				<entry> Browser time information- "[d/m/yyyy] [hh:mm:ss] [weekday]
+				  [time zone offset]" 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> v 
+				</entry> 
+				<entry> None 
+				</entry> 
+				<entry> Visitor Profile | Technology | JavaScript 
+				</entry> 
+				<entry> JavaScript enabled (Y or N) 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> v0 
+				</entry> 
+				<entry> s.campaign 
+				</entry> 
+				<entry> Campaigns | Tracking Codes 
+				</entry> 
+				<entry> The campaign variable used in conversion reporting 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> v1-v75 
+				</entry> 
+				<entry> s.eVar1-s.eVar75 
+				</entry> 
+				<entry> All Custom Conversion reports 
+				</entry> 
+				<entry> Conversion variables used in custom conversion reporting 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> vid 
+				</entry> 
+				<entry> s.visitorID 
+				</entry> 
+				<entry> None 
+				</entry> 
+				<entry> The visitor's unique ID as set in the 
+				  <xref
+					href="c_visitorid.xml#concept_CD273CC915CC4ABD8F52E4209FF9557E" format="dita"
+					scope="local"><?xm-replace_text visitorID?></xref> variable.
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> vmk 
+				</entry> 
+				<entry> s.vmk 
+				</entry> 
+				<entry> None 
+				</entry> 
+				<entry> Visitor migration key; used to migrate from third-party to
+				  first-party cookies 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> vvp 
+				</entry> 
+				<entry> s.variableProvider 
+				</entry> 
+				<entry> None 
+				</entry> 
+				<entry> Used in Genesis integrations 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> xact 
+				</entry> 
+				<entry> s.transactionID 
+				</entry> 
+				<entry> None 
+				</entry> 
+				<entry> The transaction ID used to link online data to offline data
+				  
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> zip 
+				</entry> 
+				<entry> s.zip 
+				</entry> 
+				<entry> Visitor Profile | Visitor ZIP/Postal Code 
+				</entry> 
+				<entry> Determines the zip code as defined by the variable 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+  </conbody> 
+</concept>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_72BA491187634261A8BECD0561A2B1A4">
+  <title>Video Overview Report</title>
+  <shortdesc>The video overview report is designed to let you monitor video
+	 across your site. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>media</keyword>
+        <keyword>milestone</keyword>
+        <keyword>sdk</keyword>
+        <keyword>video</keyword>
+      </keywords>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>The Video Overview Report displays several aggregate measurements to
+		quickly monitor that video is performing as expected. A graph displays video
+		starts next to ad impressions to let you quickly view these metrics for each
+		video. 
+	 </p>
+    <image placement="break" align="center" href="graphics/video-overview-report.png" width="672px" id="image_4367593408C449869D491917C49E78D0"></image>
+    <section id="section_8DF3E4A6734145B082657C6BECFA0BBE">
+      <title>Quick Filters</title>
+      <p>Quickly display video metrics by device or geo country: 
+		</p>
+      <image placement="break" align="center" href="graphics/video-overview-report-filters.png" id="image_CF20B862A82344379534E505DE24F6BA"></image>
+    </section>
+    <section id="section_288FB476EDA44761BB8A86551F0A110C">
+      <title>Video Performance</title>
+      <p>Click-and-drag to zoom in, then hover to view granular metrics for
+		  specific videos. Click 
+		  <image placement="inline" href="graphics/video-overview-report-revert.png" id="image_DBFA4811BF254DCBBA438273B86B362C"></image> to reset the view after
+		  you zoom. 
+		</p>
+      <image placement="break" align="center" href="graphics/video-overview-report-performance.png" id="image_3113F03CE45B4F648EB6C20535AEE7AA"></image>
+    </section>
+  </conbody>
+</concept>

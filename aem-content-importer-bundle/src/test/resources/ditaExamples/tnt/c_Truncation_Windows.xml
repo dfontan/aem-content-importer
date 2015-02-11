@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_FCD6F7D83F884FB387CF297E89332DD9" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic concept/concept ">
+  <title class="- topic/title ">Truncation Windows</title>
+  <shortdesc class="- topic/shortdesc "> The truncation window algorithm
+	 determines what data is out of date and removes it from the model. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody class="- topic/body  concept/conbody ">
+    <section id="section_9886CEA5571F42B0A12ACBEFC4422EC4" class="- topic/section "> For example, say there is an option that promotes
+		Valentine's Day. It will significantly change in popularity on or about the
+		14th of February. The goal of the truncation windows is to find the right data
+		time window to use that includes enough data but is still current and accurate.
+		The data window can vary from seven to 84 days. 
+	 </section>
+  </conbody>
+  <related-links class="- topic/related-links ">
+    <link href="c_Training_Data_Records.xml#concept_8D3A15078CA1405E8D9ABA79848A9284" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Training Data Records?>
+    </link>
+    <link href="c_Model_Validation.xml#concept_5568028A40A04EF4B1264B08231CFCAB" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Model Validation?>
+    </link>
+    <link href="c_Real-Time_Reaction_Tracking.xml#concept_9E876F4A777142BEA87BAF53A37A184F" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Real-Time Reaction Tracking?>
+    </link>
+    <link href="c_Scorer.xml#concept_FDADF0E0F2C941EABA0520B743693CB9" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Scorer?>
+    </link>
+  </related-links>
+</concept>

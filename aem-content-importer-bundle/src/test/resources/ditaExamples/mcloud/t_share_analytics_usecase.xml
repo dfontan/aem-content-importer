@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_F7AE118436FA4E01BFAF79B485482820">
+  <title>Share an Analytics report to the Marketing Cloud</title>
+  <shortdesc>Share an 
+	 <keyword>Analytics</keyword> report to a board in the Marketing Cloud.
+	 These steps also apply to ad hoc analysis and other integrated solutions like 
+	 <keyword>Adobe Social</keyword>. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>audience services</keyword>
+      </keywords>
+      <othermeta name="solution" content="Marketing Cloud" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <steps id="steps_3FD668ED30E9459CB7F18BEA38524295">
+      <step id="step_77EA83A04FB745AC972CA9F265834610">
+        <cmd>
+          <xref href="t_sign_in.xml#task_1BFE87E20DCB44078CAC82F3CD44B985" format="dita" scope="local">
+            <?xm-replace_text Sign in to the Adobe Marketing Cloud?>
+          </xref>. 
+		  </cmd>
+        <stepresult>
+          <p>
+            <image href="graphics/analytics_launch.png" id="image_501BC3A0DFCA419A829426792C195E93">
+              <?xm-replace_text Step Result?>
+            </image>
+          </p>
+        </stepresult>
+      </step>
+      <step id="step_5B258C33F7024A198CF75ACD5569A261">
+        <cmd>In the left navigation, click 
+			 <uicontrol>Analytics</uicontrol>. 
+		  </cmd>
+        <stepresult>
+          <p></p>
+        </stepresult>
+      </step>
+      <step id="step_91BD6D9D22F34677938AB0ADBE6E8874">
+        <cmd>On the 
+			 <wintitle>Welcome to Adobe Analytics</wintitle> page, locate 
+			 <uicontrol>Reports &amp; Analytics</uicontrol>, then click 
+			 <uicontrol>Launch</uicontrol>. 
+		  </cmd>
+        <stepresult>
+          <p>
+            <image href="graphics/launch_reports_analytics.png" id="image_B2CB44B250F14930A828364B92CAB728">
+              <?xm-replace_text Step Result?>
+            </image>
+          </p>
+        </stepresult>
+      </step>
+      <step id="step_0224CF96B6B94FCD8B381D35C3B51D6C">
+        <cmd>Run a report, then click 
+			 <uicontrol>Share</uicontrol>. 
+		  </cmd>
+        <stepresult>
+          <p>
+            <image href="graphics/share_report.png" id="image_74A45088622B45588247B6D63128256A">
+              <?xm-replace_text Step Result?>
+            </image>
+          </p>
+          <p>This example shows a 
+				<wintitle>Key Metrics Report</wintitle>. You can also share reports
+				from 
+				<keyword>Social</keyword> and ad hoc analysis. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_A1BF51027AF14C5BA5B58C85AE01A568">
+        <cmd>In the new card, create a Board or specify an existing Board. 
+		  </cmd>
+        <stepresult>
+          <p>
+            <image href="graphics/create_report_card.png" id="image_4315EA7B928542CCA76FDFF832795316">
+              <?xm-replace_text Step Result?>
+            </image>
+          </p>
+        </stepresult>
+      </step>
+      <step id="step_A03CD0D6238945EB87BF163D2BE782EA">
+        <cmd>(Optional) Click the Card to annotate. 
+		  </cmd>
+        <stepresult>
+          <p>
+            <image href="graphics/annotate_card.png" id="image_583F5AA3C1964421990963EA64B7D47C">
+              <?xm-replace_text Step Result?>
+            </image>
+          </p>
+        </stepresult>
+      </step>
+      <step id="step_4B68A91730C54CDF99DFCC634A4F2570">
+        <cmd>Add optional comments, then click 
+			 <uicontrol>Share</uicontrol> to publish the report to the 
+			 <keyword>Marketing Cloud</keyword>. 
+		  </cmd>
+        <stepresult>
+          <p>
+            <image href="graphics/shared_card.png" id="image_3D63590645D14C979842302ADE81AD7F">
+              <?xm-replace_text Step Result?>
+            </image>
+          </p>
+          <p>Continue by sharing the board with other users. 
+			 </p>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+</task>

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_9BE4F7D9CDAE4445B9AF3212BC7E61F2">
+  <title>Util.cookieWrite</title>
+  <shortdesc>Writes a value to a cookie. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="JavaScript AppMeasurement" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>
+      <b>Syntax:</b>
+    </p>
+    <codeblock>s.Util.cookieWrite(key, value [,expire])</codeblock>
+    <p>
+      <b>Parameters:</b>
+    </p>
+    <table id="table_D17996E0B5CE475A939B21C58E29F02F">
+      <tgroup cols="2">
+        <colspec colnum="1" colname="col1" colwidth="1.00*" />
+        <colspec colnum="2" colname="col2" colwidth="5.93*" />
+        <thead>
+          <row>
+            <entry colname="col1">Parameter 
+				</entry>
+            <entry colname="col2">Description 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry colname="col1">key 
+				</entry>
+            <entry colname="col2">(required) key to write value for in cookies.
+				  
+				</entry>
+          </row>
+          <row>
+            <entry colname="col1">value 
+				</entry>
+            <entry colname="col2">(optional) value to write to cookies. 
+				</entry>
+          </row>
+          <row>
+            <entry colname="col1">expire 
+				</entry>
+            <entry colname="col2">(optional) Date object containing the
+				  expiration date for the cookie. Default is to use a session cookie. 
+				</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p>
+      <b>Returns:</b>
+    </p>
+    <p>
+      <!--what does this return? true or false based on if the cookie was written-->
+    </p>
+    <p>
+      <b>Example:</b>
+    </p>
+    <codeblock outputclass="syntax javascript">//set a cookie with an expiration 6 months from now
+var date = new Date();
+date.setMonth(date.getMonth() + 6);
+var success = s.Util.cookieWrite("my_cookie", "my_value", date);</codeblock>
+  </conbody>
+</concept>

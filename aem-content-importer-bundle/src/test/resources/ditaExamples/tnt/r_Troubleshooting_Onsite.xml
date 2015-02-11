@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd"[]>
+<reference id="reference_387DCA1A01014C9FAA9C022577644BE2">
+  <title>Troubleshoot Onsite</title>
+  <shortdesc>Follow the troubleshooting advice if Onsite starts on the wrong
+	 page or makes your page look strange. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <refbody>
+    <refsyn id="refsyn_E9CE4D14972A425796387A03D88CA5A2">
+      <p>
+        <b>Onsite doesn't start on the page I want it to. 
+		  </b>
+      </p>
+      <p>Onsite looks for the best page to load based on the campaign or offer
+		  you are previewing. It looks for recent page URLs that have sent data from the
+		  mboxes in the campaign. If there have been no recent URL calls, Onsite loads a
+		  "popular" page, meaning a page on your site that receives a lot of page views,
+		  and thus generates a lot of mbox requests. In offer preview, if the offer is
+		  assigned to a particular mbox, Onsite tries to load a page with that mbox. If
+		  it cannot find an associated mbox, it also chooses a popular page. To override
+		  this behavior, click 
+		  <uicontrol>make this my starter page</uicontrol> on the Onsite bar in
+		  multiple campaign preview mode. 
+		</p>
+      <p>
+        <b>Onsite makes my page look strange. For example, it pushes content
+			 down or messes up the layout. 
+		  </b>
+      </p>
+      <p>Onsite injects JavaScript into your page. Sometimes existing
+		  JavaScript functions and styles can conflict with the way Onsite works by
+		  default. There is a mechanism called "custom Onsite JavaScript" to fix these
+		  issues, on a per client basis. Contact your account representative or
+		  ClientCare to have the Adobe team customize Onsite for your site, without
+		  requiring code changes on your site. 
+		</p>
+    </refsyn>
+  </refbody>
+  <related-links>
+    <link href="c_Previewing_a_Single_Campaign_with_Onsite.xml#concept_C39F1994F9764A45A15AE82E23C49E0B" type="concept" format="dita" scope="local">
+      <?xm-replace_text Preview a Single Campaign with Onsite?>
+    </link>
+    <link href="t_Previewing_Multiple_Campaigns_with_Onsite.xml#task_1A68F285DAF34198948D33467FC348BD" type="task" format="dita" scope="local">
+      <?xm-replace_text Preview Multiple Campaigns with Onsite?>
+    </link>
+    <link href="t_Creating_or_Editing_a_Campaign_with_Onsite.xml#task_E47255E58E994BF3AA0795ED45DA50F3" type="task" format="dita" scope="local">
+      <?xm-replace_text Create or Edit a Campaign with Onsite?>
+    </link>
+    <link href="t_Adding_Mboxes_to_a_Campaign_with_Onsite.xml#task_E0C11EE79DAD4FE89D7FD62B679BEE7F" type="task" format="dita" scope="local">
+      <?xm-replace_text Add Mboxes to a Campaign with Onsite?>
+    </link>
+    <link href="t_Previewing_an_Offer_with_Onsite.xml#task_7EC936CEED004DA7BA58200934E35411" type="task" format="dita" scope="local">
+      <?xm-replace_text Preview an Offer with Onsite?>
+    </link>
+    <link href="t_Bookmarking_Onsite_from_Your_Web_Page.xml#task_C837F916F8D7464798F96F0FC454B4A4" type="task" format="dita" scope="local">
+      <?xm-replace_text Bookmark Onsite from Your Web Page?>
+    </link>
+    <link href="t_Exiting_Onsite.xml#task_CB900909CE2B43AAA6BF30C1A35A13C4" type="task" format="dita" scope="local">
+      <?xm-replace_text Exit Onsite?>
+    </link>
+    <link href="t_Turning_Off_Onsite_Help_Popups.xml#task_89206AA54DB944BFBAFCA721A26DCFFC" type="task" format="dita" scope="local">
+      <?xm-replace_text Turn Off Onsite Help Popups?>
+    </link>
+  </related-links>
+</reference>

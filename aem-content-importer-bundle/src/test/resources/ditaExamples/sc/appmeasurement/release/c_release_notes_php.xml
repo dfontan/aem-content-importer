@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_8D6539AA11DB45119D01478F09C34A33"> 
+  <title>PHP</title> 
+  <shortdesc> <?xm-replace_text Short Description?>
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Developer and implementation"/> 
+		<othermeta name="subtopic" content="Release notes"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <note>To find the current library version, turn on debug logging. 
+	 </note> 
+	 <section id="section_0D547871DC684417B6CE1370E5C6AAC2"> 
+		<title>1.2.2</title> 
+		<p>Release Date: 
+		  <b>August 2014</b>
+		</p> 
+		<ul id="ul_ACBA4173D0B24D5AB2EBC0D716BE1121"> 
+		  <li id="li_52E790F77F6C4C39BB148A23C4DB5718">Internal changes to
+			 support upcoming functionality. 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_5717907F67AB482F860F1DFBCB4198C7"> 
+		<title>1.2.1</title> 
+		<p>Release Date: 
+		  <b>July 2012</b>
+		</p> 
+		<ul id="ul_25E9B3557DC54392B2F0BB1BF8762CDC"> 
+		  <li id="li_16ED72FDF35D4DEE94A80AC1AB380929">
+          <!--69393-->Added a check for the "off" returned for the
+			 $_SERVER['HTTPS'] in IIS. Without this check, typecasting to boolean
+			 ((bool)$_SERVER['HTTPS']) returned true in IE whether the request was made
+			 through HTTP or HTTPS. This caused non-secure pages to try to make a secure
+			 image request. 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_8F4479681ED642FCB9233459E04FF702"> 
+		<title>1.1</title> 
+		<p>Measurement Library for PHP 1.1 includes the following updates from
+		  version 1.0: 
+		<ul id="ul_B3035635A71B48DD9454A5A8C3DDAB13"> 
+		  <li id="li_E42D3C828F7D405F82890A9E8E707183"> Better GeoSegmentation
+			 accuracy (when 
+			 <codeph>sendFromServer</codeph> is enabled). 
+		  </li> 
+		  <li id="li_809384153BDC4FFDAA084E0668699196"> Fixed bug so user can now
+			 append to 
+			 <codeph>userAgent</codeph> variable. 
+		  </li> 
+		  <li id="li_EC8D446ADDC54CFA8636A3705FDC94B2">Image beacon is now more
+			 compliant with more mobile browsers. 
+		  </li> 
+		  <li id="li_1064AA02E6ED49CBAA30010019A92C0E"> The 
+			 <codeph>imageDimensions</codeph> variable now defaults to 5x5 when
+			 mobile is enabled. 
+		  </li> 
+		  <li id="li_2BCBAE2154CF4BC6B2CD8687FF306AF4">Refined bot detection
+			 list. 
+		  </li> 
+		  <li id="li_A47332124E334187B1D05269CAF29DA6">Added debug information
+			 (HTTP headers, response, errors, and so forth) when 
+			 <codeph>debugTracking</codeph> and 
+			 <codeph>sendFromServer</codeph> are enabled. 
+		  </li> 
+		  <li id="li_0FC2BA9A09054D6281A069CECC42B0F7"> Added the 
+			 <codeph>debugFilename</codeph> variable (when 
+			 <codeph>sendFromServer</codeph> is enabled). 
+		  </li> 
+		  <li id="li_FB50C61C6C3F4DDFA885E4BB76669C92"> The pagename variable
+			 defaults to 
+			 <codeph>$_SERVER['SCRIPT_NAME']</codeph> when neither 
+			 <codeph>pagename</codeph> nor 
+			 <codeph>pageURL</codeph> are set. 
+		  </li> 
+		  <li id="li_21F405CC45D3443B9D63A1DB59DF0055"> Full support for CGI
+			 implementations of PHP. 
+		  </li> 
+		  <li id="li_1B7A2E66004A430EBACF4B33185B33D5"> Performance enhancements.
+			 
+		  </li> 
+		</ul> 
+		</p> 
+	 </section>
+  </conbody> 
+</concept>

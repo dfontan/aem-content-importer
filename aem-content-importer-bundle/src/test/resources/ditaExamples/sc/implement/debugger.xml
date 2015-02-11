@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_B26FFE005EDD4E0FACB3117AE3E95AA2"> 
+  <title> Adobe Debugger</title> 
+  <shortdesc>The Adobe Debugger (previously DigitalPulse Debugger) is a free
+	 tool provided by Adobe that lets you view the data being collected from your
+	 site on any given page. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Developer and implementation"/> 
+		<othermeta name="subtopic" content="Debugger"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <note>DigitalPulse debugger was recently moved from 
+		<codeph>digitalpulse.omniture.com</codeph> to 
+		<codeph>adobetag.com</codeph>. If you are having issues using the
+		debugger, copy the updated code from 
+		<xref href="debugger_install.xml#task_8DB4DB56982C4EB6B599F99B02A9AD3B"
+		 format="dita" scope="local"><?xm-replace_text Installation?></xref> and update
+		your bookmarklet. 
+	 </note> 
+	 <p>When executed in your browser, it shows the image requests that
+		transmitted data from that page into Marketing Cloud solutions, along with any
+		variable values or parameters that were captured. This allows you and your
+		developers to check the validity of your implementation on any page on your
+		site. 
+	 </p> 
+	 <p>The 
+		<keyword>DigitalPulse Debugger</keyword> is officially supported for use
+		in all recent versions and builds of Mozilla Firefox, Google Chrome, Microsoft
+		Internet Explorer, and Safari. 
+	 </p> 
+	 <p> 
+		<note>Because the 
+		  <keyword>Debugger</keyword> functions by creating a pop-up window when
+		  you access a special bookmark in your web browser, certain ad-blocking plug-ins
+		  and pop-up blockers might interfere with the loading of the 
+		  <keyword>Debugger</keyword>. 
+		</note> 
+	 </p> 
+  </conbody> 
+</concept>

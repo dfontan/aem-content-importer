@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_AD2F9207846F41B3AE29CCECFA59899F"> 
+  <title>Single Sign-On</title> 
+  <shortdesc>The Manage Single Sign-On Service page lets you enable a single
+	 sign-on (SSO) method for accessing marketing reports. SSO is a convenient way
+	 to let users access marketing reports without a separate authentication
+	 process. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Admin tools"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p><uicontrol>Analytics</uicontrol> &gt; 
+		<uicontrol>Admin</uicontrol> &gt; 
+		<uicontrol>Company Settings</uicontrol> &gt; 
+		<uicontrol>Single Sign-On</uicontrol>
+	 </p> 
+	 <p>See 
+		<xref
+		 href="http://marketing.adobe.com/resources/help/en_US/sc/sso/index.html"
+		 format="http" scope="external">Single Sign-On</xref> help. 
+	 </p> 
+  </conbody> 
+</concept>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_93A5F0435BAA4C25B74AAEEA70B957C1">
+  <title>Android</title>
+  <shortdesc>
+    <?xm-replace_text Short Description?>
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>media</keyword>
+        <keyword>milestone</keyword>
+        <keyword>sdk</keyword>
+        <keyword>video</keyword>
+      </keywords>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <note>Version 1.x of AppMeasurement for Android, which is available in Code
+		Manager in Admin Console and documented 
+		<xref href="https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/android/oms_sc_appmeasure_android.pdf" format="http" scope="external">here</xref>, does not support video measurement.
+		Version 3.x of the AppMeasurement Libraries for Android supports video
+		measurement and is documented 
+		<xref href="https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/android/index.html" format="http" scope="external">here</xref>. 
+	 </note>
+  </conbody>
+</concept>

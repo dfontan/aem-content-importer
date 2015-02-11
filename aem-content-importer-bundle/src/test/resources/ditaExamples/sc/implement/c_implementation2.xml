@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_CE78750AC2A4487D8ACD9369B3EAC85A"> 
+  <title>Analytics for Target Implementation</title> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Developer and implementation"/>
+		</metadata>
+  </prolog> 
+  <conbody> 
+	 <section id="section_A0D2EF18033D4C3997B08A6EBB34C17A"> 
+		<title>Implementation Requirements</title> 
+		<p>This integrations requires that you implement the following:
+		</p>
+		<ul id="ul_11854F7D76A5475F89E7639BBF05597A">
+		  <li id="li_901D5ACF0CBA4A208AB6DDDDAD1AA6A6">AppMeasurement for
+			 JavaScript 1.3
+		  </li>
+		  <li id="li_D6D4238ABB6E4854946BC6F444463BF0">Marketing Cloud Visitor ID
+			 Service 1.2
+		  </li>
+		  <li id="li_4ECFE3F2CB2145C1827E8930639C7A0C">Mbox.js 
+		  </li>
+		</ul>
+		<p>New implementations:
+		</p>
+		<p>-at top of page, simply list out the 3 files required for the
+		  integration: visitorAPI.js (brand new), appmeasurement.js, mbox.js version 48
+		</p>
+		<p>-explain what the visitorAPI.js file does (create new visitor ID
+		  across the MAC). This does not replace any ids (like mboxPC id, site cat id,
+		  AAM id) 
+		</p>
+		<p>-and indicate required order (visitorAPI.js has to be first, not sure
+		  about dependency between app measurement and mbox
+		</p>
+		<p>-, specify your mbox.js settings accordingly (link to that page)
+		</p>
+		<p>-DTM integration options
+		</p>
+		<p>-add note that once 
+		</p>
+		<p>This feature uses a new visitor ID service, a new version of
+		  AppMeasurement for JavaScript, and an updated mbox.js. You must deploy all
+		  three of these files as instructed in this document to successfully implement
+		  Adobe Analytics as a data source for Adobe Target. 
+		</p> 
+	 </section><!--<section id="section_AE552E432AB44AC9A11C2038D1782420"><title>Implementation Overview</title><draft-comment>At the top of the implementation page, it would be helpful to have an overview of the steps needed at a glance (e.g. update three JS files and ...).</draft-comment></section>-->
+	 <section id="section_50D49CC52E11414089C89FB67F9B88F5">
+		<title>Things to Know Before you Implement</title>
+		<p><?xm-replace_text Paragraph?>
+		</p>
+		<ul id="ul_E441D1EA6F094123B5648C20BD825535">
+		  <li id="li_16CABF595490413193850DF488EC5A21">After you perform the
+			 implementation changes described in this document, your campaigns continue to
+			 run as they always have. You must select to use Analytics as the reporting
+			 source on an activity instead of Target reporting to enable this integration at
+			 a campaign level.
+		  </li>
+		  <li id="li_7BA91D381270442B9BAB78084CAE4C70">The Visitor API creates a
+			 shared visitor ID across the Marketing Cloud. It replaces the 
+			 <varname>s_vi</varname> cookie, but it does not replace any other ids
+			 such as 
+			 <varname>mboxPC id</varname>, 
+			 <varname>site cat id</varname>, 
+			 <varname>AAM id</varname>, and so on.
+		  </li>
+		  <li id="li_5AE0879FE0B34580A182FEC9F1C69595">The Visitor API must
+			 execute before your Analytics and Target page code. Make sure that 
+			 <codeph>VisitorAPI.js</codeph> appears above the tags for all other
+			 Marketing Cloud products.
+		  </li>
+		  <li id="li_C5C6F08FB0404F5D90AF3EEA106219C0">This integration works
+			 with Target Standard and Advanced
+		  </li>
+		</ul>
+	 </section> 
+	 <section id="section_73961BAD5BB4430A95E073DE5C026277"> 
+		<title>Implementation Steps</title> 
+		<p>To successfully implement a page with code to collect data, you must
+		  have access to your hosting servers to upload new content to your website. It
+		  is also useful to have an existing site to implement code. 
+		</p> 
+		<p>The following steps walk you through a basic Analytics implementation.
+		  
+		</p> 
+		<p>You can also use 
+		  <xref href="https://marketing.adobe.com/resources/help/en_US/dtm/"
+			format="http" scope="external">Dynamic Tag Management</xref> to implement your
+		  site for this beta. 
+		</p> 
+		<table id="table_1683413EA0E34DBC9291832647B68E96"> 
+		  <tgroup cols="3"><colspec colname="col01" colnum="1"
+			 colwidth="1.00*"/><colspec colnum="2" colname="col1" colwidth="2.62*"/><colspec
+			 colnum="3" colname="col2" colwidth="8.20*"/><thead> 
+				<row> 
+				  <entry colname="col01">Step 
+				  </entry> 
+				  <entry colname="col1">Task 
+				  </entry> 
+				  <entry colname="col2">Description 
+				  </entry> 
+				</row></thead> 
+			 <tbody> 
+				<row>
+				  <entry colname="col01"><image href="graphics/step1_icon.png"
+					 id="image_21F30BBFC0A249F8B0E1A50EBBEED77D"></image>
+				  </entry>
+				  <entry colname="col1">Implement or upgrade to AppMeasurement for
+					 JavaScript
+				  </entry>
+				  <entry colname="col2">
+					 <p>This integration requires that you implement or migrate to
+						AppMeasurement for JavaScript 1.3 or later.
+					 </p>
+					 <p>For new implementations, see 
+						<xref
+						 href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=js_implementation"
+						 format="http" scope="external">Analytics JavaScript Implementation</xref>.
+					 </p>
+					 <p>For a migration, see 
+						<xref
+						 href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=appmeasure_mjs_migrate"
+						 format="http" scope="external">Migrating to AppMeasurement for
+						  JavaScript</xref>.
+					 </p>
+				  </entry>
+				</row>
+				<row> 
+				  <entry colname="col01"><image href="graphics/step2_icon.png"
+					 id="image_76B61DEABE3849CCB39135FDD7399EAA"></image> 
+				  </entry> 
+				  <entry colname="col1">Implement the Visitor ID service. 
+				  </entry> 
+				  <entry colname="col2">
+					 <p>The visitor ID service lets you identify users across
+						Marketing Cloud solutions. This integration requires that you implement or
+						migrate to Visitor ID Service 1.2 or later.
+					 </p>
+					 <p>See 
+						<xref
+						 href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=impl_visid_service"
+						 format="http" scope="external">Visitor ID Service Implementation</xref>
+					 </p>
+				  </entry> 
+				</row>
+				<row>
+				  <entry colname="col01"><image href="graphics/step3_icon.png"
+					 id="image_02CFDC007BF1486AA312698EBFFA79F7"></image>
+				  </entry>
+				  <entry colname="col1">
+					 <p>Edit 
+						<codeph>mbox.js</codeph>
+					 </p>
+				  </entry>
+				  <entry colname="col2">
+					 <p>On the 
+						<uicontrol>Mbox Edit</uicontrol> page in Adobe Target, add
+						the following code to the 
+						<uicontrol>Extra JavaScript</uicontrol> portion of your 
+						<codeph>mbox.js</codeph> file: 
+					 </p> 
+					 <codeblock outputclass="syntax javascript">document.write('&lt;script src="' + document.location.protocol + '//cdn.tt.omtrdc.net/cdn/target.js"&gt;&lt;/script&gt;');</codeblock> 
+				  </entry>
+				</row> 
+				<row> 
+				  <entry colname="col01"><image href="graphics/step4_icon.png"
+					 id="image_9933AC9D3A884BD9814A6B697610CAE9"></image> 
+				  </entry> 
+				  <entry colname="col1">Download and update 
+					 <codeph>mbox.js</codeph>. 
+				  </entry> 
+				  <entry colname="col2">
+					 <p> If your organization uses only Target Classic
+						(Test&amp;Target), download and deploy the updated version 48 mbox.js from
+						Test&amp;Target using your production account. No modifications are required on
+						the code. 
+					 </p> 
+					 <p> If you use Target Standard, download and deploy mbox.js
+						from the Target Standard UI, so the Target Standard specific code will be
+						appended to the mbox.js file. 
+					 </p> 
+					 <p> Replace your existing mbox.js file on your site with this
+						new one, and you're set. This new mbox.js will work for your beta activities
+						and your production activities. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col01"><image href="graphics/step5_icon.png"
+					 id="image_844E896941E2489A943BE10AD710ED36"></image> 
+				  </entry> 
+				  <entry colname="col1">Host 
+					 <codeph>mbox.js</codeph>. 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>This file can be hosted along with the Visitor ID service
+						and AppMeasurement for JavaScript files. These files must be hosted on a web
+						server that is accessible to all pages on your site. You need the path to these
+						files in the next step. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col01"><image href="graphics/step6_icon.png"
+					 id="image_1C4293CA98F04EE2ADA69EAB95BDE8B1"></image> 
+				  </entry> 
+				  <entry colname="col1">Reference 
+					 <codeph>mbox.js</codeph> on all site pages. 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p> Include 
+						<codeph>mbox.js</codeph> below 
+						<codeph>VisitorAPI.js</codeph> by adding the following line
+						of code in the 
+						<codeph>&lt;head&gt;</codeph> tag on each page: 
+					 </p> 
+					 <codeblock outputclass="syntax html">&lt;script language="JavaScript" type="text/javascript" 
+src="http://INSERT-DOMAIN-AND-PATH-TO-CODE-HERE/mbox.js"&gt;&lt;/script&gt;</codeblock>
+					 <p>It is essential that 
+						<codeph>VisitorAPI.js</codeph> is loaded before 
+						<codeph>mbox.js</codeph>.
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </section> 
+  </conbody> 
+</concept> 

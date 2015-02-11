@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_F17A59C7D8F54F5897AD40980B6725EB">
+  <title>cookieDomainPeriods</title>
+  <shortdesc> The 
+	 <varname>cookieDomainPeriods</varname> variable determines the domain on
+	 which the 
+	 <keyword>Analytics</keyword> cookies 
+	 <codeph>s_cc</codeph> and 
+	 <codeph>s_sq</codeph> are set by determining the number of periods in the
+	 domain of the page URL. This variable is also used by some plug-ins in
+	 determining the correct domain to set the plug-in's cookie. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Variables" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>The default value for 
+		<varname>cookieDomainPeriods</varname> is "2". This is the value that is
+		used if 
+		<varname>cookieDomainPeriods</varname> is omitted. For example, using the
+		domain www.mysite.com, 
+		<varname>cookieDomainPeriods</varname> should be "2". For
+		www.mysite.co.jp, 
+		<varname>cookieDomainPeriods</varname> should be "3". 
+	 </p>
+    <p>If 
+		<varname>cookieDomainPeriods</varname> is set to "2" but the domain
+		contains three periods, the JavaScript file attempts to set cookies on the
+		domain suffix. 
+	 </p>
+    <p>For example, if setting 
+		<varname>cookieDomainPeriods</varname> to "2" on the domain 
+		<filepath>www.mysite.co.jp</filepath>, the 
+		<codeph>s_cc</codeph> and 
+		<codeph>s_sq</codeph> cookies are created on the domain 
+		<filepath>co.jp</filepath>. Because 
+		<filepath>co.jp</filepath> is an invalid domain, almost all browsers
+		reject these cookies. As a consequence, 
+		visitor click map data is lost, and the 
+		<wintitle>Visitor Profile</wintitle> &gt; 
+		<wintitle>Technology</wintitle> &gt; 
+		<wintitle>Cookies</wintitle> report indicates that almost 100% of
+		visitors reject cookies. 
+	 </p>
+    <p>If 
+		<varname>cookieDomainPeriods</varname> is set to "3" but the domain
+		contains only two periods, the JavaScript file sets the cookies on the
+		subdomain of the site. For example, if setting 
+		<varname>cookieDomainPeriods</varname> to "3" on the domain 
+		<filepath>www2.mysite.com</filepath>, the 
+		<codeph>s_cc</codeph> and 
+		<codeph>s_sq</codeph> cookies are created on the domain 
+		<filepath>www2.mysite.com</filepath>. When a visitor goes to another
+		subdomain of your site (such as 
+		<filepath>www4.mysite.com</filepath>), all cookies set with 
+		<filepath>www2.mysite.com</filepath> cannot be read. 
+	 </p>
+    <note>Do not include additional subdomains as part of 
+		<varname>cookieDomainPeriods</varname>. For example, 
+		<codeph>store.toys.mysite.com</codeph> would still have 
+		<varname>cookieDomainPeriods</varname> set to "2". This variable
+		definition correctly sets the cookies on the root domain, 
+		<filepath>mysite.com</filepath>. Setting 
+		<varname>cookieDomainPeriods</varname> to "3" in this example would set
+		cookies on the domain 
+		<filepath>toys.mysite.com</filepath>, which has the same implications as
+		the prior example. 
+	 </note>
+    <p>See also 
+		<xref href="fpCookieDomainPeriods.xml#concept_0A25BD152B0744989E7C662A95448274" format="dita" scope="local"><?xm-replace_text fpCookieDomainPeriods?></xref>. 
+	 </p>
+    <table id="table_417D00A4A8334D1F906737D944251714">
+      <tgroup cols="4">
+        <colspec colnum="1" colname="col1" colwidth="*" />
+        <colspec colnum="2" colname="col2" colwidth="*" />
+        <colspec colnum="3" colname="col3" colwidth="*" />
+        <colspec colnum="4" colname="col4" colwidth="*" />
+        <thead>
+          <row>
+            <entry> Max Size 
+				</entry>
+            <entry> Debugger Parameter 
+				</entry>
+            <entry> Reports Populated 
+				</entry>
+            <entry> Default Value 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry> N/A 
+				</entry>
+            <entry> CDP 
+				</entry>
+            <entry> Affects multiple reports as it controls how the visitor ID
+				  is stored and handled. 
+				</entry>
+            <entry> "2" 
+				</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <section id="section_4218BE29FA5E49F58975A2094329B268">
+      <title>Examples</title>
+      <p>Setting the variable manually: 
+		  <codeblock outputclass="syntax javascript">s.cookieDomainPeriods = "3";</codeblock></p>
+      <p>Several examples to dynamically set the variable if your core
+		  Javascript file hosts both types: 
+		</p>
+      <codeblock outputclass="syntax javascript">document.URL.indexOf(".co.") &gt; 0 ? s.cookieDomainPeriods = "3" : s.cookieDomainPeriods = "2";</codeblock>
+      <codeblock outputclass="syntax javascript">s.cookieDomainPeriods = "2";
+var d=window.location.hostname;
+if(d.indexOf(".co.uk") &gt; 0 || d.indexOf(".com.au") &gt; 0)
+    {s.cookieDomainPeriods = "3";}</codeblock>
+      <codeblock outputclass="syntax javascript">s.cookieDomainPeriods = "2";
+if(window.location.indexOf(".co.jp") &gt; 0 || window.location.indexOf(".com.au") &gt; 0)
+    {s.cookieDomainPeriods = "3";}</codeblock>
+    </section>
+    <section id="section_F3BE3F039E5C4359B694DBB61369822C">
+      <title>Pitfalls, Questions, and Tips</title>
+      <ul id="ul_46B5DEC332D14BFBA05B00313C99DF63">
+        <li id="li_3B257F7EDA6F486A9FF5DCCB9BD887E1"> If you notice that 
+			 visitor click map data is absent, or that the 
+			 <wintitle>Traffic</wintitle> &gt; 
+			 <wintitle>Technology</wintitle> &gt; 
+			 <wintitle>Cookies</wintitle> report shows a large percentage of
+			 visitors who reject cookies, check that the value of 
+			 <varname>cookieDomainPeriods</varname> is correct. 
+		  </li>
+        <li id="li_4CD15E8A2D4349658B383FAA06D87ADE"> If 
+			 <varname>cookieDomainPeriods</varname> is higher than the number of
+			 sections in the domain, cookies will be set with the full domain. This can
+			 cause data loss as visitors switch between subdomains. 
+		  </li>
+        <li id="li_C5B2F717AD2342DDB4152F428EF8E4D4">The 
+			 <varname>cookieDomainPeriods</varname> variable was used in
+			 deprecated implementations prior to 
+			 <varname>trackingServer</varname> to set the visitor ID cookie.
+			 Though only present in outdated code, failure to correctly define 
+			 <varname>cookieDomainPeriods</varname> in this circumstance puts your
+			 implementation at risk of data loss. 
+		  </li>
+      </ul>
+    </section>
+  </conbody>
+</concept>

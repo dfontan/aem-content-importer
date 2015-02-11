@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd"[]>
+<reference id="reference_B8A5B48087B6432596FFFF267566B785" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic       reference/reference ">
+  <title class="- topic/title ">Troubleshoot Hosts</title>
+  <shortdesc class="- topic/shortdesc ">Try these tips if you problems with
+	 your hosts. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <refsyn id="refsyn_DD9476DCB2F5405A8DB0E7E455F4F5C3" class="- topic/section     reference/refsyn ">
+      <p class="- topic/p ">
+        <b class="+ topic/ph hi-d/b ">Host does not appear
+			 in mbox list for your account</b>
+      </p>
+      <ul id="ul_77F383CA8C24456D9EE381212E85BB0C" class="- topic/ul ">
+        <li id="li_A60DC94B417D4886927EB87A7592D36C" class="- topic/li "> Click
+			 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">refresh</uicontrol> on
+			 the host management page. 
+		  </li>
+        <li id="li_BE13F87FA87F44719FE9010B5FFFB90C" class="- topic/li ">
+			 Confirm the mbox code is correct, including the 
+			 <filepath class="+ topic/ph sw-d/filepath ">mbox.js</filepath>
+			 reference. 
+		  </li>
+        <li id="li_23DB75E916DD456BB3D3D0417AFA6DDE" class="- topic/li "> Try
+			 browsing to one of the mboxes on the host. It's possible that no mbox on the
+			 host was ever rendered in a browser. 
+		  </li>
+      </ul>
+      <p class="- topic/p ">
+        <b class="+ topic/ph hi-d/b ">Random or unknown
+			 domains appear in the host group lists</b>
+      </p>
+      <p class="- topic/p ">A domain appears in this list if a call to your 
+		  <filepath class="+ topic/ph sw-d/filepath ">mbox.js</filepath> is made
+		  from the domain. Often, you could see domains from spider engines, language
+		  translator sites, or local disk drives. If the listed domain is not one your
+		  team uses, you can click 
+		  <uicontrol class="+ topic/ph ui-d/uicontrol ">Delete</uicontrol> to
+		  remove it. 
+		</p>
+    </refsyn>
+  </refbody>
+  <related-links class="- topic/related-links ">
+    <link href="c_About_Hosts_and_Host_Groups.xml#concept_A22F9D38D79546A98DF578E1B25FA585" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text About Hosts and Host Groups?>
+    </link>
+    <link href="c_Adding_a_Host_to_the_Host_List.xml#concept_DC1F216C714A4ACAA221AF9AF244A053" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Add a Host to the Host List?>
+    </link>
+    <link href="t_Confirm_that_TestTarget_Recognizes_the_Host.xml#task_B850F92ADB1B41A4B74EA70F2CA67D69" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Confirm that Test&Target Recognizes the Host?>
+    </link>
+    <link href="t_default_host_for_reporting.xml#task_9509C10526454DCBB68AC88FF4898715" format="dita" scope="local">
+      <?xm-replace_text Set the Default Host for Reporting?>
+    </link>
+    <link href="t_Setting_the_Default_Host_for_previewing.xml#task_0D4A896B9E5A4FDD9CDEDCA95A6DF200" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Set the Default Host for Previewing?>
+    </link>
+    <link href="t_Changing_the_Name_of_a_Host_Group.xml#task_6C683392C703447EB5327C767E133C26" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Change the Name of a Host Group?>
+    </link>
+    <link href="t_Moving_a_Host_to_a_Different_Host_Group.xml#task_BFA576AF3D6445E6B0F8AC3F57C07AAE" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Move a Host to a Different Host Group?>
+    </link>
+    <link href="t_Deleting_a_Host.xml#task_017A471F77D34D8891AE0EF8C7BD6161" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Delete a Host?>
+    </link>
+    <link href="t_Deleting_a_Host_Group.xml#task_0F1984C3646446D4945174E9518B5E91" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Delete a Host Group?>
+    </link>
+    <link href="r_Best_Practices.xml#reference_83EB8CF544214215BECB01C2B241A140" type="reference" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Best Practices for Hosts?>
+    </link>
+  </related-links>
+</reference>

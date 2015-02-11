@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_CCDE7D40C9A8472B8ED6008EAB4B1C47">
+  <title> Tag management Permissions</title>
+  <shortdesc>All administrators have access to 
+	 <keyword>tag management</keyword>. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Tag management" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Using groups, you can define the following permissions for
+		other users: 
+	 </p>
+    <ul id="ul_463010A343044374BFDC50A77367A656">
+      <li id="li_AF05E77118BF4C44813814E2277B573B">Access to all tag containers
+		  in a specific environment (dev, stage, or live). 
+		</li>
+      <li id="li_BE8746D642B6427AA672FE81342ACBF9">Access to a specific tag
+		  container in all environments. 
+		</li>
+    </ul>
+    <section id="section_0DF8FD01F3FA4AE8A947239838EE91A3">
+      <title>Assign Permissions</title>
+      <p>
+        <uicontrol>Admin</uicontrol> &gt; 
+		  <uicontrol>User Management</uicontrol> &gt; 
+		  <uicontrol>Groups</uicontrol>&gt; Click a group. 
+		</p>
+      <p>
+        <keyword>Tag management</keyword> permissions can be assigned to any
+		  custom group or any individual members of a custom group. 
+		</p>
+      <image href="graphics/tag_permissions.png" align="center" id="image_D9E08A06E0D546DFA58AD0B127AD7A2C"></image>
+    </section>
+  </conbody>
+</concept>

@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_B4B1478A8CB540599AC9D4A58CA4B6FE">
+  <title>Conversion Classifications</title>
+  <shortdesc> Classifications are used to categorize values into groups and
+	 report at the group level. For example, you can classify all Paid Search
+	 campaigns into a category like 
+	 <i>pop music terms</i> and report on the success of that category relative
+	 to metrics like Instances (click-throughs), and conversion to success events. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Admin tools" />
+      <othermeta name="subtopic" content="Classifications" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Conversion classifications let you classify conversion variables. Once
+		classified, any report that you can generate using the key data can also be
+		generated using the associated data properties. 
+	 </p>
+    <p>After enabling classifications, use the 
+		<xref href="c_working_with_saint.xml#concept_08ED8C7A86C64E7DA5DE3044BB94B2EA" format="dita" scope="local">Classification Importer</xref> to assign specific
+		values to the appropriate classification. 
+	 </p>
+    <section id="section_4A98DD5F5C314B9DAEE710AEE4EE51D4">
+      <title>Conversion Classifications Descriptions</title>
+      <table id="table_0B72C485467348E2A34BF913441F4AF5">
+        <tgroup cols="2">
+          <colspec colnum="1" colname="col1" colwidth="*" />
+          <colspec colnum="2" colname="col2" colwidth="*" />
+          <thead>
+            <row>
+              <entry colname="col1">Element 
+				  </entry>
+              <entry colname="col2">Description 
+				  </entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry colname="col1">
+                <wintitle>Name</wintitle>
+              </entry>
+              <entry colname="col2">The classification name. 
+				  </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <wintitle>Date Enabled (Text Only)</wintitle>
+              </entry>
+              <entry colname="col2">
+                <p>Indicates if the text classification is a date range for
+						campaign variables. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <wintitle>Options (Text Only)</wintitle>
+              </entry>
+              <entry colname="col2">Creates a list of classification values
+					 available for this classification. Use 
+					 <wintitle>Options</wintitle> with campaign variables to provide
+					 users with a list of supported values for the classification in the 
+					 <wintitle>Campaign Manager</wintitle>. 
+				  </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <wintitle>Number Type (Numeric Only)</wintitle>
+              </entry>
+              <entry colname="col2">Specifies the type of number in the numeric
+					 classification. Options include 
+					 <wintitle>Numeric</wintitle>, 
+					 <wintitle>Percent</wintitle>, and 
+					 <wintitle>Currency</wintitle>. 
+				  </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+  </conbody>
+</concept>

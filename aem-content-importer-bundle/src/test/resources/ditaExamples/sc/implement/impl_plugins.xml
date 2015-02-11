@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_021F5E4A6BD745AE91E85E7138BE930F"> 
+  <title>Implementation Plug-ins</title> 
+  <shortdesc> AppMeasurement for JavaScript plug-ins are programs or functions
+	 that perform several advanced functions. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Developer and implementation"/> 
+		<othermeta name="subtopic" content="Plug-ins"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>These plug-ins extend the capabilities of your JavaScript file to give
+		you more functionality that is not available with a basic implementation. Adobe
+		offers a number of other plug-ins as part of advanced solutions. Contact your
+		Account Manager if you want to capture data using JavaScript but are unsure how
+		to proceed. 
+	 </p> 
+  </conbody> 
+</concept>

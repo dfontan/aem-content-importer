@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_0FBDA84A55CC4AB6B48A4A7E2F05F8BD">
+  <title>Setting a Product with an Event</title>
+  <shortdesc>Adobe best practice is to set the 
+	 <varname>products</varname> variable on the same page as an event. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>This ties the product(s) on the page to the event for reporting. While any event can be used to tie data
+		to products, the most common events are those associated with the shopping cart
+		and purchase. These events include: 
+	 </p>
+    <ul id="ul_EA833D29850F488CB3DBCEA9BD155C3E">
+      <li id="li_FF2D29213DDD4B2586B72AEB48531E22">Product views
+		  (<wintitle>prodView</wintitle> event) 
+		</li>
+      <li id="li_B5271B259D70496C9E34506BEDE31E52"> Cart additions
+		  (<wintitle>scAdd</wintitle> event) 
+		</li>
+      <li id="li_84529B3655D447279718C25DFFDA4F71"> Checkouts
+		  (<wintitle>scCheckout</wintitle> event) 
+		</li>
+      <li id="li_81C39967BA8B4533935740D578021C25"> Purchases
+		  (<wintitle>purchase</wintitle> event) 
+		</li>
+    </ul>
+    <p>An example of each is included below: 
+	 </p>
+    <section id="section_E344B8FC3522482AAC83A96A0C2DD625">
+      <title>Product Views</title>
+      <codeblock outputclass="syntax javascript">s.events="prodView"</codeblock>
+      <codeblock outputclass="syntax javascript">s.products=";PRODUCT_NAME"</codeblock>
+    </section>
+    <section id="section_3D438B04E06646E1A9C48ABD8FB91D89">
+      <title>Cart Additions</title>
+      <codeblock outputclass="syntax javascript">s.events="scAdd"
+s.products=";PRODUCT_NAME "
+</codeblock>
+    </section>
+    <section id="section_29A0148A8B2544D388D318121DE30F21">
+      <title>Checkout Page</title>
+      <codeblock outputclass="syntax javascript">s.events="scCheckout"
+s.products=";PRODUCT_NAME "
+</codeblock>
+    </section>
+    <section id="section_837EF4490C0249CE90C3BF8518B581CF">
+      <title>Purchase Page</title>
+      <!--wierd code-->
+      <codeblock outputclass="syntax javascript"></codeblock>
+      <p>
+        <note> Multiple events and eVars are delimited with a pipe (|). In
+			 addition, multiple product strings are delimited with a comma (as shown in the
+			 Purchase Page example above). 
+		  </note>
+      </p>
+    </section>
+  </conbody>
+</concept>

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_74B11F2A9A7845399961D340FB08DE32">
+  <title>Scheduled Reports Queue</title>
+  <shortdesc>Lets Admin-level users see and manage scheduled reports across the
+	 organization. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>
+      <menucascade>
+        <uicontrol>Analytics</uicontrol>
+        <uicontrol>Components</uicontrol>
+        <uicontrol>Scheduled
+			 Reports</uicontrol>
+      </menucascade>
+    </p>
+    <p> Admin-level capabilities in the Scheduled Reports Manager include: 
+	 <ul id="ul_B33F0E98AE344CBAAF302204C3052383"><li id="li_D1038D46C1AE4C1387D7FC767AAF2A7E">The option to 
+		  <xref href="scheduled_reports_admin.xml#concept_74B11F2A9A7845399961D340FB08DE32/section_3F167CAAEEC24140B476CF95B7402690" format="dita" scope="local"><?xm-replace_text Show all Scheduled Reports?></xref>
+		  in your organization. 
+		</li><li id="li_AC39E4C35FDA4D74ADA9FC9DCE9AD600"><xref href="scheduled_reports_admin.xml#concept_74B11F2A9A7845399961D340FB08DE32/section_206A52A85DE84947AAB3AD082FBF6275" format="dita" scope="local"><?xm-replace_text Advanced Filtering Capabilities?></xref>
+		  across your organization. 
+		</li><li id="li_725B49D388934AF0BA6EB74981719C74">The new 
+		  <xref href="scheduled_reports_admin.xml#concept_74B11F2A9A7845399961D340FB08DE32/section_03C866115D354BB182E90BF4D52F1E0B" format="dita" scope="local"><?xm-replace_text Report Queue?></xref> tab that
+		  lists all reports that are queued for execution on reporting servers. 
+		</li><li id="li_EA5275A9955C40F097F11BFE12E0756C">Exposing the 
+		  <xref href="scheduled_reports_admin.xml#concept_74B11F2A9A7845399961D340FB08DE32/section_568B70F4228C4229977CB85D2DCD53A1" format="dita" scope="local"><?xm-replace_text Schedule ID?></xref> in the
+		  Report Queue interface. 
+		</li></ul></p>
+    <section id="section_3F167CAAEEC24140B476CF95B7402690">
+      <title>Show all Scheduled Reports</title>On the 
+		<uicontrol>Report List</uicontrol> tab, you can 
+		<uicontrol>Show All Scheduled Reports</uicontrol> in your organization,
+		in addition to the ones you personally scheduled. 
+		<note>The<uicontrol> Report Name</uicontrol> column displays the name of
+		  the report which is being scheduled and the<uicontrol> File Name</uicontrol>
+		  column displays any custom file name set by you in Advanced Delivery Options.
+		  As a result, if you schedule multiple reports of the same report type and you
+		  specify customized names for each, the Scheduled Reports Manager would display
+		  multiple entries with the same Report Name but with different file names. This
+		  is because the back end report being scheduled is same, so the Report Name
+		  column would have the same report names for all but customized file names (as
+		  set). 
+		</note><p><image placement="break" align="center" href="graphics/show_all_scheduled_reports.png" width="672px" id="image_B69996F913164EE68CFE129A4B5403AE"></image></p></section>
+    <section id="section_206A52A85DE84947AAB3AD082FBF6275">
+      <title>Advanced Filtering Capabilities</title>For example, if you wanted
+		to filter on all reports that are scheduled hourly, you would specify 
+		<uicontrol>Frequency equals Hourly</uicontrol> in the 
+		<uicontrol>Advanced</uicontrol> filter and click 
+		<uicontrol>Apply</uicontrol>: 
+		<p><image placement="break" align="center" href="graphics/advanced_filtering_schedl_reports.png" width="600px" id="image_C0F9C4DD27D44FBC942422E81D993E71"></image></p></section>
+    <section id="section_03C866115D354BB182E90BF4D52F1E0B">
+      <title>Report Queue</title>This queue lets you manage and potentially
+		delete any scheduled reports that are "clogging up" the queue. (Typically,
+		reports time out after 4 hours.) 
+		<p><image placement="break" align="center" href="graphics/scheduled_reports_2.png" width="672px" id="image_0AEC6FBB2C1749C794936D6921CD3C53"></image></p><p>The Report Queue also gives you the ability to "Skip a scheduled
+		  report once". Just click the blue icon in the 
+		  <uicontrol>Manage</uicontrol> column. 
+		</p></section>
+    <section id="section_568B70F4228C4229977CB85D2DCD53A1">
+      <title>Schedule ID</title>Having the 
+		<uicontrol>Schedule ID</uicontrol> exposed in the Report Queue interface
+		helps when you need to contact Adobe Client Care for resolution of a scheduled
+		reports issue. 
+		<p><image placement="break" align="center" href="graphics/schedule_id.png" width="400px" id="image_7ED576469C164514BA10F2837D4C1ACB"></image></p></section>
+  </conbody>
+</concept>

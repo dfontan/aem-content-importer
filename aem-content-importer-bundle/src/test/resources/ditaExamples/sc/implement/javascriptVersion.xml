@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_19E2C9F87BB24E69B911C0F5873CAA90">
+  <title>javascriptVersion</title>
+  <shortdesc> The 
+	 <varname>javascriptVersion</varname> variable indicates the version of
+	 JavaScript supported by the browser. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Variables" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>This variable is populated after the page code and before 
+		<varname>doPlugins</varname> is run. 
+	 </p>
+    <p>
+      <note> This variable should only be read and never set. 
+		</note>
+    </p>
+    <p>You may read these values and copy them into 
+		<filepath>props/eVars</filepath>, but you should never alter them. This
+		variable is introduced with version H.11 of the JavaScript file. 
+	 </p>
+    <table id="table_ACCA0E0E9A2240B6996BCF3C22DE70A2">
+      <tgroup cols="4">
+        <colspec colnum="1" colname="col1" colwidth="*" />
+        <colspec colnum="2" colname="col2" colwidth="*" />
+        <colspec colnum="3" colname="col3" colwidth="*" />
+        <colspec colnum="4" colname="col4" colwidth="*" />
+        <thead>
+          <row>
+            <entry> Query Param 
+				</entry>
+            <entry> Value 
+				</entry>
+            <entry> Example 
+				</entry>
+            <entry> Reports Affected 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry> j 
+				</entry>
+            <entry> 1.0, 1.1, 1.2, … 1.7 
+				</entry>
+            <entry> 1.7 
+				</entry>
+            <entry> Traffic &gt; Technology &gt; JavaScript Version 
+				</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p>Version H.10 and higher of the JavaScript file accurately detect up to
+		version 1.7 (the highest version at the time H.10 was released). Prior versions
+		of the JavaScript file only detected up to version 1.3 
+	 </p>
+  </conbody>
+</concept>

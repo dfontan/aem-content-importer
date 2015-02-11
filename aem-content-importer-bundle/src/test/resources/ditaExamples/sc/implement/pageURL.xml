@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_A15F710CD0174297A2286BF3E7452113">
+  <title>pageURL</title>
+  <shortdesc>The 
+	 <varname>pageURL</varname> variable overrides the actual URL of the page. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Variables" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>In rare cases, the URL of the page is not the URL that you would like
+		reported in 
+		<keyword>Analytics</keyword>. 
+	 </p>
+    <table id="table_D4DC6B476FFD4BEEB36A5C6B2D026255">
+      <tgroup cols="4">
+        <colspec colnum="1" colname="col1" colwidth="*" />
+        <colspec colnum="2" colname="col2" colwidth="*" />
+        <colspec colnum="3" colname="col3" colwidth="*" />
+        <colspec colnum="4" colname="col4" colwidth="*" />
+        <thead>
+          <row>
+            <entry> Max Size 
+				</entry>
+            <entry> Debugger Parameter 
+				</entry>
+            <entry> Reports Populated 
+				</entry>
+            <entry> Default Value 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry> No Limit* 
+				</entry>
+            <entry>
+              <p>G
+				  </p>
+            </entry>
+            <entry> Traffic &gt; Segmentation &gt; Most Popular Pages Paths 
+				</entry>
+            <entry> Page URL 
+				</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p>
+      <note> Although Adobe allows 
+		  <varname>pageURL</varname> values up to 64k, some browsers impose a
+		  size limit on the URL of image requests. To prevent truncation of other data,
+		  page URLs longer than 255 bytes are split, with the first 255 bytes appearing
+		  in the 
+		  <codeph>g=</codeph> parameter, with the remaining bytes appearing later
+		  in the query sting in the 
+		  <codeph>-g=</codeph> query parameter.
+		</note>
+    </p>
+    <section id="section_22AF3BF7C2F743549967B0C760A095C0">
+      <title>Syntax and Possible Values</title>
+      <p>The 
+		  <varname>pageURL</varname> variable must be a valid URL, with a valid
+		  protocol. The domain will be forced to display in lower-case before being
+		  populated in reports, and the query string may be stripped, depending on 
+		  <keyword>Analytics</keyword> settings. 
+		</p>
+      <codeblock outputclass="syntax javascript">s.pageURL="proto://domain/path?query_string"</codeblock>
+      <p>Only URL-compatible characters are allowed as the page URL. 
+		</p>
+      <p>
+        <note> It is strongly advised that you contact your Adobe consultant or
+			 
+			 <keyword>ClientCare</keyword> before using the 
+			 <varname>pageURL</varname> variable for custom purposes. 
+		  </note>
+      </p>
+    </section>
+    <section id="section_45158FDA3F8F4574BDEB5CBC9F7E6C97">
+      <title>Examples</title>
+      <codeblock outputclass="syntax javascript">s.pageURL="http://mysite.com/home.jsp?id=1224"
+</codeblock>
+      <codeblock outputclass="syntax javascript">s.pageURL="http://www.mysite.com/"</codeblock>
+    </section>
+    <section id="section_A8F77DAD88164528ACC5C16C066B47DF">
+      <title> Configuration Settings</title>
+      <p>None 
+		</p>
+    </section>
+  </conbody>
+</concept>

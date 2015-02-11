@@ -1,0 +1,391 @@
+country,region/state/province,dma
+united kingdom,england,anglia
+united kingdom,england,anglia/central
+united kingdom,england,anglia/london
+united kingdom,england,anglia/yorkshire
+united kingdom,england,border
+united kingdom,england,border/granada
+united kingdom,england,border/tyne tees
+united kingdom,england,central
+united kingdom,england,central/granada
+united kingdom,england,central/london
+united kingdom,england,central/wales and west
+united kingdom,england,central/yorkshire
+united kingdom,england,granada
+united kingdom,england,granada/wales and west
+united kingdom,england,granada/yorkshire
+united kingdom,england,london
+united kingdom,england,london/meridian
+united kingdom,england,meridian
+united kingdom,england,meridian/westcountry
+united kingdom,england,stv central (scottish)
+united kingdom,england,tyne tees
+united kingdom,england,tyne tees/yorkshire
+united kingdom,england,wales and west
+united kingdom,england,wales and west/westcountry
+united kingdom,england,westcountry
+united kingdom,england,yorkshire
+united kingdom,northern ireland,utv
+united kingdom,scotland,border
+united kingdom,scotland,stv central (scottish)
+united kingdom,scotland,stv north (grampian)
+united kingdom,scotland,stv north/stv central
+united kingdom,wales,central
+united kingdom,wales,granada/wales and west
+united kingdom,wales,wales and west
+united states,alabama,atlanta
+united states,alabama,birmingham
+united states,alabama,columbus - tupelo - west point
+united states,alabama,columbus-ga
+united states,alabama,dothan
+united states,alabama,huntsville - decatur - florence
+united states,alabama,meridian
+united states,alabama,mobile - pensacola - fort walton beach
+united states,alabama,montgomery - selma
+united states,alaska,anchorage
+united states,alaska,fairbanks
+united states,alaska,juneau
+united states,arizona,albuquerque - santa fe
+united states,arizona,phoenix
+united states,arizona,tucson - sierra vista
+united states,arizona,yuma - el centro
+united states,arkansas,fort smith - fayetteville - springdale - rogers
+united states,arkansas,greenwood - greenville
+united states,arkansas,jonesboro
+united states,arkansas,little rock - pine bluff
+united states,arkansas,memphis
+united states,arkansas,monroe - el dorado
+united states,arkansas,shreveport
+united states,arkansas,springfield-mo
+united states,california,bakersfield
+united states,california,chico - redding
+united states,california,eureka
+united states,california,fresno - visalia
+united states,california,los angeles
+united states,california,medford - klamath falls
+united states,california,monterey - salinas
+united states,california,palm springs
+united states,california,phoenix
+united states,california,reno
+united states,california,sacramento - stockton - modesto
+united states,california,san diego
+united states,california,san francisco - oakland - san jose
+united states,california,santa barbara - santa maria - san luis obispo
+united states,california,yuma - el centro
+united states,colorado,albuquerque - santa fe
+united states,colorado,colorado springs - pueblo
+united states,colorado,denver
+united states,colorado,grand junction - montrose
+united states,connecticut,hartford - new haven
+united states,connecticut,new york
+united states,delaware,philadelphia
+united states,delaware,salisbury
+united states,district of columbia,washington dc
+united states,florida,fort myers - naples
+united states,florida,gainesville
+united states,florida,jacksonville-brunswick
+united states,florida,miami - fort lauderdale
+united states,florida,mobile - pensacola - fort walton beach
+united states,florida,orlando - daytona beach - melbourne
+united states,florida,panama city
+united states,florida,tallahassee - thomasville
+united states,florida,tampa - saint petersburg
+united states,florida,west palm beach - fort pierce
+united states,georgia,albany-ga
+united states,georgia,atlanta
+united states,georgia,augusta
+united states,georgia,chattanooga
+united states,georgia,columbus-ga
+united states,georgia,dothan
+united states,georgia,greenville - spartanburg - asheville - anderson
+united states,georgia,jacksonville-brunswick
+united states,georgia,macon
+united states,georgia,savannah
+united states,georgia,tallahassee - thomasville
+united states,hawaii,honolulu
+united states,idaho,boise
+united states,idaho,idaho falls - pocatello
+united states,idaho,salt lake city
+united states,idaho,spokane
+united states,idaho,twin falls
+united states,illinois,champaign - springfield - decatur
+united states,illinois,chicago
+united states,illinois,davenport - rock island - moline
+united states,illinois,evansville
+united states,illinois,paducah - cape girardeau - harrisburg - mt vernon
+united states,illinois,peoria - bloomington
+united states,illinois,quincy - hannibal - keokuk
+united states,illinois,rockford
+united states,illinois,saint louis
+united states,illinois,terre haute
+united states,indiana,chicago
+united states,indiana,cincinnati
+united states,indiana,dayton
+united states,indiana,evansville
+united states,indiana,fort wayne
+united states,indiana,indianapolis
+united states,indiana,lafayette-in
+united states,indiana,louisville
+united states,indiana,south bend - elkhart
+united states,indiana,terre haute
+united states,iowa,cedar rapids - waterloo - dubuque
+united states,iowa,davenport - rock island - moline
+united states,iowa,des moines - ames
+united states,iowa,mankato
+united states,iowa,omaha
+united states,iowa,ottumwa - kirksville
+united states,iowa,quincy - hannibal - keokuk
+united states,iowa,rochester - mason city - austin
+united states,iowa,sioux city
+united states,iowa,sioux falls - mitchell
+united states,kansas,amarillo
+united states,kansas,joplin - pittsburg
+united states,kansas,kansas city
+united states,kansas,lincoln - hastings - kearney
+united states,kansas,saint joseph
+united states,kansas,topeka
+united states,kansas,tulsa
+united states,kansas,wichita - hutchinson
+united states,kentucky,bowling green
+united states,kentucky,charleston - huntington
+united states,kentucky,cincinnati
+united states,kentucky,evansville
+united states,kentucky,knoxville
+united states,kentucky,lexington
+united states,kentucky,louisville
+united states,kentucky,nashville
+united states,kentucky,paducah - cape girardeau - harrisburg - mt vernon
+united states,kentucky,tri-cities-tn-va
+united states,louisiana,alexandria-la
+united states,louisiana,baton rouge
+united states,louisiana,lafayette-la
+united states,louisiana,lake charles
+united states,louisiana,monroe - el dorado
+united states,louisiana,new orleans
+united states,louisiana,shreveport
+united states,maine,bangor
+united states,maine,portland - auburn
+united states,maine,presque isle
+united states,maryland,baltimore
+united states,maryland,pittsburgh
+united states,maryland,salisbury
+united states,maryland,washington dc
+united states,massachusetts,albany - schenectady - troy
+united states,massachusetts,boston
+united states,massachusetts,providence - new bedford
+united states,massachusetts,springfield - holyoke
+united states,michigan,alpena
+united states,michigan,detroit
+united states,michigan,duluth - superior
+united states,michigan,flint - saginaw - bay city
+united states,michigan,grand rapids - kalamazoo - battle creek
+united states,michigan,green bay - appleton
+united states,michigan,lansing
+united states,michigan,marquette
+united states,michigan,south bend - elkhart
+united states,michigan,toledo
+united states,michigan,traverse city - cadillac
+united states,minnesota,duluth - superior
+united states,minnesota,fargo - valley city
+united states,minnesota,la crosse - eau claire
+united states,minnesota,mankato
+united states,minnesota,minneapolis - saint paul
+united states,minnesota,rochester - mason city - austin
+united states,minnesota,sioux falls - mitchell
+united states,mississippi,baton rouge
+united states,mississippi,biloxi - gulfport
+united states,mississippi,columbus - tupelo - west point
+united states,mississippi,greenwood - greenville
+united states,mississippi,hattiesburg - laurel
+united states,mississippi,jackson-ms
+united states,mississippi,memphis
+united states,mississippi,meridian
+united states,mississippi,mobile - pensacola - fort walton beach
+united states,mississippi,new orleans
+united states,missouri,columbia - jefferson city
+united states,missouri,des moines - ames
+united states,missouri,jonesboro
+united states,missouri,joplin - pittsburg
+united states,missouri,kansas city
+united states,missouri,memphis
+united states,missouri,omaha
+united states,missouri,ottumwa - kirksville
+united states,missouri,paducah - cape girardeau - harrisburg - mt vernon
+united states,missouri,quincy - hannibal - keokuk
+united states,missouri,saint joseph
+united states,missouri,saint louis
+united states,missouri,springfield-mo
+united states,montana,billings
+united states,montana,butte - bozeman
+united states,montana,glendive
+united states,montana,great falls
+united states,montana,helena
+united states,montana,minot - bismarck - dickinson
+united states,montana,missoula
+united states,montana,rapid city
+united states,montana,spokane
+united states,nebraska,cheyenne - scottsbluff
+united states,nebraska,denver
+united states,nebraska,lincoln - hastings - kearney
+united states,nebraska,north platte
+united states,nebraska,omaha
+united states,nebraska,rapid city
+united states,nebraska,sioux city
+united states,nebraska,sioux falls - mitchell
+united states,nebraska,wichita - hutchinson
+united states,nevada,denver
+united states,nevada,las vegas
+united states,nevada,reno
+united states,nevada,salt lake city
+united states,new hampshire,boston
+united states,new hampshire,burlington - plattsburgh
+united states,new hampshire,portland - auburn
+united states,new jersey,new york
+united states,new jersey,philadelphia
+united states,new mexico,albuquerque - santa fe
+united states,new mexico,amarillo
+united states,new mexico,el paso
+united states,new mexico,odessa - midland
+united states,new york,albany - schenectady - troy
+united states,new york,binghamton
+united states,new york,buffalo
+united states,new york,burlington - plattsburgh
+united states,new york,elmira
+united states,new york,new york
+united states,new york,rochester-ny
+united states,new york,syracuse
+united states,new york,utica
+united states,new york,watertown
+united states,north carolina,atlanta
+united states,north carolina,charlotte
+united states,north carolina,chattanooga
+united states,north carolina,florence - myrtle beach
+united states,north carolina,greensboro - high point - winston-salem
+united states,north carolina,greenville - new bern - washington
+united states,north carolina,greenville - spartanburg - asheville - anderson
+united states,north carolina,norfolk - portsmouth - newport news
+united states,north carolina,raleigh - durham
+united states,north carolina,wilmington
+united states,north dakota,fargo - valley city
+united states,north dakota,minot - bismarck - dickinson
+united states,ohio,charleston - huntington
+united states,ohio,cincinnati
+united states,ohio,cleveland
+united states,ohio,columbus-oh
+united states,ohio,dayton
+united states,ohio,fort wayne
+united states,ohio,lima
+united states,ohio,parkersburg
+united states,ohio,toledo
+united states,ohio,wheeling - steubenville
+united states,ohio,youngstown
+united states,ohio,zanesville
+united states,oklahoma,amarillo
+united states,oklahoma,fort smith - fayetteville - springdale - rogers
+united states,oklahoma,joplin - pittsburg
+united states,oklahoma,oklahoma city
+united states,oklahoma,sherman-tx - ada-ok
+united states,oklahoma,shreveport
+united states,oklahoma,tulsa
+united states,oklahoma,wichita falls - lawton
+united states,oregon,bend-or
+united states,oregon,boise
+united states,oregon,eugene
+united states,oregon,medford - klamath falls
+united states,oregon,portland-or
+united states,oregon,spokane
+united states,oregon,yakima - pasco - richland - kennewick
+united states,pennsylvania,buffalo
+united states,pennsylvania,elmira
+united states,pennsylvania,erie
+united states,pennsylvania,harrisburg - lancaster - lebanon - york
+united states,pennsylvania,johnstown - altoona
+united states,pennsylvania,new york
+united states,pennsylvania,philadelphia
+united states,pennsylvania,pittsburgh
+united states,pennsylvania,washington dc
+united states,pennsylvania,wilkes barre - scranton
+united states,pennsylvania,youngstown
+united states,rhode island,providence - new bedford
+united states,south carolina,augusta
+united states,south carolina,charleston-sc
+united states,south carolina,charlotte
+united states,south carolina,columbia-sc
+united states,south carolina,florence - myrtle beach
+united states,south carolina,greenville - spartanburg - asheville - anderson
+united states,south carolina,savannah
+united states,south dakota,minot - bismarck - dickinson
+united states,south dakota,rapid city
+united states,south dakota,sioux city
+united states,south dakota,sioux falls - mitchell
+united states,tennessee,chattanooga
+united states,tennessee,huntsville - decatur - florence
+united states,tennessee,jackson-tn
+united states,tennessee,knoxville
+united states,tennessee,memphis
+united states,tennessee,nashville
+united states,tennessee,paducah - cape girardeau - harrisburg - mt vernon
+united states,tennessee,tri-cities-tn-va
+united states,texas,abilene - sweetwater
+united states,texas,amarillo
+united states,texas,austin-tx
+united states,texas,beaumont - port arthur
+united states,texas,corpus christi
+united states,texas,dallas - fort worth
+united states,texas,el paso
+united states,texas,harlingen - weslaco - brownsville - mcallen
+united states,texas,houston
+united states,texas,laredo
+united states,texas,lubbock
+united states,texas,odessa - midland
+united states,texas,san angelo
+united states,texas,san antonio
+united states,texas,sherman-tx - ada-ok
+united states,texas,shreveport
+united states,texas,tyler - longview - lufkin - nacogdoches
+united states,texas,victoria
+united states,texas,waco - temple - bryan
+united states,texas,wichita falls - lawton
+united states,utah,salt lake city
+united states,vermont,albany - schenectady - troy
+united states,vermont,boston
+united states,vermont,burlington - plattsburgh
+united states,virginia,bluefield - beckley - oak hill
+united states,virginia,charlottesville
+united states,virginia,greensboro - high point - winston-salem
+united states,virginia,harrisonburg
+united states,virginia,norfolk - portsmouth - newport news
+united states,virginia,raleigh - durham
+united states,virginia,richmond - petersburg
+united states,virginia,roanoke - lynchburg
+united states,virginia,tri-cities-tn-va
+united states,virginia,washington dc
+united states,washington,portland-or
+united states,washington,seattle - tacoma
+united states,washington,spokane
+united states,washington,yakima - pasco - richland - kennewick
+united states,west virginia,bluefield - beckley - oak hill
+united states,west virginia,charleston - huntington
+united states,west virginia,clarksburg - weston
+united states,west virginia,harrisonburg
+united states,west virginia,parkersburg
+united states,west virginia,pittsburgh
+united states,west virginia,roanoke - lynchburg
+united states,west virginia,washington dc
+united states,west virginia,wheeling - steubenville
+united states,wisconsin,cedar rapids - waterloo - dubuque
+united states,wisconsin,duluth - superior
+united states,wisconsin,green bay - appleton
+united states,wisconsin,la crosse - eau claire
+united states,wisconsin,madison
+united states,wisconsin,marquette
+united states,wisconsin,milwaukee
+united states,wisconsin,minneapolis - saint paul
+united states,wisconsin,wausau - rhinelander
+united states,wyoming,billings
+united states,wyoming,casper - riverton
+united states,wyoming,cheyenne - scottsbluff
+united states,wyoming,denver
+united states,wyoming,idaho falls - pocatello
+united states,wyoming,rapid city
+united states,wyoming,salt lake city

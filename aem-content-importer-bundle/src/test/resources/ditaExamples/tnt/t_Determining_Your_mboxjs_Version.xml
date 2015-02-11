@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_A6042554F8C7469E96A20003522F3C6D" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Determine Your mbox.js Version</title>
+  <shortdesc class="- topic/shortdesc ">New features are periodically released,
+	 which require you to install a new 
+	 <filepath class="+ topic/ph sw-d/filepath ">mbox.js</filepath>. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <context id="context_7FC908021C1140C088CB603D027378ED" class="- topic/section task/context ">
+      <p class="- topic/p ">Your account representative is notified when this
+		  happens and contacts you. You can always 
+		  <xref href="t_Downloading_mboxjs.xml#task_B1A5E9CC0AAE48E38FA19686548B3371" type="task" format="dita" scope="local" class="- topic/xref ">download the most
+			 recent version of 
+			 <filepath class="+ topic/ph sw-d/filepath ">mbox.js</filepath></xref>. 
+		</p>
+      <p class="- topic/p ">To determine the current version of mbox.js: 
+		</p>
+    </context>
+    <steps id="steps_D9410F056F35404A8E32849AFC52C8FC" class="- topic/ol task/steps ">
+      <step id="step_C4A0BF390BB140049B17894737F8650B" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Your server (host) must have your 
+			 <xref href="t_Downloading_mboxjs.xml#task_B1A5E9CC0AAE48E38FA19686548B3371" type="task" format="dita" scope="local" class="- topic/xref ">mbox.js
+				downloaded</xref> to it, and at least one page with an mbox. 
+		  </cmd>
+      </step>
+      <step id="step_ABECF7BE28B34E58ADC62C0372684080" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Browse to a page that references
+			 the<filepath class="+ topic/ph sw-d/filepath "> mbox.js</filepath> file. In the
+			 address bar, append the URL parameter 
+			 <codeph class="+ topic/ph pr-d/codeph ">mboxDebug=1</codeph> and
+			 click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">go</uicontrol>. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">
+            <image id="image_1BE92BFE53DA4D66AE1172C0EFF4FFCB" href="graphics/mboxjsversion1.png" placement="inline" class="- topic/image "></image>
+          </p>
+          <p class="- topic/p ">or 
+			 </p>
+          <p class="- topic/p ">
+            <image id="image_2B62DF873A054167BBCC4213B2BE91E3" href="graphics/mboxjsversion2.png" placement="inline" class="- topic/image "></image>
+          </p>
+          <p class="- topic/p ">A pop-up window appears with information
+				related to your implementation. 
+			 </p>
+          <p class="- topic/p ">The heading of the window contains the version
+				number of your 
+				<filepath class="+ topic/ph sw-d/filepath ">mbox.js</filepath>
+				script, for example: "MboxDebug Window (version:36)." 
+			 </p>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links class="- topic/related-links ">
+    <link href="t_Downloading_mboxjs.xml#task_B1A5E9CC0AAE48E38FA19686548B3371" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Download mbox.js?>
+    </link>
+    <link href="t_Validating_the_mboxjs_Download.xml#task_63B42113122E4ACFAE08E390CD99E872" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Validate the mbox.js Download?>
+    </link>
+    <link href="t_Referencing_mboxjs.xml#task_4A321498EDAF4A048E3B9A74FD9E67E9" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Reference mbox.js?>
+    </link>
+    <link href="t_Setting_the_Default_Mbox_Timeout.xml#task_67683FF09AE14AD6B287D8A263E44977" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Set the Default Mbox Timeout?>
+    </link>
+    <link>
+      <?xm-replace_text Advanced mbox.js Settings?>
+    </link>
+  </related-links>
+</task>

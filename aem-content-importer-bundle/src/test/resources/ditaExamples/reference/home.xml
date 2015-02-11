@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_74F655D8648E4586BCCFD789E60D13CE"> 
+  <title> Analytics Help Home</title> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> </metadata>
+  </prolog> 
+  <body> 
+	 <p>This help is intended for users and administrators of marketing reports
+		&amp; analytics. You can browse for help on reports, metrics, data collection,
+		and admin tools. 
+	 </p> 
+	 <!--<simpletable id="simpletable_D9CE24A0F4A9442BB62B7617404BEC9E"> 
+		<strow><stentry><xref href="http://s7d4.scene7.com/s7viewers/html5/VideoViewer.html?emailurl=http://s7d4.scene7.com/s7/emailFriend&amp;serverUrl=http://s7d4.scene7.com/is/image/&amp;config=AdobeMarketingCloud/MC%5FVideo&amp;contenturl=http://s7d4.scene7.com/skins/&amp;asset=AdobeMarketingCloud/new%5Fsegmentation%5Fwebinar2%2DAVS" format="https" scope="external"><image href="graphics/segmentation-webinar.png" id="image_D780BFDDB27A4011A45CDB4835D4C132"></image></xref></stentry><stentry>Watch
+			 the 
+			 <i>Advanced Segmentation with Adobe Analytics</i> webinar. (<xref href="http://s7d4.scene7.com/s7viewers/html5/VideoViewer.html?emailurl=http://s7d4.scene7.com/s7/emailFriend&amp;serverUrl=http://s7d4.scene7.com/is/image/&amp;config=AdobeMarketingCloud/MC%5FVideo&amp;contenturl=http://s7d4.scene7.com/skins/&amp;asset=AdobeMarketingCloud/new%5Fsegmentation%5Fwebinar2%2DAVS" format="https" scope="external">Play</xref>) 
+		  </stentry> 
+		</strow> 
+	 </simpletable>-->
+	 <simpletable class="- topic/simpletable " frame="none"
+	  id="simpletable_307592BD15E942B193C369D5330A17F0"> 
+		<strow> 
+		  <stentry> 
+			 <p>Have a question? Visit the 
+				<xref
+				 href="http://help-forums.adobe.com/content/adobeforums/en/analytics-forum/adobe-analytics.html"
+				 format="http" scope="external">Adobe Analytics Community</xref>. 
+			 </p> 
+			 <p>To view the latest Analytics videos, visit 
+				<xref href="https://outv.omniture.com/" format="https"
+				 scope="external">Enterprise TV</xref>, then click Analytics &gt; Analytics
+				Latest Videos. 
+			 </p>
+			 <p outputclass="head"> 
+				<b>New &amp; Popular Topics</b> 
+			 </p> 
+			 <ul id="ul_0BAE1044D984473AB4FDDF61E1C7B75E"> 
+				<li id="li_DB01055F89D542C5AC19B7B741E4C35A"><xref
+				  href="http://marketing.adobe.com/resources/help/en_US/analytics/segment"
+				  format="http" scope="external">Analytics Segmentation</xref> 
+				  <p> Segments are now created, managed, and used across Analytics
+					 interfaces and across report suites. 
+				  </p> 
+				</li> 
+				<li id="li_F3AB38FDEE1044B991608F579AA67EC6"><xref
+				  href="http://marketing.adobe.com/resources/help/en_US/arb/index.html" format="http"
+				  scope="external">Report Builder 5.0</xref> 
+				  <p>Includes new segment management, pathing reports, access to
+					 dashboards and bookmarks from Reports &amp; Analytics, and more. 
+				  </p> 
+				</li> 
+				<li id="li_1D3802E963EF4D80867DDCCD2D3C7AE6"><xref
+				  href="http://marketing.adobe.com/resources/help/en_US/reference/?f=scheduled_reports_admin"
+				  format="http" scope="external">Scheduled Reports Queue</xref> 
+				  <p>Better queue management and advanced filtering capabilities
+					 for scheduled reports. Admin-level users can now view, manage, and filter on
+					 all reports in their organization. 
+				  </p> 
+				</li> 
+				<li id="li_90F8C467150B4D87B7641BD06CE3D9B6"><xref
+				  href="http://marketing.adobe.com/resources/help/en_US/reference/?f=custom_desc_admin"
+				  format="http" scope="external">Report/Metric Descriptions</xref> 
+				  <p>Custom Traffic and Custom Conversion reports can now display a
+					 handy note at the top of the report explaining how the report should be used,
+					 when it was implemented, or any other information that may be helpful to users.
+					 
+				  </p> 
+				</li> 
+				<li id="li_62B8B06BA3AC46A983938270BA126C00"><xref
+				  href="report_troubleshooting.xml#concept_9201B83D0E2F4965B9A0C5CEB6B08581"
+				  format="dita" scope="local"><?xm-replace_text Reporting Best Practices and Troubleshooting?></xref>
+				  
+				  <p>Learn about common reasons why reports fail and what you can
+					 do to avoid timeouts and failures. 
+				  </p> 
+				</li> 
+				<li id="li_6B786F9B400542ABA8BD1C4EBBD85F66"><xref
+				  href="processing_rules.xml#concept_1D0EA3DBDEF4412BB7A7D769EA3717C2"
+				  format="dita" scope="local">Processing rule</xref> limits were increased from
+				  50 to 100 per report suite, and a new "Else" operator was added to let you take
+				  action when a condition is not met. 
+				</li> 
+				<li id="li_1B7CC219424F48D887AA430A84F7B9C9">Classifications are
+				  now supported by 
+				  <xref
+					href="realtime.xml#concept_6E8756BDDAE843F88B6563C09C48B0B6" format="dita"
+					scope="local">real-time reports</xref> and 
+				  <xref href="anomaly.xml#concept_F4147772A16048FEBD83F1F96345F8E5"
+					format="dita" scope="local">anomaly detection</xref>. 
+				</li> 
+			 </ul>
+			 <p class="- topic/p " outputclass="head">See 
+				<xref
+				 href="doc_updates.xml#concept_E1D9AE58A9DA4CEB915AFEA7F8770597" format="dita"
+				 scope="local"><?xm-replace_text Documentation Updates?></xref> to learn about
+				recent additions to Analytics help. 
+			 </p></stentry> 
+		  <stentry></stentry> 
+		  <stentry><xref
+			 href="http://www.adobe.com/go/summit2015adobesites?promoid=KRDJY" format="http"
+			 scope="external"><image placement="inline"
+				href="graphics/63509_summit15_helpx_banner_300x400_promo.jpg"
+				id="image_543CED7D69954683BE5C849F91F40AD9"></image></xref> 
+		  </stentry> 
+		</strow> 
+		<strow class="- topic/strow "> 
+		  <stentry class="- topic/stentry "> 
+			 <p class="- topic/p " outputclass="head"> 
+				<b class="+ topic/ph hi-d/b ">Admin and Data Collection</b> 
+			 </p> 
+			 <ul id="ul_91377963924E451BA1807504F91134F5"> 
+				<li id="li_596045B2A84D47B7ACAFEA760F3A9D1F"> 
+				  <xref href="admin.xml#concept_8DF193E0C1C24FF28F01B97C1919DF61"
+					format="dita" scope="local"> <?xm-replace_text Admin Tools?>
+				  </xref> 
+				  <p>Help for administrators of marketing reports &amp; analytics. 
+				  </p> 
+				</li> 
+				<li id="li_940328278F5F4A6895C7B9BE130255A4"> 
+				  <xref
+					href="classifications.xml#concept_C4136B4E61734D2BB8D4A74D3A792259"
+					format="dita" scope="local"> <?xm-replace_text Classifications?>
+				  </xref> 
+				  <p>Help on creating and importing classification data. 
+				  </p> 
+				</li> 
+				<li id="li_ED625FA320D84C43894CA4D0C28B4B10"><xref
+				  href="https://marketing.adobe.com/resources/help/en_US/home/index.html#kb-analytics-common-saint-upload-issues"
+				  format="https" scope="external">Common SAINT Upload Issues</xref> 
+				  <p> Common issues users find when attempting to upload
+					 classification files. 
+				  </p> 
+				</li> 
+				<li id="li_31F76DB41EE14CA6A7DEA6977B81294A"> 
+				  <xref
+					href="developer.xml#concept_0151FC2D93434EE6BB3300D7F1A33E4A" format="dita"
+					scope="local"> <?xm-replace_text Developer?>
+				  </xref> 
+				  <p>AppMeasurement and Mobile application development. 
+				  </p> 
+				</li> 
+				<li id="li_86FD89AC21A6429EAEC9A2CD9415E607"> 
+				  <xref
+					href="https://marketing.adobe.com/resources/help/en_US/sc/implement/index.html"
+					format="https" scope="external">Implementation</xref> 
+				  <p> Help for implementation of marketing reports &amp; analytics.
+					 
+				  </p> 
+				</li> 
+				<li id="li_0421D3F224234DDA964686644EACE327"> 
+				  <xref
+					href="variable_definitions.xml#concept_D475520602B24701838F8E3F0E40C11C"
+					format="dita" scope="local"> <?xm-replace_text Variables - How They Are Used in Reporting?>
+				  </xref> 
+				  <p>High-level help on variables used in reporting. 
+				  </p> 
+				</li> 
+				<li id="li_B354D942C8EB4F629845B2AAB6AD4A43"> 
+				  <xref
+					href="https://marketing.adobe.com/resources/help/en_US/whitepapers/clickstream/index.html"
+					format="https" scope="external">Clickstream Data Feeds</xref> 
+				  <p>Help on data feeds, which provide the stream of raw,
+					 partially-processed server calls in a delimited data set. 
+				  </p> 
+				</li> 
+				<li id="li_84CCE2AEAF7942FCBC53485C7DD015AF"> 
+				  <xref
+					href="https://marketing.adobe.com/resources/help/en_US/sc/datasources/index.html"
+					format="https" scope="external">Data Sources</xref> 
+				  <p>Help on importing data into 
+					 <keyword>Analytics</keyword>. 
+				  </p> 
+				</li> 
+				<li id="li_34FF86A5EE014C559F091CF9666393D0"> 
+				  <xref
+					href="https://marketing.adobe.com/resources/help/en_US/reference/index.html?f=data_warehouse"
+					format="https" scope="external">Data Warehouse</xref> 
+				  <p> Help on using unprocessed data for storage and custom
+					 reports. 
+				  </p> 
+				</li> 
+				<li id="li_D592FA4FA08C4638BD4BFEBCE5B4AD76"> 
+				  <xref
+					href="https://marketing.adobe.com/resources/help/en_US/sc/sso/index.html"
+					format="https" scope="external">Single Sign-On</xref> 
+				  <p> Help on single sign-on for marketing reports &amp; analytics.
+					 
+				  </p> 
+				</li> 
+				<li id="li_1C550972D8EB4F2ABF33CC490E08483F"> 
+				  <xref
+					href="https://marketing.adobe.com/resources/help/en_US/dtm/" format="http"
+					scope="external">Dynamic Tag Management</xref> 
+				  <p>Dynamic tag management is an evolution of tag management,
+					 designed around mapping user interactions to marketing technologies. Visit the
+					 dynamic tag management help to get started. 
+				  </p> 
+				</li> 
+			 </ul> 
+		  </stentry> 
+		  <stentry class="- topic/stentry "></stentry> 
+		  <stentry class="- topic/stentry "> 
+			 <p class="- topic/p " outputclass="head"> 
+				<b class="+ topic/ph hi-d/b ">Reports and Interface Help</b> 
+			 </p> 
+			 <ul id="ul_2200900906E14C87BF7A76A17CC1FD6A"> 
+				<li id="li_F8FA6485AF9D4B22A4BCBE7121FBF122"> 
+				  <xref
+					href="https://marketing.adobe.com/resources/help/en_US/sc/user/index.html"
+					format="https" scope="external">Marketing Reports &amp; Analytics User
+					 Help</xref> 
+				  <p> Help on the marketing reports interface. 
+				  </p> 
+				</li> 
+				<li id="li_63F348C71E1A4AC7925D7CC08EDB3EBB"> 
+				  <xref
+					href="https://marketing.adobe.com/resources/help/en_US/dsc/index.html"
+					format="https" scope="external">Ad Hoc Analysis Help</xref> 
+				  <p> Help on advanced segmentation and multidimensional site
+					 analysis. (formerly Discover) 
+				  </p> 
+				</li> 
+				<li id="li_643DAFEB2E0D41898A691E6BF7338F51"><xref
+				  href="https://marketing.adobe.com/resources/help/en_US/insight/" format="https"
+				  scope="external"> Data Workbench</xref> 
+				  <p>Help on multi-channel capabilities in Adobe Analytics Premium.
+					 
+				  </p> 
+				</li> 
+				<li id="li_81D4CF8555AF41B49989C2C369EDADA2"> 
+				  <xref
+					href="https://marketing.adobe.com/resources/help/en_US/arb/index.html"
+					format="https" scope="external">Report Builder Help</xref> 
+				  <p> Help on report builder (for Excel). 
+				  </p> 
+				</li> 
+				<li id="li_EA2340DC29D84816BD85ABC26F064D2D"> 
+				  <xref
+					href="https://marketing.adobe.com/resources/help/en_US/mchannel/index.html"
+					format="https" scope="external">Marketing Channels Help</xref> 
+				  <p>Help on configuring marketing channel reports, which display
+					 how much revenue your marketing channels generate. 
+				  </p> 
+				</li> 
+				<li id="li_827C923202EC4A168D81B7179EFE03CA"> 
+				  <xref
+					href="http://marketing.adobe.com/resources/help/en_US/genesis/c_overview.html"
+					format="http" scope="external">Data Connectors</xref> 
+				  <p>Help on importing tracking data from third-party applications
+					 into Adobe Analytics. 
+				  </p> 
+				</li> 
+				<li id="li_A9A8D33C3E6540898D6EDC5FA4A8E483"> 
+				  <xref
+					href="http://marketing.adobe.com/resources/help/en_US/home/index.html#kb-using-getting-started-with-clickmap"
+					format="http" scope="external">Visitor Click Map</xref> 
+				  <p> Help on the visitor click map plug-in for Internet Explorer
+					 and Firefox. 
+				  </p> 
+				</li> 
+				<li id="li_3FA521D7038641749D38FB6596964A09"> 
+				  <xref
+					href="https://marketing.adobe.com/resources/help/en_US/sc/excel/oms_sc_excelclient.pdf"
+					format="https" scope="external">ExcelClient</xref> 
+				  <p> (Legacy) Help on building reporting data blocks that you can
+					 insert into Excel. 
+				  </p> 
+				</li> 
+				<li id="li_0E8CF167F62E4F72B6FBE1DA0D65F143"> 
+				  <xref
+					href="reports_descriptions.xml#concept_5B5E227C23254510969D6E6CFB927158"
+					format="dita" scope="local"> <?xm-replace_text Report Descriptions?>
+				  </xref> 
+				  <p>Help on what you see when running reports in Analytics. 
+				  </p> 
+				</li> 
+				<li id="li_641B710C350B4CE699E9610F648D60F5"> 
+				  <xref href="metrics.xml#concept_EB00207C07BD4481AB116E62EC24E686"
+					format="dita" scope="local"> <?xm-replace_text Metric Descriptions?>
+				  </xref> 
+				  <p>Help on metrics 
+				  </p> 
+				</li> 
+				<li id="li_F1BD9AD1CFC74661BE291CAEB91D0347"> 
+				  <xref
+					href="https://marketing.adobe.com/resources/help/en_US/sc/user/oms_sc_user.pdf"
+					format="https" scope="external">version 14</xref> 
+				  <p>(Legacy) documentation for version 14. 
+				  </p> 
+				</li> 
+			 </ul>
+			 <p outputclass="head"> 
+				<b> Marketing Cloud Community Resources 
+				</b> 
+			 </p> 
+			 <ul id="ul_A6D32724C6114A5B96038C997C753C4E"> 
+				<li id="li_367C4275943946A89F4157CF73592860"> 
+				  <xref
+					href="http://helpx.adobe.com/marketing-cloud/analytics.html" format="http"
+					scope="external">Adobe Analytics Community</xref> 
+				</li> 
+				<li id="li_485ACD946BE844ECB9D72F3F08119C1D"> 
+				  <xref
+					href="http://marketing.adobe.com/resources/help/en_US/whatsnew/index.html#Current%20Release%20Notes"
+					scope="external" format="html">Marketing Cloud Release Notes</xref> 
+				</li> 
+				<li id="li_4A3066876B1649B2A0A64F4EC43364E1"> 
+				  <xref
+					href="http://marketing.adobe.com/resources/help/en_US/home/index.html"
+					scope="external" format="http">Product Documentation Home</xref> 
+				</li> 
+				<li id="li_599C796CCACC40D7BB757ED5F4A4227D"> 
+				  <xref
+					href="https://marketing.adobe.com/resources/help/en_US/home/index.html#Developer"
+					scope="external" format="https">Developer</xref> 
+				</li> 
+				<li id="li_BD0D0DA20EBC460B9DB0010D3B1F39AB"> 
+				  <xref
+					href="http://ideas.omniture.com/t5/Adobe-Idea-Exchange-for-Omniture/idb-p/IdeaExchange3"
+					scope="external" format="html">Idea Exchange</xref> 
+				</li> 
+				<li id="li_0067480A82894B6C84CE753C7E9490C3"> 
+				  <xref href="http://helpx.adobe.com/learning.html?promoid=KAUDK"
+					scope="external" format="http">Adobe Training and Tutorials</xref> 
+				</li> 
+				<li id="li_8A875F1A9BFA4BF0B65EA3F5F896E866"> 
+				  <xref
+					href="http://www.omniture.com/en/products/online_business_optimization"
+					scope="external" format="html">Featured Solutions Center</xref> 
+				</li> 
+			 </ul> 
+		  </stentry> 
+		</strow> 
+		<strow class="- topic/strow "> 
+		  <stentry class="- topic/stentry "></stentry> 
+		  <stentry class="- topic/stentry "></stentry> 
+		  <stentry class="- topic/stentry "></stentry> 
+		</strow> 
+		<strow class="- topic/strow "> 
+		  <stentry class="- topic/stentry "></stentry> 
+		  <stentry class="- topic/stentry "></stentry> 
+		  <stentry class="- topic/stentry "></stentry> 
+		</strow> 
+	 </simpletable> 
+  </body> 
+</topic> 

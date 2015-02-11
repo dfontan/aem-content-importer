@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_AC1EE8BC1396443F826D3D105A3B5AD9">
+  <title>Key Visitors</title>
+  <shortdesc>(version 14 Only) You can track up to five
+	 key visitors per report suite. Key visitors can include high-profile customers,
+	 competitors, or potential investors. 
+	 Analytics tracks key visitors by domain or IP
+	 address. Meaning, all visitors originating from a particular domain or IP
+	 address are tracked in the 
+	 <wintitle>Key Visitors</wintitle> category. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Admin tools" />
+    </metadata>
+  </prolog>
+</concept>

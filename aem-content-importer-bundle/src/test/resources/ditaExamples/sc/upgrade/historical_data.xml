@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_9FC8BCAF25414149BD56745C73F3DF8F"> 
+  <title>Historical Data and Rollup Report Suites</title> 
+  <shortdesc><keyword>SiteCatalyst</keyword> 15 data is available to version 14
+	 and 13.5. However, version 15 features, like segmentation, full subrelations,
+	 and reporting on new metrics are not applicable to data collected before your
+	 upgrade date. 
+  </shortdesc> 
+  <conbody> 
+	 <p>Roll-up report suites are not yet supported. 
+	 </p> 
+  </conbody>
+</concept>

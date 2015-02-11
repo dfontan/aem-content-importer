@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_21D2683DB9E34347B93E80299EA7987B">
+  <title>When Should the Product Variable be Set?</title>
+  <shortdesc> Set the 
+	 <varname>products</varname> variable on pages when you need to track
+	 information about a product or multiple products. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>These types of pages generally show product information to the user.
+		Some specific examples might include (but are not limited to) product detail
+		pages, shopping carts, promotion pages, and landing pages. The most common use
+		of 
+		<varname>products</varname> variable is in the stages of the purchase
+		process. 
+	 </p>
+  </conbody>
+</concept>

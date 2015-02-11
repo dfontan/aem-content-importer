@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_B5548841D27A4BF28767B4CF4BC6D99F" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Prepare to Use Category Affinity</title>
+  <shortdesc class="- topic/shortdesc ">To use category affinity, you must
+	 first turn on the Category Activity Recorder. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <steps id="steps_C8861BDC3E874B7996C8911329FA5D55" class="- topic/ol task/steps ">
+      <step id="step_978F658BA4D54130A6E0AC97050BD041" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">On the Locations Home Page, click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Profiles</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_2A1654F5B0A648E49F272E069C5E02D6" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Press<uicontrol class="+ topic/ph ui-d/uicontrol "> Start</uicontrol> on the 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">user.category
+				Affinity</uicontrol> row. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">
+            <b class="+ topic/ph hi-d/b ">Tip:</b> Start
+				recording right away. Because category affinity is based on users' returning
+				visits, the more data recorded, the more accurate category affinity will be. 
+			 </p>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links class="- topic/related-links ">
+    <link href="t_Using_Category_Affinity_for_a_Targeted_Group.xml#task_DB5DD3C3BD624DF782C143AC1CD06739" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Using Category Affinity for a Targeted   Group?>
+    </link>
+  </related-links>
+</task>

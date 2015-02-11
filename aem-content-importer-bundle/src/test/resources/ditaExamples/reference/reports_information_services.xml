@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_6DF11E4F8B58419D823E5F7364C94F8E">
+  <title>Information Services Report</title>
+  <shortdesc>Groups mobile devices based on the news services (Channel I/B, EZ
+	 News Flash, W+INFO, and so on.) that they support. When a visitor uses a mobile
+	 device with news service support to access your site, the Information Services
+	 report increments by at least one. If the phone supports multiple news
+	 services, each of those groups in the report increments. Because of this, the
+	 sum of the groups might be greater than the total shown at the bottom of the
+	 report. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>
+      <?xm-replace_text Paragraph?>
+    </p>
+  </conbody>
+</concept>

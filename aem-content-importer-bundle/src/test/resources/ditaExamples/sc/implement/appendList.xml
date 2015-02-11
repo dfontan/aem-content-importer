@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_C4588F8E123E4DB99C8ADCD5A524D693"> 
+  <title>appendList</title> 
+  <shortdesc>The apl (or appendList) plug-in lets you append a value to any
+	 delimited lists, with the option of a case-sensitive or case-insensitive check
+	 to ensure that the value does not already exist in the list. The APL plug-in is
+	 referenced by several standard plug-ins but can be used directly in a variety
+	 of situations. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Developer and implementation"/> 
+		<othermeta name="subtopic" content="Plug-ins"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>This plug-in is useful for: 
+	 </p> 
+	 <ul id="ul_98E89A1C7A654C7C877BCBB744D81FEE"> 
+		<li id="li_4D71E6E75B2041C6BF176B5D20431660"> Adding an event to the
+		  current events variable 
+		</li> 
+		<li id="li_4354A1F9EF6246D19108B240365C20CE"> Adding a value to a list
+		  variable without duplicating a value in the list 
+		</li> 
+		<li id="li_9FEDB234AF6E455FBB3FE835C0211E27"> Adding a product to the
+		  current products variable based on some page logic 
+		</li> 
+		<li id="li_66E8E4C7EDDB4F3083D5E5FFCD0683C4"> Adding values to the
+		  parameters 
+		  <varname>linkTrackVars</varname> and 
+		  <varname>linkTrackEvents</varname>
+		</li> 
+	 </ul> 
+	 <p> 
+		<b>Use Case 1</b> 
+	 </p> 
+	 <table id="table_5AAC1D9892CD4E5C9060E119EE4E7DC8"> 
+		<tgroup cols="2"> 
+		  <colspec colnum="1" colname="col1" colwidth="*"/> 
+		  <colspec colnum="2" colname="col2" colwidth="*"/> 
+		  <tbody> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p>Scenario 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>Add 
+					 <term>event1</term> to the current events variable while
+					 ensuring the event isn't duplicated. 
+				  </p> 
+				  <p>s.events="scCheckout" 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p>Code 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>s.events=s.apl(s.events,"event1",",",1) 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p>Results 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>s.events="scCheckout,event1" 
+				  </p> 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+	 <p> 
+		<b>Use Case 2</b> 
+	 </p> 
+	 <table id="table_C4356C9AB95948F3929A7B75E07AE9E7"> 
+		<tgroup cols="2"> 
+		  <colspec colnum="1" colname="col1" colwidth="*"/> 
+		  <colspec colnum="2" colname="col2" colwidth="*"/> 
+		  <tbody> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p>Scenario 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>Add the value 
+					 <term>history</term> to the list variable 
+					 <varname>prop1</varname>, with 
+					 <term>history</term> and 
+					 <term>History</term> considered the same value. 
+				  </p> 
+				  <p>s.prop1="Science,History" 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p>Code 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>s.prop1=s.apl(s.prop1,"history",",",2) 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p>Results 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>s.prop1="Science,History" 
+				  </p> 
+				  <p> 
+					 <term>history</term> is not added because 
+					 <term>History</term> is already in the list. 
+				  </p> 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+	 <note>The following instructions require you to alter the data collection
+		code on your site. This can affect data collection on your site, and should
+		only be done by a developer with experience using and implementing 
+		<keyword>Analytics</keyword>. 
+	 </note>
+	 <section id="section_F4C91CA2037F478C9F7B53F357E6A5F0"> 
+		<title>Implementation</title> 
+		<p>Follow these steps to implement the APL plug-in. 
+		</p> 
+		<p> 
+		<ol id="ol_9C1BBC2E855445AB9824D57C16543E3A"> 
+		  <li id="li_09DF4617D482434490A9673B077F13CC"> Request the plug-in code
+			 from ClientCare or your currently assigned Adobe consultant. 
+		  </li> 
+		  <li id="li_F99FE3102585461CA7FA20990F3E06F5"> Add call(s) to the API
+			 function as needed within the 
+			 <varname>s_doPlugins</varname> function 
+		  </li> 
+		</ol> 
+		</p> 
+		<p>Here is how the code might look on your site: 
+		</p> 
+		<codeblock outputclass="syntax javascript">/* Plugin Config */
+
+s.usePlugins=true
+
+function s_doPlugins(s) {
+
+/* Add calls to plugins here */
+
+s.events=s.apl(s.events,"event1",",",1)
+
+}
+
+s.doPlugins=s_doPlugins</codeblock> 
+		<p> 
+		  <b>Supported Browsers</b> 
+		</p> 
+		<p>This plug-in requires that the browser supports JavaScript version
+		  1.0. 
+		</p> 
+		<p> 
+		  <b>Plug-in Information</b> 
+		</p> 
+		<table id="table_7B9EDD616C164D6B8B53558337DF12C2"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col1">Plug-in Information 
+				  </entry> 
+				  <entry colname="col2">Description 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Parameters 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>apl((L,v,d,u) 
+					 </p> 
+					 <p>L= source list, empty list is accepted 
+					 </p> 
+					 <p> v = value to append 
+					 </p> 
+					 <p> d = list delimiter 
+					 </p> 
+					 <p> u (optional, defaults to 0) Unique value check. 0=no unique
+						check, value is always appended. 1=case-insensitive check, append only if value
+						isn't in list. 2=case-sensitive check, append only if value isn't in list. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Return Value 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>original list, with appended value if added 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Usage Examples 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>s.events=s.apl(s.events,"event1",",",1); 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<p>The source list L can be an empty list, such as 
+		  <term>L=""</term>. The returned value will either be an empty list, or
+		  a list of one value. 
+		</p> 
+		<p> 
+		  <b>Plug-in Code</b> 
+		</p> 
+		<codeblock outputclass="syntax javascript">/********************************************************************
+ *
+ * Main Plug-in code (should be in Plug-ins section)
+ *
+ *******************************************************************/
+/*
+ * Plugin Utility: apl v1.1
+ */
+s.apl=new Function("l","v","d","u",""
++"var s=this,m=0;if(!l)l='';if(u){var i,n,a=s.split(l,d);for(i=0;i&lt;a."
++"length;i++){n=a[i];m=m||(u==1?(n==v):(n.toLowerCase()==v.toLowerCas"
++"e()));}}if(!m)l=l?l+d+v:v;return l");
+
+/********************************************************************
+ *
+ * Commented example of how to use this is doPlugins function
+ *
+ *******************************************************************/
+ 
+	Not Applicable - Utility function only
+
+/********************************************************************
+ *
+ * Config variables (should be above doPlugins section)
+ *
+ *******************************************************************/
+
+	None
+
+/********************************************************************
+ *
+ * Utility functions that may be shared between plug-ins (name only)
+ *
+ *******************************************************************/
+ 
+	s.split
+
+</codeblock> 
+	 </section> 
+  </conbody> 
+</concept>

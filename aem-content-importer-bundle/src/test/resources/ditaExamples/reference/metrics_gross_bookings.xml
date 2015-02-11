@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_2699F4963F404B6FB2A9B22BF9BE0C8F">
+  <title>Gross Bookings</title>
+  <shortdesc>The total revenue generated from purchases within the reporting
+	 period.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Metrics" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p></p>
+  </conbody>
+</concept>

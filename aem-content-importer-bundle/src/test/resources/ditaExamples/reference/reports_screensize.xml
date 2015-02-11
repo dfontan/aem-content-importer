@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_1CD4B4B6A7B14635894AAB136D1F4F48">
+  <title>Screen Size Report</title>
+  <shortdesc>Groups mobile device hits to your site by the screen size of the
+	 device. The report shows each screen size, the number of visitors to your site
+	 that used each screen size, and each screen size as a percentage of the total
+	 views. The Screen Size report shows both the height and width of the screen
+	 size as compared to the Screen Height report and Screen Width report. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>The reported screen size does not indicate the orientation of the
+		device. Regardless of screen orientation, each device has a fixed screen
+		resolution in the report. This size is based on research that determines which
+		orientation is more likely. This means you might see sizes such as 768x1024 and
+		1024x768 in the same report with each size representing one or more different
+		devices.
+	 </p>
+  </conbody>
+</concept>

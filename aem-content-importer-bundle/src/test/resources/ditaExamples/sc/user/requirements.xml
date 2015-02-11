@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_7E987A1E578940B1859D89CA14FAFF34"> 
+  <title>Browser and System Requirements</title> 
+  <shortdesc>Browser and system requirements to log in to the Marketing Reports
+	 &amp; Analytics interface. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic"
+		 content="browser requirements,Reports,Reports and analytics"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <ul id="ul_77EC2D738039447D9AE4EED5751AD708"> 
+		<li id="li_E0FC3A7C394C49D1B0742E784DCEABE0">Browsers: Microsoft Internet
+		  Explorer 9 or later, Firefox 3.6 or later, Chrome, or Safari 4 or later. 
+		</li> 
+		<li id="li_14FAE0B9C37240A5963BA54439D2A90D">Cookies and JavaScript must
+		  be enabled. 
+		</li> 
+		<li id="li_D272C6133D3743D88744F6E7DF880B4C">Adobe Flash Player 10+. 
+		</li> 
+		<li id="li_6368D02E094D4DD4860BB32329309E53">1024 x 768 monitor
+		  resolution with 16-bit color depth (or higher). 
+		</li> 
+	 </ul> 
+  </conbody> 
+</concept>

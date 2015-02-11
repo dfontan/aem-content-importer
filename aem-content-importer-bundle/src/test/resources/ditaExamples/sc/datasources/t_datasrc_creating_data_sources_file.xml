@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_A2F150D9DC1A4D338E878534FA506267">
+  <title>Generating an Import File Template</title>
+  <shortdesc>The import template file is designed to get you started with the
+	 import. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Data sources" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <context id="context_A9658289DB8F41D7A94AA86A30AA8D92">
+      <p>You are not limited to the columns defined in the template. You can
+		  add any additional columns as needed, as long as the metric or definition is
+		  supported for the selected data processing type. You can view the supported
+		  metrics and dimensions for each type in the following sections: 
+		  <xref href="datasrc_web_log.xml#concept_E25D89C8B90A41FEB7DF4E936CACEE2B" type="concept" format="dita" scope="local"><?xm-replace_text Web Log?></xref>, 
+		  <xref href="datasrc_traffic.xml#concept_F50D3AC6A5544D06BB81EF1E279576BC" type="concept" format="dita" scope="local"><?xm-replace_text Traffic?></xref>, 
+		  <xref href="datasrc_conversion.xml#concept_FA3B6557128649C0B662E95C6B617FA0" type="concept" format="dita" scope="local"><?xm-replace_text Conversion?></xref>,
+		  
+		  <xref href="datasrc_transactionID.xml#concept_A97302E9EC45468A8F30285FACE8C776" type="concept" format="dita" scope="local"><?xm-replace_text Transaction ID?></xref>,
+		  
+		  <xref href="datasrc_visitorID.xml#concept_1CFAA61D57A84B22A41F7A8E0DFCAAB5" type="concept" format="dita" scope="local"><?xm-replace_text Visitor ID?></xref>,
+		  
+		  <xref href="datasrc_full_processing.xml#concept_975B1BB9981D49139B4EE09C78CDE6ED" type="concept" format="dita" scope="local"><?xm-replace_text Full Processing?></xref>).
+		  For example, for a traffic data type, you can add a column for any metric or
+		  dimensions listed in 
+		  <xref href="datasrc_traffic.xml#concept_F50D3AC6A5544D06BB81EF1E279576BC" type="concept" format="dita" scope="local"><?xm-replace_text Traffic?></xref>. 
+		</p>
+      <p>Once created, you can download the template, input your data into the
+		  template, then upload the data to the Data Sources FTP site. Once processed by
+		  the Data Sources server, the imported data is available for use in your
+		  SiteCatalyst reports. 
+		</p>
+      <p>The Data Source template is a .txt file that you can open with any
+		  text editor. However, it is easiest to work with the template using Microsoft
+		  Excel or another spreadsheet application. The template content varies based on
+		  your selections in the Data Source Activation Wizard. 
+		</p>
+      <p>See 
+		  <xref href="datasrc_import_file_reference.xml#concept_472095E1D011434D98A21C101A4618BD" type="concept" format="dita" scope="local"><?xm-replace_text Import File Reference?></xref>
+		  for additional details. 
+		</p>
+    </context>
+    <steps id="steps_FE8647826C6A4139844A381710365EB0">
+      <step id="step_DB074DCB387D48A5AC6BE39DCA4443E5">
+        <cmd>Log in to Marketing Reports &amp; Analytics. 
+		  </cmd>
+      </step>
+      <step id="step_BADB638FB85C4E2A8A59291AA75A7703">
+        <cmd>In the Suite header, select 
+			 <uicontrol>Admin Tools</uicontrol> &gt; 
+			 <uicontrol>Data Sources</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_E30E3E46981841E3A8B878B102A4EA02">
+        <cmd>On the 
+			 <uicontrol>Data Sources Create</uicontrol> tab, select a template
+			 category and type. 
+		  </cmd>
+      </step>
+      <step id="step_9AA49859FB1C48A7BF2E3462618F49C3">
+        <cmd>Review the Activation Instructions/Information, then click 
+			 <uicontrol>Activate</uicontrol>. 
+		  </cmd>
+        <stepresult>
+          <?xm-replace_text Step Result?>
+        </stepresult>
+      </step>
+      <step id="step_7A47811F8C294B93A6B200C9D006A75F">
+        <cmd>Select template generation options in the Data Source Activation
+			 Wizard. 
+		  </cmd>
+        <info>
+          <table id="table_BE92DDFB21F4465EBE3E7582628875A9">
+            <tgroup cols="3">
+              <colspec colnum="1" colname="col1" colwidth="1.00*" />
+              <colspec colnum="2" colname="col2" colwidth="1.96*" />
+              <colspec colnum="3" colname="col3" colwidth="4.54*" />
+              <thead>
+                <row>
+                  <entry colname="col1">Wizard Page 
+						</entry>
+                  <entry colname="col2">Field 
+						</entry>
+                  <entry colname="col3">Description 
+						</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry colname="col1">1 
+						</entry>
+                  <entry colname="col2">Name 
+						</entry>
+                  <entry colname="col3">The template name that SiteCatalyst
+						  displays in The Data Sources Manager. 
+						</entry>
+                </row>
+                <row>
+                  <entry colname="col1">1 
+						</entry>
+                  <entry colname="col2">Email 
+						</entry>
+                  <entry colname="col3">The email address that receives all
+						  notifications related to the use of this Data Source template. 
+						</entry>
+                </row>
+                <row>
+                  <entry colname="col1">1 
+						</entry>
+                  <entry colname="col2">Associated Fees Checkbox 
+						</entry>
+                  <entry colname="col3">Select the check box to indicate your
+						  acceptance of the fees associated with using this Data Source template. 
+						</entry>
+                </row>
+                <row>
+                  <entry colname="col1">2 
+						</entry>
+                  <entry colname="col2">Choose Metrics 
+						</entry>
+                  <entry colname="col3">
+                    <p>Select the metrics to import using this Data Source.
+							 SiteCatalyst recommends certain metrics based on the Data Source Category and
+							 Type selected in Step 3. 
+						  </p>
+                    <p>To specify a different metric, type its name in a blank
+							 field, then select the check box to enable the metric. 
+						  </p>
+                  </entry>
+                </row>
+                <row>
+                  <entry colname="col1">3 
+						</entry>
+                  <entry colname="col2">Map Metrics 
+						</entry>
+                  <entry colname="col3">
+                    <p>Select a SiteCatalyst Event to receive each imported
+							 metric selected in Wizard page 2. 
+						  </p>
+                    <p>These should be new, unassigned Events that you have
+							 previously assigned names that correspond to the imported metric data they will
+							 receive through Data Sources. 
+						  </p>
+                    <p>If an eVar, Product, or Tracking Code variable is a
+							 destination variable, and the uploaded values match existing captured values,
+							 the uploaded events essentially add metrics to existing values. For example,
+							 you might create an “Offline Orders” metric with a Products data dimension that
+							 already has Product Views, Checkouts, and Orders as existing metrics. 
+						  </p>
+                  </entry>
+                </row>
+                <row>
+                  <entry colname="col1">4 
+						</entry>
+                  <entry colname="col2">Choose Data Dimensions 
+						</entry>
+                  <entry colname="col3">
+                    <p>Select the data dimensions to breakdown the imported
+							 metrics from this Data Source. SiteCatalyst recommends certain data dimensions
+							 based on the Data Source Type selected in Step 3. 
+						  </p>
+                    <p>To specify a different data dimension, type its name in
+							 a blank field, then select the check box to enable the data dimension. 
+						  </p>
+                  </entry>
+                </row>
+                <row>
+                  <entry colname="col1">5 
+						</entry>
+                  <entry colname="col2">Map Data Dimensions 
+						</entry>
+                  <entry colname="col3">Select a standard report or eVar to
+						  receive each imported data dimension selected in Wizard page 4. 
+						</entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </info>
+      </step>
+      <step id="step_7ADDC7B5A8064AFC9AA78855D2102069">
+        <cmd>After the template is generated, copy data into the appropriate
+			 columns of the Data Source template, making sure to adhere to the data format
+			 required for that data column. 
+		  </cmd>
+        <stepresult>
+          <?xm-replace_text Step Result?>
+        </stepresult>
+      </step>
+      <step id="step_8666BB1EF02742CBAE10C1CE331C8182">
+        <cmd>Save the Data Sources file using a naming convention of your
+			 choice. Adobe recommends using a consistent naming convention for all Data
+			 Sources files. Use a common file extension such as .txt or .tsv (or don’t use
+			 any extension). 
+		  </cmd>
+        <stepresult></stepresult>
+      </step>
+    </steps>
+  </taskbody>
+</task>

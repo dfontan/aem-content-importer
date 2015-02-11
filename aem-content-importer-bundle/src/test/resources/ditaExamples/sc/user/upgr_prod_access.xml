@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_51BB54BCC59D4767B51610D4FE50856D">
+  <title>Suite Product Access</title>
+  <shortdesc>Accessing products and features has changed. To access Marketing
+	 Cloud products, click 
+	 <uicontrol>Adobe Marketing Cloud</uicontrol>, located above the left
+	 navigation. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports and analytics" />
+      <othermeta name="subtopic" content="Upgrading from V14" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>A drop-down menu provides access to Suite products: 
+	 </p>
+    <p>
+      <image href="graphics/cloud_product_access.png" id="image_498932820CF04AE5AA9B864A885CCC7E">
+        <?xm-replace_text Paragraph?>
+      </image>
+    </p>
+    <p>Whenever you log in to the 
+		<uicontrol>Adobe Marketing Cloud</uicontrol>, you are returned to the
+		landing page of the product you were in when you logged out during your
+		previous session. 
+	 </p>
+  </conbody>
+</concept>

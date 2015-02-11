@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_A1EC069DF71043B199315CF7C6A5AA7A">
+  <title>OSMF Metadata</title>
+  <shortdesc>You can access OSMF metadata within your video player. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>media</keyword>
+        <keyword>milestone</keyword>
+        <keyword>sdk</keyword>
+        <keyword>video</keyword>
+      </keywords>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>To use OSMF metadata inside of your Media.monitor method, call
+		media.player.metadata(namespace,key), where: 
+	 </p>
+    <p>
+      <b>namespace</b>: (Optional) The OSMF metadata namespace you want to
+		use. If you do not specify a namespace, the AppMeasurement OSMF plug-in uses
+		the first matching key it locates in any namespace. When looking for keys, the
+		plug-in looks first at MediaElement metadata, then at MediaResource metadata. 
+	 </p>
+    <p>
+      <b>key</b>: The specific metadata value you want to use. 
+	 </p>
+    <p>For example, the following custom Media.monitor method sets eVar1 to the
+		“series” key, eVar2 to the “season” key, and eVar3 to the “episode” key in the
+		http://www.corp1.com/ namespace: 
+	 </p>
+    <codeblock>s.Media.monitor = function (s:Object,media:Object) {
+    s.trackVars = "events,eVar1,eVar2,eVar3";
+    s.trackEvents = "event1,event2";
+    s.eVar1 = media.player.metadata("http://www.corp1.com/","series");
+    s.eVar2 = media.player.metadata("http://www.corp1.com/","season");
+    s.eVar3 = media.player.metadata("http://www.corp1.com/","episode");
+    if (media.mediaEvent == "OPEN") {
+        s.events = "event1";
+        s.Media.track(media.name);
+    } else if (media.mediaEvent == "CLOSE") {
+        s.events = "event2";
+        s.Media.track(media.name);
+    }
+}</codeblock>
+  </conbody>
+</concept>

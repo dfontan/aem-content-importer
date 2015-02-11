@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_CE9BE9D801A44BF5AF5E8BD3E6CC65D3"> 
+  <title>Current Data</title> 
+  <shortdesc>The Include Current Data option in reports &amp; analytics lets
+	 you view the latest Analytics data, often before data is fully processed and
+	 finalized. Current data displays most metrics within minutes, providing
+	 actionable data for quick decision making. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<keywords> 
+		  <keyword>missing data</keyword> 
+		  <keyword>slow</keyword> 
+		</keywords> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Reports"/> 
+		<othermeta name="subtopic" content="Current data"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Current Data is enabled by default on all reports that support it. When
+		enabled, metrics appear in reports in one of three time frames, as explained in
+		
+		<xref
+		 href="data_latency.xml#concept_CE9BE9D801A44BF5AF5E8BD3E6CC65D3/section_E0ACA69D5CBE4CEDAB3688F39ABE7803"
+		 format="dita" scope="local"><?xm-replace_text Typical Latency?></xref>. If you
+		would rather view all metrics after the data is fully processed, you can
+		disable Current Data by removing users from the Current Data Users group. 
+	 </p> 
+	 <p>Keep the following in mind as you view current data: 
+	 </p> 
+	 <ul id="ul_1EE1557943D34D1899455015E805E549"> 
+		<li id="li_2FBB1D2715BD43B3A373FA4FC21D2CE7">Applying a segment to a
+		  report turns the current data view off. Segments are applied to finalized data.
+		  
+		</li> 
+		<li id="li_3D48B497C34C4390A6EF424A038D6BD2">Classifications are not
+		  applied to current data. 
+		</li> 
+		<li id="li_1F72B97D332B493EB536B0E26C8A2928"> Correlation, subrelation,
+		  and pathing reports do not provide current data. When you run these reports,
+		  the current data toggle is disabled. 
+		</li> 
+		<li id="li_7634FFE107874035BF8C950B2C7F2D1F">Metrics introduced in v15,
+		  such as Total Time Spent and Bounces, do not provide current data. 
+		</li> 
+	 </ul> 
+	 <section id="section_E0ACA69D5CBE4CEDAB3688F39ABE7803"> 
+		<title>Typical Current Data Latency</title> 
+		<p>Metrics appear in one of the following three time frames. Click the
+		  clock icon next to the Include Current Data toggle to see the actual latency
+		  value for each metric on a report. 
+		</p> 
+		<table id="table_17C8732F72AD442D87F61DEA919FB3C9"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="3.08*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col1">Time Frame 
+				  </entry> 
+				  <entry colname="col2">Metrics 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1">under 10 minutes 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <ul id="ul_17842ECA228041ECA52530660F2F3883"> 
+						<li id="li_9600BD79A130471491203B58DAD8211A">Instances on
+						  props 
+						</li> 
+						<li id="li_6DAFCD8CABBD49479F6311D470FEECC3">Page views on
+						  pages 
+						</li> 
+						<li id="li_6FA887313D8545B28BE0D9406ACA7785">searches 
+						</li> 
+					 </ul> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">Between 10 and 35 minutes 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <ul id="ul_7EEC3D74CB8F48EAA5A8A8C5721D224F"> 
+						<li id="li_5EB6C2A2C7E1477AA24C606542EB3783">Custom events 
+						</li> 
+						<li id="li_954DC0A1D00C462AA6F7A3794BBE75D0">Revenue, orders,
+						  units 
+						</li> 
+						<li id="li_146D4147A9E944FB93CFB03E310BB4B1">Instances and
+						  click-throughs on conversion variables 
+						</li> 
+						<li id="li_0A6BC530455846A8BE4EB888F339FC7A">Daily Unique
+						  Visitors on Site Metrics Report 
+						</li> 
+					 </ul> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">Between 45 and 120 minutes 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <ul id="ul_378552EF78B94DFCB12A34E73095989C"> 
+						<li id="li_8C18460A685A480EB6679FA5F5967F5D">Visits 
+						</li> 
+						<li id="li_E661193463CC475F81DA5810B1C41A05">Unique Visitors 
+						</li> 
+						<li id="li_C8B819E09C014A1CB6D6CF8B771B7925">Participation 
+						</li> 
+					 </ul> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<p>Because some of the data that is displayed on the current data view
+		  has not been fully processed, you will see a slight difference between values
+		  reported on the current data view and the finalized view. On trended reports,
+		  the data difference is typically within 1%. 
+		</p> 
+		<p>If you experience latency that is consistently outside of this range,
+		  see 
+		  <xref href="latency.xml#concept_9EEBF15433E3490FBA099925FCAEB1D1"
+			format="dita" scope="local"><?xm-replace_text Latency Troubleshooting?></xref>.
+		  
+		</p> 
+	 </section> 
+	 <section id="section_C582289D236C42D6B3C6495A92A5D18A"> 
+		<title>Calculated Metrics</title> 
+		<p>Since calculated metrics can be created using metrics that have
+		  different latency, some recent values might be calculated using incomplete data
+		  in the current data view. For example, let's say you created a "Page Views per
+		  Visit" calculated metric with the following formula: 
+		</p> 
+		<codeblock>Page Views/Visits</codeblock> 
+		<p>Since Page Views typically appear within 10 minutes, and Visits
+		  typically appear within 2 hours, calculated metrics within this latency window
+		  are calculated using incomplete metrics. If you post a new page that gets 4000
+		  hits from 4000 different visits over a 2 hour time frame, the latency
+		  difference between these metrics can cause incomplete calculations for the
+		  latest hour or two: 
+		</p> 
+		<table id="table_D13D06727F3E45ACBC12E00EBF061429"> 
+		  <tgroup cols="4"> 
+			 <colspec colnum="1" colname="col1" colwidth="*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="*"/> 
+			 <colspec colnum="3" colname="col3" colwidth="*"/> 
+			 <colspec colname="col4" colnum="4" colwidth="1.33*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col1">Time Frame 
+				  </entry> 
+				  <entry colname="col2">Page Views (10 min latency) 
+				  </entry> 
+				  <entry colname="col3">Visits (90 minute latency) 
+				  </entry> 
+				  <entry colname="col4">Page Views Per Visit 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1">past 30 minutes 
+				  </entry> 
+				  <entry colname="col2">700 page views 
+				  </entry> 
+				  <entry colname="col3">0 visits 
+				  </entry> 
+				  <entry colname="col4">0 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">past 1 hour 
+				  </entry> 
+				  <entry colname="col2">1600 page views 
+				  </entry> 
+				  <entry colname="col3">0 visits 
+				  </entry> 
+				  <entry colname="col4">0 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">past 2 hours 
+				  </entry> 
+				  <entry colname="col2">1900 page views 
+				  </entry> 
+				  <entry colname="col3">1000 visits 
+				  </entry> 
+				  <entry colname="col4">1.9 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">2 or more hours ago (finalized data) 
+				  </entry> 
+				  <entry colname="col2">4000 page views 
+				  </entry> 
+				  <entry colname="col3">4000 visits 
+				  </entry> 
+				  <entry colname="col4">1 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<p>This is most visible when reporting on new values, or on very short
+		  time frames. When you are reporting over longer periods, the latency
+		  differences that occur in the last few hours of reporting are unlikely to have
+		  any noticeable impact on calculated metrics. 
+		</p> 
+		<p>If you have calculated metrics that might be impacted by these
+		  differences, either turn current data off, or add the metrics used in the
+		  calculation directly to the report so you can see the latency values for each
+		  metric. 
+		</p> 
+	 </section> 
+	 <section id="section_0FFF8B23966F49069021225A2CA4D011"> 
+		<title>Downloaded Reports</title> 
+		<p>When you download a report with the current data view enabled, the
+		  report is queued, generated, and then returned to the browser. If additional
+		  metrics are reported while the report is generating, these metrics appear in
+		  the report. This might lead to the downloaded report being slightly more
+		  up-to-date. 
+		</p> 
+	 </section> 
+	 <section id="section_E7492A84197A49188E3E3555849288DB"> 
+		<title>Control User Access to Current Data</title> 
+		<p>The Include Current Data option is displayed for all members of the 
+		  <uicontrol>Current Data Users</uicontrol> group. All users are added to
+		  this group by default. 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept>

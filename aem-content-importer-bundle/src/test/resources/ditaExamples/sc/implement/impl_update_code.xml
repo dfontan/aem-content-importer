@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_AF80C2C5C02E4C8CBC4706D93B5E439B">
+  <title>Replacing Your Analytics Code</title>
+  <shortdesc>Adobe offers some best practices for updating your 
+	 <keyword>Analytics</keyword> code. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Troubleshooting" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Frequently, customers use the Adobe 
+		<wintitle>Code Manager</wintitle> to replace their code with the most
+		recent version. This practice is good to follow as long as you keep certain
+		things in mind. 
+	 </p>
+    <section id="section_1726CEB1ABEC408492569B06664410C8">
+      <title>Using the Incorrect Data Collection Server ID</title>
+      <p>Occasionally, generic 
+		  <filepath>s_code.js</filepath> files that have not been generated from
+		  Adobe Code Manager are sent to those implementing the code on your site. As a
+		  result, the incorrect data collection server ID (as shown in the 
+		  <wintitle>s.dc</wintitle> variable) for the account is used. It is best
+		  to generate new code directly from the 
+		  <wintitle>Code Manager</wintitle> for a specific report suite, rather
+		  than reusing code from a different report suite. This is the best way to make
+		  sure the 
+		  <wintitle>s.dc</wintitle> variable is populated correctly. 
+		</p>
+    </section>
+    <section id="section_53650E52D6A54A4795F95E491E7548D1">
+      <title>Plug-ins</title>
+      <p>Some customers implement plug-ins to enhance their Adobe experience.
+		  When you replace your code, do not forget that you have plug-ins as part of
+		  that code. The code created in the 
+		  <wintitle>Code Manager</wintitle> does not have any plug-in code with
+		  it, so all plug-ins need to migrate manually to the newer code base. Make a
+		  copy of your existing code just in case something happens, and you need to
+		  revert to your previous code. 
+		</p>
+    </section>
+  </conbody>
+</concept>

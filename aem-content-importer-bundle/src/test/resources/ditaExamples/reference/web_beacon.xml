@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_E3D0FEC81E1F4987B39CC467F19FFCFF">
+  <title>Web Beacon</title>
+  <shortdesc>A web beacon, also known as a 
+	 <filepath>clear.gif</filepath>, is a transparent graphic image, no larger
+	 than 1x1 pixel. It is placed on a web site or in an email to track visitor
+	 behavior. 
+	 The web beacon points to a server, known as
+	 2o7.net, to retrieve the image. The image, when loaded into the user's browser,
+	 loads JavaScript code that performs several functions, one of which is to check
+	 for a cookie. If a cookie is not loaded, it loads one on the browser. If the
+	 user does not have cookies enabled, a web beacon cannot track activity. The web
+	 beacon for a non-cookied user accounts for an anonymous visit, but the user's
+	 unique information is not recorded. The JavaScript code also collects variables
+	 (particular to the selected web site) from the code and sends them to 
+	 analytics reporting.</shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="subtopic" content="Glossary" />
+    </metadata>
+  </prolog>
+  <conbody></conbody>
+</concept>

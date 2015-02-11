@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_93177040A38F4881B80D7A02B5D2FB24"> 
+  <title>General Account Settings</title> 
+  <shortdesc>Field descriptions for report suite 
+	 <wintitle>General Account Settings</wintitle> in Admin. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Admin tools"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p><uicontrol>Analytics</uicontrol> &gt; 
+		<uicontrol>Admin</uicontrol> &gt; 
+		<uicontrol>Report Suites</uicontrol> &gt; 
+		<uicontrol>Edit Settings</uicontrol> &gt; 
+		<uicontrol>General</uicontrol> &gt; 
+		<uicontrol>General Account Settings 
+		</uicontrol> 
+	 </p> 
+	 <p>These settings contain editing options for basic report suite
+		functionality, such as name and time zone. 
+	 </p> 
+	 <table id="table_5448A694DC0A48D2B20C7F1332509F6E"> 
+		<tgroup cols="2"> 
+		  <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+		  <colspec colnum="2" colname="col2" colwidth="3.34*"/> 
+		  <thead> 
+			 <row> 
+				<entry colname="col1">Option 
+				</entry> 
+				<entry colname="col2">Description 
+				</entry> 
+			 </row> 
+		  </thead> 
+		  <tbody> 
+			 <row> 
+				<entry colname="col1"> 
+				  <wintitle>Site Title</wintitle> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>Identifies your site. Give each report suite a unique site
+					 title. 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <wintitle>Base URL</wintitle> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>Specifies the report suite's main website. The Base URL does
+					 not affect referrer filtering. Use 
+					 <xref
+					 href="internal_URL_filter_admin.xml#concept_D6BB8358DB7643F0B13E5DC9B7607998"
+					 format="dita" scope="local">internal URL filters</xref> instead. 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <wintitle>Time Zone</wintitle> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>Determines the date and time associated with your report data.
+					 
+				  </p> 
+				  <p>Changing the time zone for a live report suite creates either
+					 a spike or gap in report data. To minimize the impact, Adobe recommends
+					 changing time zones during non-peak hours to avoid skewing data. 
+				  </p> 
+				  <p>For example, if you change the report suite time zone from
+					 Central to Pacific at 3:00pm, the report suite's current time becomes 1:00pm.
+					 Because reporting has already collected data for the 1:00 hour, reports show a
+					 traffic spike between 1:00pm and 3:00pm. 
+				  </p> 
+				  <p>Alternatively, if you change the report suite time zone from
+					 Central to Eastern at 3:00pm, the report suite's current time becomes 4:00pm.
+					 Reports display no data between 3:00pm and 4:00pm on the day of the time
+					 change. 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <wintitle>Conversion Level</wintitle> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p> Enables or disables e-commerce variables such as eVars and
+					 campaigns. Use the 
+					 <uicontrol>Enabled, no Shopping Cart</uicontrol> option to hide
+					 all shopping cart reports if you don't have a shopping cart on your site. 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <wintitle>Default Page</wintitle> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p> If your 
+					 <wintitle>Most Popular Pages Report</wintitle> contains URLs
+					 rather than page names, this setting prevents multiple URLs from representing
+					 the same page. For example, the URLs 
+					 <filepath>http://mysite.com</filepath> and 
+					 <filepath>http://mysite.com/index.html</filepath> are typically
+					 the same page. You can remove default filenames so that these two URLs would
+					 both show up as 
+					 <filepath>http://mysite.com</filepath>. 
+				  </p> 
+				  <p>If left blank, the following filenames are removed from the
+					 URLs: 
+					 <filepath>index.htm</filepath>, 
+					 <filepath>index.html</filepath>, 
+					 <filepath>index.cgi</filepath>, 
+					 <filepath>index.asp</filepath>, 
+					 <filepath>default.htm</filepath>, 
+					 <filepath>default.html</filepath>, 
+					 <filepath>default.cgi</filepath>, 
+					 <filepath>default.asp</filepath>, 
+					 <filepath>home.htm</filepath>, 
+					 <filepath>home.html</filepath>, 
+					 <filepath>home.cgi</filepath>, and 
+					 <filepath>home.asp</filepath>. 
+				  </p> 
+				  <p>To disable stripping of filenames altogether, enter a value
+					 that is never present in your URLs. 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <wintitle>IP Obfuscation</wintitle> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>Turns IP addresses into non-recognizable strings, essentially
+					 removing them from Adobe data stores. When IP Obfuscation is enabled, the
+					 original IP addresses are permanently lost. 
+				  </p>
+				  <p>If IP obfuscation is enabled, IP exclusion happens before the
+					 IP address is obfuscated, so customers don’t need to change anything when they
+					 enable IP obfuscation.
+				  </p>
+				  <p>If the last octet is removed, that is done before IP
+					 filtering. As such, the last octet is replaced with a 0, and IP exclusion rules
+					 should be updated to match IP addresses with a zero on the end. Matching *
+					 should match 0.
+				  </p> 
+				  <p>Checking the 
+					 <uicontrol>Before Geo-Lookup: Replace visitor's last IP octet
+						with 0</uicontrol> option means that the IP address is altered before it is
+					 processed. For example, the IP address 134.123.567.780 gets changed to
+					 134.123.567.0. Geosegmentation data will not be quite as exact as when the
+					 whole IP address is used, but the effect should be minimal. Both Bot rules and
+					 VISTA rules are affected because the entire IP address is unavailable to them.
+					 In addition, any processing rules that are IP based, including marketing
+					 channel rules and report suite processing rules, are affected by this setting. 
+				  </p> 
+				  <p>Checking 
+					 <uicontrol>After Geo-Lookup: Obfuscate IP -
+						Disabled</uicontrol> leaves the IP address in the data. 
+				  </p> 
+				  <p>Checking 
+					 <uicontrol>After Geo-Lookup: Obfuscate IP -
+						Standard</uicontrol> changes the IP to a hashed value (e.g., 234abc6493872038).
+					 
+				  </p> 
+				  <p>Checking 
+					 <uicontrol>After Geo-Lookup: Obfuscate IP - Removed</uicontrol>
+					 replaces the IP address with x.x.x.x in the data, after geo-lookup. This
+					 setting is enabled by default for all customers with a report suite set in
+					 EMEA. 
+				  </p>
+				  <note>This setting might require changes to custom 
+					 <xref
+					 href="bot_rules.xml#concept_A306689C65EB4D0F9AE65E3FD48ED5F7" format="dita"
+					 scope="local">bot rules</xref> or<xref
+					 href="exclude_IP.xml#concept_265A95A803F740629CAAAA7EB8BE81A4" format="dita"
+					 scope="local"> IP exclusions</xref>.
+				  </note> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <wintitle>Geography Segmentation</wintitle> 
+				</entry> 
+				<entry colname="col2">Enables 
+				  <uicontrol>Visitor</uicontrol> &gt; 
+				  <uicontrol>GeoSegmentation</uicontrol> reports. 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <wintitle>Transaction ID Storage</wintitle> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>Enables you to use 
+					 <xref
+					 href="https://marketing.adobe.com/resources/help/en_US/sc/datasources/index.html?f=c_Transaction_ID"
+					 format="https" scope="external">Transaction ID</xref> data sources. 
+				  </p> 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+  </conbody> 
+</concept> 

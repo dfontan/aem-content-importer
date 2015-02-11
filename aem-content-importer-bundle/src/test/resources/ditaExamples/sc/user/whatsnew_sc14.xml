@@ -1,0 +1,1729 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_3712E26CB6284F74B9993A03EF45F29C"> 
+  <title>SiteCatalyst 14 Release History</title> 
+  <shortdesc>The complete SiteCatalyst 14 release history. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Reports and analytics"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <ul id="ul_877886F9F458472FBAB4BF08165D17A2"> 
+		<li id="li_F9A52F3AFEE049A4B21778FBCD65ADA0"> 
+		  <xref
+			href="whatsnew_sc14.xml#concept_3712E26CB6284F74B9993A03EF45F29C/section_34EFEE2781BE4F8DA8261B76A93ACE79"
+			type="section" format="dita" scope="local"><?xm-replace_text SiteCatalyst 14.9 Maintenance Release - October 17 2013?></xref>
+		  
+		</li>
+		<li id="li_836C009C581B45F0B0E6D6684DB0725E"> 
+		  <xref
+			href="whatsnew_sc14.xml#concept_3712E26CB6284F74B9993A03EF45F29C/section_DBE86308CA4F4C2FB426EA45D318820F"
+			type="section" format="dita" scope="local"><?xm-replace_text SiteCatalyst 14.9 Maintenance Release - June 20 2013?></xref>
+		  
+		</li> 
+		<li id="li_70A3832415164936B6EF725710BB9386"> 
+		  <xref
+			href="whatsnew_sc14.xml#concept_3712E26CB6284F74B9993A03EF45F29C/section_9E13EFA18B1A446E87299DE64B062129"
+			type="section" format="dita" scope="local"> <?xm-replace_text SiteCatalyst 14.9 Maintenance Release - May 23 2013?>
+		  </xref> 
+		</li> 
+		<li id="li_92067E7A67604DA9B1C95CE9680D77EF"> 
+		  <xref
+			href="whatsnew_sc14.xml#concept_3712E26CB6284F74B9993A03EF45F29C/section_F2628B8014EE4FA29DC2BC59451293F1"
+			type="section" format="dita" scope="local"> <?xm-replace_text SiteCatalyst 14.9 Maintenance Release - April     18 2013?>
+		  </xref> 
+		</li> 
+		<li id="li_1EFE604692A74A5F83467B790F6D6C78"> 
+		  <xref
+			href="whatsnew_sc14.xml#concept_3712E26CB6284F74B9993A03EF45F29C/section_5D8134E70F1B421C93C3CA8ECDC7D998"
+			type="section" format="dita" scope="local"> <?xm-replace_text SiteCatalyst 14.9 Maintenance Release - March     21 2013?>
+		  </xref> 
+		</li> 
+		<li id="li_FF49AF7DF909467B98BCC6BFFCFC00ED"> 
+		  <xref
+			href="whatsnew_sc14.xml#concept_3712E26CB6284F74B9993A03EF45F29C/section_B5AE9C1611044607B47A2E21EF91D748"
+			type="section" format="dita" scope="local"> <?xm-replace_text SiteCatalyst 14.9 Maintenance Release - February 21 2013?>
+		  </xref> 
+		</li> 
+		<li id="li_B024E9EBF81540BD913602D7090A1952"> 
+		  <xref
+			href="whatsnew_sc14.xml#concept_3712E26CB6284F74B9993A03EF45F29C/section_B5AE9C1611044607B47A2E21EF91D748"
+			type="section" format="dita" scope="local"> <?xm-replace_text SiteCatalyst 14.9 Maintenance Release - February 21 2013?>
+		  </xref> 
+		</li> 
+		<li id="li_FDAF39031ADE4A879C8BC746C1ABFEA1"> 
+		  <xref
+			href="whatsnew_sc14.xml#concept_3712E26CB6284F74B9993A03EF45F29C/section_0B24C16DC769418FA51C592463A47DEC"
+			type="section" format="dita" scope="local"> <?xm-replace_text SiteCatalyst 14.9 Maintenance Release - January     31 2013?>
+		  </xref> 
+		</li> 
+		<li id="li_F90F541187A2422FAFBF1CB5932D4BCA"> 
+		  <xref
+			href="whatsnew_sc14.xml#concept_3712E26CB6284F74B9993A03EF45F29C/section_8A60F89C309F47479832D68C372A3377"
+			type="section" format="dita" scope="local"> <?xm-replace_text SiteCatalyst 14.9 Maintenance Release -     November 8 2012?>
+		  </xref> 
+		</li> 
+		<li id="li_4C512D8080304B6EB4C4BE4FAA0CFB3A"> 
+		  <xref
+			href="whatsnew_sc14.xml#concept_3712E26CB6284F74B9993A03EF45F29C/sitecatalyst14"
+			type="section" format="dita" scope="local"> <?xm-replace_text SiteCatalyst 14.9 Maintenance Release - October 22 2012?>
+		  </xref> 
+		</li> 
+		<li id="li_FA700A7F63AF42A49C44BE72BB7690A0"> 
+		  <xref
+			href="whatsnew_sc14.xml#concept_3712E26CB6284F74B9993A03EF45F29C/sitecatalyst14"
+			type="section" format="dita" scope="local"> <?xm-replace_text SiteCatalyst 14.9 Maintenance Release -     September 13 2012?>
+		  </xref> 
+		</li> 
+		<li id="li_841F0C97824847EDBE624F23E3708B9C"> 
+		  <xref
+			href="whatsnew_sc14.xml#concept_3712E26CB6284F74B9993A03EF45F29C/section_B2C8AB13C6174A9D866BEE4A89B7E8CF"
+			type="section" format="dita" scope="local"> <?xm-replace_text SiteCatalyst 14.9 Maintenance Release - August 16 2012?>
+		  </xref> 
+		</li> 
+		<li id="li_AD861F70FDB04C5FAB4CE8F85C4B0BDF"> 
+		  <xref
+			href="whatsnew_sc14.xml#concept_3712E26CB6284F74B9993A03EF45F29C/section_B2C8AB13C6174A9D866BEE4A89B7E8CF"
+			type="section" format="dita" scope="local"> <?xm-replace_text SiteCatalyst 14.9 Maintenance Release - August 16 2012?>
+		  </xref> 
+		</li> 
+		<li id="li_0215D4DF95D34AFD9CEAE0AFC74A4F14"> 
+		  <xref
+			href="whatsnew_sc14.xml#concept_3712E26CB6284F74B9993A03EF45F29C/section_396127C6C5E048EB92814546C072AB0B"
+			type="section" format="dita" scope="local"> <?xm-replace_text SiteCatalyst 14.9 Maintenance Release - July 19 2012?>
+		  </xref> 
+		</li> 
+		<li id="li_1439BE9994634D62A81DAD2324D5FE43"> 
+		  <xref
+			href="whatsnew_sc14.xml#concept_3712E26CB6284F74B9993A03EF45F29C/section_7D36FB0EF1BC431198A0EF26D2AB35B5"
+			type="section" format="dita" scope="local"> <?xm-replace_text SiteCatalyst 14.9 Maintenance Release - June 21 2012?>
+		  </xref> 
+		</li> 
+		<li id="li_5C206DD524F5460496ABDD038DF1145D"> 
+		  <xref
+			href="whatsnew_sc14.xml#concept_3712E26CB6284F74B9993A03EF45F29C/section_7259A4690F884F88A5053B91C6FC2851"
+			type="section" format="dita" scope="local"> <?xm-replace_text SiteCatalyst 14.9 Maintenance Release - May 31 2012?>
+		  </xref> 
+		</li> 
+		<li id="li_164DE03214E346CE9E6A44E7F0EA29C2"> 
+		  <xref
+			href="whatsnew_sc14.xml#concept_3712E26CB6284F74B9993A03EF45F29C/section_591921F6A90D4287AABCB70708AC21AE"
+			type="section" format="dita" scope="local"> <?xm-replace_text SiteCatalyst 14.9 Maintenance Release - April 26 2012?>
+		  </xref> 
+		</li> 
+		<li id="li_17076E2984784920873AC749E71379AC"> 
+		  <xref
+			href="whatsnew_sc14.xml#concept_3712E26CB6284F74B9993A03EF45F29C/section_51B0AFE974C04E1CB93FCD818A62B2BC"
+			type="section" format="dita" scope="local"> <?xm-replace_text SiteCatalyst 14.9 Maintenance Release - March 29 2012?>
+		  </xref> 
+		</li> 
+		<li id="li_221746F123D44E3B9A9D2E3E71257487"> 
+		  <xref
+			href="whatsnew_sc14.xml#concept_3712E26CB6284F74B9993A03EF45F29C/section_EF7EEAD893304D74B298725FD693699B"
+			type="section" format="dita" scope="local"> <?xm-replace_text SiteCatalyst 14.9 Maintenance Release - February 23 2012?>
+		  </xref> 
+		</li> 
+		<li id="li_84A8A75C752C4073B39C0919568D0770"> 
+		  <xref
+			href="whatsnew_sc14.xml#concept_3712E26CB6284F74B9993A03EF45F29C/section_C643A8E69C104F519CA4286AD5BA1A5A"
+			type="section" format="dita" scope="local"> <?xm-replace_text SiteCatalyst 14.9 Maintenance Release - January 19 2012?>
+		  </xref> 
+		</li> 
+		<li id="li_2EBAC57961F14B52BF06EC327AD13312"> 
+		  <xref
+			href="whatsnew_sc14.xml#concept_3712E26CB6284F74B9993A03EF45F29C/section_361D3F23D9E94178BC719E705B973E6C"
+			type="section" format="dita" scope="local"> <?xm-replace_text SiteCatalyst 14.9 Maintenance Release - November 3 2011?>
+		  </xref> 
+		</li> 
+		<li id="li_D86A94CAF46949E686BD0A9778F066C9"> 
+		  <xref
+			href="whatsnew_sc14.xml#concept_3712E26CB6284F74B9993A03EF45F29C/section_F23C87840D804B7FBC5D462F3BE58879"
+			type="section" format="dita" scope="local"> <?xm-replace_text SiteCatalyst 14.9 Maintenance Release - October 7 2011?>
+		  </xref> 
+		</li> 
+		<li id="li_87926B56421B48B5BEEA901BFC7B3DA3"> 
+		  <xref
+			href="whatsnew_sc14.xml#concept_3712E26CB6284F74B9993A03EF45F29C/section_97A1B16087E04A859E965F453526F21C"
+			type="section" format="dita" scope="local"> <?xm-replace_text SiteCatalyst 14.9 Maintenance Release - September 2011?>
+		  </xref> 
+		</li> 
+		<li id="li_9700752231BC48CBBA5B280E864BE6D1"> 
+		  <xref
+			href="whatsnew_sc14.xml#concept_3712E26CB6284F74B9993A03EF45F29C/section_F57F87504CAB4DA1AD76569841511DE2"
+			type="section" format="dita" scope="local"> <?xm-replace_text SiteCatalyst 14.9 Maintenance Release - August     2011?>
+		  </xref> 
+		</li> 
+		<li id="li_78C1B2EFA9534F32853590A29526B711"> 
+		  <xref
+			href="whatsnew_sc14.xml#concept_3712E26CB6284F74B9993A03EF45F29C/section_A65ABEAFDA1A47FEB8838253913B26A0"
+			type="section" format="dita" scope="local"> <?xm-replace_text SiteCatalyst 14.9 Maintenance Release - July 14     2011?>
+		  </xref> 
+		</li> 
+		<li id="li_93022C95CA9F4A45A8777C6DCBE0D6C2"> 
+		  <xref
+			href="whatsnew_sc14.xml#concept_3712E26CB6284F74B9993A03EF45F29C/section_FE7D1884F7DA456089EDCF3125AFD744"
+			type="section" format="dita" scope="local"> <?xm-replace_text SiteCatalyst 14.9 Maintenance Release - June 2     2011?>
+		  </xref> 
+		</li> 
+	 </ul>
+    
+    <!--This topic contains the previous 2 years of SC 14 release notes, release notes more than 2 years old are wrapped in comments but are still in this file for future reference.-->
+	 <section id="section_34EFEE2781BE4F8DA8261B76A93ACE79"> 
+		<title>SiteCatalyst 14.9 Maintenance Release - October 17 2013</title> 
+		<p>The 
+		  <keyword>SiteCatalyst</keyword> 14.9 maintenance release (10/17/2013)
+		  includes the following change: 
+		</p> 
+		<ul id="ul_8FE5BD32299D438C81DB3F4CB90032CF"> 
+		  <li id="li_880F98F58EB84E59AB43AABBDA7318CA"> This fix affects
+			 customers who have enabled ASI slots in more than one report suite in 
+			 <keyword>SiteCatalyst</keyword> 14. Fixed an issue that prevented
+			 customers from seeing segments defined in a report suite different from the
+			 currently selected report suite. Part of the information displayed was related
+			 to the current report suite (availability of evars, traffic props, etc.). The
+			 fix re-generates the information for the report suite that the selected segment
+			 belongs to.<!--AN-69379-->
+		  </li> 
+		</ul> 
+	 </section>
+	 <section id="section_DBE86308CA4F4C2FB426EA45D318820F"> 
+		<title>SiteCatalyst 14.9 Maintenance Release - June 20 2013</title> 
+		<p>The 
+		  <keyword>SiteCatalyst</keyword> 14.9 maintenance release (06/20/2013)
+		  includes the following change: 
+		</p> 
+		<ul id="ul_BE4950CEC9AA45C3ADBCA0F74A97E452"> 
+		  <li id="li_1665125A50DF4FDEA6483915710AC383">The 
+			 <wintitle>Keyword Unavailable ASI</wintitle> segment definition was
+			 not displayed in 
+			 <keyword>SiteCatalyst</keyword> 14. <!--114801-->
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_9E13EFA18B1A446E87299DE64B062129"> 
+		<title>SiteCatalyst 14.9 Maintenance Release - May 23 2013</title> 
+		<p>The SiteCatalyst 14.9 maintenance release (05/23/2013) includes the
+		  following changes: 
+		</p> 
+		<p> 
+		  <b>Fixes</b> 
+		</p> 
+		<ul id="ul_55D08F6CB5AA4C5E8AB45E07224CAD6F"> 
+		  <li id="li_B8C282DEE1CF4CF2B4F31C37E7A34F30">
+          <!--109136-->On the 
+			 <wintitle>Site Sections Report</wintitle>, you can now compare dates
+			 using the Entries metric. Previously, data was not displayed if this metric was
+			 compared between dates. 
+		  </li> 
+		  <li id="li_7143335CECEF431FBC5AA28AD7A07F3C">Fixed an issue that caused
+			 a calculated metric's statistics for a specific date to display different
+			 values when users alter the date range using the calendar. <!--both, 106232-->
+		  </li> 
+		  <li id="li_CAE4E861E3FE47B1A869BD48ED0039BF">Fixed an issue that caused
+			 duplicate key values when using SAINT import due to case-sensitivity issues. <!--both, 109179-->
+		  </li> 
+		  <li id="li_210E6804031B422AB570EDAC3037B228">Fixed an issue that
+			 prevented certain users from being able to access scheduled reports. <!--both, 112069-->
+		  </li> 
+		  <li id="li_3B94EE012433454FABF5562045740656">Fixed an issue that caused
+			 missing data when breaking down reports by Device Type. <!--both, 107928-->
+		  </li> 
+		  <li id="li_B44C09F8AF51463DA8992438A62FA9E5">Fixed an issue that caused
+			 email messages to be delivered without the scheduled report attached. <!--both, 112448-->
+		  </li> 
+		  <li id="li_4B61143423BE498D87874C04683FB125">Fixed an issue that
+			 prevented delivery of certain scheduled reports. These reports were delivered
+			 according to schedule before the April 2013 MR. <!--both, 112530-->
+		  </li> 
+		  <li id="li_0221424633B64DF39CE8D07094193B82">Fixed user interface
+			 issues when using DataWarehouse on Google Chrome. <!--both, 112181-->
+		  </li> 
+		  <li id="li_42A2A108900B4C3DBBEDFDC5A070647B">Fixed 
+			 <wintitle>Publishing List Manager</wintitle> to appropriately handle
+			 multiple email addresses when using multiple report suites. <!--both, 113065-->
+		  </li> 
+		  <li id="li_E9C32F46EC8B4F7B803EF1918850F8E8">Fixed an issue that
+			 prevented users from using the 
+			 <wintitle>Customize Menu</wintitle> option on Microsoft Internet
+			 Explorer 9. <!--both, 108938-->
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_F2628B8014EE4FA29DC2BC59451293F1"> 
+		<title> SiteCatalyst 14.9 Maintenance Release - April 18 2013</title> 
+		<p>The SiteCatalyst 14.9 maintenance release (04/18/2013) includes the
+		  following changes: 
+		</p> 
+		<p> 
+		  <b>Fixes</b> 
+		</p> 
+		<ul id="ul_09FA7FCCD7B944C3AC38F10A67D4273A"> 
+		  <li id="li_03EE06B384354C4B8F38CDBBC3D2CDC4">
+          <!--107121-->Optimized the ClickMap reports to load faster. 
+		  </li> 
+		  <li id="li_5EA41A75886D48E1932C0A4A3F59396B">
+          <!-- 108377--> Fixed performance issues when loading large numbers of
+			 segments that caused the 
+			 <wintitle>Segment Definition Builder</wintitle> to load slowly. 
+		  </li> 
+		  <li id="li_CCC9CB98FE7A46C8A9643977150723E8">
+          <!--105601-->Several Windows Phone devices were not being displayed
+			 as Windows devices on the 
+			 <wintitle>Mobile Operating Systems Report</wintitle>. 
+		  </li> 
+		  <li id="li_107F97D0229241918F3E619D10795913">
+          <!--110456-->When monthly trending was selected on a rollup report,
+			 Video Views were incorrectly aggregated under an incorrect date that was before
+			 the reporting period. 
+		  </li> 
+		  <li id="li_3A27D562C42C4FECB2F06B44A5164CF7">Fixed an issue that caused
+			 customers with special characters in the report suite name to display an error
+			 when accessing Admin Console. <!--109720 both-->
+		  </li> 
+		  <li id="li_7D51D262F784484AB5E928AFE3078123">Fixed an issue that
+			 prevented certain line items from displaying in data extract filters when
+			 trying to select specific items. <!--108845 both-->
+		  </li> 
+		  <li id="li_FA52F119D9EE4494B776B4F78FD2A208">Fixed an issue with date
+			 formats in scheduled and downloaded reports in non-English languages. <!--106311 both-->
+		  </li> 
+		  <li id="li_3975283964BB49BB890DBE6E720AEA45">Fixed an issue that caused
+			 display issues in the 
+			 <wintitle>Report Suite</wintitle> settings within the Admin Console
+			 for users with limited admin permissions. <!--109868 both-->
+		  </li> 
+		  <li id="li_4511C1F573054709A548FFD0EED90A42">Fixed an issue with
+			 conversion permissions with events higher than 75.<!--109501 both-->
+		  </li> 
+		  <li id="li_568C862596FF4186ABE5110ED7068645">Fixed an issue that let
+			 customers add more users than available licenses to the 
+			 <wintitle>ReportBuilder</wintitle> user group. <!--103563 both-->
+		  </li> 
+		  <li id="li_3A98DD95320A408ABCE87788B5E72595">Fixed a formatting issue
+			 in downloaded PDF reports from dashboards with text reportlets that included
+			 the HTML List tag. <!--78445 both-->
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_5D8134E70F1B421C93C3CA8ECDC7D998"> 
+		<title> SiteCatalyst 14.9 Maintenance Release - March 21 2013</title> 
+		<p>The SiteCatalyst 14.9 maintenance release (03/21/2013) includes the
+		  following changes: 
+		</p> 
+		<ul id="ul_9A3ACDADC4DE4E8FA43CBF8C16DEF479"> 
+		  <li id="li_54D6436520554BC2A3D13895DB0E6457">
+          <!--102001-->The 
+			 <wintitle>Metric Selector</wintitle> on the 
+			 <wintitle>Report Suite Totals Report</wintitle> now displays only
+			 calculated metrics that are supported on that report (overtime metrics). 
+		  </li> 
+		  <li id="li_E119E58EEB5D4D148F00DB344742F480">Fixed an issue when
+			 downloading CSV reports that caused column headers to be blank. <!--107368-->
+		  </li> 
+		  <li id="li_F7735878EA5749F3B9C407EC49926576">Fixed an issue that caused
+			 the date to shift one day forward on dashboards and reportlets.  <!--44835, 73975-->
+		  </li> 
+		  <li id="li_C958213C744449CB88EA708EC89774A9">Fixed an issue that
+			 prevented Test&amp;Target campaigns from displaying in SiteCatalyst. <!--108591-->
+		  </li> 
+		  <li id="li_01CAE3B9F6364CEF8DB9749A910FE3C9">Fixed an issue that
+			 prevented users from editing conversion variables using the Admin Console. <!--103475-->
+		  </li> 
+		  <li id="li_4D38CBF54BF54CACA4129ECA8C937DC3">Fixed an issue that
+			 prevented users from editing or removing members from a user group that
+			 contains a large number of members. <!--107877, 107956-->
+		  </li> 
+		  <li id="li_0376FA82498D480CBB4FE8730B2F7EB5">Fixed an issue that
+			 prevented user groups with long names from displaying in the Admin Console. A
+			 validation mechanism is now in place to prevent users from creating user groups
+			 longer than 255 bytes.<!--98921-->
+		  </li> 
+		  <li id="li_FCFD0B02AB57499683E11E5D1F338A90">March 11th 2am data was
+			 missing (it appeared as 3am data) on trended reports (Page Views and Events)
+			 with hourly granularity for report suites that aren't configured for daylight
+			 savings time. 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_B5AE9C1611044607B47A2E21EF91D748"> 
+		<title>SiteCatalyst 14.9 Maintenance Release - February 21 2013</title> 
+		<p>The SiteCatalyst 14.9 maintenance release (02/21/2013) includes the
+		  following changes: 
+		</p> 
+		<ul id="ul_83C0271876C8419093DF194C64D8512E"> 
+		  <li id="li_F3319157FC014CA591A2C824297D6A39">
+          <!--100026-->Added mobile devices with unknown carriers to an Unknown
+			 row to the 
+			 <wintitle>Mobile Carriers Report</wintitle>, and updated the visits
+			 total to include all visits. This fixes discrepancies between the total visits
+			 on the 
+			 <wintitle>Mobile Carriers Report</wintitle> and the total mobile
+			 visits on the 
+			 <wintitle>Connections Type Report</wintitle>. 
+		  </li> 
+		  <li id="li_002C067A2D0F4B3298BFA8DE2592D9F3">
+          <!--107049-->Fixed a processing issue in VISTA upload script that
+			 caused files to indicate they were processed successfully but showed 0 rows
+			 processed. 
+		  </li> 
+		  <li id="li_FE53D1D8F4EF4903AB72B9D7EF79AF69">Fixed report graphs that
+			 prevented normalized numbers from correctly displaying. <!--65922-->
+		  </li> 
+		  <li id="li_8CC449AB01F744D4B25C5BE248773EC9">Dashboard column headers
+			 now display appropriate time periods when comparing dates. <!--99227-->
+		  </li> 
+		  <li id="li_2F87EC549B8C4C338052B5A9DFD0E81E">Fixed an issue that
+			 infrequently prevented users from updating reportlets in dashboards. <!--105693-->
+		  </li> 
+		  <li id="li_FA49DB8F85684D518D0E1475FA098020">
+          <!--66402-->The 
+			 <wintitle>Data Extract</wintitle> and ExcelClient<wintitle>Referring
+				Domains Report</wintitle> now only include Typed/Bookmarked traffic if
+			 specifically requested. 
+		  </li> 
+		  <li id="li_5DD660EFDCDB4574BF270CA0EDE8A5DD">
+          <!--105545-->The 
+			 <wintitle>Unspecified</wintitle> line item in the 
+			 <wintitle>Mobile Devices Report</wintitle> can be filtered in
+			 ReportBuilder and ExcelClient. 
+		  </li> 
+		  <li id="li_742B6728227D41C0B09DEF88B49FC8D5">
+          <!--107379-->Fixed an issue in 
+			 <wintitle>Geo Location Reports</wintitle> that caused the U.S. state
+			 of Connecticut to be improperly classified as Australian Capital Territory.
+			 This caused reports to not return data for Connecticut, and to return extra
+			 data for the Australian Capital Territory. 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_0B24C16DC769418FA51C592463A47DEC"> 
+		<title> SiteCatalyst 14.9 Maintenance Release - January 31 2013</title> 
+		<p>The SiteCatalyst 14.9 maintenance release (01/17/2013) includes the
+		  following improvements: 
+		</p> 
+		<ul id="ul_49E512E0E301458099D54191F0082216"> 
+		  <li id="li_DE72929F193B4134B94F77DD9767EFB9">The 
+			 <wintitle>Compare Dates</wintitle> feature did not work on 
+			 <wintitle>Mobile</wintitle> breakdown reports. <!--53850-->
+		  </li> 
+		  <li id="li_D5CA5D2B9E5949F3B6B9844B875DF6EB">
+          <!--68316 -->When editing conversion variable expiration settings
+			 with multiple reports suite selected, variables with custom expiration lengths
+			 displayed "Day" instead of the custom length. These variables now display the
+			 custom expiration length. 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_8A60F89C309F47479832D68C372A3377"> 
+		<title> SiteCatalyst 14.9 Maintenance Release - November 8 2012</title> 
+		<p>The SiteCatalyst 14.9 maintenance release (11/08/2012) includes the
+		  following improvements: 
+		</p> 
+		<ul id="ul_BDCA0F5B4C934CC38E11BC70BB91958B"> 
+		  <li id="li_A8CD4DD0C280449883A9149EB9AABDF6">Added line items 1680 x
+			 1050, 1366 x 768, and 920 x 1080 to the 
+			 <wintitle>Monitor Resolution Report</wintitle>.
+		  <!--52329;100603-000473-->
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="sitecatalyst14"> 
+		<title>SiteCatalyst 14.9 Maintenance Release - October 22 2012</title> 
+		<p>The SiteCatalyst 14.9 maintenance release (10/18/12) includes the
+		  following enhancements and fixes: 
+		</p> 
+		<p> 
+		  <b>Fixes</b> 
+		</p> 
+		<ul id="ul_AFF457488ACA44CD9B7943E0C7F66F3C"> 
+		  <li id="li_72D0C18AFF904D8E8514D2F8D6C4FCE5">
+          <!--72332-->If a dashboard is taking a long time to download, a
+			 message now displays that lets you select to email the dashboard. 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_40D33A852EBC4370B5F072E6923B07EA"> 
+		<title> SiteCatalyst 14.9 Maintenance Release - September 13 2012</title>
+		
+		<p>The SiteCatalyst 14.9 maintenance release (09/13/12) includes the
+		  following enhancements and fixes: 
+		</p> 
+		<p> 
+		  <b>Fixes:</b> 
+		</p> 
+		<ul id="ul_16F1C4000CD5488C9DC18367CCD79F1E"> 
+		  <li id="li_27C86CCD1D6F407AA665717F46311C64">
+          <!--63098-->Removed an internal check that prevented traffic and
+			 commerce metrics from being added in separate columns in DataExtracts and
+			 ExcelClient. 
+		  </li> 
+		  <li id="li_F933B21F50B24859AC91A09E4C421C44">
+          <!--72912-->Fixed an issue that caused DataExtracts on the 
+			 <wintitle>Search Keywords - All Report</wintitle> to return only line
+			 items with more than 5 instances. 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_B2C8AB13C6174A9D866BEE4A89B7E8CF"> 
+		<title>SiteCatalyst 14.9 Maintenance Release - August 16 2012</title> 
+		<p>The SiteCatalyst 14.9 maintenance release (08/16/12) includes the
+		  following enhancements and fixes: 
+		</p> 
+		<p> 
+		  <b>Fixes:</b> 
+		</p> 
+		<ul id="ul_EEC89FD2B2D44D03A8D4F566D60E01C1"> 
+		  <li id="li_064E48C55E0A4F7AA3327374C0B0D1FB">
+          <!--79212-->Fixed an issue that caused data to not appear on some
+			 pages of a multi-page 
+			 <wintitle>ClickMap Report</wintitle>. 
+		  </li> 
+		  <li id="li_5B5C8F9AF21D45AA8B1FACB803732C0E">
+          <!--73093-->Fixed an issue that prevented the 
+			 <wintitle>Mobile OS Report</wintitle> from being broken by other
+			 reports. 
+		  </li> 
+		  <li id="li_25BF202699754FE5ABAF8229DBD8E9ED">
+          <!--29207-->Fixed an issue in Data Extracts<wintitle>Advanced
+				Delivery Options</wintitle> that caused the current month to be selected even
+			 when a different month is selected. 
+		  </li> 
+		  <li id="li_66F2304EF0DA4A5E835940C9559AA737">
+          <!--60612-->Fixed an issue when the SiteCatalyst widget was
+			 configured with a 
+			 <wintitle>Fallout</wintitle> chart that caused the image to not
+			 initially appear when the widget is first loaded. 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_396127C6C5E048EB92814546C072AB0B"> 
+		<title>SiteCatalyst 14.9 Maintenance Release - July 19 2012</title> 
+		<p>The SiteCatalyst 14.9 maintenance release (07/19/12) includes the
+		  following enhancements and fixes: 
+		</p> 
+		<p> 
+		  <b> 
+			 <wintitle>Mobile Carrier</wintitle> Report</b> 
+		</p> 
+		<p>This report shows the wireless service provider (Verizon, AT&amp;T,
+		  Sprint, and so on) used by site and app visitors. View this report at 
+		  <uicontrol>Visitor Profile</uicontrol> &gt; 
+		  <uicontrol>Technology</uicontrol>. 
+		</p> 
+		<p> 
+		  <b>Updated 
+			 <wintitle>Connection Types</wintitle> Report</b> 
+		</p> 
+		<p>The 
+		  <wintitle>Connection Types</wintitle> Report was enhanced to include
+		  mobile traffic. 
+		</p> 
+		<p> 
+		  <b>Fixes:</b> 
+		</p> 
+		<ul id="ul_77E574FC4E1F49F9B2DF2F6D31EE5AE7"> 
+		  <li id="li_E25090A22E7F4502B9C4F50E5DA84D29">
+          <!--49230--> Fixed an issue that caused the 4 week trend line to
+			 disappear when changing the month on a custom calendar. 
+		  </li> 
+		  <li id="li_FB36C11EE55242AA91A27B59DF92C78C">
+          <!--78517-->Fixed an issue that caused an error when a filter was
+			 applied on the 
+			 <wintitle>Usage and Access Logs</wintitle> page in Admin Console. 
+		  </li> 
+		  <li id="li_4139C19528554FE8A2DE558B3F8ED474">
+          <!--44034-->Fixed an issue that caused the 
+			 <wintitle>Products Funnel Report</wintitle> to not retain applied
+			 filters when sending a link to a generated report. 
+		  </li> 
+		  <li id="li_8B99CAF551D043EDAE49C524D6F4CE7A">
+          <!--64728-->Fixed an issue that caused the total values instead of
+			 the filtered values to appear when applying an advanced filter to 
+			 <wintitle>Pathing</wintitle>, 
+			 <wintitle>Traffic Sources</wintitle>, and 
+			 <wintitle>Campaigns</wintitle> reports. 
+		  </li> 
+		  <li id="li_049F3A6210CE40D8B2737949FAFB29E3">
+          <!--69372-->Fixed an issue that caused some lines to not appear when
+			 the dashboard that contains an eVar broken down by another variable is exported
+			 in HTML format. 
+		  </li> 
+		  <li id="li_46D1DB46639040EA95D8B2335555EF99">
+          <!--71492-->Fixed an issue that caused the total value displayed on a
+			 SAINT report when a filter is applied to show the total of the items on the
+			 page instead of the filtered total. 
+		  </li> 
+		  <li id="li_6D8678C798124DDF91FC01CD1B3DA72F">
+          <!--69770-->Fixed an issue that prevented some shared dashboards from
+			 being edited even when the correct permissions are assigned. 
+		  </li> 
+		  <li id="li_4C1BFF850AC4469EB8356C1D64677430">
+          <!--76094-->Fixed an issue on PDF exports of Date Compare reports
+			 that caused the date to appear in the column header instead of the metric name.
+			 
+		  </li> 
+		  <li id="li_B4924B0257CE462DBBF12107D9D6DB8A">
+          <!--73839-->Fixed an issue that prevented a calendar event from
+			 displaying in graphs on Internet Explorer 8. 
+		  </li> 
+		  <li id="li_ECEEF9F390E84EF28077677134D7C4A8">
+          <!--71118-->Fixed the way Average Time Spent is calculated when
+			 crossing the v15 upgrade date. The Average Time Spent now displays a weighted
+			 average of the pre-upgrade value and the post-upgrade value instead of the sum
+			 of the two values. 
+		  </li> 
+		  <li id="li_CD3EFBCEADD748959AE8F7260F5B0089">
+          <!--76768-->Fixed an issue that caused values for some large numbers
+			 to be returned as negative numbers in ranked reports in ExcelClient,
+			 ReportBuilder, and in the 
+			 <codeph>Report.GetRankedReport API</codeph>. 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_7D36FB0EF1BC431198A0EF26D2AB35B5"> 
+		<title>SiteCatalyst 14.9 Maintenance Release - June 21 2012</title> 
+		<p>The SiteCatalyst 14.9 maintenance release (06/21/12) includes the
+		  following enhancements and fixes: 
+		</p> 
+		<ul id="ul_3922493E69B64374A86CA6A9A9AC9795"> 
+		  <li id="li_C20FD7FE27DC4183BB7AF519FE469210">Fixed an issue that cause
+			 some numeric classifications to display as 0 on reports with multiple metrics. <!--50205-->
+		  </li> 
+		  <li id="li_2A69F8FBA79843F4825717B928437F91">Fixed an issue that cause
+			 shared calendar event names to display incorrectly for some multibyte
+			 languages. <!--72018-->
+		  </li> 
+		  <li id="li_F218FD82D11246AD8B67611356D912F1">Fixed an issue in 
+			 <wintitle>Data Extract</wintitle> that prevented selecting Referring
+			 Domains when Specific was selected. <!--77301-->
+		  </li> 
+		  <li id="li_E521E1ACE3EF4D7E9CCD6ABA60E7C90B">Fixed an issue that caused
+			 commerce breakdowns to erroneously appear on prop reports. These breakdowns no
+			 longer appear. <!--46301-->
+		  </li> 
+		  <li id="li_67E7FCFD744D43089E08101AF1FA4CBD">Fixed an issue in trended
+			 reports that might prevent selecting pages other than the default top 5 pages. <!--73288-->
+		  </li> 
+		  <li id="li_310FF718B2DC480AA311B66839EEEBF1">Classifications on all
+			 Conversion Funnels (Cart Conversion Funnel, Purchase Conversion Funnel, Custom
+			 Events Funnel, Campaign Conversion Funnel, Products Conversion Funnel, etc.)
+			 Report filter now have the parent variable appended in parentheses to make it
+			 easier to differentiate between classifications. <!--57406-->. 
+		  </li> 
+		  <li id="li_4D6056F9F28E4441ACCA4C39E45DB75B">Fixed an issue that caused
+			 custom Marketing Channel Processing Rules that define SearchCenter to be
+			 locked. After this fix only the default SearchCenter rule is locked. <!--60759
+-->
+		  </li> 
+		  <li id="li_482B67DE5A5E4BBE8DA9B52CC31228AF">Fixed an issue in group
+			 management in Admin Console that caused removing a single group member to
+			 remove all members after locating the user though search. <!--73206 -->
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_7259A4690F884F88A5053B91C6FC2851"> 
+		<title>SiteCatalyst 14.9 Maintenance Release - May 31 2012</title> 
+		<p>The SiteCatalyst 14.9 maintenance release (05/31/12) includes the
+		  following enhancements and fixes: 
+		</p> 
+		<ul id="ul_D6D2A00898F64E36B252AB3F831EB7E7"> 
+		  <li id="li_59F1A5ED5A36472AA970CC0C91F1FA0F">Added a new calendar
+			 preset of Last 13 Months.
+<!--46235-->
+		  </li> 
+		  <li id="li_E1F1A90ECA644B4F81137C22FEDB9C2D">Fixed an issue that
+			 prevented non-admins from viewing some pathing reports when they were granted
+			 permissions. <!--58416-->
+		  </li> 
+		  <li id="li_C76F793A6ED445C9B9DBFCF485836B68"> Updated dashboard and PDF
+			 rendering in v14 so that large values would no longer be truncated using
+			 scientific notation. <!--388121-->
+		  </li> 
+		  <li id="li_329DFB32EB0241EFBE73C2FA238C67F4">Fixed an issue that caused
+			 the wrong Custom Insight variable to be displayed in the 
+			 <wintitle>Videos</wintitle> menu of SiteCatalyst. The displayed
+			 variable now matches the variable selected in Edit Settings &gt; Video
+			 Management &gt; Video Reporting. 
+			 <!--74253-->
+		  </li> 
+		  <li id="li_2EE24E20609E48F487F8E5BF3D92A2D6"> 
+			 <wintitle> Names on Shared Calendar Events</wintitle> are now
+			 truncated if they if it exceed 50 bytes, and a warning is displayed if the
+			 event name exceeds this limit. This fix prevents these names from displaying
+			 incorrectly after creation. If you have encountered this issue for an existing
+			 event, you need to update the name. <!--72018-->
+		  </li> 
+		  <li id="li_797CC34BF8414B388EA775192B2E060A">Fixed an error that
+			 prevented some pages from being removed using the Remove Pages feature in Admin
+			 Console. <!--67453-->
+		  </li> 
+		  <li id="li_69F4AC8261574E458C973F558C2DF893">Optimized downloading of
+			 Excel report suites to prevent timeouts. <!--59256-->
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_591921F6A90D4287AABCB70708AC21AE"> 
+		<title>SiteCatalyst 14.9 Maintenance Release - April 26 2012</title> 
+		<p>The SiteCatalyst 14.9 maintenance release (04/26/2012) includes the
+		  following enhancements and fixes: 
+		</p> 
+		<ul id="ul_B7FB65D89B314176AB0117BDECD662F8"> 
+		  <li id="li_8A59C9FA1C26400E968AC00EE0C5C7D7">The change described in
+			 the SiteCatalyst 15 new features section, 
+			 <i>Improved Reporting Reporting Limits for Monthly Unique Values</i>,
+			 also applies to SiteCatalyst 14. 
+		  </li> 
+		  <li id="li_22D5F5A035C14B089BF8D4F6B0E21AB7">Fixed an issue that
+			 prevented sorting by change when using the compare dates feature. 
+		  <!--73672-->
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_51B0AFE974C04E1CB93FCD818A62B2BC"> 
+		<title>SiteCatalyst 14.9 Maintenance Release - March 29 2012</title> 
+		<p>The SiteCatalyst 14.9 maintenance release (03/29/2012) includes the
+		  following enhancements and fixes: 
+		</p> 
+		<ul id="ul_EE1B61BBAA5641179E803C3DE2092A2E"> 
+		  <li id="li_405FAA9E9274458B8F0110ADB8414EFB">Fixed an issue that
+			 prevented some non-admin users that belong to custom groups to see an error
+			 when trying to access the 
+			 <wintitle>Exclude by IP</wintitle> page. <!--74621-->
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_EF7EEAD893304D74B298725FD693699B"> 
+		<title>SiteCatalyst 14.9 Maintenance Release - February 23 2012</title> 
+		<p>The SiteCatalyst 14.9 maintenance release (02/23/12) includes the
+		  following enhancements and fixes: 
+		</p> 
+		<ul id="ul_388987AE678F4CD1A696779AB243852E"> 
+		  <li id="li_DED9AFB2A6CF44BC94197DA02BD08DCD">Fixed an issue that caused
+			 the trend line in the 
+			 <wintitle>Unique Visitor Report</wintitle> to display incorrectly.  <!--73752-->
+		  </li> 
+		  <li id="li_C9E09E8B0D6B4DFE8F87F764DBC1B61E">Fixed an issue in Admin
+			 Console that prevented calculated metrics that combine total visits or total
+			 visitors with commerce metrics from being created or edited. <!--61446--><!--72638--><!--73025-->
+		  </li> 
+		  <li id="li_7B2E74EDFA9A49A389615999CC070E03">Fixed an issue that
+			 prevented data extracts from completing successfully if the report name or
+			 variable contains an apostrophe. <!--74099-->
+		  </li> 
+		  <li id="li_ED1588BFE04B4C7A99FF00161031050B">When filtering report
+			 data, "-none" filters line items that match "none" and "unspecified", as well
+			 as the translated equivalent to "none" and "unspecified". The translated
+			 equivalent to "none" and "unspecified" filter only line items that match the
+			 translated string. This change resolved an issue where translated equivalents
+			 could not be used to filter these items.<!--73726-->
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_C643A8E69C104F519CA4286AD5BA1A5A"> 
+		<title>SiteCatalyst 14.9 Maintenance Release - January 19 2012</title> 
+		<p>The SiteCatalyst 14.9 maintenance release (01/19/12) includes the
+		  following fixes: 
+		</p> 
+		<ul id="ul_6A7698E6A62B4B9D9DDBC028040B69B3"> 
+		  <li id="li_DD8A3730B0224A6482690F1E15E208F0"> Fixed an issue where
+			 orders added to merchandising eVars were not being de-duplicated properly. The
+			 calculation now matches SiteCatalyst 15. 
+		  </li> 
+		  <li id="li_3120FF5C9EE8443893A227283A890ED7">Fixed an issue that
+			 prevented some 
+			 <wintitle>SearchCenter</wintitle> reports from being sent via email. 
+		  </li> 
+		  <li id="li_43E36CAFD0C9438C93E6EF501EFB5F29">Fixed an issue that caused
+			 some calculated metrics that contain Visits or Visitors from being displayed in
+			 the drop down on the 
+			 <wintitle>Pages Report</wintitle>. 
+		  </li> 
+		  <li id="li_115351728D1D42BEB4FDE4DC9E6E91F7">Fixed an issue that
+			 prevented email delivery of some 
+			 <wintitle>ReportBuilder</wintitle> and 
+			 <wintitle>ExcelClient</wintitle> reports from being generated from
+			 large publishing lists. 
+		  </li> 
+		  <li id="li_E3410D7558FB4C8C9C2FD15FCFCE6CE1">Fixed an issue that caused
+			 some legacy dashboard reports to be sent using email when FTP was selected. 
+		  </li> 
+		  <li id="li_EA2E48E4CC75411080AD24AA4FA1289E">Updated the SAINT log to
+			 show the default variable name in parenthesis in the log file. 
+		  </li> 
+		  <li id="li_AE149A5E7B3144828C82E230C6125396">Fixed the 
+			 <wintitle>Quarterly Unique Customers Report</wintitle> to display the
+			 correct data. 
+		  </li> 
+		  <li id="li_EA48284DE8F046579E09CFFBE8024949">Fixed an issue that
+			 prevented participation metrics from displaying on the 
+			 <wintitle>Keyword Paid Report</wintitle>. 
+		  </li> 
+		  <li id="li_0BE207744DA247C5A16A394ACF9FA325">Fixed an issue using
+			 report suites names that contain multi-byte characters in
+			 SiteCatalystVisualize. The latest version is available in the iTunes App Store.
+			 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_361D3F23D9E94178BC719E705B973E6C"> 
+		<title>SiteCatalyst 14.9 Maintenance Release - November 3 2011</title> 
+		<p> 
+		  <b>Keyword Reporting Change</b> 
+		</p> 
+		<p>The line item 
+		  <term>Keyword Unavailable</term> will begin displaying in all
+		  applications that run Keyword reports, including: 
+		</p> 
+		<ul id="ul_0E03476CF1264E58B75964F5457568DA"> 
+		  <li id="li_D8D4FB811EF3453AA64098F698A6BC64"> 
+			 <wintitle>Search Keywords - Natural</wintitle> 
+		  </li> 
+		  <li id="li_986C04985A124B809D0A0DD00EE1A17A"> 
+			 <wintitle>Search Keywords - All</wintitle> 
+		  </li> 
+		  <li id="li_347C6BB9B4324090A717372D58A17A21"> 
+			 <wintitle>Search Keywords</wintitle> (DataWarehouse) 
+		  </li> 
+		  <li id="li_A36AD14539364414ADC095A8E1EFBC5D"> 
+			 <wintitle>Marketing Channel</wintitle> Detail Reports
+			 (<wintitle>First Touch</wintitle> and 
+			 <wintitle>Last Touch</wintitle>) 
+		  </li> 
+		  <li id="li_9C8DD8EF85B24624899C86B7F48FC087"> 
+			 <wintitle>Organic to Paid Keyword</wintitle> (SearchCenter) 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_F23C87840D804B7FBC5D462F3BE58879"> 
+		<title>SiteCatalyst 14.9 Maintenance Release - October 7 2011</title> 
+		<p>The following fixes and features apply to this maintenance release: 
+		</p> 
+		<ul id="ul_3DD9651741414E3F91073C3A2D906755"> 
+		  <li id="li_11AB0A9D2E9C40C2B404BA2CA9E53617"> 
+			 <b> 
+				<wintitle>Device Type Report</wintitle> 
+			 </b>: Quickly view details about the mobile phones, tablets,
+			 eReaders, and gaming consoles that access your site. 
+		  </li> 
+		  <li id="li_C0D7B0C672774F268A5CE5EDD0D2591A">Fixed an issue that caused
+			 a SAINT export file to return an export file for each report suite. SAINT now
+			 returns one export file per import. 
+		  </li> 
+		  <li id="li_AC40362D044941E1A392C6F190FFE75C"> Added functionality to
+			 allow newline characters in SAINT export files. This is enabled by selecting
+			 the 
+			 <uicontrol>Encoding</uicontrol> checkbox on the 
+			 <wintitle>Browser Export</wintitle> page. 
+		  </li> 
+		  <li id="li_3EB257AA808549C485F9BF69984E98AA">Fixed an issue that caused
+			 custom reports to stop working after the user session ended. 
+		  </li> 
+		  <li id="li_78EC7EB22351442E826412CBD4116271">The "none" category was
+			 renamed to "non-mobile" on 
+			 <wintitle>Mobile Reports</wintitle>. 
+		  </li> 
+		  <li id="li_296E9A458150432E94C49EE3C1A5F744">Fixed an issue that caused
+			 0 to be returned for lifetime metrics on the 
+			 <wintitle>Marketing Channel Report</wintitle>. 
+		  </li> 
+		  <li id="li_E0DB3626765640408318A0EEE4917389">Fixed an issue in
+			 ReportBuilder that caused a pages subrelation breakdown by a commerce variable
+			 to return no data. 
+		  </li> 
+		  <li id="li_A20A9A842DDA47A992BA342B080EB4FD">Fixed the currency sign in
+			 downloadable and scheduled reports to match the currency selected for the
+			 report suite. 
+		  </li> 
+		  <li id="li_6F54E00655214C049A764F1347ACA977">Updated the Saint API to
+			 correctly handle report suites with uppercase characters. These reports suites
+			 were returning an access denied message for some calls. 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_97A1B16087E04A859E965F453526F21C"> 
+		<title>SiteCatalyst 14.9 Maintenance Release - September 2011</title> 
+		<ul id="ul_7F66DD4D26634EFC86B80E98DE17C12C"> 
+		  <li id="li_6A2C4525C55A448D9E5A9AC97D86C99D">Fixed an issue that caused
+			 Report API requests to fail or to not return results. 
+		  </li> 
+		  <li id="li_1FC5247CE4DE4DA89FA78A1818453FA6">Fixed an issue that caused
+			 the Report API to return an "Invalid Element" error when requesting
+			 classifications for some elements. 
+		  </li> 
+		  <li id="li_CAFEF39040254C27AAEDB5DBC191731D">Fixed an issue that
+			 prevented Daily Unique Visitors from displaying on CustomTraffic variables when
+			 the name contains a hyphen. 
+		  </li> 
+		  <li id="li_0C67D3B9BB23420EB31B76544DF07ADF">Fixed an issue that caused
+			 the time zone offset for the report suite to not apply if you schedule a
+			 bookmark to be sent via email. 
+		  </li> 
+		  <li id="li_EFDE9059BFF9421A9FD52F2EAC3CCAB9">Fixed an issue that
+			 prevented roll-up report suites from displaying the Daily and Monthly Unique
+			 Visitors as individual line items. 
+		  </li> 
+		  <li id="li_08FBB30D5B424D8E9BFC71563FA23508">Fixed an issue that
+			 prevented traffic-only report suites from viewing the 
+			 <wintitle>Natural Search Engines</wintitle> and 
+			 <wintitle>Paid Search Engines</wintitle> reports. 
+		  </li> 
+		  <li id="li_6F244FE75C924CC0A42785535694D220">Updated the 
+			 <wintitle>Pages Report</wintitle> to display Visits as an available
+			 metric when breaking down by an eCommerce variable. 
+		  </li> 
+		  <li id="li_5A2E8AA8779747989430BC40DBC7D255">Fixed an issue that
+			 prevented results from being found when applying advanced filters to the 
+			 <wintitle>Customer Loyalty Report</wintitle> broken down by the 
+			 <wintitle>Search Engine Natural Report</wintitle>. 
+		  </li> 
+		  <li id="li_E0F4D97116ED4881A31978C667313308">Fixed an issue in
+			 ReportBuilder that caused an error while trending large numbers of items (20+).
+			 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_F57F87504CAB4DA1AD76569841511DE2"> 
+		<title> SiteCatalyst 14.9 Maintenance Release - August 2011</title> 
+		<p> 
+		<ul id="ul_8AA4B6323ABF41BD981891346346375E"> 
+		  <li id="li_A180EE7575564AE99D3141A8176124A5">In SAINT Classifications,
+			 we added the ability to use the pound sign (#) as the first character of a key
+			 after the header row. This change prevents the text after the pound sign from
+			 being commented out of the report. 
+		  </li> 
+		  <li id="li_036CC6814572486F8310C677B135B112">Fixed an issue where
+			 trended 
+			 <wintitle>Previous Page</wintitle> and 
+			 <wintitle>Next Page</wintitle> path reports were not displaying data.
+			 
+		  </li> 
+		  <li id="li_223513D58E144EB4B85D13ACFC997858">Fixed an issue in
+			 ReportBuilder, where breakdowns by a classification were working
+			 intermittently. 
+		  </li> 
+		</ul> 
+		</p> 
+	 </section> 
+	 <section id="section_A65ABEAFDA1A47FEB8838253913B26A0"> 
+		<title> SiteCatalyst 14.9 Maintenance Release - July 14 2011</title> 
+		<p> 
+		<ul id="ul_67D9DD185C0D4729AEF1B4998E7F7778"> 
+		  <li id="li_3EB2A4A4A8024DC68055FD0C95224F1A">Reverted changes to Single
+			 Sign-On v.1 made in the last maintenance release, which prevented clients from
+			 logging in. 
+		  </li> 
+		  <li id="li_5B34AA4A033F4C709ED313CBCF6A6ABA">Fixed an issue causing the
+			 SAINT export to fail for specific clients using a high volume of
+			 classifications. 
+		  </li> 
+		  <li id="li_2CFF022E1AA34B11A2B216FA99B7D154">Updated the lookup table
+			 to properly locate Newfoundland as a region. 
+		  </li> 
+		  <li id="li_F31BD91B35604F55A4D165E96B08812A"> Fixed a JavaScript error
+			 in ExcelClient, specific to Internet Explorer 9. 
+		  </li> 
+		  <li id="li_B290A47EB65A440C8A9625C99CF6DCA6"> ClickMap is now
+			 compatible with Firefox 5. 
+		  </li> 
+		</ul> 
+		</p> 
+	 </section> 
+	 <section id="section_FE7D1884F7DA456089EDCF3125AFD744"> 
+		<title> SiteCatalyst 14.9 Maintenance Release - June 2 2011</title> 
+		<p> 
+		<ul id="ul_7C7748BDDDEF4904AA089D5BBDCD5A77"> 
+		  <li id="li_800BFF2EF6424F76873A10B95B0B2779"> Fixed header display
+			 issues between SiteCatalyst versions 14 and 15 when launching Genesis. 
+		  </li> 
+		  <li id="li_B14C370FCE3D4E668BA1D04A2C324801">In the CSV file format, we
+			 fixed an issue causing a character display problem for dates with commas, where
+			 the character separator was not properly escaped. Additionally, you can specify
+			 a different character separator for CSV files in 
+			 <uicontrol>Favorites</uicontrol> &gt; 
+			 <uicontrol>Report Settings</uicontrol>. 
+		  </li> 
+		  <li id="li_9E911120198043728BCEF05F7873A305">Fixed the product links in
+			 Search&amp;Promote, which were directing to SiteCatalyst instead of specific
+			 products. 
+		  </li> 
+		  <li id="li_49D041D983F145948D6403DACCEE01F0">Fixed a case sensitivity
+			 issue in Classifications on specific report suite IDs. 
+		  </li> 
+		  <li id="li_9078DB962DEC48319C07B1F764576678"> In Video reporting, fixed
+			 the formatting for time periods greater than 24 hours. 
+		  </li> 
+		  <li id="li_868A3CF5605A41A1AC4198923A3BA5E0">Fixed an issue preventing
+			 the ability to override a bookmark. 
+		  </li> 
+		  <li id="li_FD668C4C657E43CABAC683F7B7135339">Fixed an Event Type
+			 filtering issue in the Usage and Access Logs. 
+		  </li> 
+		  <li id="li_EF8BD416F92648A9A35E6A0BBF803854">Fixed an issue on Previous
+			 and Next Page Flow reports that were displaying boxes in Excel, rather than
+			 Japanese characters. 
+		  </li> 
+		  <li id="li_EB6E244D4DF74248A06F60213C9F1335"> Fixed a Custom Calendar
+			 validation issue occurring when moving to a Custom Calendar. The error message
+			 was displaying "The Calendar Type -1 is not a valid option." The Custom
+			 Calendar is now properly saved. 
+		  </li> 
+		  <li id="li_FA270B4CBC9E4DA5AE6A4D624E39E0E0"> Fixed bookmarked
+			 subrelation reports that were not rendering properly in PDF. 
+		  </li> 
+		  <li id="li_535FFB9D878743EF90B691B39337A705"> Fixed an issue in certain
+			 Visits reportlets, which were returning no data when data was available. This
+			 fix ensures that the granularity is valid before running the report. 
+		  </li> 
+		</ul> 
+		</p> 
+		<p> 
+		  <b>DataWarehouse</b> 
+		</p> 
+		<p> 
+		<ul id="ul_4411890C33034E54B9B5DB0A6F5B1384"> 
+		  <li id="li_FEC0B87AB5FF4CCB9DD5BE0E2C39B041"> Enabled improved Data
+			 Warehouse VISTA processing for most report suites. This change makes Data
+			 Warehouse reports using VISTA run much faster. In addition, the change provides
+			 better data consistency and enables SiteCatalyst 15 processing rules to be
+			 reflected in DataWarehouse reports. 
+		  </li> 
+		  <li id="li_22BCE0EBF3DD4A81B5A1AD40E7B55AB0">Added support for the
+			 following segment operators: 
+			 <ul id="ul_6E642EC21B604EEA8C6377CDFCC7C623"> 
+				<li id="li_BB8EC7C320DA461CB5D6153F1D619074"> Starts with 
+				</li> 
+				<li id="li_44A1E3A2C2B94048956FB9267B1B7C48"> Does not start with 
+				</li> 
+				<li id="li_B8AFBD6A36494F849EC1D8E3F92660D8">Ends with 
+				</li> 
+				<li id="li_5DE218A1ADBA42BA9B5B93738EEFC1B7"> Does not end with 
+				</li> 
+			 </ul> 
+		  </li> 
+		  <li id="li_80D6608EC5944FF3BF1A683E9A0D232A">Added support for list
+			 prop reporting. 
+		  </li> 
+		  <li id="li_FD80521F3B4B4E789DF72C60895EFAE4"> Added support for
+			 prop51-prop75 and eVar51-eVar75 to ASI. 
+		  </li> 
+		  <li id="li_F37DB618D42B46C2B92C676126556AEC"> Fixed an issue where
+			 visit-based segments on merchandising eVars were not working. 
+		  </li> 
+		  <li id="li_CB488EC38D904B2C91C3E592F43CA766">Fixed an issue where
+			 multiple breakdowns from the same List Var (including Survey and T&amp;T) were
+			 not working properly. 
+		  </li> 
+		  <li id="li_61C530A834F64F61B70BC294FCF3E476"> Fixed an issue where
+			 running a report using any of the new props and eVars (51-75) on a date range
+			 prior to when those props and eVars were available would return unpredictable
+			 results. 
+		  </li> 
+		  <li id="li_F36BA9DA10E343D0938EC5CCEDFC6A70"> Fixed an issue where
+			 certain conditions could cause DataWarehouse jobs to fail. 
+		  </li> 
+		</ul> 
+		</p> 
+	 </section> 
+	 <section id="section_AB3384B24B1549B3A5465094E37F6BD2"> 
+		<title> SiteCatalyst 14.9 Maintenance Release - May 5 2011</title> 
+		<p> 
+		<ul id="ul_72B3A0038E834C10BAB3B22EF09C9D20"> 
+		  <li id="li_7E599E0894794DA8BDCF586930D5E1CB"> 
+			 <p>Fixed an issue preventing a new bookmark or dashboard from
+				displaying properly on the Publishing toolbar. 
+			 </p> 
+		  </li> 
+		  <li id="li_FE6CF261D8744D9AAC6FBCA0BFEE5555"> 
+			 <p>Fixed an issue preventing authentication to Discover when
+				launching it from a report. 
+			 </p> 
+		  </li> 
+		  <li id="li_DB8B25AFFF3241C7B6449278B014D36C"> 
+			 <p>Fixed an issue causing bookmarks to be duplicated rather than
+				overwritten when you save over the original bookmark. 
+			 </p> 
+		  </li> 
+		  <li id="li_C3080E2421C347A6939F75F9B70D52DD"> 
+			 <p>Improved performance of SAINT page loading when a report suite has
+				a large number of classifications. 
+			 </p> 
+		  </li> 
+		  <li id="li_9DB4D40D07C24668A9BFFEAFE581D57E"> 
+			 <p>Fixed a permission issue where a Compare to Site reportlet that
+				was pulled from a shared dashboard displayed restricted site information. 
+			 </p> 
+		  </li> 
+		  <li id="li_F2BD3AEFC1DA46F49D622F46D8E777E1"> 
+			 <p>Fixed multibyte character issue in the Update message when editing
+				full report from a dashboard. 
+			 </p> 
+		  </li> 
+		  <li id="li_44CB20D5E49B497DABC68BE9E963E4E2"> 
+			 <p>Fixed issue causing legacy dashboards to fail in Excel if a
+				platform mismatch existed. 
+			 </p> 
+		  </li> 
+		  <li id="li_549DE8E6C18C496CBEF507850DA6CD00"> 
+			 <p>Fixed a dashboard PDF download issue occurring for dashboards that
+				contain a Page Summary reportlet. 
+			 </p> 
+		  </li> 
+		  <li id="li_4BB7AD503CFC4B9A91874B627FD850AC"> 
+			 <p>In the Referring Domains report, on the Referring Domains Details
+				(displays after you click the magnifying glass) that shows the referrers were
+				returning zeros, because the wrong metric ID was being used. 
+			 </p> 
+		  </li> 
+		  <li id="li_5BA2D36F1C44412597B316686D77B6CE"> 
+			 <p>Fixed garbled string issue in the language selector in the
+				Advanced Download Options. 
+			 </p> 
+		  </li> 
+		  <li id="li_E0EF1B8B7A864AEF9BBB0B2C9642D034"> 
+			 <p>Added a page title to the Account Activity report. 
+			 </p> 
+		  </li> 
+		  <li id="li_50C0D7B696184BAF8389D15682872D28"> 
+			 <p>The Custom Pathing menu was not showing up properly in the Menu
+				Customization page in the Admin Console 
+			 </p> 
+		  </li> 
+		  <li id="li_397AE4EC9C1C4269988030DA8A806A98"> 
+			 <p>Fixed a text wrap issue in the left navigation menu, if custom
+				names included underscores with no breaks. 
+			 </p> 
+		  </li> 
+		  <li id="li_24BFA1D0D95644D8BDAF5C8F5BF5E67D"> 
+			 <p>Widened the calendar cells for the Year view to make better use of
+				white space. 
+			 </p> 
+		  </li> 
+		  <li id="li_782248B3B18C41E29CA5453BB9CC1688"> 
+			 <p>Fixed the Search field to remember search criteria after clicking
+				outside the Search field. 
+			 </p> 
+		  </li> 
+		  <li id="li_6FE0C23F7675410DA4DC4D26116FF013"> 
+			 <p>Fixed an Admin Console (report suite manager) issue causing an
+				error occurring when downloading multiple report suites in Excel format. 
+			 </p> 
+		  </li> 
+		</ul> 
+		</p> 
+	 </section>
+    <!--<section id="section_B23D1F12AA9447DE94F81C840708C5B1"> 
+		<title>SiteCatalyst 14.9 Maintenance Release - April 7
+		  2011</title> 
+		<p><b>New Suite Header</b> 
+		</p> 
+		<p>The Suite header in 14.9 has taken the look and feel of 
+		  SiteCatalyst 15. To access Suite products, click 
+		  <uicontrol>Adobe Marketing Cloud</uicontrol>: 
+		</p> 
+		<p><image id="image_8ECCE84535F74A11A10BCD1620FB05B8" href="graphics/suite_product_access.png" placement="inline"></image> 
+		</p> 
+		<p>The 
+		  <uicontrol>Notices</uicontrol> link displays product announcements, and
+		  
+		  <uicontrol>Help</uicontrol> &gt; 
+		  <uicontrol>What's New</uicontrol> provides quick access to the latest
+		  release notes: 
+		</p> 
+		<p><image id="image_F102BE1DE21E4BE4B87CCBA7284F57D4" href="graphics/suite_header.png" placement="inline"></image> 
+		</p> 
+		<p><b>Marketing Channels</b> 
+		</p> 
+		<p>We added the 
+		  <uicontrol>Override Last-Touch Channel</uicontrol> option in the 
+		  <wintitle>Marketing Channel Manager</wintitle>: 
+		</p> 
+		<p><image placement="inline" href="graphics/override_channel.png" id="image_B59F13F6774248CBAE342C38DE7D667A"><?xm-replace_text Paragraph?></image>
+		  
+		</p> 
+		<p>You can choose whether to override an existing, persistent last-touch
+		  channel with the selected channel. If you clear this checkbox, any channel
+		  (including Direct and Internal) would override an existing last-touch channel,
+		  resulting in conversion being attributed to a channel that might not deserve
+		  credit. For example, this option can ensure that the Direct channel does not
+		  receive credit for conversion if the user had previously been acquired via the 
+		  <uicontrol>Natural Search</uicontrol> channel. 
+		</p> 
+		<p><b>Fixes</b> 
+		<ul id="ul_85A04299FCB143628CF58DC32D74C5EE"> 
+		  <li id="li_40C2000325DC4F558CC440F83FD839F2"> 
+			 <p>Fixed an issue preventing the First Touch, First Touch Detail,
+				Last Touch and Last Touch Detail reports from displaying in the 
+				<uicontrol>Marketing Channel</uicontrol> menu for all e-commerce
+				customers. 
+			 </p> 
+		  </li> 
+		  <li id="li_F4AA34C39A864381BAA93FAC40AB4CA0"> 
+			 <p>Fixed a classification hierarchy issue occurring between the First
+				Touch and Last Touch Marketing Channels. 
+			 </p> 
+		  </li> 
+		  <li id="li_CB1EFE2A536848509061C65E4AC98416"> 
+			 <p> Fixed the Report API, which returned an incorrect value for 
+				<i>infinity</i> when creating a calculated metric with 0 as the
+				denominator. 
+			 </p> 
+		  </li> 
+		  <li id="li_8628E3CE7ADA41B4BAC52C880CA8027D"> 
+			 <p>Fixed an issue that prevented daily or trended views from
+				displaying in roll-up report suites. 
+			 </p> 
+		  </li> 
+		  <li id="li_6C8D791239284FC9B776ADD27CE79531"> 
+			 <p>Fixed an issue that prevented reports with mixed-case RSIDs from
+				being displayed in the mobile web interface, the SiteCatalyst reporting widget,
+				and the publishing widget. 
+			 </p> 
+		  </li> 
+		  <li id="li_AE3DA6DE4FFB47EB90B85D56BBF22B1E"> 
+			 <p>Fixed an issue preventing dashboards from being properly added to
+				the Publishing Widget. 
+			 </p> 
+		  </li> 
+		  <li id="li_3B156AF316B440E1AA482B596C8CBC99"> 
+			 <p>Added the ability to see how many API tokens were used
+				historically. (Contact ClientCare for this information.) 
+			 </p> 
+		  </li> 
+		  <li id="li_CBB6A120AC5A4E889DA742122292FA30"> 
+			 <p>Fixed a header alignment issue with calculated metrics, when
+				viewing a column in downloaded CSV format. 
+			 </p> 
+		  </li> 
+		  <li id="li_66AF3128D53C4650963F70741088F88C"> 
+			 <p>Improved security on the Admin Console and the Login page, as a
+				result of an internal security audit. 
+			 </p> 
+		  </li> 
+		  <li id="li_8B25ECD7889D470DB9EF3573D563336C"> 
+			 <p>Fixed the 
+				<uicontrol>Read More</uicontrol> link to enable access to the
+				Knowledge Base. 
+			 </p> 
+		  </li> 
+		  <li id="li_C8F683BFDE144B9F97DB4A0037A7FC3A"> 
+			 <p>Fixed a search issue that prevented the search string from passing
+				from 
+				SiteCatalysth to the Knowledge Base, resulting
+				in no results. 
+			 </p> 
+		  </li> 
+		  <li id="li_20A596C64DF44C928F752F9F30961857"> 
+			 <p>Fixed the date format for charts in Month granularity in the
+				Custom Calendar, which could cause the calendar to be off by one day. 
+			 </p> 
+		  </li> 
+		  <li id="li_4B1A638A577C41E481B9E0E91B2C1785"> 
+			 <p>Fixed the form titles 
+				<wintitle>Advanced Download Options</wintitle> and 
+				<wintitle>Advanced Delivery Options</wintitle> to display in proper
+				context. 
+			 </p> 
+		  </li> 
+		  <li id="li_81D553168E8D4CFCA50A053DD5F5B7FB"> 
+			 <p>Fixed an issue causing the 
+				<wintitle>Login</wintitle> page to display after clicking 
+				<uicontrol>Help.</uicontrol> 
+			 </p> 
+		  </li> 
+		  <li id="li_42456D33C06E4B42B69D2BD11A711AAD"> 
+			 <p>Fixed a report name display issue for multibyte characters on the
+				iPhone. 
+			 </p> 
+		  </li> 
+		  <li id="li_EB1711D8E36243FF9EFDA8C74D9AB522"> 
+			 <p>Changed the Report API to store files greater than 10 mb on disk
+				rather than in the database. This improves performance of large reports
+				accessing the API. 
+			 </p> 
+		  </li> 
+		  <li id="li_A51CFB9005B64D65AAC9A94FBB87770F"> 
+			 <p>Added a notice to reports indicating whether setting up paid
+				search detection is required. 
+			 </p> 
+		  </li> 
+		  <li id="li_C67230E0EE54494D869898856AD7FD71"> 
+			 <p>Fixed the 
+				<wintitle>Traffic Management Overview</wintitle> page in the Admin
+				Console to display multiple, permanent increase requests from different report
+				suites. 
+			 </p> 
+		  </li> 
+		  <li id="li_681276411FAB49EEBFD5B3D5DABFC76E"> 
+			 <p>Fixed a bug that caused Japanese characters to display incorrectly
+				in dashboards when the string contained a garbled character. 
+			 </p> 
+		  </li> 
+		  <li id="li_42C77D09DFF7427D901FBF4C5CFF972E"> 
+			 <p>Fixed a pixel padding and wrap issue in PDF reports. 
+			 </p> 
+		  </li> 
+		  <li id="li_6F7020BB3CBF4E0B9330B1040A16B47C"> 
+			 <p>Fixed an issue preventing you from breaking down a report by 
+				<uicontrol>Search Keywords All</uicontrol>. The fix allows custom
+				report folder items to show up in breakdown menus. 
+			 </p> 
+		  </li> 
+		  <li id="li_0DA72ABB5B1545EAAB600FFE822B7852"> 
+			 <p>Fixed the 
+				<uicontrol>Mobile</uicontrol> &gt; 
+				<uicontrol>Operating Systems</uicontrol> report to show proper
+				operating system names in the Trended view. 
+			 </p> 
+		  </li> 
+		  <li id="li_7B406D167C8C43D28129489E3F7D4C15"> 
+			 <p>Updated SAINT to provide access to Zip Code, and to eVars 51 - 75
+				and props 51 - 75. 
+			 </p> 
+		  </li> 
+		  <li id="li_A3647CA85CA140AC8D00158B4676D4C5"> 
+			 <p>Updated the 
+				<varname>saint.importCreatlJob.API</varname> to list 
+				<varname>export_result</varname> as a required parameter. 
+			 </p> 
+		  </li> 
+		  <li id="li_41D8689080CD4077BAE3A63542BDD65A"> 
+			 <p>Fixed an Admin Console issue that prevented the 
+				<uicontrol>Contact Information</uicontrol> field from being updated
+				when using non English characters. 
+			 </p> 
+		  </li> 
+		  <li id="li_3B2A3F2C9EF54B9586F0323243040CDF"> 
+			 <p>Fixed a case-sensitivity issue in the Admin Console preventing
+				report suites from being added to a report suite group. 
+			 </p> 
+		  </li> 
+		  <li id="li_13C78E596AA341FD915A42BB912EA8AF"> 
+			 <p>Fixed the CSV export to no longer truncate header names. 
+			 </p> 
+		  </li> 
+		  <li id="li_BA3C98720E4444449C8A21BB4FC48623"> 
+			 <p>Fixed an Admin Console issue in 
+				<uicontrol>Edit Settings</uicontrol> &gt; 
+				<uicontrol>General</uicontrol> &gt; 
+				<uicontrol>Customize Menus</uicontrol> that prevented the custom 
+				<uicontrol>Paths</uicontrol> menu from displaying properly on the 
+				<wintitle>Menu Customization</wintitle> page. 
+			 </p> 
+		  </li> 
+		  <li id="li_AE817508EFCD4757ABF4761746814922"> 
+			 <p>Fixed a persistency issue when enabling IP obfuscation for the
+				Download Summary and Account Settings on a report suite. 
+			 </p> 
+		  </li> 
+		  <li id="li_3CE9FEF52EB040E7ADFB15E93F9EC3B4"> 
+			 <p>Fixed an issue that prevented reports from being generated in some
+				Admin Console Traffic Management reports 
+			 </p> 
+		  </li> 
+		  <li id="li_D8419AE011CD43F984DF8C9B30F9FC77"> 
+			 <p>Fixed a link to the Knowledge Base that displayed on the 
+				<wintitle>Scheduled Reports</wintitle> page when a report failed to
+				deliver. 
+			 </p> 
+		  </li> 
+		  <li id="li_4FFEE7B003274FBB952EC9BE69F4F5A2"> 
+			 <p>Fixed the iPhone application to support more display rows (up to
+				40). 
+			 </p> 
+		  </li> 
+		  <li id="li_6AD869F7510C437BA0C99C5BEF2AFA99"> 
+			 <p>Fixed the 
+				<uicontrol>Add Your Notes</uicontrol> option to prevent users from
+				adding notes to reports if this option is deselected.
+				(<uicontrol>Admin</uicontrol> &gt; 
+				<uicontrol>User Management</uicontrol> &gt; 
+				<uicontrol>Groups</uicontrol> &gt; 
+				<uicontrol>Tools</uicontrol> &gt; 
+				<uicontrol>Customize</uicontrol>.) 
+			 </p> 
+		  </li> 
+		  <li id="li_A058BF6A99894053943E8DF7A33A2F48"> 
+			 <p>Fixed the 
+				<uicontrol>Magnifying Glass</uicontrol> icon to display properly on
+				the Browser Width and Browser Height reports in non-English displays. 
+			 </p> 
+		  </li> 
+		  <li id="li_15F021BAAB9342638627F63BC636F802"> 
+			 <p>Added the ability to set an alert on a Target report. 
+			 </p> 
+		  </li> 
+		  <li id="li_12DCD0A61E114D76A6D2C2EEFDCBC8F3"> 
+			 <p>Fixed an issue that caused multibyte characters to display
+				improperly on the 
+				<wintitle>Conversion Classifications</wintitle> page.
+				(<uicontrol>Report Suites</uicontrol> &gt; 
+				<uicontrol>Edit Settings</uicontrol> &gt; 
+				<uicontrol>Conversion</uicontrol> &gt; 
+				<uicontrol>Conversion Classifications</uicontrol>. 
+			 </p> 
+		  </li> 
+		</ul> 
+		</p> 
+	 </section>-->
+<!--<section id="section_87E051325A5D45F2BE36DF83419EC8C4"> 
+		<title>SiteCatalyst 14.9 Maintenance Release - March
+		  17 2011</title> 
+		<p><b>API Tokens</b> (3/28 Update) 
+		</p> 
+		<p>Tokens are used to meter server usage for Adobe Digital Marketing
+		  Cloud platform APIs such as the Reporting API and Administrative APIs. When the
+		  APIs were released, 2,000 complimentary monthly tokens were allocated to each
+		  Login Company. As of the 3/17 release, 10,000 complimentary monthly tokens are
+		  now available for consumption in each Login Company. 
+		</p> 
+		<p><b>Fixes</b> 
+		</p> 
+		<ul id="ul_2E35F346A64D4D05AD2F2F670044A133"> 
+		  <li id="li_CB18AE5D2E4B47B9A9B44B9D3DC1E7A4"> 
+			 <p>Added a link to the Scene7 upsell page from the 
+				<b>More Links</b> menu in the Suite. 
+			 </p> 
+		  </li> 
+		  <li id="li_A5B99307F9D14B71AB3D5C3B8F42B087"> 
+			 <p>Fixed an incomplete data notification issue in which notifications
+				were being sent too frequently. 
+			 </p> 
+		  </li> 
+		  <li id="li_F15A94555BDB49E283ECF75E144846A7"> 
+			 <p>Fixed JavaSript errors displaying in the Calendar. 
+			 </p> 
+		  </li> 
+		  <li id="li_36C1FA8FBC7C486A838ECB7A35F1486F"> 
+			 <p>Fixed a PHP error that was throwing a "Cannot use string offset as
+				an array" message. This fix should allow users to apply granularity to
+				participation metrics in ReportBuilder. 
+			 </p> 
+		  </li> 
+		  <li id="li_0AB8131DCB754257934A2EE95011397B"> 
+			 <p>Fixed an issue in which the Marketing Channel report was not
+				properly classifying eVars. 
+			 </p> 
+		  </li> 
+		  <li id="li_C8148E99620543F3A0168D166725EA90"> 
+			 <p>Fixed an issue in which e-mailed dashboards were displaying
+				internal error codes rather than readable error messages. 
+			 </p> 
+		  </li> 
+		  <li id="li_22E4145362794D57B0A15491E90FCC8A"> 
+			 <p>Fixed an issue preventing users from accessing the Help system in
+				version 13.5. 
+			 </p> 
+		  </li> 
+		  <li id="li_038D06E9869F4DADA3DC6A78DB844E6F"> 
+			 <p>Fixed an iPhone application issue to show the proper number of
+				line items. 
+			 </p> 
+		  </li> 
+		  <li id="li_E99853F2D9E946E9997C9FCB450914CD"> 
+			 <p>Fixed iPhone application issue specific to report names with
+				Japanese characters. 
+			 </p> 
+		  </li> 
+		</ul> 
+		<p><b>DataWarehouse Fixes</b> 
+		</p> 
+		<ul id="ul_ADB30E2D0C6247CA88FD0DF5DF7BC1A5"> 
+		  <li id="li_D1B33FA83D8F4BB7B6190F8ADC928F54"> 
+			 <p>Fixed an issue in which the visits metric might be tallied
+				incorrectly for large DataWarehouse requests. 
+			 </p> 
+		  </li> 
+		  <li id="li_7C8F09BA5BA1419A83FDB66AFF2A5D8B"> 
+			 <p>Fixed an issue in which there were inconsistencies in the
+				compression method used for delivering compressed DataWarehouse requests. 
+			 </p> 
+		  </li> 
+		  <li id="li_D958CA3F0F95455A877A236013D67426"> 
+			 <p>On 1/13/2011, a new method for calculating the Referring Domains
+				breakdown was introduced. Several issues have been reported with this new
+				methodology, so on 3/17/2011 we are rolling back to the previous methodology. 
+			 </p> 
+		  </li> 
+		</ul> 
+	 </section>-->
+<!--<section id="section_938199B803F34CAB80407D288F816894"> 
+		<title>SiteCatalyst 14.9 Maintenance Release -
+		  February 2 2011</title> 
+		<p> 
+		<ul id="ul_8066F711482B494FA52181C641E36581"> 
+		  <li id="li_B50870C0397E4870BCFB6F20BA09AC79"> 
+			 <p><b>Developer Connection 2.0</b>: The new 
+				<xref href="http://developer.omniture.com/" scope="external" format="html">Developer Connection 2.0</xref> is here.
+				Enhancements include: 
+			 </p> 
+			 <p> 
+			 <ul id="ul_6A6415337B564EC4BE9E2B4EE9437AAA"> 
+				<li id="li_6F37C76A9C6047CF829E379DB3E29D25"> 
+				  <p>Improved search enabled by Adobe SiteSearch. 
+				  </p> 
+				</li> 
+				<li id="li_D97FD9016472490D9C1D8BC54EB65F50"> 
+				  <p>On-site optimization using Adobe Test&amp;Target. 
+				  </p> 
+				</li> 
+				<li id="li_120C3BFE89C843F7ABD9F0E81E832CF0"> 
+				  <p>New forums, "hot" trends, and improved navigation. 
+				  </p> 
+				</li> 
+				<li id="li_302B018902834A8C9ABF99DED6D19949"> 
+				  <p>Shared profiles, profile photos, and improved identity
+					 management between Suite accounts and Developer Connection accounts. 
+				  </p> 
+				</li> 
+				<li id="li_52AC3656296749B5BFE6D53354216575"> 
+				  <p>A new Dev Center that simplifies how you build Genesis
+					 integrations for partners and developers. 
+				  </p> 
+				</li> 
+				<li id="li_B97B230BFD0C404682DC01CB4104924A"> 
+				  <p>An advanced (faceted) search and navigation of Code Gallery
+					 submissions. 
+				  </p> 
+				</li> 
+			 </ul> 
+			 </p> 
+		  </li> 
+		  <li id="li_1B3806E04F44471AA867D76B309BBD62"> 
+			 <p><b>Publishing Widgets</b>: You can now create different sizes of
+				Publishing Widgets. To do so: 
+			 </p> 
+			 <ol id="ol_11D1CE4715D24167B3FDA9DEB7B25C64"> 
+				<li id="li_14E757FB98464D7FA19C6306232B1186"> 
+				  <p>Navigate to the Publishing Widgets page (<b>Admin</b> &gt; 
+					 <b>Publishing Widgets</b>). 
+				  </p> 
+				</li> 
+				<li id="li_1BFDF8118D414C6CBC36227298E49E61"> 
+				  <p>Create the widget and click 
+					 <b>Get Code</b>, then change the size by selecting Small,
+					 Medium, or Large. 
+				  </p> 
+				  <p>You can also create a CSS class and assign it to the width and
+					 height border. 
+				  </p> 
+				</li> 
+			 </ol> 
+		  </li> 
+		  <li id="li_CF9FB8D4F6964DE8A7DACCFE052E49E6"> 
+			 <p><b>Calculated metrics</b>: Fixed an issue occurring in dashboards,
+				where error messages indicated that the reportlet did not contain data. We also
+				fixed the Overtime report, where error messages indicated that the report did
+				not contain data. 
+			 </p> 
+		  </li> 
+		  <li id="li_89A37A004F0949C5A194EAC7C74214C8"> 
+			 <p><b>iPhone AppMeasurement</b>: Fixed a memory leak. 
+			 </p> 
+		  </li> 
+		  <li id="li_BEE58F459D6C4A208F59E265E6E6CAD4"> 
+			 <p><b>DataWarehouse</b>: Fixed an issue where DataWarehouse FTP
+				success e-mails did not include all necessary information in the e-mail body. 
+			 </p> 
+		  </li> 
+		  <li id="li_D81F11406FC147AF915B85A4D080EC68"> 
+			 <p><b>DataWarehouse</b>: Fixed an issue where DataWarehouse supported
+				only one instance of a given Counter Event per hit. Now Data Warehouse reports
+				all instances of a Counter Event for each hit, matching SiteCatalyst. 
+			 </p> 
+		  </li> 
+		  <li id="li_5A10844AED454D1E8BDBFFB8FC125FFA"> 
+			 <p><b>DataWarehouse:</b> Improved the way the DataWarehouse populates
+				the Referring Domains report so that it matches the similar SiteCatalyst report
+				exactly for date ranges after this maintenance release. 
+			 </p> 
+		  </li> 
+		  <li id="li_8CE46B90DDD74472A8E9C8B474A4A2BF"> 
+			 <p><b>DataWarehouse</b>: Fixed an API issue where comma-separated
+				e-mail lists were breaking the API call. 
+			 </p> 
+		  </li> 
+		  <li id="li_9556F4608F4E43019CC990F82E8A4520"> 
+			 <p><b>DataWarehouse</b>: Fixed a breakdowns issue that was causing
+				the preset Last 4 Weeks to display as Last 53 Weeks. 
+			 </p> 
+		  </li> 
+		  <li id="li_EB263E6B35324F0D9D43AD74EF6CDE98"> 
+			 <p><b>eVars</b>: Added the Instance Metric for eVars 51 - 75, which
+				were enabled in a previous release. 
+			 </p> 
+		  </li> 
+		  <li id="li_7099C0457AF340559FCC106CFC514635"> 
+			 <p><b>ExcelClient</b>: Fixed a date format issue. 
+			 </p> 
+		  </li> 
+		  <li id="li_3ED9EDE5112E498B8C93E9115FFFAE87"> 
+			 <p><b>ReportBuilder API</b>: Fixed the API to allow Visits and
+				Visitor metrics on breakdowns. 
+			 </p> 
+		  </li> 
+		  <li id="li_BFD0015F667D4CD3A0CFFE83E6DFD5F4"> 
+			 <p><b>ReportBuilder</b>: Fixed filtering for the Typed/Bookmarked
+				line item on the Referring Domains report. 
+			 </p> 
+		  </li> 
+		  <li id="li_79D78BF9926543C2B1886456E3C42CC0"> 
+			 <p>Improved UI caching to increase processing performance. 
+			 </p> 
+		  </li> 
+		  <li id="li_19770C8D495641DE8CD7EDCF98BF8D89"> 
+			 <p>Fixed a case-sensitivity issue for the Username on the Password
+				Recovery page. 
+			 </p> 
+		  </li> 
+		  <li id="li_C90541D0FF234BA4AC7C9FA8512744DF"> 
+			 <p>Fixed a case-sensitivity issue for the Username on the Password
+				Recovery page. 
+			 </p> 
+		  </li> 
+		  <li id="li_781F9DA17DDB4EB2A7C6A11B1CB403A5"> 
+			 <p>Fixed a dashboard name issue occurring in Safari 5.0.2. 
+			 </p> 
+		  </li> 
+		  <li id="li_AD363C4CE84340D1B9C7B1941AC3F122"> 
+			 <p>Added a system error that is issued when number of allowed
+				characters in the Formula field in calculated metrics exceeds 255. 
+			 </p> 
+		  </li> 
+		  <li id="li_4D952AA74B354536B772ECDE5A3A36F9"> 
+			 <p>Fixed a landing page minimize/maximize window issue occurring in
+				the left navigation. 
+			 </p> 
+		  </li> 
+		  <li id="li_151A59C9DEC34CA6B640B195C466525B"> 
+			 <p>Fixed a date range issue occurring in Internet Explorer 8, which
+				caused the first date range selected to change to a random date range. 
+			 </p> 
+		  </li> 
+		  <li id="li_CCA7B4CE5F094BF794B2B9AF1601D6DE"> 
+			 <p>Fixed an issue occurring in Product Conversion Funnel report. The
+				fix now ensures that the label Product View changes to Visits when you apply
+				the Entry Pages filter. 
+			 </p> 
+		  </li> 
+		  <li id="li_A24AACF6BC324AE9AE9091B9CD8C0518"> 
+			 <p>Added a 
+				<b>Download Template</b> link for existing data sources on the 
+				<b>Manage</b> tab in Data Sources. 
+			 </p> 
+		  </li> 
+		</ul> 
+		</p> 
+	 </section>-->
+<!--<section id="section_BE909EEC28654061AE15EDEF0E854A84"> 
+		<title>SiteCatalyst 14.9 Maintenance Release - January
+		  13 2011</title> 
+		<p> 
+		<ul id="ul_50CBD45D53D94ADCB483FB0541552D4B"> 
+		  <li id="li_673CBD32EB134CAEA026FC46A18CD5AC"> Fixed an issue where
+			 segments created in Segment Manager were not showing up in ASI and Discover. 
+		  </li> 
+		  <li id="li_AD917700BC8D446EBA06D84DC1D98D5C">Fixed an issue where users
+			 with traffic spike notification privileges were not allowed to modify the
+			 notifications. 
+		  </li> 
+		  <li id="li_131F9DE9514D473DAF0DA3CF44B4F37D">Fixed an issue in the
+			 Products Conversion funnel where metric labels were incorrect. 
+		  </li> 
+		  <li id="li_B4CCD31FD1E744B698A4CE830D0FAE27">Fixed an issue where
+			 correlations could only be applied in one direction. 
+		  </li> 
+		  <li id="li_499B38104E33443CBECF8DA03365EA68">Fixed an issue with Video
+			 Views of X% where trended and ranked did not show the same value. 
+		  </li> 
+		  <li id="li_B0679C4704B643D9B3AF1DA3727CF49D">Fixed an issue where the
+			 help system for the French locale would not load. 
+		  </li> 
+		  <li id="li_38C6F5EFE4CF4F2ABC4B8DBF4639383A">Fixed an issue where
+			 Numeric 2 classification data would not display unless another metric was
+			 added. 
+		  </li> 
+		  <li id="li_2608B13853BB4B429E1C6C27BDF3D1A9">Fixed an issue where a
+			 search filter was not applied to breakdowns in Data Extract. 
+		  </li> 
+		  <li id="li_8C4D7CCD2DB04BB88CA174602B2E9362">Fixed an issue in the
+			 SAINT API where 
+			 <codeph>Saint.getCompatibilityMetrics</codeph> was case-sensitive. 
+		  </li> 
+		  <li id="li_CC3562EFD12C4DCFB7AC5B7B053AC5CD">Fixed an issue where the
+			 Visits container could not be used in DataWarehouse with the French locale. 
+		  </li> 
+		  <li id="li_16A53A90832742529CD84A9D36160CFD">Fixed an issue where users
+			 could not be removed form the Password Recovery email notification list. 
+		  </li> 
+		  <li id="li_BDFA3EE4112A459DA2D28603D1BB41F5">Fixed Japanese
+			 localization issue on the Import File page for SAINT. 
+		  </li> 
+		  <li id="li_2F2E66F9A93C4EAE9FBD66CB0A14B55D">Fixed an issue where the
+			 "To" and "From" fields in a SAINT export default to December, 1969. 
+		  </li> 
+		  <li id="li_0EFF581F9F0244A98A2A5B6074AB766F">Updated ClickMap to
+			 support FireFox 4. ClickMap keyboard shortcut is now 
+			 <b>Ctrl+Shift+C</b> instead of Ctrl+Alt+C. 
+		  </li> 
+		  <li id="li_F4C3640D746249728EBE8B2F62E69731"> Fixed an issue where
+			 ClickMap did not properly detect setting 
+			 <codeph>s_ObjectID</codeph> by JavaScript rather than in the HTML. 
+		  </li> 
+		</ul> 
+		</p> 
+	 </section>-->
+<!--<section id="section_E90247D972CA4F198E7256668000D926"> 
+		<title>SiteCatalyst 14.9 Maintenance Release -
+		  November 4 2010</title> 
+		<p> 
+		<ul id="ul_0EBCDF94925942E2A6CF95167D948B8C"> 
+		  <li id="li_F597A04249FA434098C528C7DA456345">SiteCatalyst time zone
+			 identification has been improved. This update lets you be more accurate when
+			 assigning the local time zone for your report suite. 
+		  </li> 
+		  <li id="li_FE1C07947CB04DAB8DED7FCE2CEC7080">SAINT now more efficiently
+			 processes files applied to multiple report suites, resulting in reduced
+			 processing time. 
+		  </li> 
+		  <li id="li_8E0D1D57125E4AC4B16B6B018377870B">Fixed an issue when
+			 scheduling a report with advanced delivery in Excel Client. 
+		  </li> 
+		  <li id="li_1C99F96F5C7B41739C52AF93649BA3AD">Fixed an issue where
+			 restricting revenue in SiteCatalyst permissions did not restrict revenue
+			 participation. 
+		  </li> 
+		  <li id="li_214A56E55C994D1F91A98CB347B2246A">Fixed an issue in the menu
+			 customizer where custom insight path variables could not be reset to the
+			 default name. 
+		  </li> 
+		  <li id="li_19E8020F1C204F2E97B5B1AA4B32C3D6">Fixed several issues in
+			 the Excel Client renderer. These fixes are available only in the new renderer
+			 software. You can enable the new renderer in Admin Console (<b>Admin
+				Console</b> &gt; 
+			 <b>Company</b> &gt; 
+			 <b>Preferences</b>, then select the 
+			 <b>Localized</b> version of Excel Renderer and the 
+			 <b>Current Version</b> of CSV renderer). 
+		  </li> 
+		  <li id="li_5251E51E1E144A9ABA7E768912087B64">Fixed an issue in the
+			 Referrer Type report where you could not break down social networks by
+			 Referring Domain (Referrer). 
+		  </li> 
+		  <li id="li_41C171DE31D14289AD3FF79877FB7D0D">Fixed an issue where
+			 SiteCatalyst would not return certain data extracts for multiple report suites.
+			 
+		  </li> 
+		  <li id="li_997E05C1B5094123BAD15381F83000BB">Enabled Participation on
+			 events 51-100. 
+		  </li> 
+		  <li id="li_92275B5BDC214878A7AF70662B0A2E50">Fixed an issue with
+			 drill-down on the Referring Domains so that it correctly supports changing the
+			 number of line items. 
+		  </li> 
+		</ul> 
+		</p> 
+	 </section>-->
+  </conbody> 
+</concept> 

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_52736DBB852B42358239E25DBF865E71">
+  <title>Setting a Product without an Event</title>
+  <shortdesc>Adobe recommends setting an event every time the 
+	 <varname>products</varname> variable is used. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>If omitted, the system tracks a 
+		<wintitle>product view</wintitle> (prodView) event by default.
+	 </p>
+  </conbody>
+</concept>

@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_E09565C188AD44DF9EAC6F64C3433A6A">
+  <title>Video Metrics</title>
+  <shortdesc>This section describes the metrics available to measure video. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>media</keyword>
+        <keyword>milestone</keyword>
+        <keyword>sdk</keyword>
+        <keyword>video</keyword>
+      </keywords>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <section id="section_9BE0D197A2FF4684903618BA147A0AA5">
+      <title>Measuring Video Views and Time Played</title>
+      <p>A basic implementation tracks video views and time played by sending a
+		  server call when a video is opened and closed. For a complete view, this
+		  results in a call when the video is opened and when it is closed. 
+		</p>
+      <image id="image_079283AED968443BA74F56629A092B94" href="graphics/basic-hit.png"></image>
+      <p>This provides the data to track total views (a view event is sent on
+		  video open) and time viewed (the total time viewed is sent on close). 
+		</p>
+      <p>When data is sent, the time viewed tracks total time spent viewing a
+		  video. It does not track how much of the video a visitor views. It does not
+		  distinguish between viewing the file from beginning to end, and replaying a
+		  portion of the video multiple times. 
+		</p>
+      <p>This works for shorter video clips and when you are mostly interested
+		  in total views. To gain addition insights, you can divide a video into segments
+		  and track key milestones (such as complete views). 
+		</p>
+    </section>
+    <section id="section_B9AA10144DD24730B12D824C33CFDBE8">
+      <title>Measuring Video Segments</title>
+      <p>Segments let you divide an individual video into multiple parts for
+		  measurement purposes. This can provide a more granular view of how a particular
+		  video is being viewed and help you track video fall out. If you have mostly 30
+		  or 60-second clips, you might not need segments. However, if you are measuring
+		  a sporting event, you might be very interested in comparing video data in the
+		  first quarter to video data in the fourth quarter. 
+		</p>
+      <p>See the 
+		  <xref href="video_reports_detail.xml#concept_EECB113D93F74ECCA4C440339C85B958" type="concept" format="dita" scope="local"><?xm-replace_text Video Detail Report?></xref>
+		  to see how segment data is used to provide video insights. 
+		</p>
+    </section>
+    <section id="section_A44D093838274956824E1C15B27EC32A">
+      <title>Measuring Key Milestones</title>
+      <p>Milestones let you measure when a specific location in a video is
+		  viewed. When a milestone is viewed a server call is sent containing the
+		  milestone event defined for that milestone. Milestones are defined as a
+		  percentage of total video length. Each milestones is tracked using a custom
+		  event. You need to select a custom event for each milestone you want to track. 
+		</p>
+      <p>If you define a 50% milestone for a 2 minute video, calls are made at
+		  the following points: 
+		</p>
+      <image id="image_45036BE24AFA4A2B811DBF7C6373B13B" href="graphics/milestone-hit.png"></image>
+      <p>The 50% milestone event and time viewed is reported at 1 minute. The
+		  remaining time viewed is sent at the video end. If you define milestones at
+		  25%, 50%, 75%, calls are made at the following points: 
+		</p>
+      <image id="image_A874F62949744E5E982C1B567EFEBF54" href="graphics/milestone-multiple-hit.png"></image>
+      <p>In this example two additional calls are made containing the 25% and
+		  75% milestone events and the time viewed. 
+		</p>
+      <p>An additional benefit to tracking milestones is that time viewed is
+		  sent incrementally. When you are tracking only the video open and close, the
+		  time viewed is not reported until the video is closed (when the user opens a
+		  new video or the video ends). If the player is closed unexpectedly (for
+		  example, the browser window is closed), no time viewed is reported. 
+		</p>
+      <p>In the milestone example, if the player closed unexpectedly at 1:10, 1
+		  minute of time viewed would be measured. The 10 seconds that occurred after the
+		  50% milestone would not be measured. 
+		</p>
+      <p>Because these milestones are fixed points in the video, if a visitor
+		  views past the 50% milestone, then rewinds and passes the 50% milestone again,
+		  the milestone event is sent multiple times. Similarly, if a visitor skips past
+		  a milestone, an event is not sent for that milestone. 
+		</p>
+    </section>
+    <section id="section_E57427770E9A4E22A77CAB186835DDAB">
+      <title>Measuring Video Completes</title>
+      <p>Defining a complete event lets you track the number of viewers who
+		  view the end of a video. By default, if you define a video complete event it is
+		  sent 1 second before the end of the video.
+		</p>
+    </section>
+    <section id="section_99AC7C072C904D98B418B7F715FF90CD">
+      <title>Track Seconds</title>
+      <p>Tracking seconds lets you send video data at second-based intervals
+		  throughout your video. Tracking seconds can be used with or without video
+		  milestones. For example, if you track a 50% milestone, and then specify a track
+		  seconds interval of 15, calls would be made at the following points: 
+		</p>
+      <image id="image_6EFE4873976E42D88B63AF4A8C76901E" href="graphics/seconds-hit.png"></image>
+    </section>
+  </conbody>
+</concept>

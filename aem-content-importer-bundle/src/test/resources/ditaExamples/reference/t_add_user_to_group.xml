@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_0EE07E66139C4477B8505F3EB4BB05B8"> 
+  <title>Add a user to a group</title> 
+  <shortdesc>Steps that describe how to add a user to a group. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Admin tools"/> 
+		<othermeta name="subtopic" content="Users and groups"/> </metadata>
+  </prolog> 
+  <taskbody> 
+	 <steps id="steps_ABCB0702755746A887CB33C984285889"> 
+		<step id="step_404B55BF499B4C3F99D25D5178503A23"> 
+		  <cmd>Click 
+			 <uicontrol>Analytics</uicontrol> &gt; 
+			 <uicontrol>Admin</uicontrol> &gt; 
+			 <uicontrol>User Management</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_1255EA1A9FB941DFB1AF601523766708"> 
+		  <cmd>Click 
+			 <uicontrol>Users</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_1A897A6CFFDE42D2BCAE7960ACC2F977"> 
+		  <cmd>In the 
+			 <uicontrol>Manage</uicontrol> column, click 
+			 <uicontrol>Edit</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_82D0D1DB0418490A8B02358D063CCC8F"> 
+		  <cmd>Under 
+			 <uicontrol>Access</uicontrol>, assign group membership by clicking a
+			 group in the left list and then clicking 
+			 <uicontrol>Add</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_BCB939EF873048DEA6CD13AAAD14D276"> 
+		  <cmd>Click 
+			 <uicontrol>Save Changes</uicontrol>. 
+		  </cmd> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task>

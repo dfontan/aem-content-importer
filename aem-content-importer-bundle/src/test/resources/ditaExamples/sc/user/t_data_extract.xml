@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_D97E2DA5A99D47C09F738CAF22BAF20C"> 
+  <title>Extract data from a report</title> 
+  <shortdesc>Steps that describe how to extract data from a report and send it
+	 via email. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Reports and analytics"/> 
+		<othermeta name="subtopic" content="Schedule"/> </metadata>
+  </prolog> 
+  <taskbody> 
+	 <steps id="steps_00B7854A5E694358A91466EFBDA72142"> 
+		<step id="step_6BC703516FEF42F8A94F6D32FAC0F642"> 
+		  <cmd>Run a report, then click 
+			 <uicontrol>More 
+			 </uicontrol> &gt; 
+			 <uicontrol>Extract Data</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_D4F99DAC2B1F4DA2A2D60269A9761332"> 
+		  <cmd>Follow the steps in the Data Extract wizard. 
+		  </cmd> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

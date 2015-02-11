@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_CD792362A8E04448B452BE9A18772024"> 
+  <title> Links from URL Shorteners</title> 
+  <shortdesc>Links from URL shortener services (such as bit.ly) are typically
+	 not tracked as page views or as referrers. These services return 301/302
+	 redirects with the full URL to the web browser, which then sends a new,
+	 separate request to the full URL. The original referrer is preserved since the
+	 shortener is no longer in the loop, and there isn't an indication on the
+	 request that a redirect service was used to get the URL. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta content="Analytics" name="solution"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Due to the variety of services available, we recommending testing the
+		specific scenarios in use on your site to determine the redirect mechanism used
+		by the service. 
+	 </p> 
+  </conbody>
+</concept>

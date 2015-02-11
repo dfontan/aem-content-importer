@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_74F6B4B9B2FA415AB5D029A1F8F099BC"> 
+  <title>Analytics Visitor ID</title> 
+  <shortdesc>When a user visits your site, a persistent cookie is set by the
+	 Adobe web server by including it in the HTTP response to the browser. This
+	 cookie is set on the specified data collection domain. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta content="Analytics" name="solution"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>When a request is sent to the Adobe data collection server, the header
+		is checked for the visitor ID cookie (<codeph>s_vi</codeph>). If this cookie is
+		in the request, it is used to identify the visitor. If the cookie is not in the
+		request, the server generates a unique visitor ID, sets it as a cookie in the
+		HTTP response header, and sends it back with the request. The cookie is stored
+		in the browser and is sent back to the data collection server during subsequent
+		visits the site, which enables the visitor to be identified across visits. 
+	 </p> 
+	 <section id="section_61BA46E131004BB2B75929C1E1C93139"> 
+		<title>Third-Party Cookies and CNAME records</title> 
+		<p>Some browsers, such as Apple Safari, no longer store cookies that are
+		  set in the HTTP header from domains that do not match the domain of the current
+		  website (this is a cookie used in a third-party context, or a third-party
+		  cookie). For example, if you are on 
+		  <codeph>mysite.com</codeph> and your data collection server is 
+		  <codeph>mysite.omtrdc.net</codeph>, the cookie that is returned in the
+		  HTTP header from 
+		  <codeph>mysite.omtrdc.net</codeph> might be rejected by the browser. 
+		</p> 
+		<p>To avoid this, many customers have implemented CNAME records for their
+		  data collection servers as part of a 
+		  <xref
+			href="https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/"
+			format="http" scope="external">first-party cookie implementation</xref>. If a
+		  CNAME record is configured to map a hostname on the customer's domain to the
+		  data collection server (for example, mapping 
+		  <codeph>metrics.mysite.com</codeph> to 
+		  <codeph>mysite.omtrdc.net</codeph>), the visitor ID cookie is stored
+		  since the data collection domain now matches the domain of the website. This
+		  increases the likelihood that the visitor ID cookie will be stored, but it
+		  introduces some overhead as you need to configure CNAME records and maintain
+		  SSL certificates for data collection servers. 
+		</p> 
+	 </section> 
+	 <section id="section_7D05AE259E024F73A95C48BD1E419851"> 
+		<title>Cookies on Mobile Devices</title> 
+		<p>When mobile devices are tracked using cookies, there are some settings
+		  you can use to modify how measurement occurs. Cookie default lifetime is 5
+		  years, but you can use the CL query param variable
+		  (<codeph>s.cookieLifetime</codeph>) to change this default. To set the cookie
+		  location for cname implementations, use the CDP query string 
+		  <codeph>s.cookieDomainPeriods</codeph>. The default is 2 if no value is
+		  specified. and the default location is domain.com. For implementations that do
+		  not use CNAME, the visitor ID cookie location is at the 207.net domain. 
+		</p> 
+	 </section> 
+  </conbody>
+</concept>

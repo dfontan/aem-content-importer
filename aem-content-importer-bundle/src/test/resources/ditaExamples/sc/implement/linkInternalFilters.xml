@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_D53C1186762E4AAE82451712B0801CAD">
+  <title>linkInternalFilters</title>
+  <shortdesc> The 
+	 <varname>linkInternalFilters</varname> variable is used to determine which
+	 links on your site are exit links. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Variables" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>It is a comma-separated list of filters that represent the links that
+		are part of the site. 
+	 </p>
+    <table id="table_792768D3F36545258AF42DC7CC0B14A2">
+      <tgroup cols="4">
+        <colspec colnum="1" colname="col1" colwidth="*" />
+        <colspec colnum="2" colname="col2" colwidth="*" />
+        <colspec colnum="3" colname="col3" colwidth="*" />
+        <colspec colnum="4" colname="col4" colwidth="*" />
+        <thead>
+          <row>
+            <entry> Max Size 
+				</entry>
+            <entry> Debugger Parameter 
+				</entry>
+            <entry> Reports Populated 
+				</entry>
+            <entry> Default Value 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry> N/A 
+				</entry>
+            <entry> N/A 
+				</entry>
+            <entry> Paths &gt; Entries &amp; Exits &gt; Exit Links 
+				</entry>
+            <entry> "javascript:" 
+				</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p>The 
+		<varname>linkInternalFilters</varname> variable is used to determine
+		whether a link is an exit link, which is defined as any link that takes a
+		visitor away from your site. Whether the target window of an exit link is a
+		pop-up, or the existing window, does not affect whether the link appears in the
+		exit links report. Exit links are only tracked if 
+		<varname>trackExternalLinks</varname> is set to 
+		<codeph>"true"</codeph>. The filters in 
+		<varname>linkInternalFilters</varname> are not case-sensitive. 
+	 </p>
+    <p>The list of filters in 
+		<varname>linkInternalFilters</varname> applies to the domain and path of
+		any link by default. If 
+		<varname>linkLeaveQueryString</varname> is set to 
+		<codeph>"true"</codeph>, then the filters apply to the entire URL
+		(domain, path, and query string). The filters are always applied to the
+		absolute path of the URL, even if a relative path is used as the href value. 
+	 </p>
+    <p>Be careful that all the domains of your site (and any partners who are
+		using your JavaScript file) are included in 
+		<varname>linkInternalFilters</varname>. If you do not have all domains
+		included in the list, all links on and to those domains are considered exit
+		links, increasing the server calls sent. If you would like multiple domains or
+		companies to use a single 
+		AppMeasurement for JavaScript file, you may consider
+		populating 
+		<varname>linkInternalFilters</varname> on the page, overriding the value
+		specified in the JavaScript file. If you have vanity domains that immediately
+		redirect to your main domain, those vanity domains do not need to be included
+		in the list. 
+	 </p>
+    <p> The following example illustrates how this variable is used. In this
+		example, the URL of the page is 
+		<filepath>http://www.mysite.com/index.html</filepath>. 
+	 </p>
+    <codeblock outputclass="syntax javascript">s.trackExternalLinks=true
+s.linkInternalFilters="javascript:,mysite.com"
+s.linkExternalFilters=""
+s.linkLeaveQueryString=false
+...
+&lt;a href="http://www.mysite.com"&gt;Not an Exit Link&lt;/a&gt;
+&lt;a href="/careers/job_list.html"&gt;Not an Exit Link&lt;/a&gt;
+&lt;a href="http://www2.site3.com"&gt;Exit Link&lt;/a&gt;
+&lt;a href="http://www2.site1.com/partners/"&gt;Exit Link&lt;/a&gt;
+</codeblock>
+    <section id="section_810966F09912415B96EA9C2EDAE0CEA0">
+      <title>Syntax and Possible Values</title>
+      <p>The 
+		  <varname>linkInternalFilters</varname> variable is a comma-separated
+		  list of ASCII characters. No spaces are allowed. 
+		</p>
+      <codeblock outputclass="syntax javascript">s.linkInternalFilters="javascript:,site1.com[,site2.com[,site3.net[...]]]"</codeblock>
+      <p>The default value of 
+		  <varname>linkInternalFilters</varname> contains 
+		  <codeph>"javascript:"</codeph> because any links to a JavaScript
+		  function are not usually exit links. If 
+		  <codeph>"javascript:"</codeph> were not in the list, then all links to
+		  JavaScript functions would be considered external. 
+		</p>
+    </section>
+    <section id="section_491F48556DC247889D54C66FC431B4EC">
+      <title>Examples</title>
+      <codeblock outputclass="syntax javascript">s.linkInternalFilters="javascript:,mysite.com"</codeblock>
+      <codeblock outputclass="syntax javascript">s.linkInternalFilters="javascript:,mysite.com,mysite.net,vanity1.com"</codeblock>
+    </section>
+    <section id="section_546AC1FACB664ABFBCF312990097C987">
+      <title>
+        Configuration Settings</title>
+      <p>None 
+		</p>
+    </section>
+    <section id="section_E83A6F8B6EE44D51A2800D83F8BB264F">
+      <title>Pitfalls, Questions, and Tips</title>
+      <ul id="ul_B88BE188C7B84912A3C9AF9ED9810D59">
+        <li id="li_EC40D0E64DB544A89A93116E0793C26D"> Include all domains that
+			 the 
+			 AppMeasurement for JavaScript file may be served under
+			 in the filter list. 
+		  </li>
+        <li id="li_BCABC1B26A1748F799D8A4B0B64EC79C">Periodically check the 
+			 <wintitle>Paths</wintitle> &gt; 
+			 <wintitle>Entries &amp; Exits</wintitle> &gt; 
+			 <wintitle>Exit</wintitle> Links report to make sure that none of the
+			 entries in that report are incorrect. 
+		  </li>
+        <li id="li_3FF2C8DC60A743B8ADD15ED653E10CE6">Periodically review
+			 partner contracts to determine if they contain restrictions on link tracking.
+			 For example, you might be prohibited from tracking links that appear in partner
+			 display ads. Filter partner links by adding their domain to 
+			 <varname>linkInternalFilters</varname>: 
+		  </li>
+      </ul>
+      <codeblock outputclass="syntax javascript">s.linkInternalFilters="javascript:,mysite.com,mysite.net,mypartner.net/adclick"</codeblock>
+    </section>
+  </conbody>
+</concept>

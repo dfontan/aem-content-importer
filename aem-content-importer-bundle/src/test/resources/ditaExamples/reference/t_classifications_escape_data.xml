@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_EB47E80063F14F9CB2D186C0CAA9CBAD">
+  <title>Escape classification data</title>
+  <shortdesc>Steps that describe how to escape classification data in the
+	 classification file.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Admin tools" />
+      <othermeta name="subtopic" content="Classifications" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <steps id="steps_302B3B2C9FE044CABA7DE8E827AF631E">
+      <step id="step_5219E1BE680B4E388A8683ADB9288DFA">
+        <cmd>Ensure that the classification file format is v2.1.
+		  </cmd>
+        <info>
+          <p>If v2.1 is enabled, you will see a line similar to :
+			 </p>
+          <p>
+            <codeblock>## SC	SiteCatalyst SAINT Import File	v:2.1</codeblock>
+            <note>To specify a format of v2.1, enable 
+				  <uicontrol>Quoted Output</uicontrol> when exporting the file on
+				  the 
+				  <wintitle>Classification Importer</wintitle> page
+				  (<wintitle>Browser Export</wintitle> or 
+				  <wintitle>FTP Export</wintitle>). 
+				</note>
+          </p>
+        </info>
+        <info>
+          <p>See 
+				<xref href="browser_export.xml#concept_3D930F03840A491D8B37FAAE9C90F5DF" format="dita" scope="local"><?xm-replace_text Browser Export?></xref>.
+			 </p>
+        </info>
+      </step>
+      <step id="step_9CD45B660AAC48A9A92BCDF1FBABE54C">
+        <cmd>Surround the field containing special characters in double quotes
+			 (").
+		  </cmd>
+        <info>
+          <p>A double quote character can appear in an escaped cell by
+				replacing it with two double quote characters (""). For example:
+			 </p>
+          <p>
+            <codeblock>My String "of data"</codeblock>
+          </p>
+          <p>Escaped would be:
+			 </p>
+          <p>
+            <codeblock>"My String ""of data"""</codeblock>
+          </p>
+        </info>
+      </step>
+    </steps>
+  </taskbody>
+</task>

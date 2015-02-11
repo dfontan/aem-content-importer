@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_93527FEB3C9B48FB96FB7DF857E5F980">
+  <title>About Rule Priority</title>
+  <shortdesc>If a key is matched to multiple rules, and it sets the same
+	 classification column shown in the 
+	 <wintitle>Set Classification</wintitle> column, the last rule is used. As
+	 such, you might want to rank the most important last in your rule set. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Admin tools" />
+      <othermeta name="subtopic" content="Classifications" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>If you create multiple rules that do not share the same classification,
+		processing order does not matter. 
+	 </p>
+    <p>What follows a search-term rule example that classifies search types for
+		an athlete: 
+	 </p>
+    <table id="table_B730706D988D4B35A14EF1CB4B5B8A87">
+      <tgroup cols="5">
+        <colspec colname="col01" colnum="1" colwidth="1.00*" />
+        <colspec colnum="2" colname="col1" colwidth="1.08*" />
+        <colspec colnum="3" colname="col2" colwidth="1.27*" />
+        <colspec colnum="4" colname="col3" colwidth="1.58*" />
+        <colspec colnum="5" colname="col4" colwidth="1.60*" />
+        <thead>
+          <row>
+            <entry colname="col01">Rule Number 
+				</entry>
+            <entry colname="col1">Rule Type 
+				</entry>
+            <entry colname="col2">Match 
+				</entry>
+            <entry colname="col3">Set Classification 
+				</entry>
+            <entry colname="col4">To 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry colname="col01">1 
+				</entry>
+            <entry colname="col1">Contains 
+				</entry>
+            <entry colname="col2">Cowboys 
+				</entry>
+            <entry colname="col3">Search Type 
+				</entry>
+            <entry colname="col4">Team 
+				</entry>
+          </row>
+          <row>
+            <entry colname="col01">2 
+				</entry>
+            <entry colname="col1">Contains 
+				</entry>
+            <entry colname="col2">Fantasy 
+				</entry>
+            <entry colname="col3">Search Type 
+				</entry>
+            <entry colname="col4">Fantasy 
+				</entry>
+          </row>
+          <row>
+            <entry colname="col01">3 
+				</entry>
+            <entry colname="col1">Contains 
+				</entry>
+            <entry colname="col2">Romo 
+				</entry>
+            <entry colname="col3">Search Type 
+				</entry>
+            <entry colname="col4">Player 
+				</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p>If a user searches for 
+		<term>Cowboys fantasy Tony Romo</term>, the term 
+		<term>Player</term> is classified, because it matches the last given
+		classification shown in the Set Classification column. 
+	 </p>
+    <p>Similarly, suppose you set up two rules in a set for the following
+		search terms: 
+	 </p>
+    <table id="table_F31464711F1C4AB2935C20575BCB1BB4">
+      <tgroup cols="5">
+        <colspec colname="col01" colnum="1" colwidth="1.00*" />
+        <colspec colnum="2" colname="col1" colwidth="1.08*" />
+        <colspec colnum="3" colname="col2" colwidth="1.27*" />
+        <colspec colnum="4" colname="col3" colwidth="1.58*" />
+        <colspec colnum="5" colname="col4" colwidth="1.60*" />
+        <thead>
+          <row>
+            <entry colname="col01">Rule Number 
+				</entry>
+            <entry colname="col1">Rule Type 
+				</entry>
+            <entry colname="col2">Match 
+				</entry>
+            <entry colname="col3">Set Classification 
+				</entry>
+            <entry colname="col4">To 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry colname="col01">1 
+				</entry>
+            <entry colname="col1">Contains 
+				</entry>
+            <entry colname="col2"> Cowboys 
+				</entry>
+            <entry colname="col3">City 
+				</entry>
+            <entry colname="col4">Dallas 
+				</entry>
+          </row>
+          <row>
+            <entry colname="col01">2 
+				</entry>
+            <entry colname="col1">Contains 
+				</entry>
+            <entry colname="col2">Broncos 
+				</entry>
+            <entry colname="col3">City 
+				</entry>
+            <entry colname="col4">Denver 
+				</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p>A user searches for 
+		<term>Cowboys vs. Broncos</term>. If the rule builder finds a conflict in
+		rule matching, the classification for the second rule (Denver) applies to this
+		search. 
+	 </p>
+  </conbody>
+</concept>

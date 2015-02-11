@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_440BC81274984753849FF2564CC572BC">
+  <title>Delete a card</title>
+  <shortdesc>Delete or remove a card from a board. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Marketing Cloud" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <steps id="steps_CA0C05855E934AFB8454D9376FF76790">
+      <step id="step_58EE3203250F47B99BBEB65EEF5E83AB">
+        <cmd> In the left navigation menu, click 
+			 <uicontrol>Feed</uicontrol>. 
+		  </cmd>
+        <info>
+          <p>Or 
+			 </p>
+          <p>In the left navigation menu, click 
+				<uicontrol>Boards</uicontrol>, then click the desired board to
+				display its contents. 
+			 </p>
+        </info>
+      </step>
+      <step id="step_D63833863C1941DCA07E6AC70BBBBA3A">
+        <cmd>Right-click the desired card to display additional options 
+		  </cmd>
+        <stepresult>
+          <p>On a tablet, long-press the desired card to display additional
+				options. 
+			 </p>
+          <p>
+            <image href="graphics/right_click_card_options.png" id="image_43E5BA7705B14F1AAEEBDAAAAFD20227">
+              <?xm-replace_text Paragraph?>
+            </image>
+          </p>
+        </stepresult>
+      </step>
+      <step id="step_08A4E43580074AE9BCB91F961D188FAA">
+        <cmd>Click 
+			 <image href="graphics/icon_trash.png" id="image_DECD3F4810184848B72FAE5BF0C18EBC"></image> to delete the card from
+			 the board. 
+		  </cmd>
+      </step>
+    </steps>
+  </taskbody>
+</task>

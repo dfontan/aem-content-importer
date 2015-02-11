@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_A2819A92942D400880A62FFD86FE952B">
+  <title>Place an Mbox Around a Table</title>
+  <shortdesc>It is often useful to place an mbox around a table. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <steps id="steps_B990A96A402545CBA5F910DD42733554">
+      <step id="step_B6B8548D2F6A43D4B01E5DA3A3B5E23E">
+        <cmd> Make sure the page includes a reference to 
+			 <filepath>mbox.js</filepath> in the header. 
+		  </cmd>
+      </step>
+      <step id="step_09BFAB90DCA440B2ABA0393E7822735A">
+        <cmd>Insert mbox default function just before the table's tags. 
+		  </cmd>
+      </step>
+      <step id="step_C0A4262A1D1943A8B840ACF1B059C208">
+        <cmd> Immediately follow the default content close with the 
+			 <codeph>mboxCreate</codeph> function. 
+		  </cmd>
+        <stepresult>
+          <p>Give the mbox a unique name which makes sense for your campaign
+				strategy and company procedures. In the example below, the mbox is named
+				myMbox. 
+			 </p>
+          <p>
+            <b>Important:</b>
+          </p>
+          <p>
+            <ul id="ul_F4A23D7E894E45D19B9DCD075D48EC1F">
+              <li id="li_9119488B79774D4F92D69D5789D1B5E7"> Ensure any tags left 
+				  <b>open before</b> the mbox scripts are 
+				  <b>closed after</b> the mbox scripts. 
+				</li>
+              <li id="li_2B5C8462F9AD437F9EB54DECF820F4A2"> Do not wrap rows.
+				  Wrap only entire table or a single cell. 
+				</li>
+            </ul>
+          </p>
+          <p>Example of mbox around a table: 
+			 </p>
+          <p>
+            <table id="table_87A6E0A2FAAA427BB8DF2D96B8BA87D9">
+              <tgroup cols="2">
+                <colspec colnum="1" colname="col1" colwidth="*" />
+                <colspec colnum="2" colname="col2" colwidth="*" />
+                <thead>
+                  <row>
+                    <entry colname="col1">Before 
+						</entry>
+                    <entry colname="col2">After 
+						</entry>
+                  </row>
+                </thead>
+                <tbody>
+                  <row>
+                    <entry colname="col1">
+                      <p>
+                        <codeblock outputclass="syntax html">&lt;head&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;center&gt;
+
+&lt;table bordercolor="red" cellspacing="0" cellpadding="0" width="560" align="left" border="0"&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="left" width="12"&gt;&lt;/td&gt;
+
+&lt;td align="left" width="475"&gt;
+....
+&lt;/table&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;/center&gt;</codeblock>
+                      </p>
+                    </entry>
+                    <entry colname="col2">
+                      <p>
+                        <codeblock outputclass="syntax html" scale="90">&lt;head&gt;
+&lt;script src="/myfolder/mbox.js" type="text/javascript"&gt;​​&lt;/script&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;center&gt;
+
+&lt;div class="mboxDefault"&gt;
+
+&lt;table bordercolor="red"
+cellspacing="0" cellpadding="0" width="560" align="left" border="0"&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align="left" width="12"&gt;&lt;/td&gt;
+
+&lt;td align="left" width="475"&gt;
+....
+&lt;/table&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;script type="text/javascript"&gt;
+mboxCreate('myMbox');
+&lt;/script&gt;
+&lt;/center&gt; </codeblock>
+                      </p>
+                    </entry>
+                  </row>
+                </tbody>
+              </tgroup>
+            </table>
+          </p>
+        </stepresult>
+      </step>
+      <step id="step_91320B85616247DAAA13B38514EAE6A3">
+        <cmd>
+          <xref href="t_Validating_an_Mbox.xml#task_4BB8E090CBBF4C56A39BB63BF1ADB964" type="task" format="dita" scope="local">Validate the mbox</xref>. 
+		  </cmd>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links>
+    <link href="t_Creating_a_Single_Mbox.xml#task_FE6BEB3A1264493A9E9A4CFC5023CCA9" type="task" format="dita" scope="local">
+      <?xm-replace_text Create a Single Mbox?>
+    </link>
+    <link href="t_Placing_Multiple_Mboxes_on_a_Page.xml#task_FD9771D3457F4AB29061596F7A8ECF30" type="task" format="dita" scope="local">
+      <?xm-replace_text Place Multiple Mboxes on a Page?>
+    </link>
+    <link href="t_Creating_a_Whole-Page_Mbox.xml#task_5E71B81283444DB3882D2E1EBFEE0B64" type="task" format="dita" scope="local">
+      <?xm-replace_text Create a Whole-Page Mbox?>
+    </link>
+    <link href="t_Placing_an_Mbox_Around_a_Table_Cell.xml#task_3B5EAB62FC654E5086EB4FA65BD8738B" type="task" format="dita" scope="local">
+      <?xm-replace_text Placing an Mbox Around a Table Cell?>
+    </link>
+    <link href="t_Creating_a_Place_Order_Mbox.xml#task_0036D5F6C062442788BB55E872816D82" type="task" format="dita" scope="local">
+      <?xm-replace_text Creating an orderConfirmPage Mbox?>
+    </link>
+  </related-links>
+</task>

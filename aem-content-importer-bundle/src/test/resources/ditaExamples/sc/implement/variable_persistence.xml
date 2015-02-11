@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_2084D2054F984A9B82F0052E56CB259E"> 
+  <title>Attribution and Persistence</title> 
+  <shortdesc> When visitor profiles are merged after being associated with the
+	 same 
+	 <wintitle>visitor ID</wintitle> variable, attribution is not changed in the
+	 historical data set. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Developer and implementation"/>
+		</metadata>
+  </prolog> 
+  <conbody> 
+	 <ul id="ul_674FBFF405AE405F93187AF687789216"> 
+		<li id="li_441BCD1A169E41FEB401E592ED189094">When the variable 
+		  <codeph>s.visitorID</codeph> is set and sent on a hit, the system
+		  checks for any other visitor profiles that have a matching visitor ID. 
+		</li> 
+		<li id="li_2C0A06C7041C4746ACF5B379D4403A24">If a profile exists, the
+		  visitor profile that is already in the system is used from that point forward
+		  and the previous visitor profile is no longer used. 
+		</li> 
+		<li id="li_7A7D008A5AD441D8B529C58E4533BAEA">If no matching visitor ID is
+		  found, a new profile is created. 
+		</li> 
+	 </ul> 
+	 <p>When an un-authenticated customer first arrives at your site, that
+		customer is assigned a visitor profile by Adobe Analytics. As shown in 
+		<xref
+		 href="xdevice_connecting.xml#concept_38BDB5B620524655906C181BB3357542/section_70330AB6724C4E419A4BD0BDD54641AC"
+		 format="dita" scope="local"><?xm-replace_text Unique Visitor and Visits Counts?></xref>,
+		on authentication a new profile is created. When the new profile is created,
+		one visit ends and another visit starts. 
+	 </p> 
+	 <p><b>On the first data connection</b> 
+	 </p> 
+	 <p>The example below is a representation of how data is sent to Adobe
+		Analytics when a customer authenticates for the first time, on the first
+		device: 
+	 </p> 
+	 <ul id="ul_A779C29428104032AF49BC59C3CECCA7"> 
+		<li id="li_3FA0135112674C8E989C94D88394742B"> 
+		  <codeph>eVar16</codeph> has an expiration of 1 day and 
+		  <codeph>evar17</codeph> expires on visit. 
+		</li> 
+		<li id="li_BE629D9367DC438CAAA2AFACF425AC6D">The 
+		  <codeph>post_visitor_id</codeph> column represents the profile
+		  maintained by Adobe Analytics. 
+		</li> 
+		<li id="li_737D2FD9A1C34A908D62DEC60D561AA5">The 
+		  <codeph>post_evar16</codeph> and 
+		  <codeph>post_evar17</codeph> columns show shows the persistence of
+		  eVars. 
+		</li> 
+		<li id="li_C4066770BED8490BBC4D68583A4B5D40"><codeph>cust_visid</codeph>
+		  represents a value set in 
+		  <codeph>s.visitorID</codeph>. 
+		</li> 
+		<li id="li_6F683BB3F8A5468ABBA14F52DD5A24B7">Each row is one 'hit', a
+		  single request sent to Adobe Analytics data collection servers. 
+		</li> 
+	 </ul><image placement="break" align="center"
+	 href="graphics/xdevice_first.jpg"
+	 id="image_9EA0ABE3FC7F49929B3DF42948386969"></image> 
+	 <p><!--send note to Darren F. regarding the empty post_evar16 column-->On
+		the first data connection containing a previously unrecognized 
+		<codeph>s.visitorID</codeph> value (<codeph>u999</codeph> above), the new
+		profile is created. Persistent values from the previous profile are transferred
+		to the new profile. 
+	 </p> 
+	 <ul id="ul_789592418A5E420FBF39F73C8EA08653"> 
+		<li id="li_B5AD5DF110214B03B233258E455DE322">eVars set to expire on the
+		  visit are not copied to the authenticated profile. Note the value 
+		  <codeph>car</codeph> above is not persisted. 
+		</li> 
+		<li id="li_842EA06BAC9748569567D06CFB88EDF6">eVars set to expire by other
+		  measures will be copied to the authenticated profile. Note the value 
+		  <codeph>apple</codeph> is persisted. 
+		</li> 
+		<li id="li_0BE58B19EA454A7FBAC3BB257E15A5B2">For the eVars that are
+		  persisted, no Instance metric is recorded. This means when using cross-device
+		  visitor identification, it is possible to see reports where the Unique Visits
+		  metric for an eVar value is larger than the Instance metric. 
+		</li> 
+	 </ul> 
+	 <p><b>On subsequent data connections</b> 
+	 </p> 
+	 <p>The example below is a representation of how data is sent to Adobe
+		Analytics when a customer authenticates on a new device, after having
+		previously authenticated on a different device: 
+	 </p><image placement="break" align="center"
+	 href="graphics/xdevice-subsequent.jpg"
+	 id="image_105E7B27BB8F43EAB0AC230855E6BAD3"></image> 
+	 <p>When the customer authenticates his or her id is matched to the previous
+		'authenticated' profile - 
+		<codeph>2947539300</codeph>. The profile used at the start of this visit
+		(<codeph>5477766334477</codeph>) is no longer used and no data persists from
+		the file. 
+	 </p> 
+	 <ul id="ul_2A65FA094A2848DAAE3D8E4601AF8304"> 
+		<li id="li_AE4A2691C11C4CFA9E802890FB40812D">Geo-Segmentation data is
+		  recorded based on the first hit of the visit and does not change for a single
+		  visit regardless of the device used. This means on a subsequent data connection
+		  on a new device, geo-Segmentation data is generally not included. 
+		</li> 
+		<li id="li_C5ABA410B28B4F0C8E0E9EE442B0330E">Technology columns such as
+		  browser, operating system, and color depth are recorded on the first hit of a
+		  visit. Like Geo-Segmentation values, they will not be copied to the stitched
+		  profile. 
+		</li> 
+		<li id="li_95E124DABCDF4B718F91DDE1313DE2BB">A Marketing Channel such as
+		  Direct or Internal which is commonly set up to not overwrite another channel
+		  will overwrite other channels on a subsequent data connection containing a
+		  first authentication for that device, such as the first authentication shown in
+		  
+		  <xref
+			href="xdevice_connecting.xml#concept_38BDB5B620524655906C181BB3357542/section_70330AB6724C4E419A4BD0BDD54641AC"
+			format="dita" scope="local"><?xm-replace_text Unique Visitor and Visits Counts?></xref>.
+		  
+		</li> 
+	 </ul> 
+	 <p><b>Special cases</b> 
+	 </p> 
+	 <p>In some other cases data is not persisted from the unauthenticated to
+		the authenticated profile. 
+	 </p> 
+	 <ul id="ul_C036E98AE2CC404D91E02AA0F9E791E8"> 
+		<li id="li_95070A76FE434534AA0BCE56EC05F90F">If a user is new to your
+		  site (has never visited before on this device) AND that user authenticates
+		  within approximately 3 minutes of arriving, no values will persist to the
+		  authenticated profile. 
+		</li> 
+	 </ul> 
+  </conbody> 
+</concept> 

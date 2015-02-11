@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_D28A8FD5A5FE41789F356EB151EFE1DA"> 
+  <title>Create Duplicate Requests</title> 
+  <shortdesc>You can create requests from the 
+	 <wintitle>Request Manager</wintitle> tab.
+  </shortdesc> 
+  <conbody>
+	 <p><image href="graphics/dw_manager.png"
+		id="image_7CB5355472E949F69E101651BA416CDE"><?xm-replace_text Paragraph?></image>
+	 </p>
+  </conbody>
+</concept>

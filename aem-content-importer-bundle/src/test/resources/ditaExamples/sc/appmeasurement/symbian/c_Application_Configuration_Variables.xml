@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_051D9962B53D44A09AE21E04DD046B31">
+  <title>Configuration Variables</title>
+  <shortdesc>The following variables are available to configure your
+	 AppMeasurement for Symbian implementation. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics,Developer" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <table id="table_3DBEEA6AE70949608A5C224AF4193C50">
+      <tgroup cols="2">
+        <colspec colnum="1" colname="col1" colwidth="1.00*" />
+        <colspec colnum="2" colname="col3" colwidth="3.40*" />
+        <thead>
+          <row>
+            <entry colname="col1">Variable 
+				</entry>
+            <entry colname="col3">Description 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry colname="col1">
+              <b>account</b>
+            </entry>
+            <entry colname="col3">
+              <p>
+                <b>Syntax:</b>
+              </p>
+              <codeblock>s.account="mycompanycom";</codeblock>
+              <p>(required) The report suite or report suites (multi-suite
+					 tagging) that you want to track. 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <b>dc</b>
+            </entry>
+            <entry colname="col3">
+              <p>
+                <b>Syntax:</b>
+              </p>
+              <codeblock>s.dc="d1"; or "d2";</codeblock>
+              <p>Identifies the Adobe data center. Do not change this value
+					 unless so instructed by your Adobe Account Manager. 
+				  </p>
+              <p>d1 = San Jose data center 
+				  </p>
+              <p>d2 = Dallas data center 
+				  </p>
+              <p>For reference, the dc variable is also specified in your Web
+					 site’s core JavaScript file (s_code.js). 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <b>linkTrackEvents</b>
+            </entry>
+            <entry colname="col3">
+              <p>
+                <b>Syntax:</b>
+              </p>
+              <codeblock>s.linkTrackEvents="purchase,event1";</codeblock>
+              <p>A comma-separated list of events that restricts the current
+					 set of events for link tracking. 
+				  </p>
+              <p>If s.linkTrackEvents is not defined, AppMeasurement for iOS
+					 sends all events. 
+				  </p>
+              <p>For example: s.linkTrackEvents = @"purchase,event1"; 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <b>linkTrackVars</b>
+            </entry>
+            <entry colname="col3">
+              <p>
+                <b>Syntax:</b>
+              </p>
+              <codeblock>s.linkTrackVars= "events,prop1,eVar49";</codeblock>
+              <p>A comma-separated list of variable names that restricts the
+					 current set of variables for link tracking. 
+				  </p>
+              <p>If s.linkTrackVars is not defined, AppMeasurement for Symbian
+					 sends all variables with values. Even though pageName is sent, the Page View
+					 count does not increment. 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <b>trackingServer</b>
+              <b>trackingServerSecure</b>
+            </entry>
+            <entry colname="col3">
+              <p>
+                <b>Syntax:</b>
+              </p>
+              <codeblock>s.trackingServer = "metrics.mycompany.com";
+s.trackingServerSecure = "smetrics.mycompany.com";</codeblock>
+              <p>Identifies the collection domain when you are using a
+					 first-party cookie implementation. These values should match the collection
+					 domain in your s_code.js file, if one exists. 
+				  </p>
+              <p>If you want to use these variables, you must set them both.
+					 You cannot set only one tracking server variable. 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <b>userAgent</b>
+            </entry>
+            <entry colname="col3">
+              <p>
+                <b>This variable is not used in this beta release.</b>
+              </p>
+              <p>
+                <b>Syntax:</b>
+              </p>
+              <codeblock>s.userAgent = "</codeblock>
+              <p>The HTTP User-Agent field that is sent with each track call to
+					 Adobe data collection servers. 
+				  </p>
+              <p>By default, AppMeasurement for Symbian sets a default value
+					 for this variable that includes Symbian device information and application name
+					 and version. If necessary, you can append additional information to this
+					 default value. For example: 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <b>visitorNamespace</b>
+            </entry>
+            <entry colname="col3">
+              <p>
+                <b>Syntax:</b>
+              </p>
+              <codeblock>s.visitorNamespace="mycompany";</codeblock>
+              <p>Must match the visitorNamespace used in your JavaScript
+					 tracking file (s_code.js). If your JavaScript file does not have a
+					 visitorNamespace variable defined, do not define it in the AppMeasurement DLL.
+					 Using the wrong value for visitorNamespace causes incorrect reporting. 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <b>currencyCode</b>
+            </entry>
+            <entry colname="col3">
+              <p>
+                <b>Syntax:</b>
+              </p>
+              <codeblock>s.currencyCode="USD";</codeblock>
+              <p>Specifies the currency code that Adobe uses to denominate
+					 purchases or currency events collected in the application or website. 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <b>visitorID</b>
+            </entry>
+            <entry colname="col3">
+              <p>
+                <b>Syntax:</b>
+              </p>
+              <codeblock>s.visitorID = "12345";</codeblock>
+              <p>Unique identifier for each visitor. Defaults to the device
+					 IMEI. 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <b>PageName</b> or 
+				  <b>PageURL</b></entry>
+            <entry colname="col3">
+              <p>
+                <b>Syntax:</b>
+              </p>
+              <codeblock>s.pageName="Some Page Name";
+s.pageURL="http://www.myurl.com";</codeblock>
+              <p>Specify pageName so that ClickMap can properly overlay data. 
+				  </p>
+              <p>If users do not access the application through a Web browser,
+					 specify a pageURL as well. If users access the application through a Web
+					 browser, leave pageURL blank and AppMeasurement automatically sets pageURL to
+					 the Web browser’s URL. 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <b>linkLeaveQueryString 
+				  </b>
+            </entry>
+            <entry colname="col3">
+              <p>
+                <b>This variable is not used in this beta release.</b>
+              </p>
+              <p>
+                <b>Syntax:</b>
+              </p>
+              <codeblock>s.linkLeaveQueryString = true;</codeblock>
+              <p>Determines whether the query string should be included in the
+					 Exit Links and File Download reports. By default, marketing reports exclude query
+					 strings from all reports. However, for some Exit Links and File Download
+					 reports, the important portion of the URL might be in the query string. 
+				  </p>
+              <p>For example, the download file name might be defined in the
+					 query string, making the query string necessary for an accurate File Downloads
+					 report. 
+				  </p>
+              <p>Enables or disables preserving the query-string on the URL for
+					 links to Web pages from within the iOS application. By default, this variable
+					 is false. 
+				  </p>
+              <p>You cannot override this variable using variable overrides. 
+				  </p>
+              <p>If query strings contain session IDs or other personally
+					 identifiable information, contact your Account Manager to have reporting
+					 strip out those query string elements. 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <b>ssl</b>
+            </entry>
+            <entry colname="col3">
+              <p>
+                <b>This variable is not used in this beta release. All hits
+						are sent using HTTP.</b>
+              </p>
+              <p>
+                <b>Syntax:</b>
+              </p>
+              <codeblock>s.ssl = true;</codeblock>
+              <p>Enables or disables sending measurement data via SSL (HTTPS).
+					 By default, this variable is NO. 
+				  </p>
+              <p>You cannot override this variable using variable overrides. 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <b>debugTracking</b>
+            </entry>
+            <entry colname="col3">
+              <p>
+                <b>Syntax:</b>
+              </p>
+              <codeblock>s.debugTracking = true;</codeblock>
+              <p>Lets you view debug information in your platform’s debugger.
+					 For example, stdout and the QtCreator Application Output Window. 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <b>usePlugins</b>
+            </entry>
+            <entry colname="col3">
+              <p>
+                <b>Syntax:</b>
+              </p>
+              <codeblock>s.usePlugins = true;
+MyDelegate md;
+s.delegate = &amp;md;</codeblock>
+              <p>Enables or disables using plug-ins as part of a delegate
+					 implementation. By default, this variable is false. See 
+					 <xref href="c_Implementation_Examples.xml#concept_54E688BF27784461B7FB8587B44214ED/section_440A33943B2746FFBE18BFCE918FDF5A" type="section" format="dita" scope="local"><?xm-replace_text Plug-in Example?></xref>.
+					 
+				  </p>
+              <p>You cannot override this variable using variable overrides. 
+				  </p>
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </conbody>
+</concept>

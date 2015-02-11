@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_26DA102117A24CDA8A642690366488D7" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Clear (Delete) an Mbox</title>
+  <shortdesc class="- topic/shortdesc ">You can clear (delete) any mbox from
+	 your mboxes list at any time. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <context id="context_5276421E6DBF46AEB5CB7FB0C8BB8F89" class="- topic/section task/context ">
+      <p class="- topic/p ">The cleared mbox will always reload itself to your
+		  mboxes list when you or anyone else browses to that mbox. 
+		</p>
+    </context>
+    <steps id="steps_19A265DF72184FCE8DC76C8BB1962C01" class="- topic/ol task/steps ">
+      <step id="step_EDBADF911E1646F8BC902A9FDBB0D8EB" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Select 
+			 <uicontrol>Locations</uicontrol> &gt; 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol "> List</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_A0AEA39954CD4DD59B0B7DB7A99F3752" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">To the right of the mbox you want to
+			 clear, click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">clear</uicontrol>. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult "></stepresult>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links class="- topic/related-links ">
+    <link href="c_About_Mboxes.xml#concept_E01933A6CEDE481BBAC25F95FE3C6FD9" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Mbox Concepts?>
+    </link>
+    <link href="c_Downloading_and_Setting_Up_MboxJs.xml#concept_9429FEF054734D3AA0CE7E3F25ED0B9E" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Download and Set Up mbox.js?>
+    </link>
+    <link href="c_Creating_and_Placing_Mboxes.xml#concept_B0EC432377C244B79DB47783B3170E22" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Create and Place Mboxes?>
+    </link>
+    <link href="c_Using_a_Redirector.xml#concept_451731358AA64789AD0DA3BAAF2DF72C" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Redirector?>
+    </link>
+    <link href="t_Validating_an_Mbox.xml#task_4BB8E090CBBF4C56A39BB63BF1ADB964" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Validate an Mbox?>
+    </link>
+    <link href="t_Deactivating_an_Mbox.xml#task_536C6C87631D4BC3B3829117DE4D55FE" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Deactivate an Mbox?>
+    </link>
+    <link href="r_Troubleshooting_Mboxes.xml#reference_FAA5B3A0FE1542219E004263BF4015E3" type="reference" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Troubleshooting Mboxes?>
+    </link>
+    <link href="t_Mbox_Troubleshooting_Matrix.xml#task_9EEE14582E5443278B1A39CC1E00D6B4" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Mbox Troubleshooting Matrix?>
+    </link>
+    <link href="t_Mbox_Reporting.xml#task_BF6F059DE4CA4769AD5408471731E206" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Mbox Request Report?>
+    </link>
+  </related-links>
+</task>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_9AF2FDFE42D74FA6A50658BDE9369748">
+  <title>Potential Audience</title>
+  <shortdesc>A cumulative total of the number of users who would see a
+	 collection of posts. If an author has an audience of five and makes five posts
+	 in a single day, Audience = 5 and Potential Audience = 25.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Metrics" />
+    </metadata>
+  </prolog>
+</concept>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_265A95A803F740629CAAAA7EB8BE81A4"> 
+  <title>Exclude By IP Address</title> 
+  <shortdesc>You can eliminate data from internal website activities, such as
+	 site testing and employee usage, from your marketing reports. Excluding data
+	 improves report accuracy by excluding IP address data. Additionally, you can
+	 remove data from denial of service or other malicious events that can skew
+	 report data. You can configure exclusion or by using your firewall. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Admin tools"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p> 
+		<uicontrol>Admin tools</uicontrol> &gt; 
+		<uicontrol>Exclude by IP</uicontrol>
+	 </p> 
+	 <ul id="ul_9109217D2E1D49C49A859D1753D48F96"> 
+		<li id="li_FC9AE6A1A2E14E58A3CDD0B91935F52C"> 
+		  <xref
+			href="exclude_IP.xml#concept_265A95A803F740629CAAAA7EB8BE81A4/section_FB5A20AB5E514DA6BC596CC67F6A3A4C"
+			format="dita" scope="local"> <?xm-replace_text Exclude By Cookie?>
+		  </xref> 
+		</li> 
+		<li id="li_6BA92E591C804E3E927756E6436D92FF"> 
+		  <xref
+			href="exclude_IP.xml#concept_265A95A803F740629CAAAA7EB8BE81A4/section_609FB6461529409D840111A32FEF5C3D"
+			format="dita" scope="local"> <?xm-replace_text Exclude by IP Address?>
+		  </xref> 
+		</li> 
+		<li id="li_FD7930353B4844FCA1ED56043461C07C"> 
+		  <xref
+			href="exclude_IP.xml#concept_265A95A803F740629CAAAA7EB8BE81A4/section_3E7BFB71ADD941D39F923DB9557AD9CD"
+			format="dita" scope="local"> <?xm-replace_text Exclude by Firewall?>
+		  </xref> 
+		</li> 
+	 </ul> 
+	 <section id="section_FB5A20AB5E514DA6BC596CC67F6A3A4C"> 
+		<title>Exclude By Cookie</title> 
+		<p>Lets you exclude this computer from being tracked in your account. If
+		  you choose to exclude your computer, any data generated from your computer is
+		  not counted. 
+		</p> 
+		<p> This feature allows you and your colleagues to visit your site
+		  without skewing your traffic data. You may want to use this feature if you do
+		  not have a static IP address (such as having a dial-up Internet connection
+		  through a service provider) and would like to exclude yourself from your
+		  account data. 
+		</p> 
+		<table id="table_FB1006D3073549ACA08B9F350CE1B859"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="2.67*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col1">Element 
+				  </entry> 
+				  <entry colname="col2">Description 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <wintitle>Add CNAME</wintitle> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p> Generates an opt-out link you can use to exclude your
+						domain. For assistance, please contact your company's Supported Users. 
+					 </p> 
+					 <p>Your traffic can be excluded from reporting in your report
+						suites by visiting your company's opt-out page and choosing to exclude your
+						browser from measurement. 
+					 </p> 
+					 <p>If your implementation is using third party cookies, your
+						opt-out page is 
+						<xref
+						 href="https://democorp.112.2o7.net/optout.html?locale=en_US&amp;popup=true"
+						 format="https" scope="external">here</xref>. 
+					 </p>
+                <!--verify if article is still valid<p>If your implementation is using first party cookies, the URL for
+your opt-out page is described in <xref href="https://sitecatalyst.omniture.com/p/suite/1.3/index.html?a=HelpMenu.RedirectMenu&amp;node_id=1629&amp;cat=Knowledge_Base&amp;ssSession=31be843e17adaeeff7d4098ed8d05418&amp;jpj=93289933601243">Knowledge Base article 1629</xref>
+</p>-->
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<note>Exclusion by computer works only if: 
+		  <ul id="ul_B38EAFE87FE44A2D955A8EAC18C17D68">
+			 <li id="li_39B029BD193949E49A2F23150235EB71">You access your web site
+				from the same work station. 
+			 </li>
+			 <li id="li_39724A0050B0427BBADDC633EDFBED65">Your cookies are enabled
+				in the browser you are using. 
+			 </li>
+			 <li id="li_335C9CBB69D84C78B6733E09E2364B7F">Your cookies are not
+				deleted. If cookies are deleted, you must exclude yourself again. 
+			 </li>
+		  </ul>
+		</note> 
+	 </section> 
+	 <section id="section_609FB6461529409D840111A32FEF5C3D"> 
+		<title>Exclude by IP Address</title> 
+		<p>An IP address is an Internet address. All Internet users are assigned
+		  numerical IP addresses (typically through Internet service providers) that
+		  effectively act as electronic identifiers. 
+		</p> 
+		<p>Page views are counted and unique page visitors are identified through
+		  IP addresses. By excluding IP addresses from being counted, you can prevent
+		  Adobe from tracking frequent visitors. This feature can allow you and your
+		  colleagues to visit your site without skewing your traffic data. You may
+		  exclude up to 50 different IP addresses. 
+		</p> 
+		<p>You can use wildcard indicators (*) to exclude a range of addresses.
+		  For example, 
+		  <filepath>0.0.*.0</filepath> would exclude all IP addresses between 
+		  <filepath>0.0.0.0</filepath> and 
+		  <filepath>0.0.255.0</filepath>. You may exclude up to 50 different IP
+		  addresses. 
+		</p> 
+	 </section> 
+	 <section id="section_3E7BFB71ADD941D39F923DB9557AD9CD"> 
+		<title>Exclude by Firewall</title> 
+		<p> You can also block data collection from specific IP addresses via a
+		  firewall. 
+		</p> 
+		<p>See the 
+		  <xref
+			href="http://marketing.adobe.com/resources/help/en_US/home/index.html#kb-adobe-ip-addresses"
+			format="http" scope="external">IP Addresses Used in the Marketing Cloud</xref>
+		  article. 
+		</p> 
+	 </section> 
+	 <section id="section_51B7529FFF16449CA016FDC51D87E2CA">
+		<title>Impact of IP Obfuscation</title>
+		<p> If IP obfuscation is enabled, IP exclusion happens before the IP
+		  address is obfuscated, so customers don’t need to change anything when they
+		  enable IP obfuscation.
+		</p>
+		<p>If the last octet is removed, that is done before IP filtering. As
+		  such, the last octet is replaced with a 0, and IP exclusion rules should be
+		  updated to match IP addresses with a zero on the end. Matching * should match
+		  0.
+		</p>
+	 </section>
+  </conbody> 
+</concept>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE dita PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd"[]>
+<dita>
+  <topic id="topic_69E5D245E42C4853A4EB545C812493D7">
+    <title>Survey Report</title>
+    <shortdesc>Survey reports display data about how visitors respond survey
+		questions from surveys that you configure in Adobe Survey. 
+	 </shortdesc>
+    <prolog>
+      <metadata>
+        <othermeta name="solution" content="Analytics" />
+        <othermeta name="topic" content="Reports" />
+      </metadata>
+    </prolog>
+    <body>
+      <p>See the 
+		  <xref href="http://marketing.adobe.com/resources/help/en_US/survey/index.html" scope="external" format="http">Survey</xref> help system for more information. 
+		</p>
+    </body>
+  </topic>
+</dita>

@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_CE6D61405B2A425882B0BBBC6A072954">
+  <title>Segment Builder Elements</title>
+  <shortdesc>Descriptions of the interface elements in marketing report
+	 segmentation. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Admin tools" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <ul id="ul_8FEEADCD30C049D7B36A2537C3B202B8">
+      <li id="li_2421F77261894F1EBB916E2495EF4FEF">
+        <xref href="segment_def_builder.xml#concept_CE6D61405B2A425882B0BBBC6A072954/section_DA241488EADC486ABD1579D006FA3070" format="dita" scope="local">
+          <?xm-replace_text Segment Definition Builder Definitions?>
+        </xref>
+      </li>
+      <li id="li_64599F07FD90403BB4ED08E781C26029">
+        <xref href="segment_def_builder.xml#concept_CE6D61405B2A425882B0BBBC6A072954/section_5CCA605E3B8C42F88288C528A331493B" format="dita" scope="local">
+          <?xm-replace_text Rule Definitions?>
+        </xref>
+      </li>
+    </ul>
+    <section id="section_DA241488EADC486ABD1579D006FA3070">
+      <title> Segment Definition Builder Descriptions</title>
+      <table id="table_2039A2F5C64F48A9A917D64C8E05B630">
+        <tgroup cols="2">
+          <colspec colnum="1" colname="col1" colwidth="*" />
+          <colspec colnum="2" colname="col2" colwidth="*" />
+          <thead>
+            <row>
+              <entry colname="col1">Element 
+				  </entry>
+              <entry colname="col2">Description 
+				  </entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry colname="col1">
+                <wintitle>Title</wintitle>
+              </entry>
+              <entry colname="col2">
+                <p>The name of your segment. You can browse to locate an
+						existing segment to use as a template. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <wintitle>Components</wintitle>
+              </entry>
+              <entry colname="col2">
+                <p>The containers and events you can use to build a segment.
+						Drag and drop components from 
+						<wintitle>Segment Definition Components</wintitle> to the 
+						<wintitle>Segment Canvas</wintitle>. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <wintitle>Library</wintitle>
+              </entry>
+              <entry colname="col2">
+                <p>Stores commonly used segment definition components. To add
+						components to your library, drag any block from the canvas on the right into
+						this area. All details (including nested blocks) contained within that block
+						are preserved. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <wintitle>Container</wintitle>
+              </entry>
+              <entry colname="col2">
+                <p>Containers are used to build segments that relate to traffic
+						data. Three types of segment containers are available: 
+					 </p>
+                <ul id="ul_33B403A92DAA4C9A99162CA02A4E1757">
+                  <li id="li_EDF881E3CDA94C61BF8AAAAB2D41F460">
+                    <uicontrol>Page
+							 Views</uicontrol>: Use page segments to understand the traffic going to
+						  different areas of your site, including multiple levels of hierarchy. 
+						</li>
+                  <li id="li_BBA9F0380A9D469FBF7A11B1C14F23DE">
+                    <uicontrol>Visit</uicontrol>: Use
+						  visit segments to understand the path a visitor follows and the interaction a
+						  visitor takes, such as visits that include specific pages, campaigns,
+						  conversions, and so on. 
+						</li>
+                  <li id="li_9775DF41C2AE4097B895D2E862C90CBB">
+                    <uicontrol>Visitor</uicontrol>:
+						  Visitor segments are based on the visitor details, such as where a visitor
+						  comes from, buyers or window shoppers, authentication status, gender, age,
+						  geography, and so on. 
+						  <note>Visitor segmentation applies to visitor activity only
+							 during the reporting period. However, a visit could potentially include a
+							 persistent eVar from previous activity outside the reporting period. If that
+							 visitor returns to your site during the segment's reporting period, and the
+							 segment includes the eVar value, the visitor would be counted in the segment. 
+						  </note></li>
+                </ul>
+                <p>Containers are listed in order from most granular (Page
+						Views) to least granular (Visitors). 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <wintitle>Event</wintitle>
+              </entry>
+              <entry colname="col2">
+                <p>Events are generally for conversion data and conversion
+						events. You can make a container subordinate to an event or vice versa. When
+						the component is in place, additional boxes appear that let you add subordinate
+						components and more main-level components. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <wintitle>Include</wintitle>
+              </entry>
+              <entry colname="col2">
+                <p>Specifies whether to include components (visits, visitors,
+						referring domains, campaigns, browser type, and so on) if the requirements of
+						the events and rules are met. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <wintitle>Exclude</wintitle>
+              </entry>
+              <entry colname="col2">
+                <p>Specifies a condition that excludes components when the
+						requirements of the events and rules that you configure are met. For example,
+						you can set up a referring domains segment that excludes certain referrers or
+						pages viewed. 
+					 </p>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+    <section id="section_5CCA605E3B8C42F88288C528A331493B">
+      <title> Rule Definitions</title>
+      <table id="table_985F57F8F1E4457F98968A89E9D4855D">
+        <tgroup cols="2">
+          <colspec colnum="1" colname="col1" colwidth="*" />
+          <colspec colnum="2" colname="col2" colwidth="*" />
+          <thead>
+            <row>
+              <entry colname="col1">Element 
+				  </entry>
+              <entry colname="col2">Description 
+				  </entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry colname="col1">
+                <wintitle>Name</wintitle>
+              </entry>
+              <entry colname="col2">
+                <p>(Optional) The name of the component. This name carries over
+						from the 
+						<wintitle>Segment Definition Builder</wintitle>. Changing
+						this name does not change the core properties for the event or component.
+						Change this name to account for the definitions you have added. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <wintitle>Match</wintitle>
+              </entry>
+              <entry colname="col2">
+                <p>The logic rule that specifies whether all of the rules are
+						true, or at least one of the rules are true. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <wintitle>Include Only</wintitle>
+              </entry>
+              <entry colname="col2">
+                <p>Lets you use Boolean logic to create a filter for the rule.
+						Select an event (instance, date, eVar, and so on) to use as an operator. Valid
+						selections include: 
+					 <ul id="ul_8CAE4C2733134243BC80CF5EFE5B30B6"><li id="li_104DEECE3C85482C8DAE200E1C2D1A45"><p><uicontrol>equals</uicontrol>: The selected item must
+							 exactly equal the value you enter. 
+						  </p></li><li id="li_252A75C8EFE049E4A38356C4995BF9BF"><p><uicontrol>does not equal</uicontrol>: The selected item
+							 must not equal the value you enter. 
+						  </p></li><li id="li_E672FEADA4E744B89A8778EC8ED9CC25"><p><uicontrol>is greater than</uicontrol>: The value of
+							 selected item must be greater than the value you enter. 
+						  </p></li><li id="li_ECD0D54DFC2140D189B19770B9FCACD9"><p><uicontrol>is less than</uicontrol>: The value of the
+							 selected item must be less than value you enter. 
+						  </p></li><li id="li_A7A0C55D596244E4BA7FDB8CC9364159"><p><uicontrol>is greater than or equal to</uicontrol>: The
+							 selected item must equal or be greater than the value you enter. 
+						  </p></li><li id="li_6B0E00E37513405B849436F07400AA60"><p><uicontrol>is less than or equal to</uicontrol>: The
+							 selected item must equal or be less than the value you enter. 
+						  </p></li><li id="li_E2D7AB77D88B445C864202B19519A719"><p><uicontrol>contains</uicontrol>: The item must contain
+							 the value you enter. 
+						  </p></li><li id="li_0B742068C842472F90F822FA9C179276"><p><uicontrol>contains all of</uicontrol>: The selected
+							 item must contain all of the values you enter. 
+						  </p></li><li id="li_26B2E1132D544AC298065F7D98A8A28F"><p><uicontrol>contains at least one of</uicontrol>: The
+							 item must contain at least one of the values you enter. 
+						  </p></li></ul></p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <wintitle>Value</wintitle>
+              </entry>
+              <entry colname="col2">
+                <p>Lets you type a value for the rule operand. You can click 
+						<uicontrol>Select Item</uicontrol> to locate additional
+						items. On the resulting 
+						<wintitle>Select Item</wintitle> page, only valid values are
+						shown. 
+					 </p>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+  </conbody>
+</concept>

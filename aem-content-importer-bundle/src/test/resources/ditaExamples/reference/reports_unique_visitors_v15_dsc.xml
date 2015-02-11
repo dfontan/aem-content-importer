@@ -1,0 +1,1005 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_877141D6D1E743DA9FAB41C72A8121C7"> 
+  <title>Unique Visitors Report - Analytics</title> 
+  <shortdesc>Shows you the number of unique visitors who accessed your site.
+	 Each visitor is counted once, regardless of how many times the person visits
+	 your website. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Reports"/> </metadata>
+  </prolog> 
+  <conbody>
+    <!--<p>https://zerowing.corp.adobe.com/display/axleproj/Unique+Visitors+Reports
+		
+	 </p> 
+	 <p> There are three ways you can use Unique Visitors in Analytics: 
+	 </p> 
+	 <ul id="ul_4A80FD140D9741D4BB6764A5E270E42C"> 
+		<li id="li_81D604BC13184A3191EFB9DF4C0E4199"><?xm-replace_text List Item?>
+		</li> 
+	 </ul> 
+	 <p>There are three different types of ways that unique visitors can be used
+		in axle: 
+	 </p> 
+	 <p>1) Unique Visitors Report and Metric (trended) 2)
+		Hourly/Daily/Weekly/Monthly/Quarterly/Yearly Unique Visitors Reports (trended)
+		3) Timely Unique Visitor Metrics on non-trended reports. 
+	 </p>-->
+	 <p> 
+		<b>Sample Data</b> 
+	 </p> 
+	 <p>Refer to the following table for examples on this page. The same visitor
+		is represented here: 
+	 </p> 
+	 <table id="table_4F54873A4ED8451494E466C2BDB15B00"> 
+		<tgroup cols="8"> 
+		  <colspec colnum="1" colname="col1" colwidth="*"/> 
+		  <colspec colnum="2" colname="col2" colwidth="*"/> 
+		  <colspec colnum="3" colname="col3" colwidth="*"/> 
+		  <colspec colnum="4" colname="col4" colwidth="*"/> 
+		  <colspec colnum="5" colname="col5" colwidth="*"/> 
+		  <colspec colnum="6" colname="col6" colwidth="*"/> 
+		  <colspec colnum="7" colname="col7" colwidth="*"/> 
+		  <colspec colnum="8" colname="col8" colwidth="*"/> 
+		  <thead> 
+			 <row> 
+				<entry colname="col1">Date 
+				</entry> 
+				<entry colname="col2">1/1/2012 
+				</entry> 
+				<entry colname="col3">1/1/2012 
+				</entry> 
+				<entry colname="col4">1/2/2012 
+				</entry> 
+				<entry colname="col5">1/2/2012 
+				</entry> 
+				<entry colname="col6">1/2/2012 
+				</entry> 
+				<entry colname="col7">1/3/2012 
+				</entry> 
+				<entry colname="col8">1/4/2012 
+				</entry> 
+			 </row> 
+		  </thead> 
+		  <tbody> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p>Page 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>A 
+				  </p> 
+				</entry> 
+				<entry colname="col3"> 
+				  <p>C 
+				  </p> 
+				</entry> 
+				<entry colname="col4"> 
+				  <p>A 
+				  </p> 
+				</entry> 
+				<entry colname="col5"> 
+				  <p>B 
+				  </p> 
+				</entry> 
+				<entry colname="col6"> 
+				  <p>C 
+				  </p> 
+				</entry> 
+				<entry colname="col7"> 
+				  <p>D 
+				  </p> 
+				</entry> 
+				<entry colname="col8"> 
+				  <p>E 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p>eVar 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>T, U 
+				  </p> 
+				</entry> 
+				<entry colname="col3"> 
+				  <p>V 
+				  </p> 
+				</entry> 
+				<entry colname="col4"> 
+				  <p>W 
+				  </p> 
+				</entry> 
+				<entry colname="col5"> 
+				  <p> 
+				  </p> 
+				</entry> 
+				<entry colname="col6"> 
+				  <p>X, Y 
+				  </p> 
+				</entry> 
+				<entry colname="col7"> 
+				  <p>Z 
+				  </p> 
+				</entry> 
+				<entry colname="col8"> 
+				  <p>Z 
+				  </p> 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+	 <section id="section_372C08A881D34BBF811C1DE0A1460617"> 
+		<title>Unique Visitors Report - Trended Metric</title> 
+		<p> 
+		  <wintitle>Unique Visitors</wintitle> reports in Version 15 behave
+		  similarly in ad hoc analysis. For each hit where the visit occurs, the visitor
+		  is counted on that hit. Each page receives credit having the visitor on that
+		  page. 
+		</p> 
+		<table id="table_7D9119045E8243698B6BB2E8C93F6B97"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col1">Page 
+				  </entry> 
+				  <entry colname="col2">Unique Visitors 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>A 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>1 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>B 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>1 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>C 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>1 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>D 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>1 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>E 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>1 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Total 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>1 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<p>Also, each date receives credit for having that visitor on that date. 
+		</p> 
+		<table id="table_E0D06D9434444947BDA818F61A580B65"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col1">Date 
+				  </entry> 
+				  <entry colname="col2">Unique Visitors 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>January 1 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>1 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>January 2 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>1 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>January 3 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>1 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>January 4 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>1 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Total 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>1 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<p> 
+		  <b> 
+			 <wintitle>Unique Visitors Report</wintitle> Broken Down by 
+			 <term>Page</term>.</b> 
+		</p> 
+		<p>You can select a page for 
+		  <wintitle>Unique Visitors Report</wintitle>. In the following report,
+		  the visitor visits page A on these dates: 
+		</p> 
+		<table id="table_2ABA17B19E0D4F92AAB003BE784DA9E0"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col1">Date 
+				  </entry> 
+				  <entry colname="col2">Unique Visitors 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>January 1 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>1 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>January 2 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>1 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>January 3 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>0 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>January 4 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>0 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Total 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>1 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </section> 
+	 <section id="section_B3502EBF1ACB487AA8E0EFBA9A0561FD"> 
+		<title>Period-Based Unique Visitors (Trended)</title> 
+		<p>You can run Hourly, Daily, Weekly, Monthly, Quarterly, and Yearly 
+		  <wintitle>Unique Visitors Reports</wintitle> (trended). 
+		</p> 
+		<p>Period-based unique visitors are counted only on the first visit
+		  during the specified period. For example, Hourly Unique Visitors are counted
+		  for the first visit during the specified hour. Daily Unique Visitors are
+		  counted for the first visit on the specified day. 
+		</p> 
+		<table id="table_FF14F05CDFDA4F2E92A62D9D751A1CAA"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col1">Date 
+				  </entry> 
+				  <entry colname="col2">Weekly Unique Visitors 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>January 1 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>1 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>January 2 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>0 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>January 3 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>0 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>January 4 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>0 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Total 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>1 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<p>The following report would display for Daily Unique Visitors. 
+		</p> 
+		<table id="table_4E44BC4722064501A5B648BE80ED8E60"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col1">Date 
+				  </entry> 
+				  <entry colname="col2">Daily Unique Visitors 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>January 1 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>1 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>January 2 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>1 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>January 3 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>1 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>January 4 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>1 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Total 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>4 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<p>The metric totals can change based on the date range of the report.
+		  Marketing reports start counting time-based Unique Visitors from the beginning
+		  of the date range. For example, if the date range is January 2 through January
+		  3, the following results would be shown for Weekly Unique Visitors: 
+		</p> 
+		<table id="table_B695708BB22949E7BA293FE492D2EEA0"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col1">Date 
+				  </entry> 
+				  <entry colname="col2">Weekly Unique Visitors 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>January 2 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>1 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>January 3 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>0 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Total 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>1 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<note>version 14 would not use a date range to determine the line item
+		  that receives credit. Version 14 would process this scenario from the beginning
+		  of the period. 
+		</note> 
+		<p> 
+		  <b>Segmentation</b> 
+		</p> 
+		<p>You can use segmentation to change the date range to include later
+		  dates instead of earlier dates. For example, assume that the date range is
+		  still January 2 through January 3 (as shown in the preceding table). If you
+		  apply a segment where Page = C, January 2 would not pass the segment, and the
+		  first hit of the Weekly Unique Visitor would be on January 3. If instead you
+		  applied a segment where Page = D, then both January 2 and January 3 would be
+		  excluded. No results would be shown for the Weekly Unique Visitor and they
+		  would be excluded from the total. 
+		</p> 
+		<p> 
+		  <b>Period-Based Unique Visitors Reports 
+		  </b> 
+		</p> 
+		<p>These reports use a particular page, prop, and attribute (example:
+		  where Page = A). 
+		</p> 
+		<p>Suppose that you trend a 
+		  <wintitle>Pages Report</wintitle> with a period-based Unique Visitor
+		  metric. If there is a breakdown or variable selected for period-based Unique
+		  Visitors reports, marketing reports count all unique instances of the visitor
+		  and attribute pair. For the visitor's first hit, this processing is no
+		  different from the preceding examples. For subsequent hits, these reports
+		  include hits that the reports above do not, if the page is different. 
+		</p> 
+		<p>For Weekly Unique Visitors where Page = A, marketing reports exclude
+		  January 2 from the totals. This exclusion occurs because marketing reports
+		  already counted the Weekly Unique Visitor on January 1. Here is a weekly unique
+		  visitors report where Page = A: 
+		</p> 
+		<table id="table_9C5E00029C7340B28D76696E84F66511"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col1">Date 
+				  </entry> 
+				  <entry colname="col2">Weekly Unique Visitors 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>January 1 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>1 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>January 2 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>0 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>January 3 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>0 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>January 4 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>0 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Total 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>1 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<p>For weekly unique visitors where Page = B, the only date that it
+		  occurs on is January 2, as shown here: 
+		</p> 
+		<table id="table_262150BECCB74120B58F506F4BC6F629"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col1">Date 
+				  </entry> 
+				  <entry colname="col2">Visits - Weekly Unique Visitors 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>January 1 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>0 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>January 2 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>1 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>January 3 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>0 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>January 4 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>0 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Total 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>1 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </section> 
+	 <section id="section_90B784F4E49F4930B3F0923B95958BA2"> 
+		<title>Period-Based Unique Visitor Metrics on Non-Trended Reports</title>
+		
+		<p>You can add period-based Unique Visitor metrics to non-trended
+		  reports, such as a Weekly Unique Visitors metric on a 
+		  <wintitle>Pages Report</wintitle>. 
+		</p> 
+		<table id="table_8651A42696B0404CAEAE0FC5522CC1C9"> 
+		  <tgroup cols="3"> 
+			 <colspec colnum="1" colname="col1" colwidth="*"/> 
+			 <colspec colname="col02" colnum="2" colwidth="1.50*"/> 
+			 <colspec colnum="3" colname="col2" colwidth="*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col1">Page 
+				  </entry> 
+				  <entry colname="col02">Date of Visit 
+				  </entry> 
+				  <entry colname="col2">Visits - Weekly Unique Visitor 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>A 
+					 </p> 
+				  </entry> 
+				  <entry colname="col02"> 
+					 <p>January 1 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>1 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>B 
+					 </p> 
+				  </entry> 
+				  <entry colname="col02"> 
+					 <p>January 2 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>1 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>C 
+					 </p> 
+				  </entry> 
+				  <entry colname="col02"> 
+					 <p>January 3 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>1 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>D 
+					 </p> 
+				  </entry> 
+				  <entry colname="col02"> 
+					 <p>January 4 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>1 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>E 
+					 </p> 
+				  </entry> 
+				  <entry colname="col02"> 
+					 <p>January 5 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>1 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Total 
+					 </p> 
+				  </entry> 
+				  <entry colname="col02"> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>1 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<p>A Daily Unique Visitors metric on a 
+		  <wintitle>Pages Report</wintitle> would show: 
+		</p> 
+		<table id="table_04C7C305C2B945D6A79A6B80F48A4BF5"> 
+		  <tgroup cols="3"> 
+			 <colspec colnum="1" colname="col1" colwidth="*"/> 
+			 <colspec colname="col02" colnum="2" colwidth="1.50*"/> 
+			 <colspec colnum="3" colname="col2" colwidth="*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col1">Page 
+				  </entry> 
+				  <entry colname="col02">Date of Visit 
+				  </entry> 
+				  <entry colname="col2">Visits 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>A 
+					 </p> 
+				  </entry> 
+				  <entry colname="col02"> 
+					 <p>January 1 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>2 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>B 
+					 </p> 
+				  </entry> 
+				  <entry colname="col02"> 
+					 <p>January 2 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>2 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>C 
+					 </p> 
+				  </entry> 
+				  <entry colname="col02"> 
+					 <p>January 3 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>1 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>D 
+					 </p> 
+				  </entry> 
+				  <entry colname="col02"> 
+					 <p>January 4 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>1 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Total 
+					 </p> 
+				  </entry> 
+				  <entry colname="col02"> 
+					 <p> <?xm-replace_text Paragraph?>
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>4 Daily Unique Visitors 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<p>To break down one attribute by another (such as 
+		  <term>page</term> by 
+		  <term>eVar</term>), Analytics allocates a period-based Unique Visitor
+		  for each unique instance of the period and page (or the attribute being
+		  correlated). 
+		</p> 
+		<p>If you break down Page A by eVars T, U, January 2 is excluded because
+		  Page A was viewed on January 1. The following results would display for Weekly
+		  Unique Visitors: 
+		</p> 
+		<table id="table_328A6F2E920A44B3B55A6E6A630F6DBD"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col1">eVar 
+				  </entry> 
+				  <entry colname="col2">Weekly Unique Visitors 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>T 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>1 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>U 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>1 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Total 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>1 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </section> 
+	 <section id="section_81E139F08AEB4E30A06472856975EA1E"> 
+		<title>Persistent Cookies</title> 
+		<p>Persistent cookies stay on a visitor's computer between visits so that
+		  Adobe can identify visitors in subsequent visits. To see the percentage of
+		  users who do and do not accept persistent cookies, select 
+		  <uicontrol>Filter</uicontrol> &gt; 
+		  <uicontrol>Persistent Cookies</uicontrol>. 
+		</p>
+		<p>The graph as well as the details view below show both
+		  persistent-cookie visitors and non-persistent-cookie visitors. Most often, the
+		  number of non-persistent-cookie visitors is negligible. 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

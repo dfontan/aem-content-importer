@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_570587AF69EE4F4DBD8E95E8B8AD4BD6">
+  <title>Map Conversion Variables and Events</title>
+  <shortdesc>After you insert the code in your project, you need to map the
+	 conversion variables and events you are using to track video. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>media</keyword>
+        <keyword>milestone</keyword>
+        <keyword>sdk</keyword>
+        <keyword>video</keyword>
+      </keywords>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <context id="context_6A064853CC9A4AA2A20895E3BC5000B2" conref="video_flash_mapping.xml#task_3D50EAA204F54A1991490FC650B1F300/context_B9120B01F0BC41DAB030F3F13812E42E">
+      <p>
+        <?xm-replace_text Task Context?>
+      </p>
+    </context>
+    <steps id="steps_4048225F63074254BA79A74BB10C34D3" conref="video_flash_mapping.xml#task_3D50EAA204F54A1991490FC650B1F300/steps_C36661FC1A8741268B41EC913059F1A3">
+      <step id="step_5660EF032C2F4C1FA2E6D140882C07AF">
+        <cmd>
+          <?xm-replace_text Step?>
+        </cmd>
+      </step>
+    </steps>
+  </taskbody>
+</task>

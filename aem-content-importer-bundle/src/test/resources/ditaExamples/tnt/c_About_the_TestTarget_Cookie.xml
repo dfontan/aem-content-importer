@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_5E53D1A6DF224D7BAE76F4AE390B9DA1" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic concept/concept ">
+  <title class="- topic/title ">Cookies</title>
+  <shortdesc class="- topic/shortdesc "> By default, Target serves a single
+	 first-party cookie. The configuration can easily be changed to serve
+	 third-party cookies as well. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody class="- topic/body  concept/conbody ">
+    <p class="- topic/p ">
+      <?xm-replace_text Paragraph?>
+    </p>
+  </conbody>
+  <related-links class="- topic/related-links ">
+    <link href="c_Managing_Hosts.xml#concept_BDF83A0B965A4CD486B16DAEA2F87BA7" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Managing Hosts?>
+    </link>
+    <link href="c_Managing_users_and_Roles.xml#concept_4DB925AA849C496C9761699D6EB47CFE" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Managing Users and Roles?>
+    </link>
+    <link href="t_Adding_an_Opt-Out_Link.xml#task_439452291D1E4F458F8EC46E7D996FCD" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Adding an Opt-Out Link?>
+    </link>
+    <link href="c_Managing_Mboxes.xml#concept_37B4E053E1244DD6B9D3CD8C4945B62D" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Managing Mboxes?>
+    </link>
+    <link href="c_Parameters_and_Values.xml#concept_DB5AB8E9682D41DDA5621FFE856C6336" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Parameters and Values?>
+    </link>
+    <link href="c_ECommerce_Integration.xml#concept_F090BCC7AB1F47D9A36F22D5C438E999" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text ECommerce Integration?>
+    </link>
+    <link href="c_Tracking_Clicks.xml#concept_83F0D3C5BB004185AEECDE5F96905103" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Tracking Clicks?>
+    </link>
+    <link href="c_Tracking_Clicks_to_Offsite_Domains.xml#concept_3E014BC7CD1140EF89710A02C35DFAD4" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Tracking Clicks to Offsite Domains?>
+    </link>
+    <link href="c_Working_with_Analytics_Packages.xml#concept_1160021CC3F54E3193973FCF93E2545F" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Working with Analytics Packages?>
+    </link>
+  </related-links>
+</concept>

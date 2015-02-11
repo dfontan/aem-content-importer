@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_6B4C72EE8FAF455CB0C0B94EEE659FB5"> 
+  <title>Account Settings</title> 
+  <shortdesc>Personalize your account by configuring account details, user
+	 preferences, email alerts, and upload a user image. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Marketing Cloud"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Click the user icon, then click 
+		<uicontrol>Account Settings</uicontrol>.
+	 </p> 
+	 <p><image href="graphics/account_gear_menu.png"
+		id="image_3F88A2CADA6E4DBCA4FA4F39E4BD23F7"><?xm-replace_text Paragraph?></image>
+	 </p>
+  </conbody> 
+</concept> 

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_A16B1920AC754F3B90DDDB50137707FB">
+  <title>Secure Pages</title>
+  <shortdesc> Secure pages (pages loaded under https://) encrypt the image
+	 request and add to the total download time.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Troubleshooting" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Secure pages can add as much as 50-75% overhead to the image request.
+		Customers should ensure that https is used only where necessary.
+	 </p>
+  </conbody>
+</concept>

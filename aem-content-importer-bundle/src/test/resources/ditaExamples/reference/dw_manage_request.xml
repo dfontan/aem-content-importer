@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_0A4D17955EE144B0937125EF81445104"> 
+  <title>Manage a data warehouse request</title> 
+  <shortdesc>The Request Manager lets you prioritize, edit, cancel, and
+	 duplicate data warehouse requests.
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta content="Analytics" name="solution"/> </metadata>
+  </prolog> 
+  <conbody>
+	 <p><menucascade><uicontrol>Data Warehouse</uicontrol><uicontrol>Request
+			 Manager</uicontrol></menucascade>
+	 </p>
+	 <table id="table_521F3B5457F84F86841D162BAEF39657">
+		<tgroup cols="2"><colspec colnum="1" colname="col1"
+		  colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="6.72*"/><thead>
+			 <row>
+				<entry colname="col1">Action
+				</entry>
+				<entry colname="col2">Description
+				</entry>
+			 </row></thead>
+		  <tbody>
+			 <row>
+				<entry colname="col1">Prioritize
+				</entry>
+				<entry colname="col2">
+				  <p>You can drag and drop scheduled reports to change their
+					 priority in the queue. 
+				  </p>
+				</entry>
+			 </row>
+			 <row>
+				<entry colname="col1">Edit Schedule
+				</entry>
+				<entry colname="col2">
+				  <p>Lets you specify advanced delivery options such as 
+				  </p>
+				  <ul id="ul_54EE2D2BAF5F4135A6372325339EF3B7">
+					 <li id="li_6CD2D8A585204B5AADC7E653023393D9">
+						<p>Report Options: Report format, Report contents, Additional
+						  Documents, Report Destination
+						</p>
+					 </li>
+					 <li id="li_A71D93584F524D9FA83D191BAEC8C288">
+						<p>Schedule Options: Delivery Frequency, End Delivery Options
+						  
+						</p>
+					 </li>
+				  </ul>
+				</entry>
+			 </row>
+			 <row>
+				<entry colname="col1">Duplicate
+				</entry>
+				<entry colname="col2">
+				  <p>Copies the request and drops you back into the Data Warehouse
+					 Request interface where you can edit it further. 
+				  </p>
+				</entry>
+			 </row>
+			 <row>
+				<entry colname="col1">Cancel
+				</entry>
+				<entry colname="col2">Cancels the request.
+				</entry>
+			 </row>
+			 <row>
+				<entry colname="col1">Search by Report Name or Login 
+				</entry>
+				<entry colname="col2">Lets you enter the term or login ID you want
+				  to search on.
+				</entry>
+			 </row>
+		  </tbody>
+		</tgroup>
+	 </table>
+  </conbody>
+</concept>

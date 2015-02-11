@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_D91406C042C340D2B0A235E51F259DBD"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"
+ ditaarch:DITAArchVersion="1.1"
+ domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)"
+ class="- topic/topic task/task "> 
+  <title class="- topic/title ">Downloading Data in a CSV File</title> 
+  <shortdesc class="- topic/shortdesc ">Download data in a .csv format for
+	 quick import into Excel, Access or other data analysis programs. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Target"/> 
+		<othermeta name="topic" content="Advanced"/> </metadata>
+  </prolog> 
+  <taskbody class="- topic/body task/taskbody "> 
+	 <context id="context_2C540621BDB84F6F875DD96D5E5FAC93"
+	  class="- topic/section task/context "> 
+		<p class="- topic/p ">CSV data includes the following: 
+		</p> 
+		<p class="- topic/p "> 
+		<ul id="ul_A7275C8373EE4E7E91AA14425349C843" class="- topic/ul "> 
+		  <li id="li_0161FA4D61424E9DA63F1DC34BE98416" class="- topic/li "> Mean
+			 time to conversion in hours, so you can see how long it takes the average
+			 visitor to reach the conversion point 
+		  </li> 
+		  <li id="li_3B756FBA158F49AB85551C4C7A88600A" class="- topic/li "> Sum
+			 of revenues, squared, for offline statistical confidence calculations 
+		  </li> 
+		</ul> 
+		</p> 
+		<p class="- topic/p ">Data is saved for 90 days from the visitor's last
+		  visit, or until the end of the campaign. 
+		</p> 
+		<p class="- topic/p "> 
+		  <note class="- topic/note ">Audit report data is stored for only four
+			 weeks. For more information, see 
+			 <xref
+			 href="c_Audit_Report.xml#concept_62CFE7D421AB494A8B084D1CD53C2909"
+			 type="concept" format="dita" scope="local" class="- topic/xref ">Audit
+				Report</xref>. 
+		  </note> 
+		</p> 
+		<p class="- topic/p ">You can also use the 
+		  <xref
+		  href="http://marketing.adobe.com/resources/help/en_US/tnt/pdf/Complete_Confidence_Calculator_w_AOV.xlsx"
+		  scope="external" format="http" class="- topic/xref ">Complete Confidence
+			 Calculator</xref> and the 
+		  <xref
+		  href="http://marketing.adobe.com/resources/help/en_US/tnt/pdf/sample_size_calculator.xlsx"
+		  format="http" scope="external">Sample Size Calculator</xref>.
+		</p>
+	 </context> 
+  </taskbody> 
+  <related-links class="- topic/related-links "> 
+	 <link href="c_About_the_Data.xml#concept_2D9FEDE8F94A485DAC86D611BFBDC844"
+	 type="concept" format="dita" scope="local" class="- topic/link "> <?xm-replace_text About the Data?>
+	 </link> 
+	 <link
+	 href="t_Changing_the_Control_Experience.xml#task_0600985520EA4C42A03353A7AA9AB18F"
+	 type="task" format="dita" scope="local" class="- topic/link "> <?xm-replace_text Changing the Control Experience?>
+	 </link> 
+	 <link
+	 href="t_Changing_the_Comparison_Column.xml#task_AE54E96BAD32457295018542151DEB75"
+	 type="task" format="dita" scope="local" class="- topic/link "> <?xm-replace_text Changing the Comparison Column?>
+	 </link> 
+	 <link
+	 href="t_Selecting_the_Host_Group.xml#task_1644EEFA401A42E1B76225311BAB3E8F"
+	 type="task" format="dita" scope="local" class="- topic/link "> <?xm-replace_text Selecting the Host Group?>
+	 </link> 
+	 <link
+	 href="t_Excluding_Extreme_Orders.xml#task_A50092998F1241508FE8C15276146E46"
+	 type="task" format="dita" scope="local" class="- topic/link "> <?xm-replace_text Excluding Extreme Orders?>
+	 </link> 
+	 <link
+	 href="t_Changing_the_Date_Range.xml#task_9AF952FFAB474D33970D59AB15C72E3B"
+	 type="task" format="dita" scope="local" class="- topic/link "> <?xm-replace_text Changing the Date Range?>
+	 </link> 
+	 <link
+	 href="t_Setting_the_Weekday_Filter.xml#task_8D15814511004DE0AA3B385DB5E81CB3"
+	 type="task" format="dita" scope="local" class="- topic/link "> <?xm-replace_text Setting the Weekday Filter?>
+	 </link> 
+	 <link
+	 href="t_Remembering_Report_Settings.xml#task_D50311361809443E883C1184B1A20F77"
+	 type="task" format="dita" scope="local" class="- topic/link "> <?xm-replace_text Remembering Report Settings?>
+	 </link> 
+	 <link href="t_Pushing_a_Winner.xml#task_F7D69D4BA9FD47B1B37A2BB0AEFE9C3C"
+	 type="task" format="dita" scope="local" class="- topic/link "> <?xm-replace_text Pushing a Winner?>
+	 </link> 
+  </related-links> 
+</task>

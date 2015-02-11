@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_685A5C832A6C40619ACB5920925785DC">
+  <title>s_account</title>
+  <shortdesc> The 
+	 <varname>s_account</varname> variable determines the report suite where
+	 data is stored and reported. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Variables" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>If sending to multiple report suites (multi-suite tagging), 
+		<varname>s_account</varname> may be a comma-separated list of values. The
+		report suite ID is determined by Adobe. 
+	 </p>
+    <p>
+      <b>Parameters</b>
+    </p>
+    <table id="table_29A59379669144A0B56C0F436B372861">
+      <tgroup cols="4">
+        <colspec colnum="1" colname="col1" colwidth="*" />
+        <colspec colnum="2" colname="col2" colwidth="*" />
+        <colspec colnum="3" colname="col3" colwidth="*" />
+        <colspec colnum="4" colname="col4" colwidth="*" />
+        <thead>
+          <row>
+            <entry colname="col1">Max Size 
+				</entry>
+            <entry colname="col2">Debugger Parameter 
+				</entry>
+            <entry colname="col3">Reports Populated 
+				</entry>
+            <entry colname="col4">Default Value 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry colname="col1">
+              <p>40 Bytes 
+				  </p>
+            </entry>
+            <entry colname="col2">
+              <p>In the URL path 
+				  </p>
+            </entry>
+            <entry colname="col3">
+              <p>N/A 
+				  </p>
+            </entry>
+            <entry colname="col4">
+              <p>N/A 
+				  </p>
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p>Each report suite ID must match the value created in the 
+		<keyword>Admin Console</keyword>. Each report suite ID must be 40 bytes
+		or less, but the aggregate of all report suites (the entire comma-separated
+		list) has no limit. 
+	 </p>
+    <p>The report suite is the most fundamental level of segmentation in
+		reporting. You can set as many report suites as your contract allows. Each
+		report suite refers to a dedicated set of tables that are populated in Adobe's
+		collection servers. A report suite is identified by the 
+		<varname>s_account</varname> variable in your JavaScript code. 
+	 </p>
+    <p>Within 
+		<keyword>Analytics</keyword>, the site drop-down box in the upper left of
+		the reports displays the current report suite. Each report suite has a unique
+		identifier called a report suite ID. The 
+		<varname>s_account</varname> variable contains one or more report suite
+		IDs to which data is sent. The report suite ID value, which is invisible to 
+		<keyword>Analytics</keyword> users, must be provided or approved by Adobe
+		before you use it. Every report suite ID has an associated "friendly name" that
+		can be changed in the report suites section of the 
+		<keyword>Admin Console</keyword>. 
+	 </p>
+    <p>The 
+		<varname>s_account</varname> variable is normally declared inside the
+		JavaScript file (s_code.js). You can declare the 
+		<varname>s_account</varname> variable on the HTML page, which is a common
+		practice when the value of 
+		<varname>s_account</varname> may change from page to page. Because the 
+		<varname>s_account</varname> variable has a global scope, it should be
+		declared immediately before including Adobe's JavaScript file. If 
+		<varname>s_account</varname> does not have a value when the JavaScript
+		file is loaded, no data is sent to 
+		<keyword>Analytics</keyword>. 
+	 </p>
+    <p>Adobe's 
+		<keyword>DigitalPulse Debugger</keyword> displays the value of 
+		<varname>s_account</varname> in the path of the URL that appears just
+		below the word "Image," just after /b/ss/. In some cases, the value of 
+		<varname>s_account</varname> also appears in the domain, before
+		112.2o7.net. The value in the path is the only value that determines the
+		destination report suite. The bold text below shows the report suites that data
+		is sent to, as it appears in the debugger. See 
+		<xref href="debugger.xml#concept_B26FFE005EDD4E0FACB3117AE3E95AA2" format="dita" scope="local"><?xm-replace_text DigitalPulse Debugger?></xref> . 
+	 </p>
+    <p>
+      <codeblock outputclass="syntax javascript">http://mycompany.112.2o7.net/b/ss/<b>mycompanycom,mycompanysection</b>/1/H.1-pdv-2/s21553246810948?[AQB]</codeblock>
+    </p>
+    <section id="section_3BE913DF26D848AEB4CB5B0A6CE7F0CA">
+      <title>Syntax and Possible Values</title>
+      <p>The report suite ID is an alphanumeric string of ASCII characters, no
+		  more than 40 bytes in length. The only non-alphanumeric character allowed is a
+		  hyphen. Spaces, periods, commas and other punctuation are not allowed. The 
+		  <varname>s_account</varname> variable may contain multiple report
+		  suites, all of which receive data from that page. 
+		</p>
+      <codeblock outputclass="syntax javascript">var s_account="reportsuitecom[,reportsuite2[,reportsuite3]]"</codeblock>
+      <p>All values of 
+		  <varname>s_account</varname> must be provided or approved by Adobe. 
+		</p>
+    </section>
+    <section id="section_16580A9101B64560A58C7745397FB42F">
+      <title>Examples</title>
+      <codeblock outputclass="syntax javascript">var s_account="mycompanycom"</codeblock>
+      <codeblock outputclass="syntax javascript">var s_account="mycompanycom,mycompanysection"</codeblock>
+    </section>
+    <section id="section_7DFB2CCF02F045AFB1AD4F376638393B">
+      <title>Configuring the Variable in 
+		  <keyword>Analytics</keyword></title>
+      <p>The friendly name associated with each report suite ID can be changed
+		  by Adobe 
+		  <keyword>ClientCare</keyword>. The friendly name can be seen in 
+		  <keyword>Analytics</keyword> in the site drop-down box in the top, left
+		  section of the screen. 
+		</p>
+    </section>
+    <section id="section_BFFDA5C0AF31442494B0E02F0925CF93">
+      <title>Pitfalls, Questions, and Tips</title>
+      <ul id="ul_0E94CAB473914D779524E4EE18BD2705">
+        <li id="li_557751C654E54E30A0561F67CCE8FBA4">If 
+			 <varname>s_account</varname> is empty, not declared, or contains an
+			 unexpected value, no data is collected. 
+		  </li>
+        <li id="li_BBFD06D6BFC94C5DBBEFAB8B449367AF"> When the 
+			 <varname>s_account</varname> variable is a comma-separated list
+			 (multi-suite tagging), do not put spaces between report suite IDs. 
+		  </li>
+        <li id="li_89B6C1ED39A347449B402C75A990B564">If 
+			 <wintitle>s.dynamicAccountSelection</wintitle> is set to 'True,' the
+			 URL is used to determine the destination report suite. Use the 
+			 <keyword>DigitalPulse Debugger</keyword> to determine the destination
+			 report suite(s). 
+		  </li>
+        <li id="li_2C45D0096B8D465ABA5BAAE7957CC15C"> In some cases, 
+			 <keyword>VISTA</keyword> can be used to alter the destination report
+			 suite. Using<keyword>VISTA</keyword> to re-route or copy the data to another
+			 report suite is recommended when using first-party cookies, or if your site has
+			 more than 20 active report suites. 
+		  </li>
+        <li id="li_2B436B5E74E54EA4AC19632DA82E5D5A"> Always declare 
+			 <varname>s_account</varname> inside the JS file or just before it is
+			 included. 
+		  </li>
+      </ul>
+    </section>
+  </conbody>
+</concept>

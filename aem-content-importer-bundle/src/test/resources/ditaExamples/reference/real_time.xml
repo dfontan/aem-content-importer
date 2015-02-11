@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_F35D3ED34AE04D3F88108538FAF87C15">
+  <title>Real Time</title>
+  <shortdesc>Real-time reports display web page traffic and rank page views in
+	 real time, so that you can more quickly understand what is trending on your
+	 site.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>For real-time reporting, Analytics uses high-frequency metrics and site
+		analytics to visually report traffic and page view trending of dynamic news and
+		retail web sites. Real-time understands trends in your data from minute to
+		minute, within seconds of collection. It collects and streams data to the
+		interface, using real-time correlation and tracking of content and some
+		conversion.
+	 </p>
+  </conbody>
+</concept>

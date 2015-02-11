@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_21E18B9622AD4216AF54512F6502EBA6"> 
+  <title>Add a key visitor</title> 
+  <shortdesc>Steps that describe how to add a key visitor. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Admin tools"/> </metadata>
+  </prolog> 
+  <taskbody> 
+	 <steps id="steps_73B5B7A661794296AB58154D20F37F20"> 
+		<step id="step_96CB3DD8012E4FB493C76ABEE295ABB5"> 
+		  <cmd>In version 14, click 
+			 <uicontrol>Admin</uicontrol> &gt; 
+			 <uicontrol>Report Suites</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_B2AEB72CBAB64036BE2ED419CFDC13B6"> 
+		  <cmd>Select a report suite. 
+		  </cmd> 
+		</step> 
+		<step id="step_A326345ED8BE49738A22657FB55ADF8E"> 
+		  <cmd>Click 
+			 <uicontrol>Edit Settings</uicontrol> &gt; 
+			 <uicontrol>Traffic</uicontrol> &gt; 
+			 <uicontrol>Key Visitors</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_AD49361BEE1946E7946A6CC78CDB8AA8"> 
+		  <cmd>In the 
+			 <uicontrol>Add Key Visitor</uicontrol> field, specify the Key Visitor
+			 to track by IP address or domain name. 
+		  </cmd> 
+		  <stepresult> 
+			 <p>For example, if you want to track visitors from ABC Corp., you
+				could specify either abccorp.com or the associated ABC Corp. IP address (for
+				example, 100.211.2.15). 
+			 </p> 
+		  </stepresult> 
+		</step> 
+		<step id="step_73C61EB19BCA484E8B0C0CB61EC4E06A"> 
+		  <cmd>Click 
+			 <uicontrol>Add</uicontrol> to save the entry. 
+		  </cmd> 
+		  <stepresult> 
+			 <p>Once added, you can click 
+				<uicontrol>Delete</uicontrol> to delete a key visitor entry. You
+				can also click the 
+				<i>Report Suites</i> link to see all reports suites that track this
+				particular key visitor. 
+			 </p> 
+		  </stepresult> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task>

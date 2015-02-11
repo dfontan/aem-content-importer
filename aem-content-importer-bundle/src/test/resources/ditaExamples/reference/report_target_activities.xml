@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_38533CA0F53C4ED2847A99455655B4B0">
+  <title>Target Activities Report</title>
+  <shortdesc>Shows the list of activities (campaigns) you have configured in
+	 Target. Requires that the Analytics for Target integration be enabled.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports" />
+    </metadata>
+  </prolog>
+  <conbody></conbody>
+</concept>

@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_69BF4ADF4C7E4B719259E1851CB73C59"> 
+  <title>Verify the Referrer with the Adobe Debugger</title> 
+  <shortdesc>Run a test to verify that the referrer, originating URL
+	 (<varname>s_server</varname>) and campaign variables are being captured. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Developer and implementation"/> 
+		<othermeta name="subtopic" content="Redirects"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>These variables will be represented as the following parameters in the 
+		<xref
+		 href="debugger.xml#concept_B26FFE005EDD4E0FACB3117AE3E95AA2" format="dita"
+		 scope="local">Adobe Debugger</xref>. 
+	 </p> 
+	 <table id="table_5F3B987D4D514CA283F7B9F52EBC2301"> 
+		<tgroup cols="3"> 
+		  <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+		  <colspec colnum="2" colname="col2" colwidth="1.54*"/> 
+		  <colspec colnum="3" colname="col3" colwidth="1.28*"/> 
+		  <thead> 
+			 <row> 
+				<entry>
+				</entry> 
+				<entry> 
+				  <b>URL or Query String Value</b> 
+				</entry> 
+				<entry> 
+				  <b>Value as Shown in the DigitalPulse Debugger</b> 
+				</entry> 
+			 </row> 
+		  </thead> 
+		  <tbody> 
+			 <row> 
+				<entry> 
+				  <p>Original Referrer 
+				  </p> 
+				</entry> 
+				<entry> 
+				  <p> 
+					 <filepath>http://www.google.com/search%3F hl%3Den
+						%26ie%3DUTF826q%3 Ddiscount%2Bairline%2Btickets</filepath> 
+				  </p> 
+				</entry> 
+				<entry> 
+				  <p> 
+					 <filepath>r=http:/ref=www.google.com/search?hl=en&amp;ie=UTF
+						-8&amp;q=discount+airline+tickets 
+					 </filepath> 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 
+				  <p>Page URL 
+				  </p> 
+				</entry> 
+				<entry> 
+				  <p> 
+					 <filepath>http://www.flytohawaiiforfree.com 
+					 </filepath> 
+				  </p> 
+				</entry> 
+				<entry> 
+				  <p> 
+					 <filepath>g=http://www.flytohawaiiforfree.com</filepath> 
+				  </p> 
+				  <p>This value will appear in the DigitalPulse Debugger if the 
+					 <varname>pageURL</varname> variable is used. 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 
+				  <p>Ultimate Landing Page URL 
+				  </p> 
+				</entry> 
+				<entry> 
+				  <p> 
+					 <filepath>http://www.flywithus.com 
+					 </filepath> 
+				  </p> 
+				</entry> 
+				<entry> 
+				  <p>This value will NOT appear in the DigitalPulse Debugger if the
+					 
+					 <varname>pageURL</varname> variable is used. 
+				  </p> 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+	 <p>The text that the debugger displays should correspond to the following
+		example: 
+	 </p> 
+	 <codeblock>Image
+
+http://flywithuscom.112.2o7.net/b/ss/flywithuscom/1/JS-1.4/s61944015791667?[AQB]
+ndh=1
+t=4/8/2014 13:34:28 4 360
+pageName=Welcome to FlyWithUs.com
+r=http://ref=www.google.com/search?hl=en&amp;ie=UTF-8&amp;q=discount+airline+tickets
+cc=USD
+g=http://www.flytohawaiiforfree.com
+s=1280x1024
+c=32
+j=1.3
+v=Y
+k=Y
+bw=1029
+bh=716
+ct=lan
+hp=N
+[AQE]</codeblock> 
+	 <p>After verifying that the Adobe Debugger displays these variables, it is
+		always helpful to confirm that the search terms and the original referring
+		domain (prior to the redirect) are registering traffic in reports. 
+	 </p> 
+  </conbody> 
+</concept>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE dita PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd"[]>
+<dita>
+  <topic id="topic_EBC899DB84A84780A1B8EE95C6C4CF18">
+    <title>Target Report</title>
+    <shortdesc>View and segment your Target traffic data in a
+		marketing report. 
+	 </shortdesc>
+    <prolog>
+      <metadata>
+        <othermeta name="solution" content="Analytics" />
+        <othermeta name="topic" content="Reports" />
+      </metadata>
+    </prolog>
+    <body>
+      <p>Examples include: 
+		</p>
+      <p>
+        <ul id="ul_01785DE9A6D9417A84DF43A4CFAAC514">
+          <li id="li_8F4BFE2F0E4E45D78AF8C7EDF8F32FC8">
+            <p>Measuring the success of Target campaigns through your
+				KPIs. 
+			 </p>
+          </li>
+          <li id="li_8BF6C2FF314B441CB983BE2F1D896C0F">
+            <p>Subrelating Target campaign and recipe data with
+				marketing conversion variables. 
+			 </p>
+          </li>
+          <li id="li_9307A0ED28A74242983A0A312AD8E916">
+            <p>Subrelating other marketing reports with Target
+				campaign and recipe traffic data. 
+			 </p>
+          </li>
+        </ul>
+      </p>
+      <p>By leveraging data in marketing reports, you can drill into your
+		  Target recipes using subrelations and detect high performing segments
+		  that are ideal for future tests and potentially targeted campaigns. The
+		  marketing report displays analytics conversion data rather than
+		  conversion data from Target.
+		</p>
+      <p>See the 
+		  <xref href="https://help.testandtarget.omniture.com/" scope="external" format="html">Target</xref> help system for more information. 
+		</p>
+    </body>
+  </topic>
+</dita>

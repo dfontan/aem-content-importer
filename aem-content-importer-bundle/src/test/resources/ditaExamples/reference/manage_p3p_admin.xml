@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_4D55C48F2D2F41128A4CA2E5FFEC18E7"> 
+  <title>Manage P3P Policy</title> 
+  <shortdesc>The Manage P3P Policy page lets you upload your organization's P3P
+	 policy. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Admin tools"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p> 
+		<uicontrol>Analytics</uicontrol> &gt; 
+		<uicontrol>Admin</uicontrol> &gt; 
+		<uicontrol>Company Settings</uicontrol> &gt; 
+		<uicontrol>P3P Policy</uicontrol>
+	 </p> 
+	 <p>Web browsers use the P3P policy privacy settings when browsing your
+		website. For more information about P3P, visit the 
+		<xref href="http://www.w3.org/P3P/" format="http"
+		scope="external">Platform for Privacy Preferences</xref> project website. 
+	 </p> 
+	 <p>If you do not upload a privacy policy, Analytics uses a default policy.
+		Your P3P policy is available from only under the following conditions: 
+	 </p> 
+	 <ul id="ul_6AF55200FBB44656A90E9A1116317CE2"> 
+		<li id="li_AF9569B3731D492C919D5746396F71A8">The 
+		  <varname>visitorNamespace</varname> variable is declared in your web
+		  beacon 
+		  <filepath>(s_code.js</filepath>). 
+		</li> 
+		<li id="li_6021F6D83E0E40A4A7C6045589353F60">Data is collected using a
+		  standard domain (<filepath>2o7.net</filepath> or 
+		  <filepath>omtrdc.net</filepath>). 
+		</li> 
+	 </ul> 
+	 <p>If your web site's data collection does not meet these requirements,
+		marketing reports provide a default P3P policy. 
+	 </p> 
+	 <p>Adobe maintains a list of the collection domains for your company, so
+		that P3P is served for the appropriate domains. To update this list, have your
+		organization's supported user contact Customer Care. 
+	 </p> 
+	 <table id="table_93A5EE2F63D949EF9EEC5BDA397013B5"> 
+		<tgroup cols="2"> 
+		  <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+		  <colspec colnum="2" colname="col2" colwidth="2.31*"/> 
+		  <thead> 
+			 <row> 
+				<entry colname="col1">Element 
+				</entry> 
+				<entry colname="col2">Description 
+				</entry> 
+			 </row> 
+		  </thead> 
+		  <tbody> 
+			 <row> 
+				<entry colname="col1"> 
+				  <wintitle>Upload Full Policy</wintitle> 
+				</entry> 
+				<entry colname="col2">The path to your organization's P3P policy
+				  file. Typically, a website's full P3P policy is contained in an XML file
+				  (<filepath>/w3c/p3p.xml 
+				  </filepath>). 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <wintitle>Enter Compact Policy</wintitle> 
+				</entry> 
+				<entry colname="col2">The compact policy definition. Your website
+				  includes the compact policy as part of the HTTP header so Web browsers can
+				  process the policy before displaying the web page. 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+  </conbody> 
+</concept>

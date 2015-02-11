@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_79C8C1A0F939483992595D751318DE48" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title "> Analytics to Target Integration to Track
+	 Analytics Events</title>
+  <shortdesc class="- topic/shortdesc ">By integrating with Analytics data,
+	 Target can track conversions based on success events that are already tracked
+	 in Adobe Analytics, even if these success events are only fired based on a
+	 click. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <context id="context_5D1ABA44DACB42A2B79DCE4FE426E47D" class="- topic/section task/context ">
+      <p>
+        <note>As of April 17, 2014, the information in this section has been
+			 deprecated, and is replaced by the 
+			 <xref href="http://marketing.adobe.com/resources/help/en_US/target/a4t/" format="http" scope="external">Adobe Analytics as the Reporting Source for
+				Adobe Target</xref> functionality. Adobe is continuing to support the former
+			 integration methods, but it is recommended that you use the new functionality.
+		  </note>
+      </p>
+      <p class="- topic/p ">Often, conversions are only tracked after a click.
+		  For example, a user might click the 
+		  <uicontrol class="+ topic/ph ui-d/uicontrol ">Add to Cart</uicontrol>
+		  button without going to another page. Your existing integration might already
+		  track this with a specific event. This conversion data can be tracked easily in
+		  Target if the client has Adobe Analytics and the Analytics-to-Target
+		  integration is enabled. 
+		</p>
+      <p class="- topic/p ">To track these event-based clicks, do the
+		  following: 
+		</p>
+    </context>
+    <steps id="steps_79621F41924147E9866F21F4E777D160" class="- topic/ol task/steps ">
+      <step id="step_BC0C730571E44BB29AC9D5E4F85ABC49" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Make sure Target is set up to receive
+			 Adobe Analytics data with the following: 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <ul id="ul_45E928434D2A4986B66D5F9FDC8E362A" class="- topic/ul ">
+            <li id="li_97DB4971051F4434AC109C20D881468B" class="- topic/li ">
+				  Verify that your Analytics implementation is using 
+				  <filepath class="+ topic/ph sw-d/filepath ">s_code.js</filepath>
+				  version 17 or higher. 
+				</li>
+            <li id="li_79DCF2DF41F040048F51722267345EA8" class="- topic/li ">
+				  Enable the Analytics plugin in your 
+				  <filepath class="+ topic/ph sw-d/filepath ">mbox.js</filepath>
+				  configuration menu and upload a new copy with this change to your server. 
+				</li>
+            <li id="li_535AD3B1815344E6A2B7919FDBA97B8E" class="- topic/li ">
+				  Add the 
+				  <codeph class="+ topic/ph pr-d/codeph ">mboxLoadSCPlugins(s)</codeph> function call to
+				  your page-level Analytics code after the variables have been declared and
+				  before the 
+				  <codeph class="+ topic/ph pr-d/codeph ">s.t()</codeph> call is
+				  called. 
+				</li>
+          </ul>
+        </stepresult>
+      </step>
+      <step id="step_3BA855C305D54380B49DED69199ED030" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">In your campaign, create a success
+			 metric with 
+			 <codeph class="+ topic/ph pr-d/codeph ">SiteCatalyst:event</codeph>
+			 as the mbox location. 
+		  </cmd>
+      </step>
+      <step id="step_716707AADC1E403EAD37A411979C4999" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Target on the mbox parameter for
+			 events that contain your event. (For example,<codeph class="+ topic/ph pr-d/codeph ">event8</codeph>.) 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p "> If you are looking for event 8, you would
+				select the mbox 
+				<codeph class="+ topic/ph pr-d/codeph ">SiteCatalyst:
+				  event</codeph> and target the success metric to track when current page mbox
+				parameter 
+				<codeph class="+ topic/ph pr-d/codeph ">events</codeph> contains 
+				<codeph class="+ topic/ph pr-d/codeph ">event8</codeph>. 
+			 </p>
+        </stepresult>
+      </step>
+    </steps>
+    <example id="example_E2AE8753688045B69D4A9A1213A1BEAB" class="- topic/example ">
+      <p class="- topic/p ">Code Example: 
+		</p>
+      <p class="- topic/p ">
+        <codeblock outputclass="syntax html">function trackClick(s_account)
+
+{
+
+var s=s_gi(s_account);
+
+s.linkTrackVars="events";
+
+s.linkTrackEvents="event8";
+
+s.events="event8";
+
+s.tl(true,"o","name my link here");
+
+}
+
+&lt;a href="#"&gt;track this!&lt;/a&gt;
+</codeblock>
+      </p>
+    </example>
+  </taskbody>
+  <related-links class="- topic/related-links ">
+    <link href="r_Installing_the_SiteCatalyst_Plug-In.xml#reference_EEC90B75E5E4483A80022E623363AD62" type="reference" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Install the SiteCatalyst Plug-In?>
+    </link>
+    <link href="c_Using_the_SiteCatalyst_event_Mbox.xml#concept_795235E60E4B4661A0CF942C636B69BD" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text SiteCatalyst: event Mbox?>
+    </link>
+    <link href="c_Using_the_SiteCatalyst_purchase_Mbox.xml#concept_2B0C42538AD54DC59C89E7F4D566FA40" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text SiteCatalyst purchase: Mbox?>
+    </link>
+    <link href="c_Viewing_Campaigns_and_Experiences_in_SiteCatalyst_Reports.xml#concept_943F805CC80848649FF8D64A193BAFC2" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Viewing Campaigns and Experiences in   SiteCatalyst Reports?>
+    </link>
+  </related-links>
+</task>

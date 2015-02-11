@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_DB31E18F26EA426EB7A87EAE16A477A5">
+  <title>Engagement</title>
+  <shortdesc>Many online businesses consider visitor engagement as an indicator
+	 of success. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Does something about Experience B's creative resonate with visitors so
+		they consume more (or more valuable) content than Experience A? Capture
+		information about your site visitors and measure their level of engagement with
+		statistical confidence. You can choose to capture engagement when selecting
+		your success metrics. This means that "success" for a campaign does not have to
+		be simply reaching a particular place on the site or performing a particular
+		action. A visitor's aggregate actions can be used to measure success. 
+	 </p>
+  </conbody>
+  <related-links>
+    <link href="c_Providing_High-Level_Information_About_a_Campaign.xml#concept_6E17BAE005474DCE8CBC35012279DB99" type="concept" format="dita" scope="local">
+      <?xm-replace_text High-Level Information About a Campaign?>
+    </link>
+    <link href="t_Setting_Targeting_Rules.xml#task_75C6702BE0AC45E9A0B9DB26FDBB18B2" type="task" format="dita" scope="local">
+      <?xm-replace_text Targeting Rules?>
+    </link>
+    <link href="t_Setting_Experiences.xml#task_6137A1D6EEFF4746B94E9BC5B675680A" type="task" format="dita" scope="local">
+      <?xm-replace_text Experiences?>
+    </link>
+    <link href="r_Optional_Features.xml#reference_DDC35A6553F04FCB9D9B257CB4037F79" type="reference" format="dita" scope="local">
+      <?xm-replace_text Optional Features?>
+    </link>
+    <link href="t_Setting_Conversion_and_Success_Metrics.xml#task_52EBE07CA34D4F37AD19D0DB999591F5" type="task" format="dita" scope="local">
+      <?xm-replace_text Conversion and Success Metrics?>
+    </link>
+    <link href="c_Managing_Segment_Filters.xml#concept_DF9534D4168D46D4B109DD0D2FB57781" type="concept" format="dita" scope="local">
+      <?xm-replace_text Managing Segment Filters?>
+    </link>
+    <link href="t_Saving_Your_Campaign.xml#task_3E7A956E742943F6AE258A782AA82401" type="task" format="dita" scope="local">
+      <?xm-replace_text Saving Your Campaign?>
+    </link>
+  </related-links>
+</concept>

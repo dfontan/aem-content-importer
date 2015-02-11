@@ -1,0 +1,10 @@
+<?xml version="1.0"?><!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"><concept id = "concept_94F7B5ABA75542049887F46CFB91D114">
+	<title>The s.abort() Function</title>
+	<shortdesc><?xm-replace_text Short Description?></shortdesc>
+	<prolog>
+		<metadata>
+			<othermeta content = "Analytics" name = "solution"/>
+		</metadata>
+	</prolog>
+	<conbody><p><?xm-replace_text Paragraph?></p></conbody>
+</concept>

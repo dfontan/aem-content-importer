@@ -31,6 +31,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.adobe.aem.importer.XMLTransformerHelper;
+import com.adobe.aem.importer.exception.AemImporterException;
+import com.adobe.aem.importer.exception.AemImporterException.AEM_IMPORTER_EXCEPTION_TYPE;
 import com.day.cq.commons.jcr.JcrUtil;
 
 public class ZipHelper {
@@ -49,94 +51,117 @@ public class ZipHelper {
 	 * @param encoding
 	 * @throws Exception
 	 */
-	public static String unzipAndUploadJCR(String encoding, SlingHttpServletRequest request, InputStream zipFile) throws Exception {
+	public static String unzipAndUploadJCR(String encoding, SlingHttpServletRequest request, InputStream zipFile) throws AemImporterException {
 		log.debug("Unzipping and uploading files to repository");
 		
 		ZipInputStream source = new ZipInputStream(zipFile);
 		
 		String nameConfigFile = "";
 		ZipEntry entry;
-		entry = source.getNextEntry();
-		
-		String folder = "";
-		
-		if (entry.isDirectory()) {
-			folder = entry.getName();
-			entry = source.getNextEntry();
-		}
-		
-		ByteArrayInputStream configFile = null;
-		StringBuilder src = new StringBuilder();
-		// First file of zip must to be the config file
-		if (entry != null) {
-			configFile = extractConfigFile(src, source,encoding);
-			entry = source.getNextEntry();
-
-		}
-
-		
-		Resource resources = request.getResourceResolver().getResource(src.toString());
-		Session jcrSession = request.getResourceResolver().adaptTo(Session.class);
-		Node srcNode = null;
 		try {
-			srcNode = resources.adaptTo(Node.class);
-		} catch (Exception e) {
-    		srcNode = JcrUtil.createPath(src.toString(), "nt:folder", jcrSession);
-    		jcrSession.save();
-		}
-
-		Session session = srcNode.getSession();
-		MimetypesFileTypeMap mimeTypesMap = new MimetypesFileTypeMap();
-		while (entry != null) {
+			entry = source.getNextEntry();
 			
-			String entryName = entry.getName().replace(folder, "");
+			String folder = "";
 			
-			String name[] = entryName.split("/");
+			if (entry.isDirectory()) {
+				folder = entry.getName();
+				entry = source.getNextEntry();
+			}
 			
-			if (name.length > 1) {
-				Node n = srcNode;
-				for (int i = 0; i <= (name.length - 1); i++) {
-					if (i == (name.length - 1)) {
-						String mimeType = mimeTypesMap.getContentType(entry.getName());
-						JcrUtils.putFile(n, name[i], mimeType,
-								extractFile(source));
-					} else {
-						String path = n.getPath() + "/" + name[i];
-						if (!jcrSession.itemExists(path)) {
-							n = n.addNode(name[i], "nt:folder");
-						} else {
-							n = jcrSession.getNode(path);
-						}
-						jcrSession.save();
-					}
-				}
-			} else {
-				if(!entry.getName().endsWith("/")) {
-					String mimeType = mimeTypesMap.getContentType(entry.getName());
-					JcrUtils.putFile(srcNode, entryName, mimeType,
-							extractFile(source));
-				} else {
-					String path = entry.getName();
-					JcrUtil.createPath(path, "nt:folder", jcrSession);
-					jcrSession.save();
+			ByteArrayInputStream configFile = null;
+			StringBuilder src = new StringBuilder();
+			// First file of zip must to be the config file
+			if (entry != null) {
+				try {
+					configFile = extractConfigFile(src, source,encoding);
+					entry = source.getNextEntry();
+				} catch (Exception e) {
+					AemImporterException aie = new AemImporterException(AEM_IMPORTER_EXCEPTION_TYPE.INVALID_ZIP_FILE, "Invalid zip file format. It is expected a config file as first in the root of zip or inside a folder");
+					throw aie;
 				}
 				
 			}
 			
-			entry = source.getNextEntry();
+			
+			Resource resources = request.getResourceResolver().getResource(src.toString());
+			Session jcrSession = request.getResourceResolver().adaptTo(Session.class);
+			Node srcNode = null;
+			try {
+				srcNode = resources.adaptTo(Node.class);
+			} catch (Exception e) {
+				srcNode = JcrUtil.createPath(src.toString(), "nt:folder", jcrSession);
+				jcrSession.save();
+			}
+			
+			Session session = srcNode.getSession();
+			MimetypesFileTypeMap mimeTypesMap = new MimetypesFileTypeMap();
+			while (entry != null) {
+				String entryName = entry.getName().replace(folder, "");
+				
+				String name[] = entryName.split("/");
+				
+				if (name.length > 1) {
+					Node n = srcNode;
+					for (int i = 0; i <= (name.length - 1); i++) {
+						if (i == (name.length - 1)) {
+							
+							if (entryName.endsWith("/")) {
+								String path = n.getPath() + "/" + name[i];
+								if (!jcrSession.itemExists(path)) {
+									n = n.addNode(name[i], "nt:folder");
+								} else {
+									n = jcrSession.getNode(path);
+								}
+								jcrSession.save();
+							} else {
+								String mimeType = mimeTypesMap.getContentType(entry.getName());
+								JcrUtils.putFile(n, name[i], mimeType,
+										extractFile(source));
+							}
+							
+						} else {
+							String path = n.getPath() + "/" + name[i];
+							if (!jcrSession.itemExists(path)) {
+								n = n.addNode(name[i], "nt:folder");
+							} else {
+								n = jcrSession.getNode(path);
+							}
+							jcrSession.save();
+						}
+					}
+				} else {
+					if(!entry.getName().endsWith("/") && !entry.isDirectory()) {
+						String mimeType = mimeTypesMap.getContentType(entry.getName());
+						JcrUtils.putFile(srcNode, entryName, mimeType,
+								extractFile(source));
+					} else {
+						String path = entry.getName();
+						JcrUtil.createPath(path, "nt:folder", jcrSession);
+						jcrSession.save();
+					}
+					
+				}
+				
+				entry = source.getNextEntry();
+			}
+			
+			Node workflowNode = JcrUtil.createPath(XMLTransformerHelper.DEFAULT_CONFIG_PARAM_SRC, "nt:folder", request.getResourceResolver().adaptTo(Session.class));
+			
+			nameConfigFile = System.currentTimeMillis()+".xml";
+			JcrUtils.putFile(workflowNode, nameConfigFile, "text/xml",
+					configFile);
+			
+			session.save();
+			
+			source.close();
+			
+			return workflowNode.getPath() + "/" +nameConfigFile;
+		} catch (AemImporterException e) {
+			throw e;
+		} catch (Exception e) {
+			throw new AemImporterException(AEM_IMPORTER_EXCEPTION_TYPE.UNEXPECTED, e.getMessage());
 		}
 		
-		Node workflowNode = JcrUtil.createPath(XMLTransformerHelper.DEFAULT_CONFIG_PARAM_SRC, "nt:folder", request.getResourceResolver().adaptTo(Session.class));
-		
-		nameConfigFile = System.currentTimeMillis()+".xml";
-		JcrUtils.putFile(workflowNode, nameConfigFile, "text/xml",
-				configFile);
-
-		session.save();
-
-		source.close();
-		
-		return workflowNode.getPath() + "/" +nameConfigFile;
 	}
 	
 	

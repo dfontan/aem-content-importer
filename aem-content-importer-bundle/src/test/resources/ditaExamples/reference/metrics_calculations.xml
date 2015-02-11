@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_7442473CADCC4219924B8D850F1C67C8">
+  <title>Metric Calculations</title>
+  <shortdesc>Metrics are calculated using 
+	 <term>standard</term>, 
+	 <term>participation</term>, 
+	 <term>recent</term>, and 
+	 <term>linear</term> allocation methods. Each method calculates values
+	 differently based on formulas. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Metrics" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <table id="table_6F81A12174D84124B7FD81FBBEDF18A2">
+      <tgroup cols="2">
+        <colspec colnum="1" colname="col1" colwidth="1.00*" />
+        <colspec colnum="2" colname="col2" colwidth="2.80*" />
+        <thead>
+          <row>
+            <entry colname="col1">Metric Calculation
+				</entry>
+            <entry colname="col2">Description
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry colname="col1">Original
+				</entry>
+            <entry colname="col2">
+              <p>Full credit is given to the first variable value associated
+					 with the success event. 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">Recent
+				</entry>
+            <entry colname="col2">
+              <p>Full credit is given to the last variable value associated
+					 with the success event. 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">Linear
+				</entry>
+            <entry colname="col2">
+              <p>When linear allocation is selected, success events are evenly
+					 divided across all variable values seen in the visit. For numeric and currency
+					 events such as 
+					 <term>Revenue</term>, the monetary amount is divided. For
+					 counter events such as 
+					 <term>Orders</term>, a fraction of the event is awarded to each
+					 variable value in the visit. These fractions in reporting are summed, then
+					 rounded to the nearest integer in reporting. 
+				  </p>
+              <p>For example, in a visit where four pages are visited prior to
+					 a success event, each page would receive credit for 25% of the event. If, in
+					 the same visit, 
+					 <varname>campaign</varname> had two values, each campaign value
+					 would receive 50% of the credit for the event. 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">Participation
+				</entry>
+            <entry colname="col2">
+              <p>Assigns full credit to each variable value that contributed to
+					 a success event within a visit. This calculation can also apply across visitor
+					 sessions, if you use cross-visit participation metrics. 
+				  </p>
+              <p>See 
+					 <xref href="metrics_participation.xml#concept_8E6B39106A244CB49E055150B291B477" format="dita" scope="local"><?xm-replace_text Participation?></xref> for more
+					 information. 
+				  </p>
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <section id="section_4CE01DA35108418D9909823A7ECC4B45">
+      <title>Example - Metric Calculation</title>
+      <p>Assume your site has an internal search that is tracked using a
+		  conversion variable (eVar). The visitor performs several internal searches
+		  before making a $100 purchase: 
+		</p>
+      <p>
+        <term>Pet</term> &gt; 
+		  <term>Feline</term> &gt; 
+		  <term>Cat</term> &gt; 
+		  <term>Kitten</term> &gt; $100 purchase 
+		</p>
+      <p> In reporting, credit allocation is as follows: 
+		</p>
+      <table id="table_91A7244E77854838A8392B49366FB445">
+        <tgroup cols="5">
+          <colspec colnum="1" colname="col1" colwidth="*" />
+          <colspec colnum="2" colname="col2" colwidth="*" />
+          <colspec colnum="3" colname="col3" colwidth="*" />
+          <colspec colnum="4" colname="col4" colwidth="*" />
+          <colspec colname="col5" colnum="5" colwidth="1.25*" />
+          <thead>
+            <row>
+              <entry colname="col1">eVar Value 
+				  </entry>
+              <entry colname="col2">First 
+				  </entry>
+              <entry colname="col3"> Last 
+				  </entry>
+              <entry colname="col4">Linear 
+				  </entry>
+              <entry colname="col5">Participation 
+				  </entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry colname="col1">
+                <p>Pet 
+					 </p>
+              </entry>
+              <entry colname="col2">
+                <p>$100 
+					 </p>
+              </entry>
+              <entry colname="col3">
+                <p>$0 
+					 </p>
+              </entry>
+              <entry colname="col4">
+                <p>$25 
+					 </p>
+              </entry>
+              <entry colname="col5">
+                <p>$100 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <p>Feline 
+					 </p>
+              </entry>
+              <entry colname="col2">
+                <p>$0 
+					 </p>
+              </entry>
+              <entry colname="col3">
+                <p>$0 
+					 </p>
+              </entry>
+              <entry colname="col4">
+                <p>$25 
+					 </p>
+              </entry>
+              <entry colname="col5">
+                <p>$100 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <p>Cat 
+					 </p>
+              </entry>
+              <entry colname="col2">
+                <p>$0 
+					 </p>
+              </entry>
+              <entry colname="col3">
+                <p>$0 
+					 </p>
+              </entry>
+              <entry colname="col4">
+                <p>$25 
+					 </p>
+              </entry>
+              <entry colname="col5">
+                <p>$100 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <p>Kitten 
+					 </p>
+              </entry>
+              <entry colname="col2">
+                <p>$0 
+					 </p>
+              </entry>
+              <entry colname="col3">
+                <p>$100 
+					 </p>
+              </entry>
+              <entry colname="col4">
+                <p>$25 
+					 </p>
+              </entry>
+              <entry colname="col5">
+                <p>$100 
+					 </p>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+  </conbody>
+</concept>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_8005B55E59BD479DA67BC618FF8BC94A">
+  <title>Normalize report data</title>
+  <shortdesc>Steps that describe how to normalize report data. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports and analytics" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <context id="context_84AA3314C5544E6DACCC776227241421">
+      <p>After you run a report with compared dates, or for A/B comparisons,
+		  you can normalize the data to show the percent of change between the reports.
+		  The secondary data set is adjusted to compensate for differences in the number
+		  of selected days, or for different volumes of traffic. 
+		</p>
+      <p>
+        <b>To normalize report data</b>
+      </p>
+    </context>
+    <steps id="steps_96250185934D4865BE6EB55D2ECF289D">
+      <step id="step_04E829EA8EE242348B30C3821CBEC917">
+        <cmd>Run a report that supports date comparisons. 
+		  </cmd>
+      </step>
+      <step id="step_0FF40E409BF94098878F9EEC77847B22">
+        <cmd>Click 
+			 <uicontrol>Compare Dates</uicontrol>, then specify your date
+			 comparison. 
+		  </cmd>
+      </step>
+      <step id="step_EB28058FFA9F4CFF918DEF8DCC82E922">
+        <cmd>Click 
+			 <uicontrol>Run Report</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_257FB52F3BA146C18FC6A171B2094783">
+        <cmd>Click 
+			 <uicontrol>Normalize Data: Yes</uicontrol>. 
+		  </cmd>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links>
+    <link href="t_reports_comparing_dates.xml#task_95155C3700774B709F5FB81AE96B0824" type="task" format="dita" scope="local">
+      <?xm-replace_text Comparing Dates?>
+    </link>
+    <link href="t_reports_select_date.xml#task_9BEF7D4D839A4748B76E8500D1406C34" type="task" format="dita" scope="local">
+      <?xm-replace_text Selecting a Date or Date Range?>
+    </link>
+  </related-links>
+</task>

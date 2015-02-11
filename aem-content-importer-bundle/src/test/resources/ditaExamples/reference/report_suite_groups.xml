@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_4A88E58882B74785AF14C1304D3D0E4A">
+  <title>Report Suite Groups</title>
+  <shortdesc>In the 
+	 <wintitle>Report Suite Manager</wintitle>, you can organize your report
+	 suites into custom groups. Groups let you quickly access multiple report suites
+	 that share similar settings or that you commonly edit together. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Admin tools" />
+    </metadata>
+  </prolog>
+</concept>

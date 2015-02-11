@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_EB00207C07BD4481AB116E62EC24E686">
+  <title> Metric Descriptions</title>
+  <shortdesc>Metrics are quantitative information about visitor activity, such
+	 as Views, Click-Throughs, Reloads, Average Time spent, Units, Orders, and
+	 Revenue. They are the foundation of reports and help you view and understand
+	 data relationships. They let you perform side-by-side comparisons of different
+	 data sets about your website. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>metrics</keyword>
+      </keywords>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Metrics" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Metrics and associated data are displayed in the columns of reports.
+		Broad categories of metrics include: 
+	 </p>
+    <p>
+      <b>Traffic metrics</b>: These show data about the volume of visitors. 
+	 </p>
+    <p>
+      <b>Conversion metrics</b>: These show data about success events, such as
+		purchases, downloads, or any other action that you want users to take on your
+		website. 
+	 </p>
+    <p>
+      <b>
+        <xref href="metrics_calc_metrics.xml#concept_E96DD1FE0B56449F8879FEB62532C08C" format="dita" scope="local">Calculated</xref> metrics</b>: These are metrics
+		you create by combining metrics. 
+	 </p>
+    <p>
+      <b>
+        <xref href="http://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/video/index.html" format="http" scope="external">Video</xref> metrics</b>: 
+		Marketing reports provide support for tracking a number of
+		video metrics, including total views, time spent, and completion rates.
+	 </p>
+    <p>
+      <b>
+        <xref href="http://marketing.adobe.com/resources/help/en_US/social/index.html?f=c_Getting_Started_with_Social" format="http" scope="external">Social</xref> metrics</b>: These help you
+		measure your brand's presence on the social web. 
+		Social metrics work with 
+		Analytics standard metrics. By combining these with
+		calculated metrics, you can view a report that shows how often a product is
+		mentioned, gauge product sentiment, and see how 
+		Social metrics correlate with 
+		Analytics key performance indicators. 
+	 </p>
+  </conbody>
+</concept>

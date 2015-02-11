@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_C4136B4E61734D2BB8D4A74D3A792259">
+  <title>Classifications</title>
+  <shortdesc>Classifications are created by grouping (classifying) granular
+	 data from a source report. For example, you might want to analyze display ads,
+	 but they are mixed with email, partner, text ad, and social media campaigns.
+	 You can create groups so that you can analyze them separately. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Admin tools" />
+      <othermeta name="subtopic" content="Classifications" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p> There are three types of classifications for marketing reporting and
+		analytics: 
+	 </p>
+    <ul id="ul_61F33F62B1B248049179E945953848F7">
+      <li id="li_A819026512C2486EA723FACB7A4CAB0B">
+        <b>Campaign classifications</b>: Campaign classifications are defined
+		  as elements that will not vary within the campaign, such as campaign name and
+		  owner. 
+		</li>
+      <li id="li_5D19E9898CFD4997AECBB7F02577E2AF">
+        <b>Creative elements classification</b>: These vary between placements
+		  or instances of the campaign, and include characteristics such as media type,
+		  headline, keyword, and media vendor. 
+		</li>
+      <li id="li_7E99DF4EBA9E4F0BA4F006BC9AD61820">
+        <b>Metric-specific classifications</b>: These are fixed numeric values
+		  associated with a campaign, such as the hard cost for a campaign. Additionally,
+		  you can classify prop and eVar variables. 
+		</li>
+    </ul>
+    <note>If you change names of existing classifications in Admin Tools, you
+		must update classification rules that use the existing classifications. 
+	 </note>
+    <p>After you create conversion or traffic classifications, you can import
+		classification data through the import tool, or use the Classifications Rule
+		Builder. 
+	 </p>
+  </conbody>
+</concept>

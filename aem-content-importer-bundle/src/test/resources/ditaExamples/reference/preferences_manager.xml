@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_479B1352242D45179B71E14500BE8B40"> 
+  <title>Preferences Manager</title> 
+  <shortdesc> The 
+	 <wintitle>Preferences Manager</wintitle> page lets you configure how to
+	 render Excel and comma-separated value (CSV) report output. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Admin tools"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p> 
+		<uicontrol>Analytics</uicontrol> &gt; 
+		<uicontrol>Admin</uicontrol> &gt; 
+		<uicontrol>Company Settings</uicontrol> &gt; 
+		<uicontrol>Preferences</uicontrol>
+	 </p> 
+	 <ul id="ul_7307D49FE26241ED8ED0B7A14192A4A3"> 
+		<li id="li_882D0EEC61024CD8AF31D45B97BDE2DB">Use deprecated date format
+		  for CSV (Aug 30, 2013) 
+		</li> 
+		<li id="li_CBA84D8966FE4A1A902715212448D416">Use ISO 8601 date format for
+		  CSV (2013-08-30) 
+		</li> 
+	 </ul> 
+  </conbody> 
+</concept>

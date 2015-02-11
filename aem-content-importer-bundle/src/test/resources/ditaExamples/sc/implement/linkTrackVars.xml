@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_A6B117826C15402EBD0781A94C8065B9">
+  <title>linkTrackVars</title>
+  <shortdesc>The 
+	 <varname>linkTrackVars</varname> variable is a comma-separated list of
+	 variables that are sent with custom, exit, and download links. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Variables" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>If 
+		<varname>linkTrackVars</varname> is set to "", all variables that have
+		values are sent with link data. To avoid inflation of instances or page views
+		associated with other variables, Adobe recommends populating 
+		<varname>linkTrackVars</varname> and 
+		<varname>linkTrackEvents</varname> in the 
+		<wintitle>onClick</wintitle> event of a link that is used for link
+		tracking. 
+	 </p>
+    <p>All variables that should be sent with link data (custom, exit, and
+		download links) should be listed in 
+		<varname>linkTrackVars</varname>. If 
+		<varname>linkTrackEvents</varname> is used, 
+		<varname>linkTrackVars</varname> should contain "events." 
+	 </p>
+    <table id="table_FD2049B9881145F7A834B8C286447169">
+      <tgroup cols="4">
+        <colspec colnum="1" colname="col1" colwidth="*" />
+        <colspec colnum="2" colname="col2" colwidth="*" />
+        <colspec colnum="3" colname="col3" colwidth="*" />
+        <colspec colnum="4" colname="col4" colwidth="*" />
+        <thead>
+          <row>
+            <entry> Max Size 
+				</entry>
+            <entry> Debugger Parameter 
+				</entry>
+            <entry> Reports Populated 
+				</entry>
+            <entry> Default Value 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry> N/A 
+				</entry>
+            <entry> N/A 
+				</entry>
+            <entry> Any 
+				</entry>
+            <entry> "None" 
+				</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p>When populating 
+		<varname>linkTrackVars</varname>, do not use the 's.' prefix for
+		variables. For example, instead of populating 
+		<varname>linkTrackVars</varname> with "s.prop1," you should populate it
+		with "prop1." The following example illustrates how 
+		<varname>linkTrackVars</varname> should be used. 
+	 </p>
+    <codeblock outputclass="syntax javascript">s.linkTrackVars="eVar1,events"
+s.linkTrackEvents="event1"
+s.events="event1"
+s.eVar1="value A"
+s.eVar2="value B"
+s.t() // eVar1, event1 and event2 are recorded
+&lt;a href="http://google.com"&gt;event1 and eVar1 are recorded&lt;/a&gt;
+&lt;a href="test.php" onClick="s=s_gi('rs1');s.eVar1='value C';s.events='';s.tl(this,'o')"&gt;eVar1 is recorded&lt;/a&gt;
+</codeblock>
+    <p>Because the link to google.com is an exit link (unless you are Google),
+		event1 and eVar1 are sent with the exit link data, increasing the instances
+		associated with eVar1 and the number of times event1 is fired. In the link to 
+		<filepath>test.php</filepath>, 
+		<wintitle>eVar1</wintitle> is sent with a value of 'value C' because that
+		is the current value of 
+		<wintitle>eVar1</wintitle> at the time that 
+		<varname>tl()</varname> is called. 
+	 </p>
+    <section id="section_DCC239F5CFE74959856764DAB1862BA7">
+      <title>Syntax and Possible Values</title>
+      <p>The 
+		  <varname>linkTrackVars</varname> variable is a case-sensitive,
+		  comma-separated list of variable names, without the object name prefix. Use
+		  'eVar1' instead of 's.eVar1.' 
+		</p>
+      <codeblock outputclass="syntax javascript">s.linkTrackVars="variable_name[,variable_name[...]]"</codeblock>
+      <p>The 
+		  <varname>linkTrackVars</varname> variable may contain only variables
+		  that are sent to 
+		  <keyword>Analytics</keyword>, namely: 
+		  <varname>events</varname>, 
+		  <varname>campaign</varname>, 
+		  <varname>purchaseID</varname>, 
+		  <varname>products</varname>, 
+		  <wintitle>eVar1-75</wintitle>, 
+		  <wintitle>prop1-75</wintitle>, 
+		  <wintitle>hier1-5</wintitle>, 
+		  <varname>channel</varname>, 
+		  <varname>server</varname>, 
+		  <varname>state</varname>, 
+		  <varname>zip</varname>, and 
+		  <varname>pageType</varname>. 
+		</p>
+    </section>
+    <section id="section_546BAAC7373A41BF8583B280EAAB607C">
+      <title>Examples</title>
+      <codeblock outputclass="syntax javascript">s.linkTrackVars="events,prop1,eVar49"</codeblock>
+      <codeblock outputclass="syntax javascript">s.linkTrackVars="products"</codeblock>
+    </section>
+    <section id="section_E387604B8A434A7F89A82A886649A89D">
+      <title>
+        Configuration Settings</title>
+      <p>None 
+		</p>
+    </section>
+    <section id="section_99E0783A608C4462945F35D21AB4AC2B">
+      <title>Pitfalls, Questions, and Tips</title>
+      <ul id="ul_08F8AE27D6F641EEAE3F98CE36BF10A0">
+        <li id="li_5350AA168CEF4D46A57E22A4CB5107F5"> If 
+			 <varname>linkTrackVars</varname> is blank, all variables that have
+			 values are tracked with all server calls. 
+		  </li>
+        <li id="li_CFD5F447F33741D6B2A491DF9FB77632">Any variable listed in 
+			 <varname>linkTrackVars</varname> that has a value at the time of
+			 any download, exit, or custom link, are tracked. 
+		  </li>
+        <li id="li_6F773C64B6A147389416FFCBBBCC7249">If 
+			 <varname>linkTrackEvents</varname> is used, 
+			 <varname>linkTrackVars</varname> must contain "events." 
+		  </li>
+        <li id="li_7C810BD2C9F442928EBE542C98F68556">Do not use the "s." or
+			 "s_objectname." prefix for variables. 
+		  </li>
+      </ul>
+    </section>
+  </conbody>
+</concept>

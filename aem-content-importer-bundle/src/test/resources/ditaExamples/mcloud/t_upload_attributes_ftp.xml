@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_591C3B6733424718A62453D2F8ADF73B"> 
+  <title>Upload the data file via FTP</title> 
+  <shortdesc> Learn how to upload customer attribute data to the Marketing
+	 Cloud. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<keywords> 
+		  <keyword>customer attributes</keyword> 
+		</keywords> 
+		<othermeta name="solution" content="Marketing Cloud"/> </metadata>
+  </prolog> 
+  <taskbody> 
+	 <context id="context_BBE3230CF98B4318808B62B01B2E1273"> 
+		<p>You can upload the data after you create a customer attribute source
+		  and an FTP account in the Marketing Cloud. You create one FTP account per
+		  attribute source. The uploaded files are stored in the root folder of that
+		  account. The data must be in 
+		  <filepath>.csv</filepath> format, with a second 
+		  <filepath>.fin</filepath> file to indicate the upload is complete. 
+		</p> 
+		<note type="important">Review 
+		  <xref
+			href="crs_upload_reqs.xml#concept_EE06F284FA124C3C948B06BAA3938F29"
+			format="dita" scope="local"><?xm-replace_text File and Naming Requirements for Uploading Data?></xref>
+		  before uploading the file. 
+		</note> 
+		<p> 
+		</p> 
+		<draft-comment> 
+		  <p>Error states - get with Matt and Dave 
+		  </p> 
+		  <p>What are the most common reasons for doing this? Retail? Do a use
+			 case example, then show an AN example. 
+		  </p> 
+		  <p>You create one FTP per attribute source. Files go to the root folder
+			 in that account. The file type .fin is user-created. (For example, upload a
+			 .csv then a .fin of the same name, which signals you have completed the upload.
+			 https://wiki.corp.adobe.com/display/marketingcloud/Customer+Record+Services#CustomerRecordServices-FileFormats
+			 (leverage for doc). Possibly link from FTP File Reqs page to a help file about
+			 naming conventions. Need a new file type page for this. Similar content here:
+			 http://microsite.omniture.com/t2/help/en_US/reference/c_general_file_structure.html
+			 and here:
+			 http://microsite.omniture.com/t2/help/en_US/whitepapers/ftp/ftp_datasources.html
+			 
+		  </p> 
+		  <p>Drag-n-drop and zip functionality for uploads - 1/21/2015. S/b less
+			 than 100 megs for drag and drop zip file. Fin file not required for drag/drop. 
+		  </p> 
+		  <p>Preview Data - shows the last upload (?) 
+		  </p> 
+		  <p>Need a link to the "instructions" on that information icon with the
+			 image. 
+		  </p> 
+		  <p>Workflow: Drag and drop, validate schema, configure subscription,
+			 save/activate. 
+		  </p> 
+		</draft-comment> 
+		<p> 
+		  <b>To upload the customer attribute source</b> 
+		</p> 
+	 </context> 
+	 <steps id="steps_70213A9C551843D0916F8360CAFB0C58"> 
+		<step id="step_D8F4C78CB71E456D9FEFBFC40D292755"> 
+		  <cmd> 
+			 <xref
+			  href="t_create_attribute_data_source.xml#task_DD1264EE5318449E80A73E4675F31C0C"
+			  format="dita" scope="local"><?xm-replace_text Create a customer attribute source and FTP account?></xref>.
+			 
+		  </cmd> 
+		  <info> 
+			 <p>Ensure that you are logged in to your FTP site at 
+				<filepath>ftp.adobe.com/&lt;sftpname&gt;</filepath>. 
+			 </p> 
+		  </info> 
+		</step> 
+		<step id="step_DE5C51E2897F4CBAB5BC79A4E3E35F6E"> 
+		  <cmd>Click 
+			 <uicontrol>Actions</uicontrol> &gt; 
+			 <uicontrol>File Upload</uicontrol>. 
+		  </cmd> 
+		  <stepresult> 
+		  </stepresult> 
+		</step> 
+		<step id="step_95DB5D34A9A04FB1BA81E533C5472F84"> 
+		  <cmd>Upload a 
+			 <filepath>.fin</filepath> file, so that your file can be retrieved. 
+		  </cmd> 
+		  <info> 
+			 <p>The file type 
+				<filepath>.fin</filepath> is user-created and signals that the
+				upload is finished. It can be a blank notepad file. For example, if you upload 
+				<filepath>crs123.csv</filepath>, you also upload 
+				<filepath>crs123.fin</filepath>. 
+			 </p> 
+			 <p>If the upload is successful, both files are moved to a folder
+				called 
+				<b>processed</b>. 
+			 </p> 
+		  </info> 
+		  <stepresult> 
+			 <p>See 
+				<xref
+				 href="crs_data_file.xml#concept_DE908F362DF24172BFEF48E1797DAF19" format="dita"
+				 scope="local"><?xm-replace_text Data file requirements for uploading customer attributes?></xref>
+				for important information about file names and structure. 
+			 </p> 
+		  </stepresult> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

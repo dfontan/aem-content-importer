@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_CDCF695C0D4C4F72A5033460A8AF3F7C"> 
+  <title>Goals for Technical Publications</title> 
+  <shortdesc>Goals for the tech pubs product documentation team. 
+  </shortdesc> 
+  <conbody> 
+	 <ul id="ul_DCE0169CDAC34AB2918A67A8709CF815"> 
+		<li id="li_5485B84C34964BA09ECEC7F8671F755E"><xref
+		  href="goals.xml#concept_CDCF695C0D4C4F72A5033460A8AF3F7C/section_A0117D817D2C484CB671CED0CE19863B"
+		  format="dita" scope="local"><?xm-replace_text 2014?></xref> 
+		</li> 
+		<li id="li_31216634400F4B648C9A3F5C8B4FA193"><xref
+		  href="goals.xml#concept_CDCF695C0D4C4F72A5033460A8AF3F7C/section_96F348ECA0144EA5A11AB1D086F92E4C"
+		  format="dita" scope="local"><?xm-replace_text 2013?></xref> 
+		</li> 
+	 </ul>
+	 <!--<p>Not in TOC</p>-->
+	 <section id="section_A0117D817D2C484CB671CED0CE19863B"> 
+		<title>2014</title> 
+		<p>The following 2014 goals will also carry into 2015: 
+		</p> 
+		<ul id="ul_E1B6C5E3981446A785789870E82C2F7B"> 
+		  <li id="li_F8AF406C21CE4903B951CEC3C87E2D18">Domain move from Omniture
+			 to marketing-adobe.com/help. 
+		  </li> 
+		  <li id="li_6656C9ADF6BD4AB58969A9C846C28F20">Rollout Shell 2.0 style on
+			 help (June 2014). 
+		  </li> 
+		  <li id="li_B3BD0B70D1674952BCF633BA0BBE0085">Display help search
+			 results as you type in the Help drop-down Search field (implemented in MC, not
+			 for solutions). 
+		  </li> 
+		  <li id="li_6B60183EB9F543A2B0AEA3AF2224CC40"> Improve processes and
+			 procedures across doc teams. 
+		  </li> 
+		  <li id="li_619E643DA6E9476F859BB71A520F16BE"> Support the Marketing
+			 Cloud and Creative Cloud integration. 
+		  </li> 
+		  <li id="li_E69DFB5842F040F0B64789974AD254DD"> Implement Recommendations
+			 on product doc topics. ("Customers who viewed this topic also viewed that
+			 topic.") 
+		  </li> 
+		  <li id="li_407EE71D611246B6ABC30062F1CD7A49"> Feedback for
+			 documentation topics and articles. 
+		  </li> 
+		  <li id="li_35B60AF867EB474EB8009559D1AF5FB4"> In-production
+			 notifications for Release Notes and updates. 
+		  </li> 
+		  <li id="li_EA024E553A1943D48D5FD6B3FC201986"> Improve search tagging
+			 and weighting of topics. 
+		  </li> 
+		  <li id="li_BB4A08DF66134DAD83808A1A1D53473D"> Improve writer subject
+			 matter expertise. 
+		  </li> 
+		  <li id="li_AAAA08270B474C5EAB1E953559683435"> Work with Support to
+			 reduce or solve issues before they are reported. 
+		  </li> 
+		  <li id="li_BFE11484E4B644F3B3273F5895355A28"> Improve integration paths
+			 with Community resources. 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_96F348ECA0144EA5A11AB1D086F92E4C"> 
+		<title>2013</title> 
+		<p>See 
+		  <xref
+			href="_2013_highlights.xml#concept_462C8E0BCC634CDEA652712DA71FC65E"
+			format="dita" scope="local"><?xm-replace_text 2013 Technical Publications Highlights and Goals?></xref>
+		  
+		</p> 
+	 </section> 
+  </conbody>
+</concept>

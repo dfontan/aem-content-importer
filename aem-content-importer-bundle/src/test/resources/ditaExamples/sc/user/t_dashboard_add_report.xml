@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_EC3AFBBAA51C45CEBAF632F841C305B3"> 
+  <title>Create a reportlet</title> 
+  <shortdesc>Steps that describe how to create a reportlet. Once you create a
+	 reportlet, it is available to display in a dashboard. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Reports and analytics"/> 
+		<othermeta name="subtopic" content="Dashboards"/> </metadata>
+  </prolog> 
+  <taskbody> 
+	 <steps id="steps_A49CFD887376484E9B3E1304635107BC"> 
+		<step id="step_282ABEBFDC2A478A8F63608527BD9483"> 
+		  <cmd>Run a report. 
+		  </cmd> 
+		</step> 
+		<step id="step_D2A6520FFAAB423BA3421C2BBAA1CB6D"> 
+		  <cmd>Click 
+			 <uicontrol>More...</uicontrol> &gt; 
+			 <uicontrol> Dashboard.</uicontrol>
+		  </cmd> 
+		</step> 
+		<step id="step_1737A94E828A4337A8F2F4DA26066DA9"> 
+		  <cmd>On the 
+			 <wintitle>Add Reportlet</wintitle> page, name the report, then select
+			 a dashboard from 
+			 <uicontrol>Place in Dashboard</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_B4B09D8CCB0944AD9B381F346D7A472B"> 
+		  <cmd>(Optional) Configure the date range. 
+		  </cmd> 
+		  <choices id="choices_7A3C4913A3FE46A68B322F04ACE7E0B1"> 
+			 <choice id="choice_C9AFD56EE6A649B1B6D7AAF4EDB6E4D5"> 
+				<p> 
+				  <uicontrol>Rolling</uicontrol>: Changes the date as time passes,
+				  according to the time span (daily, monthly, and so on). For example, if today
+				  is January 17, you might set the dates for January 15 - 16. Then if you select 
+				  <uicontrol>Rolling</uicontrol>, on January 27 the reportlet
+				  displays data for January 25 - 26. 
+				</p> 
+			 </choice> 
+			 <choice id="choice_69F20A98304A4D1395393FC5FAFAAFD6"> 
+				<p> 
+				  <uicontrol>Fixed</uicontrol>: Prevents the date from moving
+				  forward as time passes. 
+				</p> 
+			 </choice> 
+		  </choices> 
+		</step> 
+		<step id="step_709E8B497D9243299A6953996900A62F"> 
+		  <cmd>(Optional) Override the publishing distribution list. 
+		  </cmd> 
+		  <info> 
+			 <p> 
+				<uicontrol>Publishing List Override</uicontrol>: If you enable this
+				option, the report suite referenced in this reportlet is always used when
+				distributed to a publishing list. If you disable this option, the report suite
+				identified in the publishing list replaces the report suite in this reportlet. 
+			 </p> 
+		  </info> 
+		</step> 
+		<step id="step_63BA59F8281145EA868E3C358A48C657"> 
+		  <cmd>Click 
+			 <uicontrol>Create New</uicontrol>. 
+		  </cmd> 
+		  <info> 
+			 <p> The reportlet is added to the 
+				<uicontrol>Dashboard Contents</uicontrol> menu in the dashboard
+				editor. 
+			 </p> 
+		  </info> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+  <related-links> 
+	 <link href="t_dashboard_content.xml#task_90D7FAC1CC3E4DB786B4C87CC33B5459"
+	  type="task" format="dita" scope="local"> <?xm-replace_text Adding Content to a Dashboard?>
+	 </link> 
+	 <link href="t_dashboard_edit.xml#task_B460CCD70D9F40FCAC6BBC1C044CC460"
+	  type="task" format="dita" scope="local"> <?xm-replace_text Editing Dashboard and Reportlet Data?>
+	 </link> 
+  </related-links> 
+</task>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_86F216DFD2534FA181E64ABDF306782B"> 
+  <title>Create a classification rule set</title> 
+  <shortdesc>Steps that describe how to name a classification rule set and
+	 apply the variable. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Admin tools"/> 
+		<othermeta name="subtopic" content="Classifications"/> </metadata>
+  </prolog> 
+  <taskbody> 
+	 <steps id="steps_73C8D5AD5C4242ADA1BE2305478EFFDF"> 
+		<step id="step_2329B7475A8E4A5AA1B1C0D42478EAA8"> 
+		  <cmd>(Prerequisite) Define the classification structure in 
+			 <uicontrol>Admin Tools</uicontrol> &gt; 
+			 <uicontrol>Report Suites</uicontrol>. 
+		  </cmd> 
+		  <info> 
+			 <p>Variables will display in the 
+				<wintitle>New Rule Set</wintitle> panel only after they have at
+				least one classification defined for that variable. 
+			 </p> 
+			 <p> You can create classifications on a variable in 
+				<uicontrol>Admin</uicontrol> &gt; 
+				<uicontrol>Report Suites</uicontrol> &gt; 
+				<uicontrol>Traffic</uicontrol> &gt; 
+				<uicontrol>Traffic Classifications</uicontrol> (or 
+				<uicontrol>Conversion</uicontrol> &gt; 
+				<uicontrol>Conversion Classifications</uicontrol>). Then select the
+				variable, then click 
+				<uicontrol>Add Classification</uicontrol>. 
+			 </p> 
+			 <p>See 
+				<xref
+				 href="http://marketing.adobe.com/resources/help/en_US/reference/index.html?f=classifications"
+				 format="http" scope="external">Classifications</xref> in Admin Tools help on
+				adding classifications. 
+			 </p> 
+		  </info> 
+		</step> 
+		<step id="step_DBBB69A6AD7F4FD5A2F000E84E1EC51F"> 
+		  <cmd>To create the rule set, click 
+			 <menucascade><uicontrol>Admin
+				  Tools</uicontrol><uicontrol>Classification Rule
+				  Builder</uicontrol></menucascade>. 
+		  </cmd> 
+		  <stepresult>
+			 <p>If this is the first time accessing the rule builder, the 
+				<wintitle>Available Report Suites</wintitle> page displays.
+			 </p>
+			 <p><image href="graphics/classifications_available_rs.png"
+				id="image_67598F8792F240D093E7BD482F6F5813"><?xm-replace_text Paragraph?></image>
+			 </p>
+			 <p>Select one or more available report suites to use.
+			 </p>
+			 <p>See the definitions for the 
+				<xref
+				 href="classification_rule_set.xml#concept_CD3D510F5070486584F3BB535AE41524/section_C60B0888C76D49C596EF19F11808B718"
+				 format="dita" scope="local">Classification Rule Builder</xref> page for more
+				information about this feature.
+			 </p>
+		  </stepresult>
+		</step> 
+		<step id="step_EDC44FA1692342E1A3C143544F650994">
+		  <cmd>Click 
+			 <uicontrol>Save</uicontrol>.
+		  </cmd>
+		  <stepresult> 
+			 <p><image href="graphics/add_rule_set.png"
+				id="image_D7AF1D9D4F76449A96B1E0542FF4BA4E"><?xm-replace_text Step Result?></image>
+				
+			 </p> 
+		  </stepresult>
+		</step>
+		<step id="step_098ACA63BABB420093DC0E4C3222DF24"> 
+		  <cmd>On the 
+			 <xref
+			  href="classification_rule_definitions.xml#concept_6CAEFB1CA4564E2CA5808097C11EF468/section_4D1A70A607C9419EB2116A5174EACB72"
+			  format="dita" scope="local">Classification Rule Builder</xref> page, click 
+			 <uicontrol>Add Rule Set</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_C2F4F9CD9BA34EB7A0A8C7CF7B3E9471"> 
+		  <cmd>On 
+			 <wintitle>New Rule Set</wintitle>, type a rule set name and select a
+			 variable from the list. 
+		  </cmd> 
+		  <stepresult> 
+			 <p> 
+				<image href="graphics/new_rule_set.png"
+				 id="image_F743C596981946C39A0A92BDC58E589C"> <?xm-replace_text Step Result?>
+				</image> 
+			 </p> 
+			 <p>The 
+				<wintitle>Select Variable</wintitle> list is populated with all
+				classified variables available in all the report suites in your log-in company.
+				A single variable in a report suite can belong to only one rule set. 
+			 </p>
+			 <p>See 
+				<term>Variable</term> in the definitions for the 
+				<xref
+				 href="classification_rule_definitions.xml#concept_6CAEFB1CA4564E2CA5808097C11EF468/section_4D1A70A607C9419EB2116A5174EACB72"
+				 format="dita" scope="local">Classification Rule Builder</xref> page for more
+				information. 
+			 </p> 
+		  </stepresult> 
+		</step> 
+		<step id="step_D0DD023E37914E4C9EE4643B324A6C7B"> 
+		  <cmd>Click 
+			 <uicontrol>Create Rule Set</uicontrol>. 
+		  </cmd> 
+		  <stepresult> 
+			 <p><image href="graphics/classification_rule_builder.png"
+				id="image_5830701D0B3849D18523A2898F36D9B6"> <?xm-replace_text Paragraph?>
+				</image> 
+			 </p> 
+			 <p>The rule is displayed on the 
+				<wintitle>Classification Rule Builder</wintitle> page. 
+			 </p> 
+			 <p> 
+			 </p> 
+		  </stepresult> 
+		</step> 
+		<step id="step_067C81B02CCA4CC6B0D0443F24891CF3"> 
+		  <cmd>Continue by 
+			 <xref
+			  href="t_classification_rule.xml#task_86F216DFD2534FA181E64ABDF306782B"
+			  format="dita" scope="local">adding classification rules</xref> to the set. 
+		  </cmd> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

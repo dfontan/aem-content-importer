@@ -1,0 +1,415 @@
+<?xml version="1.0"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map id="map_4A15C9D7DFE3459FB370DA237F87372A" linking="normal" locktitle="no" toc="yes"><title>Adobe Target</title>
+	<topicref format="dita" href="tnt_home.xml" locktitle="yes" navtitle="Adobe Target Classic" scope="local"/>
+	<topicref format="dita" href="c_contact_and_legal.xml" navtitle="Contact and Legal Information" scope="local" type="concept"/><topicref format="dita" href="r_problem.xml" navtitle="If There's a Problem" scope="local"><topicmeta><navtitle>If There's a Problem</navtitle></topicmeta></topicref>
+	<topicref format="dita" href="r_Release_Notes.xml" navtitle="Release Notes" scope="local" type="reference"/><topicref format="dita" href="c_Welcome_to_TestnTarget.xml" locktitle="yes" navtitle="Welcome" scope="local" type="concept">
+		<topicref format="dita" href="r_System_Recommendations.xml" navtitle="System Recommendations" scope="local" type="reference"/>
+		<topicref format="dita" href="c_Understanding_Basic_TestTarget_Concepts.xml" locktitle="yes" navtitle="Basic Concepts" scope="local" type="concept">
+			<topicref format="dita" href="c_Mboxes.xml" locktitle="yes" navtitle="About Mboxes" scope="local" type="concept"/>
+			<topicref format="dita" href="c_Offers.xml" locktitle="yes" navtitle="About Offers" scope="local" type="concept"/>
+			<topicref format="dita" href="c_Experiences.xml" locktitle="yes" navtitle="About Experiences" scope="local" type="concept"/>
+			<topicref format="dita" href="c_Campaigns.xml" locktitle="yes" navtitle="About Tests" scope="local" type="concept"/><topicref format="dita" href="c_about_segments.xml" navtitle="About Segments" scope="local"><topicmeta><navtitle>About Segments</navtitle></topicmeta></topicref>
+			<topicmeta><navtitle>Basic Concepts</navtitle></topicmeta></topicref>
+		<topicref format="dita" href="r_Training_and_Certification.xml" navtitle="Training and Certification" scope="local" type="reference"/>
+		<topicmeta><navtitle>Welcome</navtitle></topicmeta></topicref>
+	<topicref format="dita" href="t_Setting_Up_Your_Site.xml" locktitle="no" navtitle="Set Up Your Site" scope="local" type="task">
+		<topicref format="dita" href="c_Managing_Hosts.xml" locktitle="yes" navtitle="Hosts" scope="local" type="concept">
+			<topicref format="dita" href="c_About_Hosts_and_Host_Groups.xml" navtitle="About Hosts and Host Groups" scope="local" type="concept"/>
+			<topicref format="dita" href="c_Adding_a_Host_to_the_Host_List.xml" navtitle="Add a Host to the Host List" scope="local" type="concept"/>
+			<topicref format="dita" href="t_Confirm_that_TestTarget_Recognizes_the_Host.xml" locktitle="yes" navtitle="Confirm that the Host Is Recognized" scope="local" type="task"><topicmeta><navtitle>Confirm that the Host Is Recognized</navtitle></topicmeta></topicref><topicref format="dita" href="t_default_host_for_reporting.xml" navtitle="Set the Default Host for Reporting" scope="local"><topicmeta><navtitle>Set the Default Host for Reporting</navtitle></topicmeta></topicref>
+			<topicref format="dita" href="t_Setting_the_Default_Host_for_previewing.xml" locktitle="no" navtitle="Set the Default Host for Previewing" scope="local" type="task"/>
+			<topicref format="dita" href="t_Changing_the_Name_of_a_Host_Group.xml" navtitle="Change the Name of a Host Group" scope="local" type="task"/>
+			<topicref format="dita" href="t_Moving_a_Host_to_a_Different_Host_Group.xml" navtitle="Move a Host to a Different Host Group" scope="local" type="task"/>
+			<topicref format="dita" href="t_Deleting_a_Host.xml" navtitle="Delete a Host" scope="local" type="task"/>
+			<topicref format="dita" href="t_Deleting_a_Host_Group.xml" navtitle="Delete a Host Group" scope="local" type="task"/>
+			<topicref format="dita" href="r_Best_Practices.xml" locktitle="yes" navtitle="Best Practices for Hosts" scope="local"/>
+			<topicref format="dita" href="r_Troubleshooting_Hosts.xml" navtitle="Troubleshoot Hosts" scope="local" type="reference"/>
+		</topicref>
+		<topicref format="dita" href="c_Managing_users_and_Roles.xml" locktitle="no" navtitle="Users and Roles" scope="local" type="concept">
+			<topicref format="dita" href="t_Adding_a_User.xml" navtitle="Add a User" scope="local" type="task"/>
+			<topicref format="dita" href="t_change_priv_pw.xml" locktitle="no" navtitle="Change a User's Role or Resetting a Password" scope="local" type="task"/>
+		</topicref>
+		<topicref format="dita" href="c_About_the_TestTarget_Cookie.xml" locktitle="yes" navtitle="Cookies" scope="local">
+			<topicref format="dita" href="c_Cookie_Behavior.xml" navtitle="Cookie Behavior" scope="local" type="concept">
+				<topicref format="dita" href="c_1st-Party_Cookie_Behavior.xml" navtitle="1st-Party Cookie Behavior" scope="local" type="concept"/>
+				<topicref format="dita" href="c_3rd-Party_and_1st-Party_Cookie_Behavior.xml" navtitle="3rd-Party and 1st-Party Cookie Behavior" scope="local" type="concept"/>
+				<topicref format="dita" href="c_3rd-Party_Cookie_Behavior.xml" navtitle="3rd-Party Cookie Behavior" scope="local" type="concept"/>
+			</topicref><topicref format="dita" href="r_Cookie_Settings.xml" navtitle="Cookie Settings" scope="local" type="reference"/>
+			<topicref format="dita" href="r_When_to_Use_First_or_Third_Party_Cookies.xml" navtitle="When to Use First or Third Party Cookies" scope="local" type="reference"/>
+			<topicref format="dita" href="t_Deleting_the_Mbox_Cookie.xml" navtitle="Delete the Mbox Cookie" scope="local" type="task"/>
+			<topicmeta><navtitle>Cookies</navtitle></topicmeta></topicref>
+		<topicref format="dita" href="t_Adding_an_Opt-Out_Link.xml" navtitle="Add an Opt-Out Link" scope="local" status="new" type="task"/>
+		<topicref format="dita" href="c_Managing_Mboxes.xml" navtitle="Mboxes" scope="local" type="concept">
+			<topicref format="dita" href="c_About_Mboxes.xml" locktitle="no" navtitle="Mbox Concepts" scope="local" type="concept">
+				<topicref format="dita" href="c_About_Conversion_Mboxes.xml" navtitle="About Conversion Mboxes" scope="local" type="concept"/>
+				<topicref format="dita" href="c_About_Dynamic_Mboxes.xml" navtitle="About Dynamic Mboxes" scope="local" type="concept"/><topicref format="dita" href="c_About_Default_Content.xml" navtitle="About Default Content" scope="local" type="concept"/>
+			</topicref>
+			<topicref format="dita" href="c_Downloading_and_Setting_Up_MboxJs.xml" locktitle="no" navtitle="Download and Set Up mbox.js" scope="local" type="concept">
+				<topicref format="dita" href="t_Downloading_mboxjs.xml" navtitle="Download mbox.js" scope="local" type="task"/>
+				<topicref format="dita" href="t_Validating_the_mboxjs_Download.xml" navtitle="Validate the mbox.js Download" scope="local" type="task"/>
+				<topicref format="dita" href="t_Referencing_mboxjs.xml" navtitle="Reference mbox.js" scope="local" type="task"/>
+				<topicref format="dita" href="t_Setting_the_Default_Mbox_Timeout.xml" locktitle="yes" navtitle="Mbox Timeout Settings" scope="local" type="task"/>
+				<topicref format="dita" href="r_Advanced_mboxjs_Settings.xml" navtitle="Advanced mbox.js Settings" scope="local" type="reference"/>
+				<topicref format="dita" href="t_Determining_Your_mboxjs_Version.xml" navtitle="Determine Your mbox.js Version" scope="local" type="task"/>
+				<topicref format="dita" href="c_mbox_reduce_size.xml" navtitle="Reduce mbox.js Size" scope="local"><topicmeta><navtitle>Reduce mbox.js Size</navtitle></topicmeta></topicref></topicref>
+			<topicref format="dita" href="c_Creating_and_Placing_Mboxes.xml" navtitle="Create and Place Mboxes" scope="local" type="concept">
+				<topicref format="dita" href="t_Creating_a_Single_Mbox.xml" navtitle="Create a Single Mbox" scope="local" type="task"/>
+				<topicref format="dita" href="t_Creating_a_Whole-Page_Mbox.xml" navtitle="Create a Whole-Page Mbox" scope="local" type="task"/><topicref format="dita" href="t_mbox_global.xml" navtitle="Create a Global Mbox" scope="local"><topicmeta><navtitle>Create a Global Mbox</navtitle></topicmeta><topicref format="dita" href="t_mbox_global_target_standard.xml" navtitle="Setting Up a Global Mbox to Use with Target Standard..." scope="local"><topicmeta><navtitle>Setting Up a Global Mbox to Use with Target Standard</navtitle></topicmeta></topicref></topicref><topicref format="dita" href="t_Placing_Multiple_Mboxes_on_a_Page.xml" navtitle="Place Multiple Mboxes on a Page" scope="local" type="task"/>
+				<topicref format="dita" href="t_Placing_an_Mbox_Around_a_Table.xml" navtitle="Place an Mbox Around a Table" scope="local" type="task"/>
+				<topicref format="dita" href="t_Placing_an_Mbox_Around_a_Table_Cell.xml" navtitle="Place an Mbox Around a Table Cell" scope="local" type="task"/>
+				<topicref format="dita" href="t_Creating_a_Place_Order_Mbox.xml" locktitle="no" navtitle="Create an orderConfirmPage Mbox" scope="local" type="task"/>
+			</topicref>
+			<topicref format="dita" href="c_Using_a_Redirector.xml" navtitle="Redirector" scope="local" type="concept">
+				<topicref format="dita" href="t_Creating_a_Redirector.xml" navtitle="Create a Redirector" scope="local" type="task"/>
+				<topicref format="dita" href="r_Redirector_Constraints.xml" navtitle="Redirector Constraints" scope="local" type="reference"/>
+				<topicref format="dita" href="t_Passing_Costs_Per_Click.xml" navtitle="Costs Per Click" scope="local" type="task"/>
+				<topicref format="dita" href="t_Passing_Revenue_Per_Click.xml" navtitle="Revenue Per Click" scope="local" type="task"/>
+			</topicref>
+			<topicref format="dita" href="t_Validating_an_Mbox.xml" navtitle="Validate an Mbox" scope="local" type="task"/>
+			<topicref format="dita" href="t_Deactivating_an_Mbox.xml" navtitle="Deactivate an Mbox" scope="local" type="task"/>
+			<topicref format="dita" href="t_Clearing_Deleting_an_Mbox.xml" navtitle="Clear (Delete) an Mbox" scope="local" type="task"/>
+			<topicref format="dita" href="r_Troubleshooting_Mboxes.xml" navtitle="Troubleshoot Mboxes" scope="local" type="reference"/>
+			<topicref format="dita" href="t_Mbox_Troubleshooting_Matrix.xml" navtitle="Mbox Troubleshooting Matrix" scope="local" type="task"/>
+			<topicref format="dita" href="t_Mbox_Reporting.xml" locktitle="yes" navtitle="Mbox Request Report" scope="local"/><topicref format="dita" href="r_mboxjs_change_log.xml" navtitle="mbox.js Change Log" scope="local"><topicmeta><navtitle>mbox.js Change Log</navtitle></topicmeta></topicref>
+		</topicref>
+		<topicref format="dita" href="c_Parameters_and_Values.xml" navtitle="Parameters and Values" scope="local" type="concept">
+			<topicref format="dita" href="r_Parameter_Types.xml" navtitle="Parameter Types" scope="local" type="reference"/>
+			<topicref format="dita" href="t_Viewing_an_Mboxs_Passed-In_Parameter_Values.xml" navtitle="View an Mbox's Passed-In Parameter   Values" scope="local" type="task"/>
+			<topicref format="dita" href="r_Deciding_Which_Parameters_and_Values_You_Need.xml" navtitle="Decide Which Parameters and Values You Need" scope="local" type="reference"/>
+			<topicref format="dita" href="c_Mbox-Specific_Parameters.xml" navtitle="Mbox-Specific Parameters" scope="local" type="concept">
+				<topicref format="dita" href="t_Associating_Mbox-Specific_Parameters.xml" navtitle="Associate Mbox-Specific Parameters" scope="local" type="task"/>
+				<topicref format="dita" href="t_Validating_Parameters.xml" navtitle="Validate Mbox Parameters" scope="local" type="task"/>
+				<topicref format="dita" href="r_JavaScript_Methods_for_Offers_and_Other_Pages_with_an_Mbox.xml" locktitle="yes" navtitle="JavaScript Methods for Offers and Other Pages" scope="local"/>
+			</topicref>
+			<topicref format="dita" href="c_URL_Parameters.xml" navtitle="URL Parameters" scope="local" type="concept">
+				<topicref format="dita" href="t_Associating_URL_Parameters_to_an_Mbox.xml" locktitle="yes" navtitle="Debugging Tools" scope="local" type="task"/>
+				<topicref format="dita" href="t_Validating_URL_Parameters.xml" navtitle="Validate URL Parameters" scope="local" type="task"/>
+				<topicref format="dita" href="t_Targeting_Content_to_URL_Parameters_and_Values.xml" navtitle="Target Content to URL Parameters and Values" scope="local" type="task"/>
+			</topicref>
+			<topicref format="dita" href="c_Referring_URL_Parameters.xml" navtitle="Referring URL Parameters" scope="local" type="concept">
+				<topicref format="dita" href="t_Associating_Referring_URL_Paramters_with_an_Mbox.xml" locktitle="no" navtitle="Associate Referring URL Parameters with an Mbox" scope="local" type="task"/>
+				<topicref format="dita" href="t_Validating_Referring_URL_Parameters.xml" locktitle="no" navtitle="Validate Referring URL Parameters" scope="local" type="task"/>
+				<topicref format="dita" href="t_Targeting_Content_to_Referring_URL_Parameters.xml" navtitle="Target Content to Referring URL Parameters" scope="local" type="task"/>
+			</topicref>
+			<topicref format="dita" href="c_Profile_Parameters.xml" locktitle="yes" navtitle="Profile Attributes" scope="local" type="concept">
+				<topicref format="dita" href="c_Using_Script_Profile_Parameters.xml" locktitle="no" navtitle="Script Profile Attributes" scope="local" type="concept">
+					<topicref format="dita" href="t_Identifying_Campaigns_Using_Script_Profile_Parameters.xml" navtitle="Identify Campaigns Using Script Profile   Parameters" scope="local" type="task"/><topicref format="dita" href="r_variables_profiles_parameters_methods.xml" navtitle="Useful Variables, Profiles, Parameters, and Methods" scope="local"><topicmeta><navtitle>Useful Variables, Profiles, Parameters, and Methods</navtitle></topicmeta></topicref>
+				</topicref>
+				<topicref format="dita" href="c_Using_In-Mbox_Profile_Parameters.xml" locktitle="no" navtitle="In-Mbox Profile Attributes" scope="local" type="concept">
+					<topicref format="dita" href="t_Associating_In-Mbox_Profile_Parameters_to_an_Mbox.xml" locktitle="no" navtitle="Associate In-Mbox Profile Attributes with an   Mbox" scope="local" type="task"/>
+					<topicref format="dita" href="t_Validating_In-Mbox_Profile_Parameters.xml" locktitle="no" navtitle="Validate In-Mbox Profile Attributes" scope="local" type="task"/>
+				</topicref>
+				<topicref format="dita" href="c_Using_Smart_Targeter_Profile_Parameters.xml" navtitle="Smart Targeter Profile Attributes" scope="local" type="concept"/>
+				<topicref format="dita" href="r_Dynamic_Values_in_Targets_and_Profiles.xml" navtitle="Dynamic Values in Targets and Profiles" scope="local" type="reference"><topicref format="dita" href="r_usercategoryaffinitiesscripts.xml" navtitle="user.categoryAffinities Scripts" scope="local"><topicmeta><navtitle>user.categoryAffinities Scripts</navtitle></topicmeta></topicref></topicref>
+				<topicref format="dita" href="c_Profile_Exports.xml" navtitle="Profile Exports" scope="local" type="concept"/>
+			</topicref>
+			<topicref format="dita" href="c_Cost_and_Revenue_Reporting.xml" navtitle="Cost and Revenue Reporting" scope="local" type="concept"/>
+		</topicref>
+		<topicref format="dita" href="c_ECommerce_Integration.xml" navtitle="ECommerce Integration" scope="local" type="concept">
+			<topicref format="dita" href="r_Integration_Examples_for_PHP_and_OsCommerce.xml" navtitle="Integration Examples for PHP and OsCommerce" scope="local" type="reference"/>
+			<topicref format="dita" href="r_Integration_Examples_for_ATG.xml" navtitle="Integration Examples for ATG" scope="local" type="reference"/>
+			<topicref format="dita" href="r_Integration_Examples_for_ASP.xml" navtitle="Integration Examples for ASP" scope="local" type="reference"/>
+		</topicref>
+		<topicref format="dita" href="c_Tracking_Clicks.xml" locktitle="no" navtitle="Click Tracking" scope="local" type="concept">
+			<topicref format="dita" href="c_Tracking_Flash_Content.xml" navtitle="Track Flash Content" scope="local" type="concept"/>
+			<topicref format="dita" href="c_Counting_Clicks_in_Campaigns.xml" navtitle="Count Clicks in Campaigns" scope="local" type="concept"/>
+			<topicref format="dita" href="c_Tracking_Clicks_to_Offsite_Domains.xml" navtitle="Track Clicks to Offsite Domains" scope="local" type="concept">
+				<topicref format="dita" href="t_Implementing_Redirector.xml" navtitle="Implement Redirector" scope="local" type="task"/>
+				<topicref format="dita" href="c_Tracking_Revenue_Per_Offsite_Click.xml" navtitle="Track Revenue Per Offsite Click" scope="local" type="concept"/>
+			</topicref></topicref>
+		<topicref format="dita" href="c_Working_with_Analytics_Packages.xml" navtitle="Working with Analytics Packages" scope="local" type="concept">
+			<topicref format="dita" href="r_About_TestTarget_Data_Variances.xml" locktitle="yes" navtitle="About Data Variances" scope="local"/>
+			<topicref format="dita" href="t_Compare_TestTarget_Data_with_Analytics_Package_Data.xml" locktitle="yes" navtitle="Compare Target Data with Analytics Package Data" scope="local"/>
+			<topicref format="dita" href="t_Capture_Data_Directly_to_Your_Analytics_Package.xml" navtitle="Capture Data Directly to Your Analytics Package" scope="local" type="task"/>
+		</topicref>
+	</topicref>
+	<topicref format="dita" href="c_Managing_Offers.xml" locktitle="yes" navtitle="Offers" scope="local">
+		<topicref format="dita" href="c_Offer_Types.xml" navtitle="Offer Types" scope="local" type="concept"/>
+		<topicref format="dita" href="c_Hosting_Offers.xml" navtitle="Offer Hosting" scope="local" type="concept"/>
+		<topicref format="dita" href="t_Creating_an_HTML_Offer.xml" navtitle="Create an HTML Offer" scope="local" type="task"/>
+		<topicref format="dita" href="r_Passing_Profile_Attributes_to_the_HTML_Offer.xml" locktitle="yes" navtitle="Pass Dynamic Data into Offers" scope="local" type="reference"><topicmeta><navtitle>Pass Dynamic Data into Offers</navtitle></topicmeta></topicref>
+		<!-- <topicref format="dita" href="t_Creating_an_Image_Offer.xml" navtitle="Creating an Image Offer" scope="local" type="task"> 
+	 <topicref format="dita" href="t_Create_an_Image_Offer_with_a_Loaded_Image.xml" navtitle="Create an Image Offer with a Loaded Image" scope="local" type="task"/> 
+	 <topicref format="dita" href="t_Adding_Click-Through_to_an_Image_Offer.xml" navtitle="Adding Click-Through to an Image Offer" scope="local" type="task"/> 
+ </topicref>  -->
+		<topicref format="dita" href="t_Creating_a_Redirect_Offer.xml" navtitle="Create a Redirect Offer" scope="local" type="task"/>
+		<topicref format="dita" href="c_Widget_Offers.xml" navtitle="Widget Offers" scope="local" type="concept"/>
+		<topicref format="dita" href="c_About_Dynamic_Content.xml" navtitle="About Dynamic Content" scope="local" type="concept">
+			<topicref format="dita" href="c_How_Dynamic_Offers_Work.xml" navtitle="How Dynamic Offers Work" scope="local" type="concept"/>
+			<topicref format="dita" href="t_Using_Styles_to_Test_Dynamic_Content.xml" navtitle="Use Styles to Test Dynamic Content" scope="local" type="task"/>
+			<topicref format="dita" href="t_Creating_a_Dynamic_Offer_Stored_on_Your_Site.xml" navtitle="Create a Dynamic Offer Stored on Your   Site" scope="local" type="task"><topicmeta><navtitle>Create a Dynamic Offer Stored on Your Site</navtitle></topicmeta></topicref>
+			<topicref format="dita" href="t_Creating_a_Cached_Offer_Stored_on_Your_Site.xml" navtitle="Create a Cached Offer Stored on Your   Site" scope="local" type="task"><topicmeta><navtitle>Create a Cached Offer Stored on Your Site</navtitle></topicmeta></topicref>
+			<topicref format="dita" href="t_Creating_a_Cached_Offer_Stored_Outside_TestTarget.xml" locktitle="yes" navtitle="Create a Cached Offer Stored Outside Target" scope="local" type="task"><topicmeta><navtitle>Create a Cached Offer Stored Outside Target</navtitle></topicmeta></topicref>
+			<topicref format="dita" href="r_Dynamic_Offer_Selection_Matrix.xml" navtitle="Dynamic Offer Selection Matrix" scope="local" type="reference"/>
+		</topicref>
+		<topicref format="dita" href="c_Validating_Offers.xml" navtitle="Validate Offers" scope="local" type="concept">
+			<topicref format="dita" href="t_Previewing_the_Offers.xml" navtitle="Preview the Offers" scope="local" type="task"/>
+			<topicref format="dita" href="t_Troubleshooting_Offers.xml" navtitle="Troubleshoot Offers" scope="local" type="task"/>
+		</topicref>
+		<topicref format="dita" href="t_Previewing_Offers_in_an_Mbox.xml" navtitle="Preview Offers in an Mbox" scope="local" type="task"/>
+		<topicref format="dita" href="c_Working_with_Offers.xml" navtitle="Work with Offers" scope="local" type="concept">
+			<topicref format="dita" href="t_Searching_for_an_Offer.xml" navtitle="Search for an Offer" scope="local" type="task"/>
+			<topicref format="dita" href="t_Creating_an_Offer_Folder.xml" navtitle="Create an Offer Folder" scope="local" type="task"/>
+			<topicref format="dita" href="t_Deleting_a_Folder_or_Offer.xml" navtitle="Delete a Folder or Offer" scope="local" type="task"/>
+			<topicref format="dita" href="t_Moving_an_Offer_to_a_Different_Folder.xml" navtitle="Move an Offer to a Different Folder" scope="local" type="task"/>
+			<topicref format="dita" href="t_Copying_an_Offer.xml" navtitle="Copy an Offer" scope="local" type="task"/>
+			<topicref format="dita" href="t_Editing_an_Offer.xml" navtitle="Edit an Offer" scope="local" type="task"/>
+		</topicref>
+		<topicref format="dita" href="t_Using_Plug-Ins.xml" navtitle="Plug-Ins" scope="local" type="task"/>
+	</topicref>
+	<topicref format="dita" href="c_Managing_Campaigns.xml" locktitle="yes" navtitle="Campaigns" scope="local">
+		<topicref format="dita" href="c_Understanding_the_Campaign_Life_Cycle.xml" navtitle="Campaign Life Cycle" scope="local" type="concept"/>
+		<topicref format="dita" href="t_Creating_a_Campaign.xml" locktitle="yes" navtitle="Creating a Campaign: Overview" scope="local"/>
+		<topicref format="dita" href="r_Understanding_the_Types_of_Campaigns_and_Tests.xml" navtitle="Types of Campaigns and Tests" scope="local" type="reference"/>
+		<topicref format="dita" href="t_Creating_an_A_B_Test.xml" locktitle="no" navtitle="Create an A/B Test" scope="local" type="task"/>
+		<topicref format="dita" href="c_Using_a_Multivariate_Campaign.xml" navtitle="Multivariate Campaign" scope="local" type="concept">
+			<topicref format="dita" href="t_Creating_a_Multivariate_Test.xml" navtitle="Create a Multivariate Test" scope="local" type="task"/>
+			<topicref format="dita" href="r_Best_Practices_for_a_Multivariate_Test.xml" navtitle="Best Practices for a Multivariate Test" scope="local" type="reference"/>
+		</topicref>
+		<topicref format="dita" href="t_Creating_a_Monitoring_Campaign.xml" navtitle="Create a Monitoring Campaign" scope="local" type="task"/>
+		<topicref format="dita" href="t_Creating_an_Optimizing_Auto-Targeted_Campaign.xml" navtitle="Create an Optimizing (Auto-Targeted)   Campaign" scope="local" type="task">
+			<topicref format="dita" href="c_The_Optimizing_Campaign_Insights_Report.xml" navtitle="The Optimizing Campaign Insights Report" scope="local" type="concept"/>
+			<topicref format="dita" href="c_The_Optimizing_Campaign_Summary_Report.xml" navtitle="The Optimizing Campaign Summary Report" scope="local" type="concept"/>
+			<topicmeta><navtitle>Create an Optimizing (Auto-Targeted) Campaign</navtitle></topicmeta></topicref>
+		<topicref format="dita" href="t_Creating_a_Campaign_from_the_Winning_Experience.xml" navtitle="Create a Campaign from the Winning   Experience" scope="local" type="task"><topicmeta><navtitle>Create a Campaign from the Winning Experience</navtitle></topicmeta></topicref>
+		<topicref format="dita" href="t_Creating_a_Landing_Page_Campaign.xml" navtitle="Create a Landing Page Campaign" scope="local" type="task"/>
+		<topicref format="dita" href="t_Creating_a_Display_Ad_Campaign.xml" navtitle="Create a Display Ad Campaign" scope="local" type="task"/>
+		<topicref format="dita" href="t_Creating_a_Flash_Campaign.xml" navtitle="Create a Flash Campaign" scope="local" type="task"/>
+		<topicref format="dita" href="c_Changing_Campaign_Settings.xml" navtitle="Change Campaign Settings" scope="local" type="concept">
+			<topicref format="dita" href="c_Providing_High-Level_Information_About_a_Campaign.xml" navtitle="High-Level Information About a Campaign" scope="local" type="concept">
+				<topicref format="dita" href="t_Setting_the_Campaign_Name.xml" navtitle="Campaign Name" scope="local" type="task"/>
+				<topicref format="dita" href="t_Showing_or_Hiding_Campaign_Details.xml" navtitle="Show or Hide Campaign Details" scope="local" type="task"/>
+				<topicref format="dita" href="t_Changing_the_Campaign_Type.xml" navtitle="Campaign Type" scope="local" type="task"/>
+				<topicref format="dita" href="t_Changing_the_Campaign_Start_and_End_Dates.xml" navtitle="Campaign Start and End Dates" scope="local" type="task"/>
+				<topicref format="dita" href="c_Understanding_Campaign_Priority.xml" locktitle="yes" navtitle="Campaign Priority" scope="local" type="concept"><topicmeta><navtitle>Priority</navtitle></topicmeta></topicref>
+			</topicref><topicref format="dita" href="c_target_this_campaign.xml" navtitle="Target This Campaign" scope="local"><topicmeta><navtitle>Target This Campaign</navtitle></topicmeta><topicref format="dita" href="t_Setting_the_Percentage_of_Visitors_Included_in_a_Campaign.xml" navtitle="Set the Percentage of Visitors Included in a   Campaign" scope="local" type="task"><topicmeta><navtitle>Set the Percentage of Visitors Included in a Campaign</navtitle></topicmeta></topicref><topicref format="dita" href="t_Targeting_an_Mbox.xml" navtitle="Target a Location" scope="local" type="task"/><topicref format="dita" href="c_target_a_segment.xml" navtitle="Target a Segment" scope="local"><topicmeta><navtitle>Target a Segment</navtitle></topicmeta><topicref format="dita" href="t_target_an_existing_segment.xml" navtitle="Target a Reusable Segment" scope="local"><topicmeta><navtitle>Target a Reusable Segment</navtitle></topicmeta></topicref><topicref format="dita" href="t_creating_a_custom_segment.xml" navtitle="Creating a Custom Segment" scope="local"><topicmeta><navtitle>Creating a Custom Segment</navtitle></topicmeta></topicref></topicref></topicref>
+			<topicref format="dita" href="t_Setting_Experiences.xml" navtitle="Experiences" scope="local" type="task"/>
+			<topicref format="dita" href="r_Optional_Features.xml" navtitle="Optional Features" scope="local" type="reference"/>
+			<topicref format="dita" href="t_Setting_Conversion_and_Success_Metrics.xml" navtitle="Conversion and Success Metrics" scope="local" type="task"/>
+			<topicref format="dita" href="c_Capturing_Engagement.xml" navtitle="Engagement" scope="local" type="concept">
+				<topicref format="dita" href="c_Understanding_Engagement_Tracking.xml" navtitle="Engagement Tracking" scope="local" type="concept">
+					<topicref format="dita" href="c_Score.xml" locktitle="yes" navtitle="Capture Score" scope="local" type="concept"/>
+					<topicref format="dita" href="c_Page_Count.xml" navtitle="Page Count" scope="local" type="concept"/>
+					<topicref format="dita" href="c_Time_on_Site.xml" navtitle="Time on Site" scope="local" type="concept"/>
+				</topicref>
+				<topicref format="dita" href="t_Setting_Up_a_Campaign_to_Track_Engagement.xml" navtitle="Set Up a Campaign to Track Engagement" scope="local" type="task"/>
+				<topicref format="dita" href="c_Interpreting_Multiple_Engagement_Types.xml" navtitle="Interpret Multiple Engagement Types" scope="local" type="concept"/>
+				<topicref format="dita" href="t_Analyzing_Engagement_in_the_Summary_Report.xml" navtitle="Analyze Engagement in the Summary   Report" scope="local" type="task"><topicmeta><navtitle>Analyze Engagement in the Summary Report</navtitle></topicmeta></topicref>
+				<topicref format="dita" href="r_Examples__Online_Newspaper.xml" locktitle="yes" navtitle="Examples: Online Newspaper" scope="local"/>
+			</topicref>
+			<topicref format="dita" href="c_Managing_Segment_Filters.xml" navtitle="Segment Filters for Reporting" scope="local" type="concept">
+				<topicref format="dita" href="t_Preparing_to_Add_Segment_Filters.xml" navtitle="Prepare to Add Segment Filters" scope="local" type="task"/>
+				<topicref format="dita" href="t_Defining_Reporting_Segments.xml" navtitle="Define Reporting Segments" scope="local" type="task"/>
+			</topicref>
+			<topicref format="dita" href="c_Setting_Campaign_Viewing_Preferences.xml" navtitle="Campaign Viewing Preferences" scope="local" type="concept">
+				<topicref format="dita" href="t_Allowing_Unapproved_Campaigns_to_be_Viewed_from_All_Hosts_in_the_Host_Group.xml" navtitle="Allow Unapproved Campaigns to be Viewed from All Hosts in..." scope="local" type="task"/>
+				<topicref format="dita" href="t_Preventing_Unapproved_Campaigns_from_Being_Viewed_from_All_Hosts_in_the_Host_Group.xml" navtitle="Prevent Unapproved Campaigns from Being Viewed from All Hosts in..." scope="local" type="task"/>
+				<topicref format="dita" href="t_Using_Time_Offset_for_Viewing_Campaigns.xml" navtitle="Time Offset for Viewing Campaigns" scope="local" type="task"/>
+			</topicref>
+			<topicref format="dita" href="t_Saving_Your_Campaign.xml" navtitle="Save Your Campaign" scope="local" type="task"/>
+		</topicref>
+		<topicref format="dita" href="c_Viewing_Information_About_Campaigns.xml" navtitle="View Information About Campaigns" scope="local" type="concept">
+			<topicref format="dita" href="c_Using_the_Campaign_Launch_Pad.xml" locktitle="no" navtitle="Campaigns Launch Pad" scope="local" type="concept"/>
+			<topicref format="dita" href="c_Using_the_Campaign_Spotlight.xml" navtitle="Campaign Spotlight" scope="local" type="concept"/>
+			<topicref format="dita" href="c_Using_the_Campaign_List_Page.xml" navtitle="Campaign List" scope="local" type="concept">
+				<topicref format="dita" href="t_Labeling_Campaigns_and_Tests.xml" navtitle="Label Campaigns and Tests" scope="local" type="task"/>
+				<topicref format="dita" href="t_Searching_and_Sorting_Campaigns_and_Tests.xml" navtitle="Search and Sort Campaigns and Tests" scope="local" type="task"/>
+				<topicref format="dita" href="t_Ignoring_Visits_from_Your_Browser.xml" navtitle="Ignore Visits from Your Browser" scope="local" type="task"/>
+				<topicref format="dita" href="c_Monitoring_Campaign_Status.xml" navtitle="Monitor Campaign Status" scope="local" type="concept"/>
+			</topicref>
+			<topicref format="dita" href="t_Viewing_Campaign_Reports.xml" navtitle="Campaign Reports" scope="local" type="task"/>
+			<topicref format="dita" href="t_Viewing_Campaign_History.xml" locktitle="no" navtitle="Campaign Change Log" scope="local" type="task"/>
+			<topicref format="dita" href="t_Using_the_Campaign_View_API.xml" navtitle="Campaign View API" scope="local" type="task"/>
+			<topicref format="dita" href="t_Bookmarking_a_Location.xml" navtitle="Bookmark a Location" scope="local" type="task"/>
+		</topicref>
+		<topicref format="dita" href="c_Starting_and_Stopping_Campaigns.xml" navtitle="Start and Stop Campaigns" scope="local" type="concept">
+			<topicref format="dita" href="c_Campaign_Quality_Assurance.xml" navtitle="Campaign Quality Assurance" scope="local" type="concept">
+				<topicref format="dita" href="t_Preparing_to_Assure_Campaign_Quality.xml" navtitle="Prepare to Assure Campaign Quality" scope="local" type="task"/>
+				<topicref format="dita" href="t_Previewing_Experiences_on_the_Development_Host_Groups.xml" navtitle="Preview Experiences on the Development Host   Groups" scope="local" type="task"/>
+				<topicref format="dita" href="t_Fixing_All_Errors.xml" navtitle="Fix All Errors" scope="local" type="task"/>
+				<topicref format="dita" href="t_Testing_on_the_Production_Host_Groups.xml" navtitle="Test on the Production Host Groups" scope="local" type="task"/>
+				<topicref format="dita" href="t_Setting_Up_the_Final_Pre-Launch.xml" navtitle="Set Up the Final Pre-Launch" scope="local" type="task"/>
+			</topicref>
+			<topicref format="dita" href="t_Approving_a_Campaign.xml" navtitle="Approve a Campaign" scope="local" type="task"/>
+			<topicref format="dita" href="t_Deactivating_a_Campaign.xml" navtitle="Deactivate a Campaign" scope="local" type="task"/>
+			<topicref format="dita" href="t_Closing_a_Campaign.xml" navtitle="Close a Campaign" scope="local" type="task"/>
+			<topicref format="dita" href="t_Opening_a_Campaign.xml" navtitle="Open a Campaign" scope="local" type="task"/>
+			<topicref format="dita" href="r_Troubleshooting_Campaigns.xml" navtitle="Campaign Troubleshooting" scope="local" type="reference"/>
+		</topicref>
+		<topicref format="dita" href="c_Testing_Campaigns.xml" navtitle="Test Campaigns" scope="local" type="concept">
+			<topicref format="dita" href="c_Testing_Mutually_Exclusive_Campaigns.xml" navtitle="Test Mutually Exclusive Campaigns" scope="local" type="concept"/>
+			<topicref format="dita" href="c_Managing_Success_Metrics.xml" navtitle="Success Metrics" scope="local" type="concept">
+				<topicref format="dita" href="t_Preparing_to_Add_Success_Metrics.xml" navtitle="Prepare to Add Success Metrics" scope="local" type="task"/>
+				<topicref format="dita" href="t_Setting_Up_Counters_and_Success_Metrics.xml" navtitle="Counters and Success Metrics" scope="local" type="task"/>
+				<topicref format="dita" href="t_Using_Multiple_Mboxes_for_One_Success_Metric.xml" navtitle="Multiple Mboxes for One Success Metric" scope="local" type="task"/>
+				<topicref format="dita" href="t_Restricting_the_Order_of_Success_Metrics.xml" navtitle="Restrict the Order of Success Metrics" scope="local" type="task"/>
+				<topicref format="dita" href="t_Viewing_the_Success_Metrics_Report.xml" navtitle="Success Metrics Report" scope="local" type="task"/>
+				<topicref format="dita" href="r_Success_Metric_Advanced_Options.xml" navtitle="Success Metric Advanced Options" scope="local" type="reference"/>
+			</topicref>
+			<topicref format="dita" href="c_Using_Category_Affinity.xml" navtitle="Category Affinity" scope="local" type="concept">
+				<topicref format="dita" href="t_Preparing_to_Use_Category_Affinity.xml" navtitle="Prepare to Use Category Affinity" scope="local" type="task"/>
+				<topicref format="dita" href="t_Using_Category_Affinity_for_a_Targeted_Group.xml" navtitle="Category Affinity for a Targeted Group" scope="local" type="task"/>
+			</topicref>
+		</topicref>
+		<topicref format="dita" href="c_Testing_Ads.xml" locktitle="no" navtitle="Behavioral Ads" scope="local" type="concept">
+			<topicref format="dita" href="c_Dynamic_Ads_for_Display_Advertising.xml" navtitle="Dynamic Ads for Display Advertising" scope="local" type="concept">
+				<topicref format="dita" href="r_Instrumenting_a_Creative.xml" navtitle="Instrument a Creative" scope="local" type="reference"/>
+				<topicref format="dita" href="c_Traficking.xml" locktitle="yes" navtitle="Trafficking" scope="local"/>
+				<topicref format="dita" href="r_Ad_Ecosystem_Compatibility.xml" navtitle="Ad Ecosystem Compatibility" scope="local" type="reference"/>
+				<topicref format="dita" href="c_Reporting.xml" locktitle="yes" navtitle="Reporting About Dynamic Ads" scope="local"/>
+			</topicref>
+			<topicref format="dita" href="c_Affiliate_Banner_Testing.xml" navtitle="Affiliate Banner Testing" scope="local" type="concept">
+				<topicref format="dita" href="t_Tracking_Clicks_Through_Conversion.xml" navtitle="Track Clicks Through Conversion" scope="local" type="task"/>
+				<topicref format="dita" href="t_Testing_Version_of_Ad_Content.xml" navtitle="Test Version of Ad Content" scope="local" type="task"/>
+				<topicref format="dita" href="t_Varying_Destination_of_an_Ad.xml" navtitle="Vary Destination of an Ad" scope="local" type="task"/>
+				<topicref format="dita" href="t_Testing_Content_with_the_Adbox.xml" navtitle="Test Content with the Adbox" scope="local" type="task">
+					<topicref format="dita" href="t_Creating_an_Adbox_for_an_Image.xml" navtitle="Create an Adbox for an Image" scope="local" type="task"/>
+					<topicref format="dita" href="t_Testing_an_Email_Image_Adbox.xml" navtitle="Test an Email Image Adbox" scope="local" type="task"/>
+					<topicref format="dita" href="t_Using_Flashbox_to_Test_Flash.xml" navtitle="Use Flashbox to Test Flash" scope="local" type="task"/>
+				</topicref>
+			</topicref>
+		</topicref>
+		<topicref format="dita" href="c_syncing_between_essentials_and_advanced.xml" navtitle="Syncing Between Target Standard and Classic" scope="local"/><topicref format="dita" href="c_Using_SiteCatalyst_Data_in_TestTarget.xml" locktitle="yes" navtitle="Integrating with Adobe Analytics" scope="local" type="concept">
+			<topicref format="dita" href="t_SiteCatalyst_to_TestTarget_Integration.xml" locktitle="yes" navtitle="Analytics to Target Integration" scope="local"/>
+			<topicref format="dita" href="t_TestTarget_to_SiteCatalyst_Integration.xml" locktitle="yes" navtitle="Target to Analytics Integration" scope="local"/>
+			<topicref format="dita" href="r_Installing_the_SiteCatalyst_Plug-In.xml" locktitle="yes" navtitle="Install the Analytics Plug-In" scope="local" type="reference"/>
+			<topicref format="dita" href="c_Using_the_SiteCatalyst_event_Mbox.xml" locktitle="no" navtitle="SiteCatalyst: event Mbox" scope="local" type="concept"/>
+			<topicref format="dita" href="c_Using_the_SiteCatalyst_purchase_Mbox.xml" locktitle="no" navtitle="SiteCatalyst purchase: Mbox" scope="local" type="concept"/>
+			<topicref format="dita" href="t_Tracking_Conversions_that_Require_Clicks_with_SiteCatalyst.xml" locktitle="yes" navtitle="Analytics to Target Integration to Track Analytics Events" scope="local" type="task"><topicmeta><navtitle>Analytics to Target Integration to Track Analytics Events</navtitle></topicmeta></topicref>
+			<topicref format="dita" href="c_Viewing_Campaigns_and_Experiences_in_SiteCatalyst_Reports.xml" locktitle="yes" navtitle="View Campaigns and Experiences in Analytics Reports" scope="local" type="concept">
+				<topicref format="dita" href="t_Configuring_the_SiteCatalyst_Integration.xml" locktitle="yes" navtitle="Configure the Integration" scope="local" type="task"/>
+				<topicref format="dita" href="c_Using_the_SiteCatalyst_Report.xml" locktitle="yes" navtitle="The Analytics Report" scope="local" type="concept"/>
+				<topicref format="dita" href="c_Understanding_Expected_Data_Variances.xml" navtitle="Expected Data Variances" scope="local" type="concept"/>
+				<topicref format="dita" href="r_Frequently_Asked_Questions_About_SiteCatalyst_Integration.xml" locktitle="yes" navtitle="Frequently Asked Questions About Analytics Integration" scope="local" type="reference"/>
+			</topicref>
+			<topicmeta><navtitle>Integrating with Adobe Analytics</navtitle></topicmeta></topicref>
+		<topicref format="dita" href="c_Using_TestTarget_Onsite.xml" locktitle="yes" navtitle="Onsite" scope="local" type="concept">
+			<topicref format="dita" href="c_Previewing_a_Single_Campaign_with_Onsite.xml" navtitle="Preview a Single Campaign with Onsite" scope="local" type="concept"/>
+			<topicref format="dita" href="t_Previewing_Multiple_Campaigns_with_Onsite.xml" navtitle="Preview Multiple Campaigns with Onsite" scope="local" type="task"/>
+			<topicref format="dita" href="t_Creating_or_Editing_a_Campaign_with_Onsite.xml" navtitle="Create or Edit a Campaign with Onsite" scope="local" type="task"/>
+			<topicref format="dita" href="t_Adding_Mboxes_to_a_Campaign_with_Onsite.xml" navtitle="Add Mboxes to a Campaign with Onsite" scope="local" type="task"/>
+			<topicref format="dita" href="t_Previewing_an_Offer_with_Onsite.xml" navtitle="Preview an Offer with Onsite" scope="local" type="task"/>
+			<topicref format="dita" href="t_Bookmarking_Onsite_from_Your_Web_Page.xml" navtitle="Bookmark Onsite from Your Web Page" scope="local" type="task"/>
+			<topicref format="dita" href="t_Exiting_Onsite.xml" navtitle="Exit Onsite" scope="local" type="task"/>
+			<topicref format="dita" href="t_Turning_Off_Onsite_Help_Popups.xml" navtitle="Turn Off Onsite Help Popups" scope="local" type="task"/>
+			<topicref format="dita" href="r_Troubleshooting_Onsite.xml" navtitle="Troubleshoot Onsite" scope="local" type="reference"/>
+			<topicmeta><navtitle>Onsite</navtitle></topicmeta></topicref>
+		<topicref format="dita" href="c_Using_the_Campaign_Library.xml" navtitle="Using the Campaign Library" scope="local" type="concept">
+			<topicref format="dita" href="t_Moving_a_Campaign_to_the_Library.xml" navtitle="Moving a Campaign to the Library" scope="local" type="task"/>
+			<topicref format="dita" href="t_Moving_a_Campaign_from_the_Library.xml" navtitle="Moving a Campaign from the Library" scope="local" type="task"/>
+		</topicref>
+	</topicref>
+	<topicref format="dita" href="c_Targeting_a_Campaign_or_Test.xml" locktitle="yes" navtitle="Target a Campaign or Test" scope="local" type="concept">
+		<topicref format="dita" href="c_target_rulebased.xml" locktitle="yes" navtitle="Rules-Based Targeting" scope="local"><topicmeta><navtitle>Rules-Based Targeting</navtitle></topicmeta><topicref format="dita" href="c_Understanding_the_Targeting_Interface.xml" locktitle="yes" navtitle="Categories for Targeting" scope="local" type="concept"><topicmeta><navtitle>Categories for Targeting</navtitle></topicmeta></topicref><topicref format="dita" href="c_targeting_a_segment.xml" navtitle="Segments" scope="local"><topicmeta><navtitle>Segments</navtitle></topicmeta><topicref format="dita" href="t_segment_list.xml" navtitle="Segments List" scope="local"><topicmeta><navtitle>Segments List</navtitle></topicmeta><topicref format="dita" href="t_creating_a_segment.xml" navtitle="Creating a Reusable Segment" scope="local"><topicmeta><navtitle>Creating a Reusable Segment</navtitle></topicmeta></topicref><topicref format="dita" href="t_editing_a_reusable_segment.xml" navtitle="Editing a Reusable Segment" scope="local"><topicmeta><navtitle>Editing a Reusable Segment</navtitle></topicmeta></topicref><topicref format="dita" href="t_deleting_a_reusable_segment.xml" navtitle="Deleting a Reusable Segment" scope="local"><topicmeta><navtitle>Deleting a Reusable Segment</navtitle></topicmeta></topicref><topicref format="dita" href="t_Copying_a_Reusable_Segment.xml" navtitle="Copying a Reusable Segment" scope="local"><topicmeta><navtitle>Copying a Reusable Segment</navtitle></topicmeta></topicref></topicref><topicref format="dita" href="t_custom_segments.xml" navtitle="Campaign-Specific Segments" scope="local"><topicmeta><navtitle>Campaign-Specific Segments</navtitle></topicmeta></topicref><topicref format="dita" href="t_Setting_Targeting_Rules.xml" navtitle="Targeting Rules" scope="local" type="task">
+					<topicref format="dita" href="t_Targeting_Based_on_Site_Pages.xml" navtitle="Target Based on Site Pages" scope="local" type="task"/>
+					<topicref format="dita" href="t_Targeting_Based_on_Visitor_Behavior.xml" navtitle="Target Based on Visitor Behavior" scope="local" type="task"/>
+					<topicref format="dita" href="t_Targeting_Based_on_Traffic_Sources.xml" navtitle="Target Based on Traffic Sources" scope="local" type="task"/><topicref format="dita" href="t_target_based_on_social.xml" navtitle="Target Based on Social Media Sites" scope="local"><topicmeta><navtitle>Target Based on Social Media Sites</navtitle></topicmeta></topicref><topicref format="dita" href="t_target_based_on_time_and_day.xml" navtitle="Target Based on Time and Day" scope="local"><topicmeta><navtitle>Target Based on Time and Day</navtitle></topicmeta></topicref>
+					<topicref format="dita" href="t_Targeting_Based_on_Geography.xml" navtitle="Target Based on Geography" scope="local" type="task"/>
+					<topicref format="dita" href="t_Targeting_Based_on_Success_Metrics.xml" navtitle="Target Based on Success Metrics" scope="local" type="task"/>
+					<topicref format="dita" href="t_Targeting_Based_on_Your_Saved_Target_Library.xml" navtitle="Target Based on Your Saved Target Library" scope="local" type="task"/><topicref format="dita" href="t_target_based_on_mobile_devices.xml" navtitle="Target Based on Mobile Devices" scope="local"><topicmeta><navtitle>Target Based on Mobile Devices</navtitle></topicmeta></topicref><topicref format="dita" href="t_target_based_on_suite_segments.xml" navtitle="Target Based on Suite Segments" scope="local"><topicmeta><navtitle>Target Based on Suite Segments</navtitle></topicmeta></topicref>
+				</topicref></topicref><topicref format="dita" href="c_Targeting_Groups.xml" navtitle="Targeting Groups" scope="local" type="concept">
+				<topicref format="dita" href="t_Viewing_the_List_of_Targeting_Groups.xml" navtitle="Viewing the List of Targeting Groups" scope="local" type="task"/>
+				<topicref format="dita" href="c_Understanding_Built-In_Targeting_Groups.xml" navtitle="Understanding Built-In Targeting Groups" scope="local" type="concept"/>
+				<topicref format="dita" href="r_Tips_for_Targeting_Groups.xml" navtitle="Tips for Targeting Groups" scope="local" type="reference"/>
+				<topicref format="dita" href="c_Creating_Reusable_Targeting_Groups.xml" navtitle="Creating Reusable Targeting Groups" scope="local" type="concept">
+					<topicref format="dita" href="t_Expressions_Targets.xml" locktitle="yes" navtitle="Expression Targets" scope="local" type="task"/><topicref format="dita" href="t_expression_target_generator.xml" locktitle="yes" navtitle="Expression Target Generator" scope="local" type="task"><topicmeta><navtitle>Expression Target Generator</navtitle></topicmeta></topicref>
+					<topicref format="dita" href="c_Using_Regular_Expressions_in_Targeting_Groups.xml" navtitle="Using Regular Expressions in Targeting   Groups" scope="local" type="concept"/>
+					<topicref format="dita" href="r_Regular_Expression_and_JavaScript_References.xml" navtitle="Regular Expression and JavaScript   References" scope="local" type="reference"/>
+				</topicref>
+				<topicref format="dita" href="t_Targeting_Display_to_a_Prerequisite_Success_Metric.xml" navtitle="Targeting Display to a Prerequisite Success   Metric" scope="local" type="task"/>
+				<topicref format="dita" href="c_Or_and_And_Target_Rules.xml" navtitle="Or and And Target Rules" scope="local" type="concept"/>
+				<topicref format="dita" href="c_Behavioral_Targeting.xml" navtitle="Behavioral Targeting" scope="local" type="concept">
+					<topicref format="dita" href="r_Behavioral_Targeting_Basic_Steps.xml" navtitle="Behavioral Targeting Basic Steps" scope="local" type="reference"/>
+					<topicref format="dita" href="r_Case_Studies.xml" navtitle="Case Studies" scope="local" type="reference"/>
+					<topicref format="dita" href="c_Examples_and_Tips.xml" navtitle="Examples and Tips" scope="local" type="concept">
+						<topicref format="dita" href="c_Number_of_Visits.xml" navtitle="Number of Visits" scope="local" type="concept"/>
+						<topicref format="dita" href="c_Recency_of_Purchase_Visit_Photo_Upload_Etc.xml" locktitle="yes" navtitle="Recency of Purchase, Visit, Photo Upload, Etc." scope="local" type="concept"/>
+						<topicref format="dita" href="c_Frequency.xml" navtitle="Frequency" scope="local" type="concept"/>
+						<topicref format="dita" href="c_New_or_Returning_Visitor.xml" navtitle="New or Returning Visitor" scope="local" type="concept"/>
+						<topicref format="dita" href="c_Active_or_Passive_User.xml" navtitle="Active or Passive User" scope="local" type="concept"/>
+						<topicref format="dita" href="c_Total_Amount_Purchased.xml" navtitle="Total Amount Purchased" scope="local" type="concept"/>
+						<topicref format="dita" href="c_Highest_Amount_Spent_in_a_Single_Order.xml" navtitle="Highest Amount Spent in a Single Order" scope="local" type="concept"/>
+						<topicref format="dita" href="c_Time_of_Day_and_Day_of_Week.xml" navtitle="Time of Day and Day of Week" scope="local" type="concept"/>
+					</topicref>
+					<topicref format="dita" href="r_Webinars_Reports_Blogs_and_Demos.xml" navtitle="Webinars, Reports, Blogs, and Demos" scope="local" type="reference"/>
+				</topicref>
+			</topicref></topicref><topicref format="dita" href="c_target_percent.xml" navtitle="Percentage Targeting" scope="local"><topicmeta><navtitle>Percentage Targeting</navtitle></topicmeta></topicref><topicref format="dita" href="c_target_percentandrule.xml" locktitle="yes" navtitle="Combined Rules-Based and Percentage Targeting" scope="local"><topicmeta><navtitle>Combined Rules-Based and Percentage Targeting</navtitle></topicmeta></topicref><topicref format="dita" href="c_target_whoseeswhat.xml" navtitle="How Target Decides Who Sees What Content" scope="local"><topicmeta><navtitle>How Target Decides Who Sees What Content</navtitle></topicmeta></topicref>
+		<topicref format="dita" href="c_Preparing_a_targeted_Campaign_or_Test.xml" locktitle="yes" navtitle="Preparing a Targeted Campaign or Test" scope="local"/>
+		<topicref format="dita" href="t_Inserting_Target_Conditions.xml" navtitle="Inserting Target Conditions" scope="local" type="task"/>
+		<topicref format="dita" href="c_Validating_a_Targeted_Campaign.xml" navtitle="Validating a Targeted Campaign" scope="local" type="concept">
+			<topicref format="dita" href="t_Validate_Targeting_to_URL_or_Referring_URL_Parameters.xml" navtitle="Validate Targeting to URL or Referring URL Parameters" scope="local" type="task"/>
+			<topicref format="dita" href="t_Validate_Targeting_to_New_or_Returning_Visitors.xml" navtitle="Validate Targeting to New or Returning Visitors" scope="local" type="task"/>
+			<topicref format="dita" href="t_Validate_Targeting_to_Profile_Parameters.xml" navtitle="Validate Targeting to Profile Parameters" scope="local" type="task"/>
+		</topicref>
+	</topicref><topicref format="dita" href="c_Understanding_TestTarget_11.xml" locktitle="yes" navtitle="Automated Decisioning and Targeting" scope="local">
+		<topicref format="dita" href="c_Modeling_System_Overview.xml" navtitle="Modeling System Overview" scope="local" type="concept">
+			<topicref format="dita" href="c_Training_Data_Records.xml" navtitle="Training Data Records" scope="local" type="concept">
+				<topicref format="dita" href="c_Automatic_Profile_Variables.xml" navtitle="Automatic Profile Variables" scope="local" type="concept"/>
+				<topicref format="dita" href="c_Custom_Profile_Variables.xml" navtitle="Custom Profile Variables" scope="local" type="concept"/>
+				<topicref format="dita" href="c_interest_areas.xml" navtitle="Interest Areas" scope="local"><topicmeta><navtitle>Interest Areas</navtitle></topicmeta><topicref format="dita" href="c_1_1_Interest_areas_structure.xml" locktitle="yes" navtitle="Structure of Interest Areas" scope="local"><topicmeta><navtitle>Structure of Interest Areas</navtitle></topicmeta></topicref><topicref format="dita" href="c_1_1_interest_area_discovery.xml" locktitle="yes" navtitle="Interest Area Discovery Phases" scope="local"><topicmeta><navtitle>Interest Area Discovery Phases</navtitle></topicmeta></topicref><topicref format="dita" href="c_1_1_interest_area_considerations.xml" navtitle="Interest Area Considerations" scope="local"><topicmeta><navtitle>Interest Area Considerations</navtitle></topicmeta></topicref><topicref format="dita" href="c_1_1_interet_area_user_activity_logging.xml" navtitle="User Activity Logging" scope="local"><topicmeta><navtitle>User Activity Logging</navtitle></topicmeta></topicref></topicref><topicref format="dita" href="c_How_Data_Is_Categorized.xml" navtitle="How Data Is Categorized" scope="local" type="concept"/>
+			</topicref>
+			<topicref format="dita" href="c_Truncation_Windows.xml" navtitle="Truncation Windows" scope="local" type="concept"/>
+			<topicref format="dita" href="c_Model_Validation.xml" navtitle="Model Validation" scope="local" type="concept"/>
+			<topicref format="dita" href="c_Real-Time_Reaction_Tracking.xml" navtitle="Real-Time Reaction Tracking" scope="local" type="concept"/>
+			<topicref format="dita" href="c_Scorer.xml" navtitle="Scorer" scope="local" type="concept"/>
+		</topicref>
+		<topicref format="dita" href="t_Creating_a_11_Campaign.xml" locktitle="yes" navtitle="Creating an Automated Decisioning Campaign" scope="local">
+			<topicref format="dita" href="c_1_1_Campaign_Priority.xml" locktitle="yes" navtitle="Priority of Campaigns" scope="local" type="concept"/>
+			<topicref format="dita" href="c_1_1_Campaign_Entry_Targeting.xml" locktitle="yes" navtitle="Campaign Entry Targeting" scope="local" type="concept"/>
+			<topicref format="dita" href="c_1_1_Optimizing_Metric.xml" locktitle="yes" navtitle="Optimizing Metric" scope="local" type="concept"/>
+			<topicref format="dita" href="c_1_1_Traffic_Requirements.xml" locktitle="yes" navtitle="Traffic Requirements" scope="local" type="concept"/>
+			<topicref format="dita" href="c_1_1_Modeling_Groups.xml" locktitle="yes" navtitle="Modeling Groups" scope="local" type="concept"/>
+			<topicref format="dita" href="c_1_1_Business_Rules.xml" locktitle="yes" navtitle="Business Rules" scope="local"/>
+			<topicref format="dita" href="c_1_1_Success_Metrics.xml" locktitle="yes" navtitle="Success Metrics for Automated Decisioning Campaigns" scope="local"/>
+		</topicref>
+		<topicref format="dita" href="r_User_Profile_Variables.xml" navtitle="User Profile Variables" scope="local" type="reference"/>
+		<topicref format="dita" href="t_Selecting_or_Creating_Offers.xml" navtitle="Selecting or Creating Offers" scope="local" type="task"/>
+		<topicref format="dita" href="t_Previewing_and_Restricting_Display_Ad_Combinations.xml" navtitle="Previewing and Restricting Display Ad   Combinations" scope="local" type="task"/>
+		<topicref format="dita" href="c_Restricting_the_Content_to_be_Displayed.xml" locktitle="yes" navtitle="Restricting the Content to Display" scope="local"/>
+		<topicref format="dita" href="c_Testing_Against_a_Control_Group.xml" navtitle="Testing Against a Control Group" scope="local" type="concept"/>
+		<topicref format="dita" href="c_Pausing_a_1_1_Campaign.xml" locktitle="yes" navtitle="Pausing an Automated Decisioning Campaign" scope="local"/>
+	</topicref>
+	<topicref format="dita" href="c_Ideas.xml" navtitle="Ideas" scope="local" type="concept">
+		<topicref format="dita" href="t_Adding_an_Idea.xml" navtitle="Adding an Idea" scope="local" type="task"/>
+		<topicref format="dita" href="t_Allowing_Other_Users_in_Your_Organization_to_Create_Ideas.xml" navtitle="Allowing Other Users in Your Organization to Create Ideas" scope="local" type="task"/>
+		<topicref format="dita" href="t_Editing_an_Idea.xml" navtitle="Editing an Idea" scope="local" type="task"/>
+		<topicref format="dita" href="t_Deleting_an_Idea.xml" navtitle="Deleting an Idea" scope="local" type="task"/>
+	</topicref>
+	<topicref format="dita" href="c_Reports.xml" navtitle="Reports" scope="local" type="concept">
+		<topicref format="dita" href="c_Viewing_Reports.xml" navtitle="Viewing Reports" scope="local" type="concept">
+			<topicref format="dita" href="c_About_the_Data.xml" navtitle="About the Data" scope="local" type="concept">
+				<topicref format="dita" href="c_Confidence_Level_and_Confidence_Interval.xml" navtitle="Confidence Level and Confidence   Interval" scope="local" type="concept"/>
+				<topicref format="dita" href="c_Counting_Methodology.xml" navtitle="Counting Methodology" scope="local" type="concept"/>
+				<topicref format="dita" href="c_Conversion_Success_Metric.xml" navtitle="Conversion Success Metric" scope="local" type="concept"/>
+			</topicref>
+			<topicref format="dita" href="t_Changing_the_Control_Experience.xml" navtitle="Changing the Control Experience" scope="local" type="task"/>
+			<topicref format="dita" href="t_Changing_the_Comparison_Column.xml" navtitle="Changing the Comparison Column" scope="local" type="task"/>
+			<topicref format="dita" href="t_Selecting_the_Host_Group.xml" navtitle="Selecting the Host Group" scope="local" type="task"/>
+			<topicref format="dita" href="t_Excluding_Extreme_Orders.xml" navtitle="Excluding Extreme Orders" scope="local" type="task"/>
+			<topicref format="dita" href="t_Changing_the_Date_Range.xml" navtitle="Changing the Date Range" scope="local" type="task"/>
+			<topicref format="dita" href="t_Setting_the_Weekday_Filter.xml" navtitle="Setting the Weekday Filter" scope="local" type="task"/>
+			<topicref format="dita" href="t_Remembering_Report_Settings.xml" navtitle="Remembering Report Settings" scope="local" type="task"/>
+			<topicref format="dita" href="t_Downloading_Data_in_a_CSV_File.xml" navtitle="Downloading Data in a CSV File" scope="local" type="task"/>
+			<topicref format="dita" href="t_Reset_Campaign_Data.xml" locktitle="yes" navtitle="Reset Report Data" scope="local"><topicmeta><navtitle>Reset Report Data</navtitle></topicmeta></topicref><topicref format="dita" href="t_Pushing_a_Winner.xml" navtitle="Pushing a Winner" scope="local" type="task"/>
+		</topicref>
+		<topicref format="dita" href="c_Report_Types.xml" navtitle="Report Types" scope="local" type="concept">
+			<topicref format="dita" href="c_Summary_Report.xml" navtitle="Summary Report" scope="local" type="concept"/>
+			<topicref format="dita" href="c_Graph_Report.xml" navtitle="Graph Report" scope="local" type="concept"/>
+			<topicref format="dita" href="c_Daily_Results_Report.xml" navtitle="Daily Results Report" scope="local" type="concept"/>
+			<topicref format="dita" href="c_Success_Metrics_Report.xml" navtitle="Success Metrics Report" scope="local" type="concept"/>
+			<topicref format="dita" href="c_Offers_Report.xml" navtitle="Offers Report" scope="local" type="concept"/>
+			<topicref format="dita" href="c_Modeling_Groups_Report.xml" navtitle="Modeling Groups Report" scope="local" type="concept"/>
+			<topicref format="dita" href="c_Element_Contribution_Report.xml" navtitle="Element Contribution Report" scope="local" type="concept"/>
+			<topicref format="dita" href="c_Segment_Filters_Report.xml" navtitle="Segment Filters Report" scope="local" type="concept"/>
+			<topicref format="dita" href="c_Audit_Report.xml" navtitle="Audit Report" scope="local" type="concept"/>
+			<topicref format="dita" href="c_Insights_Report.xml" navtitle="Insights Report" scope="local" type="concept"/>
+		</topicref>
+	</topicref>
+	<topicref format="dita" href="c_iPhone_App.xml" navtitle="iPhone App" scope="local" type="concept">
+		<topicref format="dita" href="t_iphone_Changing_Campaign_Status.xml" navtitle="Changing Campaign Status" scope="local" type="task"/>
+		<topicref format="dita" href="t_iphone_Viewing_Campaign_Performance.xml" navtitle="Viewing Campaign Performance" scope="local" type="task"/>
+		<topicref format="dita" href="t_iphone_Viewing_Campaign_Details.xml" navtitle="Viewing Campaign Details" scope="local" type="task"/>
+	</topicref>
+	<topicref format="dita" href="c_TestTarget_APIs.xml" locktitle="yes" navtitle="APIs" scope="local"/><topicref format="dita" href="r_Frequently_Asked_Questions.xml" navtitle="Frequently Asked Questions" scope="local" type="reference"/><topicref format="dita" href="r_tntlimits.xml" navtitle="Limits" scope="local"/><topicref format="dita" href="c_visitor_profile_lifetime.xml" navtitle="Visitor Profile Lifetime" scope="local"><topicmeta><navtitle>Visitor Profile Lifetime</navtitle></topicmeta></topicref><topicref format="dita" href="c_privacy.xml" navtitle="Privacy" scope="local"><topicmeta><navtitle>Privacy</navtitle></topicmeta></topicref><topicref format="dita" href="r_glossary.xml" navtitle="Glossary" scope="local"/><topicref format="html" href="http://help-forums.adobe.com/content/adobeforums/en/target-forum/adobe-target.html" locktitle="yes" navtitle="Target Community Forum" scope="external"><topicmeta><navtitle>Target Community Forum</navtitle></topicmeta></topicref>
+</map>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_7FB905497F854DA291D122E7533C041B">
+  <title> Upgrading from SiteCatalyst 14</title>
+  <shortdesc>The Adobe SiteCatalyst 15 Upgrade Guide describes the process and
+	 results of upgrading from SiteCatalyst 14.x to SiteCatalyst 15. SiteCatalyst 15
+	 incorporates a new data processing platform that delivers powerful new features
+	 and more accurate website measurement than ever before. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports and analytics" />
+      <othermeta name="subtopic" content="Upgrading from V14" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>
+      <xref href="http://marketing.adobe.com/resources/help/en_US/sc/upgrade/SiteCatalyst_15_Upgrade.pdf" format="http" scope="external">PDF version</xref>. 
+	 </p>
+  </conbody>
+</concept>

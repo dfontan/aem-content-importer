@@ -1,0 +1,192 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_8B60FC7236A64B36BE7C464235A17F0B"> 
+  <title>Getting Started - TEMP</title> 
+  <shortdesc>How to get started using the Adobe Marketing Cloud.
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<keywords> 
+		  <keyword>Marketing Cloud Getting Started</keyword> 
+		</keywords> 
+		<othermeta name="solution" content="Marketing Cloud"/> </metadata>
+  </prolog>
+  <conbody> 
+	 <p>The 
+		<keyword>Adobe Marketing Cloud</keyword> brings Adobe's marketing
+		solutions together into one virtual, private space.
+	 </p> 
+	 <ul id="ul_0931C86C89B442CF906C91FB71D3C9A7"> 
+		<li id="li_BF35E0FC51CA4D83AE45ACC0F41111CA">Log in to all your solutions
+		  using your Adobe ID, and launch them from one place. 
+		</li> 
+		<li id="li_9C37847F34C042FEB5A94F8A557861EB">Collaborate and 
+		  <xref href="t_share.xml#task_208FEB02C299484C9E70605C410E8E53"
+		  format="dita" scope="local">share</xref> content (like reports) with other 
+		  <keyword>Marketing Cloud</keyword> users. 
+		</li> 
+		<li id="li_61B02BA4AC7845E992372E6BEFE5B045">Authenticate using 
+		  <xref
+		  href="https://developer.omniture.com/en_US/documentation/authentication/auth-overview"
+		  format="https" scope="external">OAuth2</xref> when calling the web services
+		  APIs. 
+		</li> 
+	 </ul> 
+	 <p> Check out the Getting Started Videos section to see how you can begin
+		using the Marketing Cloud with your solution. 
+	 </p> 
+	 <section id="gs-videos" outputclass="gs-videos">
+      <!--Replacement section for mcloud getting started videos. id="gs-videos", outputclass="gs-videos-->
+	 </section> 
+	 <section id="section_349F9EBF30E8439B9DA328153F8AA0AE">
+		<table id="table_6CC0D1DFA87D4D2B86C246BEEEE1A4C6"> 
+		  <tgroup cols="4"> 
+			 <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+			 <colspec colname="col002" colnum="2" colwidth="1.09*"/><colspec
+			 colname="col02" colnum="3" colwidth="2.49*"/> 
+			 <colspec colnum="4" colname="col2" colwidth="2.64*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col1">Step 
+				  </entry> 
+				  <entry colname="col002">Who Performs 
+				  </entry> 
+				  <entry colname="col02">Where 
+				  </entry> 
+				  <entry colname="col2">Why 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p><image href="graphics/step1_icon.png"
+						id="image_25AB69C832BB470CA3846E4A52ED840D"></image> Complete the 
+						<xref
+						href="https://adobeformscentral.com/?f=uRzGIyVihCzD%2ARpbeUimAA" format="https"
+						scope="external">Marketing Cloud Provisioning Form</xref>. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col002"> 
+					 <p>Administrators 
+					 </p> 
+				  </entry> 
+				  <entry colname="col02"> 
+					 <p><xref
+						href="https://adobeformscentral.com/?f=uRzGIyVihCzD%2ARpbeUimAA" format="https"
+						scope="external">Adobe Customer Care</xref> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>After you are enabled as an administrator, you can access
+						the 
+						<xref
+						href="http://dev.day.com/docs/en/marketing-cloud/user-group-admin.html"
+						format="http" scope="external">Tools</xref> page in the 
+						<keyword>Marketing Cloud</keyword>, where you can: 
+					 </p> 
+					 <ul id="ul_D3532A54DE984AFC9508F394FD552E7C"> 
+						<li id="li_94EE0B47DB704DBE888EEA6A6358C97B">Create users 
+						</li> 
+						<li id="li_543456C6FBE5428F9DFA726E3949AEAA">Create groups 
+						</li> 
+						<li id="li_DED4EFF844984034B4DDB31613E3AFB9">Invite users to
+						  the Marketing Cloud 
+						</li> 
+					 </ul> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p><image href="graphics/step2_icon.png"
+						id="image_57CD0E4918EF4522AB8422B377B7F694"></image> Create one or more groups.
+						
+					 </p> 
+				  </entry> 
+				  <entry colname="col002"> 
+					 <p>Administrators 
+					 </p> 
+				  </entry> 
+				  <entry colname="col02"> 
+					 <p> 
+						<menucascade> 
+						  <uicontrol>Tools</uicontrol> 
+						  <uicontrol>Group Management</uicontrol> 
+						</menucascade> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>A Group is a container of users. You add users to a group,
+						then enable solution access at the group level. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p><image href="graphics/step3_icon.png"
+						id="image_078728688BEB48DFAC01169F7E534D7B"></image> Add (invite) users to the
+						Marketing Cloud organization. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col002"> 
+					 <p>Administrators 
+					 </p> 
+				  </entry> 
+				  <entry colname="col02"> 
+					 <p> 
+						<menucascade> 
+						  <uicontrol>Tools</uicontrol> 
+						  <uicontrol>User Management</uicontrol> 
+						</menucascade> 
+					 </p> 
+					 <p>You can also perform this step on the 
+						<wintitle>Edit Group</wintitle> page, under 
+						<wintitle>Solution Access</wintitle>. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>When you invite a user to the Marketing Cloud organization,
+						you specify their email addresses and can associate them with a group. 
+					 </p> 
+					 <p>Adobe sends the users an email invitation. They must confirm
+						their email address by clicking a link in the email, which registers the
+						account. (See step 4.) 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p><image href="graphics/step4_icon.png"
+						id="image_B3A0B7EB78DE40E198E98E3D7B784C72"></image> Link solution accounts. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col002"> 
+					 <p>Users 
+					 </p> 
+				  </entry> 
+				  <entry colname="col02"> 
+					 <p>In solutions (<keyword>Analytics</keyword>, 
+						<keyword>Social</keyword>, etc.) or In the 
+						<keyword>Marketing Cloud</keyword>. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Linking accounts connects a user's Adobe ID (Marketing Cloud
+						login) to the user's solution credentials. After users sign in to 
+						<filepath><term>&lt;your
+							 company&gt;</term>.marketing.adobe.com</filepath>, they are automatically
+						signed in to the solution. 
+					 </p> 
+					 <p>See 
+						<xref
+						href="link_accounts.xml#concept_DFCB29A3B4834FC59AA29E0BBA301584" format="dita"
+						scope="local">Join Marketing Cloud</xref>. 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table>
+	 </section>
+  </conbody>
+</concept>

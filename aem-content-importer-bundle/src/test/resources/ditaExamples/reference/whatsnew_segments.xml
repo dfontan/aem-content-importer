@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_F314743B1565491090C2BB01389FB767"> 
+  <title>Changes to Adobe Analytics</title> 
+  <shortdesc>Announcing upcoming changes to Adobe Analytics. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta content="Analytics" name="solution"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>In May 2014, Adobe made the following changes: 
+	 </p> 
+	 <ul id="ul_8F2E23E5694A4293B332A3779B218EA6"> 
+		<li id="li_C3475C2297434959A892713C17206CD8"> Data warehouse will no
+		  longer be accessible through the Version 14 UI. After this change, you will
+		  need to log in to Adobe Analytics to schedule data warehouse reports. All
+		  existing data warehouse jobs will continue to be processed and delivered as
+		  usual. 
+		</li> 
+		<li id="li_272A445E4E574978AD5ED3F86AE3674D"> The New, Edit, and Delete
+		  buttons will be removed from the ASI Slots UI in Version 14. After this change,
+		  you will need to log in to Adobe Analytics to define ASI Slot segments. All
+		  existing ASI slots will continue to be processed as usual. 
+		</li> 
+	 </ul> 
+  </conbody>
+</concept>

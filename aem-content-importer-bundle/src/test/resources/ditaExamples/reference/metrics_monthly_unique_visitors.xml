@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_6F2C8EA3A4E3440D8F19A2655399AB69"> 
+  <title>Monthly Unique Visitors</title> 
+  <shortdesc> The number of unduplicated (counted only once) visitors to your
+	 website over the course of a single month. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Metrics"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <table id="table_0CEB27C267824E69AF31A98EC71A9014"> 
+		<tgroup cols="2"> 
+		  <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+		  <colspec colnum="2" colname="col2" colwidth="2.39*"/> 
+		  <thead> 
+			 <row> 
+				<entry colname="col1">Uses 
+				</entry> 
+				<entry colname="col2">Description 
+				</entry> 
+			 </row> 
+		  </thead> 
+		  <tbody> 
+			 <row> 
+				<entry colname="col1">Traffic 
+				</entry> 
+				<entry colname="col2">Unique visitor that accesses your site for a
+				  single month. Multiple visits in one month count for a one 
+				  <wintitle>Monthly Unique Visitor</wintitle>. 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Conversion 
+				</entry> 
+				<entry colname="col2">N/A 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Ad Hoc Analysis 
+				</entry> 
+				<entry colname="col2">Unique visitor that accesses your site for a
+				  single month. Multiple visits in one month count for a one 
+				  <wintitle>Monthly Unique Visitor</wintitle>. 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+	 <p>See 
+		<xref href="unique_visitors.xml#concept_C523545928624FD2A2F014EF4ABB0C0B"
+		 format="dita" scope="local"><?xm-replace_text Unique Visitors?></xref>. 
+	 </p>
+  </conbody> 
+</concept>

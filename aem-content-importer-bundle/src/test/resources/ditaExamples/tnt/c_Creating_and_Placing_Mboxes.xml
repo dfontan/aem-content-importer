@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_B0EC432377C244B79DB47783B3170E22" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic concept/concept ">
+  <title class="- topic/title ">Create and Place Mboxes</title>
+  <shortdesc class="- topic/shortdesc ">Mboxes are created as sections of your
+	 Web pages. The way they are created depends upon the type of mbox and where you
+	 want to place it. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody class="- topic/body  concept/conbody ">
+    <p>Mbox names can contain alphanumerical characters, underscores, and
+		colons. No other special characters or spaces are allowed. 
+	 </p>
+    <!--<p class="- topic/p ">You can also create mboxes in Adobe Dreamweaver®. See
+		the following links for more information: 
+	 </p>
+    <ul id="ul_6984BBBC809C46068E608845E89070AA" class="- topic/ul ">
+      <li id="li_61915456640A4DF790473BFE446D5B25" class="- topic/li ">
+        <xref href="http://help.adobe.com/en_US/Extensions/TestTarget/index.html" scope="external" format="html" class="- topic/xref ">Flash and Dreamweaver
+			 extension documentation</xref>
+      </li>
+      <li id="li_446D5EF55ACD4AF0822B1CEDF72F2857" class="- topic/li ">
+        <xref href="http://www.adobe.com/devnet/dreamweaver/articles/dw_tnt_overview.html" scope="external" format="html" class="- topic/xref ">Dreamweaver extension
+			 tutorial</xref>
+      </li>
+    </ul>-->
+  </conbody>
+  <related-links class="- topic/related-links ">
+    <link href="c_About_Mboxes.xml#concept_E01933A6CEDE481BBAC25F95FE3C6FD9" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Mbox Concepts?>
+    </link>
+    <link href="c_Downloading_and_Setting_Up_MboxJs.xml#concept_9429FEF054734D3AA0CE7E3F25ED0B9E" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Download and Set Up mbox.js?>
+    </link>
+    <link href="c_Using_a_Redirector.xml#concept_451731358AA64789AD0DA3BAAF2DF72C" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Redirector?>
+    </link>
+    <link href="t_Validating_an_Mbox.xml#task_4BB8E090CBBF4C56A39BB63BF1ADB964" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Validate an Mbox?>
+    </link>
+    <link href="t_Deactivating_an_Mbox.xml#task_536C6C87631D4BC3B3829117DE4D55FE" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Deactivate an Mbox?>
+    </link>
+    <link href="t_Clearing_Deleting_an_Mbox.xml#task_26DA102117A24CDA8A642690366488D7" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Clear (Delete) an Mbox?>
+    </link>
+    <link href="r_Troubleshooting_Mboxes.xml#reference_FAA5B3A0FE1542219E004263BF4015E3" type="reference" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Troubleshoot Mboxes?>
+    </link>
+    <link href="t_Mbox_Troubleshooting_Matrix.xml#task_9EEE14582E5443278B1A39CC1E00D6B4" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Mbox Troubleshooting Matrix?>
+    </link>
+    <link href="t_Mbox_Reporting.xml#task_BF6F059DE4CA4769AD5408471731E206" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Mbox Request Report?>
+    </link>
+  </related-links>
+</concept>

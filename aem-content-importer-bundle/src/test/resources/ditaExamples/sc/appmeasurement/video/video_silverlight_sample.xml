@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_4B8F3D5AD7D84B93A49459988225E53D">
+  <title>Silverlight Sample Code</title>
+  <shortdesc>This section contains a sample implementation for Silverlight. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>media</keyword>
+        <keyword>milestone</keyword>
+        <keyword>sdk</keyword>
+        <keyword>video</keyword>
+      </keywords>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p></p>
+    <codeblock>using com.omniture;
+
+namespace AppMeasurementExample {
+  public partial class Page : UserControl {
+    AppMeasurement s;
+
+    public Page() {
+      InitializeComponent();
+
+      s = new AppMeasurement();
+
+      /* Specify the Report Suite ID(s) to track here */
+      s.account = "myreportsuiteID";
+      /* Turn on and configure debugging here */
+      s.debugTracking = true;
+      /* You may add or alter any code config here */
+      s.pageName = "";
+      s.pageURL = "";
+      s.charSet = "UTF-8";
+      s.currencyCode = "USD";
+      s.Media.trackMilestones="25,50,75";
+      s.Media.playerName="My Media Player";
+      s.Media.trackUsingContextData = true
+      s.Media.segmentByMilestones = true;
+      s.Media.contextDataMapping = new Dictionary&lt;string,object&gt; {
+       "a.media.name":"eVar2,prop2",
+       "a.media.segment":"eVar3",
+       "a.contentType":"eVar1",
+       "a.media.timePlayed":"event3",
+       "a.media.view":"event1",
+       "a.media.segmentView":"event2",
+       "a.media.complete":"event7",
+       "a.media.milestones":{
+          25:"event4",
+          50:"event5",
+          75:"event6"
+        }
+      };
+      s.Media.autoTrack = true;
+      s.Media.attach(mediaElement);    
+
+      ... //other page code
+      }
+    }
+}
+</codeblock>
+  </conbody>
+</concept>

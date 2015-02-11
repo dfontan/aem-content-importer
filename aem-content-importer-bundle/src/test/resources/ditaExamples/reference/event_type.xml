@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_2A6FCC19E7FC429DBDFA65BC640BD448">
+  <title>About Changing the Event Type</title>
+  <shortdesc>Describes the consequences of changing an event type after data
+	 has been collected. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Admin tools" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <section id="section_5ACFE201A43C4BCE95F3C7E0715C6A04">
+      <title>Version 14 Report Suites</title>
+      <p>If you change an event from counter, numeric, or currency to another
+		  type, any data captured as the previous type is hidden until the type is
+		  changed back. Version 14 event data is displayed only when the current event
+		  type matches the captured event type. 
+		</p>
+      <p> Any data sent while the event is set to another type is lost
+		  permanently. 
+		</p>
+    </section>
+    <section id="section_81A7EFE7E1C34368801F1BDEE1607444">
+      <title>Version 15 Report Suites with Historical Version 14 Data</title>
+      <p>In version 15, you can change an event from counter, numeric, or
+		  currency to another type without losing access to previously captured data.
+		  However, if you change an event type, any historical version 14 data that was
+		  captured as the previous type is hidden until the type is changed back. 
+		</p>
+      <p>For these report suites, do not change an event type unless you
+		  understand that you will lose access to historical version 14 data for that
+		  event. The historical version 14 event data is displayed only when the current
+		  event type matches the captured event type. 
+		</p>
+    </section>
+    <section id="section_D91718867C6540F3BCE65E46AA0D41DA">
+      <title>Version 15 Report Suites</title>
+      <p>In version 15, you can change an event from counter, numeric, or
+		  currency to another type without losing access to previously captured data. 
+		</p>
+    </section>
+  </conbody>
+</concept>

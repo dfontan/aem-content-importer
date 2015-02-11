@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_5D7F99F0F9EA447E9FD986BCA5048AB3"> 
+  <title>Campaign Option</title> 
+  <shortdesc>An individual creative element. It may be a single image like a
+	 banner, or it can be a complex piece of HTML, including text, images, and
+	 multimedia content. A campaign container can display one or more campaign
+	 options selected by the targeting engine. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="subtopic" content="Glossary"/> </metadata>
+  </prolog> 
+</concept>

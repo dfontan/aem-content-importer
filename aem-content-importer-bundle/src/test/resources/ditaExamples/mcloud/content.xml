@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_BB6956647E4B41E2BB1BE3F26B255E66">
+  <title>Content</title>
+  <shortdesc> Content refers to marketing content that can be used as part of a
+	 Campaign, used to support a specific goal. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Marketing Cloud" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Content is used in specific 
+		<xref href="locations.xml#concept_F37DFE3AFE4E4ED6B74640E97946255B" format="dita" scope="local">Locations</xref>, and may be comprised of 
+		<xref href="assets.xml#concept_A977046FE7BF44B2BD63D29AF8A7AD71" format="dita" scope="local">Assets</xref>. Content can be structured (such as
+		product information) or unstructured (such as a web page or a screen in a
+		mobile application). 
+	 </p>
+    <p>
+      <b>Examples</b>
+    </p>
+    <ul id="ul_1BD7ABDE599D4F959F9600B378CC7D83">
+      <li id="li_B53241F4414A47CFAF6D1C63ADFEC2E7">Web pages
+		</li>
+      <li id="li_DA75EB58C9A44E5F92E067095CC1A62C">Banners
+		</li>
+      <li id="li_9BD48481CD7B4BFFA903899E7AD77665">Status updates
+		</li>
+      <li id="li_E493648A2B354683B78153FF86FFF241">Comments
+		</li>
+      <li id="li_1C365372A864459582F02D81C20A0950">Text ads
+		</li>
+      <li id="li_01FBDE8B0F414858B85AB0245C69B8FC">Product information
+		</li>
+      <li id="li_70DD78DB43654960BFAF8FABD5FBC235">Product reviews
+		</li>
+      <li id="li_14A0418404A743748B239BEE3F18BF5E">Form data
+		</li>
+      <li id="li_704C754C4A2942F9AFF8A728E7402C6C">Documents in a search index
+		</li>
+      <li id="li_22AF5FDD28FB4979A6D38B149F221938">Social posts
+		</li>
+      <li id="li_5106730A49AB4FEDA9EC79C692F22B71">Articles
+		</li>
+      <li id="li_A10523E815274A34B3E0A8B6A4267A75">Publications
+		</li>
+    </ul>
+  </conbody>
+</concept>

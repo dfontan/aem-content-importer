@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_0036D5F6C062442788BB55E872816D82">
+  <title>Create an orderConfirmPage Mbox</title>
+  <shortdesc>The orderConfirmPage mbox records details about your product,
+	 permitting reports on sales data, orders, and recommendations. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <context id="context_C0AD996E508A4426A4ED349AFDB89CC7">
+      <p>For help deciding if you need the orderConfirmPage mbox, see 
+		  <xref href="c_Parameters_and_Values.xml#concept_DB5AB8E9682D41DDA5621FFE856C6336" type="concept" format="dita" scope="local"><?xm-replace_text Parameters and Values?></xref>.
+		  
+		</p>
+    </context>
+    <steps id="steps_FA3BE57F98F14E58B5339B0E66C160AA">
+      <step id="step_5E7FEF343B0C45DF9E23FBCF6CB221ED">
+        <cmd>In your order details page, insert the mbox script following the
+			 model below. 
+		  </cmd>
+      </step>
+      <step id="step_5DC78D26197640FE9755295B4211EFB2">
+        <cmd>Replace the WORDS IN CAPITAL LETTERS with either dynamic or static
+			 values from your catalog. 
+		  </cmd>
+        <stepresult>
+          <p>
+            <note>Use comma delimiting to separate multiple product IDs. 
+				</note>
+          </p>
+          <p>
+            <b>Tip: 
+				</b>You can also pass order information to any mbox (not only the 
+				<codeph>orderConfirmPage</codeph> mbox). You can also pass order
+				information to multiple mboxes within the same campaign. 
+			 </p>
+          <p>
+            <codeblock outputclass="syntax html">&lt;div class="mboxDefault"&gt;
+
+   &lt;!-- CONTENT TO SHOW IF NO OFFERS AVAILABLE. --&gt;
+
+&lt;/div&gt;
+
+&lt;script type="text/javascript"&gt;
+   
+   mboxCreate('orderConfirmPage',
+
+   'productPurchasedId=PRODUCT ID FROM YOUR ORDER PAGE, PRODUCT ID2, PRODUCT ID3',
+
+   'orderTotal=ORDER TOTAL FROM YOUR ORDER PAGE',
+
+   'orderId=ORDER ID FROM YOUR ORDER PAGE');
+
+&lt;/script&gt; </codeblock>
+          </p>
+        </stepresult>
+      </step>
+    </steps>
+    <postreq id="postreq_280ED02EBF1148D4A1E0623DD9D76C31" status="new">
+      <p>The orderConfirmPage mbox uses the following parameters: 
+		</p>
+      <p>
+        <table id="table_CEB2E2F2265142D89672E124CB4C880B">
+          <tgroup cols="2">
+            <colspec colnum="1" colname="col1" colwidth="*" />
+            <colspec colnum="2" colname="col2" colwidth="*" />
+            <thead>
+              <row>
+                <entry colname="col1">Parameter 
+				  </entry>
+                <entry colname="col2">Description 
+				  </entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry colname="col1">
+                  <p>
+                    <codeph>orderId</codeph>
+                  </p>
+                </entry>
+                <entry colname="col2">
+                  <p> Unique value to identify an order for conversion counting. 
+					 </p>
+                  <p>The 
+						<codeph>orderId</codeph> must be unique. Duplicate orders are
+						ignored in reports. 
+					 </p>
+                </entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <p>
+                    <codeph>orderTotal</codeph>
+                  </p>
+                </entry>
+                <entry colname="col2">
+                  <p> Monetary value of the purchase. 
+					 </p>
+                  <p>Do not pass the currency symbol. Use a decimal point (not a
+						comma) to indicate decimal values. 
+					 </p>
+                </entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <p>
+                    <codeph>productPurchasedId</codeph>
+                  </p>
+                </entry>
+                <entry colname="col2">
+                  <p> Comma-separated list of product IDs purchased in the order.
+						
+					 </p>
+                  <p> These product IDs display in the audit report to support
+						additional reporting analysis. 
+					 </p>
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </p>
+    </postreq>
+  </taskbody>
+  <related-links>
+    <link href="t_Creating_a_Single_Mbox.xml#task_FE6BEB3A1264493A9E9A4CFC5023CCA9" type="task" format="dita" scope="local">
+      <?xm-replace_text Create a Single Mbox?>
+    </link>
+    <link href="t_Placing_Multiple_Mboxes_on_a_Page.xml#task_FD9771D3457F4AB29061596F7A8ECF30" type="task" format="dita" scope="local">
+      <?xm-replace_text Place Multiple Mboxes on a Page?>
+    </link>
+    <link href="t_Creating_a_Whole-Page_Mbox.xml#task_5E71B81283444DB3882D2E1EBFEE0B64" type="task" format="dita" scope="local">
+      <?xm-replace_text Create a Whole-Page Mbox?>
+    </link>
+    <link href="t_Placing_an_Mbox_Around_a_Table.xml#task_A2819A92942D400880A62FFD86FE952B" type="task" format="dita" scope="local">
+      <?xm-replace_text Place an Mbox Around a Table?>
+    </link>
+    <link href="t_Placing_an_Mbox_Around_a_Table_Cell.xml#task_3B5EAB62FC654E5086EB4FA65BD8738B" type="task" format="dita" scope="local">
+      <?xm-replace_text Place an Mbox Around a Table Cell?>
+    </link>
+  </related-links>
+</task>

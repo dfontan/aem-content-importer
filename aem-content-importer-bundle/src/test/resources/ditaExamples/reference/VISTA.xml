@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_E3D0FEC81E1F4987B39CC467F19FFCFF"> 
+  <title>VISTA Rules</title> 
+  <shortdesc>Visitor Identification, Segmentation and Transformation
+	 Architecture (VISTA) is a server-side approach to populating report variables.
+	 VISTA uses visitor segmentation rules to create real-time segmentation of all
+	 online data. These rules enable you to alter or segment data in nearly any way
+	 that you choose, without the need for implementing complex logic on your site.
+	 An unlimited number of visitor segmentation rules can be defined with VISTA. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="subtopic" content="Glossary"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>For example, suppose you want to segment traffic where 
+		<codeph>eVar1 = "News"</codeph> to Report Suite A, and send all other
+		traffic to Report Suite B. VISTA can perform this logic automatically for all
+		server calls received. 
+	 </p> 
+	 <p>VISTA processing occurs after data is collected but before it displays
+		in marketing reports, data warehouse, ASI, or ad hoc analysis. Server-side data
+		manipulation is done as the data comes in through the image request. 
+	 </p> 
+	 <note>VISTA rules are not retroactive in marketing reports and cannot
+		reprocess historical data to apply logic to existing reports. However, you can
+		apply VISTA rules to 
+		<xref href="ASI_slots_admin.xml#concept_1D10D2834C9549C2A07932F0AB93305D"
+		 format="dita" scope="local">ASI slots</xref> so that this logic is applied to
+		key segments. ASI also allows you to apply segments to historical data, so in
+		effect it is possible to use ASI to apply VISTA rules to historical data. 
+	 </note> 
+	 <p> VISTA rules can act on data in the HTTP header as well as any data
+		element sent in the code. Your implementation consultant works with you to
+		define VISTA rules and to create a specification from which the rule is
+		programmed and tested. 
+	 </p> 
+	 <p> 
+		<b>VISTA Uses</b> 
+	 </p> 
+	 <p>VISTA can be used to perform the following. 
+	 </p> 
+	 <p> 
+	 <ul id="ul_4304FCA65A6A4572914A90E49FFED168"> 
+		<li id="li_0C14B4F658184DA58713571D492998FC">Segment data into separate
+		  report suites by domain names, URL patterns, or directories. 
+		</li> 
+		<li id="li_1333CBAFD2534E4ABC7150F0E790E123">Segment data based on
+		  user-related data, such as the value of a cookie (if the cookie value is passed
+		  in a variable), IP address, operating system, browser type or version, or the
+		  value of any variable populated via implementation. 
+		</li> 
+		<li id="li_C7F0A5F61A394EB08A51DC3A01C3D140">Separate or copy data into
+		  multiple report suites. 
+		</li> 
+		<li id="li_F9087EC3D37E4D51A8398319AE2CDDD7">Use JavaScript variable
+		  values as a lookup value in a database (referred to as a 
+		  <i>database VISTA rule</i>) to dynamically apply changes to data based
+		  on values passed into Analytics. 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p>Implementing server-side VISTA rules within the reporting architecture
+		is perfect for websites that cannot implement complex logic within their own
+		web architectures. VISTA rules are programmed and stored in one central
+		location, so updates can be made quickly and easily. This is perfect for large,
+		distributed sites and companies with various subsidiary divisions where rolling
+		out site changes and new processing rules is often laborious and
+		time-consuming. 
+	 </p> 
+	 <p> 
+		<b>Common VISTA Rules</b> 
+	 </p> 
+	 <ul id="ul_EF03ACA1025A400BBFB93A02CAC76226"> 
+		<li id="li_F208ED03115C429DB9681C5AF1143860"> 
+		  <b>Grabber</b>: VISTA grabs a value from the URL, the HTTP header or a
+		  variable, and sets it into another variable or manipulates it and sets it into
+		  a variable. 
+		</li> 
+		<li id="li_8254B3CD6E064B84845102CC60C26F45"> 
+		  <b>Exploder</b>: VISTA takes an incoming value from a variable, and
+		  breaks it out into several different variables. This rule is helpful when you
+		  have a long string of concatenated values that you want to push into different
+		  reports. 
+		</li> 
+		<li id="li_4041E0D135434DAE9B56F8D222D67F48"> 
+		  <b>Concatenator</b>: VISTA takes any number of values from variables,
+		  the URL, or the HTTP header and concatenates them into one variable. This rule
+		  is helpful when the separate variables are dynamic and could come into reports
+		  in many different combinations. 
+		</li> 
+		<li id="li_AD028F4580DB420BBE9C19D912DBD9D0"> 
+		  <b>Traffic Cop</b>: Acting as a filter, VISTA looks for specific values
+		  in the HTTP header, variables, or URL and segments that data. You can use
+		  Traffic Cop to allow only certain values into a report, to watch for IP ranges,
+		  or watch for specific page names and then populate appropriate events. 
+		</li> 
+		<li id="li_AE65C2E9BD0B4F10B44D6F08848D6C09"> 
+		  <b>Database Lookup</b>: Securely push values into props, eVars, and
+		  metrics into events through a lookup of proprietary data on your servers, such
+		  as Cost of Goods Sold. 
+		</li> 
+	 </ul> 
+	 <p>Deploying and updating VISTA rules is done by Adobe's Engineering
+		Services, which works with you to understand your business needs and to craft a
+		rule that addresses these needs. Adobe charges an additional fee to implement
+		VISTA rules. To discuss the many possibilities that VISTA offers, contact your
+		Adobe Account Manager. 
+	 </p> 
+  </conbody> 
+</concept>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_6D5C8402C03C4698BB37823A73B7AC11"> 
+  <title>Organizations</title> 
+  <shortdesc>Learn about adding organizations, setting one as a default
+	 landing, and linking (or unlinking) solution accounts to the 
+	 <keyword>Marketing Cloud</keyword>. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Marketing Cloud"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p><b>What Is an Organization?</b> 
+	 </p> 
+	 <p>A 
+		<keyword>Marketing Cloud</keyword> organization is the entity that
+		enables an administrator to configure groups and users, and to control single
+		sign-on in the 
+		<keyword>Marketing Cloud</keyword>. The organization functions like a
+		log-in company that spans all the 
+		<keyword>Marketing Cloud</keyword> products and solutions. Most often, an
+		organization is your company name. However, a company can have many
+		organizations. 
+	 </p> 
+	 <p>Organizations are displayed as tabs on the 
+		<wintitle>Manage Organizations</wintitle> page, but you can also identify
+		the organization in the domain name, and set the organization as the 
+		<xref href="t_add_organization.xml#task_E77B5310EEEC4668830AE501937A2EAD"
+		 format="dita" scope="local">default landing</xref>.
+	 </p>
+	 <p>Each Organization has a unique 
+		<keyword>Marketing Cloud</keyword> ID. Organizations are displayed as
+		tabs on the 
+		<wintitle>Organizations &amp; Products Access</wintitle> page only after
+		Adobe has 
+		<xref
+		 href="admin_getting_started.xml#concept_A9A190B372C5450CA53D60431D362143"
+		 format="dita" scope="local">provisioned</xref> the Company. 
+	 </p> 
+	 <p><image href="graphics/organizations.png"
+		id="image_02252856F6B54E09AC152368233464B3"><?xm-replace_text Paragraph?></image>
+		
+	 </p> 
+	 <p>When an administrator of an Organization 
+		<xref href="t_user.xml#task_9942F3064467431596AD51AD92449827"
+		 format="dita" scope="local">invites</xref> a user to the 
+		<keyword>Marketing Cloud</keyword>, adding the user to a the Organization
+		displays on this page. 
+	 </p> 
+	 <p>Cards correspond to a solution. For example, an Analytics log-in company
+		generally has a 1:1 correlation with an Organization. 
+	 </p> 
+  </conbody> 
+</concept> 

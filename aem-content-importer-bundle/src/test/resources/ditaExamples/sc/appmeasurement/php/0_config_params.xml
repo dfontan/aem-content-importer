@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+ <entry key="xml-transformer">com.adobe.aem.importer.impl.XMLTransformerDITAImpl</entry>
+ <entry key="src">/var/aem-importer/zip-appmeasurement-php</entry>
+ <entry key="target">/content/dita-appmeasurement-php-import</entry>
+ <entry key="masterFile">php.ditamap</entry>
+ <entry key="xslt-transformer">net.sf.saxon.TransformerFactoryImpl</entry>
+ <entry key="xslt-file">/apps/aem-importer/resources/dita-to-content.xsl</entry>
+ <entry key="tempFolder">/var/aem-importer/tmp</entry>
+ <entry key="packageTpl">/apps/aem-importer/resources/package-tpl</entry>
+ <entry key="graphicFolders">images,graphics,Graphics</entry>
+</properties>

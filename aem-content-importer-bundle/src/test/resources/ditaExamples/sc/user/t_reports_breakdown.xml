@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_F685624830E64C829C8BE6435A107F69">
+  <title>Run a breakdown report</title>
+  <shortdesc>Steps that describe how to run a breakdown report. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports and analytics" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <steps id="steps_275A02FAA3364E3CA583D0DB24C8BDFE">
+      <step id="step_3E14E2CA887442ED88D5499C449F4765">
+        <cmd> Run a report that supports correlations or subrelations, such as 
+			 <uicontrol>Site Content</uicontrol> &gt; 
+			 <uicontrol>Pages</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_D24B14E2DAB5408FA16927FB9EAE853D">
+        <cmd>In the report table, click the 
+			 <uicontrol>Breakdown By</uicontrol> icon. 
+		  </cmd>
+        <info>If the 
+			 <uicontrol>Breakdown By</uicontrol> icon is not visible, the feature
+			 is either not available or not enabled. 
+		  </info>
+        <stepresult>
+          <p>
+            <image id="image_7CD000180B2E4E38A432A2F6BF1B6CD8" href="graphics/breakdown.png" placement="inline"></image>
+          </p>
+          <p>The 
+				<uicontrol>Breakdown By</uicontrol> menu displays all available
+				correlation and conversion breakdown options available for the current report. 
+			 </p>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links>
+    <link href="t_reports_correlation_filter.xml#task_065042E384DA4BF3864C58AF2B88D6E2" type="task" format="dita" scope="local">
+      <?xm-replace_text Adding a Correlation Filter?>
+    </link>
+  </related-links>
+</task>

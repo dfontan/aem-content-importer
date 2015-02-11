@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_424E791D222E4AA280F6A695D1397FD4" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Prepare to Assure Campaign Quality</title>
+  <shortdesc class="- topic/shortdesc ">Assuring campaign quality requires some
+	 initial preparation. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <steps id="steps_6221CEA229EE4733ACEB04DB74A54414" class="- topic/ol task/steps ">
+      <step id="step_A55B825E165641799AAE49A33268C186" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Review your hosts and move each into
+			 the correct host group. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">See 
+				<xref href="c_About_Hosts_and_Host_Groups.xml#concept_A22F9D38D79546A98DF578E1B25FA585" type="concept" format="dita" scope="local" class="- topic/xref "><?xm-replace_text About Hosts and Host Groups?></xref>
+				for details. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_D6293CECF6344885BFC42B1ADC6371B6" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">It is recommended that you 
+			 <xref href="t_Validating_an_Mbox.xml#task_4BB8E090CBBF4C56A39BB63BF1ADB964" type="task" format="dita" scope="local" class="- topic/xref ">validate
+				mboxes</xref> and 
+			 <xref href="c_Validating_Offers.xml#concept_60E81920A21A42ABA6980AF60697B260" type="concept" format="dita" scope="local" class="- topic/xref ">validate
+				offers</xref> relevant to the campaign before validating the campaign. 
+		  </cmd>
+      </step>
+      <step id="step_12929E4EF5F148F5BFB5F9E5ABE7F3D7" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Set the campaign viewing preferences
+			 to permit you to view pending (unapproved) campaign from the Development and
+			 Staging host group. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <ul id="ul_2734581B8FF24387BE2774EC2E20B1C6" class="- topic/ul ">
+            <li id="li_CE94E99936C443DC9CBF42D9F61CD253" class="- topic/li ">
+				  If today is 
+				  <b class="+ topic/ph hi-d/b ">outside</b> the campaign start and
+				  end dates, set 
+				  <xref href="t_Using_Time_Offset_for_Viewing_Campaigns.xml#task_7050B221739949A598AF79E01816FA3E" type="task" format="dita" scope="local" class="- topic/xref ">time
+					 offset</xref> to allow you view the campaign today. 
+				</li>
+            <li id="li_5F316A101E654647A4AB2DD902E839F3" class="- topic/li ">
+				  If today is 
+				  <b class="+ topic/ph hi-d/b ">within</b> the campaign start and
+				  end dates, and the campaign is not yet approved, 
+				  <xref href="c_Setting_Campaign_Viewing_Preferences.xml#concept_F07174E860F34A5286AD2FDD0091E11A" type="concept" format="dita" scope="local" class="- topic/xref ">allow
+					 unapproved campaigns</xref> to be viewed from the Development and/or Staging
+				  host group. 
+				</li>
+          </ul>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links class="- topic/related-links ">
+    <link href="t_Previewing_Experiences_on_the_Development_Host_Groups.xml#task_58E77EE3FCEC49CB8ACFCB91114DC7EA" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Previewing Experiences on the Development Host   Groups?>
+    </link>
+    <link href="t_Fixing_All_Errors.xml#task_E1038BF8EB6B4069B04EA93265B31073" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Fix All Errors?>
+    </link>
+    <link href="t_Testing_on_the_Production_Host_Groups.xml#task_86FE07D96CDF44A2BCC2159618570341" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Testing on the Production Host Groups?>
+    </link>
+    <link href="t_Setting_Up_the_Final_Pre-Launch.xml#task_508E5CFB45C84886AF47F4D57E246649" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Setting Up the Final Pre-Launch?>
+    </link>
+  </related-links>
+</task>

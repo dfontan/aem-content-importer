@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_42E2706AD6BF41DDA11D38492E4EB792" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic concept/concept ">
+  <title class="- topic/title ">Monitor Campaign Status</title>
+  <shortdesc class="- topic/shortdesc ">The current status of a campaign is
+	 indicated by the color of the campaign name in the Launch Pad and the Campaign
+	 list, and the information on the right side of the campaign's row in the
+	 Campaign list. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody class="- topic/body  concept/conbody ">
+    <p class="- topic/p ">Green campaigns are approved, orange campaigns are
+		unapproved, gray campaigns have completed or are in the library. 
+	 </p>
+    <p class="- topic/p ">The information on the right side of the row
+		indicates when the campaign will run. The statuses are: 
+	 </p>
+    <p class="- topic/p ">
+      <ul id="ul_CF529A46C898414C9600106B55AE0BA1" class="- topic/ul ">
+        <li id="li_39263CE1EAF64C64AEABBCEA62F25B01" class="- topic/li ">
+          <b class="+ topic/ph hi-d/b ">needs approval:</b> campaign has not been
+		  approved 
+		</li>
+        <li id="li_E1C2A8C921C24685A51F6139B22461A2" class="- topic/li ">
+          <b class="+ topic/ph hi-d/b ">ongoing:</b> campaign is approved and has
+		  no end date 
+		</li>
+        <li id="li_1F134311E9E64849955C8D49731CC0DA" class="- topic/li ">
+          <b class="+ topic/ph hi-d/b ">ends xx/xx/xx or ended xx/xx/xx:</b>
+		  campaign stops on the specified date and time (if time is specified) 
+		</li>
+        <li id="li_45CEB84AB18A4CFDAB91A4EE9719BF75" class="- topic/li ">
+          <b class="+ topic/ph hi-d/b ">starts xx/xx/xx:</b> campaign starts on
+		  the specified date and time (if time is specified) 
+		</li>
+        <li id="li_9CB3FC40F07D498D87C031313D8E55B3" class="- topic/li ">
+          <b class="+ topic/ph hi-d/b ">archived:</b> campaign is in the library 
+		</li>
+        <li id="li_9B35444999C742FE8F61EDEE1E0B67DE" class="- topic/li ">
+          <b class="+ topic/ph hi-d/b ">closed:</b> campaign has been closed to
+		  new visitors. (See 
+		  <xref href="t_Closing_a_Campaign.xml#task_D0B32D244F9B417084947AAFEE7B9481" type="task" format="dita" scope="local" class="- topic/xref "><?xm-replace_text Closing a Campaign?></xref>
+		  for more information.) 
+		</li>
+      </ul>
+    </p>
+  </conbody>
+  <related-links class="- topic/related-links ">
+    <link href="t_Labeling_Campaigns_and_Tests.xml#task_C44ED8D6AB6F4E76B695622B7D2051D3" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Label Campaigns and Tests?>
+    </link>
+    <link href="t_Searching_and_Sorting_Campaigns_and_Tests.xml#task_55D000BCA53E460C97F5138F47B1B8AE" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Search and Sort Campaigns and Tests?>
+    </link>
+    <link href="t_Ignoring_Visits_from_Your_Browser.xml#task_460FEEEE3B7141DEB9162348E6682EB9" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Ignore Visits from Your Browser?>
+    </link>
+  </related-links>
+</concept>

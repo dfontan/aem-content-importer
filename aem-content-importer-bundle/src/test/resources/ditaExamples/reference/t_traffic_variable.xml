@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_B2789717307F49A6A41CB0BA0ABDA683"> 
+  <title>Enable traffic variable reports</title> 
+  <shortdesc>Steps that describe how to add and enable traffic variable
+	 reports. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Admin tools"/> </metadata>
+  </prolog> 
+  <taskbody> 
+	 <steps id="steps_9E7D4FB871D84D52BD67F1E5FA8645D1"> 
+		<step id="step_68EF3D2A67E14B9B94BEF00DE1B5DEFB"> 
+		  <cmd>Click 
+			 <uicontrol>Analytics</uicontrol> &gt; 
+			 <uicontrol>Admin</uicontrol> &gt; 
+			 <uicontrol>Report Suites</uicontrol>, then select a report suite. 
+		  </cmd> 
+		</step> 
+		<step id="step_8C0936058FEF4D2A9213A6974B9B8A77"> 
+		  <cmd>Click 
+			 <uicontrol>Edit Settings</uicontrol> &gt; 
+			 <uicontrol>Traffic</uicontrol> &gt; 
+			 <uicontrol>Traffic Variables</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_66C9C17D79A54D1EBB3D4A1971679D4F"> 
+		  <cmd>Click 
+			 <uicontrol>Add New</uicontrol>, then name the report. 
+		  </cmd> 
+		</step> 
+		<step id="step_F532718E912A43488058573EE62179F3"> 
+		  <cmd>Click 
+			 <uicontrol>Enable</uicontrol>, then click 
+			 <uicontrol>Save</uicontrol>. 
+		  </cmd> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task>

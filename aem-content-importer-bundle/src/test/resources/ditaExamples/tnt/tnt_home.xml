@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_74F655D8648E4586BCCFD789E60D13CE"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"
+ ditaarch:DITAArchVersion="1.1"
+ domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)"
+ class="- topic/topic "> 
+  <title class="- topic/title ">Adobe Target Classic</title> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Target"/> 
+		<othermeta name="topic" content="Advanced"/> </metadata>
+  </prolog> 
+  <body class="- topic/body "> 
+	 <p>Adobe® Target helps you create and manage A/B and multivariate tests
+		with automated decisioning and targeting. Digital marketers maintain complete
+		control by quickly and easily testing multiple onsite and offsite scenarios,
+		and providing their visitors with the most relevant content possible. Test a
+		number of versions of a Web page against a baseline sample to determine which
+		version is most effective at improving the success of your site. 
+	 </p> 
+	 <p class="- topic/p "> 
+		<simpletable id="simpletable_3B4921BF0B204052A4E402EF9E75631B"
+		 class="- topic/simpletable " frame="none"> 
+		  <strow class="- topic/strow "> 
+			 <stentry class="- topic/stentry "> 
+				<p class="- topic/p "> 
+				  <b class="+ topic/ph hi-d/b ">News and Announcements</b> 
+				</p> 
+				<p class="- topic/p "> 
+				<ul id="ul_3E6D33CFBAC443A9B83B847949C2BFF4"> 
+				  <li id="li_08DB1082DC0C4CA08A71B8EE91C4E408"> 
+					 <xref
+					  href="r_Release_Notes.xml#reference_2DC3458D13A24E87901EE342661D64CA"
+					  type="reference" format="dita" scope="local" class="- topic/xref ">What's New
+						in This Release</xref> 
+					 <p>The release notes for the current version and other recent
+						versions contain information about new features, changes, and fixes. 
+					 </p> 
+				  </li> 
+				  <li id="li_B19A5FA7674644F9A5F3B104B3E36C5D">New guides: 
+					 <ul id="ul_73795EB1BFDB4878A4718CC29C0D72CB"> 
+						<li id="li_1E4F1DB7945443ABA23972AFADDBD8AD"><xref
+						  href="http://marketing.adobe.com/resources/help/en_US/target/ref/"
+						  format="http" scope="external">Adobe Target Overview and Reference 
+						  </xref> 
+						</li> 
+						<li id="li_7655A0EC9AC94214891BC44DA785C6B0"><xref
+						  href="http://marketing.adobe.com/resources/help/en_US/target/targeting/"
+						  format="http" scope="external">Adobe Target Targeting Guide</xref> 
+						</li> 
+						<li id="li_1A4E4E0CA5D8458285583DDC88240F54"><xref
+						  href="http://marketing.adobe.com/resources/help/en_US/target/a4t/"
+						  format="http" scope="external">Adobe Target Integration Guide</xref> 
+						</li> 
+					 </ul> 
+				  </li> 
+				  <li id="li_4B625679A54C49DEAB8626571EC1071F"> 
+					 <xref
+					 href="http://marketing.adobe.com/resources/help/en_US/target/a4t/"
+					 format="http" scope="external">Adobe Analytics as the Reporting Source for
+						Adobe Target</xref> 
+				  </li> 
+				  <li id="li_68E91ABE52314944A9B2615682C86209"> 
+					 <xref
+					 href="https://my.adobeconnect.com/p63fwvwbpd8/?launcher=false&amp;fcsContent=true&amp;pbMode=normal "
+					 format="https" scope="external">Webinar: "Maximize Conversion with the Most
+						Comprehensive Solution"</xref> 
+					 <p> This webinar provides examples for creating the most
+						successful site you can with Adobe Target. 
+					 </p> 
+				  </li> 
+				  <li id="li_4F2ED5EAACF043ADB0FAB8F0732C1D84"> 
+					 <xref href="https://my.adobeconnect.com/p1oabaz3cxi/"
+					 format="https" scope="external">Target Standard 1.7 Release Webinar</xref> 
+					 <p>This Webinar includes information about the Master Marketing
+						Profile and using Adobe Analytics as the reporting source for Target, new
+						features that are also included in Target Classic. 
+					 </p> 
+				  </li> 
+				</ul> 
+	 </p>
+            <!--<p class="- topic/p "><xref href="https://my.adobeconnect.com/_a295153/p2puvrypm3d/?launcher=false&amp;fcsContent=true&amp;pbMode=normal" scope="external" format="https"> Test&amp;Target 3.1 Release Webinar</xref> 
+				</p>-->
+<!--<p><xref href="http://marketing.adobe.com/resources/help/en_US/tnt/ebook/Adobe_TnT_Help_beta.epub" format="http" scope="external">Test&amp;Target Help, epub format</xref> (Beta) 
+				</p> 
+				<p><xref href="http://marketing.adobe.com/resources/help/en_US/tnt/ebook/Adobe_TnT_Help_beta.mobi" format="http" scope="external">Test&amp;Target Help, mobi format</xref> (Beta) 
+				</p>-->
+	 <p> 
+		<xref href="http://marketing.adobe.com/resources/help/en_US/target/"
+		format="http" scope="external">Target Standard</xref> 
+	 </p> 
+	 <p> 
+		<b>Other Adobe Target Solutions Help</b> 
+	 </p> 
+	 <p> 
+		<xref href="http://marketing.adobe.com/resources/help/en_US/target/"
+		format="http" scope="external">Target Standard</xref> 
+	 </p>
+            <!--<p><xref href="http://marketing.adobe.com/resources/help/en_US/tnt/help/" format="http" scope="external">Target Advanced</xref> </p>-->
+	 <p> 
+		<xref
+		href="http://marketing.adobe.com/resources/help/en_US/tnt/help/#Automated_Decisioning_and_Targeting"
+		format="http" scope="external">Automated Personalization</xref> 
+	 </p> 
+	 <p> 
+		<xref href="http://marketing.adobe.com/resources/help/en_US/rec/"
+		format="http" scope="external">Recommendations</xref> 
+	 </p> 
+	 <p> 
+		<xref href="http://marketing.adobe.com/resources/help/en_US/snp/"
+		format="http" scope="external">Search&amp;Promote</xref> 
+	 </p> 
+	 <p> 
+		<b>Training Resources</b> 
+	 </p> 
+	 <p> 
+	 <ul id="ul_B70B32A848B04B22BE0B0CD79461C748"> 
+		<li id="li_26D5180A391D48A59FC4B9145CE4B311"> 
+		  <xref href="https://outv.omniture.com/" format="https"
+		  scope="external">Video training</xref> 
+		</li> 
+		<li id="li_35B8BF7D5A5C485EBFDF489D29EF3BD7"> 
+		  <xref href="http://training.adobe.com/home.html" format="http"
+		  scope="external">Training classes</xref> 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p class="- topic/p "> 
+		<b class="+ topic/ph hi-d/b ">Other Information 
+		</b> 
+	 </p> 
+	 <p> 
+	 <ul id="ul_52EA6FA9A1C8493CA2E1677BE60CB745"> 
+		<li id="li_A774182A206846158DA3098C43006C5D"><xref
+		  href="http://help-forums.adobe.com/content/adobeforums/en/target-forum/adobe-target.html"
+		  format="http" scope="external">Adobe Target Community Forum</xref>
+		</li>
+		<li id="li_021A93483DD540C0B8F520BBA50FD9CB"><xref
+		  href="http://marketing.adobe.com/resources/help/en_US/target/ref/"
+		  format="http" scope="external">Adobe Target Overview and Reference</xref> 
+		</li> 
+		<li id="li_5DD3D2C27F634A638101B44897A02B2B"><xref
+		  href="http://marketing.adobe.com/resources/help/en_US/target/targeting/"
+		  format="http" scope="external">Adobe Target Targeting Overview</xref> 
+		</li> 
+		<li id="li_147A1CEBB18B4E949FCD3FFF8741CB72"><xref
+		  href="http://marketing.adobe.com/resources/help/en_US/target/a4t/"
+		  format="http" scope="external">Adobe Target Integration Guide</xref> 
+		</li> 
+		<li id="li_C855A6A024C64B519E930418B44CDB09"> 
+		  <xref
+		  href="http://marketing.adobe.com/resources/help/en_US/target/a4t/"
+		  format="http" scope="external">Integrating Adobe Target and Adobe Analytics 
+		  </xref> 
+		</li> 
+		<li id="li_CEC50E398FE94A35A9E71B80893BA2CB"> 
+		  <xref href="http://marketing.adobe.com/resources/help/en_US/target/gs/"
+		  format="http" scope="external">Target Standard Transition Guide</xref> 
+		  <p>Adobe Target Standard is a new way to use Adobe Target. This new
+			 front-end to Adobe Target, accessed through the Adobe Marketing Cloud, helps
+			 you visually create and manage A/B tests and rules-based targeting activities. 
+		  </p> 
+		</li> 
+		<li id="li_2875C09F5B3D43F3964A37D7723C8243"> 
+		  <xref
+		  href="http://marketing.adobe.com/resources/help/en_US/tnt/pdf/insight-TnT-white%20paper.pdf"
+		  scope="external" format="http">Insight with Test&amp;Target Integration White
+			 Paper</xref> 
+		  <p>Learn how to integrate Insight with Target. 
+		  </p> 
+		</li>
+                <!--<li id="li_AA2A02F579924F258CCE5F957CBE4660"> 
+		  <xref href="http://marketing.adobe.com/resources/help/en_US/tnt/pdf/ClientFacing_TT_to_SiteCatalyst_integration.pdf" scope="external" format="html" class="- topic/xref "> Test&amp;Target to
+			 SiteCatalyst Integration White Paper</xref> 
+		  <p>Detailed information about using Target with Adobe Analytics. 
+		  </p> 
+		</li> 
+		<li id="li_6706E032762249B5B7BC0E33FA142742"> 
+		  <xref href="http://marketing.adobe.com/resources/help/en_US/tnt/pdf/SiteCatalyst to TnT integration guide.pdf" scope="external" format="http" class="- topic/xref ">Site Catalyst to
+			 Test&amp;Target Integration White Paper</xref> 
+		  <p>Details about using Adobe Analytics with Target. 
+		  </p> 
+		</li>-->
+		<li id="li_223D6E8C93EF4CB88000EA0E1E21E261"> 
+		  <xref
+		  href="http://marketing.adobe.com/resources/help/en_US/tnt/pdf/testandtarget_integration.pdf"
+		  scope="external" format="html" class="- topic/xref ">Test&amp;Target
+			 Integration Guide</xref> 
+		  <p>Instructions on integrating Target with your website. 
+		  </p> 
+		</li> 
+		<li id="li_6E3AD80D06DA4CC4A90E79BD8F7B1BEA"> 
+		  <xref
+		  href="http://marketing.adobe.com/resources/help/en_US/tnt/pdf/Integrating TestnTarget With Your Infrastructure_whitepaper.pdf"
+		  format="http" scope="external">Integrating Test&amp;Target With Your
+			 Infrastructure Whitepaper</xref> 
+		  <p>Demonstrates the steps Adobe has taken, and the investments made, to
+			 ensure that Target meets your marketing objectives while functioning within
+			 your IT infrastructure parameters. 
+		  </p> 
+		</li> 
+		<li id="li_E5070561C2D549AE842238B8F2A1EB8D"> 
+		  <xref
+		  href="r_Frequently_Asked_Questions.xml#reference_3D71061EC905427394FCBEBD2079E26A"
+		  type="reference" format="dita" scope="local" class="- topic/xref "> <?xm-replace_text Frequently Asked Questions?>
+		  </xref> 
+		  <p>Answers to common questions about using Target. 
+		  </p> 
+		</li> 
+		<li id="li_2DD2012EC55B415C9D973957A270441C"> 
+		  <xref href="https://my.adobeconnect.com/p8cyxm0sn5a/" scope="external"
+		  format="https">Adobe Target Privacy Webinar Recording</xref> 
+		  <p>Information about Target and privacy issues. 
+		  </p> 
+		</li> 
+		<li id="li_DA4F348019DA4E5EAD65F468A29CCB01"> 
+		  <xref href="https://my.adobeconnect.com/p2gadkumugl/" format="https"
+		  scope="external"> Mobile Testing &amp; Optimization Webinar Recording</xref> 
+		  <p> View the Mobile Testing &amp; Optimization Webinar Recording and
+			 the accompanying slide deck to learn about mobile testing and optimization best
+			 practices, and access links to tools that will help you develop your testing
+			 program for mobile website and applications. 
+		  </p> 
+		</li> 
+	 </ul> 
+	 </p> 
+	 </stentry> 
+	 <stentry class="- topic/stentry "></stentry> 
+	 <stentry class="- topic/stentry "> 
+		<p class="- topic/p "> 
+		  <b class="+ topic/ph hi-d/b ">Popular Help Topics</b> 
+		</p> 
+		<p class="- topic/p "> 
+		<ul id="ul_25773E76C19E417883488B246962B395"> 
+		  <li id="li_D2C6ABC299C54B46BF90ABABC1230B70"> 
+			 <xref
+			 href="r_Understanding_the_Types_of_Campaigns_and_Tests.xml#reference_C22725717F40407FA424E957308E258F"
+			 type="reference" format="dita" scope="local" class="- topic/xref "> <?xm-replace_text Types of Campaigns and Tests?>
+			 </xref> 
+			 <p>Provides information about the different types of campaign and
+				tests available in Target. 
+			 </p> 
+		  </li> 
+		  <li id="li_BA25D3E4816E4E098B7218C4FCB61E4B"> 
+			 <xref href="r_problem.xml#reference_ACA3391A00EF467B87930A450050077C"
+			 format="dita" scope="local"> <?xm-replace_text If There's a Problem?>
+			 </xref> 
+			 <p>Information you need when contacting Client Care to expedite a
+				resolution. 
+			 </p> 
+		  </li> 
+		  <li id="li_A7E35DECDC87413AAC8DB563A4F022AB"> 
+			 <xref
+			  href="t_Adding_an_Idea.xml#task_D3704B83BC8443E88A36F405957008CB" type="task"
+			  format="dita" scope="local" class="- topic/xref "> <?xm-replace_text Adding an Idea?>
+			 </xref> 
+			 <p>How to add an idea to the<wintitle> Ideas</wintitle> list. 
+			 </p> 
+		  </li> 
+		  <li id="li_6D00FBA6E4A14F5D87336FF9DB02F48F"> 
+			 <xref
+			  href="c_Targeting_a_Campaign_or_Test.xml#concept_A782F8481A5041EBA75103CB26376522"
+			  type="concept" format="dita" scope="local" class="- topic/xref "> <?xm-replace_text Targeting a Campaign or Test?>
+			 </xref> 
+			 <p>How targeting allows you to display different content and
+				different campaigns to different audiences. 
+			 </p> 
+		  </li> 
+		  <li id="li_CD74CAF5234D4F129853787FAADCB6FB"> 
+			 <xref
+			  href="c_Managing_Segment_Filters.xml#concept_DF9534D4168D46D4B109DD0D2FB57781"
+			  type="concept" format="dita" scope="local" class="- topic/xref "> <?xm-replace_text Segment Filters?>
+			 </xref> 
+			 <p>How to define groups of visitors who share a specific
+				characteristic or set of characteristics. 
+			 </p> 
+		  </li> 
+		  <li id="li_9FD00171F57B496BB7AD232CE0D7BEC2"> 
+			 <xref
+			  href="r_glossary.xml#reference_2ED4321BF2C24FAC8E43A7515661A6DB" format="dita"
+			  scope="local"> Glossary</xref> 
+			 <p>Definitions of terms. 
+			 </p> 
+		  </li> 
+		</ul> 
+		</p> 
+		<p> 
+		  <b>Common Questions</b> 
+		</p> 
+		<p> 
+		  <xref
+			href="t_Creating_a_Campaign.xml#task_617DF94C42C84D88B44A79FEC443FF70"
+			format="dita" scope="local">How do I set up a campaign?</xref> 
+		</p> 
+		<p> 
+		  <xref
+			href="c_Understanding_the_Campaign_Life_Cycle.xml#concept_C4EC37B837DC4F9793763046997B9821"
+			format="dita" scope="local">What are the stages of the campaign life
+			 cycle?</xref> 
+		</p> 
+		<p> 
+		  <xref
+			href="c_Conversion_Success_Metric.xml#concept_307747A83CC64E80954B3DC66C6BB3C4"
+			format="dita" scope="local">How do I view the visits and conversion metrics of
+			 a campaign?</xref> 
+		</p> 
+		<p> 
+		  <xref
+			href="c_Changing_Campaign_Settings.xml#concept_D70808CDA2524DCA857004DAED110F27"
+			format="dita" scope="local">How do I edit or copy a campaign?</xref> 
+		</p> 
+		<p> 
+		  <xref
+			href="c_About_the_TestTarget_Cookie.xml#concept_5E53D1A6DF224D7BAE76F4AE390B9DA1"
+			format="dita" scope="local">How do different types of cookies behave?</xref> 
+		</p> 
+		<p> 
+		  <xref
+			href="c_Creating_and_Placing_Mboxes.xml#concept_B0EC432377C244B79DB47783B3170E22"
+			format="dita" scope="local">Where do I place an Mbox?</xref> 
+		</p> 
+		<p> 
+		  <xref
+			href="c_Using_a_Redirector.xml#concept_451731358AA64789AD0DA3BAAF2DF72C"
+			format="dita" scope="local">What is a redirector and how do I set one
+			 up?</xref> 
+		</p> 
+		<p> 
+		  <xref
+			href="c_Using_SiteCatalyst_Data_in_TestTarget.xml#concept_90A31981AF474A57885BB932D9ED3292"
+			format="dita" scope="local">How do I integrate SiteCatalyst with Target?</xref>
+		  
+		</p> 
+		<p> 
+		  <xref
+			href="r_Frequently_Asked_Questions_About_SiteCatalyst_Integration.xml#reference_DAD867D46C8F4DDD835520C8839E6FDD"
+			format="dita" scope="local">How do I use SiteCatalyst variables?</xref> 
+		</p> 
+		<p> 
+		  <xref
+			href="c_Understanding_Expected_Data_Variances.xml#concept_C624EC0C0BDE40A79546BE9D86F80C5D"
+			format="dita" scope="local"> What causes discrepancies with SiteCatalyst in the
+			 number of visits and number of conversions?</xref> 
+		</p> 
+	 </stentry> 
+	 </strow> 
+	 <strow class="- topic/strow "> 
+		<stentry class="- topic/stentry "></stentry> 
+		<stentry class="- topic/stentry "></stentry> 
+		<stentry class="- topic/stentry "></stentry> 
+	 </strow> 
+	 <strow class="- topic/strow "> 
+		<stentry class="- topic/stentry "></stentry> 
+		<stentry class="- topic/stentry "></stentry> 
+		<stentry class="- topic/stentry "></stentry> 
+	 </strow> 
+	 </simpletable> 
+	 </p> 
+  </body> 
+</topic> 

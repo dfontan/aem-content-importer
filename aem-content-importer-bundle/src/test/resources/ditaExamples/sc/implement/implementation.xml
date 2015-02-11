@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_B13B4530286B452EB3C0F8D393E82537"> 
+  <title>Adobe Analytics Implementation</title> 
+  <shortdesc>This guide contains a description of data collection variables,
+	 and details on implementing data collection code in JavaScript. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<keywords> 
+		  <keyword>implementation</keyword> 
+		</keywords> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Developer and implementation"/>
+		</metadata>
+  </prolog> 
+  <conbody> 
+	 <p> 
+		<keyword>AppMeasurement</keyword> guides for other platforms and Mobile
+		SDKs are available at 
+		<xref format="http" scope="external"
+		 href="https://marketing.adobe.com/resources/help/en_US/reference/?f=developer">Developer
+		  &amp; Implementation Guides</xref>. 
+	 </p> 
+	 <p>The 
+		<xref href="https://marketing.adobe.com/resources/help/en_US/reference/"
+		 format="http" scope="external">Admin &amp; Analytics Reference</xref> provides
+		report and metric descriptions, and admin reference information for 
+		<keyword>Adobe Analytics</keyword>. 
+	 </p> 
+	 <section id="section_17ED984E5D8C4C75AD5BDF964DCCA06B"> 
+		<title>Documentation Revision History</title> 
+		<table id="table_054991DC9D954F8495884062C4C73C62"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="4.46*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col1">Date 
+				  </entry> 
+				  <entry colname="col2">Description 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1">22 May, 2014 
+				  </entry> 
+				  <entry colname="col2">s_code version H.27 was released to provide
+					 support for the 
+					 <xref href="https://marketing.adobe.com/resources/help/en_US/mcvid/"
+					  format="http" scope="external">Visitor ID service</xref> and the 
+					 <xref
+					  href="https://marketing.adobe.com/resources/help/en_US/target/a4t/" format="http"
+					  scope="external">Analytics for Target</xref> integration in the legacy
+					 AppMeasurement library. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">17 April, 2014 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Support for the 
+						<xref
+						 href="https://marketing.adobe.com/resources/help/en_US/target/a4t/" format="http"
+						 scope="external">Analytics for Target</xref> integration. 
+					 </p> 
+					 <p>The 
+						<xref
+						 href="https://marketing.adobe.com/resources/help/en_US/mcvid/" format="http"
+						 scope="external">Visitor ID service</xref> now uses a Marketing Cloud
+						organization ID. 
+					 </p> 
+					 <p>Updated the 
+						<xref
+						 href="plugins_support.xml#concept_E31A189BC8A547738666EB5E00D2252A"
+						 format="dita" scope="local"><?xm-replace_text AppMeasurement Plug-in Support?></xref>
+						to indicate that the manageVars, channelManager, getPageName, and Cookie
+						Combining Utility are tested and verified as compatible. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">20 November, 2013 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Added support for the 
+						<xref
+						 href="https://marketing.adobe.com/resources/help/en_US/mcvid/" format="http"
+						 scope="external">Visitor ID service</xref>. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">14 November, 2013 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Updated 
+						<xref
+						 href="var_merchandising.xml#concept_8B05F9352B354536999CE390E714F86B"
+						 format="dita" scope="local"><?xm-replace_text Merchandising Variables?></xref>.
+						
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">14 November, 2013 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Added 
+						<xref
+						 href="offline_tracking.xml#concept_DE06227A3BF74626B237F9543A89298E"
+						 format="dita" scope="local"><?xm-replace_text Offline Tracking?></xref>. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">15 August, 2013 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Added the 
+						<xref
+						 href="getLoadTime.xml#concept_473AC22B088143DD9E4E9A39CFB2582F" format="dita"
+						 scope="local"><?xm-replace_text getLoadTime?></xref> plugin. This plugin gets
+						the page load time in tenths of a second and lets you store the value in a
+						prop, eVar, and/or a numeric event. 
+					 </p> 
+					 <p>Added a description for Max Values to 
+						<xref
+						 href="listN.xml#concept_74541AAC659740B9A6B7CA70FBB33D40" format="dita"
+						 scope="local"><?xm-replace_text List Variable?></xref>. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">07 June, 2013 
+				  </entry> 
+				  <entry colname="col2">Updated 
+					 <xref
+					  href="transactionID.xml#concept_FBFA55E137E644A2BD97B41E92F6AFEF" format="dita"
+					  scope="local"><?xm-replace_text transactionID?></xref> to indicate that 
+					 <wintitle>transactionIDs</wintitle> should contain alphanumeric
+					 characters, and that multiple 
+					 <wintitle>transactionIDs</wintitle> should be comma-delimited. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">23 May, 2013 
+				  </entry> 
+				  <entry colname="col2">Added information on the new desktop and
+					 mobile tracking library, 
+					 <xref
+					  href="appmeasure_mjs.xml#concept_F3957D7093A94216BD79F35CFC1557E8"
+					  format="dita" scope="local"><?xm-replace_text AppMeasurement for JavaScript 1.0?></xref>.
+					 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">14 May, 2013 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Added 
+						<xref
+						 href="http_headers.xml#concept_185E937F7617488C8284FC7DE47076D9" format="dita"
+						 scope="local"><?xm-replace_text HTTP Headers?></xref> to describe the request
+						and response headers that are used during data collection. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 29 April, 2013 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>In H.26, the 
+						<codeph>useForcedLinkTracking</codeph> option that is
+						described in 
+						<xref
+						 href="link_manual.xml#concept_7113B5D037BE4622B6934554C6D18F96" format="dita"
+						 scope="local"><?xm-replace_text Manual Link Tracking Using Custom Link Code?></xref>
+						now applies to Firefox 20+ (previously this applied to WebKit browsers only). 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">18 April, 2013 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p> 
+						<xref
+						 href="tagmanager.xml#concept_2D6380515D6C4CF78A4E123CF7C76477" format="dita"
+						 scope="local">tag management 2.0</xref> is now available and is enabled for all
+						Analytics customers. 
+					 </p> 
+					 <p>Single image requests can now contain a 64-bit numeric or
+						currency event values. This removes the previous limits of 2,147,483,648 for
+						numeric and currency events, and 2,000,000,000 for counter events. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">12 March, 2013 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Added details on decimal values in Currency/Numeric Events
+						that are in the events list to 
+						<xref
+						 href="events.xml#concept_FFD115543D54401B98FE683BD7D5B3FE" format="dita"
+						 scope="local"><?xm-replace_text events?></xref>. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">28 February, 2013 
+				  </entry> 
+				  <entry colname="col2"> Added details on how custom links affect
+					 Time Spent metrics to 
+					 <xref
+					  href="impl_media_ajax.xml#concept_C15ED88058A84D76A404007842C7F260"
+					  format="dita" scope="local"><?xm-replace_text AJAX-Tracking Rich Media Applications?></xref>.
+					 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">21 February, 2013 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <ul id="ul_7EEC0516B9454AB2AB6E61D011B2BDBC"> 
+						<li id="li_F7BB22778C1340C6BB3C2AF2CB425929"> 
+						  <p>Added scope limitations for the 
+							 <varname>useForcedLinkTracking</varname> option to 
+							 <xref
+							  href="link_manual.xml#concept_7113B5D037BE4622B6934554C6D18F96" format="dita"
+							  scope="local"><?xm-replace_text Manual Link Tracking Using Custom Link Code?></xref>.
+							 
+						  </p> 
+						</li> 
+						<li id="li_67884E74B6C849A889F016A5EB9097EB"> 
+						  <p>Updated 
+							 <xref
+							  href="pageURL.xml#concept_A15F710CD0174297A2286BF3E7452113"
+							  format="dita" scope="local"><?xm-replace_text pageURL?></xref> to indicate that
+							 the size is no longer limited to 256 bytes. 
+						  </p> 
+						</li> 
+					 </ul> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">15 November, 2012 
+				  </entry> 
+				  <entry colname="col2">Added 
+					 <xref
+					  href="maxDelay.xml#concept_B355038C3B094BB68C0DC6C80F9FE5B0" format="dita"
+					  scope="local"><?xm-replace_text maxDelay?></xref> variable information. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">18 October, 2012 
+				  </entry> 
+				  <entry colname="col2">Updated content in 
+					 <xref
+					  href="events.xml#concept_FFD115543D54401B98FE683BD7D5B3FE" format="dita"
+					  scope="local"><?xm-replace_text events?></xref>. You can assign numeric integer
+					 values to counter events if you are on H.23 code or higher. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">6 September, 2012 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Added 
+						<xref
+						 href="listN.xml#concept_74541AAC659740B9A6B7CA70FBB33D40" format="dita"
+						 scope="local">List Var</xref> and 
+						<xref
+						 href="list_props.xml#concept_83ED74232225431F83A796E22FFC75B4" format="dita"
+						 scope="local">List Prop</xref> topics. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">30 August, 2012 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Added several additional topics that were previously
+						distributed as white papers: 
+					 </p> 
+					 <ul id="ul_10F55571FB9B47A98B2B9ED1DB680271"> 
+						<li id="li_EFAC9FD2521448A1B1CCCD8FEB13BF24"> 
+						  <xref
+							href="report_variable_mapping.xml#concept_7FA58A0168EE4869BA926CFFC0EFA5EE"
+							format="dita" scope="local"> <?xm-replace_text Report to Variable Mapping?>
+						  </xref> 
+						</li> 
+						<li id="li_085FA6E58B0148D289EFEE257991F6C0"> 
+						  <xref
+							href="page_naming.xml#concept_7421E78DC9694BFEBBF025AC009BF89D" format="dita"
+							scope="local"> <?xm-replace_text Page Naming?>
+						  </xref> 
+						</li> 
+						<li id="li_3B608755EAE146A0BFC0165C1426B8D4"> 
+						  <xref
+							href="email_external.xml#concept_BEC7C92015354E2DBAC3AC0D9270A2EA"
+							format="dita" scope="local"> <?xm-replace_text External Email Tracking?>
+						  </xref> 
+						</li> 
+						<li id="li_4BF298FC3E2644A094A84F1BF24791A1"> 
+						  <xref
+							href="event_serialization.xml#concept_092B638D7FEE423D91F8A57EA8E09705"
+							format="dita" scope="local"> <?xm-replace_text Event Serialization?>
+						  </xref> 
+						</li> 
+						<li id="li_C782E0CB423140A6A8C4C2AECD15D38A"> 
+						  <xref
+							href="impl_media_ajax.xml#concept_C15ED88058A84D76A404007842C7F260"
+							format="dita" scope="local"> <?xm-replace_text AJAX-Tracking Rich Media Applications?>
+						  </xref> 
+						</li> 
+						<li id="li_F84F5CF1D3794335A8227E47F870E5B9"> 
+						  <xref
+							href="adobe_mobile_tracking.xml#concept_3E5C3405DEC74F59855A97FA3CE7EC3F"
+							format="dita" scope="local"> <?xm-replace_text Adobe Mobile Tracking?>
+						  </xref> 
+						</li> 
+						<li id="li_FAF88FB791C149368FFB3172F5DC4C1D"> 
+						  <xref
+							href="impl_troubleshooting.xml#concept_44A87DC74F15458A82E938D477FAEC93"
+							format="dita" scope="local"> <?xm-replace_text Adobe Implementation - Common Code Syntax Mistakes in   SiteCatalyst?>
+						  </xref> 
+						</li> 
+						<li id="li_394A0DDA6570444499E76AC9EA24F4BC"> 
+						  <xref
+							href="dynamic_accounts.xml#concept_53E586BCCB9B4930BA00C2266C532198"
+							format="dita" scope="local"> <?xm-replace_text Report Suite IDs - Dynamic Accounts?>
+						  </xref> 
+						</li> 
+						<li id="li_3148DB6F4B69491F8D573B1D7632E65E"> 
+						  <xref
+							href="data_elements.xml#concept_991E33FADDC4467E895341FF412A2BDE" format="dita"
+							scope="local"> <?xm-replace_text Collecting Data From Form Elements?>
+						  </xref> 
+						</li> 
+					 </ul> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 19 July, 2012 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p> Added information on custom link tracking on WebKit
+						browsers introduced in H.25, including details on the overloaded 
+						<codeph>s.tl() 
+						</codeph>method. See 
+						<xref
+						 href="link_manual.xml#concept_7113B5D037BE4622B6934554C6D18F96" format="dita"
+						 scope="local"><?xm-replace_text Manual Link Tracking Using Custom Link Code?></xref>.
+						
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 20 April, 2012 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>The dc variable is deprecated. You should set 
+						<codeph>trackingServer</codeph> for all implementations to
+						the value that is generated by Code Manager in s_code.js. 
+					 </p> 
+					 <p>Added documentation stating that a single image request
+						cannot contain a numeric or currency event higher than 2,147,483,648, or a
+						counter event higher than 2,000,000,000. Note that this behavior has not
+						changed, the limits are being documented for clarification. 
+					 </p> 
+					 <p>Added the 
+						<xref
+						 href="timestamp.xml#concept_D997A2FF4D134C80A614C0BC7A4D7507" format="dita"
+						 scope="local"><?xm-replace_text timestamp?></xref> variable. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 6 March, 2012 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Added a note to 
+						<codeph>linkInternalFilters</codeph> stating that you should
+						periodically review partner contracts to determine if they contain restrictions
+						on link tracking. For example, you might be prohibited from tracking links that
+						appear in partner display ads. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 7 October, 2012 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Added 
+						<xref
+						 href="xdevice_visid.xml#concept_826BB48ED8E24252999D4D474CE42BB4" format="dita"
+						 scope="local"><?xm-replace_text Cross-Device Visitor Identification?></xref>. 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </section> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_FF1ECD7AEA644B85A621D66E01AE4A63"> 
+  <title>Copy a report graph</title> 
+  <shortdesc>Steps that describe how to copy a report graph as a file for use
+	 in presentations or other documents. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Reports and analytics"/> </metadata>
+  </prolog> 
+  <taskbody> 
+	 <context id="context_B765B478BD0B4088A110FC817A6D783D"> 
+		<p>When you click the copy graph icon, the image opens in a new window.
+		  You can then use your browser functions to save the graph as an image. 
+		</p> 
+		<p> 
+		  <b>To copy a report graph</b> 
+		</p> 
+	 </context> 
+	 <steps id="steps_BE25C55AE08946AA873429C622684D6E"> 
+		<step id="step_0AE1BE8066704DA8A6388FF70EAF67DB"> 
+		  <cmd>Run a report. 
+		  </cmd> 
+		</step> 
+		<step id="step_422F3D0230D043B4A8031787B3429ABC"> 
+		  <cmd>Click 
+			 <uicontrol>More</uicontrol> &gt; 
+			 <uicontrol>Copy Graph</uicontrol>. 
+		  </cmd> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task>

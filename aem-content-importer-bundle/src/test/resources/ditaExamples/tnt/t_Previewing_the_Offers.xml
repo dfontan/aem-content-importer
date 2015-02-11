@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_567B7E4218F14DEB87C250B6E5B0945C">
+  <title>Preview the Offers</title>
+  <shortdesc>Preview the offer to validate that it looks correct. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <context id="context_4F803C2620C745CD98BB6693A4C7604E">
+      <p>On all hosts and environments, for all target browsers: 
+		</p>
+    </context>
+    <steps id="steps_9398A41C4F824DDBA21829FE0E2B83CE">
+      <step id="step_EE2CFAA000FE419CB2A2897682EA896F">
+        <cmd>
+          <xref href="t_Previewing_Offers_in_an_Mbox.xml#task_B1244801A0304409898CDA985ACE32CD" type="task" format="dita" scope="local">Preview the offer in its destination
+				mbox</xref>, on each host. 
+		  </cmd>
+        <stepresult>
+          <p>Validate all aspects of the offer's functionality. 
+			 </p>
+          <p>
+            <b>Tip:</b> If you have already have set up your experiences, you
+				may 
+				<xref href="t_Previewing_Experiences_on_the_Development_Host_Groups.xml#task_58E77EE3FCEC49CB8ACFCB91114DC7EA" type="task" format="dita" scope="local">preview experiences</xref> as a
+				shortcut for previewing the offers in their mboxes. 
+			 </p>
+          <p>
+            <note>Because dynamic offers are less predictable than static HTML
+				  offers, use extra discipline when validating them. 
+				</note>
+          </p>
+          <p>Mboxes saved on two different hosts in the same host group will
+				update each other's value set. They will not update the values set for on other
+				host groups. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_9385B078BEC84B31B2D44CF401FF9906">
+        <cmd>If passing values, ensure that these are being passed to the mbox
+			 as expected. 
+		  </cmd>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links>
+    <link href="t_Troubleshooting_Offers.xml#task_221343C0D32F47E196924D73AACB4050" type="task" format="dita" scope="local">
+      <?xm-replace_text Troubleshooting Offers?>
+    </link>
+  </related-links>
+</task>

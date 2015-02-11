@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_1A701C1D041F46228299B24C694B3E23">
+  <title>Add the AppMeasurement for Flash Library to a Project</title>
+  <shortdesc>The Flash media module provides the interface to track video. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>media</keyword>
+        <keyword>milestone</keyword>
+        <keyword>sdk</keyword>
+        <keyword>video</keyword>
+      </keywords>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <steps id="steps_4A22529C75514B49AEEB319FFF041F9C">
+      <step id="step_95E22D3045C34B68BB8B45B2A0A467CD">
+        <cmd>Launch Flash Professional and open the Flash project where you
+			 want to include a Flash video. 
+		  </cmd>
+        <stepresult>
+          <?xm-replace_text Step Result?>
+        </stepresult>
+      </step>
+      <step id="step_84A27322F5ED4C17953C60FA98DA868A">
+        <cmd>Click 
+			 <uicontrol>File</uicontrol> &gt; 
+			 <uicontrol>Publish Settings</uicontrol>, and then open 
+			 <uicontrol>ActionScript Settings</uicontrol>. 
+		  </cmd>
+        <stepresult>
+          <image placement="break" align="center" href="graphics/video-flash-publish-settings.png" width="500px" id="image_3D05606D5DC14E9EBE3ADA7238D1BBF8"></image>
+        </stepresult>
+      </step>
+      <step id="step_9BB939315B7749E8ADE1F370DD0C9AA9">
+        <cmd>Add the 
+			 <codeph>AppMeasurement.swc</codeph> library to your project. 
+		  </cmd>
+        <stepresult>
+          <image placement="break" align="center" href="graphics/video-flash-library-path.png" id="image_39F884C0ADA14D6C904796BF366EB35A"></image>
+        </stepresult>
+      </step>
+      <step id="step_33EC20D69252478C843EA4B3DB1AB06A">
+        <cmd>In the 
+			 <uicontrol>Timeline</uicontrol> pane, select a frame that is
+			 available to the entire Flash application and open 
+			 <uicontrol>Actions</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_0ABCC936FAE64E1099228DABBEA981AB">
+        <cmd>To test that the library was added successfully, add the following
+			 ActionScript code to the Actions: 
+		  </cmd>
+        <stepresult>
+          <codeblock>import com.omniture.AppMeasurement;
+
+var s:AppMeasurement = new AppMeasurement();
+s.account</codeblock>
+          <p>As you type "<codeph>s.account</codeph>", auto complete should
+				appear. This indicates that the library is being found successfully. 
+			 </p>
+          <image placement="break" align="center" href="graphics/video-flash-verify-library.png" id="image_92163C2649914E8C850151348768D22D"></image>
+          <p>Take a quick look at the methods and variables in the 
+				<codeph>Media</codeph> namespace, since that is where you'll spend
+				most of your time as you configure video: 
+			 </p>
+          <image placement="break" align="center" href="graphics/video-flash-verify-library-media.png" id="image_5DF5AA0A799A4388BD9743A4716D536E"></image>
+        </stepresult>
+      </step>
+    </steps>
+    <example id="example_195A4458BAFF4433A29CEBF6B41F9308">
+      <p>
+        <b>Next step:</b>
+        <xref href="video_flash_config_core.xml#task_1D29FC9D72AB4D53A703230FE4D9FEAB" format="dita" scope="local">
+          <?xm-replace_text Configure AppMeasurement?>
+        </xref>.
+		  
+		</p>
+    </example>
+  </taskbody>
+</task>

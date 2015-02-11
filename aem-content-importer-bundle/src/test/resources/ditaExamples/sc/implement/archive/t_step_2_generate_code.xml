@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_B1F5D4A6AA4A4D93887B369F2973C322">
+  <title>Step 2 - Generate Code</title>
+  <shortdesc> Analytics has a place to store your data for this website.
+	 When Step 1 is completed, you can obtain the code that is going to be
+	 implemented on your page. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <steps id="steps_CF9766829CB04A418EE2DF6FFE396FA5">
+      <step id="step_59F8DA5D469540DC8C1E978DA09693C5">
+        <cmd>Go to 
+			 <uicontrol>Admin</uicontrol> &gt; 
+			 <uicontrol>Admin Console</uicontrol> &gt; 
+			 <uicontrol>Code Manager</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_60939B4CD97A408D896FCD8B826109C6">
+        <cmd>Under 
+			 <wintitle>Select the Type of Code to Generate</wintitle>
+			 select<uicontrol>JavaScript</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_074590296CEF4DEEA99CD47C30BC952E">
+        <cmd>Select the newly created report suite. 
+		  </cmd>
+      </step>
+      <step id="step_7F84A4E3F3DB4BD7ACEB985CC240F231">
+        <cmd>Select the Character-Encoding of your website. 
+		  </cmd>
+        <info>
+          <p>It is usually near the top of your HTML code. If you are unsure,
+				use 
+				<uicontrol>UTF-8</uicontrol>. 
+			 </p>
+        </info>
+      </step>
+      <step id="step_F0F9C98E1F9B4754B55EAC8F6B8B9306">
+        <cmd>Select the number of periods in your domain name. 
+		  </cmd>
+      </step>
+      <step id="step_DA71FAADD6D94AD7AD3EA8CDB88459AA">
+        <cmd>Click 
+			 <uicontrol>Generate Code</uicontrol>. Read the warning message, then
+			 click 
+			 <uicontrol>OK</uicontrol>. 
+		  </cmd>
+        <info>
+          <p>The resulting page contains two parts of code: 
+				<uicontrol>Page Code</uicontrol> and 
+				<uicontrol>Core Javascript File</uicontrol>. Keep this page open,
+				as it is referenced several times. 
+			 </p>
+        </info>
+      </step>
+    </steps>
+  </taskbody>
+</task>

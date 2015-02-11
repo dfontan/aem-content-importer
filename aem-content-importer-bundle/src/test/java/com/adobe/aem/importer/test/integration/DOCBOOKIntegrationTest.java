@@ -14,10 +14,15 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.util.Properties;
 
+import javax.jcr.AccessDeniedException;
 import javax.jcr.Node;
 import javax.jcr.Repository;
+import javax.jcr.RepositoryException;
 import javax.jcr.Session;
 import javax.jcr.SimpleCredentials;
+import javax.jcr.lock.LockException;
+import javax.jcr.nodetype.ConstraintViolationException;
+import javax.jcr.version.VersionException;
 
 import org.apache.jackrabbit.commons.JcrUtils;
 import org.apache.sling.commons.json.JSONObject;
@@ -26,6 +31,8 @@ import org.junit.BeforeClass;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.adobe.aem.importer.test.utils.HttpClientUtils;
 import com.adobe.aem.importer.xml.Config;
@@ -41,6 +48,9 @@ public class DOCBOOKIntegrationTest extends AbstractIntegrationTest {
 	
 	private final String TEXT_CONTENT = "The Marketing Cloud is an integrated family of digital marketing";
 	
+	private static Logger log = LoggerFactory
+			.getLogger(DOCBOOKIntegrationTest.class);
+	
 	@BeforeClass
 	public static void init()  {
 		try {
@@ -48,13 +58,13 @@ public class DOCBOOKIntegrationTest extends AbstractIntegrationTest {
 			
 			String zipNameWithOutFolder = System.currentTimeMillis() + ".zip";
 			
-			ZipHelper.zipDir(classLoader.getResource("exampleDITA").getFile(), zipNameWithOutFolder);
+			ZipHelper.zipDir(classLoader.getResource("docBookExamples/example").getFile(), zipNameWithOutFolder);
 			
 			zipFileWithoutFolder = new File(zipNameWithOutFolder);
-			zipFileWithFolder = createZipFileWithFolder(classLoader.getResource("exampleDOCBOOK").getFile(), System.currentTimeMillis() + ".zip", "exampleDOCBOOK");
+			zipFileWithFolder = createZipFileWithFolder(classLoader.getResource("docBookExamples/example").getFile(), System.currentTimeMillis() + ".zip", "exampleDOCBOOK");
 			
 			configExpectedParams = new File(classLoader.getResource(
-					"config_params_DOCBOOK.xml").getFile());
+					"docBookExamples/example/0_config_params.xml").getFile());
 
 			Repository repo = JcrUtils.getRepository(URL_REPO);
 			
@@ -84,7 +94,7 @@ public class DOCBOOKIntegrationTest extends AbstractIntegrationTest {
 	 */
 	@Test
 	public void testConfigFileByFillingOutForm() {
-
+		log.info("Executing test: testConfigFileByFillingOutForm");
 		Config config = new Config();
 		JSONObject jsonResult = null;
 
@@ -93,7 +103,7 @@ public class DOCBOOKIntegrationTest extends AbstractIntegrationTest {
 			config.setSrc("/var/aem-importer/importTest1");
 			config.setMasterFile("mcloud.ditamap");
 			config.setTarget("/content/pando");
-			config.setTransformer("com.adobe.aem.importer.impl.XMLTransformerDocbookImpl");
+			config.setTransformer("com.adobe.aem.importer.impl.XMLTransformerDOCBOOKImpl");
 			config.setCustomProps("xslt-transformer=net.sf.saxon.TransformerFactoryImpl\r\nxslt-file=/apps/aem-importer/resources/docbook-to-content.xsl\r\ntempFolder=/var/aem-importer/tmp\r\npackageTpl=/apps/aem-importer/resources/package-tpl\r\ngraphicFolders=images,graphics,Graphics");
 			
 			Properties expectedProperties = createExpectedProperties(config);
@@ -115,6 +125,7 @@ public class DOCBOOKIntegrationTest extends AbstractIntegrationTest {
 	 */
 	@Test
 	public void testConfigFileByZipFile() {
+		log.info("Executing test: testConfigFileByZipFile");
 		JSONObject jsonResult = null;
 		Properties expectedProperties = null;
 		try {
@@ -147,6 +158,7 @@ public class DOCBOOKIntegrationTest extends AbstractIntegrationTest {
 	 */
 	@Test
 	public void testConfigFileByFillingOutFormAndZipFile() {
+		log.info("Executing test: testConfigFileByFillingOutFormAndZipFile");
 		JSONObject jsonResult = null;
 		Properties expectedProperties = null;
 		try {
@@ -160,7 +172,7 @@ public class DOCBOOKIntegrationTest extends AbstractIntegrationTest {
 			config.setSrc("/var/aem-importer/importTest2");
 			config.setMasterFile("mcloud.ditamap");
 			config.setTarget("/content/pando");
-			config.setTransformer("com.adobe.aem.importer.impl.XMLTransformerDocbookImpl");
+			config.setTransformer("com.adobe.aem.importer.impl.XMLTransformerDOCBOOKImpl");
 			config.setCustomProps("xslt-transformer=net.sf.saxon.TransformerFactoryImpl\r\nxslt-file=/apps/aem-importer/resources/docbook-to-content.xsl\r\ntempFolder=/var/aem-importer/tmp\r\npackageTpl=/apps/aem-importer/resources/package-tpl\r\ngraphicFolders=images,graphics,Graphics");
 
 			jsonResult = HttpClientUtils.post(POST_URL, USERNAME, PASSWORD,
@@ -178,6 +190,7 @@ public class DOCBOOKIntegrationTest extends AbstractIntegrationTest {
 	 */
 	@Test
 	public void testConfigFileByZipFileWithFolder() {
+		log.info("Executing test: testConfigFileByZipFileWithFolder");
 		JSONObject jsonResult = null;
 		Properties expectedProperties = null;
 		try {
@@ -207,6 +220,7 @@ public class DOCBOOKIntegrationTest extends AbstractIntegrationTest {
 	 */
 	@Test
 	public void testContentPageByFillingOutForm() {
+		log.info("Executing test: testContentPageByFillingOutForm");
 		Config config = new Config();
 		JSONObject jsonResult = null;
 
@@ -252,6 +266,7 @@ public class DOCBOOKIntegrationTest extends AbstractIntegrationTest {
 	 */
 	@Test
 	public void testContentPageByZipFile() {
+		log.info("Executing test: testContentPageByZipFile");
 		JSONObject jsonResult = null;
 		
 		try {
@@ -300,6 +315,7 @@ public class DOCBOOKIntegrationTest extends AbstractIntegrationTest {
 		if (zipFileWithoutFolder != null) {
 			zipFileWithoutFolder.delete();
 		}
+		
 	}
 	
 }

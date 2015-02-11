@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd"[]>
+<reference id="reference_8C8CF60284FC4D33914635C29858AA09">
+  <title>Decide Which Parameters and Values You Need</title>
+  <shortdesc>The parameters and values you need depend on the goals of your
+	 campaign or test. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <refbody>
+    <refsyn id="refsyn_82A19E298FF4400FAB15E75C3F7D4C7E">
+      <p>Use the table below to guide your choice. 
+		</p>
+      <p>
+        <table id="table_2E9798AC77A14311A43FB04017E66D34">
+          <tgroup cols="3">
+            <colspec colnum="1" colname="col1" colwidth="1.89*" />
+            <colspec colnum="2" colname="col2" colwidth="1.00*" />
+            <colspec colnum="3" colname="col3" colwidth="1.91*" />
+            <thead>
+              <row>
+                <entry colname="col1">Campaign or Test Feature 
+				  </entry>
+                <entry colname="col2">Parameter Type 
+				  </entry>
+                <entry colname="col3">How to Implement 
+				  </entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry colname="col1">
+                  <p>Target or segment filter on new or returning visitor 
+					 </p>
+                </entry>
+                <entry colname="col2">
+                  <p>profile 
+					 </p>
+                </entry>
+                <entry colname="col3">
+                  <p>See 
+						<xref href="c_Profile_Parameters.xml#concept_01A30B4762D64CD5946B3AA38DC8A201" type="concept" format="dita" scope="local"><?xm-replace_text Profile Attributes?></xref>.
+						
+					 </p>
+                </entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <p>Target or segment filter on profiles 
+					 </p>
+                </entry>
+                <entry colname="col2">
+                  <p>profile 
+					 </p>
+                </entry>
+                <entry colname="col3">
+                  <p>See 
+						<xref href="c_Profile_Parameters.xml#concept_01A30B4762D64CD5946B3AA38DC8A201" type="concept" format="dita" scope="local"><?xm-replace_text Profile Attributes?></xref>.
+						
+					 </p>
+                </entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <p>Target or segment filter on visitor's category affinity 
+					 </p>
+                </entry>
+                <entry colname="col2">
+                  <p>profile 
+					 </p>
+                </entry>
+                <entry colname="col3">
+                  <p>See 
+						<xref href="c_Using_Category_Affinity.xml#concept_E51E078F49484B4EA0E52046E6F58E3C" type="concept" format="dita" scope="local"><?xm-replace_text Using Category Affinity?></xref>.
+						
+					 </p>
+                </entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <p>Target or segment filter on a URL Parameters 
+					 </p>
+                </entry>
+                <entry colname="col2">
+                  <p>URL 
+					 </p>
+                </entry>
+                <entry colname="col3">
+                  <p>See 
+						<xref href="c_URL_Parameters.xml#concept_08C5CA0521D44C1DA3C0F89C28E15AC8" type="concept" format="dita" scope="local"><?xm-replace_text URL Parameters?></xref>.
+						
+					 </p>
+                </entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <p>Target or segment filter on source URL of visitor 
+					 </p>
+                </entry>
+                <entry colname="col2">
+                  <p>URL 
+					 </p>
+                </entry>
+                <entry colname="col3">
+                  <p>See 
+						<xref href="c_Referring_URL_Parameters.xml#concept_C19F6E2DD15D4526A00A4DDA28E9B89D" type="concept" format="dita" scope="local"><?xm-replace_text Referring URL Parameters?></xref>.
+						
+					 </p>
+                </entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <p>Reporting of sales, average order value (AOV), or revenue
+						from orders 
+					 </p>
+                </entry>
+                <entry colname="col2">
+                  <p>page 
+					 </p>
+                </entry>
+                <entry colname="col3">
+                  <p>See 
+						<xref href="t_Creating_a_Place_Order_Mbox.xml#task_0036D5F6C062442788BB55E872816D82" type="task" format="dita" scope="local"><?xm-replace_text Create an orderConfirmPage Mbox?></xref>.
+						
+					 </p>
+                </entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <p>Engagement metrics: revenue per impression, page view or
+						click (such as ad publishing revenue) 
+					 </p>
+                </entry>
+                <entry colname="col2">
+                  <p>page or URL 
+					 </p>
+                </entry>
+                <entry colname="col3">
+                  <p>See 
+						<xref href="c_Cost_and_Revenue_Reporting.xml#concept_A07BEDC4725F4887B6301C1B9FC3D1C8" type="concept" format="dita" scope="local"><?xm-replace_text Cost and Revenue Reporting?></xref>.
+						
+					 </p>
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </p>
+    </refsyn>
+  </refbody>
+  <related-links>
+    <link href="r_Parameter_Types.xml#reference_2E9432AFE9724881950F66D45E96B6C5" type="reference" format="dita" scope="local">
+      <?xm-replace_text Parameter Types?>
+    </link>
+    <link href="t_Viewing_an_Mboxs_Passed-In_Parameter_Values.xml#task_22DC71B5D4E9497A858BC24FD633249F" format="dita" scope="local">
+      <linktext>
+        <?xm-replace_text View an Mbox's Passed-In Parameter   Values?>
+      </linktext>
+    </link>
+    <link href="c_Mbox-Specific_Parameters.xml#concept_B81F2D77D34E4B4E84D23F5A5B4EDDED" type="concept" format="dita" scope="local">
+      <?xm-replace_text Mbox-Specific Parameters?>
+    </link>
+    <link href="c_URL_Parameters.xml#concept_08C5CA0521D44C1DA3C0F89C28E15AC8" type="concept" format="dita" scope="local">
+      <?xm-replace_text URL Parameters?>
+    </link>
+    <link href="c_Referring_URL_Parameters.xml#concept_C19F6E2DD15D4526A00A4DDA28E9B89D" type="concept" format="dita" scope="local">
+      <?xm-replace_text Referring URL Parameters?>
+    </link>
+    <link href="c_Profile_Parameters.xml#concept_01A30B4762D64CD5946B3AA38DC8A201" type="concept" format="dita" scope="local">
+      <?xm-replace_text Profile Attributes?>
+    </link>
+    <link href="c_Cost_and_Revenue_Reporting.xml#concept_A07BEDC4725F4887B6301C1B9FC3D1C8" type="concept" format="dita" scope="local">
+      <?xm-replace_text Cost and Revenue Reporting?>
+    </link>
+  </related-links>
+</reference>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_DF2859F3B6614BE299BCEB8D3CE28889">
+  <title>Master Marketing Profile</title>
+  <shortdesc>The Master Marketing Profile provides the ability for Adobe
+	 Marketing Cloud solutions to communicate and share information about website
+	 visitors so the same data can be used by each solution. The Master Marketing
+	 Profile eliminates the need for customers to use their visitors and their
+	 visitor web sessions as the integration point between the solutions by moving
+	 the integration point to the Adobe Marketing Cloud.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+    </metadata>
+  </prolog>
+</concept>

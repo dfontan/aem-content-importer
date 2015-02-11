@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_A609F6BF9FDF480AB1F4280845AB0E8A">
+  <title>Table of Common Syntax Mistakes</title>
+  <shortdesc>The following table shows the difference between correct and
+	 incorrect code mistakes. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Troubleshooting" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <table id="table_2DF187F4F2004086AF92221C0A215AC6">
+      <tgroup cols="2">
+        <colspec colnum="1" colname="col1" colwidth="*" />
+        <colspec colnum="2" colname="col2" colwidth="*" />
+        <thead>
+          <row>
+            <entry> Incorrect 
+				</entry>
+            <entry> Correct 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry> prop1 
+				</entry>
+            <entry> s.prop1 (uses "s.") 
+				</entry>
+          </row>
+          <row>
+            <entry> s.evar1 
+				</entry>
+            <entry> s.eVar1 (uses correct capitalization) 
+				</entry>
+          </row>
+          <row>
+            <entry> s.pagetype='errorpage'; 
+				</entry>
+            <entry> s.pageType='errorPage'; (uses correct capitalization) 
+				</entry>
+          </row>
+          <row>
+            <entry> s.tl(this,o,pageA) 
+				</entry>
+            <entry> s.tl(this,'o','pageA'); (correct usage of single quotes) 
+				</entry>
+          </row>
+          <row>
+            <entry> s.events='event1'; s.events='event2'; 
+				</entry>
+            <entry> s.events='event1,event2'; (correct format) 
+				</entry>
+          </row>
+          <row>
+            <entry> s.pageName="John" (smart quotes on) 
+				</entry>
+            <entry> s.pageName="John" (smart quotes off) 
+				</entry>
+          </row>
+          <row>
+            <entry> s.products="shoes,UX4879,1,19.99" 
+				</entry>
+            <entry> s.products="shoes;UX4879;1;19.99" (uses semicolons, not
+				  commas) 
+				</entry>
+          </row>
+          <row>
+            <entry> s.products=";MacBook Air;1;$1999.99" 
+				</entry>
+            <entry> s.products=";MacBook Air;1;1999.99" (does not use dollar
+				  signs) 
+				</entry>
+          </row>
+          <row>
+            <entry> s.products=";Nikon SB-600 Speedlight Flash for Nikon
+				  Digital SLR Cameras;1;229.9489183" 
+				</entry>
+            <entry> s.products=";Nikon SB-600 Speedlight Flash for Nikon
+				  Digital SLR Cameras;1;229.95" (round or truncate long prices) 
+				</entry>
+          </row>
+          <row>
+            <entry> var s_account="rsid1, rsid2" 
+				</entry>
+            <entry> var s_account="rsid1,rsid2" (no space between report suite
+				  IDs when doing multi-suite tagging) 
+				</entry>
+          </row>
+          <row>
+            <entry> s.events="event1, event2" 
+				</entry>
+            <entry> s.events="event1,event2" (no space between event IDs when
+				  doing multi-event tagging) 
+				</entry>
+          </row>
+          <row>
+            <entry> s.products="product name" 
+				</entry>
+            <entry> s.products=";product name" (semicolon used when no product
+				  category is listed) 
+				</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <section id="section_E2B6A9C966AD40A09578DD0F784DCAB9">
+      <title> Additional Notes</title>
+      <p>Keep the closing HTML comment at the very end of the Adobe code (even
+		  if you are using the NOSCRIPT part of the script). 
+		</p>
+    </section>
+  </conbody>
+</concept>

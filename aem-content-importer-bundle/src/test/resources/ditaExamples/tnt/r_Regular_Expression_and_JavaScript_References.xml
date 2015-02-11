@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd"[]>
+<reference id="reference_3CB56C733F1E42B1B47C5961DD09DBF8" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic       reference/reference ">
+  <title class="- topic/title ">Regular Expression and JavaScript
+	 References</title>
+  <shortdesc class="- topic/shortdesc ">The following references provide help
+	 for you regular expressions and JavaScript. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <refsyn id="refsyn_8A3E113FF4DC4B329C5443B9E8CC7A7D" class="- topic/section     reference/refsyn ">
+      <p class="- topic/p ">
+        <ul id="ul_C256FFE5BF844CD1B9965D6798892E64" class="- topic/ul ">
+          <li id="li_2180CFA4C6B044C8B234509669CF2E34" class="- topic/li ">
+            <xref href="http://zez.org/article/articleprint/11/" scope="external" format="html" class="- topic/xref ">A walk-thru for understanding and using
+				regular expressions</xref> (external link) 
+		  </li>
+          <li id="li_81A1CA9850984CECBF1BDCFF09043665" class="- topic/li ">
+            <xref href="http://marketing.adobe.com/resources/help/en_US/tnt/pdf/Expression_targeters_cheat_sheet.pdf" scope="external" format="html" class="- topic/xref ">Regular Expression Quick
+				Reference</xref> (pdf) 
+		  </li>
+          <li id="li_F6719588A9344313B7347182CEAAD6AA" class="- topic/li ">
+            <xref href="http://marketing.adobe.com/resources/help/en_US/tnt/pdf/js_expression_cheat_sheet.pdf" scope="external" format="html" class="- topic/xref "> JavaScript Expressions
+				for Targeters and Profile Scripts cheat sheet</xref> (pdf) 
+		  </li>
+        </ul>
+      </p>
+    </refsyn>
+  </refbody>
+  <!--<related-links class="- topic/related-links ">
+    <link href="t_Expressions_Targets.xml#task_32DD2FC06FC84FD1B6D9011FE2009AAA" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Expression Targets?>
+    </link>
+    <link href="t_expression_target_generator.xml#task_ADBA6658ABD745669E321E211EF9E119" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Test&Target Expression Target   Generator?>
+    </link>
+    <link href="c_Using_Regular_Expressions_in_Targeting_Groups.xml#concept_320777558B7F45C5AEC2D548BA2E380D" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Using Regular Expressions in Targeting   Groups?>
+    </link>
+  </related-links>
+-->
+</reference>

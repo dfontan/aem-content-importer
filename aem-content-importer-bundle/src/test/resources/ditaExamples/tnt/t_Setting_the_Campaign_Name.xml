@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_77E656A846814B8AB2543578546919D5">
+  <title>Campaign Name</title>
+  <shortdesc>The campaign name helps you locate and recognize a campaign. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <context id="context_9D81F20278EA4887936B898C057789DA">
+      <p>When naming your campaign, choose a descriptive name to help you
+		  quickly find the campaign in the campaign list. 
+		</p>
+    </context>
+    <steps id="steps_A435EB1BCBBD464C9E36C38139453F6E">
+      <step id="step_BA38EA108AA24E328EBB28964B6ABB54">
+        <cmd>Under 
+			 <uicontrol>Name your campaign</uicontrol>, type a new campaign name. 
+		  </cmd>
+      </step>
+      <step id="step_702F9EAB93B34D9898AB8E29AB948A99">
+        <cmd>Click 
+			 <uicontrol>Save</uicontrol> or 
+			 <uicontrol>Save &amp; Approve</uicontrol>. 
+		  </cmd>
+        <stepresult></stepresult>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links>
+    <link href="t_Showing_or_Hiding_Campaign_Details.xml#task_7F12DCE6DA0B46E5A65255AF6A6BF72B" type="task" format="dita" scope="local">
+      <?xm-replace_text Showing or Hiding Campaign Details?>
+    </link>
+    <link href="t_Changing_the_Campaign_Type.xml#task_57011668E95F43EAB5E2A8DF9D668A21" type="task" format="dita" scope="local">
+      <?xm-replace_text Changing the Campaign Type?>
+    </link>
+    <link href="t_Changing_the_Campaign_Start_and_End_Dates.xml#task_E9FD7EE357B44F359F63F036F9CA8024" type="task" format="dita" scope="local">
+      <?xm-replace_text Changing the Campaign Start and End   Dates?>
+    </link>
+    <link href="t_Changing_the_Campaign_Priority.xml#task_2A54D113E5484DCD983B27F19768E8E1" type="task" format="dita" scope="local">
+      <?xm-replace_text Changing the Campaign Priority?>
+    </link>
+  </related-links>
+</task>

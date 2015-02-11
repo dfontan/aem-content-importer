@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_E3D0FEC81E1F4987B39CC467F19FFCFF">
+  <title>Longest Path Report</title>
+  <shortdesc> Displays the longest paths taken by visitors to your site during
+	 the current time period. You can view the complete path, including each page
+	 visited from beginning to end, for the longest paths.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>
+      <?xm-replace_text Paragraph?>
+    </p>
+  </conbody>
+</concept>

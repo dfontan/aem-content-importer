@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_07C9F1A8175B40AD90BEFD844709B91A">
+  <title>Illegal JavaScript Characters</title>
+  <shortdesc>Characters and strings that are never allowed in JavaScript
+	 variables. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Variables" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <ul id="ul_AE4F7A364AC14A0784B65E879B061999">
+      <li id="li_12680AFD82C045929F844EE86F71570F">Tab (0x09) 
+		</li>
+      <li id="li_3046FB4CF35A49D097145B85CD9F097D"> Carriage return (0x0D) 
+		</li>
+      <li id="li_CB9580E9A05D4D49996DA99BF3F6094D">Newline (0x0A) 
+		</li>
+      <li id="li_F6465EE07177464EB75C0490803C79FA">ASCII characters with codes
+		  above 127 (unless multi-byte characters are enabled and 
+		  <varname>charSet</varname> is populated appropriately) 
+		</li>
+      <li id="li_8E85B2EE767240488285263FEC99CE87"> HTML tags (e.g.
+		  &lt;b&gt;&lt;/b&gt; or &amp;#153) 
+		</li>
+    </ul>
+    <p>Many variables, most notably products, hierarchy, and events, have
+		additional limitations or syntax requirements. For individual variable
+		limitations and syntax requirements, see the section corresponding to the 
+		<varname>s_account</varname> variable parameters. 
+	 </p>
+  </conbody>
+</concept>

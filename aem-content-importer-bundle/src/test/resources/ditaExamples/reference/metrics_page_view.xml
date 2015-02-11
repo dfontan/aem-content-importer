@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_ABB4C6725E844B13970D6BD625654F26">
+  <title>Page View</title>
+  <shortdesc>A 
+	 <wintitle>Page View</wintitle> is counted for each server call that is
+	 sent. This metric represents total instances of 
+	 <wintitle>Page View</wintitle>. 
+	 <wintitle>TrackLink</wintitle> calls are not counted as page views and do
+	 not increment the 
+	 <wintitle>Page Views</wintitle> metric. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Metrics" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p> A useful way to use the Page View metric is to run a 
+		<uicontrol>Paths</uicontrol> &gt; 
+		<uicontrol>Pages</uicontrol> &gt; 
+		<uicontrol>Entry Pages</uicontrol> report, sort by it, and see which
+		entry pages drive the most page views. 
+	 </p>
+    <table id="table_5BE03B8DB1464E71AEE6EBB89DF69940">
+      <tgroup cols="2">
+        <colspec colnum="1" colname="col1" colwidth="1.00*" />
+        <colspec colnum="2" colname="col2" colwidth="2.52*" />
+        <thead>
+          <row>
+            <entry colname="col1">Uses 
+				</entry>
+            <entry colname="col2">Description 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry colname="col1">Traffic 
+				</entry>
+            <entry colname="col2">A page view occurs when a visitor accesses a
+				  page on your website. 
+				</entry>
+          </row>
+          <row>
+            <entry colname="col1">Conversion 
+				</entry>
+            <entry colname="col2">A page view occurs when a visitor accesses a
+				  page on your website. 
+				</entry>
+          </row>
+          <row>
+            <entry colname="col1">Ad Hoc Analysis 
+				</entry>
+            <entry colname="col2">A page view occurs when a visitor accesses a
+				  page on your website. 
+				</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p>See 
+		<xref href="reports_page_views.xml#concept_332C9BDFD6C1495C8362860478B9BA33" format="dita" scope="local"><?xm-replace_text Page Views Report?></xref>. 
+	 </p>
+  </conbody>
+</concept>

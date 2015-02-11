@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_AA3B83973A6B4E69897085280375D837">
+  <title>Target a Segment</title>
+  <shortdesc>Targeting a segment enables you to display the campaign to
+	 visitors who meet specific criteria. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>You can select a predefined segment from the segment list or define a
+		segment that is specific to this campaign. Campaign-specific segments are not
+		added to the segment and cannot be reused in other campaigns. 
+	 </p>
+    <p>For more information about the options that are available when targeting
+		a segment, see 
+		<xref href="c_targeting_a_segment.xml#concept_4A671EEC2903493D9C77ECD318112E0F" format="dita" scope="local"><?xm-replace_text Segments?></xref>. 
+	 </p>
+  </conbody>
+</concept>

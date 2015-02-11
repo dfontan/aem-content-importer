@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_B6641EFBB43B45049D4424C512B4D37A">
+  <title>Prevent Unapproved Campaigns from Being Viewed from All Hosts in the
+	 Host Group</title>
+  <shortdesc>By default, all host groups show approved campaigns only. If you
+	 allowed unapproved campaigns to be viewed for the host group, undo it as
+	 explained in this section. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <steps id="steps_B2A3F4C0E2874B19989736BCC5A5E36C">
+      <step id="step_4CFC519214C04F0DBE9314BB16822890">
+        <cmd>In the host management page, click 
+			 <uicontrol>Edit 
+			 </uicontrol>for your host group. 
+		  </cmd>
+      </step>
+      <step id="step_23C855E25C384E3A8BB8E473C8E0C64E">
+        <cmd>In the Active Campaign Mode drop down box, select 
+			 <uicontrol>show approved campaigns</uicontrol>. 
+		  </cmd>
+        <stepresult>
+          <?xm-replace_text Step Result?>
+        </stepresult>
+      </step>
+      <step id="step_6AA22824C008494CAAD158884112F4A7">
+        <cmd>Click 
+			 <uicontrol>Save</uicontrol>. 
+		  </cmd>
+        <stepresult></stepresult>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links>
+    <link href="t_Allowing_Unapproved_Campaigns_to_be_Viewed_from_All_Hosts_in_the_Host_Group.xml#task_3BEA2083FF8F42D485B4DF164739D95F" type="task" format="dita" scope="local">
+      <?xm-replace_text Allow Unapproved Campaigns to be Viewed from All Hosts in...?>
+    </link>
+    <link href="t_Using_Time_Offset_for_Viewing_Campaigns.xml#task_7050B221739949A598AF79E01816FA3E" type="task" format="dita" scope="local">
+      <?xm-replace_text Using Time Offset for Viewing Campaigns?>
+    </link>
+  </related-links>
+</task>

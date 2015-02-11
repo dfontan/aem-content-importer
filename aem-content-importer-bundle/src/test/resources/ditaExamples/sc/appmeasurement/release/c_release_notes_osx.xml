@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_79842F7F7D23467F9B72FAA874CBE231">
+  <title>Mac OS X</title>
+  <shortdesc>
+    <?xm-replace_text Short Description?>
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics,Marketing Cloud" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Release notes" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <note>To find the current library version, turn on debug logging. 
+	 </note>
+    <p>Mobile library 
+		<xref href="https://developer.omniture.com/en_US/content_page/mobile/c-measuring-mobile-applications" format="https" scope="external">downloads</xref> are available on Developer
+		Connection. 
+	 </p>
+    <section id="section_90CCB6A33C5041FA9CBAF6E8B7F3915F">
+      <title>3.2.2</title>
+      <p>Release Date: 
+		  <b>30 January, 2014</b></p>
+      <ul id="ul_925D405A86CB4DA69D59B49B9DCE0D04">
+        <li id="li_13EE74AF3DE94BE380144AAF1B851E15">Resolved issue that could
+			 cause large session length averages if a device had incorrect time settings.
+		  </li>
+      </ul>
+    </section>
+    <section id="section_0354BDA5B77242058740CE7B6AEF2FEE">
+      <title>3.2.1</title>
+      <p>Release Date: 
+		  <b>16 August, 2013</b></p>
+      <ul id="ul_6B35F7FFADBA4383ACF28E6A18279C45">
+        <li id="li_A4B27493EFCC4BD7B084B962662AF8A9">Optimized by removing
+			 unused code. 
+		  </li>
+        <li id="li_CEB63D0384044933A0C1DC137F485A53">Fixed potential crash that
+			 could occur when clearVars was used in a threaded scenario. 
+		  </li>
+      </ul>
+    </section>
+    <section id="section_B85E2904C769461BA8B062AAA0534F9B">
+      <title>3.2</title>
+      <p>Release Date: 
+		  <b>5 Aug, 2013</b></p>
+      <ul id="ul_068538E9405E4C9DBC405C61551F77A4">
+        <li id="li_7A0EA1F63B3546FAA171C923357D320A"> Added support for Adobe
+			 Audience Manager. 
+		  </li>
+        <li id="li_44F1E3300D974E74B31D4F8956609401">Lifecycle data will now be
+			 sent with Target Mbox requests. 
+		  </li>
+      </ul>
+    </section>
+    <section id="section_EC59B76EE3A343D5921E906EB0A8DB49">
+      <title>3.1.7</title>
+      <p>Release Date: 
+		  <b>23 May, 2013</b></p>
+      <ul id="ul_D31A9801B15B426EA18566635AD8F3CE">
+        <li id="li_716CE7ACC42F4754A9EF503672612774"> Added code to prevent
+			 excessive lifecycle hits from being sent via location notifications and
+			 Newsstand notifications that launch an app. 
+		  </li>
+      </ul>
+    </section>
+    <section id="section_DAEB9DDF3A1242CEBF21F4E5AF742D68">
+      <title>3.1.6</title>
+      <p>Release Date: 
+		  <b>18 April, 2013</b></p>
+      <ul id="ul_FDC1E7F4DA3E4816ADBCE38927C27AB6">
+        <li id="li_651CE26309AA42C69DB8D0A03253062D"> Fixed an issue that was
+			 causing previous session length to sometimes be calculated incorrectly. 
+		  </li>
+      </ul>
+    </section>
+    <section id="section_620AA594868F47619A514AF3C1EAC93B">
+      <title>3.1.5</title>
+      <p>Release Date: 
+		  <b>21 March, 2013</b></p>
+      <ul id="ul_FF14A08774834E2089884655A257BD41">
+        <li id="li_59B39351C9104A998A1768A3AA169FC0">
+          <codeph>ADMS_Measurement.visitorID</codeph> now gets pre-populated
+			 with the default value. 
+		  </li>
+      </ul>
+    </section>
+    <section id="section_23E5968C1EC748F7A266D6A5682A1B5F">
+      <title>3.1.4</title>
+      <p>Release Date: 
+		  <b>February 2013</b></p>
+      <p>Initial release. This version is based on the iOS 3.1.4 codebase, so
+		  the initial version number was set to match iOS. 
+		</p>
+    </section>
+  </conbody>
+</concept>

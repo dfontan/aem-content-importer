@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_718171E602214CCC9905C749708BBE52">
+  <title>dynamicAccountMatch</title>
+  <shortdesc> The 
+	 <varname>dynamicAccountMatch</varname> variable uses the DOM object to
+	 retrieve the section of the URL to which all rules in 
+	 <varname>dynamicAccountList</varname> are applied. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Variables" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>This variable is only valid when 
+		<varname>dynamicAccountSelection</varname> is set to 'True.' Since the
+		default value is 
+		<filepath>window.location.host</filepath>, this variable is not required
+		for 
+		<wintitle>Dynamic Account Selection</wintitle> to work. For additional
+		information, see 
+		<xref href="dynamicAccountList.xml#concept_19715BA0AD4D41748E0C4A4A6B71AB51" format="dita" scope="local">dynamicAccountList</xref>. 
+	 </p>
+    <p>The rules found in 
+		<varname>dynamicAccountList</varname> are applied to the value of 
+		<varname>dynamicAccountMatch</varname>. If 
+		<varname>dynamicAccountMatch</varname> only contains 
+		<filepath>window.location.host</filepath> (default), the rules in 
+		<varname>dynamicAccountList</varname> apply only to the domain of the
+		page. 
+	 </p>
+    <table id="table_D776CE5794F8461A92E12BE25D9B423F">
+      <tgroup cols="4">
+        <colspec colnum="1" colname="col1" colwidth="*" />
+        <colspec colnum="2" colname="col2" colwidth="*" />
+        <colspec colnum="3" colname="col3" colwidth="*" />
+        <colspec colnum="4" colname="col4" colwidth="*" />
+        <thead>
+          <row>
+            <entry> Max Size 
+				</entry>
+            <entry> Debugger Parameter 
+				</entry>
+            <entry> Reports Populated 
+				</entry>
+            <entry> Default Value 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry> N/A 
+				</entry>
+            <entry> N/A 
+				</entry>
+            <entry> N/A 
+				</entry>
+            <entry> window.location.host 
+				</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <section id="section_95CD81972C22419B80A921CA137D3841">
+      <title>Syntax and Possible Values</title>
+      <p>The 
+		  <varname>dynamicAccountMatch</varname> variable is usually populated by
+		  the Adobe consultant who provides the AppMeasurement for JavaScript file.
+		  However, the values listed below may be applied at any time. 
+		</p>
+      <codeblock outputclass="syntax javascript">s.dynamicAccountMatch=[DOM object]</codeblock>
+      <table id="table_EA6D0DDE00BB4AC892ED3077B2C41AF2">
+        <tgroup cols="2">
+          <colspec colnum="1" colname="col1" colwidth="*" />
+          <colspec colnum="2" colname="col2" colwidth="*" />
+          <thead>
+            <row>
+              <entry> Description 
+				  </entry>
+              <entry> Value 
+				  </entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry> Domain (default) 
+				  </entry>
+              <entry> window.location.host 
+				  </entry>
+            </row>
+            <row>
+              <entry> Path 
+				  </entry>
+              <entry> window.location.pathname 
+				  </entry>
+            </row>
+            <row>
+              <entry> Query String 
+				  </entry>
+              <entry> (window.location.search?window.location.search:"?") 
+				  </entry>
+            </row>
+            <row>
+              <entry> Domain and Path 
+				  </entry>
+              <entry> window.location.host+window.location.pathname 
+				  </entry>
+            </row>
+            <row>
+              <entry> Path and Query String 
+				  </entry>
+              <entry>
+					 window.location.pathname+(window.location.search?window.location.search:"?") 
+				  </entry>
+            </row>
+            <row>
+              <entry> Full URL 
+				  </entry>
+              <entry> window.location.href 
+				  </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+    <section id="section_924687CCE255421AA2223A3D4B8B6A30">
+      <title>Examples</title>
+      <codeblock outputclass="syntax javascript">s.dynamicAccountMatch=window.location.pathname</codeblock>
+      <codeblock outputclass="syntax javascript">s.dynamicAccountMatch=window.location.host+window.location.pathname</codeblock>
+    </section>
+    <section id="section_43BCE13B1ADD4D418DF7CBB9DD7A6472">
+      <title> Configuration Settings</title>
+      <p>None 
+		</p>
+    </section>
+    <section id="section_EF9B2977BC21497D8C5EEB9BAD731E17">
+      <title>Pitfalls, Questions, and Tips</title>
+      <ul id="ul_2DF49558BBD243EDB8E841B167CA24E7">
+        <li id="li_5ED5924845854532A590304DA3433901">Dynamic account selection
+			 is not supported by 
+			 <xref href="appmeasure_mjs.xml#concept_F3957D7093A94216BD79F35CFC1557E8" format="dita" scope="local"><?xm-replace_text AppMeasurement for JavaScript?></xref>.
+		  </li>
+        <li id="li_57CD506A55144677A806D428FA91B539">When pages are saved to a
+			 hard drive, 
+			 <filepath>window.location.host</filepath> is empty, causing those
+			 page views to be sent to the default report suite (in 
+			 <varname>s_account</varname>). 
+		  </li>
+        <li id="li_F73696FF34C74C508081CE82BE4D52A5">When a page is translated
+			 via a web-based translation engine, such as Google, the 
+			 <wintitle>Dynamic Account Selection</wintitle> does not work as
+			 designed. For more precise tracking, populate the 
+			 <wintitle>s_account 
+			 </wintitle>variable server-side. 
+		  </li>
+      </ul>
+    </section>
+  </conbody>
+</concept>

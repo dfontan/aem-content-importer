@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_F6E809571DFB47719984B81EF0D576B7"> 
+  <title>The s.clearVars() Function</title> 
+  <shortdesc>clears the following values from the instance object. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta content="Analytics" name="solution"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <ul id="ul_22C4D89FD7A04931AE44117FC5A42CBA"> 
+		<li id="li_BFD0052F795B4C7FB3CB3B6C8510C2E8"> 
+		  <codeph>props</codeph> 
+		</li> 
+		<li id="li_192F13DB87F045D3AAB4B5AA842C9355"> 
+		  <codeph>eVars</codeph> 
+		</li> 
+		<li id="li_290CA479979F44A49B3055513D616A1C"> 
+		  <codeph>hier</codeph> 
+		</li> 
+		<li id="li_9D002703F4644F0CA95CF96B0CF3F501"> 
+		  <codeph>list</codeph> 
+		</li> 
+		<li id="li_1102840939724CFBADE0D11EEBD7248F"> 
+		  <codeph>events</codeph> 
+		</li> 
+		<li id="li_DD301D13CEF747BF9EDA6B81D78FFFD5"> 
+		  <codeph>eventList</codeph> 
+		</li> 
+		<li id="li_4EAC27DA20F846A9A15F1DD066B083DA"> 
+		  <codeph>products</codeph> 
+		</li> 
+		<li id="li_B95C70DDB1F74FA282D410C27EEF92A2"> 
+		  <codeph>productsList</codeph> 
+		</li> 
+		<li id="li_6A887997F5BB4D87B6DB6AAE1F07D407"> 
+		  <codeph>channel</codeph> 
+		</li> 
+		<li id="li_F254A0AE18F14452B8E384F078A475E0"> 
+		  <codeph>purchaseID</codeph> 
+		</li> 
+		<li id="li_40562D585E614C4284B434CFD86C7977"> 
+		  <codeph>transactionID</codeph> 
+		</li> 
+		<li id="li_45C54E0FE90E4FD89B5D3B9EC5AC8390"> 
+		  <codeph>state</codeph> 
+		</li> 
+		<li id="li_C171B232069648619CF4C567D2B83B6A"> 
+		  <codeph>zip</codeph> 
+		</li> 
+		<li id="li_F46EF14090B54E15A0D93FC41C793207"> 
+		  <codeph>campaign</codeph> 
+		</li> 
+	 </ul> 
+	 <p>For example: 
+	 </p> 
+	 <codeblock outputclass="syntax javascript">s.clearVars()</codeblock> 
+	 <note><codeph>clearVars()</codeph> is included in 
+		<xref href="appmeasure_mjs.xml#concept_F3957D7093A94216BD79F35CFC1557E8"
+		 format="dita" scope="local"><?xm-replace_text AppMeasurement for JavaScript?></xref>,
+		it is not available in H code and previous.
+	 </note>
+  </conbody>
+</concept>

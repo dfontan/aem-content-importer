@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_37098840ECE94DD3A46452CD28104581">
+  <title>Custom Conversion Insight Variable</title>
+  <shortdesc> A variable (eVar) that is placed in the Adobe code on selected
+	 web pages of your site. Its primary purpose is to segment conversion success
+	 metrics in 
+	 custom reports. eVar variables can be
+	 visit-based and can function similarly to cookies on the site. Values passed
+	 into eVar variables follow the user for a predetermined period of time. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="subtopic" content="Glossary" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>See 
+		<xref href="evar.xml#concept_0BE40CDB4C364F538C2EF93610444A1E" type="concept" format="dita" scope="local"><?xm-replace_text eVar?></xref>. 
+	 </p>
+  </conbody>
+  <related-links>
+    <link href="conversion_var_admin.xml#concept_C02F7AA01DE242F1AA1A4E74022BE9DE" format="dita" scope="local">
+      <linktext>
+        <?xm-replace_text Conversion Variables?>
+      </linktext>
+    </link>
+  </related-links>
+</concept>

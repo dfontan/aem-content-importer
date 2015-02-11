@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_BAC65EBE7FB2457E95ECC9215C3E9B94"> 
+  <title>Report Suite Manager</title> 
+  <shortdesc>A report suite defines the complete, independent reporting on a
+	 chosen website, set of websites, or subset of web pages. Usually, a report
+	 suite is one website, but it can be a global segment where you have combined
+	 several sites' numbers to get totals. When you log in to the marketing reports,
+	 ad hoc analysis, and report builder, you select one report suite to use (except
+	 when you use roll-ups that combine report suites). Also, a report suite can be
+	 smaller than a website, if want to run reports for a portion of your site.
+	 Analytics solutions aggregate and report on these data stores. The admin 
+	 <wintitle>Report Suite Manager</wintitle> lets you define the rules that
+	 govern how data is processed in a report suite. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Admin tools"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p> 
+		<uicontrol>Analytics</uicontrol> &gt; 
+		<uicontrol>Admin 
+		</uicontrol> &gt; 
+		<uicontrol>Report Suites</uicontrol> 
+	 </p> 
+	 <section id="section_0C94DC9EACDA4F5891F5CD63EE80B125"> 
+		<title> Report Suite Manager Descriptions</title> 
+		<p>The following table describes elements on the 
+		  <wintitle>Report Suite Manager</wintitle> page. 
+		</p> 
+		<table id="table_F739FBD8DB8D409E916F12F61C5953D0"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col1">Element 
+				  </entry> 
+				  <entry colname="col2">Description 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <wintitle>Select Report Suite</wintitle> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>The 
+						<wintitle>Report Suite Manager</wintitle> highlights a
+						selected report suite. You can select multiple report suites with 
+						<uicontrol>Ctrl+click</uicontrol> or 
+						<uicontrol>Shift+click</uicontrol>. 
+					 </p> 
+					 <p>A selected report suite remains selected until you select
+						another report suite. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <wintitle>Download</wintitle> 
+				  </entry> 
+				  <entry colname="col2">Generates an Excel spreadsheet of all
+					 settings for the currently selected report suites. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <wintitle>Search</wintitle> 
+				  </entry> 
+				  <entry colname="col2">Lets you locate a specific report suite in
+					 the Report Suite List. The search tool includes both basic name-based search
+					 and an advanced search page for in-depth searches. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <wintitle>Groups</wintitle> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Lets you organize your report suites into custom groups. You
+						can quickly access multiple report suites that share similar settings or that
+						you commonly edit together. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <wintitle>Saved Searches</wintitle> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>A dynamic group that uses the 
+						<wintitle>Advanced Search</wintitle> feature to define a set
+						of criteria that determines its members. As you add or modify report suites in
+						the 
+						<wintitle>Report Suite Manager</wintitle>, the 
+						<wintitle>Saved Search</wintitle> automatically adds those
+						report suites that match its criteria. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <wintitle>Rollups</wintitle> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>A rollup is single report suite that combines the tracking
+						data of several other report suites. 
+					 </p> 
+					 <p>See 
+						<xref
+						href="rollup_report_suite.xml#concept_E3D0FEC81E1F4987B39CC467F19FFCFF"
+						format="dita" scope="local"><?xm-replace_text Rollup Report Suites?></xref>. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <wintitle>Edit Settings</wintitle> 
+				  </entry> 
+				  <entry colname="col2">When you edit a report suite, the edits are
+					 applied to all selected report suites. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <wintitle>Create New</wintitle> 
+				  </entry> 
+				  <entry colname="col2">See 
+					 <xref
+					 href="new_report_suite.xml#concept_3CBBE252279C43069030EFBBD7D26376"
+					 format="dita" scope="local"><?xm-replace_text New Report Suite?></xref>. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <wintitle>Customize Columns</wintitle> 
+				  </entry> 
+				  <entry colname="col2">Lets you choose columns to add to the 
+					 <wintitle>Report Suite Manager</wintitle>. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <wintitle>Report Suite ID</wintitle> 
+				  </entry> 
+				  <entry colname="col2">See 
+					 <xref
+					 href="new_report_suite.xml#concept_3CBBE252279C43069030EFBBD7D26376/section_A910867ABBA647CEB58D3412E10A6A30"
+					 format="dita" scope="local">New Report Suite</xref>. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <wintitle>Site Title</wintitle> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Identifies report suites in Admin Tools, and in the report
+						suite drop-down list in the marketing report header. 
+					 </p> 
+					 <p>See 
+						<xref
+						href="new_report_suite.xml#concept_3CBBE252279C43069030EFBBD7D26376/section_A910867ABBA647CEB58D3412E10A6A30"
+						format="dita" scope="local">New Report Suite</xref>. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <wintitle>Base URL</wintitle> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Defines the base domain for the report suite. 
+					 </p> 
+					 <p>See 
+						<xref
+						href="new_report_suite.xml#concept_3CBBE252279C43069030EFBBD7D26376/section_A910867ABBA647CEB58D3412E10A6A30"
+						format="dita" scope="local">New Report Suite</xref>. 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </section> 
+  </conbody> 
+</concept> 

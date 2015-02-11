@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_04909DA344014F7F8ADFF244F888315A">
+  <title>Create Numeric 2 Classifications</title>
+  <shortdesc>You create numeric 2 classifications the same way you create other
+	 classifications. You can add numeric 2 classifications only to conversion or
+	 channel variables. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Admin tools" />
+      <othermeta name="subtopic" content="Classifications" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <steps id="steps_C52F0A3E18F14A1F9B1BB897B3370FE9">
+      <step id="step_C0901708C7DE49149E8719DB2001AA62">
+        <cmd>Click 
+			 <uicontrol>Admin Tools</uicontrol> &gt; 
+			 <uicontrol>Report Suites</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_C267FC4B64664DD3A101EB7BC074C931">
+        <cmd>Select the report suite, then click 
+			 <uicontrol>Edit Settings</uicontrol> &gt; 
+			 <uicontrol>Conversion</uicontrol> &gt; 
+			 <uicontrol>Conversion Classifications</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_E355B9CE32A0403A8C3488D4694E6704">
+        <cmd>Click the 
+			 <uicontrol>Add Classification</uicontrol> icon (<image id="image_24E8CCA973F1449FA09A49AEAEEFE158" href="graphics/icon_add_classification.png"></image>). 
+		  </cmd>
+      </step>
+      <step id="step_59156B5224B74DFC8AD1B11145E2D12F">
+        <cmd>Fill in the fields: 
+		  </cmd>
+        <info>
+          <p>
+            <b>Select Type:</b> Select 
+				<uicontrol>Numeric 2</uicontrol>. 
+			 </p>
+          <p>
+            <b>Name:</b> Specify a name for the classification. 
+			 </p>
+          <p>
+            <b>Numeric:</b> Select whether this classification is 
+				<uicontrol>Percent (%)</uicontrol> or 
+				<uicontrol>Currency ($)</uicontrol>. 
+			 </p>
+        </info>
+      </step>
+      <step id="step_667510100A62438D81D3D59C7411E26B">
+        <cmd>Click 
+			 <uicontrol>Save</uicontrol>. 
+		  </cmd>
+      </step>
+    </steps>
+  </taskbody>
+</task>

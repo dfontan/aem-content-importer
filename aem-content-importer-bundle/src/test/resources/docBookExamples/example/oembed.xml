@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_BCC0B886B24D4EDC87D8913B69D0F73C">
+  <title>Embedding Content</title>
+  <shortdesc>You can embed content from a web page into the Marketing Cloud. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Marketing Cloud" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>In 
+		<wintitle>Tools</wintitle>, drag the 
+		<uicontrol>Share to Adobe Marketing Cloud</uicontrol> button to your
+		browser's bookmark toolbar. 
+	 </p>
+    <p>
+      <image href="graphics/oembed.png" id="image_E3FA998DE54E40FBB35C82B922D36A54">
+        <?xm-replace_text Paragraph?>
+      </image>
+    </p>
+    <p>When you are on a web page that supports embedded content (such as help
+		topics), click 
+		<uicontrol>Share to Adobe Marketing Cloud</uicontrol> in the toolbar. 
+	 </p>
+  </conbody>
+</concept>

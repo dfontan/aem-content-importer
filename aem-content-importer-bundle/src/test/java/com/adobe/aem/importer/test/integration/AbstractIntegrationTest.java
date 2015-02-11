@@ -6,6 +6,8 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.UnsupportedEncodingException;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.Properties;
@@ -30,6 +32,8 @@ public abstract class AbstractIntegrationTest {
 	protected final String CONFIG_PATH_RESULT = "configPathResult";
 	protected final Long MILLISECONDS = 2000L;
 	protected final String TARGET_PROP = "target";
+	
+	private final Integer N_CONNECTIONS = 30;
 	
 	protected Properties createExpectedProperties(Config config) {
 		Properties properties = new Properties();
@@ -70,7 +74,7 @@ public abstract class AbstractIntegrationTest {
 		
 	}
 	
-	protected JSONObject retrieveNodeInfoFromJCR(String path) throws Exception {
+	protected JSONObject retrieveNodeInfoFromJCR(String path) throws Exception  {
 		URLConnection urlConnection = new URL(CONFIG_PARAM_SERVER
 				+ path).openConnection();
 		String userpass = USERNAME + ":" + PASSWORD;
@@ -78,7 +82,24 @@ public abstract class AbstractIntegrationTest {
 				+ new String(new Base64().encode(userpass.getBytes()));
 		urlConnection.setRequestProperty("Authorization", basicAuth);
 		
-		BufferedReader streamReader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream(), "UTF-8")); 
+		BufferedReader streamReader = null;
+		Boolean connection = false;
+		int count = 0;
+		while (!connection && count < N_CONNECTIONS) {
+			try {
+				count++;
+				streamReader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream(), "UTF-8"));
+				connection = true;
+			} catch (Exception e) {
+				Thread.sleep(1000L);
+			} 
+		}
+		
+		if (count == N_CONNECTIONS && streamReader == null) {
+			throw new Exception("Content " + path + " hasn't been created yet. It seems that content page isn't ready. Try it in another test execution");
+		}
+		
+		
 	    StringBuilder responseStrBuilder = new StringBuilder();
 
 	    String inputStr;

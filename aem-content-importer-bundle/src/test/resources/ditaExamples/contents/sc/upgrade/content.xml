@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:pd="http://www.adobe.com/pando"
+          jcr:primaryType="cq:Page">
+   <jcr:content jcr:primaryType="nt:unstructured"
+                jcr:title="SiteCatalyst 15 Upgrade Guide"
+                sling:resourceType="wcm/foundation/components/page">
+      <par jcr:primaryType="nt:unstructured"
+           sling:resourceType="wcm/foundation/components/parsys">
+         <sitemap jcr:primaryType="nt:unstructured"
+                  sling:resourceType="foundation/components/sitemap"
+                  rootPath="/content/dita-import"/>
+      </par>
+   </jcr:content>
+   <upgrade_home jcr:primaryType="cq:Page">
+      <preface jcr:primaryType="cq:Page">
+         <jcr:content jcr:primaryType="nt:unstructured"
+                      jcr:title="Preface"
+                      sling:resourceType="wcm/foundation/components/page">
+            <par jcr:primaryType="nt:unstructured"
+                 sling:resourceType="wcm/foundation/components/parsys">
+               <text jcr:primaryType="nt:unstructured"
+                     sling:resourceType="wcm/foundation/components/text"
+                     textIsRich="true"
+                     text="&lt;section id=&#34;section_7C14723A51454FC1AAE7A996DC5A96C2&#34;&gt;&lt;title&gt;Document Conventions&lt;/title&gt;&lt;p&gt;To increase accessibility and readability, this document uses the&#xA;&#x9;&#x9;  following conventions: &#xA;&#x9;&#x9;&lt;/p&gt;&lt;p&gt;&lt;ul id=&#34;ul_D50D0DFA566343228BDBEFFBBDAEABDE&#34;&gt;&lt;li id=&#34;li_D470A1DB790E4E7B8E2E4A82883AAD81&#34;&gt;File names and code&#xA;&#x9;&#x9;&#x9; samples use a Courier font. For example, &#xA;&#x9;&#x9;&#x9; &lt;i&gt;autoexec.bat&lt;/i&gt;. &#xA;&#x9;&#x9;  &lt;/li&gt;&lt;li id=&#34;li_30372AC0EC0A44BC8B49440937E7DC06&#34;&gt;Replaceable text is&#xA;&#x9;&#x9;&#x9; enclosed in angle brackets and italicized. For example, &#xA;&#x9;&#x9;&#x9; &lt;i&gt;&lt;version&gt;&lt;/i&gt;. &#xA;&#x9;&#x9;  &lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;&lt;p&gt;A Note draws attention to helpful information. &#xA;&#x9;&#x9;&lt;/p&gt;&lt;p&gt;&lt;b&gt;CAUTION&lt;/b&gt;: A Caution specifies the results of an action. The&#xA;&#x9;&#x9;  results might not be damaging, but they are important to understand. &#xA;&#x9;&#x9;&lt;/p&gt;&lt;p&gt;&lt;b&gt;WARNING!&lt;/b&gt;: A Warning identifies an action that might result in&#xA;&#x9;&#x9;  system damage and data loss. &#xA;&#x9;&#x9;&lt;/p&gt;&lt;/section&gt;"/>
+            </par>
+         </jcr:content>
+      </preface>
+      <t_upgrade_prepare jcr:primaryType="cq:Page">
+         <jcr:content jcr:primaryType="nt:unstructured"
+                      jcr:title="Preparing for Your Upgrade"
+                      sling:resourceType="wcm/foundation/components/page">
+            <par jcr:primaryType="nt:unstructured"
+                 sling:resourceType="wcm/foundation/components/parsys">
+               <text jcr:primaryType="nt:unstructured"
+                     sling:resourceType="wcm/foundation/components/text"
+                     textIsRich="true"
+                     text="&lt;p id=&#34;context_0CE0FD74BC1844D8881BD65CC41C1E6D&#34;&gt;&lt;p&gt;In preparation, Adobe recommends that you: &#xA;&#x9;&#x9;&lt;/p&gt;&lt;/p&gt;&lt;ul id=&#34;steps_4834A49C876049D1A5B44B028E1B28D3&#34;&gt;&lt;li id=&#34;step_E79520B50440450D861E15480897986C&#34;&gt;&lt;b&gt;Understand the new features: &#xA;&#x9;&#x9;  &lt;/b&gt;&lt;p&gt;&lt;p&gt;Identify places where new &#xA;&#x9;&#x9;&#x9;&#x9;&lt;a href=&#34;../feature_overview.html#concept_C109789FA3C74B02B8AEB258E895219B&#34; format=&#34;dita&#34; scope=&#34;local&#34;&gt;features&lt;/a&gt; reduces your workload and helps you&#xA;&#x9;&#x9;&#x9;&#x9;answer data questions that you previously could not answer. &#xA;&#x9;&#x9;&#x9; &lt;/p&gt;&lt;/p&gt;&lt;/li&gt;&lt;li id=&#34;step_828615AF633C4E81AEA7AA5403D513BF&#34;&gt;&lt;b&gt;Understand the differences between &#xA;&#x9;&#x9;&#x9; &lt;b&gt;SiteCatalyst&lt;/b&gt; 14 and 15:v &#xA;&#x9;&#x9;  &lt;/b&gt;&lt;p&gt;&lt;p&gt;When you upgrade to version 15, your data is processed&#xA;&#x9;&#x9;&#x9;&#x9;differently. You need to understand the improvements and changes in metric&#xA;&#x9;&#x9;&#x9;&#x9;calculation. Knowing the differences helps you avoid unnecessary questions and&#xA;&#x9;&#x9;&#x9;&#x9;confusion that your organization might see in the reporting results. &#xA;&#x9;&#x9;&#x9; &lt;/p&gt;&lt;p&gt;See &#xA;&#x9;&#x9;&#x9;&#x9;&lt;a href=&#34;../data_proc_dif.html#concept_6C21A54B619E4920A9DB72F3A672B165&#34; format=&#34;dita&#34; scope=&#34;local&#34;&gt;Data Differences between SiteCatalyst 14 and 15&lt;/a&gt;. &#xA;&#x9;&#x9;&#x9; &lt;/p&gt;&lt;/p&gt;&lt;/li&gt;&lt;li id=&#34;step_619B5C155603498CBB0CAE95B5559B4B&#34;&gt;&lt;b&gt;Determine the amount of training that you and your organization&#xA;&#x9;&#x9;&#x9; needs. &#xA;&#x9;&#x9;  &lt;/b&gt;&lt;p&gt;&lt;p&gt;Before the upgrade, consider your &#xA;&#x9;&#x9;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt; user base and their level of&#xA;&#x9;&#x9;&#x9;&#x9;expertise with analytics. If you have novice users, you might need to hold&#xA;&#x9;&#x9;&#x9;&#x9;training sessions so that your organization understands and can use the new&#xA;&#x9;&#x9;&#x9;&#x9;features. &#xA;&#x9;&#x9;&#x9; &lt;/p&gt;&lt;/p&gt;&lt;/li&gt;&lt;li id=&#34;step_2EE98BBF605F4F1999C500D4880A9076&#34;&gt;&lt;b&gt;Notify your Account Manager about the best time for an upgrade. &#xA;&#x9;&#x9;  &lt;/b&gt;&lt;/li&gt;&lt;li id=&#34;step_0EA6A63175964D5B8FCC9CB0C628B490&#34;&gt;&lt;b&gt;Look for an e-mail from Adobe with instructions about selecting a&#xA;&#x9;&#x9;&#x9; final upgrade date. &#xA;&#x9;&#x9;  &lt;/b&gt;&lt;p&gt;&lt;p&gt;All &#xA;&#x9;&#x9;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt; 15 upgrades occur on the first day&#xA;&#x9;&#x9;&#x9;&#x9;of the calendar month, or the first day of a custom calendar month (depending&#xA;&#x9;&#x9;&#x9;&#x9;on the calendar type you use in &#xA;&#x9;&#x9;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt;). &#xA;&#x9;&#x9;&#x9; &lt;/p&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;"/>
+            </par>
+         </jcr:content>
+      </t_upgrade_prepare>
+      <feature_overview jcr:primaryType="cq:Page">
+         <jcr:content jcr:primaryType="nt:unstructured"
+                      jcr:title="Feature Overview"
+                      sling:resourceType="wcm/foundation/components/page">
+            <par jcr:primaryType="nt:unstructured"
+                 sling:resourceType="wcm/foundation/components/parsys">
+               <text jcr:primaryType="nt:unstructured"
+                     sling:resourceType="wcm/foundation/components/text"
+                     textIsRich="true"
+                     text="&lt;p&gt;You can apply real-time visitor segmentation, integrate more data, and&#xA;&#x9;&#x9;see complex reports return more quickly.&#xA;&#x9; &lt;/p&gt;"/>
+            </par>
+         </jcr:content>
+         <site_overview_report jcr:primaryType="cq:Page">
+            <jcr:content jcr:primaryType="nt:unstructured"
+                         jcr:title="Site Overview Report"
+                         sling:resourceType="wcm/foundation/components/page">
+               <par jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/parsys">
+                  <text jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/foundation/components/text"
+                        textIsRich="true"
+                        text="&lt;p&gt;It displays high-level metrics and page-level data relevant to your&#xA;&#x9;&#x9;report suite, immediately after you log in. &#xA;&#x9; &lt;/p&gt;&lt;p&gt;&lt;img src=&#34;../../graphics/site_overview.png&#34; id=&#34;image_B5DD19EB1900489392812EDF0036BD50&#34; /&gt;&lt;/p&gt;&lt;p&gt;The report is interactive. You can update individual reportlets, change&#xA;&#x9;&#x9;dates and report suites, and apply &#xA;&#x9;&#x9;&lt;a href=&#34;../../segmentation.html#concept_B6AFBB2D54FE4931922F1059796BDD62&#34; format=&#34;dita&#34; scope=&#34;local&#34;&gt;segments&lt;/a&gt;. The &#xA;&#x9;&#x9;&lt;b&gt;Site Overview&lt;/b&gt; report does not override your&#xA;&#x9;&#x9;dashboards, but you can save it as a dashboard. If desired, you can designate&#xA;&#x9;&#x9;any dashboard or bookmark to display to all users upon login. &#xA;&#x9; &lt;/p&gt;&lt;p&gt;To upgrade legacy dashboards to &#xA;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt; 15, see &#xA;&#x9;&#x9;&lt;a href=&#34;http://microsite.omniture.com/t2/help/en_US/sc/user/index.html#Migrating_a_Legacy_Dashboard&#34; format=&#34;http&#34; scope=&#34;external&#34;&gt;Migrating Legacy Dashboards&lt;/a&gt; in help. &#xA;&#x9; &lt;/p&gt;"/>
+               </par>
+            </jcr:content>
+         </site_overview_report>
+         <suite_prod_access jcr:primaryType="cq:Page">
+            <jcr:content jcr:primaryType="nt:unstructured"
+                         jcr:title="Suite Product Access"
+                         sling:resourceType="wcm/foundation/components/page">
+               <par jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/parsys">
+                  <text jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/foundation/components/text"
+                        textIsRich="true"
+                        text="&lt;p&gt;A drop-down menu provides access to Suite products: &#xA;&#x9; &lt;/p&gt;&lt;p&gt;&lt;img src=&#34;../../graphics/cloud_product_access.png&#34; id=&#34;image_498932820CF04AE5AA9B864A885CCC7E&#34; /&gt;&lt;/p&gt;&lt;p&gt;When you log into the Suite, you are returned to the landing page of the&#xA;&#x9;&#x9;product you were in when you logged out. &#xA;&#x9; &lt;/p&gt;"/>
+               </par>
+            </jcr:content>
+         </suite_prod_access>
+         <segmentation jcr:primaryType="cq:Page">
+            <jcr:content jcr:primaryType="nt:unstructured"
+                         jcr:title="Segmentation"
+                         sling:resourceType="wcm/foundation/components/page">
+               <par jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/parsys">
+                  <text jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/foundation/components/text"
+                        textIsRich="true"
+                        text="&lt;p&gt;&lt;b&gt;SiteCatalyst&lt;/b&gt; 15 provides real-time segmentation using&#xA;&#x9;&#x9;custom personal and global segments, segments shared from &#xA;&#x9;&#x9;&lt;b&gt;Discover&lt;/b&gt;, and pre-defined segments. You can also&#xA;&#x9;&#x9;export segments that are listed in the Suite Segments section to &#xA;&#x9;&#x9;&lt;b&gt;Test&amp;Target&lt;/b&gt; for building a campaign. &#xA;&#x9; &lt;/p&gt;&lt;p&gt;&lt;img src=&#34;../../graphics/segment_add_menu.png&#34; id=&#34;image_4F7D4D38978943748ECE4A2A1A9062BA&#34; /&gt;&lt;/p&gt;&lt;p&gt;See &#xA;&#x9;&#x9;&lt;a href=&#34;../../r_man_segments.html#reference_B602C82274A1400CAD96F8F87548C457&#34; format=&#34;dita&#34; scope=&#34;local&#34;&gt;Managing Segments&lt;/a&gt; for details. &#xA;&#x9; &lt;/p&gt;"/>
+               </par>
+            </jcr:content>
+         </segmentation>
+         <full_subrelations jcr:primaryType="cq:Page">
+            <jcr:content jcr:primaryType="nt:unstructured"
+                         jcr:title="Full Subrelations"
+                         sling:resourceType="wcm/foundation/components/page">
+               <par jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/parsys">
+                  <text jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/foundation/components/text"
+                        textIsRich="true"
+                        text="&lt;p&gt;The &#xA;&#x9;&#x9;&lt;b&gt;Breakdown By&lt;/b&gt; menu in the report table matches the&#xA;&#x9;&#x9;standard &#xA;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt; menu, keeping things consistent. &#xA;&#x9; &lt;/p&gt;&lt;p&gt;&lt;img src=&#34;../../graphics/subrelations.png&#34; id=&#34;image_90AC92BA87DF4F5898378E82FB227146&#34; /&gt;&lt;/p&gt;"/>
+               </par>
+            </jcr:content>
+         </full_subrelations>
+         <default_metrics jcr:primaryType="cq:Page">
+            <jcr:content jcr:primaryType="nt:unstructured"
+                         jcr:title="Default Metrics on Reports"
+                         sling:resourceType="wcm/foundation/components/page">
+               <par jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/parsys">
+                  <text jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/foundation/components/text"
+                        textIsRich="true"
+                        text="&lt;p&gt;&lt;img src=&#34;../../graphics/default_metrics.png&#34; id=&#34;image_EE871496FE5148DFA20540761F875BAC&#34; /&gt;&lt;/p&gt;&lt;p&gt;In a report, click &#xA;&#x9;&#x9;&lt;b&gt;Add Metrics&lt;/b&gt; &gt; &#xA;&#x9;&#x9;&lt;b&gt;Set as Default&lt;/b&gt;. &#xA;&#x9; &lt;/p&gt;"/>
+               </par>
+            </jcr:content>
+         </default_metrics>
+         <metric_changes jcr:primaryType="cq:Page">
+            <jcr:content jcr:primaryType="nt:unstructured"
+                         jcr:title="Metric Changes"
+                         sling:resourceType="wcm/foundation/components/page">
+               <par jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/parsys">
+                  <text jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/foundation/components/text"
+                        textIsRich="true"
+                        text="&lt;p&gt;&lt;b&gt;Page Views, Visits, and Unique Visitors:&lt;/b&gt; These metrics are&#xA;&#x9;&#x9;available on all reports (with a few exceptions). The &#xA;&#x9;&#x9;&lt;b&gt;Unique Visitors&lt;/b&gt; metric represents unique visitors&#xA;&#x9;&#x9;for the time period of the report, rather than the sum of daily unique&#xA;&#x9;&#x9;visitors. &#xA;&#x9;&#x9;&lt;b&gt;Visits&lt;/b&gt; are available on all custom insight reports&#xA;&#x9;&#x9;without enabling pathing. &#xA;&#x9; &lt;/p&gt;&lt;p&gt;&lt;b&gt;Page Views and Instances in Custom Traffic (Prop) Reports:&lt;/b&gt; In &#xA;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt; 14, &#xA;&#x9;&#x9;&lt;b&gt;Custom Traffic&lt;/b&gt; reports displayed &#xA;&#x9;&#x9;&lt;b&gt;Instances&lt;/b&gt; as &#xA;&#x9;&#x9;&lt;b&gt;Page Views&lt;/b&gt;. In &#xA;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt; 15, we added the &#xA;&#x9;&#x9;&lt;b&gt;Instances&lt;/b&gt; metric to &#xA;&#x9;&#x9;&lt;b&gt;Custom Traffic&lt;/b&gt; reports. Now, &#xA;&#x9;&#x9;&lt;b&gt;Page Views&lt;/b&gt; reflects the number of page views where a&#xA;&#x9;&#x9;property variable is set. The &#xA;&#x9;&#x9;&lt;b&gt;Instances&lt;/b&gt; metric represents the number of times the&#xA;&#x9;&#x9;variable is set, whether on link clicks, video views, page views, or other&#xA;&#x9;&#x9;server calls. &#xA;&#x9; &lt;/p&gt;&lt;p&gt;&lt;b&gt;Bounces:&lt;/b&gt; A new metric defined as a single hit visit with no other&#xA;&#x9;&#x9;link event. For example, a single page visit is a bounce if a visitor does not&#xA;&#x9;&#x9;interact with the page in way that sends data to Adobe, such as clicking a link&#xA;&#x9;&#x9;or a video start. &#xA;&#x9; &lt;/p&gt;&lt;p&gt;&lt;b&gt;Bounce Rate:&lt;/b&gt; A new metric defined as &#xA;&#x9;&#x9;&lt;b&gt;Bounces&lt;/b&gt; divided by &#xA;&#x9;&#x9;&lt;b&gt;Entries&lt;/b&gt;. &#xA;&#x9; &lt;/p&gt;&lt;p&gt;&lt;b&gt;Lifetime Metrics:&lt;/b&gt; No longer available. &#xA;&#x9; &lt;/p&gt;"/>
+               </par>
+            </jcr:content>
+         </metric_changes>
+         <report_menu_search jcr:primaryType="cq:Page">
+            <jcr:content jcr:primaryType="nt:unstructured"
+                         jcr:title="Report Menu Search"
+                         sling:resourceType="wcm/foundation/components/page">
+               <par jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/parsys">
+                  <text jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/foundation/components/text"
+                        textIsRich="true"
+                        text="&lt;p&gt;Menus that you customize are also searchable.&#xA;&#x9; &lt;/p&gt;&lt;p&gt;&lt;img src=&#34;../../graphics/menu_search.png&#34; id=&#34;image_E8E5A56E997D4F5BB56A254E836602E7&#34; /&gt;&lt;/p&gt;"/>
+               </par>
+            </jcr:content>
+         </report_menu_search>
+         <new_reports jcr:primaryType="cq:Page">
+            <jcr:content jcr:primaryType="nt:unstructured"
+                         jcr:title="Video Report Changes"
+                         sling:resourceType="wcm/foundation/components/page">
+               <par jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/parsys">
+                  <text jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/foundation/components/text"
+                        textIsRich="true"
+                        text="&lt;p&gt;Standard video reports have been replaced by the following: &#xA;&#x9; &lt;/p&gt;&lt;p&gt;&lt;ul id=&#34;ul_537E0349D2134D2CAD83355BC4E9ECC7&#34;&gt;&lt;li id=&#34;li_856F6B2103E34604B44E41594D7907C7&#34;&gt;Video Overview &#xA;&#x9;&#x9;&lt;/li&gt;&lt;li id=&#34;li_98457D31CA724AD0B16774EC80B296FB&#34;&gt;Video data fully subrelated&#xA;&#x9;&#x9;  with all conversion data &#xA;&#x9;&#x9;&lt;/li&gt;&lt;li id=&#34;li_AE1322230FDB4DA5966EC1BE8FD96D79&#34;&gt;Video metrics in all&#xA;&#x9;&#x9;  conversion reports &#xA;&#x9;&#x9;&lt;/li&gt;&lt;li id=&#34;li_AFDDC894D7E44E71A367A14C2B781BC1&#34;&gt;Video data in &#xA;&#x9;&#x9;  &lt;b&gt;DataWarehouse&lt;/b&gt; and &#xA;&#x9;&#x9;  &lt;b&gt;Discover&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;&lt;p&gt;See &#xA;&#x9;&#x9;&lt;a href=&#34;http://microsite.omniture.com/t2/help/en_US/sc/appmeasurement/video/index.html?f=c_Migrating_to_Integrated_Video_Tracking&#34; format=&#34;http&#34; scope=&#34;external&#34;&gt;Migrating to Integrated Video Tracking&lt;/a&gt;. &#xA;&#x9; &lt;/p&gt;"/>
+               </par>
+            </jcr:content>
+         </new_reports>
+         <datawarehouse_req jcr:primaryType="cq:Page">
+            <jcr:content jcr:primaryType="nt:unstructured"
+                         jcr:title="DataWarehouse Requests"
+                         sling:resourceType="wcm/foundation/components/page">
+               <par jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/parsys">
+                  <text jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/foundation/components/text"
+                        textIsRich="true"
+                        text="&lt;p&gt;&lt;b&gt;DataWarehouse&lt;/b&gt; data reflects native &#xA;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt;&lt;b&gt;VISTA&lt;/b&gt; processing, and reports with &#xA;&#x9;&#x9;&lt;b&gt;VISTA&lt;/b&gt; rules applied run considerably faster. This&#xA;&#x9;&#x9;improvement can be enabled for &#xA;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt;14 as well. &#xA;&#x9; &lt;/p&gt;"/>
+               </par>
+            </jcr:content>
+            <dup_requests jcr:primaryType="cq:Page">
+               <jcr:content jcr:primaryType="nt:unstructured"
+                            jcr:title="Create Duplicate Requests"
+                            sling:resourceType="wcm/foundation/components/page">
+                  <par jcr:primaryType="nt:unstructured"
+                       sling:resourceType="wcm/foundation/components/parsys">
+                     <text jcr:primaryType="nt:unstructured"
+                           sling:resourceType="wcm/foundation/components/text"
+                           textIsRich="true"
+                           text="&lt;p&gt;&lt;img src=&#34;../../../graphics/dw_manager.png&#34; id=&#34;image_7CB5355472E949F69E101651BA416CDE&#34; /&gt;&lt;/p&gt;"/>
+                  </par>
+               </jcr:content>
+            </dup_requests>
+            <prioritize_requests jcr:primaryType="cq:Page">
+               <jcr:content jcr:primaryType="nt:unstructured"
+                            jcr:title="Prioritize Requests"
+                            sling:resourceType="wcm/foundation/components/page">
+                  <par jcr:primaryType="nt:unstructured"
+                       sling:resourceType="wcm/foundation/components/parsys">
+                     <text jcr:primaryType="nt:unstructured"
+                           sling:resourceType="wcm/foundation/components/text"
+                           textIsRich="true"
+                           text="&lt;p&gt;&lt;img src=&#34;../../../graphics/dw_priority.png&#34; id=&#34;image_063207D0A5E24133B684C0762BB970EC&#34; /&gt;&lt;/p&gt;"/>
+                  </par>
+               </jcr:content>
+            </prioritize_requests>
+            <view_detailed_status jcr:primaryType="cq:Page">
+               <jcr:content jcr:primaryType="nt:unstructured"
+                            jcr:title="View Detailed Status"
+                            sling:resourceType="wcm/foundation/components/page">
+                  <par jcr:primaryType="nt:unstructured"
+                       sling:resourceType="wcm/foundation/components/parsys">
+                     <text jcr:primaryType="nt:unstructured"
+                           sling:resourceType="wcm/foundation/components/text"
+                           textIsRich="true"
+                           text="&lt;p&gt;&lt;img src=&#34;../../../graphics/dw_status.png&#34; id=&#34;image_C9F627C0B1C44459A7AAD5564AF9E6BD&#34; /&gt;&lt;/p&gt;"/>
+                  </par>
+               </jcr:content>
+            </view_detailed_status>
+            <new_dim jcr:primaryType="cq:Page">
+               <jcr:content jcr:primaryType="nt:unstructured"
+                            jcr:title="Add New Dimensions and Metrics"
+                            sling:resourceType="wcm/foundation/components/page">
+                  <par jcr:primaryType="nt:unstructured"
+                       sling:resourceType="wcm/foundation/components/parsys">
+                     <text jcr:primaryType="nt:unstructured"
+                           sling:resourceType="wcm/foundation/components/text"
+                           textIsRich="true"
+                           text="&lt;p&gt;&lt;img src=&#34;../../../graphics/dw_metrics.png&#34; id=&#34;image_9B9B1C6E6F864D06B3C43684D44ADFB5&#34; /&gt;&lt;/p&gt;&lt;p&gt;A second visit metric called &#xA;&#x9;&#x9;&lt;b&gt;Visit – All Visitors&lt;/b&gt; is available in &#xA;&#x9;&#x9;&lt;b&gt;DataWarehouse&lt;/b&gt;. &#xA;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt; 15 defines visits as all cookie and&#xA;&#x9;&#x9;non-cookie visitors. See &#xA;&#x9;&#x9;&lt;a href=&#34;../../../t_visits_metric.html#task_FAE3E7E71FDC452794770334B1E4E009&#34; format=&#34;dita&#34; scope=&#34;local&#34;&gt;Visits Metric Includes Non-cookie Visitors&lt;/a&gt;. &#xA;&#x9;&#x9;&lt;b&gt;DataWarehouse&lt;/b&gt; is compatible with &#xA;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt; 14 and &#xA;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt; 15, so the &#xA;&#x9;&#x9;&lt;b&gt;Visits&lt;/b&gt; metric is preserved. If you want to view all&#xA;&#x9;&#x9;cookie and non-cookie visitors in a request, select &#xA;&#x9;&#x9;&lt;b&gt;Visits – All Visitors&lt;/b&gt;.&#xA;&#x9; &lt;/p&gt;"/>
+                  </par>
+               </jcr:content>
+            </new_dim>
+         </datawarehouse_req>
+         <proc_rules jcr:primaryType="cq:Page">
+            <jcr:content jcr:primaryType="nt:unstructured"
+                         jcr:title="Processing Rules"
+                         sling:resourceType="wcm/foundation/components/page">
+               <par jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/parsys">
+                  <text jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/foundation/components/text"
+                        textIsRich="true"
+                        text="&lt;p&gt;&lt;img src=&#34;../../graphics/proc_rules.png&#34; id=&#34;image_56FB718D81034577B414A07EFD96D1BE&#34; /&gt;&lt;/p&gt;&lt;p&gt;Processing rules let you: &#xA;&#x9; &lt;/p&gt;&lt;p&gt;&lt;ul id=&#34;ul_F82C910954C44CBAAEF7670E4C71D15E&#34;&gt;&lt;li id=&#34;li_AE548D0E93224F9C904D06A520A53579&#34;&gt;Populate variables using&#xA;&#x9;&#x9;  query string parameters. &#xA;&#x9;&#x9;&lt;/li&gt;&lt;li id=&#34;li_6C3D642A20B749BA98E8D075E59D3E50&#34;&gt;Copy an eVar into a Prop to&#xA;&#x9;&#x9;  see paths. &#xA;&#x9;&#x9;&lt;/li&gt;&lt;li id=&#34;li_47D1B814C1CB4E5EBD8D177770C7508A&#34;&gt;Set an &#xA;&#x9;&#x9;  &lt;b&gt;Event&lt;/b&gt; on a page or when a value is matched. &#xA;&#x9;&#x9;&lt;/li&gt;&lt;li id=&#34;li_83395673FF7B4F7A8C55DD71D13E0FFF&#34;&gt;Concatenate values for&#xA;&#x9;&#x9;  easier reporting. &#xA;&#x9;&#x9;&lt;/li&gt;&lt;li id=&#34;li_5D67063CBFB247C7856C6CDAAF283930&#34;&gt;Use &#xA;&#x9;&#x9;  &lt;b&gt;Context Data&lt;/b&gt; variables to simplify data&#xA;&#x9;&#x9;  collection. &#xA;&#x9;&#x9;&lt;/li&gt;&lt;li id=&#34;li_FDA952F35E6940C1B16E04D329C7CA18&#34;&gt;Clean up misspellings. &#xA;&#x9;&#x9;&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;&lt;p&gt;Certification training is required before you can create or edit&#xA;&#x9;&#x9;processing rules. Contact your Account Manager for more information. &#xA;&#x9; &lt;/p&gt;&lt;p&gt;See &#xA;&#x9;&#x9;&lt;a href=&#34;https://microsite.omniture.com/t2/help/en_US/reference/index.html?f=processing_rules&#34; format=&#34;https&#34; scope=&#34;external&#34;&gt;Processing Rules&lt;/a&gt; in the Analytics&#xA;&#x9;&#x9;Reference Help. &#xA;&#x9; &lt;/p&gt;"/>
+               </par>
+            </jcr:content>
+         </proc_rules>
+         <context_data_var jcr:primaryType="cq:Page">
+            <jcr:content jcr:primaryType="nt:unstructured"
+                         jcr:title="Context Data Variables"
+                         sling:resourceType="wcm/foundation/components/page">
+               <par jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/parsys">
+                  <text jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/foundation/components/text"
+                        textIsRich="true"
+                        text="&lt;p&gt;These values can be copied into Props and eVars to prevent Web&#xA;&#x9;&#x9;developers from needing to set these values directly. &#xA;&#x9; &lt;/p&gt;&lt;p&gt;See &#xA;&#x9;&#x9;&lt;a href=&#34;https://microsite.omniture.com/t2/help/en_US/reference/index.html?f=processing_rules&#34; format=&#34;https&#34; scope=&#34;external&#34;&gt;Processing Rules&lt;/a&gt; in the Analytics&#xA;&#x9;&#x9;Reference Help. &#xA;&#x9; &lt;/p&gt;"/>
+               </par>
+            </jcr:content>
+         </context_data_var>
+         <list_var jcr:primaryType="cq:Page">
+            <jcr:content jcr:primaryType="nt:unstructured"
+                         jcr:title="List Variables"
+                         sling:resourceType="wcm/foundation/components/page">
+               <par jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/parsys">
+                  <text jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/foundation/components/text"
+                        textIsRich="true"
+                        text="&lt;p&gt;For example, if your page includes three display ads (A, B, and C), and&#xA;&#x9;&#x9;you want to track impressions, conversions, and viewing. You could implement a&#xA;&#x9;&#x9;list variable, such as: &#xA;&#x9; &lt;/p&gt;&lt;p&gt;&lt;i&gt;s.list1=”sidebarA,sidebarB,bannerC”&lt;/i&gt;&lt;/p&gt;&lt;p&gt;In &#xA;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt;, you can view the revenue based on each&#xA;&#x9;&#x9;ad ID: &#xA;&#x9; &lt;/p&gt;&lt;table id=&#34;table_127CAA054A4249D2864539157A05F2AD&#34;&gt;&lt;tgroup cols=&#34;2&#34; colsep=&#34;1&#34; rowsep=&#34;1&#34;&gt;&lt;colspec colnum=&#34;1&#34; colname=&#34;col1&#34; colwidth=&#34;1.00*&#34; /&gt;&lt;colspec colnum=&#34;2&#34; colname=&#34;col2&#34; colwidth=&#34;4.36*&#34; /&gt;&lt;tbody&gt;&lt;row&gt;&lt;td colname=&#34;col1&#34;&gt;sidebarA &#xA;&#x9;&#x9;&#x9;&#x9;&lt;/td&gt;&lt;td colname=&#34;col2&#34;&gt; $40 &#xA;&#x9;&#x9;&#x9;&#x9;&lt;/td&gt;&lt;/row&gt;&lt;row&gt;&lt;td colname=&#34;col1&#34;&gt;sidebarB &#xA;&#x9;&#x9;&#x9;&#x9;&lt;/td&gt;&lt;td colname=&#34;col2&#34;&gt; $40 &#xA;&#x9;&#x9;&#x9;&#x9;&lt;/td&gt;&lt;/row&gt;&lt;row&gt;&lt;td colname=&#34;col1&#34;&gt;bannerC &#xA;&#x9;&#x9;&#x9;&#x9;&lt;/td&gt;&lt;td colname=&#34;col2&#34;&gt; $40 &#xA;&#x9;&#x9;&#x9;&#x9;&lt;/td&gt;&lt;/row&gt;&lt;row&gt;&lt;td colname=&#34;col1&#34;&gt;Total &#xA;&#x9;&#x9;&#x9;&#x9;&lt;/td&gt;&lt;td colname=&#34;col2&#34;&gt; $40 &#xA;&#x9;&#x9;&#x9;&#x9;&lt;/td&gt;&lt;/row&gt;&lt;/tbody&gt;&lt;/tgroup&gt;&lt;/table&gt;&lt;p&gt;List variables are persistent like eVars and can be subrelated by any&#xA;&#x9;&#x9;other eVar. There is no character limit to the length of the string. Each&#xA;&#x9;&#x9;value, however, has a limit of 255 characters. &#xA;&#x9; &lt;/p&gt;&lt;p&gt;See &#xA;&#x9;&#x9;&lt;a href=&#34;https://microsite.omniture.com/t2/help/en_US/sc/implement/index.html?f=list_var&#34; format=&#34;https&#34; scope=&#34;external&#34;&gt;List Variables&lt;/a&gt; in the Implementation&#xA;&#x9;&#x9;Help. &#xA;&#x9; &lt;/p&gt;"/>
+               </par>
+            </jcr:content>
+         </list_var>
+         <user_man_enhance jcr:primaryType="cq:Page">
+            <jcr:content jcr:primaryType="nt:unstructured"
+                         jcr:title="User Management Enhancements"
+                         sling:resourceType="wcm/foundation/components/page">
+               <par jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/parsys">
+                  <text jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/foundation/components/text"
+                        textIsRich="true"
+                        text="&lt;p&gt;These features are available in &#xA;&#x9;&#x9;&lt;b&gt;Admin&lt;/b&gt; &gt; &#xA;&#x9;&#x9;&lt;b&gt;User Management&lt;/b&gt;: &#xA;&#x9; &lt;/p&gt;&lt;p&gt;&lt;b&gt;Log In as User:&lt;/b&gt; To support users, administrators can log in as a&#xA;&#x9;&#x9;user. &#xA;&#x9; &lt;/p&gt;&lt;p&gt;&lt;img src=&#34;../../graphics/login_as_user.png&#34; id=&#34;image_EF426CF6F6064561A20BF214C850BB0D&#34; /&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Manage Discover Users:&lt;/b&gt; Administrators can see who is logged in to&#xA;&#x9;&#x9;&#xA;&#x9;&#x9;&lt;b&gt;Discover&lt;/b&gt; and terminate active sessions. See the &#xA;&#x9;&#x9;&lt;a href=&#34;http://microsite.omniture.com/t2/help/en_US/dsc/index.html?f=c_whatsnew&#34; format=&#34;http&#34; scope=&#34;external&#34;&gt;New Features in Discover&lt;/a&gt;. &#xA;&#x9; &lt;/p&gt;"/>
+               </par>
+            </jcr:content>
+         </user_man_enhance>
+         <bot_traffic jcr:primaryType="cq:Page">
+            <jcr:content jcr:primaryType="nt:unstructured"
+                         jcr:title="Bot Traffic Filtering"
+                         sling:resourceType="wcm/foundation/components/page">
+               <par jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/parsys">
+                  <text jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/foundation/components/text"
+                        textIsRich="true"
+                        text="&lt;p&gt;Bot traffic is collected separately and displayed in two new reports: &#xA;&#x9;&#x9;&lt;b&gt;Bots&lt;/b&gt; report and &#xA;&#x9;&#x9;&lt;b&gt;Bot Traffic&lt;/b&gt; report. &#xA;&#x9; &lt;/p&gt;&lt;p&gt;See &#xA;&#x9;&#x9;&lt;a href=&#34; https://microsite.omniture.com/t2/help/en_US/reference/index.html?f=bot_rules&#34; format=&#34; https&#34; scope=&#34;external&#34;&gt;Bot Rules&lt;/a&gt; in the Analytics Reference&#xA;&#x9;&#x9;Help. &#xA;&#x9; &lt;/p&gt;"/>
+               </par>
+            </jcr:content>
+         </bot_traffic>
+         <data_visibility jcr:primaryType="cq:Page">
+            <jcr:content jcr:primaryType="nt:unstructured"
+                         jcr:title="Data Visibility in Other SiteCatalyst Versions"
+                         sling:resourceType="wcm/foundation/components/page">
+               <par jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/parsys">
+                  <text jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/foundation/components/text"
+                        textIsRich="true"
+                        text="&lt;p&gt;&lt;b&gt;SiteCatalyst&lt;/b&gt; 13, 14, and 15 all report the same data,&#xA;&#x9;&#x9;as illustrated in the following figure:&#xA;&#x9; &lt;/p&gt;&lt;p&gt;&lt;img src=&#34;../../graphics/data_vis.png&#34; id=&#34;image_132831A8E3764AE2A5F2348E50719A99&#34; /&gt;&lt;/p&gt;&lt;p&gt;To view segments and breakdowns, you must use the &#xA;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt; 15 interface. Segments are available on&#xA;&#x9;&#x9;data collected after your &#xA;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt; 15 migration date.&#xA;&#x9; &lt;/p&gt;"/>
+               </par>
+            </jcr:content>
+         </data_visibility>
+      </feature_overview>
+      <data_proc_dif jcr:primaryType="cq:Page">
+         <jcr:content jcr:primaryType="nt:unstructured"
+                      jcr:title="Data Processing Differences Between SiteCatalyst 14 and 15"
+                      sling:resourceType="wcm/foundation/components/page">
+            <par jcr:primaryType="nt:unstructured"
+                 sling:resourceType="wcm/foundation/components/parsys">
+               <text jcr:primaryType="nt:unstructured"
+                     sling:resourceType="wcm/foundation/components/text"
+                     textIsRich="true"
+                     text="&lt;p&gt;These changes result in more accurate reporting, which results in sudden&#xA;&#x9;&#x9;changes to report data (particularly for &#xA;&#x9;&#x9;&lt;b&gt;Trended&lt;/b&gt; reports). Because of these changes, it might&#xA;&#x9;&#x9;not be practical to view data trends that span the upgrade to &#xA;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt; 15. &#xA;&#x9; &lt;/p&gt;&lt;p&gt;&lt;b&gt;SiteCatalyst&lt;/b&gt; 14 relied on pre-processing mechanisms&#xA;&#x9;&#x9;that summarized, aggregated, and categorized data into pre-defined reporting&#xA;&#x9;&#x9;buckets. The &#xA;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt; 15 data processing platform: &#xA;&#x9; &lt;/p&gt;&lt;p&gt;&lt;ol id=&#34;ol_C0617F1E823D4212AA059DABD6DEF603&#34;&gt;&lt;li id=&#34;li_69F5DFDD6ECA478685902CFB650BABBD&#34;&gt;Stores raw data rather than&#xA;&#x9;&#x9;  summarizing data into pre-defined categories. &#xA;&#x9;&#x9;&lt;/li&gt;&lt;li id=&#34;li_77CBEB097C6248ADAE30DAFCA3F97887&#34;&gt;Uses massively parallel&#xA;&#x9;&#x9;  processing to collect and prepare data for timely report generation. &#xA;&#x9;&#x9;&lt;/li&gt;&lt;li id=&#34;li_1DD8A18EB7B14CFD9393DA158AF6DB09&#34;&gt;Supports custom data&#xA;&#x9;&#x9;  segmentation because raw data is available. &#xA;&#x9;&#x9;&lt;/li&gt;&lt;li id=&#34;li_BCFBF16FB97A4B3396D781F0B8DAA92E&#34;&gt;Makes &#xA;&#x9;&#x9;  &lt;b&gt;Page Views&lt;/b&gt;, &#xA;&#x9;&#x9;  &lt;b&gt;Visits&lt;/b&gt;, and &#xA;&#x9;&#x9;  &lt;b&gt;Unique Visitors&lt;/b&gt; metrics accessible from any&#xA;&#x9;&#x9;  report, except correlation and a handful of other reports. &#xA;&#x9;&#x9;&lt;/li&gt;&lt;/ol&gt;&lt;/p&gt;"/>
+            </par>
+         </jcr:content>
+         <r_unavail_reports jcr:primaryType="cq:Page"/>
+         <data_access jcr:primaryType="cq:Page">
+            <jcr:content jcr:primaryType="nt:unstructured"
+                         jcr:title="Data Accessibility"
+                         sling:resourceType="wcm/foundation/components/page">
+               <par jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/parsys">
+                  <text jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/foundation/components/text"
+                        textIsRich="true"
+                        text="&lt;p&gt;The data is processed in one-hour blocks. About 30 minutes after the end&#xA;&#x9;&#x9;of an hour, data for that hour is visible in &#xA;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt; 15. For the next hour, data is processed&#xA;&#x9;&#x9;into a batch. As such, data availability oscillates between 30 and 90 minutes.&#xA;&#x9;&#x9;This delay decreases with future releases of &#xA;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt;.&#xA;&#x9; &lt;/p&gt;&lt;p&gt;In &#xA;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt; 14, different types of data were&#xA;&#x9;&#x9;available at different intervals. For example, traffic data was available to &#xA;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt; reports in a 90-second delay, while&#xA;&#x9;&#x9;conversion data was available in a 20-30-minute delay.&#xA;&#x9; &lt;/p&gt;&lt;p&gt;&lt;b&gt;SiteCatalyst&lt;/b&gt; 15 applies consistent data availability&#xA;&#x9;&#x9;rules across all types of collected data. For example, in &#xA;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt; 14 the &#xA;&#x9;&#x9;&lt;b&gt;Page Views&lt;/b&gt; and &#xA;&#x9;&#x9;&lt;b&gt;Visits&lt;/b&gt; metrics were updated at different times. This&#xA;&#x9;&#x9;difference caused calculated metrics (such as &#xA;&#x9;&#x9;&lt;b&gt;Page Views per Visit&lt;/b&gt;) to be overstated for the&#xA;&#x9;&#x9;current day. In &#xA;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt; 15, all metrics and dimensions appear at&#xA;&#x9;&#x9;the same time, providing a more consistent view of your metrics.&#xA;&#x9; &lt;/p&gt;"/>
+               </par>
+            </jcr:content>
+         </data_access>
+         <t_visits_metric jcr:primaryType="cq:Page">
+            <jcr:content jcr:primaryType="nt:unstructured"
+                         jcr:title="Visits Metric Includes Non-cookie Visitors"
+                         sling:resourceType="wcm/foundation/components/page">
+               <par jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/parsys">
+                  <text jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/foundation/components/text"
+                        textIsRich="true"
+                        text="&lt;p id=&#34;context_D6D6D13DBCAA4173992F8682C19F5990&#34;&gt;&lt;p&gt;To calculate the &#xA;&#x9;&#x9;  &lt;b&gt;Visits&lt;/b&gt; metric, &#xA;&#x9;&#x9;  &lt;b&gt;SiteCatalyst&lt;/b&gt; 14 reported only on visitors who&#xA;&#x9;&#x9;  accepted a tracking cookie. &#xA;&#x9;&#x9;  &lt;b&gt;SiteCatalyst&lt;/b&gt; 15 more accurately measures &#xA;&#x9;&#x9;  &lt;b&gt;Visits&lt;/b&gt; by including visitors who do not accept a&#xA;&#x9;&#x9;  tracking cookie. As a result, the &#xA;&#x9;&#x9;  &lt;b&gt;Visits&lt;/b&gt; metric in most cases reports a larger value&#xA;&#x9;&#x9;  when compared to previous &#xA;&#x9;&#x9;  &lt;b&gt;SiteCatalyst&lt;/b&gt; versions under the same circumstances. &#xA;&#x9;&#x9;&lt;/p&gt;&lt;p&gt;This change affects any report that uses the &#xA;&#x9;&#x9;  &lt;b&gt;Visits&lt;/b&gt; metric, including &#xA;&#x9;&#x9;  &lt;b&gt;Path&lt;/b&gt; reports and calculated metrics. Calculated&#xA;&#x9;&#x9;  metric values can increase or decrease, depending on whether &#xA;&#x9;&#x9;  &lt;b&gt;Visits&lt;/b&gt; is the denominator or numerator in the&#xA;&#x9;&#x9;  calculation. For example, in an &#xA;&#x9;&#x9;  &lt;b&gt;Orders / Visit&lt;/b&gt; calculation the value is likely to&#xA;&#x9;&#x9;  decrease. In &#xA;&#x9;&#x9;  &lt;b&gt;Visits / Visitor&lt;/b&gt;, the value is likely to increase.&#xA;&#x9;&#x9;  &#xA;&#x9;&#x9;&lt;/p&gt;&lt;p&gt;To see the percentage of users who do not accept persistent cookies: &#xA;&#x9;&#x9;&lt;/p&gt;&lt;/p&gt;&lt;ul id=&#34;steps_3E5003F9DC264405AD3D4FC80F5170B7&#34;&gt;&lt;li id=&#34;step_7DFF9AC3BCF74C33AAD7276CE8B3F779&#34;&gt;&lt;b&gt;Click &#xA;&#x9;&#x9;&#x9; &lt;b&gt;Site Metrics&lt;/b&gt; &gt; &#xA;&#x9;&#x9;&#x9; &lt;b&gt;Visitors&lt;/b&gt; &gt; &#xA;&#x9;&#x9;&#x9; &lt;b&gt;Unique Visitors&lt;/b&gt;. &#xA;&#x9;&#x9;  &lt;/b&gt;&lt;/li&gt;&lt;li id=&#34;step_772C9BB7290946668F7FDF9DC8F681CB&#34;&gt;&lt;b&gt;Click &#xA;&#x9;&#x9;&#x9; &lt;b&gt;Filter: Persistent Cookies&lt;/b&gt;. &#xA;&#x9;&#x9;  &lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p id=&#34;postreq_1B05D71E9BBB4104B6484B23DB9F7F24&#34;&gt;&lt;p&gt;&lt;img src=&#34;../../graphics/visits_metric.png&#34; id=&#34;image_950F641F8EA24421909F482324B7B840&#34; /&gt;&lt;/p&gt;&lt;p&gt;The non-persistent cookie visitors are added to the results. You can&#xA;&#x9;&#x9;  download the report to CSV or Excel and divide the non-persistent cookie&#xA;&#x9;&#x9;  visitors by total visitors. This represents the percent by which the visits&#xA;&#x9;&#x9;  increase after you upgrade to &#xA;&#x9;&#x9;  &lt;b&gt;SiteCatalyst&lt;/b&gt; 15. This increase ranges from 0.2% (for&#xA;&#x9;&#x9;  report suites fed entirely by first-party cookies) to 11-14% for report suites&#xA;&#x9;&#x9;  entirely on third-party cookies. &#xA;&#x9;&#x9;&lt;/p&gt;&lt;/p&gt;"/>
+               </par>
+            </jcr:content>
+         </t_visits_metric>
+         <metric_visits jcr:primaryType="cq:Page">
+            <jcr:content jcr:primaryType="nt:unstructured"
+                         jcr:title="Updated Visits Metric for Typed Bookmarked in Referring Domains&#xA;&#x9; Report"
+                         sling:resourceType="wcm/foundation/components/page">
+               <par jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/parsys">
+                  <text jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/foundation/components/text"
+                        textIsRich="true"
+                        text="&lt;p&gt;In &#xA;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt; 14, &#xA;&#x9;&#x9;&lt;b&gt;Typed/Bookmarked&lt;/b&gt; was counted anytime a visit&#xA;&#x9;&#x9;contained a server call with no referrer specified, regardless of where the&#xA;&#x9;&#x9;server call occurred during the visit.&#xA;&#x9; &lt;/p&gt;&lt;p&gt;Since the referrer can often be empty mid-visit due to actions such as &#xA;&#x9;&#x9;&lt;b&gt;Flash&lt;/b&gt; navigation and redirects, &#xA;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt; 15 was improved to count &#xA;&#x9;&#x9;&lt;b&gt;Typed/Bookmarked&lt;/b&gt; only when a visit starts with a&#xA;&#x9;&#x9;server call with no referrer specified.&#xA;&#x9; &lt;/p&gt;&lt;p&gt;With this change, in &#xA;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt; 15 &#xA;&#x9;&#x9;&lt;b&gt;Instances of Typed/Bookmarked&lt;/b&gt; should match &#xA;&#x9;&#x9;&lt;b&gt;Visits&lt;/b&gt;, whereas, in &#xA;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt; 14, &#xA;&#x9;&#x9;&lt;b&gt;Instances&lt;/b&gt; were typically lower than &#xA;&#x9;&#x9;&lt;b&gt;Visits&lt;/b&gt;.&#xA;&#x9; &lt;/p&gt;"/>
+               </par>
+            </jcr:content>
+         </metric_visits>
+         <r_time_spent_calc jcr:primaryType="cq:Page"/>
+         <dup_visitors jcr:primaryType="cq:Page">
+            <jcr:content jcr:primaryType="nt:unstructured"
+                         jcr:title="Remove Duplicate Visitors and Unique Visits"
+                         sling:resourceType="wcm/foundation/components/page">
+               <par jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/parsys">
+                  <text jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/foundation/components/text"
+                        textIsRich="true"
+                        text="&lt;p&gt;For example, if two video clips shared the same classification, a single&#xA;&#x9;&#x9;visitor that viewed both clips generated two &#xA;&#x9;&#x9;&lt;b&gt;Visits&lt;/b&gt; and &#xA;&#x9;&#x9;&lt;b&gt;Unique Visitors&lt;/b&gt; in the classification-based report.&#xA;&#x9; &lt;/p&gt;&lt;p&gt;&lt;b&gt;SiteCatalyst&lt;/b&gt; 15 removes duplicate &#xA;&#x9;&#x9;&lt;b&gt;Visits&lt;/b&gt; and &#xA;&#x9;&#x9;&lt;b&gt;Unique Visitors&lt;/b&gt; from the classification-based&#xA;&#x9;&#x9;report. This is a more accurate measure of &#xA;&#x9;&#x9;&lt;b&gt;Visits&lt;/b&gt; and &#xA;&#x9;&#x9;&lt;b&gt;Visitors&lt;/b&gt;, but typically results in a decrease in&#xA;&#x9;&#x9;your &#xA;&#x9;&#x9;&lt;b&gt;Visits&lt;/b&gt; and &#xA;&#x9;&#x9;&lt;b&gt;Unique Visitors&lt;/b&gt; metrics for classification-based&#xA;&#x9;&#x9;reports, when compared to data collected prior to upgrade.&#xA;&#x9; &lt;/p&gt;"/>
+               </par>
+            </jcr:content>
+         </dup_visitors>
+         <dup_merch_evars jcr:primaryType="cq:Page">
+            <jcr:content jcr:primaryType="nt:unstructured"
+                         jcr:title="Remove Duplicates from Merchandising eVars"
+                         sling:resourceType="wcm/foundation/components/page">
+               <par jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/parsys">
+                  <text jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/foundation/components/text"
+                        textIsRich="true"
+                        text="&lt;p&gt;For example, if two products share the same merchandising eVar value, a&#xA;&#x9;&#x9;visitor that purchases both products in the same conversion event generated two&#xA;&#x9;&#x9;&#xA;&#x9;&#x9;&lt;b&gt;Orders&lt;/b&gt; on the merchandising eVar. &#xA;&#x9; &lt;/p&gt;&lt;p&gt;&lt;b&gt;SiteCatalyst&lt;/b&gt; 15 removes duplicate metrics for&#xA;&#x9;&#x9;merchandising eVars by counting multi-product orders using a single&#xA;&#x9;&#x9;merchandising eVar as a single &#xA;&#x9;&#x9;&lt;b&gt;Order&lt;/b&gt;. The result is a more accurate measure of&#xA;&#x9;&#x9;orders associated with a particular merchandising eVar, but typically results&#xA;&#x9;&#x9;in a drop in the &#xA;&#x9;&#x9;&lt;b&gt;Orders&lt;/b&gt; metric when compared to previous &#xA;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt; versions under the same circumstances. &#xA;&#x9; &lt;/p&gt;"/>
+               </par>
+            </jcr:content>
+         </dup_merch_evars>
+         <r_sc_seg_diff jcr:primaryType="cq:Page"/>
+         <conv_reports jcr:primaryType="cq:Page">
+            <jcr:content jcr:primaryType="nt:unstructured"
+                         jcr:title="Conversion Reports - Counting Visits and Daily Unique Visitors"
+                         sling:resourceType="wcm/foundation/components/page">
+               <par jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/parsys">
+                  <text jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/foundation/components/text"
+                        textIsRich="true"
+                        text="&lt;p&gt;In &#xA;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt; 15, all visits are counted in conversion&#xA;&#x9;&#x9;reports, regardless of whether the visitor triggered a conversion event.&#xA;&#x9; &lt;/p&gt;"/>
+               </par>
+            </jcr:content>
+         </conv_reports>
+         <reporting_limits jcr:primaryType="cq:Page">
+            <jcr:content jcr:primaryType="nt:unstructured"
+                         jcr:title="Improved Reporting Limits for Monthly Unique Values"
+                         sling:resourceType="wcm/foundation/components/page">
+               <par jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/parsys">
+                  <text jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/foundation/components/text"
+                        textIsRich="true"
+                        text="&lt;p&gt;At the beginning of each calendar month, &#xA;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt; includes the first 500,000 values&#xA;&#x9;&#x9;received for any single variable in reports. This includes page names, and&#xA;&#x9;&#x9;other traffic and commerce variables. For example, each unique page name on&#xA;&#x9;&#x9;your site counts toward this total. &#xA;&#x9; &lt;/p&gt;&lt;p&gt;After 500,000 unique values are received, &#xA;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt; begins to optimize which values are&#xA;&#x9;&#x9;displayed in reports. When new values are received after this threshold, &#xA;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt; initially groups these values in a single&#xA;&#x9;&#x9;line item in reports titled &#xA;&#x9;&#x9;&lt;b&gt;Uniques Exceeded&lt;/b&gt;. &#xA;&#x9; &lt;/p&gt;&lt;p&gt;If one of these values begins to receive significant traffic, the value&#xA;&#x9;&#x9;is reported as a separate line item in &#xA;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt; along with the first 500,000 values for&#xA;&#x9;&#x9;the remainder of the month (the first 500,000 values are always reported&#xA;&#x9;&#x9;separately regardless of traffic). &#xA;&#x9; &lt;/p&gt;&lt;p&gt;If the number of unique values exceed 1 million in a single month, a&#xA;&#x9;&#x9;second threshold is applied which requires more traffic before a value is&#xA;&#x9;&#x9;reported as a separate line item in &#xA;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt;. For example, a new page that starts to&#xA;&#x9;&#x9;receive 100 hits per day is reported as a separate line item, but a new page&#xA;&#x9;&#x9;that receives fewer than 10 hits might not. &#xA;&#x9; &lt;/p&gt;&lt;p&gt;&lt;b&gt;SiteCatalyst&lt;/b&gt; 14 and &#xA;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt; 15 have the same threshold limits before&#xA;&#x9;&#x9;management starts. These thresholds are 500,000 and 1 million unique values by&#xA;&#x9;&#x9;default. All values, including each unique value in &#xA;&#x9;&#x9;&lt;b&gt;Uniques Exceeded&lt;/b&gt;, are available in &#xA;&#x9;&#x9;&lt;b&gt;DataWarehouse&lt;/b&gt; reports. &#xA;&#x9; &lt;/p&gt;&lt;p&gt;If you have a custom unique value limit, the following applies: &#xA;&#x9; &lt;/p&gt;&lt;ul id=&#34;ul_C31CBFE88A064CDEA82358048DE6DE05&#34;&gt;&lt;li id=&#34;li_85F8C357AD874E919935B7B8BD359A05&#34;&gt;If you have a uniques limit&#xA;&#x9;&#x9;  set to less than 500,000, your limit is used for both the lower and upper&#xA;&#x9;&#x9;  thresholds. &#xA;&#x9;&#x9;&lt;/li&gt;&lt;li id=&#34;li_8C68D48576A54A16A33561E61932AA05&#34;&gt;If you have a uniques limit&#xA;&#x9;&#x9;  set between 500,000 and 1,000,000 today, your limit is used for the lower&#xA;&#x9;&#x9;  threshold and 1,000,000 for the upper threshold. &#xA;&#x9;&#x9;&lt;/li&gt;&lt;li id=&#34;li_F3D122BFD934462499205CE7C27F66CD&#34;&gt;If you have a uniques limit&#xA;&#x9;&#x9;  set above 1,000,000 today, your limit is used for both the lower and upper&#xA;&#x9;&#x9;  thresholds. &#xA;&#x9;&#x9;&lt;/li&gt;&lt;/ul&gt;"/>
+               </par>
+            </jcr:content>
+         </reporting_limits>
+         <mobile_traffic jcr:primaryType="cq:Page">
+            <jcr:content jcr:primaryType="nt:unstructured"
+                         jcr:title="How Mobile Traffic Displays in Technology Reports"
+                         sling:resourceType="wcm/foundation/components/page">
+               <par jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/parsys">
+                  <text jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/foundation/components/text"
+                        textIsRich="true"
+                        text="&lt;p&gt;For example, if you run a &#xA;&#x9;&#x9;&lt;b&gt;Browsers&lt;/b&gt; report (&lt;b&gt;Visitor&#xA;&#x9;&#x9;  Profile&lt;/b&gt; &gt; &#xA;&#x9;&#x9;&lt;b&gt;Technology&lt;/b&gt; &gt; &#xA;&#x9;&#x9;&lt;b&gt;Browser&lt;/b&gt;) and apply a &#xA;&#x9;&#x9;&lt;b&gt;Visits from Mobile Device&lt;/b&gt; segment, the data displays&#xA;&#x9;&#x9;under None in the report table. This functionality also applies to mobile&#xA;&#x9;&#x9;reports that are broken down by &#xA;&#x9;&#x9;&lt;b&gt;Browser&lt;/b&gt;. In the affected reports, you might see an&#xA;&#x9;&#x9;increase of visitors that do not accept cookies or JavaScript because visitors&#xA;&#x9;&#x9;are using mobile devices.&#xA;&#x9; &lt;/p&gt;"/>
+               </par>
+            </jcr:content>
+         </mobile_traffic>
+         <historical_data jcr:primaryType="cq:Page">
+            <jcr:content jcr:primaryType="nt:unstructured"
+                         jcr:title="Historical Data and Rollup Report Suites"
+                         sling:resourceType="wcm/foundation/components/page">
+               <par jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/parsys">
+                  <text jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/foundation/components/text"
+                        textIsRich="true"
+                        text="&lt;p&gt;Roll-up report suites are not yet supported. &#xA;&#x9; &lt;/p&gt;"/>
+               </par>
+            </jcr:content>
+         </historical_data>
+         <instances_metric jcr:primaryType="cq:Page">
+            <jcr:content jcr:primaryType="nt:unstructured"
+                         jcr:title="Instances Metric on Merchandising eVars"
+                         sling:resourceType="wcm/foundation/components/page">
+               <par jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/parsys">
+                  <text jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/foundation/components/text"
+                        textIsRich="true"
+                        text="&lt;p&gt;&lt;b&gt;Instances&lt;/b&gt; on standard eVars function as expected.&#xA;&#x9;&#x9;This will be resolved in an upcoming release of &#xA;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt;.&#xA;&#x9; &lt;/p&gt;"/>
+               </par>
+            </jcr:content>
+         </instances_metric>
+         <prod_string jcr:primaryType="cq:Page">
+            <jcr:content jcr:primaryType="nt:unstructured"
+                         jcr:title="Category Section of the Product String"
+                         sling:resourceType="wcm/foundation/components/page">
+               <par jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/parsys">
+                  <text jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/foundation/components/text"
+                        textIsRich="true"
+                        text="&lt;p&gt;For example:&#xA;&#x9; &lt;/p&gt;&lt;p&gt;&lt;i&gt;s.products=”category;product;quantity;price;...”&lt;/i&gt;&lt;/p&gt;&lt;p&gt;In &#xA;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt; 14, the first category associated with a&#xA;&#x9;&#x9;product in a calendar month would be tied to that product for the entire month.&#xA;&#x9; &lt;/p&gt;&lt;p&gt;&lt;b&gt;SiteCatalyst&lt;/b&gt; 15 allows multiple categories per&#xA;&#x9;&#x9;product. If you have products in multiple categories in the product string, you&#xA;&#x9;&#x9;might see different values in the category report than you did before.&#xA;&#x9; &lt;/p&gt;"/>
+               </par>
+            </jcr:content>
+         </prod_string>
+      </data_proc_dif>
+      <r_man_segments jcr:primaryType="cq:Page"/>
+      <video_tracking jcr:primaryType="cq:Page">
+         <jcr:content jcr:primaryType="nt:unstructured"
+                      jcr:title="Upgrading Video Tracking for SiteCatalyst 15"
+                      sling:resourceType="wcm/foundation/components/page">
+            <par jcr:primaryType="nt:unstructured"
+                 sling:resourceType="wcm/foundation/components/parsys">
+               <text jcr:primaryType="nt:unstructured"
+                     sling:resourceType="wcm/foundation/components/text"
+                     textIsRich="true"
+                     text="&lt;p&gt;Complete details are available in the &#xA;&#x9;&#x9;&lt;a href=&#34;http://microsite.omniture.com/t2/help/en_US/sc/appmeasurement/video/index.html#Measuring_Video_in_SiteCatalyst&#34; format=&#34;http&#34; scope=&#34;external&#34;&gt;Measuring Video in SiteCatalyst guide&lt;/a&gt;.&#xA;&#x9; &lt;/p&gt;"/>
+            </par>
+         </jcr:content>
+      </video_tracking>
+      <notify_users jcr:primaryType="cq:Page">
+         <jcr:content jcr:primaryType="nt:unstructured"
+                      jcr:title="Notifying Users About the Upgrade"
+                      sling:resourceType="wcm/foundation/components/page">
+            <par jcr:primaryType="nt:unstructured"
+                 sling:resourceType="wcm/foundation/components/parsys">
+               <text jcr:primaryType="nt:unstructured"
+                     sling:resourceType="wcm/foundation/components/text"
+                     textIsRich="true"
+                     text="&lt;p&gt;Adobe recommends using both email notifications and &#xA;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt; home page announcements to educate users.&#xA;&#x9;&#x9;&#xA;&#x9; &lt;/p&gt;&lt;p&gt;Your Adobe Account Manager is available to help you organize and prepare&#xA;&#x9;&#x9;upgrade materials and training specific to your organization’s needs. Contact&#xA;&#x9;&#x9;your Account Manager for more information. &#xA;&#x9; &lt;/p&gt;"/>
+            </par>
+         </jcr:content>
+         <email_notif jcr:primaryType="cq:Page">
+            <jcr:content jcr:primaryType="nt:unstructured"
+                         jcr:title="Sample Email Notification"
+                         sling:resourceType="wcm/foundation/components/page">
+               <par jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/parsys">
+                  <text jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/foundation/components/text"
+                        textIsRich="true"
+                        text="&lt;p&gt;&lt;b&gt;Sample Email Notification&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Subject:&lt;/b&gt; Important changes to your &#xA;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt; Reports &#xA;&#x9; &lt;/p&gt;&lt;p&gt;&lt;b&gt;Attachment:&lt;/b&gt;&lt;a href=&#34;http://microsite.omniture.com/t2/help/en_US/sc/overview/SiteCatalyst_15_Feature_Overview.pdf&#34; format=&#34;http&#34; scope=&#34;external&#34;&gt;SiteCatalyst 15 Feature Overview&lt;/a&gt;&#xA;&#x9;&#x9;(download using this link and attach the PDF to the email). &#xA;&#x9; &lt;/p&gt;&lt;p&gt;&lt;b&gt;Body:&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Good news! As of &lt;upgrade date&gt;, all &#xA;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt; report suites will upgrade to the &#xA;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt; 15 platform. &#xA;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt; 15 offers many new features, including: &#xA;&#x9; &lt;/p&gt;&lt;p&gt;&lt;ul id=&#34;ul_84D55541BE7D40A58857386CA95159FE&#34;&gt;&lt;li id=&#34;li_B82155CD57FB42A1BC2A28473C007E99&#34;&gt;Real-time segmentation on&#xA;&#x9;&#x9;  all reports &#xA;&#x9;&#x9;&lt;/li&gt;&lt;li id=&#34;li_DCF44E99A2DC437899FED1E0B33E67CC&#34;&gt;Full subrelations enabled on&#xA;&#x9;&#x9;  all conversion reports by default &#xA;&#x9;&#x9;&lt;/li&gt;&lt;li id=&#34;li_6D3DAEA01DAC42429FFBF6AC53F63D5C&#34;&gt;Improved metric calculations&#xA;&#x9;&#x9;  for more accurate analysis &#xA;&#x9;&#x9;&lt;/li&gt;&lt;li id=&#34;li_E454E3CAE8F54EE8A4EF0D882278514C&#34;&gt;Improved dashboard and&#xA;&#x9;&#x9;  administration capabilities &#xA;&#x9;&#x9;&lt;/li&gt;&lt;li id=&#34;li_43785683AF204E6CBAD6CA6100444C24&#34;&gt;And much more, outlined in&#xA;&#x9;&#x9;  the attached Feature Overview &#xA;&#x9;&#x9;&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;&lt;p&gt;With this change you should be aware that the improved metric&#xA;&#x9;&#x9;calculations in &#xA;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt; 15 might affect your current reports, as&#xA;&#x9;&#x9;outlined here: &#xA;&#x9; &lt;/p&gt;&lt;p&gt;&lt;ul id=&#34;ul_A311F107F1E442DD85EE5CBD5F8039B2&#34;&gt;&lt;li id=&#34;li_48CC4C278DD3410FB9C2A897331C4B66&#34;&gt;The &#xA;&#x9;&#x9;  &lt;b&gt;Visits&lt;/b&gt; metric now includes visitors without a&#xA;&#x9;&#x9;  visitor ID cookie. This change typically increases &#xA;&#x9;&#x9;  &lt;b&gt;Visits&lt;/b&gt;, and also affects any calculated metrics&#xA;&#x9;&#x9;  that rely on the &#xA;&#x9;&#x9;  &lt;b&gt;Visits&lt;/b&gt; metric, such as &#xA;&#x9;&#x9;  &lt;b&gt;Success Events per Visit&lt;/b&gt;. &#xA;&#x9;&#x9;&lt;/li&gt;&lt;li id=&#34;li_0C0F27CBB30E4EC98348DED4AE1FCA27&#34;&gt;&lt;b&gt;Time&#xA;&#x9;&#x9;&#x9; Spent&lt;/b&gt; metrics more accurately calculate a visitor’s time spent on a&#xA;&#x9;&#x9;  page. This change typically increases &#xA;&#x9;&#x9;  &lt;b&gt;Time Spent&lt;/b&gt; metric. &#xA;&#x9;&#x9;&lt;/li&gt;&lt;li id=&#34;li_DD8DB0FD224A40BF878B9B527B1871D6&#34;&gt;&lt;b&gt;Unique&#xA;&#x9;&#x9;&#x9; Visits&lt;/b&gt; and &#xA;&#x9;&#x9;  &lt;b&gt;Unique Visitors&lt;/b&gt; metrics in classification reports&#xA;&#x9;&#x9;  no longer duplicate visitor counts. This change reduces the reported number of&#xA;&#x9;&#x9;  unique visits and visitors to a website. &#xA;&#x9;&#x9;&lt;/li&gt;&lt;li id=&#34;li_D0AFF8C4121149E2A45AA3E7869A7219&#34;&gt;&lt;b&gt;Orders&lt;/b&gt;&#xA;&#x9;&#x9;  and other metrics on merchandising eVars is similarly not duplicated on &#xA;&#x9;&#x9;  &lt;b&gt;SiteCatalyst&lt;/b&gt; 15. This change may reduce the reported&#xA;&#x9;&#x9;  metrics on merchandising eVar reports. &#xA;&#x9;&#x9;&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;&lt;p&gt;Carefully review the attached &#xA;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt; 15 Feature Overview for more information&#xA;&#x9;&#x9;about the data processing changes in &#xA;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt; 15. Direct any questions or concerns you&#xA;&#x9;&#x9;might have to &lt;SiteCatalyst Administrator&gt;. &#xA;&#x9; &lt;/p&gt;"/>
+               </par>
+            </jcr:content>
+         </email_notif>
+         <home_page_ann jcr:primaryType="cq:Page">
+            <jcr:content jcr:primaryType="nt:unstructured"
+                         jcr:title="Sample Home Page Announcement"
+                         sling:resourceType="wcm/foundation/components/page">
+               <par jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/parsys">
+                  <text jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/foundation/components/text"
+                        textIsRich="true"
+                        text="&lt;p&gt;As of &lt;upgrade date&gt;, this report suite will use the &#xA;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt; 15 data processing platform. For more&#xA;&#x9;&#x9;information about how this might affect you, see the &lt;link: SiteCatalyst 15&#xA;&#x9;&#x9;Upgrade Guide&gt;. &#xA;&#x9; &lt;/p&gt;&lt;p&gt;You can add a Home Page Announcement by clicking &#xA;&#x9;&#x9;&lt;b&gt;Admin&lt;/b&gt; &gt; &#xA;&#x9;&#x9;&lt;b&gt;Company&lt;/b&gt; and selecting &#xA;&#x9;&#x9;&lt;b&gt;Home Page Announcements&lt;/b&gt;. &#xA;&#x9; &lt;/p&gt;"/>
+               </par>
+            </jcr:content>
+         </home_page_ann>
+         <post_upgrade_notif jcr:primaryType="cq:Page">
+            <jcr:content jcr:primaryType="nt:unstructured"
+                         jcr:title="Post-Upgrade Notifications"
+                         sling:resourceType="wcm/foundation/components/page">
+               <par jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/parsys">
+                  <text jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/foundation/components/text"
+                        textIsRich="true"
+                        text="&lt;p&gt;For example, when a &#xA;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt; user generates a report with data that&#xA;&#x9;&#x9;spans the upgrade date, &#xA;&#x9;&#x9;&lt;b&gt;SiteCatalyst&lt;/b&gt; displays a message similar to the&#xA;&#x9;&#x9;following:&#xA;&#x9; &lt;/p&gt;&lt;p&gt;&lt;img src=&#34;../../graphics/sample_ui_message.png&#34; id=&#34;image_BF20C417B75346119E4428130C08FB60&#34; /&gt;&lt;/p&gt;"/>
+               </par>
+            </jcr:content>
+         </post_upgrade_notif>
+      </notify_users>
+      <t_post_upgrade_checklist jcr:primaryType="cq:Page">
+         <jcr:content jcr:primaryType="nt:unstructured"
+                      jcr:title="Post-Upgrade Checklist"
+                      sling:resourceType="wcm/foundation/components/page">
+            <par jcr:primaryType="nt:unstructured"
+                 sling:resourceType="wcm/foundation/components/parsys">
+               <text jcr:primaryType="nt:unstructured"
+                     sling:resourceType="wcm/foundation/components/text"
+                     textIsRich="true"
+                     text="&lt;p id=&#34;context_19D7BBE293D54CF7A4A576FEB1EFFDB4&#34;&gt;&lt;p&gt;These should be performed after your scheduled upgrade date. &#xA;&#x9;&#x9;&lt;/p&gt;&lt;/p&gt;&lt;ul id=&#34;steps_3FD83CD0FEDC44F59D1DEA1B767DC387&#34;&gt;&lt;li id=&#34;step_977EBC26E1454143B2FDD2DF31367DCA&#34;&gt;&lt;b&gt;Run a report that spans the upgrade date and look for a message&#xA;&#x9;&#x9;&#x9; that indicates that some of the data was processed by a previous platform. This&#xA;&#x9;&#x9;&#x9; is the message that appears in &#xA;&#x9;&#x9;&#x9; &lt;b&gt;SiteCatalyst&lt;/b&gt; 15 when you view data that was&#xA;&#x9;&#x9;&#x9; collected by &#xA;&#x9;&#x9;&#x9; &lt;b&gt;SiteCatalyst&lt;/b&gt; 14. &#xA;&#x9;&#x9;  &lt;/b&gt;&lt;/li&gt;&lt;li id=&#34;step_A729707D33714583BE7E799383F4ABC2&#34;&gt;&lt;b&gt;Verify that segments appear in the drop-down. If you see&#xA;&#x9;&#x9;&#x9; unexpected segments or if you would like to change the list of segments that&#xA;&#x9;&#x9;&#x9; appear, review &#xA;&#x9;&#x9;&#x9; &lt;a href=&#34;../r_man_segments.html#reference_B602C82274A1400CAD96F8F87548C457&#34; format=&#34;dita&#34; scope=&#34;local&#34;&gt;Managing Segments&lt;/a&gt;. &#xA;&#x9;&#x9;  &lt;/b&gt;&lt;/li&gt;&lt;li id=&#34;step_EAC10586A2C14E3287DF9BF92DFADC42&#34;&gt;&lt;b&gt;Check the &#xA;&#x9;&#x9;&#x9; &lt;b&gt;Visits&lt;/b&gt; metric to ensure the increases is similar&#xA;&#x9;&#x9;&#x9; to what was expected. &#xA;&#x9;&#x9;  &lt;/b&gt;&lt;/li&gt;&lt;li id=&#34;step_AA64095C2E2F426881740346FDE3B9FA&#34;&gt;&lt;b&gt;Instruct users to select &#xA;&#x9;&#x9;&#x9; &lt;b&gt;Marketing Cloud/SiteCatalyst 15&lt;/b&gt; on the login&#xA;&#x9;&#x9;&#x9; page. The default version in the drop-down does not change automatically. &#xA;&#x9;&#x9;  &lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;"/>
+            </par>
+         </jcr:content>
+      </t_post_upgrade_checklist>
+      <r_faq jcr:primaryType="cq:Page"/>
+   </upgrade_home>
+</jcr:root>

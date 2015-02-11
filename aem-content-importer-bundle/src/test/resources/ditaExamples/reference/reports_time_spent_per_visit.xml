@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_E3D0FEC81E1F4987B39CC467F19FFCFF">
+  <title>Time Spent per Visit Report</title>
+  <shortdesc>Displays the amount of time that visitors spend on your entire
+	 site during each visit. You can use this report to gauge how long people are
+	 staying on your site, identify what site content or promotions are engaging
+	 visitor interest, and to find out why you have high traffic but short visits. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <note>See 
+		<xref href="metrics_time_spent.xml#concept_1241109A742947C9B73E5E2CA2362559" format="dita" scope="local"><?xm-replace_text Time Spent?></xref> for metric
+		calculation examples.
+	 </note>
+    <section id="section_E526B9F04A7948D498BB18090780B478">
+      <title>General Properties of the Report</title>
+      <p>
+        <ul id="ul_1A78E4EAB4B345DAB8A2911C911A5A76">
+          <li id="li_DCC346E1B96948F5B102274E42EACD1D">This report is
+			 automatically populated based on the timestamp of the first and last image
+			 request of a visit. 
+		  </li>
+          <li id="li_645DC31D0F6241DDB7CA83B46045A2BA"> This report requires at
+			 least two image requests per visit in order to populate data. Visits with a
+			 single image request are not included in this report. Meaning, this report will
+			 not match the visits report for the same time period. 
+		  </li>
+          <li id="li_D3D5BAF7822A4BE88A2990DA015D5907">Only nine line items can
+			 be displayed in this report: 
+		  </li>
+          <li id="li_49EAD33535E444D2A12133C47186E51B">
+            <ul id="ul_5665894069244A9580331BCE9E566A85">
+              <li id="li_E74ABC3B84704530BB8D711BB6155A66">Less than 1 minute 
+				</li>
+              <li id="li_84A9E752FC2146CEBED0D5105D92C2AB">1-5 minutes 
+				</li>
+              <li id="li_70FBA532AFFF4F559B77001D229B5981">5-10 minutes 
+				</li>
+              <li id="li_26C2C4ED5FB446A18ACFC70396262B80">10-30 minutes 
+				</li>
+              <li id="li_DCE9422A3BBD4584AB2DE41048D88C27">30-60 minutes 
+				</li>
+              <li id="li_768E61052F9D43F4A8C6740BAFEE3A2D">1-2 hours 
+				</li>
+              <li id="li_738C5B931E4443A68DDCC63B7B3FB66B">2-5 hours 
+				</li>
+              <li id="li_248A5F694344407D938B79462391D4B3">5-10 hours 
+				</li>
+              <li id="li_EEAE8425F5154E6DA00BA7FF00F43528">10-15 hours 
+				</li>
+              <li id="li_2F21630D0C6140EEB92E08C407EB3878">There cannot be
+				  buckets higher than this, because a visit expires after 12 hours of activity. 
+				</li>
+            </ul>
+          </li>
+          <li id="li_C1B6DAE75237439580AADCD204DF54DD">The following metrics can
+			 be used in this report (depending on organization and report suite settings): 
+		  </li>
+          <li id="li_EBA6116AD865448E949A18FE80B83714">
+            <ul id="ul_6B3B9A3BFB4E4E68BE5046B63BD5AF8F">
+              <li id="li_40D9CCACF4EF4CF7A52E177994E217AB"> Visits (Report
+				  Specific) 
+				</li>
+              <li id="li_1814FC48F1E041A59B47274B775A68D5">All standard eCommerce
+				  metrics: Revenue, Orders, Units, Carts, Cart Views, Checkouts, Cart Additions,
+				  Cart Removals. 
+				</li>
+              <li id="li_6E6E27EC05B645D39DE4FD9992697836">All custom events:
+				  Events 1-80, and Events 81-100 if on H22 code or higher 
+				</li>
+            </ul>
+          </li>
+          <li id="li_71AFF8ED8D984F66942F7D5308402DB7">This report can be viewed
+			 in trended and ranked formats. 
+		  </li>
+        </ul>
+      </p>
+    </section>
+    <section id="section_AF5F84B0ABB14E538AF36B37E4EB57B5">
+      <title>Product-Specific Properties</title>
+      <p>
+        <b>Version 13.5</b>
+      </p>
+      <ul id="ul_553426E070694518A5EF156292B6B2E6">
+        <li id="li_89EF6DBEB0594880B2C94E0053B9EAB3">This report can be
+			 accessed by going to 
+			 <p>Paths &gt; Pages &gt; Complete Paths &gt; Time Spent per Visit 
+			 </p>. 
+		  </li>
+        <li id="li_A86E7A0C7C1A4C4D9A6B88F945EDE8BF">A pie graph is displayed
+			 instead of bars when in ranked format. 
+		  </li>
+      </ul>
+      <p>
+        <b> Version 14</b>
+      </p>
+      <ul id="ul_E7891CD1841A435C99EAFE32E474489D">
+        <li id="li_1843CEB618774435BCED8BD3F820B6C6">
+          <uicontrol>Site Metrics</uicontrol> &gt; 
+			 <uicontrol>Time Spent per Visit</uicontrol> (provided the menu is not
+			 customized). 
+		  </li>
+        <li id="li_A7211DA1DA9C4B278B6D48B15CCFCA8E">This report can be broken
+			 down by the following reports when in ranked format: 
+		  </li>
+        <li id="li_6C6DDA4336DD41B38069B1F4C67AF906">
+          <p>
+            <ul id="ul_6594D98DE7C64311AEA1AA34C8F120AE">
+              <li id="li_EE0E511C3A66484FAE1DBCEF930087FE">Tracking Codes report
+				  and classifications 
+				</li>
+              <li id="li_E269D3D1DB974042975F42894304FFB2">Products and
+				  Categories reports 
+				</li>
+              <li id="li_3FF7AEED5AB64E06AF7A6138C2ED8608">Customer Loyalty
+				  report 
+				</li>
+              <li id="li_63DAF61ACFCD4B71B7400C50115EC428">All fully-subrelated
+				  eVars 
+				</li>
+            </ul>
+          </p>
+        </li>
+      </ul>
+      <title></title>
+      <p>
+        <b> Version 15</b>
+      </p>
+      <p>
+        <ul id="ul_5C6B891CED684437B944716CAE47A87C">
+          <li id="li_28A531051B8240E9BA73021CEABFC3AA">This report can also be
+			 accessed by going to 
+			 <p>Site Metrics | TimeSpentperVisit 
+			 </p>. 
+		  </li>
+          <li id="li_6AE89A02C8CF440587DC6F0645DDD87B">Visits (Report Specific)
+			 are replaced by Instances. 
+		  </li>
+          <li id="li_727A95072E4B4A33AD695CCAECC2746B">In addition to all the
+			 breakdowns listed in version 14, this report can also be broken down by the
+			 following: 
+		  </li>
+          <li id="li_02A2D66B060E403CA00EA2363F75132B">
+            <p>
+              <ul id="ul_B920BDA3F0EF4DA3BEEE58843A4A7925">
+                <li id="li_6E5263243C584045851F14AE2EF87F86">Pages and Site
+				  Sections, and all associated classifications 
+				</li>
+                <li id="li_759EF2CCB93F4C269BCF216A38FF8CD9">Entry Pages 
+				</li>
+                <li id="li_1A4C44B476B141B8A0E55F8BEB9EF331">Most Traffic Sources
+				  reports 
+				</li>
+                <li id="li_A2B3D6CDF30D423BA5A1DB9A5341AA6F">Visit Number 
+				</li>
+                <li id="li_C489E0EF5F7A41478DA6612AC92F1808">Many Visitor Profile
+				  Reports 
+				</li>
+                <li id="li_D0D95AA8A35A4799B66316ACAAD2391F">All conversion
+				  variables and list variables 
+				</li>
+                <li id="li_5919B4DC95CB4A9AA453A19A95BB45F9"> Target report 
+				</li>
+                <li id="li_35F8016B89CF4840B603DBAE51A7583C">Marketing Channels
+				  First and Last Touch 
+				</li>
+              </ul>
+            </p>
+          </li>
+          <li id="li_5AB321FD3B934BE197ABBF2ED03DE006">Visits, Daily Unique
+			 Visitors, and Unique Visitors are available as metrics. 
+		  </li>
+          <li id="li_61C4E5B3FCC644288007FE95E224DDBE">This report can utilize
+			 segments. 
+		  </li>
+        </ul>
+      </p>
+      <p>
+        <b> Ad Hoc Analysis 
+		  </b>
+      </p>
+      <p>
+        <ul id="ul_CA086AFA992D4E199014EDF72C74B5A5">
+          <li id="li_52A463E9C9D34748873F5E03D88A8898"> You can break down the
+			 Time Spent per Visit report by essentially all other reports in the marketing
+			 report interface. 
+		  </li>
+          <li id="li_3650D466CB494409808E82D7BB6BBD8C">In addition to all
+			 previously mentioned events, you can use all conversion and traffic metrics, as
+			 well as different allocation for all conversion metrics. 
+		  </li>
+          <li id="li_AE3A8D70D19344F2B8E747D5A69F3CC1">This report can use
+			 multiple highly advanced segments. 
+		  </li>
+        </ul>
+      </p>
+    </section>
+  </conbody>
+</concept>

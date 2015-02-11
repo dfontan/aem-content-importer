@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_CE002DF9573947EFAE66CCEC6CA21541" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Creating an Automated Decisioning
+	 Campaign</title>
+  <shortdesc class="- topic/shortdesc ">Creating an automated decisioning
+	 campaign requires several steps. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <steps id="steps_C2931FA2D8B744F1B4E72EC56523F7C5" class="- topic/ol task/steps ">
+      <step id="step_C75F2772F2CC45C1BDC1E167DC6CC584" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Campaigns</uicontrol>
+			 &gt; 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">1:1</uicontrol> or 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">1:1
+				Display</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_C0697F04E3434DBBA483C8A3BA90925C" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">
+          <xref href="c_Providing_High-Level_Information_About_a_Campaign.xml#concept_6E17BAE005474DCE8CBC35012279DB99" type="concept" format="dita" scope="local" class="- topic/xref ">Specify the
+				campaign name, targeting settings, and other high-level information about the
+				campaign.</xref>
+        </cmd>
+      </step>
+      <step id="step_CDE7E49EA9054C088848C95B1003D49F" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">
+          <xref href="t_Selecting_or_Creating_Offers.xml#task_7ED49CC3420744FEBCDC820A58E19F11" type="task" format="dita" scope="local" class="- topic/xref ">Select or create
+				the offers to be used in the campaign.</xref>
+        </cmd>
+      </step>
+      <step id="step_3398AF21565148059755E6D4B28219ED" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">
+          <xref href="c_Restricting_the_Content_to_be_Displayed.xml#concept_2472EC5342C34882A8DA2737316F7C87" type="concept" format="dita" scope="local" class="- topic/xref ">Find and
+				remove any experiences that you don't want users to see.</xref>
+        </cmd>
+      </step>
+      <step id="step_79BA5DBC809B47DFA4DAEB7BE24C43E8" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">
+          <xref href="c_1_1_Modeling_Groups.xml#concept_398B250EC2BD4B24ADF0A6316D1DCF9F" type="concept" format="dita" scope="local" class="- topic/xref ">Organize
+				related offers in groups.</xref>
+        </cmd>
+      </step>
+      <step id="step_5C0BA59CD15648558D43E7600C7B0A65" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">
+          <xref href="t_Setting_Conversion_and_Success_Metrics.xml#task_52EBE07CA34D4F37AD19D0DB999591F5" type="task" format="dita" scope="local" class="- topic/xref ">Choose conversion
+				or other success metrics.</xref>
+        </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">You can change the success metric for a
+				campaign as long as the conversion point stays the same (for example, still the
+				order confirmation page, not changing to the shopping cart page). It is best
+				practice to simply change the success metric for the modeling system. The
+				modeling system quickly updates upon saving the campaign to build new models. 
+			 </p>
+          <!--<p conref="reuse_optimize on any step.xml#ditacomponent_3B61995C4AC14468BFB82EC6E1F536CF/p_FD21A9226DCC43568A7055552893C6CE"><?xm-replace_text Paragraph?>
+			 </p>-->
+          <p class="- topic/p ">If the conversion point changes, then it is
+				best to copy the campaign, make the required conversion changes, and start this
+				new campaign fresh. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_36B9344DC887480683316E0E42E6A56D" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">
+          <xref href="c_Managing_Segment_Filters.xml#concept_DF9534D4168D46D4B109DD0D2FB57781" type="concept" format="dita" scope="local" class="- topic/xref ">Define
+				segments for the campaign.</xref>
+        </cmd>
+      </step>
+    </steps>
+    <result id="result_2FCF98A23C6947B09B6C5EBEE14A299C" class="- topic/section task/result ">
+      <p class="- topic/p ">The following topics contain more details. 
+		</p>
+    </result>
+  </taskbody>
+  <related-links class="- topic/related-links ">
+    <link href="c_Modeling_System_Overview.xml#concept_72FD62BDE64643DCA4E2089685889BF8" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Modeling System Overview?>
+    </link>
+    <link href="r_User_Profile_Variables.xml#reference_E9D8DDE19F5F413FBFF3C16F7D975134" type="reference" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text User Profile Variables?>
+    </link>
+    <link href="t_Selecting_or_Creating_Offers.xml#task_7ED49CC3420744FEBCDC820A58E19F11" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Selecting or Creating Offers?>
+    </link>
+    <link href="t_Previewing_and_Restricting_Display_Ad_Combinations.xml#task_1C5E4782F08B4DF3A64FC6E323E3F662" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Previewing and Restricting Display Ad   Combinations?>
+    </link>
+    <link href="c_Restricting_the_Content_to_be_Displayed.xml#concept_2472EC5342C34882A8DA2737316F7C87" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Restricting the Content to Display?>
+    </link>
+    <link href="c_Testing_Against_a_Control_Group.xml#concept_3BF1DAA6D6FE4013812F0E63EB7C31E5" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Testing Against a Control Group?>
+    </link>
+    <link href="c_Pausing_a_1_1_Campaign.xml#concept_3F0B78EC4D7A4C78AA8C74C3653A9377" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Pausing a 1:1 Campaign?>
+    </link>
+  </related-links>
+</task>

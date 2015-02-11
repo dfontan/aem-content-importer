@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_450257F45F8947A5A41F54C6CAEC3C8D"> 
+  <title>Metric Changes</title> 
+  <shortdesc>Metric changes between SiteCatalyst 14 and version 15. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Reports and analytics"/> 
+		<othermeta name="subtopic" content="Upgrading from V14"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p> 
+		<b>Page Views, Visits, and Unique Visitors:</b> These metrics are
+		available on all reports (with a few exceptions). The 
+		<wintitle>Unique Visitors</wintitle> metric represents unique visitors
+		for the time period of the report, rather than the sum of daily unique
+		visitors. 
+		<wintitle>Visits</wintitle> are available on all custom insight reports
+		without enabling pathing. 
+	 </p> 
+	 <p> 
+		<b>Page Views and Instances in Custom Traffic (Prop) Reports:</b> In
+		SiteCatalyst 14, 
+		<wintitle>Custom Traffic</wintitle> reports displayed 
+		<wintitle>Instances</wintitle> as 
+		<wintitle>Page Views</wintitle>. In version 15, we added the 
+		<wintitle>Instances</wintitle> metric to 
+		<wintitle>Custom Traffic</wintitle> reports. Now, 
+		<wintitle>Page Views</wintitle> reflects the number of page views where a
+		property variable is set. The 
+		<wintitle>Instances</wintitle> metric represents the number of times the
+		variable is set, whether on link clicks, video views, page views, or other
+		server calls. 
+	 </p> 
+	 <p> 
+		<b>Bounces:</b> A new metric defined as a single hit visit with no other
+		link event. For example, a single page visit is a bounce if a visitor does not
+		interact with the page in way that sends data to Adobe, such as clicking a link
+		or a video start. 
+	 </p> 
+	 <p> 
+		<b>Bounce Rate:</b> A new metric defined as 
+		<wintitle>Bounces</wintitle> divided by 
+		<wintitle>Entries</wintitle>. 
+	 </p> 
+	 <p> 
+		<b>Lifetime Metrics:</b> No longer available. 
+	 </p> 
+	 <p><b>Unique Visitors</b>: When reporting unique visitor across your
+		migration date, the Unique Visitors count will start over. We recommend not
+		spanning the migration date in reports utilizing quarterly and yearly Unique
+		Visitors metrics.
+	 </p>
+  </conbody> 
+</concept>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_E3D0FEC81E1F4987B39CC467F19FFCFF">
+  <title>Return Visits Report</title>
+  <shortdesc>A report showing the number of visits where visit number is
+	 greater than 1. The 
+	 <wintitle>Return Visits Report</wintitle> includes non-cookied visitors. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>
+      <?xm-replace_text Paragraph?>
+    </p>
+  </conbody>
+</concept>

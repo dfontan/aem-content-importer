@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_897DFD2D38CF42BABCE2D038EB4B41C9" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic concept/concept ">
+  <title class="- topic/title ">Targeting Groups</title>
+  <shortdesc class="- topic/shortdesc ">Targeting groups provide a means for
+	 you to reuse commonly created targeting rules. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody class="- topic/body  concept/conbody ">
+    <p class="- topic/p ">You can use them anywhere you would normally do
+		targeting: 
+	 </p>
+    <p class="- topic/p ">
+      <ul id="ul_E7CB3FF453E14FE3B684A1943C675B3D" class="- topic/ul ">
+        <li id="li_6EC3B9EEF08F4EE5B5967D8520F955BA" class="- topic/li "> Your
+		  campaign population selection 
+		</li>
+        <li id="li_2357D68E901F424AAE50A9C2F730FE52" class="- topic/li "> Your
+		  experience population selection 
+		</li>
+        <li id="li_4BCBBD33BCE14217AED3C9083D4E1871" class="- topic/li "> Success
+		  metrics 
+		</li>
+        <li id="li_51EF3ABB55CC4925A36E8A1F061182FC" class="- topic/li ">
+		  Segments 
+		</li>
+      </ul>
+    </p>
+  </conbody>
+  <related-links class="- topic/related-links ">
+    <link href="c_Understanding_the_Targeting_Interface.xml#concept_43A2AB6859FC4395A5011D1875240358" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Understanding the Targeting Interface?>
+    </link>
+    <link href="c_Preparing_a_targeted_Campaign_or_Test.xml#concept_BFAD03148B5A4BD3A597689658ABBF39" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Preparing a Targeted Campaign or Test?>
+    </link>
+    <link href="t_Inserting_Target_Conditions.xml#task_EEB5E801586E434BA5806BE171BC68E9" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Inserting Target Conditions?>
+    </link>
+    <link href="c_Validating_a_Targeted_Campaign.xml#concept_804F9A67161447579091BF818BDF0A5E" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Validating a Targeted Campaign?>
+    </link>
+  </related-links>
+</concept>

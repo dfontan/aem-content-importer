@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_C1820AD5843B4B81941B25E1079BB460">
+  <title>Acquisition</title>
+  <shortdesc> The attraction, enticement, gain, or addition of new visitors to
+	 your web site. You can create a calculated metric to determine the cost
+	 required to acquire each new visitor. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="subtopic" content="Glossary" />
+    </metadata>
+  </prolog>
+  <related-links>
+    <link href="metrics_calc_metrics.xml#concept_01B24DA5271049B0ADC34416B9866FE1" format="dita" scope="local">
+      <linktext>Calculated Metrics 
+		</linktext>
+    </link>
+  </related-links>
+</concept>

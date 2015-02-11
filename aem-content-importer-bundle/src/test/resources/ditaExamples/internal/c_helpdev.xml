@@ -1,0 +1,184 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_1F3EDE6409C3416BAFFEB54F13A51E1C"> 
+  <title>Product Help</title> 
+  <shortdesc>This content outlines the coordination between Engineering and
+	 TechPubs, regarding help development and access from the product interface. In
+	 the Digital Marketing Suite, product documentation is intended to be a formal
+	 part of the product. Access to information must be immediately available to
+	 users from Help menus, as well as context sensitively from selected dialog
+	 boxes and UI items. 
+  </shortdesc> 
+  <conbody> 
+	 <p><b>Guidelines</b> 
+	 </p> 
+	 <p>Please follow these steps when collaborating to create access to product
+		help: 
+	 </p> 
+	 <ol id="ol_66B030FE62C34D6F823D03B2FD87CFDB"> 
+		<li id="li_6A0B190E722F41F4A54E482A10E2394E">The writer generates help
+		  system file structure on the doc server. 
+		</li> 
+		<li id="li_33DF56B5B2B64643975B9AF712F0CCE6">The engineer provides access
+		  to the help system's landing page from the application's Help menu.
+		  (<uicontrol>Help</uicontrol> &gt; 
+		  <uicontrol>Help Contents</uicontrol>). 
+		  <p>Example landing page: 
+			 <filepath>http://microsite.omniture.com/t2/help/en_US/dsc/index.html</filepath>
+			 
+		  </p> 
+		  <p>In this example, 
+			 <term>dsc</term> represents the product folder (Discover), and 
+			 <term>index.html</term> is the common file name for help landing
+			 pages. 
+		  </p> 
+		</li> 
+		<li id="li_55D0D6F97CD846C1A06A81E856C37985">The writer and engineer
+		  collaborate on which features (dialogs, fields, and options) should include a
+		  context sensitive help icon, as shown here: 
+		  <p><image id="image_5CFD6E826682450297524613E5B4FBAB"
+			 href="graphics/dialog.png"><?xm-replace_text Paragraph?></image> 
+		  </p> 
+		  <p>You can place similar help icons on fields and options. However, do
+			 not clutter the interface with help icons on every field and option. Add them
+			 only to potentially confusing options. You can standardize them on dialog boxes
+			 and windows.
+		  </p> 
+		</li> 
+		<li id="li_CE2168EF649C471886376C0FA25C9C8A">The writer provides the URL
+		  to the engineer for the particular help icon. 
+		  <p>Example: 
+			 <filepath>http://microsite.omniture.com/t2/help/en_US/dsc/index.html?f=c_metrics_calculations</filepath>
+			 
+		  </p> 
+		  <p><b>Important</b>: The URL must follow the 
+			 <filepath>f=filename</filepath> format. (Do not add the 
+			 <filepath>.html</filepath> file extension. This is so that localized
+			 help systems and products resolve to the correct destination.)
+		  </p> 
+		  <p>When a user clicks the Help icon, a pop-up should display the text
+			 from the first para tag in the HTML of the target URL. After the short
+			 description, add a 
+			 <term>Click here for more information</term> link. For example: 
+		  </p> 
+		  <p><image id="image_A7CD328B2723426A902DFF6836352C5C"
+			 href="graphics/popup.png"><?xm-replace_text Paragraph?></image> 
+		  </p> 
+		  <p>When clicked, the link displays the whole topic from the target URL
+			 in the browser, as well as the help system's table of contents.
+		  </p> 
+		  <p>See 
+			 <xref href="t_coding_help.xml#task_47974212088C450E9B59F890D0A4E58B"
+			 format="dita" scope="local"><?xm-replace_text Coding the Help?></xref> for
+			 sample code. 
+		  </p>
+		</li> 
+	 </ol> 
+	 <p><b>Notes</b> 
+	 </p> 
+	 <table id="table_B5A2D120DB71454C88B810A5A5372BDC"> 
+		<tgroup cols="3"><colspec colnum="1" colname="col1"
+		  colwidth="*"/><colspec colname="col02" colnum="2" colwidth="1.50*"/><colspec
+		  colnum="3" colname="col2" colwidth="*"/><thead> 
+			 <row> 
+				<entry colname="col1">Item 
+				</entry> 
+				<entry colname="col02">Description 
+				</entry> 
+				<entry colname="col2">Location, or Sample URL 
+				</entry> 
+			 </row></thead> 
+		  <tbody> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p>Help Home 
+				  </p> 
+				</entry> 
+				<entry colname="col02"> 
+				  <p>The home page for all product documentation. This location 
+					 <i>replaces the Knowledge Garden</i> and provides access to all
+					 product docs, release notes, KB articles, implementation and developer docs. It
+					 also provides access to external resources like forums, blogs, EnterpriseTV,
+					 and AdobeTV. 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>In the Suite, located at 
+					 <uicontrol>Help</uicontrol> &gt; 
+					 <uicontrol>Help Home</uicontrol>. 
+				  </p> 
+				  <p><filepath>https://microsite.omniture.com/t2/help/en_US/home/index.html#Home</filepath>
+					 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p>Help Contents 
+				  </p> 
+				</entry> 
+				<entry colname="col02"> 
+				  <p>The name you use in your product's 
+					 <wintitle>Help</wintitle> menu. (For example, 
+					 <uicontrol>Help</uicontrol> &gt; 
+					 <uicontrol>Help Contents</uicontrol>.) 
+				  </p> 
+				  <p><term>Help Contents</term> opens a new tab that displays the
+					 product's help system landing page. 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>For example, 
+					 <keyword>Discover</keyword>'s help landing page is: 
+				  </p> 
+				  <p><filepath>http://microsite.omniture.com/t2/help/en_US/dsc/index.html</filepath>
+					 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p><image href="graphics/AlertHelp_Buttcon.png"
+					 id="image_E0D7E55AAD4A48BB9BE4258F69E5803D"><?xm-replace_text Paragraph?></image>
+					 
+				  </p> 
+				</entry> 
+				<entry colname="col02"> 
+				  <p>Standard help icon. 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p> Help icons are in the 
+					 <xref href="http://maximus.sf.atomz.com/aui/images/"
+					  format="nondita"> image assets</xref> created by UX. 
+				  </p> 
+				  <p><filepath>http://maximus.sf.atomz.com/aui/images/</filepath> 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p>Brand Assets 
+				  </p> 
+				</entry> 
+				<entry colname="col02"> 
+				  <p><?xm-replace_text Paragraph?>
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p> Here's the 
+					 <xref
+					 href="https://zerowing.corp.adobe.com/display/uxd/2012+Brand+Guidelines+and+Assets"
+					 format="nondita"> Brand Asset Guideline</xref> from UX, which might be helpful.
+					 
+				  </p> 
+				  <p><filepath>https://zerowing.corp.adobe.com/display/uxd/2012+Brand+Guidelines+and+Assets</filepath>
+					 
+				  </p> 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+  </conbody>
+</concept>

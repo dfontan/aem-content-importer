@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_4D8107E193B64168A3C0B85B51612991">
+  <title>Cookie Behavior</title>
+  <shortdesc>The cookie behavior depends on whether it is a 1st-party cookie, a
+	 3rd-party cookie with a 1st-party cookie, or a 3rd-party cookie alone. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody></conbody>
+</concept>

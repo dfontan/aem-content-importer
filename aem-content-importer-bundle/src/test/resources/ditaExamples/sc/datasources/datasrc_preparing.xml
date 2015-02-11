@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_77BA0DF2675A429F841B72937834DD9D">
+  <title>Preparing to Use Data Sources</title>
+  <shortdesc> Steps you can take to prepare to use data sources
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Data sources" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <ul id="ul_7736C2C4507D4DA8B8F954BB77C30AFA">
+      <li id="li_2C7C40DFDE2D45D192F4A1EF091842F5">
+        <xref href="datasrc_preparing.xml#concept_77BA0DF2675A429F841B72937834DD9D/section_0D1DA6D7768E4C4CB6E9A2F4639C0135" format="dita" scope="local">
+          <?xm-replace_text Identify and Name the Metrics?>
+        </xref>
+      </li>
+      <li id="li_CE7612CE02E6424784B695BDD16FC40C">
+        <xref href="datasrc_preparing.xml#concept_77BA0DF2675A429F841B72937834DD9D/section_8EC6BDC4AA314D9EB85F6FCD8E6ABC0A" format="dita" scope="local">
+          <?xm-replace_text Identify the Data Dimensions?>
+        </xref>
+      </li>
+      <li id="li_E50F54822081415CBF4765638C8C85D3">
+        <xref href="datasrc_preparing.xml#concept_77BA0DF2675A429F841B72937834DD9D/section_468222796FF449ABAA90D88EB3264CB1" format="dita" scope="local">
+          <?xm-replace_text Campaign Tracking Code?>
+        </xref>
+      </li>
+      <li id="li_C07E7B29BA934A9A9A6EDF07BC37E216">
+        <xref href="datasrc_preparing.xml#concept_77BA0DF2675A429F841B72937834DD9D/section_D9513C1204B7496C9B738C5B12CCCFC7" format="dita" scope="local">
+          <?xm-replace_text Transaction ID?>
+        </xref>
+      </li>
+      <li id="li_083C1089F2EF433A927C39DD2EA56DE2">
+        <xref href="datasrc_preparing.xml#concept_77BA0DF2675A429F841B72937834DD9D/section_03AAB1291BDC4403BDC50905A78FDB71" format="dita" scope="local">
+          <?xm-replace_text Identify a Valid Date Range for Data Source Data?>
+        </xref>
+      </li>
+    </ul>
+    <section id="section_0D1DA6D7768E4C4CB6E9A2F4639C0135">
+      <title>Identify and Name the Metrics</title>
+      <p>It is important to understand the metrics or measurements that are
+		  contained in your data sources, such as 
+		  <term>Off-line Sales Revenue by Product</term>, 
+		  <term>Returns by Product</term>, or 
+		  <term>Ad Impressions by Campaign</term>. These are the names that you
+		  can associate with report metrics (events, props, and eVars). 
+		</p>
+      <p>After you determine the appropriate metric-to-event mappings for the
+		  Data Sources data, rename the events with descriptive names appropriate for the
+		  associated Data Sources metric. 
+		</p>
+      <p>See 
+		  <xref href="https://marketing.adobe.com/resources/help/en_US/reference/index.html?f=success_event" format="https" scope="external">Success Events</xref> in Admin Tools Help. 
+		</p>
+      <note>Adobe strongly recommends using new, empty events with Data Sources
+		  data, but in rare cases it might make sense to use a pre-existing event. 
+		</note>
+    </section>
+    <section id="section_8EC6BDC4AA314D9EB85F6FCD8E6ABC0A">
+      <title>Identify the Data Dimensions</title>
+      <p>Identify and gather the data (reports) that you want to use to
+		  breakdown the metrics imported through Data Sources. This data is known as 
+		  <term>data dimensions</term>. 
+		</p>
+      <p>For example, if a Data Sources metric measures ad impressions, your
+		  data dimension is likely the campaign tracking code. If you are measuring
+		  off-line sales, you might want to use product code (or SKU) as your data
+		  dimension. 
+		</p>
+      <p>You can define multiple data dimensions to a metric, but each metric
+		  must provide a relevant value, or combination of values, for each associated
+		  data dimension. For example, if you import an Off-line Sales metric and
+		  associate it with 
+		  <term>Product</term> and 
+		  <term>Partner</term> data dimensions, the Off-line Sales metric must be
+		  relevant for each combination of product and partner (for example, Total
+		  Revenue). 
+		</p>
+      <note>It is possible to import Total metrics that cannot be broken down
+		  by any data dimension. 
+		</note>
+      <p>After you define the data dimensions to use with a data source,
+		  integrate the dimensions data into marketing reports by mapping it to a
+		  variable. Use either standard reports (for example, Product, Tracking Code,
+		  Search Keyword) or Conversion Traffic variables (eVars). 
+		</p>
+      <p>When using eVars, you can use either existing eVars or new eVars as
+		  data dimensions. After selecting an eVar to receive a data dimension from Data
+		  Sources, make sure you name them appropriately. 
+		</p>
+      <p>See 
+		  <xref href="https://marketing.adobe.com/resources/help/en_US/reference/index.html?f=success_event" format="https" scope="external">Success Events</xref> in Analytics Help. 
+		</p>
+    </section>
+    <section id="section_468222796FF449ABAA90D88EB3264CB1">
+      <title>Campaign Tracking Code</title>
+      <p>In addition to importing success events, you can optionally import
+		  associated eVar values. For example, if you track online activity with a
+		  Campaign Tracking Code, and have Campaign Tracking Codes for the offline
+		  metrics, you can import the metrics with Campaign Tracking Codes. This approach
+		  allows you to view both online and offline metrics in Campaign reports. 
+		</p>
+      <p>If you do not import Data Sources metrics with an associated eVar
+		  value, you cannot view Data Source metrics broken down by eVars. Rather, you
+		  can only see Total metrics. 
+		</p>
+    </section>
+    <section id="section_D9513C1204B7496C9B738C5B12CCCFC7">
+      <title>Transaction ID</title>
+      <p>The Transaction ID is used to connect an online event to an offline
+		  event. 
+		</p>
+    </section>
+    <section id="section_03AAB1291BDC4403BDC50905A78FDB71">
+      <title>Identify a Valid Date Range for Data Source Data</title>
+      <p>After you define your Data Sources metrics (Custom Events) and data
+		  dimensions (eVars), review the date range of the Data Source data that you want
+		  to import. You cannot import Data Sources that fall outside the range of your
+		  existing reporting data. 
+		</p>
+      <p>For example, you cannot import Data Source data from before you
+		  implemented on-line data tracking. Data Sources data should be broken down by
+		  day. 
+		</p>
+    </section>
+  </conbody>
+</concept>

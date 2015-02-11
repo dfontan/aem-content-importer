@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_53E586BCCB9B4930BA00C2266C532198"> 
+  <title>Report Suite IDs - Dynamic Accounts</title> 
+  <shortdesc> The 
+	 <filepath>.js</filepath> file can be configured to automatically select a
+	 report suite ID. The 
+	 <filepath>.js</filepath> file automatically sends the image request to the
+	 report suite based on the URL. For example, if the URL is 
+	 <filepath>www.mysite.com</filepath>, the image request is automatically
+	 sent to report suite A. If the URL is 
+	 <filepath>www.mysite1.com</filepath>, the image request is automatically
+	 sent to report suite B. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Developer and implementation"/>
+		</metadata>
+  </prolog> 
+  <conbody> 
+	 <p>These strings can be found within any of the following: 
+	 <ul id="ul_4AC5D36CEB654A14B4D2B6D095B5B89B">
+		<li id="li_1365DD23859641CA81CF7496D33BED66"> Host/domain (default
+		  setting) 
+		</li>
+		<li id="li_510A858126634B8FA34FDDD2D5732E60">Path 
+		</li>
+		<li id="li_DBE1E0B1C7F847B090D74B079A3B1F12">Query String 
+		</li>
+		<li id="li_0C599EFDB23B42E69CD6C7E3480F3BDF">Host/domain and Path 
+		</li>
+		<li id="li_5EFE5F19E4CF46CC867E69707FC48767">Path and Query String 
+		</li>
+		<li id="li_737A91A1ECF4429EB933F8A6474D228B"> Full URL 
+		</li>
+	 </ul>
+	 </p> 
+	 <p> For more information on configuring 
+		<keyword>Analytics</keyword> to automatically select a 
+		<wintitle>Report Suite ID</wintitle>, contact Adobe Live Support. 
+	 </p> 
+	 <section id="section_8099162F75F641CFBE46FD814450EF36"> 
+		<title>Defining the URL Segment to Match</title> 
+		<p>Given the following sample URL, the portions of the URL are shown
+		  below, along with the 
+		  <wintitle>s.dynamicAccountMatch</wintitle> variable that must be set.
+		  (The default - if 
+		  <wintitle>s.dynamicAccountMatch</wintitle> is not defined - is to
+		  search the Host/Domain Name only). 
+		</p>Sample URL:
+		http://www.client.com/directory1/directory2/filename.html?param1=1234&amp;param2=4321
+		
+		<table id="table_D6494A8071134331901EC50A5BBA3470">
+		  <tgroup cols="2"><colspec colnum="1" colname="col1"
+			 colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="1.97*"/><thead>
+				<row>
+				  <entry> Portion 
+				  </entry>
+				  <entry> Example (from above) 
+				  </entry>
+				</row></thead>
+			 <tbody>
+				<row>
+				  <entry> Host/Domain Name 
+				  </entry>
+				  <entry> www.client.com 
+				  </entry>
+				</row>
+				<row>
+				  <entry> Path 
+				  </entry>
+				  <entry> directory1/directory2/filename.html 
+				  </entry>
+				</row>
+				<row>
+				  <entry> Query String 
+				  </entry>
+				  <entry> param1=1234&amp;param2=4321 
+				  </entry>
+				</row>
+				<row>
+				  <entry> Host/Domain and Path 
+				  </entry>
+				  <entry> www.client.com/directory1/directory2/filename.html 
+				  </entry>
+				</row>
+				<row>
+				  <entry> Path and Query String 
+				  </entry>
+				  <entry>
+					 directory1/directory2/filename.html?param1=1234&amp;param2=4321 
+				  </entry>
+				</row>
+				<row>
+				  <entry> URL 
+				  </entry>
+				  <entry>
+					 http://www.client.com/directory1/directory2/filename.html?param1=1234&amp;param2=4321
+					 
+				  </entry>
+				</row>
+				<row>
+				  <entry> Portion 
+				  </entry>
+				  <entry> s.dynamicAccountmatch 
+				  </entry>
+				</row>
+				<row>
+				  <entry> Host/Domain Name 
+				  </entry>
+				  <entry> Undefined 
+				  </entry>
+				</row>
+				<row>
+				  <entry> Path 
+				  </entry>
+				  <entry> window.location.pathname 
+				  </entry>
+				</row>
+				<row>
+				  <entry> Query String 
+				  </entry>
+				  <entry> (window.location.search?window.location.search:"?") 
+				  </entry>
+				</row>
+				<row>
+				  <entry> Host/Domain and Path 
+				  </entry>
+				  <entry> window.location.host+window.location.pathname 
+				  </entry>
+				</row>
+				<row>
+				  <entry> Path and Query String 
+				  </entry>
+				  <entry>
+					 window.location.pathname+(window.location.search?window.location.search:"?") 
+				  </entry>
+				</row>
+				<row>
+				  <entry> URL 
+				  </entry>
+				  <entry> window.location.href 
+				  </entry>
+				</row>
+			 </tbody>
+		  </tgroup>
+		</table>
+		<p>Consider the following example: 
+		<ul id="ul_D651AD45E1154725A62AB0BD0D62D0F0">
+		  <li
+			id="li_17229B45BCDC4E77BFDCD7F89EDE2BB6">s.dynamicAccountSelection=true 
+		  </li>
+		  <li
+			id="li_7560C38950B84F4AAD4DB098A25078BD">s.dynamicAccountList="devreportsuite1=qa.client.com;reportsuite2=clientdirectory;reportsuite1=client.com"
+			 
+		  </li>
+		  <li id="li_8EC0331BA281498D8C3BEA7FE6B89AEC">
+			 s.dynamicAccountMatch=window.location.host+window.location.pathname 
+		  </li>
+		</ul>
+		</p>
+	 </section> 
+	 <section id="section_163FED1C1FA74C48BCB78B0D67EF36AE"> 
+		<title>Multiple Rules</title> 
+		<p>If multiple rules are selected (see example above), the rules are
+		  executed from left to right. The rules stop as soon as a match is made, as
+		  shown below (with the given set of rules). 
+		</p> 
+		<ul id="ul_92F0239CC7E742ECA303F8D9BC0423C3"> 
+		  <li
+			id="li_7EABCB68B6A749F49B499A900BE45BE7">s.dynamicAccountSelection=true 
+		  </li> 
+		  <li id="li_78800F24F54E42968CD7F5C8456FDB45">
+			 s.dynamicAccountList="devreportsuite1=qa.client.com;reportsuite1=client.com" 
+		  </li> 
+		</ul> 
+		<p> The code first checks to determine if "qa.client.com" exists within
+		  the Host/Domain Name. If so, the report suite "devreportsuite1" is selected,
+		  and the match stops. Separate multiple rules with semi-colons. 
+		</p> 
+	 </section> 
+	 <section id="section_0360D724929348B0B211708B5BA15647"> 
+		<title>Default Report Suite</title> 
+		<p>The 
+		  <varname>s_account</varname> variable can be set first, and acts as a
+		  default value in case any of the specified strings cannot be found. Below is an
+		  example: 
+		  <codeblock outputclass="syntax javascript">var s_account="defaultreportsuiteid"
+s.dynamicAccountSelection=true
+s.dynamicAccountList="devreportsuite1=qa.client.com;reportsuite1=client.com"
+</codeblock>
+		</p> 
+		<p>In the case above, if the host/domain name did not contain either
+		  "qa.client.com" or "client.com," the report suite "defaultreportsuiteid" would
+		  be used. 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept>

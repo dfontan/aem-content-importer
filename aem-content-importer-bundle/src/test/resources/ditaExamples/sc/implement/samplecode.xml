@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_E5279F157CB84CED9065B6B5261C4D7E">
+  <title>Sample Code</title>
+  <shortdesc> Examples to illustrate the use of a server-generated image tag
+	 within a HTML sample page. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>The table below displays the values used in the sample. 
+	 </p>
+    <table id="table_A60E08696B4A4BAB9EAAA3B1047B9B64">
+      <tgroup cols="2">
+        <colspec colnum="1" colname="col1" colwidth="1.00*" />
+        <colspec colnum="2" colname="col2" colwidth="2.39*" />
+        <thead>
+          <row>
+            <entry> Variable 
+				</entry>
+            <entry> Value 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry> pageName 
+				</entry>
+            <entry> Order Confirmation 
+				</entry>
+          </row>
+          <row>
+            <entry> Current URL 
+				</entry>
+            <entry> https://www.somesite.com/cart/confirmation.asp 
+				</entry>
+          </row>
+          <row>
+            <entry> events 
+				</entry>
+            <entry> purchase,event1 
+				</entry>
+          </row>
+          <row>
+            <entry> c1 
+				</entry>
+            <entry> Registered 
+				</entry>
+          </row>
+          <row>
+            <entry> purchaseID 
+				</entry>
+            <entry> 0123456 
+				</entry>
+          </row>
+          <row>
+            <entry> products 
+				</entry>
+            <entry> Books;Book Name;1;19.95 
+				</entry>
+          </row>
+          <row>
+            <entry> state 
+				</entry>
+            <entry> CA 
+				</entry>
+          </row>
+          <row>
+            <entry> zip 
+				</entry>
+            <entry> 90210 
+				</entry>
+          </row>
+          <row>
+            <entry> a random # 
+				</entry>
+            <entry> 123456 
+				</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <section id="section_91D91CE318AE43F0ADDF6005607E83C7">
+      <title>Example 1</title>
+      <p outputclass="syntax.js">The example below displays a server-side image
+		  tag. The highlighted random number prevents caching of the image. 
+		</p>
+      <codeblock outputclass="syntax html">&lt;html&gt;
+&lt;head&gt;
+&lt;/head&gt;
+&lt;body&gt;
+Order Confirmation&lt;br&gt;
+Thanks for your order #0123456.
+&lt;img src="https://102.112.2O7.net/b/ss/suite1,suite2/1/G.4--NS<codeph outputclass="syntax">/123456</codeph>?pageName=Order%20 Confirmation&amp;events=purchase%2Cevent1&amp;c1=Registered&amp;purchaseID=0123456&amp;products=Books%3BBook%20Name%3B1%3B19.95&amp;state=CA&amp;zip=90210&amp;g=https%3A//www.somesite.com/cart/confirmation.asp" width="1" height="1" border="0" /&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</codeblock>
+    </section>
+    <section id="section_726D12029583428BA853043F988ED1B8">
+      <title>Example 2</title>
+      <p>The example below shows a minimal JavaScript image tag. 
+		</p>
+      <codeblock outputclass="syntax html">&lt;html&gt;
+&lt;head&gt;
+&lt;/head&gt;
+&lt;body&gt;
+Order Confirmation&lt;br&gt;
+Thanks for your order #0123456.
+&lt;script language="javascript"&gt;&lt;!—
+s.s_date = new Date();
+s.s_rdm = s.s_date.getTime();
+s.s_desturl="&lt;img width=\"1\" height=\"1\"
+src=\"https://102.112.2O7.net/b/ss/suite1,suite2/1/G.4--NS/" + s.s_rdm +
+"?pageName=Order%20Confirmation&amp;events=purchase%2Cevent1&amp;c1=Registered
+&amp;purchaseID=0123456&amp;products=Books%3BBook%20Name%3B1%3B19.95&amp;state=CA&amp;zip=90210&amp;g=http
+s%3A//www.somesite.com/cart/confirmation.asp\"&gt;";
+document.write(s.s_desturl);
+//--&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</codeblock>
+    </section>
+  </conbody>
+</concept>

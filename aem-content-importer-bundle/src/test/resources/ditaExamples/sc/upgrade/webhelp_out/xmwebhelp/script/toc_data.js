@@ -1,0 +1,50 @@
+var gTocFiles = [
+["SiteCatalyst 15 Upgrade Help","upgrade_home.html",
+["Preface","preface.html"]
+,["Preparing for Your Upgrade","t_upgrade_prepare.html"]
+,["Feature Overview","feature_overview.html",
+["Site Overview Report","site_overview_report.html"]
+,["Suite Product Access","suite_prod_access.html"]
+,["Segmentation","segmentation.html"]
+,["Full Subrelations","full_subrelations.html"]
+,["Default Metrics on Reports","default_metrics.html"]
+,["Metric Changes","metric_changes.html"]
+,["Report Menu Search","report_menu_search.html"]
+,["Video Report Changes","new_reports.html"]
+,["DataWarehouse Requests","datawarehouse_req.html",
+["Create Duplicate Requests","dup_requests.html"]
+,["Prioritize Requests","prioritize_requests.html"]
+,["View Detailed Status","view_detailed_status.html"]
+,["Add New Dimensions and Metrics","new_dim.html"]
+],["Processing Rules","proc_rules.html"]
+,["Context Data Variables","context_data_var.html"]
+,["List Variables","list_var.html"]
+,["User Management Enhancements","user_man_enhance.html"]
+,["Bot Traffic Filtering","bot_traffic.html"]
+,["Data Visibility in Other SiteCatalyst Versions","data_visibility.html"]
+],["Data Processing Differences Between SiteCatalyst 14 and 15","data_proc_dif.html",
+["Unavailable Reports","r_unavail_reports.html"]
+,["Data Accessibility","data_access.html"]
+,["Visits Metric Includes Non-cookie Visitors","t_visits_metric.html"]
+,["Updated Visits Metric for Typed Bookmarked in Referring Domains   Report...","metric_visits.html"]
+,["Updated Time Spent Calculation","r_time_spent_calc.html"]
+,["Remove Duplicate Visitors and Unique Visits","dup_visitors.html"]
+,["Remove Duplicates from Merchandising eVars","dup_merch_evars.html"]
+,["ASI and SiteCatalyst Segmentation Differences","r_sc_seg_diff.html"]
+,["Conversion Reports - Counting Visits and Daily Unique Visitors","conv_reports.html"]
+,["Improved Reporting Limits for Monthly Unique Values","reporting_limits.html"]
+,["How Mobile Traffic Displays in Technology Reports","mobile_traffic.html"]
+,["Historical Data and Rollup Report Suites","historical_data.html"]
+,["Instances Metric on Merchandising eVars","instances_metric.html"]
+,["Category Section of the Product String","prod_string.html"]
+],["Managing Segments Prior to Upgrading","r_man_segments.html"]
+,["Upgrading Video Tracking for SiteCatalyst 15","video_tracking.html"]
+,["Notifying Users About the Upgrade","notify_users.html",
+["Sample Email Notification","email_notif.html"]
+,["Sample Home Page Announcement","home_page_ann.html"]
+,["Post-Upgrade Notifications","post_upgrade_notif.html"]
+],["Post-Upgrade Checklist","t_post_upgrade_checklist.html"]
+,["Frequently Asked Questions","r_faq.html"]
+]];
+var gInitURL = "upgrade_home.html";
+var gMapTitle = "	SiteCatalyst 15 Upgrade Guide";

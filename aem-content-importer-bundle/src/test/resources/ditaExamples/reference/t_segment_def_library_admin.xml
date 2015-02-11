@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_B5F4E39964564C9FA06F8BF0C0F85C21">
+  <title>Add components to the segment definition library</title>
+  <shortdesc>The Library is a repository of frequently used elements (defined
+	 or undefined events or containers) that you can use when defining segment
+	 definitions. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Admin tools" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <context id="context_0F191C1515F245ED8CAEFE3711150952">
+      <p>To add components to your library: 
+		</p>
+    </context>
+    <steps id="steps_578A215A27A541CDBECE19AE5233A29E">
+      <step id="step_8D164795EAE54BEC80AC5716AF6BBEC3">
+        <cmd>Build a segment definition (see 
+			 <xref href="t_build_segment_def_admin.xml#task_8F1F012F833244EDBBB97575EDD4F514" type="task" format="dita" scope="local"><?xm-replace_text Build Segment Definitions - ASI Slots?></xref>).
+			 
+		  </cmd>
+      </step>
+      <step id="step_452BFFFF279746559BCBCA7CC6CA1E98">
+        <cmd>Click 
+			 <uicontrol>Library</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_8818C6BA32C3402B8841E4FEDADA203F">
+        <cmd>Drag any block from the canvas on the right into the Library area.
+			 
+		  </cmd>
+        <stepresult>
+          <p> All details (including nested blocks) contained within that block
+				will be preserved. 
+			 </p>
+          <p> If you added a container (Page View, Visit, or Visitor) to the
+				right-side canvas, add at least one event to the canvas. The Visitor container
+				can contain Visit and Page View containers, with their respective events. The
+				Visit container can contain the Page View container with its respective event.
+				The Page View container can contain only events. 
+			 </p>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+</task>

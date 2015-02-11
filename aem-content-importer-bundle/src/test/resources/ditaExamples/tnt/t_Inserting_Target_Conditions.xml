@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_EEB5E801586E434BA5806BE171BC68E9">
+  <title>Inserting Target Conditions</title>
+  <shortdesc>The following procedure shows how to set the conditions that
+	 determine how the campaign or test is targeted. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <steps id="steps_9CC7319CA53B4178BF36E6420B59A0B0">
+      <step id="step_ADA66064497941AC99D36B2FCBC104A5">
+        <cmd>Create a campaign or test. 
+		  </cmd>
+      </step>
+      <step id="step_766A5954FEBA40AFA4205FBD125224DF">
+        <cmd>Select the target level: campaign, experience, mbox, or conversion
+			 
+		  </cmd>
+      </step>
+      <step id="step_41ED6F7AF62945C7A98EF5D5F0834B72">
+        <cmd>Specify the percentage of visitors included in the test and the
+			 location where the test appears. 
+		  </cmd>
+      </step>
+      <step id="step_2441DA0A1C9F47D6A0021103BE63D906">
+        <cmd>Choose the parameter and set the targeting rules. 
+		  </cmd>
+        <stepresult>
+          <p>For more information, see 
+				<xref href="c_Understanding_the_Targeting_Interface.xml#concept_43A2AB6859FC4395A5011D1875240358" type="concept" format="dita" scope="local">Understanding the Targeting
+				  Interface</xref>. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_7EF13871D466484B92057C31C0120A38">
+        <cmd>Click 
+			 <uicontrol>Done</uicontrol>. 
+		  </cmd>
+      </step>
+    </steps>
+  </taskbody>
+  <!--<related-links>
+    <link href="c_Understanding_the_Targeting_Interface.xml#concept_43A2AB6859FC4395A5011D1875240358" type="concept" format="dita" scope="local">
+      <?xm-replace_text Understanding the Targeting Interface?>
+    </link>
+    <link href="c_Preparing_a_targeted_Campaign_or_Test.xml#concept_BFAD03148B5A4BD3A597689658ABBF39" type="concept" format="dita" scope="local">
+      <?xm-replace_text Preparing a Targeted Campaign or Test?>
+    </link>
+    <link href="c_Validating_a_Targeted_Campaign.xml#concept_804F9A67161447579091BF818BDF0A5E" type="concept" format="dita" scope="local">
+      <?xm-replace_text Validating a Targeted Campaign?>
+    </link>
+    <link href="c_Targeting_Groups.xml#concept_897DFD2D38CF42BABCE2D038EB4B41C9" type="concept" format="dita" scope="local">
+      <?xm-replace_text Targeting Groups?>
+    </link>
+  </related-links>
+-->
+</task>

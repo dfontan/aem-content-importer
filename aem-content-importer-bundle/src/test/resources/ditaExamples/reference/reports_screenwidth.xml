@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_F2E6DE3B40594A419C85814624DAAC31">
+  <title>Screen Width Report</title>
+  <shortdesc>Shows the screen width for various mobile devices and the number
+	 of views for each screen width. You can also view the Screen Size report to see
+	 both the screen height and width. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>
+      <?xm-replace_text Paragraph?>
+    </p>
+  </conbody>
+</concept>

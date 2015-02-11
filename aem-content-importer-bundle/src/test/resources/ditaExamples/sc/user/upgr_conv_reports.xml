@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_8D3798AA50BD4F9A844798B3A35A5B1D">
+  <title>Conversion Reports - Counting Visits and Daily Unique Visitors</title>
+  <shortdesc>All visits are counted in conversion reports, regardless of
+	 whether the visitor triggered a conversion event. In SiteCatalyst 14, 
+	 <wintitle>Visits</wintitle> and 
+	 <wintitle>Daily Unique Visitors</wintitle> metrics on conversion reports
+	 are limited to visits in which a conversion event (eVar instance or custom
+	 event) occurred. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports and analytics" />
+      <othermeta name="subtopic" content="Upgrading from V14" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p></p>
+  </conbody>
+</concept>

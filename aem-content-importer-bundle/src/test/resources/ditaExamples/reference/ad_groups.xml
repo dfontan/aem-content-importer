@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_1169FA01A7BB48B2BFB2A1269D00ED74">
+  <title>Ad Groups</title>
+  <shortdesc> A group of keywords within a campaign in Google. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="subtopic" content="Glossary" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>See 
+		<xref href="keywords.xml#concept_E3D0FEC81E1F4987B39CC467F19FFCFF" format="dita" scope="local"><?xm-replace_text Keywords?></xref>.
+	 </p>
+  </conbody>
+</concept>

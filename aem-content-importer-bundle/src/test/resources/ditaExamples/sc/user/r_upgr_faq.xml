@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_A5BA81E94A82474F83F5E82BC732B8F0"> 
+  <title>Frequently Asked Questions</title> 
+  <shortdesc>Frequently asked questions about the upgrade. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Reports and analytics"/> 
+		<othermeta name="subtopic" content="Upgrading from V14"/> </metadata>
+  </prolog> 
+  <refbody> 
+	 <section id="section_29F8201453DF4BD3BAB2AD1F18D36852"> 
+		<title>Do I need to re-tag my site to use marketing reports and
+		  analytics? </title> 
+		<p>No, with the exception of your video implementation. If you are not
+		  tracking video, there is no need to update your JavaScript or other
+		  AppMeasurement libraries. 
+		</p> 
+	 </section> 
+	 <section id="section_7A80431D971246DD890EBF2B51E736D1"> 
+		<title>Why do I need ad hoc analysis (Discover), if I can create segments
+		  in marketing reports?</title> 
+		<p> Marketing reports are ideal for broadly disseminating data across an
+		  organization. In ad hoc analysis, you can perform deep, fast, effective
+		  analysis of online data. The two products complement each other and deliver a
+		  powerful online analytic solution. 
+		</p> 
+	 </section> 
+	 <section id="section_6DD9359090864E119BCBA9F18B14D972"> 
+		<title>How are data sources handled in marketing reporting and
+		  analytics?</title> 
+		<p>Data sources behave differently based on the source type: 
+		</p> 
+		<ul id="ul_ED394313E6A5430FBFBCD940DC6B9FD4"> 
+		  <li id="li_ECE4710036BE40DBBC510CCAE5AA6DEE">Full processing, web log,
+			 and transaction ID data sources appear as normal. When segments are applied,
+			 the data is filtered according to the segment rules. 
+		  </li> 
+		  <li id="li_33357448120E4A58990593322DEB87FD">Standard or conversion
+			 data sources (ad campaigns, CRM, customer satisfaction, site performance,
+			 generic summary data, online purchases, leads and quotes, and offline channel
+			 data) appear in marketing reporst. However, because those data sources are not
+			 tied to visits or visitors, they are filtered out when segments are applied. 
+		  </li> 
+		  <li id="li_A455B44DC7024ABE8F4D5981A59D62EC">Traffic data sources
+			 (<uicontrol>Website Usage</uicontrol> &gt; 
+			 <uicontrol>Traffic Data Source</uicontrol>) do not appear in
+			 marketing reports. 
+		  </li> 
+		</ul> 
+		<p>You can identify whether a report suite has a traffic data source by
+		  going to 
+		  <uicontrol>Admin</uicontrol> &gt; 
+		  <uicontrol>Data Sources</uicontrol> and looking for an entry showing
+		  “Type: Traffic Data Source,” like this: 
+		</p> 
+		<p> 
+		  <image href="graphics/traffic_data.png"
+			id="image_5B948EDDA0C94D6682A85A99570FBF98"> <?xm-replace_text Paragraph?>
+		  </image> 
+		</p> 
+	 </section> 
+	 <section id="section_9ED0B721E19A4CC9AAB19378DBF4BC37"> 
+		<title>How many times a day is data updated? Is the update on a batch
+		  process or real time? How real time is real time?</title> 
+		<p>The Include Current Data feature provides many common metrics within
+		  minutes. Other metrics are available between 10 and 35 minutes, or between 45
+		  and 120 minutes. Fully-processed, finalized data is typically available 45 to
+		  120 minutes after receipt. For more details, see 
+		  <xref
+			href="https://marketing.adobe.com/resources/help/en_US/reference/index.html?f=data_latency"
+			format="https" scope="external">Include Current Data and Data Latency</xref>. 
+		</p> 
+	 </section> 
+  </refbody> 
+</reference>

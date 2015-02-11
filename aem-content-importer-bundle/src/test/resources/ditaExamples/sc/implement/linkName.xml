@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_1B2A3F56C9AD4C23A8A4331730EC2B8F">
+  <title>linkName</title>
+  <shortdesc>The 
+	 <varname>linkName</varname> variable is an optional variable used in 
+	 <wintitle>Link Tracking</wintitle> that determines the name of a custom,
+	 download, or exit link. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Variables" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>The 
+		<varname>linkName</varname> variable is not normally needed because the
+		third parameter in the 
+		<varname>tl()</varname> function replaces it. 
+	 </p>
+    <table id="table_4B0D1C9AADA542A59B626E077D5FC568">
+      <tgroup cols="4">
+        <colspec colnum="1" colname="col1" colwidth="*" />
+        <colspec colnum="2" colname="col2" colwidth="*" />
+        <colspec colnum="3" colname="col3" colwidth="*" />
+        <colspec colnum="4" colname="col4" colwidth="*" />
+        <thead>
+          <row>
+            <entry> Max Size 
+				</entry>
+            <entry> Debugger Parameter 
+				</entry>
+            <entry> Reports Populated 
+				</entry>
+            <entry> Default Value 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry> 100 bytes 
+				</entry>
+            <entry> pev2 
+				</entry>
+            <entry>
+              <p>File Downloads 
+				  </p>
+              <p>Custom Links
+				  </p>
+              <p>Exit Links
+				  </p>
+            </entry>
+            <entry> "" 
+				</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p>
+      <wintitle>Custom Links</wintitle> refer to links that send tracking data. The 
+		<varname>linkName</varname> variable (or the third parameter in the 
+		<varname>tl()</varname> function) is used to identify the value that
+		appears in the 
+		<wintitle>Custom</wintitle>, 
+		<wintitle>Download</wintitle>, or 
+		<wintitle>Exit Links</wintitle> report. If 
+		<varname>linkName</varname> is not populated, the URL of the link
+		appears in the report. 
+	 </p>
+    <section id="section_C8D89834C98B4C7A858C947293C4148E">
+      <title>Syntax and Possible Values</title>
+      <codeblock outputclass="syntax javascript">s.linkName="Link Name"</codeblock>
+      <p>There are no limitations on 
+		  <varname>linkName</varname> outside of the standard variable
+		  limitations. 
+		</p>
+    </section>
+    <section id="section_5F68766210184E82A23D2A6ECD80BA0B">
+      <title>Examples</title>
+      <codeblock outputclass="syntax javascript">s.linkName="Nav Bar Home Link"</codeblock>
+      <codeblock outputclass="syntax javascript">s.linkName="Partner Link to A.com"</codeblock>
+    </section>
+    <section id="section_F15FF429FC274F708D50DF79D4668EA3">
+      <title>
+        Configuration Settings</title>
+      <p>None 
+		</p>
+    </section>
+    <section id="section_170A78452A7340B5B229713AC1FB71FA">
+      <title>Pitfalls, Questions, and Tips</title>
+      <ul id="ul_B7F561F2A6B14958BD73ECBA6CD7E3B5">
+        <li id="li_F1B644B4BDAB4AA9AD66B8072854C3FB"> The 
+			 <varname>linkName</varname> variable is replaced by the third
+			 parameter in the 
+			 <varname>tl()</varname> function. 
+		  </li>
+        <li id="li_E12CBC23C0EC486387CBDE1B5764D01F"> If the 
+			 <varname>linkName</varname> variable and the third parameter in the
+			 
+			 <varname>tl()</varname> function are blank, the full URL of the
+			 link (with the exception of the query string) appears in the report (even if
+			 the link is relative). 
+		  </li>
+      </ul>
+    </section>
+  </conbody>
+</concept>

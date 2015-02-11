@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_36430B76784044EDA92BF718121B7B82">
+  <title>PTT Report</title>
+  <shortdesc>Groups mobile devices based on whether the device supports Push To
+	 Talk (PTT). The report also includes an 
+	 <term>Unknown</term> group for those devices where PTT support cannot be
+	 determined. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>
+      <?xm-replace_text Paragraph?>
+    </p>
+  </conbody>
+</concept>

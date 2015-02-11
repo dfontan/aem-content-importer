@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_64ADED5CC75248319E06E3E029B47F78">
+  <title>Run a marketing channel report</title>
+  <shortdesc>Marketing Channel reporting provides an overview report of the
+	 first and last-touch channel allocation, with standard reporting metrics like
+	 revenue, orders, and cost. These reports enable you to analyze how much revenue
+	 each channel generates. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports and analytics" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <context id="context_1F089240EA874D7EB608B0AD33A8E292">
+      <p>See the 
+		  <xref href="http://marketing.adobe.com/resources/help/en_US/mchannel/index.html" scope="external" format="http">Marketing Channel</xref> help system for more
+		  information. 
+		</p>
+    </context>
+  </taskbody>
+</task>

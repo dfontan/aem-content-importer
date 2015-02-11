@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_4CAAE63A8CF04F9498234E4ADF0D86FD">
+  <title>Interest Areas</title>
+  <shortdesc>Interest areas attempt to quantify the user behavior across
+	 client's website (sometimes different domains) to determine what content or
+	 site sections visitors are most interested in. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Automated decisioning and targeting algorithms base their prediction on
+		variables that are stored in the user profile. A profile can contain two types
+		of variables: continuous and nominal values. Thus, the quality of predicting
+		the best offer (modeling group) to display relies heavily on the number and
+		quality of data (variables) from the user profile. Currently, there are no
+		systemic variables in user profile that would describe the user behavior on the
+		site, as most of them are simple characteristics such as geo location or
+		browser type.
+	 </p>
+    <p>The rationale behind tracking user activity on the website is related to
+		the fact that different users have different intentions and interests when
+		visiting a site. Because most of the clients' websites are very diverse and
+		often one site comprises tens, if not hundreds of different compartments, users
+		tend to focus their browsing on isolated areas. This tendency of visiting
+		isolated areas of interest is often predictive of a user's temporary behavior.
+	 </p>
+    <p>The quantification of interest areas takes the form of one or more
+		continuous variables stored and updated in the user profile on each request.
+		Each variable represents the degree of interest the visitor expresses for a
+		particular area of the site.
+	 </p>
+    <p> This information is often very predictive in determining what content
+		is best to show. Site URLs are mapped to higher-level categories, or "interest
+		areas" (for example, mapping men's product page viewing to a "men's" interest
+		area), without need for manual updates or monitoring. Client sites are
+		automatically crawled based on the domains that send mbox calls, and URLs are
+		grouped based on the site's structure, as defined by the site's site map or
+		general URL structure. Very common pages, like the home page, are removed from
+		the interest area groupings. 
+	 </p>
+    <p>Interest areas are stored in the training data and, if they are
+		predictive, affect the model and display in the insights report. This is all
+		done automatically. No manual edits or updates to interest areas are needed. 
+	 </p>
+  </conbody>
+</concept>

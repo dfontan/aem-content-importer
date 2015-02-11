@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_FF234D5929324DE8A07AF6DEDDA18212">
+  <title>Reduce mbox.js Size</title>
+  <shortdesc>It is sometimes useful to reduce the size of the mbox.js file. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>compression</keyword>
+        <keyword>reduce</keyword>
+      </keywords>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>There are two ways to reduce the size of mbox.js: 
+	 </p>
+    <p>
+      <ul id="ul_806B34CB30C84F178D52120FC18C6C4D">
+        <li id="li_3D28AE395D4C4FE399A0D308B2B8CC0C">Enable server-side
+		  compression on the server where mbox.js is deployed 
+		</li>
+        <li id="li_4D80C605B85242C1BFB06DE43BA8649D">Use a self-extracting
+		  mbox.js file 
+		  <p> The self-extracting mbox option is intended for customers who do
+			 not have server-side compression enabled. It is an experimental feature that
+			 should be used with caution. If this option is selected when downloading
+			 mbox.js, a compressed mbox.js is downloaded, which automatically expands in the
+			 browser. 
+		  </p></li>
+      </ul>
+    </p>
+    <p>The preferred method is to use server-side compression. Below is a list
+		of the most popular web servers and links to their official documentation about
+		how to configure compression. 
+	 </p>
+    <table id="table_1D25914A1B054E52BB3DF794F74BF1BE">
+      <tgroup cols="2">
+        <colspec colnum="1" colname="col1" colwidth="*" />
+        <colspec colnum="2" colname="col2" colwidth="*" />
+        <thead>
+          <row>
+            <entry colname="col1">Server 
+				</entry>
+            <entry colname="col2">Documentation 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry colname="col1">Apache web server 2.2 
+				</entry>
+            <entry colname="col2">
+              <xref href="http://httpd.apache.org/docs/2.2/mod/mod_deflate.html" format="http" scope="external">http://httpd.apache.org/docs/2.2/mod/mod_deflate.html</xref>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">Apache web server 2.4 
+				</entry>
+            <entry colname="col2">
+              <xref href="http://httpd.apache.org/docs/2.4/mod/mod_deflate.html" format="http" scope="external">http://httpd.apache.org/docs/2.4/mod/mod_deflate.html</xref>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">Nginx 
+				</entry>
+            <entry colname="col2">
+              <xref href="http://wiki.nginx.org/HttpGzipModule" format="http" scope="external">http://wiki.nginx.org/HttpGzipModule</xref>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">Tomcat 7 
+				</entry>
+            <entry colname="col2">
+              <xref href="http://tomcat.apache.org/tomcat-7.0-doc/config/http.html#Standard_Implementation" format="http" scope="external">http://tomcat.apache.org/tomcat-7.0-doc/config/http.html#Standard_Implementation</xref>
+              <p>Attributes compression, compressableMimeType,
+					 compressionMinSize 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">Tomcat 6 
+				</entry>
+            <entry colname="col2">
+              <xref href="http://tomcat.apache.org/tomcat-6.0-doc/config/http.html#Standard_Implementation" format="http" scope="external">http://tomcat.apache.org/tomcat-6.0-doc/config/http.html#Standard_Implementation</xref>
+              <p>Attributes compression, compressableMimeType,
+					 compressionMinSize 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">Jetty 
+				</entry>
+            <entry colname="col2">
+              <xref href="http://www.eclipse.org/jetty/documentation/current/gzip-filter.html" format="http" scope="external">http://www.eclipse.org/jetty/documentation/current/gzip-filter.html</xref>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">Resin 3.1 
+				</entry>
+            <entry colname="col2">
+              <xref href="http://www.caucho.com/resin-3.1/doc/filters.xtp#GzipFilter" format="http" scope="external">http://www.caucho.com/resin-3.1/doc/filters.xtp#GzipFilter</xref>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">IIS 
+				</entry>
+            <entry colname="col2">
+              <xref href="http://www.iis.net/configreference/system.webserver/httpcompression" format="http" scope="external">http://www.iis.net/configreference/system.webserver/httpcompression</xref>
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </conbody>
+</concept>

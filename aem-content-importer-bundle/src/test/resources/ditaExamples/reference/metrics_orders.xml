@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_54DFAD37F85F49CD8FA66D973B100FCD">
+  <title>Orders</title>
+  <shortdesc>The number of orders made on your website during the selected time
+	 period. You can break down individual time periods by other metrics to show the
+	 items (such as products or campaigns) that contributed to the most orders
+	 during that time frame. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Metrics" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <table id="table_FF483FDAC4F742C3AC182985732B5D20">
+      <tgroup cols="2">
+        <colspec colnum="1" colname="col1" colwidth="1.00*" />
+        <colspec colnum="2" colname="col2" colwidth="2.39*" />
+        <thead>
+          <row>
+            <entry colname="col1">Uses 
+				</entry>
+            <entry colname="col2">Description 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry colname="col1">Traffic 
+				</entry>
+            <entry colname="col2">N/A 
+				</entry>
+          </row>
+          <row>
+            <entry colname="col1">Conversion 
+				</entry>
+            <entry colname="col2">
+              <term>Order</term> is the number of times the
+				  purchase event is set. 
+				</entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              Ad Hoc Analysis
+            </entry>
+            <entry colname="col2">
+              <term>Order</term> is the number of times the
+				  purchase event is set. 
+				</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </conbody>
+</concept>

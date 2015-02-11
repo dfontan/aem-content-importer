@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd"[]>
+<reference id="reference_2E9432AFE9724881950F66D45E96B6C5">
+  <title>Parameter Types</title>
+  <shortdesc>There are several types of parameters. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <refbody>
+    <refsyn id="refsyn_DF9A592AF71844198786E2D9C736441F">
+      <p>
+        <table id="table_4E839A0815D74CAA8DE7AC595246E047">
+          <tgroup cols="2">
+            <colspec colnum="1" colname="col1" colwidth="1.00*" />
+            <colspec colnum="2" colname="col2" colwidth="3.01*" />
+            <thead>
+              <row>
+                <entry colname="col1">Parameter Type 
+				  </entry>
+                <entry colname="col2">Description 
+				  </entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry colname="col1">
+                  <p>Referring URL Parameters 
+					 </p>
+                </entry>
+                <entry colname="col2">
+                  <p>These parameters are in the address bar of any page 
+						<b>linked to</b> any page with an mbox. If the page link is
+						clicked on, the parameters and values are passed to the 
+						<b>destination page's mbox</b> as referring URL parameters
+						and values. Use these to target on the visitor's source, for example. 
+					 </p>
+                </entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <p>URL Parameters 
+					 </p>
+                </entry>
+                <entry colname="col2">
+                  <p>All referring page and page URL variables are automatically
+						passed to an mbox whenever the page with the mbox is viewed by any visitor.
+						These URL variables are then available to use through the for display targeting
+						or segment filters in reports. 
+					 </p>
+                  <p>To force the parameters to load: 
+					 </p>
+                  <p>
+                    <ol id="ol_AA5935F19D0346B58E3023438EC24FB7">
+                      <li id="li_24B4ABB88EA942AAB08A396687B51CF3"> Browse to the
+						  page with the mbox. 
+						</li>
+                      <li id="li_E90111FD9E2C4DF78B6A36C0E35F5128"> Mimic the
+						  visitor behavior which causes the desired parameters and values to be passed. 
+						  <p>This browsing associates the passed parameters and
+							 values to the mbox. You can also simply add the parameters manually to the URL
+							 and refresh the page through the browser. 
+						  </p></li>
+                      <li id="li_B73F86CAE96645AE948310C2808762B2"> View the
+						  mboxes, then click 
+						  <uicontrol>Locations</uicontrol> &gt;<uicontrol>
+							 List</uicontrol>. 
+						</li>
+                      <li id="li_1DF5AD6600454512851D5760D6B40880">
+						  Click<uicontrol> refresh</uicontrol>. 
+						  <p>The URL parameters of the page with the mbox should be
+							 listed for that mbox. 
+						  </p></li>
+                    </ol>
+                  </p>
+                  <p>URL parameters are in the address page of the page with the
+						mbox. 
+					 </p>
+                  <p> Example of URL 
+						<codeph>parameter/</codeph> value pairs: 
+					 </p>
+                  <p>
+                    <filepath>http://www.yourcompany.com/asp/feature_item.asp?keyword=
+						  chair&amp;categoryId= 45</filepath>
+                  </p>
+                </entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <p>Mbox (page) Parameters 
+					 </p>
+                </entry>
+                <entry colname="col2">
+                  <p>These parameters are passed in the page, not the URL.
+						Rendered uniquely for each visitor, they are used to pass data from your
+						database and to track sales data or to run recommendations for cross-selling. 
+					 </p>
+                  <p>When entering a parameter that includes quotation marks,
+						single quotes, or apostrophes, use the \ character to "escape" the characters: 
+					 </p>
+                  <p>
+                    <codeph> entity.description="This is some \"quoted\"
+						  text."</codeph>
+                  </p>
+                  <p>Single quotes inside double quotes need not be escaped. 
+					 </p>
+                </entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <p>Geo Location (geo-targeting) 
+					 </p>
+                </entry>
+                <entry colname="col2">
+                  <p>Geo location parameters allow you to target campaigns and
+						experiences based on your visitors' geography. You can include or exclude
+						visitors based on their country, state/province, city, DMA, or zip/postal code.
+						This data is sent with each mbox request and is based on the visitor's IP
+						address. Select these parameters just like any targeting values. 
+					 </p>
+                  <p>Contact your account manager to gain access to this feature.
+						
+					 </p>
+                  <p>For more information, see 
+						<xref href="t_Targeting_Based_on_Geography.xml#task_E9A0CA13E74A49648F8E041081CA2064" type="task" format="dita" scope="local"><?xm-replace_text Targeting Based on Geography?></xref>.
+						
+					 </p>
+                </entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <p>In-mbox Profile Parameters 
+					 </p>
+                </entry>
+                <entry colname="col2">
+                  <p>Profile parameters are specific to the visitor and are
+						passed to the visitor's cookie. As the visitor continues to browse, or returns
+						for another session, the saved profile parameter values can be used to target
+						content. Returning visitor is an example of an in-mbox profile parameter. These
+						parameters are passed in through page code when the mbox is created: 
+					 </p>
+                  <p>
+                    <codeph>mboxCreate('myMbox',
+						  'profile.myParam=value')</codeph>
+                  </p>
+                  <p>Profile parameter names are limited to 128 characters.
+						Longer names are truncated. Profile parameter values can be up to 256
+						characters in length. 
+					 </p>
+                  <p>When entering a parameter that includes quotation marks,
+						single quotes, or apostrophes, use the \ character to "escape" the characters: 
+					 </p>
+                  <p>
+                    <codeph> entity.description="This is some \"quoted\"
+						  text."</codeph>
+                  </p>
+                  <p>Single quotes inside double quotes need not be escaped. 
+					 </p>
+                </entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <p>Script Profile Parameters 
+					 </p>
+                </entry>
+                <entry colname="col2">
+                  <p>Script Profile parameters are specific to the visitor and
+						are passed to the visitor's cookie. As the visitor browses the site or returns
+						in another session, the values are used to target display or to better
+						understand visitor preferences. 
+					 </p>
+                  <p>Script Profile parameters are like in-mbox Profile
+						Parameters except they are defined with JavaScript in the tool rather than page
+						code, giving the marketer additional flexibility. Here is an example of a
+						parameter representing purchase frequency: 
+					 </p>
+                  <p>
+                    <codeph>if (mbox.name == 'orderConfirmPage') {</codeph>
+                  </p>
+                  <p>
+                    <codeph>return (user.get('frequency') || 0) + 1;</codeph>
+                  </p>
+                  <p>
+                    <codeph>}</codeph>
+                  </p>
+                  <p>A Script Profile parameter's code snippet is evaluated on
+						every mbox request and can store running totals like number of purchases and
+						total purchase value per user. 
+					 </p>
+                  <p>Once stored, these parameters can be referenced in custom
+						targeters or in the targeting tool. 
+					 </p>
+                  <p>Profile parameter names are limited to 128 characters.
+						Longer names are truncated. Profile parameter values can be up to 256
+						characters in length. 
+					 </p>
+                </entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <p>Smart Targeter Profile Parameters 
+					 </p>
+                </entry>
+                <entry colname="col2">
+                  <p>Similar to Script Profile Parameters, except predefined in
+						the tool to provide useful targeting functionality. Includes 
+						<xref href="c_Using_Category_Affinity.xml#concept_E51E078F49484B4EA0E52046E6F58E3C" type="concept" format="dita" scope="local">category affinity</xref> and the
+						list will grow in the future. 
+					 </p>
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </p>
+    </refsyn>
+    <section id="section_28D3E644E53848BFB99C2E29C09B5D48"></section>
+  </refbody>
+  <related-links>
+    <link href="t_Viewing_an_Mboxs_Passed-In_Parameter_Values.xml#task_22DC71B5D4E9497A858BC24FD633249F" format="dita" scope="local">
+      <linktext>
+        <?xm-replace_text View an Mbox's Passed-In Parameter   Values?>
+      </linktext>
+    </link>
+    <link href="r_Deciding_Which_Parameters_and_Values_You_Need.xml#reference_8C8CF60284FC4D33914635C29858AA09" type="reference" format="dita" scope="local">
+      <?xm-replace_text Deciding Which Parameters and Values You Need?>
+    </link>
+    <link href="c_Mbox-Specific_Parameters.xml#concept_B81F2D77D34E4B4E84D23F5A5B4EDDED" type="concept" format="dita" scope="local">
+      <?xm-replace_text Mbox-Specific Parameters?>
+    </link>
+    <link href="c_URL_Parameters.xml#concept_08C5CA0521D44C1DA3C0F89C28E15AC8" type="concept" format="dita" scope="local">
+      <?xm-replace_text URL Parameters?>
+    </link>
+    <link href="c_Referring_URL_Parameters.xml#concept_C19F6E2DD15D4526A00A4DDA28E9B89D" type="concept" format="dita" scope="local">
+      <?xm-replace_text Referring URL Parameters?>
+    </link>
+    <link href="c_Profile_Parameters.xml#concept_01A30B4762D64CD5946B3AA38DC8A201" type="concept" format="dita" scope="local">
+      <?xm-replace_text Profile Attributes?>
+    </link>
+    <link href="c_Cost_and_Revenue_Reporting.xml#concept_A07BEDC4725F4887B6301C1B9FC3D1C8" type="concept" format="dita" scope="local">
+      <?xm-replace_text Cost and Revenue Reporting?>
+    </link>
+  </related-links>
+</reference>

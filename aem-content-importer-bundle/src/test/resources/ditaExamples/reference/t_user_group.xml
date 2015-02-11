@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_A2380B1E450D4E8CA044EB39DEC717D9"> 
+  <title>Add a user group</title> 
+  <shortdesc>Steps that describe how to add a user group. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Admin tools"/> 
+		<othermeta name="subtopic" content="Users and groups"/> </metadata>
+  </prolog> 
+  <taskbody> 
+	 <steps id="steps_54E2B290A09D4FC08A210DC069674E3F"> 
+		<step id="step_404B55BF499B4C3F99D25D5178503A23"> 
+		  <cmd>Click 
+			 <uicontrol>Analytics</uicontrol> &gt; 
+			 <uicontrol>Admin</uicontrol> &gt; 
+			 <uicontrol>User Management</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_1255EA1A9FB941DFB1AF601523766708"> 
+		  <cmd>Click 
+			 <uicontrol>Edit Groups</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_23D0207A1ABA4DE2A72F06EE248E03E0"> 
+		  <cmd>Click 
+			 <uicontrol>Add New User Group</uicontrol>. 
+		  </cmd> 
+		  <info> 
+			 <p>By default, group members have full administrative privileges for
+				each report suite in the group. To restrict the administrative access for the
+				group members, do the following: 
+			 <ol id="ol_F20BBF016DEA4CF9B0EFDB7AE4888DCC">
+				<li id="li_543B42AF77584C7B8A0F9111C600A563">
+				  <p>Under 
+					 <uicontrol>Admin Tools</uicontrol>, click 
+					 <uicontrol>Customize</uicontrol>. 
+				  </p>
+				</li>
+				<li id="li_1B754411E2464DA3822377ADAF15ACEE">
+				  <p>On the 
+					 <uicontrol>Customize Admin Module</uicontrol> page, select the
+					 administrative pages that you want to make available to group members, then
+					 click 
+					 <uicontrol>OK</uicontrol>. 
+				  </p>
+				</li>
+			 </ol>
+			 </p> 
+		  </info> 
+		</step> 
+		<step id="step_5FAE48B640804C56B620CA36B8D60C39"> 
+		  <cmd>Click 
+			 <uicontrol>Save Group</uicontrol> to create the group and return to
+			 the 
+			 <wintitle>Groups</wintitle> page. 
+		  </cmd> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task>

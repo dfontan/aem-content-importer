@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_395925BECD29491E9105AC1BA348E679">
+  <title>Apple iOS</title>
+  <shortdesc>
+    <?xm-replace_text Short Description?>
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>media</keyword>
+        <keyword>milestone</keyword>
+        <keyword>sdk</keyword>
+        <keyword>video</keyword>
+      </keywords>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <note>These instructions are for version 2.x of AppMeasurement for iOS,
+		which is available in Code Manager in Admin Console and documented 
+		<xref href="https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/ios/oms_sc_appmeasure_ios.pdf" format="http" scope="external">here</xref>. Version 3.x of the AppMeasurement
+		Libraries for iOS are not covered in this guide, they are documented 
+		<xref href="https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/ios/index.html" format="http" scope="external">here</xref>. 
+	 </note>
+  </conbody>
+</concept>

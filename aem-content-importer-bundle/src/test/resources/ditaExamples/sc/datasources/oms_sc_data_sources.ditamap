@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd" [    ]>
+<map id="map_EE5C0250280E45C0B9801DD6E181A268">
+	<title>Data Sources User Guide</title>
+	<topicref format="dita" href="datasrc_home.xml" navtitle="Data Sources Help" scope="local">
+		<topicref format="dita" href="datasrc_how_data_sources_works.xml" navtitle="How Data Sources Works" scope="local" type="concept"/>
+	</topicref>
+	<topicref format="dita" href="datasrc_requirements.xml" navtitle="Requirements and Upload Limits" scope="local" type="concept"/><topicref format="dita" href="datasrc_processing_time.xml" navtitle="Data Sources Processing Time" scope="local"/>
+	<topicref format="dita" href="datasrc_preparing.xml" navtitle="Preparing to Use Data Sources" scope="local" type="concept"/>
+	<topicref format="dita" href="datasrc_manager.xml" navtitle="Data Sources Manager" scope="local" type="concept"/>
+	<topicref format="dita" href="datasrc_template_file.xml" navtitle="Data Sources Template" scope="local">
+		<topicref format="dita" href="t_datasrc_creating_data_sources_file.xml" navtitle="Generating an Import File Template" scope="local" type="task"/>
+		<topicref format="dita" href="datasrc_import_file_reference.xml" navtitle="Import File Reference" scope="local" type="concept"/>
+	</topicref>
+	<topicref format="dita" href="t_datasrc_uploading_data.xml" navtitle="Uploading a Data Sources File" scope="local" type="task"/>
+	<topicref format="dita" href="datasrc_categories.xml" navtitle="Data Types and Categories" scope="local" type="concept">
+		<topicref format="dita" href="datasrc_web_log.xml" navtitle="Web Log" scope="local" type="concept"/>
+		<topicref format="dita" href="datasrc_traffic.xml" navtitle="Traffic" scope="local" type="concept"/>
+		<topicref format="dita" href="datasrc_conversion.xml" navtitle="Conversion" scope="local" type="concept"/>
+		<topicref format="dita" href="datasrc_transactionID.xml" navtitle="Transaction ID" scope="local" type="concept"/>
+		<topicref format="dita" href="datasrc_visitorID.xml" navtitle="Visitor ID" scope="local" type="concept"/>
+		<topicref format="dita" href="datasrc_full_processing.xml" navtitle="Full Processing" scope="local" type="concept"/>
+	</topicref>
+	<topicref format="dita" href="datasrc_integrating_offline_data.xml" navtitle="Transaction and Customer Integration" scope="local" type="concept">
+		<topicref format="dita" href="datasrc_tid_visitor_profile.xml" navtitle="Transaction ID and Visitor Profiles" scope="local"/>
+	</topicref>
+	<topicref format="dita" href="datasrc_faq.xml" navtitle="Data Sources FAQ" scope="local" type="concept"/>
+	<topicref format="dita" href="contact_and_legal.xml" navtitle="Contact and Legal Information" scope="local"/>
+</map>

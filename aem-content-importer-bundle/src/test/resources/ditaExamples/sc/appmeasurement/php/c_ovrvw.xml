@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_0D70B544297C4432BC1DDD0F344FE286"> 
+  <title>Overview</title> 
+  <shortdesc>The Measurement Library provides key benefits. 
+  </shortdesc> 
+  <conbody> 
+	 <p> 
+	 <ul id="ul_B46080A26EE349F7A668EE4FCBE5BC89"> 
+		<li id="li_6A608140E01E4C3DA21E4F5B800E3D32"><b>Streamlined
+			 Implementation for Non-JavaScript Tagging:</b> Management Library provides an
+		  alternative to hard-coding JavaScript Web beacons on your Web pages, using
+		  familiar syntax and tools (for example, 
+		  <codeph>track</codeph> and 
+		  <codeph>tracklink</codeph>). 
+		</li> 
+		<li id="li_0C4AEAAFC38B4B16A0A711EE10777ED3"><b>Integrated Data
+			 Tracking:</b> Measurement Library lets you incorporate external data into your
+		  data collection (external applications, off-line data, and so forth). 
+		</li> 
+		<li id="li_984BB63DD39443A28C63AA090CA10265"><b>Tagless
+			 Implementation:</b> Measurement Library supports server-to-server (Web server
+		  to Adobe data collection server) data transfers that can greatly simplify
+		  implementation and maintenance of application and website tracking. Server-side
+		  measurement also provides a global implementation option independent of the
+		  front-end application (mobile application, website, off-line application, and
+		  so forth). 
+		</li> 
+		<li id="li_141521BE2EB54C42BB7B2AC1A784D1C0"><b>Visitor ID
+			 Management</b>: Measurement Library provides additional visitor identification
+		  options that improve visitor tracking, including limiting third-party cookie
+		  usage, using the carrier’s subscriber ID, and using server-side tracking of
+		  visitor IDs. 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p>Before implementing Measurement Library (PHP), you should understand the
+		following concepts and limitations: 
+	 <ul id="ul_9D65BB1CE0E748949729AF2D8D09292C"> 
+		<li id="li_7E979C26431746BFB1DE9B5D1270C02B">Measurement Library (PHP)
+		  consists of the following software components. You can download Measurement
+		  Library software from 
+		  <keyword>Analytics’s</keyword> Code Manager. For information about
+		  using Code Manager, see Code Manager in the 
+		  <i>Admin Console User Guide</i>, which is available in the Marketing
+		  Cloud help system. 
+		  <ul id="ul_15C65C2DD2A5431CAF9AB6CEDDB70B34"> 
+			 <li
+			  id="li_7DB3AECD67854A8E88EDE52CED80D1C1"><b>OmnitureMeasurement.class.php:</b>
+				A PHP class library. Copy the class library to your Web server where it is
+				accessible to PHP scripts. 
+			 </li> 
+		  </ul> 
+		</li> 
+		<li id="li_401C1B355FF843008B0520B4BEB2B7AF">To view debugging
+		  information related to you website, you can use either the JavaScript debugger
+		  or standard Web browser output. Debug information includes request, request
+		  headers, response, and errors, when 
+		  <codeph>sendFromServer</codeph> and 
+		  <codeph>debugTracking</codeph> are enabled. See 
+		  <xref
+			href="c_app_cfg_var.xml#concept_E2BA72F3BADD4A85A043688475458CD5/table_3F67D9B561FE464993F461FD0C4EBBF8"
+			format="dita" scope="local">debugTracking</xref>.
+		</li> 
+		<li id="li_E00203DD22174E7CA57C81E08166BDF4">When using Measurement
+		  Library outside of a Web context, any data specific to an HTTP request will not
+		  be available (for example, pageURL, userAgent, and so forth). 
+		</li> 
+	 </ul> 
+	 </p> 
+  </conbody>
+</concept>

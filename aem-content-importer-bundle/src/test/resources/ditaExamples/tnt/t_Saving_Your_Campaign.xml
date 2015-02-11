@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_3E7A956E742943F6AE258A782AA82401" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Save Your Campaign</title>
+  <shortdesc class="- topic/shortdesc ">When you have finished setting your
+	 campaign parameters, save the campaign. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <context id="context_27ABB743E59949EDBA4064FBE1B6019A" class="- topic/section task/context ">
+      <p class="- topic/p ">You have two options: 
+		</p>
+      <p class="- topic/p ">
+        <ul id="ul_C2D0123CE0F24056B7F9A96ED1688259" class="- topic/ul ">
+          <li id="li_DD2F3B910548466598CA5272F52804B7" class="- topic/li ">
+            <uicontrol class="+ topic/ph ui-d/uicontrol ">Save and
+				Approve</uicontrol> saves the campaign and activates it. 
+		  </li>
+          <li id="li_F1EE45A4FC8542BBBE42740B86E391E2" class="- topic/li ">
+            <uicontrol class="+ topic/ph ui-d/uicontrol ">Save</uicontrol> saves
+			 the campaign without making it active. 
+		  </li>
+        </ul>
+      </p>
+    </context>
+  </taskbody>
+  <related-links class="- topic/related-links ">
+    <link href="c_Providing_High-Level_Information_About_a_Campaign.xml#concept_6E17BAE005474DCE8CBC35012279DB99" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text High-Level Information About a Campaign?>
+    </link>
+    <link href="t_Setting_Targeting_Rules.xml#task_75C6702BE0AC45E9A0B9DB26FDBB18B2" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Targeting Rules?>
+    </link>
+    <link href="t_Setting_Experiences.xml#task_6137A1D6EEFF4746B94E9BC5B675680A" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Experiences?>
+    </link>
+    <link href="r_Optional_Features.xml#reference_DDC35A6553F04FCB9D9B257CB4037F79" type="reference" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Optional Features?>
+    </link>
+    <link href="t_Setting_Conversion_and_Success_Metrics.xml#task_52EBE07CA34D4F37AD19D0DB999591F5" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Conversion and Success Metrics?>
+    </link>
+    <link href="c_Capturing_Engagement.xml#concept_DB31E18F26EA426EB7A87EAE16A477A5" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Engagement?>
+    </link>
+    <link href="c_Managing_Segment_Filters.xml#concept_DF9534D4168D46D4B109DD0D2FB57781" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Segment Filters?>
+    </link>
+  </related-links>
+</task>

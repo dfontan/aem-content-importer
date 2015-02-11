@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd"[]>
+<reference id="reference_29630D62227F43EABFF0D81990FF6F69">
+  <title>Integration Examples for ASP</title>
+  <shortdesc>The following code examples are suggestions for creating Recorder
+	 mboxes using ASP for the Microsoft Commerce Server 2002, using the sample
+	 application Retail 2002. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <refbody>
+    <refsyn id="refsyn_73296D8AAB65461F8E5B91D434380F5D">
+      <p>The retail application consists of a number of small projects. Since
+		  we want to use mboxes in a number of projects we create a new VB project (Web
+		  Control Library) called 
+		  <codeph>MboxLib</codeph> and a new VB class<codeph>
+			 MboxControl</codeph> in that library. 
+		</p>
+      <p>
+        <note>Review the information about 
+			 <xref href="t_Downloading_mboxjs.xml#task_B1A5E9CC0AAE48E38FA19686548B3371" type="task" format="dita" scope="local">mbox.js</xref>, 
+			 <xref href="c_About_Mboxes.xml#concept_E01933A6CEDE481BBAC25F95FE3C6FD9" type="concept" format="dita" scope="local">mboxes</xref>, and 
+			 <xref href="c_Parameters_and_Values.xml#concept_DB5AB8E9682D41DDA5621FFE856C6336" type="concept" format="dita" scope="local">parameters and values</xref>. 
+		  </note>
+      </p>
+      <p>The following samples are provided for informational purposes only.
+		  Please follow the guidance of your Web developers to ensure your code is valid.
+		  
+		</p>
+      <p>
+        <b>mbox.js include for ASP</b>
+      </p>
+      <p>
+        <codeblock outputclass="syntax html">&lt;-- insert following the &lt; Page directive --&gt;
+
+&lt;%@ Register TagPrefix="fortpoint" Namespace="MBoxLib.Fortpoint.Darwin.MBoxes" assembly="MBoxLib" %@&gt;
+
+&lt;-- insert in the &lt;head&gt; --&gt;
+
+&lt;script type="text/javascript" src="3mbox/mbox.js"&gt;&lt;/script&gt; </codeblock>
+      </p>
+      <p>
+        <b>productPage Recorder mbox for ASP Part A</b>
+      </p>
+      <p>
+        <codeblock outputclass="syntax html">&lt;-- insert the control right after &lt;form&gt; tag: --&gt;
+
+&lt;fortpoint:MBoxControl id="productMBox" runat="server"
+
+name="productPage"&gt;
+
+default content
+
+&lt;/fortpoint:MBoxControl&gt;</codeblock>
+      </p>
+      <p>
+        <b>productPage Recorder mbox for ASP, Part B</b>
+      </p>
+      <p>Insert code to 'ProductDetails.aspx.vb' 
+		</p>
+      <p>
+        <codeblock outputclass="syntax html">' insert declaration of member variable right after declaration of 'ProductDetailsPage' class:
+
+Protected productMBox as MBoxLib.Fortpoint.Darwin.MBoxes.MBoxControl ' set properties of MBoxControl right before end of 
+BindProductInfo procedure:
+
+productMBox.Properties("productId") = CType(ViewState("ProductId"), String)
+
+productMBox.Properties("productName") = prodName
+
+productMBox.Properties("productPageURL") = Request.Url.GetLeftPart(UriPartial.Authority) +
+
+Request.CurrentExecutionFilePath + "?productId=" + Server.UrlEncode(CType(ViewState("ProductId"), String))
+
+productMBox.Properties("productThumbnailURL") = Request.Url.GetLeftPart(UriPartial.Authority) + Request.ApplicationPath
+
++ productImage.Src</codeblock>
+      </p>
+      <p>
+        <b> orderConfirmPage Recorder mbox for ASP, Part A</b>
+      </p>
+      <p>
+        <codeblock outputclass="syntax html">&lt;fortpoint:MBoxControl id="orderMBox" runat="server"
+
+name="orderConfirmPage"&gt;
+
+default content
+
+&lt;/fortpoint:MBoxControl&gt;</codeblock>
+      </p>
+      <p>
+        <b>orderConfirmPage Recorder mbox for ASP, Part B</b>
+      </p>
+      <p>Insert code to 'controls\transactions\OrderReceipt.ascx.vb' 
+		</p>
+      <p>
+        <codeblock outputclass="syntax html">' insert declaration of member variable right after declaration of 'OrderReceipt' class:
+
+Protected orderMBox as MBoxLib.Fortpoint.Darwin.MBoxes.MBoxControl
+
+' set properties of MBoxControl right before end of Page_Load procedure:
+
+Dim _userID As New System.Guid(CommerceContext.Current.UserID)
+
+Dim _poID As New System.Guid(PurchaseOrderID)
+
+Dim _currentPurchaseOrder As PurchaseOrder
+
+Dim _purchaseOrderForm As OrderForm
+
+_currentPurchaseOrder = CommerceContext.Current.OrderSystem.GetPurchaseOrder(_userID, _poID)
+
+_purchaseOrderForm = _currentPurchaseOrder.OrderForms(ReceiptOrderForm)
+
+Dim _receiptLineItems As LineItemCollection = _purchaseOrderForm.LineItems
+
+Dim productIds As System.Collections.ArrayList = New System.Collections.ArrayList(_receiptLineItems.Count)
+
+Dim item As LineItem
+
+For Each item In _receiptLineItems
+
+productIds.Add(item.ProductID)
+
+Next
+
+orderMBox.Properties("productPurchasedId") = productIds</codeblock>
+      </p>
+    </refsyn>
+  </refbody>
+  <related-links>
+    <link href="r_Integration_Examples_for_PHP_and_OsCommerce.xml#reference_A0647C3DE8EB48F6816A10B79EBA7876" type="reference" format="dita" scope="local">
+      <?xm-replace_text Integration Examples for PHP and OsCommerce?>
+    </link>
+    <link href="r_Integration_Examples_for_ATG.xml#reference_5F1F6632DF8D4394B195FB5E4C98F416" type="reference" format="dita" scope="local">
+      <?xm-replace_text Integration Examples for ATG?>
+    </link>
+  </related-links>
+</reference>

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_087408B488304A54917585D40482791A">
+  <title>Rules-Based Targeting</title>
+  <shortdesc>Rules-based targeting uses parameters you establish to target
+	 based on specific criteria. If visitors meet the criteria, they are included in
+	 the campaign and campaign reports. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p class="- topic/p ">You can group visitors based on anything Target knows
+		about the visitor, including how the visitor reached the site, technographic
+		information such as the browser and operating system, geographic data, and
+		visitor behavior attributes. You can specify 
+		<xref href="c_Parameters_and_Values.xml#concept_DB5AB8E9682D41DDA5621FFE856C6336" type="concept" format="dita" scope="local" class="- topic/xref ">parameters and
+		  values</xref> passed on your Web site as preconditions for display. For more
+		information about setting up targeting conditions, see 
+		<xref href="t_Setting_Targeting_Rules.xml#task_75C6702BE0AC45E9A0B9DB26FDBB18B2" type="task" format="dita" scope="local" class="- topic/xref ">Setting Targeting
+		  Rules</xref>. 
+	 </p>
+    <p> You must enter unencoded characters in targeting conditions to match
+		correctly. All campaign targeting criteria use unencoded characters. 
+	 </p>
+    <p class="- topic/p ">The following list shows some examples of targeting: 
+	 </p>
+    <p class="- topic/p ">
+      <ul id="ul_66C2681B0A7342BD9265172DBE1D38F0" class="- topic/ul ">
+        <li id="li_2D2207E20B374DEB8531F9011A1870C1" class="- topic/li "> A
+		  Landing Page campaign that shows exclusive content to visitors coming from an
+		  email notice 
+		  <p class="- topic/p ">Everyone else sees default content. 
+		  </p></li>
+        <li id="li_36288A0CEF894EB2B5B89178C114A346" class="- topic/li "> An
+		  A/B/C/D test to only visitors from your sports affiliates 
+		</li>
+        <li id="li_26BCB83B03DA4258AFD5C36B5F5F9B79" class="- topic/li "> An
+		  A/B/C/D test limited to a single category in your merchandising database 
+		</li>
+        <li id="li_9B683BDAE36D4E52B2CB58A1EE81AE41" class="- topic/li "> A
+		  multivariate test only to visitors who searched on the keywords "mortgage" or
+		  "mortgage rate" 
+		</li>
+        <li id="li_CE0837000E954BC3AD83E3A68202988D" class="- topic/li "> An
+		  A/B...N campaign that shows different content based a returning visitor's
+		  category affinity 
+		</li>
+        <li id="li_A5109EEBF04D451D961251B0CA479CDC" class="- topic/li "> An
+		  A/B...N campaign offering a high-margin product to consumers fitting into top
+		  cells, according to your RFM analysis 
+		</li>
+      </ul>
+    </p>
+  </conbody>
+</concept>

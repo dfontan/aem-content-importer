@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_2FF5BBB6B24F4CD59B2C17916BBEBB0E">
+  <title>Step 4 - Validate Your Implementation</title>
+  <shortdesc> Ensure that everything is set up correctly on the site and ensure
+	 it appears in reporting.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <steps id="steps_4FC00EECFE894B89B45A15A72E800EEE">
+      <step id="step_F438A7341EC5478F80067ECCB7BC7A2C">
+        <cmd>Obtain 
+			 <keyword>DigitalPulse Debugger</keyword>, which lets you see 
+			 <keyword>Analytics</keyword> variables while visiting your
+			 website. 
+		  </cmd>
+      </step>
+      <step id="step_26B4586C7A644203AE3B8F0FD519DBF7">
+        <cmd>Navigate to your new Web page, or open the saved HTML file on your
+			 hard drive. Open 
+			 <keyword>DigitalPulse Debugger</keyword>. 
+		  </cmd>
+      </step>
+      <step id="step_3D9CA0554DFC4387B8012C42A051C7C4">
+        <cmd> Review the above steps to ensure everything was done correctly
+			 and try again. 
+		  </cmd>
+        <info>
+          <p>The 
+				<varname>pageName</varname> parameter is 
+				<uicontrol>Test Page</uicontrol>. If you see a window that says 
+				<uicontrol>No requests found</uicontrol>, it means there is an
+				issue with your implementation.
+			 </p>
+        </info>
+      </step>
+      <step id="step_AA40A52203A9460C8B5740BEFB745544">
+        <cmd>Once verified in 
+			 <keyword>DigitalPulse Debugger</keyword>, wait several hours to give
+			 the processing servers time to populate reports. 
+		  </cmd>
+      </step>
+      <step id="step_98491113AD944C9883F3C077161A873D">
+        <cmd>Login to 
+			 reporting and analytics. Go to 
+			 <uicontrol>Site Content</uicontrol> &gt; 
+			 <uicontrol>Pages</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_707D1490512C44D9B9CE7D1D469E1520">
+        <cmd>Look for 
+			 <uicontrol>Test Page</uicontrol> with one or more page views. 
+		  </cmd>
+        <info>
+          <p> If you see page views in the report, you have successfully
+				implemented 
+				<keyword>Analytics</keyword> on a page. When implementing on
+				multiple pages, the 
+				<uicontrol>Page Code</uicontrol> must be present on each, but can
+				reference the same core Javascript file. Each page can also have their own
+				variables such as 
+				<wintitle>props</wintitle>, 
+				<wintitle>eVars</wintitle>, 
+				<varname>products</varname>, 
+				<wintitle>campaigns</wintitle>, and so forth. 
+			 </p>
+          <p> If you require assistance implementing code on your site, contact
+				your organization's account manager who can arrange a meeting with an Adobe
+				Implementation Consultant. 
+			 </p>
+        </info>
+      </step>
+    </steps>
+  </taskbody>
+</task>

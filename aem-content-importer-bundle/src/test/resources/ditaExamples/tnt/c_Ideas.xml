@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_11AB8A2E4BF140B3B56596CC4EE548C9" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic concept/concept ">
+  <title class="- topic/title ">Ideas</title>
+  <shortdesc class="- topic/shortdesc ">In many organizations, the person who
+	 manages Target receives ideas from other people. To enable ideas to be gathered
+	 and managed in one location, the Ideas list eliminates the need to manage ideas
+	 in email or spreadsheets. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody class="- topic/body  concept/conbody ">
+    <p class="- topic/p ">There are two ways to change the order of items in
+		the ideas queue. You can type a number in the order box when you create or edit
+		an idea. You can also drag an idea and drop it into the desired place in the
+		queue. 
+	 </p>
+  </conbody>
+  <related-links class="- topic/related-links ">
+    <link href="c_Offers.xml#concept_40CA4EEBF72C430395ADB96C3A3D7DF4" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text About Offers?>
+    </link>
+    <link href="c_Managing_Campaigns.xml#concept_3D45A7B6C09C488FB42B1741F09FF42F" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Campaigns?>
+    </link>
+    <link href="c_Reports.xml#concept_252AF18105BE4773988DB1CFAAA49A19" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Reports?>
+    </link>
+  </related-links>
+</concept>

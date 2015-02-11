@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_B56B0C00D50640FA9C7543F62E08691C"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"
+ ditaarch:DITAArchVersion="1.1"
+ domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)"
+ class="- topic/topic task/task "> 
+  <title class="- topic/title ">Analytics to Target Integration</title> 
+  <shortdesc class="- topic/shortdesc ">Use Adobe Analytics variables (props,
+	 eVars, events, etc.) for segmenting, targeting, success, and conversion. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Target"/> 
+		<othermeta name="topic" content="Advanced"/> </metadata>
+  </prolog> 
+  <taskbody class="- topic/body task/taskbody "> 
+	 <prereq id="prereq_AF5E63E705954CC7BBD45FD4A79AE11E"
+	  class="- topic/section task/prereq "> 
+		<p> 
+		  <note>As of April 17, 2014, the information in this section has been
+			 deprecated, and is replaced by the 
+			 <xref href="http://marketing.adobe.com/resources/help/en_US/target/a4t/"
+			  format="http" scope="external">Adobe Analytics as the Reporting Source for
+				Adobe Target</xref> functionality. Adobe is continuing to support the former
+			 integration methods, but it is recommended that you use the new functionality. 
+		  </note> 
+		</p> 
+		<p class="- topic/p "> Analytics to Target integration requires<filepath
+		  class="+ topic/ph sw-d/filepath "> s_code.js</filepath> version H.17 or higher.
+		  
+		</p> 
+		<p class="- topic/p ">For more information, see the 
+		  <xref
+			href="http://marketing.adobe.com/resources/help/en_US/tnt/pdf/SiteCatalyst%20to%20TnT%20integration%20guide.pdf "
+			scope="external" format="http" class="- topic/xref ">SiteCatalyst to
+			 Test&amp;Target Integration white paper</xref>. 
+		</p> 
+	 </prereq> 
+	 <steps id="steps_53C57D33072646639AD9435E14591CF0"
+	  class="- topic/ol task/steps "> 
+		<step id="step_AD4382D7E6CD4F08980E6B8A35D991D3"
+		 class="- topic/li task/step "> 
+		  <cmd class="- topic/ph task/cmd "> Enable the Adobe Analytics plugin
+			 within the Target Interface: 
+		  </cmd> 
+		  <stepresult class="- topic/itemgroup task/stepresult "> 
+			 <p class="- topic/p ">Click 
+				<uicontrol>Configuration</uicontrol> &gt; 
+				<uicontrol
+				 class="+ topic/ph ui-d/uicontrol ">mbox.js</uicontrol><uicontrol
+				class="+ topic/ph ui-d/uicontrol ">Edit</uicontrol>, then enable the plugin and
+				click 
+				<uicontrol class="+ topic/ph ui-d/uicontrol ">Save</uicontrol>. 
+			 </p> 
+		  </stepresult> 
+		</step> 
+		<step id="step_C300632BA1FE4DB8AB9E2154912D47E5"
+		 class="- topic/li task/step "> 
+		  <cmd class="- topic/ph task/cmd ">Click 
+			 <uicontrol
+			  class="+ topic/ph ui-d/uicontrol ">Configuration</uicontrol> &gt; 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">mbox.js</uicontrol>
+			 &gt; 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Download</uicontrol> to
+			 download a new 
+			 <filepath class="+ topic/ph sw-d/filepath ">mbox.js</filepath> file,
+			 then 
+			 <xref
+			  href="t_Downloading_mboxjs.xml#task_B1A5E9CC0AAE48E38FA19686548B3371"
+			  type="task" format="dita" scope="local" class="- topic/xref ">upload the
+				file</xref> and<xref
+			 href="t_Referencing_mboxjs.xml#task_4A321498EDAF4A048E3B9A74FD9E67E9"
+			 type="task" format="dita" scope="local" class="- topic/xref "> reference
+				it</xref>. 
+		  </cmd> 
+		</step> 
+		<step id="step_6D264250C24343A49008C0D1C7DDA3A9"
+		 class="- topic/li task/step "> 
+		  <cmd class="- topic/ph task/cmd "> Add the 
+			 <codeph class="+ topic/ph pr-d/codeph ">mboxLoadSCPlugin(s);</codeph>
+			 plugin call to the page code. 
+		  </cmd> 
+		  <stepresult class="- topic/itemgroup task/stepresult "> 
+			 <p class="- topic/p "> Put the plugin call after the Analytics
+				variables are set and before the 
+				<codeph class="+ topic/ph pr-d/codeph ">s.t()</codeph> call. 
+			 </p> 
+			 <p class="- topic/p "> 
+				<codeph class="+ topic/ph pr-d/codeph ">s.pageName=""</codeph> 
+			 </p> 
+			 <p class="- topic/p "> 
+				<codeph class="+ topic/ph pr-d/codeph ">s.prop1=""</codeph> 
+			 </p> 
+			 <p class="- topic/p "> 
+				<codeph class="+ topic/ph pr-d/codeph ">s.events=""</codeph> 
+			 </p> 
+			 <p class="- topic/p "> 
+				<codeph class="+ topic/ph pr-d/codeph ">s.eVar1=""</codeph> 
+			 </p> 
+			 <p class="- topic/p "> 
+				<codeph class="+ topic/ph pr-d/codeph "> 
+				  <b class="+ topic/ph hi-d/b ">mboxLoadSCPlugin(s);</b> 
+				</codeph> 
+			 </p> 
+			 <p class="- topic/p "> 
+				<codeph class="+ topic/ph pr-d/codeph ">/************* DO NOT ALTER
+				  ANYTHING BELOW THIS LINE ! **************/</codeph> 
+			 </p> 
+			 <p class="- topic/p "> 
+				<codeph class="+ topic/ph pr-d/codeph ">var s_code = s.t(); if
+				  (s_code) document.write(s_code)//--&gt;&lt;/script&gt;</codeph> 
+			 </p> 
+		  </stepresult> 
+		</step> 
+		<step id="step_0292DC22138C440B97123BB3FC3EAECC"
+		 class="- topic/li task/step "> 
+		  <cmd class="- topic/ph task/cmd ">To validate the integration, add 
+			 <codeph class="+ topic/ph pr-d/codeph ">mboxDebug=1</codeph> as a
+			 query string parameter to a page with the 
+			 <codeph class="+ topic/ph pr-d/codeph ">mboxLoadSCPlugin(s);</codeph>
+			 on it. 
+		  </cmd> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+  <related-links class="- topic/related-links "> 
+	 <link
+	  href="t_TestTarget_to_SiteCatalyst_Integration.xml#task_0A7B30C0D5FA48938798A7EDEDDF233F"
+	  type="task" format="dita" scope="local" class="- topic/link "> <?xm-replace_text Test&Target to SiteCatalyst Integration?>
+	 </link> 
+	 <link
+	  href="r_Installing_the_SiteCatalyst_Plug-In.xml#reference_EEC90B75E5E4483A80022E623363AD62"
+	  type="reference" format="dita" scope="local" class="- topic/link "> <?xm-replace_text Installing the SiteCatalyst Plug-In?>
+	 </link> 
+	 <link
+	  href="c_Using_the_SiteCatalyst_event_Mbox.xml#concept_795235E60E4B4661A0CF942C636B69BD"
+	  type="concept" format="dita" scope="local" class="- topic/link "> <?xm-replace_text Using the SiteCatalyst: event Mbox?>
+	 </link> 
+	 <link
+	  href="c_Using_the_SiteCatalyst_purchase_Mbox.xml#concept_2B0C42538AD54DC59C89E7F4D566FA40"
+	  type="concept" format="dita" scope="local" class="- topic/link "> <?xm-replace_text Using the SiteCatalyst purchase: Mbox?>
+	 </link> 
+	 <link
+	  href="t_Tracking_Conversions_that_Require_Clicks_with_SiteCatalyst.xml#task_79C8C1A0F939483992595D751318DE48"
+	  type="task" format="dita" scope="local" class="- topic/link "> <?xm-replace_text Using the SiteCatalyst-to-Test&Target   Integration to Track SiteCatalyst Events?>
+	 </link> 
+	 <link
+	  href="c_Viewing_Campaigns_and_Experiences_in_SiteCatalyst_Reports.xml#concept_943F805CC80848649FF8D64A193BAFC2"
+	  type="concept" format="dita" scope="local" class="- topic/link "> <?xm-replace_text Viewing Campaigns and Experiences in SiteCatalyst Reports?>
+	 </link> 
+  </related-links> 
+</task>

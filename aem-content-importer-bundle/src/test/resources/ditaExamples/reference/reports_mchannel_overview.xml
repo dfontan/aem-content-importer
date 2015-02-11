@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_55212A04A31A49F2942B3A8DEA9BC71C">
+  <title>Marketing Channel Overview Report</title>
+  <shortdesc>The 
+	 <wintitle>Marketing Channel Overview Report</wintitle> is designed to
+	 provide high-level insight on which methods customers get to your site are most
+	 effective. Use this report to allocate success metrics and revenue to various
+	 channels. You can also see the specific campaigns or keywords within each
+	 channel that are most successful. It contains its own unique and intuitive
+	 interface, allowing you to view both first and last touch metrics at the same
+	 time. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <section id="section_87F54048CE5445F7A6C795C7787C530A">
+      <title>General Properties</title>
+      <ul id="ul_B7D4BBCBCD0A41D8A3B7940A3437F444">
+        <li id="li_86EBAF949C344E1AA714C396775B2D4B">This report is solely
+			 dependent upon the Marketing Channel 
+			 <xref href="http://marketing.adobe.com/resources/help/en_US/mchannel/index.html?f=c_channels_rules" scope="external" format="html">processing rules</xref>. Changing these rules
+			 change how data in this report is calculated. 
+		  </li>
+        <li id="li_00BF827987D3407A8274AA0D614928D9">The order of processing
+			 rules is crucial to how Marketing Channels work. Each hit checks criteria at
+			 the top of your processing rules first, then filters down from there. 
+		  </li>
+        <li id="li_FFE16483B3164B67BA53B72E43080787">This report is made up of
+			 two breakdowns: the channels themselves, and their channel details. Clicking
+			 the '+' button next to each channel reveals its details. 
+		  </li>
+        <li id="li_D727A17D2AD04720B482BB1384B1763B">Only four metrics can be
+			 added to each column. However, you are not limited to the number of columns you
+			 can use. 
+		  </li>
+        <li id="li_CD6C2731538D46DF86040B956362189F">A small trend line can be
+			 seen at the end of the last column. This trend line can cycle between active
+			 metrics. 
+		  </li>
+        <li id="li_21C83769A1A34A4BB7FAE3D7F657BB98">In addition to various
+			 channels collected by standard methods, you can use offline data sources. 
+		  </li>
+        <li id="li_2499F4B7478F435ABAE2AB4A8765617C">
+          <xref href="http://marketing.adobe.com/resources/help/en_US/mchannel/index.html?f=t_classifications" scope="external" format="html">SAINT Classifications</xref> can be used,
+			 allowing you to rename and consolidate line items. 
+		  </li>
+        <li id="li_441634DDF4BC48359BF9C1A93F0A63C8">The following metrics can
+			 be used in this report (depending on organization and report suite settings): 
+			 <ul id="ul_5E71598207D54C3ABB3182C15ADE94A8"><li id="li_470D078FC552406F80EF49AAAC789ABE"><b>Click-throughs</b>:
+				  the number of times the 
+				  <varname>s.campaign</varname> variable is defined. 
+				</li><li id="li_B13627C5FDDE40F0B181A4FF1AD8C0B0"><xref href="http://marketing.adobe.com/resources/help/en_US/mchannel/index.html?f=t_visitor_engagement" scope="external" format="html">New Engagements</xref>: the number of visitors
+				  who have received a new First Touch Channel. 
+				</li><li id="li_47F63AAD762244B28ABD706EA735D51F">All standard eCommerce
+				  metrics: Revenue, Orders, Units, Carts, Cart Views, Checkouts, Cart Additions,
+				  Cart Removals. 
+				</li><li id="li_A8185EC018144557A116CC3AD619EAAC">All custom events:
+				  Events 1-80, and Events 81-100 if on H22 code or higher. 
+				</li><li id="li_5D640343E3B64DCFB37E9663C13BCE8B"><b>Visits</b> and 
+				  <b>Visitors</b>: requires Commerce Visits and Visitors, which is
+				  dependent on organization and report suite. Contact your Account Manager for
+				  additional details. 
+				</li><li id="li_3B15035A6B12453FB88FE4CA8C15E7B4"><b>Budget</b> and 
+				  <b>Cost</b>: metrics specific to Marketing Channels. See 
+				  <xref href="http://marketing.adobe.com/resources/help/en_US/mchannel/index.html?f=c_overview_budget" scope="external" format="html">Costs and Budgets</xref>. 
+				</li></ul></li>
+      </ul>
+    </section>
+    <section id="section_0C78D294D00942FD9A26D37CB5D645AE">
+      <title>Product-Specific Properties</title>
+      <p>
+        <b>Version 13.5</b>
+      </p>
+      <p>Not available. 
+		</p>
+      <p>
+        <b>Version 14 and 15</b>
+      </p>
+      <p>This report can be accessed by going to 
+		  <uicontrol>Marketing Channels</uicontrol> &gt; 
+		  <uicontrol>Channel Overview Report</uicontrol> (provided the menu is
+		  not customized). 
+		</p>
+      <p>Segmentation is not available in this report. Use the 
+		  <wintitle>First- or Last-Touch Channel</wintitle> or 
+		  <wintitle>First- or Last-Touch Details</wintitle> reports instead. 
+		</p>
+      <p>
+        <b>Ad Hoc Analysis</b>
+      </p>
+      <p>Though the 
+		  <wintitle>Marketing Channel Overview Report</wintitle> is not available, Marketing Channel reports can be accessed
+		  with metrics using different allocation. This allows you to effectively
+		  recreate a very similar report. 
+		</p>
+      <p>This report can leverage multiple advanced segments. 
+		</p>
+    </section>
+  </conbody>
+</concept>

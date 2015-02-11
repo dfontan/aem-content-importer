@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd"[]>
+<reference id="reference_22E16FBDA0964954B1E4252E3751FD29">
+  <title>user.categoryAffinities Scripts</title>
+  <shortdesc>Use the following scripts to access the 
+	 <codeph>user.categoryAffinities</codeph> array.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <refbody>
+    <refsyn id="refsyn_BF7CD6DDDB1D4B4DA6C3C7FD11B6C762">
+      <p>
+        <b>To return a particular category in the 
+			 <codeph>user.categoryAffinities</codeph> array:</b>
+      </p>
+      <p>
+        <codeblock outputclass="syntax html">return user.categoryAffinities[0];</codeblock>
+      </p>
+      <p>
+        <b> To return the number of categories in the 
+			 <codeph>user.categoryAffinities</codeph> array:</b>
+      </p>
+      <p>
+        <codeblock outputclass="syntax html">return user.categoryAffinities.length;</codeblock>
+      </p>
+      <p>
+        <b>To return all the categories in the 
+			 <codeph>user.categoryAffinities</codeph> array as a comma-delimited
+			 string:</b>
+      </p>
+      <p>
+        <codeblock outputclass="syntax html">var number = user.categoryAffinities.length;
+var affinities = '';
+if (number !=0){
+     var i = 0;
+     for (i=0; i&lt;number;i++){
+           affinities += user.categoryAffinities[i] +',';
+     }
+     return affinities;
+}
+else {
+     return affinities;
+}</codeblock>
+      </p>
+    </refsyn>
+  </refbody>
+</reference>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_7FF06560309F44A68FD2B03137BC4116">
+  <title>Prepare to Add Success Metrics</title>
+  <shortdesc>You must prepare your site before you can add success metrics. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <steps id="steps_57C58E5EB3FB49F8AE6AFB857F88071C">
+      <step id="step_EDB96EEB648B4E4BA64126BDBC591BA8">
+        <cmd>Choose the Web pages where visitors are most likely to visit
+			 before conversion. 
+		  </cmd>
+      </step>
+      <step id="step_E8189889824F4841B2121E26AEDF981B">
+        <cmd>Place mboxes on these pages, even if you will not display new
+			 content there. 
+		  </cmd>
+        <stepresult>
+          <p>See 
+				<xref href="t_Setting_Up_Your_Site.xml#task_8C450FFC11344C58B59F092521D71EF7" type="task" format="dita" scope="local"><?xm-replace_text Setting Up Your Site?></xref>
+				for details on how to set up mboxes. 
+			 </p>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links>
+    <link href="t_Setting_Up_Counters_and_Success_Metrics.xml#task_435710C77E0E4C9086BA7B841AF7B4BA" type="task" format="dita" scope="local">
+      <?xm-replace_text Setting Up Counters and Success Metrics?>
+    </link>
+    <link href="t_Using_Multiple_Mboxes_for_One_Success_Metric.xml#task_F11A536A429A4A1E804CBCD74645D146" type="task" format="dita" scope="local">
+      <?xm-replace_text Using Multiple Mboxes for One Success   Metric?>
+    </link>
+    <link href="t_Restricting_the_Order_of_Success_Metrics.xml#task_3C63466D6DF74BE4A2FD455C2181D87A" type="task" format="dita" scope="local">
+      <?xm-replace_text Restricting the Order of Success   Metrics?>
+    </link>
+    <link href="t_Viewing_the_Success_Metrics_Report.xml#task_0FBB58B2F0BC41A3824B0BCB6167F7C8" type="task" format="dita" scope="local">
+      <?xm-replace_text Viewing the Success Metrics Report?>
+    </link>
+    <link href="r_Success_Metric_Advanced_Options.xml#reference_03C2054D36E846DD9A7C9878E816E0C8" type="reference" format="dita" scope="local">
+      <?xm-replace_text Success Metric Advanced Options?>
+    </link>
+  </related-links>
+</task>

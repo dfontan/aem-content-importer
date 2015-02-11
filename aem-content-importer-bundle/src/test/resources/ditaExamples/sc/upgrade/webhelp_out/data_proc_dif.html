@@ -1,0 +1,127 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2012"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2012"/>
+<meta name="DC.Type" content="concept"/>
+<meta name="DC.Title" content="Data Processing Differences Between SiteCatalyst 14 and 15"/>
+<meta name="abstract" content="SiteCatalyst 15 includes several changes to processing and website metric calculation."/>
+<meta name="description" content="SiteCatalyst 15 includes several changes to processing and website metric calculation."/>
+<meta name="DC.Relation" scheme="URI" content="upgrade_home.html"/>
+<meta name="DC.Relation" scheme="URI" content="r_unavail_reports.html"/>
+<meta name="DC.Relation" scheme="URI" content="data_access.html"/>
+<meta name="DC.Relation" scheme="URI" content="t_visits_metric.html"/>
+<meta name="DC.Relation" scheme="URI" content="metric_visits.html"/>
+<meta name="DC.Relation" scheme="URI" content="r_time_spent_calc.html"/>
+<meta name="DC.Relation" scheme="URI" content="dup_visitors.html"/>
+<meta name="DC.Relation" scheme="URI" content="dup_merch_evars.html"/>
+<meta name="DC.Relation" scheme="URI" content="r_sc_seg_diff.html"/>
+<meta name="DC.Relation" scheme="URI" content="conv_reports.html"/>
+<meta name="DC.Relation" scheme="URI" content="reporting_limits.html"/>
+<meta name="DC.Relation" scheme="URI" content="mobile_traffic.html"/>
+<meta name="DC.Relation" scheme="URI" content="historical_data.html"/>
+<meta name="DC.Relation" scheme="URI" content="instances_metric.html"/>
+<meta name="DC.Relation" scheme="URI" content="prod_string.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="concept_6C21A54B619E4920A9DB72F3A672B165"/>
+<link rel="stylesheet" type="text/css" href="https://microsite.omniture.com/t2/help/css/commonltr.css"/>
+<link rel="stylesheet" type="text/css" href="https://microsite.omniture.com/t2/help/css/content.css"/>
+<title>Data Processing Differences Between SiteCatalyst 14 and 15</title>
+<script type="text/javascript">
+var filename="data_proc_dif.xml";
+var rootname = filename.slice(0, -4);
+if (window.location.href.indexOf("/" + rootname + ".html") != -1) {
+  window.location.href = "index.html?f=" + rootname.toLowerCase();
+}
+</script></head>
+<body id="concept_6C21A54B619E4920A9DB72F3A672B165">
+
+<div id="topic"> 
+  <h1 class="title topictitle1">Data Processing Differences Between SiteCatalyst 14 and 15</h1>
+ 
+   
+  <div class="body conbody"><p class="shortdesc"><span class="keyword">SiteCatalyst</span> 15 includes several changes to
+	 processing and website metric calculation. 
+  </p>
+ 
+	 <p class="p">These changes result in more accurate reporting, which results in sudden
+		changes to report data (particularly for 
+		<span class="keyword wintitle">Trended</span> reports). Because of these changes, it might
+		not be practical to view data trends that span the upgrade to 
+		<span class="keyword">SiteCatalyst</span> 15. 
+	 </p>
+ 
+	 <p class="p"><span class="keyword">SiteCatalyst</span> 14 relied on pre-processing mechanisms
+		that summarized, aggregated, and categorized data into pre-defined reporting
+		buckets. The 
+		<span class="keyword">SiteCatalyst</span> 15 data processing platform: 
+	 </p>
+ 
+	 <div class="p"> 
+	 <ol class="ol" id="concept_6C21A54B619E4920A9DB72F3A672B165__ol_C0617F1E823D4212AA059DABD6DEF603"> 
+		<li class="li" id="concept_6C21A54B619E4920A9DB72F3A672B165__li_69F5DFDD6ECA478685902CFB650BABBD">Stores raw data rather than
+		  summarizing data into pre-defined categories. 
+		</li>
+ 
+		<li class="li" id="concept_6C21A54B619E4920A9DB72F3A672B165__li_77CBEB097C6248ADAE30DAFCA3F97887">Uses massively parallel
+		  processing to collect and prepare data for timely report generation. 
+		</li>
+ 
+		<li class="li" id="concept_6C21A54B619E4920A9DB72F3A672B165__li_1DD8A18EB7B14CFD9393DA158AF6DB09">Supports custom data
+		  segmentation because raw data is available. 
+		</li>
+ 
+		<li class="li" id="concept_6C21A54B619E4920A9DB72F3A672B165__li_BCFBF16FB97A4B3396D781F0B8DAA92E">Makes 
+		  <span class="keyword wintitle">Page Views</span>, 
+		  <span class="keyword wintitle">Visits</span>, and 
+		  <span class="keyword wintitle">Unique Visitors</span> metrics accessible from any
+		  report, except correlation and a handful of other reports. 
+		</li>
+ 
+	 </ol>
+ 
+	 </div>
+ 
+  </div>
+
+<div class="related-links">
+<ul class="ullinks">
+<li class="link ulchildlink"><strong><a href="r_unavail_reports.html">Unavailable Reports</a></strong><br/>
+There are several reports that are unavailable in  	 <span class="keyword">SiteCatalyst</span> 15.    </li>
+<li class="link ulchildlink"><strong><a href="data_access.html">Data Accessibility</a></strong><br/>
+In  	 <span class="keyword">SiteCatalyst</span> 15, data is available on average 45 minutes 	 after receipt.   </li>
+<li class="link ulchildlink"><strong><a href="t_visits_metric.html">Visits Metric Includes Non-cookie Visitors</a></strong><br/>
+To calculate the  	 <span class="keyword wintitle">Visits</span> metric,  	 <span class="keyword">SiteCatalyst</span> 14 reported only on visitors who accepted a 	 tracking cookie.    </li>
+<li class="link ulchildlink"><strong><a href="metric_visits.html">Updated Visits Metric for Typed Bookmarked in Referring Domains Report</a></strong><br/>
+If you had the  	 <span class="keyword wintitle">Visits</span> metric enabled on the  	 <span class="keyword wintitle">Referring Domains</span> report in  	 <span class="keyword">SiteCatalyst</span> 14, you’ll notice a change to the  	 <span class="keyword wintitle">Visit</span> count on this report after upgrading to  	 <span class="keyword">SiteCatalyst</span> 15.   </li>
+<li class="link ulchildlink"><strong><a href="r_time_spent_calc.html">Updated Time Spent Calculation</a></strong><br/>
+In  	 <span class="keyword">SiteCatalyst</span> 14, if a visitor spent 00:01:15 on a Web 	 page, the reported  	 <span class="keyword wintitle">Time Spent on Page</span> metric would be 00:02:00.    </li>
+<li class="link ulchildlink"><strong><a href="dup_visitors.html">Remove Duplicate Visitors and Unique Visits</a></strong><br/>
+Previously,  	 <span class="keyword">SiteCatalyst</span> did not remove duplicate  	 <span class="keyword wintitle">Visits</span> and  	 <span class="keyword wintitle">Unique Visitors</span> metrics from classifications-based 	 reports.   </li>
+<li class="link ulchildlink"><strong><a href="dup_merch_evars.html">Remove Duplicates from Merchandising eVars</a></strong><br/>
+Previously,  	 <span class="keyword">SiteCatalyst</span> did not remove duplicate metrics for 	 merchandising eVars.    </li>
+<li class="link ulchildlink"><strong><a href="r_sc_seg_diff.html">ASI and SiteCatalyst Segmentation Differences</a></strong><br/>
+<span class="keyword wintitle">ASI</span> slots no longer process after you 	 upgrade.    </li>
+<li class="link ulchildlink"><strong><a href="conv_reports.html">Conversion Reports - Counting Visits and Daily Unique Visitors</a></strong><br/>
+In  	 <span class="keyword">SiteCatalyst</span> 14,  	 <span class="keyword wintitle">Visits</span> and  	 <span class="keyword wintitle">Daily Unique Visitors</span> metrics on conversion reports 	 are limited to visits in which a conversion event (eVar instance or custom 	 event) occurred.   </li>
+<li class="link ulchildlink"><strong><a href="reporting_limits.html">Improved Reporting Limits for Monthly Unique Values</a></strong><br/>
+When a report has a large number of unique values,  	 <span class="keyword">SiteCatalyst</span> now includes functionality to ensure that 	 the most important values appear in your report.    </li>
+<li class="link ulchildlink"><strong><a href="mobile_traffic.html">How Mobile Traffic Displays in Technology Reports</a></strong><br/>
+<span class="keyword">SiteCatalyst</span> 15 includes mobile devices in all 	 technology reports, but differentiates mobile technology from non-mobile 	 technology.   </li>
+<li class="link ulchildlink"><strong><a href="historical_data.html">Historical Data and Rollup Report Suites</a></strong><br/>
+<span class="keyword">SiteCatalyst</span> 15 data is available to version 14 	 and 13.5. However, version 15 features, like segmentation, full subrelations, 	 and reporting on new metrics are not applicable to data collected before your 	 upgrade date.    </li>
+<li class="link ulchildlink"><strong><a href="instances_metric.html">Instances Metric on Merchandising eVars</a></strong><br/>
+The  	 <span class="keyword wintitle">Instances</span> metric on eVars configured as  	 <span class="keyword wintitle">Merchandising</span> eVars shows incorrect values.   </li>
+<li class="link ulchildlink"><strong><a href="prod_string.html">Category Section of the Product String</a></strong><br/>
+If you provided a category section in your product string,  	 <span class="keyword">SiteCatalyst</span> version 14 made a 1:1 association between 	 the product and category.   </li>
+</ul>
+
+<div class="familylinks">
+</div>
+</div>
+
+</div></body>
+</html>

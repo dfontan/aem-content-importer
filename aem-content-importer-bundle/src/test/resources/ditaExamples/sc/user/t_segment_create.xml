@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_8DF5958E208F4B22B7277B0A69EC9C16"> 
+  <title>Create a segment for marketing reports</title> 
+  <shortdesc>Steps that describe how to create a segment in the 
+	 <wintitle>Segment Definition Builder</wintitle>. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Reports and analytics"/> </metadata>
+  </prolog> 
+  <taskbody> 
+	 <steps id="steps_0AFC3C0B315245AAAEB87EA93F28E878"> 
+		<step id="step_D37AF4CE167B42E58203942D0AFEACB3"> 
+		  <cmd>In a report or dashboard, click 
+			 <uicontrol>Add Segment</uicontrol>. 
+		  </cmd> 
+		  <stepresult> 
+			 <p> 
+				<image placement="break" align="left"
+				 href="graphics/add_segment.png"
+				 id="image_1DD1DB37C79C4162A306FF4C37488E22"></image> 
+			 </p> 
+		  </stepresult> 
+		</step> 
+		<step id="step_3BDDF7E271264399AD52FAB330D29104"> 
+		  <cmd>On the 
+			 <wintitle>Segment Definition Builder</wintitle> page, drag a 
+			 <uicontrol>Component</uicontrol> (such as Visit) to the 
+			 <wintitle>Segment Canvas</wintitle>. 
+		  </cmd> 
+		  <info> 
+			 <p> 
+				<image placement="break" align="left"
+				 href="graphics/segment_def_builder.png" width="672px"
+				 id="image_665FFDCD130F43C5BD4B9E24E84C1FC2"></image> 
+			 </p> 
+		  </info> 
+		</step> 
+		<step id="step_FFD369EC79154DC1AB62FA4B4D813F22"> 
+		  <cmd>In the 
+			 <wintitle>Segment Canvas</wintitle>, click the Component (in this
+			 case, 
+			 <uicontrol>Visit</uicontrol>). 
+		  </cmd> 
+		</step> 
+		<step id="step_D394879360DE482E89AF0238B68A6A49"> 
+		  <cmd>Define the segment rules. 
+		  </cmd> 
+		  <info> 
+			 <p>This example shows a segment for repeat visits. This is a rule in
+				which 
+				<userinput>the visit number is greater than 1</userinput>. This
+				rule defines the report to display only repeat visitors. 
+			 </p> 
+		  </info> 
+		  <stepresult> 
+			 <p> 
+				<image href="graphics/segment_define.png"
+				 id="image_7BE4B4697C7A4ADFBCA1783BD2853AFD"> <?xm-replace_text Paragraph?>
+				</image> 
+			 </p> 
+		  </stepresult> 
+		</step> 
+		<step id="step_57AF99120B2E46B0A77FC455E8E423FC"> 
+		  <cmd>Use the following options in the 
+			 <wintitle>Segment Canvas</wintitle> to further configure segment
+			 components: 
+		  </cmd> 
+		  <choicetable id="choicetable_C3A5D12499EE48B8870FC29EFEEEB124"
+			keycol="0"> 
+			 <chhead> 
+				<choptionhd>Option</choptionhd> 
+				<chdeschd>Description</chdeschd> 
+			 </chhead> 
+			 <chrow> 
+				<choption> 
+				  <p>Title 
+				  </p> 
+				</choption> 
+				<chdesc> 
+				  <p>The name of your segment. You can browse to locate an existing
+					 segment to use as a template. 
+				  </p> 
+				</chdesc> 
+			 </chrow> 
+			 <chrow> 
+				<choption> 
+				  <p>Components 
+				  </p> 
+				</choption> 
+				<chdesc> 
+				  <p>The containers and events you can use to build a segment. Drag
+					 and drop components from 
+					 <wintitle>Segment Definition Components</wintitle> to the 
+					 <wintitle>Segment Canvas</wintitle>. 
+				  </p> 
+				</chdesc> 
+			 </chrow> 
+			 <chrow> 
+				<choption> 
+				  <p>Library 
+				  </p> 
+				</choption> 
+				<chdesc> 
+				  <p>Stores commonly used segment definition components. To add
+					 components to your library, drag any block from the canvas on the right into
+					 this area. All details (including nested blocks) contained within that block
+					 are preserved. 
+				  </p> 
+				</chdesc> 
+			 </chrow> 
+			 <chrow> 
+				<choption> 
+				  <p>Container 
+				  </p> 
+				</choption> 
+				<chdesc> 
+				  <p>Containers are used to build segments that relate to traffic
+					 data. Three types of segment containers are available: 
+				  </p> 
+				  <ul id="ul_33B403A92DAA4C9A99162CA02A4E1757"> 
+					 <li id="li_EDF881E3CDA94C61BF8AAAAB2D41F460"> 
+						<uicontrol>Page Views</uicontrol>: Use page segments to
+						understand the traffic going to different areas of your site, including
+						multiple levels of hierarchy. 
+					 </li> 
+					 <li id="li_BBA9F0380A9D469FBF7A11B1C14F23DE"> 
+						<uicontrol>Visit</uicontrol>: Use visit segments to
+						understand the path a visitor follows and the interaction a visitor takes, such
+						as visits that include specific pages, campaigns, conversions, and so on. 
+					 </li> 
+					 <li id="li_9775DF41C2AE4097B895D2E862C90CBB"> 
+						<uicontrol>Visitor</uicontrol>: Visitor segments are based on
+						the visitor details, such as where a visitor comes from, buyers or window
+						shoppers, authentication status, gender, age, geography, and so on. 
+						<note>Visitor segmentation applies to visitor activity only
+						  during the reporting period. However, a visit could potentially include a
+						  persistent eVar from previous activity outside the reporting period. If that
+						  visitor returns to your site during the segment's reporting period, and the
+						  segment includes the eVar value, the visitor would be counted in the segment. 
+						</note> 
+					 </li> 
+				  </ul> 
+				  <p>Containers are listed in order from most granular (Page Views)
+					 to least granular (Visitors). 
+				  </p> 
+				  <note>Running an 
+					 <wintitle>Entry Pages Report</wintitle> only reports on entry
+					 pages, even if you apply segment to a non-entry page. 
+				  </note> 
+				  <p> For example, assume a visit sequence is as follows: 
+				  </p> 
+				  <p> 
+					 <filepath>Page A</filepath> &gt; 
+					 <filepath>Page B</filepath> &gt; 
+					 <filepath>Page C</filepath> 
+				  </p> 
+				  <p>If Page B and Page C are used in a segment, only Page A is
+					 reported in an 
+					 <wintitle>Entry Pages Report</wintitle>, because Page A is the
+					 entry page. 
+				  </p> 
+				</chdesc> 
+			 </chrow> 
+			 <chrow> 
+				<choption> 
+				  <p>Event 
+				  </p> 
+				</choption> 
+				<chdesc> 
+				  <p>Events are generally for conversion data and conversion
+					 events. You can make a container subordinate to an event or vice versa. When
+					 the component is in place, additional boxes appear that let you add subordinate
+					 components and more main-level components. 
+				  </p> 
+				</chdesc> 
+			 </chrow> 
+			 <chrow> 
+				<choption> 
+				  <p>Include 
+				  </p> 
+				</choption> 
+				<chdesc> 
+				  <p>Specifies whether to include components (visits, visitors,
+					 referring domains, campaigns, browser type, and so on) if the requirements of
+					 the events and rules are met. 
+				  </p> 
+				</chdesc> 
+			 </chrow> 
+			 <chrow> 
+				<choption> 
+				  <p>Exclude 
+				  </p> 
+				</choption> 
+				<chdesc> 
+				  <p>Specifies a condition that excludes components when the
+					 requirements of the events and rules that you configure are met. For example,
+					 you can set up a referring domains segment that excludes certain referrers or
+					 pages viewed. 
+				  </p> 
+				</chdesc> 
+			 </chrow> 
+		  </choicetable> 
+		</step> 
+		<step id="step_005A1387C3CF4CE4ADBD9D08ABB9884F"> 
+		  <cmd>Use the following options to define a segment filter rule: 
+		  </cmd> 
+		  <choicetable id="choicetable_A8FD5193E0E945648DDAA8F0DD5CC4EA"
+		  keycol="0"> 
+			 <chhead> 
+				<choptionhd>Option</choptionhd> 
+				<chdeschd>Description</chdeschd> 
+			 </chhead> 
+			 <chrow> 
+				<choption>Name</choption> 
+				<chdesc> 
+				  <p>(Optional) The name of the component. This name carries over
+					 from the 
+					 <wintitle>Segment Definition Builder</wintitle>. Changing this
+					 name does not change the core properties for the event or component. Change
+					 this name to account for the definitions you have added. 
+				  </p> 
+				</chdesc> 
+			 </chrow> 
+			 <chrow> 
+				<choption>Match</choption> 
+				<chdesc> 
+				  <p>The logic rule that specifies whether all of the rules are
+					 true, or at least one of the rules are true. 
+				  </p> 
+				</chdesc> 
+			 </chrow> 
+			 <chrow> 
+				<choption>Include Only</choption> 
+				<chdesc> 
+				  <p>Lets you use Boolean logic to create a filter for the rule.
+					 Select an event (instance, date, eVar, and so on) to use as an operator. Valid
+					 selections include: 
+				  <ul id="ul_8CAE4C2733134243BC80CF5EFE5B30B6"> 
+					 <li id="li_104DEECE3C85482C8DAE200E1C2D1A45"> 
+						<p><uicontrol>equals</uicontrol>: The selected item must
+						  exactly equal the value you enter. 
+						</p> 
+					 </li> 
+					 <li id="li_252A75C8EFE049E4A38356C4995BF9BF"> 
+						<p><uicontrol>does not equal</uicontrol>: The selected item
+						  must not equal the value you enter. 
+						</p> 
+					 </li> 
+					 <li id="li_E672FEADA4E744B89A8778EC8ED9CC25"> 
+						<p><uicontrol>is greater than</uicontrol>: The value of
+						  selected item must be greater than the value you enter. 
+						</p> 
+					 </li> 
+					 <li id="li_ECD0D54DFC2140D189B19770B9FCACD9"> 
+						<p><uicontrol>is less than</uicontrol>: The value of the
+						  selected item must be less than value you enter. 
+						</p> 
+					 </li> 
+					 <li id="li_A7A0C55D596244E4BA7FDB8CC9364159"> 
+						<p><uicontrol>is greater than or equal to</uicontrol>: The
+						  selected item must equal or be greater than the value you enter. 
+						</p> 
+					 </li> 
+					 <li id="li_6B0E00E37513405B849436F07400AA60"> 
+						<p><uicontrol>is less than or equal to</uicontrol>: The
+						  selected item must equal or be less than the value you enter. 
+						</p> 
+					 </li> 
+					 <li id="li_E2D7AB77D88B445C864202B19519A719"> 
+						<p><uicontrol>contains</uicontrol>: The item must contain the
+						  entire value you enter. 
+						</p> 
+					 </li> 
+					 <li id="li_0B742068C842472F90F822FA9C179276"> 
+						<p><uicontrol>contains all of</uicontrol>: The selected item
+						  must contain all of the values you enter, each value delimited by a space.
+						  Values are not required to be in order. 
+						</p> 
+					 </li> 
+					 <li id="li_26B2E1132D544AC298065F7D98A8A28F"> 
+						<p><uicontrol>contains at least one of</uicontrol>: The item
+						  must contain at least one of the values you enter, each value delimited by a
+						  space. 
+						</p> 
+					 </li> 
+					 <li id="li_B1E2EE1559D14B488D97A99092E45CBE"> 
+						<p><uicontrol>does not contain</uicontrol>: The item cannot
+						  contain the value you enter. 
+						</p> 
+					 </li> 
+					 <li id="li_CE9F6F98CBAB4DFBAE2B619161FF36C8"> 
+						<p><uicontrol>is null</uicontrol>: The field value is
+						  unknown. 
+						</p> 
+					 </li> 
+					 <li id="li_07F8DF6CBDB74844A11E6BA64A1DADB2"> 
+						<p><uicontrol>is not null</uicontrol>: The field value cannot
+						  be unknown. 
+						</p> 
+					 </li> 
+					 <li id="li_52E66F7FF23D41819C91C4D89236B7D4"> 
+						<p><uicontrol>starts with</uicontrol>: The item starts with
+						  the value you enter. 
+						</p> 
+					 </li> 
+					 <li id="li_C1E07C74245E438B9352C93FF28DEC62"> 
+						<p><uicontrol>does not start with</uicontrol>: The item
+						  cannot start with the value you enter. 
+						</p> 
+					 </li> 
+					 <li id="li_F8D52E6353B94BA1A2C3E751FB7E7F77"> 
+						<p><uicontrol>ends with</uicontrol>: The item ends with the
+						  value you enter. 
+						</p> 
+					 </li> 
+					 <li id="li_CE908471376A44308779740E0EC98190"> 
+						<p><uicontrol>does not end with</uicontrol>: The item cannot
+						  end with the value you enter. 
+						</p> 
+					 </li> 
+				  </ul> 
+				  </p> 
+				</chdesc> 
+			 </chrow> 
+			 <chrow> 
+				<choption> 
+				  <p>Value 
+				  </p> 
+				</choption> 
+				<chdesc> 
+				  <p>Lets you type a value for the rule operand. You can click 
+					 <uicontrol>Select Item</uicontrol> to locate additional items.
+					 On the resulting 
+					 <wintitle>Select Item</wintitle> page, only valid values are
+					 shown. 
+				  </p> 
+				</chdesc> 
+			 </chrow> 
+		  </choicetable> 
+		</step> 
+		<step id="step_8467979E69CE42D084FDCD9A1934BAA7"> 
+		  <cmd>After you define a segment filter rule, click 
+			 <uicontrol>Add</uicontrol>. 
+		  </cmd> 
+		  <info> 
+			 <p>The filters you create display in the 
+				<uicontrol>Filter</uicontrol> field. You can select an existing
+				filter for edit. 
+			 </p> 
+		  </info> 
+		</step> 
+		<step id="step_93662E0D94CD42F7959012BD4A183A8F"> 
+		  <cmd>Click 
+			 <uicontrol>OK</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_5948D11F851649A1AA2D184BAA7EB470"> 
+		  <cmd>On the 
+			 <wintitle>Segment Definition Builder</wintitle>, type a name in the 
+			 <uicontrol>Title</uicontrol> field, then click 
+			 <uicontrol>Save.</uicontrol> 
+		  </cmd> 
+		  <stepresult>The report refreshes with the applied segment. 
+		  </stepresult> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_D7939363573A457F9279FEDFB4A24BF7">
+  <title>Publishing Lists</title>
+  <shortdesc>Publishing lists provide an easy way to send various reports
+	 specific to different groups of your organization without creating several
+	 separate scheduled reports. Publishing lists are useful if you have
+	 location-specific report suites and would like to provide each respective
+	 department a copy of a specific dashboard. Alternatively, you can use
+	 publishing lists to send data to many people without having to separately type
+	 in their email addresses, if you work with a single report suite. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Admin tools" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Multiple publishing lists can be specified when scheduling a report. 
+	 </p>
+    <section id="section_099DF8AC5691495F9B22C71266DD6004">
+      <title>Publishing List Manager Descriptions</title>
+      <table id="table_90B9B09C254948F697AB07BD7DC48FF4">
+        <tgroup cols="2">
+          <colspec colnum="1" colname="col1" colwidth="*" />
+          <colspec colnum="2" colname="col2" colwidth="*" />
+          <thead>
+            <row>
+              <entry colname="col1">Element 
+				  </entry>
+              <entry colname="col2">Description 
+				  </entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry colname="col1">
+                <wintitle>Search for</wintitle>
+              </entry>
+              <entry colname="col2">Lets you filter the table to search for a
+					 publishing list.
+				  </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <wintitle>Report Suites to
+						Include</wintitle>
+              </entry>
+              <entry colname="col2">Overrides the report suite for a scheduled
+					 report or all reportlets in a dashboard. Though there is no technical limit on
+					 the number of separate report suite entries, it is recommended to limit it to
+					 approximately 50. There is no established limit on the number of emails that
+					 can be included. 
+				  </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <wintitle>E-mail Addresses 
+					 </wintitle>
+              </entry>
+              <entry colname="col2">A comma-delimited list of all emails that
+					 will receive the report with the new report suite. 
+					 <p> Click 
+						<uicontrol>Click to Edit</uicontrol> to specify the Email
+						addresses to receive. Enter each Email address, separating multiple Email
+						addresses with a semi-colon (;). Press &lt;Enter&gt; when finished entering
+						Email addresses. 
+					 </p><p>The Email Count field displays the number of Email addresses
+						currently associated with the report suite entry. 
+					 </p></entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <wintitle>Duplicate</wintitle>
+              </entry>
+              <entry colname="col2">Creates a copy of the publishing list.
+				  </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+  </conbody>
+</concept>

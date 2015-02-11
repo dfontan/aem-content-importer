@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd"[]>
+<reference id="reference_03C2054D36E846DD9A7C9878E816E0C8">
+  <title>Success Metric Advanced Options</title>
+  <shortdesc>Success metric advanced options give you the ability to define
+	 custom behavior for both content viewing and counting when visiting a success
+	 metric. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <refbody>
+    <refsyn id="refsyn_F3AA3B37A28647B7AE8974B3F8A8CB1E">
+      <p>The default behavior when visiting any normal success metric is to
+		  continue to show the user campaign content on the same experience and to never
+		  recount them. The default behavior for conversion is to enable a visitor to
+		  re-enter the campaign if they meet the entry conditions, but always keep them
+		  on the same experience. To change the default content viewing or counting
+		  behavior on a success metric, select the gear icon next to the success metric
+		  and modify the value in the drop down.
+		</p>
+      <p>The table below describes the functionality of each of the selections
+		  with regard to its content viewing or counting behaviors.
+		</p>
+      <p>
+        <table id="table_86BC84EF5175469E8C0D88FC685B0795">
+          <tgroup cols="4">
+            <colspec colnum="1" colname="col1" colwidth="1.00*" />
+            <colspec colnum="2" colname="col2" colwidth="1.00*" />
+            <colspec colnum="3" colname="col3" colwidth="1.60*" />
+            <colspec colnum="4" colname="col4" colwidth="1.68*" />
+            <thead>
+              <row>
+                <entry colname="col1">Name
+				  </entry>
+                <entry colname="col2">For Conversion or Other Success Metric?
+				  </entry>
+                <entry colname="col3">Viewing Behavior
+				  </entry>
+                <entry colname="col4">Counting Behavior
+				  </entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry colname="col1">
+                  <p>Count Once 
+					 </p>
+                </entry>
+                <entry colname="col2">
+                  <p>Success metric 
+					 </p>
+                </entry>
+                <entry colname="col3">
+                  <p>Continue to display content from the same experience. 
+					 </p>
+                </entry>
+                <entry colname="col4">
+                  <p>Never count the visitor more than once. 
+					 </p>
+                </entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <p>Count Landings (or Clicks) 
+					 </p>
+                </entry>
+                <entry colname="col2">
+                  <p>Success metric 
+					 </p>
+                </entry>
+                <entry colname="col3">
+                  <p>Continue to display content from the same experience. 
+					 </p>
+                </entry>
+                <entry colname="col4">
+                  <p>Count the visitor again if they visit any other mbox before
+						visiting this success metric again. 
+					 </p>
+                </entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <p>Always Convert 
+					 </p>
+                </entry>
+                <entry colname="col2">
+                  <p>Success metric 
+					 </p>
+                </entry>
+                <entry colname="col3">
+                  <p>Continue to display content from the same experience. 
+					 </p>
+                </entry>
+                <entry colname="col4">
+                  <p>Count the visitor again every time they visit this success
+						metric (even on a page reload). 
+					 </p>
+                </entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <p>Restart - Same Experience 
+					 </p>
+                </entry>
+                <entry colname="col2">
+                  <p>Conversion 
+					 </p>
+                </entry>
+                <entry colname="col3">
+                  <p>Continue to display content from the same experience. 
+					 </p>
+                </entry>
+                <entry colname="col4">
+                  <p>Count the visitor again if they re-fulfill the campaign
+						entry conditions. 
+					 </p>
+                </entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <p>Restart - Random Experience 
+					 </p>
+                </entry>
+                <entry colname="col2">
+                  <p>Conversion 
+					 </p>
+                </entry>
+                <entry colname="col3">
+                  <p>Run experience selection again to determine the content to
+						display. 
+					 </p>
+                </entry>
+                <entry colname="col4">
+                  <p>Count the visitor again if they re-fulfill the campaign
+						entry conditions. 
+					 </p>
+                </entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <p>Restart - New Experience 
+					 </p>
+                </entry>
+                <entry colname="col2">
+                  <p>Conversion 
+					 </p>
+                </entry>
+                <entry colname="col3">
+                  <p>Run experience selection again to determine the content to
+						display, but exclude any experiences the visitor has already seen. This might
+						result in seeing default content if all experiences have already been seen. 
+					 </p>
+                </entry>
+                <entry colname="col4">
+                  <p>Count the visitor again if they re-fulfill the campaign
+						entry conditions. 
+					 </p>
+                </entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <p>Exclude - Same Experience 
+					 </p>
+                </entry>
+                <entry colname="col2">
+                  <p>Conversion 
+					 </p>
+                </entry>
+                <entry colname="col3">
+                  <p>Continue to display content from the same experience. 
+					 </p>
+                </entry>
+                <entry colname="col4">
+                  <p>Never count the visitor more than once. 
+					 </p>
+                </entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <p>Exclude - Default Content 
+					 </p>
+                </entry>
+                <entry colname="col2">
+                  <p>Conversion 
+					 </p>
+                </entry>
+                <entry colname="col3">
+                  <p>Display default content. 
+					 </p>
+                </entry>
+                <entry colname="col4">
+                  <p>Never count the visitor more than once. 
+					 </p>
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </p>
+    </refsyn>
+  </refbody>
+  <related-links>
+    <link href="t_Preparing_to_Add_Success_Metrics.xml#task_7FF06560309F44A68FD2B03137BC4116" type="task" format="dita" scope="local">
+      <?xm-replace_text Preparing to Add Success Metrics?>
+    </link>
+    <link href="t_Setting_Up_Counters_and_Success_Metrics.xml#task_435710C77E0E4C9086BA7B841AF7B4BA" type="task" format="dita" scope="local">
+      <?xm-replace_text Setting Up Counters and Success Metrics?>
+    </link>
+    <link href="t_Using_Multiple_Mboxes_for_One_Success_Metric.xml#task_F11A536A429A4A1E804CBCD74645D146" type="task" format="dita" scope="local">
+      <?xm-replace_text Using Multiple Mboxes for One Success Metric?>
+    </link>
+    <link href="t_Restricting_the_Order_of_Success_Metrics.xml#task_3C63466D6DF74BE4A2FD455C2181D87A" type="task" format="dita" scope="local">
+      <?xm-replace_text Restricting the Order of Success Metrics?>
+    </link>
+    <link href="t_Viewing_the_Success_Metrics_Report.xml#task_0FBB58B2F0BC41A3824B0BCB6167F7C8" type="task" format="dita" scope="local">
+      <?xm-replace_text Viewing the Success Metrics Report?>
+    </link>
+  </related-links>
+</reference>

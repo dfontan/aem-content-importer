@@ -1,0 +1,1314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_D475520602B24701838F8E3F0E40C11C"> 
+  <title>Variables - How They Are Used in Reporting</title> 
+  <shortdesc>Descriptions of variables and how each is used in reporting. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Developer and implementation,Reports"/> 
+		<othermeta name="subtopic" content="Variables"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <ul id="ul_DDED0DC3B89D4B9D9AFB14BCE78BC7F4"> 
+		<li id="li_442F203741F04D2888032D595CF9112E"> 
+		  <xref
+			href="variable_definitions.xml#concept_D475520602B24701838F8E3F0E40C11C/section_193C396A80F944E4A5D44ABA75046383"
+			format="dita" scope="local"> <?xm-replace_text Variables?>
+		  </xref> 
+		</li> 
+		<li id="li_5DEBB82F99D04B17824F535E7EF638D7"> 
+		  <xref
+			href="variable_definitions.xml#concept_D475520602B24701838F8E3F0E40C11C/section_C6A32064666248AFBCB5FFA39FE66179"
+			format="dita" scope="local"> <?xm-replace_text Configuration Variables?>
+		  </xref> 
+		</li> 
+		<li id="li_7A18B3F11E174904ACB45861E9B73DD9"> 
+		  <xref
+			href="variable_definitions.xml#concept_D475520602B24701838F8E3F0E40C11C/section_2264E57132144263BFEEC40F63AB85F3"
+			format="dita" scope="local"> <?xm-replace_text Automatic Variables?>
+		  </xref> 
+		</li> 
+		<li id="li_31679846EAF84350A078BE336636C40D"> 
+		  <xref
+			href="variable_definitions.xml#concept_D475520602B24701838F8E3F0E40C11C/section_73B40376C5D847DC82CB9863F26D086F"
+			format="dita" scope="local"> <?xm-replace_text Direct Variables?>
+		  </xref> 
+		</li> 
+	 </ul> 
+	 <section id="section_193C396A80F944E4A5D44ABA75046383"> 
+		<title>Variables</title> 
+		<p> Marketing report variables are usually populated in the HTML code, on
+		  each page or template of the site. Additionally, plug-ins and global code may
+		  be added to the 
+		  <filepath>.js</filepath> file that also populates the variables, or
+		  overrides the values set in the HTML pages. The variables that are populated
+		  include the following. 
+		</p> 
+		<p> 
+		  <b>NOTE:</b> * Denotes a conversion variable. These variables require
+		  that the conversion module be enabled. 
+		</p> 
+		<table id="table_F84FE26A2810470A98D7E477D3F6A1EA"> 
+		  <tgroup cols="3"> 
+			 <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="1.33*"/> 
+			 <colspec colname="col3" colnum="3" colwidth="1.50*"/> 
+			 <tbody> 
+				<row> 
+				  <entry> 
+					 <p> 
+						<b>Implementation Variable</b> 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p> 
+						<b>Description</b> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p> 
+						<b>Reports Populated</b> 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p> 
+						<xref
+						 href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_pagename"
+						 format="http" scope="external">pageName</xref> 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>The name of the page. Uniquely identifies the page and URL
+						in plain English. For example: 
+					 </p> 
+					 <p> 
+						<codeph>"homepage"</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p> 
+						<xref
+						 href="reports_pages.xml#concept_0219136EA25745B58434D0C7E751D7D5" format="dita"
+						 scope="local"> <?xm-replace_text Pages Report?>
+						</xref> 
+					 </p> 
+					 <p> 
+						<xref
+						 href="reports_paths.xml#topic_39F11BCBEDC3495EA1300149FC6D4F14" format="dita"
+						 scope="local"> <?xm-replace_text Paths Reports?>
+						</xref> 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p> 
+						<xref
+						 href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_channel"
+						 format="http" scope="external">channel</xref> 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>The section of the site, or channel. For example: 
+					 </p> 
+					 <p> 
+						<codeph>"electronics"</codeph>, 
+						<codeph>"news"</codeph>
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p> 
+						<xref
+						 href="reports_site_sections.xml#concept_39E550D7A9E34C9580E81F5F9E12BDDD"
+						 format="dita" scope="local"> <?xm-replace_text Site Sections Report?>
+						</xref> 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p> 
+						<xref
+						 href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_context_data_variables"
+						 format="http" scope="external">contextData</xref> 
+					 </p> 
+				  </entry> 
+				  <entry> Available with version 15 and 
+					 <xref
+					  href="processing_rules.xml#concept_1D0EA3DBDEF4412BB7A7D769EA3717C2"
+					  format="dita" scope="local">processing rules</xref>. 
+					 <varname>contextData</varname> variables require no knowledge
+					 of the various types of variables Analytics offers (props, eVars, etc). 
+					 <p> An analyst can request a variable name be implemented, and
+						apply processing rules to assign that context data to a variable. 
+					 </p>
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>None. Context Data must be mapped to variables for
+						reporting. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p> 
+						<xref
+						 href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_server"
+						 format="http" scope="external">server</xref> 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>The server name or vanity domain to be tracked. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p> 
+						<xref
+						 href="reports_servers.xml#concept_A5CABE5BB44E4919BE27E7C4EAD8F6CE"
+						 format="dita" scope="local"> <?xm-replace_text Servers Report?>
+						</xref> 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p> 
+						<xref
+						 href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_propn"
+						 format="http" scope="external">propN</xref> (prop1 - prop75) 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>Custom values. The specific meaning of each variable is
+						defined uniquely for each web site. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>Multiple 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p> 
+						<xref
+						 href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_hiern"
+						 format="http" scope="external">hierN</xref> (hier1 - hier5) 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>Hierarchy variables, used to record visits and visitors for
+						a hierarchically structured site. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p> 
+						<xref
+						 href="reports_hierarchy.xml#concept_845DFC7699C54E4A81C89D7F5396136B"
+						 format="dita" scope="local"> <?xm-replace_text Hierarchy Report?>
+						</xref> 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p> 
+						<xref
+						 href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_campaign"
+						 format="http" scope="external">campaign</xref>* 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>Tracks advertising or email click-throughs to the site.
+						Campaigns are also correlated to many values throughout the system, such as to
+						conversion and custom events, referring domains, and search engines. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p> 
+						<xref
+						 href="reports_tracking_codes.xml#concept_CBCAE87060BC4BE1A335DDCA6F4396FB"
+						 format="dita" scope="local"> <?xm-replace_text Tracking Codes Report?>
+						</xref> 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p> 
+						<xref
+						 href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_evarn"
+						 format="http" scope="external">eVarN</xref> (eVar1 - eVar75*) 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>Custom variables that are tracked and correlated to any
+						events. The specific meaning of each variable is defined uniquely for each web
+						site. 
+						<varname>s.eVar</varname> values are stored and correlated to
+						events that happen afterward. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>Multiple 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p> 
+						<xref
+						 href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_products"
+						 format="http" scope="external">products</xref>* 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>List of products, used in conjunction with the 
+						<varname>s.events</varname> variable 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>All Product reports 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p> 
+						<xref
+						 href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_events"
+						 format="http" scope="external">events</xref>* 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>The list of events that occurred on the current page.
+						Examples include: 
+						<varname>scOpen</varname>, 
+						<varname>scAdd</varname>, 
+						<varname>scCheckout</varname>, 
+						<varname>prodView</varname>, purchase, or any custom event
+						from event1 to event20. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>All Event reports 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p> 
+						<xref
+						 href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_purchaseid"
+						 format="http" scope="external">purchaseID</xref>* 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>Up to 20 character code to uniquely identify the purchase,
+						in conjunction with the purchase event 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p> 
+						<xref
+						 href="reports_revenue.xml#concept_BDB40C65DF2A4F169ACF92649439224F"
+						 format="dita" scope="local"> <?xm-replace_text Revenue?>
+						</xref> 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p> 
+						<xref
+						 href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_state"
+						 format="http" scope="external">state</xref>* 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>State name or ID, to be used on the order confirmation
+						(Thank You) page, in conjunction with the purchase event 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p> 
+						<xref
+						 href="reports_state.xml#concept_5D646CEA14254F3AA253F1E79D4A6471" format="dita"
+						 scope="local"> <?xm-replace_text U.S. State?>
+						</xref> 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p> 
+						<xref
+						 href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_zip"
+						 format="http" scope="external">zip</xref>* 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>Zip code, to be used on the order confirmation (Thank You)
+						page, in conjunction with the purchase or other event 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p> 
+						<xref
+						 href="reports_zip.xml#concept_726A7EF8C50B49EB9185008C5FF42031" format="dita"
+						 scope="local"> <?xm-replace_text Visitor Zip and Postal Codes Report?>
+						</xref> 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p> 
+						<xref
+						 href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_linkname"
+						 format="http" scope="external">linkName</xref> 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>Optionally used to identify the name of a link when sending
+						in custom, download, or exit link data. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p> 
+						<xref
+						 href="reports_file_downloads.xml#concept_E3D0FEC81E1F4987B39CC467F19FFCFF"
+						 format="dita" scope="local"> <?xm-replace_text File Downloads Report?>
+						</xref> 
+					 </p> 
+					 <p> 
+						<xref
+						 href="reports_custom_links.xml#concept_C2640EE109CD456E8FB9DE7BED2B0499"
+						 format="dita" scope="local"> <?xm-replace_text Custom Links Report?>
+						</xref> 
+					 </p> 
+					 <p> 
+						<xref
+						 href="reports_exit_links.xml#concept_7F6A0867A4F1483E8AF20554DF348454"
+						 format="dita" scope="local"> <?xm-replace_text Exit Links Report?>
+						</xref> 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p> 
+						<xref
+						 href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_linkType"
+						 format="http" scope="external">linkType</xref> 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>Used to identify the type of link: Custom, Download, or Exit
+						
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p> 
+						<xref
+						 href="reports_file_downloads.xml#concept_E3D0FEC81E1F4987B39CC467F19FFCFF"
+						 format="dita" scope="local"> <?xm-replace_text File Downloads Report?>
+						</xref> 
+					 </p> 
+					 <p> 
+						<xref
+						 href="reports_custom_links.xml#concept_C2640EE109CD456E8FB9DE7BED2B0499"
+						 format="dita" scope="local"> <?xm-replace_text Custom Links Report?>
+						</xref> 
+					 </p> 
+					 <p> 
+						<xref
+						 href="reports_exit_links.xml#concept_7F6A0867A4F1483E8AF20554DF348454"
+						 format="dita" scope="local"> <?xm-replace_text Exit Links Report?>
+						</xref> 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <xref
+					  href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=list_props"
+					  format="http" scope="external">List Props</xref> 
+				  </entry> 
+				  <entry> 
+					 <p>List variables are a delimited list of values that are
+						passed into a variable, and then reported as individual line items for
+						reporting. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>Multiple 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<xref
+						 href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=list_var"
+						 format="http" scope="external">List Variable</xref> (list var) 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Similar to how List Props function, List Vars allow multiple
+						values within the same image request. 
+					 </p> 
+					 <p>Version 15 only. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>Multiple 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p> 
+						<xref
+						 href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_s_objectid"
+						 format="http" scope="external">s_objectID</xref> 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>A ClickMap variable used to uniquely identify links on a
+						page 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>ClickMap 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p> 
+						<xref
+						 href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_pagetype"
+						 format="http" scope="external">pageType</xref> 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>Used on 
+						<i>404-Page Not Found</i> error pages 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p> 
+						<xref
+						 href="reports_pages_not_found.xml#concept_46A8DB85A4DE428A944C5711B2AE625B"
+						 format="dita" scope="local"> <?xm-replace_text Pages Not Found Report?>
+						</xref> 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p> 
+						<xref
+						 href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_pageurl"
+						 format="http" scope="external">pageURL</xref> 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>Optionally used to override the URL of the page as recorded
+						in Analyitcs 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p> 
+						<xref
+						 href="reports_pages.xml#concept_0219136EA25745B58434D0C7E751D7D5" format="dita"
+						 scope="local"> <?xm-replace_text Pages Report?>
+						</xref> 
+					 </p> 
+					 <p> 
+						<xref
+						 href="reports_paths.xml#topic_39F11BCBEDC3495EA1300149FC6D4F14" format="dita"
+						 scope="local"> <?xm-replace_text Paths Reports?>
+						</xref> 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p> 
+						<xref
+						 href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_referrer"
+						 format="http" scope="external">referrer</xref> 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>Optionally used to override a page's referrer as recorded in
+						Analyitcs 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p> 
+						<xref
+						href="reports_finding_methods.xml#concept_5B8F9F289149440E9553C91EF1E69F0F"
+						format="dita" scope="local"> <?xm-replace_text Finding Methods Report?>
+						</xref> 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p> 
+						<xref
+						href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_transactionid"
+						format="http" scope="external">transactionID</xref> 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>Integration Data Sources utilize a transaction ID to tie
+						offline data to an online transaction (like a lead or purchase generated
+						online) 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>N/A 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p> 
+						<xref
+						href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_visitorID"
+						format="http" scope="external">visitorID</xref> 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>Visitors may be identified by the visitorID variable, or by
+						IP address/User Agent 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>N/A 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </section> 
+	 <section id="section_C6A32064666248AFBCB5FFA39FE66179"> 
+		<title>Configuration Variables</title> 
+		<p>Configuration variables, which control data collection, are contained
+		  in the 
+		  <filepath>.js</filepath> file, but they are not considered data
+		  collection elements. Configuration variables are not included in marketing
+		  reports, but they may affect the data, or the appearance of the reports.
+		  Configuration variables include the following. 
+		</p> 
+		<table id="table_C034CFC4F2314B5E864A5E6B9B0EC587"> 
+		  <tgroup cols="3"> 
+			 <colspec colnum="1" colname="col1" colwidth="1.05*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="1.62*"/> 
+			 <colspec colname="col3" colnum="3" colwidth="1.00*"/> 
+			 <tbody> 
+				<row> 
+				  <entry> 
+					 <p> 
+						<b>Implementation Variable</b> 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p> 
+						<b>Description</b> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p> 
+						<b>Reports Populated</b> 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p> 
+						<xref
+						href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_s_account"
+						format="http" scope="external">s_account</xref> 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>Report suite IDs. The account(s) that the page view is
+						reported in. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>N/A 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p> 
+						<xref
+						href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_charset"
+						format="http" scope="external">charSet</xref> 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>The character set used on the page. The default is assumed
+						to be ISO-8859-1. A list of available character sets is available from Adobe. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>N/A 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p> 
+						<xref
+						href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_currencycode"
+						format="http" scope="external">currencyCode</xref> 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>The currency code used in the 
+						<varname>s.products</varname> and 
+						<varname>s.events</varname> variables. The default is assumed
+						to be USD (U.S. dollars). A list of supported currency codes is available from
+						Adobe. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p> 
+						<xref
+						href="reports_revenue.xml#concept_BDB40C65DF2A4F169ACF92649439224F"
+						format="dita" scope="local"> <?xm-replace_text Revenue?>
+						</xref> 
+					 </p> 
+					 <p>All conversion reports showing revenue or monetary values 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p> 
+						<xref
+						href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_cookiedomainperiods"
+						format="http" scope="external">cookieDomainPeriods</xref> 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>The number of sections in a domain on which the visitor ID
+						cookie is set. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>Affects multiple reports as it controls how the visitor ID
+						is stored and handled. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p> 
+						<xref
+						href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_fpcookiedomainper"
+						format="http" scope="external">fpCookieDomainPeriods</xref> 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>The number of sections in a domain on which cookies are set
+						by the JavaScript file. This overrides the value of 
+						<varname>cookieDomainPeriods</varname> for JavaScript
+						cookies. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>N/A 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p> 
+						<xref
+						href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_cookielifetime"
+						format="http" scope="external">cookieLifetime</xref> 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>Establishes the lifetime of the visitor cookie (s.vixxxx).
+						Configuration of this variable is completed by Adobe and should not be modified
+						by clients. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>See 
+						<xref
+						href="http://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/index.html?f=c_implementing_first-party_cookies"
+						format="http" scope="external">Implementing First-Party Cookies</xref>
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p> 
+						<xref
+						href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_doplugins"
+						format="http" scope="external">doPlugins</xref> 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>The function that should be called before data is sent to
+						Analytics. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>The doPlugins variable is a reference to the 
+						<filepath>s_doPlugins</filepath> function, and allows the 
+						<filepath>s_doPlugins</filepath> function to be called at the
+						appropriate location within the JavaScript file. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p> 
+						<xref
+						href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_dynamicacctselection"
+						format="http" scope="external">dynamicAccountSelection</xref> 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>Set to 
+						<codeph>"true"</codeph> if 
+						<codeph>"s.dynamicAccountList"</codeph> contains a list of
+						domain/report suite ID pairs to be used to dynamically select the report suite
+						ID based on domain, host, or directory name. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>N/A 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p> 
+						<xref
+						href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_dynamicacctlist"
+						format="http" scope="external">dynamicAccountList</xref> 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>A list of domains and which report suite ID should be used
+						for each (such as 
+						<codeph>"abc.com=reportabc"</codeph>). 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>N/A 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p> 
+						<xref
+						href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_dynamicacctmatch"
+						format="http" scope="external">dynamicAccountMatch</xref> 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>The section of the URL that all filters in 
+						<varname>dynamicAccountList</varname> are applied to 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>N/A 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p> 
+						<xref
+						href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_trackdownllinks"
+						format="http" scope="external">trackDownloadLinks</xref> 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>Set to 
+						<codeph>"true"</codeph> to track clicks on links that have
+						extension names listed in 
+						<varname>s.linkDownloadFileTypes</varname>. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>N/A 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p> 
+						<xref
+						href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_trackexlinks"
+						format="http" scope="external">trackExternalLinks</xref> 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>Set to 
+						<codeph>"true"</codeph> to track clicks on links that are
+						external. External links are domains not listed in 
+						<varname>s.linkInternalFilters</varname>. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>N/A 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p> 
+						<xref
+						href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_trackinlinestats"
+						format="http" scope="external">trackInlineStats</xref> 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>Set to 
+						<codeph>"true"</codeph> to capture data for ClickMap
+						reporting. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p> ClickMap 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p> 
+						<xref
+						href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_linkdownfiletypes"
+						format="http" scope="external">linkDownloadFileTypes</xref> 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>The list of download file types. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p> 
+						<xref
+						href="reports_file_downloads.xml#concept_E3D0FEC81E1F4987B39CC467F19FFCFF"
+						format="dita" scope="local"> <?xm-replace_text File Downloads Report?>
+						</xref> 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p> 
+						<xref
+						href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_linkinfilters"
+						format="http" scope="external">linkInternalFilters</xref> 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>Determines which links on your site are exit links, which is
+						any link that takes a visitor away from your site. It is a comma-separated list
+						of filters that represent the links that are part of the site. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p> 
+						<xref
+						href="reports_exit_links.xml#concept_7F6A0867A4F1483E8AF20554DF348454"
+						format="dita" scope="local"> <?xm-replace_text Exit Links Report?>
+						</xref> 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p> 
+						<xref
+						href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_linkexfilters"
+						format="http" scope="external">linkExternalFilters</xref> 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>The list of all domains which should be considered external.
+						This is used to 
+						<i>limit</i> the number of external links that will be used,
+						not to specify specific links as external. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p> 
+						<xref
+						href="reports_exit_links.xml#concept_7F6A0867A4F1483E8AF20554DF348454"
+						format="dita" scope="local"> <?xm-replace_text Exit Links Report?>
+						</xref> 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p> 
+						<xref
+						href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_linkleaveqstring"
+						format="http" scope="external">linkLeaveQueryString</xref> 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>Whether or not the query string of exit links and download
+						links should be included for tracking purposes. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p> 
+						<xref
+						href="reports_file_downloads.xml#concept_E3D0FEC81E1F4987B39CC467F19FFCFF"
+						format="dita" scope="local"> <?xm-replace_text File Downloads Report?>
+						</xref> 
+					 </p> 
+					 <p> 
+						<xref
+						href="reports_exit_links.xml#concept_7F6A0867A4F1483E8AF20554DF348454"
+						format="dita" scope="local"> <?xm-replace_text Exit Links Report?>
+						</xref> 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p> 
+						<xref
+						href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_linktrackvars"
+						format="http" scope="external">linkTrackVars</xref> 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>The variables that should be sent on custom links, download
+						links, and external links. By default, this variable is set to "None" so that
+						variables set on the page are not recounted by link clicks. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>Any 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p> 
+						<xref
+						href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_linktrackev"
+						format="http" scope="external">linkTrackEvents</xref> 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>The events to be sent on custom links, download links, and
+						external links. By default, this variable is set to "None" that variables set
+						on the page are not recounted by link clicks. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>Conversion 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p> 
+						<xref
+						href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_s_useplugins"
+						format="http" scope="external">usePlugins</xref> 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>If set to 
+						<codeph>"true"</codeph>, 
+						<varname>s_doPlugins()</varname> will be called by the 
+						<filepath>.JS</filepath> code prior to creating the image
+						request. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>N/A 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </section> 
+	 <section id="section_2264E57132144263BFEEC40F63AB85F3"> 
+		<title>Automatic Variables</title> 
+		<p>Automatic variables are obtained by the 
+		  <filepath>.JS</filepath> code either automatically, or they are
+		  populated in the 
+		  <filepath>.JS</filepath> file as a result of the control variables
+		  explained above. The names of these variables are defined only within the query
+		  string of the image request. There is no equivalent HTML-based variable. The
+		  automatic variables include the following. 
+		</p> 
+		<table id="table_306062E7991C41039E0E9C0A736FD961"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="3.37*"/> 
+			 <tbody> 
+				<row> 
+				  <entry> 
+					 <b>Automatic Variable</b> 
+				  </entry> 
+				  <entry> 
+					 <b>Description</b> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p>r (Referring URL) 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>The referring URL as defined by the browser. This value
+						includes all query string parameters for the referring URL, including search
+						strings and other information. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p>g (Current URL) 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>The current page's URL. This value may include all query
+						string parameters, depending upon the account settings and configuration. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p>ClickMap data (various) 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>Various information about the page ID, link clicked,
+						including destination URL, link number, etc. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p>t 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>The time and date that the event request occurred, in local
+						time. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p>v 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>Whether Java is enabled (Y/N). 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p>j 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>The version of JavaScript supported by the browser. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p>bw, bh 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>The width and height of the browser window. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p>s 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>The width and height of the screen (the physical monitor). 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p>c 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>Monitor depth (number of available colors). 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p>ct 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>Connection type, including LAN, modem, etc. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p>p 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>Netscape plug-ins (if running Netscape, the list of plug-ins
+						installed in the browser) 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p>k 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>Cookies enabled (whether or not cookies are enabled in the
+						browser based on a test cookie) 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p>hp 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>Whether the current page is set as the browser's Home page 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </section> 
+	 <section id="section_73B40376C5D847DC82CB9863F26D086F"> 
+		<title>Direct Variables</title> 
+		<p>Direct variables are those set directly by the browser in the HTTP
+		  header of the image request sent to Analytics. These variables are set in each
+		  request that is made for any content on the Internet and include some of the
+		  most basic user information. The variables are reported directly or indirectly
+		  in a number of marketing reports. Direct variables include the following. 
+		</p> 
+		<table id="table_869DA2245CDA438CA73CFC80F7DF8B33"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="3.46*"/> 
+			 <tbody> 
+				<row> 
+				  <entry> 
+					 <p> 
+						<b>Direct Variable</b> 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p> 
+						<b>Description</b> 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p>IP address 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>The IP address is the Internet Protocol address of the
+						user's browser or machine. That IP addresses may be pooled among multiple
+						users, and that a single user may also use more than one IP address from page
+						to page. 
+					 </p> 
+					 <p>The user's IP address is resolved to geographic location
+						based on data provided by Digital Envoy through a partnership with Adobe. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p>domain 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>The domain from which the user is requesting data. In many
+						cases, this is a company or an Internet Service Provider (ISP) such as AOL. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p>user agent string 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>The user agent string indicates the browser and version, and
+						the Operating System used. In some cases, it may also contain major plug-in or
+						customization features (i.e., .NET). The 
+						<wintitle>Browser</wintitle>, 
+						<wintitle>Browser Version</wintitle>, and 
+						<wintitle>Operating System</wintitle> reports are based on
+						the user agent string. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p>language 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>The preferred language setting of the browser. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <p>cookies 
+					 </p> 
+				  </entry> 
+				  <entry> 
+					 <p>The names and values of all cookies that have been set. 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </section> 
+  </conbody> 
+</concept>

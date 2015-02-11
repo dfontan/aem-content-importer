@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_E3D0FEC81E1F4987B39CC467F19FFCFF">
+  <title>H Code</title>
+  <shortdesc>JavaScript code version H used in the 
+	 SiteCatalyst Code to Paste. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="subtopic" content="Glossary" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p> In the H code, all of the variables listed use 
+		<filepath>s.</filepath> to denote the object, with the exception of
+		account, which uses 
+		<filepath>s_</filepath> as a prefix.
+	 </p>
+  </conbody>
+</concept>

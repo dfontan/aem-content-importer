@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_8DFCF309B6FD43ABB1D6FEE9AFAEC596">
+  <title>Download a classifications data template (optional)</title>
+  <shortdesc>Steps describing how to download a classifications data template.
+	 The template provides the file format you must follow for classifications. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Admin tools" />
+      <othermeta name="subtopic" content="Classifications" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <context id="context_F8559C235DA5491798F1ACE3DD33B197">
+      <p>
+        <note>The Template method limits your data download to a single report
+			 suite. 
+		  </note>
+      </p>
+    </context>
+    <steps id="steps_F6C5D72EBD1444399C4250CF0AA92E37">
+      <step id="step_6F8ECD6EA1D74DBA834949FE7D30202E">
+        <cmd>Click 
+			 <uicontrol>Admin Tools</uicontrol> &gt; 
+			 <uicontrol>Classification Importer</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_A8DFE63D7CB4460680E17FFF96FDA46C">
+        <cmd>On the 
+			 <uicontrol>Download Template</uicontrol> tab, specify the 
+			 <xref href="c_download_saint_data.xml#concept_0F06847AD8D042F5BA818AE3C37E2417" format="dita" scope="local">data template configuration</xref>. 
+		  </cmd>
+      </step>
+      <step id="step_7F10ED8D4774409FA6DD3CCA457E6C99">
+        <cmd>Click 
+			 <uicontrol>Download</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_99D53C5DBD0C49F3B4FF37B860859497">
+        <cmd>Save the template file to your local system. 
+		  </cmd>
+        <info>
+          <p>The template file is a tab-delimited data file
+				(<filepath>.tab</filepath> filename extension) that most spreadsheet
+				applications support. 
+			 </p>
+        </info>
+      </step>
+    </steps>
+  </taskbody>
+</task>

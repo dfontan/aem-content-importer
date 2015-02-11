@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_014D0D87FC324CAA965DACCF13E10CDC">
+  <title>Common Errors</title>
+  <shortdesc>Common errors in dynamic accounts are described in the following
+	 sections. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Troubleshooting" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <section id="section_FB6F89BF317F45D387C00986ACA690BC">
+      <title> Hard Coded Account</title>
+      <p>If the desire is to always send data to a specific report suite, set 
+		  <wintitle>s_dynamicAccountSelection</wintitle> to false (alternately,
+		  the variables may be removed altogether: 
+		</p>
+      <codeblock outputclass="syntax javascript">var s_account="defaultreportsuiteid"
+REMOVE: s.dynamicAccountSelection=true
+REMOVE: s.dynamicAccountList="devreportsuite1=qa.client.com;reportsuite1=client.com"
+</codeblock>
+      <p>In the case above, defaultreportsuiteid is always used after the other
+		  two lines are removed. 
+		</p>
+    </section>
+    <section id="section_05375CB2EF5A414794BC8209C906AEEB">
+      <title>Placement of Code</title>
+      <p>Defining 
+		  <varname>s_account</varname> after the lines of code does not
+		  override the dynamic account selection, as shown below. 
+		</p>
+      <codeblock outputclass="syntax javascript">var s_account="defaultreportsuiteid"
+s.dynamicAccountSelection=true
+s.dynamicAccountList="devreportsuite1=qa.client.com;reportsuite1=client.com"
+s_account="anotherreportsuiteid"
+</codeblock>
+      <p>In the example above, the account "anotherreportsuiteid" overrides
+		  "defaultreportsuiteid," but does not override any matches that occur in 
+		  <wintitle>s.dynamicAccountList</wintitle>. The function that evaluates 
+		  <wintitle>s.dynamicAccountList</wintitle> is actually executed much
+		  later in the .JS file. 
+		</p>
+    </section>
+    <section id="section_6C014FA9B87D4622B483BCDE4281D2A9">
+      <title>Multi-Suite Tagging</title>
+      <p>Multi-suite tagging may be used in conjunction with dynamic account
+		  selection, as shown below. 
+		</p>
+      <codeblock outputclass="syntax javascript">s.dynamicAccountSelection=true
+s.dynamicAccountList="suiteid1,suiteid2=client.com"
+</codeblock>
+    </section>
+    <section id="section_647AB47B38D640D6BCC853FDA4E4342D">
+      <title>Dynamic Account Match</title>
+      <p>Do not put the 
+		  <wintitle>dynamic account match</wintitle> variables in quotes. The
+		  options are displayed below. 
+		</p>
+      <table id="table_5AF9D00921F9416DA98D04D00E959BF4">
+        <tgroup cols="2">
+          <colspec colnum="1" colname="col1" colwidth="*" />
+          <colspec colnum="2" colname="col2" colwidth="*" />
+          <tbody>
+            <row>
+              <entry> Host/Domain Name 
+				  </entry>
+              <entry> None 
+				  </entry>
+            </row>
+            <row>
+              <entry> Query String 
+				  </entry>
+              <entry>
+					 s.dynamicAccountMatch=(window.location.search?window.location.search:"?") 
+				  </entry>
+            </row>
+            <row>
+              <entry> Host/Domain and Path 
+				  </entry>
+              <entry>
+					 s.dynamicAccountMatch=window.location.host+window.lcation.pathname 
+				  </entry>
+            </row>
+            <row>
+              <entry> Path and Query String 
+				  </entry>
+              <entry>
+					 s.dynamicAccountMatch=window.location.pathname+(window.location.search?window.location.search""?")
+					 
+				  </entry>
+            </row>
+            <row>
+              <entry> Full URL 
+				  </entry>
+              <entry> s.dynamicAccountMatch=window.location.href 
+				  </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+  </conbody>
+</concept>

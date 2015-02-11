@@ -1,0 +1,684 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_8A63F9BCF9484963962E14E6286D312D"> 
+  <title>Regular Expressions in Classification Rules</title> 
+  <shortdesc>Use regular expressions to match consistently formatted string
+	 values with a classification. For example, you can create a classification from
+	 specific characters in a tracking code. You can match particular characters,
+	 words, or patterns of characters. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Admin tools"/> 
+		<othermeta name="subtopic" content="Classifications"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <ul id="ul_C66DC27CCE2F49F2B0FBF38DB8EAC503"> 
+		<li id="li_A8B900AE8F804FE8B7D589C3D17F2393"> 
+		  <xref
+			href="regex_classification_rules.xml#concept_8A63F9BCF9484963962E14E6286D312D/section_2EF7951398EB4C2F8E52CEFAB4032669"
+			format="dita" scope="local"> <?xm-replace_text Regular Expression - Tracking Code Example?>
+		  </xref> 
+		</li> 
+		<li id="li_31AA6760E0214B40A24722A538CDEA5C"> 
+		  <xref
+			href="regex_classification_rules.xml#concept_8A63F9BCF9484963962E14E6286D312D/section_5D300C03FA484BADACBFCA983E738ACF"
+			format="dita" scope="local"> <?xm-replace_text Regular Expression - Classifying a Specific Character?>
+		  </xref> 
+		</li> 
+		<li id="li_BA9C394ACFC64D418D3D40444799D61A"> 
+		  <xref
+			href="regex_classification_rules.xml#concept_8A63F9BCF9484963962E14E6286D312D/section_E86F5BF5C2F44ABC8FFCE3EA67EE3BB2"
+			format="dita" scope="local"> <?xm-replace_text Regular Expressions - Matching Tracking Codes of Varying     Length?>
+		  </xref> 
+		</li> 
+		<li id="li_07FDD1C3C07A49EA92CE588B412D936D"> 
+		  <xref
+			href="regex_classification_rules.xml#concept_8A63F9BCF9484963962E14E6286D312D/section_FCA88A612A4E4B099458E3EF7B60B59C"
+			format="dita" scope="local"> <?xm-replace_text Regular Expressions - "Does Not Contain" Example?>
+		  </xref> 
+		</li> 
+		<li id="li_8470B4F6503A41898C09DB40649367C9"> 
+		  <xref
+			href="regex_classification_rules.xml#concept_8A63F9BCF9484963962E14E6286D312D/section_0211DCB1760042099CCD3ED7A665D716"
+			format="dita" scope="local"> <?xm-replace_text Regular Expressions - Reference Table?>
+		  </xref> 
+		</li> 
+	 </ul> 
+	 <note>As a best practice, regular expressions are best suited for tracking
+		codes that use delimiters. 
+	 </note> 
+	 <section id="section_2EF7951398EB4C2F8E52CEFAB4032669"> 
+		<title>Regular Expression - Tracking Code Example</title>
+		<note>If the tracking code is URL encoded, it will 
+		  <b>not</b> be classified by the Rules Builder.
+		</note> 
+		<p>In this example, assume you want to classify the following campaign
+		  ID: 
+		</p> 
+		<p> 
+		  <wintitle>Sample Key</wintitle>: 
+		  <codeph>em:JuneSale:20130601</codeph> 
+		</p> 
+		<p>The parts of the tracking code you want to classify are: 
+		</p> 
+		<ul id="ul_DEFD58890C7B41D78C8207E8AB19E18F"> 
+		  <li id="li_D4931F960DAF42408182F6CC4D3C3A8B"> 
+			 <codeph>em</codeph> = email 
+		  </li> 
+		  <li id="li_D73BE8622E114CFEAB4B926650BD1C88"> 
+			 <codeph>JuneSale</codeph> = campaign name 
+		  </li> 
+		  <li id="li_CE311B76CF73443DA9336F30CF381C6A"> 
+			 <codeph>20130601</codeph> = date 
+		  </li> 
+		</ul> 
+		<p> 
+		  <wintitle>Regular Expression</wintitle>: 
+		  <codeph>^(.+)\:(.+)\:(.+)$</codeph> 
+		</p> 
+		<p>How the regular expression correlates to the campaign ID: 
+		</p> 
+		<p> 
+		  <image href="graphics/regex.png"
+			id="image_BE66CC6F35C649CA87FCF3CF714C3ED1"> <?xm-replace_text Paragraph?>
+		  </image> 
+		</p> 
+		<p> 
+		  <wintitle>Match Groups</wintitle>: Shows how the regular expression
+		  corresponds to the campaign ID characters, so that you can classify a position
+		  in the campaign ID. 
+		</p> 
+		<p> 
+		  <image href="graphics/regex_tracking_code.png"
+			id="image_7137597FD68F4EB08E8E10A3C2F5A3A1"> <?xm-replace_text Paragraph?>
+		  </image> 
+		</p> 
+		<p>This example tells the rule that the campaign date 
+		  <codeph>20140601</codeph> is at the third group 
+		  <codeph>(.+)</codeph>, identified by 
+		  <codeph>$3</codeph>. 
+		</p> 
+		<p> 
+		  <b> 
+			 <wintitle>Rule Builder</wintitle> 
+		  </b> 
+		</p> 
+		<p>In the 
+		  <wintitle>Rule Builder</wintitle>, configure the rule as follows: 
+		</p> 
+		<table id="table_E3237336C30D4C309504F5239A71DAD7"> 
+		  <tgroup cols="5"> 
+			 <colspec colname="col01" colnum="1" colwidth="1.00*"/> 
+			 <colspec colnum="2" colname="col1" colwidth="4.65*"/> 
+			 <colspec colnum="3" colname="col2" colwidth="6.24*"/> 
+			 <colspec colnum="4" colname="col3" colwidth="7.86*"/> 
+			 <colspec colnum="5" colname="col4" colwidth="6.54*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col01"># 
+				  </entry> 
+				  <entry colname="col1">Select Rule Type 
+				  </entry> 
+				  <entry colname="col2">Enter Match Criteria 
+				  </entry> 
+				  <entry colname="col3">Set Classification 
+				  </entry> 
+				  <entry colname="col4">To 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col01">1 
+				  </entry> 
+				  <entry colname="col1">Regular Expression 
+				  </entry> 
+				  <entry colname="col2">^(.+)\:(.+)\:(.+)$ 
+				  </entry> 
+				  <entry colname="col3">Campaign Date 
+				  </entry> 
+				  <entry colname="col4">$3 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<p> 
+		  <b>Syntax</b> 
+		</p> 
+		<table id="table_4FA742E72A2D404280424B2111F395A0"> 
+		  <tgroup cols="3"> 
+			 <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="1.36*"/> 
+			 <colspec colname="col3" colnum="3" colwidth="1.68*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col1">Regular Expression 
+				  </entry> 
+				  <entry colname="col2">String or Match Result 
+				  </entry> 
+				  <entry colname="col3">Corresponding Match Groups 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>^(.+)\:(.+)\:(.+)$</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>em:JuneSale:20130601 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>$0: em:JuneSale:20130601 
+					 </p> 
+					 <p>$1: em 
+					 </p> 
+					 <p>$2: JuneSale 
+					 </p> 
+					 <p>$3: 20130601 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">Building the syntax 
+				  </entry> 
+				  <entry namest="col2" nameend="col3"> 
+					 <p>^ = starts the line 
+					 </p> 
+					 <p>() = groups characters and lets you extract matching
+						characters in the parentheses. 
+					 </p> 
+					 <p>(.+) = captures one (.) character and (+) any more 
+					 </p> 
+					 <p>\ = start of a string. 
+					 </p> 
+					 <p>$ = indicates that the preceding character (or character
+						group) is the last in the line. 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<p>See 
+		  <xref
+			href="regex_classification_rules.xml#concept_8A63F9BCF9484963962E14E6286D312D/section_0211DCB1760042099CCD3ED7A665D716"
+			format="dita" scope="local"><?xm-replace_text Regular Expressions - Reference Table?></xref>
+		  for information about what the characters in a regular expression mean. 
+		</p> 
+	 </section> 
+	 <section id="section_5D300C03FA484BADACBFCA983E738ACF"> 
+		<title>Regular Expression - Classifying a Specific Character</title> 
+		<p>One way to use a regular expression is to classify a specific
+		  character in a string of characters. For example, assume that the following
+		  tracking code contains two important characters: 
+		</p> 
+		<p> 
+		  <wintitle>Sample Key</wintitle>: 
+		  <codeph><b>4s</b>3234</codeph> 
+		</p> 
+		<ul id="ul_EB5B57B5278145548026FE148A6D3683"> 
+		  <li id="li_C7E23B7635504EACA91E76DD7B80E243"> 
+			 <codeph> 
+				<b>4</b> 
+			 </codeph> = brand name 
+		  </li> 
+		  <li id="li_A9E7FC591947421D95269B0483D3601C"> 
+			 <codeph> 
+				<b>s</b> 
+			 </codeph> = identifies a search engine, such as Google 
+		  </li> 
+		</ul> 
+		<p> 
+		  <image href="graphics/regex_char_position.png"
+			id="image_1BE1174BA59E4D9097AF04F80A60C572"> <?xm-replace_text Paragraph?>
+		  </image> 
+		</p> 
+		<p> 
+		  <b> 
+			 <wintitle>Rule Builder</wintitle> 
+		  </b> 
+		</p> 
+		<p>In the 
+		  <wintitle>Rule Builder</wintitle>, configure the rule as follows: 
+		</p> 
+		<table id="table_7E52B986A50E446DB431B2A2C4AA8958"> 
+		  <tgroup cols="5"> 
+			 <colspec colname="col01" colnum="1" colwidth="1.00*"/> 
+			 <colspec colnum="2" colname="col1" colwidth="4.24*"/> 
+			 <colspec colnum="3" colname="col2" colwidth="5.84*"/> 
+			 <colspec colnum="4" colname="col3" colwidth="7.41*"/> 
+			 <colspec colnum="5" colname="col4" colwidth="6.19*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col01"># 
+				  </entry> 
+				  <entry colname="col1">Select Rule Type 
+				  </entry> 
+				  <entry colname="col2">Enter Match Criteria 
+				  </entry> 
+				  <entry colname="col3">Set Classification 
+				  </entry> 
+				  <entry colname="col4">To 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col01"> 
+				  </entry> 
+				  <entry colname="col1">Regular Expression 
+				  </entry> 
+				  <entry colname="col2">^.(s).*$ 
+				  </entry> 
+				  <entry colname="col3">Brand and Engine 
+				  </entry> 
+				  <entry colname="col4">$0 
+					 <p>(Captures the first two characters for brand name and search
+						engine.) 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col01"> 
+				  </entry> 
+				  <entry colname="col1">Regular Expression 
+				  </entry> 
+				  <entry colname="col2">^.(s).*$ 
+				  </entry> 
+				  <entry colname="col3">Search Engine 
+				  </entry> 
+				  <entry colname="col4">$1 
+					 <p>(Captures the second character for Google.) 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </section> 
+	 <section id="section_E86F5BF5C2F44ABC8FFCE3EA67EE3BB2"> 
+		<title>Regular Expressions - Matching Tracking Codes of Varying
+		  Length</title> 
+		<p>This example shows how to identify specific characters between colon
+		  delimiters when you have tracking codes of varying lengths. Adobe recommends
+		  using one regular expression for each tracking code. 
+		</p> 
+		<p>Sample Keys: 
+		</p> 
+		<ul id="ul_4169AAD6052B4C61BFEBC8853FE1D46A"> 
+		  <li id="li_01EED46152AA464E9C2921A03529C1FE"> 
+			 <codeph>a:b</codeph> 
+		  </li> 
+		  <li id="li_CE4A88EDDE2D4C9FAEF7E19F6CB5992C"> 
+			 <codeph>a:b:c</codeph> 
+		  </li> 
+		  <li id="li_A3F6F5C663A5416C9EC9DA173A7DEFDE"> 
+			 <codeph>a:b:c:d</codeph> 
+		  </li> 
+		</ul> 
+		<p> 
+		  <b>Syntax</b> 
+		</p> 
+		<p> 
+		  <image href="graphics/regex_b.png"
+			id="image_BBE774843DDE46D9BCC81CD0BBEAC100"> <?xm-replace_text Paragraph?>
+		  </image> 
+		</p> 
+		<p> 
+		  <image href="graphics/regex_varying_length.png"
+			id="image_F34983F0942F44C78361645AC6AE1938"> <?xm-replace_text Paragraph?>
+		  </image> 
+		</p> 
+		<p> 
+		  <b> 
+			 <wintitle>Rule Builder</wintitle> 
+		  </b> 
+		</p> 
+		<p>In the 
+		  <wintitle>Rule Builder</wintitle>, configure the rule as follows: 
+		</p> 
+		<table id="table_BA6AFB62483E48D998E08B4BB7E7F2E0"> 
+		  <tgroup cols="5"> 
+			 <colspec colname="col01" colnum="1" colwidth="1.00*"/> 
+			 <colspec colnum="2" colname="col1" colwidth="7.54*"/> 
+			 <colspec colnum="3" colname="col2" colwidth="7.96*"/> 
+			 <colspec colnum="4" colname="col3" colwidth="6.00*"/> 
+			 <colspec colnum="5" colname="col4" colwidth="4.36*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col01"># 
+				  </entry> 
+				  <entry colname="col1">Select Rule Type 
+				  </entry> 
+				  <entry colname="col2">Enter Match Criteria 
+				  </entry> 
+				  <entry colname="col3">Set Classification 
+				  </entry> 
+				  <entry colname="col4">To 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col01"> 
+				  </entry> 
+				  <entry colname="col1"> 
+					 <p>Regular Expression 
+					 </p> 
+					 <p>For match string 
+						<b>a</b>:b 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p> 
+						<codeph>^([^\:]+)\:([^\:]+)$</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3">a 
+				  </entry> 
+				  <entry colname="col4">$1 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col01"> 
+				  </entry> 
+				  <entry colname="col1"> 
+					 <p>Regular Expression 
+					 </p> 
+					 <p>For match string a:<b>b</b> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p> 
+						<codeph>^([^\:]+)\:([^\:]+)$</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3">b 
+				  </entry> 
+				  <entry colname="col4">$2 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry namest="col01" nameend="col4"> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col01"> 
+				  </entry> 
+				  <entry colname="col1"> 
+					 <p>Regular Expression 
+					 </p> 
+					 <p>For match string 
+						<b>a</b>:b:c 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p> 
+						<codeph>^([^\:]+)\:([^\:]+)\:([^\:]+)$</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3">a 
+				  </entry> 
+				  <entry colname="col4">$1 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col01"> 
+				  </entry> 
+				  <entry colname="col1"> 
+					 <p>Regular Expression 
+					 </p> 
+					 <p>For match string a:<b>b</b>:c 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p> 
+						<codeph>^([^\:]+)\:([^\:]+)\:([^\:]+)$</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3">b 
+				  </entry> 
+				  <entry colname="col4">$2 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col01"> 
+				  </entry> 
+				  <entry colname="col1"> 
+					 <p>Regular Expression 
+					 </p> 
+					 <p>For match string a:b:<b>c</b> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <codeph>^([^\:]+)\:([^\:]+)\:([^\:]+)$</codeph> 
+				  </entry> 
+				  <entry colname="col3">c 
+				  </entry> 
+				  <entry colname="col4">$3 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry namest="col01" nameend="col4"> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col01"> 
+				  </entry> 
+				  <entry colname="col1"> 
+					 <p>Regular Expression 
+					 </p> 
+					 <p>For match string a:b:c:<b>d</b> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p> 
+						<codeph>^([^\:]+)\:([^\:]+)\:([^\:]+)\:([^\:])$</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3">d 
+				  </entry> 
+				  <entry colname="col4">$4 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </section> 
+	 <section id="section_FCA88A612A4E4B099458E3EF7B60B59C"> 
+		<title>Regular Expressions - "Does Not Contain" Example</title> 
+		<p> This example provides a regular expression that matches any string
+		  that does not contain specific characters, in this case 
+		  <codeph>13</codeph>. 
+		</p> 
+		<p>Regular expression: 
+		</p> 
+		<p> 
+		  <codeph>^(?!.*13.*).*$</codeph> 
+		</p> 
+		<p>Test strings: 
+		</p> 
+		<p> 
+		  <codeblock>a:b:
+a:b:1313
+c:d:xoxo
+c:d:yoyo</codeblock> 
+		</p> 
+		<p>Match results: 
+		</p> 
+		<p> 
+		  <codeblock>a:b:
+c:d:xoxo
+c:d:yoyo</codeblock> 
+		</p> 
+		<p>In this result, 
+		  <codeph>a:b:1313</codeph> does not indicate a match. 
+		</p> 
+	 </section> 
+	 <section id="section_0211DCB1760042099CCD3ED7A665D716"> 
+		<title>Regular Expressions - Reference Table</title> 
+		<table id="table_69915562BDD4459C9C34CB3FE967E2AF"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="4.54*"/> 
+			 <tbody> 
+				<row> 
+				  <entry> [abc] 
+				  </entry> 
+				  <entry> A single character of: a, b or c 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> [^abc] 
+				  </entry> 
+				  <entry> Any single character except: a, b, or c 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> [a-z] 
+				  </entry> 
+				  <entry> Any single character in the range a-z 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> [a-zA-Z] 
+				  </entry> 
+				  <entry> Any single character in the range a-z or A-Z 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> ^ 
+				  </entry> 
+				  <entry> Start of line (matches the beginning of the line) 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> $ 
+				  </entry> 
+				  <entry> Match the end of the line (or before newline at the end) 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> \A 
+				  </entry> 
+				  <entry> Start of string 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> \z 
+				  </entry> 
+				  <entry> End of string 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> . 
+				  </entry> 
+				  <entry> Match any character (except a new line) 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> \s 
+				  </entry> 
+				  <entry> Any whitespace character 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> \S 
+				  </entry> 
+				  <entry> Any non-whitespace character 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> \d 
+				  </entry> 
+				  <entry> Any digit 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> \D 
+				  </entry> 
+				  <entry> Any non-digit 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> \w 
+				  </entry> 
+				  <entry> Any word character (letter, number, underscore) 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> \W 
+				  </entry> 
+				  <entry> Any non-word character 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> \b 
+				  </entry> 
+				  <entry> Any word boundary 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> (...) 
+				  </entry> 
+				  <entry> Capture everything enclosed 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> (a|b) 
+				  </entry> 
+				  <entry> a or b 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> a? 
+				  </entry> 
+				  <entry> Zero or one of a 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> a* 
+				  </entry> 
+				  <entry> Zero or more of a 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> a+ 
+				  </entry> 
+				  <entry> One or more of a 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> a{3} 
+				  </entry> 
+				  <entry> Exactly 3 of a 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> a{3,} 
+				  </entry> 
+				  <entry> 3 or more of a 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> a{3,6} 
+				  </entry> 
+				  <entry> Between 3 and 6 of a 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<p>A good resource for testing regular expression validity is
+		  http://rubular.com/. 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

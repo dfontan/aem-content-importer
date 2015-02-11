@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_B9CD2E178EAE4EE2AE0F56035A53E5B0" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Create an HTML Offer</title>
+  <shortdesc class="- topic/shortdesc ">HTML Offers can be plain text, HTML, a
+	 reference to an image, or a code snippet stored on your Web server. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <context id="context_D54013980BFF42AA88412556F3E182E4" class="- topic/section task/context ">
+      <p class="- topic/p ">
+        <note class="- topic/note ">The maximum size for an HTML offer is 68
+			 kilobytes. For larger HTML offers, use a link within the offer to refer to the
+			 larger HTML file. 
+		  </note>
+      </p>
+    </context>
+    <steps id="steps_39351C42E4674E28AE5E375ECC42168A" class="- topic/ol task/steps ">
+      <step id="step_6B4F1ECAE959472EBB240AADB6B02D49" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Select 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Offers</uicontrol> &gt;
+			 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">HTML Offer</uicontrol>.
+			 
+		  </cmd>
+      </step>
+      <step id="step_238CEDE76B1F435B9D5F0EE9A422AB3A" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Name your offer. 
+		  </cmd>
+      </step>
+      <step id="step_570E77BCCA2545C7930593094FC6CDEB" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Select the folder where the offer
+			 will be stored. 
+		  </cmd>
+      </step>
+      <step id="step_2D24E8D1CBD64149A56B96CBE0980999" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Enter plain text, HTML or a link to
+			 HTML, or any code snippet stored outside Target. You may also enter an entire
+			 page of code if loading into a page-size mbox. Scripting is also supported. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p "> Click 
+				<uicontrol class="+ topic/ph ui-d/uicontrol ">Preview</uicontrol>
+				for a WYSIWYG view of the offer. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_362D727E4ACA4D1FB2CD7F5390592248" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Click<uicontrol class="+ topic/ph ui-d/uicontrol "> save</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_EC74EEDC930B4A4E82DABF9417B456F5" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">The new HTML offer shows up in the
+			 offers list. 
+		  </cmd>
+      </step>
+      <step id="step_F9AE74A929CC4DB48E78FB5AB06EF209" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">
+          <xref href="c_Validating_Offers.xml#concept_60E81920A21A42ABA6980AF60697B260" type="concept" format="dita" scope="local" class="- topic/xref ">Validate the
+				offer</xref>. 
+		  </cmd>
+      </step>
+    </steps>
+    <result id="result_48BBF786FD554453A950B72941385483" class="- topic/section task/result ">
+      <p class="- topic/p ">
+        <!--To toggle between the normal view and a WYSIWIG
+		  HTML editor click 
+		  <uicontrol class="+ topic/ph ui-d/uicontrol ">HTML Editor</uicontrol>
+		  in the offer edit page.--> Click 
+		  <uicontrol class="+ topic/ph ui-d/uicontrol ">Campaigns</uicontrol> for
+		  a list of campaigns that use the offer. 
+		</p>
+    </result>
+  </taskbody>
+  <related-links class="- topic/related-links ">
+    <link href="c_Offer_Types.xml#concept_A1A656974158499B87881AFE17BD4137" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Offer Types?>
+    </link>
+    <link href="c_Hosting_Offers.xml#concept_3E6955DD79B64733A1189D153461EAEB" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Hosting Offers?>
+    </link>
+    <link href="r_Passing_Profile_Attributes_to_the_HTML_Offer.xml#reference_324B171BB77F4D41BB62FAE8CE80B445" type="reference" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Passing Dynamic Test&Target Data into Offers?>
+    </link>
+    <!--<link href="t_Creating_an_Image_Offer.xml#task_E59935DAF8ED4E3CA1937A41A25B3F4C" type="task" format="dita" scope="local" class="- topic/link "><?xm-replace_text Creating an Image Offer?>
+	 </link> 
+	 -->
+    <link href="t_Creating_a_Redirect_Offer.xml#task_9578678D42784F5EB9638F8AC8C911FA" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Creating a Redirect Offer?>
+    </link>
+    <link href="c_Widget_Offers.xml#concept_32CE8A148D0B4B5483E9A03E35FDBF5A" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Widget Offers?>
+    </link>
+    <link href="c_About_Dynamic_Content.xml#concept_657016A0E6174C22B89036E9C8A0170F" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text About Dynamic Content?>
+    </link>
+    <link href="c_Validating_Offers.xml#concept_60E81920A21A42ABA6980AF60697B260" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Validating Offers?>
+    </link>
+    <link href="t_Previewing_Offers_in_an_Mbox.xml#task_B1244801A0304409898CDA985ACE32CD" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Previewing Offers in an Mbox?>
+    </link>
+    <link href="c_Working_with_Offers.xml#concept_41C0B5DE881A47D4A2687597AEC9BC38" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Working with Offers?>
+    </link>
+    <link href="t_Using_Plug-Ins.xml#task_00D8971DF00B4E21A4DDD49D30D81DE0" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Using Plug-Ins?>
+    </link>
+  </related-links>
+</task>

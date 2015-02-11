@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_50CA55CF2A41430CBC754AEEEE6023A9">
+  <title>Visits Report</title>
+  <shortdesc>Displays the number of visits made to your entire website during a
+	 specified time period. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>
+      <b>Report Properties</b>
+    </p>
+    <ul id="ul_E8D8E9B07D894417B04B75F6E4C5CF04">
+      <li id="li_71915979320F4A4C9105C5AB7EEF3C28">A visit is defined as a
+		  sequence of consecutive page views without a 30 minute break, or continuous
+		  activity for 12 hours. 
+		</li>
+      <li id="li_3F28885920E94320B4653D1912AFF655">After a visit expires, a new
+		  visit is started on any subsequent image request. 
+		</li>
+      <li id="li_B59DDFB74B0045048B3071082D36A301">A visitor typically contains
+		  at least one (but probably more than one) visit. 
+		</li>
+      <li id="li_FAF4A30C550F49B99A81C4D4CFF126EF">The beginning of a visit is
+		  the first image request coming from a new visitor, or after an existing user's
+		  visit has expired. This can be identified as the Entry Page. 
+		</li>
+      <li id="li_B32FCD415BAE4A1AA071775051DBA62B">The end of a visit is the
+		  last image request before a visit expires. This can be identified as the Exit
+		  Page. 
+		  <p>See 
+			 <xref href="reports_entries_exits.xml#concept_C4AED2C1D62E43A48ACAA837327FCCF2" format="dita" scope="local"><?xm-replace_text Entries and Exits Reports?></xref>.
+			 
+		  </p></li>
+      <li id="li_EAE98CCF38754007A230112D08C5DAD8">Hourly breakdowns are based
+		  on the report suite's time zone. 
+		</li>
+      <li id="li_D18B53AC572747C3BF3EFE29A5995F0C">This report does not contain
+		  line items. You view it only in the trended format. 
+		</li>
+      <li id="li_377D6FB8133A46A7A518C484F800405E">Granularity of hour, day,
+		  week, month, quarter, and year can be applied. These granularity settings are
+		  available depending on the reporting date range. 
+		</li>
+    </ul>
+    <p>See 
+		<xref href="metrics_visit.xml#concept_9DA4D9EF8B964755BAC57378AD37911E" format="dita" scope="local">Visit Metric</xref> for more information about how
+		the Marketing Cloud processes this metric. 
+	 </p>
+    <p>
+      <b>Product Specific Report Information</b>
+    </p>
+    <table id="table_3138CA443CAC4F55838216E8B8786EE2">
+      <tgroup cols="2">
+        <colspec colnum="1" colname="col1" colwidth="*" />
+        <colspec colnum="2" colname="col2" colwidth="*" />
+        <thead>
+          <row>
+            <entry colname="col1">Product 
+				</entry>
+            <entry colname="col2">Navigation 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry colname="col1">
+              <p> Marketing Reports 
+				  </p>
+            </entry>
+            <entry colname="col2">
+              <p>
+                <uicontrol>Site Metrics</uicontrol> &gt; 
+					 <uicontrol>Visits</uicontrol></p>
+              <p>You can run a 
+					 <wintitle>Visits Report</wintitle> on a selected page. 
+				  </p>
+              <p>
+                <b>Version 14</b>: Visits spanning midnight are counted only on
+					 the day the visit started. 
+				  </p>
+              <p>
+                <b>Version 15</b>: Visits spanning across midnight are counted
+					 on both the day the visit started and ended. However, the total for the given
+					 date range is deduplicated. 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <p> Ad Hoc Analysis 
+				  </p>
+            </entry>
+            <entry colname="col2">
+              <p>
+                <uicontrol>Reports</uicontrol> &gt; 
+					 <uicontrol>Site Metrics</uicontrol> &gt; 
+					 <uicontrol>Visits</uicontrol></p>
+              <ul id="ul_73FEE02C129041D6A63F2DB07676960F">
+                <li id="li_CC3BB22DE97941EB8032BE4421FFC173"> You can break
+						down each item in this report by almost all other reports and variables,
+						allowing you to see breakdowns by any granularity. 
+					 </li>
+                <li id="li_D53D480D73264D47945C9E1202B7BD4F">Visits spanning
+						across midnight are counted on both the day the visit started and ended.
+						However, the total for the given date range is deduplicated. 
+					 </li>
+                <li id="li_B8BCC584F95B407DB87F5EA57CC88F62">You can use all
+						conversion and traffic metrics in this report, as well as use different
+						allocation for all conversion metrics. 
+					 </li>
+                <li id="li_0F342D3DCFF44ABAB79BD0F9E7F43E1E">This report can
+						use multiple highly advanced segments. 
+					 </li>
+              </ul>
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </conbody>
+</concept>

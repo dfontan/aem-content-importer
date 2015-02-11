@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_9145D08EFA694862AC115E7AEA1941E8" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Prepare to Add Segment Filters</title>
+  <shortdesc class="- topic/shortdesc ">There are several ways to prepare to
+	 add segment filters. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <steps id="steps_0BF2D8633CB84B0EB9FA31B9E8D0A941" class="- topic/ol task/steps ">
+      <step id="step_9FC830226BF84905B29BFBD04990A988" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Brainstorm on which visitor segments
+			 you want to know about. For each segment, choose the right parameter type. 
+		  </cmd>
+      </step>
+      <step id="step_8C66719974724FA4B404335D7E7B345C" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Associate the parameter with the
+			 mboxes. 
+		  </cmd>
+      </step>
+      <step id="step_93F26B54222A4C69BFBEE0303E9C609A" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Based on the parameter you will use,
+			 decide which action will include a visitor in a segment during the campaign. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">Either: 
+			 </p>
+          <p class="- topic/p ">
+            <ul id="ul_2485112A02784CCB99356EC699834520" class="- topic/ul ">
+              <li id="li_8854B490468943F6BE4468DF8D8D4679" class="- topic/li "> A
+				  visit to an mbox on the entry page of the campaign (a likely choice for
+				  segmenting on source) 
+				</li>
+              <li id="li_D337AF2BD1E94F6FA972BA500CA563A6" class="- topic/li ">
+				  Only visitors who reach a certain success metric 
+				</li>
+              <li id="li_595F2DD952714A658C256116E022F32E" class="- topic/li ">
+				  Only visitors who reach conversion 
+				</li>
+            </ul>
+          </p>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links class="- topic/related-links ">
+    <link href="t_Defining_Reporting_Segments.xml#task_6BDCBB395E9C4A8B963030C51C7A4936" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Defining Reporting Segments?>
+    </link>
+    <link href="t_Viewing_Segment_Filter_Reports.xml#task_F701BEC5609247F38E109B1A5EE7D7F9" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Viewing Segment Filter Reports?>
+    </link>
+  </related-links>
+</task>

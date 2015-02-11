@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_EBBB1CB2D9B749DBBE3D5995E46AD57D"> 
+  <title>Entries</title> 
+  <shortdesc> 
+	 <term>Entries</term> represents the number of times a given value is
+	 captured as the first value in a visit. 
+	 <term>Entries</term> can occur only once per visit. However, it is not
+	 necessarily the first hit if the variable is not defined. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Metrics"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Entry pages have a visit breakdown scope, meaning they persist across
+		all hits for a visit. See 
+		<xref
+		 href="http://marketing.adobe.com/resources/help/en_US/sc/user/?f=c_Breakdown_and_segmentation_containers"
+		 format="http" scope="external">Breakdown and segmentation containers</xref> for
+		more information. 
+	 </p> 
+  </conbody> 
+</concept> 

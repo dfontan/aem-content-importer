@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_01D9429F07AC4698BFCADB1A973D3748" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic concept/concept ">
+  <title class="- topic/title ">Capture Score</title>
+  <shortdesc class="- topic/shortdesc ">The Capture Score engagement metric
+	 calculates an aggregated score based on the value assigned to pages visited on
+	 the site, from the point the visitor first sees the campaign's first display
+	 mbox. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody class="- topic/body  concept/conbody ">
+    <p class="- topic/p ">The following example shows how score engagement is
+		calculated in a campaign that tests two experiences, one with a cat image, and
+		one with a dog image. 
+	 </p>
+    <p class="- topic/p ">
+      <image id="image_7C3F8D18C89840198A5B9D8E0A3A88F8" href="graphics/example_score.png" placement="inline" class="- topic/image "></image>
+    </p>
+    <p class="- topic/p ">In this example, the first visitor experiences the
+		cat experience. Assume that a global mbox passes in a page score based on the
+		value of the page. If the marketer has captured page count engagement on a
+		success metric associated with 
+		<codeph class="+ topic/ph pr-d/codeph ">**any mbox**</codeph>, the visit
+		score accumulates for any mbox request seen after the display mbox around the
+		cat image. 
+	 </p>
+    <p class="- topic/p ">The first page adds 1 to the score, the second page
+		0.25, the third 0.10, and the fourth 0.10 for a total of 1.45. This could be
+		interpreted as either currency or points. In a separate visit, a visitor
+		experiences the Dog experience, and although the visitor views fewer pages, the
+		score is 2.10, greater than the other visit, because the visitor viewed more
+		valuable pages. 
+	 </p>
+    <p class="- topic/p ">You can take into account acquisition costs and
+		affiliate link revenue by passing adboxes and redirectors, as depicted in the
+		following page flow. Notice that, in this example, both mboxes on the article
+		page pass a score, possibly representing a known CPM. 
+	 </p>
+    <p class="- topic/p ">
+      <image id="image_D9B20FEB57854DE3B0EAB2E48EA46E0D" href="graphics/example_score2.png" placement="inline" class="- topic/image "></image>
+    </p>
+    <p class="- topic/p ">
+      <b class="+ topic/ph hi-d/b ">Assigning a Page Score</b>
+    </p>
+    <p class="- topic/p ">You can assign a value to any page on your site based
+		on what the page is worth to you. For example, a cooking site might be able to
+		sell ads for more money on their feature article pages than in their experience
+		section. Thus, the feature articles are more valuable than the experience
+		section. Page score allows you to develop an overall "value" of a visit, so the
+		person who reads more feature articles gets more "points" than someone who just
+		browses the experiences. 
+	 </p>
+    <p class="- topic/p ">There are two methods to assign a score to a page: 
+	 </p>
+    <p class="- topic/p ">
+      <ul id="ul_C4BB8CCCDFCA4CE78EB84F4574ACE23B" class="- topic/ul ">
+        <li id="li_42CCCB06130D4EB3918D5FF33B885C7D" class="- topic/li "> In the
+		  mbox code, create an mbox parameter called 
+		  <codeph class="+ topic/ph pr-d/codeph ">mboxPageValue</codeph>. 
+		  <p class="- topic/p ">Example: 
+			 <codeph class="+ topic/ph pr-d/codeph ">('global_mbox',
+				'mboxPageValue=10');</codeph></p><p class="- topic/p ">The specified value is added to the score every
+			 time the page with that mbox is viewed. If multiple mboxes on the page include
+			 score values, the score for the page is the total of all mbox values. 
+			 <codeph class="+ topic/ph pr-d/codeph ">mboxPageValue</codeph> is a
+			 reserved parameter used for passing values in an mbox to capture an engagement
+			 score. Positive and negative values can be passed. The sum is calculated at the
+			 end of each visitor's visit to calculate the total score for the visit. 
+		  </p></li>
+        <li id="li_C384602AF2DE4E20B424E5F517120083" class="- topic/li "> Pass
+		  the 
+		  <codeph class="+ topic/ph pr-d/codeph ">?mboxPageValue=n</codeph>
+		  parameter in the URL for the page. 
+		  <p class="- topic/p ">Example: 
+			 <codeph class="+ topic/ph pr-d/codeph ">http://www.mydomain.com?mboxPageValue=5</codeph></p><p class="- topic/p ">Using this method, the specified value is added
+			 to the score for each mbox on the page. For example, if you pass the parameter 
+			 <codeph class="+ topic/ph pr-d/codeph ">?mboxPageValue=10 
+			 </codeph>and there are three mboxes on the page, the score for the
+			 page is 30. 
+		  </p></li>
+      </ul>
+    </p>
+    <p class="- topic/p ">
+      <note class="- topic/note ">Mboxes located above the campaign's first
+		  display mbox will not be included in the score. 
+		</note>
+    </p>
+    <p class="- topic/p ">Best practice is to assign values in the mbox code.
+		This allows you to be precise in the values you measure, depending on the
+		content of each mbox. 
+	 </p>
+    <p class="- topic/p ">
+      <note class="- topic/note ">For easier maintenance, you can configure
+		  your site's page score value assignments in the 
+		  <filepath class="+ topic/ph sw-d/filepath ">mbox.js</filepath> file
+		  with some conditional JavaScript logic. This eliminates the need to add more
+		  code to your pages. Contact your account consultant for assistance. 
+		</note>
+    </p>
+    <p class="- topic/p ">You can combine the two methods, but this might
+		result in a higher score than expected. For example, if you assign a value of
+		10 to each of three mboxes and no score to a fourth mbox, then pass the URL
+		parameter 
+		<codeph>?mboxPageValue=5</codeph>, your page score will be 50, 30 for the
+		three mboxes with assigned values, and then 5 for each of the four mboxes on
+		the page. 
+	 </p>
+    <p class="- topic/p ">The counter starts with the first display mbox, not
+		the entry mbox. For example, if you enter the campaign on the homepage which
+		doesn't have a display mbox, then link to catalog page containing a display
+		mbox, the counter begins when you move to the catalog page. 
+	 </p>
+    <p class="- topic/p ">You can also pass in negative values on certain pages
+		that cost you money or are not good for a visitor to see. The negative values
+		affect the overall score as well. This technique can be used on a page that
+		visitors reach from an advertisement, so you know how much the CPC was. Or, for
+		example, it can be used for a support or contact page, where you know that
+		visitors might call or request assistance from this page. 
+	 </p>
+  </conbody>
+  <related-links class="- topic/related-links ">
+    <link href="c_Page_Count.xml#concept_7269869F056B41EA8EB002997FF7FB67" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Page Count?>
+    </link>
+    <link href="c_Time_on_Site.xml#concept_089A2B22D71F4CA4970A4369691F6DA4" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Time on Site?>
+    </link>
+  </related-links>
+</concept>

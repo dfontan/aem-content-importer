@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_D67B12FA9E744C36A2E78178EC81CFF6" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic concept/concept ">
+  <title class="- topic/title ">Basic Concepts</title>
+  <shortdesc class="- topic/shortdesc ">There are several important concepts
+	 that you should learn to target successfully. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody class="- topic/body  concept/conbody ">
+    <p class="- topic/p ">The following list contains the most basic concepts
+		that should be understood: 
+	 </p>
+  </conbody>
+  <related-links>
+    <link href="r_System_Recommendations.xml#reference_B57A97B90DBD4E0B8F7F2DC16D7B6F83" type="reference" format="dita" scope="local">
+      <?xm-replace_text System Recommendations?>
+    </link>
+    <link href="c_How_TestTarget_Works.xml#concept_459AB4DEE7364A9290C2FD405DC29584" type="concept" format="dita" scope="local">
+      <?xm-replace_text How Test&Target Works?>
+    </link>
+  </related-links>
+</concept>

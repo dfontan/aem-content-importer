@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_D15F062816874BFE84EDC36ED95F4061"> 
+  <title>Terminology Differences in Analytics User Interfaces</title> 
+  <shortdesc>
+  </shortdesc> 
+  <conbody> 
+	 <section id="section_05C778C9C42D4D7E84FCBC5759EB7CEA">
+		<title>Suggested simplified usage</title>
+		<p>Dimension name and dimension value - for dimension and value,
+		  respectively.
+		</p>
+		<p>Metric name and metric value - for event and metric, respectively.
+		</p>
+	 </section>
+	 <section id="section_431AE6DCD6064B21A0DE47A8D0B12A37">
+		<title>Current usage</title>
+		<p>A guide to how some Analytics terms are used in different ways across
+		  Analytics solutions:
+		</p>
+		<table id="table_F4037FAC684241D8A61711549ED6CF41"> 
+		  <tgroup cols="7"><colspec colnum="1" colname="col1"
+			 colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="1.50*"/><colspec
+			 colnum="3" colname="col3" colwidth="1.78*"/><colspec colnum="4" colname="col4"
+			 colwidth="1.16*"/><colspec colnum="5" colname="col5" colwidth="1.25*"/><colspec
+			 colnum="6" colname="col6" colwidth="1.14*"/><colspec colname="col7" colnum="7"
+			 colwidth="1.22*"/><thead> 
+				<row> 
+				  <entry colname="col1">Terms 
+				  </entry> 
+				  <entry colname="col2">Definition 
+				  </entry> 
+				  <entry colname="col3">Used in Reports &amp; Analytics 
+				  </entry> 
+				  <entry colname="col4">Used in Data Workbench 
+				  </entry> 
+				  <entry colname="col5">Used in Ad Hoc Analysis 
+				  </entry> 
+				  <entry colname="col6">Used in Report Builder 
+				  </entry> 
+				  <entry colname="col7">Used in API Interfaces 
+				  </entry> 
+				</row></thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1">Element vs.
+					 <p>Item vs.
+					 </p> 
+					 <p>Value 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">Aspect or constituent part of a Dimension.
+					 Example: the Mobile Device dimension can break down as an Apple iPad, Samsung
+					 Galaxy, Amazon Kindle, etc. 
+				  </entry> 
+				  <entry colname="col3"><b>Customer Attributes</b>: Item 
+					 <p><b>Anomaly Detection</b>: Element 
+					 </p> 
+					 <p><b>Segment Builder</b>: Value 
+					 </p> 
+				  </entry> 
+				  <entry colname="col4">Element 
+				  </entry> 
+				  <entry colname="col5">Value
+				  </entry> 
+				  <entry colname="col6">Value 
+				  </entry> 
+				  <entry colname="col7">Value
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">Dimension vs.
+					 <p> Element 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Descriptions or characteristics of metric data that can be
+						viewed, broken down, and compared in a report. They are non-numeric values and
+						dates that correlate, sub-relate, or are a classification of the original
+						report type metric. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>In Reports &amp; Analytics, dimensions are not exposed in
+						the UI.
+					 </p> 
+					 <p>Segment Builder: Dimension 
+					 </p> 
+				  </entry> 
+				  <entry colname="col4">Dimension 
+				  </entry> 
+				  <entry colname="col5">Dimension 
+				  </entry> 
+				  <entry colname="col6">Dimension 
+				  </entry> 
+				  <entry colname="col7">Element 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">Metric vs.
+					 <p>Event 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">Metrics are defined as quantitative
+					 information about visitor activity events, such as Views, Click-Throughs,
+					 Reloads, Average Time spent, Units, Orders, and Revenue. 
+				  </entry> 
+				  <entry colname="col3">Metric 
+					 <p><b>Segment Builder</b>: Event 
+					 </p> 
+				  </entry> 
+				  <entry colname="col4">Metric 
+				  </entry> 
+				  <entry colname="col5">Metric 
+					 <p><b>Segment Builder</b>: Event
+					 </p>
+				  </entry> 
+				  <entry colname="col6">Metric 
+				  </entry> 
+				  <entry colname="col7">Metric
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">Data Element 
+				  </entry> 
+				  <entry colname="col2">Used as a collective term in Segment
+					 Builder to include: dimensions, segments, and events 
+				  </entry> 
+				  <entry colname="col3"> 
+				  </entry> 
+				  <entry colname="col4"> 
+				  </entry> 
+				  <entry colname="col5"> 
+				  </entry> 
+				  <entry colname="col6"> 
+				  </entry> 
+				  <entry colname="col7"> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table>
+	 </section>
+  </conbody>
+</concept>

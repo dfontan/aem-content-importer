@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_C1F219E622044D43852EF5168FF7192A"> 
+  <title>Classification Rule Builder</title> 
+  <shortdesc>Rather than maintaining and uploading classifications each time
+	 your tracking codes change, you can create automatic, rule-based
+	 classifications and apply them across multiple report suites. Rules are
+	 processed at frequent intervals, depending on your volume of classification
+	 related traffic. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Admin tools"/> 
+		<othermeta name="subtopic" content="Classifications"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <section id="section_3FF666EF9D5B4E37A23B3FB400CDA2E6"> 
+		<title>Getting Started with Classification Rules</title> 
+		<p> 
+		  <uicontrol>Admin tools</uicontrol> &gt; 
+		  <uicontrol>Classifications</uicontrol> &gt; 
+		  <uicontrol>Rule Builder</uicontrol> 
+		</p> 
+		<p>Here are the high-level steps you take to classification rules: 
+		</p> 
+		<table id="table_DF3A0DFCA34C4A40BD7930E07FB28C00"> 
+		  <tgroup cols="4"> 
+			 <colspec colname="col01" colnum="1" colwidth="1.00*"/> 
+			 <colspec colnum="2" colname="col1" colwidth="1.89*"/> 
+			 <colspec colname="col02" colnum="3" colwidth="1.85*"/> 
+			 <colspec colnum="4" colname="col2" colwidth="3.53*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col01">Step 
+				  </entry> 
+				  <entry colname="col1">Task 
+				  </entry> 
+				  <entry colname="col02">Location 
+				  </entry> 
+				  <entry colname="col2">Description 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col01"> 
+					 <p><image href="graphics/step1_icon.png"
+						id="image_2B9410A896C64591A852DD0FFE5CB1BA"><?xm-replace_text Paragraph?></image>
+						
+					 </p> 
+				  </entry> 
+				  <entry colname="col1"> 
+					 <p>(Prerequisite) 
+						<xref
+						 href="https://marketing.adobe.com/resources/help/en_US/reference/index.html?f=classifications"
+						 format="https" scope="external">Classify your variables</xref>. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col02"> 
+					 <wintitle>Admin Tools</wintitle> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Variables must have at least one classification column
+						created before they are available for use in rules. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row>
+				  <entry colname="col01">
+					 <p><image href="graphics/step2_icon.png"
+						id="image_D19C29A109C844E598E7343E89E92B88"><?xm-replace_text Paragraph?></image>
+						
+					 </p>
+				  </entry>
+				  <entry colname="col1">
+					 <p>Specify the report suite to scan for classified variables
+					 </p>
+				  </entry>
+				  <entry colname="col02"><wintitle>Admin Tools</wintitle>
+				  </entry>
+				  <entry colname="col2">
+				  </entry>
+				</row>
+				<row> 
+				  <entry colname="col01">
+					 <p><image href="graphics/step3_icon.png"
+						id="image_EDD01A95F5D7427A9AA97EA713735083"><?xm-replace_text Paragraph?></image>
+						
+					 </p> 
+				  </entry> 
+				  <entry colname="col1"> 
+					 <p> 
+						<xref
+						 href="t_classification_rule_set.xml#task_86F216DFD2534FA181E64ABDF306782B"
+						 format="dita" scope="local">Create a rule set</xref>. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col02"> 
+					 <wintitle>Rule Builder</wintitle> Page 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Create a rule set and apply the set to a variable. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col01">
+					 <p><image href="graphics/step4_icon.png"
+						id="image_6F19EBE7EDAF458A86E529247D9ECCB1"><?xm-replace_text Paragraph?></image>
+						
+					 </p> 
+				  </entry> 
+				  <entry colname="col1"> 
+					 <p> 
+						<xref
+						 href="classification_quickstart_rules.xml#concept_CF2F64BD96454FBFAA84638FC7DEA263"
+						 format="dita" scope="local">Add classification rules to the set</xref>. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col02"> 
+					 <wintitle>Rules</wintitle> Page 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Match a condition to a classification, and then specifying
+						the action to take for the rule. 
+					 </p> 
+					 <p>Be familiar with the information in 
+						<xref
+						 href="about_classification_rules.xml#concept_A67A23F523844D37898583C632DB9D25"
+						 format="dita" scope="local"><?xm-replace_text About Classification Rules?></xref>.
+						
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col01">
+					 <p><image href="graphics/step5_icon.png"
+						id="image_061EB089A8EF4165B6A81CC645F2B43A"><?xm-replace_text Paragraph?></image>
+						
+					 </p> 
+				  </entry> 
+				  <entry colname="col1"> 
+					 <p> 
+						<xref
+						 href="t_classifications_test_rule.xml#task_618A1E7CC8664E728F312250E8367158"
+						 format="dita" scope="local"> <?xm-replace_text Test a classification rule set?>
+						</xref>. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col02"> 
+					 <p> 
+						<wintitle>Testing</wintitle> Page 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>You will want to test rules for validation by editing them
+						in Draft mode. In Draft mode, rules cannot run. 
+					 </p> 
+					 <p> This step is important when using 
+						<xref
+						 href="regex_classification_rules.xml#concept_8A63F9BCF9484963962E14E6286D312D"
+						 format="dita" scope="local">regular expressions</xref>. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col01">
+					 <p><image href="graphics/step6_icon.png"
+						id="image_0F2AD6AE741D4B63A9B69CD1EBCCB8B1"><?xm-replace_text Paragraph?></image>
+						
+					 </p> 
+				  </entry> 
+				  <entry colname="col1"> 
+					 <p> 
+						<xref
+						 href="classification_rule_definitions.xml#concept_6CAEFB1CA4564E2CA5808097C11EF468/section_4A5BF384EEEE4994B6DC888339833529"
+						 format="dita" scope="local">Activate valid rules</xref>. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col02"> 
+					 <wintitle>Rules</wintitle> Page 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Once rules are valid, activate the rule set. 
+					 </p> 
+					 <p>You can overwrite existing keys, if necessary. See 
+						<xref
+						 href="about_classification_rules.xml#concept_A67A23F523844D37898583C632DB9D25"
+						 format="dita" scope="local"><?xm-replace_text How Rules Are Processed?></xref>.
+						
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col01">
+					 <p><image href="graphics/step7_icon.png"
+						id="image_89BFBE52C55044D08F27F9C0B6040F3F"></image>
+					 </p> 
+				  </entry> 
+				  <entry colname="col1"> 
+					 <p>(Optional) 
+						<xref
+						 href="classification_rule_definitions.xml#concept_6CAEFB1CA4564E2CA5808097C11EF468/section_4A5BF384EEEE4994B6DC888339833529"
+						 format="dita" scope="local">Delete unwanted rules</xref>. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col02"> 
+					 <p> 
+						<wintitle>Rules</wintitle> Page 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Delete unwanted rules from a set. 
+					 </p> 
+					 <note>Deleting rules does not delete classified data uploaded. 
+					 </note> 
+					 <p>See 
+						<xref
+						 href="t_delete_classification_data.xml#task_105C3761180A4D21B8395730C39B5F89"
+						 format="dita" scope="local"><?xm-replace_text Delete classification data?></xref>
+						if you need to delete classified data. 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<note>Groups with permissions to use the classification import tool can
+		  use classification rules. See 
+		  <xref
+			href="about_classification_rules.xml#concept_A67A23F523844D37898583C632DB9D25"
+			format="dita" scope="local"><?xm-replace_text How Rules Are Processed?></xref>
+		  for important processing information. 
+		</note> 
+		<p> 
+		  <b>Additional Resources</b> 
+		</p> 
+		<p> 
+		  <b>Blog</b>: For additional information about this feature, see the
+		  Digital Marketing Blog - 
+		  <xref
+			href="http://blogs.adobe.com/digitalmarketing/analytics/rule-based-classifications-part-1-making-classifications-easier/?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+AdobeDigitalMarketing+%28Adobe+Digital+Marketing+Blog%29"
+			format="http" scope="external">Rule-based Classifications</xref>. 
+		</p> 
+		<p> 
+		  <b>Video</b>: Visit 
+		  <xref href="http://outv.omniture.com/" format="http"
+			scope="external">EnterpriseTV</xref> &gt; 
+		  <uicontrol>Analytics</uicontrol> &gt; 
+		  <uicontrol>Classifications</uicontrol> to view the 
+		  <wintitle>Classifications Rule Builder</wintitle> video. 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

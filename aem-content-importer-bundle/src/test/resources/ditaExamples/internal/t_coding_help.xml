@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_47974212088C450E9B59F890D0A4E58B"> 
+  <title>Coding the Help</title> 
+  <shortdesc>An example of how help is coded for 
+	 <keyword>AudenceManager</keyword>. 
+  </shortdesc> 
+  <taskbody> 
+	 <steps id="steps_E615E16BDA6246A2A59F36F273840458"> 
+		<step id="step_F5A18A25977049918A744689E5D31BFF"> 
+		  <cmd> An HTML element gets a class named 
+			 <codeph>"context-help"</codeph> and a custom attribute called 
+			 <codeph>"data-id"</codeph>, which contains the identifier for the
+			 specific help section. 
+		  </cmd> 
+		  <info><b>Example</b>: 
+		  </info> 
+		  <info> 
+			 <codeblock>&lt;span data-id="c_tb_dashboard.html" title="Help" class="context-help"&gt;&amp;nbsp;&lt;/span&gt;
+ 
+// In CSS file..
+.context-help {
+    background: url("../../images/adobe_ui/icons/help.png") no-repeat scroll left center transparent;
+    cursor: pointer;
+    margin-left: 6px;
+    padding: 8px;
+}
+</codeblock> 
+		  </info> 
+		  <info>The AudienceManager JavaScript files uses the following code: 
+			 <codeblock>ADOBE.AM.contextHelpArr = [];
+ 
+ADOBE.AM.addHelpObj = function( page ){
+       var url = ADOBE.AM.API.BASEURL  + "/contextualhelp/pid-" + ADOBE.AM.pid + "/" + page;
+       $.getJSON( url, function( helpObj ){
+                     ADOBE.AM.contextHelpArr[ page ] = helpObj;
+                     ADOBE.AM.showContextHelp( page );
+              }
+       );
+}      
+ 
+ADOBE.AM.showContextHelp = function( item ){
+       var alertObj = {};
+       var helpObj = ADOBE.AM.contextHelpArr[ item ];
+       
+       var msg = helpObj.intro    + "&lt;a tabindex='-1' class='moreHelpLink' href='" + helpObj.url + "' target='_blank'&gt;Click here for more information&lt;/a&gt;"; 
+ 
+       alertObj.title = helpObj.title;
+       alertObj.msg =  msg;
+              
+       ADOBE.AM.alertBox( alertObj );
+}
+ 
+// Run when document is ready
+$(".context-help").click(function(){
+var helpPage = $(this).attr("data-id");
+       if( typeof ADOBE.AM.contextHelpArr[ helpPage ] === "undefined"  ){
+              ADOBE.AM.addHelpObj(helpPage);
+       }else{
+              ADOBE.AM.showContextHelp( helpPage );
+       }
+});
+</codeblock> 
+		  </info> 
+		</step> 
+		<step id="step_60AA68A3F4A343599C10A00292A48428
+"> 
+		  <cmd> This code makes a Ajax call to our API: 
+		  </cmd> 
+		  <info> 
+			 <codeblock>                private final String baseURL = &quot;http://microsite.omniture.com/t2/help/en_US/demdex/&quot;;
+static Pattern titlePatt = Pattern.compile(&quot;(&lt;title&gt;)(.+?)(&lt;/title&gt;)&quot;);
+static Pattern introPatt = Pattern.compile(&quot;(?s)&lt;p&gt;.+?&lt;/p&gt;&quot;);
+@GET
+@Path(&quot;/pid-{pid}/{path}&quot;)
+public ContextualHelp getContextHelp(@PathParam(&quot;path&quot;) String path) throws IOException{
+      String urlString = baseURL + path;
+              
+       URL url = new URL(urlString);
+       HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+       connection.setRequestProperty(&quot;User-Agent&quot;, &quot;Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.6) Gecko/20100625 Firefox/3.6.6&quot;);
+
+       String helpTitle = &quot;Adobe Audience-Manager&quot;;
+       String helpURL = baseURL;
+       String helpIntro = &quot;&quot;;
+              
+       if( connection.getResponseCode() == 200){
+              String line;
+       StringBuilder builder = new StringBuilder();
+              BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+              while ((line = reader.readLine()) != null) {
+                   builder.append(line);
+                   builder.append(&quot;\n&quot;); 
+              }
+              String html = builder.toString();
+               
+              Matcher titleMatch = titlePatt.matcher(html);
+              Matcher introMatch = introPatt.matcher(html);
+               
+              if( titleMatch.find() ){
+                     helpTitle = titleMatch.group(2);
+              }
+               
+              if( introMatch.find() ){
+                     helpIntro = introMatch.group();
+              }
+               
+              helpURL = baseURL + &quot;index.html#&quot; + URIUtil.encodeQuery( helpTitle );
+              
+       }
+              
+       ContextualHelp helpData = new ContextualHelp();
+       
+       helpData.setTitle( helpTitle );
+       helpData.setUrl( helpURL );
+       helpData.setIntro( helpIntro );
+       
+       return helpData;
+}
+</codeblock> 
+		  </info> 
+		</step> 
+		<step id="step_203A8841951D457991D4E83DA4F7B292"> 
+		  <cmd> The API then takes the 
+			 <codeph>"c_tb_dashboard.html"</codeph> and appends it to the base
+			 help URL (<xref
+			 href="http://microsite.omniture.com/t2/help/en_US/demdex/">http://microsite.omniture.com/t2/help/en_US/demdex/</xref>)
+			 and requests that page. 
+		  </cmd> 
+		</step> 
+		<step id="step_90D4316114FD400280048B3FFBECE7A6"> 
+		  <cmd> If an HTTP response code of 200 is received, the response is
+			 parsed extracting the 
+			 <codeph>&lt;title&gt;</codeph> tag and first 
+			 <codeph>&lt;p&gt;</codeph> tag. 
+		  </cmd> 
+		  <stepresult> In addition, you will see a relative link to 
+			 <codeph>index.html</codeph> is created. 
+		  </stepresult> 
+		</step> 
+		<step id="step_F5B199D888AE4F669D181A1FD1B17EB9"> 
+		  <cmd> Finally, the response is returned to the client. 
+		  </cmd> 
+		  <stepresult><?xm-replace_text Step Result?>
+		  </stepresult> 
+		</step> 
+		<step id="step_5A0E9E63B1E14B91AA9EEA0330C15384"> 
+		  <cmd> The client parses the response and displays the following dialog:
+			 
+		  </cmd> 
+		  <stepresult><image href="graphics/trait.png"
+			 id="image_59E04EF0C75040E2BCC98C0B9694E267"><?xm-replace_text Step Result?></image>
+			 
+		  </stepresult> 
+		</step> 
+	 </steps> 
+  </taskbody>
+</task>

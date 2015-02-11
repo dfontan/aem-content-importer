@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_52E6446E927A4CAC8E0EA15A3AE2C0EC">
+  <title>Data Extract</title>
+  <shortdesc>Data extracts let you choose the parameters you will view on both
+	 the X- and Y-axes of the report, as well as the item by which the report is
+	 filtered. For example, you could place products along the left side of the
+	 report, dates across the top, and a metric as the overall data filter. The Data
+	 Extracts are delivered reports, and are only available in CSV format. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports,Reports and analytics" />
+      <othermeta name="subtopic" content="Glossary" />
+    </metadata>
+  </prolog>
+  <conbody></conbody>
+</concept>

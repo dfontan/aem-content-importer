@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_F5E24707BE2845549788C5D4BED03281" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Targeting Display to a Prerequisite Success
+	 Metric</title>
+  <shortdesc class="- topic/shortdesc ">Targeting display to a prerequisite
+	 success metric requires a visitor to have seen (or not seen) another mbox in
+	 order to see content. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <context id="context_B9309B4D084E45F2BBF96E64702C1272" class="- topic/section task/context ">
+      <p class="- topic/p ">
+        <note class="- topic/note ">Do not confuse this feature with 
+			 <xref href="c_Managing_Success_Metrics.xml#concept_F2D06B8EDCC24EED9C494210C1415859" type="concept" format="dita" scope="local" class="- topic/xref ">Success
+				Metrics Reporting</xref>, which impacts only reporting, not display. 
+		  </note>
+      </p>
+      <p class="- topic/p ">Be cautious using this feature. Complete a thorough
+		  QA and consult your account representative to ensure this is the best solution
+		  to meet your needs. 
+		</p>
+    </context>
+    <steps id="steps_A2630E32EC4348489C4AE168D1609AA4" class="- topic/ol task/steps ">
+      <step id="step_5193CE928F9049CE9B3FC7CA58E09D8F" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Set up success metrics as you would
+			 for a 
+			 <xref href="c_Managing_Success_Metrics.xml#concept_F2D06B8EDCC24EED9C494210C1415859" type="concept" format="dita" scope="local" class="- topic/xref ">Success Metric
+				Report</xref>. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">One of these success metrics must have selected
+				the prerequisite mbox. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_53D7642647634104999ECBBA0F776B45" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">At the Experience or Mbox Level,
+			 target the content to display only when the Prerequisite success metric 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">has been
+				seen</uicontrol> or 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">has not been
+				seen</uicontrol>. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">
+            <b class="+ topic/ph hi-d/b ">Warning!</b> Do not target display to
+				a success metric at the campaign level. The result will be that the visitor is
+				locked out of the campaign. 
+			 </p>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+  <!--<related-links class="- topic/related-links ">
+    <link href="t_Viewing_the_List_of_Targeting_Groups.xml#task_85CEECC96F7D438DBBC40C044C8825CB" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Viewing the List of Targeting Groups?>
+    </link>
+    <link href="c_Understanding_Built-In_Targeting_Groups.xml#concept_63E2017653634DFF97A4861947EDC49F" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Understanding Built-In Targeting Groups?>
+    </link>
+    <link href="r_Tips_for_Targeting_Groups.xml#reference_B378F383FEDF4E3FBEDD48570B2ABA9C" type="reference" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Tips for Targeting Groups?>
+    </link>
+    <link href="c_Creating_Reusable_Targeting_Groups.xml#concept_E5514A8781424E23A5422FD5317F4AAC" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Creating Reusable Targeting Groups?>
+    </link>
+    <link href="c_Or_and_And_Target_Rules.xml#concept_C7F197A3D399447E9E143599A3715099" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Or and And Target Rules?>
+    </link>
+    <link href="c_Behavioral_Targeting.xml#concept_CEE693A71E8D4C2CBF51DAA97DE8D61D" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Behavioral Targeting?>
+    </link>
+    <link href="c_Using_Alliant_Data.xml#concept_D9542E52932C49A9B196C937A4CC3662" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Using Alliant Data?>
+    </link>
+  </related-links>
+-->
+</task>

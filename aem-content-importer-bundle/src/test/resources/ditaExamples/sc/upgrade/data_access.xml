@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_5853830A6D8C4348BB6131C16A7420F6"> 
+  <title>Data Accessibility</title> 
+  <shortdesc>In 
+	 <keyword>SiteCatalyst</keyword> 15, data is available on average 45 minutes
+	 after receipt.
+  </shortdesc> 
+  <conbody>
+	 <p>The data is processed in one-hour blocks. About 30 minutes after the end
+		of an hour, data for that hour is visible in 
+		<keyword>SiteCatalyst</keyword> 15. For the next hour, data is processed
+		into a batch. As such, data availability oscillates between 30 and 90 minutes.
+		This delay decreases with future releases of 
+		<keyword>SiteCatalyst</keyword>.
+	 </p>
+	 <p>In 
+		<keyword>SiteCatalyst</keyword> 14, different types of data were
+		available at different intervals. For example, traffic data was available to 
+		<keyword>SiteCatalyst</keyword> reports in a 90-second delay, while
+		conversion data was available in a 20-30-minute delay.
+	 </p>
+	 <p><keyword>SiteCatalyst</keyword> 15 applies consistent data availability
+		rules across all types of collected data. For example, in 
+		<keyword>SiteCatalyst</keyword> 14 the 
+		<wintitle>Page Views</wintitle> and 
+		<wintitle>Visits</wintitle> metrics were updated at different times. This
+		difference caused calculated metrics (such as 
+		<wintitle>Page Views per Visit</wintitle>) to be overstated for the
+		current day. In 
+		<keyword>SiteCatalyst</keyword> 15, all metrics and dimensions appear at
+		the same time, providing a more consistent view of your metrics.
+	 </p>
+  </conbody>
+</concept>

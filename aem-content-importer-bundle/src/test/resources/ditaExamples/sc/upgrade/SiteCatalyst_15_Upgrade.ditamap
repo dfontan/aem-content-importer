@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd" [      ]>
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<map id="map_F46F366FC5724245AA0DF2E821A7225D">
+	<title>SiteCatalyst 15 Upgrade Guide</title>
+	<topicref format="dita" href="upgrade_home.xml" navtitle="SiteCatalyst 15 Upgrade Help" scope="local"><topicref format="dita" href="preface.xml" navtitle="Preface" scope="local"/><topicref format="dita" href="t_upgrade_prepare.xml" navtitle="Preparing for Your Upgrade" scope="local">
+			<topicmeta>
+				<navtitle>Preparing for Your Upgrade</navtitle>
+			</topicmeta>
+		</topicref><topicref format="dita" href="feature_overview.xml" navtitle="Feature Overview" scope="local">
+			<topicmeta>
+				<navtitle>Feature Overview</navtitle>
+			</topicmeta>
+			<topicref format="dita" href="site_overview_report.xml" navtitle="Site Overview Report" scope="local">
+				<topicmeta>
+					<navtitle>Site Overview Report</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="suite_prod_access.xml" navtitle="Suite Product Access" scope="local">
+				<topicmeta>
+					<navtitle>Suite Product Access</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="segmentation.xml" navtitle="Segmentation" scope="local">
+				<topicmeta>
+					<navtitle>Segmentation</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="full_subrelations.xml" navtitle="Full Subrelations" scope="local">
+				<topicmeta>
+					<navtitle>Full Subrelations</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="default_metrics.xml" navtitle="Default Metrics on Reports" scope="local">
+				<topicmeta>
+					<navtitle>Default Metrics on Reports</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="metric_changes.xml" navtitle="Metric Changes" scope="local">
+				<topicmeta>
+					<navtitle>Metric Changes</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="report_menu_search.xml" navtitle="Report Menu Search" scope="local">
+				<topicmeta>
+					<navtitle>Report Menu Search</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="new_reports.xml" navtitle="Video Report Changes" scope="local">
+				<topicmeta><navtitle>New Reports</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="datawarehouse_req.xml" navtitle="DataWarehouse Requests" scope="local">
+				<topicmeta>
+					<navtitle>DataWarehouse Requests</navtitle>
+				</topicmeta>
+				<topicref format="dita" href="dup_requests.xml" navtitle="Create Duplicate Requests" scope="local">
+					<topicmeta>
+						<navtitle>Create Duplicate Requests</navtitle>
+					</topicmeta>
+				</topicref>
+				<topicref format="dita" href="prioritize_requests.xml" navtitle="Prioritize Requests" scope="local">
+					<topicmeta>
+						<navtitle>Prioritize Requests</navtitle>
+					</topicmeta>
+				</topicref>
+				<topicref format="dita" href="view_detailed_status.xml" navtitle="View Detailed Status" scope="local">
+					<topicmeta>
+						<navtitle>View Detailed Status</navtitle>
+					</topicmeta>
+				</topicref>
+				<topicref format="dita" href="new_dim.xml" navtitle="Add New Dimensions and Metrics" scope="local">
+					<topicmeta>
+						<navtitle>Add New Dimensions and Metrics</navtitle>
+					</topicmeta>
+				</topicref>
+			</topicref>
+			<topicref format="dita" href="proc_rules.xml" navtitle="Processing Rules" scope="local">
+				<topicmeta>
+					<navtitle>Processing Rules</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="context_data_var.xml" navtitle="Context Data Variables" scope="local">
+				<topicmeta>
+					<navtitle>Context Data Variables</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="list_var.xml" navtitle="List Variables" scope="local">
+				<topicmeta>
+					<navtitle>List Variables</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="user_man_enhance.xml" navtitle="User Management Enhancements" scope="local">
+				<topicmeta>
+					<navtitle>User Management Enhancements</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="bot_traffic.xml" navtitle="Bot Traffic Filtering" scope="local">
+				<topicmeta>
+					<navtitle>Bot Traffic Filtering</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="data_visibility.xml" navtitle="Data Visibility in Other SiteCatalyst Versions" scope="local">
+				<topicmeta>
+					<navtitle>Data Visibility in Other SiteCatalyst Versions</navtitle>
+				</topicmeta>
+			</topicref>
+		</topicref><topicref format="dita" href="data_proc_dif.xml" navtitle="Data Processing Differences Between SiteCatalyst 14 and 15" scope="local">
+			<topicmeta>
+				<navtitle>Data Processing Differences Between SiteCatalyst 14 and 15</navtitle>
+			</topicmeta>
+			<topicref format="dita" href="r_unavail_reports.xml" navtitle="Unavailable Reports" scope="local">
+				<topicmeta>
+					<navtitle>Unavailable Reports</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="data_access.xml" navtitle="Data Accessibility" scope="local">
+				<topicmeta>
+					<navtitle>Data Accessibility</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="t_visits_metric.xml" navtitle="Visits Metric Includes Non-cookie Visitors" scope="local">
+				<topicmeta>
+					<navtitle>Visits Metric Includes Non-cookie Visitors</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="metric_visits.xml" navtitle="Updated Visits Metric for Typed Bookmarked in Referring Domains   Report..." scope="local">
+				<topicmeta>
+					<navtitle>Updated Visits Metric for Typed Bookmarked in Referring Domains Report</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="r_time_spent_calc.xml" navtitle="Updated Time Spent Calculation" scope="local">
+				<topicmeta>
+					<navtitle>Updated Time Spent Calculation</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="dup_visitors.xml" navtitle="Remove Duplicate Visitors and Unique Visits" scope="local">
+				<topicmeta>
+					<navtitle>Remove Duplicate Visitors and Unique Visits</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="dup_merch_evars.xml" navtitle="Remove Duplicates from Merchandising eVars" scope="local">
+				<topicmeta>
+					<navtitle>Remove Duplicates from Merchandising eVars</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="r_sc_seg_diff.xml" navtitle="ASI and SiteCatalyst Segmentation Differences" scope="local">
+				<topicmeta>
+					<navtitle>ASI and SiteCatalyst Segmentation Differences</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="conv_reports.xml" navtitle="Conversion Reports - Counting Visits and Daily Unique Visitors" scope="local">
+				<topicmeta>
+					<navtitle>Conversion Reports - Counting Visits and Daily Unique Visitors</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="reporting_limits.xml" navtitle="Improved Reporting Limits for Monthly Unique Values" scope="local">
+				<topicmeta>
+					<navtitle>Improved Reporting Limits for Monthly Unique Values</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="mobile_traffic.xml" navtitle="How Mobile Traffic Displays in Technology Reports" scope="local">
+				<topicmeta>
+					<navtitle>How Mobile Traffic Displays in Technology Reports</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="historical_data.xml" navtitle="Historical Data and Rollup Report Suites" scope="local">
+				<topicmeta>
+					<navtitle>Historical Data and Rollup Report Suites</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="instances_metric.xml" navtitle="Instances Metric on Merchandising eVars" scope="local">
+				<topicmeta>
+					<navtitle>Instances Metric on Merchandising eVars</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="prod_string.xml" navtitle="Category Section of the Product String" scope="local">
+				<topicmeta>
+					<navtitle>Category Section of the Product String</navtitle>
+				</topicmeta>
+			</topicref>
+		</topicref><topicref format="dita" href="r_man_segments.xml" navtitle="Managing Segments Prior to Upgrading" scope="local">
+			<topicmeta><navtitle>Managing Segments</navtitle>
+			</topicmeta>
+		</topicref><topicref format="dita" href="video_tracking.xml" navtitle="Upgrading Video Tracking for SiteCatalyst 15" scope="local">
+			<topicmeta>
+				<navtitle>Upgrading Video Tracking for SiteCatalyst 15</navtitle>
+			</topicmeta>
+		</topicref><topicref format="dita" href="notify_users.xml" navtitle="Notifying Users About the Upgrade" scope="local">
+			<topicmeta>
+				<navtitle>Notifying Users About the Upgrade</navtitle>
+			</topicmeta>
+			<topicref format="dita" href="email_notif.xml" navtitle="Sample Email Notification" scope="local">
+				<topicmeta>
+					<navtitle>Sample Email Notification</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="home_page_ann.xml" navtitle="Sample Home Page Announcement" scope="local">
+				<topicmeta>
+					<navtitle>Sample Home Page Announcement</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="post_upgrade_notif.xml" navtitle="Post-Upgrade Notifications" scope="local">
+				<topicmeta>
+					<navtitle>Post-Upgrade Notifications</navtitle>
+				</topicmeta>
+			</topicref>
+		</topicref><topicref format="dita" href="t_post_upgrade_checklist.xml" navtitle="Post-Upgrade Checklist" scope="local">
+			<topicmeta>
+				<navtitle>Post-Upgrade Checklist</navtitle>
+			</topicmeta>
+		</topicref><topicref format="dita" href="r_faq.xml" navtitle="Frequently Asked Questions" scope="local">
+			<topicmeta>
+				<navtitle>Frequently Asked Questions</navtitle>
+			</topicmeta>
+		</topicref></topicref>
+</map>

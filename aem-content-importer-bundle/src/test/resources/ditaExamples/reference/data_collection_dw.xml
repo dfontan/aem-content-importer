@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_0E19791DECF24D988261AD7A94BB1B67">
+  <title>Data Collection Using Data Warehouse</title>
+  <shortdesc>A description of how data is collected in 
+	 data warehouse. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>
+      Data warehouse requests use the following data
+		collection process: 
+	 </p>
+    <ol id="ol_EB61FCA4BB4948A896AA6237D0240E70">
+      <li id="li_0694519AA3B24B16A9D945528238849F">An image request is sent to
+		  Adobe data collection servers. 
+		</li>
+      <li id="li_686E9642CDBB470DAB92E1605E54EB84">A server call is returned to
+		  acknowledge the server call. 
+		</li>
+      <li id="li_018294A486874A73905EBF8D097BDA94">Collection servers submit
+		  the data to a cache file. 
+		</li>
+      <li id="li_63A73C27242A4F77BA5E5F2019F47C8F">Adobe determines whether 
+		  Data warehouse is enabled for the report suite. 
+		</li>
+      <li id="li_146194C623C0465EA848CB799EA5E1EA">If enabled, the data is sent
+		  to a container to be stored for a period as defined in your contract. 
+		  <p>When the data is stored, you can use 
+			 data warehouse and segment interface to create
+			 reports on the stored data. 
+		  </p></li>
+      <li id="li_06F548E4187F4F40AA4D52E81C61E08E">The data is submitted to
+		  processing, first processing VISTA rules and GeoSegmentation location. 
+		</li>
+      <li id="li_2E3C434CC9F946358941CD3BBDAC8869">The data is submitted to
+		  tables for viewing in 
+		  reports. 
+		</li>
+    </ol>
+    <p> If 
+		data warehouse is enabled, data is duplicated and sent
+		to both the processed data tables and to the data storage unit for the report
+		suite. You can enable 
+		data warehouse only for data storage purposes.
+		Frequently, 
+		users enable 
+		data warehouse to create advanced data relationship
+		reports through the 
+		reporting interface. 
+	 </p>
+    <p>For example, you run a company that sells computers, and you want to see
+		the number of visitors to a certain page and who also purchased a certain
+		printer. The 
+		data warehouse interface can access the raw data from
+		the data storage container and create a post-analysis data report, which 
+		Adobe sends to a selected email address. 
+	 </p>
+    <p>See 
+		<xref href="data_warehouse.xml#concept_8EDD61F459204364AD214125ED160EC6" format="dita" scope="local"><?xm-replace_text Data Warehouse?></xref> for setup
+		and procedures. 
+	 </p>
+  </conbody>
+</concept>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_1D29FC9D72AB4D53A703230FE4D9FEAB">
+  <title>Configure AppMeasurement</title>
+  <shortdesc>
+    <?xm-replace_text Short Description?>
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>media</keyword>
+        <keyword>milestone</keyword>
+        <keyword>sdk</keyword>
+        <keyword>video</keyword>
+      </keywords>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <context id="context_E786A11F732D4716BDE47AD6FE628F3F">
+      <p>Flash video measurement uses ActionScript, and is configured
+		  identically to the JavaScript implementation on your website. The standard 
+		  <xref href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=c_sc_variables" format="http" scope="external">Analytics Variables</xref> are all available in
+		  Flash. 
+		</p>
+    </context>
+    <steps id="steps_F1DDD0C3987C4EC6B4798FBBC4FFDEA1">
+      <step id="step_B679F65A1BFD45149D9436768304B35F">
+        <cmd>Define an AppMeasurement object and add it as a child: 
+		  </cmd>
+        <stepresult>
+          <codeblock>import com.omniture.AppMeasurement;
+var s:AppMeasurement = new AppMeasurement();
+addChild(s);</codeblock>
+        </stepresult>
+      </step>
+      <step id="step_2E2E471FAF9F43B783EF4DF0C5FDCD85">
+        <cmd>Populate the following required configuration variables: 
+		  </cmd>
+        <stepresult>
+          <ul id="ul_BF0202BBCE114B4EB8DBE26284A805B6">
+            <li id="li_641F047064E04C6A94B09881638A5417">s.account 
+				</li>
+            <li id="li_192E37CEE8604317A3ADDC4B77AA38CF">s.trackingServer 
+				</li>
+          </ul>
+          <p>These values can be copied directly from your s_code.js file. 
+			 </p>
+        </stepresult>
+      </step>
+    </steps>
+    <example id="example_C6FD5A741A9B41ECBE99B82D98CF6429">
+      <p>
+        <b>Next step:</b>
+        <xref href="video_flash_mapping.xml#task_3D50EAA204F54A1991490FC650B1F300" format="dita" scope="local">
+          <?xm-replace_text Map Analytics Variables and Events?>
+        </xref>.
+		  
+		</p>
+    </example>
+  </taskbody>
+</task>

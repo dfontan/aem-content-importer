@@ -32,7 +32,6 @@ $("#clearFile").click(function() {
 });
 
 function submitForm(action_url) {
-	console.log("Action: " + action_url);
 	// now post a new XHR request
 	var xhr = new XMLHttpRequest();
 	xhr.open('POST', action_url);
@@ -48,8 +47,17 @@ function submitForm(action_url) {
 			var data = $.parseJSON(xhr.responseText);
 			var result = data['error'];
 			if (result == 'true') {
-				$("#error").html(
-						"Process failed! Contact with the administrator");
+				
+				var errorType = data['errorType'];
+				
+				if (errorType == 'INVALID_ZIP_FILE') {
+					$("#error").html(
+					"Invalid zip file format. It is expected a config file as first in the root of zip or inside a folder");
+				} else {
+					$("#error").html(
+					"Process failed expectedly!");
+				}
+				
 				$("#error").css("display", "block");
 				$("#success").css("display", "none");
 				$("#execute").removeAttr("disabled");

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_DF2F1839625B4C82A30E6A2BD7AF449C">
+  <title>Launching DigitalPulse Debugger</title>
+  <shortdesc>After installing the<keyword> DigitalPulse Debugger</keyword>, you
+	 are ready to use it to view the data being collected from your site. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Debugger" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <steps id="steps_B856F83488D24E8D87598E3FD0181C16">
+      <step id="step_AF1B9CF55FE24CA28598D844AB2E8D57">
+        <cmd>From your browser, click the bookmark or bookmarklet to launch the
+			 
+			 <keyword>DigitalPulse Debugger</keyword> in a new window. 
+		  </cmd>
+        <stepresult>
+          <p>
+            <image id="image_9BE89B3868C14EFE9EDBEB9E209ED397" href="graphics/debugger.png"></image>
+          </p>
+        </stepresult>
+      </step>
+      <step id="step_C0D0AD64DECD499CB7A376294CD4670E">
+        <cmd>View the data. 
+		  </cmd>
+      </step>
+    </steps>
+  </taskbody>
+</task>

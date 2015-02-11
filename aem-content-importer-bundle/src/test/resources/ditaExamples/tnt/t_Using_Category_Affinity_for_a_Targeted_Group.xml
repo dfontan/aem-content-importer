@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_DB5DD3C3BD624DF782C143AC1CD06739" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Category Affinity for a Targeted Group</title>
+  <shortdesc class="- topic/shortdesc ">It is common to use category affinity
+	 for a targeted group. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <steps id="steps_88940F9AE5F1447B927ED4B7215C20CF" class="- topic/ol task/steps ">
+      <step id="step_21EE2E94A11B47369C2C233143ADFD4B" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Create an A/B, Multivariate, or
+			 Landing Page campaign or test. 
+		  </cmd>
+      </step>
+      <step id="step_F5C6484DF6B441BB9E31B0C83D58142C" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Choose the target population for a
+			 campaign location, experience, mbox, or conversion. 
+		  </cmd>
+      </step>
+      <step id="step_636BB5D0A0C04E7DA49F73231599C5D0" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Click 
+			 <uicontrol>Target this campaign</uicontrol>, then select 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">user.categoryAffinity</uicontrol> from the 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Visitor
+				Behavior</uicontrol> section of the 
+			 <wintitle>Targeting</wintitle> screen. 
+		  </cmd>
+      </step>
+      <step id="step_B4704750315D40E4A732F39F5D7A6BF8" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Select the comparison type (contains,
+			 exactly matches, etc.) and enter the 
+			 <codeph class="+ topic/ph pr-d/codeph ">categoryId</codeph>. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">You may also enter multiple categoryIds if you
+				would like different sets of users to all receive the same content. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_751B73D1B217438A8F5BCA4078266DBF" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Done</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_CE8610BB0E5A490D99EFD9E5A7391077" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Save</uicontrol> to
+			 save the campaign and rules. 
+		  </cmd>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links class="- topic/related-links ">
+    <link href="t_Preparing_to_Use_Category_Affinity.xml#task_B5548841D27A4BF28767B4CF4BC6D99F" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Prepare to Use Category Affinity?>
+    </link>
+  </related-links>
+</task>

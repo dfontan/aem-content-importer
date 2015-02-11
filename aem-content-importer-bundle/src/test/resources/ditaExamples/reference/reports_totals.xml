@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_48E23FB3BCCD43DFB486A048960800A8">
+  <title>Totals Report</title>
+  <shortdesc>An executive-level report that shows bottom-line figures. It
+	 contains data for total revenue, page views, and orders. You can segment the
+	 report and add additional metrics to view additional data. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports" />
+    </metadata>
+  </prolog>
+</concept>

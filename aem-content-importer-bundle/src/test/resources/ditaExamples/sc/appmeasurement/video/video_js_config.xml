@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_DEF394968F334B19BBFA356BC24B23E8">
+  <title>Add the JavaScript Media Module to a Web Page</title>
+  <shortdesc>The Media module code is copied into your 
+	 <codeph>s_code.js</codeph> file. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>media</keyword>
+        <keyword>milestone</keyword>
+        <keyword>sdk</keyword>
+        <keyword>video</keyword>
+      </keywords>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <steps id="steps_98D04918574D41799A2174BBC9AB29E1">
+      <step id="step_7F9BAEB98A9B4859808B4C9556834B2E">
+        <cmd>Add a call to 
+			 <codeph>s.loadModule</codeph> to load the Media module. 
+		  </cmd>
+        <stepresult>
+          <codeblock>/*********Media Module Calls**************/
+s.loadModule("Media")</codeblock>
+        </stepresult>
+      </step>
+      <step id="step_EC3B19A588864E569BE4964F1CA8FF2D">
+        <cmd>Insert the Media module code into the modules section. 
+		  </cmd>
+        <stepresult>
+          <codeblock>/****************************** MODULES **************************/
+/* Insert the media module tracking code here. */</codeblock>
+        </stepresult>
+      </step>
+    </steps>
+    <example id="example_F1653D1D0AB14232BD54828BB611A216">
+      <p>See 
+		  <xref href="video_js_sample.xml#concept_7B17ACCC514C4B8A9847AB799A2E29F4" type="concept" format="dita" scope="local"><?xm-replace_text JavaScript Sample Code?></xref>.
+		  
+		</p>
+    </example>
+  </taskbody>
+</task>

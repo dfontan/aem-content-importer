@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_4350CA9A892148AE93C8133AB3B4BEA4">
+  <title>Media.trackVars</title>
+  <shortdesc> The 
+	 <varname>Media.trackVars</varname> variable identifies which variables
+	 should be sent with a media hit. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Variables" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>It is only applicable with JavaScript and 
+		<wintitle>ActionSource</wintitle>. 
+	 </p>
+    <table id="table_7E854C66387149AC92886E57154A1866">
+      <tgroup cols="4">
+        <colspec colnum="1" colname="col1" colwidth="*" />
+        <colspec colnum="2" colname="col2" colwidth="*" />
+        <colspec colnum="3" colname="col3" colwidth="*" />
+        <colspec colnum="4" colname="col4" colwidth="*" />
+        <thead>
+          <row>
+            <entry> Max Size 
+				</entry>
+            <entry> Debugger Parameter 
+				</entry>
+            <entry> Reports Populated 
+				</entry>
+            <entry> Default Value 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry> N/A 
+				</entry>
+            <entry> N/A 
+				</entry>
+            <entry> N/A 
+				</entry>
+            <entry> s.Media.trackVars="None" 
+				</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <section id="section_7374684A7EB34AE685E8C40A66CFD289">
+      <title>Syntax and Possible Values</title>
+      <p>Variable names such as 
+		  <wintitle>propN</wintitle>, 
+		  <varname>eVarN</varname>, 
+		  <varname>events</varname>, 
+		  <varname>channel</varname>, and so forth. 
+		</p>
+    </section>
+    <section id="section_48653222ABA14AB0A3C4471659971FAA">
+      <title>Examples</title>
+      <codeblock outputclass="syntax javascript">s.Media.trackVars=”prop2,events,eVar3”</codeblock>
+    </section>
+    <section id="section_615AE1B696124B00B78F651B03813EAB">
+      <title>Pitfalls, Questions, and Tips</title>
+      <ul id="ul_D5DBB9241B10479F86DF7F39DCCB5A5A">
+        <li id="li_15267ACFEF404C8FA5954045BD2B5C46">Even if eVar3 is specified
+			 in 
+			 <wintitle>trackVars</wintitle>, it is sent with the media hit. 
+		  </li>
+      </ul>
+    </section>
+  </conbody>
+</concept>

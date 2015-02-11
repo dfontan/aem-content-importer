@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_F887EA52F58B4F21BD6FDF92D74CCEBC" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Create an A/B Test</title>
+  <shortdesc class="- topic/shortdesc ">An A/B test compares two or more
+	 versions of your Web site content to see which best lifts your conversions,
+	 sales, registrations, or any other success metric. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <context id="context_E99B14F6B98D49F69FFB80D052FED827" class="- topic/section task/context ">
+      <p class="- topic/p ">A/B tests are well-suited for large changes that
+		  might involve new layouts or drastically different treatments of the elements.
+		  If your test design does not easily break down into individual page elements,
+		  you should run an A/B test before a multivariate test. Also, if you anticipate
+		  large interactions between elements, an A/B test is the best choice. Like any
+		  other campaign A/B campaigns can span multiple pages, can be used to reinforce
+		  messaging or content throughout your site, and are often used to target
+		  different content to different types of visitors. 
+		</p>
+      <p class="- topic/p ">Before setting up the test, complete the procedures
+		  in 
+		  <xref href="t_Setting_Up_Your_Site.xml#task_8C450FFC11344C58B59F092521D71EF7" type="task" format="dita" scope="local" class="- topic/xref "><?xm-replace_text Setting Up Your Site?></xref>.
+		  
+		</p>
+    </context>
+    <steps id="steps_471D7129F3EF40E69F8FF11A6E14A3A4" class="- topic/ol task/steps ">
+      <step id="step_09C8AAC3B22343B8AC4B0C7B2ABA6D69" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Select 
+			 <uicontrol>Campaigns</uicontrol> &gt; 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Create</uicontrol> &gt;
+			 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">A/B…N</uicontrol>. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult "></stepresult>
+      </step>
+      <step id="step_C43DD56AE7EA4F0BBD7BF50059007AFD" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Name your campaign. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">Name the campaign something descriptive that
+				you will recognize months later. 
+			 </p>
+          <p class="- topic/p ">
+            <b class="+ topic/ph hi-d/b ">Example:</b> Home Page AB Test
+				November 2013 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_8D5BD82A9ECA47ABA47FE3A144D5DD3D" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Set the start and end dates,
+			 including time of day. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">The time zone is determined when you create
+				your account. To change your time zone, ask your Account representative. 
+			 </p>
+          <p class="- topic/p ">By default, start and end dates are set to 
+				<uicontrol class="+ topic/ph ui-d/uicontrol ">When
+				  Approved</uicontrol> and 
+				<uicontrol class="+ topic/ph ui-d/uicontrol ">When
+				  Deactivated</uicontrol>. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_2D31C34804DE495291256687CAA1AF55" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Set the campaign priority. 
+		  </cmd>
+      </step>
+      <step id="step_5447C0FBD2714272904AB9C921A9A4A2" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Target the campaign to certain
+			 visitors. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">By default, campaigns allow all visitors to
+				view them. To target your campaign, set up 
+				<xref href="c_Targeting_a_Campaign_or_Test.xml#concept_A782F8481A5041EBA75103CB26376522" type="concept" format="dita" scope="local" class="- topic/xref "><?xm-replace_text Targeting a Campaign or Test?></xref>.
+				
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_77029086593D4D35ACBBFD0F44231929" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Select the location where content in
+			 your campaign will appear by choosing your mbox. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">Your campaign can deliver content to many
+				locations. Click 
+				<uicontrol class="+ topic/ph ui-d/uicontrol ">Add
+				  Location</uicontrol> to add mboxes. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_4116F39F4709442CA0387659CE66B554" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">In Experience A, select content for
+			 each location by clicking the 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">change
+				offer</uicontrol> from the actions menu next to the offer name. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p "> Note that Default Content is assigned to each
+				location initially. After you click 
+				<uicontrol class="+ topic/ph ui-d/uicontrol ">select/create
+				  offer</uicontrol>, you can select offers that you've created from the offer
+				selection pop-up. Alternatively, you can create a new offer by writing or
+				pasting offer content and naming the offer. 
+			 </p>
+          <p class="- topic/p "> An effective technique for creating new offers
+				while setting up a campaign is to edit an existing offer. Click the 
+				<uicontrol class="+ topic/ph ui-d/uicontrol ">Edit 
+				</uicontrol>link in the offer selection pop-up, make changes to the
+				offer content, give the offer a new name, and click 
+				<uicontrol class="+ topic/ph ui-d/uicontrol ">Save</uicontrol>.
+				Note that you will only be able to edit HTML offers from the offer select
+				pop-up. Redirect offers <!--and image offers--> must be edited from the main
+				offer edit page. Refer to 
+				<xref href="c_Managing_Offers.xml#concept_C5EFA3E2C8B44D95A19AA782E2D064DE" type="concept" format="dita" scope="local" class="- topic/xref "><?xm-replace_text Offers?></xref>
+				for more information. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_3ABB23238DDA41CFA5AE4039A4662D9B" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Add
+				Experience</uicontrol> to add more experiences or alternatives to your
+			 campaign. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">Select content for each location in each
+				experience. 
+			 </p>
+          <p class="- topic/p ">
+            <note class="- topic/note ">When there is no targeting on your
+				  experiences, each experience is randomly shown an equal number of times over
+				  time. Initially, however, the distribution of traffic is slightly uneven. For
+				  example, in an A/B test with four experiences, each experience is shown to 25%
+				  of visitors. Note too that you may override the random equalization by adding
+				  targeting to each experience. Please refer to 
+				  <xref href="c_Targeting_a_Campaign_or_Test.xml#concept_A782F8481A5041EBA75103CB26376522" type="concept" format="dita" scope="local" class="- topic/xref "><?xm-replace_text Targeting a Campaign or Test?></xref>
+				  for more information. 
+				</note>
+          </p>
+        </stepresult>
+      </step>
+      <step id="step_4C57466E51C244ED8CC4A53394B9CEC7" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Choose your conversion or other
+			 success metric by assigning an mbox to your conversion success metric, which
+			 appears by default. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">You might rename the conversion metric, but the
+				first/default metric always appears at the bottom of the list of success
+				metrics because it is often the final and primary event in your conversion
+				funnel. Refer to 
+				<xref href="c_Managing_Success_Metrics.xml#concept_F2D06B8EDCC24EED9C494210C1415859" type="concept" format="dita" scope="local" class="- topic/xref "><?xm-replace_text Managing Success Metrics?></xref>
+				for more information. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_11C4EAF78C904D68B088A7256357AA64" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">(Conditional) If you have no
+			 conversion activity in mind, select 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">display
+				mboxes</uicontrol> as the conversion activity. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">Anyone viewing any display mbox is counted as a
+				converted visitor. You will also be able to see impressions and visits to all
+				display mboxes. This is especially useful for display ad tracking. 
+			 </p>
+          <p class="- topic/p ">Select 
+				<uicontrol class="+ topic/ph ui-d/uicontrol ">click from display
+				  mbox</uicontrol> to count all clicks to display mboxes. 
+			 </p>
+          <p class="- topic/p ">
+            <note class="- topic/note ">A conversion is only counted if the
+				  click leads to a page that has an 
+				  <filepath class="+ topic/ph sw-d/filepath ">mbox.js</filepath>
+				  and is in the same domain. A click to another page without an 
+				  <filepath class="+ topic/ph sw-d/filepath ">mbox.js</filepath> or
+				  in a different domain is only counted if the visitor returns to a page that has
+				  an 
+				  <filepath class="+ topic/ph sw-d/filepath ">mbox.js</filepath>
+				  and is in the original domain. 
+				</note>
+          </p>
+        </stepresult>
+      </step>
+      <step id="step_CD94B823627A4AE9B1FEAA304BC547CB" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Add 
+			 <xref href="c_Managing_Segment_Filters.xml#concept_DF9534D4168D46D4B109DD0D2FB57781" type="concept" format="dita" scope="local" class="- topic/xref ">segment
+				filtering</xref> or<xref href="c_Targeting_a_Campaign_or_Test.xml#concept_A782F8481A5041EBA75103CB26376522" type="concept" format="dita" scope="local" class="- topic/xref "><?xm-replace_text Targeting a Campaign or Test?></xref>
+			 as needed for your testing strategy. 
+		  </cmd>
+      </step>
+      <step id="step_8859B248BD514C228EE383E78E9CAD7D" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">If this campaign shares mboxes with
+			 other approved campaigns, set 
+			 <xref href="c_Understanding_Campaign_Priority.xml#concept_605FD7C4E2E14D2384487AFBA7067DF2" type="concept" format="dita" scope="local" class="- topic/xref ">campaign
+				priority</xref>. 
+		  </cmd>
+      </step>
+      <step id="step_1F5D4734DAB440DDAD861D8515039FF4" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Save</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_B08428529E6C4FFBAD8AC3A472BAFE0C" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">
+          <xref href="c_Campaign_Quality_Assurance.xml#concept_B645EA1BB55149E4AB8328F9943AC86A" type="concept" format="dita" scope="local" class="- topic/xref ">Complete
+				quality assurance</xref>. 
+		  </cmd>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links class="- topic/related-links ">
+    <link href="t_Creating_a_Campaign.xml#task_617DF94C42C84D88B44A79FEC443FF70" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Creating a Campaign: Overview?>
+    </link>
+    <link href="r_Understanding_the_Types_of_Campaigns_and_Tests.xml#reference_C22725717F40407FA424E957308E258F" type="reference" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Types of Campaigns and Tests?>
+    </link>
+    <link href="c_Using_a_Multivariate_Campaign.xml#concept_BD7E670A5CAF4FA89250F0B7D4A40ECE" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Using a Multivariate Campaign?>
+    </link>
+    <link href="t_Creating_a_11_Campaign.xml#task_CE002DF9573947EFAE66CCEC6CA21541" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Creating a 1:1 Campaign?>
+    </link>
+    <link href="t_Creating_a_Landing_Page_Campaign.xml#task_1B12DDB4D4E64EF8B47113DFBE1EF0BC" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Creating a Landing Page Campaign?>
+    </link>
+    <link href="t_Creating_a_Monitoring_Campaign.xml#task_833A68CC388044FFA3AA3FED3276389D" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Creating a Monitoring Campaign?>
+    </link>
+    <link href="t_Creating_an_Optimizing_Auto-Targeted_Campaign.xml#task_2E714111F87C4F0FBE969B899732BEA3" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Creating an Optimizing (Auto-Targeted)   Campaign?>
+    </link>
+    <link href="t_Creating_a_Campaign_from_the_Winning_Experience.xml#task_2C2E297CD9C144D79FE269328556677A" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Creating a Campaign from the Winning   Experience?>
+    </link>
+    <link href="t_Creating_a_Display_Ad_Campaign.xml#task_D0E8E3D39FBC434BB0FD823BBFF3EDC5" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Creating a Display Ad Campaign?>
+    </link>
+    <link href="t_Creating_a_Flash_Campaign.xml#task_BD4A000895CB440B879A45DD261FDC07" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Creating a Flash Campaign?>
+    </link>
+    <link href="c_Changing_Campaign_Settings.xml#concept_D70808CDA2524DCA857004DAED110F27" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Changing Campaign Settings?>
+    </link>
+    <link href="c_Viewing_Information_About_Campaigns.xml#concept_67E95290400B4678B45EE109AF1EC284" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Viewing Information About Campaigns?>
+    </link>
+    <link href="c_Starting_and_Stopping_Campaigns.xml#concept_59B06B489BE246B8AA950279A47E68AD" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Starting and Stopping Campaigns?>
+    </link>
+    <link href="c_Testing_Campaigns.xml#concept_BDADC258BDD14160B81FA71467B4E5B3" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Testing Campaigns?>
+    </link>
+    <link href="c_Testing_Ads.xml#concept_C824F400EAA34B9489FF765F87FD6DBD" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Using Behavioral Ads?>
+    </link>
+    <link href="c_Using_SiteCatalyst_Data_in_TestTarget.xml#concept_90A31981AF474A57885BB932D9ED3292" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Using SiteCatalyst Data in   Test&Target?>
+    </link>
+    <link href="c_Using_TestTarget_Onsite.xml#concept_51871D12D7F44B6C9BC51C3A00034105" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Using Test&Target Onsite?>
+    </link>
+    <link href="c_Targeting_a_Campaign_or_Test.xml#concept_A782F8481A5041EBA75103CB26376522" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Targeting a Campaign or Test?>
+    </link>
+    <link href="c_Using_the_Campaign_Library.xml#concept_1F0BADCA1D864DA0A3AE0EE129C5CF9C" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Using the Campaign Library?>
+    </link>
+  </related-links>
+</task>

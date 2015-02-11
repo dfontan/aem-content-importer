@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_A5C38FA129384071A34C66884986B948">
+  <title>Manufacturer Report</title>
+  <shortdesc>Groups mobile device hits to your site by mobile device
+	 manufacturer. The report displays the type of manufacturer, number of views for
+	 each manufacturer, and the corresponding percentages. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>
+      <?xm-replace_text Paragraph?>
+    </p>
+  </conbody>
+</concept>

@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_473AC22B088143DD9E4E9A39CFB2582F"> 
+  <title>getLoadTime</title> 
+  <shortdesc>Gets the page load time in tenths of a second and lets you store
+	 the value in a prop, eVar, and/or a numeric event. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta content="Analytics" name="solution"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>To use this plugin, you insert the function code, then call the function
+		twice in your 
+		<filepath>s_code.js</filepath> file. Once at the beginning of the file,
+		and then again in the 
+		<codeph>doPlugins</codeph> section. This plugin is intentionally not
+		defined as a method of the s object. Doing so would have added to the
+		calculated page load time. 
+	 </p> 
+	 <note>The following instructions require you to alter the data collection
+		code on your site. This can affect data collection on your site, and should
+		only be done by a developer with experience using and implementing 
+		<keyword>Analytics</keyword>. 
+	 </note> 
+	 <section id="section_968AC379C3004C359A85AFED5A48D5AE"> 
+		<title>Plug-in Code and Implementation</title> 
+		<p><b>Add the function</b> 
+		</p> 
+		<p>Add the following definition of the 
+		  <codeph>s_getLoadTime</codeph> function in 
+		  <filepath>s_code.js</filepath>, anywhere before the "DO NOT ALTER
+		  ANYTHING BELOW THIS LINE" section: 
+		</p>
+		<codeblock outputclass="syntax javascript">function s_getLoadTime(){if(!window.s_loadT){var b=new Date().getTime(),o=window.performance?performance.timing:0,a=o?o.requestStart:window.inHeadTS||0;s_loadT=a?Math.round((b-a)/100):''}return s_loadT}</codeblock> 
+		<p><b>Make the initial function call</b> 
+		</p> 
+		<p>Add a call to 
+		  <codeph>s_getLoadTime()</codeph> near the beginning of 
+		  <filepath>s_code.js</filepath>, outside of any function. 
+		</p> 
+		<p><b>Make the final function call</b> 
+		</p> 
+		<p>Add another call to 
+		  <codeph>s_getLoadTime()</codeph> in the 
+		  <codeph>s_doPlugins()</codeph> function, saving the returned value in a
+		  prop, eVar, and/or a numeric event. 
+		</p> 
+		<p>Usage Example 1 - Save the page load time in prop10 and eVar20: 
+		</p> 
+		<codeblock outputclass="syntax javascript">s.eVar20=s.prop10=s_getLoadTime();</codeblock> 
+		<p>Usage Example 2 - Save the page load time in numeric event99: 
+		</p> 
+		<codeblock outputclass="syntax javascript">if(s_getLoadTime())s.events=s.apl(s.events,'event90='+s_getLoadTime(),',',1);</codeblock> 
+		<p><b>(Optional) Add support for older browsers</b> 
+		</p> 
+		<p>To support older browsers that don't provide the 
+		  <xref
+		  href="http://www.html5rocks.com/en/tutorials/webperformance/basics/"
+		  format="http" scope="external">window.performance.timing</xref> property,
+		  include the following line in the HEAD section of the page's HTML near the
+		  beginning and prior to invoking .js, .css, or other files: 
+		</p> 
+		<codeblock outputclass="syntax html">&lt;script type="text/javascript"&gt;var inHeadTS=(new Date()).getTime();&lt;/script&gt;</codeblock> 
+	 </section> 
+  </conbody>
+</concept>

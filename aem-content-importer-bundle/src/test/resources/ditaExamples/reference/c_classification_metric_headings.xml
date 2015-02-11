@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_34431560537E4A43920150187C400EC1">
+  <title>Classification Metric Headings</title>
+  <shortdesc>
+    <wintitle>Classification Metrics</wintitle> headings are denoted
+	 by using the caret (^) and tilde (~) characters to combine the classification
+	 name with the specific classification metric.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Admin tools" />
+      <othermeta name="subtopic" content="Classifications" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p> For example, 
+		<wintitle>Campaigns^~Cost</wintitle> refers to the 
+		<wintitle>Cost</wintitle> metric in the 
+		<wintitle>Campaigns</wintitle> classification.
+	 </p>
+  </conbody>
+</concept>

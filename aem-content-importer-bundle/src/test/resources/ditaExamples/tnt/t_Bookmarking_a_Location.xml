@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_BBF6C9B9C67D4BA8B3799D00F3EC7509">
+  <title>Bookmark a Location</title>
+  <shortdesc>From any specific report, campaign, or screen, you can create a
+	 bookmark in your browser. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <context id="context_6C8DBDCF96034BDA98CF9476814C1ED6">
+      <p>Forward this link to team members for quick access to specific
+		  campaigns or reports. 
+		</p>
+      <p>
+        <note>Team members must log in to Target to see the information. 
+		  </note>
+      </p>
+    </context>
+  </taskbody>
+  <related-links>
+    <link href="c_Using_the_Campaign_Launch_Pad.xml#concept_632502DD0A6A44E9BC0E96150B531BED" type="concept" format="dita" scope="local">
+      <?xm-replace_text Campaigns Launch Pad?>
+    </link>
+    <link href="c_Using_the_Campaign_Spotlight.xml#concept_B7F1D4C409D7489FB7A5F8E4FDCE2075" type="concept" format="dita" scope="local">
+      <?xm-replace_text Campaign Spotlight?>
+    </link>
+    <link href="c_Using_the_Campaign_List_Page.xml#concept_30B4222387784C64A5DCC95E357F35C3" type="concept" format="dita" scope="local">
+      <?xm-replace_text Campaign List?>
+    </link>
+    <link href="t_Viewing_Campaign_Reports.xml#task_3F3DA568D6704D92B9502A491E231D23" type="task" format="dita" scope="local">
+      <?xm-replace_text Campaign Reports?>
+    </link>
+    <link href="t_Viewing_Campaign_History.xml#task_D3010C3EC94941F79166DF5285647445" type="task" format="dita" scope="local">
+      <?xm-replace_text Campaign Change Log?>
+    </link>
+    <link href="t_Using_the_Campaign_View_API.xml#task_F9984F9B30CD4BF096503B245B530C95" type="task" format="dita" scope="local">
+      <?xm-replace_text Campaign View API?>
+    </link>
+  </related-links>
+</task>

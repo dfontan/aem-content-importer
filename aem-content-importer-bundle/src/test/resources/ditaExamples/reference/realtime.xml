@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_6E8756BDDAE843F88B6563C09C48B0B6">
+  <title>Real-Time Reports</title>
+  <shortdesc>Displays web page traffic and ranks page views in real time.
+	 Provides actionable data to base your business decisions on. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Real-Time answers the following questions: What is trending on my site,
+		and why? It allows you as a marketer to quickly respond to and actively manage
+		the performance of your marketing content and campaigns. The real-time data
+		reported is less than two minutes latent and auto-updates on a minute-by-minute
+		basis. 
+	 </p>
+    <p>The dashboard includes Adobe Analytics high-frequency metrics and site
+		analytics to visually report traffic and page view trending of dynamic news and
+		retail web sites. Real-Time understands trends in your data from minute to
+		minute, within seconds of collection. It collects and streams data into an
+		auto-updating UI, using real-time correlation and tracking of content and some
+		conversion. 
+	 </p>
+    <p>
+      <note>Real-Time requires no additional implementation or tagging. It
+		  leverages your existing implementation of Adobe Analytics. To configure
+		  real-time reports, see 
+		  <xref href="t_realtime_admin.xml#task_1CD03E9B6BDB48B08E9E612183557F40" format="dita" scope="local"><?xm-replace_text Real-Time Reports Configuration?></xref>.
+		  
+		</note>
+    </p>
+    <p>Two of the most prevalent usage scenarios include publishers who would
+		like to promote/demote stories as user activity changes, and marketers who
+		would like to track the launch of a new product line. 
+	 </p>
+    <p>As an Administrator, you can 
+	 </p>
+    <ul id="ul_490B4B93FC894F15BADDA4DE5B297970">
+      <li id="li_DBB1DF91FF8545EC9AF93C48D3C4AC15">Create up to 3 real-time
+		  reports per report suite, using existing dimensions or classifications and
+		  metrics. Use the secondary dimensions to correlate with (or break down) the
+		  primary one. 
+		</li>
+      <li id="li_96202F290BCB4887813E06EC32A7AE1A"> Add 3 dimensions (or
+		  classifications) per report (one primary and two secondary), in addition to 1
+		  site-wide metric. 
+		</li>
+      <li id="li_9FF635FE470246EFA9C2411D9CE87BD5">Use any custom event,
+		  shopping cart event, or instance. 
+		</li>
+      <li id="li_50BFFF8E8CD04E00B1A7F278C2238AAC">View up to 2 hours of
+		  historical real-time data and modify this setting: 
+		  <ul id="ul_89A582F147DF43AFA1257188DFB323CF"><li id="li_6D82F0A0041D4BA1B608F4584446C6C6">Last 15 minutes:
+				1-minute granularity 
+			 </li><li id="li_0F7519D12E0243059210A69AEAC93130">Last 30 minutes:
+				1-minute granularity 
+			 </li><li id="li_0032DB2DE44547DF9F6914CC5ABD478B">Last 1 hour: 2-minute
+				granularity 
+			 </li><li id="li_32593576994D4B4B8BBA3FC30F3E0E4F">Last 2 hours: 4-minute
+				granularity 
+			 </li></ul></li>
+    </ul>
+    <p>Keep in mind that eVars (conversion metrics) are not supported, since
+		there is no concept of persistence. While you can select conversion metrics,
+		they only work if they are set on the same page as the dimension(s). For more
+		information, see the warning message captured in 
+		<xref href="t_realtime_admin.xml#task_1CD03E9B6BDB48B08E9E612183557F40" format="dita" scope="local"><?xm-replace_text Setting up Real-Time Reports?></xref>.
+		
+	 </p>
+    <p>Setting up and viewing Real-Time reports is restricted to Admins or any
+		user in the "All Report Access" and "Advanced Reporting" permission groups .
+		However, Real-Time does respect permissions. If, for example, you do not have
+		rights to see revenue, you won't be able to view a real-time report that
+		includes revenue data. 
+	 </p>
+  </conbody>
+</concept>

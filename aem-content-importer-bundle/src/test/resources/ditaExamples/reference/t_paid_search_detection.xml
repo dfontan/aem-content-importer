@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_D0BBDB78771E4BDBB495A004A080D647"> 
+  <title>Configure paid search detection</title> 
+  <shortdesc>Steps that describe how to configure 
+	 <wintitle>Paid Search Detection</wintitle>. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Admin tools"/> </metadata>
+  </prolog> 
+  <taskbody> 
+	 <steps id="steps_04BA2E916247417BAE405C48886ACE6F"> 
+		<step id="step_96CB3DD8012E4FB493C76ABEE295ABB5"> 
+		  <cmd>Click 
+			 <uicontrol>Analytics</uicontrol> &gt; 
+			 <uicontrol>Admin</uicontrol> &gt; 
+			 <uicontrol>Report Suites</uicontrol> to open the 
+			 <wintitle>Report Suite Manager</wintitle>. 
+		  </cmd> 
+		</step> 
+		<step id="step_B2AEB72CBAB64036BE2ED419CFDC13B6"> 
+		  <cmd>Select a report suite. 
+		  </cmd> 
+		</step> 
+		<step id="step_A326345ED8BE49738A22657FB55ADF8E"> 
+		  <cmd>Click 
+			 <uicontrol>Edit Settings</uicontrol> &gt; 
+			 <uicontrol>General</uicontrol> &gt; 
+			 <uicontrol>Paid Search Detection</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_608137B4D8F24125A7C5B92BA2F3BD0C"> 
+		  <cmd>On the 
+			 <wintitle>Paid Search Detection</wintitle> page, configure the fields
+			 described in 
+			 <xref
+			  href="paid_search_detection.xml#concept_E3D0FEC81E1F4987B39CC467F19FFCFF/section_0C2CFA0AF77B47098BE37CB024665D0D"
+			  format="dita" scope="local"><?xm-replace_text Paid Search Detection - Descriptions?></xref>.
+			 
+		  </cmd> 
+		</step> 
+		<step id="step_1068D6968D604761B13310AB4E84C0B7"> 
+		  <cmd>Click 
+			 <uicontrol>Add</uicontrol>. 
+		  </cmd> 
+		</step> 
+	 </steps> 
+	 <result id="result_4E991EE762B14B8487DE1D8C42ACBB2F"> 
+		<p>The 
+		  <wintitle>Current Paid Search Detection Rules</wintitle> list displays
+		  current paid search detection rules. 
+		</p> 
+	 </result> 
+  </taskbody> 
+</task>

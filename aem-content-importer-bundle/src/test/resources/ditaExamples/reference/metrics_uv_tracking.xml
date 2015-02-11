@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_7FE638734ED64807B2A89B4F64AA5D04">
+  <title>How Analytics Measures Unique Visitors</title>
+  <shortdesc>
+    Analytics measures visitors to a website by
+	 using various technologies, including persistent cookies, IP addresses, user
+	 agent string, or a combination of these technologies. Visitors may be reported
+	 across various time periods, site sections, and pages. This white paper defines
+	 the technologies used, the reporting periods, and the implications of each for
+	 website managers and advertisers. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Metrics" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <section id="section_63DE9F1B80994F99A6B4469849F10EA2">
+      <title>Tracking Unique Visitors</title>
+      <p>
+        Analytics measures visitors to a web site by
+		  using various technologies, including persistent cookies, IP addresses, user
+		  agent string, or a combination of these technologies. Visitors may be reported
+		  across various time periods, site sections, and pages. This white paper defines
+		  the technologies used, the reporting periods, and the implications of each for
+		  web site managers and advertisers. 
+		</p>
+    </section>
+    <section id="section_FA1EA0CA9FFF4877B04EE764ED8DAE8B">
+      <title>Technology Used to Track Unique Visitors</title>
+      <p>The primary method of calculating unique visitors is by setting a
+		  persistent cookie on the visitor's browser to uniquely identify the visitor.
+		  Cookie technology helps to avoid common pitfalls, such as IP Pooling, caching,
+		  or tracking visitors behind a firewall, when counting unique visitors. For more
+		  information on IP Pooling, refer to 
+		  <i>Frequently Asked Questions</i> in this document. 
+		</p>
+      <p>If the visitor has disabled cookies on their browser, or if the
+		  visitor's browser does not support persistent cookies, Adobe uses a combination
+		  of the IP address and the user agent string to determine if a visitor is
+		  unique. Analytics reports a small percentage (usually 1-2%) of visitors who
+		  do not support cookies. 
+		</p>
+      <p>If the visitor has disabled cookies on their browser, or if the
+		  visitor's browser does not support persistent cookies, Adobe uses a combination
+		  of the IP address and the user agent string to determine if a visitor is unique
+		  or not. Analytics reports a small percentage (usually 1-2%) of visitors who
+		  do not support cookies. 
+		</p>
+      <p>A web browser alone will not block cookies, without specific user
+		  effort to reject cookies. For example, a user can install utility software to
+		  block cookies. 
+		</p>
+      <p>
+        <b>Example: How Analytics Tracks a Visitor</b>
+      </p>
+      <p>The following example describes how Analytics tracks a visitor,
+		  over a two-month period, in the four types of unique visitor time frames. 
+		</p>
+      <ul id="ul_189B136AF01D4FFFBB5561FBB81F95D4">
+        <li id="li_F4ECE33706014A24A29A18D1F04B0670">Visitor accesses the site
+			 for the first time on July 1, 2012 at 10:05 a.m. and views five pages before
+			 exiting the site. 
+		  </li>
+        <li id="li_EC1439E4CD2D4E89804D9AA9BB4AB0EE">Visitor returns to the
+			 site on July 1, 2012 at 10:45 a.m. and views three pages before exiting the
+			 site. 
+		  </li>
+        <li id="li_71F1211C9B46466EA533C7D139D218B1">Visitor returns to the
+			 site on July 1, 2012 at 11:25 a.m. and views three pages before exiting the
+			 site. 
+		  </li>
+        <li id="li_5309AF1DFF374724B2A29B5ED69B5EF9">Visitor returns to the
+			 site on July 1, 2012 at 11:00 p.m. and views two pages before exiting the site.
+			 
+		  </li>
+        <li id="li_C69EC1300CE74CA49B0ABE7E94373EBD">Visitor returns to the
+			 site on July 10, 2012 at 3:30 p.m. and views one page before exiting the site. 
+		  </li>
+        <li id="li_D0E6A2593E314F1F96B7BE41D654C63E">Visitor returns to the
+			 site for a two-hour visit on August 10, 2012 at 11:00 a.m. 
+		  </li>
+      </ul>
+      <p>The 
+		  <wintitle>Unique Visitor Report</wintitle> and the 
+		  <wintitle>Visit Report</wintitle> register the visitor based on the
+		  previous data as shown in the following table. 
+		</p>
+      <p>Unique Visitors (Cookies or No Cookies)* 
+		</p>
+      <table id="table_BC8071E010B54B038697F94065CCD107">
+        <tgroup cols="9">
+          <colspec colnum="1" colname="col1" colwidth="*" />
+          <colspec colnum="2" colname="col2" colwidth="*" />
+          <colspec colnum="3" colname="col3" colwidth="*" />
+          <colspec colnum="4" colname="col4" colwidth="*" />
+          <colspec colnum="5" colname="col5" colwidth="*" />
+          <colspec colnum="6" colname="col6" colwidth="*" />
+          <colspec colnum="7" colname="col7" colwidth="*" />
+          <colspec colnum="8" colname="col8" colwidth="*" />
+          <colspec colnum="9" colname="col9" colwidth="*" />
+          <thead>
+            <row>
+              <entry colname="col1">Date 
+				  </entry>
+              <entry colname="col2">Time 
+				  </entry>
+              <entry colname="col3">Hourly Unique Visitors 
+				  </entry>
+              <entry colname="col4">Daily Unique Visitors 
+				  </entry>
+              <entry colname="col5">Weekly Unique Visitors 
+				  </entry>
+              <entry colname="col6">Monthly Unique Visitors 
+				  </entry>
+              <entry colname="col7">Quarterly Unique Visitors 
+				  </entry>
+              <entry colname="col8">Yearly Unique Visitors 
+				  </entry>
+              <entry colname="col9">Visits** 
+				  </entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry colname="col1">
+                <p>1-July 
+					 </p>
+              </entry>
+              <entry colname="col2">
+                <p>10:05 AM 
+					 </p>
+              </entry>
+              <entry colname="col3">
+                <p>1 
+					 </p>
+              </entry>
+              <entry colname="col4">
+                <p>1 
+					 </p>
+              </entry>
+              <entry colname="col5">
+                <p>1 
+					 </p>
+              </entry>
+              <entry colname="col6">
+                <p>1 
+					 </p>
+              </entry>
+              <entry colname="col7">
+                <p>1 
+					 </p>
+              </entry>
+              <entry colname="col8">
+                <p>1 
+					 </p>
+              </entry>
+              <entry colname="col9">
+                <p>1 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <p>1-July 
+					 </p>
+              </entry>
+              <entry colname="col2">
+                <p>10:45 AM 
+					 </p>
+              </entry>
+              <entry colname="col3">
+                <p>
+                  <?xm-replace_text Paragraph?>
+                </p>
+              </entry>
+              <entry colname="col4">
+                <p>
+                  <?xm-replace_text Paragraph?>
+                </p>
+              </entry>
+              <entry colname="col5">
+                <p>
+                  <?xm-replace_text Paragraph?>
+                </p>
+              </entry>
+              <entry colname="col6">
+                <p>
+                  <?xm-replace_text Paragraph?>
+                </p>
+              </entry>
+              <entry colname="col7">
+                <p>
+                  <?xm-replace_text Paragraph?>
+                </p>
+              </entry>
+              <entry colname="col8">
+                <p>
+                  <?xm-replace_text Paragraph?>
+                </p>
+              </entry>
+              <entry colname="col9">
+                <p>1 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <p>1-July 
+					 </p>
+              </entry>
+              <entry colname="col2">
+                <p>11:25 AM 
+					 </p>
+              </entry>
+              <entry colname="col3">
+                <p>1 
+					 </p>
+              </entry>
+              <entry colname="col4">
+                <p>
+                  <?xm-replace_text Paragraph?>
+                </p>
+              </entry>
+              <entry colname="col5">
+                <p>
+                  <?xm-replace_text Paragraph?>
+                </p>
+              </entry>
+              <entry colname="col6">
+                <p>
+                  <?xm-replace_text Paragraph?>
+                </p>
+              </entry>
+              <entry colname="col7">
+                <p>
+                  <?xm-replace_text Paragraph?>
+                </p>
+              </entry>
+              <entry colname="col8">
+                <p>
+                  <?xm-replace_text Paragraph?>
+                </p>
+              </entry>
+              <entry colname="col9">
+                <p>1 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <p>1-July 
+					 </p>
+              </entry>
+              <entry colname="col2">
+                <p>11:00 PM 
+					 </p>
+              </entry>
+              <entry colname="col3">
+                <p>1 
+					 </p>
+              </entry>
+              <entry colname="col4">
+                <p>1 
+					 </p>
+              </entry>
+              <entry colname="col5">
+                <p>1 
+					 </p>
+              </entry>
+              <entry colname="col6">
+                <p>
+                  <?xm-replace_text Paragraph?>
+                </p>
+              </entry>
+              <entry colname="col7">
+                <p>
+                  <?xm-replace_text Paragraph?>
+                </p>
+              </entry>
+              <entry colname="col8">
+                <p>
+                  <?xm-replace_text Paragraph?>
+                </p>
+              </entry>
+              <entry colname="col9">
+                <p>1 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <p>10-July 
+					 </p>
+              </entry>
+              <entry colname="col2">
+                <p>3:30 PM 
+					 </p>
+              </entry>
+              <entry colname="col3">
+                <p>1 
+					 </p>
+              </entry>
+              <entry colname="col4">
+                <p>1 
+					 </p>
+              </entry>
+              <entry colname="col5">
+                <p>
+                  <?xm-replace_text Paragraph?>
+                </p>
+              </entry>
+              <entry colname="col6">
+                <p>
+                  <?xm-replace_text Paragraph?>
+                </p>
+              </entry>
+              <entry colname="col7">
+                <p>
+                  <?xm-replace_text Paragraph?>
+                </p>
+              </entry>
+              <entry colname="col8">
+                <p>
+                  <?xm-replace_text Paragraph?>
+                </p>
+              </entry>
+              <entry colname="col9">
+                <p>1 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry namest="col1" nameend="col9">
+                <p>
+                  <b>New Month</b>
+                </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <p>10-August 
+					 </p>
+              </entry>
+              <entry colname="col2">
+                <p>11:00 AM 
+					 </p>
+              </entry>
+              <entry colname="col3">
+                <p>1 
+					 </p>
+              </entry>
+              <entry colname="col4">
+                <p>1 
+					 </p>
+              </entry>
+              <entry colname="col5">
+                <p>1 
+					 </p>
+              </entry>
+              <entry colname="col6">
+                <p>1 
+					 </p>
+              </entry>
+              <entry colname="col7">
+                <p>
+                  <?xm-replace_text Paragraph?>
+                </p>
+              </entry>
+              <entry colname="col8">
+                <p>
+                  <?xm-replace_text Paragraph?>
+                </p>
+              </entry>
+              <entry colname="col9">
+                <p>1 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <p>10-August 
+					 </p>
+              </entry>
+              <entry colname="col2">
+                <p>12:00 PM 
+					 </p>
+              </entry>
+              <entry colname="col3">
+                <p>1 
+					 </p>
+              </entry>
+              <entry colname="col4">
+                <p>
+                  <?xm-replace_text Paragraph?>
+                </p>
+              </entry>
+              <entry colname="col5">
+                <p>
+                  <?xm-replace_text Paragraph?>
+                </p>
+              </entry>
+              <entry colname="col6">
+                <p>
+                  <?xm-replace_text Paragraph?>
+                </p>
+              </entry>
+              <entry colname="col7">
+                <p>
+                  <?xm-replace_text Paragraph?>
+                </p>
+              </entry>
+              <entry colname="col8">
+                <p>
+                  <?xm-replace_text Paragraph?>
+                </p>
+              </entry>
+              <entry colname="col9">
+                <p>1 
+					 </p>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <p>* If the IP addresses change several times during a visit, the visitor
+		  may count as multiple unique visitors. 
+		</p>
+      <p>** Visits and persistent cookie visitors are counted only if a
+		  persistent cookie can be set. 
+		</p>
+    </section>
+    <section id="section_D70DE18C8E9743ED90F3E50D33884423">
+      <title>Persistent Cookies</title>
+      <p>The 
+		  <uicontrol>Persistent Cookies Filter</uicontrol> in a 
+		  <wintitle>Unique Visitors Reports</wintitle> (Hourly, Daily, Weekly,
+		  and so on), shows the percentage of all cookie-based visitors. Analytics
+		  registers the remainder of visitors (non-cookie based users) by using the
+		  unique occurrence of the IP address and user agent string (the browser version,
+		  captured via the HTTP header). 
+		</p>
+      <p>The number of persistent cookie-based users reported by 
+		  Analytics is accurate (greater than 99.5%). The
+		  number of non-persistent cookie-based users is less accurate because a single
+		  visitor can have several IP addresses during a single visit. Or, several
+		  visitors might share an IP address from behind a corporate firewall. 
+		</p>
+    </section>
+  </conbody>
+</concept>

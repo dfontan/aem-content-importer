@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_09DC5B986A644738B12204DAC76A90E1"> 
+  <title>Filtering Report Data</title> 
+  <shortdesc>Filters allow you to narrow the report to include or exclude line
+	 items that match a filter. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Reports,Reports and analytics"/>
+		</metadata>
+  </prolog> 
+  <conbody> 
+	 <section id="section_5C4DE873F8D5484BB77F38A4AEB57B4A"> 
+		<title>Simple Filter</title> 
+		<p> 
+		  <image placement="break" align="left" href="graphics/filter.png"
+			id="image_7D73AA58B9C54854BD62A3E281B59C81"></image> 
+		</p> 
+		<p>The simple filter appears on most reports to let you quickly find
+		  specific line items. Simple filters do not use any special characters, so 
+		  <codeph>-, ", ', +</codeph> and other special characters match the
+		  literal value in the report. You can find line items that contain multiple
+		  terms using a space. 
+		</p> 
+		<p>For example: 
+		</p> 
+		<codeblock>help search</codeblock> 
+		<p>Matches the following pages: 
+		</p> 
+		<table id="table_24798180B1C649D7815ED279A96EBD4D"> 
+		  <tgroup cols="1"> 
+			 <colspec colnum="1" colname="col1" colwidth="*"/> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph>help:Search 
+					 </codeph> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph>help:Paid Search Detection</codeph> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph>help:Configure paid search detection 
+					 </codeph> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph>help:Search Keywords Report</codeph> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph>help:Internal Search Term 
+					 </codeph> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </section> 
+	 <section id="section_E016626C084640E8A066B2FDA5B932BF"> 
+		<title>Advanced Filters</title> 
+		<p>Advanced filters let you control the scope of your search using a
+		  collection of filters. You can select to match all filters, or any filters. 
+		</p> 
+		<p> 
+		  <image placement="break" align="center"
+		  href="graphics/advanced_filter.png" id="image_AF52438CB8854C0E8403DE41423E04FD"
+		  width="672px"></image> 
+		</p> 
+		<p> 
+		  <b>Contains</b> 
+		</p> 
+		<p>Matches if the term is found anywhere in the line item. This operates
+		  the same as the simple filter. 
+		</p> 
+		<note>Spaces cannot be used in filters, because spaces are delimiters in
+		  searches 
+		</note> 
+		<p> 
+		  <b>Does not contain</b> 
+		</p> 
+		<p>Matches if the term is not found anywhere in the line item. You can
+		  filter "unspecified", "none", "keyword unavailable" and other 
+		  <xref
+		  href="http://marketing.adobe.com/resources/help/en_US/reference/#kb-none-unspecified-and-unknown"
+		  format="http" scope="external">special values</xref> from reports using does
+		  not contain. 
+		</p> 
+		<table id="table_06D0B2D625DE4810BE4FBB094A7EEB3C"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="3.67*"/> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1">Does not contain 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <codeph>none</codeph> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<p>For a more exact filter, you can use an Advanced (Special Characters)
+		  filter: 
+		</p> 
+		<table id="table_F366DE33816440CC91D416556648B3B0"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="3.61*"/> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1">Advanced (Special Character) 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <codeph>-^none$</codeph> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">Advanced (Special Character) 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <codeph>-"keyword unavailable"</codeph> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<p>For example, the following line item is filtered by the "Does not
+		  contain" criteria, but is not filtered by the "Advanced (Special Character)"
+		  criteria: 
+		</p> 
+		<codeblock>help:Rename the None classification key</codeblock> 
+		<p> 
+		  <b>Contains One Of</b> 
+		</p> 
+		<p>Matches if any terms, separated by spaces, are found in the line item.
+		  The following filter shows all pages that contain "mens" or "sale": 
+		</p> 
+		<table id="table_825578C9FCBD402FAC713B8D541635DF"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="3.67*"/> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1">Contains One Of 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <codeph>mens sale</codeph> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<p>Matches the following pages: 
+		</p> 
+		<table id="table_C14619B9CEB5446CB4B9B55E6A9A9F98"> 
+		  <tgroup cols="1"> 
+			 <colspec colnum="1" colname="col1" colwidth="*"/> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph>Womens 
+					 </codeph> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph>Mens</codeph> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph>Mens:Desk &amp; Travel 
+					 </codeph> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph>Jewelry &amp;
+						Accessories:Accessories:Hats:Mens</codeph> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph>Sale &amp; Values 
+					 </codeph> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<p> 
+		  <b>Equals</b> 
+		</p> 
+		<p>Matches if the entire line item, including spaces and other
+		  characters, match the specified phrase. 
+		</p> 
+		<table id="table_C77A4137B0AF4E099C08C2FE484D4017"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="3.67*"/> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1">Equals 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <codeph>mens:desk &amp; travel</codeph> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<table id="table_52A1737228A2453D8F46F908FAAC2A06"> 
+		  <tgroup cols="1"> 
+			 <colspec colnum="1" colname="col1" colwidth="*"/> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph>Mens:Desk &amp; Travel</codeph> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<p> 
+		  <b>Starts With</b> 
+		</p> 
+		<p>Matches if the line item, including spaces and other characters,
+		  starts with the specified phrase. 
+		</p> 
+		<table id="table_6F1446139D794C7BBAD4221BA4D1851B"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="3.67*"/> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1">Starts With 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <codeph>mens</codeph> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<p>Matches the following pages: 
+		</p> 
+		<table id="table_135CEDE1F9594FD995DF061BA40ECF0C"> 
+		  <tgroup cols="1"> 
+			 <colspec colnum="1" colname="col1" colwidth="*"/> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph>Mens</codeph> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph>Mens:Desk &amp; Travel</codeph> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph>Mens:Apparel 
+					 </codeph> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph> Mens Perfume Spray</codeph> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph>Mens Hemp/Bamboo Flip Flops</codeph> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<p> 
+		  <b>Ends With</b> 
+		</p> 
+		<p>Matches if the line item, including spaces and other characters, ends
+		  with the specified phrase. 
+		</p> 
+		<table id="table_075A262C8EE6427BBF7BF3D3DDDB6891"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="3.67*"/> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1">Ends With 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <codeph>jean</codeph> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<p>Matches the following pages: 
+		</p> 
+		<table id="table_D4C836DDC2BA4ABF9CAA6BA4A00BEDAB"> 
+		  <tgroup cols="1"> 
+			 <colspec colnum="1" colname="col1" colwidth="*"/> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph>Bell Bottom Jean 
+					 </codeph> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph>Velvet Dream Skinny Leg Jean</codeph> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph>Dark Slimmer Jean</codeph> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph>Bling Belt High Waist Jean</codeph> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph>Ocean Blue Jean</codeph> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </section> 
+	 <section id="section_83DA3B6C23EB4C119DB6D74062DB501D"> 
+		<title>Advanced (Special Character)</title> 
+		<p>Advanced let you perform wildcard and other complex searches. 
+		</p> 
+		<table id="table_E8F41C8B5B9846C49E58C1AEAD722685"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="2.94*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col1">Advanced (Special Character) 
+				  </entry> 
+				  <entry colname="col2">Description 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph>" "</codeph> 
+				  </entry> 
+				  <entry colname="col2">Match 
+					 <b>exact phrase</b>. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph>*</codeph> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <b>Wild card</b>, greedy matching. For example, 
+					 <codeph>r*p</codeph> matches "Registration Signup". 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph>^</codeph> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <b>Starts with</b>. Do not include a space between the special
+					 character and the search phrase. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph>$</codeph> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <b>Ends with</b>. Do not include a space between the special
+					 character and the search phrase. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph>-</codeph> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <b>Not</b>. Do not include a space between the special
+					 character and the search phrase. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph> | 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p> 
+						<b>Or</b> 
+					 </p> 
+					 <note>you must include a space on each side of the pipe
+						character, " | ". 
+					 </note> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </section> 
+  </conbody> 
+</concept>

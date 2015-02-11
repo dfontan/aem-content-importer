@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_4A2000F4B6ED41E99CA6118A6D74ECE8"> 
+  <title>Custom Visitor ID</title> 
+  <shortdesc>You can implement a custom method to identify visitors by setting
+	 the s.visitorID variable. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta content="Analytics" name="solution"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>A custom Visitor ID can be used on sites where you have unique way to
+		identify visitors. An example of this is an ID generated when a user logs in to
+		web site using a user name and password. 
+	 </p> 
+	 <p> Should you have the ability to derive and manage the 
+		<wintitle>visitor IDs</wintitle> of your users, you can use the following
+		methods to set the ID: 
+	 </p> 
+	 <table id="table_240B42FCE2E64DCEA12F56B832BBA6AC"> 
+		<tgroup cols="2"> 
+		  <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+		  <colspec colnum="2" colname="col2" colwidth="3.95*"/> 
+		  <thead> 
+			 <row> 
+				<entry colname="col1">Method 
+				</entry> 
+				<entry colname="col2">Description 
+				</entry> 
+			 </row> 
+		  </thead> 
+		  <tbody> 
+			 <row> 
+				<entry colname="col1"> 
+				  <xref
+					href="visitorID.xml#concept_CD273CC915CC4ABD8F52E4209FF9557E" format="dita"
+					scope="local">s.visitorID</xref> variable 
+				</entry> 
+				<entry colname="col2">If JavaScript is used on the browser, or if
+				  you are using any other AppMeasurement library, you can set the visitor ID in a
+				  data collection variable. 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> Query string parameter on the image request 
+				</entry> 
+				<entry colname="col2"> This lets you pass the 
+				  <wintitle>visitor ID</wintitle> to Adobe via the 
+				  <wintitle>vid query string</wintitle> parameter on a hard-coded
+				  image request. 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> Data Insertion API 
+				</entry> 
+				<entry colname="col2"> On devices using wireless protocols that
+				  don't accept JavaScript, you can send an XML post containing the
+				  &lt;visitorid/&gt; XML element to Adobe collection servers from your servers. 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> URL re-writing and VISTA 
+				</entry> 
+				<entry colname="col2"> Some deployment architectures provide
+				  support for using URL re-writing to maintain session state when a cookie cannot
+				  be set. In such cases, Adobe engineering services can implement a 
+				  <keyword>VISTA</keyword> rule that would look for the session
+				  value in the URL of the page, then format and place into the 
+				  <wintitle>visid</wintitle> values. 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+  </conbody> 
+</concept>

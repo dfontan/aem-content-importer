@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_8B5E55DE759042A39E2EFA90151FF4FB">
+  <title>Flash, Silverlight, and JavaScript Migration Guide</title>
+  <shortdesc>
+    <?xm-replace_text Short Description?>
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>media</keyword>
+        <keyword>milestone</keyword>
+        <keyword>sdk</keyword>
+        <keyword>video</keyword>
+      </keywords>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <context id="context_495BCE3C0C4D4D5AAA86A455BE4C00B8">
+      <p>Complete the steps in the following list to migrate your video
+		  tracking solution to the new integrated solution. After you complete these
+		  migration steps, you can recompile and test the solution. Sample
+		  implementations are available in these 
+		  <xref href="video_developer.xml#concept_150EEA9364D24ED08F07D1359E6134C9" type="concept" format="dita" scope="local"><?xm-replace_text Measuring Video for Developers?></xref>
+		  sections: 
+		</p>
+      <ul id="ul_6A5355C20AB242CDB44F85EA18883D23">
+        <li id="li_C315BB0BDF21452FA9F7C8E10A5A683F">
+          <xref href="video_flash_sample.xml#concept_BBDB825EB2D6400C8900F03DCEEAA544" type="concept" format="dita" scope="local">
+            <?xm-replace_text ActionScript Sample Code?>
+          </xref>
+        </li>
+        <li id="li_D606B8A969D641FDBA3E4D8B96E19FE6">
+          <xref href="video_js_sample.xml#concept_7B17ACCC514C4B8A9847AB799A2E29F4" type="concept" format="dita" scope="local">
+            <?xm-replace_text JavaScript Sample Code?>
+          </xref>
+        </li>
+        <li id="li_260E6E0D0B5745FB9320B53148BFDC6C">
+          <xref href="video_silverlight_sample.xml#concept_4B8F3D5AD7D84B93A49459988225E53D" type="concept" format="dita" scope="local">
+            <?xm-replace_text Silverlight Sample Code?>
+          </xref>
+        </li>
+      </ul>
+      <p>You can reference the following sections as you migrate: 
+		</p>
+      <ul id="ul_CADB341869EC457097F4B4204B7A3786">
+        <li id="li_FB33A811EA5E4489BE29E1BEC821811C">
+          <xref href="video_arch.xml#concept_69C0067F59DC4AEC81A3603857B1434C" type="concept" format="dita" scope="local">
+            <?xm-replace_text How Video Measurement Works?>
+          </xref>
+        </li>
+        <li id="li_408C1F92F6344549982C66CBA64D442F">
+          <xref href="video_ref_methods.xml#concept_30874334BCB54B6D8A8D49388D7F06FF" format="dita" scope="local">
+            <?xm-replace_text Media Module Methods?>
+          </xref>
+        </li>
+        <li id="li_A856DD939F02459E93D079039B9EC255">
+          <xref href="video_ref_variables.xml#concept_338A9CA5EC1F4054B9BD07A5FF4F7DAE" format="dita" scope="local">
+            <?xm-replace_text Media Module Variables?>
+          </xref>
+        </li>
+        <li id="li_81314D7A569748B590F619E3B35FB0D9">
+          <xref href="video_mediamonitor.xml#concept_6B10C4127F844D84A1FD0F59D818054F" type="concept" format="dita" scope="local">
+            <?xm-replace_text Measuring Additional Metrics using Media.monitor?>
+          </xref>
+        </li>
+      </ul>
+    </context>
+    <steps id="steps_D9E026C943C2466B9CEF92692C1F3DF3">
+      <step id="step_1E8562BCB09542CE9A0B8DF28669F1DA">
+        <cmd>
+          <xref href="video_migrate_developer.xml#task_3A6F3C055BFA4FDD96789D4913651300" type="task" format="dita" scope="local">
+            <?xm-replace_text Update the AppMeasurement Libraries or Media Module?>
+          </xref>
+        </cmd>
+      </step>
+      <step id="step_4C781C7F462B43BBAEB422D2B83E9C66">
+        <cmd>
+          <xref href="video_migrate_developer.xml#task_E9AE46D65B4E489D927AF3A13F2B93DE" type="task" format="dita" scope="local">
+            <?xm-replace_text Map Conversion Variables and Events?>
+          </xref>
+        </cmd>
+        <stepresult>
+          <?xm-replace_text Step Result?>
+        </stepresult>
+      </step>
+      <step id="step_5C87E4E4F0694E3280D7B41A035C0BC0">
+        <cmd>
+          <xref href="video_migrate_developer.xml#task_2D70D59881B7483BB0C676CE53EFB2A8" type="task" format="dita" scope="local">
+            <?xm-replace_text Configure Milestones?>
+          </xref>
+        </cmd>
+        <stepresult>
+          <?xm-replace_text Step Result?>
+        </stepresult>
+      </step>
+      <step id="step_AB73C783DDA04543B860C4F8AF7892C5">
+        <cmd>
+          <xref href="video_migrate_developer.xml#task_A268635E2DB04023A11E505E1FF9244D" type="task" format="dita" scope="local">
+            <?xm-replace_text Update Method Calls?>
+          </xref>
+        </cmd>
+        <stepresult>
+          <?xm-replace_text Step Result?>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+  <task id="task_3A6F3C055BFA4FDD96789D4913651300">
+    <title>Update the AppMeasurement Libraries or Media Module</title>
+    <taskbody>
+      <context id="context_87BBEBC9A5FF4A1F9D307251386E8AB0">
+        <p>Download the latest AppMeasurement libraries from Code Manager to
+			 replace your existing libraries. For specific instructions, see the section for
+			 your player in 
+			 <xref href="video_developer.xml#concept_150EEA9364D24ED08F07D1359E6134C9" type="concept" format="dita" scope="local"><?xm-replace_text Measuring Video for Developers?></xref>.
+			 
+		  </p>
+      </context>
+    </taskbody>
+  </task>
+  <task id="task_E9AE46D65B4E489D927AF3A13F2B93DE">
+    <title>Map Conversion Variables and Events</title>
+    <taskbody>
+      <context id="context_CAD5BFE607E64533B04597749E51108A" conref="video_flash_mapping.xml#task_3D50EAA204F54A1991490FC650B1F300/context_B9120B01F0BC41DAB030F3F13812E42E">
+        <p>
+          <?xm-replace_text Task Context?>
+        </p>
+      </context>
+      <steps id="steps_5AF0267D51AA498C918B5833BFD1CF49" conref="video_flash_mapping.xml#task_3D50EAA204F54A1991490FC650B1F300/steps_C36661FC1A8741268B41EC913059F1A3">
+        <step id="step_3FB634C331714413BA56F52572E2163B">
+          <cmd>
+            <?xm-replace_text Step?>
+          </cmd>
+        </step>
+      </steps>
+    </taskbody>
+  </task>
+  <task id="task_2D70D59881B7483BB0C676CE53EFB2A8">
+    <title>Configure Milestones</title>
+    <taskbody>
+      <context id="context_E94EEDD28D5E4FEAAB1175C5804F752F" conref="video_flash_milestones.xml#task_8205951B2EF04789AF09C3B5F957C266/context_D3C4CCA5C2AF446CA88F8866D479055A">
+        <p>
+          <?xm-replace_text Task Context?>
+        </p>
+      </context>
+      <steps id="steps_802C5869EEE4493BA8E0D2CB93DEB5E4" conref="video_flash_milestones.xml#task_8205951B2EF04789AF09C3B5F957C266/steps_186E4B5CC76D4347B6B01C798823F163">
+        <step id="step_C2EF98497EB44A239FB4B45C83B69BAA">
+          <cmd>
+            <?xm-replace_text Step?>
+          </cmd>
+        </step>
+      </steps>
+    </taskbody>
+  </task>
+  <task id="task_A268635E2DB04023A11E505E1FF9244D">
+    <title>Update Method Calls</title>
+    <shortdesc>
+      <?xm-replace_text Short Description?>
+    </shortdesc>
+    <taskbody>
+      <context id="context_C3B84262E74C4AB3BDFF2FB6477340AA">
+        <p>If you are using 
+			 <codeph>media.AutoTrack</codeph> and you do not have a custom 
+			 <codeph>Media.monitor</codeph> method, you do not need to update any
+			 methods. 
+		  </p>
+      </context>
+      <steps id="steps_357242CFD57C4CF1AD02BE6C15AB433C">
+        <step id="step_2617B600FFBB44D2B31E670A4238CEBA">
+          <cmd>Review calls to 
+				<codeph>Media.monitor</codeph>. Compare the variables you were
+				previously sending using 
+				<codeph>Media.monitor</codeph> with the variables you mapped in 
+				<codeph>Media.contextDataMapping</codeph>. You might be able to
+				reduce or eliminate calls to this method if the video variables you were
+				previously reporting are mapped in 
+				<codeph>Media.contextDataMapping</codeph>. 
+			 </cmd>
+        </step>
+        <step id="step_EBDB781D2F594B24BCD6D220E1F9E72C">
+          <cmd>(manual tracking only) If you are manually tracking video, you
+				can optionally update each invocation of 
+				<codeph>Media.play</codeph> to report video segment data. 
+			 </cmd>
+          <stepresult>See 
+				<xref href="video_ref_methods.xml#concept_30874334BCB54B6D8A8D49388D7F06FF" type="concept" format="dita" scope="local"><?xm-replace_text Media Module Methods?></xref>.
+				
+			 </stepresult>
+        </step>
+      </steps>
+    </taskbody>
+  </task>
+</task>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_B4AB176FBB8A4543AD8DB1A680C1A224">
+  <title>Classification</title>
+  <shortdesc>Classifications are created by grouping (classifying) granular
+	 data from a source report. For example, you might want to analyze display ads,
+	 but they are mixed with email, partner, text ad, and social media campaigns.
+	 You can create groups so that you can analyze them separately. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>There are three types of 
+		<xref href="classifications.xml#concept_C4136B4E61734D2BB8D4A74D3A792259" format="dita" scope="local">classifications</xref> for marketing reporting and
+		analytics: 
+	 </p>
+    <ul id="ul_553EDA0D93004DA9A5C864D829F091D1">
+      <li id="li_4A5530E6DBCF4E5C8D2866EEC61C36CC">
+        <p>
+          <b> Campaign classifications</b>: Campaign classifications are
+			 defined as elements that will not vary within the campaign, such as campaign
+			 name and owner. 
+		  </p>
+      </li>
+      <li id="li_25B23CB1592D4EC1A24846D518965357">
+        <b>Creative elements
+			 classification</b>: These vary between placements or instances of the campaign,
+		  and include characteristics such as media type, headline, keyword, and media
+		  vendor. 
+		</li>
+      <li id="li_12466047CC924A6B88DBCA47589FEB87">
+        <b>Metric-specific
+			 classifications</b>: These are fixed numeric values associated with a campaign,
+		  such as the hard cost for a campaign. Additionally, you can classify prop and
+		  eVar variables. 
+		</li>
+    </ul>
+  </conbody>
+</concept>

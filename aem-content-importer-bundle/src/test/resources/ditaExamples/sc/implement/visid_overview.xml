@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_4B423AB5CC204FE5A588D01D67248160"> 
+  <title>Identifying Unique Visitors</title> 
+  <shortdesc>Adobe uses a cookie to track unique browsers/devices. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Developer and implementation"/> 
+		<othermeta name="subtopic" content="Visitors"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <section id="section_DE1DC9FC9B6D4388995B70E35B8BCDDF"> 
+		<title>Analytics Visitor ID Order</title> 
+		<p>Adobe Analytics provides several mechanisms to identify visitors. The
+		  following table lists the different ways a visitor can be identified in
+		  Analytics (in order of preference): 
+		</p> 
+		<table id="table_D267D36451F643D1BB68AF6FEAA6AD1A"> 
+		  <tgroup cols="3"><colspec colnum="1" colname="col1"
+			 colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="5.71*"/><colspec
+			 colname="col3" colnum="3" colwidth="7.99*"/><thead> 
+				<row> 
+				  <entry colname="col1">Order Used 
+				  </entry> 
+				  <entry colname="col2">Query Parameter (collection method) 
+				  </entry> 
+				  <entry colname="col3">Present When 
+				  </entry> 
+				</row></thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"><image href="graphics/step1_icon.png"
+					 id="image_9D29F79B4D3444EE89746567C29596BA" width="26px" height="21px"></image>
+					 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <xref
+					  href="visid_custom.xml#concept_4A2000F4B6ED41E99CA6118A6D74ECE8" format="dita"
+					  scope="local">vid (s.visitorID)</xref> 
+				  </entry> 
+				  <entry colname="col3">s.visitorID is set 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"><image
+					 href="graphics/step2_icon.png" width="26px" height="21px"
+					 id="image_A6121E26EA2641C2B54FCD35AE13DF11"></image> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <xref
+					  href="visid_analytics.xml#concept_74F6B4B9B2FA415AB5D029A1F8F099BC"
+					  format="dita" scope="local">aid (s_vi cookie)</xref> 
+				  </entry> 
+				  <entry colname="col3">Visitor had an existing s_vi cookie before
+					 you deployed the Visitor ID service, or you have a visitor ID grace period
+					 configured. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"><image
+					 href="graphics/step3_icon.png" width="26px" height="21px"
+					 id="image_3C0AD9FEE3D943DDB454AC864A94CD3D"></image> 
+				  </entry> 
+				  <entry colname="col2"><xref
+					 href="https://marketing.adobe.com/resources/help/en_US/mcvid/" format="http"
+					 scope="external">mid (AMCV_ cookie set by Marketing Cloud Visitor ID
+						service)</xref> 
+				  </entry> 
+				  <entry colname="col3">Visitor's browser accepts cookies
+					 (first-party) 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"><image
+					 href="graphics/step4_icon.png" width="26px" height="21px"
+					 id="image_E9AD067830584D2F99E5EB5645228513"></image> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <xref
+					 href="visid_fallback.xml#concept_EBCBF9EB390E45A2BA20DB6BE931C505"
+					 format="dita" scope="local">fid (fallback cookie on H.25.3 or newer, or
+						AppMeasurement for JavaScript)</xref> 
+				  </entry> 
+				  <entry colname="col3">Visitor's browser accepts cookies
+					 (first-party) 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"><image
+					 href="graphics/step5_icon.png" width="26px" height="21px"
+					 id="image_D5B7CF44333F45E59C5085168050549A"></image> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <xref
+					  href="visid_fallback.xml#concept_EBCBF9EB390E45A2BA20DB6BE931C505/section_104819D74C594ECE879144FCC5DEF4BF"
+					  format="dita" scope="local"><?xm-replace_text IP Address, User Agent, Gateway IP Address?></xref>
+					 
+				  </entry> 
+				  <entry colname="col3">Visitor's browser does not accept cookies. 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<p>In many scenarios you might see 2 or 3 different IDs on a call, but
+		  Analytics will use the first ID present from the previous table as the official
+		  visitor ID. For example, if you are setting a custom visitor ID (included in
+		  the "vid" query parameter), that ID will be used before other IDs that might be
+		  present on that same hit. 
+		</p> 
+		<note>Each Analytics visitor ID is associated with a visitor profile on
+		  Adobe servers. Visitor profiles are deleted after 1 year of inactivity
+		  regardless of any visitor ID cookie expiration. 
+		</note> 
+	 </section> 
+  </conbody> 
+</concept> 

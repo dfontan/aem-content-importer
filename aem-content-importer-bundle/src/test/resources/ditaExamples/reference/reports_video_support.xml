@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_A8276E2E16F3454AAAE5F02D31FA1C9F">
+  <title>Video Support Reports</title>
+  <shortdesc>Groups mobile devices based on the types of video formats they
+	 support. For example, if a visitor's mobile device supports 
+	 <filepath>.mp4</filepath>, the Video Support report increments by at least
+	 one when it accesses your site. If the phone supports multiple image formats
+	 (such as 
+	 <filepath>.mp4</filepath> and 
+	 <filepath>.wmv</filepath>), each of those groups in the report is
+	 incremented. Because of this, the sum of the groups might be greater than the
+	 total shown at the bottom of the report. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>
+      <?xm-replace_text Paragraph?>
+    </p>
+  </conbody>
+</concept>

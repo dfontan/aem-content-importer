@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_3EAF5FFCC5AB40889AD505B184637AEF" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic concept/concept ">
+  <title class="- topic/title ">Optimizing Metric</title>
+  <shortdesc class="- topic/shortdesc "> The modeling system works to achieve
+	 the best possible list for the selected optimizing metric. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody class="- topic/body  concept/conbody ">
+    <p class="- topic/p "> Each automated decisioning campaign can have a
+		different optimizing metric. The three available optimizing metric options
+		change the model's decisions: 
+	 </p>
+    <p class="- topic/p ">
+      <ul id="ul_43615997DCDB4B248F40BEEE48BCA4EC" class="- topic/ul ">
+        <li id="li_FAFB04AA30844B8684D6089E2CEFB6D6" class="- topic/li ">Conversion rate 
+		</li>
+        <li id="li_7FC75656A57444AAB93FFEF9567CC2AB" class="- topic/li ">Revenue
+		  per visit 
+		</li>
+        <li id="li_F043B8D5FA62442CBAD538CB469F2258" class="- topic/li ">Average
+		  order value 
+		</li>
+      </ul>
+    </p>
+    <p class="- topic/p ">The conversion rate is a broad term. it can be
+		defined in the campaign setup as performing any binary action: clicking,
+		purchasing something, reaching a particular page, etc. Similarly, revenue can
+		be passed in on any event; it does not have to be the final revenue event on
+		the site. However, the conversion or revenue point used for modeling must be
+		the last conversion success metric set up in the campaign. If the model
+		optimization is to be done on an intermediary action like clicking, then a
+		separate 
+		<xref href="t_Creating_a_Monitoring_Campaign.xml#task_833A68CC388044FFA3AA3FED3276389D" type="task" format="dita" scope="local" class="- topic/xref ">monitoring
+		  campaign</xref> must be set up to track final site conversion activity. 
+	 </p>
+    <p class="- topic/p "> The optimizing metric also affects the traffic
+		estimator. Revenue-based metrics require more traffic than conversion metrics.
+		More traffic and conversions are required to optimize to revenue, or average
+		order value. Far less data is required to optimize to conversion because a
+		binary event, converted or not, is simpler to model than a continuous variable
+		such as revenue. 
+	 </p>
+    <p> You can choose a success metric prior to the final conversion step for
+		the model to use as the optimization point, but the campaign can still track
+		performance after the optimization point. 
+	 </p>
+  </conbody>
+  <related-links class="- topic/related-links ">
+    <link href="c_1_1_Campaign_Priority.xml#concept_B343B8BE8CFC4A5889889A66366528F9" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text 1:1 Campaign Priority?>
+    </link>
+    <link href="c_1_1_Campaign_Entry_Targeting.xml#concept_F6A177F23DED41F28D2B616FD43EBFD9" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text 1:1 Campaign Entry Targeting?>
+    </link>
+    <link href="c_1_1_Traffic_Requirements.xml#concept_7AC16256BA4D4BCF847972E0B8C6E5DE" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text 1:1 Traffic Requirements?>
+    </link>
+    <link href="c_1_1_Modeling_Groups.xml#concept_398B250EC2BD4B24ADF0A6316D1DCF9F" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text 1:1 Modeling Groups?>
+    </link>
+    <link href="c_1_1_Business_Rules.xml#concept_142D81096B134555A729C94B2F2A4278" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text 1:1 Business Rules?>
+    </link>
+    <link href="c_1_1_Success_Metrics.xml#concept_79E5C207A4AF40B1B5DD7A6E386D93A9" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text 1:1 Success Metrics?>
+    </link>
+  </related-links>
+</concept>

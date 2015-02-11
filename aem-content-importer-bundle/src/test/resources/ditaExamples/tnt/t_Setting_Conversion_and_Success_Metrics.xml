@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_52EBE07CA34D4F37AD19D0DB999591F5">
+  <title>Conversion and Success Metrics</title>
+  <shortdesc>In the 
+	 <uicontrol>Select conversion and success metric</uicontrol> section, set
+	 the location that contains a conversion or other success metric. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <context id="context_154FC2FD83864B51AC018AC6B6092CF8">
+      <p>For more information about conversion, see 
+		  <xref href="c_About_Conversion_Mboxes.xml#concept_890181F7D16A4352A789DB06B048D58A" type="concept" format="dita" scope="local"><?xm-replace_text About Conversion Mboxes?></xref>.
+		  For more information about success metrics, see 
+		  <xref href="c_Managing_Success_Metrics.xml#concept_F2D06B8EDCC24EED9C494210C1415859" type="concept" format="dita" scope="local"><?xm-replace_text Managing Success Metrics?></xref>.
+		  For information about using engagement metrics in your conversions and success
+		  metrics, see 
+		  <xref href="c_Capturing_Engagement.xml#concept_DB31E18F26EA426EB7A87EAE16A477A5" type="concept" format="dita" scope="local"><?xm-replace_text Capturing Engagement?></xref>.
+		  
+		</p>
+    </context>
+    <steps id="steps_E3A33B4708114F1EB3DAD077396064A8">
+      <step id="step_3EF820DDD7714B958AD9FDC09ADD0834">
+        <cmd>Provide a name for your conversion. 
+		  </cmd>
+        <stepresult>
+          <p>The conversion success metric is required. The conversion success
+				metric must be named "Conversion." Additional success metrics are optional. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_45258E26DD3643D5AFD3FC34EF60AB52">
+        <cmd>To choose a metric, click 
+			 <uicontrol>Measure Engagement</uicontrol>, then select a metric from
+			 the Engagement Metric drop-down list. 
+		  </cmd>
+      </step>
+      <step id="step_A5BA51A27F7142CAA772760247AB7708">
+        <cmd>To select the action that occurs when a visitor encounters the
+			 specified success metric, click 
+			 <uicontrol>Advanced Options</uicontrol> and select an action from the
+			 drop-down list. 
+		  </cmd>
+      </step>
+      <step id="step_CC4C8AB53805430EA04F7F0C49CAEE4D">
+        <cmd>Specify a location for any conversion or other success metric from
+			 the Location drop-down list. 
+		  </cmd>
+        <stepresult>
+          <p>The location you select is the mbox containing the conversion. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_7EF18DDFACF5436386AAE3DB1F8600D8">
+        <cmd>To target the location, click 
+			 <uicontrol>Target this location</uicontrol>, then set up your
+			 targeting rules as explained in 
+			 <xref href="t_Setting_Targeting_Rules.xml#task_75C6702BE0AC45E9A0B9DB26FDBB18B2" type="task" format="dita" scope="local"><?xm-replace_text Targeting Rules?></xref>.
+			 
+		  </cmd>
+      </step>
+      <step id="step_11284F7764C34DCB8AFC0E133C8CE628">
+        <cmd>To refresh the location list, click 
+			 <uicontrol>Refresh</uicontrol> (<image id="image_D48A3EEA275946BA9D89474D6C7839EF" href="graphics/icon_refresh.png"></image>). 
+		  </cmd>
+      </step>
+      <step id="step_3F6D847603004D3BB16544ACD25E1475">
+        <cmd>To add a location, click 
+			 <uicontrol>Add Location</uicontrol> and select another mbox. 
+		  </cmd>
+      </step>
+      <step id="step_D8AD9CD189F84915B26759EACB9894FC">
+        <cmd>To create a new success metric, click 
+			 <uicontrol>Add Success Metric</uicontrol>, name the metric, and
+			 select an mbox. 
+		  </cmd>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links>
+    <link href="c_Providing_High-Level_Information_About_a_Campaign.xml#concept_6E17BAE005474DCE8CBC35012279DB99" type="concept" format="dita" scope="local">
+      <?xm-replace_text High-Level Information About a Campaign?>
+    </link>
+    <link href="t_Setting_Targeting_Rules.xml#task_75C6702BE0AC45E9A0B9DB26FDBB18B2" type="task" format="dita" scope="local">
+      <?xm-replace_text Targeting Rules?>
+    </link>
+    <link href="t_Setting_Experiences.xml#task_6137A1D6EEFF4746B94E9BC5B675680A" type="task" format="dita" scope="local">
+      <?xm-replace_text Experiences?>
+    </link>
+    <link href="r_Optional_Features.xml#reference_DDC35A6553F04FCB9D9B257CB4037F79" type="reference" format="dita" scope="local">
+      <?xm-replace_text Optional Features?>
+    </link>
+    <link href="c_Capturing_Engagement.xml#concept_DB31E18F26EA426EB7A87EAE16A477A5" type="concept" format="dita" scope="local">
+      <?xm-replace_text Capturing Engagement?>
+    </link>
+    <link href="c_Managing_Segment_Filters.xml#concept_DF9534D4168D46D4B109DD0D2FB57781" type="concept" format="dita" scope="local">
+      <?xm-replace_text Managing Segment Filters?>
+    </link>
+    <link href="t_Saving_Your_Campaign.xml#task_3E7A956E742943F6AE258A782AA82401" type="task" format="dita" scope="local">
+      <?xm-replace_text Saving Your Campaign?>
+    </link>
+  </related-links>
+</task>

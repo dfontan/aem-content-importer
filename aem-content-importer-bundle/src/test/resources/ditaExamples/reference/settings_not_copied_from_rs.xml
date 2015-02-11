@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_DF1E80ABA99B444C818CED9BC5AC2410">
+  <title>Settings Not Copied from a Source Report Suite</title>
+  <shortdesc>If you copied settings from an existing report suite, a system
+	 message identifies any settings not copied to the new report suite. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Admin tools" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>The following settings are not copied from template or duplicated report
+		suites: 
+	 </p>
+    <p>
+      <ul id="ul_A21F83AFEE46456EADD428296B864067">
+        <li id="li_AB90BFD69CB8462AACF8BD5F44EFA443">Pathing on variables 
+		</li>
+        <li id="li_173B4792698A424180ACDE1F15B36FD4">
+          Survey
+        </li>
+        <li id="li_D3A0003015D043DFAB702750D84B9BF4">
+          Target
+        </li>
+        <li id="li_08D964CACA4040B49B7777D2E3B8F609">Subrelations 
+		</li>
+        <li id="li_B1FEBC105EC64287BF33BAFE0E3D9F7B">Visitors by Page Manager 
+		</li>
+        <li id="li_EA37D1DC1E104ABAA862851CF5440A51">Hierarchy 
+		</li>
+        <li id="li_C2247A870BEC47B0BF6843B13A4B8337">Commerce Visits; Commerce
+		  Visitors 
+		</li>
+        <li id="li_7705EC726B7A4DECB404A60461F63E7F">Custom Insight Participation
+		  Manager 
+		</li>
+        <li id="li_5DCCD0F4670D4778B8EE091B2E8A5A61">Custom Insight Participation
+		  Types Manager 
+		</li>
+        <li id="li_BCE59174167749EC9549D51A61ADF52D">Unique Events Manager 
+		</li>
+        <li id="li_A5375AEE81BE434AAF01E5E85F042EE2">Enable Transaction ID
+		  Recording 
+		</li>
+        <li id="li_09E16EA680CD4E108C35CA096093F5A6">Weekly page visits &gt; set
+		  in "Visitors by Page Manager" 
+		</li>
+        <li id="li_6294A8542AB24FE1B9B0CBB37A77F3BC">Monthly page visits &gt; set
+		  in "Visitors by Page Manager" 
+		</li>
+        <li id="li_91E4A81C40444A8AB27FE2D47F36BC87">Quarterly page visits &gt;
+		  set in "Visitors by Page Manager" 
+		</li>
+        <li id="li_D6A37ACCC93D4D4F8818738F2D24B87E">Ad hoc analysis sampling not set 
+		</li>
+        <li id="li_C40405A708B84B07B49A63E0FF05047B">
+          Visitor click map
+		  manager 
+		</li>
+        <li id="li_F3EF9B1796FD4408A8DE5F73FBC712B4">VISTA rules 
+		</li>
+        <li id="li_0179CA6B4BE446C9AAF5BCE280822196">Menu customizations
+		</li>
+        <li id="li_AC06B82D90E748AFB1AD338A7AEA55C7">Classification data, not
+		  structure 
+		</li>
+      </ul>
+    </p>
+  </conbody>
+</concept>

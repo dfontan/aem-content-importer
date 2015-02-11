@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_C8F6394509874DD0A8C0E86D82167272"> 
+  <title>Migrating from a CNAME implementation</title> 
+  <shortdesc>A CNAME implementation is set up 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta content="Analytics" name="solution"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <note type="important">Enabling the visitor ID service in AppMeasurement
+		before you have included the Visitor API JavaScript file on all site pages
+		could result in duplicate visitor counts. To avoid duplicate visitor counts,
+		make sure that you understand and follow the process described below. 
+	 </note> 
+	 <table id="table_C63D9274D46B4D8F90CD3EEF36A02902"> 
+		<tgroup cols="3"><colspec colnum="1" colname="col1"
+		  colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="2.74*"/><colspec
+		  colnum="3" colname="col3" colwidth="6.76*"/><thead> 
+			 <row> 
+				<entry colname="col1">Step 
+				</entry> 
+				<entry colname="col2">Task 
+				</entry> 
+				<entry colname="col3">Description 
+				</entry> 
+			 </row></thead> 
+		  <tbody> 
+			 <row> 
+				<entry colname="col1"><image href="graphics/step1_icon.png"
+				  id="image_9D29F79B4D3444EE89746567C29596BA"></image> 
+				</entry> 
+				<entry colname="col2">Migrate from H code to AppMeasurement for
+				  JavaScript (if needed) 
+				</entry> 
+				<entry colname="col3"> 
+				  <p>AppMeasurement for JavaScript is required by the visitor ID
+					 service.
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"><image href="graphics/step2_icon.png"
+				  id="image_DDF49C4E1A55408993B8A0CFBF7CCE85"></image> 
+				</entry> 
+				<entry colname="col2">Distribute 
+				  <codeph>VisitorAPI.js</codeph> 
+				</entry> 
+				<entry colname="col3"> 
+				  <p>This file should be deployed to your site and then referenced
+					 in the 
+					 <codeph>&lt;head&gt;</codeph> tag of each page. Place the tag
+					 before you load appMeasurement for JavaScript and other Adobe Marketing Cloud
+					 page code. 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"><image href="graphics/step3_icon.png"
+				  id="image_97A0BC4ACE8B43DD9C12DFAC401AD47F"></image> 
+				</entry> 
+				<entry colname="col2">Set a custom prop in 
+				  <codeph>AppMeasurement.js</codeph> to measure coverage 
+				</entry> 
+				<entry colname="col3"> 
+				  <p>(Optional, recommended) Add the following to a custom prop in
+					 your implementation: 
+				  </p> 
+				  <codeblock outputclass="syntax javascript">s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI Missing");</codeblock> 
+				  <p>You can then view the prop report to see what percentage of
+					 your pages are referencing 
+					 <codeph>VisitorAPI.js</codeph>. After you have the correct
+					 coverage, continue to the next step. 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"><image href="graphics/step4_icon.png"
+				  id="image_CFFC7D2B4AD24382BC91C356D9B9BFC5"></image> 
+				</entry> 
+				<entry colname="col2">Enable the Visitor ID service in
+				  AppMeasurement 
+				</entry> 
+				<entry colname="col3"> 
+				  <p>In 
+					 <codeph>AppMeasurement.js</codeph>, add the following code to
+					 start using the new Visitor ID service: 
+				  </p> 
+				  <codeblock outputclass="syntax javascript">s.visitor = Visitor.getInstance("namespace")</codeblock> 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+  </conbody>
+</concept>

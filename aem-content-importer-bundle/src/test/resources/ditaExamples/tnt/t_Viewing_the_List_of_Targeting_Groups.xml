@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_85CEECC96F7D438DBBC40C044C8825CB">
+  <title>Viewing the List of Targeting Groups</title>
+  <shortdesc>You can view the list of targeting groups. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <steps id="steps_FDE017C124264613916C934D16768771">
+      <step id="step_2ADA3B1E1EAF40119BCAB54CA0100EB7">
+        <cmd>To view the list of targeting groups, click 
+			 <uicontrol>Segments</uicontrol> &gt; 
+			 <uicontrol>Expression Targets</uicontrol>. 
+		  </cmd>
+      </step>
+    </steps>
+  </taskbody>
+  <!--<related-links>
+    <link href="c_Understanding_Built-In_Targeting_Groups.xml#concept_63E2017653634DFF97A4861947EDC49F" type="concept" format="dita" scope="local">
+      <?xm-replace_text Understanding Built-In Targeting Groups?>
+    </link>
+    <link href="r_Tips_for_Targeting_Groups.xml#reference_B378F383FEDF4E3FBEDD48570B2ABA9C" type="reference" format="dita" scope="local">
+      <?xm-replace_text Tips for Targeting Groups?>
+    </link>
+    <link href="c_Creating_Reusable_Targeting_Groups.xml#concept_E5514A8781424E23A5422FD5317F4AAC" type="concept" format="dita" scope="local">
+      <?xm-replace_text Creating Reusable Targeting Groups?>
+    </link>
+    <link href="t_Targeting_Display_to_a_Prerequisite_Success_Metric.xml#task_F5E24707BE2845549788C5D4BED03281" type="task" format="dita" scope="local">
+      <?xm-replace_text Targeting Display to a Prerequisite Success Metric?>
+    </link>
+    <link href="c_Or_and_And_Target_Rules.xml#concept_C7F197A3D399447E9E143599A3715099" type="concept" format="dita" scope="local">
+      <?xm-replace_text Or and And Target Rules?>
+    </link>
+    <link href="c_Behavioral_Targeting.xml#concept_CEE693A71E8D4C2CBF51DAA97DE8D61D" type="concept" format="dita" scope="local">
+      <?xm-replace_text Behavioral Targeting?>
+    </link>
+    <link href="c_Using_Alliant_Data.xml#concept_D9542E52932C49A9B196C937A4CC3662" type="concept" format="dita" scope="local">
+      <?xm-replace_text Using Alliant Data?>
+    </link>
+  </related-links>
+-->
+</task>

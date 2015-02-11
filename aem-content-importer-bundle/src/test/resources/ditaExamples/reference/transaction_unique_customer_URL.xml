@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_E3D0FEC81E1F4987B39CC467F19FFCFF">
+  <title>Transaction Unique Customer URL</title>
+  <shortdesc>Any process set by the web site owner that begins with an order
+	 variable and ends with a success variable. This could mean a product purchase,
+	 newsletter sign-up or e-mail request for information after going through a
+	 preset process. A unique customer is registered when a person makes a purchase
+	 from your site for the first time within a specified period of time. In other
+	 words, while one person may buy from your site three times, this person would
+	 be recorded as one unique customer. You can tell exactly how many individual
+	 people are purchasing from your site. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="subtopic" content="Glossary" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>There are five different time frames marketing reports use to define unique
+		customers: daily, weekly, monthly, quarterly and yearly. A daily unique
+		customer may purchase from your site twice on February 7th, and then again on
+		February 8th. This customer registers as two daily unique customers, because
+		only the first purchase on the 7th and the purchase on the 8th would count as
+		unique purchases for their respective days. This same standard determines
+		monthly and yearly unique customers for their respective time frames. It can be
+		helpful to ask the following question to see how 
+		reports determine who is a unique customer: "How
+		many different people purchased from my site during this time period?" 
+	 </p>
+    <p>The sum of all daily unique customers is not equal to the total monthly
+		unique customers for that month. This is because a customer who purchases twice
+		in a given month counts as two daily unique customers: one for each day they
+		purchased, but only as a single monthly unique customer. The same relationship
+		is true for monthly unique customers and yearly unique customers. 
+	 </p>
+    <p>The method used to give an address to documents and other resources on
+		the web. The first part of a URL indicates what protocol to use. The second
+		part specifies the IP address or the domain name where the resource is located.
+		For example, the first section of 
+		<filepath>http://www.adobe.com</filepath> specifies that the web page
+		should be fetched using the HTTP protocol. The second section directs the main
+		page in the Adobe domain to be retrieved.
+	 </p>
+  </conbody>
+</concept>

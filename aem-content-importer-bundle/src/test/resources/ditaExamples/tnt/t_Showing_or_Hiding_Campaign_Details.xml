@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_7F12DCE6DA0B46E5A65255AF6A6BF72B" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Show or Hide Campaign Details</title>
+  <shortdesc class="- topic/shortdesc ">You can choose whether to show campaign
+	 details. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <context id="context_2E80025F169240F099A0386646233335" class="- topic/section task/context ">
+      <p class="- topic/p ">
+        <ul id="ul_8BC4FB857C9B44FDB50DA7FB84BC8AE8" class="- topic/ul ">
+          <li id="li_8A26D4AD55194E4D9961137A397528E0" class="- topic/li "> To
+			 show the campaign type, targeting information, the campaign's start and end
+			 dates, and the campaign priority, click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Show campaign
+				details</uicontrol>. 
+		  </li>
+          <li id="li_BE052734D37948E3AC685C59D630127A" class="- topic/li "> If
+			 the details are already showing, you can hide them by clicking 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Hide campaign
+				details</uicontrol>. 
+		  </li>
+        </ul>
+      </p>
+    </context>
+  </taskbody>
+  <related-links class="- topic/related-links ">
+    <link href="t_Setting_the_Campaign_Name.xml#task_77E656A846814B8AB2543578546919D5" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Campaign Name?>
+    </link>
+    <link href="t_Changing_the_Campaign_Type.xml#task_57011668E95F43EAB5E2A8DF9D668A21" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Changing the Campaign Type?>
+    </link>
+    <link href="t_Changing_the_Campaign_Start_and_End_Dates.xml#task_E9FD7EE357B44F359F63F036F9CA8024" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Changing the Campaign Start and End   Dates?>
+    </link>
+    <link href="t_Changing_the_Campaign_Priority.xml#task_2A54D113E5484DCD983B27F19768E8E1" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Changing the Campaign Priority?>
+    </link>
+  </related-links>
+</task>

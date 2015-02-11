@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_7E199A26E3274B31B07CCAF8DFE3B274">
+  <title>PER Modifier Headings</title>
+  <shortdesc>Immediately following a classification metric column, you must
+	 have a 
+	 <wintitle>PER Modifier</wintitle> column that indicates the calculation to
+	 perform with the value in the classification metric field. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Admin tools" />
+      <othermeta name="subtopic" content="Classifications" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>
+      <wintitle>Per Modifier</wintitle> headings are denoted by adding ~per to
+		the classification metric heading. For example, if the 
+		<wintitle>Metric</wintitle> heading is 
+		<wintitle>Campaigns^~Cost</wintitle>, the PER modifier heading is 
+		<wintitle>Campaigns^~Cost~per</wintitle>. Adobe supports the following 
+		<wintitle>PER Modifier</wintitle> keywords: 
+	 </p>
+    <p>These characters have special meaning in a data file. Where possible,
+		avoid using these words in attribute names and data. 
+	 </p>
+    <p>
+      <b>FIXED:</b> Fixed value. Do not perform any scaling. 
+	 </p>
+    <p>
+      <b>DAY:</b> Multiply the value by the number of days in the report. 
+	 </p>
+    <p>
+      <b>ORDER:</b> Multiply the value by the number of orders for the line
+		item in the report. 
+	 </p>
+    <p>
+      <b>CHECKOUT:</b> Multiply the value by the number of checkouts for the
+		line item in the report. 
+	 </p>
+    <p>
+      <b>UNIT:</b> Multiply the value by the number of units for the line item
+		in the report. 
+	 </p>
+    <p>
+      <b>REVENUE:</b> Multiply the value by the revenue amount for the line
+		item in the report. 
+	 </p>
+    <p>
+      <b>SCADD:</b> Multiply the value by the number of times the 
+		<wintitle>Shopping Cart Add</wintitle> event was called per line item in
+		the report. 
+	 </p>
+    <p>
+      <b>SCREMOVE:</b> Multiply the value by the number of times the 
+		<wintitle>Shopping Cart Remove</wintitle> event was called per line item
+		in the report. 
+	 </p>
+    <p>
+      <b>INSTANCE:</b> Multiply the value by the number of instances for the
+		line item in the report. 
+	 </p>
+    <p>
+      <b>CLICK:</b> Multiply the value by the number of clicks for the line
+		item in the report. 
+	 </p>
+    <p>
+      <b>EVENT:</b> Multiply the value by the number of times the specified
+		custom event occurred per line item of the report. 
+	 </p>
+    <p>
+      <b>Example:</b> If Campaign A cost $10,000, the<wintitle>
+		  Campaigns^~Cost</wintitle> column contains a value of 10000 and the 
+		<wintitle>Campaigns^~Cost~per</wintitle> column contains 
+		<wintitle>FIXED</wintitle>. When displaying the Cost for Campaign A in
+		the reports, you will see $10,000 as the fixed cost for Campaign A for
+		the date range. 
+	 </p>
+    <p>
+      <b>Example:</b> If Campaign B that costs approximately $2 per click, the
+		
+		<wintitle>Campaigns^~Cost</wintitle> column contains 2 and the 
+		<uicontrol>Campaigns^~Cost~per</uicontrol> column contains 
+		<wintitle>CLICK</wintitle>. When displaying the Cost for Campaign B in
+		the reports, Adobe calculates (2 * [number of clicks]) on the fly for the date
+		range of the report. This gives you a total cost calculation based on the
+		number of clicks performed with Campaign B. 
+	 </p>
+  </conbody>
+</concept>

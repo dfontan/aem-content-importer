@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_79EE4460DD4447F7952FBA5A5148D7D0">
+  <title>Report</title>
+  <shortdesc>Standard reports display data for website and visitor activity,
+	 traffic patterns, referral data, advertising campaigns, visitor retention,
+	 product data, and more. You can run reports and then access tools to configure
+	 segments, metrics, and report comparisons. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>You can gather custom data to create reports specific to your website.
+		For example, if you have a search feature on your website, you can track the
+		search terms submitted and create a report that shows these terms and the
+		results of the searches.
+	 </p>
+    <p>The standard report set covers topics common to every website. Reports
+		include (but are not limited to): 
+	 </p>
+    <ul id="ul_DAEFDAA38FD444259B1770739EBF653A">
+      <li id="li_6B55EEDF994942C8979112F5689A4C04">Website data
+		</li>
+      <li id="li_EC24A3CA3E784579B5F191A63341717C">Visitor data
+		</li>
+      <li id="li_062E1CE579A446E09B28FB86F247AD07">Traffic patterns
+		</li>
+      <li id="li_96FE81F9AD5547278900EAF310ED46B5">Referral data
+		</li>
+      <li id="li_49BAEA67D78A4BC390C212D5A4BBEB46">Advertising campaigns
+		</li>
+      <li id="li_514B805CE607493386EC0EFB17917E05">Visitor retention
+		</li>
+      <li id="li_23BB4A6D655A4A4BA714CBBAB3687B1D">Product information
+		</li>
+    </ul>
+    <p>Analytics categorizes reports based on the following types: 
+	 </p>
+    <ul id="ul_D3E70520EDF743BD989B8C4F77AC465A">
+      <li id="li_DEFF029FA2AE47CDBC9F360C6F6112F0">
+        <b>Summary Reports</b>
+		  include reports such as the Totals Report, which shows data designed for quick
+		  overviews. These are intended for executives who want a general overview of the
+		  data. 
+		</li>
+      <li id="li_CA7BD4B90B694A5F9DA6975701494890">
+        <b>Conversion Reports</b>
+		  provide comprehensive, accurate, and detailed analysis of customer activity.
+		  Metrics such as campaign management, sales cycle, customer fallout, and
+		  customer conversion let you measure e-commerce transactions, sources of sales,
+		  advertising effectiveness, customer loyalty, and more. 
+		</li>
+      <li id="li_A678DA5EBBBB4B2D9FE112CD351C0A50">
+        <b>Traffic reports</b> give
+		  you in-depth insight into how visitors interact with your website. They let you
+		  analyze critical aspects of visitor behavior, monitor and understand traffic
+		  patterns, determine popular site content, and segment visitors by any
+		  measurable criteria.
+		</li>
+    </ul>
+  </conbody>
+</concept>

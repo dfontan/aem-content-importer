@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_C8C885FFBCAF4F7DBFB76E852F6E1C17">
+  <title>Launch a solution</title>
+  <shortdesc>Launch a Marketing Cloud solution from the Marketing Cloud
+	 Solutions page. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Marketing Cloud" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <steps id="steps_75FCCEA3A4FE4DD7AAEE0372AC1179DF">
+      <step id="step_215D21AC23B045FAA89ADF0100A87E81">
+        <cmd>
+          <xref href="t_sign_in.xml#task_1BFE87E20DCB44078CAC82F3CD44B985" format="dita" scope="local">
+            <?xm-replace_text Sign in to the Adobe Marketing Cloud?>
+          </xref>. 
+		  </cmd>
+      </step>
+      <step id="step_6E70E3AD59F44751B2CF78E1F4108C5B">
+        <cmd>Click 
+			 <uicontrol>Solutions</uicontrol>. 
+		  </cmd>
+        <info>
+          <p>Before solutions are available to launch, 
+				<xref href="link_accounts.xml#task_6DA95CE477914FA88A2F1FEAB3F9D50C" format="dita" scope="local">link</xref> your Adobe ID to the solution. 
+			 </p>
+        </info>
+      </step>
+      <step id="step_A17D2D42F2504A4CBF16EE93E3224793">
+        <cmd>Locate your solution, then click 
+			 <uicontrol>Launch</uicontrol>. 
+		  </cmd>
+        <stepresult>
+          <?xm-replace_text Step Result?>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+</task>

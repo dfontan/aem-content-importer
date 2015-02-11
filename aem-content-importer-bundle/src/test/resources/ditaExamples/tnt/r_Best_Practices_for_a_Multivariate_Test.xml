@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd"[]>
+<reference id="reference_5040466C421C4121BEBA05D0A5636DDF" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic       reference/reference ">
+  <title class="- topic/title ">Best Practices for a Multivariate Test</title>
+  <shortdesc class="- topic/shortdesc ">When working with multivariate tests,
+	 consider these best practices. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <refsyn id="refsyn_F9F992B97F1845C3A60297C2E7483E6C" class="- topic/section     reference/refsyn ">
+      <p>
+        <ul id="ul_E3C009A2CC4F4D9EA7A258D15D6F7294" class="- topic/ul ">
+          <li id="li_7E05287F9D9047EDAC7C4362BBA002EC" class="- topic/li "> A
+			 full Taguchi array is recommended for multivariate testing. These arrays: 3x2,
+			 4x3, 5x4, or 7x2 (elements x alternatives) allow for the most options with the
+			 lowest amount of error introduced. 
+		  </li>
+          <li id="li_79B4444A2F8E413DB1214E67CED1619D" class="- topic/li ">
+			 Select the page elements you believe will have the strongest impact on the
+			 results. 
+		  </li>
+          <li id="li_B6717AE432AC4017818A3D585BAC2F3F" class="- topic/li "> You
+			 must have at least three elements to test. If you have fewer, run a series of 
+			 <xref href="t_Creating_an_A_B_Test.xml#task_F887EA52F58B4F21BD6FDF92D74CCEBC" type="task" format="dita" scope="local" class="- topic/xref ">A/B tests</xref>.
+			 
+		  </li>
+          <li id="li_F6F6EDC5573944668A5C1D0A1DE5D26C" class="- topic/li "> It is
+			 recommended that elements be independent of each other. (For example, do not
+			 test your layout and content in the same test.) 
+		  </li>
+          <li id="li_75E6B255B8EF428E908B66AEE908C18C" class="- topic/li "> It is
+			 recommended that each element must have the same number of alternatives. 
+		  </li>
+          <li id="li_C4879A8905194E4792F471C8C0A96DCC" class="- topic/li "> It is
+			 recommended that each element's alternatives be significantly different from
+			 each other. 
+		  </li>
+        </ul>
+      </p>
+    </refsyn>
+  </refbody>
+  <related-links class="- topic/related-links ">
+    <link href="t_Creating_a_Multivariate_Test.xml#task_CC6D0B3521224D04A68C630D6378493B" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Creating a Multivariate Test?>
+    </link>
+  </related-links>
+</reference>

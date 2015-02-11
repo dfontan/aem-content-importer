@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_8CCB8DC991B84333B113C0B89FC8985E">
+  <title>Custom Event</title>
+  <shortdesc>Custom Events enable you to define the conversion event that you
+	 want to track. For example, if your site has a newsletter, your success event
+	 might be 
+	 <i>Newsletter Subscription</i>. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="subtopic" content="Glossary" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>See 
+		<xref href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_events" format="http" scope="external">s.events</xref>. 
+	 </p>
+  </conbody>
+</concept>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_BF2EB97350C64987A9DF748972033902"> 
+  <title>Specify the Unique Visitor variable</title> 
+  <shortdesc>Steps that describe how to designate which eVar contains your
+	 visitor identifier. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Admin tools"/> </metadata>
+  </prolog> 
+  <taskbody> 
+	 <steps id="steps_D4C220AA1D6A4E3AACD554BF4242ABCB"> 
+		<step id="step_96CB3DD8012E4FB493C76ABEE295ABB5"> 
+		  <cmd>Click 
+			 <uicontrol>Analytics</uicontrol> &gt; 
+			 <uicontrol>Admin</uicontrol> &gt; 
+			 <uicontrol>Report Suites</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_B2AEB72CBAB64036BE2ED419CFDC13B6"> 
+		  <cmd>Select a report suite. 
+		  </cmd> 
+		</step> 
+		<step id="step_A326345ED8BE49738A22657FB55ADF8E"> 
+		  <cmd>Click 
+			 <uicontrol>Edit Settings</uicontrol> &gt; 
+			 <uicontrol>Conversion</uicontrol> &gt; 
+			 <uicontrol>Unique Visitor Variable</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_B1CDB7E959B74F40B256E1B8575DCF11"> 
+		  <cmd>Select the 
+			 <uicontrol>Available eVars</uicontrol> checkbox to enable the
+			 drop-down list. 
+		  </cmd> 
+		</step> 
+		<step id="step_E475735027264A23B8E21E16B6A6FF2C"> 
+		  <cmd>Select an eVar from the drop-down list, then click 
+			 <uicontrol>Save</uicontrol>. 
+		  </cmd> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task>

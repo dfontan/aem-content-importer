@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_4634D5BC52D7420BA4AFC3D7B34DF6E2">
+  <title>Sub-Classification Heading</title>
+  <shortdesc>To create a sub-classification column heading, use a caret (^)
+	 character to combine the classification name with the sub-classification name. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Admin tools" />
+      <othermeta name="subtopic" content="Classifications" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>For example, 
+		<wintitle>Campaigns^Owner</wintitle> is a column heading for the column
+		containing 
+		<wintitle>Campaign Owner</wintitle> values. Similarly, 
+		<wintitle>Creative Elements^Size</wintitle> is a column heading for the
+		column containing the 
+		<wintitle>Size</wintitle> sub-classification of the 
+		<wintitle>Creative Elements</wintitle> classification. 
+	 </p>
+  </conbody>
+</concept>

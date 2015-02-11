@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd"[]>
+<reference id="reference_5F1F6632DF8D4394B195FB5E4C98F416">
+  <title>Integration Examples for ATG</title>
+  <shortdesc>The following code examples are suggestions for creating Recorder
+	 mboxes using ATG JSP tag libraries from the ATG 6.0.0 Pioneer Cycling Demo
+	 Store. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <refbody>
+    <refsyn id="refsyn_56A781F0FEEA4693929223AD31D91E9A">
+      <p>These samples are provided for informational purposes only. Please
+		  follow the guidance of your Web developers to ensure your code is valid. 
+		</p>
+      <p>
+        <note>Review the information about 
+			 <xref href="t_Downloading_mboxjs.xml#task_B1A5E9CC0AAE48E38FA19686548B3371" type="task" format="dita" scope="local">mbox.js</xref>, 
+			 <xref href="c_About_Mboxes.xml#concept_E01933A6CEDE481BBAC25F95FE3C6FD9" type="concept" format="dita" scope="local">mboxes</xref>, and 
+			 <xref href="c_Parameters_and_Values.xml#concept_DB5AB8E9682D41DDA5621FFE856C6336" type="concept" format="dita" scope="local">parameters and values</xref>. 
+		  </note>
+      </p>
+      <p>
+        <b> mbox.js include for ATG</b>
+      </p>
+      <p>
+        <codeblock outputclass="syntax html">&lt;script src="/PioneerCycling/mbox/mbox.js" type="text/javascript"&gt;&lt;/script&gt;</codeblock>
+      </p>
+    </refsyn>
+  </refbody>
+  <related-links>
+    <link href="r_Integration_Examples_for_PHP_and_OsCommerce.xml#reference_A0647C3DE8EB48F6816A10B79EBA7876" type="reference" format="dita" scope="local">
+      <?xm-replace_text Integration Examples for PHP and OsCommerce?>
+    </link>
+    <link href="r_Integration_Examples_for_ASP.xml#reference_29630D62227F43EABFF0D81990FF6F69" type="reference" format="dita" scope="local">
+      <?xm-replace_text Integration Examples for ASP?>
+    </link>
+  </related-links>
+</reference>

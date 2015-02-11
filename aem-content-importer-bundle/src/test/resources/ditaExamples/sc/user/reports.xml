@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_54DA0D426E2B49F3BF0E707FE83932A6">
+  <title> Report Types</title>
+  <shortdesc>Information about the basic report types, including Traffic,
+	 Conversion, and Paths. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports and analytics" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <table id="table_C167C2A2EA4742E9B14DA4F90C6FCEE2">
+      <tgroup cols="2">
+        <colspec colnum="1" colname="col1" colwidth="1.00*" />
+        <colspec colnum="2" colname="col2" colwidth="2.78*" />
+        <thead>
+          <row>
+            <entry colname="col1">Report Type 
+				</entry>
+            <entry colname="col2">Description 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry colname="col1">Traffic 
+				</entry>
+            <entry colname="col2">
+              <p>Traffic reports give you in-depth insight into how visitors
+					 interact with your website, and your customized traffic statistics. 
+				  </p>
+              <p>See 
+					 <xref href="https://marketing.adobe.com/resources/help/en_US/reference/index.html?f=reports_traffic" format="https" scope="external">Traffic Reports</xref>. 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">Conversion 
+				</entry>
+            <entry colname="col2">
+              <p>Displays information about success indicators that you define.
+					 When you initially acquire licenses, you have an option to define metrics that
+					 indicate or give additional insight into successful sales or content
+					 deliveries. Reports here show numbers for these metrics. Examples include
+					 payment types, shipping costs, and online coupons used. 
+				  </p>
+              <p>See 
+					 <xref href="https://marketing.adobe.com/resources/help/en_US/reference/index.html?f=reports_conversion" format="https" scope="external">Conversion Reports</xref>. 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">Paths 
+				</entry>
+            <entry colname="col2">
+              <p>Paths reports, such as Fallout and PathFinder, let you track
+					 and record entire browsing paths of visitors and customers. You can view your
+					 site traffic as it flows from one page or item to the next, discover new
+					 patterns and popular paths, or search out the specific paths that your visitors
+					 take. 
+				  </p>
+              <p>See 
+					 <xref href="https://marketing.adobe.com/resources/help/en_US/reference/index.html?f=reports_paths" format="https" scope="external">Paths Reports</xref>. 
+				  </p>
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p>See 
+		<xref href="report_overview.xml#concept_AEA3BBC8167040198E0FECEAB2E0A677" format="dita" scope="local"><?xm-replace_text Report Features?></xref> for
+		information about interface features. 
+	 </p>
+    <p>See 
+		<xref href="https://marketing.adobe.com/resources/help/en_US/reference/index.html?f=reports_descriptions" format="https" scope="external">Report Descriptions</xref> in 
+		<term>Analytics Reference Help</term> for descriptions. 
+	 </p>
+  </conbody>
+</concept>

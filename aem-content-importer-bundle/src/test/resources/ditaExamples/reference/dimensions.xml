@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_4397DE147A2346DE803CBD8460BCD51F">
+  <title>Dimensions</title>
+  <shortdesc>Descriptions or characteristics of metric data that can be viewed,
+	 broken down, and compared in a report. They are non-numeric values and dates
+	 that correlate, sub-relate, or are a classification of the original report type
+	 metric. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="subtopic" content="Glossary" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Examples of dimensions include: 
+	 </p>
+    <ul id="ul_DC396E8EE3BD4807AE12FF4B4C901D12">
+      <li id="li_C3E826C2D48949989B1B3A5CED6EECC7">Page, page names 
+		</li>
+      <li id="li_9DE44DC9FCAF4D2196FE390227E85D7E">Products 
+		</li>
+      <li id="li_FEE116D155D94C1CB9366822B41F1F9E">Gender 
+		</li>
+      <li id="li_BBF0E15ED22C40B2BC40AC174F0F5D3A">Month 
+		</li>
+      <li id="li_777FF3ED5B744AC39E9E3FB6AF15FC98">Age 
+		</li>
+      <li id="li_B04888EF15694844899B0507AF776DA2">Day, week, month, etc. 
+		</li>
+      <li id="li_BB7DCF2E65D24F34B4E7EEB5C779CEAE">Loyalty 
+		</li>
+      <li id="li_53F80C34BFEB448792FA807A192F9361">Monitor resolution 
+		</li>
+      <li id="li_1F73CD6C59C64B0D9E30D989D7997B86">Custom eVars and s.prop
+		  values 
+		</li>
+    </ul>
+    <section id="section_17341647718B47F2A4D0ED9D17E5307D">
+      <title>
+        Ad Hoc Analysis
+      </title>
+      <p>When performing ad hoc analysis, you can base reports on any dimension
+		  item. You can break down dimensions by other dimensions to analyse and compare
+		  nearly anything. For example, you can view trends across other continuous
+		  dimensions like Page Depth. Then you could visualize a metric like Revenue
+		  Participation to see how revenue is influenced as a visitor travels deeper into
+		  your site. 
+		</p>
+      <p>In the 
+		  <wintitle>Dimensions</wintitle> pane, you can search for dimensions and
+		  drag them to the 
+		  <wintitle>Table Builder</wintitle> or the report table. You can sort
+		  them based on the following categories: 
+		</p>
+      <p>
+        <ul id="ul_33B580EEA7D6494EA9AE63B7FE9DB1A1">
+          <li id="li_AA57994E88BD4827AC0C033F8289CB19">
+            <p>Traffic 
+			 </p>
+          </li>
+          <li id="li_E42FAC956F684098A68D524960F4C21D">
+            <p>Conversion 
+			 </p>
+          </li>
+          <li id="li_A520DCA9471144B69F5DA12B010D2E40">
+            <p>Time 
+			 </p>
+          </li>
+          <li id="li_748C5853D74D4B84A0C7F2F5967E0646">
+            <p>Props 
+			 </p>
+          </li>
+          <li id="li_D94B620A86FE4069A04BC267465062F1">
+            <p>Evars 
+			 </p>
+          </li>
+          <li id="li_555EB4BFF7934990A083553E378EAD25">
+            <p>Hierarchy 
+			 </p>
+          </li>
+        </ul>
+      </p>
+    </section>
+    <section id="section_12D49CE37E0949D4A0F35BCE7973AD9D">
+      <title>
+        Data Workbench
+      </title>
+      <p>In 
+		  the data workbench, dimensions are set of elements, all of
+		  which are of a similar type from the user's perspective. The elements define a
+		  set of categories into which data can be grouped. For example, the elements
+		  Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, and Sunday make up a
+		  Weekday dimension. 
+		</p>
+      <p>The following dimension types exist: 
+		</p>
+      <p>
+        <b>Countable</b>: A dimension type in which the number of elements in
+		  the dimension can be counted by the system. Countable dimensions must be
+		  derived from other Countable dimensions. Countable dimensions can be parents of
+		  other dimensions or children of other countable dimensions. 
+		</p>
+      <p>Examples: Visitor, Session, Page View, Booking, and Order. 
+		</p>
+      <p>
+        <b>Simple</b>: A dimension that has a one-to-many relationship with a
+		  parent countable dimension. A simple dimension can be thought of as
+		  representing a property of elements of its parent dimension. 
+		</p>
+      <p>Example: Visitor Referrer is a simple dimension with a parent of the
+		  Visitor dimension. Each Visitor can have only one Visitor Referrer (their first
+		  HTTP referrer), but many Visitors might have the same Visitor Referrer.
+		  Therefore the Visitor Referrer is one-to-many with the Visitor dimension. 
+		</p>
+      <p>
+        <b>Numeric</b>: A dimension that has ordered, numerical values and a
+		  one-to-many relationship with a parent countable dimension. A numeric dimension
+		  can be thought of as representing a numeric property of elements of its parent
+		  dimension. Numeric dimensions are often used to define sum metrics. 
+		</p>
+      <p>Example: The numeric dimension Session Revenue defines the revenue, in
+		  dollars, for each Session. Each Session has a single amount of revenue, but any
+		  number of Sessions might have the same revenue, so Session Revenue is
+		  one-to-many with Session. A metric revenue might be defined as 
+		  <filepath>sum(Session_Revenue</filepath>, 
+		  <filepath>Session</filepath>), giving the total amount of revenue for
+		  the selected Sessions. 
+		</p>
+      <p>
+        <b>Many-to-Many</b>: A dimension that has a many-to-many relationship
+		  with a parent countable dimension. A many-to-many dimension can be thought of
+		  as representing a set of values for each element of its parent dimension. A
+		  many-to-many dimension is equivalent to an (anonymous) countable dimension with
+		  its parent and a Simple dimension with a parent of the anonymous countable
+		  dimension. 
+		</p>
+      <p>Example: The many-to-many dimension Search Phrase has a parent of
+		  Session. Each Session can use zero or more Search Phrases, and a Search Phrase
+		  can be used in any number of Sessions. 
+		</p>
+      <p>
+        <b>Denormal</b>: A dimension that has a one-to-one relationship with a
+		  parent Countable dimension. The element names of the denormal dimension can
+		  carry information about the corresponding elements of the parent dimension. A
+		  denormal dimension can be thought of as storing an arbitrary string value for
+		  each element of the parent. Denormal dimensions can be used with the data workbench
+		  server's segment export capability to output details about a subset or
+		  segment of a countable dimension. In addition, denormal dimensions can be
+		  referenced in metric formulas and worksheet visualizations and can be used
+		  (with certain restrictions) to define filters. 
+		</p>
+      <p>Example: The denormal dimension EMail Address has a parent of Visitor.
+		  Each Visitor has an EMail Address, and each element of the EMail Address
+		  dimension is associated with a single Visitor. Even if two visitors have the
+		  same e-mail address, their addresses will be different elements of the EMail
+		  Address dimension. A Segment Export can reference the EMail Address dimension
+		  to output the EMail Address of each visitor in a Segment. 
+		</p>
+      <p>
+        <b>Time</b>: A dimension that enables you to create a set of periodic
+		  or absolute local time dimensions (such as Day, Day of Week, Hour, Hour of Day,
+		  and so on) based on a timestamp field that you specify. When defining time
+		  dimensions, you also can choose a day other than Monday to be used as the start
+		  of a week by specifying the Week Start Day parameter. 
+		</p>
+      <p>Example: The time dimension Session Time has parent of Session.
+		  Therefore, the dimension defines a set of time dimensions (Day, Day of Week,
+		  Hour, Hour of Day, Month, and Week) whose elements correspond to the times at
+		  which visitors' sessions on the site began. 
+		</p>
+      <p>
+        <b>Derived</b>: Derived dimensions, rather than being defined in the
+		  dataset configuration based on the data being processed, are defined in the
+		  profile based on other dimensions or metrics. Many derived dimensions are
+		  created automatically to drive different types of visualizations. For example,
+		  when a user builds a site or process map, the data workbench server silently creates a
+		  Prefix dimension. Others, such as the reporting time dimensions, are defined
+		  by files in the Dimensions directory of a profile. 
+		</p>
+      <p>See the 
+		  <xref href="http://marketing.adobe.com/resources/pdf/en/insight/insight_metrics_dimensions_and_filters_guide.pdf" scope="external" format="html">Data Workbench Metrics, Dimensions, and Filters</xref>
+		  guide for more information. 
+		</p>
+    </section>
+  </conbody>
+</concept>

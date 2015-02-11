@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_06CC14C69DFD4887A5E6967A157A9E05">
+  <title>linkDownloadFileTypes</title>
+  <shortdesc> The 
+	 <varname>linkDownloadFileTypes</varname> variable is a comma-separated list
+	 of file extensions. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Variables" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>If your site contains links to files with any of these extensions, the
+		URLs of these links will appear in the 
+		<wintitle>File Downloads</wintitle> report. 
+	 </p>
+    <table id="table_03F3B33A50D3477583B5AC09DC864A2E">
+      <tgroup cols="4">
+        <colspec colnum="1" colname="col1" colwidth="*" />
+        <colspec colnum="2" colname="col2" colwidth="*" />
+        <colspec colnum="3" colname="col3" colwidth="*" />
+        <colspec colnum="4" colname="col4" colwidth="*" />
+        <thead>
+          <row>
+            <entry> Max Size 
+				</entry>
+            <entry> Debugger Parameter 
+				</entry>
+            <entry> Reports Populated 
+				</entry>
+            <entry> Default Value 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry> N/A 
+				</entry>
+            <entry> N/A 
+				</entry>
+            <entry> Traffic &gt; Site Traffic &gt; File Downloads 
+				</entry>
+            <entry>
+              <p>"exe,zip,wav,mp3,mov,mpg,avi,wmv, doc,pdf,xls" 
+				  </p>
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p> The 
+		<varname>linkDownloadFileTypes</varname> variable is only relevant when 
+		<varname>trackDownloadLinks</varname> is set to 'True.' 
+	 </p>
+    <p>Only left-mouse-clicks on a link are counted in the 
+		<wintitle>File Downloads</wintitle> report. All file downloads that start
+		automatically when a page loads, or that are only downloaded after a redirect,
+		are not counted in the 
+		<wintitle>File Downloads</wintitle> report. When you right-click a file
+		and select the "Save Target As..." option, it is not counted in the 
+		<wintitle>File Downloads</wintitle> report. 
+	 </p>
+    <p>The 
+		<varname>linkDownloadFileTypes</varname> variable may be used to track
+		clicks to RSS feeds. If you have links to RSS feeds with a .xml or other
+		extension, appending ",xml" to the 
+		<varname>linkDownloadFileTypes</varname> list allows you to see how often
+		each RSS link is clicked. 
+	 </p>
+    <p>The following sections contain more information: 
+	 </p>
+    <ul id="ul_2EBE896472FB406B92345318B96170A4">
+      <li id="li_F25F1C84260940B0873943C9840E23A3">
+        <xref href="linkDownloadFileTypes.xml#concept_06CC14C69DFD4887A5E6967A157A9E05/section_E0B3F3817BBF4B11AFAABEF8BB951E5A" format="dita" scope="local">
+          <?xm-replace_text Syntax and Possible Values?>
+        </xref>
+      </li>
+      <li id="li_6C754E10DAA64098B2A8F48F2AF89B8F">
+        <xref href="linkDownloadFileTypes.xml#concept_06CC14C69DFD4887A5E6967A157A9E05/section_C53F1AF768434CEBA65F3D255BC470AD" format="dita" scope="local">
+          <?xm-replace_text Examples?>
+        </xref>
+      </li>
+      <li id="li_96DA6A5E587E47149CECD4906EF75310">
+        <xref href="linkDownloadFileTypes.xml#concept_06CC14C69DFD4887A5E6967A157A9E05/section_CE24D5852E4D441A958A4EDDB82382A7" format="dita" scope="local">
+          <?xm-replace_text SiteCatalyst Configuration Settings?>
+        </xref>
+      </li>
+      <li id="li_A3F9072CB15B49859270DFD32A5F4EA0">
+        <xref href="linkDownloadFileTypes.xml#concept_06CC14C69DFD4887A5E6967A157A9E05/section_786CF22D5553429EB6524B13774793BC" format="dita" scope="local">
+          <?xm-replace_text Pitfalls, Questions, and Tips?>
+        </xref>
+      </li>
+    </ul>
+    <section id="section_E0B3F3817BBF4B11AFAABEF8BB951E5A">
+      <title>Syntax and Possible Values</title>
+      <p>Only include file extensions (no spaces). 
+		</p>
+      <codeblock outputclass="syntax javascript">s.linkDownloadFileTypes="type1[,type2[,type3[...]]]"</codeblock>
+      <p>Any file extension may be included in the list. Be careful not to
+		  include a common file extension, such as htm or aspx, in 
+		  <varname>linkDownloadFileTypes</varname>. Doing so causes an extra
+		  image request to be sent for each click, which will be billed as
+		  a primary server call. 
+		</p>
+    </section>
+    <section id="section_C53F1AF768434CEBA65F3D255BC470AD">
+      <title>Examples</title>
+      <codeblock outputclass="syntax javascript">s.linkDownloadFileTypes="exe,zip,wav,mp3,mov,mpg,avi,wmv,doc,pdf,xls"</codeblock>
+      <codeblock outputclass="syntax javascript">s.linkDownloadFileTypes="exe,zip,wav,mp3,mov,mpg,avi,wmv,doc,pdf,xls,xml"</codeblock>
+    </section>
+    <section id="section_CE24D5852E4D441A958A4EDDB82382A7">
+      <title>
+        Configuration Settings</title>
+      <p>None 
+		</p>
+    </section>
+    <section id="section_786CF22D5553429EB6524B13774793BC">
+      <title>Pitfalls, Questions, and Tips</title>
+      <ul id="ul_235BFDD6525548DA9BDA784F9CB268AA">
+        <li id="li_2216C9CE267F45DE9D94EB97647C5430">Only left-clicks on
+			 download files cause the URL to appear in the 
+			 <wintitle>File Downloads</wintitle> report. 
+		  </li>
+        <li id="li_D25CA270A2AD424C8EAEEF5FE6E09A20">Including a common file
+			 extension in 
+			 <varname>linkDownloadFileTypes</varname> may significantly increase
+			 the total server calls sent to Adobe's servers. 
+		  </li>
+        <li id="li_E75CD8F0E02C431590EDA209005EAB66">Links to server-side
+			 redirects or HTML pages that automatically begin downloading a file are not
+			 counted unless the file extension is in 
+			 <varname>linkDownloadFileTypes</varname>. 
+		  </li>
+        <li id="li_414D86EFDC614864A6CD6912ECF8CEFF">Links that use JavaScript
+			 (such as javascript:openLink( )) are not counted in file downloads. 
+		  </li>
+      </ul>
+    </section>
+  </conbody>
+</concept>

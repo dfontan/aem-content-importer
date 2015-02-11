@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_DB9D9C99B9AA486F835F475F1B768A62"> 
+  <title>Methods</title> 
+  <shortdesc>Tracking methods provide functionality to configure tracking data
+	 and send it to Adobe data collection servers. 
+  </shortdesc> 
+  <conbody> 
+	 <p> 
+		<note>When using variable overrides, use the variable name as the key in
+		  a key-value pair. Also, use only strings as values in the key-value pairs. 
+		</note> 
+	 </p> 
+	 <p> 
+	 <table id="table_A2E3E06CEDE3426CAE4BBDED73BDF2EA"> 
+		<tgroup cols="2"><colspec colnum="1" colname="col1"
+		  colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="3.08*"/><thead> 
+			 <row valign="top"> 
+				<entry colname="col1">Method 
+				</entry> 
+				<entry colname="col2">Description 
+				</entry> 
+			 </row></thead> 
+		  <tbody> 
+			 <row valign="top"> 
+				<entry colname="col1"><codeph>track()</codeph> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>When 
+					 <codeph>sendFromServer = false</codeph>, 
+					 <codeph>track</codeph> renders an image tag to the Web browser.
+					 When 
+					 <codeph>sendFromServer = true</codeph>, 
+					 <codeph>track</codeph> makes a direct HTTP request to Adobe
+					 data collection servers. 
+				  </p> 
+				  <p>In either case, track sends any 
+					 <xref
+					  href="c_trck_cfg_var.xml#concept_B56FB2A8BFAE4CC5BEF21D4C62E055B2"
+					  format="dita" scope="local"><?xm-replace_text Track Config Variables?></xref>
+					 that have values. 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row valign="top"> 
+				<entry colname="col1"><codeph>track($variableOverrides)</codeph> 
+				</entry> 
+				<entry colname="col2">Same as track, except you can pass in a list
+				  of key-value pairs that indicates temporary variable overrides for that track
+				  call. 
+				</entry> 
+			 </row> 
+			 <row valign="top"> 
+				<entry colname="col1"><codeph>trackLink($linkURL, $linkType,
+					 $linkName)</codeph> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>When 
+					 <codeph>sendFromServer = false</codeph>, 
+					 <codeph>trackLink</codeph> renders an image tag with custom,
+					 download or exit link data to the Web browser. When 
+					 <codeph>sendFromServer = true</codeph>, 
+					 <codeph>trackLink</codeph> makes a direct HTTP request to Adobe
+					 data collection servers. 
+				  </p> 
+				  <p>Use 
+					 <codeph>trackLink</codeph> to track all activity that should
+					 not capture a page view. 
+					 <codeph>trackLink</codeph> has the following parameters: 
+				  </p> 
+				  <p><b>url:</b> Identifies the clicked URL. If no URL is
+					 specified, the name is used. Use this only when linking to a Web page from your
+					 website. Otherwise, pass in null for this parameter. 
+				  </p> 
+				  <p><b>type:</b> Identifies the link report that displays the URL
+					 or name. Supported values include: 
+				  <ul id="ul_A939C9CA47144FF697EB006F547D9DD7"> 
+					 <li id="li_2A980E1DA8504004A52302B65F1A9D3A"><b>o:</b> (Custom
+						Links) 
+					 </li> 
+					 <li id="li_A8EEDF5166F24422862CD4C31C3CA21C"><b>d:</b> (File
+						Downloads) 
+					 </li> 
+					 <li id="li_506F93DF07D942ACB2DC67AE2CCC12CA"><b>e:</b> (Exit
+						Links) 
+					 </li> 
+				  </ul> 
+				  </p> 
+				  <p><b>name:</b> The name that appears in the link report. If no
+					 name is specified, the report uses the URL. 
+				  </p> 
+				  <p> 
+					 <note>To collect data, you must specify either the 
+						<codeph>name</codeph> or 
+						<codeph>url</codeph> parameter. When not using one of these
+						parameters, pass in null as the value. 
+					 </note> 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row valign="top"> 
+				<entry colname="col1"><codeph>trackLink($linkURL, $linkType,
+					 $linkName, $variableOverrides)</codeph> 
+				</entry> 
+				<entry colname="col2">Same as trackLink, except you can pass in a
+				  list of key-value pairs that indicates temporary variable overrides for that
+				  trackLink call. 
+				</entry> 
+			 </row> 
+			 <row valign="top"> 
+				<entry colname="col1"><codeph>clearVars()</codeph> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>Clears the following track config variables on the object: 
+				  </p> 
+				  <p><codeph>channel</codeph> 
+				  </p> 
+				  <p><codeph>events</codeph> 
+				  </p> 
+				  <p><codeph>purchaseID</codeph> 
+				  </p> 
+				  <p><codeph>transactionID</codeph> 
+				  </p> 
+				  <p><codeph>products</codeph> 
+				  </p> 
+				  <p><codeph>state</codeph> 
+				  </p> 
+				  <p><codeph>zip</codeph> 
+				  </p> 
+				  <p><codeph>campaign</codeph> 
+				  </p> 
+				  <p><codeph>prop (1-50)</codeph> 
+				  </p> 
+				  <p><codeph>eVar (1-50)</codeph> 
+				  </p> 
+				  <p><codeph>hier (1-5)</codeph> 
+				  </p> 
+				  <p><codeph>list (1-3)</codeph> 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row valign="top"> 
+				<entry
+				 colname="col1"><codeph>manageVisitorID($persistVisitorIDInLinks = false,
+					 $redirectOnGeneratedVisitorID = false, $additionalRedirectVars =
+					 array())</codeph> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>Allows Measurement Library to manage visitor identification
+					 instead of Adobe data collection servers. Call 
+					 <codeph>manageVisitorID</codeph> before any output is rendered
+					 to the page. 
+				  </p> 
+				  <p>Measurement Library does the following to manage visitor
+					 identification: 
+				  <ul id="ul_BE67AA130E9D4998AF02C7CED9635588"> 
+					 <li id="li_0DD248A6DDA2432D9F6B1ED4E6BE2A10">Obtains a visitor
+						ID by looking for the mobile subscriber ID (if 
+						<codeph>mobile = true</codeph>). Otherwise, Measurement
+						Library generates an ID. A mobile subscriber ID can only be obtained if PHP is
+						installed as an Apache module. 
+					 </li> 
+					 <li id="li_8554A4CA983E45D29FC94131EE8405A2">Sets the visitor
+						ID in a cookie (using 
+						<codeph>cookielifetime</codeph> and 
+						<codeph>cookiedomainperiods</codeph>). 
+					 </li> 
+					 <li id="li_0D5AA43133DF4E97ABEEE7C0F8681011">Persists the
+						visitor ID in all links and forms on the page by setting 
+						<codeph>persistVisitorIDInLinks = true</codeph> (this
+						parameter’s default value is false). Close all form tags, and do not use '&gt;'
+						in href attributes. Setting 
+						<codeph>persistVisitorIDInLinks = true</codeph> prevents any
+						content from being flushed to the page before the entire page has been
+						rendered. 
+					 </li> 
+					 <li id="li_D8CEF9E37370430391091C41E064BCD5">Will redirect the
+						page to itself with the visitor ID in the query string if a visitor ID has been
+						generated by setting 
+						<codeph>redirectOnGeneratedVisitorID = true</codeph>. This
+						parameter’s default value is false. Since the redirect is an HTTP GET request,
+						do not set this parameter on an HTTP POST. 
+					 </li> 
+					 <li id="li_319CCBBA4D844EE4BE3AE1E492ADB147">Additional query
+						string key-value pairs may be added to the redirect URL using the 
+						<codeph>additionalRedirectVars</codeph> parameter. This
+						parameter’s default value is an empty array. 
+					 </li> 
+				  </ul> 
+				  </p> 
+				  <p> 
+					 <note>The 
+						<codeph>manageVisitorID</codeph> method utilizes both a query
+						parameter and cookie named 
+						<codeph>s_vid</codeph>. You should avoid using a query
+						parameter or cookie of this name for any other purpose. 
+					 </note> 
+				  </p> 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+	 </p> 
+	 <p> 
+		<note>Page view tracking (track) and link tracking (trackLink) sends all
+		  variables that have values (non-null, non-empty). You should reset or empty all
+		  variables, as needed, before calling track or trackLink. 
+		</note> 
+	 </p> 
+  </conbody>
+</concept>

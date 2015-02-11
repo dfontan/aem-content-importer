@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_8DB4DB56982C4EB6B599F99B02A9AD3B"> 
+  <title>Adobe Debugger Installation</title> 
+  <shortdesc>Adobe Debugger (previously DigitalPulse Debugger) is installed as
+	 a bookmarklet in your browser. Copy the provided JavaScript code to your
+	 clipboard and then create a bookmarklet in a supported browser. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Developer and implementation"/> 
+		<othermeta name="subtopic" content="Debugger"/> </metadata>
+  </prolog> 
+  <taskbody> 
+	 <steps id="steps_350CAD035ECD401FB363DD58C2C7C89A"> 
+		<step id="step_7ACE2AA16D184157B597885B03DB2677"> 
+		  <cmd>Copy the following text to your clipboard (triple-clicking might
+			 help in highlighting all the text): 
+		  </cmd> 
+		  <info> 
+			 <codeblock outputclass="syntax javascript">javascript:void(window.open("","dp_debugger","width=600,height=600,location=0,menubar=0,status=1,toolbar=0,resizable=1,scrollbars=1").document.write("&lt;script language='JavaScript' id=dbg src='https://www.adobetag.com/d1/digitalpulsedebugger/live/DPD.js'&gt;&lt;/"+"script&gt;"));
+</codeblock> 
+		  </info> 
+		</step> 
+		<step id="step_A5453331C0FF44D6BF53B83D7551AF1C"> 
+		  <cmd>Complete the steps appropriate for the desired browser: 
+		  </cmd> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

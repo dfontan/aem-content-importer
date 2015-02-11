@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_9B3F44A4EA4E4F178FF164EF9694F88E"> 
+  <title>Unique Visitors</title> 
+  <shortdesc>In version 14, a unique visitor refers to a visitor who visits a
+	 site for the first time within a specified time period. For example, the unique
+	 visitor can visit a site ten times in a week, but if the time period is week, a
+	 single unique visitor is counted only once for that week. After that week is
+	 ended, that unique visitor can be counted again for a different time period. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Metrics"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p> 
+		<b>Differences between version 14 and 15 
+		</b> 
+	 </p> 
+	 <p> version 14 does not remove duplicate 
+		<wintitle>Visits</wintitle> and 
+		<wintitle>Unique Visitors</wintitle> metrics from classifications-based
+		reports. For example, if two video clips shared the same classification, a
+		single visitor that viewed both clips generated two 
+		<wintitle>Visits</wintitle> and 
+		<wintitle>Unique Visitors</wintitle> in the classification-based report. 
+	 </p> 
+	 <p> Version 15 removes duplicate 
+		<wintitle>Visits</wintitle> and 
+		<wintitle>Unique Visitors</wintitle> from the classification-based
+		report. This is a more accurate measure of 
+		<wintitle>Visits</wintitle> and 
+		<wintitle>Visitors</wintitle>, but typically results in a decrease in
+		your 
+		<wintitle>Visits</wintitle> and 
+		<wintitle>Unique Visitors</wintitle> metrics for classification-based
+		reports, when compared to data collected prior to upgrade. 
+	 </p> 
+	 <table id="table_8D46D934B41F41838FFCEE333A61CA6E"> 
+		<tgroup cols="2"> 
+		  <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+		  <colspec colnum="2" colname="col2" colwidth="2.72*"/> 
+		  <thead> 
+			 <row> 
+				<entry colname="col1">Uses 
+				</entry> 
+				<entry colname="col2">Description 
+				</entry> 
+			 </row> 
+		  </thead> 
+		  <tbody> 
+			 <row> 
+				<entry colname="col1">Traffic 
+				</entry> 
+				<entry colname="col2">A visitor is a person that comes to your
+				  website. Does not require a persistent cookie. 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Conversion 
+				</entry> 
+				<entry colname="col2">A visitor is a person that comes to your
+				  website. Is counted when a conversion-related event or action occurs. 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Ad Hoc Analysis 
+				</entry> 
+				<entry colname="col2">A visitor is a person that comes to your
+				  website. Does not require a persistent cookie. 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+	 <p>See 
+		<xref
+		 href="reports_unique_visitors_v15_dsc.xml#concept_877141D6D1E743DA9FAB41C72A8121C7"
+		 format="dita" scope="local"><?xm-replace_text Unique Visitors Report - Version 15 and Ad Hoc Analysis?></xref>.
+		
+	 </p> 
+  </conbody> 
+  <related-links> 
+	 <link
+	  href="metrics_daily_unique_visitors.xml#concept_9EBBB3C8064D4643BC96B5A2D63990D0"
+	  format="dita" scope="local"> 
+		<linktext> <?xm-replace_text Daily Unique Visitors?>
+		</linktext> 
+	 </link> 
+  </related-links> 
+</concept>

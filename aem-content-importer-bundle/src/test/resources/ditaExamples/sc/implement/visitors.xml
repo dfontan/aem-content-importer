@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_0E852F1C93434C76B23B56B325537F18"> 
+  <title>Visitors</title> 
+  <shortdesc> 
+	 <keyword>Analytics</keyword> counts each unique effective 
+	 <wintitle>visitor ID</wintitle> as a unique visitor. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Developer and implementation"/> 
+		<othermeta name="subtopic" content="Visitors"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p> If you look at the 
+		<xref href="visit_example.xml#concept_E3B32B8E539F4FDC8E3FA872328B87BA"
+		 format="dita" scope="local">previous table</xref>, this occurred 3 times: at
+		hits 1, 9, and 10. This occurs because the effective 
+		<wintitle>visitor ID</wintitle> is the same for both server calls, and
+		occurs even though the visits might be several hours apart and on different
+		devices. 
+	 </p> 
+	 <p>This can increase the number of unique visitors you see when
+		cross-device visitor identification is enabled. The visitor might be counted
+		twice on the same visit: once for the initial visit and again after the user is
+		authenticated. 
+	 </p> 
+	 <p>When a new visitor views your site, the 
+		<codeph>s_vi 
+		</codeph>cookie is populated and stored. On the data collection server, a
+		new visitor profile is created for this visitor ID, and the effective 
+		<wintitle>visitor ID</wintitle> on the profile is set to match the
+		cookie. 
+	 </p> 
+	 <p> When cross-device visitor identification is enabled, if a 
+		<wintitle>visitor ID</wintitle> variable is provided in a subsequent hit
+		(for example, after authentication), the effective 
+		<wintitle>visitor ID</wintitle> is updated to match the custom value.
+		This can cause the effective 
+		<wintitle>visitor ID</wintitle> to change directly after authentication,
+		resulting in multiple visitor counts. 
+	 </p> 
+	 <image href="graphics/visitors.png"
+	  id="image_06196253B50440B588DE31F097B4C2FE" placement="break" align="center"> <?xm-replace_text Paragraph?>
+	 </image> 
+	 <p>After the initial association, visit counts return to normal because the
+		visitor is associated through the 
+		<wintitle>visitor ID</wintitle> cookie. If the visitor later views your
+		site and then authenticates, the visitor count is not inflated because the
+		effective 
+		<wintitle>visitor ID</wintitle> doesn't change after authentication. 
+	 </p> 
+	 <image href="graphics/visitors_2.png"
+	 id="image_C2ECA705A2AD40C685D510E8B2D9A2D1" placement="break" align="center"> <?xm-replace_text Paragraph?>
+	 </image> 
+  </conbody> 
+</concept>

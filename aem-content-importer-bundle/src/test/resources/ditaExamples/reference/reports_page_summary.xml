@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_690015F5985D4A9F94510433C39CBA3F"> 
+  <title>Page Summary Report</title> 
+  <shortdesc> Collects and organizes page-specific information about a single
+	 page and presents it in a single report. This report can be used to understand
+	 how visitors are getting to a certain page, and whether they proceed further
+	 through your site or exit.
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Reports"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>In addition to Entry and Exit Points, additional details are aggregated
+		from other reports for the selected page:
+	 </p>
+	 <ul id="ul_4FBBF110BBC44A10AF6AEB4D0CBF5AB8">
+		<li id="li_4D56C5A8619C4B86864009922EF2E5B5">Total Page Views during this
+		  reporting period: Found in the Pages report.
+		</li>
+		<li id="li_DC818BDB3D244CD799544063FE5F45CC">Percentage of all page
+		  views: Found in the Pages report as the percentage to the right of the line
+		  item.
+		</li>
+		<li id="li_58365AD6672B49B993592EAD9BF20234">Visits where this was an
+		  Entry page: Found in the Entry Pages report for the page in question.
+		</li>
+		<li id="li_2983ECCD4F44470E87ED2358AF63D7B5">Visits where this was an
+		  Exit page: Found in the Exit Pages report for the page in question.
+		</li>
+		<li id="li_63BC7D2C87CA403E8EBAC1DE69222FD4">Average number of Clicks to
+		  Page: Found in the Clicks to Page report. It is calculated by dividing the
+		  total number of clicks to the page by visits.
+		</li>
+		<li id="li_CE81590EC3D4411F919392D6543CFD20">Time Spent on Page for this
+		  page: Found in the Pages report using the Time Spent metric.
+		</li>
+		<li id="li_1CAE6E6B9C2F41608E5FEDBD2312B102">Number of Reloads: Found in
+		  the Reloads report.
+		</li>
+		<li id="li_85447366175346BB9F9E541004BCAA4B">Pages (revenue) Found in the
+		  Pages report using Revenue as a metric.
+		</li>
+	 </ul>
+  </conbody> 
+</concept>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_133E8B87C3F04DA0A42D10CBA499305B">
+  <title>Run a Page Flow report</title>
+  <shortdesc>Page Flow reports show the order in which your visitors access
+	 pages and navigate through your site. This report helps answer 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports and analytics" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <context id="context_FA3E3E00DD3B45EDAD595E7C6FC001D2">
+      <p>Run a 
+		  <xref href="https://marketing.adobe.com/resources/help/en_US/reference/index.html?f=reports_paths" format="https" scope="external">Paths</xref> report. 
+		</p>
+      <p>For example, click 
+		  <uicontrol>Paths</uicontrol> &gt; 
+		  <uicontrol>Pages</uicontrol> &gt; 
+		  <uicontrol>Next Page Flow</uicontrol>. 
+		</p>
+      <p>
+        <image placement="inline" href="graphics/page_flow.png" id="image_6806FC69FD7545359C3D2802BA6ACA1F">
+          <?xm-replace_text Paragraph?>
+        </image>
+      </p>
+      <p>You read this report from left to right, beginning with the selected
+		  page. The pages that were viewed after the selected page are illustrated as a
+		  branch extending to the right. 
+		</p>
+      <p>The percentage that each subsequent page was viewed is displayed
+		  beside the name of the page. The width of the line connected to each next-page
+		  depicts this relative percentage. 
+		</p>
+      <p>
+        <uicontrol>Path Views</uicontrol>: Indicates the number of times a page
+		  was viewed, when constrained to the displayed paths. 
+		</p>
+      <p>For example, the Privacy Policy page could have 10,000 total page
+		  views, but only 500 of those page views occurred immediately following the Home
+		  Page. Thus, the term path view is used. 
+		</p>
+      <p>The relative percentage is depicted by the relative width of the line.
+		  By default, this report displays five 2nd-level branches and five 3rd-level
+		  branches. You can expand the number of branches to view up to ten 2nd-level
+		  branches and five 3rd-level branches. Doing so increases the height of the
+		  report and most likely requires scrolling to view the entire graph. 
+		</p>
+    </context>
+  </taskbody>
+</task>

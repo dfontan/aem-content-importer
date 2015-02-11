@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_C109789FA3C74B02B8AEB258E895219B">
+  <title>Feature Overview</title>
+  <shortdesc>
+    SiteCatalyst 15 provides several workflow and
+	 performance improvements. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports and analytics" />
+      <othermeta name="subtopic" content="Upgrading from V14" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>You can apply real-time visitor segmentation, integrate more data, and
+		see complex reports return more quickly.
+	 </p>
+  </conbody>
+</concept>

@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_ECC89F305B804372B63C3CE67448FB07"> 
+  <title> Marketing Cloud Product Documentation</title> 
+  <shortdesc> 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Marketing Cloud"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p> The Marketing Cloud is an integrated family of digital marketing
+		solutions, as well as an intuitive interface for new resources and capabilities
+		called 
+		<term>core services</term>. If you are new to the Marketing Cloud, 
+		<xref
+		 href="http://www.adobe.com/solutions/digital-marketing.html" format="http"
+		 scope="external">Learn more on Adobe.com</xref>.
+	 </p> 
+	 <section id="section_AFFBC9EDDE5B4E4493A7C2896121A773"> 
+		<table outputclass="simpletable"
+		 id="table_5E612F746A704FE095B809A013EE977F"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="*"/> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<b>Popular Topics</b> 
+					 </p> 
+					 <ul id="ul_47C012F6AB3E4B73BA357027F4D15369"> 
+						<li id="li_E6371135B1DA4C8989CC4B26027214CB"><xref
+						  href="getting_started.xml#concept_CB06FE80465A4C55866FC9DCC1A7B640"
+						  format="dita" scope="local">Get started</xref> 
+						</li> 
+						<li id="li_2364E5490452427981008D3F859837F8"><xref
+						  href="access.xml#concept_04341546E8B44CDF833F9DDF351A50B9" format="dita"
+						  scope="local"><?xm-replace_text Access the Marketing Cloud?></xref> 
+						</li> 
+						<li id="li_1FA3FD9A750741DB9F5072EF3A2B03AF"><xref
+						  href="audience_library.xml#concept_3D52E1DED6D04ECC949B514E182C4655"
+						  format="dita" scope="local">Learn about profiles and audiences</xref> 
+						</li> 
+						<li id="li_DCDCDCE6D09B4FF3A1F106664EDEDE87"><xref
+						  href="t_audience_create.xml#task_37F407F58BF9459493BB8E968CDFE737"
+						  format="dita" scope="local">Create an audience</xref> 
+						</li> 
+						<li id="li_AF7CD563F3F647049F4C855098E4D1C7"><xref
+						  href="audience_example.xml#concept_9588E880E0C7438E8B29AC7685AD0346"
+						  format="dita" scope="local"><?xm-replace_text Define a composite audience using rules?></xref>
+						  
+						</li> 
+						<li id="li_20029A72F3A04842AA3D169F59F4FDE7"><xref
+						  href="t_publish_audience_segment.xml#task_32FEEFE0B32E4E388CD4D892D727282A"
+						  format="dita" scope="local">Publish audience segments from Analytics</xref> 
+						</li> 
+					 </ul> 
+					 <p> 
+						<b>Share and Collaborate</b> 
+					 </p> 
+					 <ul id="ul_16424F2AE2B9442093C9B392329CB523"> 
+						<li id="li_BF1B925B5D1F438C988446A49F0BA582"><xref
+						  href="asset.xml#concept_AD6B33B2C36B4AB38343E0FE1DE18E3B" format="dita"
+						  scope="local"><?xm-replace_text Assets and Sharing?></xref> 
+						</li> 
+						<li id="li_4EC90CAC1EF04165A4547D4E68351F60"><xref
+						  href="boards.xml#concept_52E7E7B015D14E2C852D9618CF76860F" format="dita"
+						  scope="local"><?xm-replace_text Boards?></xref> 
+						</li> 
+						<li id="li_55743B2C983E47A0B79B606AEEF83B60"><xref
+						  href="cards.xml#concept_0A2472B530E04930BCE5CC23A8BEF9E0" format="dita"
+						  scope="local"><?xm-replace_text Cards?></xref> 
+						</li> 
+						<li id="li_C5A6B2DCB2984358ABA9066D7F8B53FF"><xref
+						  href="feed.xml#concept_9256B8768A294009A777282DD8719213" format="dita"
+						  scope="local"><?xm-replace_text Feeds?></xref> 
+						</li> 
+					 </ul> 
+					 <p> 
+						<b>Release Notes &amp; Solution Help</b> 
+					 </p> 
+					 <ul id="ul_4F06F170F214492780C7D25A069F799F"> 
+						<li id="li_45A7CD556FE44F4DAB035C736A058F36"> 
+						  <xref
+							href="release_notes.xml#concept_F5C9FF69A5B44395BB5FA0552F4E9175" format="dita"
+							scope="local"> <?xm-replace_text Release Notes?>
+						  </xref> 
+						</li> 
+						<li id="li_A603254E26394DF7875DEACA41B9F1E9"> 
+						  <xref
+							href="https://marketing.adobe.com/resources/help/en_US/whatsnew/"
+							format="https" scope="external">Release Notes - All Solutions</xref> 
+						</li> 
+						<li id="li_416CFB40C3AB45FC93AA502E9DDC2208"> 
+						  <xref
+							href="https://marketing.adobe.com/resources/help/en_US/home/" format="https"
+							scope="external">Marketing Cloud Help Home</xref> 
+						</li> 
+						<li id="li_311F9C8112494978BA6C37A6DBC39E83"><xref
+						  href="solutions.xml#concept_99C26998BDBE423ABEAACD3FD34F8777" format="dita"
+						  scope="local">About Solutions</xref> 
+						</li> 
+					 </ul> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p> 
+						<b>Administration</b> 
+					 </p> 
+					 <ul id="ul_7BB21A4734964D80AD468B71C862E096"> 
+						<li id="li_8E7ABDB69AF74BFF83FBB4DA494F0D43"> 
+						  <xref
+							href="admin_getting_started.xml#concept_A9A190B372C5450CA53D60431D362143"
+							format="dita" scope="local"><?xm-replace_text Administration?></xref> 
+						</li> 
+						<li id="li_2022BD06AF1043D58FE7EF70C262A926"><xref
+						  href="faq.xml#concept_13219B4E51784577B6FF78AAA203DE91" format="dita"
+						  scope="local"><?xm-replace_text Frequently Asked Questions - Admins?></xref> 
+						</li> 
+					 </ul> 
+					 <p> 
+						<b>Core Services</b> 
+					 </p> 
+					 <ul id="ul_C71F7B66F2E34798A2E0D00458693DFB"> 
+						<li id="li_3F246466C1E64FF0A9BDF8863733E3E1"><xref
+						  href="audiences.xml#concept_F31D8B62FD5144E181979C3A300336A5" format="dita"
+						  scope="local">Profiles and Audiences</xref> 
+						</li> 
+						<li id="li_96512257DF6248F2B41FACA8B1523CA6"><xref
+						  href="https://marketing.adobe.com/resources/help/en_US/dtm/" format="https"
+						  scope="external">Dynamic tag management</xref> 
+						</li> 
+						<li id="li_0E9FA333FE814174A2B3C18C15AEC3F1"><xref
+						  href="https://marketing.adobe.com/resources/help/en_US/mobile/" format="https"
+						  scope="external">Mobile Services</xref> 
+						</li> 
+					 </ul> 
+					 <p> 
+						<b>Blogs</b> 
+					 </p> 
+					 <ul id="ul_9CAA2B3846954AACBC9C0F4A1F3BE36E"> 
+						<li id="li_663D3F89277C44D3B7DD51C478659E32"><xref
+						  href="http://blogs.adobe.com/digitalmarketing/web-experience/part-1-adobes-art-science-todays-new-marketer/"
+						  format="http" scope="external">Marketing Cloud Overview</xref> 
+						</li> 
+						<li id="li_0D36177FB5C44779BDFAF1D612B55107"><xref
+						  href="http://blogs.adobe.com/digitalmarketing/digital-marketing/part-2-capturing-leveraging-consumer-behavior-adobe-marketing-cloud/"
+						  format="http" scope="external">Core Services Overview</xref> 
+						</li> 
+						<li id="li_B17C0DEDE8C24E6694C57553059A8D55"><xref
+						  href="http://blogs.adobe.com/digitalmarketing/digital-marketing/profile-management-adobe-marketing-cloud-comes-together/"
+						  format="http" scope="external">Profile Management in Adobe Marketing
+							 Cloud</xref> 
+						</li> 
+					 </ul> 
+					 <p> 
+						<b>Community Resources 
+						</b> 
+					 </p> 
+					 <ul id="ul_63581CB62311449C8D7AFC0E65F9687B"> 
+						<li id="li_B4C17237E7CA47798A924690537C7D5E"> 
+						  <xref
+							href="http://help-forums.adobe.com/content/adobeforums/en/marketing-cloud-forum/adobe-marketing-cloud.html"
+							format="http" scope="external">Marketing Cloud Forum</xref> 
+						</li> 
+						<li id="li_06A00BF463E24B26BD38B622186DE5AD"> 
+						  <xref
+							href="http://helpx.adobe.com/marketing-cloud.html?promoid=KAWSE" format="http"
+							scope="external">Adobe Marketing Cloud Community</xref> 
+						</li> 
+						<li id="li_D1BBBCDE74C7424E8EBDB21961ACB3A1"> 
+						  <xref
+							href="http://ideas.omniture.com/t5/Adobe-Idea-Exchange-for-Omniture/idb-p/IdeaExchange3"
+							scope="external" format="html">Idea Exchange</xref> 
+						</li> 
+						<li id="li_9C28B12EE4A6403CAD26178110E93B81"> 
+						  <xref
+							href="http://helpx.adobe.com/learning.html?promoid=KAUDK" scope="external"
+							format="http">Adobe Training and Tutorials</xref> 
+						</li> 
+						<li id="li_6F51E3167F884372831DA6527D17646B"> 
+						  <xref
+							href="http://www.omniture.com/en/products/online_business_optimization"
+							scope="external" format="html">Featured Solutions Center</xref> 
+						</li> 
+					 </ul> 
+					 <p> 
+						<b>Developer</b> 
+					 </p> 
+					 <p>Authenticate using 
+						<xref
+						 href="https://developer.omniture.com/en_US/documentation/authentication/auth-overview"
+						 format="https" scope="external">OAuth2</xref>, calling the web services APIs. 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </section> 
+  </conbody> 
+</concept> 

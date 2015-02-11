@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_21937434E63F413CB469007623B933AE">
+  <title>purchaseID</title>
+  <shortdesc> The 
+	 <varname>purchaseID</varname> is used to keep an order from being counted
+	 multiple times in reporting. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Variables" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Whenever the 
+		<wintitle>purchase</wintitle> event is used on your site, you should use
+		the 
+		<varname>purchaseID</varname> variable. 
+	 </p>
+    <table id="table_C5CE2234C5134BDBA71448676FE82FC8">
+      <tgroup cols="4">
+        <colspec colnum="1" colname="col1" colwidth="*" />
+        <colspec colnum="2" colname="col2" colwidth="*" />
+        <colspec colnum="3" colname="col3" colwidth="*" />
+        <colspec colnum="4" colname="col4" colwidth="*" />
+        <thead>
+          <row>
+            <entry> Max Size 
+				</entry>
+            <entry> Debugger Parameter 
+				</entry>
+            <entry> Reports Populated 
+				</entry>
+            <entry> Default Value 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry> 20 bytes 
+				</entry>
+            <entry> purchaseID 
+				</entry>
+            <entry> Conversion &gt; Purchases &gt; Revenue Conversion 
+				</entry>
+            <entry> "" 
+				</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p>When a visitor purchases an item from your site, 
+		<varname>purchaseID</varname> is populated on the "Thank You" page at
+		the same place the 
+		<wintitle>purchase</wintitle> event is fired. If the 
+		<varname>purchaseID</varname> is populated, the products on the "Thank
+		You" page are counted only once per 
+		<varname>purchaseID</varname>. This is critical because many visitors
+		to your site will save the "Thank You" or "Confirmation Page" for their own
+		purposes. The 
+		<varname>purchaseID</varname> keeps purchases from being counted each
+		time the page is viewed. 
+	 </p>
+    <p>In addition to keeping the purchase data from being counted twice, the 
+		<varname>purchaseID</varname>, when used, keeps all conversion data
+		from being double counted in reports. 
+	 </p>
+    <section id="section_E352CE2370D54BA69A368E1F63A9C32D">
+      <title>Syntax and Possible Values</title>
+      <codeblock outputclass="syntax javascript">s.purchaseID="unique_id"</codeblock>
+      <p>The 
+		  <varname>purchaseID</varname> must be 20 characters or fewer, and be
+		  standard ASCII. 
+		</p>
+    </section>
+    <section id="section_60A5C1EAF42F4611898CD6A4F4CF5A28">
+      <title>Examples</title>
+      <codeblock outputclass="syntax javascript">s.purchaseID="11223344"
+s.purchaseID="a8g784hjq1mnp3"</codeblock>
+    </section>
+    <section id="section_1808631C96674380BF9C4A6D9A2C568E">
+      <title>
+        Configuration Settings</title>
+      <p>None 
+		</p>
+    </section>
+    <section id="section_F5D010F234ED43F19AD1FCD2CD64E060">
+      <title>Pitfalls, Questions, and Tips</title>
+      <p>The 
+		  <varname>purchaseID</varname> variable allows all conversion
+		  variables on the page to be counted only once in 
+		  reports. 
+		</p>
+    </section>
+  </conbody>
+</concept>

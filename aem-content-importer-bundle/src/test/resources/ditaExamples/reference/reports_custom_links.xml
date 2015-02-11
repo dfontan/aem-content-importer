@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_C2640EE109CD456E8FB9DE7BED2B0499"> 
+  <title>Custom Links Report</title> 
+  <shortdesc>Displays the links visitors to your site prefer. For example, the
+	 home page for your site likely has multiple links that display the same page.
+	 Perhaps there is both a graphic and text link that both link to the same page.
+	 This report shows what percentage of visitors used the graphic link versus the
+	 text link. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Reports"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The specific links that you would like to be tracked must be modified
+		with special tags, see 
+		<xref
+		 href="http://marketing.adobe.com/resources/help/en_US/sc/implement/?f=c_linktracking"
+		 format="http" scope="external">Link Tracking</xref>. 
+	 </p> 
+	 <p>You can use the 
+		<wintitle>Custom Links Report</wintitle> to: 
+	 </p> 
+	 <ul id="ul_A7D19E411F7D48FD87D864F498A2FC9D"> 
+		<li id="li_14123046CDE8409185C5A38A67DB2B18">Optimize your site design by
+		  knowing which types of links your visitors prefer 
+		</li> 
+		<li id="li_BE58097437EB461D93EBC5D6DBFECC55">Validate the need for
+		  redundant links to single pages 
+		</li> 
+	 </ul> 
+	 <section id="section_70C91FE794104B5FBF289B19CC02EA8E">
+		<title>Mobile SDK Link Names</title>
+		<p>The 
+		  <xref href="developer.xml#concept_0151FC2D93434EE6BB3300D7F1A33E4A"
+			format="dita" scope="local">mobile SDKs</xref> use custom links to track
+		  actions and lifecycle metrics. In report suites that are used to measure mobile
+		  apps, you might see the following link names set by the SDK: 
+		</p>
+		<table id="table_741D90A556DC4D37ADD71644265CDE2C"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="2.47*"/> 
+			 <tbody> 
+				<row>
+				  <entry colname="col1"> ADBINTERNAL:Lifecycle 
+				  </entry>
+				  <entry colname="col2">Sent by the lifecycle call in the 4.x SDKs.
+				  </entry>
+				</row>
+				<row>
+				  <entry colname="col1">AMACTION:[action name]
+				  </entry>
+				  <entry colname="col2">Sent by the trackAction() method in the 4.x
+					 SDKs, where action name is the name set when the method was called. 
+				  </entry>
+				</row>
+				<row> 
+				  <entry> ADMS BP Event 
+				  </entry> 
+				  <entry>Sent by the lifecycle call in the 3.x SDKs.
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table>
+	 </section>
+  </conbody> 
+</concept>

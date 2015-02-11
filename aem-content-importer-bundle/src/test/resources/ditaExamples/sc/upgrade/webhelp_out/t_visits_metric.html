@@ -1,0 +1,107 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2012"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2012"/>
+<meta name="DC.Type" content="task"/>
+<meta name="DC.Title" content="Visits Metric Includes Non-cookie Visitors"/>
+<meta name="abstract" content="To calculate the Visits metric, SiteCatalyst 14 reported only on visitors who accepted a tracking cookie."/>
+<meta name="description" content="To calculate the Visits metric, SiteCatalyst 14 reported only on visitors who accepted a tracking cookie."/>
+<meta name="DC.Relation" scheme="URI" content="data_proc_dif.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="task_FAE3E7E71FDC452794770334B1E4E009"/>
+<link rel="stylesheet" type="text/css" href="https://microsite.omniture.com/t2/help/css/commonltr.css"/>
+<link rel="stylesheet" type="text/css" href="https://microsite.omniture.com/t2/help/css/content.css"/>
+<title>Visits Metric Includes Non-cookie Visitors</title>
+<script type="text/javascript">
+var filename="t_visits_metric.xml";
+var rootname = filename.slice(0, -4);
+if (window.location.href.indexOf("/" + rootname + ".html") != -1) {
+  window.location.href = "index.html?f=" + rootname.toLowerCase();
+}
+</script></head>
+<body id="task_FAE3E7E71FDC452794770334B1E4E009">
+
+<div id="topic"> 
+  <h1 class="title topictitle1">Visits Metric Includes Non-cookie Visitors</h1>
+ 
+   
+  <div class="body taskbody"><p class="shortdesc">To calculate the 
+	 <span class="keyword wintitle">Visits</span> metric, 
+	 <span class="keyword">SiteCatalyst</span> 14 reported only on visitors who accepted a
+	 tracking cookie. 
+  </p>
+ 
+	 <div class="section context" id="task_FAE3E7E71FDC452794770334B1E4E009__context_D6D6D13DBCAA4173992F8682C19F5990"> 
+		<p class="p">To calculate the 
+		  <span class="keyword wintitle">Visits</span> metric, 
+		  <span class="keyword">SiteCatalyst</span> 14 reported only on visitors who
+		  accepted a tracking cookie. 
+		  <span class="keyword">SiteCatalyst</span> 15 more accurately measures 
+		  <span class="keyword wintitle">Visits</span> by including visitors who do not accept a
+		  tracking cookie. As a result, the 
+		  <span class="keyword wintitle">Visits</span> metric in most cases reports a larger value
+		  when compared to previous 
+		  <span class="keyword">SiteCatalyst</span> versions under the same circumstances. 
+		</p>
+ 
+		<p class="p">This change affects any report that uses the 
+		  <span class="keyword wintitle">Visits</span> metric, including 
+		  <span class="keyword wintitle">Path</span> reports and calculated metrics. Calculated
+		  metric values can increase or decrease, depending on whether 
+		  <span class="keyword wintitle">Visits</span> is the denominator or numerator in the
+		  calculation. For example, in an 
+		  <span class="keyword wintitle">Orders / Visit</span> calculation the value is likely to
+		  decrease. In 
+		  <span class="keyword wintitle">Visits / Visitor</span>, the value is likely to increase.
+		  
+		</p>
+ 
+		<p class="p">To see the percentage of users who do not accept persistent cookies: 
+		</p>
+ 
+	 </div>
+ 
+	 <ol class="ol steps" id="task_FAE3E7E71FDC452794770334B1E4E009__steps_3E5003F9DC264405AD3D4FC80F5170B7"><li class="li step" id="task_FAE3E7E71FDC452794770334B1E4E009__step_7DFF9AC3BCF74C33AAD7276CE8B3F779"> 
+		  <span class="ph cmd">Click 
+			 <span class="ph uicontrol">Site Metrics</span> &gt; 
+			 <span class="ph uicontrol">Visitors</span> &gt; 
+			 <span class="ph uicontrol">Unique Visitors</span>. 
+		  </span> 
+		</li>
+<li class="li step" id="task_FAE3E7E71FDC452794770334B1E4E009__step_772C9BB7290946668F7FDF9DC8F681CB"> 
+		  <span class="ph cmd">Click 
+			 <span class="ph uicontrol">Filter: Persistent Cookies</span>. 
+		  </span> 
+		</li>
+</ol>
+ 
+	 <div class="section postreq" id="task_FAE3E7E71FDC452794770334B1E4E009__postreq_1B05D71E9BBB4104B6484B23DB9F7F24">
+
+		<p class="p"><img class="image" id="task_FAE3E7E71FDC452794770334B1E4E009__image_950F641F8EA24421909F482324B7B840" src="graphics/visits_metric.png"/>
+		  
+		</p>
+ 
+		<p class="p">The non-persistent cookie visitors are added to the results. You can
+		  download the report to CSV or Excel and divide the non-persistent cookie
+		  visitors by total visitors. This represents the percent by which the visits
+		  increase after you upgrade to 
+		  <span class="keyword">SiteCatalyst</span> 15. This increase ranges from 0.2% (for
+		  report suites fed entirely by first-party cookies) to 11-14% for report suites
+		  entirely on third-party cookies. 
+		</p>
+ 
+	 </div>
+ 
+  </div>
+
+<div class="related-links">
+<div class="familylinks">
+</div>
+</div>
+
+</div></body>
+</html>

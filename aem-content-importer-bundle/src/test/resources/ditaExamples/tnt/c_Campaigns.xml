@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_38D25CB81E8E4926A0ABC34042766DC3" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic concept/concept ">
+  <title class="- topic/title ">About Tests</title>
+  <shortdesc class="- topic/shortdesc ">Test different experiences to determine
+	 which will be most successful. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody class="- topic/body  concept/conbody ">
+    <p class="- topic/p ">A test is a campaign that compares two or more 
+		<xref href="c_Experiences.xml#concept_B91F0F36E9F24AA58A3C6BC0A02871E8" type="concept" format="dita" scope="local" class="- topic/xref ">experiences</xref> against the success metrics you
+		specify so you can choose the experience that is most likely to provide the
+		results you want. 
+	 </p>
+    <p class="- topic/p ">There are three types of campaign test: 
+	 </p>
+    <p class="- topic/p ">
+      <ul id="ul_7D48FCB14A864E14852180E2AE318965" class="- topic/ul ">
+        <li id="li_38AFC2673BB1432392F80C2499317ADC" class="- topic/li "> A/B
+		  test 
+		  <p class="- topic/p ">An A/B test (sometimes referred to as an A/B...N
+			 test) compares two or more versions of your Web site content to see which best
+			 lifts your conversions, sales, or registrations. A/B tests are well-suited for
+			 large changes that might involve new layouts or drastically different
+			 treatments of the elements. If your test design does not easily break down into
+			 individual page elements, you should run an A/B test before a multivariate
+			 test. Also, if you anticipate large interactions between elements, an A/B test
+			 is the best choice. 
+		  </p></li>
+        <li id="li_2B3210C254204621AE80D4EBD0D4A238" class="- topic/li ">
+		  Multivariate test 
+		  <p class="- topic/p ">A multivariate test tests many elements and
+			 variations with less traffic and fewer combinations than A/B tests require. A
+			 balanced test design is generated for you. 
+		  </p><p class="- topic/p ">Use multivariate tests to optimize a page. For
+			 example, you might have the layout you want, and you're looking to optimize the
+			 individual assets on the page (such as, what's the best image to have in this
+			 spot, what's the best headline, and so on). For a predetermined page layout, a
+			 multivariate test is your best bet for quickly and accurately optimizing the
+			 elements on the page. 
+		  </p></li>
+        <li id="li_6D226BA12FC24997B11FCC0B0E32878E" class="- topic/li "> Landing
+		  page test 
+		  <p class="- topic/p ">A landing page test allows you to use targeting
+			 to display different landing page content for different visits. Otherwise, the
+			 landing page shows the same content for each visit. A landing page test
+			 compares different versions of the page to help you see which version of the
+			 landing page produces more successful results. 
+		  </p></li>
+      </ul>
+    </p>
+  </conbody>
+  <related-links class="- topic/related-links ">
+    <link href="c_Mboxes.xml#concept_85E01D9DD0B64BD3A138C2D3DB83BD57" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text About Mboxes?>
+    </link>
+    <link href="c_Offers.xml#concept_40CA4EEBF72C430395ADB96C3A3D7DF4" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text About Offers?>
+    </link>
+    <link href="c_Experiences.xml#concept_B91F0F36E9F24AA58A3C6BC0A02871E8" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text About Experiences?>
+    </link>
+    <link href="c_Managing_Campaigns.xml#concept_3D45A7B6C09C488FB42B1741F09FF42F" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Campaigns?>
+    </link>
+  </related-links>
+</concept>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_7ED3EEC9E1704A918B25D06ADA3412E0">
+  <title>Specify report granularity</title>
+  <shortdesc>Steps that describe how to view report totals on an hourly, daily,
+	 weekly, monthly, quarterly, or yearly basis. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports and analytics" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <context id="context_1EE23FE0B80E4A938280B15FA8084919">
+      <p>The report's time period determines which granularity options are
+		  available. For example, you can select only 
+		  <uicontrol>Hourly</uicontrol> if you have a one or two day time frame
+		  selected. You can select only 
+		  <uicontrol>Yearly</uicontrol> granularity if you have more than one
+		  year selected. 
+		</p>
+      <p>
+        <b>To specify report granularity</b>
+      </p>
+    </context>
+    <steps id="steps_D0CA9F9060E1463A907543C6A247F645">
+      <step id="step_6D212406DFB241648EBD07F3CA22E134">
+        <cmd> Generate a trended report, such as 
+			 <uicontrol>Site Content</uicontrol> &gt; 
+			 <uicontrol>Pages.</uicontrol></cmd>
+      </step>
+      <step id="step_B32F57FD8DB04D8687E31F1E35AD4224">
+        <cmd>Click the 
+			 <uicontrol>View by</uicontrol> link, then click a granularity. 
+		  </cmd>
+      </step>
+    </steps>
+  </taskbody>
+</task>

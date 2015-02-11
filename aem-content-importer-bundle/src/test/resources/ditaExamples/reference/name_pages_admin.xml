@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_859358835D424EA9B4B6FCC23AD4BDF2"> 
+  <title>Name Pages</title> 
+  <shortdesc>The rename web pages feature lets you create web page names in
+	 that are different from those names a visitor sees when accessing the web page.
+	 If you use a good naming convention for your web pages, renaming web pages is
+	 not typically necessary. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Admin tools"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p> 
+		<uicontrol>Analytics</uicontrol> &gt; 
+		<uicontrol>Admin</uicontrol> &gt; 
+		<uicontrol>Name Pages</uicontrol>
+	 </p> 
+	 <table id="table_48497F7BD228434893571FD39720A8AA"> 
+		<tgroup cols="2"> 
+		  <colspec colnum="1" colname="col1" colwidth="*"/> 
+		  <colspec colnum="2" colname="col2" colwidth="*"/> 
+		  <thead> 
+			 <row> 
+				<entry colname="col1">Element 
+				</entry> 
+				<entry colname="col2">Description 
+				</entry> 
+			 </row> 
+		  </thead> 
+		  <tbody> 
+			 <row> 
+				<entry colname="col1"> 
+				  <wintitle>Page Name</wintitle> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>The new page name. 
+				  </p> 
+				  <ul id="ul_C4A6A81089AC4D4B8B22034C2CFCE536"> 
+					 <li id="li_54DBDBDC16F246E7878DF448133AC75B">If two pages are
+						given the same name, they are not combined in reports. If you see two pages
+						with the same name in reports, visit the Name Pages page to see whether this is
+						the cause. 
+					 </li> 
+					 <li id="li_B1DBD9BB01E0453EAE9457AD13CEB52C">Classifications
+						are based on the original name, even though the name given here will show up in
+						classification exports. 
+					 </li> 
+				  </ul> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <wintitle>URL</wintitle> 
+				</entry> 
+				<entry colname="col2">Names given here are based on the original
+				  page name, not the page URL. If the original page name changes, the new name
+				  appears in reports, even if the page URL remains the same. 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <wintitle>Original Page Name</wintitle> 
+				</entry> 
+				<entry colname="col2">The original page name 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <wintitle>Restore</wintitle> 
+				</entry> 
+				<entry colname="col2">Lets you restore the renamed page. 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+  </conbody> 
+</concept>

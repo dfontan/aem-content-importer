@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_8B52219C1B0545A09412F25186DDB70F">
+  <title>Deleting an Idea</title>
+  <shortdesc>You can delete an idea from the Ideas list when it is no longer
+	 wanted.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <steps id="steps_5ACDBE507F7146D0B71709F261FABD43">
+      <step id="step_20D77818EEC34C5B9997ABC1ECC9082E">
+        <cmd>To delete an idea, click the arrow next to the idea title and
+			 click 
+			 <uicontrol>Delete</uicontrol>, then click 
+			 <uicontrol>Delete</uicontrol> when prompted to confirm the deletion. 
+		  </cmd>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links>
+    <link href="t_Adding_an_Idea.xml#task_D3704B83BC8443E88A36F405957008CB" type="task" format="dita" scope="local">
+      <?xm-replace_text Adding an Idea?>
+    </link>
+    <link href="t_Allowing_Other_Users_in_Your_Organization_to_Create_Ideas.xml#task_F23166683F484177A2DDDF01F35C11DC" type="task" format="dita" scope="local">
+      <?xm-replace_text Allowing Other Users in Your Organization to Create Ideas?>
+    </link>
+    <link href="t_Editing_an_Idea.xml#task_556FF14B63B247D58A9054095E9D65EA" type="task" format="dita" scope="local">
+      <?xm-replace_text Editing an Idea?>
+    </link>
+  </related-links>
+</task>

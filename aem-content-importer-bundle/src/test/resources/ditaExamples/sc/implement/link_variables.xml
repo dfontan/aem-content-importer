@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_8DD06387D5234A52A6E361572FAA2DF6"> 
+  <title>Setting Additional Variables for File Downloads, Exit Links, and
+	 Custom Links</title> 
+  <shortdesc> Two parameters (<varname>linkTrackVars</varname> and 
+	 <varname>linkTrackEvents</varname>) control which 
+	 <keyword>Analytics</keyword> variables are set for file downloads, exit
+	 links, and custom links. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Developer and implementation"/> 
+		<othermeta name="subtopic" content="Link tracking"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>They are, by default, set within the JS file as follows: 
+	 </p> 
+	 <codeblock outputclass="syntax javascript">s.linkTrackVars="None"</codeblock> 
+	 <codeblock outputclass="syntax javascript">s.linkTrackEvents="None"</codeblock> 
+	 <p> The 
+		<varname>linkTrackVars</varname> parameter should include each variable
+		that you want to track with every file download, exit link, and custom link.
+		The 
+		<varname>linkTrackEvents</varname> parameter should include each event
+		you want to track with every file download, exit link, and custom link. When
+		one of these link types occur, the current value of each variable identified is
+		tracked. 
+	 </p> 
+	 <p> For example to track prop1, eVar1, and event1 with every file download,
+		exit link, and custom link, use the following settings within the global JS
+		file: 
+	 </p> 
+	 <codeblock outputclass="syntax javascript">s.linkTrackVars="prop1,eVar1,events"</codeblock> 
+	 <codeblock outputclass="syntax javascript">s.linkTrackEvents="event1"</codeblock> 
+	 <p> 
+		<note>The variable 
+		  <varname>pageName</varname> cannot be set for a file download, exit
+		  link, or custom link, because each of the link types is not a page view and
+		  does not have an associated page name. 
+		</note> 
+	 </p> 
+	 <p> 
+		<note> If 
+		  <varname>linkTrackVars</varname> (or 
+		  <varname>linkTrackEvents</varname>) is null (or an empty string), all 
+		  <keyword>Analytics</keyword> variables (or events) that are defined for
+		  the current page are tracked. This most likely inflates instances of each
+		  variable inadvertently and should be avoided. 
+		</note> 
+	 </p> 
+	 <section id="section_DA3CA596792E4BD6B5FFE89BCE0E617D"> 
+		<title>Best Practices</title> 
+		<p> The settings for 
+		  <varname>linkTrackVars</varname> and 
+		  <varname>linkTrackEvents</varname> within the JS file affect every file
+		  download, exit link, and custom link. Instances of each variable and event can
+		  be inflated in situations where the variable (or event) applies to the current
+		  page, but not the specific file download, exit link, or custom link. 
+		</p> 
+		<p> To ensure that the proper variables are set with custom link code,
+		  Adobe recommends setting 
+		  <varname>linkTrackVars</varname> and 
+		  <varname>linkTrackEvents</varname> within the custom link code, as
+		  follows: 
+		</p> 
+		<codeblock outputclass="syntax javascript">&lt;a href="index.html" onClick="
+var s=s_gi('rsid');
+s.linkTrackVars='prop1,prop2,eVar1,eVar2,events';
+s.linkTrackEvents='event1';
+s.prop1='Custom Property of Link';
+s.events='event1';
+s.tl(this,'o','Link Name');
+"&gt;My Page
+</codeblock> 
+		<p> The values of 
+		  <varname>linkTrackVars</varname> and 
+		  <varname>linkTrackEvents</varname> override the settings in the JS file
+		  and ensure only the variables and events specified in the custom link code are
+		  set for the specific link. 
+		</p> 
+		<p> 
+		  <note>In the above example, the value for prop1 is set within the
+			 custom link code itself. The value of prop2 comes from the current value of the
+			 variable as set on the page. 
+		  </note> 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept>

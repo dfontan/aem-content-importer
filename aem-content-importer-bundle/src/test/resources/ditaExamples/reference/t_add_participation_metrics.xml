@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_229B2062349F4CEFB57C998CCB7CA0B1"> 
+  <title>Add Participation Metrics</title> 
+  <shortdesc>Steps that describe how to add participation metrics. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Metrics"/> </metadata>
+  </prolog> 
+  <taskbody> 
+	 <steps id="steps_92A92A2C7D9C4EC0AECE560AC99A3645"> 
+		<step id="step_852BCF1EC6AD4BE2A59EF917964FF2E4"> 
+		  <cmd>Log in and navigate to any conversion report or traffic report on
+			 which you requested participation metrics. 
+		  </cmd> 
+		</step> 
+		<step id="step_11786A18354A47F19E9F1311E9C9C9D6"> 
+		  <cmd>Click 
+			 <uicontrol>Add Metrics</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_25B5608A39FE4155913BFE6002946FA3"> 
+		  <cmd>Under the 
+			 <uicontrol>Metric Type</uicontrol> menu, select 
+			 <uicontrol>Participation</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_C4B2C3BDF5144A3EB289B157C0E5A675"> 
+		  <cmd>Drag the desired participation metrics to the columns canvas, then
+			 click 
+			 <uicontrol>OK</uicontrol>. 
+		  </cmd> 
+		  <stepresult> 
+			 <p>The resulting report displays participation metrics with a
+				percentage and a number in parenthesis. 
+			 <ul id="ul_D9D2E7D2364C469DBB2761FCD9A639B6">
+				<li id="li_521228DAA94C407A9085AFF21BB2F35C"><b>Percentage</b>: The
+				  proportion of conversion events in which each value participated. 
+				</li>
+				<li id="li_C2F6D28C25D945E7B631E361135DC219"><b>Number in
+					 parenthesis</b>: The actual number of times this value participated prior to
+				  the conversion event. 
+				</li>
+			 </ul>
+			 </p> 
+		  </stepresult> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task>

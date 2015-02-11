@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_4642E3CC0C544821AC58EF991B6C4098"> 
+  <title>Upload a CSV File for Customer Attribute Data</title> 
+  <shortdesc>Upload customer attribute data to the Marketing Cloud
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta content="Marketing Cloud" name="solution"/> </metadata>
+  </prolog> 
+  <conbody>
+	 <p> 
+		<menucascade><uicontrol>Marketing Cloud</uicontrol><uicontrol>Customer
+			 Record Resources</uicontrol></menucascade> 
+	 </p>
+	 <p><image href="graphics/create_record_source.png"
+		id="image_9CD91C78D1654AF3B20BA7EC293BE0F2"><?xm-replace_text Step Result?></image>
+		
+	 </p>
+	 <p>To upload this data, you must have access to a CRM or similar data from
+		your enterprise. The data you upload to the Marketing Cloud must be a CSV file
+		using the following form: 
+	 </p> 
+	 <table id="table_0E8BC62FB47D4D99B648F81C83A88A14"> 
+		<tgroup cols="6"><colspec colnum="1" colname="col1"
+		  colwidth="*"/><colspec colnum="2" colname="col2" colwidth="*"/><colspec
+		  colnum="3" colname="col3" colwidth="*"/><colspec colnum="4" colname="col4"
+		  colwidth="*"/><colspec colnum="5" colname="col5" colwidth="*"/><colspec
+		  colnum="6" colname="col6" colwidth="*"/><thead> 
+			 <row> 
+				<entry colname="col1">Customer ID 
+				</entry> 
+				<entry colname="col2">Age 
+				</entry> 
+				<entry colname="col3">Gender 
+				</entry> 
+				<entry colname="col4">Loyalty Level 
+				</entry> 
+				<entry colname="col5">Lifetime Value 
+				</entry> 
+				<entry colname="col6">... 
+				</entry> 
+			 </row></thead> 
+		  <tbody> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p> 11jj454op69 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>31 
+				  </p> 
+				</entry> 
+				<entry colname="col3"> 
+				  <p>F 
+				  </p> 
+				</entry> 
+				<entry colname="col4"> 
+				  <p>Platinum 
+				  </p> 
+				</entry> 
+				<entry colname="col5"> 
+				  <p>550 
+				  </p> 
+				</entry> 
+				<entry colname="col6">... 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p> 52mc210tr42 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>40 
+				  </p> 
+				</entry> 
+				<entry colname="col3"> 
+				  <p>M 
+				  </p> 
+				</entry> 
+				<entry colname="col4"> 
+				  <p>Gold 
+				  </p> 
+				</entry> 
+				<entry colname="col5"> 
+				  <p>320 
+				  </p> 
+				</entry> 
+				<entry colname="col6">... 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p>... 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>... 
+				  </p> 
+				</entry> 
+				<entry colname="col3"> 
+				  <p>... 
+				  </p> 
+				</entry> 
+				<entry colname="col4"> 
+				  <p>... 
+				  </p> 
+				</entry> 
+				<entry colname="col5"> 
+				  <p>... 
+				  </p> 
+				</entry> 
+				<entry colname="col6"> 
+				  <p>... 
+				  </p> 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+	 <p><b>Customer ID:</b> Contains the unique identifier your CRM uses for
+		each person in your database. The remaining 1..n columns are attributes that
+		come from your CRM. You will choose how many attributes to upload. The beta
+		will support anywhere from one to hundreds of attributes per Customer ID. Most
+		testers will likely upload 20 or fewer attributes per customer record, but you
+		may choose to upload more if desired. 
+	 </p>
+  </conbody>
+</concept>

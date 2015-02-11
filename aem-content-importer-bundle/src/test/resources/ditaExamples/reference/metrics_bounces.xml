@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_2A92D575504E4522B860AB44B0621593"> 
+  <title>Bounces</title> 
+  <shortdesc>A visit that consists of a single server call. For example, a
+	 single page visit is a bounce if a visitor does not interact with the page in a
+	 way that sends data to Adobe, such as clicking a link or a video start. If more
+	 than a single hit is received in a visit, a Bounce is not counted. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<keywords> 
+		  <keyword>bounce</keyword> 
+		</keywords> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Metrics"/> </metadata>
+  </prolog> 
+  <conbody>
+  </conbody> 
+</concept>

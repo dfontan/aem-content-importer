@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_C6772791AFD642CFB9C51ADB9E5932A5">
+  <title>Run a report</title>
+  <shortdesc>Steps that describe how to generate a report. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports and analytics" />
+      <othermeta name="subtopic" content="Get started" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <steps id="steps_C3FCA120F96641CAAA03E4C02CBC620B">
+      <step id="step_772173C9AA9A494E887BB78220516FC3">
+        <cmd>Log in to 
+			 <wintitle>Reporting and Analytics</wintitle>. 
+		  </cmd>
+        <info>
+          <p>The 
+				<wintitle>Site Overview</wintitle> report displays, or a 
+				<xref href="dashboard.xml#concept_8CD3ACA2830A4994A68A31D8773B57E0" format="dita" scope="local">dashboard</xref> displays, if you have set one up. 
+			 </p>
+        </info>
+      </step>
+      <step id="step_26CC47641D974DC2A8B36F2F4A8FBF9C">
+        <cmd>Click 
+			 <uicontrol>Site Content</uicontrol> &gt; 
+			 <uicontrol>Pages</uicontrol> (for example). 
+		  </cmd>
+        <info>
+          <p>
+            <image href="graphics/pages_report.png" id="image_7C644C8A379D493DA22C3C87FE31D74B"></image>
+          </p>
+        </info>
+        <info>
+          <p>See 
+				<xref href="report_overview.xml#concept_AEA3BBC8167040198E0FECEAB2E0A677" format="dita" scope="local"><?xm-replace_text Report Features?></xref> for
+				information about interface features of a report. 
+			 </p>
+        </info>
+      </step>
+    </steps>
+  </taskbody>
+</task>

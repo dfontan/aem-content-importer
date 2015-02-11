@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_2425537FC9CB45DD868B5FA2298B6CAC"> 
+  <title>Mobile Network Protocols</title> 
+  <shortdesc>WAP and I-Mode are the two major protocols or standards used
+	 today. WAP is mostly used in the US, and I-Mode is popular in Japan and Europe.
+	 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Developer and implementation"/>
+		</metadata>
+  </prolog> 
+  <conbody> 
+	 <p> Sites must often be designed separately for different protocols. The
+		Adobe image tag does not need to be customized for each protocol. 
+	 </p> 
+	 <table id="table_EBE71664615F48E28B05C767ABDA062B"> 
+		<tgroup cols="2"> 
+		  <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+		  <colspec colnum="2" colname="col2" colwidth="4.48*"/> 
+		  <tbody> 
+			 <row> 
+				<entry colname="col1"> WAP 1.0 
+				</entry> 
+				<entry colname="col2"> WAP 1.0 is quickly losing popularity in the
+				  US. This required pages be built in WML, and had its own protocol. 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> WAP 2.0 
+				</entry> 
+				<entry colname="col2"> Most phones are WAP 2.0 compliant, meaning
+				  they support XHTML MP (a mobile version of XHTML). 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> I-Mode 
+				</entry> 
+				<entry colname="col2"> 
+				  <p> I-Mode supports CHTML (compact HTML) and does not download
+					 third-party images. First-party collection domain implementations should always
+					 be used with I-Mode sites so images are downloaded. 
+				  </p> 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+  </conbody> 
+</concept> 

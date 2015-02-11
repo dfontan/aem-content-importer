@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_DECF1E39C4544EC98E3FEC0030CB2273">
+  <title>Summary Report</title>
+  <shortdesc>View a summary of overall campaign performance. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>(You can also access data programmatically using a Web API.) You can use
+		this information to determine a winner and create a campaign from the winning
+		experience. See 
+		<xref href="t_Creating_a_Campaign_from_the_Winning_Experience.xml#task_2C2E297CD9C144D79FE269328556677A" type="task" format="dita" scope="local">Creating a Campaign from the Winning
+		  Experience</xref> and 
+		<xref href="t_Pushing_a_Winner.xml#task_F7D69D4BA9FD47B1B37A2BB0AEFE9C3C" type="task" format="dita" scope="local">Pushing a Winner</xref> for information
+		about pushing a winner. 
+	 </p>
+    <p>
+      <note>Data is stored for four financial quarters. Audit data is stored
+		  for 30 days. 
+		</note>
+    </p>
+    <p>For optimizing campaigns, the Summary Report displays different
+		information. The Summary Report for optimizing campaigns shows the aggregate
+		tested traffic vs. the aggregate targeted traffic. This helps you understand,
+		at a high level, how showing content targeted to different segments is
+		performing compared to random content shown to those segments. You can expand
+		the sections in the report to show how each targeted experience compares to the
+		tested traffic. For more information about the self-optimizing campaign Summary
+		Report, see 
+		<xref href="c_The_Optimizing_Campaign_Summary_Report.xml#concept_EB9B6BAF93694AEA8126F54E3DBDDD19" type="concept" format="dita" scope="local">The Optimizing Campaign Summary
+		  Report</xref>. 
+	 </p>
+  </conbody>
+  <related-links>
+    <link href="c_Graph_Report.xml#concept_CBEE6D404AAA4E6A9E74855E05A96A8C" type="concept" format="dita" scope="local">
+      <?xm-replace_text Graph Report?>
+    </link>
+    <link href="c_Daily_Results_Report.xml#concept_EFEEF309AE9647D5AFE76BD84680344C" type="concept" format="dita" scope="local">
+      <?xm-replace_text Daily Results Report?>
+    </link>
+    <link href="c_Success_Metrics_Report.xml#concept_14272E50479149FEB87735A82901F85B" type="concept" format="dita" scope="local">
+      <?xm-replace_text Success Metrics Report?>
+    </link>
+    <link href="c_Offers_Report.xml#concept_EA4A8B7CCAF248578E68C3B290EE6B88" type="concept" format="dita" scope="local">
+      <?xm-replace_text Offers Report?>
+    </link>
+    <link href="c_Modeling_Groups_Report.xml#concept_773006029FC34182B710F8DD2FE6A5FC" type="concept" format="dita" scope="local">
+      <?xm-replace_text Modeling Groups Report?>
+    </link>
+    <link href="c_Element_Contribution_Report.xml#concept_0C8101AD707E44A694CA7282A58B28B6" type="concept" format="dita" scope="local">
+      <?xm-replace_text Element Contribution Report?>
+    </link>
+    <link href="c_Segment_Filters_Report.xml#concept_F638394A8AE34E62A3EE74D95BBEEE5F" type="concept" format="dita" scope="local">
+      <?xm-replace_text Segment Filters Report?>
+    </link>
+    <link href="c_Audit_Report.xml#concept_62CFE7D421AB494A8B084D1CD53C2909" type="concept" format="dita" scope="local">
+      <?xm-replace_text Audit Report?>
+    </link>
+    <link href="c_Insights_Report.xml#concept_6D546B56428E492785BCD78FDDDF262F" type="concept" format="dita" scope="local">
+      <?xm-replace_text Insights Report?>
+    </link>
+  </related-links>
+</concept>

@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_B74F9CFD942E43E9AA2C0EA459E494A6"> 
+  <title>Methods of Event Serialization</title> 
+  <shortdesc>There are two methods of keeping events from counting more than
+	 once. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Developer and implementation"/>
+		</metadata>
+  </prolog> 
+  <conbody> 
+	 <p>There are three different settings an event can be set to. These
+		settings are not client-facing, and as such can only be enabled by an Adobe
+		representative. 
+	 </p> 
+	 <p>Always record event: This is the default behavior of all events when
+		initially enabled. All events included in image requests will be sent directly
+		to SiteCatalyst, including page reloads. 
+	 </p> 
+	 <p>Record once per visit: An event with this setting enabled will only
+		track the first instance of that event in a given visit. Once a new visit
+		starts, each event with this setting enabled can be tracked again. This is an
+		effective way to mitigate duplicate events via browser refreshes. 
+	 </p> 
+	 <p>Use event ID: This setting allows the capability to associate each event
+		with a unique ID. If SiteCatalyst sees an eventID it has already seen before
+		with that variable, it will not be counted in reporting. 
+	 </p> 
+	 <p>The only event that cannot have event serialization enabled is the
+		purchase event, as this uses the s.purchaseID variable. All other eCommerce
+		events and custom events can have these settings enabled. 
+	 </p> 
+	 <ul id="ul_2918898B6EA346878FEA257CC410862B"> 
+		<li id="li_D284FDA30E8644D2BCAA8A1C4411590B">Use a unique identifier to
+		  let an event fire once per unique ID. 
+		</li> 
+		<li id="li_C22548261CAB4F758A1C87644F0968B0">Send multiple events, then
+		  use configure Analytics to let an event fire once per visit. 
+		</li> 
+	 </ul> 
+	 <p>To implement 
+		<wintitle>Event serialization</wintitle>, provide a unique ID for the
+		event, for example event1:1234ABCD. 
+	 </p> 
+	 <section id="section_8806E48B497546F5A335383FB8627694"> 
+		<title>Event Serialization - Once per Unique ID</title> 
+		<p>Once 
+		  <wintitle>Event serialization</wintitle> is implemented, and 
+		  <keyword>Analytics</keyword> receives a duplicate number, it ignores
+		  the event. An event is counted only once per unique value. If the number is
+		  unique, another event instance is counted, as shown in the following example: 
+		</p> 
+		<table id="table_B28A252A75D842A795989D7A04DFCC49"> 
+		  <tgroup cols="4"> 
+			 <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="2.52*"/> 
+			 <colspec colnum="3" colname="col3" colwidth="1.16*"/> 
+			 <colspec colnum="4" colname="col4" colwidth="1.55*"/> 
+			 <thead> 
+				<row> 
+				  <entry> User Name 
+				  </entry> 
+				  <entry> Description 
+				  </entry> 
+				  <entry> Event Syntax 
+				  </entry> 
+				  <entry> Analytics Total Event1 Count 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry> John 
+				  </entry> 
+				  <entry> User views page for the first time. 
+				  </entry> 
+				  <entry> event1:1000 
+				  </entry> 
+				  <entry> 1 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> John 
+				  </entry> 
+				  <entry> User reloads the page (a form submit may fail, and cause
+					 the page to reload). 
+				  </entry> 
+				  <entry> event1:1000 
+				  </entry> 
+				  <entry> 1 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> Stacy 
+				  </entry> 
+				  <entry> User views page for the first time. 
+				  </entry> 
+				  <entry> event1:1001 
+				  </entry> 
+				  <entry> 2 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> Stacy 
+				  </entry> 
+				  <entry> User reloads the page (a form submit may fail, and cause
+					 the page to reload). 
+				  </entry> 
+				  <entry> event1:1001 
+				  </entry> 
+				  <entry> 2 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> Jill 
+				  </entry> 
+				  <entry> User views page for the first time, enters information
+					 correctly, and moves on to next page. 
+				  </entry> 
+				  <entry> event1:1002 
+				  </entry> 
+				  <entry> 3 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> Jamie 
+				  </entry> 
+				  <entry> User views page for the first time 
+				  </entry> 
+				  <entry> event1 
+				  </entry> 
+				  <entry> 4 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> Jamie 
+				  </entry> 
+				  <entry> User forgets to fill in the last name field on the form.
+					 The form is displayed again with the missing information highlighted. 
+				  </entry> 
+				  <entry> event1 
+				  </entry> 
+				  <entry> 5 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> <sectiondiv> 
+		<b>s.events Syntax</b> 
+		<p>Use the following syntax for serializing events. In the first example,
+		  event1 is serialized, while event2 is not serialized (an instance is counted
+		  for each 
+		  <wintitle>pageview</wintitle> or page reload). 
+		</p> 
+		<codeblock outputclass="syntax javascript">s.events="[event]:[serial number]"</codeblock> 
+		<p>Samples: 
+		  <codeblock outputclass="syntax javascript">s.events="event1:12341234"
+s.events="event1:12341234,event2"
+s.events="purchase,event1:12341234"
+</codeblock> 
+		</p> 
+		<p><b>Serializing a counter event with a value other than 1</b>
+		</p>
+		<p>Add the serial number after the event value similar to the following:
+		</p>
+		<codeblock>s.events="event1=100:12341234"</codeblock></sectiondiv> 
+		<p>Note the following when selecting serialization IDs: 
+		</p> 
+		<ul id="ul_CABD3AADA82A4C89925B9A6C2C2E4D68"> 
+		  <li id="li_3AAEE89C8A604E22BC59D314A6583B3D">Serialization IDs must be
+			 20 characters or less. 
+		  </li> 
+		  <li id="li_A679BEF2AE204BE8A07528646CD4A104">Serialization IDs must be
+			 alphanumeric characters. 
+		  </li> 
+		  <li id="li_840288BCE4C44B158541A084125E566A">Serialization IDs are
+			 separate for each success event. Therefore, you can use the same ID for
+			 multiple success events if needed, just not for the same success event. 
+		  </li> 
+		  <li id="li_4B3AD45F16D6450B83340E093ABA74AC">Serialization IDs are tied
+			 to the report suite, so if you are using multi-suite tagging to send data to
+			 multiple report suites, keep this in mind. 
+		  </li> 
+		  <li id="li_C64BEDA384814C8195DE6F7013C11C3B">Serialization IDs never
+			 expire, so even if the same ID is used years later, the success event will not
+			 be counted again. 
+		  </li> 
+		  <li id="li_9D0EE731D8DA4F858B6953C2F8E40A83">Cookie deletion does not
+			 prevent Event ID serialization because serialization IDs are stored on Adobe
+			 servers and are not cookie-based. 
+		  </li> 
+		  <li id="li_562C4ABDFDE547CAADA44E51D0F4F9FB">The one success event with
+			 which it is not possible to use Event ID serialization is the Purchase event,
+			 which uses a special s.purchaseID variable for serialization. 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_C919D44F321A47FBBF043D0C57A2A050"> 
+		<title>Event Serialization - Once per Visit</title> 
+		<p> 
+		  <keyword>Analytics</keyword> offers a feature to let an event only fire
+		  once per visit. Give the name of the report suite and event name to Adobe Live
+		  Support to enable the event. 
+		</p> <sectiondiv> 
+		<b>Serializing eVars</b> 
+		<p>The same functionality used to keep an event from being fired more
+		  than once per visit can be applied to 
+		  <wintitle>evar</wintitle> instances. When enabled for an 
+		  <wintitle>evar</wintitle>, 
+		  <wintitle>click-throughs</wintitle> and 
+		  <wintitle>instances</wintitle> are only counted once per visit for a
+		  specific 
+		  <wintitle>evar</wintitle>. This is not counting once per value, but
+		  once per 
+		  <wintitle>evar</wintitle>. This means that if an 
+		  <wintitle>evar</wintitle> or 
+		  <varname>campaign</varname> variable is set to record once per visit,
+		  only the first value seen in a visit shows a 
+		  <wintitle>click-through</wintitle> or 
+		  <wintitle>instance</wintitle>. However, if the 
+		  <wintitle>evar</wintitle> is set to allocate credit to the most recent
+		  value, then the most recent value still receives credit, even if it does not
+		  have an 
+		  <wintitle>instance</wintitle>. The following example helps to
+		  illustrate this point. 
+		</p> 
+		<p>If 
+		  <wintitle>s.campaign</wintitle> is set to 
+		  <uicontrol>Record once per visit</uicontrol>, and within a single visit
+		  20, pages are viewed. First, there are 10 pages where 
+		  <wintitle>s.campaign</wintitle> is set to "abc," then 10 pages are
+		  viewed where 
+		  <wintitle>s_campaign</wintitle> is set to "xyz." On all 20 pages, 
+		  <wintitle>event1</wintitle> is fired. The following screen shot
+		  illustrates the results. Notice that there are no 
+		  <wintitle>instances</wintitle> or 
+		  <wintitle>Click-throughs</wintitle> associated with "xyz," but it does
+		  receive credit for all events fired. 
+		</p> 
+		<p> 
+		  <image href="graphics/tracking code.png"
+			id="image_99CBCFFCE64346DC8930B6B444FFA77A"> <?xm-replace_text Paragraph?>
+		  </image> 
+		</p> </sectiondiv> 
+	 </section> 
+  </conbody> 
+</concept> 

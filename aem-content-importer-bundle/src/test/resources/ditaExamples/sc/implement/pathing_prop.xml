@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_0405E892E10243FFB0E2A51479A732F9"> 
+  <title>Enabling Pathing on a prop</title> 
+  <shortdesc> Though pathing reports are available out-of-the-box for pages,
+	 pathing can also be enabled for 
+	 <wintitle>custom traffic</wintitle> variables. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Developer and implementation"/>
+		</metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Enabling pathing on a prop can be done in the Admin Console. The
+		following list contains few examples of a business question that can be solved
+		by enabling pathing for a prop. 
+	 </p> 
+	 <ul id="ul_A8885988C25F4D0BA1D77374EC201716"> 
+		<li id="li_8FCEDBF4881C45D9999B7B7753D6434B">Where does a user go on my
+		  site after they come to my site from a campaign? 
+		</li> 
+		<li id="li_4B0DD24352724270828475C7548B3DE1">What are the common site
+		  sections my users go to in their visits? 
+		</li> 
+		<li id="li_C92526188D194C4785AFE66BCAE281C8"> How do I see page pathing
+		  by user type? 
+		</li> 
+	 </ul> 
+	 <p>Advanced pathing is available in 
+		<keyword>Ad hoc analysis</keyword>. Ad hoc analysis provides segmentation
+		on any report on the fly without needing to enable this setting, or structure
+		data in the prop in certain ways. It is the easiest and most optimal way to
+		segment your path reports as well. For more information see the 
+		<xref href="https://marketing.adobe.com/resources/help/en_US/dsc/"
+		 format="http" scope="external">Ad hoc analysis documentation</xref>.
+	 </p> 
+	 <p>When pathing is enabled for a prop, you get a new set of pathing reports
+		that are found below the standard pathing reports. Pathing reports tell you the
+		order that it saw the pages come in for that visitor. When you enable pathing
+		on a prop, it does the same thing: it tells you the order of the prop values it
+		saw come in for the user. This order of values is displayed in different ways
+		depending on the path report you are viewing. 
+	 </p> 
+  </conbody> 
+</concept>

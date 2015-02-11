@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_A17A57DB5B114E869ABB1768F7910092"> 
+  <title>Transfer user account privileges</title> 
+  <shortdesc>Steps that describe how to assign the privileges (permissions and
+	 resource access) of one user account to another. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Admin tools"/> 
+		<othermeta name="subtopic" content="Users and groups"/> </metadata>
+  </prolog> 
+  <taskbody> 
+	 <steps id="steps_99BA8332F02F41B3ACEE15D376B22506"> 
+		<step id="step_404B55BF499B4C3F99D25D5178503A23"> 
+		  <cmd>Click 
+			 <uicontrol>Analytics</uicontrol> &gt; 
+			 <uicontrol>Admin</uicontrol> &gt; 
+			 <uicontrol>User Management</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_9258FC81F86247DE9ECF6A895C90123B"> 
+		  <cmd>Click 
+			 <uicontrol>Edit Users</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_1255EA1A9FB941DFB1AF601523766708"> 
+		  <cmd>Click 
+			 <uicontrol>Transfer</uicontrol> in the row of the user account you
+			 want to transfer. 
+		  </cmd> 
+		</step> 
+		<step id="step_C94C8E1A82984D7AA076C013CB830F7C"> 
+		  <cmd>On the 
+			 <uicontrol>Transfer</uicontrol> page, select the user account to
+			 receive this user's privileges. 
+		  </cmd> 
+		</step> 
+		<step id="step_DC3BC322708F428DB2EB04F8F8A50B80"> 
+		  <cmd>Select the account resources to transfer, then click 
+			 <uicontrol>Transfer</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_F5DA68815E084089BAFA36E361322AEC"> 
+		  <cmd>Click 
+			 <uicontrol>OK</uicontrol> to confirm that you want to transfer the
+			 selected account resources. 
+		  </cmd> 
+		  <stepresult> 
+			 <p>The receiving user receives all rights for the selected account
+				resources owned by the original user. 
+			 </p> 
+			 <note>Ad hoc analytics permissions cannot be transferred. If your
+				organization uses multiple login companies, you cannot transfer anything
+				between login companies. 
+			 </note> 
+		  </stepresult> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

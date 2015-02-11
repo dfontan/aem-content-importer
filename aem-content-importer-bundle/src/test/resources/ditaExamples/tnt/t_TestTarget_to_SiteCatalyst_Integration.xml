@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_0A7B30C0D5FA48938798A7EDEDDF233F" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Target to Analytics Integration</title>
+  <shortdesc class="- topic/shortdesc "> View and understand campaigns and
+	 experiences inside Adobe Analytics. Create segments after collecting the data
+	 and compare campaigns and experiences against other reporting and analytics
+	 data. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <prereq id="prereq_87217E5467B94FC4A3DB0F95A673E06E" class="- topic/section task/prereq ">
+      <p>
+        <note>As of April 17, 2014, the information in this section has been
+			 deprecated, and is replaced by the 
+			 <xref href="http://marketing.adobe.com/resources/help/en_US/target/a4t/" format="http" scope="external">Adobe Analytics as the Reporting Source for
+				Adobe Target</xref> functionality. Adobe is continuing to support the former
+			 integration methods, but it is recommended that you use the new functionality.
+		  </note>
+      </p>
+      <p class="- topic/p ">Target to Analytics integration requires the
+		  following: 
+		</p>
+      <p class="- topic/p ">
+        <ul id="ul_0BF3C4AF530B4590AEE5E2A06AA04F91" class="- topic/ul ">
+          <li id="li_10D2D0D88CFB424A8DB0781065BF89F5" class="- topic/li ">
+            <filepath class="+ topic/ph sw-d/filepath ">s_code.js</filepath>
+			 version H.19 or higher 
+		  </li>
+          <li id="li_FD58D7D7AD7B4DF8A492891FF4B413A8" class="- topic/li ">
+            <filepath class="+ topic/ph sw-d/filepath ">mbox.js</filepath>
+			 version 38 or higher 
+		  </li>
+        </ul>
+      </p>
+    </prereq>
+    <steps id="steps_6EC3596D809E43E098CAEBDA56085243" class="- topic/ol task/steps ">
+      <step id="step_398A4359A3FE4FAFABBCB7EFBFDE2E65" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Create a new HTML offer named 
+			 <i class="+ topic/ph hi-d/i ">TnT-SC Plugin</i> with the following
+			 code in Target: 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">
+            <codeph class="+ topic/ph pr-d/codeph ">&lt;script
+				  type="text/javascript"&gt;if (typeof(s_tnt)=='undefined')​{var
+				  s_tnt='';}s_tnt+=​
+				  '${campaign.id}:${campaign.recipe.id}:​${campaign.recipe.trafficType},';&lt;​/script&gt;</codeph>
+          </p>
+        </stepresult>
+      </step>
+      <step id="step_39835507C7AF466E9E81046E4E728007" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Create a Plugin Offer. 
+		  </cmd>
+        <substeps id="substeps_407C7DE606914E14BE46EA9B6CDB13B3" class="- topic/ol task/substeps ">
+          <substep id="substep_DED9984E3D7B46A49FECDF1150F516DD" class="- topic/li task/substep ">
+            <cmd class="- topic/ph task/cmd "> Click 
+				  <uicontrol class="+ topic/ph ui-d/uicontrol ">Configuration</uicontrol> &gt; 
+				  <uicontrol class="+ topic/ph ui-d/uicontrol ">Plugins</uicontrol>
+				  &gt; 
+				  <uicontrol class="+ topic/ph ui-d/uicontrol ">add javascript
+					 plugin</uicontrol>. 
+				</cmd>
+          </substep>
+          <substep id="substep_62745E998DF14CFA94F5A68BB11DCCB8" class="- topic/li task/substep ">
+            <cmd class="- topic/ph task/cmd "> Name the plugin. 
+				</cmd>
+          </substep>
+          <substep id="substep_478CCC51979E40088CF39F981200DA3E" class="- topic/li task/substep ">
+            <cmd class="- topic/ph task/cmd "> Select 
+				  <uicontrol class="+ topic/ph ui-d/uicontrol ">Display mbox
+					 requests only</uicontrol>. 
+				</cmd>
+          </substep>
+          <substep id="substep_A0063608901047C89538921AB41BB850" class="- topic/li task/substep ">
+            <cmd class="- topic/ph task/cmd "> Select the JavaScript (HTML)
+				  offer you created earlier (<i class="+ topic/ph hi-d/i ">TnT-SC Plugin</i>). 
+				</cmd>
+          </substep>
+          <substep id="substep_E98916C5D8164AB2AFF9CDA5600D96D3" class="- topic/li task/substep ">
+            <cmd class="- topic/ph task/cmd "> Select to serve in the
+				  production host group. 
+				</cmd>
+          </substep>
+        </substeps>
+      </step>
+      <step id="step_5A7A9CEAF97E4852B45A6F0FB181E898" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">
+          <xref href="t_Downloading_mboxjs.xml#task_B1A5E9CC0AAE48E38FA19686548B3371" type="task" format="dita" scope="local" class="- topic/xref ">Download</xref>
+			 and 
+			 <xref href="t_Referencing_mboxjs.xml#task_4A321498EDAF4A048E3B9A74FD9E67E9" type="task" format="dita" scope="local" class="- topic/xref ">reference</xref>
+			 a new version of the 
+			 <filepath class="+ topic/ph sw-d/filepath ">mbox.js</filepath> file. 
+		  </cmd>
+      </step>
+      <step id="step_608C6F11E9EF4630B2246EAC9DADAB57" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Add the integration code to the 
+			 <filepath>s_code.js</filepath> plugins section. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">
+            <codeph class="+ topic/ph pr-d/codeph ">/* Plugin: Target
+				  Integration v1.0 */</codeph>
+          </p>
+          <p class="- topic/p ">
+            <codeph class="+ topic/ph pr-d/codeph ">s.trackTNT=new
+				  Function("v","p","b",""</codeph>
+          </p>
+          <p class="- topic/p ">
+            <codeph class="+ topic/ph pr-d/codeph ">+"var
+				  s=this,n='s_tnt',p=p?p:n,​v=v?v:n,r='',pm=false,b=b?b:true;if(s."</codeph>
+          </p>
+          <p class="- topic/p ">
+            <codeph class="+ topic/ph pr-d/codeph ">+"getQueryParam){pm=s.getQueryParam(p);​}if(pm){r+=(pm+',');}if(s.wd[v"</codeph>
+          </p>
+          <p class="- topic/p ">
+            <codeph class="+ topic/ph pr-d/codeph ">+"]!=undefined){r+=s.wd[v];}if(b)​{s.wd[v]='';}return
+				  r;");</codeph>
+          </p>
+        </stepresult>
+      </step>
+      <step id="step_D42339DEC55A4AD2AADDEAD1194FE854" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Check whether the 
+			 <codeph class="+ topic/ph pr-d/codeph ">getQueryParam</codeph> plugin
+			 code is in the Analytics<codeph class="+ topic/ph pr-d/codeph ">
+				s_code.js</codeph> plugins section and add it if it's not there. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">
+            <codeph class="+ topic/ph pr-d/codeph ">/* Plugin: getQueryParam
+				  v2.4 */</codeph>
+          </p>
+          <p class="- topic/p ">
+            <codeph class="+ topic/ph pr-d/codeph ">s.getQueryParam=new
+				  Function("p","d","u","h",""</codeph>
+          </p>
+          <p class="- topic/p ">
+            <codeph class="+ topic/ph pr-d/codeph ">+"var
+				  s=this,v='',i,j,t;d=d?d:'';u=u​?u:(s.pageURL?s.pageURL:s.wd.loca"</codeph>
+          </p>
+          <p class="- topic/p ">
+            <codeph class="+ topic/ph pr-d/codeph ">+"tion);if(u=='f')u=s.gtfs().location;​while(p){i=p.indexOf(',');i=i&lt;0"</codeph>
+          </p>
+          <p class="- topic/p ">
+            <codeph class="+ topic/ph pr-d/codeph ">
+				  +"?p.length:i;t=s.p_gpv(p.substring(0,i),​u+'',h);if(t){t=t.indexOf('#"</codeph>
+          </p>
+          <p class="- topic/p ">
+            <codeph class="+ topic/ph pr-d/codeph ">
+				  +"')&gt;-1?t.substring(0,t.indexOf('#')):​t;}if(t)v+=v?d+t:t;p=p.substrin"</codeph>
+          </p>
+          <p class="- topic/p ">
+            <codeph class="+ topic/ph pr-d/codeph ">+"g(i==p.length?i:i+1)}return v");</codeph>
+          </p>
+          <p class="- topic/p ">
+            <codeph class="+ topic/ph pr-d/codeph ">s.p_gpv=new
+				  Function("k","u","h",""</codeph>
+          </p>
+          <p class="- topic/p ">
+            <codeph class="+ topic/ph pr-d/codeph ">+"var
+				  s=this,v='',q;j=h==1?'#':'?';i=u.indexOf(j);​​if(k&amp;&amp;i&gt;-1){q=u.sub"</codeph>
+          </p>
+          <p class="- topic/p ">
+            <codeph class="+ topic/ph pr-d/codeph ">+"string(i+1);v=s.pt(q,'&amp;','p_gvf',k)}​return
+				  v");</codeph>
+          </p>
+          <p class="- topic/p ">
+            <codeph class="+ topic/ph pr-d/codeph ">s.p_gvf=new
+				  Function("t","k",""</codeph>
+          </p>
+          <p class="- topic/p ">
+            <codeph class="+ topic/ph pr-d/codeph ">+"if(t){var
+				  s=this,i=t.indexOf('='),p=i&lt;​0?t:t.substring(0,i),v=i&lt;0?'T"</codeph>
+          </p>
+          <p class="- topic/p ">
+            <codeph class="+ topic/ph pr-d/codeph ">
+				  +"rue':t.substring(i+1);if(p.toLowerCase()​==k.toLowerCase())return
+				  s."</codeph>
+          </p>
+          <p class="- topic/p ">
+            <codeph class="+ topic/ph pr-d/codeph ">
+				  +"epa(v)}return''");</codeph>
+          </p>
+        </stepresult>
+      </step>
+      <step id="step_6B496F619CF8450AA0D7277F0DF68F1B" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Add 
+			 <codeph class="+ topic/ph pr-d/codeph ">s.tnt=s.trackTNT();</codeph>
+			 to the<codeph class="+ topic/ph pr-d/codeph "> doplugins</codeph> section. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">
+            <codeph class="+ topic/ph pr-d/codeph ">/* Plugin Config
+				  */</codeph>
+          </p>
+          <p class="- topic/p ">
+            <codeph class="+ topic/ph pr-d/codeph ">s.usePlugins=true</codeph>
+          </p>
+          <p class="- topic/p ">
+            <codeph class="+ topic/ph pr-d/codeph ">function s_doPlugins(s)
+				  {</codeph>
+          </p>
+          <p class="- topic/p ">
+            <codeph class="+ topic/ph pr-d/codeph ">/* Add calls to plugins
+				  here */</codeph>
+          </p>
+          <p class="- topic/p ">
+            <codeph class="+ topic/ph pr-d/codeph ">
+              <b class="+ topic/ph hi-d/b "> s.tnt=s.trackTNT();</b>
+            </codeph>
+          </p>
+          <p class="- topic/p ">
+            <codeph class="+ topic/ph pr-d/codeph ">}</codeph>
+          </p>
+        </stepresult>
+      </step>
+      <step id="step_2101BEB0DE524C9382ABD976A9F127B7" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd "> Have your Adobe representative
+			 enable the integration (Target and Adobe Analytics internal settings). 
+		  </cmd>
+      </step>
+      <step id="step_AC3219129D4D42E0A3F1FDEEE308C05C" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">(Optional) Within Analytics, set up
+			 user groups to see targeting reports (not necessary for admin users). 
+		  </cmd>
+      </step>
+      <step id="step_D9735D1CF2A3429992828DF3EBBA040C" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">(Optional) Have your Adobe
+			 representative enable additional subrelations so Target data can be broken down
+			 by more than variables. 
+		  </cmd>
+      </step>
+      <step id="step_159C431B75084A18AE127573735E6191" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Validate your integration. 
+		  </cmd>
+        <substeps id="substeps_53D0735AD71C4F3599AA7552D940E712" class="- topic/ol task/substeps ">
+          <substep id="substep_D88C4C885C814846980D4259FFEF6A31" class="- topic/li task/substep ">
+            <cmd class="- topic/ph task/cmd "> Use the Adobe DigitalPulse
+				  Debugger to verify that the<i class="+ topic/ph hi-d/i "> tnt</i> variable is
+				  being sent to Analytics. 
+				</cmd>
+            <stepresult class="- topic/itemgroup task/stepresult ">
+              <p class="- topic/p ">The variable should contain values in the
+					 following format: 
+					 <codeph class="+ topic/ph pr-d/codeph ">12345:1:0,</codeph>. 
+				  </p>
+            </stepresult>
+          </substep>
+          <substep id="substep_7BBD02C7D09C4C13AA48F7E9B2B79A92" class="- topic/li task/substep ">
+            <cmd class="- topic/ph task/cmd ">Make sure campaigns show up in
+				  Adobe Analytics. 
+				</cmd>
+            <stepresult class="- topic/itemgroup task/stepresult ">
+              <p class="- topic/p "> If the value 
+					 <codeph class="+ topic/ph pr-d/codeph ">Unspecified</codeph> is
+					 the only value, then the consultant or account manager might need to reclassify
+					 the campaigns. 
+				  </p>
+            </stepresult>
+          </substep>
+        </substeps>
+      </step>
+    </steps>
+    <result id="result_7DC5B20F60FE427E91912744A01C489B" class="- topic/section task/result ">A new Analytics report called
+		"Test&amp;Target" is added to the system. This report shows Target campaigns
+		and experiences. 
+	 </result>
+  </taskbody>
+  <related-links class="- topic/related-links ">
+    <link href="t_SiteCatalyst_to_TestTarget_Integration.xml#task_B56B0C00D50640FA9C7543F62E08691C" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text SiteCatalyst to Test&Target   Integration?>
+    </link>
+    <link href="r_Installing_the_SiteCatalyst_Plug-In.xml#reference_EEC90B75E5E4483A80022E623363AD62" type="reference" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Installing the SiteCatalyst Plug-In?>
+    </link>
+    <link href="c_Using_the_SiteCatalyst_event_Mbox.xml#concept_795235E60E4B4661A0CF942C636B69BD" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Using the SiteCatalyst: event Mbox?>
+    </link>
+    <link href="c_Using_the_SiteCatalyst_purchase_Mbox.xml#concept_2B0C42538AD54DC59C89E7F4D566FA40" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Using the SiteCatalyst purchase: Mbox?>
+    </link>
+    <link href="t_Tracking_Conversions_that_Require_Clicks_with_SiteCatalyst.xml#task_79C8C1A0F939483992595D751318DE48" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Using the SiteCatalyst-to-Test&Target   Integration to Track SiteCatalyst Events?>
+    </link>
+    <link href="c_Viewing_Campaigns_and_Experiences_in_SiteCatalyst_Reports.xml#concept_943F805CC80848649FF8D64A193BAFC2" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Viewing Campaigns and Experiences in SiteCatalyst Reports?>
+    </link>
+  </related-links>
+</task>

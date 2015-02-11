@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_7085A145F7B7481BACC14A4F21CDB3A5">
+  <title>Download the Media Module for iOS</title>
+  <shortdesc>
+    <?xm-replace_text Short Description?>
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>media</keyword>
+        <keyword>milestone</keyword>
+        <keyword>sdk</keyword>
+        <keyword>video</keyword>
+      </keywords>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <context id="context_13663FAA771F4513BA492777875B6E32">
+      <p>The Media Module is part of the standard AppMeasurement libraries for
+		  iOS.
+		</p>
+    </context>
+    <steps id="steps_1528918718C0443584BEB91C278945C4">
+      <step id="step_9305D2FD0EB8473FAC3AC5DB95D1CC10">
+        <cmd>In the Adobe Marketing Cloud, click 
+			 <uicontrol>Admin</uicontrol> &gt; 
+			 <uicontrol>Admin Console</uicontrol> &gt; 
+			 <uicontrol>Code Manager</uicontrol>. 
+		  </cmd>
+        <stepresult>
+          <?xm-replace_text Step Result?>
+        </stepresult>
+      </step>
+      <step id="step_31979842DA8746DBA45B948024052FCF">
+        <cmd>In the Select the type of code to generate field, select 
+			 <uicontrol>iOS (iPhone and iPad)</uicontrol>, provide the requested
+			 information, and then click 
+			 <uicontrol>Generate Code</uicontrol>. 
+		  </cmd>
+        <stepresult>
+          <?xm-replace_text Step Result?>
+        </stepresult>
+      </step>
+      <step id="step_B34AC09F98114150ADE3ECA82CCD7BA0">
+        <cmd>In the 
+			 <uicontrol>iPhone Config Text</uicontrol> section, save the 
+			 <codeph>s.account</codeph> and 
+			 <codeph>s.trackingServer</codeph> variable and value. These variables
+			 are required for implementation.
+		  </cmd>
+        <stepresult>
+          <?xm-replace_text Step Result?>
+        </stepresult>
+      </step>
+      <step id="step_4DD256F9FCC4466698E946A3DB4AA99F">
+        <cmd>Select the 
+			 <uicontrol>Component Files</uicontrol> Tab, then save the
+			 AppMeasurement_iOS.zip to your local system.
+		  </cmd>
+      </step>
+    </steps>
+  </taskbody>
+</task>

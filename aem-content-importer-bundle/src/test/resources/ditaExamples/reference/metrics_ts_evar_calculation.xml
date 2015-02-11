@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_B790E0A2993F4AF8BAD300FEDC039D71">
+  <title>Time Spent - eVar Calculation Example</title>
+  <shortdesc>An example of how the Time Spent metrics are calculated for an
+	 eVar. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Metrics" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>The following illustrations show how Time Spent is calculated for
+		visitors A and B for the 
+		<term>Shirt Ad</term> value in eVar 1. Calculations apply to the
+		individual visit level.
+	 </p>
+    <p>
+      <image id="image_AA79FE86870948A981C4EE96291D3671" href="graphics/ts_evar_visitorA.png"></image>
+    </p>
+    <p>
+      <image id="image_977A6FB43F5A4D5C89E51F89299B9581" href="graphics/ts_evar_visitorB.png"></image>
+    </p>
+    <note>* (Red asterisk) Indicates a server call that includes a conversion
+		event. No asterisk indicates a server call without a conversion event. The X
+		indicates no value. The sixth server call, which does not contain a value, is
+		not counted in the Time Spent calculation. This occurs because ad hoc analysis
+		discontinues Time Spent accrual on Page Events, where a previously passed value
+		is not explicitly passed. 
+	 </note>
+    <p>
+      <b>Visitor A - Time Spent Calculations</b>
+    </p>
+    <table id="table_B259B3E794E14EF69B6F7B1E25DC317C">
+      <tgroup cols="6">
+        <colspec colnum="1" colname="col1" colwidth="*" />
+        <colspec colnum="2" colname="col2" colwidth="*" />
+        <colspec colnum="3" colname="col3" colwidth="*" />
+        <colspec colnum="4" colname="col4" colwidth="*" />
+        <colspec colnum="5" colname="col5" colwidth="*" />
+        <colspec colname="col6" colnum="6" colwidth="1.20*" />
+        <thead>
+          <row>
+            <entry colname="col1">Total Time Spent 
+				</entry>
+            <entry colname="col2"># Sequences 
+				</entry>
+            <entry colname="col3">Average Time Spent 
+				</entry>
+            <entry colname="col4">Time Spent / Visit 
+				</entry>
+            <entry colname="col5">Time Spent / Visitor 
+				</entry>
+            <entry colname="col6">Server Calls 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry colname="col1">
+              <p>3 
+				  </p>
+            </entry>
+            <entry colname="col2">
+              <p>1 
+				  </p>
+            </entry>
+            <entry colname="col3">
+              <p>3 / 1 = 3 
+				  </p>
+            </entry>
+            <entry colname="col4">
+              <p>3 / 1 = 3 
+				  </p>
+            </entry>
+            <entry colname="col5">
+              <p>3 / 1 = 3 
+				  </p>
+            </entry>
+            <entry colname="col6">
+              <p>8 
+				  </p>
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p>In the Visitor A visit, the seventh server call is not counted in the
+		Time Spent calculation because there is no conversion event passed on that
+		server call.
+	 </p>
+    <p>
+      <b>Visitor B - Time Spent Calculations</b>
+    </p>
+    <table id="table_6445C10CC16042D3923F288953D3CB7E">
+      <tgroup cols="6">
+        <colspec colnum="1" colname="col1" colwidth="*" />
+        <colspec colnum="2" colname="col2" colwidth="*" />
+        <colspec colnum="3" colname="col3" colwidth="*" />
+        <colspec colnum="4" colname="col4" colwidth="*" />
+        <colspec colnum="5" colname="col5" colwidth="*" />
+        <colspec colname="col6" colnum="6" colwidth="1.20*" />
+        <thead>
+          <row>
+            <entry colname="col1">Total Time Spent 
+				</entry>
+            <entry colname="col2"># Sequences 
+				</entry>
+            <entry colname="col3">Average Time Spent 
+				</entry>
+            <entry colname="col4">Time Spent / Visit 
+				</entry>
+            <entry colname="col5">Time Spent / Visitor 
+				</entry>
+            <entry colname="col6">Server Calls 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry colname="col1">
+              <p>6
+				  </p>
+            </entry>
+            <entry colname="col2">
+              <p>2 
+				  </p>
+            </entry>
+            <entry colname="col3">
+              <p>6 / 2 = 3
+				  </p>
+            </entry>
+            <entry colname="col4">
+              <p>6 / 1 = 6
+				  </p>
+            </entry>
+            <entry colname="col5">
+              <p>6 / 1 = 6
+				  </p>
+            </entry>
+            <entry colname="col6">
+              <p>8 
+				  </p>
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p>The Visitor B visit contains two separate sequences because of the Shoes
+		Ad server call.
+	 </p>
+    <p>
+      <b> Time Spent Aggregated for Both Visitors</b>
+    </p>
+    <table id="table_822F4F2587BC49B9A404226FC2046E8B">
+      <tgroup cols="6">
+        <colspec colnum="1" colname="col1" colwidth="*" />
+        <colspec colnum="2" colname="col2" colwidth="*" />
+        <colspec colnum="3" colname="col3" colwidth="*" />
+        <colspec colnum="4" colname="col4" colwidth="*" />
+        <colspec colnum="5" colname="col5" colwidth="*" />
+        <colspec colname="col6" colnum="6" colwidth="1.20*" />
+        <thead>
+          <row>
+            <entry colname="col1">Total Time Spent 
+				</entry>
+            <entry colname="col2"># Sequences 
+				</entry>
+            <entry colname="col3">Average Time Spent 
+				</entry>
+            <entry colname="col4">Time Spent / Visit 
+				</entry>
+            <entry colname="col5">Time Spent / Visitor 
+				</entry>
+            <entry colname="col6">Server Calls 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry colname="col1">
+              <p>3 + 6 = 9 
+				  </p>
+            </entry>
+            <entry colname="col2">
+              <p>1 + 2 = 3 
+				  </p>
+            </entry>
+            <entry colname="col3">
+              <p>9 / 3 = 3
+				  </p>
+            </entry>
+            <entry colname="col4">
+              <p>9 / 2 = 4.5 
+				  </p>
+            </entry>
+            <entry colname="col5">
+              <p>9 / 2 = 4.5 
+				  </p>
+            </entry>
+            <entry colname="col6">
+              <p>16 
+				  </p>
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p>In the Visitor A and Visitor B visits, the final server call is not
+		counted in the Time Spent calculation because there is no trailing time stamp
+		to use for calculation.
+	 </p>
+  </conbody>
+</concept>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_B2112B24A9B4489380260918F9BD5B29">
+  <title>Net Protocols Report</title>
+  <shortdesc>Groups mobile devices based on the network protocols (GPRS, CSD,
+	 EDGE, HSCSD, and so on) that they support. The report also includes an Unknown
+	 group for unidentified network protocols.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>When a visitor uses a mobile device to access your site, the Net
+		Protocols report increments by at least one. If the phone supports multiple
+		network protocols then each of those groups in the report increments. Because
+		of this, the sum of the groups might be greater than the total shown at the
+		bottom of the report.
+	 </p>
+  </conbody>
+</concept>

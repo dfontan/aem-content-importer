@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_8D3A15078CA1405E8D9ABA79848A9284" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic concept/concept ">
+  <title class="- topic/title ">Training Data Records</title>
+  <shortdesc class="- topic/shortdesc ">Training data records are the visitor
+	 data that the model uses to build predictions. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody class="- topic/body  concept/conbody ">
+    <p class="- topic/p "> Each training data record contains a visitor
+		profile, a snapshot of the profile when content was served, whether the visitor
+		converted, and any revenue associated with the conversion. A model generalizes
+		from all these specific instances of training records to predict the response
+		probability of a previously unseen visitor to each of the content options in
+		the campaign. Training data records are stored for both targeted and
+		exploration content serves, which allows predictions to be made for anonymous
+		and known visitors. For example, in a campaign with three offers, the model's
+		job is to predict the probability that a visitor will convert on each of the
+		three offers based on that visitor's similarities to previous visitors. If the
+		modeling goal of the automated decisioning campaign is a revenue metric, then
+		the model makes a value prediction rather than a binary conversion prediction.
+		The marketer can determine the modeling goal for each campaign. 
+	 </p>
+    <p class="- topic/p "> Many data points are stored per profile for the
+		model builder. The profile variables fall into two categories: automatic and
+		custom. 
+	 </p>
+  </conbody>
+  <related-links class="- topic/related-links ">
+    <link href="c_Truncation_Windows.xml#concept_FCD6F7D83F884FB387CF297E89332DD9" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Truncation Windows?>
+    </link>
+    <link href="c_Model_Validation.xml#concept_5568028A40A04EF4B1264B08231CFCAB" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Model Validation?>
+    </link>
+    <link href="c_Real-Time_Reaction_Tracking.xml#concept_9E876F4A777142BEA87BAF53A37A184F" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Real-Time Reaction Tracking?>
+    </link>
+    <link href="c_Scorer.xml#concept_FDADF0E0F2C941EABA0520B743693CB9" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Scorer?>
+    </link>
+  </related-links>
+</concept>

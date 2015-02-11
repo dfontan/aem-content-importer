@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_3F60362313FF4532BAD61AB5DF70605A" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Target Based on Visitor Behavior</title>
+  <shortdesc class="- topic/shortdesc ">You can target your campaign based on
+	 visitor behavior. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>mbox</keyword>
+      </keywords>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <context id="context_26B78017515445EFB673E42123D7DF32" class="- topic/section task/context ">
+      <p class="- topic/p ">For example, you can target based on the number of
+		  conversions by a visitor, the visitor's browser, the visitor's operating
+		  system, or other user profile parameters. 
+		</p>
+    </context>
+    <steps id="steps_170D05F2E8254793AEB7B6303C597703" class="- topic/ol task/steps ">
+      <step id="step_51928F1340FA41F181C53F7B2D162FD7" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Target this
+				campaign</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_940F56360C19405DB13006FD98BF0C32" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Visitor
+				Behavior</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_C7B0D0B2CF7D4A7AB5E77F084C85F2C4" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Choose a user profile parameter. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">Depending on the parameter you choose, the
+				evaluator dropdown list might appear. Select an evaluator and type the desired
+				text. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_1BF81A5408B64219A9B21EE3FBE08156" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Done</uicontrol>. 
+		  </cmd>
+      </step>
+    </steps>
+  </taskbody>
+</task>

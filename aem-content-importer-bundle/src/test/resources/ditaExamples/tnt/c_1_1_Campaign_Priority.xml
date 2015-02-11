@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_B343B8BE8CFC4A5889889A66366528F9" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic concept/concept ">
+  <title class="- topic/title ">Priority of Campaigns</title>
+  <shortdesc class="- topic/shortdesc "> Campaign priority can be set on an
+	 automated decisioning campaign in the same way as a regular tested or targeted
+	 campaign. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody class="- topic/body  concept/conbody ">
+    <p class="- topic/p "> Automated decisioning campaigns fall under the same
+		campaign entry and conversion structure as regular campaigns. In this way, some
+		traffic can be sent to a standard A/B test or rule-based targeting campaign,
+		and the rest of the visitors can be included in an automated decisioning
+		campaign. 
+	 </p>
+    <p class="- topic/p ">
+      <b class="+ topic/ph hi-d/b ">Use Case</b>
+    </p>
+    <p class="- topic/p "> Many organizations have requirements to deliver
+		particular marketing messages to a percentage of the population at a certain
+		time, such as for a product launch. To accomplish this while still running an
+		automated decisioning campaign, create a new single-experience A/B campaign
+		that shows the required marketing message. Set this campaign to high priority,
+		and target it to a percentage of the population. Then, the automated
+		decisioning campaign can still run at a lower priority (medium or low) and all
+		the visitors not selected for the high priority campaign are included in the
+		automated decisioning campaign. 
+	 </p>
+  </conbody>
+  <related-links class="- topic/related-links ">
+    <link href="c_1_1_Campaign_Entry_Targeting.xml#concept_F6A177F23DED41F28D2B616FD43EBFD9" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text 1:1 Campaign Entry Targeting?>
+    </link>
+    <link href="c_1_1_Optimizing_Metric.xml#concept_3EAF5FFCC5AB40889AD505B184637AEF" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text 1:1 Optimizing Metric?>
+    </link>
+    <link href="c_1_1_Traffic_Requirements.xml#concept_7AC16256BA4D4BCF847972E0B8C6E5DE" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text 1:1 Traffic Requirements?>
+    </link>
+    <link href="c_1_1_Modeling_Groups.xml#concept_398B250EC2BD4B24ADF0A6316D1DCF9F" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text 1:1 Modeling Groups?>
+    </link>
+    <link href="c_1_1_Business_Rules.xml#concept_142D81096B134555A729C94B2F2A4278" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text 1:1 Business Rules?>
+    </link>
+    <link href="c_1_1_Success_Metrics.xml#concept_79E5C207A4AF40B1B5DD7A6E386D93A9" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text 1:1 Success Metrics?>
+    </link>
+  </related-links>
+</concept>

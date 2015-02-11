@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_F4F1D53D473947FE8554897332545763">
+  <title>Redirects and Aliases</title>
+  <shortdesc>Redirects point the browser to a new location without user
+	 interaction. They are executed at either the web browser (client-side redirect)
+	 or at the web server (server-side redirect). 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Redirects" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Because redirects do not require any user interaction, redirects are
+		often executed without the user ever noticing. The only thing that indicates a
+		redirect has occurred is the browser's address bar. The address bar displays a
+		URL that is different from the link the browser initially requested. 
+	 </p>
+    <p>Although there are only two types of redirects, they can be implemented
+		in numerous ways. For example, client-side redirects can occur because the web
+		page to which a user has pointed his or her browser contains scripting or
+		special HTML code that redirects the browser to another URL. Server-side
+		redirects can occur because the page contains server-side scripting or because
+		the web server has been configured to point the user to another URL. 
+	 </p>
+  </conbody>
+</concept>

@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_2C2E297CD9C144D79FE269328556677A" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Create a Campaign from the Winning
+	 Experience</title>
+  <shortdesc class="- topic/shortdesc ">The best performing experience and its
+	 comparison column are displayed for any active (approved) campaign. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <context id="context_147821AC854E4296A191555FB43499F3" class="- topic/section task/context ">
+      <p class="- topic/p ">The leading experience's lift over control is
+		  listed to the right. Click on this information to access 
+		  <xref href="c_Viewing_Reports.xml#concept_D220371D9CB4408782E89A2C43BC8FC4" type="concept" format="dita" scope="local" class="- topic/xref "> the full data
+			 set.</xref> Once you know the winning experience of your campaign, just click a
+		  button to turn that experience into a new, single experience campaign. This
+		  saves time and effort when transitioning a test's winning experience to
+		  standard content. 
+		</p>
+      <p class="- topic/p ">By default, the Leading Experience for the last two
+		  months is shown. To change this, go to reports, change the date range in your
+		  reports and click 
+		  <uicontrol class="+ topic/ph ui-d/uicontrol ">Remember Report
+			 Settings.</uicontrol></p>
+      <p class="- topic/p ">
+        <note class="- topic/note ">Early results can be misleading. It is
+			 recommended to run a campaign for two weeks before analyzing the results. Work
+			 with your account representative to ensure confidence. 
+		  </note>
+      </p>
+      <p class="- topic/p ">The 
+		  <uicontrol class="+ topic/ph ui-d/uicontrol ">push winner</uicontrol>
+		  button appears when one experience is better than others strictly by comparing
+		  the number of conversions or revenue data. Statistical confidence and stability
+		  are not evaluated. Use your business rules to determine when you're ready to
+		  push the winner. 
+		</p>
+      <p class="- topic/p ">Creating a campaign from the winning experience is
+		  useful in the following business cases: 
+		</p>
+      <p class="- topic/p ">
+        <ul id="ul_C49D12CD5AB24DA18F83965E198D8BB9" class="- topic/ul ">
+          <li id="li_8C2BD94C1E4A46D6BAB953B3BA865F03" class="- topic/li "> Your
+			 recent campaign has found that Experience B is best for your general audience. 
+			 <p class="- topic/p ">In this case, run Experience B as your standard
+				content for the audience. 
+			 </p></li>
+          <li id="li_A9D5FE2795AE4F58BB3F8ACF1CA0D91C" class="- topic/li "> A
+			 recent campaign, with a segment filter on your sports affiliate sources, has
+			 found that experience D is best for your audience arriving from your sports
+			 affiliates. 
+		  </li>
+        </ul>
+      </p>
+      <p class="- topic/p ">To create a campaign from the winning experience: 
+		</p>
+    </context>
+    <steps id="steps_455FDA2B57FC45EBA14129FCDBD4F772" class="- topic/ol task/steps ">
+      <step id="step_3BBBC10FBC8942EFB9EEDB1496A2884D" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Review your reports. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">Make sure to complete Best Practices for making
+				reporting decisions, including: 
+			 </p>
+          <p class="- topic/p ">
+            <ul id="ul_4050DBBFEB3B4AC0B71FB7EFFD8ECD2F" class="- topic/ul ">
+              <li id="li_5CEFADE5DE5D43B58A75B0C9413FEB24" class="- topic/li ">
+				  Selecting the right time period 
+				</li>
+              <li id="li_5EC8D88824174C2F9B9CE77AF98D9228" class="- topic/li ">
+				  Ensuring confidence 
+				</li>
+              <li id="li_4E345E52142B438FBB87C9E4FD832E19" class="- topic/li ">
+				  Removing extreme orders 
+				</li>
+            </ul>
+          </p>
+        </stepresult>
+      </step>
+      <step id="step_B703846EF96A468DAB2C88EE29A65570" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">From the Summary Report or Segment
+			 Filter, click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">push winner</uicontrol>
+			 for the winning experience. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">The leading experience and its comparison
+				column is displayed for any active (approved) campaign. The leading
+				experience's lift over control is listed to the right. Click on this
+				information to access 
+				<xref href="c_Viewing_Reports.xml#concept_D220371D9CB4408782E89A2C43BC8FC4" type="concept" format="dita" scope="local" class="- topic/xref "> the full data
+				  set.</xref></p>
+          <p class="- topic/p ">By default, the Leading Experience for the last
+				two months is shown. To change this, go to reports, change the date range in
+				your reports and click 
+				<b class="+ topic/ph hi-d/b ">Remember Report Settings</b>. 
+			 </p>
+          <p class="- topic/p ">
+            <note class="- topic/note ">Early results can be misleading. It is
+				  recommended to run a campaign for two weeks before analyzing the results. Work
+				  with your account representative to ensure confidence. 
+				</note>
+          </p>
+          <p class="- topic/p ">For more information, see 
+				<xref href="t_Creating_a_Campaign_from_the_Winning_Experience.xml#task_2C2E297CD9C144D79FE269328556677A" type="task" format="dita" scope="local" class="- topic/xref "><?xm-replace_text Creating a Campaign from the Winning   Experience?></xref>.
+				
+			 </p>
+          <p class="- topic/p ">A new A/B campaign appears with a single
+				experience: the winning experience. 
+			 </p>
+          <p class="- topic/p ">
+            <note class="- topic/note ">In the original campaign, select a
+				  segment filter before clicking 
+				  <uicontrol class="+ topic/ph ui-d/uicontrol ">push
+					 winner</uicontrol> to turn that filter into the target condition of the new
+				  campaign. If the filter was on entry to the campaign, the targeting condition
+				  will also be set on entry to the campaign. 
+				</note>
+          </p>
+        </stepresult>
+      </step>
+      <step id="step_C5FA8C09BACA4201BE2FC63C88303370" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Name the campaign and save. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">The new campaign inherits the original
+				conversion event, targeting conditions, and success metric analysis. 
+			 </p>
+          <p class="- topic/p ">Use this new campaign as your standard content
+				or run it against a challenger experience. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_18170B432CEB4F38BB7F53496F594E0A" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Approve the new campaign. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">
+            <note class="- topic/note ">The status of the original campaign
+				  remains the same until you change it. If the original campaign was active,
+				  deactivate the original campaign before approving the new one. This will ensure
+				  that visitors see the campaign you want them to. 
+				</note>
+          </p>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links class="- topic/related-links ">
+    <link href="t_Creating_a_Campaign.xml#task_617DF94C42C84D88B44A79FEC443FF70" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Creating a Campaign: Overview?>
+    </link>
+    <link href="r_Understanding_the_Types_of_Campaigns_and_Tests.xml#reference_C22725717F40407FA424E957308E258F" type="reference" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Types of Campaigns and Tests?>
+    </link>
+    <link href="t_Creating_an_A_B_Test.xml#task_F887EA52F58B4F21BD6FDF92D74CCEBC" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Create an A/B Test?>
+    </link>
+    <link href="c_Using_a_Multivariate_Campaign.xml#concept_BD7E670A5CAF4FA89250F0B7D4A40ECE" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Multivariate Campaign?>
+    </link>
+    <link href="t_Creating_a_11_Campaign.xml#task_CE002DF9573947EFAE66CCEC6CA21541" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Creating a 1:1 Campaign?>
+    </link>
+    <link href="t_Creating_a_Landing_Page_Campaign.xml#task_1B12DDB4D4E64EF8B47113DFBE1EF0BC" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Creating a Landing Page Campaign?>
+    </link>
+    <link href="t_Creating_a_Monitoring_Campaign.xml#task_833A68CC388044FFA3AA3FED3276389D" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Create a Monitoring Campaign?>
+    </link>
+    <link href="t_Creating_an_Optimizing_Auto-Targeted_Campaign.xml#task_2E714111F87C4F0FBE969B899732BEA3" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Create an Optimizing (Auto-Targeted)   Campaign?>
+    </link>
+    <link href="t_Creating_a_Display_Ad_Campaign.xml#task_D0E8E3D39FBC434BB0FD823BBFF3EDC5" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Creating a Display Ad Campaign?>
+    </link>
+    <link href="t_Creating_a_Flash_Campaign.xml#task_BD4A000895CB440B879A45DD261FDC07" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Creating a Flash Campaign?>
+    </link>
+    <link href="c_Changing_Campaign_Settings.xml#concept_D70808CDA2524DCA857004DAED110F27" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Changing Campaign Settings?>
+    </link>
+    <link href="c_Viewing_Information_About_Campaigns.xml#concept_67E95290400B4678B45EE109AF1EC284" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Viewing Information About Campaigns?>
+    </link>
+    <link href="c_Starting_and_Stopping_Campaigns.xml#concept_59B06B489BE246B8AA950279A47E68AD" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Starting and Stopping Campaigns?>
+    </link>
+    <link href="c_Testing_Campaigns.xml#concept_BDADC258BDD14160B81FA71467B4E5B3" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Testing Campaigns?>
+    </link>
+    <link href="c_Testing_Ads.xml#concept_C824F400EAA34B9489FF765F87FD6DBD" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Using Behavioral Ads?>
+    </link>
+    <link href="c_Using_SiteCatalyst_Data_in_TestTarget.xml#concept_90A31981AF474A57885BB932D9ED3292" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Using SiteCatalyst Data in   Test&Target?>
+    </link>
+    <link href="c_Using_TestTarget_Onsite.xml#concept_51871D12D7F44B6C9BC51C3A00034105" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Using Test&Target Onsite?>
+    </link>
+    <link href="c_Targeting_a_Campaign_or_Test.xml#concept_A782F8481A5041EBA75103CB26376522" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Targeting a Campaign or Test?>
+    </link>
+    <link href="c_Using_the_Campaign_Library.xml#concept_1F0BADCA1D864DA0A3AE0EE129C5CF9C" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Using the Campaign Library?>
+    </link>
+  </related-links>
+</task>

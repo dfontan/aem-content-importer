@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_3D50EAA204F54A1991490FC650B1F300">
+  <title>Map Analytics Variables and Events</title>
+  <shortdesc>After you insert the code in your project, you need to map the
+	 conversion variables and events you are using to track video. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>media</keyword>
+        <keyword>milestone</keyword>
+        <keyword>sdk</keyword>
+        <keyword>video</keyword>
+      </keywords>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <context id="context_B9120B01F0BC41DAB030F3F13812E42E">
+      <p>If the Web Analytics team filled out the 
+		  <xref href="video_worksheet.xml#concept_0A7B2FAC52B04AE6BFD8747B57D56222" type="concept" format="dita" scope="local"><?xm-replace_text Video Implementation Worksheet?></xref>,
+		  you might have a list similar to the following: 
+		</p>
+      <ul id="ul_B7643E8CEAE3442ABD39D775A09E1CDA">
+        <li id="li_6D5AC3493D5E4CE5AE7A543F0C0D314B">Video Name (eVar): 
+			 <userinput>eVar2</userinput></li>
+        <li id="li_FCDE2B604D0B4C9CADC63EAA0EEEEA46">Video Name (Prop): 
+			 <userinput>prop2</userinput></li>
+        <li id="li_B8319B86E8734F6BAFD1030FB63ECB7C">Segments (eVar): 
+			 <userinput>eVar3</userinput></li>
+        <li id="li_95D1DE3AB45A4AA4829170965D36E82C">Content Type (eVar): 
+			 <userinput>eVar1</userinput></li>
+        <li id="li_A3EDA5CDF48C4300AD961098DB47920A">Video Time (Event): 
+			 <userinput>event3</userinput></li>
+        <li id="li_983373973BA7431297AF7DEF46153B5B">Video Views (Event): 
+			 <userinput>event1</userinput></li>
+        <li id="li_6BBD8E106D4F40979FAB42F9893C46BD">Video Completes (Event): 
+			 <userinput>event7</userinput></li>
+        <li id="li_75B44CD364A94FDEB874625033C9601E">Video Segment Views
+			 (Event): 
+			 <userinput>event2</userinput></li>
+      </ul>
+      <p>Complete the following to map conversion variables and events: 
+		</p>
+    </context>
+    <steps id="steps_C36661FC1A8741268B41EC913059F1A3">
+      <step id="step_7D0F94B008704D45ABFD243E0B7E86FF">
+        <cmd>Add the 
+			 <codeph>s.Media.trackUsingContextData</codeph> variable and set it to
+			 true: 
+		  </cmd>
+        <stepresult>
+          <codeblock>s.Media.trackUsingContextData = true;
+</codeblock>
+        </stepresult>
+      </step>
+      <step id="step_0824B1E4992A4F04A75840C0A9E9A2E1">
+        <cmd>Add the 
+			 <codeph>s.Media.contextDataMapping</codeph> variable and map the
+			 parameters it contains with the SiteCatalyst variables and events you selected:
+			 
+		  </cmd>
+        <stepresult>
+          <codeblock>s.Media.trackUsingContextData = true
+s.Media.contextDataMapping = {
+  "a.media.name":"eVar2,prop2",
+  "a.media.segment":"eVar3",
+  "a.contentType":"eVar1",
+  "a.media.timePlayed":"event3",
+  "a.media.view":"event1",
+  "a.media.segmentView":"event2",
+  "a.media.complete":"event7"
+};</codeblock>
+        </stepresult>
+      </step>
+    </steps>
+    <example id="example_3271D9DED33D4BDDB7F89F17E4F00F13">
+      <p>
+        <b>Next step:</b>
+        <xref href="video_flash_milestones.xml#task_8205951B2EF04789AF09C3B5F957C266" type="task" format="dita" scope="local">
+          <?xm-replace_text Configure Milestones?>
+        </xref>
+      </p>
+    </example>
+  </taskbody>
+</task>

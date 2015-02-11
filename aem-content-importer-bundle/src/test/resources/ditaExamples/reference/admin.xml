@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_8DF193E0C1C24FF28F01B97C1919DF61"> 
+  <title>Admin Tools</title> 
+  <shortdesc>A help system for administrators using Admin Tools. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Admin tools"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p> 
+		<uicontrol>Analytics</uicontrol> &gt; 
+		<uicontrol></uicontrol><uicontrol>Admin</uicontrol> 
+		<note type="important">Do not to open multiple Admin Console tabs in the
+		  same browser. This can lead to you inadvertently saving settings to the wrong
+		  report suite. If you need to, for example, compare rule sets and copy them to a
+		  new report suite, we suggest that you open a new browser or take a screen shot
+		  to compare rule sets. 
+		</note> 
+	 </p> 
+	 <p>The Admin Tools let you configure the following analytics features: 
+	 </p> 
+  </conbody> 
+</concept> 

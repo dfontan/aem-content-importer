@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_F9A85D61A17A4989916D9AD57291194A"> 
+  <title>Search Keywords Report</title> 
+  <shortdesc>Reports that display a breakdown of search keywords. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Reports"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p> 
+		<b>Search Keywords - All</b>: Displays a breakdown of each search keyword
+		that has been used to find your site. You can sort this list by page views or
+		search keywords by clicking the column title above the listing. Click the
+		magnifying glass next to a search keyword to see the search results for your
+		site. 
+	 </p> 
+	 <p> 
+		<b>Search Keywords - Paid</b>: Displays a breakdown of each paid search
+		keyword that is used to find your site. You can sort this list by page views or
+		search keywords by clicking the column title above the listing. Click the
+		magnifying glass next to a search keyword to see the search results for your
+		site. 
+	 </p> 
+	 <p> 
+		<b>Search Keywords - Natural</b>: Displays a breakdown of each natural
+		search keyword that is used to find your site. You can sort this list by page
+		views or search keywords by clicking the column title above the listing. Click
+		the magnifying glass next to a search keyword to see the search results for
+		your site. 
+	 </p> 
+	 <section id="section_4D8CE5E111DD48FBBDCF9B5A1F16E92E"> 
+		<title>Allocation, Expiration, and Special Values</title> 
+		<table id="table_EC7423532C7E44DE97B7FC0321585A2B"> 
+		  <tgroup cols="4"><colspec colnum="1" colname="col1"
+			 colwidth="*"/><colspec colnum="2" colname="col2" colwidth="*"/><colspec
+			 colnum="3" colname="col3" colwidth="*"/><colspec colnum="4" colname="col4"
+			 colwidth="*"/><thead> 
+				<row> 
+				  <entry colname="col1"> 
+				  </entry> 
+				  <entry colname="col2">Marketing reports &amp; analytics
+					 (SiteCatalyst) 
+				  </entry> 
+				  <entry colname="col3">Ad hoc analytics 
+				  </entry> 
+				  <entry colname="col4">Data warehouse 
+				  </entry> 
+				</row></thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1">Metric Allocation 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Original Value (default) 
+					 </p> 
+					 <p> Can be changed to linear. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> Most Recent (can be changed to linear
+					 using the linear version of a metic) 
+				  </entry> 
+				  <entry colname="col4"> 
+					 <p>Original Value (default) 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">Values Expire After 
+				  </entry> 
+				  <entry colname="col2"> Visit – can be shortened but not
+					 lengthened 
+				  </entry> 
+				  <entry colname="col3">Visit 
+				  </entry> 
+				  <entry colname="col4">Visit
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">Value Limits 
+				  </entry> 
+				  <entry colname="col2"> No limits (might change in a future
+					 release) 
+				  </entry> 
+				  <entry colname="col3"> No limits (might change in a future
+					 release) 
+				  </entry> 
+				  <entry colname="col4">none 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">Special values 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>"None": site wide totals that did not have a keyword during
+						the visit. 
+					 </p> "Keyword Unavailable" is searches where the keyword was
+					 removed from the search and is not sent to data collection. This typically
+					 occurs when a customer is signed in to a Google account. Applies to paid and
+					 natural. 
+				  </entry> 
+				  <entry colname="col3"> (low-traffic) represents values past the
+					 first 500k that haven't received enough traffic to be reported. 
+				  </entry> 
+				  <entry colname="col4"> 
+					 <p> Empty - equivalent of "None", site wide totals that did not
+						have a keyword during the visit. 
+					 </p> 
+					 <p>"Keyword Unavailable" is searches where the keyword was
+						removed from the search and is not sent to data collection. This typically
+						occurs when a customer is signed in to a Google account. Applies to paid and
+						natural. 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </section> 
+	 <section id="section_6C0FCEA9DAF04D97BA056E153B7E4628">
+		<title>Report History</title>
+		<table id="table_9DFA79EC6A5A48648F2FB5418E1752DB">
+		  <tgroup cols="2"><colspec colnum="1" colname="col1"
+			 colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="4.87*"/><thead>
+				<row>
+				  <entry colname="col1">Date
+				  </entry>
+				  <entry colname="col2">Change
+				  </entry>
+				</row></thead>
+			 <tbody>
+				<row>
+				  <entry colname="col1">1/16/2014
+				  </entry>
+				  <entry colname="col2">Data warehouse was updated to match the
+					 logic used by marketing reports &amp; analytics. Before this date, search
+					 keywords did not persist across the visit.
+				  </entry>
+				</row>
+			 </tbody>
+		  </tgroup>
+		</table>
+	 </section>
+  </conbody> 
+</concept> 

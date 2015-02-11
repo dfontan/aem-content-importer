@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_F042066264564438BFB35FC46EB638DF">
+  <title> Customizing Reports</title>
+  <shortdesc>After running a report, you can customize the report to view and
+	 analyze the data according to your needs. You can filter report data, change
+	 how data is presented graphically, change date granularity, and so on. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports and analytics" />
+    </metadata>
+  </prolog>
+</concept>

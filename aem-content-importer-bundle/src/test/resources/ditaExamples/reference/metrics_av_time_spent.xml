@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_65E4EDC734D14F68A056323A862A26E9">
+  <title>Average Time Spent</title>
+  <shortdesc>Represents the average time per sequence of a given value within a
+	 visit. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Metrics" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>See 
+		<xref href="metrics_time_spent.xml#concept_1241109A742947C9B73E5E2CA2362559" format="dita" scope="local"><?xm-replace_text Time Spent?></xref> for
+		information about this metric series.
+	 </p>
+  </conbody>
+  <related-links>
+    <link href="reports_time_spent_on_page.xml#concept_E3D0FEC81E1F4987B39CC467F19FFCFF" format="dita" scope="local">
+      <linktext>
+        <?xm-replace_text Time Spent on Page Report?>
+      </linktext>
+    </link>
+  </related-links>
+</concept>

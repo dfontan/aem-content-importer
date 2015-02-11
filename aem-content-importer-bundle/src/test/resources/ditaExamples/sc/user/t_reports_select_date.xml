@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_9BEF7D4D839A4748B76E8500D1406C34">
+  <title>Select a date or date range</title>
+  <shortdesc>Steps that describe hot to use choose the time periods for your
+	 report data. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports and analytics" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <context id="context_73E3A2B0DA6A40F0A28144D415F2A775">
+      <p>You can select specific days, weeks, months, or years. You can also
+		  run comparison reports.
+		</p>
+      <p>When you open a dashboard with reportlets that have different date
+		  ranges, you can choose a new date range in the calendar. The changes apply to
+		  all reportlets in the dashboard. 
+		</p>
+      <p>
+        <b>To select a date range</b>
+      </p>
+    </context>
+    <steps id="steps_D4075EF89F884A67A66229971C01A7D3">
+      <step id="step_A642220C31AB4530A23546E2C961600F">
+        <cmd>Run a report. 
+		  </cmd>
+      </step>
+      <step id="step_226B634B2E51476D9A8FA810C0C7C442">
+        <cmd>Click the calendar. 
+		  </cmd>
+      </step>
+      <step id="step_31DF7475234C46F1A4D57DF599D9312C">
+        <cmd>Select a date. 
+		  </cmd>
+        <info>You can: 
+		  </info>
+        <choices id="choices_00981878E3124DC3ABC2BE77503DD6B9">
+          <choice id="choice_9A088D24F1AB4D92BFBBF8808EAC9AF2">View days,
+				months, or year periods (up to three). 
+			 </choice>
+          <choice id="choice_8A7C73503FBC44178CF41165FBAB8FE0">Drag your cursor
+				across dates to select a range. 
+			 </choice>
+          <choice id="choice_286BF52A2E2C4D4981C3F38508B5D588">Enter dates
+				manually. 
+			 </choice>
+          <choice id="choice_D2A58BB62875457191400678B0748AF6">Click a month
+				name to select a month. 
+			 </choice>
+          <choice id="choice_065A1BEEDB3F41E0A439BCBC15273CDF">Click 
+				<uicontrol>Select Preset</uicontrol> to select a preset date. 
+			 </choice>
+          <choice id="choice_F20FF1232163426F983B810628EA7270">Compare dates.
+				(See 
+				<xref href="t_reports_comparing_dates.xml#task_95155C3700774B709F5FB81AE96B0824" type="task" format="dita" scope="local"><?xm-replace_text Comparing Dates?></xref>.)
+				
+			 </choice>
+        </choices>
+      </step>
+      <step id="step_9E2C4867476843AFB5772E3F85547025">
+        <cmd>Click 
+			 <uicontrol>Run Report</uicontrol>. 
+		  </cmd>
+      </step>
+    </steps>
+  </taskbody>
+</task>

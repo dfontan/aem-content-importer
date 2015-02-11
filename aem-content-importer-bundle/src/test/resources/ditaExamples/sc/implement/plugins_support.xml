@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_E31A189BC8A547738666EB5E00D2252A"> 
+  <title>AppMeasurement Plug-in Support</title> 
+  <shortdesc>Plug-in support has changed in the new version of JavaScript
+	 AppMeasurement. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Developer and implementation"/> 
+		<othermeta name="subtopic" content="JavaScript AppMeasurement"/>
+		</metadata>
+  </prolog> 
+  <conbody> 
+	 <section id="section_48415FB895E6455FAC34B0B96DE6EBE7"> 
+		<title>Tested Plugins</title> 
+		<p>The following plug-ins were tested and verified as compatible: 
+		</p> 
+		<ul id="ul_54FACF5474884F7183708B87F835C7C3"> 
+		  <li id="li_66B68EB1EE3E4F8EA2A3FB0D8AC6ED8F"> 
+			 <xref href="appendList.xml#concept_C4588F8E123E4DB99C8ADCD5A524D693"
+			  format="dita" scope="local"> <?xm-replace_text appendList?>
+			 </xref> 
+		  </li> 
+		  <li id="li_A2B1BD2F77354B5C94A31EF68FF368B9">crossVisitParticipation 
+		  </li> 
+		  <li id="li_A32BB9CF2544455D8FBBB5830D546712">userAgentManager 
+		  </li> 
+		  <li id="li_3180538A205047F58FACA9FDE3FECF1D"> 
+			 <xref
+			  href="getTimeParting.xml#concept_3746EA1D1EF746049AE84105B911F44A"
+			  format="dita" scope="local"> <?xm-replace_text getTimeParting?>
+			 </xref> 
+		  </li> 
+		  <li id="li_6C0321B9E0AA46B6A24C3CAE33FE77E6">join 
+		  </li> 
+		  <li id="li_0A74D497B37B473385FA3234C8D6CDA4">split 
+		  </li> 
+		  <li id="li_71382F2755BD4C7A878E2166B8484FBB"> 
+			 <xref
+			  href="getDaysSinceLastVisit.xml#concept_E3D0FEC81E1F4987B39CC467F19FFCFF"
+			  format="dita" scope="local"> <?xm-replace_text getDaysSinceLastVisit?>
+			 </xref> 
+		  </li> 
+		  <li id="li_B9A7BC9E378B4F4EA283A5E623E175FF"> 
+			 <xref
+			  href="getNewRepeat.xml#concept_E3D0FEC81E1F4987B39CC467F19FFCFF" format="dita"
+			  scope="local"> <?xm-replace_text getNewRepeat?>
+			 </xref> 
+		  </li> 
+		  <li id="li_DD84FCE348C84825B630560A1F268F86">getTimeToComplete 
+		  </li> 
+		  <li id="li_3224F59242EF4D8BB6426CCF8BB27C6E">manageVars (requires 
+			 <codeph>s.pt</codeph> plugin utility)
+		  </li> 
+		  <li id="li_50E834BF05864D18B3C281FE1D17C77A">channelManager 
+		  </li> 
+		  <li id="li_1FA390212FD94E0DB762254FA116BF98"> Cookie Combining Utility 
+		  </li> 
+		  <li id="li_97E11664E2F645BF8709A5B40E634AD7"> getPageName 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_32BA7CAB37554A278170A728F1D65CE9"> 
+		<title>Untested Plugins</title> 
+		<p>The following plugins should continue to work since the underlying
+		  functionality is still supported, but they have not been tested and verified as
+		  compatible. You should test these plug-ins in your development environment
+		  before migration. 
+		</p> 
+		<ul id="ul_452B6FBAC29F428CA1ED57352B95AA56"> 
+		  <li id="li_CFF2DC514ED64ADE891482F08B93FD5A">getActionDepth 
+		  </li> 
+		  <li id="li_EE4F3B9351554A7C8A4DD840F83D3A4C"> 
+			 <xref
+			  href="getAndPersistValue.xml#concept_E3D0FEC81E1F4987B39CC467F19FFCFF"
+			  format="dita" scope="local"> <?xm-replace_text getAndPersistValue?>
+			 </xref> 
+		  </li> 
+		  <li id="li_F66DC42AA5FF445580A35CEB9F089A8D">getCookiesAccepted 
+		  </li> 
+		  <li id="li_5C67BAC0B35F4725B8D8F62D4000DC60"> 
+			 <xref href="getValOnce.xml#concept_E3D0FEC81E1F4987B39CC467F19FFCFF"
+			  format="dita" scope="local"> <?xm-replace_text getValOnce?>
+			 </xref> 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_73AF0EE257A44DCE9232F85A95AB8884"> 
+		<title>Unsupported Plugins</title> 
+		<p>These plugins are not supported and no longer function due to their
+		  use of functionality that no longer exists in the new AppMeasurement for
+		  JavaScript library. 
+		</p> 
+		<ul id="ul_9E2F59784B20453489DD9604ACA9498F"> 
+		  <li id="li_531F020F037E4563B5A2E8491F8B73E4">callBack 
+		  </li> 
+		  <li id="li_25DDF680E9E848389A8F602D9D50D70E">channelExtract 
+		  </li> 
+		  <li id="li_8E14F11B1BCD4EA79560CFAAC3931FF7"> detectRIA 
+		  </li> 
+		  <li id="li_C29D9825409642988CFFCDE1DBC1BCC6">deviceOrientationChanges 
+		  </li> 
+		  <li id="li_3FB3038CC7704D53BFA18F1D98F01452">DynamicObjectIDs 
+		  </li> 
+		  <li id="li_55BA183C42BF4C49AD7995D9E2450E50">Form Analysis 
+		  </li> 
+		  <li id="li_205A0751DD5B40BB8AB82BFE8FF5F45F"> manageQueryParam 
+		  </li> 
+		  <li id="li_DCBBA75D7B294E4EBD43E4E7E23CE37B">HTML5Storage 
+		  </li> 
+		</ul> 
+	 </section> 
+  </conbody> 
+</concept> 

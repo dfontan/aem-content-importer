@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_E3D0FEC81E1F4987B39CC467F19FFCFF">
+  <title>Normalization</title>
+  <shortdesc>Normalization shows the percent of change between comparison
+	 reports, which is useful when date ranges have a different number of days, or
+	 different volumes of traffic. Normalization takes all metrics and forces them
+	 to equal proportions, raising or lowering individual line items according to
+	 their normalized total. Normalizing lets you match trends when one date is much
+	 higher or lower than the other. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="subtopic" content="Glossary" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>For example, if one month has three more days than another, the
+		three-day difference might cause a significant discrepancy in a monthly A/B
+		comparison. When you normalize the data, Analytics forces the totals of each
+		report match, and increases or decreases the values of one column to adjust for
+		the different number of days. Normalization is available in reports with date
+		comparisons, or the 
+		<wintitle>Key Metrics</wintitle> reports. 
+	 </p>
+    <p></p>
+    <p>
+      <b>How Normalization is Calculated</b>
+    </p>
+    <p>Normalization is calculated by: 
+	 </p>
+    <p>1. Comparing report totals and calculating the proportion of data. 
+	 </p>
+    <table id="table_B20D489C8A404BD88FDDCE072DC5F110">
+      <tgroup cols="3">
+        <colspec colnum="1" colname="col1" colwidth="*" />
+        <colspec colname="col02" colnum="2" colwidth="1.50*" />
+        <colspec colnum="3" colname="col2" colwidth="*" />
+        <thead>
+          <row>
+            <entry colname="col1">Pages 
+				</entry>
+            <entry colname="col02">September Page Views 
+				</entry>
+            <entry colname="col2">October Page Views 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry colname="col1">
+              <p>Page A 
+				  </p>
+            </entry>
+            <entry colname="col02">
+              <p>350 
+				  </p>
+            </entry>
+            <entry colname="col2">
+              <p>400 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <p>Page B 
+				  </p>
+            </entry>
+            <entry colname="col02">
+              <p>200 
+				  </p>
+            </entry>
+            <entry colname="col2">
+              <p>375 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <p>Page C 
+				  </p>
+            </entry>
+            <entry colname="col02">
+              <p>25 
+				  </p>
+            </entry>
+            <entry colname="col2">
+              <p>75 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <p>Total 
+				  </p>
+            </entry>
+            <entry colname="col02">
+              <p>575 
+				  </p>
+            </entry>
+            <entry colname="col2">
+              <p>850 
+				  </p>
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p>Data normalization takes the totals of the two metrics (575 and 850) and
+		determines their ratio: 
+	 </p>
+    <p>
+      <i>575 / 850 = .676</i>
+    </p>
+    <p>2. Multiplying each line item by the report total proportion (using the
+		previous report, with normalizing enabled): 
+	 </p>
+    <table id="table_B2F7996BCD904EE4B3DF7A648ACC961F">
+      <tgroup cols="3">
+        <colspec colnum="1" colname="col1" colwidth="*" />
+        <colspec colname="col02" colnum="2" colwidth="1.50*" />
+        <colspec colnum="3" colname="col2" colwidth="*" />
+        <thead>
+          <row>
+            <entry colname="col1">Pages 
+				</entry>
+            <entry colname="col02">September Page Views 
+				</entry>
+            <entry colname="col2">October Page Views 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry colname="col1">
+              <p>Page A 
+				  </p>
+            </entry>
+            <entry colname="col02">
+              <p>350 
+				  </p>
+            </entry>
+            <entry colname="col2">
+              <p>237 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <p>Page B 
+				  </p>
+            </entry>
+            <entry colname="col02">
+              <p>200 
+				  </p>
+            </entry>
+            <entry colname="col2">
+              <p>135 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <p>Page C 
+				  </p>
+            </entry>
+            <entry colname="col02">
+              <p>25 
+				  </p>
+            </entry>
+            <entry colname="col2">
+              <p>17 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <p>Total 
+				  </p>
+            </entry>
+            <entry colname="col02">
+              <p>575 
+				  </p>
+            </entry>
+            <entry colname="col2">
+              <p>575 
+				  </p>
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p>Each line item in October was multiplied by .676 (as shown above). The
+		table now reflects the same approximate amount of September's data, allowing
+		you to compare the two date ranges more effectively. 
+	 </p>
+    <p>Data normalization applies differently if the compare dates were in
+		opposite order, such as 850 / 575 = 1.48. Meaning, September's data would
+		inflate itself proportionately to match closer to October's data. 
+	 </p>
+    <p>See 
+		<xref href="http://marketing.adobe.com/resources/help/en_US/sc/user/index.html?f=t_reports_normalize" scope="external" format="html">Normalizing Report Data</xref> in 
+		Help. 
+	 </p>
+  </conbody>
+</concept>

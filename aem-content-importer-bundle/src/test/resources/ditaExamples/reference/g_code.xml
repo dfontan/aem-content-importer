@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_E3D0FEC81E1F4987B39CC467F19FFCFF">
+  <title>G Code</title>
+  <shortdesc>JavaScript code version G used in the 
+	 SiteCatalyst Code to Paste. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="subtopic" content="Glossary" />
+    </metadata>
+  </prolog>
+  <conbody></conbody>
+  <related-links>
+    <link href="code-to-paste.xml#concept_CC55C95C80294832B5476FCAD04F890B" format="dita" scope="local">
+      <linktext>
+        <?xm-replace_text Code-to-Paste?>
+      </linktext>
+    </link>
+  </related-links>
+</concept>

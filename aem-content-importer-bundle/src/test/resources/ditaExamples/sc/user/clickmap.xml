@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_DEA393AEEE8249A9B3FE8AA8AB90BFD5"> 
+  <title>Visitor Click Map</title> 
+  <shortdesc>Visitor Click Map is a plug-in for Internet Explorer and Firefox,
+	 and a module of marketing reports &amp; analytics. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Reports,Reports and analytics"/>
+		</metadata>
+  </prolog> 
+  <conbody> 
+	 <p> Visitor Click Map allows marketing reports &amp; analytics clients to
+		visually measure traffic, conversion and success metrics within the pages of a
+		web site. You can browse your site and see graphical information about how
+		visitors are interacting with your content - superimposed over the pages of the
+		site. Links on the page are highlighted. The greater the intensity of the
+		color, the more frequently the item is clicked on. These metrics are overlaid
+		on top of the page's links as a kind of 'heat map' to answer critical
+		questions, including the following: 
+	 </p> 
+	 <ul id="ul_FCA5EA97125A48C5982737176D87871A"> 
+		<li id="li_09A902D4276A46069B818EB19249AC1F">What is the value of an
+		  individual page? 
+		</li> 
+		<li id="li_021DC53AA1544FB7A76238346624956F">What is the value of an
+		  individual element on a page? 
+		</li> 
+		<li id="li_7C5CD03504DC449EA05F681D9A4F00DD"> What is the most valuable
+		  'digital real estate' on a page? 
+		</li> 
+	 </ul> 
+	 <p>What do the "Loc #" and "Link Type" in the ClickMap report represent?
+		The "Loc #" and "Link Type" data points help ClickMap identify the exact link
+		on the page so that it can associate clicks to it correctly.
+	 </p>
+	 <p>Location is determined by the document.all() method in IE browsers.
+		Every element on the page has a location number in the DOM (Document Object
+		Model); document.all() returns the entire DOM, and the Adobe Analytics
+		JavaScript code can then find the specific location of the element that was
+		clicked. In any browser other than IE (Firefox, Safari, etc.), this value
+		defaults to 0 because these browsers do not support the document.all() method
+		in JavaScript.
+	 </p>
+	 <p>The Link Type data is determined by the type of tag that was clicked
+		(e.g. anchor, image, Flash, area, button, etc.).
+	 </p>
+  </conbody> 
+</concept>

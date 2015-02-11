@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_E3D0FEC81E1F4987B39CC467F19FFCFF"> 
+  <title>Granularity</title> 
+  <shortdesc> The level of period-based detail at which you are viewing your
+	 report data. Granularity can be daily, weekly, monthly, and so on. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="subtopic" content="Glossary"/> </metadata>
+  </prolog> 
+  <conbody>
+	 <p>Learn how to 
+		<xref
+		 href="https://marketing.adobe.com/resources/help/en_US/sc/user/?f=t_reports_granularity"
+		 format="https" scope="external">specify report granularity</xref> in marketing
+		reports.
+	 </p>
+  </conbody>
+</concept>

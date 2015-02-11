@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_52322BF4A62B49D5879725FB30C48CC6">
+  <title>Segments List</title>
+  <shortdesc>The Segments list contains all reusable segments. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <context id="context_F3E18A7DA7144A9398E837A8CB0D69AA">
+      <p>Use the Segments list to create, delete, or copy reusable segments.
+		</p>
+    </context>
+  </taskbody>
+</task>

@@ -1,0 +1,1332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_F5D9EF735F1044C38E208F3A178903B2"> 
+  <title>Useful Variables, Profiles, Parameters, and Methods</title> 
+  <shortdesc>This page lists profiles, parameters, methods, and variables that
+	 are useful in profile scripts and expression targets. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Target"/> 
+		<othermeta name="topic" content="Advanced"/> </metadata>
+  </prolog> 
+  <refbody> 
+	 <section id="section_2B694370003C4F8E8E29E0B2F6E52045"> 
+		<title>Built-In Profiles</title> 
+		<p> 
+		<table id="table_8F26DFF396244388A98F3CD0E776FF44"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="1.04*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col1">Profile 
+				  </entry> 
+				  <entry colname="col2">Notes 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>user.activeCampaigns 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Returns an array of the 
+						<codeph>campaignId</codeph>s the visitor is in 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>user.pcId 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>user.sessionId 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>user.categoryAffinity 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>user.categoryAffinities 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p> Return an array of the affinities that a visitor has
+						populated 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>user.isFirstSession 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>user.isNewSession 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>user.daysSinceLastVisit 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>user.browser 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>The user agent 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>user.header 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>All 
+						<codeph>user.header</codeph> profiles are built-in from mbox
+						request header data 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>user.header('x-cluster-client-ip') 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Visitor IP address 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>user.header('host') 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Website hostname 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>user.header('cookie') 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Visitor cookie data 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>user.header('user-agent') 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Visitor browser user-agent 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>user.header('accept-language')</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Visitor language 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>user.header('accept-encoding')</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Visitor character encoding 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>user.header('accept')</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Visitor language and character encoding 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>user.header('connection')</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Server connection. For example: 
+						<codeph>keep-live</codeph>
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>user.header('referer')</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Website URL of visitor current page. Does not work for
+						Internet Explorer. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>user.getLocal('param_name','value'); 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>user.setLocal('param_name','value'); 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>user.get('param_name') 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>profile.get('param_name') 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>profile.param('param_name'); 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>profile.browserTime 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>The visitor's local browser time. For system time, create a
+						new date object in the profile script 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph> profile.averageDaysBetweenVisits</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph> profile.sessionCount 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		</p> 
+	 </section> 
+	 <section id="section_8F25958273164EBAA6DC659302993FD3"> 
+		<title>URL Variables</title> 
+		<p> 
+		<table id="table_71797710B7384E558F6EBB26AF322EE4"> 
+		  <tgroup cols="3"> 
+			 <colspec colnum="1" colname="col1" colwidth="*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="*"/> 
+			 <colspec colnum="3" colname="col3" colwidth="*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph>landing</codeph> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <codeph>referrer</codeph> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <codeph>page</codeph> 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph>landing.referrer 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col2">n/a 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <codeph>page.referrer 
+					 </codeph> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph>landing.url 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <codeph>referrer.url 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <codeph>page.url 
+					 </codeph> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph>landing.domain 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <codeph>referrer.domain 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <codeph>page.domain 
+					 </codeph> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph>landing.protocol 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <codeph>referrer.protocol 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <codeph>page.protocol 
+					 </codeph> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph>landing.param 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <codeph>referrer.param 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <codeph>page.param 
+					 </codeph> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph>landing.query 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <codeph>referrer.query 
+					 </codeph> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <codeph>page.query 
+					 </codeph> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		</p> 
+	 </section> 
+	 <section id="section_08441DA42E7346918FBB345818854997"> 
+		<title>Geo and Other Third-Party Profiles</title> 
+		<p> 
+		<ul id="ul_AB192FDBF3AD49DBB505269D25765DE1"> 
+		  <li id="li_D5ADED6E86314C9ABE418AE0986625F3"> 
+			 <codeph>profile.geolocation.country 
+			 </codeph> 
+		  </li> 
+		  <li id="li_7E6C6D1B173D4707965EE5698807162A"> 
+			 <codeph>profile.geolocation.state 
+			 </codeph> 
+		  </li> 
+		  <li id="li_BC9395E48CDA4A5CAE82A8490897CC1E"> 
+			 <codeph>profile.geolocation.city 
+			 </codeph> 
+		  </li> 
+		  <li id="li_EAD3F51FB95D481BB483651773EE8E9C"> 
+			 <codeph>profile.geolocation.zip 
+			 </codeph> 
+		  </li> 
+		  <li id="li_8DC05706AC1D47638277D38352C8D7DF"> 
+			 <codeph>profile.geolocation.dma 
+			 </codeph> 
+		  </li> 
+		</ul> 
+		</p> 
+	 </section> 
+	 <section id="section_C42F0D33BD8044BE812FA0B7905CC0ED"> 
+		<title>Mbox Variables</title> 
+		<p> 
+		<table id="table_1AC13D7874F942349086851980DD5606"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col1">Variable 
+				  </entry> 
+				  <entry colname="col2">Notes 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mbox.name 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mbox.param('param_name') 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Parameters automatically passed with every request: 
+					 </p> 
+					 <p> 
+					 <ul id="ul_67A44986D47745E886A9F0FEDD65832B"> 
+						<li id="li_CCBFA7DB2C5F4B0988C59B7B7DB68F5F"> 
+						  <codeph>mbox.param('browserHeight') 
+						  </codeph> 
+						</li> 
+						<li id="li_594E67B2FDB1448AA6D3FF769DE3D857"> 
+						  <codeph>mbox.param('browserTimeOffset') 
+						  </codeph> 
+						</li> 
+						<li id="li_A935E111B83A42CC8E159B1D3562ABB7"> 
+						  <codeph>mbox.param('browserWidth') 
+						  </codeph> 
+						</li> 
+						<li id="li_E48FA9B53D384A69B314426C04A84AAA"> 
+						  <codeph>mbox.param('colorDepth') 
+						  </codeph> 
+						</li> 
+						<li id="li_FE70A416B6BC46FAAB7CC7A360C38399"> 
+						  <codeph>mbox.param('mboxXDomain') 
+						  </codeph> 
+						</li> 
+						<li id="li_8CEB7C8B2F7B455DA5DF175EAB14BC9F"> 
+						  <codeph>mbox.param('mboxTime') 
+						  </codeph> 
+						</li> 
+						<li id="li_2C43D1FFEA3D43A8A60360C131ED4C66"> 
+						  <codeph>mbox.param('screenHeight') 
+						  </codeph> 
+						</li> 
+						<li id="li_9F3C670289A34187BCBAEE2327C1FB54"> 
+						  <codeph>mbox.param('screenWidth') 
+						  </codeph> 
+						</li> 
+					 </ul> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Parameters passed with order mboxes: 
+					 </p> 
+					 <p> 
+					 <ul id="ul_51D2BF83365F45F0BA72B9D874B025B6"> 
+						<li id="li_1EB644FDDD044AEF9F6A2BED55762090"> 
+						  <codeph>mbox.param('orderId') 
+						  </codeph> 
+						</li> 
+						<li id="li_2EC9F67E2E214DDA9F90AE09FA99F7BE"> 
+						  <codeph>mbox.param('orderTotal') 
+						  </codeph> 
+						</li> 
+						<li id="li_468EC01B4EF745ACA4FDFE58A297071A"> 
+						  <codeph>mbox.param('productPurchasedId') 
+						  </codeph> 
+						</li> 
+					 </ul> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mbox3rdPartyId 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">An mbox parameter to sync a third-party id
+					 to the mbox PCID in the server so either id can be used when API or other mbox
+					 calls are made. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxPageValue 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">In each mbox call the page is assigned a
+					 value. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxDebug 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">Only used for debug info. Added to the page
+					 url where the 
+					 <filepath>mbox.js</filepath> looks for it. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxOverride.browserIp 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">Sets a different geo than the actual
+					 location so you can test how something would look in another location. 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		</p> 
+	 </section> 
+	 <section id="section_74DF5A1F22104775A6C9DCE53AA47A09"> 
+		<title>Campaign Variables</title> 
+		<p> 
+		<ul id="ul_4B21B805284D459B9D85A856EB99E3F7"> 
+		  <li id="li_3C2903F5C1E34FCFAE87177CA4EA2D90"> 
+			 <codeph>campaign.name 
+			 </codeph> 
+		  </li> 
+		  <li id="li_19FE7D00EA8945CEA4F80B2561E1541A"> 
+			 <codeph>campaign.id 
+			 </codeph> 
+		  </li> 
+		  <li id="li_A914D56BF2F74A0585B37DD254E2A456"> 
+			 <codeph>campaign.recipe.name 
+			 </codeph> 
+		  </li> 
+		  <li id="li_46C2E1FCDB264E67918BA19EBD8968C1"> 
+			 <codeph>campaign.recipe.id 
+			 </codeph> 
+		  </li> 
+		  <li id="li_FC7962F1594044ABB967D393ED498AAA"> 
+			 <codeph>offer.name 
+			 </codeph> 
+		  </li> 
+		  <li id="li_929F2B28DE574BF7A8220FD1379E17F0"> 
+			 <codeph>offer.id 
+			 </codeph> 
+		  </li> 
+		</ul> 
+		</p> 
+	 </section> 
+	 <section id="section_8C78059D15D9452F95636A5640188537"> 
+		<title>Methods</title> 
+		<p> 
+		<table id="table_0E99AD9702944F749BE37DCBAA34DD76"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col1">Method 
+				  </entry> 
+				  <entry colname="col2">Notes 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mbox.getName() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mbox.getURL() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mbox.getDiv() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">Returns the 
+					 <codeph>div</codeph> associated with the mbox (containing
+					 default content or an offer) 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mbox.getParameters() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">An array of parameters with two fields,
+					 name and value 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mbox.setOnload() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">Example: 
+					 <p><codeph>mbox.setOnload(function(){alert(this.getName()+"
+						  loaded"});</codeph>
+					 </p>
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mbox.setOnError() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">Example: 
+					 <p><codeph>mbox.setOnError(function() { alert(this.getName() +"
+						  had error"});</codeph>
+					 </p>
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mbox.setMessage(message) 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">You can see message in debug window . 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxCurrent.activate() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxCurrent.cancelTimeout() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxCurrent.finalize() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxCurrent.getDefaultDiv() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxCurrent.getDiv() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">Returns the 
+					 <codeph>div</codeph> associated with the mbox (containing
+					 default content or an offer) 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxCurrent.getEventTimes() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxCurrent.getFetcher() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxCurrent.getId() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxCurrent.getImportName() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxCurrent.getName() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxCurrent.getOffer() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxCurrent.getParameters() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">An array of parameters with two fields,
+					 name and value . 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxCurrent.getURL() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxCurrent.getURLBuilder() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxCurrent.hide() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxCurrent.isActivated() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxCurrent.load() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxCurrent.loaded() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxCurrent.setEventTime() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxCurrent.setFetcher() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxCurrent.setMessage() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxCurrent.setMessage(message) 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">View message in debug window . 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxCurrent.setOffer() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxCurrent.setOnError() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">Example: 
+					 <p><codeph>mboxCurrent.setOnError(function(){
+						  alert(this.getName() +" had error"});</codeph>
+					 </p>
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxCurrent.setOnload() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">Example: 
+					 <p><codeph>mboxCurrent.setOnload(function() {
+						  alert(this.getName() +" loaded"});</codeph>
+					 </p>
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxCurrent.show() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxCurrent.showContent() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxFactoryDefault.addOnLoad(action) 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">Action is called when page loads. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxFactoryDefault.getMboxes().each() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">Example: 
+					 <p><codeph>mboxFactoryDefault.getMboxes().each(function() {
+						  alert(mbox.getName()) };</codeph>
+					 </p>
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxFactoryDefault.getMboxes().length() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxFactoryDefault.getPageId() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxFactoryDefault.getPCId().getId() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxFactoryDefault.getSessionId().getId() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxFactories.get('default').getSessionId()​.forceId("1276011116668");
+						  
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxFactories.get('default').getPCId()​.forceId("1276011116668");
+						  
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxFactoryDefault.create() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxFactoryDefault.disable() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxFactoryDefault.enable() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxFactoryDefault.get() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxFactoryDefault.getCookieManager() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxFactoryDefault.getDisableReason() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxFactoryDefault.getEllapsedTime() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxFactoryDefault.getEllapsedTimeUntil() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxFactoryDefault.getMboxes() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">Returns an 
+					 <codeph>mboxList</codeph>. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxFactoryDefault.getSignaler() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxFactoryDefault.getURLBuilder() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxFactoryDefault.isAdmin() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxFactoryDefault.isDomLoaded() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxFactoryDefault.isEnabled() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxFactoryDefault.isSupported() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxFactoryDefault.limitTraffic() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxFactoryDefault.update() 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxFactoryDefault.getCookieManager()​.getCookie("name")//!=
+						  null) { 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<codeph>mboxFactoryDefault.getCookieManager()​.setCookie(_name,_value,
+						  _duration); 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		</p> 
+	 </section> 
+  </refbody> 
+</reference>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_E3D0FEC81E1F4987B39CC467F19FFCFF">
+  <title>Variable Truncation</title>
+  <shortdesc>Refers to the shortening of a variable or an image request. If the
+	 number of characters in a variable or image request exceeds the allowed number
+	 of characters, the characters exceeding the limit will be automatically
+	 removed, or truncated. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="subtopic" content="Glossary" />
+    </metadata>
+  </prolog>
+  <conbody></conbody>
+</concept>

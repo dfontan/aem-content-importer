@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_6E4B82FCA687409B88F17EAFC353755D"> 
+  <title>Copy processing rules to another report suite</title> 
+  <shortdesc>Steps that describe how to copy processing rules from one report
+	 suite and replace or append these rules to another report suite. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Admin tools"/> 
+		<othermeta name="subtopic" content="Processing rules"/> </metadata>
+  </prolog> 
+  <taskbody> 
+	 <steps id="steps_1FD2C1CB4A13435D8C6C8C3DADA70B9B"> 
+		<step id="step_96CB3DD8012E4FB493C76ABEE295ABB5"> 
+		  <cmd>Click 
+			 <uicontrol>Analytics</uicontrol> &gt; 
+			 <uicontrol>Admin</uicontrol> &gt;<uicontrol>Report
+				Suites</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_B2AEB72CBAB64036BE2ED419CFDC13B6"> 
+		  <cmd>Select a report suite. 
+		  </cmd> 
+		</step> 
+		<step id="step_A326345ED8BE49738A22657FB55ADF8E"> 
+		  <cmd>Click 
+			 <uicontrol>Edit Settings</uicontrol> &gt; 
+			 <uicontrol>General</uicontrol> &gt; 
+			 <uicontrol>Processing Rules</uicontrol>. 
+		  </cmd> 
+		  <stepresult>
+		  </stepresult> 
+		</step> 
+		<step id="step_3C220BA689254D579A4F08DE0CB13039"> 
+		  <cmd>On the 
+			 <uicontrol>Processing Rules</uicontrol> page, click the 
+			 <uicontrol>Copy Processing Rules</uicontrol> tab. 
+		  </cmd> 
+		</step> 
+		<step id="step_8EA7CCAD6CA94FB592786C6D3C36033C"> 
+		  <cmd>Select one or more destination report suites to receive the rules
+			 from the current report suite. 
+		  </cmd> 
+		</step> 
+		<step id="step_E480216B75AF4E2485AB5BA48D120BAC"> 
+		  <cmd>Select to 
+			 <uicontrol>Replace all processing rules</uicontrol> or to 
+			 <uicontrol>Append specific processing rules</uicontrol>, and then
+			 click 
+			 <uicontrol>Copy.</uicontrol>
+		  </cmd> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task>

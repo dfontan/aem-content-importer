@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_82DC2BD377C24E7EABF4A09493A941E8">
+  <title>Logging In Using a Standard Login</title>
+  <shortdesc>Steps that describe how to log in.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports and analytics" />
+      <othermeta name="subtopic" content="Get started" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <context id="context_D2A71B4BA91044D6B4491E483AA0C705">
+      <p>After logging in for the first time, change your password. For more
+		  information, see 
+		  <xref scope="local" href="t_acct_info.xml#topic_0028683CA91A4526BE987363F8005A60" type="topic" format="dita"><?xm-replace_text Editing an User Account?></xref>. 
+		</p>
+    </context>
+    <steps id="steps_46B302EF8B8344838E6A29326A115181">
+      <step id="step_81FF8FAEE5FA472EA39AD39FB22E04FD">
+        <cmd>On a computer with access to the Internet, start a browser. 
+		  </cmd>
+      </step>
+      <step id="step_14EC26688B494AC1806A7F4900D2B549">
+        <cmd>Go to 
+			 <filepath>https://my.omniture.com/login/</filepath>. 
+		  </cmd>
+      </step>
+      <step id="step_5065FD4B2E7E4C1E91A2194EF2A9917E">
+        <cmd>On the 
+			 <wintitle>Sign In</wintitle> page, complete the following
+			 information, then click 
+			 <uicontrol>Sign In</uicontrol>. 
+		  </cmd>
+        <stepresult>
+          <p>
+            <uicontrol>Company</uicontrol>: Specify the company ID. 
+			 </p>
+          <p>
+            <uicontrol>Username</uicontrol>: Specify your account ID. 
+			 </p>
+          <p>
+            <uicontrol>Password</uicontrol>: Specify your account password. 
+			 </p>
+          <p>
+            <uicontrol>Remember Me</uicontrol>: Remembers your login settings
+				for future log in attempts. This option makes it possible for anyone with
+				access to your computer to access using your account. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_CB13182EF4A14D6ABC5DB26DC26D938C">
+        <cmd> Select the version of the service to which you want to log in. 
+		  </cmd>
+        <stepresult>
+          <p>The Marketing Cloud automatically logs you out after 30 minutes of
+				inactivity. 
+			 </p>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+</task>

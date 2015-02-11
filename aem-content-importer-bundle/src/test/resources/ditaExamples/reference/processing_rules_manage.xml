@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_CD12A50CE7A74DD8B08CFF5C82616337">
+  <title>Managing Processing Rules</title>
+  <shortdesc>This section contains details on creating, restoring, and copying
+	 processing rules.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Admin tools" />
+      <othermeta name="subtopic" content="Processing rules" />
+    </metadata>
+  </prolog>
+  <conbody></conbody>
+</concept>

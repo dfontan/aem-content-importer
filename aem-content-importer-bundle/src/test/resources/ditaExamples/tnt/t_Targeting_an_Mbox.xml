@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_7C5D3CCD2C7D4A779471E746A0053057" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Target a Location</title>
+  <shortdesc class="- topic/shortdesc ">You can target a campaign to display in
+	 a specific location by choosing the mbox where the content will appear. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <context id="context_FEF2C03FB5614008ACF030E34E6AA027">
+      <p>For more information, see 
+		  <xref href="c_About_Mboxes.xml#concept_E01933A6CEDE481BBAC25F95FE3C6FD9" type="concept" format="dita" scope="local"><?xm-replace_text Mbox Concepts?></xref>.
+		  
+		</p>
+    </context>
+    <steps id="steps_17047850A2C045DDBAFB07DCE786A86C" class="- topic/ol task/steps ">
+      <step id="step_70E4DEE7E8484C5E96F0D9DEDCC5CA0F" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">From the 
+			 <wintitle class="+ topic/keyword ui-d/wintitle ">Location</wintitle>
+			 drop-down list, select the mbox where you want the content to appear. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">When you have selected a location, the 
+				<uicontrol class="+ topic/ph ui-d/uicontrol ">Add Targeting
+				  Location</uicontrol> option appears at the bottom of the Targeting section. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_8EC4443E96EC44E19066D396D690B651" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">(Optional) Specify additional
+			 locations by clicking 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Add Targeting
+				Location</uicontrol> and selecting the new locations. 
+		  </cmd>
+      </step>
+      <step id="step_89CE2BEFB03148BEB4FD50C0A5243A1D" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Done</uicontrol>. 
+		  </cmd>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links class="- topic/related-links ">
+    <link href="t_Setting_the_Percentage_of_Visitors_Included_in_a_Campaign.xml#task_FDE0B7ED64684A3EB6D5F757F2750BD0" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Set the Percentage of Visitors Included in a   Campaign?>
+    </link>
+  </related-links>
+</task>

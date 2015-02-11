@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_63C26DDF7D0C4C0DB78F363B40C378EB">
+  <title>Video Metrics</title>
+  <shortdesc>The events and variables you define on the Video Reporting page
+	 for your report suite. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Metrics" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p> These events and variables are listed under 
+		<wintitle>Video Metrics</wintitle> for convenience. They are standard 
+		variables and they behave identically to
+		other events and variables. 
+	 </p>
+    <p>See 
+		<xref href="http://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/video/index.html?f=t_SiteCatalyst_Video_Configuration" format="http" scope="external">Analytics Video Configuration</xref>.
+	 </p>
+  </conbody>
+</concept>

@@ -1,0 +1,1293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_F5C9FF69A5B44395BB5FA0552F4E9175"> 
+  <title>Release Notes</title> 
+  <shortdesc>Features, release notes, and known issues for the Marketing Cloud
+	 interface. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Marketing Cloud"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <ul id="ul_94627AA6B51A4280AD607C3DD2C4925D"> 
+		<li id="li_04A653B16DCD470BA5B593449F560ECD"> 
+		  <xref
+			href="release_notes.xml#concept_F5C9FF69A5B44395BB5FA0552F4E9175/section_F1A352E928AF432E94CC0A289C345184"
+			format="dita" scope="local"><?xm-replace_text Release 15.1.1 - January 15 2015?></xref>
+		  
+		</li>
+		<li id="li_2ACE504793FA4184955BE286E6A70F06"> 
+		  <xref
+			href="release_notes.xml#concept_F5C9FF69A5B44395BB5FA0552F4E9175/section_A6CF1D4F27B9496892A89C983EB39102"
+			format="dita" scope="local"><?xm-replace_text Release 14.11.1 - November 13 2014?></xref>
+		  
+		</li> 
+		<li id="li_E32943E05DCE4EA49B38DC70F0E32B14"> 
+		  <xref
+			href="release_notes.xml#concept_F5C9FF69A5B44395BB5FA0552F4E9175/section_E3A0F4423B814707AA3745E083500835"
+			format="dita" scope="local"><?xm-replace_text Release 14.10.1 - October 16 2014?></xref>
+		  
+		</li> 
+		<li id="li_F7F9469D1890473995A94276756482AC"> 
+		  <xref
+			href="release_notes.xml#concept_F5C9FF69A5B44395BB5FA0552F4E9175/section_20F156A9CC2F4FC59C4970075C181D3A"
+			format="dita" scope="local"><?xm-replace_text Release 14.9.1 - September 18 2014?></xref>
+		  
+		</li> 
+		<li id="li_6FAE3FD585C04184B665BB1847DCB231"> 
+		  <xref
+			href="release_notes.xml#concept_F5C9FF69A5B44395BB5FA0552F4E9175/section_03BF00F6A95A490C91BCC0A1988FA7AA"
+			format="dita" scope="local"><?xm-replace_text Release 14.8.1 - August 21 2014?></xref>
+		  
+		</li> 
+		<li id="li_8D342D7977A6445AA1BBDBFAE6E93F95"> 
+		  <xref
+			href="release_notes.xml#concept_F5C9FF69A5B44395BB5FA0552F4E9175/section_B22D4F830756463DB27BB4D508D9ADD5"
+			format="dita" scope="local"><?xm-replace_text Release 14.7.1 - July 24 2014?></xref>
+		  
+		</li> 
+		<li id="li_695DB5CC1E884147B51AA999191BA844"> 
+		  <xref
+			href="release_notes.xml#concept_F5C9FF69A5B44395BB5FA0552F4E9175/marketing_cloud_interface"
+			format="dita" scope="local"><?xm-replace_text Release 14.6.1 - June 19 2014?></xref>
+		  
+		</li> 
+		<li id="li_194ACC555A174B1E9471B0208D42A87D"> 
+		  <xref
+			href="release_notes.xml#concept_F5C9FF69A5B44395BB5FA0552F4E9175/section_7E22B2CB3ABA4D6EAED8CA8EFDE5433E"
+			format="dita" scope="local"> <?xm-replace_text Release 14.5.1 - May 22 2014?>
+		  </xref> 
+		</li> 
+		<li id="li_DF9EB4F192CC4571BE6760DADE12C56D"> 
+		  <xref
+			href="release_notes.xml#concept_F5C9FF69A5B44395BB5FA0552F4E9175/section_E2A699764E744D2E8D418E9A3D40AF6B"
+			format="dita" scope="local"> <?xm-replace_text Release 14.4.1 - April 22 2014?>
+		  </xref> 
+		</li> 
+		<li id="li_B91DC411B3AE4E348FB3740AD6C68695"> 
+		  <xref
+			href="release_notes.xml#concept_F5C9FF69A5B44395BB5FA0552F4E9175/section_5D142E3225E3477A84DC01B8197D39BC"
+			format="dita" scope="local"> <?xm-replace_text Release 14.3.1 - March 13, 2014?>
+		  </xref> 
+		</li> 
+		<li id="li_D7C609D6E83A4C2ABE930F236B2FB118"> 
+		  <xref
+			href="release_notes.xml#concept_F5C9FF69A5B44395BB5FA0552F4E9175/section_5AD81B0737C843AFB4BE9C4420D70EB3"
+			format="dita" scope="local"> <?xm-replace_text Release 14.2.1 - February 24, 2014?>
+		  </xref> 
+		</li> 
+	 </ul> 
+	 <p>For a list of documentation updates, see 
+		<xref href="doc_updates.xml#concept_4C8983FCD23848A4B1E4C2D99ED82784"
+		 format="dita" scope="local"><?xm-replace_text Documentation Updates - Marketing Cloud?></xref>.
+		
+	 </p> 
+	 <p>For release notes covering all solutions, see 
+		<xref href="https://marketing.adobe.com/resources/help/en_US/whatsnew/"
+		 format="https" scope="external">Marketing Cloud Release Notes</xref>. 
+	 </p> 
+	 <draft-comment> 
+		<p>11/12 Setting default landing pages - test this out. 
+		</p> 
+	 </draft-comment> 
+	 <draft-comment> 
+		<p>JIRA queries: 
+		</p> 
+		<p> 
+		  <xref
+			href="https://issues.adobe.com/secure/IssueNavigator.jspa?mode=hide&amp;requestId=17605">
+			 MAC Release Notes: Known Issues</xref> - 
+		</p> 
+		<p> 
+		  <xref
+			href="https://issues.adobe.com/secure/IssueNavigator.jspa?mode=hide&amp;requestId=17526">
+			 MAC Release Notes: Features and Improvements</xref> - 
+		</p> 
+		<p> 
+		  <xref
+			href="https://issues.adobe.com/secure/IssueNavigator.jspa?mode=hide&amp;requestId=17527"
+			format="https" scope="external"> MAC Release Notes: Bugs</xref>​ - 
+		</p> 
+	 </draft-comment> 
+	 <draft-comment> 
+		<p>mac dam sync
+		  http://docs.adobe.com/content/docs/en/aem/6-0/author/assets/managing-assets-touch-ui/mac-assets.html
+		  
+		</p> 
+	 </draft-comment> 
+	 <draft-comment> 
+		<p>September release: SUSI. Sign in is now consistent across all adobe
+		  solutions. A new experience at marketing.adobe.com login. Looks more like adobe
+		  standard logins. 
+		</p> 
+	 </draft-comment> 
+	 <section id="section_F1A352E928AF432E94CC0A289C345184">
+		<title>Release 15.1.1 - January 15 2015</title>
+		<p>New features and fixes in the 
+		  <keyword>Adobe Marketing Cloud</keyword> collaboration and sharing
+		  interface. 
+		</p>
+		<table id="table_AD0A8CA760E64227BB04BA6B0E425E80"> 
+		  <tgroup cols="2"><colspec colnum="1" colname="col1"
+			 colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="1.75*"/><thead> 
+				<row> 
+				  <entry colname="col1">Feature 
+				  </entry> 
+				  <entry colname="col2">Description 
+				  </entry> 
+				</row></thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Read-only access. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Administrators can now grant non-administrative users
+						read-only access. 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<p><b>Fixes</b> 
+		</p> 
+		<ul id="ul_AADBA7195C4E4ABF98DE8A4D6686C9FC"> 
+		  <li id="li_3E6980B0DB464A20904FDAFB4F346D2A"><!--MAC-19014-->Fixed an
+			 issue in which PNG files could not be rendered on a card. 
+		  </li> 
+		  <li id="li_778AF5EA36CD49AE8012BD5721E8FFD9"><!--MAC-21174-->Fixed an
+			 issue with uploading files to Marketing Cloud Assets via drag and drop. 
+		  </li> 
+		</ul> 
+		<p><b>Known Issues</b> 
+		</p> 
+		<ul id="ul_D76CE00397FB4C00977D4846618B9F11"> 
+		  <li id="li_6AE4490E202146389BA1A6E862E3965D"><!--MAC-19882 old-->Users
+			 are not able to share PowerPoint files on boards. 
+		  </li> 
+		  <li id="li_71FB766969E94DF19CF8C9C1788F1DD5"><!--MAC-20854 old-->Group
+			 and entitlement changes made in User Management take effect only after a new
+			 login. 
+		  </li> 
+		  <li id="li_1505DEE9F0B64857B61FC893A3251185"><!--MAC-22834-->Some users
+			 might have issues uploading large file-types to 
+			 <keyword>Marketing Cloud</keyword> Assets. 
+		  </li> 
+		  <li id="li_37BE8E406F2E4B13A1D516D508D6B0A3"><!--MAC-22802-->Users
+			 might be missing links on their 
+			 <keyword>Marketing Cloud</keyword> cards from 
+			 <keyword>Media Optimizer</keyword>. 
+		  </li> 
+		  <li id="li_FDDD8B6E2FA8439EA2687436E81EC646"><!--MAC-23119-->Some
+			 administrative users might experience issues linking their accounts after
+			 accepting an invitation to join the 
+			 <keyword>Marketing Cloud</keyword>. 
+		  </li> 
+		  <li id="li_77BC0CCFE3B4462582CA452CA20ADE7C"><!--MAC-1586 old--><keyword>Marketing
+				Cloud</keyword> interface can reduce in performance when in parallel use by
+			 multiple users. 
+		  </li> 
+		  <li id="li_2E534DD4579D4DAA98AE30FAF239F4B4"><!--MAC-19795 old-->Some
+			 users are able to delete an out-of-date asset instead of receiving an error
+			 notification. 
+		  </li> 
+		  <li id="li_F3B2319B748844C899FFDB2438394411"><!--MAC-22663-->Some users
+			 might experience issues when logging into two browsers with the same Adobe ID.
+			 simultaneously. 
+		  </li> 
+		  <li id="li_91D151048E264840AF46C9E1275ED7CA"><!--MAC-22111-->Some users
+			 might be unable to re-add a 
+			 <keyword>Creative Cloud</keyword> user to a shared folder after the 
+			 <keyword>Creative Cloud</keyword> user has been deleted. 
+		  </li> 
+		  <li id="li_95C8D0E1198D421A88E52DB5D1C12775"><!--MAC-22054-->Some users
+			 might experience a delay in the notification that occurs when a folder is
+			 shared from the 
+			 <keyword>Marketing Cloud</keyword> to Creative Cloud. 
+		  </li> 
+		  <li id="li_A9BAAD901DDB43969DB78FAA8DE84A74"><!--MAC-22052-->Some users
+			 might experience an issue sharing a folder between the 
+			 <keyword>Marketing Cloud</keyword> and 
+			 <keyword>Creative Cloud</keyword>. 
+		  </li> 
+		  <li id="li_92AFB0F699BF49FD951F29CAFA054376"><!--MAC-23667-->Some users
+			 may have trouble creating an audience within an Analytics report suite after
+			 shared audiences have been enabled. 
+		  </li> 
+		  <li id="li_E24BC32273A44D4791E3A919919DB42B"><!--MAC-20569-->Some users
+			 may have trouble uploading assets to a board. 
+		  </li> 
+		</ul>
+	 </section>
+	 <section id="section_A6CF1D4F27B9496892A89C983EB39102"> 
+		<title>Release 14.11.1 - November 13 2014</title> 
+		<p>Known issues: 
+		</p> 
+		<ul id="ul_CC78091D732543B0B7B4FB258F1C276B"> 
+		  <li id="li_59794917EEC14A8FAC6B520F4D33D8CE"><!--MAC-19795 old-->Some
+			 users are able to delete an out-of-date asset instead of receiving an error
+			 notification. 
+		  </li> 
+		  <li id="li_D7A6C805366C49E3A0F4D1E2B5287FD1"><!--MAC-19014 old-->Some 
+			 <filepath>.png</filepath> files cannot be rendered on a card. 
+		  </li> 
+		  <li id="li_CC2132A97C094436A22AA80DE5DD5CF5"><!--MAC-20569 old-->Some
+			 users may have trouble uploading assets to a board. 
+		  </li> 
+		  <li id="li_D4A330283BF94789901A97C616EAFB81"><!--MAC-20854 old-->Group
+			 and entitlement changes made in user management only take effect after a new
+			 login. 
+		  </li> 
+		  <li id="li_68DAE451B110447C972856F7608377A4"><!--MAC-20854-->Admins
+			 must log out and back in to see a some changes made in Account Settings. 
+		  </li> 
+		  <li id="li_66E96E18995B4863930CDAD1A7F34AD6"><!--MAC-19882 old-->User
+			 are not able to share PowerPoint files on boards. 
+		  </li> 
+		  <li id="li_1F19A9BAC3C94120ADBEBAF48C4896D5"><!--MAC-1586 old--><keyword>Marketing
+				Cloud</keyword> interface can reduce in performance when in parallel use by
+			 many users. 
+		  </li> 
+		  <li id="li_B2A81D645814414FA728493222826834"><!--MAC-21884-->Adobe
+			 Experience Manager to Creative Cloud synchronization is not working. 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_E3A0F4423B814707AA3745E083500835"> 
+		<title>Release 14.10.1 - October 16 2014</title> 
+		<p>New features and fixes in the 
+		  <keyword>Adobe Marketing Cloud</keyword> collaboration and sharing
+		  interface. 
+		</p> 
+		<table id="table_7C1ACE8108D54782AE128ACD35069DF5"> 
+		  <tgroup cols="2"><colspec colnum="1" colname="col1"
+			 colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="1.75*"/><thead> 
+				<row> 
+				  <entry colname="col1">Feature 
+				  </entry> 
+				  <entry colname="col2">Description 
+				  </entry> 
+				</row></thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Edit User Permissions 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Owners of a board can now edit user permissions on the
+						particular board. 
+					 </p> 
+					 <p> 
+					 <ol id="ol_B12251C510744538AF9BCE60ACB04016"> 
+						<li id="li_87B3EDE9542B47CEBE0BE7F2D1DE844D">On the board,
+						  click 
+						  <uicontrol>Settings</uicontrol>. 
+						</li> 
+						<li id="li_0F4786B0E1E743069D082E7DC488A031">Next to each
+						  owner, specify 
+						  <uicontrol>Owner</uicontrol>, 
+						  <uicontrol>Viewer</uicontrol>, or 
+						  <uicontrol>Editor</uicontrol>. 
+						</li> 
+					 </ol> 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<p><b>Fixes</b> 
+		</p> 
+		<ul id="ul_C13FBFE96FF2437EA2CC37C047257558"> 
+		  <li id="li_C2632CE1660447F199C9849E23D5DC88"><!--MAC-21242-->Creating a
+			 card from a PDF and sharing it to the board was returning an error message. 
+		  </li> 
+		</ul> 
+		<p><b>Known Issues</b> 
+		</p> 
+		<ul id="ul_277A902AD9F74073A2D500A1BFA7AB89"> 
+		  <li id="li_A1214CBB7DCD40A8A5BA7256FA81EDDB"><!--MAC-20569 old-->Some
+			 users may have trouble uploading assets to a board. 
+		  </li> 
+		  <li id="li_C969930BF6A6464F9F55538C11BF8B31"><!--MAC-19014 old-->Some 
+			 <filepath>.png</filepath> files cannot be rendered on a card. 
+		  </li> 
+		  <li id="li_1022A0E074424E0698B8A8F5D93C6EC1"><!--MAC-20854 old-->Group
+			 and entitlement changes made in user management only take effect after a new
+			 login. 
+		  </li> 
+		  <li id="li_405B963075C24A1B8F96F6802CC36028"><!--MAC-21242 old-->Some
+			 users may not be able to create a card from a PDF and share it to a board. 
+		  </li> 
+		  <li id="li_8C08BBAD560E45FF9CFF0628C360FF03"><!--MAC-19795 old-->Some
+			 users are able to delete an out-of-date asset instead of receiving an error
+			 notification. 
+		  </li> 
+		  <li id="li_F98393D43A024FF99203A9951DE8E29B"><!--MAC-19882 old-->User
+			 are not able to share PowerPoint files on boards. 
+		  </li> 
+		  <li id="li_706DCA55AFAC404F8D7243204FEE3875"><!--MAC-1586 old--><keyword>Marketing
+				Cloud</keyword> interface can reduce in performance when in parallel use by
+			 many users. 
+		  </li> 
+		  <li id="li_DBB484420B4943C8845E0E32152B4EB4">
+          <!--MAC-5273 old-->The 
+			 <keyword>Search&amp;Promote</keyword> linking is not available from
+			 the 
+			 <wintitle>Organizations &amp; Product Access</wintitle> page. 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_20F156A9CC2F4FC59C4970075C181D3A"> 
+		<title>Release 14.9.1 - September 18 2014</title> 
+		<p><b>Fixes and Improvements</b> 
+		</p> 
+		<ul id="ul_8719DD621F07411F9CA758681E4FD8AE"> 
+		  <li id="li_362274EC6C3641768E9796636FB02D3E"> When you navigate to 
+			 <filepath>marketing.adobe.com</filepath>, the login experience is now
+			 consistent with Adobe's Creative Cloud login. 
+		  </li> 
+		  <li id="li_BBE9274569224F6CAAE808706B52E8A9"><!--MAC-21320-->On the
+			 Manage Organizations page, the linking experience (after an invite is received)
+			 is now consistent for each solution. 
+		  </li> 
+		</ul> 
+		<p><b>Known Issues</b> 
+		</p> 
+		<ul id="ul_5D5EC2D90E84441EB83DEBECE079027D"> 
+		  <li id="li_557C00A22FBA4FA2B2995BCFD2D9AB01"><!--MAC-20854 old-->Group
+			 and entitlement changes made in user management only take effect after a new
+			 login. 
+		  </li> 
+		  <li id="li_2DA27CC6D3F4435A8C1CA3C67A01C48D"><!--MAC-21242 old-->Some
+			 users may not be able to create a card from a PDF and share it to a board. 
+		  </li> 
+		  <li id="li_3A412A35A90E4F11A9CDA96E5AEF461E"><!--MAC-20569 old-->Some
+			 users may have trouble uploading assets to a board. 
+		  </li> 
+		  <li id="li_38E0A08B2E4B437FA8A18DD0E578CFCD"><!--MAC-19795 old-->Some
+			 users are able to delete an out-of-date asset instead of receiving an error
+			 notification. 
+		  </li> 
+		  <li id="li_2BF321CC67F5413293831359208407AB"><!--MAC-19882 old-->User
+			 are not able to share PowerPoint files on boards. 
+		  </li> 
+		  <li id="li_38CC2FA2BBC345E08043422BADD81352"><!--MAC-19014 old-->Some 
+			 <filepath>.png</filepath> files cannot be rendered on a card. 
+		  </li> 
+		  <li id="li_7FE3D6810ABA47C6ADA2A78864277639"><!--MAC-1586 old--><keyword>Marketing
+				Cloud</keyword> interface can reduce in performance when in parallel use by
+			 many users. 
+		  </li> 
+		  <li id="li_79E560BF929B49D8AF47ED6B3AEC71AE">
+          <!--MAC-5273 old-->The 
+			 <keyword>Search&amp;Promote</keyword> linking is not available from
+			 the 
+			 <wintitle>Organizations &amp; Product Access</wintitle> page. 
+		  </li> 
+		  <li id="li_4616082C0D6B4A1BABC9903D4DA6ED1D"><!--MAC-20396 old-->Some
+			 users may experience their 
+			 <keyword>Creative Cloud</keyword> contents being removed from their
+			 folder, if the content is unshared in the 
+			 <keyword>Marketing Cloud</keyword>. 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_03BF00F6A95A490C91BCC0A1988FA7AA"> 
+		<title>Release 14.8.1 - August 21 2014</title> 
+		<p>New features and fixes in the 
+		  <keyword>Adobe Marketing Cloud</keyword> collaboration and sharing
+		  interface. 
+		</p> 
+		<table id="table_1E7DBEB5E83B4E4285B6FD1D718CD16D"> 
+		  <tgroup cols="2"><colspec colnum="1" colname="col1"
+			 colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="1.67*"/><thead> 
+				<row> 
+				  <entry colname="col1">Feature 
+				  </entry> 
+				  <entry colname="col2">Description 
+				  </entry> 
+				</row></thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p><!--MAC-18982-->Mobile Services 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>You can now access 
+						<keyword>Adobe Mobile Services</keyword> from the left-hand
+						navigation. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>New documentation URL 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p><keyword>Marketing Cloud</keyword> help landing is now at: 
+					 </p> 
+					 <p><xref
+						href="https://marketing.adobe.com/resources/help/en_US/mcloud/" format="https"
+						scope="external">https://marketing.adobe.com/resources/help/en_US/mcloud/</xref>
+						
+					 </p> 
+					 <p>Please update your bookmarks. 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<p><b>Known Issues</b> 
+		</p> 
+		<ul id="ul_9C3C8D113B524A4CB50B601A2BDC1ED3"> 
+		  <li id="li_66D320EDA1F342628C872F793E90CDA8"><!--MAC-20854-->Group and
+			 entitlement changes made in user management only take effect after a new login.
+			 
+		  </li> 
+		  <li id="li_2FDB0768A00243BA880063590D7DE74F"><!--MAC-21242-->Some users
+			 may not be able to create a card from a PDF and share it to a board. 
+		  </li> 
+		  <li id="li_DCCC356615874782A1F75B1884444F32"><!--MAC-20569-->Some users
+			 may have trouble uploading assets to a board. 
+		  </li> 
+		  <li id="li_447B1BFD958347D6944FEF1747CAB1AE"><!--MAC-21279-->Some users
+			 may not be able to log in from 
+			 <keyword>Target</keyword> to 
+			 <keyword>Marketing Cloud</keyword>. 
+		  </li> 
+		  <li id="li_7AF3AD94723B41328A1B84FFF06C5700"><!--MAC-21278-->Some
+			 audience management users cannot log into the 
+			 <keyword>Marketing Cloud</keyword>. 
+		  </li> 
+		  <li id="li_663A0258EB434BD9BEED04C4B87FB972"><!--MAC-19795-->Some users
+			 are able to delete an out-of-date asset instead of receiving an error
+			 notification. 
+		  </li> 
+		  <li id="li_8B48B0CED1914367931BE89CC0557AB1"> <!--MAC-19798 old-->Files
+			 deleted from 
+			 <keyword>Marketing Cloud</keyword> are not being deleted from 
+			 <keyword>Digital Asset Management</keyword>. 
+		  </li> 
+		  <li id="li_74AA1AD37B69427BB0A87B52849F1822"><!--MAC-19882 old updated-->User
+			 are not able to share PowerPoint files on boards. 
+		  </li> 
+		  <li id="li_DD86550B71B948A79C520F5884C641E2"><!--MAC-19014 old-->Some 
+			 <filepath>.png</filepath> files cannot be rendered on a card. 
+		  </li> 
+		  <li id="li_B86E338610764DF08D37421764AFFAE9"><!--MAC-1586 old--><keyword>Marketing
+				Cloud</keyword> interface can reduce in performance when in parallel use by
+			 many users. 
+		  </li> 
+		  <li id="li_57160717D7C048719413DCCD6847483E">
+          <!--MAC-5273 old-->The 
+			 <keyword>Search&amp;Promote</keyword> linking is not available from
+			 the 
+			 <wintitle>Organizations &amp; Product Access</wintitle> page. 
+		  </li> 
+		  <li id="li_45DFFFB95B6643E29F5CC5898D57682D"><!--MAC-20396 old-->Some
+			 users may experience their 
+			 <keyword>Creative Cloud</keyword> contents being removed from their
+			 folder, if the content is unshared in the 
+			 <keyword>Marketing Cloud</keyword>. 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_B22D4F830756463DB27BB4D508D9ADD5"> 
+		<title>Release 14.7.1 - July 24 2014</title> 
+		<p>New features and fixes in the 
+		  <keyword>Adobe Marketing Cloud</keyword> collaboration and sharing
+		  interface. 
+		</p> 
+		<table id="table_AEBC2D828F014D0C8FCDD05A61C1467F"> 
+		  <tgroup cols="2"><colspec colnum="1" colname="col1"
+			 colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="2.37*"/><thead> 
+				<row> 
+				  <entry colname="col1">Feature 
+				  </entry> 
+				  <entry colname="col2">Description 
+				  </entry> 
+				</row></thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p><wintitle>Manage Organizations</wintitle> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>In 
+						<wintitle>Account Settings</wintitle>, click 
+						<xref
+						href="organizations.xml#concept_6D5C8402C03C4698BB37823A73B7AC11" format="dita"
+						scope="local">Manage Organizations</xref>, where you can link to a solution
+						associated with that Organization. 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<p><b>Known Issues</b> 
+		</p> 
+		<ul id="ul_09B1237C260D4F7895F977EE48B237F3"> 
+		  <li id="li_BB1ECC4D152B4BF5B48A9AF92CCA6548"> <!--MAC-19798-->Files
+			 deleted from 
+			 <keyword>Marketing Cloud</keyword> are not being deleted from 
+			 <keyword>Digital Asset Management</keyword>. 
+		  </li> 
+		  <li id="li_28B27614B20B4576B8CB6CC2CA3D52D3"><!--MAC-20457-->Some 
+			 <wintitle>Exchange</wintitle> users may find their names in the
+			 comments to be a long string ID instead of their names 
+		  </li> 
+		  <li id="li_5DD2C8D5FFDF46C3A34586E45C0AA121"><!--MAC-19014-->Some 
+			 <filepath>.png</filepath> files cannot be rendered on a card 
+		  </li> 
+		  <li id="li_82DD87E359984F2CA2AF08095E3D9C5E"><!--MAC-19882-->Uploading
+			 files allows more file types than the drag-and-drop method. For best results,
+			 upload using 
+			 <wintitle>Assets</wintitle>. 
+		  </li> 
+		  <li id="li_8E1AF96B8D1D461F804D0638CE05F940">
+          <!--MAC-5273-->The 
+			 <keyword>Search&amp;Promote</keyword> linking is not available from
+			 the 
+			 <wintitle>Organizations &amp; Product Access</wintitle> page. 
+		  </li> 
+		  <li id="li_AA87F385DC564133A69B24DE9A7F679F"><!--MAC-20602--><keyword>Exchange</keyword>
+			 users must clear their cookies to improve their experience. 
+		  </li> 
+		  <li id="li_AFECE1A3B26E41E8B78BDBEAE8E3CC16"><!--MAC-1586--><keyword>Marketing
+				Cloud</keyword> interface can slow down when in parallel use by many users. 
+		  </li> 
+		  <li id="li_9E84B61BBF8A44AC8B44DA149BB403E7"><!--MAC-20396-->Some users
+			 may experience their 
+			 <keyword>Creative Cloud</keyword> contents being removed from their
+			 folder if the content is unshared in the 
+			 <keyword>Marketing Cloud</keyword>. 
+		  </li> 
+		  <li id="li_B3005307228248E78FAC12B2CC906DC7"><!--MAC-19876-->
+			 You will be logged out after 15 minutes of inactivity. Also, logging
+			 out in one location will log you out of the 
+			 <keyword>Marketing Cloud</keyword>. 
+		  </li> 
+		  <li id="li_CC3308393B7546D6AF0671D6C6902B1B"><!--MAC-20292-->Some users
+			 may not be able to link their audience management accounts to 
+			 <keyword>Marketing Cloud</keyword>. 
+		  </li> 
+		  <li id="li_47B3DDF3024046838603F28CBDF1272D"><!--MAC-20402--><wintitle>Exchange</wintitle>
+			 users can only see English in language selector. 
+		  </li> 
+		</ul> 
+		<p><b>Fixes</b> 
+		</p> 
+		<p>None to report. 
+		</p> 
+	 </section> 
+	 <section id="marketing_cloud_interface"> 
+		<title>Release 14.6.1 - June 19 2014</title> 
+		<p>New features and fixes in the 
+		  <keyword>Adobe Marketing Cloud</keyword> collaboration and sharing
+		  interface. 
+		</p> 
+		<p> 
+		  <b>Improvement</b> 
+		</p> 
+		<table id="table_C9BD63436BF0414B97B8D07387D1993B"> 
+		  <tgroup cols="2"><colspec colnum="1" colname="col1"
+			 colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="1.75*"/><thead> 
+				<row> 
+				  <entry colname="col1">Feature 
+				  </entry> 
+				  <entry colname="col2">Description 
+				  </entry> 
+				</row></thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p><wintitle>Save</wintitle> button in Audience Library 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>When you 
+						<xref
+						href="t_audience_create.xml#task_37F407F58BF9459493BB8E968CDFE737"
+						format="dita" scope="local">create an audience</xref>, the 
+						<wintitle>Save</wintitle> button on the 
+						<wintitle>Create New Audience</wintitle> page is now disabled
+						until all the required fields are completed. <!--MAC-19712 -->
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<p><b>Known Issues</b> 
+		</p> 
+		<ul id="ul_A1DDD6FF662749B9B5D45BE3E3B71FA8"> 
+		  <li id="li_E9D4610C6DAC45E2903D0F56764C9235"> Files deleted from 
+			 <keyword>Marketing Cloud</keyword> are not being deleted from 
+			 <keyword>Digital Asset Management</keyword>. <!--https://issues.adobe.com/browse/MAC-19798-->
+		  </li> 
+		  <li id="li_434601E4150F478290659631B00AE328"> Uploading files allows
+			 more file types than the drag-and-drop method. For best results, upload using
+			 Assets. <!--https://issues.adobe.com/browse/MAC-19882-->
+		  </li> 
+		  <li id="li_947A89B6864D43CD9EF3CC99EA088C6C">
+          <!--MAC-5273-->The 
+			 <keyword>Search&amp;Promote</keyword> linking is not available from
+			 the 
+			 <wintitle>Organizations &amp; Product Access</wintitle> page. 
+		  </li> 
+		  <li id="li_434E2210EBE24E1A86E2950DCD1BFC90">
+          <!--MAC-18250-->Filters applied to trended reports from 
+			 <keyword>Analytics</keyword> are not applied to cards in the 
+			 <keyword>Marketing Cloud</keyword>. 
+		  </li> 
+		  <li id="li_47F96F57D45C47B59510C126E6069B22">
+          <!--MAC-19540-->Some users are not able to link their audience
+			 management account with their 
+			 <keyword>Marketing Cloud</keyword> account. 
+		  </li> 
+		  <li id="li_E7D5FD1D05A544218A65CC34FCFE87BC"><!--
+https://issues.adobe.com/browse/MAC-19876-->
+			 You will be logged out after 15 minutes of inactivity. Also, logging
+			 out in one location will log you out of the Marketing Cloud. 
+		  </li> 
+		  <li id="li_10010D0769864870AB75D7BF3312039A"><!--https://issues.adobe.com/browse/MAC-20457-->
+			 Some Exchange users may find their names in the comments to be a long
+			 string ID instead of their names 
+		  </li> 
+		</ul> 
+		<p><b>Fixes</b> 
+		</p> 
+		<ul id="ul_3534D380B78B47FCBAF51B0F918482E2"> 
+		  <li id="li_49E46A619F4041D59C759AA2E20F1508">Fixed an issue preventing
+			 video upload to apps.
+			 <!--https://issues.adobe.com/browse/MAC-19898?filter=17527-->
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_7E22B2CB3ABA4D6EAED8CA8EFDE5433E"> 
+		<title>Release 14.5.1 - May 22 2014</title> 
+		<table id="table_4E4B34EEE3D94D78BA1A1FBC62950559"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="1.75*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col1">Feature 
+				  </entry> 
+				  <entry colname="col2">Description 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Marketing Cloud Exchange 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p> 
+						<uicontrol>Marketing Cloud</uicontrol> &gt; 
+						<uicontrol>Help</uicontrol> &gt; 
+						<uicontrol>Exchange</uicontrol> 
+					 </p> 
+					 <p>The 
+						<keyword>Marketing
+						  Cloud</keyword><wintitle>Exchange</wintitle> is a single destination where you
+						can search, browse, select, pay, and download digital marketing extensions via
+						apps. 
+					 </p> 
+					 <p>Apps include data connectors, custom configurations to
+						Adobe's core product, 3rd party applications, reports, and 
+						<keyword>Marketing Cloud</keyword> cards. 
+					 </p> 
+					 <p>See 
+						<xref
+						 href="exchange.xml#concept_E07F16F070544B82B56527A845C41D59" format="dita"
+						 scope="local"><?xm-replace_text Exchange Marketplace?></xref>. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Marketing Cloud Audiences 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p> 
+						<uicontrol>Marketing Cloud</uicontrol> &gt; 
+						<uicontrol>Audiences</uicontrol> 
+					 </p> 
+					 <p>The 
+						<wintitle>Audience Library</wintitle> is where you create,
+						edit, and manage audiences, similar to how you work with segments. For example,
+						you can create a segment in reports and analytics, then share it to the 
+						<keyword>Marketing Cloud</keyword> 
+						<wintitle>Audience Library</wintitle>. Once shared, the
+						audience is available in 
+						<keyword>Adobe Target</keyword> for campaign activities, and
+						in Adobe audience management for segmentation. 
+					 </p> 
+					 <ul id="ul_EBD5586B1AF8482499C4DA9BF0E1AD6C"> 
+						<li id="li_70FA7197D116422992C5688F3685F91A"><xref
+						  href="audience_library.xml#concept_3D52E1DED6D04ECC949B514E182C4655"
+						  format="dita" scope="local">Learn about audiences</xref> 
+						</li> 
+						<li id="li_81C970286EAC4CD38C0EC0D8947992EF"><xref
+						  href="admin_getting_started.xml#concept_A9A190B372C5450CA53D60431D362143"
+						  format="dita" scope="local">Implement audience services</xref> 
+						</li> 
+						<li id="li_FF66EE03E3D14F958B60F938003DB1A6"><xref
+						  href="audience_library.xml#concept_3D52E1DED6D04ECC949B514E182C4655"
+						  format="dita" scope="local">Create audiences</xref> in the Audience Library 
+						</li> 
+						<li id="li_564A25AB1EDE426ABEEE42B2238B5B39">See an example
+						  of a 
+						  <xref
+							href="audience_example.xml#concept_9588E880E0C7438E8B29AC7685AD0346"
+							format="dita" scope="local">combined audience</xref> 
+						</li> 
+						<li id="li_F7B5AD1F694F4DC588619B0BF5F5D81D"><xref
+						  href="t_publish_audience_segment.xml#task_32FEEFE0B32E4E388CD4D892D727282A"
+						  format="dita" scope="local">Publish</xref> an Analytics audience segment to the
+						  Marketing Cloud 
+						</li> 
+					 </ul> 
+					 <p> 
+						<note>To request enablement in Target, visit 
+						  <xref href="http://www.adobe.com/go/audiences"
+							format="http" scope="external">http://www.adobe.com/go/audiences</xref>. For
+						  more help, see 
+						  <xref
+							href="https://marketing.adobe.com/resources/help/en_US/target/mmp/c_mmp.html"
+							format="https" scope="external">Master Marketing Profile and Real-Time Shared
+							 Audiences</xref> in 
+						  <keyword>Target</keyword> help. 
+						</note> 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>
+                  <!--MAC-19990-->Improved permissions on card 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Users who are mentioned on 
+						<keyword>Marketing Cloud</keyword> cards now have permissions
+						to that card. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>
+                  <!--MAC-19835-->Scene7 account linking 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>New Adobe users can link their Scene7 accounts to Adobe ID
+						as well as their team members. Administrators can unlink users from Scene7
+						accounts as well. 
+					 </p> 
+					 <p>See 
+						<xref
+						 href="link_accounts.xml#concept_DFCB29A3B4834FC59AA29E0BBA301584" format="dita"
+						 scope="local"><?xm-replace_text Join the Marketing Cloud?></xref> for
+						information about linking accounts. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Asset synchronization. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p> You can share assets within Adobe Experience Manager (AEM)
+						Assets with Adobe Marketing Cloud and Adobe Creative Cloud such that any
+						changes to these assets are reflected in the shared copies of the assets in
+						Adobe Marketing Cloud and Adobe Creative Cloud. 
+					 </p> 
+					 <p>See 
+						<xref
+						 href="http://docs.adobe.com/docs/br/aem/6-0/administer/content/assets/mac-asset-sync.html"
+						 format="http" scope="external">Synchronizing AEM assets with MAC and CC</xref>.
+						
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<p> 
+		  <b>Fixes</b> 
+		</p> 
+		<ul id="ul_5889470EFDE640CA99CF93905A5C6458"> 
+		  <li id="li_2E4995F391BF466CB94DD0116A1B0D08">
+          <!--MAC-4307-->
+			 <keyword>Marketing Cloud</keyword> was not linking to 
+			 <keyword>Adobe Target</keyword>. This issue occurred if the 
+			 <keyword>Adobe Target</keyword> login can be used on multiple 
+			 <keyword>Target</keyword> servers. 
+		  </li> 
+		  <li id="li_213DA6F7059D42EF99F6FEAFBDCAE499">
+          <!--MAC-4660-->
+			 <keyword>Adobe Media Optimizer</keyword> was not creating users
+			 automatically when the user has been created in 
+			 <keyword>Marketing Cloud</keyword>. 
+		  </li> 
+		  <li id="li_DC3C637F4D1C434B8AAC96BC6150519E">
+          <!--MAC-4694-->Data shared from 
+			 <keyword>Media Optimizer</keyword> was misrepresented in the 
+			 <keyword>Marketing Cloud</keyword>. 
+		  </li> 
+		  <li id="li_F6FBBC2E5CCE4A9E94BF5A79481B8732">
+          <!--MAC-5029-->Options in combo boxes used for adding new users
+			 temporarily disappeared while typing. 
+		  </li> 
+		  <li id="li_9106A8438C144626BD99ABBA8FCF301C">
+          <!--MAC-5626-->The Comments link on asset card view was not
+			 clickable. 
+		  </li> 
+		  <li id="li_7650C7AF11274321B6E1AE9774AD5C54">
+          <!--MAC-3546-->After adding a custom tag to an asset, no other
+			 metadata changes were not persisting. 
+		  </li> 
+		  <li id="li_FFC2A837878B4F3DA47F09947AC8066F">
+          <!--MAC-1586-->Slow 
+			 <wintitle>Marketing Cloud</wintitle> interface performance when in
+			 parallel use by many users. 
+		  </li> 
+		  <li id="li_32446B83F15D4B12BE4C27E34476F73E">
+          <!--MAC-15618-->Deleting an image in 
+			 <wintitle>Marketing Cloud Assets</wintitle> was not issuing a warning
+			 if the image was used in 
+			 <keyword>Adobe Target Essentials</keyword>. 
+		  </li> 
+		  <li id="li_24310EC544EB47CF9A6B89B22641B434">
+          <!--MAC-18832-->When 
+			 <uicontrol>remember me</uicontrol> was not selected during login, the
+			 user was logged out after 15 minutes. 
+		  </li> 
+		  <li id="li_8D8475BAB883434F834CD477B99DD2E4">
+          <!--MAC-18313-->Users were having to log out and back in for all
+			 permission and entitlement changes to take effect. 
+		  </li> 
+		  <li id="li_4705E17AFAAD4B02BCB2720038C26CB9">
+          <!--MAC-4714-->Logging in to the 
+			 <keyword>Marketing Cloud</keyword> was taking longer than a second. 
+		  </li> 
+		  <li id="li_1DE0D94AEC80483AAD75B85A1F76221B">
+          <!--MAC-19798-->For certain users, deleting files from the 
+			 <keyword>Marketing Cloud</keyword> did not synchronizing with 
+			 <keyword>Digital Asset Management</keyword>. 
+		  </li> 
+		  <li id="li_E6AB2762FAFD42618F642980652AEEE4">
+          <!--MAC-19876-->Users were being logged out after only 15 minutes of
+			 browser inactivity. 
+		  </li> 
+		  <li id="li_DD68D7E0E4C145C48BB4CC89B1DCD8A4">
+          <!--MAC-19882-->User were not able to share PowerPoint files on
+			 boards. 
+		  </li> 
+		  <li id="li_06A3E722B8C844F497CF2231D226F5FA">
+          <!--MAC-19923-->Some users were experiencing poor visual layout in
+			 Internet Explorer 10 than other browsers. 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_E2A699764E744D2E8D418E9A3D40AF6B"> 
+		<title>Release 14.4.1 - April 22 2014</title> 
+		<table id="table_D95C0DC64F2A4B47BAC83E504CFD6825"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="2.28*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col1">Feature 
+				  </entry> 
+				  <entry colname="col2">Description 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Create cards from help topics 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>After you enable the 
+						<xref
+						 href="http://microsite.omniture.com/t2/help/en_US/mcloud/oembed.html"
+						 format="http" scope="external">Share to Adobe Marketing Cloud</xref> feature in
+						your browser's Bookmark toolbar, you can now share help pages from the
+						microsite URL. 
+					 </p> 
+					 <p> 
+						<b>To share a help topic</b> 
+					 </p> 
+					 <ol id="ol_F94B816121494B0FA16CC07B0E96AED8"> 
+						<li id="li_F47187D4B5FE46D3A51D257DD569B4D6"> 
+						  <p>In the 
+							 <keyword>Marketing Cloud</keyword>, click 
+							 <uicontrol>Tools</uicontrol>. 
+						  </p> 
+						</li> 
+						<li id="li_94EF58E7A4974B63951E14F72A710183"> 
+						  <p>Drag the 
+							 <uicontrol>Share to Adobe Marketing Cloud</uicontrol>
+							 button to your Bookmark toolbar. 
+						  </p> 
+						</li> 
+						<li id="li_69EEC4F25D8F4AD7AA106A10B7F50FF6"> 
+						  <p>Navigate to a help page (or remain on this one), then
+							 click 
+							 <uicontrol>Share to Adobe Marketing Cloud</uicontrol> in
+							 your browser's Bookmarks toolbar. 
+						  </p> 
+						  <p>This step creates a card, which you can view in the 
+							 <wintitle>Marketing Cloud</wintitle>. 
+						  </p> 
+						</li> 
+					 </ol> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<p> 
+		  <b>Fixes</b> 
+		</p> 
+		<p> 
+		<ul id="ul_AE55017B34DE4C8B8AD69063D3651BCE"> 
+		  <li id="li_A79464044D7A4F3087DAEA8E9C86A327">
+            <!-- MAC-3546-->After adding a custom tag to an asset, no other
+			 metadata changes can be persisted. 
+		  </li> 
+		  <li id="li_6B01213C3BA24070BC699C9CD0DD2E5D">
+            <!--MAC-18996 -->Users have to refresh the board to make the
+			 deleted cards disappear from view. 
+		  </li> 
+		  <li id="li_D62D0B23AD44457A9CE1DB6D827F922B">
+            <!--MAC-18832 -->When 
+			 <uicontrol>Remember me</uicontrol> is not selected during login, the
+			 user is logged out after 15 minutes 
+		  </li> 
+		  <li id="li_95633DC9736345A98A3A9387CCE659D0">
+            <!--MAC-18681 -->
+			 <keyword>Analytics</keyword> solution landing page shows formatting
+			 errors. 
+		  </li> 
+		  <li id="li_F1E8BFDCA2DC45D19B68BAC67D34C280">
+            <!-- MAC-18313 -->Users must log out and log back in for all
+			 permission and entitlement changes to take effect. 
+		  </li> 
+		  <li id="li_5DF1CF264707471C9B77098E900A7D4D">
+            <!--MAC-15618 -->Deleting an image, 
+			 <wintitle>Assets</wintitle> does not warn if the image is used in 
+			 <keyword>Adobe Target Essentials</keyword>. 
+		  </li> 
+		  <li id="li_AD5B634DFEFF4B9FAC247CF6D44BF547">
+            <!--MAC-5626 -->Comments link on asset card view is not clickable. 
+		  </li> 
+		  <li id="li_237C2858F85A40B684AF086FA42A2F58">
+            <!--MAC-5029 -->Options in combo boxes for adding new users
+			 temporarily disappear while typing. 
+		  </li> 
+		  <li id="li_31D0E33A478A4100AAED3385ECCA903D">
+            <!--MAC-4714 -->Logging in to the 
+			 <keyword>Marketing Cloud</keyword> takes longer than a second. 
+		  </li> 
+		  <li id="li_E8B6F7ADAD17493AB8A0E340738F3D1B">
+            <!--MAC-4694 -->Data shared from 
+			 <keyword>Media Optimizer</keyword> is misrepresented in the 
+			 <keyword>Marketing Cloud</keyword>. 
+		  </li> 
+		  <li id="li_DD3B151394B243528F9E0D5C0330FFB2">
+            <!--MAC-4660 -->Adobe 
+			 <keyword>Media Optimizer</keyword> does not create users
+			 automatically when user has been created in the 
+			 <keyword>Marketing Cloud</keyword>. 
+		  </li> 
+		  <li id="li_B1CDE4A37B724C19831CED99CF92547E">
+            <!--MAC-4307 -->The 
+			 <keyword>Marketing Cloud</keyword> cannot be linked to 
+			 <keyword>Adobe Target</keyword>, if the 
+			 <keyword>Adobe Target</keyword> login can be used on multiple 
+			 <keyword>Target</keyword> servers. 
+		  </li> 
+		  <li id="li_9520882E2BAF4DFDB5B3AED127175667">
+            <!--MAC-1586 -->
+			 <keyword>Marketing Cloud</keyword> interface can slow down when in
+			 parallel use by many users. 
+		  </li> 
+		  <li id="li_9C9B23AB7DA84B61899564E06BC4B9E5">
+            <!--MAC-5273 -->
+			 <keyword>Search&amp;Promote</keyword> linking is not available from
+			 the 
+			 <wintitle>Organizations &amp; Product Access</wintitle> page. 
+		  </li> 
+		  <li id="li_C6CC287FDDC94B5F848343486AF31A8B">
+            <!--MAC-18460 -->
+			 <keyword>Adobe Media Optimizer</keyword> simulation cards are not
+			 rendering correctly. 
+		  </li> 
+		  <li id="li_4B828D01B4724463B226B7CDE843EE04">
+            <!--MAC-18250 -->Filters applied to trended reports from 
+			 <keyword>Analytics</keyword> are not applied to cards in 
+			 <keyword>Marketing Cloud</keyword>. 
+		  </li> 
+		  <li id="li_AB7941B80D8342A8B3E15B15F21ED169">
+            <!--MAC-18962 -->Some Excel or CSV files cannot be uploaded to a
+			 board. 
+		  </li> 
+		  <li id="li_D57C90F331BA4458ABCA0A45C48EDBAA">
+            <!-- MAC-19014 -->Some PNG files cannot be rendered on a card. 
+		  </li> 
+		  <li id="li_247568955D494E2EBA204D0B3469BCF9">
+            <!--MAC-19540 -->Some users may not be able to link their audience
+			 management account with their 
+			 <keyword>Marketing Cloud</keyword>. 
+		  </li> 
+		  <li id="li_077BD98DFE5F4DF6AA8CDF8730C9603D">
+            <!--MAC-19571 -->Some users may experience error when sharing 
+			 <keyword>Analytics</keyword> segments in the 
+			 <keyword>Marketing Cloud</keyword>. 
+		  </li> 
+		  <li id="li_4BD62ECFCFBD49FE856FED27BC20A22D">
+            <!--MAC-19175 -->Some users may not be able to drill down to
+			 subfolders in 
+			 <wintitle>Asset Selector</wintitle>. 
+		  </li> 
+		  <li id="li_9F2373FCCCEE40E2801C299589E3C204">
+            <!--MAC-19672 -->Some users are not able to share AdLens gadgets in
+			 the 
+			 <keyword>Marketing Cloud</keyword>. 
+		  </li> 
+		</ul> 
+		</p> 
+	 </section> 
+	 <section id="section_5D142E3225E3477A84DC01B8197D39BC"> 
+		<title>Release 14.3.1 - March 13 2014</title> 
+		<p>Version 14.3.1 is a maintenance release that focuses on speed,
+		  stability and security. It does not include major new features. 
+		</p> 
+		<p> 
+		  <b>Fixes</b> 
+		</p> 
+		<ul id="ul_6374D4918D574E17BA361ED70F9804C8"> 
+		  <li id="li_1F58CAA7F6DC4475949BEF49F4E57AB4">
+          <!--MAC-15424-->Added the ability to remove your avatar image. 
+		  </li> 
+		  <li id="li_39337498973E47E4AEBE6BAF53E52167">
+          <!--MAC-19006-->Fixed an issue preventing you from unlinking your 
+			 <keyword>Adobe Media Optimizer</keyword> accounts. 
+		  </li> 
+		</ul> 
+		<p> 
+		  <b>Known Issues</b> 
+		</p> 
+		<ul id="ul_AFED54A8980D404191E816FA8D2A2532"> 
+		  <li id="li_9E7D3D2BD02D47F7877B30BA01F23BDD">
+          <!--MAC-15618-->Deleting an image in Marketing Cloud Assets does not
+			 warn if the image is used in Adobe Target Essentials. 
+		  </li> 
+		  <li id="li_60A9B9D855B54E6EB855E3CB06FD70C3">
+          <!--MAC-15069-->Refreshing a card from 
+			 <keyword>Analytics</keyword> can sometimes lead to an empty chart in
+			 the expanded card. 
+		  </li> 
+		  <li id="li_B791BF2E160143A5A438B7B169A067FE">
+          <!--MAC-18313-->Users must log out and log back in for all permission
+			 and entitlement changes to take effect. 
+		  </li> 
+		  <li id="li_21134BAF40234D87A0B2FEED983D46A9">
+          <!--MAC-18832-->When 
+			 <term>Remember me</term> is not selected during login, the user will
+			 be logged out after 15 minutes. 
+		  </li> 
+		  <li id="li_ABA425281CC54D8588931D15533AA4A9">
+          <!--MAC-18681-->
+			 <keyword>Analytics</keyword> solution landing page shows formatting
+			 errors. 
+		  </li> 
+		  <li id="li_488E2FE9F75C478FBA301EC55B998FF4">
+          <!--MAC-5626-->The Comments link on asset card view is not clickable.
+			 
+		  </li> 
+		  <li id="li_521501AC043E44398ECDC1CC73581A53">
+          <!--MAC-1586-->Marketing Cloud interface can slow down when in
+			 parallel use by many users 
+		  </li> 
+		  <li id="li_E3470E1153FD4EE3851AB7276CAD94A6">
+          <!--MAC-4307-->Marketing Cloud cannot be linked to 
+			 <keyword>Adobe Target</keyword>, if the 
+			 <keyword>Adobe Target</keyword> login can be used on multiple Target
+			 servers. 
+		  </li> 
+		  <li id="li_21C5A62514C9421AA399541E20376408">
+          <!--MAC-4714-->Logging in to Marketing Cloud takes longer than a
+			 second. 
+		  </li> 
+		  <li id="li_AB8DD8133CC64CA9AA818C8C743AFEA9">
+          <!--MAC-3546-->After adding a custom tag to an asset, no other
+			 metadata changes can be persisted. 
+		  </li> 
+		  <li id="li_2762D0AA08D2460A82B83A5BE155FEB3">
+          <!--MAC-4660-->
+			 <keyword>Adobe Media Optimizer</keyword> does not create users
+			 automatically when user has been created in Marketing Cloud. 
+		  </li> 
+		  <li id="li_EFC72414B1C44FD9A1AE6FE0053469A6">
+          <!--MAC-5029-->Options in combo boxes for adding new users
+			 temporarily disappear while typing. 
+		  </li> 
+		  <li id="li_1F48922DAA28404CA53AA857CC4F1ED7">
+          <!--MAC-4694-->Data shared from 
+			 <keyword>Media Optimizer</keyword> is mis-represented in Marketing
+			 Cloud. 
+		  </li> 
+		  <li id="li_2C29E3E27ABA4C758D0B53C7C3EEA74D">
+          <!--MAC-18659-->Sharing Flickr images fails. 
+		  </li> 
+		  <li id="li_8991085B5A9F4FF692394D31E51ED4D9">
+          <!--MAC-18250-->Filters applied to trended reports from 
+			 <keyword>Analytics</keyword> are not applied to cards in Marketing
+			 Cloud. 
+		  </li> 
+		  <li id="li_B9AFC4F5A4E74C16945EBDA129CE3AC8">
+          <!--MAC-15506-->Group and entitlement changes made in user management
+			 only take effect after a new login. 
+		  </li> 
+		  <li id="li_ABFB1105447F4E40A8C70B4D8B87DC39">
+          <!--MAC-5273-->
+			 <keyword>Search&amp;Promote</keyword> linking is not available from 
+			 <wintitle>Organizations &amp; Product Access</wintitle>. 
+		  </li> 
+		  <li id="li_ABE8F8922D2D4488A08C9194CFDE3754">
+          <!--MAC-18996-->User have to refresh the board to make the deleted
+			 cards disappear from view. 
+		  </li> 
+		  <li id="li_8B46CC8A05B841AB9F6E6DB067D0A777">
+          <!--MAC-18962-->Some Excel or CSV files cannot be uploaded to a
+			 board. 
+		  </li> 
+		  <li id="li_DE4D299B76E34D7F8B4268A842EBCD57">
+          <!--MAC-18460-->
+			 <keyword>Adobe Media Optimizer</keyword> simulation cards are not
+			 rendering correctly. 
+		  </li> 
+		  <li id="li_72A1F43586CC43E3A7BA3CA61C8E160B">
+          <!--MAC-19014-->Some PNG files cannot be rendered on a card. 
+		  </li> 
+		  <li id="li_9DF33E870E014822903C0CC0EB5EC359">
+          <!--MAC-19084-->Beta feedback cannot be submitted. 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_5AD81B0737C843AFB4BE9C4420D70EB3"> 
+		<title>Release 14.2.1 - February 24 2014</title> 
+		<table id="table_DFAB002358C94A17A7F91DAB323A488F"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="2.71*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col1">Feature 
+				  </entry> 
+				  <entry colname="col2">Description 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>OEmbed 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>
+                  <!--MAC-18548-->OEmbed sharing is now supported on more
+						sites. 
+					 </p> 
+					 <p>See 
+						<xref
+						 href="http://microsite.omniture.com/t2/help/en_US/mcloud/oembed.html"
+						 format="http" scope="external">Embedding Content</xref> in 
+						<keyword>Marketing Cloud</keyword> help. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Refresh Data 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>
+                  <!--MAC-18174-->The 
+						<uicontrol>Refresh Data</uicontrol> icon for a graph on a
+						card is now hidden if the solution does not allow a data refresh. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Join Marketing Cloud (Link Accounts) 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p> See 
+						<xref
+						 href="link_accounts.xml#concept_DFCB29A3B4834FC59AA29E0BBA301584" format="dita"
+						 scope="local"><?xm-replace_text Join the Marketing Cloud?></xref> for
+						information about linking your solution accounts (<keyword>Analytics</keyword>,
+						
+						<keyword>Social</keyword>, and 
+						<keyword>Target</keyword>) with your Adobe ID. 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<p> 
+		  <b>Fixes</b> 
+		</p> 
+		<ul id="ul_E47D197DA08842A28C6B6DDFA8598B46"> 
+		  <li id="li_506B379E70E7426AB2A18DB658A262D5">
+          <!--MAC-18382-->Fixed an issue that prevented shared 
+			 <keyword>Analytics</keyword> reports from applying segment filters. 
+		  </li> 
+		  <li id="li_1B761C6B71424DF4BFA87A8A3DBB4EC5">
+          <!--MAC-4146-->Fixed an issue causing solutions to display on the 
+			 <wintitle>Marketing Cloud Solutions</wintitle> page as linked, even
+			 if the solutions accounts were not linked. 
+		  </li> 
+		  <li id="li_A86E3355B96F46778F1B1288B4BC80D0">
+          <!--MAC-18351-->Fixed an issue that prevented 
+			 <keyword>Adobe Target</keyword> customers in Asia from being able to
+			 click the 
+			 <uicontrol>Continue to Marketing Cloud</uicontrol> button on the
+			 linking page. 
+		  </li> 
+		  <li id="li_B7129F925AEE49F7B3B506E5385F4B16">
+          <!--MAC-18544-->Fixed an issue that prevented the sharing of YouTube
+			 videos. 
+		  </li> 
+		</ul> 
+	 </section> 
+  </conbody> 
+</concept> 

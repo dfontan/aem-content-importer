@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_7113B5D037BE4622B6934554C6D18F96"> 
+  <title>Manual Link Tracking Using Custom Link Code</title> 
+  <shortdesc> Custom link code lets file downloads, exit links, and custom
+	 links be tracked in situations where automatic tracking is not sufficient or
+	 applicable. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Developer and implementation"/> 
+		<othermeta name="subtopic" content="Link tracking"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Custom link code is typically implemented by adding an 
+		<wintitle>onClick</wintitle> event handler to a link or by adding code to
+		an existing routine. It can be implemented from essentially any JavaScript
+		event handler or function. 
+	 </p> 
+	 <p>Link Tracking consists of calling the AppMeasurement for JavaScript
+		function whenever the user performs actions that generate data you want to
+		capture. This function, 
+		<wintitle>s.tl()</wintitle>, is either called directly in an event
+		handler, such as 
+		<wintitle>onClick</wintitle> or 
+		<wintitle>onChange</wintitle>, or from within a separate function. This 
+		<wintitle>s.tl()</wintitle> function has five arguments. The first three
+		are required: 
+	 </p> 
+	 <codeblock outputclass="syntax javascript">s.tl(this,linkType,linkName, variableOverrides, doneAction)</codeblock> 
+	 <section id="section_F2B9A2A3CC1F4BB9A64456BC39FC50B9"> 
+		<title>Custom Link Tracking on FireFox and WebKit Browsers</title> 
+		<p> JavaScript H.25 includes an update to ensure that link tracking
+		  completes successfully on WebKit browsers (Safari and Chrome). JavaScript H.26
+		  includes an update to ensure that link tracking completes successfully on
+		  FireFox 20+. 
+		</p> 
+		<p>After this update, download and exit links that are automatically
+		  tracked (determined by<filepath>s.trackDownloadLinks</filepath>and 
+		  <filepath>s.trackExternalLinks</filepath>) are tracked successfully. If
+		  you are tracking custom links using manual JavaScript calls, you need to modify
+		  how these calls are made. For example, exit and download links are often
+		  tracked using code similar to the following: 
+		  <codeblock outputclass="syntax javascript">&lt;a href="http://anothersite.com" onclick="s.tl(this,'e','AnotherSite',null)"&gt;</codeblock> 
+		</p> 
+		<p>Internet Explorer executes the track link call and open the new page.
+		  Other browsers might cancel execution of the track link call when the new page
+		  opens. This often prevents track link calls from completing. 
+		</p> 
+		<p> To work around this behavior, H.25 (released July 2012) includes an
+		  overloaded track link method ( 
+		  <filepath>s.tl 
+		  </filepath>) that forces browsers with this behavior to wait for the
+		  track link call to complete. This new method executes the track link call and
+		  handles the navigation event, instead of using the default browser action. This
+		  overloaded method requires an additional parameter, called 
+		  <wintitle>doneAction</wintitle>, to specify the action to take when the
+		  link tracking call completes. 
+		</p> 
+		<p> To use this new method, update calls to 
+		  <filepath>s.tl</filepath> with an additional 
+		  <wintitle>doneAction</wintitle> parameter, similar to the following: 
+		</p> 
+		<codeblock outputclass="syntax javascript">&lt;a href="http://anothersite.com" 
+onclick="s.tl(this,'e','AnotherSite',null,'navigate');return false"&gt;</codeblock> 
+		<p>Passing navigate as the 
+		  <wintitle>doneAction</wintitle> mirrors the default browser behavior
+		  and opens the URL specified by the href attribute when the tracking call
+		  completes. 
+		</p> 
+		<p>In JavaScript H.25.4 (released February 2013), the following scope
+		  limitations were added to links tracked when 
+		  <codeph>useForcedLinkTracking</codeph> is enabled. The automatic forced
+		  link tracking applies only to: 
+		</p> 
+		<ul id="ul_1094198044074C678836DD12C404D372"> 
+		  <li id="li_6FD7B70102814898B0D5EBFF3E7B071C"> 
+			 <codeph>&lt;A&gt;</codeph> and 
+			 <codeph>&lt;AREA&gt;</codeph> tags. 
+		  </li> 
+		  <li id="li_3ACBDD6A14C744C6977C5D23D1572119">The tag must have an 
+			 <codeph>HREF</codeph> attribute. 
+		  </li> 
+		  <li id="li_196DCF3636E04B9FBA5031B1F18C13D7">The 
+			 <codeph>HREF</codeph> can't start with 
+			 <codeph>#</codeph>, 
+			 <codeph>about:</codeph>, or 
+			 <codeph>javascript:</codeph>. 
+		  </li> 
+		  <li id="li_4B8714C937774DB5B1324D957AB4823B">The 
+			 <codeph>TARGET</codeph> attribute must not be set, or the 
+			 <codeph>TARGET</codeph> needs to refer to the current window
+			 (<codeph>_self</codeph>, 
+			 <codeph>_top</codeph>, or the value of 
+			 <codeph>window.name</codeph>). 
+		  </li> 
+		</ul> 
+	 </section> 
+  </conbody> 
+</concept> 

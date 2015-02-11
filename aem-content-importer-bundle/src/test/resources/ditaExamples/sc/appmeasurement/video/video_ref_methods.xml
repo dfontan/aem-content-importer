@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_30874334BCB54B6D8A8D49388D7F06FF">
+  <title>Media Module Methods</title>
+  <shortdesc>The 
+	 media module methods are used to manually tracking
+	 player events and to track additional metrics that are not part of the standard
+	 video reports. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>media</keyword>
+        <keyword>milestone</keyword>
+        <keyword>sdk</keyword>
+        <keyword>video</keyword>
+      </keywords>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>If you are using 
+		<codeph>Media.autoTrack</codeph> and are not tracking additional metrics,
+		you do not need to call any of these methods directly. All arguments are
+		required unless specified as optional. 
+	 </p>
+    <table id="table_EFB15584EDEF480886EA1966500D3C80">
+      <tgroup cols="2">
+        <colspec colnum="1" colname="col1" colwidth="1.00*" />
+        <colspec colnum="2" colname="col2" colwidth="2.40*" />
+        <thead>
+          <row>
+            <entry colname="col1">Method 
+				</entry>
+            <entry colname="col2">Description 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry colname="col1">
+              <codeph>Media.open</codeph>
+            </entry>
+            <entry colname="col2">
+              <b>Syntax:</b>
+              <codeblock>s.Media.open(mediaName,mediaLength,mediaPlayerName)</codeblock>
+              <p>Prepares the 
+					 media module to collect video tracking data.
+					 This method takes the following parameters: 
+				  </p>
+              <p>
+                <b>mediaName</b>: (required) The name of the video as you want
+					 it to appear in video reports. 
+				  </p>
+              <p>
+                <b>mediaLength</b>: (required) The length of the video in
+					 seconds. 
+				  </p>
+              <p>
+                <b>mediaPlayerName</b>: (required) The name of the media
+					 player used to view the video, as you want it to appear in video
+					 reports. 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <codeph>Media.openAd</codeph>
+            </entry>
+            <entry colname="col2">
+              <b>Syntax:</b>
+              <codeblock>s.Media.openAd(name,length,playerName,parentName,parentPod,parentPodPosition,CPM)</codeblock>
+              <p>Prepares the 
+					 media module to collect ad tracking data.
+					 This method takes the following parameters: 
+				  </p>
+              <p>
+                <b>name</b>: (required) The name or ID of the ad. 
+				  </p>
+              <p>
+                <b>length</b>: (required) The length of the ad. 
+				  </p>
+              <p>
+                <b>playerName</b>: (required) The name of the media player
+					 used to view the ad. 
+				  </p>
+              <p>
+                <b>parentName</b>: The name or ID of the primary content where
+					 the ad is embedded. 
+				  </p>
+              <p>
+                <b>parentPod</b>: The position in the primary content the ad
+					 was played. 
+				  </p>
+              <p>
+                <b>parentPodPosition</b>: The position within the pod where
+					 the ad is played. 
+				  </p>
+              <p>
+                <b>CPM</b>: The CPM or encrypted CPM (prefixed with a "~")
+					 that applies to this playback. 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <codeph>Media.click</codeph>
+            </entry>
+            <entry colname="col2">
+              <b>Syntax:</b>
+              <codeblock>s.Media.click(name,offset)</codeblock>
+              <p>Track when an ad is clicked in a video. This method takes the
+					 following parameters: 
+				  </p>
+              <p>
+                <b>name</b>: The name of the ad. This must match the name used
+					 in 
+					 <codeph>Media.openAd</codeph>. 
+				  </p>
+              <p>
+                <b>offset</b>: The offset into the ad when the click occurred.
+					 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <codeph>Media.close</codeph>
+            </entry>
+            <entry colname="col2">
+              <b>Syntax:</b>
+              <codeblock>s.Media.close(mediaName)</codeblock>
+              <p>Ends video data collection and sends information to Adobe data
+					 collection servers. Call this method at the end of the video. This method takes
+					 the following parameters: 
+				  </p>
+              <p>
+                <b>mediaName</b>: The name of the video. This must match the
+					 name used in Media.open. 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <codeph>Media.complete</codeph>
+            </entry>
+            <entry colname="col2">
+              <b>Syntax:</b>
+              <codeblock>s.Media.complete(name,offset)</codeblock>
+              <p>This method manually tracks a complete event. This method is
+					 used when you need to trigger events using special logic that can't be handled
+					 using 
+					 <codeph>Media.completeByCloseOffset</codeph>. 
+				  </p>
+              <p>For example, if you are measuring a live stream that has no
+					 defined end, you might trigger a complete after a user views a live stream for
+					 X seconds. You might measure a complete using a percentage calculation based on
+					 the length and type of content. This method takes the following parameters: 
+				  </p>
+              <p>
+                <b>mediaName</b>: The name of the video. This must match the
+					 name used in Media.open. 
+				  </p>
+              <p>
+                <b>mediaOffset</b>: The number of seconds into the video when
+					 the complete event should be sent. Specify the offset based on the video
+					 starting at second zero. If your media player tracks using milliseconds, make
+					 sure the value is converted to seconds before you call Media.complete. 
+				  </p>
+              <p>If you plan to call complete manually, set 
+					 <codeph>s.Media.completeByCloseOffset = false</codeph> to
+					 disable automatic triggering of the complete event. 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <codeph>Media.play</codeph>
+            </entry>
+            <entry colname="col2">
+              <b>Syntax:</b>
+              <codeblock>s.Media.play(name,offset,segmentNum,segment, segmentLength)</codeblock>
+              <p>Call this method anytime a video starts playing. When using
+					 manual video measurement, you can provide the current segment data when sending
+					 video measurement data. 
+				  </p>
+              <p>If your player changes from one segment to another, for
+					 whatever reason, you should call Media.stop before calling Media.play again for
+					 the new segment. 
+				  </p>
+              <p>This method takes the following parameters: 
+				  </p>
+              <p>
+                <b>mediaName</b>: The name of the video. This must match the
+					 name used in Media.open. 
+				  </p>
+              <p>
+                <b>mediaOffset</b>: The number of seconds into the video that
+					 play begins. Specify the offset based on the video starting at second zero. If
+					 your media player tracks using milliseconds, make sure the value is converted
+					 to seconds before you call Media.play. 
+				  </p>
+              <p>
+                <b>segmentNum</b>: (Optional) The current segment number,
+					 which marketing reports use to order the display of segments in reports. The
+					 segmentNum parameter must be greater than zero. 
+				  </p>
+              <p>
+                <b>segment</b>: (Optional) The current segment name. 
+				  </p>
+              <p>
+                <b>segmentLength</b>: (Optional) The current segment length,
+					 in seconds. 
+				  </p>
+              <p>For example: 
+				  </p>
+              <codeblock>s.Media.play("My Video",1800,2,"Second Quarter",1800)
+s.Media.play("My Video",0,1,"Preroll",30)</codeblock>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <codeph>Media.stop</codeph>
+            </entry>
+            <entry colname="col2">
+              <b>Syntax:</b>
+              <codeblock>s.Media.stop(mediaName,mediaOffset)</codeblock>
+              <p>Tracks a stop event (stop, pause, etc.) for the specified
+					 video. This method takes the following parameters: 
+				  </p>
+              <p>
+                <b>mediaName</b>: The name of the video. This must match the
+					 name used in Media.open. 
+				  </p>
+              <p>
+                <b>mediaOffset</b>: The number of seconds into the video that
+					 the stop or pause event occurs. Specify the offset based on the video starting
+					 at second zero. 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <codeph>Media.monitor</codeph>
+            </entry>
+            <entry colname="col2">
+              <b>Syntax:</b>
+              <codeblock>s.Media.monitor(s, media)</codeblock>
+              <p>
+                <b>Silverlight Syntax:</b>
+              </p>
+              <codeblock>s.Media.monitor = new AppMeasurement_Media_Monitor(myMediaMonitor);</codeblock>
+              <p>The Silverlight app media monitor implements the Objective-C
+					 delegate design pattern. 
+					 <codeph>myMediaMonitor</codeph> is a class method that takes
+					 the 
+					 <codeph>s</codeph> and 
+					 <codeph>media</codeph> parameters. 
+				  </p>
+              <p>Use this method to send additional video metrics. You can
+					 setup additional variables (Props, eVars, Events) and send them using 
+					 <codeph>Media.track</codeph> based on the current state of the
+					 video as it is playing. 
+				  </p>
+              <p>See 
+					 <xref href="video_mediamonitor.xml#concept_6B10C4127F844D84A1FD0F59D818054F" type="concept" format="dita" scope="local"><?xm-replace_text Measuring Additional Metrics using Media.monitor?></xref>.
+					 
+				  </p>
+              <p>This method takes the following parameters: 
+				  </p>
+              <p>
+                <b>s</b>: The AppMeasurement instance (or JavaScript s
+					 object). 
+				  </p>
+              <p>
+                <b>media</b>: An object with members providing the state of
+					 the video. These members include: 
+				  </p>
+              <ul id="ul_0EBD6D1DF653498D835D7665E551D1A4">
+                <li id="li_E3FDC5FE3FF04AC1A92E305A8E863313">
+                  <b>media.name</b>:
+						The name of the video. This must match the name used in Media.open. 
+					 </li>
+                <li id="li_51D7F5B2DC364C1FA4A6254D3FCF87D9">
+                  <b>media.length</b>: The length of the
+						video in seconds given in the call to Media.open. 
+					 </li>
+                <li id="li_FEBDEC773C714901BD1AD5050C1F1B3C">
+                  <b>media.playerName</b>: The name of
+						the media player given in the call to Media.open. 
+					 </li>
+                <li id="li_EFC1B46EE6E44FE8878F1D3A8BF674A6">
+                  <b>media.mediaEvent</b>: A string
+						containing the event name that caused the monitor call. These events are: 
+						<ul id="ul_1CF6E02037C14556B42278A0C97E4F54"><li id="li_724D2E74D1A649EE93A56598B808A726"><b>OPEN</b>:
+							 When playback is first observed through 
+							 <codeph>Media.autoTrack</codeph> or a call to 
+							 <codeph>Media.play</codeph>. 
+						  </li><li id="li_9342E2C17E184C6CB9AB8DE4AC1B5F10"><b>CLOSE</b>:
+							 When playback ends at the completion of the video through 
+							 <codeph>Media.autoTrack</codeph> or at a call to
+							 Media.close. 
+						  </li><li id="li_2C4800A58C1146639A5D5EC38A678EA0"><b>PLAY</b>:
+							 When playback resumes after being paused or scrubbing through 
+							 <codeph>Media.autoTrack</codeph> or a second call to 
+							 <codeph>Media.play</codeph>. 
+						  </li><li id="li_E801CFB78F7B4E45A4995719FC14E142"><b>STOP</b>:
+							 When playback stops due to a pause of the beginning of scrubbing through
+							 Media.autoTrack or a call to Media.stop. 
+						  </li><li id="li_85F0BAEA6F0F4388947174B252224890"><b>MONITOR</b>: When our automatic
+							 monitoring checks the state of the video while it's playing (every second). 
+						  </li><li id="li_313024C2491C4AC398A86B8DC5D01E73"><b>SECONDS</b>: At the second interval
+							 defined by the Media.trackSeconds variable. 
+						  </li><li id="li_D5F54CC1681747C5A5A7255B690A066A"><b>MILESTONE</b>: At the milestones
+							 defined by the Media.trackMilestones variable. 
+						  </li></ul></li>
+                <li id="li_198E5B40AF56495CA6D519B3BEB75DE0">
+                  <b>media.openTime</b>: An NSDate
+						object containing data about when Media.open was called. 
+					 </li>
+                <li id="li_64F6848142124258BEA8C36D57620E4F">
+                  <b>media.offset</b>: The current
+						offset, in seconds, (actual point in the video) into the video. The offset
+						starts at zero (the first second of the video is second 0). 
+					 </li>
+                <li id="li_4CCAF10762C5452B84CC0A03EFB6F3B7">
+                  <b>media.percent</b>: The current
+						percentage of the video that has played, based on the video length and the
+						current offset. 
+					 </li>
+                <li id="li_D6F2794FB8114FFC8F42095D637B7D5E">
+                  <b>media.timePlayed</b>: The total
+						number of seconds played so far. 
+					 </li>
+                <li id="li_2C765D58EDD344B2AC82BEE9A7A309E4">
+                  <b>media.eventFirstTime</b>: Indicates
+						if this was the first time this media event was called for this video. 
+					 </li>
+              </ul>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <codeph>Media.track</codeph>
+            </entry>
+            <entry colname="col2">
+              <b>Syntax:</b>
+              <codeblock>s.Media.track(mediaName)</codeblock>
+              <p>Immediately sends the current video state, along with any 
+					 <codeph>Media.trackVars</codeph> and 
+					 <codeph>Media.trackEvents</codeph> you've defined. This method
+					 is used within 
+					 <codeph>Media.monitor</codeph>. 
+				  </p>
+              <p>See 
+					 <xref href="video_mediamonitor.xml#concept_6B10C4127F844D84A1FD0F59D818054F" type="concept" format="dita" scope="local"><?xm-replace_text Measuring Additional Metrics using Media.monitor?></xref>.
+					 
+				  </p>
+              <p>Call 
+					 <codeph>Media.open</codeph> and 
+					 <codeph>Media.play</codeph> on the video before calling this
+					 method. This method takes the following parameter: 
+				  </p>
+              <p>
+                <b>mediaName</b>: The name of the video. This must match the
+					 name used in Media.open. 
+				  </p>
+              <p>This method is the only way to send additional variables while
+					 the video is playing. 
+				  </p>
+              <p>This method resets the seconds interval and percent milestone
+					 counters to zero to prevent multiple tracking hits. 
+				  </p>
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </conbody>
+</concept>

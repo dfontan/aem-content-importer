@@ -42,22 +42,7 @@
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
       <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
   </properties>
-    <repositories>
-        <repository>
-            <id>adobe</id>
-            <name>Adobe Public Repository</name>
-            <url>http://repo.adobe.com/nexus/content/groups/public/</url>
-            <layout>default</layout>
-        </repository>
-    </repositories>
-    <pluginRepositories>
-        <pluginRepository>
-            <id>adobe</id>
-            <name>Adobe Public Repository</name>
-            <url>http://repo.adobe.com/nexus/content/groups/public/</url>
-            <layout>default</layout>
-        </pluginRepository>
-    </pluginRepositories>
+    
   <modules>
   	<module>aem-content-importer-bundle</module>
   	<module>aem-content-importer-content</module>

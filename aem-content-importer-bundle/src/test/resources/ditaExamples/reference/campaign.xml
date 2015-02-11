@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_736FCBB3CB0C43CDA1D3646079A57B87"> 
+  <title>Campaign</title> 
+  <shortdesc>Campaigns are defined and used in various ways in Marketing Cloud
+	 products. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="subtopic" content="Glossary"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <table id="table_37124D5610A84F28BD1E4367184DD3D1"> 
+		<tgroup cols="2"> 
+		  <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+		  <colspec colnum="2" colname="col2" colwidth="2.18*"/> 
+		  <thead> 
+			 <row> 
+				<entry colname="col1">Product 
+				</entry> 
+				<entry colname="col2">Description 
+				</entry> 
+			 </row> 
+		  </thead> 
+		  <tbody> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p><keyword>Marketing Cloud</keyword> 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>Campaigns determine what content is displayed to whom
+					 (audience), where (locations), and when. 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p> Marketing reports and analytics 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>A campaign is a marketing effort used to bring visitors to a
+					 specific website. Also, a campaign is a product feature or advertised product
+					 concept. If a campaign option were advertising a credit card, the campaign
+					 would be a series of creative elements (creatives) advertising the interest
+					 rate. A second campaign would be a series of creatives to advertise any value
+					 added services that come with the card. 
+				  </p> 
+				  <p>See 
+					 <xref
+					  href="reports_campaigns.xml#concept_043D7F703D3E40F4B8CC35E524A8D43D"
+					  type="concept" format="dita" scope="local"><?xm-replace_text Campaigns Report?></xref>.
+					 
+				  </p> 
+				  <p>See 
+					 <xref
+					  href="http://marketing.adobe.com/resources/help/en_US/sc/implement/campaign.html"
+					  format="http" scope="external">campaign</xref> in the Implementation Guide. 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p>Target 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>A campaign, also known in 
+					 <keyword>Target</keyword> as 
+					 <term>Activity</term>, is your means of controlling what
+					 content to show to whom, and when to show it. There are several types of
+					 campaigns, including: 
+				  </p> 
+				  <ul id="ul_C6EE7D20FEA14621B4370C34331F3CE5"> 
+					 <li id="li_8609670A07C2442AA9153A89A0500794">Multivariate test 
+					 </li> 
+					 <li id="li_2FBFC7ACD59F4128ACC01F87798770E5">A/B tests 
+					 </li> 
+					 <li id="li_897C64B75EE44012B83E6B2CEFAE1DB4">Optimizing
+						campaigns 
+					 </li> 
+					 <li id="li_C33B5780781F4AE0AC22A89956E3CC75">1:1 campaigns 
+					 </li> 
+					 <li id="li_218A380F5216491C8D4534FD498774A9">Display ad
+						campaigns 
+					 </li> 
+					 <li id="li_C1A8A84834734BA883FEB3A253DE5711">Landing page
+						campaign 
+					 </li> 
+					 <li id="li_C82A764216224E8C826F21A4738BA185">Monitoring
+						campaigns 
+					 </li> 
+				  </ul> 
+				  <p>See 
+					 <xref
+					  href="http://marketing.adobe.com/resources/help/en_US/tnt/help/index.html?f=c_Managing_Campaigns"
+					  scope="external" format="http">Campaigns</xref> in Target help. 
+				  </p> 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+  </conbody> 
+</concept> 

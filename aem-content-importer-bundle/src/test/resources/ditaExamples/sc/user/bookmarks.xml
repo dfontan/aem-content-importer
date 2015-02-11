@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_55B5E0DF20B14AAF8819CB8244464406">
+  <title> Bookmark Manager</title>
+  <shortdesc>Bookmarks give you access to the reports that you use the most.
+	 The bookmarks you create are added to the 
+	 <wintitle>Marketing Cloud</wintitle> and are available in integrated
+	 capabilities like data connectors. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports and analytics" />
+      <othermeta name="subtopic" content="Bookmarks" />
+    </metadata>
+  </prolog>
+</concept>

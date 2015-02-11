@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_63E2017653634DFF97A4861947EDC49F">
+  <title>Understanding Built-In Targeting Groups</title>
+  <shortdesc>Several built-in targeting groups are available wherever you can
+	 specify a target. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Targeting groups are incorporated into the targeting interface. (See 
+		<xref href="c_Understanding_the_Targeting_Interface.xml#concept_43A2AB6859FC4395A5011D1875240358" type="concept" format="dita" scope="local">Understanding the Targeting
+		  Interface</xref>.) The groups are based on referring URL parameters, so they
+		only function in locations where the last page the visitor visited was on one
+		of those domains. Furthermore, because these groups are based on referring
+		URLs, your application might not function properly if it does redirection
+		before sending the user to your page. (Ask your account representative for more
+		details.) 
+	 </p>
+    <p>Built-in targeting groups cannot be changed. 
+	 </p>
+    <p>The following table describes the built-in targeting groups. 
+	 </p>
+    <p>
+      <table id="table_2E5EB8E744BA448FB13E613B75ED3763">
+        <tgroup cols="3">
+          <colspec colnum="1" colname="col1" colwidth="1.00*" />
+          <colspec colnum="2" colname="col2" colwidth="1.06*" />
+          <colspec colnum="3" colname="col3" colwidth="2.54*" />
+          <thead>
+            <row>
+              <entry colname="col1">Built-In Targets 
+				</entry>
+              <entry colname="col2">Type of Target 
+				</entry>
+              <entry colname="col3">Description 
+				</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry colname="col1">
+                <p>From Yahoo 
+				  </p>
+                <p>From Google 
+				  </p>
+                <p>From Microsoft 
+				  </p>
+                <p>From Baidu 
+				  </p>
+                <p>From Bing 
+				  </p>
+              </entry>
+              <entry colname="col2">
+                <p>Search engine 
+				  </p>
+              </entry>
+              <entry colname="col3">
+                <p>Targets content according to the search engine the site
+					 visitor came from. 
+				  </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <p>Search engine query 
+				  </p>
+              </entry>
+              <entry colname="col2">
+                <p>Search engine query 
+				  </p>
+              </entry>
+              <entry colname="col3">
+                <p>The search engine query allows you to target on a user-entered
+					 query, regardless of which of the following search engines the user used: 
+				  </p>
+                <p>
+                  <ul id="ul_7E6BE38F9D634795870D91B68D22BCB2">
+                    <li id="li_E2985A425EA14CFEABE15E101294AD29">
+                      <p>Google 
+						</p>
+                    </li>
+                    <li id="li_F9F7281312D7481BB728BBEABB68087D">
+                      <p>Yahoo 
+						</p>
+                    </li>
+                    <li id="li_A483F04ED74F4199B887EB356B4468F0">
+                      <p>MSN 
+						</p>
+                    </li>
+                    <li id="li_92E9884C156E404889CC7A4F261ABB57">
+                      <p>Live.com 
+						</p>
+                    </li>
+                    <li id="li_B5CEDF746CF04C5BA75264370DE2B8E0">
+                      <p>Ask 
+						</p>
+                    </li>
+                  </ul>
+                </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <p>Browser: Chrome 
+				  </p>
+                <p>Browser: Internet Explorer 
+				  </p>
+                <p>Browser: Firefox 
+				  </p>
+                <p>Browser: Safari 
+				  </p>
+                <p>Browser: Opera 
+				  </p>
+                <p>Browser: iPad 
+				  </p>
+                <p>Browser: iPhone 
+				  </p>
+                <p>Browser: Monitoring Service 
+				  </p>
+              </entry>
+              <entry colname="col2">
+                <p>Browser 
+				  </p>
+              </entry>
+              <entry colname="col3">
+                <p>Targets content according the visitor's browser. 
+				  </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <p>Operating System: Linux 
+				  </p>
+                <p>Operating System: Mac 
+				  </p>
+                <p>Operating System: Windows 
+				  </p>
+              </entry>
+              <entry colname="col2">
+                <p>Operating system 
+				  </p>
+              </entry>
+              <entry colname="col3">
+                <p>Targets content according to the visitor's operating system. 
+				  </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <p>Visitor: New 
+				  </p>
+                <p>Visitor: Returning 
+				  </p>
+                <p>Visitor: In other tests 
+				  </p>
+                <p>Visitor: Not In Other tests 
+				  </p>
+                <p>Visitor: First page of session 
+				  </p>
+                <p>Visitor: Not first page of session 
+				  </p>
+              </entry>
+              <entry colname="col2">
+                <p>Type of visitor 
+				  </p>
+              </entry>
+              <entry colname="col3">
+                <p>Targets content depending on whether the visitor has accessed
+					 your site before, is included in other tests, or is accessing the first page in
+					 a new session. 
+				  </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <p>Social: Digg 
+				  </p>
+                <p>Social: Facebook 
+				  </p>
+                <p>Social: Pinterest 
+				  </p>
+                <p>Social: Twitter 
+				  </p>
+                <p>Social: MySpace 
+				  </p>
+                <p>Social: URL shorteners 
+				  </p>
+              </entry>
+              <entry colname="col2">
+                <p>Social networking 
+				  </p>
+              </entry>
+              <entry colname="col3">
+                <p>Targets content according to the social networking site the
+					 visitor comes from. 
+				  </p>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </p>
+  </conbody>
+  <!--<related-links>
+    <link href="t_Viewing_the_List_of_Targeting_Groups.xml#task_85CEECC96F7D438DBBC40C044C8825CB" type="task" format="dita" scope="local">
+      <?xm-replace_text Viewing the List of Targeting Groups?>
+    </link>
+    <link href="r_Tips_for_Targeting_Groups.xml#reference_B378F383FEDF4E3FBEDD48570B2ABA9C" type="reference" format="dita" scope="local">
+      <?xm-replace_text Tips for Targeting Groups?>
+    </link>
+    <link href="c_Creating_Reusable_Targeting_Groups.xml#concept_E5514A8781424E23A5422FD5317F4AAC" type="concept" format="dita" scope="local">
+      <?xm-replace_text Creating Reusable Targeting Groups?>
+    </link>
+    <link href="t_Targeting_Display_to_a_Prerequisite_Success_Metric.xml#task_F5E24707BE2845549788C5D4BED03281" type="task" format="dita" scope="local">
+      <?xm-replace_text Targeting Display to a Prerequisite Success Metric?>
+    </link>
+    <link href="c_Or_and_And_Target_Rules.xml#concept_C7F197A3D399447E9E143599A3715099" type="concept" format="dita" scope="local">
+      <?xm-replace_text Or and And Target Rules?>
+    </link>
+    <link href="c_Behavioral_Targeting.xml#concept_CEE693A71E8D4C2CBF51DAA97DE8D61D" type="concept" format="dita" scope="local">
+      <?xm-replace_text Behavioral Targeting?>
+    </link>
+    <link href="c_Using_Alliant_Data.xml#concept_D9542E52932C49A9B196C937A4CC3662" type="concept" format="dita" scope="local">
+      <?xm-replace_text Using Alliant Data?>
+    </link>
+  </related-links>
+-->
+</concept>

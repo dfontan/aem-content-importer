@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_A340A421D3C44B38B88B5BF53828221B">
+  <title>Pathing</title>
+  <shortdesc> Pathing is defined as the path that users take through your site.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>For example, a visitor went to page A, then page B, then page C. Pathing
+		is one of the very powerful features of 
+		<keyword>Analytics</keyword>. The tremendous insight it brings is
+		critical to businesses looking to understand visitor traffic patterns.
+	 </p>
+    <p>Out-of-the-box 
+		<keyword>Analytics</keyword> provides pathing at the page level. The
+		basic idea behind pathing is you are shown the order of pages that users saw
+		during their visits. This data is presented in several different reports that
+		format the data in different ways, depending on what you are trying to see.
+	 </p>
+  </conbody>
+</concept>

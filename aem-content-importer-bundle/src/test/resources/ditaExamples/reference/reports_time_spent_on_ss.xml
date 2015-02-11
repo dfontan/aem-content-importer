@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_E3D0FEC81E1F4987B39CC467F19FFCFF">
+  <title>Time Spent on Site Section Report</title>
+  <shortdesc>Displays the amount of time visitors spend on site sections.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>See 
+		<xref href="metrics_ts_ss_calculation.xml#concept_B0EACCC8B0FC40A595B0613676738F50" format="dita" scope="local"><?xm-replace_text Time Spent - Site Sections Calculation Example?></xref>
+		for more information.
+	 </p>
+  </conbody>
+</concept>

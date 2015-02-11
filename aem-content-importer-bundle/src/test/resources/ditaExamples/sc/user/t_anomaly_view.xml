@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_4808C96327354D789C075823F5C3A049"> 
+  <title>Run an Anomaly Detection report</title> 
+  <shortdesc>Describes how to interpret the Summary and Individual Metric
+	 charts in Anomaly Detection. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Reports,Reports and analytics"/>
+		</metadata>
+  </prolog> 
+  <taskbody> 
+	 <context id="context_6C064ECD4CB840B393CE2F181A6B136B"> 
+		<p> 
+		  <menucascade> 
+			 <uicontrol>Reports &amp; Analytics</uicontrol> 
+			 <uicontrol>Site Metrics</uicontrol> 
+			 <uicontrol>Anomaly Detection</uicontrol> 
+		  </menucascade>. 
+		</p> 
+		<p>For information on setting up Anomaly Detection, refer to the 
+		  <xref
+			href="https://marketing.adobe.com/resources/help/en_US/sc/user/index.html#Setting_up_Anomaly_Detection"
+			format="https" scope="external">Reference Guide</xref>. 
+		</p> 
+		<p>Anomaly Detection shows two types of charts: A summary chart and
+		  individual metrics charts. Individual metric charts are only shown if at least
+		  one anomaly has been detected for that metric. 
+		</p> 
+		<table id="table_88163CD8FC164342855D90D01F9C581A"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="2.49*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="1.00*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Type of chart 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>What is does 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Summary chart 
+					 </p> 
+					 <p> 
+						<image placement="break" align="left"
+						 href="graphics/ad_summary_chart.png" width="570px"
+						 id="image_1CD4C4770BAA43C4AD7CBB824AD41338"></image> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p> 
+					 <ul id="ul_D26DA3024CD7468291369F549557B28A"> 
+						<li id="li_1C22B6E02FFB479FB71EFAD89EB37A4E">Each box
+						  represents one anomaly, tracked per day, that corresponds to a metric below. 
+						</li> 
+						<li id="li_8FC587D3FF4E452D83263CC7A10B6675">Green indicates
+						  anomalies above the trend line, blue below the trend line. 
+						</li> 
+						<li id="li_25135AB691BF443599AF2A3A60E2E71A">Indicates the
+						  strength of the anomaly: The greater the anomaly, the darker the color of the
+						  data point and the farther away from the trend line. 
+						</li> 
+						<li id="li_0C42AFA8897D420D8AB1A5D0F65B3B3A">Clicking on
+						  individual anomalies brings that anomaly's individual metric chart (underneath
+						  the summary chart) to the top. 
+						</li> 
+						<li id="li_85C0F426952547B5A75D6BD31DE19CA5">The deviation
+						  percentage values (left of chart) are calculated as follows: 
+						  <ul id="ul_BEC0A88BFFAC4CF78BC9885FEB749694"> 
+							 <li id="li_1BAB2F50482745B69937DFAF1E09982E">If the upper
+								bounds and the expected value are the same, the deviation % is 100% 
+							 </li> 
+							 <li id="li_CA48064F5788448C8646CCE196161237">Otherwise
+								the deviation % is ((actual value – upper bound value) / (upper bound value –
+								expected value)) * 100 
+							 </li> 
+							 <li id="li_4090357A0D214BC7B1C3DE0615875554">If the lower
+								bounds and the expected value are the same, the deviation % is –100% 
+							 </li> 
+							 <li id="li_EF694E1A4E874ECD94E1E8F7302E494F">Otherwise
+								the deviation % is ((lower bound value – actual value) / (expected value –
+								lower bound value)) * -100 
+							 </li> 
+						  </ul> 
+						</li> 
+						<li id="li_5C05EF7023484CC993E96D63E842B65C">Clicking 
+						  <uicontrol>Show Segments</uicontrol> brings up the segment
+						  rail that lets you apply segments to an anomaly detection report. 
+						  <xref
+						  href="http://marketing.adobe.com/resources/help/en_US/analytics/segment/"
+						  format="http" scope="external">More</xref> on segmentation. 
+						</li> 
+						<li id="li_1B41CABF13D1407886C68EE3BC201E60">Clicking 
+						  <uicontrol>Edit Metrics 
+						  </uicontrol>lets you select and unselect metrics for which
+						  you want to detect anomalies. 
+						</li> 
+					 </ul> 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Individual metric chart 
+					 </p> 
+					 <p> 
+						<image placement="break" align="left"
+						href="graphics/metric_report.png" width="570px"
+						id="image_5BBECFD91CF14478AA4761E6256BBCB9"></image> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p> 
+					 <ul id="ul_739C5687013743A29B63089FDA763F45"> 
+						<li id="li_456A0BDA4D4E46CE9CC1C3DBAA1E2220">Displays
+						  anomalous data points for individual trended metrics (including calculated
+						  metrics) as dots. 
+						</li> 
+						<li id="li_89FD847C65F04F48BCA7CD38D0EC51CD">Shows the most
+						  recent anomaly on top, and secondarily ranks by number of anomalies. 
+						</li> 
+						<li id="li_98B97A9706DE4455B8D8850904CBDE03">Displays a solid
+						  line to indicate actual data currently collected. This is compared to the
+						  forecast and margin of error to derive whether data points are anomalous. 
+						</li> 
+						<li id="li_0EEA38DDDC344BF3879430E67D74EB72">Displays a
+						  dotted line that represents a forecast based on historical data (i.e., the
+						  training period). 
+						</li> 
+						<li id="li_035BD2725D004AEDB630BF8DFF4DA4F3">Displays upper
+						  and lower 95% confidence intervals/bounds in a gray shade. 
+						</li> 
+						<li id="li_021A3D1F2EDB4319B9B39620EF1C038A">Lets you
+						  collapse and expand individual reports by clicking the double up or down arrows
+						  next to the metric name. 
+						</li> 
+						<li id="li_722E4B9FC21047AC96D7B143197E293D">Changes the
+						  order in which the metric charts appear by reacting to drill-downs in the
+						  overview report (see above) 
+						</li> 
+						<li id="li_A2441169B185475AA68A64F81E6E40B8">Lets you filter
+						  charts by using search terms, such as "page" for all page-related metrics. 
+						</li> 
+						<li id="li_F1BBBFCA8E2A43C29658E4FCAA36C904">Lets you display
+						  all metrics you defined or only those with anomalies. 
+						</li> 
+					 </ul> 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </context> 
+  </taskbody> 
+</task> 

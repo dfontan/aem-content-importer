@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_460FEEEE3B7141DEB9162348E6682EB9" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Ignore Visits from Your Browser</title>
+  <shortdesc class="- topic/shortdesc ">During an active (approved) campaign
+	 period, you can remove yourself from the report results. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <context id="context_2CD662D69B1840599FB0963630706DDB" class="- topic/section task/context ">
+      <p class="- topic/p ">Note that you will still be able to experience
+		  campaigns, but no data from visits from your browser will be reflected in
+		  reports. 
+		</p>
+    </context>
+    <steps id="steps_FF17B1ADCE2F4CD3B29D8F274DBFA3FD" class="- topic/ol task/steps ">
+      <step id="step_D14C4ED0D86046E1B2C11856077B82F6" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">On the 
+			 <wintitle class="+ topic/keyword ui-d/wintitle ">Campaign Home
+				Page</wintitle>, select ignore visits from this browser in all campaign
+			 reports. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p "></p>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links class="- topic/related-links ">
+    <link href="t_Labeling_Campaigns_and_Tests.xml#task_C44ED8D6AB6F4E76B695622B7D2051D3" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Label Campaigns and Tests?>
+    </link>
+    <link href="t_Searching_and_Sorting_Campaigns_and_Tests.xml#task_55D000BCA53E460C97F5138F47B1B8AE" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Search and Sort Campaigns and Tests?>
+    </link>
+    <link href="c_Monitoring_Campaign_Status.xml#concept_42E2706AD6BF41DDA11D38492E4EB792" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Monitoring Campaign Status?>
+    </link>
+  </related-links>
+</task>

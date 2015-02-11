@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_52E7E7B015D14E2C852D9618CF76860F"> 
+  <title>Boards</title> 
+  <shortdesc>A 
+	 <term>board</term> is a place to collaborate around your marketing
+	 campaigns. You can pin cards to a board, create boards to manage the cards and
+	 other assets, and share cards to other users' boards. You can also invite other
+	 Marketing Cloud users to a board, to create a collaborative environment. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Marketing Cloud"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>For example, you can create a board for marketing reports and analytics.
+		After you run a marketing report, you can share it to a Marketing Cloud board. 
+	 </p> 
+	 <p> 
+		<image href="graphics/board.png"
+		id="image_3629F213DD85429B83133588683895AD"></image> 
+	 </p> 
+	 <note>A 
+		<wintitle>First Time Experience</wintitle> board is available in the
+		Marketing Cloud interface to help you understand feeds, cards, and boards. 
+	 </note> 
+  </conbody> 
+  <related-links> 
+	 <link href="cards.xml#concept_0A2472B530E04930BCE5CC23A8BEF9E0"
+	 format="dita" scope="local"> 
+		<linktext> <?xm-replace_text Cards?>
+		</linktext> 
+	 </link> 
+	 <link href="asset.xml#concept_AD6B33B2C36B4AB38343E0FE1DE18E3B"
+	 format="dita" scope="local"><?xm-replace_text Assets and Sharing?>
+	 </link>
+  </related-links> 
+</concept>

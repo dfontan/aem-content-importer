@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_0A8CC85CA991451E932C859CFAE8EDA4">
+  <title>Uniques Exceeded</title>
+  <shortdesc>“Uniques Exceeded” represents all unique values after the first
+	 500,000 values in a month that have not received enough traffic to display as a
+	 separate line item. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Metrics" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>See 
+		<xref href="http://marketing.adobe.com/resources/help/en_US/sc/user/index.html?f=c_metrics_uniques#concept_47F2BD3C1B70499CBE7A420392229563" format="http" scope="external">Reporting High Numbers of Unique Values</xref></p>
+  </conbody>
+</concept>

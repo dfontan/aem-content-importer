@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_5AB21ED04D7D474A83981118E61F9A6B">
+  <title>Variables and Limitations</title>
+  <shortdesc> The JavaScript file used to track Web pages is extremely
+	 versatile. However, potential problems and pitfalls may arise with an increased
+	 level of flexibility. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Variables" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>The following table lists the available 
+		<keyword>Analytics</keyword> variables: 
+	 </p>
+    <table id="table_50F0C986A2E94233A9880D7AF9E82A96">
+      <tgroup cols="2">
+        <colspec colnum="1" colname="col1" colwidth="*" />
+        <colspec colnum="2" colname="col2" colwidth="*" />
+        <thead>
+          <row>
+            <entry> Variable 
+				</entry>
+            <entry> Description 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry> s_account 
+				</entry>
+            <entry> Determines the report suite where data is stored and
+				  reported. 
+				</entry>
+          </row>
+          <row>
+            <entry> browserHeight 
+				</entry>
+            <entry> Displays the height of the browser window. 
+				</entry>
+          </row>
+          <row>
+            <entry> browserWidth 
+				</entry>
+            <entry> Displays the width of the browser window. 
+				</entry>
+          </row>
+          <row>
+            <entry> campaign 
+				</entry>
+            <entry> Identifies marketing campaigns used to bring visitors to
+				  your site. The value of 
+				  <varname>campaign</varname> is usually taken from a query
+				  string parameter. 
+				</entry>
+          </row>
+          <row>
+            <entry> channel 
+				</entry>
+            <entry> Usually identifies a section of your website. For example,
+				  a merchant may have sections such as Electronics, Toys, or Apparel. A media
+				  site may have sections such as News, Sports, or Business. 
+				</entry>
+          </row>
+          <row>
+            <entry> charSet 
+				</entry>
+            <entry> Translates the character set of the Web page into UTF-8. 
+				</entry>
+          </row>
+          <row>
+            <entry> colorDepth 
+				</entry>
+            <entry> Displays the number of bits used to display color on each
+				  pixel of the screen. 
+				</entry>
+          </row>
+          <row>
+            <entry> connectionType 
+				</entry>
+            <entry> Indicates (in Microsoft Internet Explorer) whether the
+				  browser is configured on a LAN or modem connection. 
+				</entry>
+          </row>
+          <row>
+            <entry> cookieDomainPeriods 
+				</entry>
+            <entry> Determines the domain on which the 
+				  <keyword>Analytics</keyword><wintitle>visitor ID</wintitle> (s_vi) cookie will be set by
+				  determining the number of periods in the domain of the page URL. For
+				  www.mysite.com, 
+				  <varname>cookieDomainPeriods</varname> should be "2." For
+				  www.mysite.co.jp, 
+				  <varname>cookieDomainPeriods</varname> should be "3." 
+				</entry>
+          </row>
+          <row>
+            <entry> cookieLifetime 
+				</entry>
+            <entry> Used by both JavaScript and 
+				  <keyword>Analytics</keyword> servers to determine the lifespan
+				  of a cookie. 
+				</entry>
+          </row>
+          <row>
+            <entry> cookiesEnabled 
+				</entry>
+            <entry> Indicates whether a first-party session cookie could be set
+				  by JavaScript. 
+				</entry>
+          </row>
+          <row>
+            <entry> currencyCode 
+				</entry>
+            <entry> Determines the conversion rate to be applied to revenue as
+				  it enters the 
+				  <keyword>Analytics</keyword> databases. 
+				  <keyword>Analytics</keyword> databases store all monetary
+				  amounts in a currency of your choice. If that currency is the same as that
+				  specified in 
+				  <varname>currencyCode</varname>, or 
+				  <varname>currencyCode</varname> is empty, no conversion is
+				  applied. 
+				</entry>
+          </row>
+          <row>
+            <entry> dc 
+				</entry>
+            <entry> Lets you set the data center to which your data is sent. 
+				</entry>
+          </row>
+          <row>
+            <entry> doPlugins 
+				</entry>
+            <entry>
+              <varname>doPlugins</varname> is a reference to the 
+				  <varname>s_doPlugins</varname> function. It allows the 
+				  <varname>s_doPlugins</varname> function to be called at the
+				  appropriate location within the JavaScript file. 
+				</entry>
+          </row>
+          <row>
+            <entry> dynamicAccountList 
+				</entry>
+            <entry> Dynamically selects a report suite to which data is sent.
+				  The 
+				  <varname>dynamicAccountList</varname> variable contains the
+				  rules that used to determine the destination report suite. 
+				</entry>
+          </row>
+          <row>
+            <entry> dynamicAccountMatch 
+				</entry>
+            <entry> Uses the DOM object to retrieve the section of the URL to
+				  which all rules in 
+				  <varname>dynamicAccountList</varname> are applied. This
+				  variable is only valid when 
+				  <varname>dynamicAccountSelection</varname> is set to 'True.' 
+				</entry>
+          </row>
+          <row>
+            <entry> dynamicAccountSelection 
+				</entry>
+            <entry> Lets you dynamically select the report suite based on the
+				  URL of each page. 
+				</entry>
+          </row>
+          <row>
+            <entry> dynamicVariablePrefix 
+				</entry>
+            <entry> Allows deployment to flag variables that should be
+				  populated dynamically. Cookies, request headers, and image query string
+				  parameters are available to be populated dynamically. 
+				</entry>
+          </row>
+          <row>
+            <entry> eVarN 
+				</entry>
+            <entry> Used for building custom reports within the 
+				  <keyword>Analytics</keyword><wintitle>Conversion Module</wintitle>. When an eVar is set to a
+				  value for a visitor, 
+				  <keyword>Analytics</keyword> remembers that value until it
+				  expires. Any success events that a visitor encounters while the eVar value is
+				  active are counted toward the eVar value. 
+				</entry>
+          </row>
+          <row>
+            <entry> events 
+				</entry>
+            <entry> Records common shopping cart success events and custom
+				  success events. 
+				</entry>
+          </row>
+          <row>
+            <entry> fpCookieDomainPeriods 
+				</entry>
+            <entry> Determines the domain on which 
+				  <keyword>Analytics</keyword> cookies other than the 
+				  <wintitle>visitor ID</wintitle> (s_vi) cookie will be set by
+				  determining the number of periods in the domain of the page. 
+				</entry>
+          </row>
+          <row>
+            <entry> hierN 
+				</entry>
+            <entry> Determines the location of a page in your site's hierarchy.
+				  This variable is most useful for sites that have more than three levels in the
+				  site structure. 
+				</entry>
+          </row>
+          <row>
+            <entry> homepage 
+				</entry>
+            <entry> Indicates (in Internet Explorer) whether the current page
+				  is set as the user's home page. 
+				</entry>
+          </row>
+          <row>
+            <entry> javaEnabled 
+				</entry>
+            <entry> Indicates whether Java is enabled in the browser. 
+				</entry>
+          </row>
+          <row>
+            <entry> javascriptVersion 
+				</entry>
+            <entry> Displays the version of JavaScript supported by the
+				  browser. 
+				</entry>
+          </row>
+          <row>
+            <entry> linkDownloadFileTypes 
+				</entry>
+            <entry> A comma-separated list of file extensions. If your site
+				  contains links to files with any of these extensions, the URLs of these links
+				  appear in the 
+				  <wintitle>File Downloads</wintitle> report. 
+				</entry>
+          </row>
+          <row>
+            <entry> linkExternalFilters 
+				</entry>
+            <entry> If your site contains many links to external sites, and you
+				  don't want to track all exit links, 
+				  <varname>linkExternalFilters</varname> can be used to report on
+				  a specific subset of exit links. 
+				</entry>
+          </row>
+          <row>
+            <entry> linkInternalFilters 
+				</entry>
+            <entry> Determines which links on your site are exit links. It is a
+				  comma-separated list of filters that represent the links that are part of the
+				  site. 
+				</entry>
+          </row>
+          <row>
+            <entry> linkLeaveQueryString 
+				</entry>
+            <entry> Determines whether or not the query string should be
+				  included in the 
+				  <wintitle>Exit Links</wintitle> and 
+				  <wintitle>File Download</wintitle> reports. 
+				</entry>
+          </row>
+          <row>
+            <entry> linkName 
+				</entry>
+            <entry> An optional variable used in 
+				  <wintitle>Link Tracking</wintitle> that determines the name of a
+				  custom, download, or exit link. The 
+				  <varname>linkName</varname> variable is not normally needed
+				  because the third parameter in the 
+				  <varname>tl()</varname> function replaces it. 
+				</entry>
+          </row>
+          <row>
+            <entry> linkTrackEvents 
+				</entry>
+            <entry> Contains the events that should be sent with custom,
+				  download, and exit links. This variable is only considered if 
+				  <varname>linkTrackVars</varname> contains "events." 
+				</entry>
+          </row>
+          <row>
+            <entry> linkTrackVars 
+				</entry>
+            <entry> A comma-separated list of variables that will be sent with
+				  custom, exit, and download links. If 
+				  <varname>linkTrackVars</varname> is set to "", all variables
+				  that have values are sent with link data. 
+				</entry>
+          </row>
+          <row>
+            <entry> linkType 
+				</entry>
+            <entry> An optional variable used in link tracking that determines
+				  which report a Link Name or URL will appear (custom, download, or exit Links). 
+				  <varname>linkType</varname> is not normally needed because the
+				  second parameter in the 
+				  <varname>tl()</varname> function replaces it. 
+				</entry>
+          </row>
+          <row>
+            <entry> mediaLength 
+				</entry>
+            <entry> Specifies the total length of the media being played. 
+				</entry>
+          </row>
+          <row>
+            <entry> mediaName 
+				</entry>
+            <entry> Specifies the name of the video or media item. It is only
+				  available via the 
+				  <wintitle>Data Insertion API</wintitle> and 
+				  <wintitle>Full Processing Data Source</wintitle>. 
+				</entry>
+          </row>
+          <row>
+            <entry> mediaPlayer 
+				</entry>
+            <entry> Specifies the player used to consume a video or media item.
+				  
+				</entry>
+          </row>
+          <row>
+            <entry> mediaSession 
+				</entry>
+            <entry> Specifies the segments of a video or media asset consumed. 
+				</entry>
+          </row>
+          <row>
+            <entry> Media.trackEvents 
+				</entry>
+            <entry> Identifies which events should be sent with a media hit. It
+				  is only applicable with JavaScript<wintitle>ActionSource.</wintitle>. 
+				</entry>
+          </row>
+          <row>
+            <entry> Media.trackVars 
+				</entry>
+            <entry> Identifies which variables should be sent with a media hit.
+				  It is only applicable with JavaScript<wintitle>ActionSource.</wintitle>. 
+				</entry>
+          </row>
+          <row>
+            <entry> mobile 
+				</entry>
+            <entry> Controls the order in which cookies and subscriber ids are
+				  used to identify visitors. 
+				</entry>
+          </row>
+          <row>
+            <entry> s_objectID 
+				</entry>
+            <entry> A global variable that should be set in the 
+				  <wintitle>onClick</wintitle> event of a link. By creating a
+				  unique object ID for a link or link location on a page, you can improve 
+				  visitor click map tracking or use 
+				  visitor click map to report on a link type or location,
+				  rather than the link URL. 
+				</entry>
+          </row>
+          <row>
+            <entry> pageName 
+				</entry>
+            <entry> Contains the name of each page on your site. If 
+				  <varname>pageName</varname> is blank, the URL is used to
+				  represent the page name in 
+				  <keyword>Analytics</keyword>. 
+				</entry>
+          </row>
+          <row>
+            <entry> pageType 
+				</entry>
+            <entry> Used only to designate a 404 Page Not Found Error page. It
+				  only has one possible value, which is "errorPage." On a 404 Error page, the 
+				  <varname>pageName</varname> variable should not be populated. 
+				</entry>
+          </row>
+          <row>
+            <entry> pageURL 
+				</entry>
+            <entry> In rare cases, the URL of the page is not the URL that you
+				  would like reported in 
+				  <keyword>Analytics</keyword>. To accommodate these situations,
+				  
+				  <keyword>Analytics</keyword> offers the 
+				  <varname>pageURL</varname> variable, which overrides the actual
+				  URL of the page. 
+				</entry>
+          </row>
+          <row>
+            <entry> plugins 
+				</entry>
+            <entry> On Netscape and Mozilla-based browsers, lists the plugins
+				  installed in the browser. 
+				</entry>
+          </row>
+          <row>
+            <entry> products 
+				</entry>
+            <entry> Used for tracking products and product categories as well
+				  as purchase quantity and purchase price. The 
+				  <varname>products</varname> variable should always be set in
+				  conjunction with a success event. Optionally, the 
+				  <varname>products</varname> variable can track custom numeric
+				  and currency events, as well as 
+				  <wintitle>Merchandising 
+				  </wintitle> eVars. 
+				</entry>
+          </row>
+          <row>
+            <entry> propN 
+				</entry>
+            <entry> Used for building custom reports within the 
+				  <keyword>Analytics</keyword><wintitle>Traffic Module</wintitle>. 
+				  <wintitle>props</wintitle> may be used as counters (to count the
+				  number of times a page view is sent), for pathing reports, or in correlation
+				  reports. 
+				</entry>
+          </row>
+          <row>
+            <entry> purchaseID 
+				</entry>
+            <entry> Used to keep an order from being counted multiple times by 
+				  <keyword>Analytics</keyword>. Whenever the purchase event is
+				  used on your site, you should use the 
+				  <varname>purchaseID</varname> variable. 
+				</entry>
+          </row>
+          <row>
+            <entry> referrer 
+				</entry>
+            <entry> Restores lost referrer information. 
+				</entry>
+          </row>
+          <row>
+            <entry> resolution 
+				</entry>
+            <entry> Displays the monitor resolution of the visitor viewing the
+				  Web page. 
+				</entry>
+          </row>
+          <row>
+            <entry> server 
+				</entry>
+            <entry> Shows either the domain of a Web page (to show which
+				  domains people come to) or the server serving the page (for a load balancing
+				  quick reference). 
+				</entry>
+          </row>
+          <row>
+            <entry> state 
+				</entry>
+            <entry> Captures the state in which a visitor to your site resides.
+				  
+				</entry>
+          </row>
+          <row>
+            <entry> trackDownloadLinks 
+				</entry>
+            <entry> Set 
+				  <varname>trackDownloadLinks</varname> to 'true' if you want to
+				  track links to downloadable files on your site. If 
+				  <varname>trackDownloadLinks</varname> is 'true,' 
+				  <varname>linkDownloadFileTypes</varname> determines which links
+				  are downloadable files. 
+				</entry>
+          </row>
+          <row>
+            <entry> trackExternalLinks 
+				</entry>
+            <entry> If 
+				  <varname>trackExternalLinks</varname> is 'true,' 
+				  <varname>linkInternalFilters</varname> and 
+				  <varname>linkExternalFilters</varname> determines whether any
+				  link clicked is an exit link. 
+				</entry>
+          </row>
+          <row>
+            <entry> trackingServer 
+				</entry>
+            <entry> Used for first-party cookie implementation to specify the
+				  domain at which the image request and cookie is written. Used for non-secure
+				  pages. 
+				</entry>
+          </row>
+          <row>
+            <entry> trackingServerSecure 
+				</entry>
+            <entry> Used for first-party cookie implementation to specify the
+				  domain at which the image request and cookie is written. Used for secure pages.
+				  
+				</entry>
+          </row>
+          <row>
+            <entry> trackInlineStats 
+				</entry>
+            <entry> Determines whether 
+				  visitor click map data is gathered. 
+				</entry>
+          </row>
+          <row>
+            <entry> transactionID 
+				</entry>
+            <entry> Ties offline data to an online transaction (like a lead or
+				  purchase generated online). Each unique 
+				  <varname>transactionID</varname> sent to Adobe is recorded in
+				  preparation for a 
+				  <wintitle>Data Sources</wintitle> upload of offline information
+				  about that transaction. See the 
+				  <xref href="https://marketing.adobe.com/resources/help/en_US/sc/datasources/" format="http" scope="external">Data Sources Guide</xref>. 
+				</entry>
+          </row>
+          <row>
+            <entry> s_usePlugins 
+				</entry>
+            <entry> If the 
+				  <varname>s_doPlugins</varname> function is available and
+				  contains useful code, 
+				  <wintitle>s_usePlugins</wintitle> should be set to 'true.' When 
+				  <wintitle>usePlugins</wintitle> is 'true,' the 
+				  <varname>s_doPlugins</varname> function is called prior to each
+				  image request. 
+				</entry>
+          </row>
+          <row>
+            <entry> visitorID 
+				</entry>
+            <entry> Visitors may be identified by the 
+				  <varname>visitorID</varname> tag, or by IP address/User Agent.
+				  The 
+				  <varname>visitorID</varname> may be up to 100 alphanumeric
+				  characters and must not contain a hyphen. 
+				</entry>
+          </row>
+          <row>
+            <entry> visitorNamespace 
+				</entry>
+            <entry> If 
+				  <varname>visitorNamespace</varname> is used in your JavaScript
+				  file, do not delete or alter it. This variable is used to identify the domain
+				  with which cookies are set. If 
+				  <varname>visitorNamespace</varname> changes, all visitors
+				  reported in 
+				  <keyword>Analytics</keyword> may become new visitors. In
+				  short, do not alter this variable without approval from an Adobe consultant. 
+				</entry>
+          </row>
+          <row>
+            <entry> zip 
+				</entry>
+            <entry> Captures the ZIP code in which a visitor to your site
+				  resides. 
+				</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </conbody>
+</concept>

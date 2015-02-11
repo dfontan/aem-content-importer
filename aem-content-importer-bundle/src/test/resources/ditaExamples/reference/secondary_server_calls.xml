@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_E3D0FEC81E1F4987B39CC467F19FFCFF">
+  <title>Secondary Server Calls</title>
+  <shortdesc> In multi-suite tagging, it is the second call to the Adobe
+	 servers. Any subsequent calls to the Adobe servers are charged at a price
+	 determined your contract. For example, if 
+	 <codeph>s_account="abc,123"</codeph> the call to 
+	 <codeph>"123"</codeph> is the secondary server call. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="subtopic" content="Glossary" />
+    </metadata>
+  </prolog>
+  <conbody></conbody>
+  <related-links>
+    <link href="primary_server_calls.xml#concept_E3D0FEC81E1F4987B39CC467F19FFCFF" format="dita" scope="local">
+      <linktext>
+        <?xm-replace_text Primary Server Calls?>
+      </linktext>
+    </link>
+  </related-links>
+</concept>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_2AFE2EC82A2E429BB0E3AC9D1E6192A4"> 
+  <title>Co-Branding</title> 
+  <shortdesc>The 
+	 <wintitle>Manage Co-Branding Image</wintitle> page lets you display your
+	 company logo in downloaded reports. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Admin tools"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p> 
+		<uicontrol>Analytics</uicontrol> &gt; 
+		<uicontrol>Admin</uicontrol> &gt; 
+		<uicontrol>Company Settings</uicontrol> &gt; 
+		<uicontrol>Co-Branding</uicontrol>
+	 </p> 
+	 <p>Use the following image guidelines for the best results: 
+	 </p> 
+	 <ul id="ul_1D6A9799D892457493263250D2215208"> 
+		<li id="li_5F90CE31E7D341768359D37BF1D08AF9">For best results in PDF
+		  output, upload a 417x125 pixel image. 
+		</li> 
+	 </ul> 
+  </conbody> 
+</concept>

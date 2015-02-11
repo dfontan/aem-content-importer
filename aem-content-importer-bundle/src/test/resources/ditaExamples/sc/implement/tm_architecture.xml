@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_51142050CFC24C12990457EA074652A2">
+  <title>Tag management Architecture</title>
+  <shortdesc> This section describes the architecture of tag management and changes
+	 to the architecture from version 1.0.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Tag management" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Before tag management, an <keyword>Analytics</keyword> implementation
+		included a JavaScript file that you hosted on your website, called 
+		<codeph>s_code.js</codeph>. Each page included a snippet of code that
+		leveraged this core JavaScript file. When updates were released or if you
+		wanted to use an additional module or plug-in, the JavaScript file had to be
+		updated. 
+		<keyword>Target</keyword>, 
+		<keyword>AudienceManager</keyword>, and other products used a similar
+		process. 
+	 </p>
+    <p>With tag management, you now place a snippet of code on your pages, and all
+		tags are loaded directly from tag management, including any core JavaScript
+		required. Tag updates and new tag deployments are managed in the tag management UI.
+		
+	 </p>
+    <p>
+      <image placement="break" align="center" href="graphics/tag2_arch.png" width="491px" height="260px" id="image_125A6D11D90A4995990829AEE698617A"></image>
+    </p>
+    <p>Tag management architecture includes the following: 
+	 </p>
+    <ul id="ul_F6AF59CFDF31472BBBD0A9C6343AC8FF">
+      <li id="li_03C9F3A53FEE4B87B772DE451BA318A9">New, product-agnostic page
+		  code for invoking the tag loader and tag containers. 
+		</li>
+      <li id="li_6F822A75AA8F4547BC83C6BB913646CE">A fully-hosted tag loader on
+		  an Adobe-managed CDN (Akamai), with built-in availability safeguards to prevent
+		  errors. You are not required to host any JavaScript on your web server. 
+		</li>
+      <li id="li_1B04AF8B8D3044C69CE650198C809FD3">Support for 
+		  <keyword>Target</keyword><filepath>mbox.js</filepath> and global mbox deployment. 
+		</li>
+      <li id="li_BA0ECBDDAE9C43E6969FA93C3685E7AE">Optional synchronous loading
+		  alongside the asynchronous container. 
+		</li>
+      <li id="li_7D0606BE7782405AA325C0A36367B613">Controls for managing the
+		  execution of on-page function calls. 
+		</li>
+      <li id="li_57F7660BE7824EE8A8131CB07E372D66">Enhanced rule building
+		  functionality to control tag firing, including reusable rules and support for
+		  regular expressions. 
+		</li>
+      <li id="li_335FF2324A9B488D906F9B05CF9755A1">Backwards compatibility with
+		  current 
+		  Tag management page code and containers. 
+		</li>
+    </ul>
+    <section id="section_91485CEFC7B747F0BFF2B56EF972B679">
+      <title>Changes from tag management 1.0</title>
+      <p> Version 2.0 of 
+		  tag management includes significant changes to the
+		  architecture of the tool. 
+		</p>
+      <p> 
+		  Tag management 1.0 leveraged existing script tagging and
+		  page code from legacy 
+		  <keyword>Analytics</keyword> implementations. Tag management 1.0
+		  replaced the contents of the s_code.js file with a tag container. This
+		  architecture simplified deployment since page code updates weren't required,
+		  but it had several limitations. 
+		</p>
+      <p>In tag management 2.0, the loader and tag containers are hosted on the
+		  Adobe CDN and are managed by 
+		  <keyword>tag management</keyword>. To deploy tag management 2.0, you must
+		  update the page code on your pages. With these changes, you can deploy multiple
+		  Adobe Marketing Cloud products with the same page code and are enabled to
+		  quickly deploy new functionality when it is added to the product. 
+		</p>
+    </section>
+  </conbody>
+</concept>

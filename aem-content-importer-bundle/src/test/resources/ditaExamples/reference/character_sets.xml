@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_362D9F5C84AF47ADA07832F300E5CD86">
+  <title>Character Sets</title>
+  <shortdesc>Refers to the set of characters found in each language. Each
+	 language is either single-byte or a multi-byte character set. Multi-byte
+	 character sets are comprised of characters that require more than one byte per
+	 character. Single-byte character sets are comprised of characters that require
+	 a single byte per character. Latin-based languages are single-byte, whereas
+	 non-Latin languages like Japanese are multi-byte. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="subtopic" content="Glossary" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>See 
+		<xref href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_s_charset" format="http" scope="external">s.charSet</xref>. 
+	 </p>
+  </conbody>
+</concept>

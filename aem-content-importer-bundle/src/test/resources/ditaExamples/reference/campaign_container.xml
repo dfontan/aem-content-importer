@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_60C774E10C514B3C911133668B252813"> 
+  <title>Campaign Container</title> 
+  <shortdesc>A region of a web page that holds targeted content. The campaign
+	 container is usually a bounded region of the page. Visualize this as similar to
+	 a banner ad, although the container can take any format, including a sentence
+	 of text in the middle of a paragraph. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="subtopic" content="Glossary"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p> <?xm-replace_text Paragraph?>
+	 </p> 
+  </conbody> 
+</concept>

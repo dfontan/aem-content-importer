@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_D946AFFFDFCC4F1186F2F2E7D6907F99"> 
+  <title>Video Management</title> 
+  <shortdesc>You can designate a set of Custom Conversion Variables (eVars) and
+	 Custom Events for use in tracking and reporting on video. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Admin tools"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p> 
+		<uicontrol>Analytics</uicontrol> &gt; 
+		<uicontrol>Admin</uicontrol> &gt; 
+		<uicontrol>Report Suites</uicontrol> &gt; 
+		<uicontrol>Edit Settings</uicontrol> &gt; 
+		<uicontrol>Video Management</uicontrol>. 
+	 </p> 
+	 <p>See 
+		<xref
+		 href="http://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/video/index.html"
+		 format="http" scope="external">Measuring Video in Analytics</xref>. 
+	 </p> 
+  </conbody> 
+</concept>

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_014AB6795D2D4B6EB5E45A226A4FF7E9">
+  <title>How Target Decides Who Sees What Content</title>
+  <shortdesc>Target uses the criteria you set up for your campaign to determine
+	 who sees what content, based on a specific order of operations. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p> Target does not automatically split traffic if you have two experiences
+		with the same rules-based targeting. If the visitor qualifies for Experience B
+		and Experience C based on the targeting, then 100% of those users go into the
+		first experience (in this case, Experience B). 
+	 </p>
+    <p> The same is true for experiences with no targeting. In the following
+		example, if the user does not qualify for A or B, then they are always placed
+		into Experience C (in other words, no one will make it to Experience D): 
+	 </p>
+    <p>
+      <ul id="ul_87E27B4248CB48E59F5837ED7E2C8B97">
+        <li id="li_E6E1CAE7ECD2428BAD6E7696502C33D3">
+          <p>Experience A - 10% of visitors 
+		  </p>
+        </li>
+        <li id="li_F1C9A19E0BEB412DA13220A0B523AA35">
+          <p>Experience B - Only show Fri/Sat/Sun 
+		  </p>
+        </li>
+        <li id="li_732F139AF04B4835955E9574F5DFC316">
+          <p>Experience C - (not targeting) 
+		  </p>
+        </li>
+        <li id="li_A9B63A22E746450DB3153E8F1B5848DC">
+          <p>Experience D - (not targeting) 
+		  </p>
+        </li>
+      </ul>
+    </p>
+    <p> One way around this is to create a profile script that generates a
+		random number from 1...100 and then set up the targeting this way: 
+	 </p>
+    <p>
+      <ul id="ul_8EA81422B51E483AB6607CEE76678A44">
+        <li id="li_D3437CCD412447459E8182AB700AA87B">
+          <p>Experience A - 10% of visitors 
+		  </p>
+        </li>
+        <li id="li_467FE6343C574DA1AC2CD1FCE089F126">
+          <p>Experience B - Only show Fri/Sat/Sun 
+		  </p>
+        </li>
+        <li id="li_CFEB6F4306854A30BD6D1F9341B317FC">
+          <p>Experience C - (random number profile has value 1..50) 
+		  </p>
+        </li>
+        <li id="li_0B7D5211F60944AA8C28B869C825FE95">
+          <p>Experience D - (random number profile has value 51..100) 
+		  </p>
+        </li>
+      </ul>
+    </p>
+    <p> You can add percentage targetingto Experience C (set Experience C to
+		50% of traffic and leave Experience D without any targeting) to make sure
+		visitors get into all experiences. 
+	 </p>
+    <p>If your campaign has multiple experiences that are set up with specific
+		percentage targets, for example four experiences each configured to receive 25%
+		of the traffic, a random number is generated and that number determines the
+		experience shown to a visitor. In this example, if the random number is 30, the
+		visitor would receive the second experience because 30 is between 25 and 50,
+		the second range when dividing 100 into 25% chunks. 
+	 </p>
+    <p>If percentages are not specified, a random starting experience is chosen
+		for each 
+		<xref href="c_edge_network.xml#concept_0AE2ED8E9DE64288A8B30FCBF1040934" format="dita" scope="local">Edge node</xref>. For example, if there are three
+		experiences and the second is randomly chosen, the first visitor sees the
+		second experience. Each subsequent visitor sees the next experience, in
+		rotation. So, the second visitor on that Edge node sees the third experience,
+		the third visitor sees the first experience, the fourth see the second
+		experience, and so on. 
+	 </p>
+  </conbody>
+</concept>

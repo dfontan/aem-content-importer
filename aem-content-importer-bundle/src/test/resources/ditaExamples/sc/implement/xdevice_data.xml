@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_F6C2D16DC2F34CF0A2555359EAD31C87"> 
+  <title>Data Impact of Cross-Device Visitor Identification</title> 
+  <shortdesc> Overview of how enabling cross-device visitor identification
+	 affects the data that you see in reports. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Developer and implementation"/> 
+		<othermeta name="subtopic" content="Visitors"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p> To understand how this feature affects data collection, it is useful to
+		understand the visitor data fields in a visitor profile: 
+	 </p> 
+	 <table id="table_C04905EE3ABD4DEABCC3BD5CC9D5A527">
+		<tgroup cols="2"><colspec colnum="1" colname="col1"
+		  colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="2.34*"/><thead>
+			 <row>
+				<entry colname="col1">Data Field
+				</entry>
+				<entry colname="col2">Description
+				</entry>
+			 </row></thead>
+		  <tbody>
+			 <row>
+				<entry colname="col1">Visitor ID cookie
+				</entry>
+				<entry colname="col2">ID generated automatically on the first visit
+				  from a device or browser and stored in the 
+				  <codeph>s_vi</codeph> cookie. 
+				</entry>
+			 </row>
+			 <row>
+				<entry colname="col1">Visitor ID variable
+				</entry>
+				<entry colname="col2">Optional 
+				  <wintitle>visitor ID</wintitle> that is set using the 
+				  <codeph>s.visitorID</codeph> variable. This value is populated
+				  after a user authenticates and might match an ID that your company uses to
+				  track a user across multiple digital marketing channels. 
+				</entry>
+			 </row>
+			 <row>
+				<entry colname="col1">Effective Visitor ID
+				</entry>
+				<entry colname="col2">The effective 
+				  <wintitle>visitor ID</wintitle> is the actual ID for the user
+				  profile. This value is set to the 
+				  <wintitle>visitor ID</wintitle> cookie, or to the 
+				  <wintitle>visitor ID</wintitle> variable if one is provided. 
+				</entry>
+			 </row>
+		  </tbody>
+		</tgroup>
+	 </table> 
+  </conbody> 
+</concept> 

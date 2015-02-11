@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_508E5CFB45C84886AF47F4D57E246649" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Set Up the Final Pre-Launch</title>
+  <shortdesc class="- topic/shortdesc ">As you prepare to launch your campaign,
+	 you must set up the final pre-launch. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <steps id="steps_8D7E45C5A3BC48C7818FE9EE1784E661" class="- topic/ol task/steps ">
+      <step id="step_BA959C5D3EE24E19BBD85EC256C616B5" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Copy the validated campaign. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">This ensures your report data includes only
+				future visits. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_C08689669F3A40AD9D62D11745096427" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Edit the copied campaign. 
+		  </cmd>
+        <substeps id="substeps_96F856922A3946F29A3C379A74D561CD" class="- topic/ol task/substeps ">
+          <substep id="substep_BB8BF9186D9141BCBB81B1A1601391A4" class="- topic/li task/substep ">
+            <cmd class="- topic/ph task/cmd ">Remove the exclusive targeting
+				  rule. 
+				</cmd>
+          </substep>
+          <substep id="substep_70ABCCC50B9B42AB88BDEB97C136B706" class="- topic/li task/substep ">
+            <cmd class="- topic/ph task/cmd ">Rename the campaign as needed. 
+				</cmd>
+          </substep>
+          <substep id="substep_4E03BFB9645646A7955A57D683648200" class="- topic/li task/substep ">
+            <cmd class="- topic/ph task/cmd ">Update campaign dates to match
+				  your campaign strategy. 
+				</cmd>
+            <stepresult class="- topic/itemgroup task/stepresult ">
+              <p class="- topic/p ">
+                <b class="+ topic/ph hi-d/b ">Tip:</b> You are not required to
+					 enter an end date. Monitor the campaign traffic and manually deactivate it when
+					 you have selected a winner. This ensures you control the campaign shut-off,
+					 even if it is later than you expect. 
+				  </p>
+            </stepresult>
+          </substep>
+        </substeps>
+      </step>
+      <step id="step_0A94DF5C2ACB410F982511B8AE295D97" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">If there are other active campaigns
+			 sharing mboxes with the new campaign, 
+			 <xref href="c_Understanding_Campaign_Priority.xml#concept_605FD7C4E2E14D2384487AFBA7067DF2" type="concept" format="dita" scope="local" class="- topic/xref ">set campaign
+				priority</xref> as needed. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">If you see an mbox collision notice or shared
+				location notice under the mbox selection, then the mbox you selected is used in
+				another campaign. Click the link in the message to see the other campaigns and
+				their statuses. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_3BE42B61F59A4C1BA71ED8B74C32E650" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Save changes. 
+		  </cmd>
+      </step>
+      <step id="step_527BF3C1476643158F8127F4CA374474" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Just before approval, you might want
+			 to select the 
+			 <xref href="t_Ignoring_Visits_from_Your_Browser.xml#task_460FEEEE3B7141DEB9162348E6682EB9" type="task" format="dita" scope="local" class="- topic/xref ">ignore visits
+				from your browser</xref> setting. 
+		  </cmd>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links class="- topic/related-links ">
+    <link href="t_Preparing_to_Assure_Campaign_Quality.xml#task_424E791D222E4AA280F6A695D1397FD4" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Prepare to Assure Campaign Quality?>
+    </link>
+    <link href="t_Previewing_Experiences_on_the_Development_Host_Groups.xml#task_58E77EE3FCEC49CB8ACFCB91114DC7EA" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Preview Experiences on the Development Host   Groups?>
+    </link>
+    <link href="t_Fixing_All_Errors.xml#task_E1038BF8EB6B4069B04EA93265B31073" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Fix All Errors?>
+    </link>
+    <link href="t_Testing_on_the_Production_Host_Groups.xml#task_86FE07D96CDF44A2BCC2159618570341" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Test on the Production Host Groups?>
+    </link>
+  </related-links>
+</task>

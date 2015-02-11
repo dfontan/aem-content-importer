@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd"[]>
+<reference id="reference_E9D8DDE19F5F413FBFF3C16F7D975134">
+  <title>User Profile Variables</title>
+  <shortdesc>Target tracks the variables defined by your mboxes to measure
+	 visitor behavior. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <refbody>
+    <refsyn id="refsyn_A152217D2D6D4A9AA28368D1D3B91E4D">
+      <p> When a display request is made (a request for an mbox in an automated
+		  decisioning campaign that needs to show content to the user), the standard set
+		  of variables is recorded. These variables come from: 
+		</p>
+      <p>
+        <ul id="ul_E00BE09CCBFC4650AAEDC8369E484B5B">
+          <li id="li_5BA55A7379FF4B64AE0E1416A0CE2DD8"> URL &amp; referring
+			 parameters 
+		  </li>
+          <li id="li_8723E552264946A1A40263B0E24783AE"> Segments 
+		  </li>
+          <li id="li_1E114091F4714EEFB310BF87CAA55630"> Third-party data
+			 providers 
+		  </li>
+          <li id="li_E65F2ABE76C54718B3CA2DF822BDE142"> Environmental parameters 
+		  </li>
+          <li id="li_5A80CBB3190A4C7A92E9AB7E097F3B13"> Mbox parameters 
+		  </li>
+          <li id="li_0B1D208BCD4D4DA8B306FAB1919AB0D3"> Profile parameters 
+		  </li>
+          <li id="li_9D0500C35E5B4006A42BD2ECE844C84E"> Offline profile API 
+		  </li>
+        </ul>
+      </p>
+      <p>Mbox parameters are only used in the modeling system when the mbox is
+		  a display mbox. For mbox parameters on non-display mboxes to be included in the
+		  model, they need to be saved as profile parameters, typically by creating a
+		  profile script. 
+		</p>
+      <p>
+        <note>Analytics to Target integration passes all Analytics variables as
+			 mbox parameters, so these variables need to be saved as profile parameters
+			 through profile scripts to be included in the modeling. 
+		  </note>
+      </p>
+      <p> The variables that are not predictive are dropped. Variables can be
+		  combined manually as a segment to provide the information required to display
+		  the best content for that campaign. 
+		</p>
+      <p>The following table provides examples of the data types. 
+		</p>
+      <p>
+        <table id="table_34E40A679FC34D5C8097E3153DBD1AE2">
+          <tgroup cols="2">
+            <colspec colnum="1" colname="col1" colwidth="1.00*" />
+            <colspec colnum="2" colname="col2" colwidth="2.09*" />
+            <thead>
+              <row>
+                <entry colname="col1">Variable Types 
+				  </entry>
+                <entry colname="col2">Variables 
+				  </entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry colname="col1">
+                  <p>Site behavior variables 
+					 </p>
+                </entry>
+                <entry colname="col2">
+                  <p>Customer/prospect 
+					 </p>
+                  <p>New/return visitor 
+					 </p>
+                  <p>Previous visit patterns 
+					 </p>
+                  <p>Previous Product interests – top level 
+					 </p>
+                  <p>Previous Product interests – low level 
+					 </p>
+                  <p>Searches 
+					 </p>
+                  <p>Previous online purchases 
+					 </p>
+                  <p>Previous Campaign exposure 
+					 </p>
+                  <p>Previous Campaign responses 
+					 </p>
+                </entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <p>Environment variables 
+					 </p>
+                </entry>
+                <entry colname="col2">
+                  <p>IP address 
+					 </p>
+                  <p>Geodem/Psycho 
+					 </p>
+                  <p>Country of origin 
+					 </p>
+                  <p>Time zone 
+					 </p>
+                  <p>Operating system 
+					 </p>
+                  <p>Browser type 
+					 </p>
+                  <p>Screen resolution 
+					 </p>
+                </entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <p>Temporal variables 
+					 </p>
+                </entry>
+                <entry colname="col2">
+                  <p>Time of day 
+					 </p>
+                  <p>Day of week 
+					 </p>
+                  <p>Recency 
+					 </p>
+                  <p>Frequency 
+					 </p>
+                </entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <p>Referrer variables 
+					 </p>
+                </entry>
+                <entry colname="col2">
+                  <p>Referring domain 
+					 </p>
+                  <p>Campaign ID 
+					 </p>
+                  <p>Affiliate 
+					 </p>
+                  <p>PPC 
+					 </p>
+                  <p>Natural search 
+					 </p>
+                  <p>Direct/bookmark 
+					 </p>
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </p>
+    </refsyn>
+  </refbody>
+  <related-links class="- topic/related-links ">
+    <link href="c_Modeling_System_Overview.xml#concept_72FD62BDE64643DCA4E2089685889BF8" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Modeling System Overview?>
+    </link>
+    <link href="t_Creating_a_11_Campaign.xml#task_CE002DF9573947EFAE66CCEC6CA21541" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Creating a 1:1 Campaign?>
+    </link>
+    <link href="t_Selecting_or_Creating_Offers.xml#task_7ED49CC3420744FEBCDC820A58E19F11" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Selecting or Creating Offers?>
+    </link>
+    <link href="t_Previewing_and_Restricting_Display_Ad_Combinations.xml#task_1C5E4782F08B4DF3A64FC6E323E3F662" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Previewing and Restricting Display Ad   Combinations?>
+    </link>
+    <link href="c_Restricting_the_Content_to_be_Displayed.xml#concept_2472EC5342C34882A8DA2737316F7C87" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Restricting the Content to Display?>
+    </link>
+    <link href="c_Testing_Against_a_Control_Group.xml#concept_3BF1DAA6D6FE4013812F0E63EB7C31E5" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Testing Against a Control Group?>
+    </link>
+    <link href="c_Pausing_a_1_1_Campaign.xml#concept_3F0B78EC4D7A4C78AA8C74C3653A9377" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Pausing a 1:1 Campaign?>
+    </link>
+  </related-links>
+</reference>

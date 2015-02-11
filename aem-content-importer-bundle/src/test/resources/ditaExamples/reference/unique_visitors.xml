@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_C523545928624FD2A2F014EF4ABB0C0B"> 
+  <title>Unique Visitors</title> 
+  <shortdesc>Unique visitors represent the number of de-duplicated (counted
+	 only once) visitors to your website over the course of a specified time period.
+	 A unique visitor is determined with cookies. Unique visitors are calculated
+	 based on the selected reporting period. Any visitor during that reporting
+	 period will be counted only once.
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="subtopic" content="Glossary"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>See 
+		<xref
+		 href="metrics_unique_visitors.xml#concept_9B3F44A4EA4E4F178FF164EF9694F88E"
+		 type="concept" format="dita" scope="local"><?xm-replace_text Unique Visitors?></xref>
+		in 
+		<i>Metrics.</i>
+	 </p> 
+	 <p>See the 
+		<xref
+		 href="http://marketing.adobe.com/resources/help/en_US/whitepapers/v14_visitors_and_unique_visitors/index.html?f=c_metrics_unique_visitor_v14"
+		 scope="external" format="html">Unique Visitors in v14</xref> white paper. 
+	 </p> 
+  </conbody> 
+</concept>

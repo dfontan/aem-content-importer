@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_3BF1DAA6D6FE4013812F0E63EB7C31E5" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic concept/concept ">
+  <title class="- topic/title ">Testing Against a Control Group</title>
+  <shortdesc class="- topic/shortdesc ">Automated decisioning and targeting
+	 always measures performance against a control group. A fraction of visitors
+	 (5-10%) are placed into the control group, and served random content. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody class="- topic/body  concept/conbody ">
+    <p class="- topic/p "> Percentage of traffic to control varies because that
+		portion of traffic is also learning/exploration traffic and the targeting
+		system maximizes exploitation. 
+	 </p>
+  </conbody>
+  <related-links class="- topic/related-links ">
+    <link href="c_Modeling_System_Overview.xml#concept_72FD62BDE64643DCA4E2089685889BF8" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Modeling System Overview?>
+    </link>
+    <link href="t_Creating_a_11_Campaign.xml#task_CE002DF9573947EFAE66CCEC6CA21541" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Creating a 1:1 Campaign?>
+    </link>
+    <link href="r_User_Profile_Variables.xml#reference_E9D8DDE19F5F413FBFF3C16F7D975134" type="reference" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text User Profile Variables?>
+    </link>
+    <link href="t_Selecting_or_Creating_Offers.xml#task_7ED49CC3420744FEBCDC820A58E19F11" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Selecting or Creating Offers?>
+    </link>
+    <link href="t_Previewing_and_Restricting_Display_Ad_Combinations.xml#task_1C5E4782F08B4DF3A64FC6E323E3F662" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Previewing and Restricting Display Ad   Combinations?>
+    </link>
+    <link href="c_Restricting_the_Content_to_be_Displayed.xml#concept_2472EC5342C34882A8DA2737316F7C87" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Restricting the Content to Display?>
+    </link>
+    <link href="c_Pausing_a_1_1_Campaign.xml#concept_3F0B78EC4D7A4C78AA8C74C3653A9377" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Pausing a 1:1 Campaign?>
+    </link>
+  </related-links>
+</concept>

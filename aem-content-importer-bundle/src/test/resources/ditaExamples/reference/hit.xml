@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_E3D0FEC81E1F4987B39CC467F19FFCFF"> 
+  <title>Hit</title> 
+  <shortdesc>A single image request to Adobe servers, generated when a user
+	 requests a resource on a website. A request can result in an error or a
+	 successful transmission of any data type. Each Track and Track Link calk
+	 generates a hit.
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="subtopic" content="Glossary"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p> 
+		<b>About Hits and Visitor Data</b> 
+	 </p> 
+	 <p>When a user first visits your site, Adobe servers place a cookie
+		containing a 
+		<term>visitor ID</term> value on the user's computer. Each image request
+		that a user sends into Adobe's servers passes this visitor ID value back to
+		Adobe. Because this value stays the same from hit to hit and from visit to
+		visit (unless the user clears cookies), a series of hits containing the same
+		visitor ID values can be construed to be a single visitor. 
+	 </p> 
+	 <p>Using the time stamps of the hits recorded from each user, analytics can
+		determine when the user made the first image request, and also when the user's
+		inactivity on your site reached 30 minutes, which ends the visit. This process
+		allows Adobe's servers to determine how many visits have been made by a single
+		visitor ID value. The timestamp of each hit also allows reports to
+		sequentialize the hits within a visit, making pathing data possible in reports.
+		
+	 </p> 
+  </conbody> 
+</concept>

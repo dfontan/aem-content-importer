@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_0064AE3E79254B909388A000654E6957">
+  <title>Custom Tag Deployment</title>
+  <shortdesc>Third-party and custom tags are deployed using custom code
+	 sections.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Tag management" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Custom code tags can be 
+		<xref href="tm_rules.xml#concept_13713685F7764833A6ECE39580167502" format="dita" scope="local">conditionally executed</xref>. 
+	 </p>
+  </conbody>
+</concept>

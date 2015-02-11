@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_F31D8B62FD5144E181979C3A300336A5"> 
+  <title>Profiles and Audiences</title> 
+  <shortdesc>Audience Services is part of the Master Marketing Profile (MMP).
+	 The MMP is a collection of behavioral data, audience membership, real-time
+	 context, and external data about a visitor. The 
+	 <keyword>Marketing Cloud</keyword> lets you leverage the Master Marketing
+	 Profiles of your visitors for cross-solution workflows. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Marketing Cloud"/> </metadata>
+  </prolog> 
+  <conbody>
+    <!--<p>https://wiki.corp.adobe.com/display/omtrcache/Raven+1.1%2C+1.2+and+1.3+Scope+and+Timeline</p>-->
+	 <p>Two important concepts in the Master Marketing Profile are: 
+	 </p> 
+	 <ul id="ul_6F35E9FF72144BB087854568260619EA"> 
+		<li id="li_E643B829293A4E5699959B3DDE340468"><xref
+		  href="audiences.xml#concept_F31D8B62FD5144E181979C3A300336A5/section_D8510059962B4BAEA593C83FB9B7531E"
+		  format="dita" scope="local"><?xm-replace_text Context?></xref> 
+		</li> 
+		<li id="li_E86450C060244FE59DE2FEB5CFD19BE0"><xref
+		  href="audience_library.xml#concept_3D52E1DED6D04ECC949B514E182C4655"
+		  format="dita" scope="local">Audiences Services</xref> 
+		</li> 
+	 </ul> 
+	 <section id="section_D8510059962B4BAEA593C83FB9B7531E"> 
+		<title>Context</title> 
+		<p> 
+		  <term>Context</term> describes the details of a visitor's current
+		  interaction with a digital property. Examples of context include: 
+		</p> 
+		<ul id="ul_1AB949E66586434083B8E04CE44D3DFA"> 
+		  <li id="li_41786ACB726945F085418D658D70165B">The value of a visitor's
+			 shopping cart 
+		  </li> 
+		  <li id="li_ACB0077C9B1244DDB37FA27A65557CE6">The state of a form field 
+		  </li> 
+		  <li id="li_EE545E16C7F14959AC37B353ACC9C896">The position of their
+			 mouse 
+		  </li> 
+		  <li id="li_0EE8595541974E3C9EB71A6CCE009BA0">The device they are using 
+		  </li> 
+		</ul> 
+		<p> 
+		  <xref
+			href="http://microsite.omniture.com/t2/help/en_US/dtm/dtm_home.html"
+			format="http" scope="external">Dynamic tag management</xref>, a 
+		  <keyword>Marketing Cloud</keyword> tool, provides the most robust
+		  context detection and service activation capability on the market today. It
+		  provides the contextual component of Master Marketing Profiles. 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

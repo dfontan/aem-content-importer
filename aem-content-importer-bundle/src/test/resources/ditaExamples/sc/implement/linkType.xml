@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_7695692AF5D843E3B370F6D345E32964">
+  <title>linkType</title>
+  <shortdesc>The 
+	 <varname>linkType</varname> variable is an optional variable used in link
+	 tracking that determines which report a link name or URL appears (custom,
+	 download, or exit links). 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Variables" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>The 
+		<varname>linkType</varname> variable is not normally needed because the
+		second parameter in the 
+		<varname>tl()</varname> function replaces it. 
+	 </p>
+    <table id="table_3D1A2FC1CECD4709BE2F9E32AC2DC730">
+      <tgroup cols="4">
+        <colspec colnum="1" colname="col1" colwidth="*" />
+        <colspec colnum="2" colname="col2" colwidth="*" />
+        <colspec colnum="3" colname="col3" colwidth="*" />
+        <colspec colnum="4" colname="col4" colwidth="*" />
+        <thead>
+          <row>
+            <entry> Max Size 
+				</entry>
+            <entry> Debugger Parameter 
+				</entry>
+            <entry> Reports Populated 
+				</entry>
+            <entry> Default Value 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry> One character 
+				</entry>
+            <entry> pe=[lnk_o|lnk_d|lnk_e] 
+				</entry>
+            <entry>
+              <p>File Downloads
+				  </p>
+              <p>Custom Links
+				  </p>
+              <p>Exit Links
+				  </p>
+            </entry>
+            <entry> "" 
+				</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p>Custom links send data to 
+		<keyword>Analytics</keyword>. The 
+		<varname>linkType</varname> variable (or the second parameter in the 
+		<varname>tl()</varname> function) is used to identify the report in
+		which the link name or URL appears (<wintitle>Custom</wintitle>, 
+		<wintitle>Download</wintitle>, or 
+		<wintitle>Exit Links</wintitle> report). 
+	 </p>
+    <p>For exit and download Links, the 
+		<varname>linkType</varname> variable is automatically populated
+		depending on whether the link clicked is an exit or download link. A custom
+		link may be configured to send data to any of the three reports with this
+		variable or with the second parameter in the 
+		<varname>tl()</varname> function. By setting 
+		<varname>linkType</varname> to 'o,' 'e,' or 'd,' the 
+		<varname>linkName</varname> or link URL is sent to the 
+		<wintitle>Custom Links</wintitle>, 
+		<wintitle>Exit Links</wintitle>, or 
+		<wintitle>File Downloads</wintitle> report respectively. 
+	 </p>
+    <section id="section_18DB3A8083FB4F75B970055ED336DA4E">
+      <title>Syntax and Possible Values</title>
+      <p>The 
+		  <varname>linkType</varname> variable may only contain a single
+		  character, namely 'o,' 'e,' or 'd.' 
+		</p>
+      <codeblock outputclass="syntax javascript">s.tl(this,’o’,’Link Name’);</codeblock>
+    </section>
+    <section id="section_242B5DFFD1C9462A9A8EB1556B2E3160">
+      <title>Examples</title>
+      <codeblock outputclass="syntax javascript">&lt;a href="index.html" onClick="
+	var s=s_gi('rsid'); **see note below on the rsid**
+	s.tl(this,'o','Link Name');
+	"&gt;My Page&lt;/a&gt;
+</codeblock>
+    </section>
+    <section id="section_59738AD1B5E94294B8D36F4E772DEDB3">
+      <title>
+        Configuration Settings</title>
+      <p>None 
+		</p>
+    </section>
+    <section id="section_F0D01DDE3FDA486C987162DA50A79C45">
+      <title>Pitfalls, Questions, and Tips</title>
+      <ul id="ul_70473CB178794CF7959070F0C2DEAEFA">
+        <li id="li_A4ACDC6626CE472DBAB9F214E5127FA2"> If 
+			 <varname>linkType</varname> is not specified, custom links ('o') is
+			 assumed. 
+		  </li>
+      </ul>
+    </section>
+  </conbody>
+</concept>

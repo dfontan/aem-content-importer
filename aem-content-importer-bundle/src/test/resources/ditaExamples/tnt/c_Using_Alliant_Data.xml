@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_D9542E52932C49A9B196C937A4CC3662" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic concept/concept ">
+  <title class="- topic/title ">Using Alliant Data</title>
+  <shortdesc class="- topic/shortdesc ">Alliant is a leading aggregator of
+	 direct-to-consumer purchasing information from online and offline marketers.
+	 Adobe Marketing Cloud users can segment site visitors using 65 predictive
+	 marketing performance dimensions. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody class="- topic/body  concept/conbody ">
+    <p class="- topic/p ">Alliant offers predictive segmentation solutions that
+		enable direct-to-consumer marketers to achieve higher profitability across all
+		of their campaign channels, including traditional mail, DRTV and digital
+		marketing. Alliant’s proprietary cooperative databases include over 130 million
+		consumer profiles packed with rich, behavioral, transaction-level customer data
+		contributed monthly by many of the world’s leading direct response marketers.
+		Alliant uses its proprietary data to deliver insight for marketing decisions,
+		developing powerful multi-channel solutions that let marketers identify
+		profitable new customers, increase response rates and average order size,
+		minimize payment risk, and increase the success of customer retention and
+		reactivation efforts. For more information, visit 
+		<xref href="http://www.alliantdata.com" scope="external" format="html" class="- topic/xref ">www.alliantdata.com</xref>. 
+	 </p>
+    <p class="- topic/p ">Use the Alliant data to define unique audience
+		segments with behavioral characteristics that might benefit from an alternative
+		experience on your website. Early testing has shown the Alliant segments to be
+		predictive at critical stages of the online conversion process: 
+	 </p>
+    <p class="- topic/p ">
+      <ul id="ul_C95BF8857B294430BAAA718EF3ADF996" class="- topic/ul ">
+        <li id="li_0ABA74F29FBE4D63BF7B9D6CF7D9D24E" class="- topic/li "> Site
+		  Engagement 
+		  <p class="- topic/p ">Identify hero imagery and offers that grab the
+			 attention of specific consumer segments. 
+		  </p><p class="- topic/p ">Provide alternative navigation and links that are
+			 relevant to the segment. 
+		  </p></li>
+        <li id="li_DB0B93A9E2924D548D9E4E55DAC083EA" class="- topic/li ">
+		  Conversion and Offer Management 
+		  <p class="- topic/p ">Provide relevant messaging and payment options to
+			 qualified segments. 
+		  </p><p class="- topic/p ">Create targeted upsell offers that increase
+			 initial order size. 
+		  </p></li>
+        <li id="li_2566D887897B4A06BAEE70D780BC22D4" class="- topic/li ">
+		  Post-Engagement Messaging 
+		  <p class="- topic/p ">Use Alliant segments to select appropriate
+			 follow-up offers. 
+		  </p><p class="- topic/p ">Identify alternate channels for conversion, for
+			 example email, direct mail, telemarketing, and so on. 
+		  </p></li>
+      </ul>
+    </p>
+    <section id="section_F3B8B06E10BB45D1986B3D6D64C58FC7" class="- topic/section ">
+      <title class="- topic/title ">How Data is Derived</title>
+      <p class="- topic/p ">Alliant’s proprietary cooperative databases include
+		  over 130 million consumer profiles packed with rich, behavioral,
+		  transaction-level customer data updated monthly by many of the world’s leading
+		  direct response marketers. The data represents active buyers in over 280 lines
+		  of direct-to-consumer offers and contains transaction-level information on new
+		  orders, product types and billing transactions. The Alliant attributes are
+		  calculated from a transactional database covering 135+ million consumers who
+		  have purchased products directly from marketers utilizing online and offline
+		  channels. The Alliant Data and the Census data are compiled differently. 
+		</p>
+      <p class="- topic/p ">
+        <b class="+ topic/ph hi-d/b "> For each Alliant variable:</b>
+      </p>
+      <p class="- topic/p ">
+        <ul id="ul_B1E478E8D63C45A6A5371D1F3B419E21" class="- topic/ul ">
+          <li id="li_627CFF65852E484F9317625B3BCC4713" class="- topic/li ">
+			 Alliant scores each zip code in the US based on observations of that variable
+			 in the Alliant database. 
+		  </li>
+          <li id="li_5E5C81DF12FE41DAA5132A52BE38CEDE" class="- topic/li "> Each
+			 zip code is ranked from "highest" (most prevalence of that attribute) to
+			 "lowest" (least prevalence of that attribute). 
+		  </li>
+          <li id="li_5EC2B6C096C548168A82325B056BE189" class="- topic/li "> The
+			 score groups are derived from the count of US census households within each zip
+			 code. Alliant delivers the rankings in 20 buckets (5% of US households in each
+			 bucket) and Adobe rolls those buckets up into five equal groups. Thus, each
+			 score group comprises 20% of total US households. 
+		  </li>
+          <li id="li_9E811C5D767041D38CC8C82AEB890876" class="- topic/li "> For
+			 this reason, zip codes counts are not particularly relevant for analysis. In
+			 more sparsely populated areas, the differences in performance are more
+			 pronounced. Conversely, large zip codes will tend more to the mean for a given
+			 behavior, thus falling to the middle. Thus, the ends of the scale tend to have
+			 more (and less populated) zip codes, but an equal number of households. 
+		  </li>
+          <li id="li_6D7CB3C956B0456E99C831B1F48AF90F" class="- topic/li "> Each
+			 attribute will have different clusters of zip codes. 
+		  </li>
+        </ul>
+      </p>
+      <p class="- topic/p ">
+        <b class="+ topic/ph hi-d/b "> For each Demographic Variable:</b>
+      </p>
+      <p class="- topic/p ">
+        <ul id="ul_396CF45A75E24687AA726854BDE93D8D" class="- topic/ul ">
+          <li id="li_AB3107E72E7143E2B218E3CAC9FC769C" class="- topic/li ">
+			 Demographic attributes are derived from US Census data. 
+		  </li>
+          <li id="li_10FE7CBFFF50411BB16C946A430F7B77" class="- topic/li "> Each
+			 zip code contains the numeric value of the given attribute. 
+		  </li>
+        </ul>
+      </p>
+    </section>
+    <section id="section_15486D672C78456BAB3B4DB5F0755BF9" class="- topic/section ">
+      <title class="- topic/title ">Data Categories</title>
+      <p class="- topic/p ">Alliant provides data in the following categories: 
+		</p>
+      <p class="- topic/p ">
+        <b class="+ topic/ph hi-d/b ">Recency:</b> Drive response with recency.
+		  Segments represent prevalence of most recent purchasing activities within the
+		  past 30 day, 60 day or 90 day period. 
+		</p>
+      <p class="- topic/p ">
+        <b class="+ topic/ph hi-d/b ">Product Categories:</b> Increase
+		  conversion by segmenting people with purchasing history in specific product
+		  categories. 
+		</p>
+      <p class="- topic/p ">
+        <b class="+ topic/ph hi-d/b ">Direct Marketing Flags:</b> Identify top
+		  direct response segments for purchasing and payment. 
+		</p>
+      <p class="- topic/p ">
+        <b class="+ topic/ph hi-d/b ">Product Types:</b> Identify segments with
+		  affinity for specific product types and offers, such as magazines, books,
+		  merchandise, entertainment, club/continuity, and replenishment goods. 
+		</p>
+      <p class="- topic/p ">
+        <b class="+ topic/ph hi-d/b ">Purchasing Channel:</b> Identify segments
+		  with history of responding to offers by direct mail, telemarketing, and email
+		  or internet. 
+		</p>
+      <p class="- topic/p ">
+        <b class="+ topic/ph hi-d/b ">Payment:</b> Identify zip codes with a
+		  higher propensity to make full payments for products and continue paying credit
+		  card payment plans. Cash and check flags offer insight for alternative payment
+		  offers. 
+		</p>
+      <p class="- topic/p ">
+        <b class="+ topic/ph hi-d/b ">Transactions:</b> Provide additional
+		  insight into comparative purchase, payment, and returns activity. 
+		</p>
+      <p class="- topic/p ">
+        <b class="+ topic/ph hi-d/b ">Demographics:</b> Profile key lifestyle
+		  attributes such as family composition, white collar/blue collar, home value,
+		  and so on. 
+		</p>
+    </section>
+    <section id="section_4138FC2300844003A53F86D0328B1CAE" class="- topic/section ">
+      <title class="- topic/title ">Ranking Concepts</title>
+      <p class="- topic/p ">You should understand the following ranking
+		  concepts: 
+		</p>
+      <p class="- topic/p ">
+        <ul id="ul_92FEC99756F54AE3808636AEE2F7C42B" class="- topic/ul ">
+          <li id="li_63906C839B6C4C19BBF90FA19EC93AE6" class="- topic/li "> Each
+			 zip code is ranked for the relative prevalence of each behavioral variable 
+		  </li>
+          <li id="li_423C927E9DA7438FBF548C75D8964492" class="- topic/li ">
+			 Groups of zip codes are ranked from "Very High" (most prevalent) to "Very Low"
+			 (least prevalent) with three intermediary levels. 
+		  </li>
+          <li id="li_8DE51F1335CA4D54B0CF77714A3C1B25" class="- topic/li "> All
+			 attributes except the demographic attributes are ranked from "Very High" (most
+			 prevalent) to "Very Low" (least prevalent) with three intermediary levels. 
+		  </li>
+          <li id="li_F8B476A5D84F4017B905A580835C383B" class="- topic/li "> Each
+			 grouping represents approximately 20% of the zip codes in the country 
+		  </li>
+        </ul>
+      </p>
+    </section>
+    <section id="section_914EE9CA26AA4F0998F13A38EE383F8E" class="- topic/section ">
+      <title class="- topic/title ">How Demographics Attributes are
+		  Ranked</title>
+      <p class="- topic/p ">Demographic attributes are derived from US Census
+		  data. Each zip code contains the numeric value of the given attribute. These
+		  numeric values are available for targeting and segmentation. Logical operators
+		  including equals, greater than, less than, and more can be used to group people
+		  across zip codes that share the same demographic attributes. 
+		</p>
+      <p class="- topic/p "> The following table shows the eight demographic
+		  attributes, with sample values from the 94131 zip code. 
+		</p>
+      <p>
+        <table id="table_95AE5F07EA024542AFF37C622C3BD2F7">
+          <tgroup cols="3">
+            <colspec colnum="1" colname="col1" colwidth="*" />
+            <colspec colnum="2" colname="col2" colwidth="*" />
+            <colspec colnum="3" colname="col3" colwidth="*" />
+            <thead>
+              <row>
+                <entry colname="col1">
+                  <p>Demographic Attribute 
+					 </p>
+                </entry>
+                <entry colname="col2">Value Type 
+				  </entry>
+                <entry colname="col3">Sample Value 
+				  </entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry colname="col1">
+                  <p>Median Household Income 
+					 </p>
+                </entry>
+                <entry colname="col2">
+                  <p>Raw numeric value 
+					 </p>
+                </entry>
+                <entry colname="col3">
+                  <p>76044 
+					 </p>
+                </entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <p>Median Home Value 
+					 </p>
+                </entry>
+                <entry colname="col2">
+                  <p>Raw numeric value 
+					 </p>
+                </entry>
+                <entry colname="col3">
+                  <p>475100 
+					 </p>
+                </entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <p>Median Age 
+					 </p>
+                </entry>
+                <entry colname="col2">
+                  <p>Raw numeric value 
+					 </p>
+                </entry>
+                <entry colname="col3">
+                  <p>39.4 
+					 </p>
+                </entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <p>Average Household Size 
+					 </p>
+                </entry>
+                <entry colname="col2">
+                  <p>Raw numeric value 
+					 </p>
+                </entry>
+                <entry colname="col3">
+                  <p>2.01 
+					 </p>
+                </entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <p>Married with Children % 
+					 </p>
+                </entry>
+                <entry colname="col2">
+                  <p>Percentage of the people in the zip code 
+					 </p>
+                </entry>
+                <entry colname="col3">
+                  <p>31.51 
+					 </p>
+                </entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <p>Urban Population % 
+					 </p>
+                </entry>
+                <entry colname="col2">
+                  <p>Percentage of the people in the zip code 
+					 </p>
+                </entry>
+                <entry colname="col3">
+                  <p>100 
+					 </p>
+                </entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <p>White Collar Employment % 
+					 </p>
+                </entry>
+                <entry colname="col2">
+                  <p>Percentage of the people in the zip code 
+					 </p>
+                </entry>
+                <entry colname="col3">
+                  <p>45.1 
+					 </p>
+                </entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <p>Blue Collar Employment % 
+					 </p>
+                </entry>
+                <entry colname="col2">
+                  <p>Percentage of the people in the zip code 
+					 </p>
+                </entry>
+                <entry colname="col3">
+                  <p>15.68 
+					 </p>
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </p>
+    </section>
+  </conbody>
+  <!--<related-links class="- topic/related-links ">
+    <link href="t_Viewing_the_List_of_Targeting_Groups.xml#task_85CEECC96F7D438DBBC40C044C8825CB" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Viewing the List of Targeting Groups?>
+    </link>
+    <link href="c_Understanding_Built-In_Targeting_Groups.xml#concept_63E2017653634DFF97A4861947EDC49F" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Understanding Built-In Targeting Groups?>
+    </link>
+    <link href="r_Tips_for_Targeting_Groups.xml#reference_B378F383FEDF4E3FBEDD48570B2ABA9C" type="reference" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Tips for Targeting Groups?>
+    </link>
+    <link href="c_Creating_Reusable_Targeting_Groups.xml#concept_E5514A8781424E23A5422FD5317F4AAC" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Creating Reusable Targeting Groups?>
+    </link>
+    <link href="t_Targeting_Display_to_a_Prerequisite_Success_Metric.xml#task_F5E24707BE2845549788C5D4BED03281" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Targeting Display to a Prerequisite Success   Metric?>
+    </link>
+    <link href="c_Or_and_And_Target_Rules.xml#concept_C7F197A3D399447E9E143599A3715099" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Or and And Target Rules?>
+    </link>
+    <link href="c_Behavioral_Targeting.xml#concept_CEE693A71E8D4C2CBF51DAA97DE8D61D" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Behavioral Targeting?>
+    </link>
+  </related-links>
+-->
+</concept>

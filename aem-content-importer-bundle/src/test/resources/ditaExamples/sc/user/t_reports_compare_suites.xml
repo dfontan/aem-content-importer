@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_6BEBEB2D4F36497C9DA5B18ADAD35546">
+  <title>Compare report suites</title>
+  <shortdesc>Steps that describe how to display reports from two report suites
+	 in the same report. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports and analytics" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <context id="context_2ACEC6DEC5624C698CBADD6F4FD472E0">
+      <p>In addition to the graphical display, the table of the report gives
+		  you a percentage comparison. The following reports can be run with comparisons:
+		  
+		<ul id="ul_A3C33618B86C4BFD99F589C9F3388150"><li id="li_51D41ECE1DCC48DB9D95B3AC60FEA0EB"><p>Site Content 
+			 </p></li><li id="li_299CA50854B8433988B4D6C63EBC96AA"><p>Mobile 
+			 </p></li><li id="li_F893EE50DB0141DC967FD5D8DE0FA8F1"><p>Traffic Sources 
+			 </p></li><li id="li_5F70FCB23F2E4DE1AFD9A2C5D7281241"><p>Campaigns 
+			 </p></li><li id="li_B9A11376977D40A5BB6AF6465A3F4351"><p>Products 
+			 </p></li><li id="li_4F9801EFCBC94E2C923AEE491B16FC01"><p>Visitor Retention 
+			 </p></li><li id="li_2A00E358C30347DC8D4A3A24338C3EC1"><p>Visitor Profile 
+			 </p></li><li id="li_3EB290D4DAB14C01ADEA4FB9F334DD0D"><p>Custom Conversion 
+			 </p></li><li id="li_44C105535A884AA2905E361D8C05902C"><p>Custom Traffic 
+			 </p></li><li id="li_93DCDDFBBAB047F5945AD677AD180BAF"><p>Target 
+			 </p></li><li id="li_3505CAD230A448B89B3E95131C9B746B"><p>Survey 
+			 </p></li></ul></p>
+      <p>
+        <b>To compare report suites</b>
+      </p>
+    </context>
+    <steps id="steps_E4F0CF49ECAE40B18EF1DF36CC40405E">
+      <step id="step_D814535282A54F928525988EA3E356D1">
+        <cmd>Generate a report that allows you to compare reports. 
+		  </cmd>
+      </step>
+      <step id="step_390DBBB6756D423CB2F566296CB7EB90">
+        <cmd>Click the 
+			 <uicontrol>Compare to Site</uicontrol> link. 
+		  </cmd>
+      </step>
+      <step id="step_E6106D750AC640ECB425B0CCBA0DFA49">
+        <cmd>Locate the report suite. 
+		  </cmd>
+      </step>
+      <step id="step_AEAB9963C4B2457288944BA60D0A2C04">
+        <cmd>Click 
+			 <uicontrol>OK.</uicontrol></cmd>
+      </step>
+    </steps>
+  </taskbody>
+</task>

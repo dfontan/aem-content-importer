@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_34D029097A674D0A97690C9569590EF5">
+  <title>linkTrackEvents</title>
+  <shortdesc>The 
+	 <varname>linkTrackEvents</varname> variable is a comma-separated list of
+	 events that are sent with a 
+	 <wintitle>custom</wintitle>, 
+	 <wintitle>exit</wintitle>, or 
+	 <wintitle>download</wintitle> link. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Variables" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>If an event is not in 
+		<varname>linkTrackEvents</varname>, it is not sent to 
+		<keyword>Analytics</keyword>, even if it is populated in the 
+		<wintitle>onClick</wintitle> event of a link, as shown in the following
+		example: 
+	 </p>
+    <codeblock outputclass="syntax javascript">s.linkTrackVars="events"
+s.events="event1,event2"
+s.t() // both event1 and event2 are recorded
+&lt;a href="help.php" onClick="s=s_gi('rs1');s.tl(this,'o')"&gt;event1 is recorded&lt;/a&gt;
+&lt;a href="test.php" onClick="s=s_gi('rs1');s.events='event2';s.tl(this,'o')"&gt;No events are recorded&lt;/a&gt;
+</codeblock>
+    <p>In the first link to 
+		<filepath>help.php</filepath>, notice that the events variable retains
+		the value that was set before the link was clicked,. This allows event1 to be
+		sent with the custom link. In the second example, the link to 
+		<filepath>test.php</filepath>, event2 is not recorded because it is not
+		listed in 
+		<varname>linkTrackEvents</varname>. 
+	 </p>
+    <p>To avoid confusion and potential problems, Adobe recommends populating 
+		<varname>linkTrackVars</varname> and 
+		<varname>linkTrackEvents</varname> in the 
+		<wintitle>onClick</wintitle> event of a link that is used for link
+		tracking. 
+	 </p>
+    <p>The 
+		<varname>linkTrackEvents</varname> variable contains the events that
+		should be sent with 
+		<wintitle>custom</wintitle>, 
+		<wintitle>download</wintitle>, and 
+		<wintitle>exit</wintitle> links. This variable is only considered if 
+		<varname>linkTrackVars</varname> contains "events." 
+	 </p>
+    <table id="table_C97B3FE47F43456DBF6AA32129A50BE7">
+      <tgroup cols="4">
+        <colspec colnum="1" colname="col1" colwidth="*" />
+        <colspec colnum="2" colname="col2" colwidth="*" />
+        <colspec colnum="3" colname="col3" colwidth="*" />
+        <colspec colnum="4" colname="col4" colwidth="*" />
+        <thead>
+          <row>
+            <entry> Max Size 
+				</entry>
+            <entry> Debugger Parameter 
+				</entry>
+            <entry> Reports Populated 
+				</entry>
+            <entry> Default Value 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry> N/A 
+				</entry>
+            <entry> N/A 
+				</entry>
+            <entry> Conversion 
+				</entry>
+            <entry> "None" 
+				</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <section id="section_89BA2425FBDC400A8C8B7FCDE7D67D63">
+      <title>Syntax and Possible Values</title>
+      <p>The 
+		  <varname>linkTrackEvents</varname> variable is a comma-separated list
+		  of events (no spaces). 
+		</p>
+      <codeblock outputclass="syntax javascript">s.linkTrackEvents="event1[,event2[,event3[...]]]"</codeblock>
+      <p>Only event names are allowed in 
+		  <varname>linkTrackEvents</varname>. These events are listed in 
+		  <xref href="events.xml#concept_FFD115543D54401B98FE683BD7D5B3FE" format="dita" scope="local">Events</xref>. If a space appears before or after
+		  the event name, the event can not be sent with any link image requests. 
+		</p>
+    </section>
+    <section id="section_AB7F952E522A4DCC92944EBF74C26BDD">
+      <title>Examples</title>
+      <codeblock outputclass="syntax javascript">s.linkTrackEvents="purchase,event1"</codeblock>
+      <codeblock outputclass="syntax javascript">s.linkTrackEvents="scAdd,scCheckout,purchase,event14"</codeblock>
+    </section>
+    <section id="section_D938A47346D94A0C9E98FB327F2EF349">
+      <title> Configuration Settings</title>
+      <p>None 
+		</p>
+    </section>
+    <section id="section_DBB68BECC9D44380816113DB2566C38C">
+      <title>Pitfalls, Questions, and Tips</title>
+      <ul id="ul_54ADBB6ACA1C458BB29B11464BC17C5F">
+        <li id="li_2383D038AAAE42B086AF9E406CF3D31A">The JavaScript file only
+			 uses 
+			 <varname>linkTrackEvents</varname> if 
+			 <varname>linkTrackVars</varname> contains the "events" variable.
+			 "events" should be included in 
+			 <varname>linkTrackVars</varname> only when 
+			 <varname>linkTrackEvents</varname> is defined.
+		  </li>
+        <li id="li_277EDEFF40454B89BDF588C04EA6C3A9">Beware if an event is
+			 fired on a page, and is listed in 
+			 <varname>linkTrackEvents</varname>. That event is recorded again with
+			 any 
+			 <wintitle>exit</wintitle>, 
+			 <wintitle>download</wintitle>, or 
+			 <wintitle>custom</wintitle> links unless the events variable is reset
+			 prior to that event (in the 
+			 <wintitle>onClick</wintitle> of a link or after the call to the 
+			 <varname>t()</varname> function). 
+		  </li>
+        <li id="li_3AACABB564D149CCA2BD47469E4DEDF0"> If 
+			 <varname>linkTrackEvents</varname> contains spaces between event
+			 names, the events are not recorded. 
+		  </li>
+      </ul>
+    </section>
+  </conbody>
+</concept>

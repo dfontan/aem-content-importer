@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_E3D0FEC81E1F4987B39CC467F19FFCFF">
+  <title>Linear Allocation</title>
+  <shortdesc> Credit for a success event is allocated evenly among the values
+	 populated in the eVar. For example, a visitor uses three different keywords at
+	 different times, and the resulting purchase is $9.00. Each keyword is allocated
+	 1/3 or $3 credit for the purchase. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="subtopic" content="Glossary" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>See 
+		<xref href="conversion_var_admin.xml#concept_C02F7AA01DE242F1AA1A4E74022BE9DE" format="dita" scope="local"><?xm-replace_text Conversion Variables?></xref> for
+		more information.
+	 </p>
+  </conbody>
+</concept>

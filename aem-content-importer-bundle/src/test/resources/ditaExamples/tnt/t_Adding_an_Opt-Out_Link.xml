@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_439452291D1E4F458F8EC46E7D996FCD" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Add an Opt-Out Link</title>
+  <shortdesc class="- topic/shortdesc ">You can add an opt-out link to your
+	 sites to enable visitors to opt-out of all counting and content delivery. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <context id="context_6A1D769E1AA4440797B6CD6A55E4A7DA" class="- topic/section task/context "></context>
+    <steps id="steps_6742CB7C975B4052962D747D71E34C3C" class="- topic/ol task/steps ">
+      <step id="step_BF5C6C42197844678387E4C564E8DCD2" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Add the following link to your site: 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">
+            <codeph class="+ topic/ph pr-d/codeph ">&lt;a
+				  href="http://clientcode.tt.omtrdc.net/optout"&gt; Your Opt Out Language
+				  Here&lt;/a&gt;</codeph>
+          </p>
+        </stepresult>
+      </step>
+      <step id="step_FA09EAF32AEC43F9B950B887BC329E61" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Replace the 
+			 <codeph class="+ topic/ph pr-d/codeph ">clientcode</codeph> text with
+			 your client code, and add the text or image to be linked to the opt-out URL. 
+		  </cmd>
+      </step>
+    </steps>
+    <result id="result_48FB621E1AB641E49E621B5716209C97" class="- topic/section task/result ">
+      <p class="- topic/p ">Any visitor who clicks this link is not included in
+		  any mbox requests called from their browsing sessions until they delete their
+		  cookies, or for two years, whichever comes first. This works by setting a
+		  cookie for the visitor called 
+		  <codeph class="+ topic/ph pr-d/codeph ">disableClient</codeph> in the 
+		  <codeph class="+ topic/ph pr-d/codeph ">clientcode.tt.omtrdc.net</codeph> domain. 
+		</p>
+      <p> Even if you use a first-party cookie implementation, the provided
+		  opt-out is set via a 3rd-party cookie. If the client is using a first-party
+		  cookie only, Target checks whether an opt-out cookie is set. 
+		</p>
+    </result>
+  </taskbody>
+  <related-links class="- topic/related-links ">
+    <link href="c_Managing_Hosts.xml#concept_BDF83A0B965A4CD486B16DAEA2F87BA7" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Hosts?>
+    </link>
+    <link href="c_Managing_users_and_Roles.xml#concept_4DB925AA849C496C9761699D6EB47CFE" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Users and Roles?>
+    </link>
+    <link href="c_About_the_TestTarget_Cookie.xml#concept_5E53D1A6DF224D7BAE76F4AE390B9DA1" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Test&Target Cookie?>
+    </link>
+    <link href="c_Managing_Mboxes.xml#concept_37B4E053E1244DD6B9D3CD8C4945B62D" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Mboxes?>
+    </link>
+    <link href="c_Parameters_and_Values.xml#concept_DB5AB8E9682D41DDA5621FFE856C6336" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Parameters and Values?>
+    </link>
+    <link href="c_ECommerce_Integration.xml#concept_F090BCC7AB1F47D9A36F22D5C438E999" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text ECommerce Integration?>
+    </link>
+    <link href="c_Tracking_Clicks.xml#concept_83F0D3C5BB004185AEECDE5F96905103" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Click Tracking?>
+    </link>
+    <link href="c_Tracking_Clicks_to_Offsite_Domains.xml#concept_3E014BC7CD1140EF89710A02C35DFAD4" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Track Clicks to Offsite Domains?>
+    </link>
+    <link href="c_Working_with_Analytics_Packages.xml#concept_1160021CC3F54E3193973FCF93E2545F" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Working with Analytics Packages?>
+    </link>
+  </related-links>
+</task>

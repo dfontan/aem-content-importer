@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_E3D0FEC81E1F4987B39CC467F19FFCFF">
+  <title>Paid Search Detection</title>
+  <shortdesc>
+    <wintitle>Paid Search Detection</wintitle> differentiates 
+	 <term>paid</term> from 
+	 <term>natural</term> searches in the 
+	 <wintitle>Search Engines</wintitle> and 
+	 <wintitle>Search Keywords</wintitle> reports. You can specify the search
+	 engines where you use paid ads, and specify a character string found in the URL
+	 of a visit from a paid ad. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Admin tools" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <section id="section_0C2CFA0AF77B47098BE37CB024665D0D">
+      <title>Paid Search Detection - Descriptions</title>
+      <p>The following table describes the fields and options you use to 
+		  <xref href="t_paid_search_detection.xml#task_D0BBDB78771E4BDBB495A004A080D647" format="dita" scope="local">configure paid search detection</xref>. 
+		</p>
+      <table id="table_E609632569EB499184E56618C2CEF742">
+        <tgroup cols="2">
+          <colspec colnum="1" colname="col1" colwidth="1.00*" />
+          <colspec colnum="2" colname="col2" colwidth="2.28*" />
+          <thead>
+            <row>
+              <entry colname="col1">Elements 
+				  </entry>
+              <entry colname="col2">Description 
+				  </entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry colname="col1">
+                <wintitle>Search Engine</wintitle>
+              </entry>
+              <entry colname="col2">Select a search engine from the drop-down
+					 list. You specify the engine if you use different query string parameters for
+					 different search engines. Usually, the value 
+					 <uicontrol>Any</uicontrol> is sufficient. 
+				  </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <wintitle>Query string</wintitle>
+              </entry>
+              <entry colname="col2">
+                <p>Specifies a case-sensitive rule set to either contain or not
+						contain a specific value. This value should be the query string parameter,
+						omitting the 
+						<codeph>?</codeph> and 
+						<codeph>=</codeph>. 
+					 </p>
+                <note>Paid Search Detection is case sensitive. For example, a
+						rule that specifies 
+						<term>PID</term> as a query string parameter does not display
+						
+						<term>pid</term> in reporting. If your organization uses
+						mixed cases, place the exact values as separate rules, so all desired query
+						string parameters can be caught. 
+					 </note>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+  </conbody>
+</concept>

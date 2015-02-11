@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_CBEE6D404AAA4E6A9E74855E05A96A8C" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic concept/concept ">
+  <title class="- topic/title ">Graph Report</title>
+  <shortdesc class="- topic/shortdesc ">Display a graph of the conversion rates
+	 for all experiences, and easily narrow results to only the experiences you want
+	 to see. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody class="- topic/body  concept/conbody ">
+    <p class="- topic/p ">A graph report helps you understand when your
+		campaign results have stabilized, with experiences performing consistently. 
+	 </p>
+  </conbody>
+  <related-links class="- topic/related-links ">
+    <link href="c_Summary_Report.xml#concept_DECF1E39C4544EC98E3FEC0030CB2273" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Summary Report?>
+    </link>
+    <link href="c_Daily_Results_Report.xml#concept_EFEEF309AE9647D5AFE76BD84680344C" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Daily Results Report?>
+    </link>
+    <link href="c_Success_Metrics_Report.xml#concept_14272E50479149FEB87735A82901F85B" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Success Metrics Report?>
+    </link>
+    <link href="c_Offers_Report.xml#concept_EA4A8B7CCAF248578E68C3B290EE6B88" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Offers Report?>
+    </link>
+    <link href="c_Modeling_Groups_Report.xml#concept_773006029FC34182B710F8DD2FE6A5FC" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Modeling Groups Report?>
+    </link>
+    <link href="c_Element_Contribution_Report.xml#concept_0C8101AD707E44A694CA7282A58B28B6" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Element Contribution Report?>
+    </link>
+    <link href="c_Segment_Filters_Report.xml#concept_F638394A8AE34E62A3EE74D95BBEEE5F" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Segment Filters Report?>
+    </link>
+    <link href="c_Audit_Report.xml#concept_62CFE7D421AB494A8B084D1CD53C2909" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Audit Report?>
+    </link>
+    <link href="c_Insights_Report.xml#concept_6D546B56428E492785BCD78FDDDF262F" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Insights Report?>
+    </link>
+  </related-links>
+</concept>

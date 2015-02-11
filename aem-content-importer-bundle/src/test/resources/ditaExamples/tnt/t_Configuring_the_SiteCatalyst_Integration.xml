@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_5FE8D8E46C2949ED81B5E01511CC8C00" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Configure the Integration</title>
+  <shortdesc class="- topic/shortdesc ">Before you can use the Analytics
+	 integration, you must contact an account representative to enable it for your
+	 company. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <context id="context_C03341C42CB2423EBD5B6F3EE337146F" class="- topic/section task/context ">
+      <p>
+        <note>As of April 17, 2014, the information in this section has been
+			 deprecated, and is replaced by the 
+			 <xref href="http://marketing.adobe.com/resources/help/en_US/target/a4t/" format="http" scope="external">Adobe Analytics as the Reporting Source for
+				Adobe Target</xref> functionality. Adobe is continuing to support the former
+			 integration methods, but it is recommended that you use the new functionality.
+		  </note>
+      </p>
+      <p class="- topic/p ">When you contact Adobe, your representative can
+		  inform you of any obligations you may have in conjunction with enabling the
+		  integration. Once enabled, you can begin to complete the remaining procedures. 
+		</p>
+      <p class="- topic/p ">
+        <b class="+ topic/ph hi-d/b ">Minimum Requirements</b>
+      </p>
+      <p class="- topic/p ">It is assumed that your site is already tagged with
+		  both Analytics (version H.19 or higher) and Target (version 36 or higher).
+		  Also, the integration requires a bottom-of-page Analytics tagging
+		  implementation. 
+		</p>
+      <p class="- topic/p ">
+        <b class="+ topic/ph hi-d/b ">Adding a plug-in code snippet into the
+			 Analytics s_code.js</b>
+      </p>
+      <p class="- topic/p ">Please contact Consulting Services for the
+		  appropriate plug-in code for 
+		  <filepath class="+ topic/ph sw-d/filepath ">s_code.js</filepath>. 
+		</p>
+      <p class="- topic/p ">
+        <b class="+ topic/ph hi-d/b ">Creating and activating a plug-in offer
+			 in Target</b>
+      </p>
+      <p class="- topic/p ">Once the 
+		  <filepath class="+ topic/ph sw-d/filepath ">s_code.js</filepath>
+		  plug-in snippet is in place, you need to create a plug-in offer to attach to
+		  all of your display mboxes. This offer creates the link between Target and
+		  Analytics. When you create it, it is automatically dispersed to all your
+		  mboxes. To create the plug-in offer: 
+		</p>
+    </context>
+    <steps id="steps_721394DF776F4A47AC9EBE2879B002C1" class="- topic/ol task/steps ">
+      <step id="step_E69138FCEBAE4D03A87044D6D1AFD14F" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Offers</uicontrol> &gt;
+			 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Create</uicontrol> &gt;
+			 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">HTML and Image
+				Offer</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_B48E4A055BBF43829D692187C5568AE4" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Name the offer with descriptive name
+			 that you will not confuse with other offers. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">A name like "Analytics Integration Offer" is
+				appropriate. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_37B482BF03C9470EA03284D0D5CBEBEF" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Select 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">HTML Offer</uicontrol>
+			 as the display type. 
+		  </cmd>
+      </step>
+      <step id="step_A9EB332E4D4A48E68E92494B14DF011B" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Paste the specialized HTML code into
+			 the HTML field: 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">
+            <codeblock outputclass="syntax html">&lt;script type="text/javascript"&gt;
+
+if (typeof(s_tnt) == 'undefined') {
+
+var s_tnt = '';
+
+}
+
+s_tnt += '${campaign.id}:${campaign.recipe.id}:​${campaign.recipe.trafficType},';
+
+&lt;/script&gt; </codeblock>
+          </p>
+        </stepresult>
+      </step>
+      <step id="step_383170DA2B634D08BC08C9BD9091F993" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Save the offer. 
+		  </cmd>
+      </step>
+      <step id="step_B2E0C91A99B741B6BF28CB3D16640F75" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Associate the offer with a rule that
+			 always sends it to the browser with each campaign's display mbox response. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">
+            <?xm-replace_text Step Result?>
+          </p>Select 
+			 <uicontrol>Configuration</uicontrol> &gt; 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Plug-ins</uicontrol>.
+			 Click the 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Add JavaScript
+				plug-in</uicontrol> button. 
+		  </stepresult>
+      </step>
+      <step id="step_02F7CAF9AB0F498FB54993ED9D20C8A9" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Name the plug-in. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">Specify a name
+			 like "Analytics plug-in." 
+		  </stepresult>
+      </step>
+      <step id="step_2B74DC645CBC4C3E9E48966E3A98C37C" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">In the Serve Condition field, select 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Display mbox requests
+				only</uicontrol> so all offers served by Target include campaign and experience
+			 information. 
+		  </cmd>
+      </step>
+      <step id="step_0FD031C2A9A84CB6B1512D659F514180" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">In the JavaScript offer field, select
+			 the offer that you created previously in this procedure. 
+		  </cmd>
+      </step>
+      <step id="step_1375388D1F1A4F73891B21B2BCDE54E6" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Enable the 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Serve in production
+				host group</uicontrol> check box. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">You can leave it unchecked if you only want the
+				plug-in offer outputted to pages in non-production host groups. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_029BC04877CA428EABA4741E057F39DB" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Save</uicontrol>. 
+		  </cmd>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links class="- topic/related-links ">
+    <link href="c_Using_the_SiteCatalyst_Report.xml#concept_84C04C10FFCD469BA2AF1436CA71EAF4" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Using the SiteCatalyst Report?>
+    </link>
+    <link href="c_Understanding_Expected_Data_Variances.xml#concept_C624EC0C0BDE40A79546BE9D86F80C5D" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Understanding Expected Data Variances?>
+    </link>
+    <link href="r_Frequently_Asked_Questions_About_SiteCatalyst_Integration.xml#reference_DAD867D46C8F4DDD835520C8839E6FDD" type="reference" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Frequently Asked Questions About SiteCatalyst   Integration?>
+    </link>
+  </related-links>
+</task>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_40CA4EEBF72C430395ADB96C3A3D7DF4" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic concept/concept ">
+  <title class="- topic/title ">About Offers</title>
+  <shortdesc class="- topic/shortdesc ">An offer is the content displayed
+	 within an mbox during campaigns and tests. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody class="- topic/body  concept/conbody ">
+    <p class="- topic/p ">When you test your Web pages, you measure the success
+		of each Web page configuration with different offers in your mboxes. 
+	 </p>
+    <p class="- topic/p ">For example, the following graphic shows a Web page
+		with an mbox that could display either of two offers, depending on whether the
+		visitor purchased a women's item or a men's item on a previous visit: 
+	 </p>
+    <p class="- topic/p ">
+      <image id="image_3A7AE49287FF47EE82A9C7FBAAE4D883" href="graphics/offer_reduced.png" placement="inline" class="- topic/image "></image>
+    </p>
+    <p class="- topic/p ">Offers are the content that displays within the mbox.
+		An 
+		<i class="+ topic/ph hi-d/i "><xref href="c_Experiences.xml#concept_B91F0F36E9F24AA58A3C6BC0A02871E8" type="concept" format="dita" scope="local" class="- topic/xref ">experience</xref></i> determines which offer displays
+		when particular conditions are met. 
+	 </p>
+  </conbody>
+  <related-links class="- topic/related-links ">
+    <link href="c_Mboxes.xml#concept_85E01D9DD0B64BD3A138C2D3DB83BD57" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Mboxes?>
+    </link>
+    <link href="c_Experiences.xml#concept_B91F0F36E9F24AA58A3C6BC0A02871E8" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text About Experiences?>
+    </link>
+    <link href="c_Campaigns.xml#concept_38D25CB81E8E4926A0ABC34042766DC3" format="dita" scope="local">
+      <?xm-replace_text About Tests?>
+    </link>
+    <link href="c_Managing_Offers.xml#concept_C5EFA3E2C8B44D95A19AA782E2D064DE" type="concept" format="dita" scope="local">
+      <?xm-replace_text Offers?>
+    </link>
+  </related-links>
+</concept>

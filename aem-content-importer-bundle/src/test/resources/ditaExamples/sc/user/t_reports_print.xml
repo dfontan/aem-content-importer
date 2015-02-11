@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_0F7CF6D6ED54462CAE4A793E271AF7E5"> 
+  <title>Print a report</title> 
+  <shortdesc>Steps that describe how to print a report. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Reports and analytics"/> 
+		<othermeta name="subtopic" content="Schedule"/> </metadata>
+  </prolog> 
+  <taskbody> 
+	 <steps id="steps_DCD715F2BD8B4D91B63C958E7A2E1AA1"> 
+		<step id="step_6CE0E165BB9F4350B41F9F91140E06CE"> 
+		  <cmd>Run a report. 
+		  </cmd> 
+		</step> 
+		<step id="step_B1A0AFAD6FF54D06A6DF2243B52C4AC5"> 
+		  <cmd>Click 
+			 <uicontrol>More</uicontrol> &gt; 
+			 <uicontrol>Print</uicontrol>. 
+			 <image id="image_F9835ADC348D4F5B98D425500B810609"
+			  href="graphics/print.png"></image>
+		  </cmd> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task>

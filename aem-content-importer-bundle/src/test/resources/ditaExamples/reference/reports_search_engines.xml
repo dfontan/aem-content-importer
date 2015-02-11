@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_351CDE4F5FC44371B6B657064E125134">
+  <title>Search Engines Report</title>
+  <shortdesc>Displays which search engines visitors use for All, Paid, and
+	 Natural searches. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>
+      <uicontrol>Search Engines - All</uicontrol>: Displays which search
+		engines that people are using to find your web page. The graph shows you the
+		percentage breakdown of the search engines that are used to find your site. 
+	 </p>
+    <p>
+      <uicontrol>Search Engines - Paid</uicontrol>: Displays which
+		paid-keyword search engines that people are using to find your web page. The
+		graph shows you the percentage breakdown of the search engines that are used to
+		find your site. 
+	 </p>
+    <p>
+      <uicontrol>Search Engines - Natural</uicontrol>: Displays which
+		natural-keyword search engines people are using to find your web page. The
+		graph shows you the percentage breakdown of the search engines that are used to
+		find your site. 
+	 </p>
+  </conbody>
+</concept>

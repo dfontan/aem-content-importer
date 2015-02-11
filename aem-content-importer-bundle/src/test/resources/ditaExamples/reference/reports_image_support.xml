@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_82B49E9EFB924D7A91FD195806F3D1B4">
+  <title>Image Support Report</title>
+  <shortdesc>Groups mobile devices based on the types of images they support.
+	 For example, if a visitor's phone that supports 
+	 <filepath>.jpg</filepath> images, accesses a site, the Image Support report
+	 is incremented by at least one. If the phone supports more than one image
+	 format, then a visit to a site might result in multiple increments for that
+	 visit. In other words, if your phone supports 
+	 <filepath>.jpg</filepath>, 
+	 <filepath>.png</filepath>, and 
+	 <filepath>.gif</filepath> formats, then each of those groups in the report
+	 is incremented. As such, the sum of the groups might be greater than the total
+	 shown at the bottom of the report. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>
+      <?xm-replace_text Paragraph?>
+    </p>
+  </conbody>
+</concept>

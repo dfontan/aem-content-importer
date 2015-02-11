@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_8147080DE8B343B897D5DFA4CD4598A5">
+  <title>Non-Mobile Traffic in the Devices Report</title>
+  <shortdesc> Page Views and other metrics that do not come from a mobile
+	 device are included on the Mobile &gt; Devices report under a "Non Mobile" line
+	 item. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports and analytics" />
+      <othermeta name="subtopic" content="Upgrading from V14" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>
+      <image align="center" href="graphics/upgrade_mobile_devices.png" id="image_D7D78340045C40368B6132D445D5CE06"></image>
+    </p>
+  </conbody>
+</concept>

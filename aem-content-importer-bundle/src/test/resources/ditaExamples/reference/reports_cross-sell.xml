@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_48D86415B3AF4F7BA5F63F70A2ECABA7">
+  <title>Cross-Sell Report</title>
+  <shortdesc>
+    Displays the relationship between
+	 products in the same product string. For example, if a visitor purchased Item
+	 A, what other products were also in the cart at the time of purchase.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>
+      <?xm-replace_text Paragraph?>
+    </p>
+  </conbody>
+</concept>

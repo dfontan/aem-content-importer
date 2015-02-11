@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_D00F927DE18E440E820E27421FFE202D">
+  <title>Test Mutually Exclusive Campaigns</title>
+  <shortdesc>You can use profile attributes to set up tests that compare two or
+	 more campaigns but do not let the same visitors participate in each campaign. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Testing mutually exclusive campaigns prevents a visitor in one campaign
+		from affecting the test results for the other campaigns. When a visitor
+		participates in multiple campaigns, it can be difficult to determine whether
+		positive or negative lift resulted from the visitor's experience with one
+		campaign, or if interactions between multiple campaigns affected the results of
+		one or more of the campaigns. 
+	 </p>
+    <p>For example, you can test two areas of your ecommerce system. You might
+		want to test making your Add to Cart button red instead of blue. You might also
+		test a new checkout process that reduces the number of steps from five to two.
+		If both campaigns have the same success event (a completed purchase), it can be
+		hard to determine whether the red button improves conversions, or whether those
+		same conversions were also increased because of the improved checkout process.
+		By separating the tests into mutually exclusive campaigns, you can
+		independently test each change. 
+	 </p>
+    <p>
+      <b>Setting Up Two Campaigns</b>
+    </p>
+    <p>To sort visitors into groups that each see a different campaign, you
+		must create a profile attribute. A profile attribute can sort a visitor into
+		one of two or more groups. To set up a profile attribute called "twogroups,"
+		create the following script: 
+	 </p>
+    <p>
+      <table id="table_1CB00E8D36C245DA8BC31CD5E8C6BBFE">
+        <tgroup cols="1">
+          <colspec colnum="1" colname="col1" colwidth="*" />
+          <tbody>
+            <row>
+              <entry colname="col1">
+                <p>
+                  <codeblock outputclass="syntax html">if (!user.get('twogroups')) {
+
+var ran_number=Math.floor(Math.random() *99);
+
+if (ran_number &lt;= 49) {
+
+return 'GroupA';
+
+} else {
+
+return 'GroupB';
+
+}
+
+}</codeblock>
+                </p>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </p>
+    <p>
+      <codeph>if (!user.get('twogroups'))</codeph> determines whether the 
+		<i>twogroups</i> profile attribute is set for the current visitor. If
+		they do, no further action is required. 
+	 </p>
+    <p>
+      <codeph>var ran_number=Math.floor(Math.random() *99)</codeph> declares a
+		new variable called ran_number, sets its value to a random decimal between 0
+		and 1, then multiplies it by 99 and rounds it down to create a range of 100
+		(0-99), useful for specifying a percentage of visitors who see the campaign. 
+	 </p>
+    <p>
+      <codeph>if (ran_number &lt;= 49)</codeph> begins a routine that
+		determines which group the visitor belongs to. If the number returned is 0-49,
+		the visitor is assigned to GroupA. If the number is 50-99, the visitor is
+		assigned to GroupB. The group determines which campaign the visitor sees. 
+	 </p>
+    <p>After you create the profile attribute, set up the first campaign to
+		target the desired population by requiring that the user profile parameter
+		user.twogroups match the value specified for GroupA. 
+	 </p>
+    <p>
+      <note>Choose an mbox early on the page. This code determines whether a
+		  visitor experiences the campaign. As long as an mbox is encountered first by
+		  the browser, it can be used to set this value. 
+		</note>
+    </p>
+    <p>Set up the second campaign so the user profile parameter 
+		<codeph>user.twogroups</codeph> matches the value specified for GroupB. 
+	 </p>
+    <p>
+      <b>Setting Up Three or More Campaigns</b>
+    </p>
+    <p>Setting up three or more mutually exclusive campaigns is similar to
+		setting up two, but you must change the profile attribute JavaScript to create
+		a separate group for each campaign and determine who sees each one. The random
+		number generation is different, depending on whether you create an odd or even
+		number of groups. 
+	 </p>
+    <p>For example, to create four groups, use the following JavaScript: 
+	 </p>
+    <p>
+      <codeblock outputclass="syntax html">if (!user.get('fourgroups')) {
+
+var ran_number=Math.floor​(Math.random()*99);
+
+if(ran_number &lt;= 24) {
+
+return 'GroupA';
+
+} else if(ran_number &lt;= 49) {
+
+return 'GroupB';
+
+} else if(ran_number &lt;= 74) {
+
+return 'GroupC';
+
+} else {
+
+return 'GroupD';
+
+}
+
+} </codeblock>
+    </p>
+    <p>In this example, the math used to generate the random number that
+		assigns a visitor to a group is the same as it is with only two groups. A
+		random decimal is generated, then rounded down to create an integer. 
+	 </p>
+    <p>If you create an odd number of groups, or any number that 100 does not
+		divide evenly into, you should not round the decimal down to an integer. Not
+		rounding the decimal enables you to specify non-integer ranges. You do this by
+		changing this line: 
+	 </p>
+    <p>
+      <codeph>var ran_number=Math.floor(Math.random()*99);</codeph>
+    </p>
+    <p>to: 
+	 </p>
+    <p>
+      <codeph>var ran_number=Math.random()*99;</codeph>
+    </p>
+    <p>For example, to place visitors in three equal groups, use the following
+		code: 
+	 </p>
+    <p>
+      <codeblock outputclass="syntax html">if (!user.get('threegroups')) {
+
+var ran_number=Math.random()*99;
+
+if(ran_number &lt;= 32.33) {
+
+return 'GroupA';
+
+} else if(ran_number &lt;= 65.66) {
+
+return 'GroupB';
+
+} else { return 'GroupC';
+
+}
+
+} </codeblock>
+    </p>
+  </conbody>
+  <related-links>
+    <link href="c_Understanding_Campaign_Priority.xml#concept_605FD7C4E2E14D2384487AFBA7067DF2" type="concept" format="dita" scope="local">
+      <?xm-replace_text Understanding Campaign Priority?>
+    </link>
+    <link href="c_Managing_Success_Metrics.xml#concept_F2D06B8EDCC24EED9C494210C1415859" type="concept" format="dita" scope="local">
+      <?xm-replace_text Managing Success Metrics?>
+    </link>
+    <link href="c_Testing_Ads.xml#concept_C824F400EAA34B9489FF765F87FD6DBD" type="concept" format="dita" scope="local">
+      <?xm-replace_text Using Behavioral Ads?>
+    </link>
+    <link href="c_Using_Category_Affinity.xml#concept_E51E078F49484B4EA0E52046E6F58E3C" type="concept" format="dita" scope="local">
+      <?xm-replace_text Using Category Affinity?>
+    </link>
+  </related-links>
+</concept>

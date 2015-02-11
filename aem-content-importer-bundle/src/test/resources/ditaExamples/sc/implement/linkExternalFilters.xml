@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_92A59169DCE443EBAE81A373B27BB6DD">
+  <title>linkExternalFilters</title>
+  <shortdesc>If your site contains many links to external sites, and you do not
+	 want to track all exit links, use 
+	 <varname>linkExternalFilters</varname> to report on a specific subset of
+	 exit links. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Variables" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <table id="table_EDEE2AA2510B4ED692F9E2F7E6EDB353">
+      <tgroup cols="4">
+        <colspec colnum="1" colname="col1" colwidth="*" />
+        <colspec colnum="2" colname="col2" colwidth="*" />
+        <colspec colnum="3" colname="col3" colwidth="*" />
+        <colspec colnum="4" colname="col4" colwidth="*" />
+        <thead>
+          <row>
+            <entry> Max Size 
+				</entry>
+            <entry> Debugger Parameter 
+				</entry>
+            <entry> Reports Populated 
+				</entry>
+            <entry> Default Value 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry> N/A 
+				</entry>
+            <entry> N/A 
+				</entry>
+            <entry> Paths &gt; Entries &amp; Exits &gt; Exit Links 
+				</entry>
+            <entry> "" 
+				</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p>The 
+		<varname>linkExternalFilters</varname> variable is an optional variable
+		used in conjunction with 
+		<varname>linkInternalFilters</varname> to determine whether a link is an
+		exit link. An exit link is defined as any link that takes a visitor away from
+		your site. Whether the target window of an exit link is a popup or the existing
+		window, it does not affect whether the link appears in the exit links report.
+		Exit links are tracked only if 
+		<varname>trackExternalLinks</varname> is set to 'true.' The filters in 
+		<varname>linkExternalFilters</varname> and 
+		<varname>linkInternalFilters</varname> are case insensitive. 
+	 </p>
+    <p>
+      <note> If you don't want to use 
+		  <varname>linkExternalFilters</varname>, delete it or set it to "". 
+		</note>
+    </p>
+    <p>The filters list in 
+		<varname>linkExternalFilters</varname> and 
+		<varname>linkInternalFilters</varname> apply to the domain and path of
+		any link by default. If 
+		<varname>linkLeaveQueryString</varname> is set to 'true,' the filters
+		apply to the entire URL (domain, path, and query string). These filters are
+		always applied to the absolute path of the URL, even if a relative path is used
+		as the href value. 
+	 </p>
+    <p>Most companies find that 
+		<varname>linkInternalFilters</varname> gives them enough control over
+		exit links that they don't need 
+		<varname>linkExternalFilters</varname>. Using 
+		<varname>linkExternalFilters</varname> simply decreases the likelihood
+		that an exit link is considered external. If 
+		<varname>linkExternalFilters</varname> has a value, then a link is
+		considered only external if it does not match 
+		<varname>linkInternalFilters</varname> and does match 
+		<varname>linkExternalFilters</varname>. 
+	 </p>
+    <p>The following example illustrates how this variable is used. In this
+		example, the URL of the page is 
+		<filepath>http://www.mysite.com/index.html</filepath>. 
+	 </p>
+    <codeblock outputclass="syntax javascript">s.trackExternalLinks=true
+s.linkInternalFilters="javascript:,mysite.com"
+s.linkExternalFilters="site1.com,site2.com,site3.com/partners"
+s.linkLeaveQueryString=false
+...
+&lt;a href="http://www.mysite.com"&gt;Not an Exit Link&lt;/a&gt;
+&lt;a href="/careers/job_list.html"&gt;Not an Exit Link&lt;/a&gt;
+&lt;a href="http://www2.site3.com"&gt;Not an Exit Link&lt;/a&gt;
+&lt;a href="http://www.site1.com"&gt;Exit Link&lt;/a&gt;
+&lt;a href="http://www2.site3.com/partners/offer.asp"&gt;Exit Link&lt;/a&gt;
+</codeblock>
+    <section id="section_E35DAAAE8BDE44CEB8F6763EF1344693">
+      <title>Syntax and Possible Values</title>
+      <p>The 
+		  <varname>linkExternalFilters</varname> variable is a comma-separated
+		  list of ASCII characters. No spaces are allowed. 
+		</p>
+      <codeblock outputclass="syntax javascript">s.linkExternalFilters="site1.com[,site2.com[,site3.net[...]]]"</codeblock>
+      <p>Any portion of a URL might be included in 
+		  <varname>linkExternalFilters</varname>, separated by commas. 
+		</p>
+    </section>
+    <section id="section_1D2F13EEC28942868C2F4207ADF2DDE0">
+      <title>Examples</title>
+      <codeblock outputclass="syntax javascript">s.linkExternalFilters="partnersite.com,partnertwo.net/path/"</codeblock>
+      <codeblock outputclass="syntax javascript">s.linkExternalFilters=""</codeblock>
+    </section>
+    <section id="section_2D0CA911855B4B3698145FC18D5021C3">
+      <title>
+        Configuration Settings</title>
+      <p>None 
+		</p>
+    </section>
+    <section id="section_8B40E6F539E3473B934A8DB7C5086D73">
+      <title>Pitfalls, Questions, and Tips</title>
+      <ul id="ul_E6E1E904872241A289BCD7F3D0BB9E3F">
+        <li id="li_5882FCA23B924025B7478006B743E717">Using 
+			 <varname>linkExternalFilters</varname> can result in fewer links on
+			 your site being exit links. Do not use this variable in place of 
+			 <varname>linkInternalFilters</varname> to force internal links to
+			 become exit links.
+		  </li>
+        <li id="li_B75FCD49336C418EA63482E1EFC4FDD5">If 
+			 <varname>linkExternalFilters</varname> should be applied to the query
+			 string of a link, make sure 
+			 <varname>linkLeaveQueryString</varname> is set to 'true.' See 
+			 <xref href="linkLeaveQueryString.xml#concept_118C280E29394DB5A16DBBF41EB4D742" format="dita" scope="local">linkLeaveQueryString</xref> before setting to 
+			 <codeph>"true"</codeph>. 
+		  </li>
+        <li id="li_A16E415B59984C5AB0C8258B93F4F9BE">To disable exit link
+			 tracking, set 
+			 <varname>trackExternalLinks</varname> to 
+			 <codeph>"false"</codeph>.
+		  </li>
+      </ul>
+    </section>
+  </conbody>
+</concept>

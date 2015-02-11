@@ -1,0 +1,721 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_BCC327B2A0EF4A1BBB2934013AB92B78"> 
+  <title>Upload customer attribute data to the Marketing Cloud</title> 
+  <shortdesc>An example of how to upload and activate enterprise customer
+	 attribute data to the Marketing Cloud, then share it to Analytics and Target. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<keywords> 
+		  <keyword>customer attributes</keyword> 
+		</keywords> 
+		<othermeta name="solution" content="Marketing Cloud"/> </metadata>
+  </prolog> 
+  <taskbody> 
+	 <context id="context_F5BE41C0EA534B45AE7CF656E0D733C9"> 
+		<p><b>Customer Attribute Workflow</b> 
+		</p> 
+		<p>The workflow for uploading enterprise data from a CRM to the 
+		  <keyword>Marketing Cloud</keyword> can be broken down into these basic
+		  tasks: 
+		</p> 
+		<p> 
+		  <image href="graphics/crs.png"
+			id="image_405B94B44AD740B2A17511F55F7258A0"> 
+		  </image> 
+		</p> 
+		<p>Topics on this page: 
+		</p> 
+		<ul id="ul_97BEE75D53754CBEBED73516BBFA48F5"> 
+		  <li id="li_435D6AAE006A4D4C8FE90BBA77ADA273"><xref
+			 href="t_crs_usecase.xml#task_B5FB8C0649374C7A94C45DCF2878EA1A" format="dita"
+			 scope="local"><?xm-replace_text Create a data file?></xref> 
+		  </li> 
+		  <li id="li_3DFB5F3242684762B46B521B4649634A"><xref
+			 href="t_crs_usecase.xml#task_09DAC0F2B76141E491721C1E679AABC8" format="dita"
+			 scope="local"><?xm-replace_text Create the attribute source and upload the data file?></xref>
+			 
+		  </li> 
+		  <li id="li_D2763FFC42AE4C36B4A8024D4F53E508"><xref
+			 href="t_crs_usecase.xml#task_5036BABDEB1F4B099D7DD995EB029965" format="dita"
+			 scope="local"><?xm-replace_text Validate the attribute source schema?></xref> 
+		  </li> 
+		  <li id="li_EBF81225219D446388006054CEEC5676"><xref
+			 href="t_crs_usecase.xml#task_9F77C45A11DB425DB813D6F42A0A2DD4" format="dita"
+			 scope="local"><?xm-replace_text Configure subscriptions?></xref> 
+		  </li> 
+		  <li id="li_A1AA44B2285C4669ACFA2624E90C0026"><xref
+			 href="t_crs_usecase.xml#task_1ACA21198F0E46A897A320C244DFF6EA" format="dita"
+			 scope="local"><?xm-replace_text Activate the attribute source?></xref> 
+		  </li> 
+		  <li id="li_B2CB39E04C4C43939698F35164C9AED8"><xref
+			 href="t_crs_usecase.xml#task_7EB0680540CE4B65911B2C779210915D" format="dita"
+			 scope="local"><?xm-replace_text Run a customer attribute report in Analytics?></xref>
+			 
+		  </li> 
+		  <li id="li_7104F1905E5E4C1A8362D3D57A3FE0B4"><xref
+			 href="t_crs_usecase.xml#task_FC5F9D9059114027B62DB9B1C7D9E257" format="dita"
+			 scope="local"><?xm-replace_text Create an activity in Target?></xref> 
+		  </li> 
+		</ul> 
+	 </context> 
+  </taskbody> 
+  <task id="task_B5FB8C0649374C7A94C45DCF2878EA1A"> 
+	 <title>Create a data file</title> 
+	 <shortdesc>This data is enterprise customer data from your CRM. The data
+		might include subscriber data for products, including member IDs, entitled
+		products, most-launched products, and so on. 
+	 </shortdesc> 
+	 <taskbody> 
+		<steps id="steps_284B478C76C9423D863667AB549902CD"> 
+		  <step id="step_34117DFAEC8B42F38F34DC6384E9C623"> 
+			 <cmd>Create a 
+				<filepath>.csv</filepath>. 
+			 </cmd> 
+			 <info> 
+				<p>Later in this process, you will drag-and-drop the 
+				  <filepath>.csv</filepath> to upload the file. However, if you
+				  upload via FTP, you also need a 
+				  <filepath>.fin</filepath> file with the same name as the 
+				  <filepath>.csv</filepath>. 
+				</p> 
+				<p>Sample data file: 
+				</p> 
+				<p><image href="graphics/01_crs_usecase.png"
+				  id="image_23495A19F00845CCA752B5DFDD0874AB"> <?xm-replace_text Paragraph?>
+				  </image> 
+				</p> 
+			 </info> 
+		  </step> 
+		  <step id="step_F9F10985206E4507936E7231C624227E"> 
+			 <cmd>Review the important information in 
+				<xref
+				 href="crs_data_file.xml#concept_DE908F362DF24172BFEF48E1797DAF19" format="dita"
+				 scope="local">Data File Requirements</xref>, which describes file and naming
+				conventions, as well as how to use file compression. 
+			 </cmd> 
+		  </step> 
+		  <step id="step_213204A9268E44169E8F9548320176F3"> 
+			 <cmd><xref
+				href="t_crs_usecase.xml#task_09DAC0F2B76141E491721C1E679AABC8" format="dita"
+				scope="local"><?xm-replace_text Create the attribute source and upload the data file?></xref>.
+				
+			 </cmd> 
+			 <stepresult><?xm-replace_text Step Result?>
+			 </stepresult> 
+		  </step> 
+		</steps> 
+	 </taskbody> 
+  </task> 
+  <task id="task_09DAC0F2B76141E491721C1E679AABC8"> 
+	 <title>Create the attribute source and upload the data file</title> 
+	 <shortdesc>Perform these steps on the Create New Customer Attribute Source
+		page in the Marketing Cloud. 
+	 </shortdesc> 
+	 <taskbody> 
+		<context id="context_AB810732FC754E68A25DFDFE657550B6"> 
+		  <p> 
+			 <note>When navigating to Customer Attributes for the first time, the
+				interface might require you to electronically sign the 
+				<term>Customer Attributes Agreement</term> regarding the uploading
+				of personal data. 
+			 </note> 
+		  </p> 
+		</context> 
+		<steps id="steps_D3961639D694466591A7C10B01E4DA0E"> 
+		  <step id="step_067AA86610AB4FFC8B061160835116B8"> 
+			 <cmd> In the 
+				<keyword>Marketing Cloud</keyword>, click 
+				<uicontrol>Customer Attributes</uicontrol>. 
+			 </cmd> 
+			 <stepresult> 
+				<p><image href="graphics/02_crs_usecase.png"
+				  id="image_6FAA30D471184561B72CCFFD39BD9832"><?xm-replace_text Step Result?></image>
+				  
+				</p> 
+				<p>The Customer Attributes Sources page is where you can manage and
+				  edit existing attribute data sources. 
+				</p> 
+				<p> 
+				  <image href="graphics/03_crs_usecase.png"
+					id="image_4230C8AA51954D698556D2D5CA675D3B"> <?xm-replace_text Step Result?>
+				  </image> 
+				</p> 
+			 </stepresult> 
+		  </step> 
+		  <step id="step_DE46B18CC960421098412294B0484674"> 
+			 <cmd>Click 
+				<uicontrol>New</uicontrol>. 
+			 </cmd> 
+			 <stepresult> 
+				<p> 
+				  <image href="graphics/04_crs_usecase.png"
+					id="image_7CB67F2ED52F4A988312F93CB6542C92"> <?xm-replace_text Step Result?>
+				  </image> 
+				</p> 
+			 </stepresult> 
+		  </step> 
+		  <step id="step_AF8267094A364F8886DDEF5BEE947CA3"> 
+			 <cmd>Configure the following fields: 
+			 </cmd> 
+			 <info> 
+				<table id="table_11FF365F7AFD4E6394117B87817A6F51"> 
+				  <tgroup cols="2"> 
+					 <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+					 <colspec colnum="2" colname="col2" colwidth="4.00*"/> 
+					 <thead> 
+						<row> 
+						  <entry colname="col1">Element 
+						  </entry> 
+						  <entry colname="col2">Description 
+						  </entry> 
+						</row> 
+					 </thead> 
+					 <tbody> 
+						<row> 
+						  <entry colname="col1"> 
+							 <p>Name 
+							 </p> 
+						  </entry> 
+						  <entry colname="col2"> 
+							 <p>A friendly name for the data attribute source. 
+							 </p> 
+						  </entry> 
+						</row> 
+						<row> 
+						  <entry colname="col1"> 
+							 <p>Description 
+							 </p> 
+						  </entry> 
+						  <entry colname="col2"> 
+							 <p>(Optional) A description four the data attribute
+								source. 
+							 </p> 
+						  </entry> 
+						</row> 
+						<row> 
+						  <entry colname="col1"> 
+							 <p>Alias ID 
+							 </p> 
+						  </entry> 
+						  <entry colname="col2"> 
+							 <p>This ID is a unique ID that is used in your Customer
+								Attribute Source code. The ID should be unique, lowercase, with no spaces. 
+							 </p> 
+						  </entry> 
+						</row> 
+						<row> 
+						  <entry colname="col1"> 
+							 <p>File Upload 
+							 </p> 
+						  </entry> 
+						  <entry colname="col2"> 
+							 <p>You can drag-and-drop the 
+								<filepath>.csv</filepath> data file, or upload the data
+								via FTP. (Using FTP also requires a 
+								<filepath>.fin</filepath> file.) See 
+								<xref
+								 href="t_upload_attributes_ftp.xml#task_591C3B6733424718A62453D2F8ADF73B"
+								 format="dita" scope="local">Upload the Data via FTP</xref>. 
+							 </p> 
+							 <p> 
+								<note type="important">Specific data file requirements
+								  exist. See 
+								  <xref
+									href="crs_data_file.xml#concept_DE908F362DF24172BFEF48E1797DAF19" format="dita"
+									scope="local">Data File Requirements</xref> for more information. 
+								</note> 
+							 </p> 
+							 <p>After uploading the file, table data is displayed
+								under the 
+								<wintitle>File Upload</wintitle> heading on this page.
+								You can validate the schema, configure subscriptions, or set up the FTP. 
+							 </p> 
+						  </entry> 
+						</row> 
+					 </tbody> 
+				  </tgroup> 
+				</table> 
+				<p><b>File Upload Graphic</b> 
+				</p> 
+				<p><image href="graphics/file_upload_attributes.png"
+				  id="image_A9668423AF01409080D5778DA834D9F2"><?xm-replace_text Paragraph?></image>
+				  
+				</p> 
+				<table id="table_67D43A0E6899490CA642DD5E64360DEA"> 
+				  <tgroup cols="2"><colspec colnum="1" colname="col1"
+					 colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="1.93*"/><thead> 
+						<row> 
+						  <entry colname="col1">Value 
+						  </entry> 
+						  <entry colname="col2">Description 
+						  </entry> 
+						</row></thead> 
+					 <tbody> 
+						<row> 
+						  <entry colname="col1"> 
+							 <p>Unique Customer ID 
+							 </p> 
+						  </entry> 
+						  <entry colname="col2"> 
+							 <p>This metric displays how many unique customer IDs
+								(CIDs) that you uploaded to this customer attribute data source. 
+							 </p> 
+						  </entry> 
+						</row> 
+						<row> 
+						  <entry colname="col1"> 
+							 <p>1 MAC ID Matched to CID 
+							 </p> 
+						  </entry> 
+						  <entry colname="col2"> 
+							 <p>This metric displays how many of the uploaded customer
+								IDs (CIDs) have been matched to at least one Marketing Cloud ID (MCIDs). 
+							 </p> 
+						  </entry> 
+						</row> 
+						<row> 
+						  <entry colname="col1"> 
+							 <p>Invalid MCIDs
+							 </p> 
+						  </entry> 
+						  <entry colname="col2"> 
+							 <p>This metric represents the number of customer IDs
+								(CIDs) with more than 500 associated Marketing Cloud IDs (MCID). If a CID has
+								more than 500 associated MCIDs, the service passes on the attributes for the
+								most recent 500 MCIDs. If a CID has more than 10,000 CIDs, the service stops
+								passing on attributes for that CID, because the system assumes that the CID
+								does not represent an actual individual.
+							 </p> 
+						  </entry> 
+						</row> 
+					 </tbody> 
+				  </tgroup> 
+				</table> 
+			 </info> 
+		  </step> 
+		  <step id="step_8EB5D446DC6042D0BA8E55F219EEF46C"> 
+			 <cmd><xref
+				href="t_crs_usecase.xml#task_5036BABDEB1F4B099D7DD995EB029965" format="dita"
+				scope="local"><?xm-replace_text Validate the attribute source schema?></xref>. 
+			 </cmd> 
+			 <stepresult><?xm-replace_text Step Result?>
+			 </stepresult> 
+		  </step> 
+		</steps> 
+	 </taskbody> 
+  </task> 
+  <task id="task_5036BABDEB1F4B099D7DD995EB029965"> 
+	 <title>Validate the attribute source schema</title> 
+	 <shortdesc>The validation process lets you map friendly names and
+		descriptions to uploaded attributes (strings, integers, numbers, and so on).
+		This mapping process does not alter the original data. 
+	 </shortdesc> 
+	 <taskbody> 
+		<context id="context_5A064638A8554BC8A591EB0587087112"> 
+		  <p><?xm-replace_text Task Context?>
+		  </p> 
+		</context> 
+		<steps id="steps_A5049E3161CB447E9133368D6B89BBED"> 
+		  <step id="step_D55490E449724BFB92DFDF2E1394029C"> 
+			 <cmd>Locate the record, then click 
+				<uicontrol>Actions</uicontrol> &gt; 
+				<uicontrol>View/Edit Schema</uicontrol>. 
+			 </cmd> 
+			 <stepresult> 
+				<p> 
+				  <image href="graphics/view_edit_schema.png"
+					id="image_1BC236E1764A4EAA8D81AEB7D6084C38"> <?xm-replace_text Paragraph?>
+				  </image> 
+				</p> 
+				<p> 
+				<table id="table_828C5AC31DAC40C9B595A9D7C80253E7"> 
+				  <tgroup cols="2"> 
+					 <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+					 <colspec colnum="2" colname="col2" colwidth="4.00*"/> 
+					 <thead> 
+						<row> 
+						  <entry colname="col1">Element 
+						  </entry> 
+						  <entry colname="col2">Description 
+						  </entry> 
+						</row> 
+					 </thead> 
+					 <tbody> 
+						<row> 
+						  <entry colname="col1"> 
+							 <p>Add Data 
+							 </p> 
+						  </entry> 
+						  <entry colname="col2"> 
+							 <p> Lets you upload new attribute data to this data
+								source. 
+							 </p> 
+						  </entry> 
+						</row> 
+						<row> 
+						  <entry colname="col1"> 
+							 <p>View/Edit Schema 
+							 </p> 
+						  </entry> 
+						  <entry colname="col2"> 
+							 <p>Map friendly names to the attribute data, as described
+								in the next step. 
+							 </p> 
+						  </entry> 
+						</row> 
+						<row> 
+						  <entry colname="col1"> 
+							 <p>FTP Setup 
+							 </p> 
+						  </entry> 
+						  <entry colname="col2"> 
+							 <p>Lets you 
+								<xref
+								 href="t_upload_attributes_ftp.xml#task_591C3B6733424718A62453D2F8ADF73B"
+								 format="dita" scope="local">upload the data via FTP</xref>. 
+							 </p> 
+						  </entry> 
+						</row> 
+						<row> 
+						  <entry colname="col1"> 
+							 <p>ID Lookup 
+							 </p> 
+						  </entry> 
+						  <entry colname="col2"> 
+							 <p>Enter a Customer ID (CID) from your 
+								<filepath>.csv</filepath> to look up Marketing Cloud
+								information for the ID. This feature is useful for troubleshooting why
+								attribute data is not displaying for a visitor:
+							 </p>
+							 <ul id="ul_6C92351BEB944A0AAEFD2424E42BE48C">
+								<li id="li_99BABD772C00477487F8F7057CE20E7D">MCID
+								  (Marketing Cloud ID): Displays if you are using the latest Marketing Cloud ID
+								  service. If you are on the MCID service but no IDs are listed here, the
+								  Marketing Cloud has not received an alias for that CID. Meaning, the visitor
+								  has not logged in, or your implementation is not passing that ID through.
+								</li>
+								<li id="li_9C9892EF4CA740ADAABAEBCB850994DD">CID
+								  (Customer ID): The attributes associated with this CID. If you are using a prop
+								  or eVar to upload CIDs (AVID), and you see attributes displayed but no AVID,
+								  this indicates that the visitor has not logged in to your site.
+								</li>
+								<li id="li_4A43A98BA1CB42FEA8086F179F012495">AVID
+								  (Analytics visitor ID): Displays if you use a prop or eVar to upload CIDs. If
+								  those IDs are being passed to the Marketing Cloud, any visitor IDs associated
+								  with the CID you entered are displayed here. 
+								</li>
+							 </ul> 
+						  </entry> 
+						</row> 
+					 </tbody> 
+				  </tgroup> 
+				</table> 
+				</p> 
+				<p>On the 
+				  <wintitle>Validate Schema</wintitle> page, each row of the schema
+				  represents a column of the uploaded CSV file. 
+				</p> 
+				<p> 
+				  <image href="graphics/06_crs_usecase.png"
+					id="image_A390FEE33E6C42AC8D4E1C118B9928F4"> <?xm-replace_text Paragraph?>
+				  </image> 
+				</p> 
+			 </stepresult> 
+		  </step> 
+		  <step id="step_EB0D572F270D43A685C453642C383426"> 
+			 <cmd>Edit the display names and description to your liking, then
+				click 
+				<uicontrol>Save</uicontrol>. 
+			 </cmd> 
+			 <info> 
+				<p> 
+				  <note>The names you apply to strings, integers, and numbers are
+					 used to create Analytics metrics. See 
+					 <xref
+					  href="customer_attributes_reporting.xml#concept_FED4C36127D74D10A636FB18B21AD53C"
+					  format="dita" scope="local"><?xm-replace_text Customer Attributes in Analytics Reporting?></xref>.
+					 
+				  </note> 
+				</p> 
+				<p> 
+				<table id="table_D8E7C467EC3A4EDDB6D234F09FDD2B1E"> 
+				  <tgroup cols="2"> 
+					 <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+					 <colspec colnum="2" colname="col2" colwidth="4.00*"/> 
+					 <thead> 
+						<row> 
+						  <entry colname="col1">Element 
+						  </entry> 
+						  <entry colname="col2">Description 
+						  </entry> 
+						</row> 
+					 </thead> 
+					 <tbody> 
+						<row> 
+						  <entry colname="col1"> 
+							 <p>Attribute 
+							 </p> 
+						  </entry> 
+						  <entry colname="col2"> 
+							 <p> Attribute data read from the uploaded 
+								<filepath>.csv</filepath> file. 
+							 </p> 
+						  </entry> 
+						</row> 
+						<row> 
+						  <entry colname="col1"> 
+							 <p>Type 
+							 </p> 
+						  </entry> 
+						  <entry colname="col2"> 
+							 <p>The data type, such as a string, list of strings,
+								numbers, a record and so on). 
+							 </p> 
+						  </entry> 
+						</row> 
+						<row> 
+						  <entry colname="col1"> 
+							 <p>Display Name 
+							 </p> 
+						  </entry> 
+						  <entry colname="col2"> 
+							 <p>A friendly name for the attribute. For example, you
+								might change an attribute 
+								<term>customer age</term> to 
+								<term>Customer Since</term>. 
+							 </p> 
+						  </entry> 
+						</row> 
+						<row> 
+						  <entry colname="col1"> 
+							 <p>Description 
+							 </p> 
+						  </entry> 
+						  <entry colname="col2"> 
+							 <p> A friendly description of the attribute. 
+							 </p> 
+						  </entry> 
+						</row> 
+					 </tbody> 
+				  </tgroup> 
+				</table> 
+				</p> 
+			 </info> 
+		  </step> 
+		  <step id="step_10BAD59A9D4F4A0182CB7277334145A3"> 
+			 <cmd><xref
+				href="t_crs_usecase.xml#task_9F77C45A11DB425DB813D6F42A0A2DD4" format="dita"
+				scope="local"><?xm-replace_text Configure subscriptions?></xref>. 
+			 </cmd> 
+			 <info> 
+				<p> 
+				</p> 
+			 </info> 
+		  </step> 
+		</steps> 
+	 </taskbody> 
+  </task> 
+  <task id="task_9F77C45A11DB425DB813D6F42A0A2DD4"> 
+	 <title>Configure subscriptions</title> 
+	 <shortdesc>Configuring a subscription gets the data flowing between the
+		Marketing Cloud and solutions. For example, an Analytics subscription enables
+		attribute data in reports. 
+	 </shortdesc> 
+	 <taskbody> 
+		<steps id="steps_4EC305A496DB4301AA2E600C85F46486"> 
+		  <step id="step_D4D99B5B30FE4C23A7BB35ECDAA1AC27"> 
+			 <cmd>On the Create New [or Edit] Customer Attribute Source page,
+				click 
+				<uicontrol>Add Subscription</uicontrol>. 
+			 </cmd> 
+			 <stepresult> 
+				<p><image href="graphics/configure_subscription_page.png"
+				  id="image_76ECB9419E834915BF1B9EE641AD8F93"></image> 
+				</p> 
+			 </stepresult> 
+		  </step> 
+		  <step id="step_6DA9CB2304CB476C9DE2E93010759581"> 
+			 <cmd>Complete the following fields: 
+			 </cmd> 
+			 <stepresult> 
+				<p> 
+				<table id="table_B034068AC49840D4A519AF5CD21EF47C"> 
+				  <tgroup cols="2"> 
+					 <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+					 <colspec colnum="2" colname="col2" colwidth="1.61*"/> 
+					 <thead> 
+						<row> 
+						  <entry colname="col1">Element 
+						  </entry> 
+						  <entry colname="col2">Description 
+						  </entry> 
+						</row> 
+					 </thead> 
+					 <tbody> 
+						<row> 
+						  <entry colname="col1"> 
+							 <p>Solution 
+							 </p> 
+						  </entry> 
+						  <entry colname="col2"> 
+							 <p>Specifies the Marketing Cloud solution, such as 
+								<keyword>Analytics</keyword> or 
+								<keyword>Target</keyword>. 
+							 </p> 
+						  </entry> 
+						</row> 
+						<row> 
+						  <entry colname="col1"> 
+							 <p>Report Suite 
+							 </p> 
+						  </entry> 
+						  <entry colname="col2"> 
+							 <p>Lets you specify the report suite from marketing
+								reports &amp; analytics. 
+							 </p> 
+						  </entry> 
+						</row> 
+						<row> 
+						  <entry colname="col1"> 
+							 <p>Attributes to Include 
+							 </p> 
+						  </entry> 
+						  <entry colname="col2"> 
+							 <p>Lets you select attributes to include, such as 
+								<term>email</term> or 
+								<term>name</term>. 
+							 </p> 
+							 <p> You can select up to 5 attributes of data that you
+								want to send to Analytics. If you would like to add more than 5 data
+								attributes, contact your account manager and upgrade to Analytics Premium. 
+							 </p> 
+						  </entry> 
+						</row> 
+					 </tbody> 
+				  </tgroup> 
+				</table> 
+				</p> 
+			 </stepresult> 
+		  </step> 
+		  <step id="step_F304CFB6D0104D74B7A47AC39A0960EE"> 
+			 <cmd><xref
+				href="t_crs_usecase.xml#task_1ACA21198F0E46A897A320C244DFF6EA" format="dita"
+				scope="local"><?xm-replace_text Activate the attribute source?></xref>. 
+			 </cmd> 
+			 <stepresult><?xm-replace_text Step Result?>
+			 </stepresult> 
+		  </step> 
+		</steps> 
+	 </taskbody> 
+  </task> 
+  <task id="task_1ACA21198F0E46A897A320C244DFF6EA"> 
+	 <title>Activate the attribute source</title> 
+	 <shortdesc>Activating the attribute source allows the data to flow to
+		subscribed solutions. The customer records you have uploaded are matched up
+		with incoming ID signals from your web site or application. 
+	 </shortdesc> 
+	 <taskbody> 
+		<context id="context_1D5A659F176C4E66ADA6D22EE92586E3"> 
+		  <p><?xm-replace_text Task Context?>
+		  </p> 
+		</context> 
+		<steps id="steps_B19D816AD4E74F0BAA3A155E9C2EE9C6"> 
+		  <step id="step_7C037F7476F94663881946C26CAE0B7E"> 
+			 <cmd>On the 
+				<wintitle>Create New [or Edit] Customer Attribute Source</wintitle>
+				page, locate the 
+				<wintitle>Activate</wintitle> heading, then click 
+				<uicontrol>Active</uicontrol>. 
+			 </cmd> 
+			 <stepresult> 
+				<p> 
+				  <image href="graphics/activate_attribute_source.png"
+					id="image_6098AEF2E39A40CAB3390E5EC3B50806"> <?xm-replace_text Step Result?>
+				  </image> 
+				</p> 
+			 </stepresult> 
+		  </step> 
+		  <step id="step_18299C02BFBF4C04BE76D530265AE71B"> 
+			 <cmd><xref
+				href="t_crs_usecase.xml#task_7EB0680540CE4B65911B2C779210915D" format="dita"
+				scope="local"><?xm-replace_text Run a customer attribute report in Analytics?></xref>.
+				
+			 </cmd> 
+			 <stepresult><?xm-replace_text Step Result?>
+			 </stepresult> 
+		  </step> 
+		</steps> 
+	 </taskbody> 
+  </task> 
+  <task id="task_7EB0680540CE4B65911B2C779210915D"> 
+	 <title>Run a customer attribute report in Analytics</title> 
+	 <shortdesc>With the data now available in solutions like 
+		<keyword>Adobe Analytics</keyword>, you can report on the data, analyze
+		it, and take the appropriate action in your marketing campaigns. 
+	 </shortdesc> 
+	 <taskbody> 
+		<context id="context_E638A326D4CB41528D36C44F6366435D"> 
+		  <p>The following example shows an 
+			 <keyword>Analytics</keyword> segment based on the uploaded
+			 attributes. This segment shows Photoshop Lightroom subscribers whose
+			 most-launched product is Photoshop. 
+		  </p> 
+		  <p> 
+			 <image href="graphics/08_crs_usecase.png"
+			  id="image_D95A936E37924CAE9FE95ACBC2BA7AF6"> <?xm-replace_text Paragraph?>
+			 </image> 
+		  </p> 
+		  <p>See 
+			 <xref
+			  href="customer_attributes_reporting.xml#concept_FED4C36127D74D10A636FB18B21AD53C"
+			  format="dita" scope="local"><?xm-replace_text Customer Attributes in Analytics Reporting?></xref>
+			 for more information. 
+		  </p> 
+		</context> 
+	 </taskbody> 
+  </task> 
+  <task id="task_FC5F9D9059114027B62DB9B1C7D9E257"> 
+	 <title>Create an activity in Target</title> 
+	 <shortdesc>Choose the Marketing Cloud audience to Target the test to the
+		Photoshop Lightroom audience. 
+	 </shortdesc> 
+	 <taskbody> 
+		<context id="context_C56824F63B3447BF98B54946D6DD8BD2"> 
+		  <p>Additionally, you can 
+			 <xref
+			  href="t_publish_audience_segment.xml#task_32FEEFE0B32E4E388CD4D892D727282A"
+			  format="dita" scope="local">publish</xref> this segment to the 
+			 <keyword>Marketing Cloud</keyword>, then use it in 
+			 <keyword>Adobe Target</keyword> to create an upsell experience for
+			 the created audience. 
+		  </p> 
+		  <p> 
+			 <image href="graphics/09_crs_usecase.png"
+			  id="image_47532FB56C574FD4A13A959AD76A45F8"> <?xm-replace_text Paragraph?>
+			 </image> 
+		  </p> 
+		  <p>Here, you create an A/B Test activity using the desired Analytics
+			 report suite. 
+		  </p> 
+		  <p> 
+			 <image href="graphics/10_crs_usecase.png"
+			  id="image_5EDA8BBDAE4E4D36859DDADA0085BFC4"></image> 
+		  </p> 
+		  <p>See 
+			 <xref
+			  href="https://marketing.adobe.com/resources/help/en_US/target/target/t_test_create_ab.html"
+			  format="https" scope="external">Create an A/B Test</xref> in Target help. 
+		  </p> 
+		  <draft-comment> 
+			 <p>https://my.adobeconnect.com/p645is2pwp6/?launcher=false&amp;fcsContent=true&amp;pbMode=normal
+				
+			 </p> 
+			 <p>57 mins in. 
+			 </p> 
+		  </draft-comment> 
+		</context> 
+	 </taskbody> 
+  </task> 
+</task> 

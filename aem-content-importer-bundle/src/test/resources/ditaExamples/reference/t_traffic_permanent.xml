@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_1B3BF0AE020F4936B689D9ED1736FCFF"> 
+  <title>Specify permanent traffic increase</title> 
+  <shortdesc>The Permanent Traffic sections lets you change expected traffic
+	 levels so Adobe can reassign resources to handle the new traffic level. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Admin tools"/> </metadata>
+  </prolog> 
+  <taskbody> 
+	 <prereq id="prereq_46B09645D2AA4B4EBC13B00CBB7C276F"> 
+		<p>Please read the information about 
+		  <xref
+			href="traffic_lead_time.xml#concept_29FA0D270651429D9D068F93CC43F667"
+			format="dita" scope="local"><?xm-replace_text Required Lead Time for Traffic Increases?></xref>
+		  before you specify a permanent traffic increase. 
+		</p> 
+	 </prereq> 
+	 <steps id="steps_03EBB7F5710F4AC7BA26E9915542C677"> 
+		<step id="step_96CB3DD8012E4FB493C76ABEE295ABB5"> 
+		  <cmd>Open the Report Suite Manager by clicking 
+			 <uicontrol>Analytics</uicontrol> &gt; 
+			 <uicontrol>Admin</uicontrol> &gt; 
+			 <uicontrol>Report Suites</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_B2AEB72CBAB64036BE2ED419CFDC13B6"> 
+		  <cmd>Select a report suite. 
+		  </cmd> 
+		</step> 
+		<step id="step_A326345ED8BE49738A22657FB55ADF8E"> 
+		  <cmd>Click 
+			 <uicontrol>Edit Settings</uicontrol> &gt; 
+			 <uicontrol>Traffic Management</uicontrol> &gt; 
+			 <uicontrol>Permanent Traffic</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_45E8EC6194D14E46B42B552CE3FF44E3"> 
+		  <cmd>In the 
+			 <uicontrol>New Expected Daily Page Views</uicontrol> field, specify
+			 the total expected daily page views for the new traffic level. 
+		  </cmd> 
+		  <stepresult> 
+			 <p>Make sure to specify the total expected page views, not just the
+				additional page views. 
+			 </p> 
+		  </stepresult> 
+		</step> 
+		<step id="step_491144C428A243808E016E62026D8E21"> 
+		  <cmd>In the 
+			 <uicontrol>Effective Date</uicontrol> field, specify the date when
+			 you expect the new traffic level to start, then click 
+			 <uicontrol>Submit</uicontrol>. 
+		  </cmd> 
+		  <stepresult> 
+			 <p> 
+				<note>To schedule a permanent traffic increase, include a phone
+				  number in your user contact information so that Adobe can contact you with
+				  questions, if needed. 
+				</note> 
+			 </p> 
+		  </stepresult> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_E41DD74A171C4B9A8AFA22B8785F5B69">
+  <title>Cross-Device Visitor Identification</title>
+  <shortdesc>Cross-device visitor identification (also known as 
+	 <i>visitor stitching</i>) allows the Marketing Cloud to recognize
+	 visitors across browsers and devices, counting them as a single visitor. This
+	 feature allows campaigns from one device, such as a mobile device, to receive
+	 credit from conversion events made from another device, such as a desktop. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="subtopic" content="Glossary" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p> This feature works by associating the visitor profiles across each
+		device where a user is uniquely identified. After association, the visitor
+		profile records are merged and visits from each device are considered to be
+		from the same user.
+	 </p>
+    <p>For example, in the following scenario, the same visitor is counted
+		three times:
+	 </p>
+    <p>a potential customer clicks a link in a marketing email and views your
+		site for the first time:
+	 </p>
+    <p>
+      <?xm-replace_text Paragraph?>
+    </p>
+    <p>Using this type of tracking requires defining the 
+		<varname>s.visitorID</varname> variable in your implementation, which can
+		be defined using existing elements on your site (such as a login username).
+		Cross-device visitor identification can associate each 
+		<varname>visitorID</varname> automatically assigned with the custom 
+		<varname>visitorID</varname> set. Meaning, the visitor information is
+		retained even if the user does not login immediately. 
+	 </p>
+    <note>This topic is intended for users already familiar with 
+		marketing reports and the implementation specific to their
+		organization. If you are not familiar with your organization's implementation,
+		seek help from a Supported User or the Implementation Guide. 
+	 </note>
+    <section id="section_DAB3178A1F774DACA41CF9C531C07A42">
+      <title>Implementing Cross-Visitor Identification</title>
+      <p>To use cross-visitor identification, all of the following requirements
+		  must be met: 
+		</p>
+      <ul id="ul_9CB171E098AB4494B76E41DC39230E1F">
+        <li id="li_412D13D2B0A5486CB320AFB7A0F52823">Cross-device visitor
+			 identification must be enabled for the report suite. 
+		  </li>
+        <li id="li_3D40A22A1FB043DA9562D6CEC0EA71B3">Your implementation must
+			 have a method to identify visitors, such as a login or email. 
+		  </li>
+        <li id="li_68CFCA787427444EA697D4F580852884">The 
+			 <varname>s.visitorID</varname> variable must be implemented on your
+			 site to retrieve that unique visitor ID. 
+		  </li>
+      </ul>
+      <p>
+        <b>Configuration</b>
+      </p>
+      <ol id="ol_2637ADCDB9244B909D15AF6215F39099">
+        <li id="li_617837B891E84E7DADD885DF68008387">Ask your organization's
+			 Supported User to contact Customer Care to enable the cross-device visitor
+			 identification. 
+			 <p>Specify the report suite ID, as well as a development suite for
+				testing. 
+			 </p></li>
+        <li id="li_B45EE2D356B04E55980586B95650C095">Open your dev environment
+			 that has a current method to track unique visitors, and implement the following
+			 (or similar logic) within the<filepath> s_code.js</filepath> file: 
+			 <codeblock outputclass="syntax javascript">if (user is logged in) {
+s.visitorID = [variable used to identify username or unique visitor]
+}</codeblock></li>
+        <li id="li_53B18EED636344D89E44E497F503392E">Access your dev
+			 environment site and log in. 
+		  </li>
+        <li id="li_CF24BE51F2F64839B1F2BB289C18F5E0">Open the 
+			 DigitalPulse Debugger and verify that your 
+			 <varname>visitorID</varname> is set to the unique visitor ID as
+			 configured by your organization. 
+		  </li>
+        <li id="li_CB2E6985029C4487BF3C2AC3CD966D41">Access your dev
+			 environment site from another browser or mobile device and log in with the same
+			 credentials. 
+		  </li>
+        <li id="li_05A40FEA4E2F4DE1A01B0B137E7BE509">Open the debugger and
+			 verify that the same 
+			 <varname>visitorID</varname> is set. 
+		  </li>
+      </ol>
+      <p>The visitor IDs from both devices are now linked with your custom
+		  visitor ID. Any time you now access the site from either of these devices
+		  (logged in or not), they are treated as the same visitor. 
+		</p>
+      <p>For more information on visitor stitching, see: 
+		</p>
+      <ul id="ul_C782C5D0498A47E38E1FA818615EA1ED">
+        <li id="li_7BF3A25721BF45998C0085578A254815">
+          <xref href="http://marketing.adobe.com/resources/help/en_US/xref/visitor_stitching.pdf" scope="external" format="http">Visitor Stitching Example</xref>
+        </li>
+        <li id="li_1CFC84D0801C4CE1B448AD9D9B01C1D9">
+          <xref href="http://blogs.adobe.com/digitalmarketing/analytics/15-for-15-a-stitch-in-time-saves-visitors/" scope="external" format="html">15 for 15: A Stitch in Time Saves...
+				Visitors</xref>
+        </li>
+      </ul>
+    </section>
+    <section id="section_B4BCE0AEFDC14CF880E48D22FAAF01CB">
+      <title>Tips</title>
+      <ul id="ul_FC30F0E5CB4B46C7A472470F26DBE463">
+        <li id="li_AC2D55B53D23402E99127F294D72A79E">Implementing cross-device
+			 visitor identification without having it enabled will not correctly process and
+			 report data. Each unique visitor ID is counted separately, inflating your
+			 visitor count. 
+		  </li>
+        <li id="li_0E27520511A547188EDD879BB7063CBD">If your unique visitor ID
+			 contains personal information (such as an email address), it is recommended to
+			 either hash it or use an internal unique ID to help protect privacy. 
+		  </li>
+      </ul>
+    </section>
+    <section id="section_0326A68D1B4A46E6B746B711D6E6A87A">
+      <title>Connecting Users Across Devices</title>
+      <p>http://marketing.adobe.com/resources/help/en_US/sc/implement/oms_sc_implement.pdf
+		</p>
+      <p>12.1
+		</p>
+      <p>
+        <?xm-replace_text Paragraph?>
+      </p>
+      <p>Cross-device visitor identification uses the visitor ID variable,
+		  s.visitorID, to associate a user across devices. When you provide a visitor ID
+		  variable with a hit, the system checks for any other visitor profiles that have
+		  a matching visitor ID. If one exists, the visitor profile that is already in
+		  the system is used from that point forward and the previous visitor profile is
+		  no longer used.
+		</p>
+      <p>The visitor ID is typically set after authentication, or after a
+		  visitor performs some other action that enables you to uniquely identify them
+		  independently of the device that is used. We recommend creating a hash of the
+		  username or an internal ID that does not contain any personally identifiable
+		  information.
+		</p>
+      <p>In the previous example, after the customer signs on from each device,
+		  they are all associated with the same user profile. If the visitor later signs
+		  out on a device, stitching continues to work since the visitor IDs that are
+		  stored in a cookie on each device are already associated with the same visitor
+		  profile. We recommend populating the s.visitorID variable whenever possible in
+		  case the visitor ID cookie is deleted.
+		</p>
+    </section>
+  </conbody>
+</concept>

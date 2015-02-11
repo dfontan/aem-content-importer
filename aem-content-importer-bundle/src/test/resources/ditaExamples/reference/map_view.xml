@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_303D17CCEF944913926D2AE0E76C2F38">
+  <title>Map View</title>
+  <shortdesc>The Map report type is available in addition to the Trended and
+	 Ranked report types. The Map view color codes countries according to their
+	 relative contribution to your highest-value line item.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>The legend, visible to the right of the Map view, specifies ranges which
+		are calculated in increments of 5th's of your top line item (first 1/5th,
+		second 1/5th, etc). The darker the color, the greater the number of daily
+		unique visitors from that country that are visiting your site.
+	 </p>
+    <p>Only one metric is used when you are in the Map view (more are available
+		in the ranked/trended view).
+	 </p>
+    <p>
+      <image placement="break" align="center" href="graphics/map_view.png" width="672px" id="image_A6A0AC933AE64A7BB56C38D802EEDD3E"></image>
+    </p>
+  </conbody>
+</concept>

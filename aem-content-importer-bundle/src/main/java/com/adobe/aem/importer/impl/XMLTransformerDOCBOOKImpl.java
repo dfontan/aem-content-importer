@@ -10,8 +10,6 @@ package com.adobe.aem.importer.impl;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Map.Entry;
 import java.util.Properties;
 
@@ -39,6 +37,9 @@ import org.xml.sax.helpers.XMLReaderFactory;
 import com.adobe.aem.importer.XMLTransformer;
 import com.adobe.aem.importer.XMLTransformerHelper;
 import com.adobe.aem.importer.AbstractXmlTransformer;
+import com.adobe.aem.importer.exception.AemImporterException;
+import com.adobe.aem.importer.exception.AemImporterException.AEM_IMPORTER_EXCEPTION_TYPE;
+import com.adobe.aem.importer.xml.FilterXmlBuilder;
 import com.day.cq.commons.jcr.JcrUtil;
 import com.day.jcr.vault.util.RejectingEntityResolver;
 
@@ -55,91 +56,101 @@ public class XMLTransformerDOCBOOKImpl extends AbstractXmlTransformer implements
 	 * @see com.adobe.aem.importer.XMLTransformer#transform(javax.jcr.Node, java.util.Properties)
 	 */
 	@Override
-	public void transform(Node srcPath, Properties properties) throws Exception {
+	public void transform(Node srcPath, Properties properties) throws AemImporterException {
 		log.info("XMLTransformerDITA transformer starts to check out input parameters");
 		// Source Path check
 		if (properties==null)
-			throw new Exception("Properties file cannot be NULL");
+			throw new AemImporterException(AEM_IMPORTER_EXCEPTION_TYPE.ERROR_PARAMS, "Properties file cannot be NULL");
 		
 		// Properties check
 		final String xslt = getMandatoryProperty(properties, CONFIG_PARAM_XSLT_FILE);
 		final String transformerClass = getMandatoryProperty(properties, CONFIG_PARAM_TRANSFORMER_CLASS);
 		final String packageTpl = getMandatoryProperty(properties, CONFIG_PARAM_PACKAGE_TPL);
 		final String masterFile = getMandatoryProperty(properties, XMLTransformerHelper.CONFIG_PARAM_MASTER_FILE);
-		if (!srcPath.hasNode(masterFile))
-			throw new Exception("Master File "+masterFile+" not available in the folder "+srcPath.getPath());
-		final String destPath = getMandatoryProperty(properties, XMLTransformerHelper.CONFIG_PARAM_TARGET);
 		
-		// Optional properties
-		final String tmpFolder = properties.getProperty(CONFIG_PARAM_TEMP_FOLDER, DEFAULT_TEMP_FOLDER);
-		log.debug("Get optional property {}: {}",CONFIG_PARAM_TEMP_FOLDER, tmpFolder);
-		String graphicFolderList = properties.getProperty(CONFIG_PARAM_GRAPHIC_FOLDERS);
-		log.debug("Get optional property {}: {}",CONFIG_PARAM_GRAPHIC_FOLDERS, graphicFolderList);
-		final String[] graphicFolders = (graphicFolderList!=null) ? graphicFolderList.split(",") : DEFAULT_GRAPHIC_FOLDERS;
-		
-		// XSLT File Check
-		Session session = srcPath.getSession();
-		if (!session.itemExists(xslt))
-			throw new Exception("XSLT Node File not available ("+xslt+")");
-		final Node xsltNode = session.getNode(xslt);
-		// Package Template Check
-		if (!session.itemExists(packageTpl))
-			throw new Exception("Package Template Node File not available ("+packageTpl+")");
-		Node packageTplNode = session.getNode(packageTpl);
-		
-		// Create XML Reader
-		log.debug("Create XML Reader");
-		XMLReader xmlReader = XMLReaderFactory.createXMLReader();
-		xmlReader.setEntityResolver(new RejectingEntityResolver());
-		
-		/* XSLT Transformer init */
-		
-		URIResolver uriResolver = new XMLTransformerDOCBOOKResolver(xsltNode, srcPath, xmlReader);
-		Transformer xsltTransformer = initTransformer(transformerClass, xsltNode, srcPath, xmlReader, uriResolver);
-		
-		/* Pass all properties to XSLT transformer */
-		for(Entry<Object, Object> entry : properties.entrySet()) {
-			log.debug("Pass to transformer the property {}: {}",entry.getKey().toString(), entry.getValue());
-			xsltTransformer.setParameter(entry.getKey().toString(), entry.getValue());
-		}
-		
-		
-		// Tmp Destination Folder
-		Node tmpFolderNode = JcrUtil.createPath(tmpFolder, "nt:folder", "nt:folder", srcPath.getSession(), true);
-		tmpFolderNode = JcrUtil.createUniqueNode(tmpFolderNode, srcPath.getName(), "nt:folder", srcPath.getSession());
-		log.debug("Create tmp destination folder {}",tmpFolderNode.getPath());
-		srcPath.getSession().save();
-		
-		// Transform
-		log.debug("Start transformation process reading master file {}",masterFile);
-		final ByteArrayOutputStream output = new ByteArrayOutputStream();
-		xsltTransformer.transform(new SAXSource(xmlReader, new InputSource(JcrUtils.readFile(srcPath.getNode(masterFile)))), new StreamResult(output));
-
-		// Copy transformed output stream to input
-		InputStream stream = new ByteArrayInputStream(output.toByteArray());
-
-    // Prepare package folders and copy transformed content stream
-    final Node packageFolderNode = JcrUtil.copy(packageTplNode, tmpFolderNode, PACKAGE_FOLDER);
-    Node contentFolder = JcrUtil.createPath(packageFolderNode.getPath()+"/jcr_root"+destPath, "nt:folder", "nt:folder", srcPath.getSession(), true);
-    log.debug("Create package folder on {} using the template {}",contentFolder.getPath(), packageFolderNode.getPath());
-    JcrUtils.putFile(contentFolder, ".content.xml", CONTENT_XML_MIME, stream);
-    
-    // Copy graphic resources
-    List<String> folders = new ArrayList<String>();
-    for(String candidate : graphicFolders)
-    	if(srcPath.hasNode(candidate)) {
-    		log.debug("Add graphic folder {}",srcPath.getPath()+"/"+candidate);
-    		JcrUtil.copy(srcPath.getNode(candidate), contentFolder, candidate);
-    		folders.add(srcPath.getPath()+"/"+candidate);
-    	}
-    JcrUtils.putFile(packageFolderNode.getNode(PACKAGE_VAULT), FILTER_XML_FILE, CONTENT_XML_MIME, new ByteArrayInputStream(xmlPackageFilter(folders).getBytes()));
-  
-    importArchive(packageFolderNode);
-    
-    // Delete tmp folder
-    tmpFolderNode.remove();
-    tmpFolderNode.getSession().save();
-    log.info("XMLTransformerDITA transformation is completed");
+		try {
+			if (!srcPath.hasNode(masterFile))
+				throw new AemImporterException(AEM_IMPORTER_EXCEPTION_TYPE.ERROR_PARAMS, "Master File "+masterFile+" not available in the folder "+srcPath.getPath());
+			final String destPath = getMandatoryProperty(properties, XMLTransformerHelper.CONFIG_PARAM_TARGET);
+			
+			// Optional properties
+			final String tmpFolder = properties.getProperty(CONFIG_PARAM_TEMP_FOLDER, DEFAULT_TEMP_FOLDER);
+			log.debug("Get optional property {}: {}",CONFIG_PARAM_TEMP_FOLDER, tmpFolder);
+			String graphicFolderList = properties.getProperty(CONFIG_PARAM_GRAPHIC_FOLDERS);
+			log.debug("Get optional property {}: {}",CONFIG_PARAM_GRAPHIC_FOLDERS, graphicFolderList);
+			final String[] graphicFolders = (graphicFolderList!=null) ? graphicFolderList.split(",") : DEFAULT_GRAPHIC_FOLDERS;
+			
+			// XSLT File Check
+			Session session = srcPath.getSession();
+			if (!session.itemExists(xslt))
+				throw new AemImporterException(AEM_IMPORTER_EXCEPTION_TYPE.ERROR_PARAMS, "XSLT Node File not available ("+xslt+")");
+			final Node xsltNode = session.getNode(xslt);
+			// Package Template Check
+			if (!session.itemExists(packageTpl))
+				throw new AemImporterException(AEM_IMPORTER_EXCEPTION_TYPE.ERROR_PARAMS,"Package Template Node File not available ("+packageTpl+")");
+			Node packageTplNode = session.getNode(packageTpl);
+			
+			// Create XML Reader
+			log.debug("Create XML Reader");
+			XMLReader xmlReader = XMLReaderFactory.createXMLReader();
+			xmlReader.setEntityResolver(new RejectingEntityResolver());
+			
+			/* XSLT Transformer init */
+			
+			URIResolver uriResolver = new XMLTransformerDOCBOOKResolver(xsltNode, srcPath, xmlReader);
+			Transformer xsltTransformer = initTransformer(transformerClass, xsltNode, srcPath, xmlReader, uriResolver);
+			
+			/* Pass all properties to XSLT transformer */
+			for(Entry<Object, Object> entry : properties.entrySet()) {
+				log.debug("Pass to transformer the property {}: {}",entry.getKey().toString(), entry.getValue());
+				xsltTransformer.setParameter(entry.getKey().toString(), entry.getValue());
+			}
+			
+			
+			// Tmp Destination Folder
+			Node tmpFolderNode = JcrUtil.createPath(tmpFolder, "nt:folder", "nt:folder", srcPath.getSession(), true);
+			tmpFolderNode = JcrUtil.createUniqueNode(tmpFolderNode, srcPath.getName(), "nt:folder", srcPath.getSession());
+			srcPath.getSession().save();
+			log.debug("Create tmp destination folder {}",tmpFolderNode.getPath());
+			
+			// Transform
+			final ByteArrayOutputStream output = new ByteArrayOutputStream();
+			xsltTransformer.transform(new SAXSource(xmlReader, new InputSource(JcrUtils.readFile(srcPath.getNode(masterFile)))), new StreamResult(output));
+			log.debug("Start transformation process reading master file {}",masterFile);
+			
+			// Copy transformed output stream to input
+			InputStream stream = new ByteArrayInputStream(output.toByteArray());
+			
+			// Prepare package folders and copy transformed content stream
+			final Node packageFolderNode = JcrUtil.copy(packageTplNode, tmpFolderNode, PACKAGE_FOLDER);
+			Node contentFolder = JcrUtil.createPath(packageFolderNode.getPath()+"/jcr_root"+destPath, "nt:folder", "nt:folder", srcPath.getSession(), true);
+			log.debug("Create package folder on {} using the template {}",contentFolder.getPath(), packageFolderNode.getPath());
+			JcrUtils.putFile(contentFolder, ".content.xml", CONTENT_XML_MIME, stream);
+			
+			// Copy graphic resources
+			for(String candidate : graphicFolders)
+				if(srcPath.hasNode(candidate)) {
+					log.debug("Add graphic folder {}",srcPath.getPath()+"/"+candidate);
+					JcrUtil.copy(srcPath.getNode(candidate), contentFolder, candidate);
+					JcrUtils.putFile(packageFolderNode.getNode(PACKAGE_VAULT), FILTER_XML_FILE, CONTENT_XML_MIME, FilterXmlBuilder.fromRoot(destPath+"/").toStream(candidate));
+				}
+			
+			importArchive(packageFolderNode);
+			
+			// Delete tmp folder
+			tmpFolderNode.remove();
+			tmpFolderNode.getSession().save();
+			log.info("XMLTransformerDITA transformation is completed");
+		} catch (Exception e) {
+			
+			if (e instanceof AemImporterException) {
+				throw (AemImporterException) e;
+			} else {
+				throw new AemImporterException(AEM_IMPORTER_EXCEPTION_TYPE.UNEXPECTED, e.getMessage(), e);
+			}
+			
+			
+		} 
 	}
 	
 	/*********************************************

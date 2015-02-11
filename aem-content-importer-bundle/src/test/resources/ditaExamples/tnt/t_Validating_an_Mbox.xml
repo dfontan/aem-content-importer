@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_4BB8E090CBBF4C56A39BB63BF1ADB964" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Validate an Mbox</title>
+  <shortdesc class="- topic/shortdesc ">After you create an mbox, validate it
+	 to make sure it was created correctly and is listed in the targeting system. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <steps id="steps_6A282625924C4DBC933610ED233E790F" class="- topic/ol task/steps ">
+      <step id="step_ED0A4BF1B40848FDB29A1E77EE24F1DB" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">With a Web browser, open the Web page
+			 where you<xref href="c_Creating_and_Placing_Mboxes.xml#concept_B0EC432377C244B79DB47783B3170E22" type="concept" format="dita" scope="local" class="- topic/xref "> inserted the
+				mbox</xref>. 
+		  </cmd>
+      </step>
+      <step id="step_D8F79A67E9A04857B2A9635DB0020732" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Refresh the Web page. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">The mbox is recognized and listed in your
+				account. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_5CCC7BD484E9412C991E910850313B36" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Confirm the mbox is listed in the
+			 tool. 
+		  </cmd>
+      </step>
+      <step id="step_C720F5D1147D44CF826CFBD890DFC4BC" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Refresh the mbox list in one of two
+			 places. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">
+            <ul id="ul_545D6DB8DE694C2EA848E677B0174AAC" class="- topic/ul ">
+              <li id="li_7F0E1E357E434C37B38E24AE3ACFB732" class="- topic/li ">
+				  Mouse over 
+				  <uicontrol>Locations</uicontrol>, then click 
+				  <uicontrol class="+ topic/ph ui-d/uicontrol ">List</uicontrol>
+				  &gt;<uicontrol class="+ topic/ph ui-d/uicontrol "> refresh</uicontrol></li>
+              <li id="li_EC507CFC409C40DE92B5015A7D87222C" class="- topic/li ">
+                <uicontrol class="+ topic/ph ui-d/uicontrol ">Refresh
+					 List</uicontrol> on the campaigns setup/edit page 
+				</li>
+            </ul>
+          </p>
+        </stepresult>
+      </step>
+      <step id="step_13B88D1563CD494F88A5FCCED67426B6" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">If your mbox is still not listed, use
+			 the 
+			 <wintitle class="+ topic/keyword ui-d/wintitle ">mboxDebug</wintitle>
+			 pop-up to confirm the mbox is recognized by the browser. 
+		  </cmd>
+        <substeps id="substeps_6B8899D319F045C98A8DC1BFF7684B2D" class="- topic/ol task/substeps ">
+          <substep id="substep_922E37AE71244522A41AB51B2CF2AB7E" class="- topic/li task/substep ">
+            <cmd class="- topic/ph task/cmd ">In your browser, navigate to the
+				  page containing the mbox. 
+				</cmd>
+          </substep>
+          <substep id="substep_7C1017B5744B4662833E9BBC56E32197" class="- topic/li task/substep ">
+            <cmd class="- topic/ph task/cmd ">Ensure pop-ups are enabled on
+				  your browser. 
+				</cmd>
+          </substep>
+          <substep id="substep_82194CFE8AA84E05BA4B59C9A389ADFB" class="- topic/li task/substep ">
+            <cmd class="- topic/ph task/cmd ">Add 
+				  <codeph class="+ topic/ph pr-d/codeph ">mboxDebug=1</codeph> to
+				  the end of the URL in your browser's navigation toolbar: 
+				</cmd>
+            <stepresult class="- topic/itemgroup task/stepresult ">
+              <p class="- topic/p ">Example: 
+					 <codeph class="+ topic/ph pr-d/codeph ">http://www.yoursite.com/yourpage.html?mboxDebug=1</codeph></p>
+            </stepresult>
+          </substep>
+          <substep id="substep_814D89EF60BC4DB7A3DD112EE6E0779B" class="- topic/li task/substep ">
+            <cmd class="- topic/ph task/cmd ">A pop-up window appears
+				  containing information about mboxes on the page and the cookies set by those
+				  mboxes. 
+				</cmd>
+          </substep>
+        </substeps>
+      </step>
+    </steps>
+    <result id="result_F054BA36FFC142619538DD777D9E0203" class="- topic/section task/result ">
+      <p class="- topic/p ">
+        <ul id="ul_440544C7B9B24CDCA1F83A4B8466E678" class="- topic/ul ">
+          <li id="li_2A33F94DE6554264A053EE2276AF240E" class="- topic/li "> If
+			 the mbox is not listed or 
+			 <wintitle class="+ topic/keyword ui-d/wintitle ">mbox
+				debug</wintitle> window does not appear, refer to the 
+			 <xref href="t_Mbox_Troubleshooting_Matrix.xml#task_9EEE14582E5443278B1A39CC1E00D6B4" type="task" format="dita" scope="local" class="- topic/xref "><?xm-replace_text Mbox Troubleshooting Matrix?></xref>
+			 section of the Help. 
+		  </li>
+          <li id="li_0B28F2912AFD489CA0B61BE743A0A17D" class="- topic/li "> Use
+			 the close link in the page to keep the pop-up from coming back. 
+		  </li>
+          <li id="li_D862155B18AB452E9D2602F70F024A41" class="- topic/li "> If
+			 you need to meet URL target conditions to see your page, include the required
+			 parameters and values in the Debug URL. 
+			 <p class="- topic/p ">Example: 
+				<codeph class="+ topic/ph pr-d/codeph ">
+				  http://www.yoursite.com/yourpage.html?urlParam=urlValue&amp;mboxDebug=1</codeph></p></li>
+        </ul>
+      </p>
+    </result>
+  </taskbody>
+  <related-links class="- topic/related-links ">
+    <link href="c_About_Mboxes.xml#concept_E01933A6CEDE481BBAC25F95FE3C6FD9" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Mbox Concepts?>
+    </link>
+    <link href="c_Downloading_and_Setting_Up_MboxJs.xml#concept_9429FEF054734D3AA0CE7E3F25ED0B9E" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Download and Set Up mbox.js?>
+    </link>
+    <link href="c_Creating_and_Placing_Mboxes.xml#concept_B0EC432377C244B79DB47783B3170E22" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Create and Place Mboxes?>
+    </link>
+    <link href="c_Using_a_Redirector.xml#concept_451731358AA64789AD0DA3BAAF2DF72C" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Redirector?>
+    </link>
+    <link href="t_Deactivating_an_Mbox.xml#task_536C6C87631D4BC3B3829117DE4D55FE" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Deactivating an Mbox?>
+    </link>
+    <link href="t_Clearing_Deleting_an_Mbox.xml#task_26DA102117A24CDA8A642690366488D7" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Clearing (Deleting) an Mbox?>
+    </link>
+    <link href="r_Troubleshooting_Mboxes.xml#reference_FAA5B3A0FE1542219E004263BF4015E3" type="reference" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Troubleshooting Mboxes?>
+    </link>
+    <link href="t_Mbox_Troubleshooting_Matrix.xml#task_9EEE14582E5443278B1A39CC1E00D6B4" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Mbox Troubleshooting Matrix?>
+    </link>
+    <link href="t_Mbox_Reporting.xml#task_BF6F059DE4CA4769AD5408471731E206" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Mbox Request Report?>
+    </link>
+  </related-links>
+</task>

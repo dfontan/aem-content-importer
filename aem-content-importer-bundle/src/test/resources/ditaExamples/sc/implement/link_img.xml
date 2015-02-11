@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_FF31C8D1B3DF483D853BF0A9D637F02F"> 
+  <title>Link Tracking Using an Image Request</title> 
+  <shortdesc> Links can be tracked without calling the s.tl() function by
+	 constructing an image request. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Developer and implementation"/> 
+		<othermeta name="subtopic" content="Link tracking"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Image requests are hard coded by adding the "pe" parameter to your image
+		request src parameter as follows: 
+	 </p> 
+	 <codeblock outputclass="syntax html">pe=[type]</codeblock> 
+	 <p>Where 
+		<codeph>[type]</codeph> is replaced with the type of link you want to
+		track: 
+	 </p> 
+	 <ul id="ul_E76ECDAA338344429C47B05BB872F3D0"> 
+		<li id="li_5E96C7CBC4AD49D4B02B9EA6428703C3">lnk_d = download 
+		</li> 
+		<li id="li_5F09C6A02860460E83A1D8A02BE2C82A">lnk_e = exit 
+		</li> 
+		<li id="li_42FED61D4EC24D7788E5D455E5574FAC">lnk_o = custom 
+		</li> 
+	 </ul> 
+	 <p>Additionally, a link URL can be specified by passing the URL in the pev1
+		parameter: 
+	 </p> 
+	 <codeblock outputclass="syntax html">pev1=mylink.com</codeblock> 
+	 <p>A link name can be specified by passing the name in the pev2 parameter: 
+	 </p> 
+	 <codeblock outputclass="syntax html">pev2=My%20Link</codeblock> 
+	 <p>For example: 
+	 </p> 
+	 <codeblock outputclass="syntax html">&lt;img src="http://collectiondomain.112.2o7.net/b/ss/reportsuite/1/H.25.3--NS/0?pe=lnk_e?pev1=othersite.com?pev2=Offsite%20Link" width="1" height="1" border="0" /&gt;</codeblock> 
+  </conbody> 
+</concept>

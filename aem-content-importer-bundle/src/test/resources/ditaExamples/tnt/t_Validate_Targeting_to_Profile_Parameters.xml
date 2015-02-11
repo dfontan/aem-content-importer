@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_FEE3A70A4F944B35958CF4B5DA82EB0D">
+  <title>Validate Targeting to Profile Parameters</title>
+  <shortdesc>Follow these steps to validate targeting to profile parameters. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <steps id="steps_BAECE4A1687A4E7C90BC6DA0CD51BC42">
+      <step id="step_95ED5487D3E4495BA8A94810C9A09088">
+        <cmd>Perform any action that sets the required profile value. 
+		  </cmd>
+      </step>
+      <step id="step_3F8DFE2919CD492D9C819B9B2D5DEE42">
+        <cmd>Close and reopen your browser. 
+		  </cmd>
+        <stepresult>
+          <p>Do not delete any files. The profile value is connected to your
+				browser cookie. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_89846A61F99643FDA6F635B687D7988E">
+        <cmd>Return to the page where the campaign should display. 
+		  </cmd>
+      </step>
+      <step id="step_20C9ECE64D46434EA2059118793B7C29">
+        <cmd>Confirm that the correct offer content is shown to you. 
+		  </cmd>
+      </step>
+      <step id="step_1E03E1B6788947D4BDA72FA4DB6BD5E8">
+        <cmd>If segments filters are set, that reports correctly capture the
+			 parameter values. 
+		  </cmd>
+      </step>
+    </steps>
+  </taskbody>
+  <!--<related-links>
+    <link href="t_Validate_Targeting_to_URL_or_Referring_URL_Parameters.xml#task_378FB18E8C7244CDA8C1D029DBACBAEE" type="task" format="dita" scope="local">
+      <?xm-replace_text Validate Targeting to URL or Referring URL Parameters?>
+    </link>
+    <link href="t_Validate_Targeting_to_New_or_Returning_Visitors.xml#task_C9BF77B62B4943A7BF1DC37AA752001C" type="task" format="dita" scope="local">
+      <?xm-replace_text Validate Targeting to New or Returning Visitors?>
+    </link>
+  </related-links>
+-->
+</task>

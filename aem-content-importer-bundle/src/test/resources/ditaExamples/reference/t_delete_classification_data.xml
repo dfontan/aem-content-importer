@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_105C3761180A4D21B8395730C39B5F89">
+  <title>Delete classification data</title>
+  <shortdesc>Steps that describe how to delete or remove classification data. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Admin tools" />
+      <othermeta name="subtopic" content="Classifications" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <steps id="steps_3134B8310F3749D799219CE6DB222551">
+      <step id="step_6F8ECD6EA1D74DBA834949FE7D30202E">
+        <cmd>Click 
+			 <uicontrol>Admin Tools</uicontrol> &gt; 
+			 <uicontrol>Classification Importer</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_55E6636EADA442E3BD5BFE31FA4D7CE4">
+        <cmd>Click 
+			 <uicontrol>Browser Export</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_04F0AC9B240D4946B1780632A490B4CA">
+        <cmd>Select the report suite and data set you would like to remove
+			 classification data from. 
+		  </cmd>
+      </step>
+      <step id="step_C116C1E5EA0C4FABA2B14041379F4552">
+        <cmd>Adjust any optional settings to filter specific data you're
+			 looking for, then click 
+			 <uicontrol>Export File</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_33990C5552584832BCCE9F9026C7C344">
+        <cmd>Once the file has been downloaded, open the file and replace any
+			 values you wish to delete with 
+			 <filepath>~empty~</filepath>. 
+		  </cmd>
+        <info>Alternatively, use 
+			 <filepath>~deletekey~</filepath>. This command treats the
+			 classification as if it never occurred for the specified key. It completely
+			 removes it and any column data from the lookup tables. 
+			 <p><b>Caveat</b>: You only need one column containing 
+				<filepath>~deletekey~</filepath>. The 
+				<filepath>~empty~</filepath> command works at the cell level (key
+				and column combination), so you need 
+				<filepath>~empty~</filepath> in the classification column you want
+				to remove. However, 
+				<filepath>~deletekey~</filepath> works at the row level (the key
+				and all associated metadata), so it only needs to appear in one of the columns
+				in the row. This command removes all metadata from the row. Adobe interprets
+				this as though the key was never classified, and displays it in the 
+				<xref href="nonclassified_keys.xml#concept_233E51DDF3084FF7B7EA89381C73C5FF" format="dita" scope="local">None</xref> category. 
+			 </p></info>
+      </step>
+      <step id="step_E72A819558054D80BF18963281002916">
+        <cmd>Save the file, and upload it using the 
+			 <wintitle>Import File</wintitle> tab. 
+		  </cmd>
+        <stepresult>After you upload the file, the system recognizes 
+			 <filepath>~empty~</filepath> as a command to delete that
+			 classification value. 
+			 <p><b>Properties of this Command</b></p><ul id="ul_2FAD229B02914F70AD26CFB80E8909BC"><li id="li_083C881FC83C4042934B7485A9C10FB7"><filepath>~empty~</filepath> must be
+				  lowercase without spaces. The following entries are invalid: 
+				  <ul id="ul_63A471BE0D254BF9A8A20742C8DAFC1C"><li id="li_7E063F5DC5E94907A16745D05383634E"><filepath>~EMPTY~</filepath></li><li id="li_7AD11B08E0BC42338864052CCCF9A333"><filepath>~ empty
+						  ~</filepath></li><li id="li_0E6984EB7EB2404DBC8347F7C58DAE46"><filepath>~Empty~</filepath></li></ul></li><li id="li_E47FE0B10645478F8A6525CC86403308">You cannot delete
+				  values within the key column. This is data passed directly into reporting and
+				  is permanent. 
+				</li><li id="li_588F28883B7E4FB9A2EB77A685E5F9DF">If you are removing a
+				  classification value that has subclassifications, they are also removed.
+				  Classifications cannot exist without a key value, and a subclassification's
+				  parent is its key value. 
+				</li><li id="li_5DAB2A848DC84BA5B8418FD1F8986038">It is possible to
+				  remove subclassification data while leaving its parent classification intact. 
+				</li></ul></stepresult>
+      </step>
+    </steps>
+  </taskbody>
+</task>

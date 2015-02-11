@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_E4FB8B5E9C444DE98B883E9B145B8832"> 
+  <title>Mobile Management</title> 
+  <shortdesc> Enabling mobile management actives the mobile solution variables
+	 that capture lifecyle and other metrics from mobile applications. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Admin tools"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p><uicontrol>Analytics</uicontrol> &gt; 
+		<uicontrol>Admin</uicontrol> &gt; 
+		<uicontrol>Report Suites</uicontrol> &gt; 
+		<uicontrol>Edit Settings</uicontrol> &gt; 
+		<uicontrol>Mobile Management</uicontrol>. 
+	 </p> 
+	 <p>Mobile classifications are enabled after you enable<uicontrol> Mobile
+		  Management</uicontrol> &gt; 
+		<uicontrol>Mobile Application Reporting</uicontrol>. 
+	 </p> 
+	 <p>See 
+		<xref
+		 href="https://marketing.adobe.com/resources/help/en_US/home/index.html?f=developer"
+		 format="https" scope="external">Mobile App Development &amp; AppMeasurement
+		  Libraries</xref> for details on capturing lifecycle metrics in your mobile app.
+		
+	 </p> 
+  </conbody> 
+</concept> 

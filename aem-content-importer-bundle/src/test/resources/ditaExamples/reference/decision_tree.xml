@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_A38347A210D349AA926BF33DA2020F85">
+  <title>Decision Tree</title>
+  <shortdesc>In data workbench, decision trees are a predictive analytics
+	 visualization used to evaluate visitor characteristics and relationships. The
+	 Decision Tree Builder generates a decision tree visualization based on a
+	 specified positive case and a set of inputs. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>A 
+		<xref href="http://marketing.adobe.com/resources/help/en_US/insight/client/c_decision_trees.html" format="http" scope="external">Decision Tree</xref> is a binary classifier with
+		a set of rules (or filters) identifying visitors who satisfy specific rules
+		based on a positive case. A decision tree sets rules to classify visitors who
+		satisfy (or do not satisfy) this positive case. These rules generate a tree map
+		to provide a level of confidence to meet these positive case results. 
+	 </p>
+  </conbody>
+</concept>

@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_3E5A34C3459047D5965F900788A9BA68"> 
+  <title>Share Marketing Cloud Folders and Assets</title> 
+  <shortdesc>Share folders and assets between the 
+	 <keyword>Marketing Cloud</keyword> and the 
+	 <keyword>Creative Cloud</keyword>. Collaborate, annotate shared assets, and
+	 use them in 
+	 <keyword>Marketing Cloud</keyword> solutions like 
+	 <keyword>Social</keyword> and 
+	 <keyword>Target</keyword>. The shared folder must originate from the
+	 Marketing Cloud. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<keywords> 
+		  <keyword>asset sharing</keyword> 
+		  <keyword>Creative Cloud</keyword> 
+		</keywords> 
+		<othermeta name="solution" content="Marketing Cloud"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <draft-comment> 
+		<p>BETA URL:
+		  https://marketing-beta.adobe.com/resources/help/assets/creative_cloud.html 
+		</p> 
+		<p>Steve Gustaven - testing. Nandini Gupta is the editorial manager and
+		  Vikrant Rai is the content lead for CC docs. 
+		</p>
+		<p>https://wiki.corp.adobe.com/display/marketingcloud/Marketing+Cloud+to+Creative+Cloud+Asset+Sharing
+		</p> 
+	 </draft-comment> 
+	 <ul id="ul_DF790C18786F454CBD06BC308DAC1C04"> 
+		<li id="li_4B6A2CA38FB345439D97A6C48F2E50FA"><xref
+		  href="creative_cloud.xml#concept_3E5A34C3459047D5965F900788A9BA68/section_4AA9939F38064280BB181D5F9E1FDEEE"
+		  format="dita" scope="local"><?xm-replace_text Benefits of Sharing?></xref> 
+		</li> 
+		<li id="li_D1B726F2E727438BB391677B3AD69AA9"><xref
+		  href="creative_cloud.xml#concept_3E5A34C3459047D5965F900788A9BA68/section_B7CD64CAB35D43A4B12957B304072DC9"
+		  format="dita" scope="local"><?xm-replace_text About Asset Sharing with Adobe Target?></xref>
+		  
+		</li> 
+		<li id="li_6671E4756BCE49C6A85D89F134EFF4DC"><xref
+		  href="creative_cloud.xml#concept_3E5A34C3459047D5965F900788A9BA68/section_96BFBB9FF3074B2AB49A9B7932DB25EF"
+		  format="dita" scope="local"><?xm-replace_text About Asset Sharing with Adobe Social?></xref>
+		  
+		</li> 
+	 </ul> 
+	 <section id="section_4AA9939F38064280BB181D5F9E1FDEEE"> 
+		<title>Benefits of Sharing</title> 
+		<ul id="ul_8A091E5874FF4D518D6A122A3D88F71C"> 
+		  <li id="li_34EFCBEC714A4603A2D3F36D738E6CC9">Streamline creative
+			 production workflows in the review, approve, and publish phase 
+		  </li> 
+		  <li id="li_14052F1D20B546758C3C9B8139685FC1">Spend less time managing
+			 in-process files and versions in multiple locations 
+		  </li> 
+		  <li id="li_A074D6480302422B9E70EB20F67E968D">Track and manage creative
+			 assets more effectively 
+		  </li> 
+		  <li id="li_752CE03AD01C4323953BF359B3A03CF2">Enjoy increase enterprise
+			 security 
+		  </li> 
+		  <li id="li_FF077E4EF0524184B1766E0E8836860D">Easily share, save, and
+			 send files between creatives and marketers 
+		  </li> 
+		</ul> 
+		<p>Before Creative Cloud users have access to assets, they must be
+		  whitelisted in the Marketing Cloud. See 
+		  <xref
+			href="t_admin_add_cc_user.xml#task_F36D4F1D49B44F09A54F7371810D2752"
+			format="dita" scope="local"><?xm-replace_text Manage Creative Cloud users?></xref>.
+		  
+		</p> 
+	 </section> 
+	 <section id="section_B7CD64CAB35D43A4B12957B304072DC9"> 
+		<title>About Asset Sharing with Adobe Target</title> 
+		<p>When creating activities in 
+		  <keyword>Adobe Target</keyword>, you can use a shared image asset when
+		  swapping images in the Content Library. 
+		</p> 
+		<p>See 
+		  <xref
+			href="https://marketing.adobe.com/resources/help/en_US/target/target/c_manage_content.html"
+			format="https" scope="external">Content Library</xref> in 
+		  <keyword>Target</keyword> Help. 
+		</p> 
+	 </section> 
+	 <section id="section_96BFBB9FF3074B2AB49A9B7932DB25EF"> 
+		<title>About Asset Sharing with Adobe Social</title> 
+		<p>In 
+		  <keyword>Adobe Social</keyword>, you can insert a shared image asset
+		  using the 
+		  <wintitle>Asset Selector</wintitle> in the 
+		  <wintitle>Publisher</wintitle>. You can search for a particular folder,
+		  browse to it, and attach the asset to a Facebook or Twitter post. 
+		</p> 
+		<p>See 
+		  <xref
+			href="https://marketing.adobe.com/resources/help/en_US/social/c_pub_publisher.html"
+			format="https" scope="external">Publisher Page</xref> in 
+		  <keyword>Social</keyword> Help. 
+		</p> 
+		<p>Shared folders and assets are synchronized automatically between the
+		  clouds. 
+		</p> 
+	 </section> 
+  </conbody> 
+  <related-links> 
+	 <link
+	  href="https://helpx.adobe.com/creative-cloud/topics/getting-started.html?promoid=JZEFO"
+	  format="https" scope="external"> 
+		<linktext>Creative Cloud Help 
+		</linktext> 
+	 </link> 
+  </related-links> 
+</concept> 

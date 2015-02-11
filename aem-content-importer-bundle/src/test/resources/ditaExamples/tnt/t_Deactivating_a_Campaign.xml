@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_2D52E2DB4C1E4F319564B7C937769258">
+  <title>Deactivate a Campaign</title>
+  <shortdesc>Deactivate a campaign to shut it down. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <context id="context_53C9CABB2B7B4A34BCB2E43240D49140">
+      <p>When you deactivate a campaign, it is stopped immediately. No visitors
+		  will see the campaign's content. Its status changes to Unapproved. 
+		</p>
+    </context>
+    <steps id="steps_F6DDFC39AE4F4BB8BDB6F2C783E33A83">
+      <step id="step_8F39C5C2F75F4AEF9EE70D2653F5B2E6">
+        <cmd>Click 
+			 <uicontrol>deactivate</uicontrol> to shut down a campaign
+			 immediately. 
+		  </cmd>
+        <stepresult>
+          <p>When you deactivate a campaign, you are asked if you want to move
+				the campaign to the library. Choose 
+				<uicontrol>yes</uicontrol> to move it to library. Choose 
+				<uicontrol>no</uicontrol> to leave the campaign listed on the
+				Campaigns Home Page. 
+			 </p>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links>
+    <link href="c_Campaign_Quality_Assurance.xml#concept_B645EA1BB55149E4AB8328F9943AC86A" type="concept" format="dita" scope="local">
+      <?xm-replace_text Campaign Quality Assurance?>
+    </link>
+    <link href="t_Approving_a_Campaign.xml#task_64BD21C895CC437A9FEBA4D9EF9B24D7" type="task" format="dita" scope="local">
+      <?xm-replace_text Approve a Campaign?>
+    </link>
+    <link href="t_Closing_a_Campaign.xml#task_D0B32D244F9B417084947AAFEE7B9481" type="task" format="dita" scope="local">
+      <?xm-replace_text Closing a Campaign?>
+    </link>
+    <link href="t_Opening_a_Campaign.xml#task_02F485E75D3E450D92DCD3F32AEDD005" type="task" format="dita" scope="local">
+      <?xm-replace_text Opening a Campaign?>
+    </link>
+    <link href="r_Troubleshooting_Campaigns.xml#reference_692A6E67C05B4D9AAB5C01D76B7FAADF" type="reference" format="dita" scope="local">
+      <?xm-replace_text Troubleshooting Campaigns?>
+    </link>
+    <link href="c_Using_the_Campaign_Library.xml#concept_1F0BADCA1D864DA0A3AE0EE129C5CF9C" type="concept" format="dita" scope="local">
+      <?xm-replace_text Using the Campaign Library?>
+    </link>
+  </related-links>
+</task>

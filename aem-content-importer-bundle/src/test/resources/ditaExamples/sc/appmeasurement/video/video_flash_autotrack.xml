@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_CBF553B502414830BA175DD96A697DF2">
+  <title>Track Player Events Using AutoTrack</title>
+  <shortdesc>AutoTrack automatically tracks video player events such as start,
+	 stop, and pause. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>media</keyword>
+        <keyword>milestone</keyword>
+        <keyword>sdk</keyword>
+        <keyword>video</keyword>
+      </keywords>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <context id="context_7942D0D81D1F417BB41F6E47E8077496">
+      <p>This prevents you from needing to manually track these events and call
+		  the open, play, stop, and close methods directly. 
+		</p>
+      <p>See 
+		  <xref href="video_ref_faq.xml#concept_2209A170CE424C94986E01631BF7FC6A/section_734551C1360F4A53B8E4DA7584196E78" type="section" format="dita" scope="local"><?xm-replace_text What is Autotrack??></xref>.
+		  
+		</p>
+    </context>
+    <steps id="steps_64A8F0A2AE0644A8A9ACA8C5718408DF">
+      <step id="step_0AED1E12F2584BE18CAAF7E089BF4586">
+        <cmd>Add the 
+			 <codeph>s.Media.autoTrack</codeph> variable and set it to 
+			 <codeph>true</codeph>. 
+		  </cmd>
+        <stepresult>
+          <codeblock>s.Media.autoTrack = true;</codeblock>
+        </stepresult>
+      </step>
+    </steps>
+    <example id="example_C6FD5A741A9B41ECBE99B82D98CF6429">
+      <p>
+        <b>Next step:</b>
+        <xref href="video_flash_test.xml#task_9B7A519F3E2242B2946229B8D08AB02B" format="dita" scope="local">
+          <?xm-replace_text Test Your Video Measurement Code?>
+        </xref>.
+		  
+		</p>
+    </example>
+  </taskbody>
+</task>

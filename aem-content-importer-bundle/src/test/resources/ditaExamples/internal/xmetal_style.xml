@@ -1,0 +1,706 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_6C6C89793F3D45C4A1EB8CDBBF13EC33"> 
+  <title>Documentation Style Guide for DITA XML Authors</title> 
+  <shortdesc>Guidelines and standards for authoring in DITA XML. 
+  </shortdesc> 
+  <conbody> 
+	 <p>Following these guidelines ensures a consistent look across Marketing
+		Cloud help. These guidelines don't necessarily define the only way to author in
+		DITA XML--you can implement some variation depending on your product needs.
+		Where possible, try to be consistent. 
+	 </p> 
+	 <p>Last update: 4/29/2014 
+	 </p> 
+	 <ul id="ul_04EDD990AF5E4E00A0449A01E568CFA8"> 
+		<li id="li_6800561727BC40868A46BF9211F25839"><xref
+		  href="xmetal_style.xml#concept_6C6C89793F3D45C4A1EB8CDBBF13EC33/section_AED08C83542A45978361E4501A0C0F6D"
+		  format="dita" scope="local"><?xm-replace_text Content Type?></xref> 
+		</li> 
+		<li id="li_E0A26323C1244FF2A7543A641FA52DA6"><xref
+		  href="xmetal_style.xml#concept_6C6C89793F3D45C4A1EB8CDBBF13EC33/section_BE95FE1538314AAABB005C589BB968A1"
+		  format="dita" scope="local"><?xm-replace_text TOC Structure?></xref> 
+		</li> 
+		<li id="li_49B095EA614D47AE841064D99AEDE454"><xref
+		  href="xmetal_style.xml#concept_6C6C89793F3D45C4A1EB8CDBBF13EC33/section_A8A3CCCE473B428DA2E0C4973CA616D5"
+		  format="dita" scope="local"><?xm-replace_text Tasks?></xref> 
+		</li> 
+		<li id="li_FA0E8EE997C44964B088E7E5206DD95C"><xref
+		  href="xmetal_style.xml#concept_6C6C89793F3D45C4A1EB8CDBBF13EC33/section_91BFDE70794840B0B40A2ACC750CB24A"
+		  format="dita" scope="local"><?xm-replace_text Body Elements?></xref> 
+		</li> 
+		<li id="li_5BE6BC5654644BAC9842DBBA40977ECF"><xref
+		  href="xmetal_style.xml#concept_6C6C89793F3D45C4A1EB8CDBBF13EC33/section_0D0F4EDB8E7B48B1B8B75DC736F55394"
+		  format="dita" scope="local"><?xm-replace_text Tables and Field Descriptions?></xref>
+		  
+		</li> 
+		<li id="li_CCB95D2D055143B5B6E87E75795C7333"><xref
+		  href="xmetal_style.xml#concept_6C6C89793F3D45C4A1EB8CDBBF13EC33/section_1BA5D2FF918A48C1868537B7FE9E53A3"
+		  format="dita" scope="local"><?xm-replace_text Screenshots and Graphics?></xref>
+		  
+		</li> 
+		<li id="li_22925A46DAD24CF7950C708EFBD894AF"><xref
+		  href="xmetal_style.xml#concept_6C6C89793F3D45C4A1EB8CDBBF13EC33/section_BB363D07A9DD4BFB99E31D285A501047"
+		  format="dita" scope="local"><?xm-replace_text Lists?></xref> 
+		</li> 
+		<li id="li_C73F014417C84D1B819E8D7A74BE60A8"><xref
+		  href="xmetal_style.xml#concept_6C6C89793F3D45C4A1EB8CDBBF13EC33/section_F6EAD7F391A24C1E8769AEFB849B55FF"
+		  format="dita" scope="local"><?xm-replace_text Capitalization?></xref> 
+		</li> 
+		<li id="li_0E8086456C3C4C69AC84BC064B638F6B"><xref
+		  href="xmetal_style.xml#concept_6C6C89793F3D45C4A1EB8CDBBF13EC33/section_99E6852F0FED4968BBDE905157BD8593"
+		  format="dita" scope="local"><?xm-replace_text Quickstarts or Getting Started Pages?></xref>
+		  
+		</li> 
+		<li id="li_FF219F305131458BA459C1443CE29ED9"><xref
+		  href="xmetal_style.xml#concept_6C6C89793F3D45C4A1EB8CDBBF13EC33/section_DCAF08E9AA5146D3ABA9697E434304D5"
+		  format="dita" scope="local"><?xm-replace_text Release Notes?></xref> 
+		</li> 
+		<li id="li_3C6B355DA4D0467E9136294CEF02209A"><xref
+		  href="xmetal_style.xml#concept_6C6C89793F3D45C4A1EB8CDBBF13EC33/section_7248943F84194FA99F68C9213E6FBEE3"
+		  format="dita" scope="local"><?xm-replace_text What's New Page?></xref> 
+		</li> 
+		<li id="li_138B6FF0D78E4499BF1920242E33CC6D"><xref
+		  href="xmetal_style.xml#concept_6C6C89793F3D45C4A1EB8CDBBF13EC33/section_0A21DDDC888C4D73987533D58C624DE4"
+		  format="dita" scope="local"><?xm-replace_text Cross References?></xref> 
+		</li> 
+		<li id="li_CAA03683902E474CB69F685AF4F94B60"><xref
+		  href="xmetal_style.xml#concept_6C6C89793F3D45C4A1EB8CDBBF13EC33/section_649F8AB63EE94AA3B35F27DB0AC5B891"
+		  format="dita" scope="local"><?xm-replace_text File Names?></xref> 
+		</li> 
+	 </ul> 
+	 <note>If you're using 
+		<term>conrefs</term> and other advanced elements that make life easier,
+		feel free to send me some info on how you're using it, and I'll add it here. 
+	 </note> 
+	 <section id="section_AED08C83542A45978361E4501A0C0F6D"> 
+		<title>Content Type</title> 
+		<p>DITA XML provides the structure we need to design information
+		  consistently. Adhere to XMetaL's rules on structuring elements and file
+		  (container) types. When you need to create a new topic, it should be one of
+		  these three: 
+		</p> 
+		<table id="table_83A38F4353DE4FA38C157F57DC7541D1"> 
+		  <tgroup cols="2"><colspec colnum="1" colname="col1"
+			 colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="2.81*"/><thead> 
+				<row> 
+				  <entry colname="col1">Content Type 
+				  </entry> 
+				  <entry colname="col2">Usage 
+				  </entry> 
+				</row></thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Concept 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>The &lt;concept &gt; element is the top-level element for a
+						topic that answers the question "what is?" and "why?" Concepts provide
+						background information that users must know before they can successfully work
+						with a product or interface. Often, a concept is an extended definition of a
+						major abstraction such as a process or function. It might also have an example
+						or a graphic, but generally the structure of a concept is fairly simple. 
+					 </p> 
+					 <p><b>Special Use for Field Descriptions</b> 
+					 </p> 
+					 <p>Context sensitive help often links to the parent concept.
+						Often, readers are looking for definitions of fields in this circumstance.
+						Where appropriate, place field description tables in the concept, under a
+						heading that matches the interface page name. 
+					 </p> 
+					 <p>A concept that includes a procedure should have a separate
+						child Task type that includes only step information. (What to click to
+						accomplish at ask.) 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Task 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Task topics answer "How do I?" questions, and have a
+						well-defined structure that describes how to complete a procedure to accomplish
+						a specific goal. Use the task topic to describe the steps of a particular task,
+						or to provide an overview of a higher-level task. The task topic includes
+						sections for describing the context, prerequisites, actual steps, expected
+						results, example, and expected next steps for a task. 
+					 </p> 
+					 <p>If you have conceptual information for a task, create a
+						parent Concept topic. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Reference 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p> Reference topics document programming constructs or facts
+						about a product. Examples of reference topics include (but are not limited to)
+						product specifications, environmental specifications, equipment lists, parts
+						lists, required tools, language elements, class descriptions, commands,
+						functions, and API information. 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </section> 
+	 <section id="section_BE95FE1538314AAABB005C589BB968A1"> 
+		<title>TOC Structure</title> 
+		<p>Best practices for structuring the TOC, naming concepts and tasks. 
+		</p> 
+		<p><image href="graphics/TOC_structure.png"
+		  id="image_1EBDBF44B84C49C8B25C77C2E9C8355D"><?xm-replace_text Paragraph?></image>
+		  
+		</p> 
+		<ul id="ul_53A324E56B254822AB410C5761D38DF9"> 
+		  <li id="li_06EED9CF6AB148AB830B358E3251D1F5"><b>Parent Concept:</b> Use
+			 headline capitalization, no verbs. Match the UI page name, where possible. 
+		  </li> 
+		  <li id="li_1587F230AA9F45739299764FF7EF48C1"><b>Child Tasks:</b> Use
+			 sentence capitalization. 
+		  </li> 
+		  <li id="li_FEE1138DC1CC40EAB8E1E952052BA907"><b>Breadcrumb:</b>
+			 Optional. Useful for helping a user quickly find a page, without forcing them
+			 to locate or read a task. Breadcrumbs are, in most cases, the only task-type
+			 information allowed in a concept. 
+		  </li> 
+		  <li id="li_9D537ED90047467AA0C28ADDED56EFCC">Consider alphabetizing the
+			 main entries in your TOC, rather than mirroring the layout of the UI. 
+			 <xref
+			  href="http://microsite.omniture.com/t2/help/en_US/reference/admin.html"
+			  format="http" scope="external">Example</xref>. The help system should focus on
+			 quickly finding information. 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_A8A3CCCE473B428DA2E0C4973CA616D5"> 
+		<title>Tasks</title> 
+		<p>In the Task topic, include only information relevant to accomplishing
+		  the task. If you find yourself adding conceptual information, you need a
+		  Concept parent topic. 
+		</p> 
+		<p> In a task, limit the information to navigation, screens, and what to
+		  click to succeed in the procedure. Consider defining your field/options in a
+		  table in the parent concept, not in the task. Users typically look at tasks so
+		  that they can quickly locate where to go or what to click. 
+		</p> 
+		<p><b>Sample Task</b> 
+		</p> 
+		<p><image href="graphics/task.png"
+		  id="image_30DDA0166375452D8BC2C2A5278FAB4A"><?xm-replace_text Paragraph?></image>
+		  
+		</p> 
+	 </section> 
+	 <section id="section_91BFDE70794840B0B40A2ACC750CB24A"> 
+		<title>Body Elements</title> 
+		<p>Elements identify or formats words and paragraphs, to identify them as
+		  products, variables, keywords, field descriptions, and so on. The following
+		  table defines frequently used elements in Marketing Cloud documentation: 
+		</p> 
+		<table id="table_2C289461F73E4361BB55055E0E449A78"> 
+		  <tgroup cols="2"><colspec colnum="1" colname="col1"
+			 colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="3.81*"/><thead> 
+				<row> 
+				  <entry colname="col1">Element Name 
+				  </entry> 
+				  <entry colname="col2">Description 
+				  </entry> 
+				</row></thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"><keyword>keyword</keyword> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Identifies formal solution or product names, such as
+						Analytics, Social, Target, Media Optimizer, Experience Manager, and Marketing
+						Cloud. Example: 
+					 </p> 
+					 <p><image href="graphics/keyword.png"
+						id="image_E05D1DD2064447F8A0E8C3DD8FADDF43"><?xm-replace_text Paragraph?></image>
+						
+					 </p> 
+					 <p><b>Purpose</b>: Enables vendors know that the word should
+						remain in English. No change to formatting. 
+					 </p> 
+					 <p> 
+						<note>Capability names are not wrapped or capitalized. 
+						</note> 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"><wintitle>wintitle</wintitle> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Identifies interface elements, like windows or dialogs, or
+						other user interface elements at the same level of grouping. Includes page
+						names, report names, wizard titles, wizard page titles, and window pane titles.
+						Example: 
+					 </p> 
+					 <p><image href="graphics/wintitle.png"
+						id="image_440331862B57401AB2DBC68FA7585CDC"><?xm-replace_text Paragraph?></image>
+						
+					 </p> 
+					 <p>Use instead of 
+						<term>uicontrol</term> inline. 
+					 </p> 
+					 <p> 
+						<b>Examples</b>: ASI Slots, Code Manager, Segment Builder,
+						Fallout Report. (Include 
+						<term>report</term> where appropriate). 
+					 </p> 
+					 <p><b>Purpose</b>: So that localization can identify a formal
+						UI term. No change to formatting. 
+					 </p> 
+					 <p>Do not use for metric names. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"><uicontrol>uicontrol</uicontrol> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Use around interface controls (fields, options) primarily in
+						procedures, where user action is required. Changes output to 
+						<b>bold</b>. 
+					 </p> 
+					 <p>Example: 
+					 </p> 
+					 <ol id="ol_B711EA96F1AC4496AB44D655EB6B3CD2"> 
+						<li id="li_95D38154A7BC49E1A5536B51B9F2E88A">Click 
+						  <uicontrol>Upload</uicontrol>, then click 
+						  <uicontrol>Save</uicontrol>. 
+						</li> 
+					 </ol> 
+					 <note>Menucascade is preferable for navigation breadcrumbs. 
+					 </note> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry
+					colname="col1"><menucascade><uicontrol>menucascade</uicontrol><uicontrol>abc</uicontrol></menucascade>
+					 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Use for navigation breadcrumbs. 
+					 </p> 
+					 <p><image href="graphics/menucascade.png"
+						id="image_BA8F841EB0784A8A85C9A7B98F721325"></image> 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"><varname>varname</varname> 
+				  </entry> 
+				  <entry colname="col2">For analytics 
+					 <varname>variables</varname>. (Output is italic.) 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">codeblock 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <codeblock>For code on a separate line.</codeblock> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">codeph 
+				  </entry> 
+				  <entry colname="col2">Inline code. Use when the 
+					 <codeph>code should remain</codeph> in the paragraph. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">draft-comment 
+				  </entry> 
+				  <entry colname="col2">Hides text from output. Useful to remind
+					 yourself about needed work in a topic.
+					 <draft-comment>Draft content here.
+					 </draft-comment> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"><filepath>filepath</filepath> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Used for URLs and file names, including: 
+					 </p> 
+					 <ul id="ul_742BBEFBD1E24F0A852070FB7B1FFCC7"> 
+						<li id="li_E1611C675FE54089AF71664E8C0E062B">File types, such
+						  as 
+						  <filepath>code.js</filepath> and 
+						  <filepath>filename.pdf</filepath> 
+						</li> 
+						<li id="li_4BB05011D2904E3E96F9C756E92E01F8">URLs, such as 
+						  <filepath>marketing.adobe.com</filepath> 
+						</li> 
+						<li id="li_C6683B9C91C14E0B8D0B11654A5612CD">Explorer paths,
+						  such as 
+						  <filepath>c:\programs\install</filepath> 
+						</li> 
+					 </ul> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">image 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Insert an image only when the image provides relevant,
+						useful information. 
+					 </p> 
+					 <p>Best practices: 
+					 </p> 
+					 <ul id="ul_DCCD356FC0EA4ACD86ADE0B96A311E08"> 
+						<li id="li_A5E53EACFF9C4EB1B92305CEC1244DFB">Always embed
+						  (wrap) 
+						  <term>image</term> in a 
+						  <term>p</term>. 
+						</li> 
+						<li id="li_4296CF1FB575457FADD09459D32E39B1">For images in
+						  steps, wrap them in 
+						  <term>step result</term> or 
+						  <term>info</term> element after command (<term>cmd</term>).
+						  
+						</li> 
+					 </ul> 
+					 <p>Example structure: 
+					 </p> 
+					 <p><image href="graphics/image.png"
+						id="image_26CBE956546248ED9CC25DB6A14E3584"><?xm-replace_text Paragraph?></image>
+						
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">note 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Adds a formatted Note element. 
+					 </p>
+					 <note>Note example
+					 </note> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"><term>term</term> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Italics for a term. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">ul, ol 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p><term>ul</term> for bullets. No need to add para around or
+						in lists. 
+					 </p>
+					 <ul id="ul_D71FFCA4FF3F499281E9A06F1A8A6AD7">
+						<li id="li_2C84B795D290429BB26EF653E72FC5C2">UL
+						</li>
+						<li id="li_EDE6B5FCB4934E329CD8D74C5A216F59">UL
+						</li>
+					 </ul> 
+					 <p><term>ol</term> for numbered lists outside of the 
+						<term>Task</term> topic type. 
+					 </p>
+					 <ol id="ol_B47CFC999E5E433D98ED989D38F8729B">
+						<li id="li_3EF28505CB0B4EF6AC972F18B4E5EC58">OL
+						</li>
+						<li id="li_C281E686B05A441A8D58C7C21E348EF4">OL
+						</li>
+					 </ol> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">xref 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Use 
+						<menucascade><uicontrol>Insert</uicontrol><uicontrol>Link</uicontrol></menucascade>
+						to access links. 
+					 </p> 
+					 <p>See 
+						<xref
+						 href="xmetal_style.xml#concept_6C6C89793F3D45C4A1EB8CDBBF13EC33/section_0A21DDDC888C4D73987533D58C624DE4"
+						 format="dita" scope="local"><?xm-replace_text Cross References?></xref>. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">F8 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Select text then press F8 to comment (hide) the text from
+						output. 
+					 </p>
+					 <p><!--commented text-->
+					 </p>
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">stepresult 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Use after a step in a task, when you need to provide
+						information that results from the action taken in the numbered step. Insert a 
+						<term>p</term> within 
+						<term>stepresult</term>. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">info 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>User after a step in a task for information that is relevant
+						to the step. Insert a 
+						<term>p</term> within 
+						<term>info</term>. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">shortdesc 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Use as an abstract that defines the topic or, in some cases,
+						the topic name. It is the purpose or theme of the topic. Examples: 
+					 </p> 
+					 <p><b>For Concepts / Definitions</b> 
+					 </p> 
+					 <p><b>Topic title:</b> Custom Events Report 
+					 </p> 
+					 <p>Shortdesc: 
+						<i>The conversion actions on your site that you want visitors
+						  to complete. These actions might be a registration, a subscription, a lead form
+						  completion, a chat initiation, a purchase, a booking, or a finished survey.</i>
+						
+					 </p> 
+					 <p><b>For Tasks</b> 
+					 </p> 
+					 <p><b>Task title:</b> Run a Custom Events report 
+					 </p> 
+					 <p> 
+						<i>Steps that describe how to run a Custom Events during
+						  implementation in ad hoc analysis.</i> 
+					 </p> 
+					 <p>Try to include useful information about the task, such as
+						when or why the user must perform the task. In other words, avoid short
+						descriptions that only repeat the task name. 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </section> 
+	 <section id="section_0D0F4EDB8E7B48B1B8B75DC736F55394"> 
+		<title>Tables and Field Descriptions</title> 
+		<p>Example of a definitions page: 
+		</p> 
+		<p><image href="graphics/field_description_table.png"
+		  id="image_B76664D199CF44BD98D727C5E8BA057A"></image> 
+		</p> 
+		<p>In XMetaL, click 
+		  <menucascade><uicontrol>Table</uicontrol><uicontrol>Insert
+				Table</uicontrol></menucascade>. 
+		</p> 
+		<p>Enable 
+		  <uicontrol>Insert Header</uicontrol>. 
+		</p> 
+		<p>No para tag is necessary for one paragraph in a cell. Necessary when
+		  two or more paras are present. 
+		</p> 
+		<p>Table headings: 
+		  <i>Element</i> and 
+		  <i>Description.</i> 
+		</p> 
+		<p><xref
+		  href="http://microsite.omniture.com/t2/help/en_US/reference/classification_rule_definitions.html"
+		  format="http" scope="external">Field Descriptions Example</xref> 
+		</p> 
+	 </section> 
+	 <section id="section_1BA5D2FF918A48C1868537B7FE9E53A3"> 
+		<title>Screenshots and Graphics</title> 
+		<p>Insert the 
+		  <term>image</term> element. They work best wrapped in 
+		  <term>p</term> elements. 
+		</p> 
+		<p>Capture settings: 
+		</p> 
+		<ul id="ul_C788F2B70D6B491DAFB45D31032142CB"> 
+		  <li id="li_A6C5D3B20168463EB4D3788AF04095F7">Create a lowercase 
+			 <i>graphics</i> folder in your project for storage. 
+		  </li> 
+		  <li id="li_63734894254948CCABFC6901661FB794">If your image exceeds 672,
+			 reduce to that value. 
+		  </li> 
+		  <li id="li_1B3361B1F44F4E27AC9BAB9E853C1661">1 pt gray border, if
+			 necessary. 
+		  </li> 
+		  <li id="li_36CF95436B9041A4867FA7459331F3BA">10% fade on edge effects
+			 (right and bottom), where appropriate. 
+		  </li> 
+		</ul> 
+		<p>For process graphics, ensure that an Illustrator version exists. Send
+		  with the output when localizing. 
+		</p> 
+		<p><xref href="https://icons.corp.adobe.com/apps/athena/#/cloud-ui"
+		  format="https" scope="external">Cloud UI Icons</xref> 
+		</p> 
+	 </section> 
+	 <section id="section_BB363D07A9DD4BFB99E31D285A501047"> 
+		<title>Lists</title> 
+		<ul id="ul_F6E54CD57BBC42A28B3E5537BB308C23"> 
+		  <li id="li_BEF3BF9954854F698B0AA150C6C579B3">Keep parallel and use (or
+			 don't use) punctuation consistently. 
+		  </li> 
+		  <li id="li_A2363E0137AF433BA2EFBA65698BD466">No need to wrap ul with a
+			 para tag. 
+		  </li> 
+		  <li id="li_DA5421C1FA824C41A015285D97D0DD21">No need for para tags in
+			 li. 
+		  </li> 
+		</ul> 
+		<p><image href="graphics/lists.png"
+		  id="image_937D64A8019343ABA41E09D15AD1D451"><?xm-replace_text Paragraph?></image>
+		  
+		</p> 
+	 </section> 
+	 <section id="section_F6EAD7F391A24C1E8769AEFB849B55FF"> 
+		<title>Capitalization</title> 
+		<p>Use standard sentence and heading styles. Capitalize metrics like
+		  fields when used as a proper noun. For example: 
+		</p> 
+		<ul id="ul_32B6E0CE23754D88A69314FE3841C5BE"> 
+		  <li id="li_8D44E525EF744BA3B95B85BC4BC8BE64">The Page Views metric
+			 (proper noun, no element wrap needed). 
+		  </li> 
+		  <li id="li_60410B1CD9F14B6B9A2C151D32BB2235">"The Page Views metric
+			 displays page views for the selected..." 
+		  </li> 
+		  <li id="li_A4A25ED4FC75440F8BE3B6C16A8945CD">Capitalize interface items
+			 for clarity, even if the interface item is not capitalized (but should be).
+			 Example: Use "Click 
+			 <uicontrol>Send to Email</uicontrol>" even if the UI says 
+			 <uicontrol>Send to email</uicontrol>. 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_99E6852F0FED4968BBDE905157BD8593"> 
+		<title>Quickstarts or Getting Started Pages</title> 
+		<p>Customers like to see a Getting Started topic for products. 
+		</p> 
+		<p><xref href="http://microsite.omniture.com/t2/help/en_US/reference/"
+		  format="http" scope="external">Example</xref> 
+		</p> 
+	 </section> 
+	 <section id="section_DCAF08E9AA5146D3ABA9697E434304D5"> 
+		<title>Release Notes</title> 
+		<p><xref href="http://microsite.omniture.com/t2/help/en_US/whatsnew/"
+		  format="http" scope="external">Located here</xref> 
+		</p> 
+		<p>We need to get all products represented on the Release Notes page. The
+		  document provides a standard table for features, and a list of fixes 
+		</p> 
+		<ul id="ul_276B1AC7EB2D4AFC8B46F9D8C51EDC17"> 
+		  <li id="li_42DFCA5237F8441AB79BE7C8BD839A89">Section name for each
+			 capability 
+		  </li> 
+		  <li id="li_E6F545EA478F4037BF5B0BAD601CBEBD">Table for new feature 
+		  </li> 
+		  <li id="li_0353B48CDCC94D08810BFAF237B73F72">List for fixes 
+		  </li> 
+		  <li id="li_C4C29FAC712C40528ADB730DCDDF660D"> Link to your guide's
+			 What's New page 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_7248943F84194FA99F68C9213E6FBEE3"> 
+		<title>What's New Page</title> 
+		<p>The What's New page is where you provide robust new feature
+		  information. Ideal to use as the draft doc in a beta. 
+		</p> 
+		<ul id="ul_B41F3BBC9CEC4B76A7BDA4D96E6267D2"> 
+		  <li id="li_4BE0EE11DA114A9284028EA3F362B019">Use a parent Concept page
+			 with a URL that never changes. 
+		  </li> 
+		  <li id="li_02D1499444BF4AED873BE01C8C334506">Use child pages for
+			 release versions. This is where 
+		  </li> 
+		</ul> 
+		<p>A cumulative list of release notes should go at the end of your help
+		  (to not be in the way up front when you build PDF). 
+		</p> 
+	 </section> 
+	 <section id="section_0A21DDDC888C4D73987533D58C624DE4"> 
+		<title>Cross References</title> 
+		<table id="table_8E8755F7C6D347F6A5020AC98DE5671E"> 
+		  <tgroup cols="2"><colspec colnum="1" colname="col1"
+			 colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="2.22*"/><thead> 
+				<row> 
+				  <entry colname="col1">Item 
+				  </entry> 
+				  <entry colname="col2">Description 
+				  </entry> 
+				</row></thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1">Cross reference 
+				  </entry> 
+				  <entry colname="col2">Links to an internal xml file in your
+					 project. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">Weblink 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Use the 
+						<filepath>index.html?f=filename</filepath> format so that
+						localized URLs resolve. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">Release Notes 
+				  </entry> 
+				  <entry colname="col2">All xrefs in the 
+					 <xref
+					 href="http://microsite.omniture.com/t2/help/en_US/whatsnew/" format="http"
+					 scope="external">DMa release notes</xref> need to be weblinks. 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </section> 
+	 <section id="section_649F8AB63EE94AA3B35F27DB0AC5B891"> 
+		<title>File Names</title> 
+		<p>Please keep them lowercase, brief, and predictable. Pattern them after
+		  the UI page name, not the a task name (which inevitably changes frequently. 
+		</p> 
+		<p>Prepend 
+		  <filepath>t_</filepath> for task and 
+		  <filepath>r_</filepath> before reference. No need for 
+		  <filepath>c_</filepath> before concept. 
+		</p> 
+		<p>Examples: 
+		</p> 
+		<p><image href="graphics/filenames.png"
+		  id="image_918BAA6035964FC299541C6EF4386BAC"><?xm-replace_text Paragraph?></image>
+		  
+		</p> 
+	 </section> 
+  </conbody>
+</concept>

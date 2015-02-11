@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_E3D0FEC81E1F4987B39CC467F19FFCFF">
+  <title>Pathing Reports</title>
+  <shortdesc> A group of reports based on path analysis. Technically, 
+	 <i>pathing</i> means to move from one page name to another (from one value
+	 to another). 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>If you need to know the order in which values are collected, then you
+		need to enable pathing for the variable collecting those values. Pathing is
+		enabled by default for pages. Pathing is not enabled for any props by default,
+		because it is only appropriate in certain cases. Contact Customer Care to
+		enable pathing on a prop. 
+	 </p>
+    <note>In Ad Hoc Analysis, when you enable classifications on a prop,
+		pathing metrics become available for all the classifications set up for the
+		enabled prop. 
+	 </note>
+    <p>
+      <b>Example - Pathing on Site Sections</b>
+    </p>
+    <p>Enabling pathing for the 
+		<varname>s.channel</varname> variable allows you to track how site
+		visitors move between Site Sections (as the value changes). 
+	 </p>
+    <p>
+      <image href="graphics/path_sections.png" id="image_6668FB107D704B1F8F7CD83529ACC18F"></image>
+    </p>
+    <p>Pathing is then available in various paths reports, such as 
+		<wintitle>Next Site Section Flow</wintitle>, which displays how visitors
+		move through page groups, or sections of your site. 
+	 </p>
+    <p>
+      <image href="graphics/paths_report.png" id="image_C7E09F26E3F745E48FF56DE3F95B0849">
+        <?xm-replace_text Paragraph?>
+      </image>
+    </p>
+    <p>
+      <b>Example - Pathing on Searches</b>
+    </p>
+    <p>This same concept of going from one value to another value applies to
+		other traffic variables as well, including 
+		<varname>s.props</varname>. For example, if you enable pathing for your
+		Internal Search Term 
+		<varname>s.prop</varname>, you could see the path visitors take through
+		search terms. 
+	 </p>
+    <p>
+      <b>Example - Pathing per Login Status</b>
+    </p>
+    <p>You might want to know how people path through your site based on a
+		visitor's log-in status. To see this information you would not look at the
+		pathing reports for login status, because they would show you how visitors
+		changed values in that report, or how visitors might have changed from
+		logged-in to logged-out. Instead, concatenate the segment value with the 
+		<varname>s.pageName</varname> variable, and then path that resultant
+		variable. Here is sample code for page pathing per member status: 
+	 </p>
+    <codeblock outputclass="syntax javascript">s.pageName=“Home Page”;
+s.prop18=“Gold”; // Member Status
+s.prop19=s.prop18 + “:” + s.pageName;</codeblock>
+    <p>Then, enable pathing for 
+		<varname>s.prop19</varname> to see how members path through pages. 
+	 </p>
+    <note>If you perform ad hoc analysis, you can segment page paths without
+		the need to concatenate segment values, and apply any segment to pathing
+		reports. 
+	 </note>
+  </conbody>
+</concept>

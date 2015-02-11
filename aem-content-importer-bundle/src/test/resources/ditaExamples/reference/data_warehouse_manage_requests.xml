@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_A1C58553513A41BCA6122283311B4A52"> 
+  <title>Manage data warehouse requests</title> 
+  <shortdesc>The Request Manager lets you prioritize, edit, cancel, and
+	 duplicate data warehouse requests. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta content="Analytics" name="solution"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p><menucascade><uicontrol>Data Warehouse &gt; Request
+			 Manager</uicontrol></menucascade> 
+	 </p> 
+	 <table id="table_3E018168377A422B87238A69E326F027"> 
+		<tgroup cols="2"><colspec colnum="1" colname="col1"
+		  colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="4.28*"/><thead> 
+			 <row> 
+				<entry colname="col1">Action 
+				</entry> 
+				<entry colname="col2">Description 
+				</entry> 
+			 </row></thead> 
+		  <tbody> 
+			 <row> 
+				<entry colname="col1">Prioritize 
+				</entry> 
+				<entry colname="col2">You can drag and drop scheduled reports to
+				  change their priority. 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Edit Schedule 
+				</entry> 
+				<entry colname="col2">Lets you specify advanced delivery options
+				  such as 
+				  <ul id="ul_ACCA43EBD90841C39A21E337C45D77BC"> 
+					 <li id="li_F1F71A7CB5944C338D56B1F094CBA6A1">Report Options:
+						Report format, Report contents, Additional Documents, Report Destination
+					 </li> 
+					 <li id="li_7D325262422C40C0A95D87A1457CCC62">Schedule Options:
+						Delivery Frequency, End Delivery Options 
+					 </li> 
+				  </ul> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Duplicate 
+				</entry> 
+				<entry colname="col2">Copies the request and drops you back into
+				  the Data Warehouse Request interface where you can edit it further. 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Cancel 
+				</entry> 
+				<entry colname="col2">Cancels the request. 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Search by Report Name or Login 
+				</entry> 
+				<entry colname="col2">Enter the term or login ID you want to search
+				  on. 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+  </conbody>
+</concept>

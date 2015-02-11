@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_E3D0FEC81E1F4987B39CC467F19FFCFF">
+  <title>Internet Average</title>
+  <shortdesc>The average value for a given statistic, taken across thousands of
+	 business web sites. It provides a baseline against which site data is compared.
+	 Analytics uses the Internet Average for all reports in the Technology
+	 Section, as well as the Search Engines, Countries, Languages, and Domains
+	 reports.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="subtopic" content="Glossary" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p></p>
+  </conbody>
+</concept>

@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_47D47E16051D4EF398D91FD84C07645D" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Test an Email Image Adbox</title>
+  <shortdesc class="- topic/shortdesc ">Dynamically test images in email, and
+	 even change those images on the fly when someone opens their email. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <context id="context_BD7D96370EE44AF98B97F550767A16B1" class="- topic/section task/context ">
+      <p class="- topic/p ">By running a self-optimizing campaign on images in
+		  an email, early responders to your email can influence what delayed email
+		  openers see in their email. Redirectors can also be used in emails to track
+		  clicks and dynamically control which landing page people reach. 
+		</p>
+      <p class="- topic/p ">Email image testing is achieved through using
+		  modified versions of adboxes. Since email clients do not allow cookies to be
+		  set, a unique identifier must be generated for each email. This number is
+		  appended to the adbox URL and to any redirectors used in the email to track
+		  clicks from the email. 
+		</p>
+      <p class="- topic/p ">
+        <xref href="http://marketing.adobe.com/resources/help/en_US/tnt/pdf/TTemailCampaignSetup.pdf" scope="external" format="html" class="- topic/xref ">Download a How-To Document
+			 about Email Testing</xref>
+      </p>
+      <p class="- topic/p ">
+        <b class="+ topic/ph hi-d/b ">Sample code for an email image adbox:</b>
+      </p>
+      <p class="- topic/p ">
+        <codeph class="+ topic/ph pr-d/codeph ">&lt;img src="http://&lt;<b class="+ topic/ph hi-d/b ">clientcode</b>&gt;.tt.omtrdc.net/m2/​<b class="+ topic/ph hi-d/b ">clientcode</b>/ubox/​<b class="+ topic/ph hi-d/b ">image</b>?mbox=​<b class="+ topic/ph hi-d/b ">email_Header</b>&amp;mboxDefault=​<b class="+ topic/ph hi-d/b ">http%3A%2F%2Fwww.domain.com%2Fheader.jpg</b>&amp;​ 
+			 <b class="+ topic/ph hi-d/b ">mboxXDomain=disabled</b>&amp;​<b class="+ topic/ph hi-d/b ">mboxSession=123456</b>&amp;​<b class="+ topic/ph hi-d/b ">mboxPC=123456</b>" border="0" &gt; 
+		  </codeph>
+      </p>
+      <p class="- topic/p ">Where the bold values are specific to you: 
+		</p>
+      <p class="- topic/p ">
+        <ul id="ul_9A94EAD9E0174CF7AC1A846BCF41C179" class="- topic/ul ">
+          <li id="li_526E1AC60AD84A33B439267B0DA4C125" class="- topic/li ">
+            <b class="+ topic/ph hi-d/b ">clientcode</b> is your company's client
+			 code. Find this in your mbox.js listed as 
+			 <codeph>clientCode='yourclientcode'</codeph>. This is all lower case
+			 and has no special characters. 
+		  </li>
+          <li id="li_B3BBC59478DA4DCF96850053AF9D0B3D" class="- topic/li ">
+            <b class="+ topic/ph hi-d/b ">image</b> is the offer type. It is
+			 always "image" for graphic ads; it is "page" for redirectors. 
+		  </li>
+          <li id="li_1EBB2A7968DE474D9CA6168582E783F5" class="- topic/li ">
+            <b class="+ topic/ph hi-d/b ">email_header</b> is the name of the
+			 adbox. 
+		  </li>
+          <li id="li_A1371AC2FA73453FA601A432156DF4FE" class="- topic/li ">
+            <b class="+ topic/ph hi-d/b ">http%3A%2F%2Fwww.domain.com%2Fheader.jpg</b> is the
+			 adbox's default content. This must be an absolute reference and must be URL
+			 encoded. 
+		  </li>
+          <li id="li_132D35A041924D43A4D8FC976EF742C6" class="- topic/li ">
+            <b class="+ topic/ph hi-d/b ">mboxXDomain=disabled</b> tells
+			 Test&amp;Target to not attempt to set a cookie. 
+		  </li>
+          <li id="li_65C0305A651F448B92880FE653BC6BED" class="- topic/li ">
+            <b class="+ topic/ph hi-d/b ">mboxSession=123456 and
+				mboxPC=123456</b> are two values required by Test&amp;Target to merge this
+			 user's profile with their existing profile for your site. 123456 is the unique
+			 identifier generated per email. Dynamically insert this value into every adbox
+			 and redirector URL. This number must be unique for each email sent to each
+			 person. If a weekly email is sent to 1,000 people, 1,000 unique IDs need to be
+			 generated. 
+			 <p class="- topic/p ">The unique identifier per email needs to be
+				assigned to the 
+				<codeph class="+ topic/ph pr-d/codeph ">mboxSession</codeph> and 
+				<codeph class="+ topic/ph pr-d/codeph ">mboxPC</codeph> in each
+				adbox and redirector URL. The recommended format for this identifier is 
+				<codeph class="+ topic/ph pr-d/codeph ">timestamp-NNNNN</codeph>
+				where 
+				<varname class="+ topic/keyword sw-d/varname ">NNNNN</varname> is a
+				random 5-digit number, but any alphanumeric format will work. Some mass e-mail
+				services and any programming language are capable of generating this unique
+				identifier. 
+			 </p></li>
+        </ul>
+      </p>
+    </context>
+  </taskbody>
+  <related-links class="- topic/related-links ">
+    <link href="t_Creating_an_Adbox_for_an_Image.xml#task_286391F93E4A44BE801B67A9A52404FA" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Create an Adbox for an Image?>
+    </link>
+    <link href="t_Using_Flashbox_to_Test_Flash.xml#task_DB0A61C0E1A949A78AB8CDE38B4C572D" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Using Flashbox to Test Flash?>
+    </link>
+  </related-links>
+</task>

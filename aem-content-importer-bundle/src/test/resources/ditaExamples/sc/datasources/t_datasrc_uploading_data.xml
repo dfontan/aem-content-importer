@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_454FD9AD303F44A89FBFCE137C9B44C1">
+  <title>Uploading a Data Sources File</title>
+  <shortdesc>Steps that describe how to upload a data sources file.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Data sources" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <context id="context_28A1732FE58F4709A9B5C5C5F368538E">
+      <p> After you have prepared a Data Sources data file, submit it to Data
+		  Sources for processing. Adobe maintains several Data Sources FTP servers where
+		  you can upload Data Sources files. Remember the following about the Data
+		  Sources FTP servers: 
+		</p>
+      <ul id="ul_8EC41632EF22422596013D0F44CADD3E">
+        <li id="li_BF67A2F1A17845CD9C3C468491221B48">Select FTP Info next to
+			 the Data Source entry in the 
+			 <wintitle>Data Sources Manage</wintitle> tab to see the FTP Host,
+			 Login, and Password information for the data source’s FTP account. Anyone with
+			 access to this information can upload data into your report suite. 
+		  </li>
+        <li id="li_B907418C74934544BABFFAC62EC6231E">For security purposes, FTP
+			 accounts are closed after 30 days of inactivity. 
+		  </li>
+        <li id="li_DD5F937BE944421D891AD3E49D302F42">FTP accounts are data
+			 source-specific. You cannot use one FTP account to upload Data Sources files to
+			 multiple data sources. 
+		  </li>
+      </ul>
+      <p>
+        <b>To upload a data sources file</b>
+      </p>
+    </context>
+    <steps id="steps_7D8792076C95480589869D4CA2825393">
+      <step id="step_7DB6F7664F064BB088A3E9B61B7F1EDA">
+        <cmd>Use an FTP client to send the data to your Data Sources FTP site.
+		  </cmd>
+        <info>
+          <p>(Available in the FTP Info link in the Data Sources Manager). 
+			 </p>
+        </info>
+      </step>
+      <step id="step_E28EEE1570294C78BC299DF30526F910">
+        <cmd>Upload a 
+			 <filepath>.fin</filepath> file to notify Adobe that the Data Sources
+			 file upload is complete. 
+		  </cmd>
+        <stepresult>
+          <p>The 
+				<filepath>.fin</filepath> file must have the exact same name as the
+				Data Sources file, except for the file extension. Adobe does not queue the Data
+				Sources file for processing until you upload the 
+				<filepath>.fin</filepath> file. 
+			 </p>
+          <p>Do not upload the file until all Data Sources files have finished
+				uploading. Otherwise, Data Sources might attempt to process an incomplete file.
+				
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_36DB351535C343DABD31F2D8C17683BF">
+        <cmd>Watch for any messages during the Data Sources file processing. 
+		  </cmd>
+        <info>
+          <p>Data Sources Manager displays any errors that occur during the
+				file processing. 
+			 </p>
+        </info>
+      </step>
+    </steps>
+  </taskbody>
+</task>

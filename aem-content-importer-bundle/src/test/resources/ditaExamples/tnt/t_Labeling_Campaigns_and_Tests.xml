@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_C44ED8D6AB6F4E76B695622B7D2051D3" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Label Campaigns and Tests</title>
+  <shortdesc class="- topic/shortdesc ">Labels provide a way to sort, tag, and
+	 easily find campaigns. Labels determine which campaigns display in the Launch
+	 Pad and the Campaigns List. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <context id="context_E370B16FE7B74F8E90AD12A2CE92DE05" class="- topic/section task/context ">
+      <p class="- topic/p ">Labels are automatically assigned depending on
+		  campaign type, status, if the campaign is live in the last 7 or 30 days,
+		  whether the campaign is added to the Trophy Case, and other factors. 
+		</p>
+      <p class="- topic/p ">The Trophy Case gives you a place to store the
+		  campaigns you find especially interesting. The Trophy Case is available from
+		  the Campaign Launch Pad or the Campaigns list. Campaigns are added to the
+		  Trophy Case by assigning the Trophy Case label. 
+		</p>
+      <p class="- topic/p ">In addition to the preconfigured labels, you can
+		  assign custom labels. You might want to assign labels like "Jim" or "Sandra" to
+		  identify who is responsible for a campaign, or tags like "Holiday Sales" or
+		  "Back-to-school" to group campaigns by purpose. 
+		</p>
+    </context>
+    <steps id="steps_957F05316DE341B7A6466E4534D688AB" class="- topic/ol task/steps ">
+      <step id="step_2CF80E51D23C4644A2610E88D416C7EC" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">To create custom labels, choose 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Edit labels</uicontrol>
+			 from the search bar in the Campaigns list, which brings up a new page where you
+			 can create or rename labels: 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">Type the name of the new label, and then click 
+				<uicontrol class="+ topic/ph ui-d/uicontrol ">create</uicontrol>.
+				When you are finished creating labels, click 
+				<uicontrol class="+ topic/ph ui-d/uicontrol ">Home</uicontrol> to
+				return to the Campaign Home Page. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_1C2D511AAF914D4784CA607EBB880E51" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">To assign a label,
+			 hover over the campaign type next to any campaign (for example, AN Campaign),
+			 click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Add Label</uicontrol>,
+			 then select the label and click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Add</uicontrol>. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">Repeat to add multiple labels.
+				To remove a labels, click the 
+				<uicontrol class="+ topic/ph ui-d/uicontrol ">Delete</uicontrol>
+				icon next to the label. 
+			 </p>
+        </stepresult>
+      </step>
+    </steps>
+    <postreq id="postreq_783FB12B73A94ADEAE4F151392130FB3" class="- topic/section task/postreq ">
+      <p class="- topic/p ">Assigned campaign labels are
+		  displayed just below the campaign name in the Campaign List Page. Once you've
+		  set up labels, you can click 
+		  <uicontrol class="+ topic/ph ui-d/uicontrol ">more labels</uicontrol>
+		  in the search bar and choose the labels corresponding to the campaigns you'd
+		  like to see. Click 
+		  <uicontrol class="+ topic/ph ui-d/uicontrol ">Close</uicontrol> to list
+		  those campaigns. 
+		</p>
+    </postreq>
+  </taskbody>
+  <related-links class="- topic/related-links ">
+    <link href="t_Searching_and_Sorting_Campaigns_and_Tests.xml#task_55D000BCA53E460C97F5138F47B1B8AE" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Searching and Sorting Campaigns and   Tests?>
+    </link>
+    <link href="t_Ignoring_Visits_from_Your_Browser.xml#task_460FEEEE3B7141DEB9162348E6682EB9" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Ignoring Visits from Your Browser?>
+    </link>
+    <link href="c_Monitoring_Campaign_Status.xml#concept_42E2706AD6BF41DDA11D38492E4EB792" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Monitoring Campaign Status?>
+    </link>
+  </related-links>
+</task>

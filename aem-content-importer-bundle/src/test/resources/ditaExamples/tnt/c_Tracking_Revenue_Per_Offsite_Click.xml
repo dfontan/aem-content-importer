@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_425FAED3DD144094A67AADAAD9FB4A46">
+  <title>Track Revenue Per Offsite Click</title>
+  <shortdesc>You can keep track of the revenue for each offsite click. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>
+      <b>Business Case</b>
+    </p>
+    <p>The partner company pays you 10 cents for each click to the partner Web
+		site. You want to track this revenue and see which experience has the highest
+		revenue. 
+	 </p>
+    <p>
+      <b>Implementation</b>
+    </p>
+    <p>Depending on the solution you chose above, either: 
+	 </p>
+    <p>
+      <ul id="ul_320DC5FBFA46411194A5DD20F53451FF">
+        <li id="li_2479A8FD648B465E9F5CD091074AF0D7"> Use the Redirector to 
+		  <xref href="t_Passing_Revenue_Per_Click.xml#task_742EE5B342B44C749B02A945FEB81D83" type="task" format="dita" scope="local">pass Revenue Per Click</xref>. 
+		</li>
+        <li id="li_3B0807265AEF4FDC88763BD44C65B81F"> Use the dummy mbox to pass
+		  the 
+		  <codeph>mboxPageValue</codeph> to the "trackClicks" mbox 
+		  <p><table id="table_822A84095CCA4F529F688D484A37D69A"><tgroup cols="1"><colspec colnum="1" colname="col1" colwidth="*" /><tbody><row><entry colname="col1"><p><codeblock outputclass="syntax html">&lt;script type="text/javascript"&gt;
+
+mboxCreate('dummy', 'mboxPageValue=0.10');</codeblock></p></entry></row></tbody></tgroup></table></p></li>
+      </ul>
+    </p>
+    <p>See also 
+		<xref href="c_Cost_and_Revenue_Reporting.xml#concept_A07BEDC4725F4887B6301C1B9FC3D1C8" type="concept" format="dita" scope="local"><?xm-replace_text Cost and Revenue Reporting?></xref>.
+		Please work with your representative to use this feature. 
+	 </p>
+    <p>
+      <note>The 
+		  <codeph>mboxPageValue</codeph> parameter will report revenue for each
+		  click, even if a visitor clicks several times. To report only one click per
+		  visit, pass the values from the 
+		  <xref href="t_Creating_a_Place_Order_Mbox.xml#task_0036D5F6C062442788BB55E872816D82" type="task" format="dita" scope="local">place order mbox</xref> to the dummy
+		  mbox. Follow the instructions above but substitute 
+		  <codeph>orderConfirmPage</codeph> mbox for the "trackclicks" mbox. Be
+		  sure to pass a unique order id for each order. 
+		</note>
+    </p>
+  </conbody>
+  <related-links>
+    <link href="t_Implementing_Redirector.xml#task_8ED3321CD0064A95A20B05DE446860F1" type="task" format="dita" scope="local">
+      <?xm-replace_text Implement Redirector?>
+    </link>
+  </related-links>
+</concept>

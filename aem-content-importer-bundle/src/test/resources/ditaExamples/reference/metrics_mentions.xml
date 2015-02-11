@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_3A39449EFC4046D585DC380D899E1300">
+  <title>Mentions</title>
+  <shortdesc>A count of each time 
+	 Social records a keyword term being mentioned on the
+	 social web in a post, picture, or video. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Metrics" />
+    </metadata>
+  </prolog>
+</concept>

@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_398B250EC2BD4B24ADF0A6316D1DCF9F" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic concept/concept ">
+  <title class="- topic/title ">Modeling Groups</title>
+  <shortdesc class="- topic/shortdesc "> A modeling group is a set of offers
+	 with similar marketing themes. Modeling Groups connect similar offers so the
+	 models can be more efficient. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody class="- topic/body  concept/conbody ">
+    <p class="- topic/p ">Offers are considered similar if they promote the
+		same type of content. If you have multiple offers that highlight a specific
+		product category but have different messaging or a different look and feel,
+		place them in one modeling group. The model can determine generally which
+		people like this product category quickly, and then make a finer decision about
+		which version of that category content is best to show. Also, when a new
+		creative or offer for that category is added to the campaign and the modeling
+		group, the algorithm can immediately make smart decisions about that offer
+		instead of starting from scratch. 
+	 </p>
+    <p class="- topic/p ">
+      <note class="- topic/note ">An offer can belong to only one modeling
+		  group. 
+		</note>
+    </p>
+    <p class="- topic/p "> Modeling groups perform two functions. 
+	 </p>
+    <p class="- topic/p ">
+      <ol id="ol_7AF70A1F2D274B8CB5DD691F37F64687" class="- topic/ol ">
+        <li id="li_FBA2B0BA6ABF4396971BE0D9C37B09B9" class="- topic/li ">They
+		  make the data richer. 
+		  <p class="- topic/p ">If two offers are very similar, then putting them
+			 in a group allows the system to consider the two options as a single concept in
+			 order to learn about the two options together. 
+		  </p></li>
+        <li id="li_CAD6BD53F8A648A6BC8D40A51517F5E8" class="- topic/li ">Modeling
+		  groups help accommodate changes to offers. 
+		  <p class="- topic/p "> If Target modeled only at each offer level, then
+			 whenever a new offer was added to a campaign the system would not know anything
+			 about the new offer. But if the new offer is put into a group, then anything
+			 already learned for that group is automatically applied to the new offer. As a
+			 result, the system can respond to changes to the campaign without having to
+			 relearn. 
+		  </p></li>
+      </ol>
+    </p>
+    <p class="- topic/p ">When new offers are added to the campaign, they
+		immediately take on the generalized learning for the modeling group and start
+		receiving targeted traffic. Multiple offers in the same modeling group are
+		given the same model score, and targeted traffic is evenly distributed among
+		them. 
+	 </p>
+    <p class="- topic/p "> Modeling groups are highly recommended because they
+		improve the system performance. If an offer is not in a modeling group, the
+		modeling system treats it as its individual modeling group. Also, default
+		content is given its own modeling group. The default content option can also be
+		removed from campaign. 
+	 </p>
+    <!-- <p>
+		For each offer and modeling group, you can set a "value"
+		  for the offer. This weighting is used to show the more valuable items more
+		  often than the low value offers. 
+		
+	 </p>  -->
+    <p class="- topic/p ">
+      <note class="- topic/note ">The goal of the automated decisioning
+		  campaign is not to increase lift for every modeling group. Some modeling groups
+		  may perform better than others. 
+		</note>
+    </p>
+    <p class="- topic/p ">
+      <b class="+ topic/ph hi-d/b "> Best Practices</b>
+    </p>
+    <p class="- topic/p ">
+      <ol id="ol_9EF62C4393ED42748096D4375095C677" class="- topic/ol ">
+        <li id="li_2A3F0C5842E847238B56F0288584B5E4" class="- topic/li "> Offers
+		  should be grouped based on their "content theme" rather than their design.
+		  Modeling groups should map to different products or offerings on your site,
+		  rather than to design themes such as "people", "text-heavy" or "aspirational".
+		  Each modeling group should map to an expected different behavior on the site. 
+		</li>
+        <li id="li_A44FC122F6A54A7D8679AB8CDF4BB188" class="- topic/li "> Use no
+		  more than five to ten active modeling groups per campaign. With each modeling
+		  group you add, the behaviors distinguishing one group from another become more
+		  difficult as the similarity between the modeling groups increases. Sites with
+		  high traffic might be able to support additional modeling groups. 
+		</li>
+      </ol>
+    </p>
+    <p class="- topic/p ">
+      <b class="+ topic/ph hi-d/b "> Modeling Groups FAQs</b>
+    </p>
+    <p class="- topic/p ">
+      <ol id="ol_A63D657FF899450688C8BC028AD7E702" class="- topic/ol ">
+        <li id="li_42DC2F6A39624F11BDA154FC1F23EF39" class="- topic/li "> How
+		  long does it take for the model to learn about new modeling groups? 
+		  <p class="- topic/p "> The system learns about the new modeling groups
+			 when the model runs next (every six hours). Before the system builds a model
+			 for new modeling groups, traffic is delivered randomly to these unknown
+			 modeling groups. 
+		  </p></li>
+        <li id="li_2E7CC3BD41654B999C0F200ECC8BE460" class="- topic/li ">Does the
+		  historical data persist in the reports when a modeling group is deleted from
+		  the campaign? 
+		  <p class="- topic/p "> The offers still show in the reports, but the
+			 modeling group association is lost. These offers are listed as "ungrouped
+			 offers" in the modeling group report. 
+		  </p></li>
+        <li id="li_925F3544A806406AA23C3AD2586AE89D" class="- topic/li "> When an
+		  offer is removed from a modeling group but left in the campaign, does the model
+		  have to relearn about that offer? What happens to the reports? 
+		  <p class="- topic/p ">The model does relearn about the offer, because
+			 the modeling decisions are made at the modeling group level. If the offer is
+			 removed from a modeling group and not put into a new one, that offer is treated
+			 as its own modeling group. The reports do not keep track of historical modeling
+			 group associations at this time. Only the current modeling group is indicated. 
+		  </p></li>
+        <li id="li_5C0A8E85F56D4FD18D1F037B5CD83DB7" class="- topic/li ">If a
+		  modeling group or offer is not getting a lot of traffic, should I delete it?
+		  When should I make that decision? 
+		  <p class="- topic/p "> Generally, it is best to keep all of the options
+			 in the campaign. While an offer or modeling group might not be getting a lot of
+			 traffic, it might be highly predictive for a small set of visitors. The value
+			 outweighs the cost of exploration for these offers, so it is recommended that
+			 you leave all available offers. 
+		  </p></li>
+        <li id="li_4DAA455D8C9F4178AB7D7810B079CE6E"> What happens if I rename an
+		  existing modeling group? Does it merely change the name to the same modeling
+		  group, or does it create a new modeling group and lose all the historical data
+		  for that modeling group? 
+		  <p> Changing the name doesn't do anything to the model, so your data is
+			 safe. If you change the grouping itself (which offers are in which group), then
+			 the traffic allocation going to each modeling group can change. 
+		  </p></li>
+      </ol>
+    </p>
+  </conbody>
+  <related-links class="- topic/related-links ">
+    <link href="c_1_1_Campaign_Priority.xml#concept_B343B8BE8CFC4A5889889A66366528F9" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text 1:1 Campaign Priority?>
+    </link>
+    <link href="c_1_1_Campaign_Entry_Targeting.xml#concept_F6A177F23DED41F28D2B616FD43EBFD9" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text 1:1 Campaign Entry Targeting?>
+    </link>
+    <link href="c_1_1_Optimizing_Metric.xml#concept_3EAF5FFCC5AB40889AD505B184637AEF" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text 1:1 Optimizing Metric?>
+    </link>
+    <link href="c_1_1_Traffic_Requirements.xml#concept_7AC16256BA4D4BCF847972E0B8C6E5DE" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text 1:1 Traffic Requirements?>
+    </link>
+    <link href="c_1_1_Business_Rules.xml#concept_142D81096B134555A729C94B2F2A4278" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text 1:1 Business Rules?>
+    </link>
+    <link href="c_1_1_Success_Metrics.xml#concept_79E5C207A4AF40B1B5DD7A6E386D93A9" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text 1:1 Success Metrics?>
+    </link>
+  </related-links>
+</concept>

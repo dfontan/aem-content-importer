@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_B016789733A94070A9EAB209EEC05262">
+  <title>Dynamic Variables</title>
+  <shortdesc>Dynamic variables are shortened identifiers that correspond to
+	 Analytics variables. Dynamic variables let you copy
+	 values from one variable to another without typing the full values multiple
+	 times in the image requests on your site. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation,Reports" />
+      <othermeta name="subtopic" content="Variables" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>
+      <note>The following information is written primarily for developers
+		  implementing 
+		  marketing reports and analytics. If you have questions about
+		  implementing dynamic variables, your organization's supported users should work
+		  with the appropriate development resources in your organization. You can also
+		  contact Adobe Customer Care. 
+		</note>
+    </p>
+    <p>Dynamic variables are used when capturing the same data (for example,
+		campaign tracking codes) in multiple variables concurrently. This is a common
+		practice in cases where different 
+		reports offer unique and important
+		metrics. For example, capturing internal search keywords in a 
+		<wintitle>Custom Conversion</wintitle> variable and in a 
+		<wintitle>Custom Traffic</wintitle> variable lets you view the 
+		<wintitle>Revenue</wintitle> and the 
+		<wintitle>Weekly Unique Visitors</wintitle> metrics associated with these
+		keywords, respectively 
+	 </p>
+    <p>Dynamic variables are also useful for viewing data under various
+		reporting conditions. A campaign tracking code can be captured in multiple
+		eVars with various allocation and cookie expiration settings. This lets users
+		choose the way they want to attribute conversion metrics to these campaigns. 
+	 </p>
+    <p>A significant benefit of dynamic variables is the ability to capture
+		long strings of data in multiple variables without actually passing the long
+		string repeatedly. Some browsers limit the maximum length of HTTP GET requests
+		(including the Adobe image request). Using dynamic variables ensures that all
+		data is captured by reducing the length of the request to Adobe servers in
+		cases where data is duplicated across several variables 
+	 </p>
+    <p>Dynamic variables are passed by setting a variable to the desired value
+		and then setting other variables to 
+		<codeph>D=[variable abbreviation]</codeph>. For abbreviations for each
+		variable, see 
+		<xref href="r_dynamic_variable_abbreviations.xml#reference_4A05EF91AE6347669A71873770245FC4" format="dita" scope="local"><?xm-replace_text Variable Abbreviations?></xref>. 
+	 </p>
+    <p>In the Adobe image request that occurs on the page view, if you are
+		using dynamic variables to copy the value of 
+		<wintitle>Custom Traffic 1</wintitle> to 
+		<wintitle>Custom Conversion 1</wintitle>, you would see 
+		<codeph>v1=D=c1</codeph>. If eVar1 received a value previously in the
+		request, Adobe's servers dynamically copy the value of 
+		<wintitle>Custom Traffic 1</wintitle> to 
+		<wintitle>Custom Conversion 1</wintitle> during data processing. As a
+		result, the value originally passed using 
+		<wintitle>Custom Traffic 1</wintitle> also appears in the 
+		<wintitle>Custom Conversion 1</wintitle> reports. 
+	 </p>
+    <p>The following information applies to dynamic variable use: 
+	 </p>
+    <ul id="ul_0993914F635B4CCE933BA5BBCCE4F0DE">
+      <li id="li_99ACFC0FFD054AFF8AABCE554DA44A08">Dynamic variables work with
+		  all versions of code. 
+		</li>
+      <li id="li_845E7697CFAC4ED59C6A7A71A5E1DC18">As with all implementation
+		  techniques, Adobe strongly recommends testing dynamic variable implementations
+		  heavily in a development environment before deploying to production. Because
+		  the full strings that are copied are not visible in client-side debugging
+		  tools, review the affected reports to confirm successful
+		  implementation. 
+		</li>
+      <li id="li_34EE2DC0335D446E87F203DAFB694D5D">When copying values between
+		  variables with different maximum lengths, note that copying a value that
+		  exceeds the maximum length of the destination variable causes truncation. For
+		  example, 
+		  <wintitle>Custom Traffic</wintitle> variables have 100-character limits
+		  and 
+		  <wintitle>Custom Conversion</wintitle> variables have 255-characters
+		  limits. When copying a 150-character value from 
+		  <filepath>s.eVar1</filepath> to 
+		  <filepath>s.prop1</filepath> using dynamic variables, this value is
+		  truncated in the 
+		  <wintitle>Custom Traffic</wintitle> report at 100 characters. For more
+		  information on variable limits, see the 
+		  <xref href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_sc_variables" format="http" scope="external">Implementation Guide</xref>. 
+		</li>
+    </ul>
+  </conbody>
+</concept>

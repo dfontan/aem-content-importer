@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_DC73F804485947B8B6556BAE618EA924">
+  <title>Count Clicks in Campaigns</title>
+  <shortdesc>The previous sections explain the technical options to track
+	 clicks. To complete the tracking, add these elements as success metrics in a
+	 campaign. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Each option includes a place where you must name an mbox. Select that
+		name from the 
+		<wintitle>mbox</wintitle> dropdown in the success metrics section of the
+		campaign edit page to select that click tracking as the particular success
+		metric. 
+	 </p>
+  </conbody>
+  <related-links>
+    <link href="c_Tracking_Flash_Content.xml#concept_03A28F6BD0EA47DEAD4008F9EAF3C426" type="concept" format="dita" scope="local">
+      <?xm-replace_text Track Flash Content?>
+    </link>
+  </related-links>
+</concept>

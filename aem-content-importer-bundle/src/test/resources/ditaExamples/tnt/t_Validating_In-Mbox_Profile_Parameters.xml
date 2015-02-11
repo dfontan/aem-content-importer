@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_61A3A6A4907D412996AC18FFF0463FB7" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Validate In-Mbox Profile Attributes</title>
+  <shortdesc class="- topic/shortdesc ">After you associate in-mbox profile
+	 attributes with an mbox, validate the parameters. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <steps id="steps_C29E458DBCBD44AC8804CB820BF07ED6" class="- topic/ol task/steps ">
+      <step id="step_B1939CAE0400471E98F0875132BE67B0" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Mouse over 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Locations</uicontrol>
+			 and click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">List</uicontrol>. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">The parameters are listed beside your mbox.
+				In-mbox profile parameters are at the bottom of the list. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_15377DE1DE974F8E8D0E163626A7234C" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">If the parameters do not appear,
+			 browse to the page with your mbox and refresh the page. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">Return to the my mboxes list page and click 
+				<uicontrol class="+ topic/ph ui-d/uicontrol ">refresh</uicontrol>. 
+			 </p>
+          <p class="- topic/p ">
+            <note class="- topic/note ">Parameters load automatically when the
+				  mboxed page is viewed in a browser. They can also be added dynamically using
+				  the Target interface. 
+				</note>
+          </p>
+          <p class="- topic/p ">
+            <b class="+ topic/ph hi-d/b ">Tip:</b> Use in-mbox profile
+				parameters to target content or add segment filters to reports. Also, you may
+				display profile values directly in an 
+				<xref href="t_Creating_an_HTML_Offer.xml#task_B9CD2E178EAE4EE2AE0F56035A53E5B0" type="task" format="dita" scope="local" class="- topic/xref ">HTML offer</xref>
+				and update in-mbox profile attributes via the HTML offer. 
+			 </p>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links class="- topic/related-links ">
+    <link href="t_Associating_In-Mbox_Profile_Parameters_to_an_Mbox.xml#task_699168D5096B4CAB845B81211A7E44E2" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Associate In-Mbox Profile Attributes with an   Mbox?>
+    </link>
+  </related-links>
+</task>

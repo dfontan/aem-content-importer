@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_689E42D8F96C450DA41C7167C7388198"> 
+  <title>Referrer Type Report</title> 
+  <shortdesc>By tracking and recording the visitors’ referring sites for each
+	 visit, you can determine how visitors found out about your site for each visit.
+	 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Reports"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The list below defines the various types of referrers: 
+	 </p> 
+	 <p><b>Other websites</b>: referrers are recorded when visitors click a link
+		located on a page on another website (not defined as part of your site) and
+		arrive at your website. 
+	 </p> 
+	 <p><b>Search engines</b>: Search engine referrers are recorded when
+		visitors use a search engine to access your site. The referring value must be
+		considered by Adobe to be a search engine, and cannot be a subdomain that is
+		not considered a search engine (e.g. 
+		<filepath>mail.yahoo.com</filepath> is not a search engine since this
+		domain is used for email). 
+	 </p> 
+	 <p> 
+		<uicontrol>Social networks</uicontrol>: The referring value must be
+		considered by Adobe to be a social network. See 
+		<xref
+		 href="http://marketing.adobe.com/resources/kb/en_US/analytics/kb/list-social-networks.html"
+		 format="http" scope="external">List of social networks</xref>. 
+	 </p> 
+	 <p><b>Email</b>: A referring domain is considered as an email referring
+		domain when visitors click an emailed message link containing the protocol 
+		<filepath>imap://</filepath> or 
+		<filepath>mail://</filepath> and arrive at your site. For example,
+		anything coming from 
+		<filepath>http://mail.yahoo.com</filepath> is not counted as an email
+		referrer because the protocol is 
+		<filepath>http://</filepath>. Emails from Outlook are reported in the
+		Typed/Bookmarked line, while any referrer with an HTTP protocol where the
+		domain is a known search engine is reported in the Search Engine line. 
+		  <!--these aren't supposed to track?-->
+	 </p> 
+	 <p><b>Typed/Bookmarked</b>: referrers are recorded when visitors type your
+		site’s URL directly into their browser, or if they access your site by
+		selecting bookmarks. Mobile devices report a referrer type of 
+		<term>typed/bookmarked</term> if there is no referrer on the first hit of
+		the visit. 
+	 </p> 
+	 <p> 
+		<uicontrol>Inside Your Site</uicontrol>: These items are URLs that are
+		tagged by the internal URL filters. These items are not counted as 
+		<term>referrer instances</term> but can be seen when reporting on other
+		metrics. 
+	 </p> 
+	 <section id="section_4D8CE5E111DD48FBBDCF9B5A1F16E92E"> 
+		<title> Referrer Types by Interface</title> 
+		<table id="table_EC7423532C7E44DE97B7FC0321585A2B"> 
+		  <tgroup cols="4"><colspec colnum="1" colname="col1"
+			 colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="1.33*"/><colspec
+			 colnum="3" colname="col3" colwidth="1.17*"/><colspec colnum="4" colname="col4"
+			 colwidth="1.17*"/><thead> 
+				<row> 
+				  <entry colname="col1"> 
+				  </entry> 
+				  <entry colname="col2">Marketing reports &amp; analytics
+					 (SiteCatalyst) 
+				  </entry> 
+				  <entry colname="col3">Ad hoc analytics 
+				  </entry> 
+				  <entry colname="col4">Data warehouse 
+				  </entry> 
+				</row></thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1">Reported referrer types 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <ul id="ul_EFC8E81EC6DF4CC2AC0E290244FD5859"> 
+						<li id="li_686FCAEB04054B9F8A7D2434E8C49F04">Other websites 
+						</li> 
+						<li id="li_C232868230AA4A54958B524F3D8FDA35"> Search engines 
+						</li> 
+						<li id="li_A89BFD0468F74ED7822F64BE4A7332AE"> Social 
+						</li> 
+						<li id="li_C824E6F7F6E748DD827A95B105ADBADD">
+						  Typed/Bookmarked 
+						</li> 
+					 </ul> 
+					 <p> This report displays only two predefined metrics: Instances
+						and Unique Visitors. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <ul id="ul_FD81EB3C1BD949A39C5A9E9688D25271"> 
+						<li id="li_6099E7E03F3843D484808258A332BBE9">Other websites 
+						</li> 
+						<li id="li_5AABC02DA7964D578BF8404DA819245D"> Search engines 
+						</li> 
+						<li id="li_B18907AC7FA1429A893B57634EB7DC6F"> Social 
+						</li> 
+						<li id="li_7674B67897994E1FA99BCD9B604BCB6E">
+						  Typed/Bookmarked 
+						</li> 
+					 </ul> 
+				  </entry> 
+				  <entry colname="col4"> 
+					 <ul id="ul_C37ADBEC31D04295BF5CDEA25DB5191A"> 
+						<li id="li_81A642C96C674669BA00B2DACA534B8A">Other websites 
+						</li> 
+						<li id="li_29B9DA9F2AAD46A69886D34D5E6E43D4"> Search engines 
+						</li> 
+						<li id="li_E381EEF111F248F99EE39600D616B7C2"> Social 
+						</li> 
+						<li id="li_596377F4D3C248BEA5191EE2985A2B13">
+						  Typed/Bookmarked 
+						</li> 
+						<li id="li_A7A72D3D6B9A4CCFB43EDA77ABFDEDBC"> Inside your
+						  site 
+						</li> 
+					 </ul> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </section> 
+	 <!--<section id="section_8D08BBDD8EA34249B20A801FC4072C06"> 
+		<title>Referrer Types in Reports</title> 
+		<p>The following table lists how different referrer types are reported,
+		  and when the referrer type value is recorded. 
+		</p> 
+		<table id="table_A3096E366F294049BED6B3527A38D661"> 
+		  <tgroup cols="3"><colspec colnum="1" colname="col1" colwidth="*"/><colspec colnum="2" colname="col2" colwidth="*"/><colspec colnum="3" colname="col3" colwidth="*"/><thead> 
+				<row> 
+				  <entry colname="col1"> 
+					 <b>Referrer Type</b> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <b>Reported As</b> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <b> When Recorded</b> 
+				  </entry> 
+				</row></thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> Other Domains 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p> Other Domains 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>First hit of a visit, or during a visit if a new external
+						referrer is detected. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> Search Engines 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p> Search Engines 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>First hit of a visit, or during a visit if a new search
+						engine referrer is detected. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> Social 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p> Social 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>First hit of a visit, or during a visit if a new social
+						referrer is detected. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> Inside Your Site 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Data warehouse: Inside Your Site 
+					 </p> 
+					 <p> Other interfaces: Typed/Bookmarked</p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p> First hit of a visit only 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> Typed/Bookmarked 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p> Typed/Bookmarked 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p> First hit of a visit only 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> No JavaScript 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p> Typed/Bookmarked 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p> First hit of a visit only 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> Email 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p> Typed/Bookmarked 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p> First hit of a visit only 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> Hard Drive 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p> Typed/Bookmarked 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p> First hit of a visit only 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> Usenet or Newsgroup 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p> Typed/Bookmarked 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p> First hit of a visit only 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </section>-->
+	 <section id="section_B83A3571D64E4E7792712FAF740D7955"> 
+		<title>Notes</title> 
+		<ul id="ul_2E5AC58083934027A27304810449AD37"> 
+		  <li id="li_52F53FDEAD30436BA0467255C34339DF">The referrer, referrer
+			 type, and referring domain are set on the first hit of the visit, or during a
+			 visit when the referrer is external (for example, if a visitor leaves your
+			 site, uses a search engine, then returns to your site before the first visit
+			 expires). These values are set at the same time and persist across the visit. 
+		  </li>
+		  <li id="li_E61BADBA86F5443591E8227524EA3431"> Not all referrer types
+			 are listed on this report. This means that site wide Visits don't match visits
+			 on this report. 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_6C0FCEA9DAF04D97BA056E153B7E4628"> 
+		<title>Report History</title> 
+		<table id="table_9DFA79EC6A5A48648F2FB5418E1752DB"> 
+		  <tgroup cols="2"><colspec colnum="1" colname="col1"
+			 colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="4.87*"/><thead> 
+				<row> 
+				  <entry colname="col1">Date 
+				  </entry> 
+				  <entry colname="col2">Change 
+				  </entry> 
+				</row></thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1">1/16/2014 
+				  </entry> 
+				  <entry colname="col2">Data warehouse was updated to match the
+					 logic used by marketing reports &amp; analytics. Before this date, referrer
+					 type did not persist across the visit. 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </section> 
+  </conbody> 
+</concept> 

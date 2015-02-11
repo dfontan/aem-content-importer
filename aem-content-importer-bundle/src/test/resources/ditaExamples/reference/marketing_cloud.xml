@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_0AA1101AC6074B5FAE92DD420C0FEEA6">
+  <title>Marketing Cloud</title>
+  <shortdesc>The Marketing Cloud is an integrated family of digital marketing
+	 solutions, as well as an intuitive interface for new resources and
+	 capabilities, called core services, for your business. Solutions include:
+	 Reports &amp; Analytics, Ad Hoc Analysis, Data Workbench, Data Warehouse,
+	 Visitor Click Map, and Adobe Report Builder.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>The 
+		<b>Marketing Cloud Exchange</b> is a single destination where you can
+		search, browse, select, pay, and download digital marketing extensions via
+		apps. Partners can submit their applications to the Exchange Marketplace with
+		their description, images, videos and documentation. 
+	 </p>
+  </conbody>
+</concept>

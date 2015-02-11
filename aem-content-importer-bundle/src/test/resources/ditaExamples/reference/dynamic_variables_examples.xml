@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_A17C7B9FB50344A0B69A1784D183FDD8">
+  <title>Examples</title>
+  <shortdesc>Examples of dynamic variables. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation,Reports" />
+      <othermeta name="subtopic" content="Variables" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <codeblock outputclass="syntax javascript">s.eVar7="D=pageName" // captures the pageName value in
+		  eVar7</codeblock>
+    <codeblock outputclass="syntax javascript">s.prop15='D=v50+":"+c6' // concatenates eVar50:prop6 into
+		  prop15</codeblock>
+    <codeblock outputclass="syntax javascript">s.prop5=s.eVar5="D=g" // passes the page URL into both prop5
+		  and eVar5</codeblock>
+    <codeblock outputclass="syntax javascript">s.eVar20="D=v0" // captures the campaign in eVar20</codeblock>
+    <p>Note that the 
+		<codeph>D=[variable]</codeph> value should be in quotes. The 
+		code treats this as a string. The string
+		will be URL encoded when passed into 
+		(as you will see if viewing the request
+		in the 
+		DigitalPulse Debugger or a similar utility). This is
+		normal. Adobe's servers recognize the 
+		<codeph>D=[variable]</codeph> construction and will copy the appropriate
+		value when they encounter this string. 
+	 </p>
+  </conbody>
+</concept>

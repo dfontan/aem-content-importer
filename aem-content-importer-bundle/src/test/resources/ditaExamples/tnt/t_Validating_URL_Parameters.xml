@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_6F612CA1710244EFBD3D44100C7A7438" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Validate URL Parameters</title>
+  <shortdesc class="- topic/shortdesc ">After associating URL parameters with
+	 an mbox, you should validate the parameters. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <steps id="steps_E5494BB592EE4CB48678520AA3D5B881" class="- topic/ol task/steps ">
+      <step id="step_ECD00AB0967548F08642B9CBF6F4FB11" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Mouse over 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Locations</uicontrol>
+			 and click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">List</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_8000C450BC9349F5B4C43041FFAE1552" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Refresh</uicontrol>. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">The URL parameters are listed beside all mboxes
+				on the page you browsed to above. This is also known as "lazy loading." 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_AAA6177B22F5466DBD5C9F15D08AABE5" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Expand the parameter to see the last
+			 10 values loaded. 
+		  </cmd>
+      </step>
+    </steps>
+    <result id="result_5D03ECE246D0457C887D6F2C16665585" class="- topic/section task/result ">
+      <p class="- topic/p ">
+        <b class="+ topic/ph hi-d/b ">Tip:</b> You do not need to load values
+		  to the parameter. You need only the value name. 
+		</p>
+    </result>
+  </taskbody>
+  <related-links class="- topic/related-links ">
+    <link href="t_Associating_URL_Parameters_to_an_Mbox.xml#task_4C531C2C96574F438AF3255EAA4D531C" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Test&Target Debugging Tools?>
+    </link>
+    <link href="t_Targeting_Content_to_URL_Parameters_and_Values.xml#task_1D5BFB0247584B3F839C26DC45BDE174" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Targeting Content to URL Parameters and Values?>
+    </link>
+  </related-links>
+</task>

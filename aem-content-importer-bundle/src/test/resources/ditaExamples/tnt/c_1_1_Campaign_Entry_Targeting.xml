@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_F6A177F23DED41F28D2B616FD43EBFD9" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic concept/concept ">
+  <title class="- topic/title ">Campaign Entry Targeting</title>
+  <shortdesc class="- topic/shortdesc "> Automated decisioning campaigns
+	 support all of the targeting options built into Test&amp;Target. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody class="- topic/body  concept/conbody ">
+    <p class="- topic/p "> Campaign entry can be limited to visitors who meet
+		certain targeting conditions. Entry can also be limited to a percentage of the
+		population. 
+	 </p>
+  </conbody>
+  <related-links class="- topic/related-links ">
+    <link href="c_1_1_Campaign_Priority.xml#concept_B343B8BE8CFC4A5889889A66366528F9" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text 1:1 Campaign Priority?>
+    </link>
+    <link href="c_1_1_Optimizing_Metric.xml#concept_3EAF5FFCC5AB40889AD505B184637AEF" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text 1:1 Optimizing Metric?>
+    </link>
+    <link href="c_1_1_Traffic_Requirements.xml#concept_7AC16256BA4D4BCF847972E0B8C6E5DE" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text 1:1 Traffic Requirements?>
+    </link>
+    <link href="c_1_1_Modeling_Groups.xml#concept_398B250EC2BD4B24ADF0A6316D1DCF9F" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text 1:1 Modeling Groups?>
+    </link>
+    <link href="c_1_1_Business_Rules.xml#concept_142D81096B134555A729C94B2F2A4278" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text 1:1 Business Rules?>
+    </link>
+    <link href="c_1_1_Success_Metrics.xml#concept_79E5C207A4AF40B1B5DD7A6E386D93A9" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text 1:1 Success Metrics?>
+    </link>
+  </related-links>
+</concept>

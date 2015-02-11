@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_185E937F7617488C8284FC7DE47076D9"> 
+  <title>Data Collection HTTP Headers</title> 
+  <shortdesc>HTTP request and response headers are used to collect additional
+	 data beyond what is collected by AppMeasurement. This section describes the
+	 headers used during data collection. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Developer and implementation"/>
+		</metadata>
+  </prolog> 
+  <conbody> 
+	 <section id="section_C1DE3416CCC241A898155C915A01A0FC"> 
+		<title>HTTP Request Headers</title> 
+		<table id="table_84D1F4B54ABE4423A2EBE840C49D3876"> 
+		  <tgroup cols="2"> 
+			 <colspec colwidth="1.00*"/> 
+			 <colspec colwidth="3.37*"/> 
+			 <tbody> 
+				<row> 
+				  <entry> 
+					 <b>Header</b> 
+				  </entry> 
+				  <entry> 
+					 <b>Usage</b> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry>Cookie 
+				  </entry> 
+				  <entry> Reading cookies previously created by our data collection
+					 servers. All of these cookies are prefixed by "s_" like our visitor ID cookie
+					 "s_vi" except for out opt-out cookie "omniture_optout". 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry>User-Agent 
+				  </entry> 
+				  <entry> Used for browser, operating system, and mobile device
+					 detection. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry>X-Device-User-Agent 
+				  </entry> 
+				  <entry> Used as an alternative to User-Agent for correct browser,
+					 operating system, and mobile device detection for some browsers like OperaMini.
+					 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry>X-Original-User-Agent 
+				  </entry> 
+				  <entry> Used as an alternative to User-Agent for correct browser,
+					 operating system, and mobile device detection for some browsers like OperaMini.
+					 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry>X-OperaMini-Phone-UA 
+				  </entry> 
+				  <entry> Used as an alternative to User-Agent for correct browser,
+					 operating system, and mobile device detection for some browsers like OperaMini.
+					 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry>X-Skyfire-Phone 
+				  </entry> 
+				  <entry> Used as an alternative to User-Agent for correct browser,
+					 operating system, and mobile device detection for some browsers like OperaMini.
+					 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry>X-Bolt-Phone-UA 
+				  </entry> 
+				  <entry> Used as an alternative to User-Agent for correct browser,
+					 operating system, and mobile device detection for some browsers like OperaMini.
+					 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry>UA-OS 
+				  </entry> 
+				  <entry> Used as an alternative was to identify the operating
+					 system. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry>UA-Pixels 
+				  </entry> 
+				  <entry> Used as an alternate source for the screen resolution of
+					 the client screen. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry>UA-Color 
+				  </entry> 
+				  <entry> Used as an alternate source for the color depth of the
+					 client screen. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry>X-moz 
+				  </entry> 
+				  <entry> Detecting that the data collection request was made as
+					 part of pre-fetching a webpage. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry>X-Purpose 
+				  </entry> 
+				  <entry> Detecting that the data collection request was made as
+					 the browser was showing a preview of a webpage. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry>Accept 
+				  </entry> 
+				  <entry> Used to identify the image formats supported by the
+					 browser so we know if we need to send back a GIF or WBMP image. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry>Referrer 
+				  </entry> 
+				  <entry> Used as a fallback for getting information about the page
+					 URL the data collection request was made from when it wasn't passed in on the
+					 query-string or when it's different from the value in the query-string. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry>X-Forwarded-For 
+				  </entry> 
+				  <entry> Used to find the correct IP address for the client that
+					 made the data collection request. The IP address is used to generate geographic
+					 region, mobile carrier, and other reports. 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<note>Implementations using dynamic variables have the option of reading
+		  in other HTTP request headers not listed above. 
+		</note> 
+	 </section> 
+	 <section id="section_A9C7035198C84037A21A8033CC408F0E"> 
+		<title>HTTP Response Headers</title> 
+		<table id="table_F36094C526F84E80824D3F8D3E581A56"> 
+		  <tgroup cols="2"> 
+			 <colspec colwidth="1.00*"/> 
+			 <colspec colwidth="3.21*"/> 
+			 <tbody> 
+				<row> 
+				  <entry> 
+					 <b>Header</b> 
+				  </entry> 
+				  <entry> 
+					 <b>Usage</b> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry>Access-Control-Allow-Origin 
+				  </entry> 
+				  <entry> Used to enable support for cross-origin resource sharing
+					 style data collection requests to our servers. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry>Expires 
+				  </entry> 
+				  <entry> Browser caching control. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry>Last-Modified 
+				  </entry> 
+				  <entry> Browser caching control. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry>Cache-Control 
+				  </entry> 
+				  <entry> Browser caching control. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry>Pragma 
+				  </entry> 
+				  <entry> Browser caching control. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry>ETag 
+				  </entry> 
+				  <entry> Browser caching control. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry>Vary 
+				  </entry> 
+				  <entry> Browser caching control. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry>P3P 
+				  </entry> 
+				  <entry> Provides the default or custom P3P policy for the data
+					 collection request. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry>Status 
+				  </entry> 
+				  <entry> Contains "SUCCESS" or "FAILURE" status for a no content
+					 request. Used only when the request specifies that no content should be
+					 returned. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry>Reason 
+				  </entry> 
+				  <entry> Contains the reason for the failure status of a no
+					 content request. Used only when the request specifies that no content should be
+					 returned. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry>Location 
+				  </entry> 
+				  <entry> Used to redirect the client making the data collection
+					 request off to a different URL. An example is our cookie handshake to detect
+					 the ability to set the visitor ID cookie. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry>Content-Type 
+				  </entry> 
+				  <entry> Specifies the type of content sent back to the client
+					 (GIF, text, Javascript, etc). 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry>Content-Length 
+				  </entry> 
+				  <entry> Specifies the size of the content sent back to the
+					 client. 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<note>Other HTTP headers may be set in the response for internal status
+		  monitoring. Some of these headers might be returned to the browser, but it is
+		  not necessary that they receive them. 
+		</note> 
+	 </section> 
+	 <section id="section_2CF682D1F5CE4067A498012C3CF57517">
+	 </section> 
+  </conbody> 
+</concept>

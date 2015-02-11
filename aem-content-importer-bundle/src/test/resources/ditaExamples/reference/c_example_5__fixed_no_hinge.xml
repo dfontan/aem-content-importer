@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_C74FCAA1E1DA4493A4446E3185066D87">
+  <title>Example 5: Fixed/No Hinge</title>
+  <shortdesc>Going back to the information from example 3, we’ll first show
+	 what happens during a breakdown when there’s no 
+	 <wintitle>hinge</wintitle> value set. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Admin tools" />
+      <othermeta name="subtopic" content="Classifications" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <table id="table_8587145F7F134A829882E652C802456D">
+      <tgroup cols="5">
+        <colspec colnum="1" colname="col1" colwidth="*" />
+        <colspec colnum="2" colname="col2" colwidth="*" />
+        <colspec colnum="3" colname="col3" colwidth="*" />
+        <colspec colnum="4" colname="col4" colwidth="*" />
+        <colspec colnum="5" colname="col5" colwidth="*" />
+        <thead>
+          <row>
+            <entry colname="col1">Key 
+				</entry>
+            <entry colname="col2">MyText 
+				</entry>
+            <entry colname="col3">~MyCost 
+				</entry>
+            <entry colname="col4">~MyCost^~id~ 
+				</entry>
+            <entry colname="col5">~MyCost^~value~ 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry colname="col1">Product1 
+				</entry>
+            <entry colname="col2">Text1 
+				</entry>
+            <entry colname="col3">Cost1_mar_fixed 
+				</entry>
+            <entry colname="col4"></entry>
+            <entry colname="col5">3000.00 
+				</entry>
+          </row>
+          <row>
+            <entry colname="col1">Product2 
+				</entry>
+            <entry colname="col2">Text2 
+				</entry>
+            <entry colname="col3">Cost2_mar_fixed 
+				</entry>
+            <entry colname="col4"></entry>
+            <entry colname="col5">2000.00 
+				</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <table id="table_8F43B4D10F9048B7866FE9E57FB08E32">
+      <tgroup cols="3">
+        <colspec colnum="1" colname="col1" colwidth="*" />
+        <colspec colnum="2" colname="col2" colwidth="*" />
+        <colspec colnum="3" colname="col3" colwidth="*" />
+        <thead>
+          <row>
+            <entry colname="col1">~MyCost^~period~ 
+				</entry>
+            <entry colname="col2">~MyCost^~rate~ 
+				</entry>
+            <entry colname="col3">~MyCost^~hinge~ 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry colname="col1">2010/03/01 - 2010/03/31 
+				</entry>
+            <entry colname="col2">fixed 
+				</entry>
+            <entry colname="col3">none 
+				</entry>
+          </row>
+          <row>
+            <entry colname="col1">2010/03/01 - 2010/03/31 
+				</entry>
+            <entry colname="col2">fixed 
+				</entry>
+            <entry colname="col3">none 
+				</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <section id="section_7F5F5970077D4E14A5DC91495E23540D">
+      <title>Result</title>
+      <p>An example of output from the report is shown here: 
+		</p>
+      <p>Period: Mar 2010 
+		</p>
+      <p>Report: Products by Page 
+		</p>
+      <table id="table_9D31F763AECB45029FC22308DFD0D305">
+        <tgroup cols="3">
+          <colspec colnum="1" colname="col1" colwidth="*" />
+          <colspec colnum="2" colname="col2" colwidth="*" />
+          <colspec colnum="3" colname="col3" colwidth="*" />
+          <thead>
+            <row>
+              <entry colname="col1">Products by Page 
+				  </entry>
+              <entry colname="col2">Orders 
+				  </entry>
+              <entry colname="col3">MyCost 
+				  </entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry colname="col1">Product1 
+				  </entry>
+              <entry colname="col2">1000 
+				  </entry>
+              <entry colname="col3">$3000.00 
+				  </entry>
+            </row>
+            <row>
+              <entry colname="col1" outputclass="para_indent1">Home Page 
+				  </entry>
+              <entry colname="col2" outputclass="para_indent1">600 
+				  </entry>
+              <entry colname="col3" outputclass="para_indent1">0 
+				  </entry>
+            </row>
+            <row>
+              <entry colname="col1" outputclass="para_indent1">Shopping Cart 
+				  </entry>
+              <entry colname="col2" outputclass="para_indent1">400 
+				  </entry>
+              <entry colname="col3" outputclass="para_indent1">0 
+				  </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+  </conbody>
+</concept>

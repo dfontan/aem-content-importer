@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_E43599A2019E4D428618343C79E588DA">
+  <title>JavaScript Video Measurement</title>
+  <shortdesc> Video measurement code is placed in the code block in the 
+	 <uicontrol>Video Tracking</uicontrol> section. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Tag management" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Implementation details on measuring video are included in the 
+		<xref href="https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/video/" scope="external" format="html">Measuring Video in Analytics</xref> guide. 
+	 </p>
+  </conbody>
+</concept>

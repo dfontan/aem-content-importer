@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_B24D09BAAE434CDC977D7C37EAEDD5A1">
+  <title>Designated Market Area Report</title>
+  <shortdesc>DMA. 
+	 Segregates the United States
+	 into marketing areas. Internet Service Providers (ISPs) in each market area
+	 supply the American Registry of Internet Names (ARIN) with the IP addresses
+	 they use. Adobe partners with Digital Envoy to receive geo- segmentation data
+	 that matches the IP address a website visitor uses with the geographic city,
+	 state, zip code, and DMA for that IP address.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>
+      <?xm-replace_text Paragraph?>
+    </p>
+  </conbody>
+</concept>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_C62023564BA94591A7109662E20CEC5D" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic concept/concept ">
+  <title class="- topic/title ">Smart Targeter Profile Attributes</title>
+  <shortdesc class="- topic/shortdesc ">Smart targeter profile attributes come
+	 out-of-the-box to provide a variety of targeting functionality. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody class="- topic/body  concept/conbody ">
+    <p class="- topic/p ">Create a script profile attribute with a smart
+		targeter-supported variable. Currently, smart targeting supports the following
+		variable: 
+	 </p>
+    <p class="- topic/p ">
+      <ul id="ul_7317DC84C3134298833BE73ACC6D83F8" class="- topic/ul ">
+        <li id="li_54676A70F7044D2DB89675F420E2A8EB" class="- topic/li ">
+          <xref href="c_Using_Category_Affinity.xml#concept_E51E078F49484B4EA0E52046E6F58E3C" type="concept" format="dita" scope="local" class="- topic/xref ">Category
+			 Affinity</xref>: Determine a user's favorite product category for more relevant
+		  targeting in campaigns. 
+		</li>
+      </ul>
+    </p>
+  </conbody>
+  <related-links class="- topic/related-links ">
+    <link href="c_Using_In-Mbox_Profile_Parameters.xml#concept_D8394323B5EC4E40BADFA03585A1307F" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text In-Mbox Profile Attributes?>
+    </link>
+    <link href="c_Using_Script_Profile_Parameters.xml#concept_8C07AEAB0A144FECA8B4FEB091AED4D2" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Script Profile Attributes?>
+    </link>
+    <link href="c_Profile_Exports.xml#concept_85A8548182E94590BE36FE56B4C019F7" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Profile Exports?>
+    </link>
+  </related-links>
+</concept>

@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_26EBD206909D4E4EB0F4C14D77C52562"> 
+  <title>Menu Customizing</title> 
+  <shortdesc>Menu Customization lets you modify the report menus that a user
+	 sees in marketing reports. You can show or hide specific reports, as well as
+	 move them in different folders across all users. This feature is especially
+	 useful if your organization only uses certain reports and does not wish to
+	 clutter your left hand menu with unused or irrelevant data. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Admin tools"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The menu changes apply to all users who access the report suite.
+		However, users can restore a menu's default configuration while using the
+		report suite. 
+	 </p> 
+	 <section id="section_B0D224DACB914A378902A4E0E1234889"> 
+		<title>Menu Customization Descriptions</title> 
+		<table id="table_E609632569EB499184E56618C2CEF742"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="1.82*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col1">Calendar 
+				  </entry> 
+				  <entry colname="col2">Description 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <wintitle>New Folder</wintitle> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p> Adds a new folder above the currently selected item. Note
+						that you must add at least one report to a folder before the folder is visible.
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <wintitle>Rename</wintitle> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p> Lets you change the name of the currently selected item. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <wintitle>Default Name</wintitle> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p> Restores the default name of the currently selected item. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <wintitle>Toggle Visibility</wintitle> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p> Hides (displays) the currently selected item. Hidden items
+						appear with a gray line pattern in the Menu Customization page. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <wintitle>Delete</wintitle> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p> Removes the currently selected item from the menu. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <wintitle>Restore Defaults</wintitle> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p> Restores the menu to its original state. 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </section> 
+  </conbody> 
+</concept>

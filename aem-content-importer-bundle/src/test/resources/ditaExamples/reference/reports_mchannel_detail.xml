@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_1F454808BF47451C9314D13A9799576E">
+  <title>Marketing Channel Detail - First and Last Touch</title>
+  <shortdesc>These reports provide insight on the specific campaigns or
+	 keywords are most effective on your site. You can use this report to allocate
+	 success metrics and revenue to various channel details, without regard to the
+	 overall channel they are in. For example, you can see how a certain Paid Search
+	 Keyword is comparing against a certain email campaign. As opposed to the 
+	 <wintitle>Marketing Channel Overview Report</wintitle>, this report
+	 resembles a standard 
+	 marketing report. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>
+      <b>Report Properties</b>
+    </p>
+    <ul id="ul_0CB5399F0EAA4951809B26288FA7D7C4">
+      <li id="li_08534310BA7341E6904E15FD7C58B48C">This report runs on rules
+		  defined in marketing channels. See 
+		  <xref href="http://marketing.adobe.com/resources/help/en_US/mchannel/index.html?f=c_channels_rules" format="http" scope="external">Channels and Rules</xref>. 
+		  <p> Specifically, the report uses the 
+			 <uicontrol>Set the channel's value to</uicontrol> part of each rule.
+			 Changing these rules or the how the channel's value is set changes how data in
+			 this report is calculated. See the Marketing Channel processing rules 
+			 <xref href="http://marketing.adobe.com/resources/help/en_US/mchannel/index.html?f=c_faq" format="http" scope="external">FAQ</xref>for more information. 
+		  </p></li>
+      <li id="li_833B989E9A1047E49287FD9F86F95D68">Differences between 
+		  <i>First</i> and 
+		  <i>Last Touch</i> can be located in 
+		  <xref href="http://marketing.adobe.com/resources/help/en_US/mchannel/index.html?f=c_overview" format="http" scope="external">About Marketing Channel Reports</xref>. 
+		</li>
+      <li id="li_444C51A56B104A91A589A8D776EAA6C3">The order of processing
+		  rules is crucial to how Marketing Channels work. Each hit checks criteria at
+		  the top of your processing rules first, then filters down from there. 
+		</li>
+      <li id="li_4FF3372FD68044178D09923A0E64555E">This report can be viewed in
+		  trended and ranked formats. 
+		</li>
+      <li id="li_FE150B5C0F2E489C92BDF26D6B4B982A">This report can use a search
+		  filter to locate specific line items. 
+		</li>
+      <li id="li_C671E718AC6A4D0897F512B8E9F6066C">In addition to various
+		  channels collected by standard methods, 
+		  <xref href="http://marketing.adobe.com/resources/help/en_US/mchannel/index.html?f=c_overview_online_offline" format="http" scope="external">offline data sources</xref> can be used. 
+		</li>
+      <li id="li_CA16D130E0254DDEAEC906E58453252C">You can use 
+		  <xref href="http://marketing.adobe.com/resources/help/en_US/sc/saint/index.html" format="http" scope="external"> SAINT Classifications</xref> in this report,
+		  allowing you to rename and consolidate line items. Details specific to
+		  Marketing Channels can be found 
+		  <xref href="http://marketing.adobe.com/resources/help/en_US/mchannel/index.html?f=t_classifications" format="http" scope="external"> here</xref>. 
+		</li>
+      <li id="li_E5EC4453ED284110A982241C2D77EF83">This report can be broken
+		  down by all other Marketing Channel reports. 
+		</li>
+      <li id="li_EAE651D4A5434ABABC06F191352B702D">You can enable additional
+		  breakdowns for this report using custom subrelations. For additional
+		  information, please have one of your organization's supported users contact
+		  Customer Care to request specific variables be enabled. 
+		</li>
+      <li id="li_5E476C9740044FF7B04A50C16A660841">The following metrics can be
+		  used in this report (depending on organization and report suite settings): 
+		</li>
+      <li id="li_4A6330F7914E43B4941C154896E917C5">
+        <ul id="ul_2E0061C5A6AD4FD2B2271C3D939918CA">
+          <li id="li_CD6476E7E1B942C0AF799D06D4BE0C35">Click-throughs: the
+				number of times the 
+				<varname>s.campaign</varname> variable is defined. 
+			 </li>
+          <li id="li_4017F1125C4F42D8A298CDB0B0A26854"> New Engagements: the
+				number of visitors who have received a new First Touch Channel. 
+			 </li>
+          <li id="li_1444AF8E8ACB4A30935FD5681EEE2484">All standard eCommerce
+				metrics: Revenue, Orders, Units, Carts, Cart Views, Checkouts, Cart Additions,
+				Cart Removals. 
+			 </li>
+          <li id="li_DBCA3718D2B24BA5BA6606B71A1F2CB3">All custom events:
+				Events 1-80, and Events 81-100 if on H22 code or higher. 
+			 </li>
+          <li id="li_444EDE4CF37646C6825162394B44BE6B">Visits and Visitors:
+				availability is dependent on organization and report suite. Contact your
+				Account Manager for additional details. 
+			 </li>
+        </ul>
+        <p>See 
+			 <xref href="http://marketing.adobe.com/resources/help/en_US/mchannel/index.html?f=c_overview_metrics" format="http" scope="external">Metrics</xref> in 
+			 <wintitle>Marketing Channel</wintitle> Help. 
+		  </p>
+      </li>
+    </ul>
+    <note>
+      <wintitle>Marketing Channel</wintitle> reporting is not available in 
+		version 13.5. 
+	 </note>
+  </conbody>
+</concept>

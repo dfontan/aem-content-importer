@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_2657DA0E131545E8A9623CD3312E5FB9">
+  <title>Adobe Analytics for iOS</title>
+  <shortdesc>Analytics for iOS lets you present or email real-time 
+	 trend data on a tablet.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports and analytics" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>
+      <image id="image_B81A9DD7F8EB4EDF95F2E4FB91D5454F" href="graphics/ipad.png" placement="inline"></image>
+    </p>
+    <p>You can view trend data by day, week, or month, or up to 90 days. The
+		clear, simple-to-use interface lets you quickly access and present trend data
+		reports of up to three metrics. 
+	 </p>
+    <p>Download the application from the App Store. If your iPad requires a
+		newer version of the iOS, you can use iTunes to download the update. Always use
+		the latest version of iTunes for best results. 
+	 </p>
+  </conbody>
+</concept>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_4ED2D9C6D554427A85F57DEC3DBF06B9" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic concept/concept ">
+  <title class="- topic/title ">Custom Profile Variables</title>
+  <shortdesc class="- topic/shortdesc "> Custom profile variables are used by
+	 the modeling system to offer a crucial way to provide additional data points
+	 beyond what the modeling system can determine from the page request. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody class="- topic/body  concept/conbody ">
+    <p class="- topic/p ">Any profile attribute passed from an mbox or created
+		in the profile attributes page is automatically included in the training data
+		records. Data passed in via the third-party profile API and via mbox parameters
+		from display mboxes also contribute to the training data. Segments added to
+		automated decisioning campaigns contribute to the training data for that
+		campaign. These methods allow marketers to add data into the system from
+		offline sources, order management systems, and CRM systems. 
+	 </p>
+    <p class="- topic/p "> Marketers can also have a valuable impact on the
+		modeling system by grouping data that the system would otherwise not view as a
+		set. If there are value sets for variables or sets of variables that are known
+		to be valuable for a business, either through offline analysis, data warehouse
+		data, or direct marketing analysis, then these groupings should be saved as
+		profile attributes. These sets can provide valuable information to the model
+		that the model would not collect itself. For example, if a marketing
+		organization considers "luxury loyalists" as people who have purchased more
+		than five times and spent a total of $5,000, then grouping those two data
+		points into a profile attribute or segment means the modeling system considers
+		those two data points as a combined attribute. 
+	 </p>
+  </conbody>
+  <related-links class="- topic/related-links ">
+    <link href="c_Automatic_Profile_Variables.xml#concept_1A7F1C9139E74DAFB562CBAC2C06E38F" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Automatic Profile Variables?>
+    </link>
+    <link href="c_How_Data_Is_Categorized.xml#concept_25C03AD175B84F99AFEA9C1C9B0C555C" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text How Data Is Categorized?>
+    </link>
+  </related-links>
+</concept>

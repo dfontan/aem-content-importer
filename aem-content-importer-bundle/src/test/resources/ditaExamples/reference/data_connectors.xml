@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_CB3BEFDA6CB64BBAAAC8E2B6D151D866">
+  <title>Data Connectors</title>
+  <shortdesc>Adobe Data Connectors provide a complete development ecosystem to
+	 help Data Connectors partners integrate their products and services into the
+	 Adobe Marketing Cloud.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Adobe provides a well-defined 
+		<xref href="https://marketing.adobe.com/developer/en_US/documentation/genesis/c-overview-how-it-works" format="https" scope="external">process</xref> for creating a Data Connectors
+		integration. 
+	 </p>
+  </conbody>
+</concept>

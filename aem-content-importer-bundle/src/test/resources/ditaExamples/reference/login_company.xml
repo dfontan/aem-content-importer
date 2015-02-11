@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_4B8B74CAB16C4B43A62C40EEB0C555B9">
+  <title>Login Company</title>
+  <shortdesc>A login company is a collection of report suites used by your
+	 organization. Some organizations have multiple login companies that apply to
+	 different parts of the organization. This is especially useful for large
+	 organizations that deal with different business units where many report suites
+	 are not applicable to others in the company.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Refer to 
+		<xref href="http://marketing.adobe.com/resources/kb/en_US/analytics/using/multiple-login-companies.html" format="http" scope="external">this article</xref> to find out more about
+		setting up multiple login companies.
+	 </p>
+  </conbody>
+</concept>

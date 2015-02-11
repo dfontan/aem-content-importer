@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_CE749FBDC8684878B42BA1B05C4D0BCF">
+  <title>Counting Content Hierarchies</title>
+  <shortdesc> A common usage of 
+	 <wintitle>content hierarchies 
+	 </wintitle>is to show the different paths visitors have taken from a
+	 certain page, level, and so forth. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p> How Should I track my 
+		<wintitle>Content Hierarchy</wintitle>? You must first understand the
+		reporting requirements for tracking 
+		<wintitle>content hierarchies</wintitle>. If the requirements for
+		tracking the hierarchy are very detailed, often times the hierarchy (hier)
+		variable is recommended. Hierarchies usually require a strict, pre-defined
+		taxonomy where the same child node rarely lives under multiple parent nodes.
+		Consider the following example: 
+	 </p>
+    <p>
+      <wintitle>Global Hierarchy</wintitle>
+    </p>
+    <p> All Sites &gt; Regions &gt; Countries &gt; Language &gt; Category 
+	 </p>
+    <p> In this example, the hierarchy could begin to break down at the
+		language level. If a requirement is to report on overall "English" traffic, you
+		can run into the problem where English appears under USA, England, Australia,
+		and so forth. Hierarchies allow you to only drill down. In order to slice
+		horizontally across multiple hierarchies, the best practice is to use a 
+		<wintitle>custom traffic variable</wintitle> (prop). 
+	 </p>
+    <p> If you want to provide users with the ability to drill down through the
+		site (similar to how users would browse the site) and report on 
+		<wintitle>Unique Visitors</wintitle> at each level of the hierarchy, the
+		hierarchy variable is recommended. 
+	 </p>
+    <p> There are occasions when using both props and the hier variable makes
+		sense. The following is a supported prop for each variable type: 
+	 </p>
+    <table id="table_E960D100DA0F433A94A4B246D6EF0D0A">
+      <tgroup cols="3">
+        <colspec colnum="1" colname="col1" colwidth="*" />
+        <colspec colnum="2" colname="col2" colwidth="*" />
+        <colspec colnum="3" colname="col3" colwidth="*" />
+        <thead>
+          <row>
+            <entry></entry>
+            <entry> Props 
+				</entry>
+            <entry> Hierarchy 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry> Correlations 
+				</entry>
+            <entry> x 
+				</entry>
+            <entry> x 
+				</entry>
+          </row>
+          <row>
+            <entry> Pathing 
+				</entry>
+            <entry> x 
+				</entry>
+            <entry></entry>
+          </row>
+          <row>
+            <entry> Page View 
+				</entry>
+            <entry> x 
+				</entry>
+            <entry> x 
+				</entry>
+          </row>
+          <row>
+            <entry> Unique Visitors 
+				</entry>
+            <entry> x 
+				</entry>
+            <entry> x 
+				</entry>
+          </row>
+          <row>
+            <entry> Classifications 
+				</entry>
+            <entry> x 
+				</entry>
+            <entry></entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </conbody>
+</concept>

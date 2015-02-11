@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_4EA333DFC7FD4E9CA086385A3DA10BE9">
+  <title>Report Schedule and Distribution</title>
+  <shortdesc> Information about scheduling and distributing marketing reports. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports and analytics" />
+      <othermeta name="subtopic" content="Schedule" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>When you schedule a report for delivery in an Adobe Web analytics
+		application, you can use the Scheduling and Distribution tools to view what
+		files have been automatically sent and modify or terminate the deliveries. 
+	 </p>
+  </conbody>
+</concept>

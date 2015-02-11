@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_221343C0D32F47E196924D73AACB4050" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Troubleshoot Offers</title>
+  <shortdesc class="- topic/shortdesc ">Use the information in this topic to
+	 troubleshoot offers that don't work correctly. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <context id="context_723946D08F4E46C0B47F433944F29024" class="- topic/section task/context ">
+      <p class="- topic/p ">If the offer is delivered to the browser as part of
+		  a campaign but doesn't render properly or looks incorrect: 
+		</p>
+      <p class="- topic/p ">
+        <ul id="ul_E23F4AC76B924C67B5819EFFF6D539DD" class="- topic/ul ">
+          <li id="li_E7727878B98D469DB98BA66740803CC6" class="- topic/li "> If
+			 the content of the offer does not look correct when you view it outside of an
+			 mbox (for example, in your editing tool or in test html), validate the .html of
+			 the offer, confirm style sheet references are correct, and check the
+			 JavaScript. 
+		  </li>
+          <li id="li_6DF48F6ED768444CAF70361675E9A568" class="- topic/li "> If
+			 the offer works or looks correct outside the mbox, 
+			 <xref href="t_Validating_an_Mbox.xml#task_4BB8E090CBBF4C56A39BB63BF1ADB964" type="task" format="dita" scope="local" class="- topic/xref ">validate the
+				mbox</xref>. 
+			 <p class="- topic/p "><b class="+ topic/ph hi-d/b ">Tip:</b> Use
+				Firefox "Tools/JavaScript Console" to quickly discover JavaScript errors. Use
+				an on-line HTML validator such as 
+				<xref href="http://validator.w3.org/" scope="external" format="html" class="- topic/xref ">http://validator.w3.org/</xref> to quickly
+				validate HTML. 
+			 </p></li>
+        </ul>
+      </p>
+      <p class="- topic/p ">If the offer is not being delivered to the browser
+		  as part of a campaign: 
+		</p>
+    </context>
+    <steps id="steps_7116CCE0AE0740D1BC010603309B272A" class="- topic/ol task/steps ">
+      <step id="step_B06EF503066045BCA077EFE4232E8F01" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">
+          <xref href="t_Deleting_the_Mbox_Cookie.xml#task_45D48ED5EBBC4C549D682C5CEB49F17B" type="task" format="dita" scope="local" class="- topic/xref ">Delete mbox
+				cookies</xref>, clear cache (history), then close and reopen your browser. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">The browser detects you as a new visitor and
+				displays the new experiences and their offers. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_8534B12412DC43C0896FC604743ED44F" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">If your offer still does not render
+			 correctly, try all of the following. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">
+            <ul id="ul_6488F20C6FED45D181A84A1A02357673" class="- topic/ul ">
+              <li id="li_29C72EDCA41744B1A143BDEA6372A3FA" class="- topic/li ">
+				  Confirm the mbox on your page is properly associated with the expected offer as
+				  part of a campaign. 
+				  <p class="- topic/p ">You can see which campaigns an offer
+					 appears in at the bottom of the offer edit page. 
+				  </p></li>
+              <li id="li_02C7C6C2C05A4196948171058218282C" class="- topic/li ">
+				  Confirm that the campaign is approved. 
+				  <p class="- topic/p ">On the offer edit page (and elsewhere in
+					 the targeting admin interface), approved campaigns appear in green and the word
+					 "ongoing" appears in the right-hand status column. 
+				  </p></li>
+              <li id="li_1D27962202014BB5AC928FF13C0FDE7D" class="- topic/li ">
+				  To see the mbox requests being made and the offer content being returned on
+				  your page, use 
+				  <codeph class="+ topic/ph pr-d/codeph ">mboxDebug=1</codeph> as a
+				  url parameter on the page where you expect the content to appear. 
+				  <p class="- topic/p ">For example: 
+				  </p><p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">http://www.mysite.com?mboxDebug=1</codeph></p><p class="- topic/p "><note class="- topic/note ">You must disable pop-up blockers to
+						see the 
+						<wintitle class="+ topic/keyword ui-d/wintitle ">mboxDebug</wintitle> window. 
+					 </note></p><p class="- topic/p ">Clicking on a link to an mbox in the 
+					 <codeph class="+ topic/ph pr-d/codeph ">mboxDebug</codeph>
+					 pop-up shows the mbox offer response. The offer content should be in the<codeph class="+ topic/ph pr-d/codeph "> document.write</codeph> portion of the
+					 response. If you don't see 
+					 <codeph class="+ topic/ph pr-d/codeph ">document.write</codeph>
+					 and instead see 
+					 <codeph class="+ topic/ph pr-d/codeph ">mboxDefaultOffer</codeph>, then default content
+					 is being shown in this mbox. In this case, verify that your campaign is set up
+					 properly and confirm that all traffic is getting to the campaign. If there is
+					 content in the<codeph class="+ topic/ph pr-d/codeph "> document.write</codeph>
+					 portion but the content does not appear on the page, then it's likely that your
+					 offer content has somehow been incorrectly written. 
+				  </p></li>
+              <li id="li_7012DDE043834CAC8FB1B772D949D6AA" class="- topic/li ">
+				  To confirm you are sending 100% of traffic to the campaign, look on the
+				  campaign edit page to see if any targeting criteria prevents you from receiving
+				  offer content. 
+				  <p class="- topic/p ">Your campaign could have targeting criteria
+					 at the campaign, experience, or mbox level that prevents you from seeing the
+					 offer. 
+				  </p></li>
+              <li id="li_FDFF0965A1804003B4A72CCF14748F86" class="- topic/li ">
+				  Isolate the offer from its page and view it to validate the HTML. 
+				</li>
+              <li id="li_709F2AA29DA340CF8BE1AB90BC2DB01C" class="- topic/li ">
+				  Validate the mbox in which the offer is supposed to appear. 
+				</li>
+              <li id="li_D032A142D7444266B797128071FFD3FE" class="- topic/li ">
+				  Validate the HTML on your page. 
+				  <p class="- topic/p ">Specifically, close any open code tags,
+					 including form tags. 
+				  </p></li>
+              <li id="li_501F80503FE141C3980EA25A0997A869" class="- topic/li ">
+				  Double-check that references to styles are correct. 
+				  <p class="- topic/p ">Incorrect styles can prevent content from
+					 appearing, even if it is actually being delivered. 
+				  </p><p class="- topic/p "><note class="- topic/note ">Use Firefox "Tools/JavaScript
+						Console" to quickly discover JavaScript errors. Use an on-line HTML validator
+						such as 
+						<xref href="http://validator.w3.org/" scope="external" format="html" class="- topic/xref ">http://validator.w3.org/</xref> to quickly validate HTML.
+						
+					 </note></p></li>
+            </ul>
+          </p>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links class="- topic/related-links ">
+    <link href="t_Previewing_the_Offers.xml#task_567B7E4218F14DEB87C250B6E5B0945C" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Preview the Offers?>
+    </link>
+  </related-links>
+</task>

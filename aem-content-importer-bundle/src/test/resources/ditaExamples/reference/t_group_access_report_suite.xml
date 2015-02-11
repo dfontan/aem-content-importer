@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_7A655FB8D217493EA5A8A3094413F050"> 
+  <title>Assign user groups to a report suite</title> 
+  <shortdesc>Steps that describe how to assign user groups to a report suite. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Admin tools"/> 
+		<othermeta name="subtopic" content="Users and groups"/> </metadata>
+  </prolog> 
+  <taskbody> 
+	 <steps id="steps_ABCB0702755746A887CB33C984285889"> 
+		<step id="step_404B55BF499B4C3F99D25D5178503A23"> 
+		  <cmd>Click 
+			 <uicontrol>Analytics</uicontrol> &gt; 
+			 <uicontrol>Admin</uicontrol> &gt; 
+			 <uicontrol>User Management</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_1255EA1A9FB941DFB1AF601523766708"> 
+		  <cmd>Click 
+			 <uicontrol>Report Suites</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_1A897A6CFFDE42D2BCAE7960ACC2F977"> 
+		  <cmd>Select a report suite. 
+		  </cmd> 
+		</step> 
+		<step id="step_82D0D1DB0418490A8B02358D063CCC8F"> 
+		  <cmd>Under 
+			 <uicontrol>Report Suite Permissions Management</uicontrol> page,
+			 select the groups to assign to the report suite: 
+		  </cmd> 
+		  <stepresult> 
+			 <p> 
+				<uicontrol>Available Groups: 
+				</uicontrol>Displays all currently defined groups. Select the
+				desired groups, then click 
+				<uicontrol>Add</uicontrol>. The assigned groups appear in the Group
+				Containing field (on the right). 
+			 </p> 
+			 <p> 
+				<uicontrol>Group Containing:</uicontrol> Displays all groups
+				currently assigned to the report suite. To remove a group, select it, then
+				click 
+				<uicontrol>Remove</uicontrol>. 
+			 </p> 
+		  </stepresult> 
+		</step> 
+		<step id="step_BCB939EF873048DEA6CD13AAAD14D276"> 
+		  <cmd>Click 
+			 <uicontrol>Save Changes</uicontrol>. 
+		  </cmd> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

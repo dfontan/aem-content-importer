@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_7E3B1330673C4AE4941DA55DCF945D13"> 
+  <title> Visitor Click Map</title> 
+  <shortdesc>The visitor click map is an overlay of marketing reports and
+	 analytics that allows you to measure traffic, conversion, and success metrics
+	 within the pages of a website with a visual overlay on the web page. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="subtopic" content="Glossary"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>See 
+		<xref
+		 href="http://marketing.adobe.com/resources/help/en_US/home/index.html#kb-using-installing-clickmap"
+		 format="http" scope="external">Installing Visitor Click Map</xref> and 
+		<xref
+		 href="http://marketing.adobe.com/resources/help/en_US/home/index.html#kb-using-getting-started-with-clickmap"
+		 format="http" scope="external">Getting Started with Visitor Click Map</xref>. 
+	 </p> 
+  </conbody> 
+</concept>

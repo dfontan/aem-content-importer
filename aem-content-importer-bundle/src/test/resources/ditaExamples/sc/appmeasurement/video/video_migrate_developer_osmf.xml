@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_27F33EC8CD9D4C889672183C973E5A76">
+  <title>OSMF Migration Guide</title>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>media</keyword>
+        <keyword>milestone</keyword>
+        <keyword>sdk</keyword>
+        <keyword>video</keyword>
+      </keywords>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Complete the steps in the following list to migrate your video tracking
+		solution to the new integrated solution. After you complete these migration
+		steps, you can recompile and test the solution. Sample implementations are
+		available in these sections: 
+	 </p>
+    <ul id="ul_6A5355C20AB242CDB44F85EA18883D23">
+      <li id="li_C315BB0BDF21452FA9F7C8E10A5A683F">
+        <xref href="video_osmf_dynamic.xml#concept_20417E8BA5FE45D0A2DA8A271669E559" type="concept" format="dita" scope="local">
+          <?xm-replace_text Dynamic Implementation?>
+        </xref>
+      </li>
+      <li id="li_D606B8A969D641FDBA3E4D8B96E19FE6">
+        <xref href="video_osmf_dynamic_custom.xml#concept_B00E2B15A2EF4F46A89FA887929FFCFD" type="concept" format="dita" scope="local">
+          <?xm-replace_text Custom Dynamic Implementation?>
+        </xref>
+      </li>
+      <li id="li_260E6E0D0B5745FB9320B53148BFDC6C">
+        <xref href="video_osmf_static.xml#concept_982C32CC35CE44F8A3543DF9AD741C83" type="concept" format="dita" scope="local">
+          <?xm-replace_text Static Implementation?>
+        </xref>
+      </li>
+    </ul>
+    <p>You can reference the following sections as you migrate: 
+	 </p>
+    <ul id="ul_CADB341869EC457097F4B4204B7A3786">
+      <li id="li_FB33A811EA5E4489BE29E1BEC821811C">
+        <xref href="video_arch.xml#concept_69C0067F59DC4AEC81A3603857B1434C" type="concept" format="dita" scope="local">
+          <?xm-replace_text How Video Measurement Works?>
+        </xref>
+      </li>
+      <li id="li_408C1F92F6344549982C66CBA64D442F">
+        <xref href="video_ref_methods.xml#concept_30874334BCB54B6D8A8D49388D7F06FF" format="dita" scope="local">
+          <?xm-replace_text Media Module Methods?>
+        </xref>
+      </li>
+      <li id="li_A856DD939F02459E93D079039B9EC255">
+        <xref href="video_ref_variables.xml#concept_338A9CA5EC1F4054B9BD07A5FF4F7DAE" format="dita" scope="local">
+          <?xm-replace_text Media Module Variables?>
+        </xref>
+      </li>
+      <li id="li_81314D7A569748B590F619E3B35FB0D9">
+        <xref href="video_mediamonitor.xml#concept_6B10C4127F844D84A1FD0F59D818054F" type="concept" format="dita" scope="local">
+          <?xm-replace_text Measuring Additional Metrics using Media.monitor?>
+        </xref>
+      </li>
+    </ul>
+  </conbody>
+  <concept id="concept_C1758C9094CD4CA6956B2BD0046F273F">
+    <title>Update the OSMF AppMeasurement Libraries</title>
+    <conbody>
+      <p>Download the latest AppMeasurement libraries from Code Manager to
+		  replace your existing libraries. For specific instructions, see 
+		  <xref href="video_osmf_download.xml#task_C318D1EDA2824C1BA2C1A325F359F85F" type="task" format="dita" scope="local"><?xm-replace_text Download the Media Module for OSMF?></xref>.
+		  
+		</p>
+    </conbody>
+  </concept>
+  <concept id="concept_4AFDC82A6E524245B56EF8332A3E96F5">
+    <title>Update the XML Configuration File</title>
+    <conbody>
+      <p>You need to add the following to update your XML configuration for
+		  integrated video tracking: 
+		</p>
+      <ul id="ul_79F0D18387F143ED91E3F98A6616079E">
+        <li id="li_AE98B97830134AC58CAD116E84BB761A">
+          <codeph>trackUsingContextData</codeph>
+			 and 
+			 <codeph>contextDataMapping</codeph></li>
+        <li id="li_6972AE75D83042B4A9F1C6921F9B2F50">
+          <codeph>trackMilestones</codeph>
+        </li>
+      </ul>
+      <p>See the following section for details and an example. 
+		</p>
+      <section id="section_3D9A626B23894A67ACE697DE0A62EA43" conref="video_osmf_dynamic.xml#concept_20417E8BA5FE45D0A2DA8A271669E559/section_EFA781861B5845738A10E4CCC992A2DE">
+        <title>
+          <?xm-replace_text Section Title?>
+        </title>
+        <p>
+          <?xm-replace_text Paragraph?>
+        </p>
+      </section>
+    </conbody>
+  </concept>
+</concept>

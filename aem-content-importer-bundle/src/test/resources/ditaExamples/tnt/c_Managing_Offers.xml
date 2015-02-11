@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_C5EFA3E2C8B44D95A19AA782E2D064DE" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic concept/concept ">
+  <title class="- topic/title ">Offers</title>
+  <shortdesc class="- topic/shortdesc ">An offer is the content displayed
+	 within an mbox during campaigns and tests 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody class="- topic/body  concept/conbody ">
+    <p class="- topic/p ">For an explanation of offers, see 
+		<xref href="c_Offers.xml#concept_40CA4EEBF72C430395ADB96C3A3D7DF4" type="concept" format="dita" scope="local" class="- topic/xref "><?xm-replace_text About Offers?></xref>.
+		
+	 </p>
+  </conbody>
+  <related-links class="- topic/related-links ">
+    <link href="c_Managing_Campaigns.xml#concept_3D45A7B6C09C488FB42B1741F09FF42F" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Campaigns?>
+    </link>
+    <link href="c_Ideas.xml#concept_11AB8A2E4BF140B3B56596CC4EE548C9" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Ideas?>
+    </link>
+    <link href="c_Reports.xml#concept_252AF18105BE4773988DB1CFAAA49A19" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Reports?>
+    </link>
+  </related-links>
+</concept>

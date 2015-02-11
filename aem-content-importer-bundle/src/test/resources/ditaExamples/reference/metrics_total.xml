@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_4F0A4EFB67F947C2B54938D6A87221E5">
+  <title>Total</title>
+  <shortdesc>The value of all report line items for a reported period. If a
+	 filter is currently selected, the total might represent the filtered total
+	 instead of the report suite total. If no filter is selected total represents
+	 the report suite total. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Metrics" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <table id="table_0A2D5F3C927C42E583E8FD51240F2C86">
+      <tgroup cols="2">
+        <colspec colnum="1" colname="col1" colwidth="1.00*" />
+        <colspec colnum="2" colname="col2" colwidth="2.26*" />
+        <thead>
+          <row>
+            <entry colname="col1">Uses 
+				</entry>
+            <entry colname="col2">Description 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry colname="col1">
+              <p>Traffic
+				  </p>
+            </entry>
+            <entry colname="col2">
+              <p>The value of all report line items for a reported period. 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <p>Conversion
+				  </p>
+            </entry>
+            <entry colname="col2">
+              <p>The value of all report line items for a reported period.
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <p>Ad Hoc Analysis
+				  </p>
+            </entry>
+            <entry colname="col2">
+              <p>N/A 
+				  </p>
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </conbody>
+  <related-links>
+    <link href="reports_totals.xml#concept_48E23FB3BCCD43DFB486A048960800A8" format="dita" scope="local">
+      <linktext>
+        <?xm-replace_text Totals Report?>
+      </linktext>
+    </link>
+  </related-links>
+</concept>

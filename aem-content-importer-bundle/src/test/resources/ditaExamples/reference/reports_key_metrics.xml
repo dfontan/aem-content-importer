@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_094629755EDE4467A727BB539FF89A3B">
+  <title>Key Metrics Report</title>
+  <shortdesc>The 
+	 <wintitle>Key Metrics Report</wintitle> lets you compare metrics to see
+	 whether they trend together. For example, as your page views increase, does
+	 your visitor count increase? 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>
+      <image id="image_EAF0AB31FCD34E9D94390567116E91C6" href="graphics/reports_key_metrics.png"></image>
+      <draft-comment>
+        <p>
+          <b>Use Cases</b>
+        </p>
+        <p>Social Media: You can use the Key Metrics Report to examine social
+			 groups, such as Total Mentions or Audience Sentiment, and see how they are
+			 affecting revenue. How do you tie key metrics like Revenue to Social metrics?
+			 Look at the KM report by those groupings--total mentions, total audience,
+			 mapped to revenue. i.e. tv grouping, computing grouping, to see if it spikes or
+			 drives revenue. 
+		  </p>
+      </draft-comment>
+    </p>
+  </conbody>
+</concept>

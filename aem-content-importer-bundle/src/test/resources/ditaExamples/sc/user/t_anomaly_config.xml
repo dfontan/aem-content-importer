@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_AF347B34F56E44A6AE70E019B6EB2F08"> 
+  <title>Setting up Anomaly Detection</title> 
+  <shortdesc>Steps to select report suites, metrics, and training/view periods
+	 for anomaly detection. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Reports,Reports and analytics"/>
+		</metadata>
+  </prolog> 
+  <taskbody> 
+	 <context id="context_537E40C33AC6431B9FBF704E648AD349"> 
+		<p>You set up Anomaly Detection independently for each report suite.
+		  Filtered metrics you define for one report suite do not carry over to other
+		  report suites. 
+		</p> 
+	 </context> 
+	 <steps id="steps_0F2599D0979B4D22A848FBFEACE213C8"> 
+		<step id="step_CC8FF959989342949B11DABC13824230"> 
+		  <cmd>Navigate to 
+			 <menucascade><uicontrol>Adobe Marketing Cloud &gt; Analytics &gt;
+				  Reports and Analytics &gt; Site Metrics &gt; Anomaly
+				  Detection</uicontrol></menucascade>. 
+		  </cmd> 
+		</step> 
+		<step id="step_3912B62176194D05A0740B77A7845AB4"> 
+		  <cmd>Select the report suite for which you want to track daily anomaly
+			 detection. To display a list of report suites, click the Report Suite selector
+			 drop-down menu.
+		  </cmd> 
+		</step> 
+		<step id="step_3F87789F6AB846E7BE365E3ED299B8C8"> 
+		  <cmd>To select the metrics and/or define filtered metrics, click 
+			 <uicontrol>Edit Metrics 
+			 </uicontrol>at the top right of the screen: 
+			 <image placement="break" align="left"
+			  href="graphics/metrics_icon.png"
+			  id="image_712AFB4A1D3B4743B369B5ECBB7D6B56"></image>. 
+		  </cmd> 
+		  <stepresult>You can pick metrics from the list (including calculated
+			 metrics) of all metrics, from a list of filtered metrics, or from a list of
+			 tracked metrics. You can also filter on specific terms to narrow down the list,
+			 and you can add filtered metrics. 
+			 <note>The Filtered Metrics feature in the Anomaly Detection tool is
+				being replaced by the ability to apply segments in Anomaly Detection. You can
+				apply a segment to the Anomaly Detection tool using the "Show Segments" button
+				at the top of the report page. Filtered Metrics will be removed from this tool
+				on October 16, 2014. 
+			 </note> 
+		  </stepresult> 
+		</step> 
+		<step id="step_2D504E426C8E41AF95A81FCB81EF876E"> 
+		  <cmd>For example, to define filtered metrics for tracking page view
+			 anomalies on a specific page, click 
+			 <uicontrol>Add Filtered Metric</uicontrol>: 
+			 <image placement="break" align="left"
+			  href="graphics/manage_metrics.png" width="672px"
+			  id="image_6437D8245A494675BEF872B19E1A0B41"></image> 
+		  </cmd> 
+		  <choicetable id="choicetable_E8BE4CBB97C34E77987E7673C2CC5E31"> 
+			 <chhead> 
+				<choptionhd>Option</choptionhd> 
+				<chdeschd>Description</chdeschd> 
+			 </chhead> 
+			 <chrow> 
+				<choption> 
+				  <uicontrol>Name</uicontrol> 
+				</choption> 
+				<chdesc>Create a unique name for the metric.</chdesc> 
+			 </chrow> 
+			 <chrow> 
+				<choption> 
+				  <uicontrol>Select Metric</uicontrol> 
+				</choption> 
+				<chdesc>Select, for example, Page views.</chdesc> 
+			 </chrow> 
+			 <chrow> 
+				<choption> 
+				  <uicontrol>Select Dimension</uicontrol> 
+				</choption> 
+				<chdesc>Select, for example, 
+				  <uicontrol>Page</uicontrol>. The list now gets filtered to
+				  provide you with a list of valid elements.</chdesc> 
+			 </chrow> 
+			 <chrow> 
+				<choption> 
+				  <uicontrol>Select Element</uicontrol> 
+				</choption> 
+				<chdesc>Specify a page name or number. The list gets filtered
+				  further to provide you with a list of valid metrics.</chdesc> 
+			 </chrow> 
+		  </choicetable> 
+		  <stepresult>Click 
+			 <uicontrol>Add</uicontrol> and you have your filtered metric. 
+		  </stepresult> 
+		</step> 
+		<step id="step_D6E12BED103E4886AB341BB2331F7568"> 
+		  <cmd>Define the 
+			 <uicontrol>Training Period 
+			 </uicontrol>and the 
+			 <uicontrol>View Period</uicontrol> for anomaly detection. (Think of
+			 the training period as the "learning period" for the algorithm.) 
+		  </cmd> 
+		  <info> 
+			 <image placement="break" align="left"
+			  href="graphics/view_training_periods.png"
+			  id="image_DC9E7E8A63EA4B71B8E1390E04B1D9C6"></image> 
+		  </info> 
+		  <stepresult>Keep in mind that: 
+			 <ul id="ul_2FF1041FA10A46169FE14F0B8A1A7D24"> 
+				<li id="li_5102E08C1A4E4ED6A686933C2A29225B">The training period
+				  ends right before the view period starts. 
+				</li> 
+				<li id="li_1511296E76C74064969EE9CDD0475448">The default for both
+				  is 30 days, and you can extend them to 60 or 90 days. 
+				</li> 
+				<li id="li_387E0705A3C84C23B8AE8513D3441C46">Extending the training
+				  period puts your data in a larger context and may reduce the size of an
+				  anomaly. 
+				</li> 
+			 </ul> 
+			 <p>The Anomaly Detection metrics report refreshes every time you
+				change a parameter. You can now start interpreting the report.<xref
+				href="t_anomaly_view.xml#task_4808C96327354D789C075823F5C3A049" format="dita"
+				scope="local"><?xm-replace_text Viewing Anomaly Detection charts?></xref> 
+			 </p> 
+		  </stepresult> 
+		</step> 
+		<step id="step_CAB38D358F264021BE9E01A3C9CD4A57"> 
+		  <cmd>(Optional) Change the end date of the View Period. The default is
+			 yesterday. 
+		  </cmd> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

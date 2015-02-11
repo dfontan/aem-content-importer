@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_B5C576220F1548B5A3A57112AA3960C6">
+  <title>Transaction and Customer Integration</title>
+  <shortdesc>Data sources provides two additional ways to integrate events that
+	 occur offline to your online data. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Data sources" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <ul id="ul_511CF7125D30448B985566E8704742CF">
+      <li id="li_4C9DCC5B3E59491195FE6B41165E1BB6">
+        <xref href="datasrc_integrating_offline_data.xml#concept_B5C576220F1548B5A3A57112AA3960C6/section_B3F281CEFF9B47E9A07F9851D61D415D" format="dita" scope="local">
+          <?xm-replace_text Transaction Integration?>
+        </xref>
+      </li>
+      <li id="li_CFB5B30FA14A4B228E39E4BF47351D8B">
+        <xref href="datasrc_integrating_offline_data.xml#concept_B5C576220F1548B5A3A57112AA3960C6/section_9F4AAD710D2543BDA834090A98115FBF" format="dita" scope="local">
+          <?xm-replace_text Customer Integration?>
+        </xref>
+      </li>
+    </ul>
+    <p> These integrations associate offline data with a specific online
+		transaction or with an online visitor. 
+	 </p>
+    <section id="section_9F4AAD710D2543BDA834090A98115FBF">
+      <title>Customer Integration</title>
+      <p>Customer IDs are used to specify a customer's offline activity and tie
+		  it to online activity. These should be used when: 
+		</p>
+      <ul id="ul_D661FE1AA60047418CC7263D57B53885">
+        <li id="li_4DD94237C8F74EDF8FABBCF980A14FD7">A customer ID is populated
+			 in the 
+			 <varname>visitorID</varname> variable. 
+		  </li>
+        <li id="li_DAFBCBAE5CAF45BF90F9E91212CA9A1E">There is no designated
+			 point where customer activity moves offline, such as a lead submission or
+			 purchase. 
+		  </li>
+      </ul>
+      <p>To configure this type of data source, see 
+		  <xref href="datasrc_visitorID.xml#concept_1CFAA61D57A84B22A41F7A8E0DFCAAB5" type="concept" format="dita" scope="local"><?xm-replace_text Visitor ID?></xref></p>
+    </section>
+    <section id="section_B3F281CEFF9B47E9A07F9851D61D415D">
+      <title>Transaction Integration</title>
+      <p>Transaction IDs are used to record the state of a visitor at a point
+		  in time. These should be used when there is a point in time when customers
+		  typically move their experience from online to offline, such as: 
+		</p>
+      <ul id="ul_13334605E6A34B52B68E79F0ADE1FAC1">
+        <li id="li_95640A08DE254A6494841C6A29AFDEFA">Submits a lead for a
+			 salesman to contact the customer. 
+		  </li>
+        <li id="li_C5289E9A47024C1B9CF93383319A819A">Makes an online purchase,
+			 which might be later returned in store. 
+		  </li>
+        <li id="li_E0AAACED909B43A788B878BA29AC5728">Purchases a product for
+			 which they might later call for support. 
+		  </li>
+      </ul>
+      <p>The customer is often anonymous when they move from online to offline.
+		  
+		</p>
+      <p>Transaction ID events are not included in Visit Participation metrics
+		  (those shown in marketing reports), but they are included in Visitor
+		  Participation metrics (available only in ad hoc analysis). 
+		</p>
+      <p>The is because the transaction ID data is not associated with a visit
+		  (because the offline event is usually not part of the online event), but it is
+		  associated with the visitor. 
+		</p>
+      <p>See 
+		  <xref href="datasrc_transactionID.xml#concept_A97302E9EC45468A8F30285FACE8C776" type="concept" format="dita" scope="local"><?xm-replace_text Transaction ID?></xref>.
+		  
+		</p>
+    </section>
+  </conbody>
+</concept>

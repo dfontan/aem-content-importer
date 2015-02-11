@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_159BB25B24864D60BFE35AE032A74FBE">
+  <title>Download report suite settings</title>
+  <shortdesc>Steps that describe how to generate an Excel spreadsheet
+	 containing all the settings for the selected report suite.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Admin tools" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <steps id="steps_ADC66AE34267425884A6FDD434ECA69E">
+      <step id="step_06959C0503DF4189AA038747900E2B1A">
+        <cmd> Click 
+			 <uicontrol>Admin</uicontrol> &gt; 
+			 <uicontrol>Report Suites</uicontrol>.
+		  </cmd>
+      </step>
+      <step id="step_83899FD088564582978570320CD4134F">
+        <cmd>Select a report suite from the 
+			 <wintitle>Report Suite</wintitle> table.
+		  </cmd>
+      </step>
+      <step id="step_56E9AE770702478C8AD946DECE5C59B6">
+        <cmd>Click 
+			 <uicontrol>Download</uicontrol>.
+		  </cmd>
+        <stepresult>You can open the spreadsheet file directly, or save it for
+			 viewing. 
+		  </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+</task>

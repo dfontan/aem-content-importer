@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_C0A4B69F005F42F29236B840C0BBECD4">
+  <title>Track Player Events Using AutoTrack</title>
+  <shortdesc>AutoTrack automatically tracks video player events such as start,
+	 stop, and pause. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>media</keyword>
+        <keyword>milestone</keyword>
+        <keyword>sdk</keyword>
+        <keyword>video</keyword>
+      </keywords>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <context id="context_07C3006A6A274C2E977B17FDEB8BA6E5" conref="video_flash_autotrack.xml#task_CBF553B502414830BA175DD96A697DF2/context_7942D0D81D1F417BB41F6E47E8077496">
+      <p>
+        <?xm-replace_text Task Context?>
+      </p>
+    </context>
+    <steps id="steps_9476ECB9B5244A4D9081B6EABA806E59" conref="video_flash_autotrack.xml#task_CBF553B502414830BA175DD96A697DF2/steps_64A8F0A2AE0644A8A9ACA8C5718408DF">
+      <step id="step_C95C4FF692B84E5986C6F672184351B5">
+        <cmd>
+          <?xm-replace_text Step?>
+        </cmd>
+      </step>
+    </steps>
+  </taskbody>
+</task>

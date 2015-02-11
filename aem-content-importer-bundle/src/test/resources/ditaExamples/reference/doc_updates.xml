@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_E1D9AE58A9DA4CEB915AFEA7F8770597"> 
+  <title>Documentation Updates</title> 
+  <shortdesc>Information about updates to Analytics Reference help. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <table id="table_C1D4BC306AAA47D3813E3258123BF74C"> 
+		<tgroup cols="3"> 
+		  <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+		  <colspec colname="col002" colnum="2"
+			colwidth="1.53*"/><colspec colname="col02" colnum="3" colwidth="1.72*"/> 
+		  <thead> 
+			 <row> 
+				<entry colname="col1">Date 
+				</entry> 
+				<entry colname="col002">Location 
+				</entry> 
+				<entry colname="col02">Description 
+				</entry> 
+			 </row> 
+		  </thead> 
+		  <tbody> 
+			 <row>
+				<entry colname="col1">
+				  <p>09/04/2014
+				  </p>
+				</entry>
+				<entry colname="col002">
+				  <p><xref
+					 href="c_column_heading_format.xml#concept_ADC08C783477451B959782CEA23AF5EF"
+					 format="dita" scope="local">Column Heading Format</xref>
+				  </p>
+				</entry>
+				<entry colname="col02">
+				  <p>Added a recommendation of 30 column limit for imports and
+					 exports of classification files.
+				  </p>
+				</entry>
+			 </row>
+			 <row> 
+				<entry colname="col1"> 
+				  <p>07/29/2014 
+				  </p> 
+				</entry> 
+				<entry colname="col002"> 
+				  <p>Added links to the article 
+					 <xref
+					  href="http://marketing.adobe.com/resources/kb/en_US/analytics/kb/none-unspecified-and-unknown.html"
+					  format="http" scope="external">None, Unspecified, Unknown, and Other in
+						reporting</xref>. 
+				  </p> 
+				</entry> 
+				<entry colname="col02"> 
+				  <p> Various reports in the Adobe Marketing Cloud can show None,
+					 Unspecified, Other, or Unknown, depending on the specific report viewed.
+					 Generally, this breakdown means that the variable was not defined or otherwise
+					 unavailable. 
+				  </p> 
+				  <p>To increase access to the article, links were added to 
+					 <xref
+					  href="http://marketing.adobe.com/resources/help/en_US/reference/c_troubleshooting.html"
+					  format="http" scope="external">Classifications Troubleshooting</xref> and 
+					 <xref
+					  href="data_collection.xml#concept_E207D621D92A49038EEBB59280D60C92"
+					  format="dita" scope="local">Data Collection</xref> sections. 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p>04/30/2014 
+				  </p> 
+				</entry> 
+				<entry colname="col002"> 
+				  <p><xref
+					 href="report_troubleshooting.xml#concept_9201B83D0E2F4965B9A0C5CEB6B08581"
+					 format="dita" scope="local"><?xm-replace_text Reporting Best Practices and Troubleshooting?></xref>
+					 
+				  </p> 
+				</entry> 
+				<entry colname="col02"> 
+				  <p>Learn about common reasons why reports fail and what you can
+					 do to avoid timeouts and failures. 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p>03/14/2014 
+				  </p> 
+				</entry> 
+				<entry colname="col002"> 
+				  <p><xref
+					 href="classification_rule_set.xml#concept_CD3D510F5070486584F3BB535AE41524"
+					 format="dita" scope="local"><?xm-replace_text Classification Rule Sets?></xref>
+					 
+				  </p> 
+				</entry> 
+				<entry colname="col02"> 
+				  <p>Added information about the 
+					 <uicontrol>Select Available Report Suites</uicontrol> feature. 
+				  </p> 
+				  <p>This button displays the 
+					 <wintitle>Available Report Suites</wintitle> page, where you
+					 can select one or more available report suites to use for all your rule sets.
+					 (This page also displays when you first run the 
+					 <wintitle>Classification Rule Builder</wintitle>.) 
+				  </p> 
+				  <p>This feature is intended to help reduce report suite load
+					 time, in the event that you have hundreds of available report suites. 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p>02/26/2014 
+				  </p> 
+				</entry> 
+				<entry colname="col002"> 
+				  <p> 
+					 <xref
+					  href="c_general_file_structure.xml#concept_9EFF968DF5D244A887DE94075431C1BE"
+					  format="dita" scope="local"><?xm-replace_text General File Structure?></xref> 
+				  </p> 
+				  <p> 
+					 <xref
+					  href="t_classifications_escape_data.xml#task_EB47E80063F14F9CB2D186C0CAA9CBAD"
+					  format="dita" scope="local"><?xm-replace_text Escape classification data?></xref>
+					 
+				  </p> 
+				</entry> 
+				<entry colname="col02"> 
+				  <p>Added special character info here (near the top of the bullet
+					 list). 
+				  </p> 
+				  <p>Added steps describing how to escape data in classifications. 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p>02/20/2014 
+				  </p> 
+				</entry> 
+				<entry colname="col002"> 
+				  <p><xref
+					 href="processing_rules.xml#concept_1D0EA3DBDEF4412BB7A7D769EA3717C2"
+					 format="dita" scope="local"><?xm-replace_text Processing Rules?></xref> 
+				  </p> 
+				</entry> 
+				<entry colname="col02"> 
+				  <p>Processing rules have been enhanced with the following new
+					 features: 
+				  </p> 
+				  <ul id="ul_z3v_bsh_fn"> 
+					 <li id="li_ADED81A1DF674CD990AFB4325BE8145A">Max rules
+						increased from 50 to 100 for each report suite. UI enhancements were also made
+						to improve performance when displaying large numbers of rules. 
+					 </li> 
+					 <li id="li_9E94A398DCF946E8B28F541ED852B245">"Else" condition
+						support for rules lets you take action when a condition is not met. 
+					 </li> 
+					 <li id="li_DCF3C1309FC84DA894E15CFAA9B5E559">When copying rules
+						between report suites, you can now append rules to the target report suite
+						rather than overwriting all rules. 
+					 </li> 
+					 <li id="li_F3E5602B4E1B4D0BA3F554CB9F785307">When setting an
+						event value with context data, empty context data variables no longer increment
+						events. 
+					 </li> 
+				  </ul> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p>02/07/2014 
+				  </p> 
+				</entry> 
+				<entry colname="col002"> 
+				  <p><xref
+					 href="classification_rule_builder.xml#concept_C1F219E622044D43852EF5168FF7192A"
+					 format="dita" scope="local"><?xm-replace_text Classification Rule Builder?></xref>
+					 
+				  </p> 
+				</entry> 
+				<entry colname="col02"> 
+				  <ul id="ul_bvs_zrh_fn"> 
+					 <li id="li_653EED2D993D46A2A2B62F3396150499">Updated screen
+						shots, various edits. 
+					 </li> 
+					 <li id="li_17DD86C44D2B41968B0E77CB9DC75690">Removed
+						information about 24 hour rule processing. Processing occurs at four-hour
+						intervals. 
+					 </li> 
+					 <li id="li_9B8DA82C380B4EE3AAF1D7C3D2D9DF8F">Clarified
+						prerequisite of classifying variables in Admin Tools before they can be
+						available on the 
+						<wintitle>New Rule Set</wintitle> page. 
+					 </li> 
+				  </ul> 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+  </conbody>
+</concept>

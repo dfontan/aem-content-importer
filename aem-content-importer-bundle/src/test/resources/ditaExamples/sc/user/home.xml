@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_ECC89F305B804372B63C3CE67448FB07"> 
+  <title>Marketing Reports and Analytics Interface Help</title> 
+  <shortdesc> <?xm-replace_text Short Description?>
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Reports and analytics"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Marketing reports and analytics provide a hosted, subscription-based
+		solution for real-time website reporting and analysis. 
+	 </p> 
+	 <p>Here you can find product documentation for the Adobe marketing reports
+		and analytics interface. 
+	 </p> 
+	 <p> 
+		<simpletable class="- topic/simpletable " frame="none"
+		 id="simpletable_307592BD15E942B193C369D5330A17F0"> 
+		  <strow class="- topic/strow "> 
+			 <stentry class="- topic/stentry "> 
+				<p outputclass="head"> 
+				  <b>New and Popular Topics 
+				  </b> 
+				</p> 
+				<p>Last update: September 2014 
+				</p> 
+				<ul id="ul_2FC85EA74B5743178E76EE9706C5F6DA"> 
+				  <li id="li_4BC750C2AFFE4DBD9D05A7207D9C45A1"><xref
+					 href="whatsnew.xml#concept_F49E1A58D31E449BAF4E5B2ED2D7499B" format="dita"
+					 scope="local"> Marketing Reports &amp; Analytics Release History</xref> 
+					 <p> Learn about what's new in Marketing Reports and Analytics 
+					 </p> 
+				  </li> 
+				  <li id="li_C6C0308D3954403DA5AFF896FE3B185E"> 
+					 <xref
+					 href="getting_started.xml#concept_8C531D94965743BFBED7A87FE5473FF0"
+					 format="dita" scope="local"> <?xm-replace_text Getting Started?>
+					 </xref> 
+					 <p>Help on logging in, running a report, and editing a user's
+						account. 
+					 </p> 
+				  </li> 
+				  <li id="li_3C4B6A7A98BD4B06930ECF81F10DC388"> 
+					 <xref
+					  href="reports_customize.xml#concept_F042066264564438BFB35FC46EB638DF"
+					  format="dita" scope="local"> <?xm-replace_text Customizing Reports?>
+					 </xref> 
+					 <p>Help on date ranges, breakdowns, and filtering. 
+					 </p> 
+				  </li> 
+				  <li id="li_F5DA6756799D4E97B3810850EEAE31B0"><xref
+					 href="http://marketing.adobe.com/resources/help/en_US/analytics/segment"
+					 format="http" scope="external">Segmentation</xref> 
+					 <p>Help on creating and managing segments across Analytics. 
+					 </p> 
+				  </li> 
+				  <li id="li_7027499D727943CFA9FDE6670EFA69C4"> 
+					 <xref
+					  href="https://marketing.adobe.com/resources/help/en_US/mchannel/index.html"
+					  format="https" scope="external">Marketing Channels</xref> 
+					 <p>Help on setting up Marketing Channel reports. 
+					 </p> 
+				  </li> 
+				</ul> 
+				<p class="- topic/p " outputclass="head"> 
+				  <b class="+ topic/ph hi-d/b ">Reporting and Analytics Help</b> 
+				</p> 
+				<ul id="ul_8DCAD17DBBFA40439BE2E6986B9485F2"> 
+				  <li id="li_32AD116350EC42D9BFB5BF3CE7C1372C"> 
+					 <xref
+					  href="upgr_home.xml#concept_7FB905497F854DA291D122E7533C041B" format="dita"
+					  scope="local"> <?xm-replace_text Upgrading from SiteCatalyst 14?>
+					 </xref> 
+				  </li> 
+				  <li id="li_8D7C2D82B2C14AA29E454E21E67AC060"> 
+					 <xref
+					  href="https://marketing.adobe.com/resources/help/en_US/sc/user/oms_sc_user.pdf"
+					  format="https" scope="external">SiteCatalyst 14</xref> 
+				  </li> 
+				  <li id="li_D8185E53889E4870B100BA2834914812"> 
+					 <xref
+					  href="https://marketing.adobe.com/resources/help/en_US/dsc/index.html"
+					  format="https" scope="external">Ad Hoc Analysis Help</xref> 
+				  </li> 
+				  <li id="li_0817CFB1DACD4D73A897DBFE1E3D0076"> 
+					 <xref
+					  href="https://marketing.adobe.com/resources/help/en_US/arb/index.html"
+					  format="https" scope="external">Report Builder Help</xref> 
+				  </li> 
+				  <li id="li_30810B06942542849D60E2EC025B8850"> 
+					 <xref
+					  href="https://marketing.adobe.com/resources/help/en_US/insight/" format="https"
+					  scope="external">Data Workbench Product Documentation 
+					 </xref> 
+				  </li> 
+				  <li id="li_3C40015323E14967A1193FF73D9C323F"> 
+					 <xref
+					  href="http://marketing.adobe.com/resources/help/en_US/home/index.html#kb-using-getting-started-with-clickmap"
+					  format="http" scope="external">Visitor Click Map</xref> 
+				  </li> 
+				  <li id="li_3B1B25C6608444FC9D25791E852ADB63"> 
+					 <xref
+					  href="https://marketing.adobe.com/resources/help/en_US/sc/excel/oms_sc_excelclient.pdf"
+					  format="https" scope="external">ExcelClient</xref> 
+				  </li> 
+				</ul> 
+			 </stentry> 
+			 <stentry class="- topic/stentry "></stentry> 
+			 <stentry class="- topic/stentry "> 
+				<p class="- topic/p " outputclass="head"> 
+				  <b class="+ topic/ph hi-d/b ">Admin, Data Collection, and
+					 Implementation Help (Advanced Users)</b> 
+				</p> 
+				<ul id="ul_3050B60F2AD74E36B095F5710589E3CA"> 
+				  <li id="li_DAB514857082486FB67C4B2282FD5833"> 
+					 <xref
+					  href="https://marketing.adobe.com/resources/help/en_US/reference/index.html?f=classifications"
+					  format="https" scope="external">Classifications</xref> 
+					 <p> Help on creating classifications, the bulk importer, and
+						the rule builder. 
+					 </p> 
+				  </li> 
+				  <li id="li_4E11867B097546C68FAD2FEE1F3A01B3"> 
+					 <xref
+					  href="http://marketing.adobe.com/resources/help/en_US/reference/index.html"
+					  format="http" scope="external">Admin Analytics Help &amp; Reference</xref> 
+					 <p> Reference help for reports &amp; analytics administrators. 
+					 </p> 
+				  </li> 
+				  <li id="li_CE1A2D69278A4B728F9867C078FBDC0A"> 
+					 <xref
+					  href="https://marketing.adobe.com/resources/help/en_US/sc/implement/index.html"
+					  format="https" scope="external">Analytics Implementation</xref> 
+					 <p> Reports &amp; analytics implementation help. 
+					 </p> 
+				  </li> 
+				  <li id="li_015517B87B2F4A77AE59472E54F550B1"> 
+					 <xref
+					  href="https://marketing.adobe.com/resources/help/en_US/reference/index.html?f=data_warehouse"
+					  format="https" scope="external">Data Warehouse</xref> 
+					 <p>Help for data warehouse users working with unprocessed data.
+						
+					 </p> 
+				  </li> 
+				</ul> 
+				<p outputclass="head"> 
+				  <b> Marketing Cloud Resources 
+				  </b> 
+				</p> 
+				<ul id="ul_A6D32724C6114A5B96038C997C753C4E"> 
+				  <li id="li_367C4275943946A89F4157CF73592860"> 
+					 <xref
+					  href="http://helpx.adobe.com/marketing-cloud/analytics.html" format="http"
+					  scope="external">Adobe Analytics Community</xref> 
+				  </li> 
+				  <li id="li_485ACD946BE844ECB9D72F3F08119C1D"> 
+					 <xref
+					  href="http://marketing.adobe.com/resources/help/en_US/whatsnew/index.html#Current%20Release%20Notes"
+					  scope="external" format="html">Marketing Cloud Release Notes</xref> 
+				  </li> 
+				  <li id="li_4A3066876B1649B2A0A64F4EC43364E1"> 
+					 <xref
+					  href="http://marketing.adobe.com/resources/help/en_US/home/index.html"
+					  scope="external" format="http">Product Documentation Home</xref> 
+				  </li> 
+				  <li id="li_599C796CCACC40D7BB757ED5F4A4227D"> 
+					 <xref
+					  href="https://marketing.adobe.com/resources/help/en_US/home/index.html#Developer"
+					  scope="external" format="https">Developer</xref> 
+				  </li> 
+				  <li id="li_BD0D0DA20EBC460B9DB0010D3B1F39AB"> 
+					 <xref
+					  href="http://ideas.omniture.com/t5/Adobe-Idea-Exchange-for-Omniture/idb-p/IdeaExchange3"
+					  scope="external" format="html">Idea Exchange</xref> 
+				  </li> 
+				  <li id="li_0067480A82894B6C84CE753C7E9490C3"> 
+					 <xref href="http://helpx.adobe.com/learning.html?promoid=KAUDK"
+					  scope="external" format="http">Adobe Training and Tutorials</xref> 
+				  </li> 
+				  <li id="li_8A875F1A9BFA4BF0B65EA3F5F896E866"> 
+					 <xref
+					  href="http://www.omniture.com/en/products/online_business_optimization"
+					  scope="external" format="html">Featured Solutions Center</xref> 
+				  </li> 
+				</ul> 
+			 </stentry> 
+		  </strow> 
+		  <strow class="- topic/strow "> 
+			 <stentry class="- topic/stentry "></stentry> 
+			 <stentry class="- topic/stentry "></stentry> 
+			 <stentry class="- topic/stentry "></stentry> 
+		  </strow> 
+		  <strow class="- topic/strow "> 
+			 <stentry class="- topic/stentry "></stentry> 
+			 <stentry class="- topic/stentry "></stentry> 
+			 <stentry class="- topic/stentry "></stentry> 
+		  </strow> 
+		</simpletable> 
+	 </p> 
+  </conbody> 
+</concept> 

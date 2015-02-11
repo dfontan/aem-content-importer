@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_98B63B7E56DC4BD996173E1CECDA93ED">
+  <title>JavaScript</title>
+  <shortdesc>JavaScript custom code tags contain a snippet of JavaScript code. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Tag management" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Code in a JavaScript tag is executed synchronously. Functions and other
+		code in these sections cannot be used in the 
+		<codeph>&lt;head&gt;</codeph> element on the page since that loads before
+		the page code. 
+	 </p>
+  </conbody>
+</concept>

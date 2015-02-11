@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_841AD9BC85E24E299F031566E13D3760"> 
+  <title>Configure Referrer Override JavaScript Code</title> 
+  <shortdesc>Adobe ClientCare can provide you with a JavaScript file that
+	 contains code that will override the default functionality 
+	 <keyword>Analytics</keyword> uses to capture the referrer from the HTTP
+	 header. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Developer and implementation"/> 
+		<othermeta name="subtopic" content="Redirects"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The code snippet below shows two JavaScript variables, 
+		<varname>s_referrer</varname> and 
+		<varname>s_pageURL</varname>. This code is placed on the ultimate landing
+		page of the redirect. 
+	 </p> 
+	 <codeblock>&lt;script language="JavaScript" src="//INSERT-DOMAIN-AND-PATH-TO-CODE-HERE/AppMeasurement.js"&gt;&lt;/script&gt;
+&lt;script language="JavaScript"&gt;&lt;!--
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+s.pageName=""
+s.server=""
+s.campaign=""
+s.referrer=""
+s.pageURL=""</codeblock> 
+	 <section id="section_EE924E399F7A431C8FC8E8A2BEF84DEC"> 
+		<title>Redirects using getQueryParam</title> 
+		<p>While the 
+		  <wintitle>getQueryParam</wintitle> is an easy way to populate 
+		  <keyword>Analytics</keyword> variables with query string values, it
+		  must be implemented in connection with a temporary variable so that legitimate
+		  referrers are not overwritten when the query string is empty. The best way to
+		  use 
+		  <wintitle>getQueryParam</wintitle> is in connection with the 
+		  <wintitle>getValue</wintitle> plug in as outlined with the following
+		  pseudo-code, which should be added to the 
+		  <wintitle>"doPlugins()"</wintitle> function within the
+		  "<filepath>s_code_remote.js</filepath>" or "<filepath>s_code.js</filepath>"
+		  file as shown below. 
+		</p>
+		<codeblock outputclass="syntax javascript">// AppMeasurement 1.x
+/* Plugin Config */
+s.usePlugins=true
+s.doPlugins = function(s) { 
+  var tempVar=s.Util.getQueryParam('origref')
+  if(tempVar)
+  s.referrer=tempVar;
+}</codeblock> 
+		<codeblock>// H Code
+/* Plugin Config */
+s.usePlugins=true
+s.doPlugins = function(s) {
+     /* Add calls to plugins here */
+     // Copy original referrer into s.referrer if it exists
+     var tempVar=s.getQueryParam('origref')
+     if(tempVar)
+     s.referrer=tempVar;
+}</codeblock> 
+	 </section> 
+  </conbody> 
+</concept>

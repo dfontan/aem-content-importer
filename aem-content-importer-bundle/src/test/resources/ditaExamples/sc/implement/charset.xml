@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_E65B9A8F75C3482C87D0D455805F89BD">
+  <title>charSet</title>
+  <shortdesc>
+    The 
+	 <varname>charSet</varname> variable translates the character set of the
+	 Web page into UTF-8. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Variables" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>If the 
+		<varname>charSet</varname> variable contains an incorrect value, the
+		data in all other variables are translated incorrectly. If JavaScript variables
+		on your pages (e.g. 
+		<varname>pageName</varname>, 
+		<wintitle>prop1</wintitle>, or 
+		<varname>channel</varname>) contain only ASCII characters, 
+		<varname>charSet</varname> does not need to be defined. However, if the
+		variables on your pages contain non-ASCII characters, the 
+		<varname>charSet</varname> variable must be populated. 
+	 </p>
+    <p>
+      <b>Parameters</b>
+    </p>
+    <table id="table_29A59379669144A0B56C0F436B372861">
+      <tgroup cols="4">
+        <colspec colnum="1" colname="col1" colwidth="*" />
+        <colspec colnum="2" colname="col2" colwidth="*" />
+        <colspec colnum="3" colname="col3" colwidth="*" />
+        <colspec colnum="4" colname="col4" colwidth="*" />
+        <thead>
+          <row>
+            <entry colname="col1">Max Size 
+				</entry>
+            <entry colname="col2">Debugger Parameter 
+				</entry>
+            <entry colname="col3">Reports Populated 
+				</entry>
+            <entry colname="col4">Default Value 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry colname="col1">
+              <p>N/A 
+				  </p>
+            </entry>
+            <entry colname="col2">
+              <p>CE 
+				  </p>
+            </entry>
+            <entry colname="col3">
+              <p>N/A 
+				  </p>
+            </entry>
+            <entry colname="col4">
+              <p>
+                <codeph>""</codeph>
+              </p>
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p>The 
+		<varname>charSet</varname> variable is used to identify the character
+		set of the page. For more information on character sets, see the 
+		<xref href="https://marketing.adobe.com/resources/help/en_US/whitepapers/multibyte/" format="http" scope="external">Multi-byte Character Sets</xref> white paper
+		before using the charSet variable. 
+	 </p>
+    <section id="section_EBC2176067A04D9E814CF78A86DC80FA">
+      <title>Syntax and Possible Values</title>
+      <p>The 
+		  <varname>charSet</varname> variable may only contain one of a
+		  predefined set of values, as listed in 
+		  <xref href="https://marketing.adobe.com/resources/help/en_US/whitepapers/multibyte/" format="http" scope="external">Multi-byte Character Sets</xref>. 
+		</p>
+      <codeblock outputclass="syntax javascript">s.charSet="character_set"</codeblock>
+    </section>
+    <section id="section_406DE0A2B58441DB8512F5B3BE5D9CB5">
+      <title>Examples</title>
+      <codeblock outputclass="syntax javascript">s.charSet="ISO-8859-1"</codeblock>
+      <codeblock outputclass="syntax javascript">s.charSet="SJIS"</codeblock>
+    </section>
+    <section id="section_E348298D2C634100AF62DFBA2EC446AF">
+      <title>Pitfalls, Questions, and Tips</title>
+      <ul id="ul_6E29EC6A94A148C4BDF27F0B1745DC66">
+        <li id="li_7AFBBC7175104C00B3BEFB1917863279">The value of 
+			 <varname>charSet</varname> must match the possible values listed in
+			 
+			 <xref href="https://marketing.adobe.com/resources/help/en_US/whitepapers/multibyte/" format="http" scope="external">Multi-byte Character Sets</xref>. 
+		  </li>
+        <li id="li_82967BAF59B54F928853B5372A3147D9">The value of 
+			 <varname>charSet</varname> should reflect the character set of the
+			 page. 
+		  </li>
+      </ul>
+    </section>
+  </conbody>
+</concept>

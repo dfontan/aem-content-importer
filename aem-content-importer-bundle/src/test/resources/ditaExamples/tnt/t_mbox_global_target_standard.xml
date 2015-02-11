@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_D9189CE28B2540B187CE6D6F4C590B39"> 
+  <title>Setting Up a Global Mbox to Use with Target Standard</title> 
+  <shortdesc>By default, 
+	 <keyword>Target Standard</keyword> creates a global mbox called 
+	 <codeph>target-global-mbox</codeph>, which is used to run activities
+	 created in 
+	 <keyword>Target Standard</keyword>. However, if you have already created a
+	 global mbox on your pages for your 
+	 <keyword>Target Classic</keyword> campaigns, you can use that mbox for your
+	 
+	 <keyword>Target Standard</keyword> activities. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Target"/> 
+		<othermeta name="topic" content="Advanced"/> </metadata>
+  </prolog> 
+  <taskbody> 
+	 <context id="context_2A487CC5A98C4B9FBF01CE032F7E77C6"> 
+		<p> 
+		  <note>You can have only one global mbox per account. 
+		  </note> 
+		</p> 
+		<p>To use your existing global mbox for both 
+		  <keyword>Target Standard</keyword> and 
+		  <keyword>Target Classic</keyword>, you must set a few parameters. 
+		</p> 
+	 </context> 
+	 <steps id="steps_81C2F0C3D4BC48399CE7607DF33B0330"> 
+		<step id="step_FAC881F383834C179344F64AF06B0ED5"> 
+		  <cmd>Go to 
+			 <keyword>Target Standard</keyword>, then click 
+			 <uicontrol>Setup</uicontrol> &gt; 
+			 <uicontrol>Implementation</uicontrol>. 
+		  </cmd> 
+		  <stepresult>By default, 
+			 <wintitle>Auto Create Global Mbox</wintitle> is enabled, and the
+			 custom global mbox is named 
+			 <codeph>target-global-mbox</codeph>. 
+		  </stepresult> 
+		</step> 
+		<step id="step_93DB17A64CEA46B683A3335C601F9EFD"> 
+		  <cmd>If you want to use an existing mbox, disable 
+			 <wintitle>Auto Create Global Mbox</wintitle>, and specify the name of
+			 a previously created global mbox in the 
+			 <wintitle>Custom Global Mbox</wintitle> field. 
+		  </cmd> 
+		  <stepresult>The 
+			 <wintitle>Custom Global Mbox</wintitle> dropdown lists all mboxes in
+			 your account. If you want to use an mbox that does not yet exist, create the
+			 mbox in Target Classic. 
+		  </stepresult> 
+		</step> 
+		<step id="step_3976132831974754B8743427545E0133"> 
+		  <cmd>Click 
+			 <uicontrol>Save</uicontrol>. 
+		  </cmd> 
+		  <stepresult>The mbox.js settings for your account are updated. 
+		  </stepresult> 
+		</step> 
+		<step id="step_92BFADE4C73F4A799B3A63E4F128964C"> 
+		  <cmd>Download the new 
+			 <codeph>mbox.js</codeph> file and reference it on your site. 
+		  </cmd> 
+		  <stepresult> 
+			 <p>Once you've updated your production site with the new 
+				<codeph>mbox.js</codeph> file, you are ready to set your
+				preferences. 
+			 </p> 
+		  </stepresult> 
+		</step> 
+		<step id="step_A60FD6FF52DD455698AFA01FA118C77D"> 
+		  <cmd>Click 
+			 <uicontrol>Setup</uicontrol> &gt; 
+			 <uicontrol>Preferences</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_712226C1F7AB437A8C1A92186E68B91F"> 
+		  <cmd>In the 
+			 <wintitle>Custom Global Mbox</wintitle> field, specify the name of
+			 the global mbox you selected on the Implementation page. 
+		  </cmd> 
+		  <stepresult> <?xm-replace_text Step Result?>
+		  </stepresult> 
+		</step> 
+		<step id="step_3B77558C66C74AE5BE1C3C9589F19DB6"> 
+		  <cmd>Click 
+			 <uicontrol>Submit</uicontrol>. 
+		  </cmd> 
+		  <stepresult>All existing activities update to use the specified global
+			 mbox, including activities that have previously been created and implemented. 
+		  </stepresult> 
+		</step> 
+	 </steps> 
+	 <result id="result_83CDEBD6A5BC4BFC8809570914D8A077">The global mbox
+		changes you make in 
+		<keyword>Target Standard</keyword> are also visible in 
+		<keyword>Target Classic</keyword>. In 
+		<keyword>Target Classic</keyword>, go to 
+		<uicontrol>Configuration</uicontrol> &gt;<uicontrol> mbox.js</uicontrol>
+		&gt; 
+		<uicontrol>Edit</uicontrol>. There are several fields for the global mbox
+		near the bottom of the page. Although visible to everyone, these fields can
+		only be edited by Adobe employees. When you set up your global mbox in 
+		<keyword>Target Standard</keyword>, all fields for the global mbox are
+		automatically filled, except the optional the 
+		<wintitle>Global DOM Element ID for HTML Offer Delivery</wintitle> field.
+		
+		<p>This optional field is used to deliver offers to a specific location
+		  on the page. This requires an empty element with an ID on your page, such as an
+		  empty 
+		  <codeph>&lt;div&gt;</codeph> with an ID. Other element types will also
+		  work, as long as they are empty and have an ID. Offers delivered through the
+		  custom global mbox are inserted into the element with the specified ID. If
+		  there is not already an ID associated with the element, you must create one in
+		  the HTML code. 
+		</p>
+		<p>In most cases, no value is provided, and an empty 
+		  <codeph>&lt;div&gt;</codeph> is created immediately following the 
+		  <codeph>&lt;body&gt;</codeph> tag. 
+		</p>
+	 </result> 
+  </taskbody> 
+</task>

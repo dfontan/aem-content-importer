@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_69C0067F59DC4AEC81A3603857B1434C">
+  <title>How Video Measurement Works</title>
+  <shortdesc>This topic provides a brief overview of video measurement. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>media</keyword>
+        <keyword>milestone</keyword>
+        <keyword>sdk</keyword>
+        <keyword>video</keyword>
+      </keywords>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>On the Web, JavaScript is added to pages on your site to enable
+		measurement. Data is sent when a page is visited, or when a specific action
+		occurs (for example, something is added to the shopping cart). The data sent by
+		this code is analyzed by Analytics to determine the order pages were viewed,
+		and how long viewers were on a particular page. 
+	 </p>
+    <p>Similarly, code is added to your video player to enable video
+		measurement. For videos, data is sent when a video is started, closed, and at
+		specific intervals or percentage-based milestones during video playback. To
+		measure video, you add code (called the 
+		media module) to your video player. The 
+		media module is available in multiple formats to
+		support a variety of video players. For example, the 
+		media module is available in ActionScript for Flash,
+		as a plug-in for OSMF, in .NET for Silverlight, and in JavaScript for other Web
+		players (Windows Media Player, Quicktime, and others). 
+	 </p>
+    <p>If you have the source code for the player (for example, a custom OSMF
+		player or a direct Flash NetStream implementation), you can compile the 
+		media module directly into the player. For other
+		players you can integrate using a plug-in interface or by using event handlers
+		that are exposed by the player. 
+	 </p>
+  </conbody>
+</concept>

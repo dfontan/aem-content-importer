@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_2603146DCD064B94A49EE2561AFA8E32"> 
+  <title>Capture the Original Referrer</title> 
+  <shortdesc>Capture the Original Referrer XE "Original Referrer" 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Developer and implementation"/> 
+		<othermeta name="subtopic" content="Redirects"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Normally, 
+		<keyword>Analytics</keyword> will obtain the referring URL from the
+		browser's 
+		<wintitle>document.referrer</wintitle> property, and the current URL from
+		the 
+		<wintitle>document.location</wintitle> property. By passing values to the
+		
+		<varname>referrer</varname> and 
+		<varname>pageURL</varname> variables, you can override the default
+		processing. By passing a value to the referrer variable, you are telling 
+		<keyword>Analytics</keyword> to ignore the referrer information in the 
+		<wintitle>document.referrer</wintitle> property and to use an alternative
+		value that you define. 
+	 </p> 
+	 <p>Therefore, the final version of the landing page would need to contain
+		the following code to correct the issues introduced in the "discount airline
+		tickets" scenario. 
+	 </p> 
+	 <codeblock>&lt;script language="JavaScript" src="http://INSERT-DOMAIN-AND-PATH-TO-CODE-HERE/AppMeasurement.js"&gt;&lt;/script&gt;
+&lt;script language="JavaScript"&gt;&lt;!--
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+s.pageName=""
+s.server=""
+s.campaign=""
+s.referrer=http://www.google.com/search?hl=en&amp;ie=UTF-8&amp;q=discount+airline+tickets
+// Setting the s.pageURL variable is optional.
+s.pageURL="http://www.flytohawaiiforfree.com"</codeblock> 
+  </conbody> 
+</concept>

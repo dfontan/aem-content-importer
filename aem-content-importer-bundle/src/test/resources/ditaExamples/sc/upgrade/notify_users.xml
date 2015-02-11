@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_045EE1B134AE4E6585DABFA1BB1424D8"> 
+  <title>Notifying Users About the Upgrade</title> 
+  <shortdesc>As part of your upgrade to 
+	 <keyword>SiteCatalyst</keyword> 15, it is critical that you effectively
+	 communicate the impact of the upgrade to your 
+	 <keyword>SiteCatalyst</keyword> users. 
+  </shortdesc> 
+  <conbody> 
+	 <p>Adobe recommends using both email notifications and 
+		<keyword>SiteCatalyst</keyword> home page announcements to educate users.
+		
+	 </p> 
+	 <p>Your Adobe Account Manager is available to help you organize and prepare
+		upgrade materials and training specific to your organization’s needs. Contact
+		your Account Manager for more information. 
+	 </p> 
+  </conbody>
+</concept>

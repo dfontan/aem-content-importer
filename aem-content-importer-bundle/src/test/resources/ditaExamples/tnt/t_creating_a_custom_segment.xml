@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_3E1B43E1E04B4BD69CEF078491CF1B6D">
+  <title>Creating a Custom Segment</title>
+  <shortdesc>A custom segment targets a specific segment used only by the
+	 current campaign. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <context id="context_E2E656B16BBF40F0963F9562974926B9">
+      <p>Custom segments are applied only to the current campaign and cannot be
+		  reused by other campaigns. If you want to create a reusable segment, create a
+		  segment in the Segments list, as described in 
+		  <xref href="t_target_an_existing_segment.xml#task_D1E18808C6B04AE98DDD171BF6512D8D" format="dita" scope="local"><?xm-replace_text Target a Reusable Segment?></xref>.
+		  
+		</p>
+    </context>
+    <steps id="steps_CFFC907F9A7D458DB8E68D584D35F388">
+      <step id="step_A14F431965CD415A88A8A5C778B10E70">
+        <cmd>Create a campaign, or select an existing campaign and click 
+			 <uicontrol>Edit</uicontrol>, then select the campaign element you
+			 want to target to a segment.. 
+		  </cmd>
+        <stepresult>
+          <p>
+            <ul id="ul_AD57E8BA26214AD79D379D4FAFBA5833">
+              <li id="li_3BF356578EE7441A8662B309F1582B36">To target the campaign
+				  to a segment, click 
+				  <uicontrol>Target this campaign</uicontrol> under Campaign Name,
+				  then click 
+				  <uicontrol>Create Custom Segment</uicontrol>. 
+				</li>
+              <li id="li_8ABC9D841111447BA777AB946B1578D5">To target a location
+				  to a segment, click 
+				  <uicontrol>Create Custom Segment</uicontrol> in the locations
+				  section of the campaign create/edit screen. 
+				</li>
+              <li id="li_C07607CF5ED0437DAAE82A25A5DCA4C2">To target an
+				  experience to a segment, click 
+				  <uicontrol>Create Custom Segment</uicontrol> in the experiences
+				  section of the campaign create/edit screen. 
+				</li>
+            </ul>
+          </p>
+        </stepresult>
+      </step>
+      <step id="step_1DAECE991C37475EB4DCEEC1C4EBA0FD">
+        <cmd>Define the segment in the targeting interface as described in 
+			 <xref href="t_Setting_Targeting_Rules.xml#task_75C6702BE0AC45E9A0B9DB26FDBB18B2" format="dita" scope="local"><?xm-replace_text Targeting Rules?></xref></cmd>
+      </step>
+    </steps>
+  </taskbody>
+</task>

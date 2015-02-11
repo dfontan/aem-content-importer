@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_84203D59CD5D44969CB0587AB84CA8E8">
+  <title>Putting Analytics Code in the Head Tag</title>
+  <shortdesc>
+    <keyword>Analytics</keyword> code creates an image object, a non-visible
+	 image that does not show up on your page. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <note>This section applies only to the legacy s_code.js implementation. 
+		<xref href="appmeasure_mjs.xml#concept_F3957D7093A94216BD79F35CFC1557E8" format="dita" scope="local"><?xm-replace_text AppMeasurement for JavaScript 1.0?></xref>
+		supports deploying the library and page code in the 
+		<codeph>&lt;head&gt;</codeph> tag. 
+	 </note>
+    <p>Previously, a common implementation practice was to place the 
+		<keyword>Analytics</keyword> JavaScript code between the &lt;head&gt;
+		and &lt;/head&gt; tags. By placing the code between these tags it prevented the
+		1×1 pixel image that was returned by the request that sent data into Adobe
+		servers from affecting page layout in any way. Putting code in the document
+		head means the code appears earlier in the code. This lets it execute sooner,
+		which lets you count page views for partial page loads more effectively. 
+	 </p>
+    <p>Certain elements of the code require the existence of the body object.
+		Since Web browsers execute code in the order they receive it, if the 
+		<keyword>Analytics</keyword> JavaScript code is in the document head,
+		it executes before the body object exists. As a result, your implementation
+		does not collect 
+		<wintitle>ClickMap</wintitle> data, and automatic tracking of file
+		downloads or 
+		<wintitle>exit</wintitle> links are not available. You also do not
+		receive connection type data or visitor home page data. Putting the code in the
+		document head works, but the result is a very limited version of 
+		<keyword>Analytics</keyword>, and users may wonder why certain reports
+		and tools, including 
+		<wintitle>ClickMap</wintitle>, aren't recording data. 
+	 </p>
+    <p>The 
+		<keyword>Analytics</keyword> code can be placed anywhere inside BODY
+		tags ( &lt;BODY&gt;&lt;/BODY&gt;) of a well-formed HTML page. Adobe recommends
+		placing the code in a global include file at the top of the page (inside the
+		HTML body tag). The code can be placed anywhere on the page, except as noted
+		below: 
+	 </p>
+    <ul id="ul_AE7D80A7AAE4436AA763B2F2600E4D19">
+      <li id="li_12103B4CB9F8424E85DDBEBD9A8B8894">If placed within a table,
+		  post the code only within the &lt;td&gt;&lt;/td&gt; tags. For example, do not
+		  place the code between an opening &lt;tr&gt; tag and an opening &lt;td&gt; tag.
+		  
+		</li>
+      <li id="li_F5D4E1CEBDD14AA297D9099585795689"> The code that sets the
+		  variables must occur after the reference to the 
+		  <filepath>s_code.js</filepath> file. 
+		</li>
+      <li id="li_3232A867FBAE46E2B80E903453066905">Make certain that the 
+		  <wintitle>report suite ID</wintitle>s in the 
+		  <varname>s_account</varname> variable in the 
+		  <filepath>s_code.js</filepath> file are set correctly. This variable is
+		  typically set correctly when downloading code from the Code Manager for a
+		  particular report suite, or as supplied by an Adobe Technical Consultant. 
+		</li>
+    </ul>
+    <p>If you want to integrate 
+		<keyword>Analytics</keyword> with Target, the JavaScript include
+		file must be placed at the bottom of the page. The following example shows
+		correct placement of the 
+		<keyword>Analytics</keyword> code: 
+	 </p>
+    <codeblock outputclass="syntax javascript">&lt;html&gt;
+&lt;head&gt;&lt;/head&gt;
+&lt;body&gt;
+&lt;!-- SiteCatalyst code version: H.20.3.
+Copyright 1997-2009 Omniture, Inc. More info available at
+http://www.omniture.com --&gt;
+&lt;script language="JavaScript" type="text/javascript" src="http://www.yourdomain.com/js/s_code.js"&gt;&lt;/script&gt;
+&lt;script language="JavaScript" type="text/javascript"&gt;&lt;!--
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+s.pageName=""
+s.server=""
+s.channel=""
+s.pageType=""
+s.prop1=""
+s.prop2=""
+s.prop3=""
+s.prop4=""
+s.prop5=""
+/* Conversion Variables */
+s.campaign=""
+s.state=""
+s.zip=""
+s.events=""
+s.products=""
+s.purchaseID=""
+s.eVar1=""
+s.eVar2=""
+s.eVar3=""
+s.eVar4=""
+s.eVar5=""
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--&gt;&lt;/script&gt;
+&lt;!-- End SiteCatalyst code version: H.20.3. --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</codeblock>
+  </conbody>
+</concept>

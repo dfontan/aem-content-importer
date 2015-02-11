@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_CBCAE87060BC4BE1A335DDCA6F4396FB">
+  <title>Tracking Codes Report</title>
+  <shortdesc>Measures how various advertising tracking codes affect different
+	 conversion events on your site. This report can be used to measure what
+	 specific campaigns are performing better for different success events, or to
+	 see how campaigns are helping or hindering your site's initiatives, such as
+	 which campaigns are generating the most revenue. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>
+      <b>General Properties</b>
+    </p>
+    <ul id="ul_D60240B6AA8D4EB6B9FF59CAF254D879">
+      <li id="li_C18C1652ED2F4A109F972F6C0EACEEDB">This report references data
+		  directly from the 
+		  <xref href="campaign.xml#concept_4D6B6C3D593342DDBF5D5581CFB7BA11" type="concept" format="dita" scope="local">s.campaign</xref> variable implemented on your
+		  website. 
+		</li>
+      <li id="li_F270AEE8D10B44519A02B63762B49F83">The variable this report is
+		  based on is a 
+		  <xref href="conversion_var_admin.xml#concept_C02F7AA01DE242F1AA1A4E74022BE9DE" type="concept" format="dita" scope="local">conversion variable</xref>. Meaning,
+		  it can persist beyond the page view and associate itself with metrics within
+		  its specified expiration. 
+		</li>
+      <li id="li_EE97443A66284CC8BDDF8BABE9ED36E1">The report's default metric
+		  is Revenue. You can change this default value in the 
+		  <wintitle>Report Suite Manager</wintitle> in 
+		  <wintitle>Admin Tools</wintitle>. (<uicontrol>Edit Settings</uicontrol>
+		  &gt; 
+		  <uicontrol>Individual Report Settings</uicontrol> &gt; 
+		  <uicontrol>Default Metrics</uicontrol>.) 
+		</li>
+      <li id="li_E14DC6EFADB54888894B919235348061">This report can be viewed in
+		  both trended and ranked formats. 
+		</li>
+      <li id="li_588A51773B1F4D46AF8669D027F9AADA">This report can use a search
+		  filter to locate specific line items. 
+		</li>
+      <li id="li_FAFB7E051AB34827B6FF3B63006183CC">The 
+		  <wintitle>Campaigns</wintitle> and 
+		  <wintitle>Creative Elements</wintitle> reports are classifications
+		  based on this report, and are automatically created with each report suite. 
+		</li>
+      <li id="li_D03A7CB24D45456493AF47771DB9E477"> SAINT Classifications can
+		  be used in this report, allowing you to rename and consolidate line items. 
+		</li>
+      <li id="li_3A43E7AB65DA44C1B3FE1142B8713EAD">You can break down this
+		  report by the following reports (depending on organization and report suite
+		  settings): 
+		  <ul id="ul_490BD5D9CB3B48749A0812FFF6F0F08B"><li id="li_7E0891C7349A4E96B92B78C88947F006">Time Spent per Visit 
+			 </li><li id="li_9B96EED9B7EE4482AB1D8B79A62EB757">Pages and Site Sections
+				reports, with all related classifications 
+			 </li><li id="li_869B1973F6C145AEA1F4AB60CA8233B2">Page Depth, Entry Pages
+				and Original Entry Pages 
+			 </li><li id="li_5EB3CF9EAEAA411D9F41C1648A41FE3D">Most traffic sources
+				reports 
+			 </li><li id="li_BEADCD185D404C77AD9BD962F76DC511">Visit Number and
+				Customer Loyalty 
+			 </li><li id="li_6176BC11405940FC9B275987424D3336">Many Visitor Profile and
+				Technology reports, excluding GeoSegmentation 
+			 </li><li id="li_EBCCCF9C976A4C9890450A86A31E5059">All custom conversion
+				variables 
+			 </li></ul></li>
+      <li id="li_D637E2860C8D48C0B7CFB7F784133945">The following metrics can be
+		  utilized in this report (depending on organization and report suite settings): 
+		  <ul id="ul_85C50C649E734B5FA42B8E16290EEDA2"><li id="li_505CA90A33D74C1BBE7DB26574DB288C">Click-throughs: the
+				number of times the 
+				<varname>s.campaign</varname> variable is defined 
+			 </li><li id="li_C0EB74E339044C36A01038520B3169E8">All standard eCommerce
+				metrics: Revenue, Orders, Units, Carts, Cart Views, Checkouts, Cart Additions,
+				Cart Removals. 
+			 </li><li id="li_044D066818504FEC9B47801EB50BDD73">All custom events:
+				Events 1-80, and Events 81-100 if on H22 code or higher 
+			 </li><li id="li_4D8D5C6CD84A4F48B684B75AA03B6463">Visits and Visitors:
+				availability is dependent on organization and report suite. Contact your
+				Account Manager for additional information. 
+			 </li></ul></li>
+    </ul>
+    <p>
+      <b> 
+		  Version 13.5 Properties</b>
+    </p>
+    <ul id="ul_A50CA571A6184DDC9C44ECB8E1637B6A">
+      <li id="li_9647387C2BFA41588F01D2CBED76A343">Click 
+		  <uicontrol>Conversion</uicontrol> &gt; 
+		  <uicontrol>Campaigns</uicontrol> &gt; 
+		  <uicontrol>Tracking Code</uicontrol> to locate this report. 
+		</li>
+      <li id="li_FBBD30A8EE4649D085244FFA930EA64B">Traffic Sources breakdowns
+		  can instead be found under 
+		  <wintitle>Finding Methods</wintitle>. 
+		</li>
+      <li id="li_BB34C93FEFBC4AB7924F0D7E40929B63">The 
+		  <uicontrol>Pages</uicontrol> and 
+		  <b>Site Sections</b> breakdowns are found under 
+		  <wintitle>Site Path</wintitle>. 
+		</li>
+    </ul>
+    <p>
+      <b> 
+		  version 14 Properties</b>
+    </p>
+    <ul id="ul_D6D273183ED54870A772F3C5B8630444">
+      <li id="li_3EC00FD31B6445988B4EE9206EE9FD77">Click 
+		  <uicontrol>Conversion</uicontrol> &gt; 
+		  <uicontrol>Campaigns</uicontrol> &gt; 
+		  <uicontrol>Tracking Code</uicontrol> to locate this report, unless the
+		  menu is customized. 
+		</li>
+      <li id="li_C788F8AF447E4724BD85705C8981E9A4"> In addition to all the
+		  breakdowns listed, you can also break down this report by First-Touch and
+		  Last-Touch in Marketing Channels. 
+		</li>
+    </ul>
+    <p>
+      <b> 
+		  Version 15 Properties</b>
+    </p>
+    <ul id="ul_69BD5750F35645158ADA51C2B7080178">
+      <li id="li_FFE9049B580641798AA54454B7D445E6">Click 
+		  <uicontrol>Conversion</uicontrol> &gt; 
+		  <uicontrol>Campaigns</uicontrol> &gt; 
+		  <uicontrol>Tracking Code</uicontrol> to locate this report, unless the
+		  menu is customized. 
+		</li>
+      <li id="li_57238E94440E4F25943D9B7ECF28EFF0">In addition to all the
+		  breakdowns listed above and in version 14, this report can also be broken down
+		  by all 
+		  <xref href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=list_var" format="http" scope="external">List Variables</xref>. 
+		</li>
+      <li id="li_48C7243E95704957A49E509BF2345825">Page Views, Visits, and
+		  Unique Visitors are available as metrics. 
+		</li>
+      <li id="li_7564333B54E443AA8C21CA20A51D0F24">This report can make use of
+		  segments. 
+		</li>
+    </ul>
+    <p>
+      <b> 
+		  Ad Hoc Analysis Properties</b>
+    </p>
+    <ul id="ul_587042D36DFD4EFAA7E9A6D9A7C394AE">
+      <li id="li_276C5786052E4C138A572AF5D25C9651">In addition to most
+		  out-of-the-box conversion variables, 
+		  you can break down the Tracking Code report by
+		  all other reports within the 
+		  reporting interface. 
+		</li>
+      <li id="li_BDA5460CE9C247A78434BEA69F72B688">In addition to eCommerce and
+		  custom events, 
+		  you can use all conversion and traffic metrics,
+		  as well as use different allocation for all conversion metrics. 
+		</li>
+      <li id="li_8833D18E0FBF404CBC87F39C0198D499">This report can use advanced
+		  segments. 
+		</li>
+    </ul>
+  </conbody>
+</concept>

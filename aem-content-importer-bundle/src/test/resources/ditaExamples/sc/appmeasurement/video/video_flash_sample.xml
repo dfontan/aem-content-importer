@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_BBDB825EB2D6400C8900F03DCEEAA544">
+  <title>ActionScript Sample Code</title>
+  <shortdesc>This section contains a sample implementation in ActionScript. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>media</keyword>
+        <keyword>milestone</keyword>
+        <keyword>sdk</keyword>
+        <keyword>video</keyword>
+      </keywords>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <note type="important">Change 
+		<codeph>s.account</codeph>, 
+		<codeph>s.trackingServer</codeph>, and the variables in 
+		<codeph>s.Media.contextDataMapping</codeph> before you use this code. 
+	 </note>
+    <codeblock outputclass="syntax javascript">/* Import line for ActionScript 3 */
+import com.omniture.AppMeasurement;
+
+var s:AppMeasurement = new AppMeasurement();
+addChild(s);
+
+/* Specify the Report Suite ID(s) to track here */
+s.account = "myrsid"; // CHANGE THIS!
+
+/* Turn on and configure debugging here - turn this off for production deployment */
+s.debugTracking = true;
+s.trackLocal = true;
+
+/* You may add or alter any code config here */
+s.pageName = "";
+s.pageURL = "";
+s.charSet = "UTF-8";
+s.currencyCode = "USD";
+
+/* Turn on and configure ClickMap tracking here */
+s.trackClickMap = false;
+
+/* WARNING: Changing any of the below variables will cause drastic changes
+to how your visitor data is collected.  Changes should only be made
+when instructed to do so by your account manager.*/
+
+/* These values can be copied from your s_code.js file. Your trackign server varies based on
+1st or 3rd party cookies, and if you are using SSL. If using first party cookies, 
+trackingServer will be on your domain, for example metrics.mysite.com */
+
+s.visitorNamespace = "yourNamespace";
+s.trackingServer="mycompany.112.2o7.net"; // CHANGE THIS!
+s.trackingServerSecure=""; //might not be needed
+
+/* Configure Media Module Functions */
+
+// events, and every variable you track in video, including Media.monitor, should be in this list.
+s.Media.trackVars="events,eVar45,eVar46,eVar47"; // CHANGE THESE!
+
+// every event you track in video, including Media.monitor, should be in this list
+s.Media.trackEvents="event45,event46,event47,event48"; // CHANGE THESE!
+s.Media.autoTrack=true;
+s.Media.trackMilestones="25,50,75";
+s.Media.playerName="Video Test 1";
+s.Media.trackUsingContextData=true;
+s.Media.segmentByMilestones=true;
+s.Media.contextDataMapping= { // CHANGE THESE!
+  "a.media.name":"eVar45",
+  "a.media.segment":"eVar46",
+  "a.contentType":"eVar47",
+  "a.media.timePlayed":"event45",
+  "a.media.view":"event46",
+  "a.media.segmentView":"event48",
+  "a.media.complete":"event49",
+  "a.media.milestones":{
+    25:"event50",
+    50:"event51",
+    75:"event52"
+}
+};
+
+s.Media.monitor = function (s,media){
+
+  if(media.event=="OPEN") {
+    trace("Media Open: " + media.name);
+
+  /* the following code is an example of tracking an eVar on media open
+  you can do something similar for any Media.monitor event
+  don't forget to add any eVars and events used in Media.monitor to
+  Media.trackVars and Media.trackEvents */
+
+  // s.eVar48=s.Media.playerName;
+  // s.Media.track(media.name);
+  }
+  if (media.event == "MILESTONE") {
+    trace("Media Milestone Reached: " + media.milestone );
+  }                
+  if(media.event=="CLOSE") {
+    trace("Media Close: " + media.name);
+  }
+}</codeblock>
+  </conbody>
+</concept>

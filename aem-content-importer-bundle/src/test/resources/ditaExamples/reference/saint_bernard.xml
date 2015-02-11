@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_858976448EFB4950B01D89BE4192F6F9">
+  <title>SAINT Bernard</title>
+  <shortdesc>(Unsupported) SAINT Bernard is an AIR application that lets you
+	 create a tracking code and classify it at the same time. You can generate the
+	 URL, and can use it in a campaign.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Admin tools" />
+      <othermeta name="subtopic" content="Classifications" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Two tools are available:
+	 </p>
+    <p>
+      <b>SAINTBernardPup</b>: A simple tool to automatically create campaign
+		Ids and upload the classification data to SAINT. 
+	 </p>
+    <p>
+      <b>SAINTBernard</b>: The enterprise tool you can use to download, edit,
+		and upload classification data.
+	 </p>
+    <p>See the 
+		<xref href="https://developer.omniture.com/en_US/gallery/saint-bernard" format="https" scope="external">Developer Connection Gallery</xref> for more
+		information, or contact Adobe Engineering Services.
+	 </p>
+  </conbody>
+</concept>

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_3589463312B042BEA96A613A4E73925E">
+  <title>Troubleshooting a Dynamic OSMF Implementation</title>
+  <shortdesc>If you are unable to capture data with your dynamic
+	 implementation, consider the following troubleshooting tips: 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>media</keyword>
+        <keyword>milestone</keyword>
+        <keyword>sdk</keyword>
+        <keyword>video</keyword>
+      </keywords>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <ul id="ul_6047D55D46AA4DEAA2DB88F8A8487043">
+      <li id="li_92CBF50FC3B944DD93B97DAEF22E31EB">When using a dynamic
+		  implementation, you cannot load the plug-in from a local drive. You must load
+		  it from a Web server to avoid Flash security errors. 
+		</li>
+      <li id="li_A3315ACD7D7E41429E732C26DEAF481F">When testing the dynamic
+		  implementation, listen for the pluginLoadError event in MediaFactory. This
+		  event captures any load errors related to the plug-in. 
+		</li>
+    </ul>
+    <p>Be aware of the following issues when using the configURL parameter: 
+	 </p>
+    <ul id="ul_55C627BB9DF944C0A2C5C7F6DADE0218">
+      <li id="li_DCAFEE1A6C5A4CFDB9CBD8CE84989997">XML tags are case sensitive.
+		  
+		</li>
+      <li id="li_5ACFF86BCC2548AEB7D23BAE4BF83C51">Do not enclose strings in
+		  quotes. 
+		</li>
+      <li id="li_9F951B1459D642248F6E935D7270E47D">Booleans can be set to true
+		  or false. 
+		</li>
+      <li id="li_64B67BDF04A44EA993A0E5D76F688F1A">Use entities for special
+		  characters. For example: &amp;lt; for "&lt;", &amp;gt; for "&gt;", and
+		  &amp;amp; for "&amp;". 
+		</li>
+      <li id="li_A1F77B32E66F42808AA61C64A05CB40A">Before using configURL, you
+		  might need to configure Flash security to suport using a configuration file
+		  from an external domain. For more information about Flash security, search for
+		  crossdomain at 
+		  <xref href="http://www.adobe.com/support/flashplayer/" scope="external" format="html"><?xm-replace_text http://www.adobe.com/support/flashplayer/?></xref>.
+		  
+		</li>
+    </ul>
+  </conbody>
+</concept>

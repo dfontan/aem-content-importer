@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_F23166683F484177A2DDDF01F35C11DC">
+  <title>Allowing Other Users in Your Organization to Create Ideas</title>
+  <shortdesc>You can create a bookmark to the dialog box where a user can enter
+	 an idea, and share it with other people who might contribute ideas. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>mbox</keyword>
+      </keywords>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <context id="context_D5CA983BE9084B3D802FEE2833864203">
+      <p>When somebody creates an idea using this bookmark, you can drop it
+		  into the desired place in the queue. You can also edit or delete ideas
+		  submitted by other people. 
+		</p>
+      <p>To use the bookmark, the user must log in. You can either create a
+		  user login for each person you invite to create ideas, or use a generic login.
+		  The advantage to creating a separate login for each user is that the person who
+		  created the idea is identified. 
+		</p>
+    </context>
+  </taskbody>
+  <related-links>
+    <link href="t_Adding_an_Idea.xml#task_D3704B83BC8443E88A36F405957008CB" type="task" format="dita" scope="local">
+      <?xm-replace_text Adding an Idea?>
+    </link>
+    <link href="t_Editing_an_Idea.xml#task_556FF14B63B247D58A9054095E9D65EA" type="task" format="dita" scope="local">
+      <?xm-replace_text Editing an Idea?>
+    </link>
+    <link href="t_Deleting_an_Idea.xml#task_8B52219C1B0545A09412F25186DDB70F" type="task" format="dita" scope="local">
+      <?xm-replace_text Deleting an Idea?>
+    </link>
+  </related-links>
+</task>

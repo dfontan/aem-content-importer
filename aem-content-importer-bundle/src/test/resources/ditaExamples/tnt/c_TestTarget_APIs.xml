@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_117B4192F92D40F2B3DC9E06745CD1E8" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic concept/concept ">
+  <title class="- topic/title ">APIs</title>
+  <shortdesc class="- topic/shortdesc ">A set of APIs helps further integrate
+	 Target functionality into your platform. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody class="- topic/body  concept/conbody ">
+    <p class="- topic/p ">The REST-based APIs can be integrated neatly into a
+		range of application stacks. They can be used to connect your profile
+		management services, your content management systems, CRMs, and data collection
+		suites. 
+	 </p>
+    <p class="- topic/p ">There are three primary use cases supported by the
+		APIs: 
+	 </p>
+    <p class="- topic/p ">
+      <ul id="ul_C1330FB2001D4F7FAC8B46B6205B64D7" class="- topic/ul ">
+        <li id="li_36FF340B7531492AA826E05C5AC512FF" class="- topic/li "> How do
+		  I get report information programatically? 
+		</li>
+        <li id="li_8ECEDFF48C6A4CFA963E309B38D7504C" class="- topic/li "> How do
+		  synchronize with my Website Visitor Profile data? 
+		</li>
+        <li id="li_47AAB53F26924E8FB7E491E0FDD35D47" class="- topic/li "> How do
+		  I manage campaign-related assets outside of Target? 
+		</li>
+      </ul>
+    </p>
+    <p class="- topic/p ">Using the APIs to solve these use cases depend on
+		your ability to do the following: 
+	 </p>
+    <p class="- topic/p ">
+      <ul id="ul_1768AF5FA1A641C1BCF1A0D236D74AD4" class="- topic/ul ">
+        <li id="li_BF6E74DFED46418B9DFDEA5B1358435F" class="- topic/li ">
+		  Retrieve campaign report information 
+		</li>
+        <li id="li_378BE595FEDA4ACAA0FE6A29399E190F" class="- topic/li ">
+		  Synchronize website visitor profiles between your platform and Target 
+		</li>
+        <li id="li_DD864D04913742B59285733A10D6E2FB" class="- topic/li "> Create
+		  offers outside of Target 
+		</li>
+        <li id="li_8A27C6017BC44211A184A88E54379C66" class="- topic/li "> Provide
+		  a mechanism to easily guide your users to the campaign creation process 
+		</li>
+      </ul>
+    </p>
+    <p class="- topic/p ">For detailed specifications on the available APIs,
+		visit the 
+		<xref href="http://developer.omniture.com/en_US/documentation/test-target" scope="external" format="html" class="- topic/xref ">Developer
+		  Connection</xref>. 
+	 </p>
+    <p class="- topic/p ">The APIs include: 
+	 </p>
+    <p class="- topic/p ">
+      <b class="+ topic/ph hi-d/b ">Audit Report API:</b> Extract audit report
+		(sales) data for a campaign to manipulate outside of Target, and for
+		longer-term audit data storage. 
+	 </p>
+    <p>
+      <b>Batch Profile Update:</b> Request profile updates in a batch.
+	 </p>
+    <p class="- topic/p ">
+      <b class="+ topic/ph hi-d/b ">Campaign Copy API:</b> Create a new
+		campaign based on an existing source campaign. 
+	 </p>
+    <p class="- topic/p ">
+      <b class="+ topic/ph hi-d/b ">Campaign Create API:</b> Create and update
+		AB..N campaigns, landing page campaigns, and optimizing campaigns (optimized to
+		RPV/AOV/Conversion Rate). 
+	 </p>
+    <p class="- topic/p ">
+      <b class="+ topic/ph hi-d/b ">Campaign List API:</b> Retrieve lists of
+		campaign names and identifiers by constructing a filtered request. The
+		retrieved data can be passed into the Audit Report API. 
+	 </p>
+    <p class="- topic/p ">
+      <b class="+ topic/ph hi-d/b ">Campaign State API:</b> Approve or
+		deactivate a campaign without logging in. 
+	 </p>
+    <p class="- topic/p ">
+      <b class="+ topic/ph hi-d/b ">Campaign View API:</b> Return an XML "view"
+		of the specified campaign. 
+	 </p>
+    <p class="- topic/p ">
+      <b class="+ topic/ph hi-d/b ">Landing Page Tool API:</b> Integrate a
+		"create campaign" workflow into your content management system that leads users
+		to Target, where they can create campaigns. 
+	 </p>
+    <p>
+      <b>Offer Create API:</b> Creates a new HTML offer. 
+	 </p>
+    <p>
+      <b>Offer Get API:</b> Retrieves the content of an existing HTML offer. 
+	 </p>
+    <p>
+      <b>Offer List API:</b> Lists all offers that are contained in a folder. 
+	 </p>
+    <p class="- topic/p ">
+      <b class="+ topic/ph hi-d/b ">Performance Report API:</b> Access detailed
+		campaign performance data. 
+	 </p>
+    <p class="- topic/p ">
+      <b class="+ topic/ph hi-d/b ">Profile Passing API / Offline Conversion
+		  API:</b> Link a site visitor to your own user profile database and pass
+		information for better targeting and segmentation. There is a 30-minute delay
+		before a response is returned. 
+	 </p>
+    <p class="- topic/p ">
+      <b class="+ topic/ph hi-d/b ">Third-Party Campaign ID API:</b> Associate
+		a third-party identifier to a campaign. 
+	  <!--Can also update multiple profiles
+						with a single API call.--></p>
+    <p class="- topic/p ">
+      <b class="+ topic/ph hi-d/b ">Widget Offer API:</b> Create "widget
+		offers" that reference content that exists outside Target but can be used in a
+		campaign like a standard HTML offer. 
+	 </p>
+  </conbody>
+</concept>

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_547627560BCA46359BC36036982F7784">
+  <title>What is a Predefined Event?</title>
+  <shortdesc>List of 
+	 <wintitle>predefined</wintitle> events. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <table id="table_C19A79D2B6A347FA9E05A9AD6AEF7EF5">
+      <tgroup cols="2">
+        <colspec colnum="1" colname="col1" colwidth="*" />
+        <colspec colnum="2" colname="col2" colwidth="*" />
+        <tbody>
+          <row>
+            <entry> prodView 
+				</entry>
+            <entry> Success event occurs any time a visitor views a product. 
+				</entry>
+          </row>
+          <row>
+            <entry> scView 
+				</entry>
+            <entry> Success event occurs any time a shopping cart is viewed. 
+				</entry>
+          </row>
+          <row>
+            <entry> scOpen 
+				</entry>
+            <entry> Success event occurs any time a visitor opens a shopping
+				  cart for the first time. 
+				</entry>
+          </row>
+          <row>
+            <entry> scAdd 
+				</entry>
+            <entry> Success event occurs any time a product is added to a
+				  shopping cart. 
+				</entry>
+          </row>
+          <row>
+            <entry> scRemove 
+				</entry>
+            <entry> Success event occurs any time an item is taken out of a
+				  shopping cart. 
+				</entry>
+          </row>
+          <row>
+            <entry> scCheckout 
+				</entry>
+            <entry> Success event occurs on the first page of a checkout. 
+				</entry>
+          </row>
+          <row>
+            <entry> purchase 
+				</entry>
+            <entry> Success event occurs on the final page of a checkout
+				  (includes Revenue, Orders, and Units). 
+				</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p>When any of the predefined events above occurs, an instance of the event
+		is incremented. You can view the metrics related to the event in several
+		different reports. See below for an example of the
+		code used to configure predefined events. 
+	 </p>
+    <codeblock outputclass="syntax javascript">s.events="scAdd"</codeblock>
+    <codeblock outputclass="syntax javascript">s.events="scOpen,scAdd"</codeblock>
+    <ul id="ul_FC6D2BB5C74145FDB0CC67187532061F">
+      <li id="li_E57BC43580E5476B897A30E9148776F3">In the first example above, 
+		  <wintitle>scAdd</wintitle> is the value of the event. Any time an item
+		  is added to the shopping cart, the event is incremented. 
+		</li>
+      <li id="li_6E9DD8005ED541309405B89F447916AF">In the second example, two
+		  values are captured at the same time. When multiple success events occur on the
+		  same page, each event is incremented. 
+		</li>
+    </ul>
+  </conbody>
+</concept>

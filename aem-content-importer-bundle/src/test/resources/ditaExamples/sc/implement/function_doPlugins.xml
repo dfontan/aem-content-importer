@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_152CFB2F8FAC40BB86393B057A9CD396">
+  <title>doPlugins Function</title>
+  <shortdesc>JavaScript plug-ins are usually called by the 
+	 <codeph>doPlugins</codeph> function, which is executed when the 
+	 <codeph>t()</codeph> function is called in the Code to Paste. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Plug-ins" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Consequently, if you set a variable in the 
+		<codeph>doPlugins</codeph> function, you may overwrite a variable you set
+		on the HTML page. The only time the 
+		<codeph>doPlugins</codeph> function is not called is when the 
+		<varname>usePlugins</varname> variable is set to 
+		<codeph>false</codeph>. 
+	 </p>
+    <p>
+      <b>Code Example</b>
+    </p>
+    <p>The 
+		<codeph>doPlugins</codeph> function is typically called 
+		<codeph>s_doPlugins</codeph>. However, in certain circumstances (usually
+		when more than one version of 
+		<keyword>Analytics</keyword> code may appear on a single page), you
+		can change the 
+		<codeph>doPlugins</codeph> function name. If the standard 
+		<codeph>doPlugins</codeph> function needs to be renamed to avoid
+		conflicts, assign 
+		<codeph>doPlugins</codeph> the correct function name, as shown in the
+		example below. 
+	 </p>
+    <codeblock outputclass="syntax javascript">/* Plugin Config */
+s_mc.usePlugins=true
+function <b>s_mc_doPlugins</b>(s_mc) {
+/* Add calls to plugins here */
+}
+s_mc.doPlugins=<b>s_mc_doPlugins</b></codeblock>
+    <p>
+      <b>Using doPlugins</b>
+    </p>
+    <p>This function provides an easy way to give default values to variables,
+		or to take values from query string parameters on any page of the site. Using 
+		<codeph>doPlugins</codeph> can be easier than populating the values in
+		the HTML page, because only one file must be updated. Changes to the JavaScript
+		file are not always immediate. Return visitors to your site are often using
+		cached versions of the JavaScript file. Meaning, updates to the file may not be
+		applied to all visitors for up to one month after the change is made. 
+	 </p>
+    <p>The following examples show how you can use the 
+		<codeph>doPlugins</codeph> function to set a default value for a variable
+		and to get a value from the query string. 
+	 </p>
+    <codeblock outputclass="syntax javascript">/* Plugin Config */
+s.usePlugins=true
+function s_doPlugins(s) {
+/* Add calls to plugins here */
+// if prop1 doesn't have a value, set it to "Default Value"
+if(!s.prop1)
+s.prop1="Default Value"
+
+// if campaign doesn't have a value, get cid from the query string
+if(!s.campaign)
+s.campaign=getQueryParam('cid');
+}
+s.doPlugins=s_doPlugins</codeblock>
+    <p>
+      <b>Installed Plug-ins</b>
+    </p>
+    <p>To find out whether a plugin is included in your JavaScript file and
+		ready for use, look in the 
+		<wintitle>Plugins Section</wintitle> of the JavaScript file. The
+		following example shows what the 
+		<codeph>getQueryParam</codeph> function looks like in the 
+		<wintitle>Plugins Section</wintitle>. 
+	 </p>
+    <codeblock outputclass="syntax javascript">/************************** PLUGINS SECTION *************************/
+
+/* You may insert any plugins you wish to use here. */
+/*
+* Plugin: getQueryParam 1.3 - Return query string parameter values
+*/
+s.getQueryParam=new Function("qp","d",""
++"vars=this,v='',i,t;d=d?d:'';while(qp){i=qp.indexOf(',');i=i&lt;0?qp.l"
+//
+// ... more code below ...
+//
+</codeblock>
+  </conbody>
+</concept>

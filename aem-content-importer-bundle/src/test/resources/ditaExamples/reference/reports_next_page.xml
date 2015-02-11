@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_E3D0FEC81E1F4987B39CC467F19FFCFF">
+  <title>Next Page Report</title>
+  <shortdesc>Provides detailed site path analysis by showing you the pages that
+	 visitors viewed after seeing a selected page on your site. For example, when
+	 selecting and reporting on your entire site, the report shows the top ten
+	 landing pages, with the five most popular next pages listed under each landing
+	 page. This data can help you understand which content and features most often
+	 compel your visitors to move through your site. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p></p>
+  </conbody>
+</concept>

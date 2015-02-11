@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_C2C4F19811A445EF9E9BEAC709B568A9"> 
+  <title>Add an Opt-Out Link</title> 
+  <shortdesc>Visitors to your web site may choose not to have their activity
+	 tracked in Adobe’s analytics products by visiting the opt-out page for your
+	 data collection domain. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Developer and implementation"/> 
+		<othermeta name="subtopic" content="Troubleshooting"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p> If a user chooses not to be tracked and an opt-out cookie is set, your
+		JavaScript file will continue to send data to Adobe servers but that data will
+		not be processed or reported on. 
+	 </p> 
+	 <p>The collection_domain section of the URL structure is the trackingServer
+		used in your JavaScript file. The collection domain used for your Adobe
+		Analytics implementation can be seen in the DigitalPulse debugger in the first
+		row of the Adobe Analytics table, which is labeled either “First Party Cookies”
+		or “Third Party Cookies” depending on your implementation. The collection
+		domain for your website may contain 2o7.net, omtrdc.net or your website domain,
+		such as metrics.example.com. 
+	 </p> 
+	 <p>Visitors opt-out by clicking the link on the opt-out page, thereby
+		causing a cookie to be set in their browser. By having the 
+		<codeph>omniture_optout</codeph> cookie for the applicable tracking
+		domain, the user's activities will not be reported by Adobe Analytics. You can
+		provide your own link to the opt-out cookie, or you can follow the steps below
+		to set the opt-out cookie. 
+	 </p> 
+	 <p>Adobe offers opt-outs for all implementation types. You are responsible
+		for your own privacy policy and for remaining in compliance with your signed
+		terms. Note that the link to the opt-out page changes based on your
+		implementation type, as outlined here. 
+	 </p> 
+	 <p>If you implement Adobe Analytics products and services with cookies set
+		on domains owned by Adobe (i.e. 207.net or omtrdc.net), you can point your
+		website visitors to the opt-out mechanism provided in the 
+		<xref href="http://www.adobe.com/privacy/opt-out.html" format="http"
+		scope="external">Adobe Privacy Center</xref> for all sites that use Adobe
+		cookies for Adobe Analytics products and services. The direct link to the Adobe
+		opt-out mechanism is http://collection_domain/optout.html.
+	 </p> 
+	 <p>More information about Adobe Analytics privacy practices can be found at
+		
+		<xref href="http://www.adobe.com/privacy/advertising-services.html"
+		format="http"
+		scope="external">http://www.adobe.com/privacy/advertising-services.html</xref>.
+		
+	 </p> 
+	 <section id="section_E0462428D2E440E7863E24D2F6DBF748"> 
+		<title>Opt-out Page URL Structure</title> 
+		<p>Your opt out page is at the following URL: 
+		</p> 
+		<codeblock outputclass="syntax html">http://collection_domain/optout.html[?optional_parameters]</codeblock> 
+		<p>The 
+		  <codeph>optional_parameters</codeph> include: 
+		</p> 
+		<p> 
+		  <codeph>locale=[code]</codeph>: Provides a translated version of the
+		  opt-out page. The following locales are supported: 
+		</p> 
+		<ul id="ul_1118EC099EC14BEF9F4A286AE1FBF3EE"> 
+		  <li id="li_053D8F6973444AE8842C6467253CF084">en_US (default) 
+		  </li> 
+		  <li id="li_E13E5255E8404186BBE2FD3B96CB0271">de_DE 
+		  </li> 
+		  <li id="li_CB0EEDBDEF054D469AB07815A542314D">es_ES 
+		  </li> 
+		  <li id="li_6442C40AAAA14202A2259387E1B1571B">fr_FR 
+		  </li> 
+		  <li id="li_41588735E0A142C28818E1085E45FF88">jp_JP 
+		  </li> 
+		  <li id="li_4EA86DB0181B4DF5B07FCECFD8A00F75">ko_KR 
+		  </li> 
+		  <li id="li_94667AB9288E4F8B921CF06FC4CE7791">zh_CN 
+		  </li> 
+		  <li id="li_5D0C6F0DBE9B4BCB93915589D3569A49">zh_TW 
+		  </li> 
+		</ul> 
+		<p> 
+		  <codeph>popup=1</codeph>: Treats the page as if it were a popup, and
+		  offers a “Close Window” button. 
+		</p> 
+	 </section> 
+	 <section id="section_258DE5226AA0483CA790D2C9C5318B2E"> 
+		<title>Example Opt-Out URLs</title> 
+		<p>An English web page in a full window containing a link that, when
+		  clicked, will prevent the visitor from being tracked on metrics.example.com: 
+		</p> 
+		<codeblock outputclass="syntax html">http://metrics.example.com/optout.html</codeblock> 
+		<p>A French web page in a full window, containing a link that, when
+		  clicked, will prevent the visitor from being tracked on
+		  example.d3.sc.omtrdc.net: 
+		</p> 
+		<codeblock outputclass="syntax html">http://example.d3.sc.omtrdc.net/optout.html?locale=fr_FR</codeblock> 
+		<p>A German web page, in a popup window, containing a link that, when
+		  clicked, will prevent the visitor from being tracked on example.112.2o7.net: 
+		</p> 
+		<codeblock>http://example.112.2o7.net/optout.html?popup=1&amp;locale=de_DE</codeblock> 
+	 </section> 
+  </conbody> 
+</concept> 

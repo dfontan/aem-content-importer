@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_BB18B8B9C1474930BFB460B30B410556">
+  <title>Total Amount Purchased</title>
+  <shortdesc>On a retail site, a visitor's lifetime purchase history can
+	 predict future shopping behavior. As a marketer, you might have a hypothesis
+	 that users who have purchased over $200 are more likely to buy products in the
+	 future, so your homepage should highlight higher margin products. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Select 
+		<uicontrol>Segments</uicontrol> &gt; 
+		<uicontrol>Profiles</uicontrol>. Write a script that calculates a user's
+		total lifetime amount spent by adding the new order total on the order confirm
+		page. 
+	 </p>
+    <p>The following script assumes that the amount for the current order is
+		passed as an mbox parameter named 
+		<codeph>orderTotal</codeph>: 
+	 </p>
+    <p>
+      <codeblock outputclass="syntax html">user.amountSpent
+
+if (mbox.name == 'orderConfirm') {
+
+   return (user.get('amountSpent') || 0) + parseInt(mbox.param('orderTotal'));
+
+}</codeblock>
+    </p>
+    <p>Next, create some expression targets that segment users based on their
+		total amount purchased. In this example, we categorize users as zero, low,
+		medium, and high spenders. 
+	 </p>
+    <p>
+      <codeblock outputclass="syntax html">zero_spender:
+return typeof(user.get('amountSpent')) == 'undefined';
+
+low_spender:
+return user.get('amountSpent') &gt; 0 &amp;&amp; user.get('amountSpent') &lt; 100;
+
+medium_spender:
+return user.get('amountSpent') &gt;= 100 &amp;&amp; user.get('amountSpent') &lt; 500;
+
+high_spender:
+return user.get('amountSpent') &gt;= 500;</codeblock>
+    </p>
+    <p>For more information, see the 
+		<xref href="http://marketing.adobe.com/resources/help/en_US/tnt/pdf/js_expression_cheat_sheet.pdf" format="http" scope="external">JavaScript Expression Cheat Sheet (PDF)</xref>. 
+	 </p>
+    <p>Once the expression targets are created, create a campaign and target
+		the experiences accordingly. 
+	 </p>
+  </conbody>
+  <!--<related-links>
+    <link href="r_Behavioral_Targeting_Basic_Steps.xml#reference_26AAC9E3D2734CA7B48CF141A68D6030" type="reference" format="dita" scope="local">
+      <?xm-replace_text Behavioral Targeting Basic Steps?>
+    </link>
+    <link href="c_Number_of_Visits.xml#concept_2F5EFE2725434BB2861545D38F3D40E5" type="concept" format="dita" scope="local">
+      <?xm-replace_text Number of Visits?>
+    </link>
+    <link scope="local" href="c_Recency_of_Purchase_Visit_Photo_Upload_Etc.xml#concept_E7B20E1D00E84E2AAA9520F35B6F9A2F" type="concept" format="dita">
+      <?xm-replace_text Recency of Purchase, Visit, Photo Upload, Etc.?>
+    </link>
+    <link href="c_Frequency.xml#concept_8BCEBA6DFDA54251BE4E833BBA98C1D4" type="concept" format="dita" scope="local">
+      <?xm-replace_text Frequency?>
+    </link>
+    <link href="c_New_or_Returning_Visitor.xml#concept_5770B59C5C884CA2BE8554B4AD808EF9" type="concept" format="dita" scope="local">
+      <?xm-replace_text New or Returning Visitor?>
+    </link>
+    <link href="c_Active_or_Passive_User.xml#concept_8FFD3C333196441EB0125C69B6D2564F" type="concept" format="dita" scope="local">
+      <?xm-replace_text Active or Passive User?>
+    </link>
+    <link href="c_Highest_Amount_Spent_in_a_Single_Order.xml#concept_79EF6AB3EE8645429D735830FF2B6057" type="concept" format="dita" scope="local">
+      <?xm-replace_text Highest Amount Spent in a Single Order?>
+    </link>
+    <link href="c_Time_of_Day_and_Day_of_Week.xml#concept_54D8899EB05B477895EB1309DB164438" type="concept" format="dita" scope="local">
+      <?xm-replace_text Time of Day and Day of Week?>
+    </link>
+  </related-links>
+-->
+</concept>

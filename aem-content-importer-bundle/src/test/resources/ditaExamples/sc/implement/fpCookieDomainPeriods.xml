@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_0A25BD152B0744989E7C662A95448274">
+  <title>fpCookieDomainPeriods</title>
+  <shortdesc>The 
+	 <varname>fpCookieDomainPeriods</varname> variable is for cookies set by
+	 JavaScript (s_sq, s_cc, plug-ins) that are inherently first-party cookies even
+	 if your 
+	 implementation uses the third-party 2o7.net
+	 or omtrdc.net domains. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Variables" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>The 
+		<varname>fpCookieDomainPeriods</varname> variable should never be
+		dynamically set . If you use 
+		<varname>cookieDomainPeriods</varname>, it is good practice to specify
+		a value for 
+		<varname>fpCookieDomainPeriods</varname> as well. 
+		<varname>fpCookieDomainPeriods</varname> inherits the 
+		<varname>cookieDomainPeriods</varname> value. Note that 
+		<varname>fpCookieDomainPeriods</varname> does not affect the domain on
+		which the visitor ID cookie is set, even if your implementation treats this as
+		a first-party cookie. 
+	 </p>
+    <p>The name "<varname>fpCookieDomainPeriods</varname>" refers to the
+		number of periods (".") in the domain when the domain begins with "www." For
+		example, www.mysite.com contains two periods, while www.mysite.co.jp contains
+		three periods. Another way to describe the variable is the number of sections
+		in the main domain of the site (two for mysite.com and three for mysite.co.jp).
+		
+	 </p>
+    <p> The 
+		AppMeasurement for JavaScript file uses the 
+		<varname>fpCookieDomainPeriods</varname> variable to determine the
+		domain with which to set first-party cookies other than the 
+		<wintitle>visitor ID</wintitle> (s_vi) cookie. There are at least two
+		cookies affected by this variable, including s_sq and s_cc (used for 
+		visitor click map and cookie checking respectively). Cookies
+		used by plug-ins such as 
+		<wintitle>getValOnce</wintitle> are also affected. 
+	 </p>
+    <table id="table_44A05C2B5E104B48BD952C9DEBE2A17C">
+      <tgroup cols="4">
+        <colspec colnum="1" colname="col1" colwidth="*" />
+        <colspec colnum="2" colname="col2" colwidth="*" />
+        <colspec colnum="3" colname="col3" colwidth="*" />
+        <colspec colnum="4" colname="col4" colwidth="*" />
+        <thead>
+          <row>
+            <entry> Max Size 
+				</entry>
+            <entry> Debugger Parameter 
+				</entry>
+            <entry> Reports Populated 
+				</entry>
+            <entry> Default Value 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry> N/A 
+				</entry>
+            <entry> N/A 
+				</entry>
+            <entry> N/A 
+				</entry>
+            <entry> cookieDomainPeriods 
+				</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <section id="section_5200A92D40384C82998606E800B69E13">
+      <title>Sample Code for Setting Cookie Domain Variables</title>
+      <codeblock outputclass="syntax javascript">s.fpCookieDomainPeriods="2"
+var d=window.location.hostname
+if(d.indexOf('.co.uk')&gt;-1||d.indexOf('.com.au')&gt;-1)
+  s.fpCookieDomainPeriods="3"
+</codeblock>
+    </section>
+    <section id="section_87923F4C12E74AF99CC9AFC0FFD77D49">
+      <title>Syntax and Possible Values</title>
+      <p>The 
+		  <varname>cookieDomainPeriods</varname> variable is expected to be a
+		  string, as shown below. 
+		</p>
+      <codeblock outputclass="syntax javascript">s.fpCookieDomainPeriods="3"</codeblock>
+    </section>
+    <section id="section_EF7355718AD849BF963EE9F6F9F79891">
+      <title>Examples</title>
+      <codeblock outputclass="syntax javascript">s.fpCookieDomainPeriods="3"</codeblock>
+      <codeblock outputclass="syntax javascript">s.fpCookieDomainPeriods="2"</codeblock>
+    </section>
+    <section id="section_DB65D9BC4F3048C8AD08F9A7CD8FCFC0">
+      <title>
+        Configuration Settings</title>
+      <p>None 
+		</p>
+    </section>
+  </conbody>
+</concept>

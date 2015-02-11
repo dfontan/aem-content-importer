@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_6DB30ED75E4E47A58A7C66E0367C5877"> 
+  <title>Link accounts in the Marketing Cloud</title> 
+  <shortdesc>Link solution accounts from within the 
+	 <keyword>Marketing Cloud</keyword> Organization. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta content="Marketing Cloud" name="solution"/> </metadata>
+  </prolog> 
+  <taskbody> 
+	 <context id="context_77578DC183854AAD99D732DBEC1A956D"> 
+		<note>The preferred account linking method is to use the 
+		  <xref href="link_accounts.xml#concept_DFCB29A3B4834FC59AA29E0BBA301584"
+			format="dita" scope="local"><?xm-replace_text Join the Marketing Cloud?></xref>
+		  button from within a solution. 
+		</note> 
+	 </context> 
+	 <steps id="steps_0C1FFD1A458D4140A576F2F237DEEAB4"> 
+		<step id="step_F42279507D6D40C1A8817B62B35D0459"> 
+		  <cmd> 
+			 <xref href="t_sign_in.xml#task_1BFE87E20DCB44078CAC82F3CD44B985"
+			  format="dita" scope="local"> <?xm-replace_text Sign in to the Adobe Marketing Cloud?>
+			 </xref> 
+		  </cmd> 
+		</step> 
+		<step id="step_302E0200E08F41E992C980E789398188"> 
+		  <cmd>Click 
+			 <uicontrol>Organizations</uicontrol>. 
+		  </cmd> 
+		  <info> 
+			 <p><image href="graphics/get_access.png"
+				id="image_5172E19B9CFD4983AD701D4B841CA028"></image> 
+			 </p> 
+		  </info> 
+		</step> 
+		<step id="step_B9828F75C08846A6884D455BE84C53E5"> 
+		  <cmd>Click 
+			 <uicontrol>Get Access</uicontrol>. 
+		  </cmd> 
+		  <stepresult> 
+		  </stepresult> 
+		</step> 
+		<step id="step_D05F11FCE919458AA8C341229D3889B1"> 
+		  <cmd>Select a solution, then type your solution credentials. 
+		  </cmd> 
+		  <stepresult> 
+			 <p><image href="graphics/get_access_link.png"
+				id="image_5C657FC0227B47CF8ADB9B3CBF65F209"></image> 
+			 </p> 
+			 <p>Your credentials include 
+				<uicontrol>Username</uicontrol> and 
+				<uicontrol>Password</uicontrol>. For 
+				<keyword>Analytics</keyword> and 
+				<keyword>Social</keyword>, your credentials also include 
+				<uicontrol>Company</uicontrol>. 
+			 </p> 
+		  </stepresult> 
+		</step> 
+		<step id="step_8CDC35830B664686BE57388C2D0A7A5D"> 
+		  <cmd>Click 
+			 <uicontrol>Link</uicontrol>. 
+		  </cmd> 
+		</step> 
+	 </steps> 
+  </taskbody>
+</task>

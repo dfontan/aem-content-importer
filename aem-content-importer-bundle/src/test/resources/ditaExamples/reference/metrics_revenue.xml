@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_06ED17A555F04CC1A0D24A3892AC578A">
+  <title>Revenue</title>
+  <shortdesc>Revenue is captured on the 
+	 <wintitle>purchase</wintitle> event, and is defined as the total dollar
+	 amount for the sum of the order for each product. This value comes from the 
+	 <wintitle>purchase</wintitle> event. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Metrics" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <table id="table_86B9D7F47DC044E687522A21B5F0F1EF">
+      <tgroup cols="2">
+        <colspec colnum="1" colname="col1" colwidth="1.00*" />
+        <colspec colnum="2" colname="col2" colwidth="2.52*" />
+        <thead>
+          <row>
+            <entry colname="col1">Uses 
+				</entry>
+            <entry colname="col2">Description 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry colname="col1">Traffic 
+				</entry>
+            <entry colname="col2">N/A 
+				</entry>
+          </row>
+          <row>
+            <entry colname="col1">Conversion 
+				</entry>
+            <entry colname="col2">Revenue is captured on the 
+				  <wintitle>purchase</wintitle> event, and is defined as the total
+				  dollar amount for the sum of the order and each product. 
+				</entry>
+          </row>
+          <row>
+            <entry colname="col1">Ad Hoc Analysis 
+				</entry>
+            <entry colname="col2">Revenue is captured on the 
+				  <wintitle>purchase</wintitle> event, and is defined as the total
+				  dollar amount for the sum of the order and each product. 
+				</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </conbody>
+  <related-links>
+    <link href="metrics_visitor_participation.xml#concept_ACBAE3626B224D9683257B5F73E0FB4A" format="dita" scope="local">
+      <linktext>
+        <?xm-replace_text Visitor Participation - Ad Hoc Analysis?>
+      </linktext>
+    </link>
+    <link href="metrics_participation.xml#concept_8E6B39106A244CB49E055150B291B477" format="dita" scope="local">
+      <linktext>
+        <?xm-replace_text Participation?>
+      </linktext>
+    </link>
+  </related-links>
+</concept>

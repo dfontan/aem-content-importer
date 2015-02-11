@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_2D6380515D6C4CF78A4E123CF7C76477"> 
+  <title>Tag management 2.0</title> 
+  <shortdesc>
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Developer and implementation"/> 
+		<othermeta name="subtopic" content="Tag management"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <note>This section describes the legacy tag management method of
+		implementing Analytics. All Analytics customers have access to 
+		<xref href="https://marketing.adobe.com/resources/help/en_US/dtm/"
+		 format="http" scope="external">Dynamic Tag Management</xref> which is the
+		standard method to deploy Marketing Cloud tags. 
+	 </note> 
+	 <p>Adobe Tag Manager provides a tag management framework that serves as a
+		tag container, housing the tags that an Adobe customer may require, including
+		Adobe Marketing Cloud tags and third-party tags. This simplicity accelerates
+		time to deployment versus standalone tag management products, which require
+		more significant changes and resources to implement. 
+	 </p> 
+	 <p>The tags within the container are managed through an administrative user
+		interface where the customer can insert or remove tags (from Adobe or other
+		partners) without making changes to a website. The ability to rapidly add and
+		remove tags combined with common techniques to conditionally fire or timeout
+		tags gives advertisers and publishers more control over their valuable data and
+		helps manage pages for fast loading. 
+	 </p> 
+	 <section id="section_36AA84CB0F6F46DCAAD37B9C0CA4A6E4"> 
+		<title>Tag management Documentation Revision History</title> 
+		<table id="table_DB2CEF08F7E848BBA86701B8B713621F"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="4.41*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col1">Revision Date 
+				  </entry> 
+				  <entry colname="col2">Description 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1">April 18, 2013 
+				  </entry> 
+				  <entry colname="col2">Initial tag management 2.0 release. 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </section> 
+  </conbody> 
+</concept>

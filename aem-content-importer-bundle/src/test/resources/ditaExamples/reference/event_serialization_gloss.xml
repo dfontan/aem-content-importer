@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_AD2212EE75EC49FCAE1DA07750A62BED">
+  <title>Event Serialization</title>
+  <shortdesc>The process of implementing measures to prevent duplicate events
+	 from entering Analytics reporting. Duplicate events can occur when a user
+	 refreshes a page multiple times, navigates to a certain page multiple times, or
+	 saves the web page to their machine (i.e. some users may save the purchase
+	 confirmation page to their computer). Every time they viewed the page, orders
+	 and revenue would be counted again if event serialization was not in place.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+    </metadata>
+  </prolog>
+</concept>

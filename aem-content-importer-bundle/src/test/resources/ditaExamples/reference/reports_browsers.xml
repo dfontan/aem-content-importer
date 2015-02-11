@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_08D95CE080E94EE49C940963DE7FFEA3"> 
+  <title>Browsers Report</title> 
+  <shortdesc>Lists the browser versions used to visit your site as identified
+	 by the user agent string. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Reports"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p> For example: 
+	 </p> 
+	 <table id="table_9264883A5EA14D128C51F6C50C8FFD0B"> 
+		<tgroup cols="1"> 
+		  <colspec colnum="1" colname="col1" colwidth="*"/> 
+		  <tbody> 
+			 <row> 
+				<entry> Google Chrome 30.0 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Mozilla Firefox 25.0 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Google Chrome 31.0 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Mozilla Firefox 24.0 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Microsoft Internet Explorer 8 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Microsoft Internet Explorer 9 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Microsoft Internet Explorer 10 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Safari 7.0 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Safari 6.0.5 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Safari 6.1 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Mozilla Firefox 23.0 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Google Chrome 29.0 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Mozilla Firefox 17.0 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Mozilla Firefox 22.0 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Google Chrome 28.0 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Mozilla Firefox 21.0 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Microsoft Internet Explorer 11 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Google Chrome 27.0 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Mozilla Firefox 20.0 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+	 <section id="section_B028CE3DDDC4401FA0609F908885A5DD"> 
+		<title>Changes</title> 
+		<table id="table_82084301B1044103BB3B293595BC86BD"> 
+		  <tgroup cols="2"><colspec colnum="1" colname="col1"
+			 colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="5.63*"/><thead> 
+				<row> 
+				  <entry colname="col1">Date 
+				  </entry> 
+				  <entry colname="col2">Change 
+				  </entry> 
+				</row></thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1">November 18, 2013 
+				  </entry> 
+				  <entry colname="col2">Mobile web browsers were added to the
+					 Browsers Report. Before this date, mobile web browsers were reported as "None".
+					 After this date, "None" was replaced with specific versions of mobile browsers.
+					 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </section> 
+  </conbody> 
+</concept> 

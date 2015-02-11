@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_E3D0FEC81E1F4987B39CC467F19FFCFF">
+  <title>Top Level Domains Report</title>
+  <shortdesc>Displays how customers from different countries impacted your
+	 success metrics. This report identifies world regions that visitors come from
+	 based on their originating domain extension.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p> The originating domain refers to the domain through which the user is
+		browsing the web (meaning, the ISP), rather than the referring domain that
+		brought the user to your site. Domains ending in Commercial (.com), Network
+		(.net), Education (.edu), Government (.gov) and Organization (.org) are usually
+		based in the United States, and are listed separately from the rest of the
+		countries. 
+	 </p>
+    <p>All other countries have specific domain extensions, such as Brazil
+		(.br) and the United Kingdom (.gb). 
+		Marketing reports recognize all country extensions. You
+		can use this report to help you to tailor content on your site to people from
+		the countries that generate the majority of your revenue and to decide if you
+		need to create different instances of your entire site. 
+	 </p>
+  </conbody>
+</concept>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?><!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"><concept id = "concept_398E06232F9B4A15B0FD7D45E6DC4660">
+	<title>Data Collection</title>
+	<shortdesc><?xm-replace_text Short Description?></shortdesc>
+	<prolog>
+		<metadata>
+			<othermeta content = "Analytics" name = "solution"/>
+		</metadata>
+	</prolog>
+	<conbody><p><?xm-replace_text Paragraph?></p></conbody>
+</concept>

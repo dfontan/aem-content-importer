@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_7EC936CEED004DA7BA58200934E35411" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Preview an Offer with Onsite</title>
+  <shortdesc class="- topic/shortdesc ">You can preview any offer on the page
+	 where it appears, to make sure that it displays properly. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <context id="context_A852250DE46346CCA878EFA597488DAC" class="- topic/section task/context ">
+      <p class="- topic/p ">To preview an offer: 
+		</p>
+      <p class="- topic/p ">
+        <ul id="ul_A1902C7EBF9C4B359B3B5BC8C7B7A784" class="- topic/ul ">
+          <li id="li_6EDDC0EF10EA4CBE946A3CF4874347A2" class="- topic/li "> Click
+			 an offer in the campaign edit page 
+		  </li>
+          <li id="li_94928FEDEAC441B3910B05F75033CC62" class="- topic/li "> Click
+			 the magnifying glass icon next to an offer name on the Browse Offers page 
+		  </li>
+        </ul>
+      </p>
+      <p class="- topic/p ">In either case, Target attempts to determine the
+		  best starting page. If it opens the a page other than the one you expect, type
+		  the url in the address bar. 
+		</p>
+      <p class="- topic/p ">Once in this mode, select the appropriate offer
+		  from the select box in the header. 
+		</p>
+    </context>
+  </taskbody>
+  <related-links class="- topic/related-links ">
+    <link href="c_Previewing_a_Single_Campaign_with_Onsite.xml#concept_C39F1994F9764A45A15AE82E23C49E0B" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Preview a Single Campaign with Onsite?>
+    </link>
+    <link href="t_Previewing_Multiple_Campaigns_with_Onsite.xml#task_1A68F285DAF34198948D33467FC348BD" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Preview Multiple Campaigns with Onsite?>
+    </link>
+    <link href="t_Creating_or_Editing_a_Campaign_with_Onsite.xml#task_E47255E58E994BF3AA0795ED45DA50F3" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Create or Edit a Campaign with Onsite?>
+    </link>
+    <link href="t_Adding_Mboxes_to_a_Campaign_with_Onsite.xml#task_E0C11EE79DAD4FE89D7FD62B679BEE7F" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Add Mboxes to a Campaign with Onsite?>
+    </link>
+    <link href="t_Bookmarking_Onsite_from_Your_Web_Page.xml#task_C837F916F8D7464798F96F0FC454B4A4" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Bookmarking Onsite from Your Web Page?>
+    </link>
+    <link href="t_Exiting_Onsite.xml#task_CB900909CE2B43AAA6BF30C1A35A13C4" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Exiting Onsite?>
+    </link>
+    <link href="t_Turning_Off_Onsite_Help_Popups.xml#task_89206AA54DB944BFBAFCA721A26DCFFC" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Turning Off Onsite Help Popups?>
+    </link>
+    <link href="r_Troubleshooting_Onsite.xml#reference_387DCA1A01014C9FAA9C022577644BE2" type="reference" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Troubleshooting Onsite?>
+    </link>
+  </related-links>
+</task>

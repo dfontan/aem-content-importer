@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_89206AA54DB944BFBAFCA721A26DCFFC">
+  <title>Turn Off Onsite Help Popups</title>
+  <shortdesc>Onsite often displays gray help popups. If you prefer not to see
+	 these popups you can turn them off. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <steps id="steps_BC12A691AAC74744BCCF6D6FAEAD9577">
+      <step id="step_95AF6774053F4A9595194089E36AE441">
+        <cmd>Click 
+			 <uicontrol>Configuration</uicontrol> &gt; 
+			 <uicontrol>Onsite</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_359020711F5B48EEB70D2045232640B7">
+        <cmd>Click the 
+			 <uicontrol>Help Callouts</uicontrol> link. 
+		  </cmd>
+      </step>
+      <step id="step_967B2278F3E947C995062900B4C3E858">
+        <cmd>Turn the help callouts off. 
+		  </cmd>
+        <stepresult>
+          <p>You can turn the callouts on by following the same steps. 
+			 </p>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links>
+    <link href="c_Previewing_a_Single_Campaign_with_Onsite.xml#concept_C39F1994F9764A45A15AE82E23C49E0B" type="concept" format="dita" scope="local">
+      <?xm-replace_text Preview a Single Campaign with Onsite?>
+    </link>
+    <link href="t_Previewing_Multiple_Campaigns_with_Onsite.xml#task_1A68F285DAF34198948D33467FC348BD" type="task" format="dita" scope="local">
+      <?xm-replace_text Preview Multiple Campaigns with Onsite?>
+    </link>
+    <link href="t_Creating_or_Editing_a_Campaign_with_Onsite.xml#task_E47255E58E994BF3AA0795ED45DA50F3" type="task" format="dita" scope="local">
+      <?xm-replace_text Create or Edit a Campaign with Onsite?>
+    </link>
+    <link href="t_Adding_Mboxes_to_a_Campaign_with_Onsite.xml#task_E0C11EE79DAD4FE89D7FD62B679BEE7F" type="task" format="dita" scope="local">
+      <?xm-replace_text Add Mboxes to a Campaign with Onsite?>
+    </link>
+    <link href="t_Previewing_an_Offer_with_Onsite.xml#task_7EC936CEED004DA7BA58200934E35411" type="task" format="dita" scope="local">
+      <?xm-replace_text Preview an Offer with Onsite?>
+    </link>
+    <link href="t_Bookmarking_Onsite_from_Your_Web_Page.xml#task_C837F916F8D7464798F96F0FC454B4A4" type="task" format="dita" scope="local">
+      <?xm-replace_text Bookmark Onsite from Your Web Page?>
+    </link>
+    <link href="t_Exiting_Onsite.xml#task_CB900909CE2B43AAA6BF30C1A35A13C4" type="task" format="dita" scope="local">
+      <?xm-replace_text Exit Onsite?>
+    </link>
+    <link href="r_Troubleshooting_Onsite.xml#reference_387DCA1A01014C9FAA9C022577644BE2" type="reference" format="dita" scope="local">
+      <?xm-replace_text Troubleshooting Onsite?>
+    </link>
+  </related-links>
+</task>

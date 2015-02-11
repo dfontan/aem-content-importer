@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_BD2DC7C181DF458C86F34E68664726D6">
+  <title>Segment Definitions</title>
+  <shortdesc>The Segment Definition Builder allows you to define visitor
+	 segment filters based on visitor behavior. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Admin tools" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>You can use the Segment Definition Builder to create new segment filters
+		or to edit an existing filter. When submitting a data warehouse request, you
+		can apply a segment filter to the result set to analyze your website traffic.
+		Segments created in data warehouse are also available in the ASI feature. 
+	 </p>
+    <p>For example, the segment of visitors that purchased $300 during a sales
+		promotion held during the past eight days is a segment filter. 
+	 </p>
+  </conbody>
+</concept>

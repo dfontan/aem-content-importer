@@ -1,0 +1,519 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_FD9BC7A46CAB45F4BF108FB6C8A56DD9">
+  <title>IP Addresses Used in the Marketing Cloud</title>
+  <shortdesc>Some clients' firewall configurations block IP addresses
+	 originating from Adobe's data collection servers or servers responsible for
+	 accessing 
+	 analytics data. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>The following list of IP address blocks covers the currently known
+		addresses involved in the 
+		Marketing Cloud. You can us this list of
+		ranges to alter your organization's firewall settings to allow login access to
+		the 
+		Marketing Cloud. You can also use them to send
+		data from within your organization. 
+	 </p>
+    <p>While Adobe does its best to keep this document current, it cannot
+		guarantee the list of IP ranges will remain the same. Possible changes could
+		include: 
+	 </p>
+    <p>
+      <ul id="ul_8B57D56B66AD4434BE282D92ABA5FF11">
+        <li id="li_C5E2ED3E2DC14BD68D8803BB1A5F1A61">Growth and expansion of the
+		  business beyond the current list of IP ranges 
+		</li>
+        <li id="li_993BEAAA5FE74A149233091425120978">ARIN requiring changes to
+		  Adobe's IP address space 
+		</li>
+        <li id="li_F1F8E5D81FE046078C8BBB077E5A4456">An ISP stops functioning 
+		</li>
+      </ul>
+    </p>
+    <section id="section_4C8A62CBE4C942008A65B250B9168485">
+      <title>Exclude ALL Adobe IP Address Blocks</title>
+      <p>The following table covers all 
+		  IP addresses. These ranges include
+		  standard data collection servers, regional data collection servers, and the IP
+		  ranges used in Adobe's Utah Office: 
+		</p>
+      <table id="table_F1C08EC9FDBD4BECA7B9097E22C404ED">
+        <tgroup cols="4">
+          <colspec colnum="1" colname="col1" colwidth="*" />
+          <colspec colnum="2" colname="col2" colwidth="*" />
+          <colspec colnum="3" colname="col3" colwidth="*" />
+          <colspec colnum="4" colname="col4" colwidth="*" />
+          <thead>
+            <row>
+              <entry colname="col1"></entry>
+              <entry colname="col2">CIDR notation 
+				  </entry>
+              <entry colname="col3">Starting IP 
+				  </entry>
+              <entry colname="col4">Ending IP 
+				  </entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry colname="col1">
+                <p>Block 1 
+					 </p>
+              </entry>
+              <entry colname="col2">
+                <p>63.140.32.0/19 
+					 </p>
+              </entry>
+              <entry colname="col3">
+                <p>63.140.32.0 
+					 </p>
+              </entry>
+              <entry colname="col4">
+                <p>63.140.63.255 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <p>Block 2 
+					 </p>
+              </entry>
+              <entry colname="col2">
+                <p>64.0.192.0/22 
+					 </p>
+              </entry>
+              <entry colname="col3">
+                <p>64.0.192.0 
+					 </p>
+              </entry>
+              <entry colname="col4">
+                <p>64.0.195.255 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <p>Block 3 
+					 </p>
+              </entry>
+              <entry colname="col2">
+                <p>66.117.24.0/22 
+					 </p>
+              </entry>
+              <entry colname="col3">
+                <p>66.117.24.0 
+					 </p>
+              </entry>
+              <entry colname="col4">
+                <p>66.117.27.255 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <p>Block 4 
+					 </p>
+              </entry>
+              <entry colname="col2">
+                <p>66.235.128.0/19 
+					 </p>
+              </entry>
+              <entry colname="col3">
+                <p>66.235.128.0 
+					 </p>
+              </entry>
+              <entry colname="col4">
+                <p>66.235.159.255 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <p>Block 5 
+					 </p>
+              </entry>
+              <entry colname="col2">
+                <p>207.108.181.0/24 
+					 </p>
+              </entry>
+              <entry colname="col3">
+                <p>207.108.181.0 
+					 </p>
+              </entry>
+              <entry colname="col4">
+                <p>207.108.181.255 
+					 </p>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+    <section id="section_C1C1AFD2FFC44F2AA1277F2554866A0A">
+      <title>Exclude Specific IP Address Blocks</title>
+      <p>If your organization prefers to exclude specific IP Address ranges,
+		  you can use the following. 
+		</p>
+      <p>All of the below ranges are included in the preceding table. 
+		</p>
+      <table id="table_3996030D18D846CEB1C543E95169BAE6">
+        <tgroup cols="4">
+          <colspec colnum="1" colname="col1" colwidth="*" />
+          <colspec colnum="2" colname="col2" colwidth="*" />
+          <colspec colnum="3" colname="col3" colwidth="*" />
+          <colspec colnum="4" colname="col4" colwidth="*" />
+          <thead>
+            <row>
+              <entry colname="col1"></entry>
+              <entry colname="col2">CIDR notation 
+				  </entry>
+              <entry colname="col3">Starting IP 
+				  </entry>
+              <entry colname="col4">Ending IP 
+				  </entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry colname="col1">
+                <p>San Jose Block 1 
+					 </p>
+              </entry>
+              <entry colname="col2">
+                <p>63.140.56.0/21 
+					 </p>
+              </entry>
+              <entry colname="col3">
+                <p>63.140.56.0 
+					 </p>
+              </entry>
+              <entry colname="col4">
+                <p>63.140.63.255 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <p>San Jose Block 2 
+					 </p>
+              </entry>
+              <entry colname="col2">
+                <p>66.235.132.0/21 
+					 </p>
+              </entry>
+              <entry colname="col3">
+                <p>66.235.132.0 
+					 </p>
+              </entry>
+              <entry colname="col4">
+                <p>66.235.139.255 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <p>Dallas Block 1 
+					 </p>
+              </entry>
+              <entry colname="col2">
+                <p>63.140.32.0/21 
+					 </p>
+              </entry>
+              <entry colname="col3">
+                <p>63.140.32.0 
+					 </p>
+              </entry>
+              <entry colname="col4">
+                <p>63.140.39.255 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <p>Dallas Block 2 
+					 </p>
+              </entry>
+              <entry colname="col2">
+                <p>63.140.54.0/23 
+					 </p>
+              </entry>
+              <entry colname="col3">
+                <p>63.140.54.0 
+					 </p>
+              </entry>
+              <entry colname="col4">
+                <p>63.140.55.255 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <p>Dallas Block 3 
+					 </p>
+              </entry>
+              <entry colname="col2">
+                <p>66.235.140.0/22 
+					 </p>
+              </entry>
+              <entry colname="col3">
+                <p>66.235.140.0 
+					 </p>
+              </entry>
+              <entry colname="col4">
+                <p>66.235.143.255 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <p>Dallas Block 4 
+					 </p>
+              </entry>
+              <entry colname="col2">
+                <p>66.235.151.0/22 
+					 </p>
+              </entry>
+              <entry colname="col3">
+                <p>66.235.151.0 
+					 </p>
+              </entry>
+              <entry colname="col4">
+                <p>66.235.155.255 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <p>London Block 1 
+					 </p>
+              </entry>
+              <entry colname="col2">
+                <p>63.140.40.0/22 
+					 </p>
+              </entry>
+              <entry colname="col3">
+                <p>63.140.40.0 
+					 </p>
+              </entry>
+              <entry colname="col4">
+                <p>63.140.43.255 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <p>London Block 2 
+					 </p>
+              </entry>
+              <entry colname="col2">
+                <p>66.235.156.0/22 
+					 </p>
+              </entry>
+              <entry colname="col3">
+                <p>66.235.156.0 
+					 </p>
+              </entry>
+              <entry colname="col4">
+                <p>66.235.158.255 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <p>Singapore Block 1 
+					 </p>
+              </entry>
+              <entry colname="col2">
+                <p>63.140.44.0/22 
+					 </p>
+              </entry>
+              <entry colname="col3">
+                <p>63.140.44.0 
+					 </p>
+              </entry>
+              <entry colname="col4">
+                <p>63.140.47.255 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <p>Tokyo Block 1 
+					 </p>
+              </entry>
+              <entry colname="col2">
+                <p>63.140.48.0/23 
+					 </p>
+              </entry>
+              <entry colname="col3">
+                <p>63.140.48.0 
+					 </p>
+              </entry>
+              <entry colname="col4">
+                <p>63.140.49.255 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <p>Tokyo Block 2 
+					 </p>
+              </entry>
+              <entry colname="col2">
+                <p>66.235.159.0/24 
+					 </p>
+              </entry>
+              <entry colname="col3">
+                <p>66.235.159.0 
+					 </p>
+              </entry>
+              <entry colname="col4">
+                <p>66.235.159.255 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <p>Hong Kong Block 1 
+					 </p>
+              </entry>
+              <entry colname="col2">
+                <p>66.117.24.0/22 
+					 </p>
+              </entry>
+              <entry colname="col3">
+                <p>66.117.24.0 
+					 </p>
+              </entry>
+              <entry colname="col4">
+                <p>66.117.27.255 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <p>New Jersey Block 1 
+					 </p>
+              </entry>
+              <entry colname="col2">
+                <p>63.140.50.0/22 
+					 </p>
+              </entry>
+              <entry colname="col3">
+                <p>63.140.50.0 
+					 </p>
+              </entry>
+              <entry colname="col4">
+                <p>63.140.53.255 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <p>Virginia Block 1 
+					 </p>
+              </entry>
+              <entry colname="col2">
+                <p>66.235.144.0/22 
+					 </p>
+              </entry>
+              <entry colname="col3">
+                <p>66.235.144.0 
+					 </p>
+              </entry>
+              <entry colname="col4">
+                <p>66.235.147.255 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <p>Sao Paulo Block 1 
+					 </p>
+              </entry>
+              <entry colname="col2">
+                <p>66.235.128.0/22 
+					 </p>
+              </entry>
+              <entry colname="col3">
+                <p>66.235.128.0 
+					 </p>
+              </entry>
+              <entry colname="col4">
+                <p>66.235.131.255 
+					 </p>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+    <section id="section_8C79212E96564AC9B19D9EF6DA6EC79A">
+      <title>IP Addresses for Adobe's Orem Office</title>
+      <table id="table_49DA6267806846B4A0A140B536AEC123">
+        <tgroup cols="4">
+          <colspec colnum="1" colname="col1" colwidth="*" />
+          <colspec colnum="2" colname="col2" colwidth="*" />
+          <colspec colnum="3" colname="col3" colwidth="*" />
+          <colspec colnum="4" colname="col4" colwidth="*" />
+          <thead>
+            <row>
+              <entry colname="col1"></entry>
+              <entry colname="col2">CIDR notation 
+				  </entry>
+              <entry colname="col3">Starting IP 
+				  </entry>
+              <entry colname="col4">Ending IP 
+				  </entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry colname="col1">
+                <p>Orem Block 1 
+					 </p>
+              </entry>
+              <entry colname="col2">
+                <p>64.192.0/22 
+					 </p>
+              </entry>
+              <entry colname="col3">
+                <p>64.0.192.0 
+					 </p>
+              </entry>
+              <entry colname="col4">
+                <p>64.0.195.255 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <p>Orem Block 2 
+					 </p>
+              </entry>
+              <entry colname="col2">
+                <p>207.108.181.0/24 
+					 </p>
+              </entry>
+              <entry colname="col3">
+                <p>207.108.181.0 
+					 </p>
+              </entry>
+              <entry colname="col4">
+                <p>207.108.181.255 
+					 </p>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+  </conbody>
+</concept>

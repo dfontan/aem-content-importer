@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_1A68F285DAF34198948D33467FC348BD">
+  <title>Preview Multiple Campaigns with Onsite</title>
+  <shortdesc>You can preview all campaigns displaying offers for your mboxes. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <steps id="steps_D418D8BC6F3D46C083D718F46F8389E6">
+      <step id="step_68D191914AF34882883BA7EC2CBC9F77">
+        <cmd>Open your site. 
+		  </cmd>
+      </step>
+      <step id="step_8BCE5B17C6E2428DBC99195ABFCFCF0C">
+        <cmd>On each page, click the pencil icon next to the mboxes, then
+			 navigate to different campaigns. 
+		  </cmd>
+        <stepresult>
+          <?xm-replace_text Step Result?>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links class="- topic/related-links ">
+    <link href="c_Previewing_a_Single_Campaign_with_Onsite.xml#concept_C39F1994F9764A45A15AE82E23C49E0B" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Preview a Single Campaign with Onsite?>
+    </link>
+    <link href="t_Creating_or_Editing_a_Campaign_with_Onsite.xml#task_E47255E58E994BF3AA0795ED45DA50F3" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Creating or Editing a Campaign with Onsite?>
+    </link>
+    <link href="t_Adding_Mboxes_to_a_Campaign_with_Onsite.xml#task_E0C11EE79DAD4FE89D7FD62B679BEE7F" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Adding Mboxes to a Campaign with Onsite?>
+    </link>
+    <link href="t_Previewing_an_Offer_with_Onsite.xml#task_7EC936CEED004DA7BA58200934E35411" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Previewing an Offer with Onsite?>
+    </link>
+    <link href="t_Bookmarking_Onsite_from_Your_Web_Page.xml#task_C837F916F8D7464798F96F0FC454B4A4" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Bookmarking Onsite from Your Web Page?>
+    </link>
+    <link href="t_Exiting_Onsite.xml#task_CB900909CE2B43AAA6BF30C1A35A13C4" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Exiting Onsite?>
+    </link>
+    <link href="t_Turning_Off_Onsite_Help_Popups.xml#task_89206AA54DB944BFBAFCA721A26DCFFC" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Turning Off Onsite Help Popups?>
+    </link>
+    <link href="r_Troubleshooting_Onsite.xml#reference_387DCA1A01014C9FAA9C022577644BE2" type="reference" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Troubleshooting Onsite?>
+    </link>
+  </related-links>
+</task>

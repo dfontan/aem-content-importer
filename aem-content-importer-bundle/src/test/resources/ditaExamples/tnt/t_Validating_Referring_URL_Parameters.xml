@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_C3C03C9DCC51470291F5F2A4DC988054">
+  <title>Validate Referring URL Parameters</title>
+  <shortdesc>After URL parameters are associated with an mbox, you should
+	 validate the parameters. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <steps id="steps_AF626CE2A4174AD59A7714C00A205B16">
+      <step id="step_754BA750830545A98E5CE9092333A916">
+        <cmd>Mouse over 
+			 <uicontrol>Locations</uicontrol> and click 
+			 <uicontrol>List</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_45D50CD84EDA4A57B09342BAD0262F54">
+        <cmd>Click 
+			 <uicontrol>Refresh</uicontrol>. 
+		  </cmd>
+        <stepresult>
+          <p>The Referring URL parameters are listed below URL parameters, next
+				to all mboxes on the page you browsed to above. 
+			 </p>
+          <p>Although the 
+				<b>Referring Host Name</b> parameter is not listed in the mboxes
+				list, the parameter is always available for targeting. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_B43DEDFD47F548599E4406D16C9AC597">
+        <cmd>If needed, click on the parameter name to see the last 10 values
+			 loaded. 
+		  </cmd>
+        <stepresult>
+          <p>
+            <b>Tip:</b> You do not need to load values to the parameter. You
+				need only load the parameter name. 
+			 </p>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links>
+    <link href="t_Associating_Referring_URL_Paramters_with_an_Mbox.xml#task_C20B9E4D5E1D4E2197E13C277AED0DC8" type="task" format="dita" scope="local">
+      <?xm-replace_text Associate Referring URL Parameters with an Mbox?>
+    </link>
+    <link href="t_Targeting_Content_to_Referring_URL_Parameters.xml#task_F916DCDAF38A48958927B66D99ABCF2D" type="task" format="dita" scope="local">
+      <?xm-replace_text Targeting Content to Referring URL Parameters?>
+    </link>
+  </related-links>
+</task>

@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd"[]>
+<reference id="reference_B23BEDD29DDD47709A7651AFD27E776B">
+  <title>Dynamic Offer Selection Matrix</title>
+  <shortdesc>The Dynamic Offer Selection Matrix helps you decide which type of
+	 dynamic offer to choose, depending on your needs. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <refbody>
+    <refsyn id="refsyn_4E012A48BE8C4F60A2958C458C3CB27B">
+      <p>
+        <table id="table_6D4312DFE1A241958CE1E867FC20F9A8">
+          <tgroup cols="4">
+            <colspec colnum="1" colname="col1" colwidth="1.00*" />
+            <colspec colname="col002" colnum="2" colwidth="1.11*" />
+            <colspec colname="col02" colnum="3" colwidth="1.13*" />
+            <colspec colnum="4" colname="col2" colwidth="1.05*" />
+            <thead>
+              <row>
+                <entry colname="col1">Feature 
+				  </entry>
+                <entry colname="col002">Offer Stored Outside Adobe Target
+					 (Cached) 
+				  </entry>
+                <entry colname="col02">Offer Stored on Your Site (Cached) 
+				  </entry>
+                <entry colname="col2">Offer Stored on Your Site (Dynamic) 
+				  </entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry colname="col1">
+                  <p>Updates each time a visitor makes a request 
+					 </p>
+                </entry>
+                <entry colname="col002">
+                  <p>No 
+					 </p>
+                </entry>
+                <entry colname="col02">
+                  <p>No 
+					 </p>
+                </entry>
+                <entry colname="col2">
+                  <p>Yes 
+					 </p>
+                </entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <p>Content updates 
+					 </p>
+                </entry>
+                <entry colname="col002">
+                  <p>Cached every 2 hours 
+					 </p>
+                </entry>
+                <entry colname="col02">
+                  <p>Cached every 2 hours 
+					 </p>
+                </entry>
+                <entry colname="col2">
+                  <p>Immediately upon each request 
+					 </p>
+                </entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <p>Load time 
+					 </p>
+                </entry>
+                <entry colname="col002">
+                  <p>Faster 
+					 </p>
+                </entry>
+                <entry colname="col02">
+                  <p>Faster 
+					 </p>
+                </entry>
+                <entry colname="col2">
+                  <p>Slower due to request processing 
+					 </p>
+                </entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <p>Can see JavaScript on page 
+					 </p>
+                </entry>
+                <entry colname="col002">
+                  <p>Yes 
+					 </p>
+                </entry>
+                <entry colname="col02">
+                  <p>Yes 
+					 </p>
+                </entry>
+                <entry colname="col2">
+                  <p>No, but can pass via URL 
+					 </p>
+                </entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <p>Offers may include JavaScript 
+					 </p>
+                </entry>
+                <entry colname="col002">
+                  <p>Yes 
+					 </p>
+                </entry>
+                <entry colname="col02">
+                  <p>Yes 
+					 </p>
+                </entry>
+                <entry colname="col2">
+                  <p>No 
+					 </p>
+                </entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <p>Restricted to the host that serves the mbox serving the
+						offer 
+					 </p>
+                </entry>
+                <entry colname="col002">
+                  <p>No 
+					 </p>
+                </entry>
+                <entry colname="col02">
+                  <p>Yes 
+					 </p>
+                </entry>
+                <entry colname="col2">
+                  <p>Yes 
+					 </p>
+                </entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <p>Offer URL 
+					 </p>
+                </entry>
+                <entry colname="col002">
+                  <p>Absolute 
+					 </p>
+                </entry>
+                <entry colname="col02">
+                  <p>Relative 
+					 </p>
+                </entry>
+                <entry colname="col2">
+                  <p>Relative 
+					 </p>
+                </entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <p>Requesting computer 
+					 </p>
+                </entry>
+                <entry colname="col002">
+                  <p>Adobe servers 
+					 </p>
+                </entry>
+                <entry colname="col02">
+                  <p>Adobe servers
+					 </p>
+                </entry>
+                <entry colname="col2">
+                  <p>The visitor's computer, which carries the visitor's cookies 
+					 </p>
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </p>
+    </refsyn>
+  </refbody>
+  <related-links>
+    <link href="c_How_Dynamic_Offers_Work.xml#concept_CC2A969420B34364A9FA78C1CE251818" type="concept" format="dita" scope="local">
+      <?xm-replace_text How Dynamic Offers Work?>
+    </link>
+    <link href="t_Using_Styles_to_Test_Dynamic_Content.xml#task_E12C10C6F80B4B268DCD6E1CD53C4CA5" type="task" format="dita" scope="local">
+      <?xm-replace_text Using Styles to Test Dynamic Content?>
+    </link>
+    <link href="t_Creating_a_Dynamic_Offer_Stored_on_Your_Site.xml#task_207ACC941A4B421C8566105DA29F6E21" type="task" format="dita" scope="local">
+      <?xm-replace_text Creating a Dynamic Offer Stored on Your Site?>
+    </link>
+    <link href="t_Creating_a_Cached_Offer_Stored_on_Your_Site.xml#task_464E401A0E534E599BAB0B3242DC150C" type="task" format="dita" scope="local">
+      <?xm-replace_text Creating a Cached Offer Stored on Your Site?>
+    </link>
+    <link href="t_Creating_a_Cached_Offer_Stored_Outside_TestTarget.xml#task_83D85C26C67E4EDBAFA7AAED3194F590" type="task" format="dita" scope="local">
+      <?xm-replace_text Creating a Cached Offer Stored Outside Test&Target?>
+    </link>
+  </related-links>
+</reference>

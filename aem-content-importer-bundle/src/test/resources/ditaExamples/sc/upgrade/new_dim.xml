@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_0D43B1ABEA25497BA574DD10BF69C18D"> 
+  <title>Add New Dimensions and Metrics</title> 
+  <shortdesc>You can add new dimensions and metrics from Test&amp;Target,
+	 Survey, and list variables.
+  </shortdesc> 
+  <conbody>
+	 <p><image href="graphics/dw_metrics.png"
+		id="image_9B9B1C6E6F864D06B3C43684D44ADFB5"><?xm-replace_text Paragraph?></image>
+	 </p>
+	 <p>A second visit metric called 
+		<wintitle>Visit – All Visitors</wintitle> is available in 
+		<keyword>DataWarehouse</keyword>. 
+		<keyword>SiteCatalyst</keyword> 15 defines visits as all cookie and
+		non-cookie visitors. See 
+		<xref href="t_visits_metric.xml#task_FAE3E7E71FDC452794770334B1E4E009"
+		 format="dita" scope="local">Visits Metric Includes Non-cookie Visitors</xref>. 
+		<keyword>DataWarehouse</keyword> is compatible with 
+		<keyword>SiteCatalyst</keyword> 14 and 
+		<keyword>SiteCatalyst</keyword> 15, so the 
+		<wintitle>Visits</wintitle> metric is preserved. If you want to view all
+		cookie and non-cookie visitors in a request, select 
+		<uicontrol>Visits – All Visitors</uicontrol>.
+	 </p>
+  </conbody>
+</concept>

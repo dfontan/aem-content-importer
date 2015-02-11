@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_863F5F0A44DF42B888EEDA644A6DB8CE"> 
+  <title>Implementing with AJAX</title> 
+  <shortdesc> Implementing with 
+	 <wintitle>AJAX</wintitle> is exactly like deploying code on a standard HTML
+	 page. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Developer and implementation"/>
+		</metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The business has questions that need answers, the needs are assessed and
+		variables assigned. The design is then applied and deployed. These concepts
+		should be familiar if you have already been through the initial stages of
+		implementation. 
+	 </p> 
+	 <section id="section_78F1C7AFBB4E4175A6FE04A962C9C9D0"> 
+		<title>Designing the Solution</title> 
+		<p>The difference when throwing 
+		  <wintitle>AJAX</wintitle> into the mix is first understanding the level
+		  of detail that needs to be gathered. The potential of content changing on the
+		  page (macro-level) or tracking attributes of the application (micro-level)
+		  determines which variables need to be set and which method of sending data to
+		  Adobe works best. 
+		</p> 
+	 </section> 
+	 <section id="section_F3FC6F07A3E148D89A4C9ABC442920C3"> 
+		<title>Deploying the Code</title> 
+		<p>There are two functions in the JavaScript code that allow you to send
+		  data. There are some distinct guidelines that should be followed to know which
+		  method should be used to send data. 
+		</p> <sectiondiv> 
+		<b>Collecting Macro-Data (Page)</b> 
+		<p>The 
+		  <codeph>t()</codeph> function in the Adobe code sends a standard format
+		  image request, incrementing total site page views. All Adobe variables that
+		  have been assigned values send data. The primary focus of using this function
+		  within RIAs revolves around the value of the 
+		  <varname>pageName</varname> variable. You should use this function
+		  when: 
+		</p> 
+		<ul id="ul_273712575EF5460D971CF2C1AA055645"> 
+		  <li id="li_08D3014CBF6447DA9D6B28155A93A6C7">The new content is
+			 considered a page view for the site or is considered moving from one page to
+			 another. 
+		  </li> 
+		  <li id="li_76A2D1324C9F43B2BBECC17AF50D1A34"> The content of the page
+			 changes more than 50% (or whatever is considered significantly changing the
+			 user experience or content). 
+		  </li> 
+		  <li id="li_04A3083147F34F4393EFB4F5A6E05647"> The page path must be
+			 tracked for each user interaction with the RIA. 
+		  </li> 
+		</ul> </sectiondiv> 
+		<title>Sending Macro-Data (Page)</title> 
+		<p>If an image request was previously made on the same page, you must
+		  first clear the values of the previously-set variables. Use the 
+		  <codeph>clearVars()</codeph> funtion in AppMeasurement for JavaScript,
+		  or write a simple JavaScript function to clear the variables if you are using H
+		  code. Set the values appropriate for the changed content, namely the 
+		  <varname>pageName</varname> variable. After the variables are set call
+		  the 
+		  <varname>t()</varname> function. 
+		</p> 
+		<title>Example</title> 
+		<note>Before you call 
+		  <codeph>s.t()</codeph>, you must clear any values on the s object that
+		  you do not want to persist. if you are using AppMeasurement for JavaScript, you
+		  can call 
+		  <codeph>s.clearVars()</codeph>. If you are using H code, write a simple
+		  routine to set variables to an empty string. 
+		</note> 
+		<codeblock outputclass="syntax javascript">s.clearVars();
+s.pageName="New Page"
+s.prop1="some value"
+void(s.t());</codeblock> 
+		<p>The following example shows a tracking call in the 
+		  <codeph>done</codeph> callback of the JQuery 
+		  <codeph>.ajax</codeph> function: 
+		</p> 
+		<codeblock>$.ajax({
+  url: "test.html",
+  dataType: "html"
+})
+  .done(function( response ) {
+    $( "#content" ).html( response );
+	 s.clearVars();
+	 s.pageName = $( "h1:first" ).text();
+	 s.t();
+  });
+</codeblock> <sectiondiv> 
+		<b>Collecting Micro-Data (Link)</b> 
+		<p>The 
+		  <codeph>tl()</codeph> function does not send the 
+		  <varname>pageName</varname> variable and is selective in the other
+		  variables that are sent. Because of this restrictive design, it is well-suited
+		  for tracking micro-level statistics such as button clicks, link clicks,
+		  scrolling, and other similar events. You should use this function when: 
+		</p> 
+		<ul id="ul_022DF32321CD46F98CD9799B08A0ECA7"> 
+		  <li id="li_065EC168A9104C78810ADB317340D0C5"> You do not include a new
+			 page name or inflate page view statistics for the site. 
+		  </li> 
+		  <li id="li_2D9C655AA00E430C9CD172574801DE7D"> The tracking of user
+			 interactions with buttons, links, or specific features within a
+			 page/application is desired. 
+		  </li> 
+		  <li id="li_49E6D73FD9AE476B9F87BE53F304B4E8"> Track the interaction
+			 path of the application. 
+		  </li> 
+		</ul> 
+		<p> Path analysis can be enabled for traffic variables (not restricted to
+		  page pathing) which is a useful tool in analyzing the order users interact with
+		  your page or application. For example, you see that a user interacted first
+		  with button1 and then clicked on button4 before leaving the application. This
+		  link-level path can be traced without inflating page-level statistics by using
+		  the 
+		  <codeph>tl()</codeph> function. 
+		</p> </sectiondiv> 
+		<title>Sending Micro-Data (Link)</title> 
+		<p>If an image request was previously made on the same page, clear the
+		  values of the previously-set variables. This can be accomplished by: 
+		<ul id="ul_B9DFC4B1A9FA4A4BB4BC54D6D3FF65F8"> 
+		  <li id="li_2C352D34682A49AAA0E673BEE905E174">Writing a simple
+			 JavaScript function to clear the Adobe variables. 
+		  </li> 
+		  <li id="li_53E92D8D03384E3FBB23B8796776C2AA">Set the 
+			 <varname>linkTrackVars</varname> and 
+			 <varname>linkTrackEvents</varname> variables if you have not already
+			 done it in the 
+			 <filepath>s_code.js</filepath> file. 
+		  </li> 
+		  <li id="li_916DA3A16BE64661A444033F31F5A73E">Set the values appropriate
+			 for the changed content, namely the 
+			 <varname>pageName</varname> variable. 
+		  </li> 
+		  <li id="li_CCBAD6207C2D4805BC18F6EF99D5A784">After the variables are
+			 set, call the 
+			 <varname>tl()</varname> function. 
+		  </li> 
+		</ul> 
+		</p> 
+		<title>Syntax</title> 
+		<codeblock outputclass="syntax javascript">//set linkTrackVars and linkTrackEvents&gt; (if applicable)
+//set new variables
+s.tl(this,'o','Link Name');</codeblock> 
+		<title>Example</title> 
+		<codeblock outputclass="syntax javascript">s.linkTrackVars="prop1,eVar1,events"; s.linkTrackEvents="event1";
+s.prop1="some value"; s.eVar1="another value"; s.events="event1";
+s.tl(this,'o','My Link Name');</codeblock> <sectiondiv> 
+		<b>Placement of Code</b> 
+		<p> There are generally two places to track data with 
+		  <wintitle>AJAX</wintitle>: at the time of the request or in the reply.
+		  In most cases, macro-data (page information) should be sent at the time of
+		  reply by having the code embedded in the HTML of the new content. For
+		  micro-data tracking (links, etc.) it is more common to use a custom links
+		  approach by inserting the code in the 
+		  <varname>onClick</varname> attribute of the link, button, etc. 
+		</p> </sectiondiv> 
+	 </section> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_A833FCB79D0746EB891CA50B82C3DF38"> 
+  <title>Category Section of the Product String</title> 
+  <shortdesc>If you provided a category section in your product string, 
+	 <keyword>SiteCatalyst</keyword> version 14 made a 1:1 association between
+	 the product and category.
+  </shortdesc> 
+  <conbody>
+	 <p>For example:
+	 </p>
+	 <p><filepath>s.products=”category;product;quantity;price;...”</filepath>
+	 </p>
+	 <p>In 
+		<keyword>SiteCatalyst</keyword> 14, the first category associated with a
+		product in a calendar month would be tied to that product for the entire month.
+	 </p>
+	 <p><keyword>SiteCatalyst</keyword> 15 allows multiple categories per
+		product. If you have products in multiple categories in the product string, you
+		might see different values in the category report than you did before.
+	 </p>
+  </conbody>
+</concept>

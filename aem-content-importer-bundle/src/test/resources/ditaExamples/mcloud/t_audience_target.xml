@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_3ADCCBEC88EB48A0BDE45324B94305C3"> 
+  <title>Include a shared audience in a Target activity</title> 
+  <shortdesc> Audiences created in the Marketing Cloud or published from
+	 Analytics are available on the Segment page in Adobe Target. 
+  </shortdesc> 
+  <taskbody> 
+	 <context id="context_BB303354397445EE9974350FAE1EC62B"> 
+		<p>For example, you can create campaign activities based on 
+		  <keyword>Analytics</keyword> conversion metrics and audience segments
+		  created in 
+		  <keyword>Analytics</keyword>. 
+		</p> 
+	 </context> 
+	 <steps id="steps_D54EDFC2C3784171A38779D6832EE89D"> 
+		<step id="step_9CF807C40DA14DDAAB956E597C6C4A2E"> 
+		  <cmd>Create an audience in the 
+			 <xref
+			  href="t_audience_create.xml#task_37F407F58BF9459493BB8E968CDFE737"
+			  format="dita" scope="local">Marketing Cloud</xref> or in 
+			 <xref
+			  href="t_share_analytics_usecase.xml#task_F7AE118436FA4E01BFAF79B485482820"
+			  format="dita" scope="local">Adobe Analytics</xref>. 
+		  </cmd> 
+		</step> 
+		<step id="step_E475DABC1CC14A8E92C56029D5EC4EB4"> 
+		  <cmd>Access 
+			 <keyword>Adobe Target</keyword>, then navigate to the 
+			 <wintitle>Segment</wintitle> list. 
+		  </cmd> 
+		</step> 
+		<step id="step_EFADDF987EC242FD91AB4A8C8E2E7C73"> 
+		  <cmd>On the 
+			 <wintitle>Segment</wintitle> page, click 
+			 <uicontrol>Import Marketing Cloud Audiences</uicontrol> 
+		  </cmd> 
+		  <stepresult> 
+			 <p>This option displays the segment for use in activities. 
+			 </p> 
+			 <p>See 
+				<xref
+				 href="https://marketing.adobe.com/resources/help/en_US/tnt/help/c_targeting_a_segment.html"
+				 format="https" scope="external">Segments</xref> in 
+				<keyword>Adobe Target</keyword> for more information. 
+			 </p> 
+		  </stepresult> 
+		</step> 
+	 </steps> 
+  </taskbody>
+</task>

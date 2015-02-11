@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_EA13689CB8EE4F308FC89A1293046D5E">
+  <title>The s.tl() Function - Link Tracking</title>
+  <shortdesc> File downloads and exit links can be automatically tracked based
+	 on parameters set in the AppMeasurement for JavaScript file. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>link tracking</keyword>
+        <keyword>track link</keyword>
+      </keywords>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Functions, Link tracking" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p> If needed, these types of links can be manually tracked using custom
+		link code as explained below. In addition, custom link code can be used to
+		track generic custom links that can be used for a variety of tracking and
+		reporting needs. 
+	 </p>
+    <section id="section_DDF19EE3ACE24EFAB2D65CD4B0D7DBC4">
+      <title>s.tl() Parameter Reference</title>
+      <table id="table_B93B42A7A9454A18B15108B179DA11F3">
+        <tgroup cols="2">
+          <colspec colnum="1" colname="col1" colwidth="1.00*" />
+          <colspec colnum="2" colname="col2" colwidth="4.24*" />
+          <thead>
+            <row>
+              <entry> Variable 
+				  </entry>
+              <entry> Description 
+				  </entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry> this 
+				  </entry>
+              <entry>
+                <p>The first argument should always be set either to this
+						(default) or true. The argument refers to the object being clicked; when set to
+						"this," it refers to the HREF property of the link. 
+					 </p>
+                <p>If you are implementing link tracking on an object that has
+						no HREF property, you should always set this argument to "true." 
+					 </p>
+                <p>Because clicking a link often takes a visitor off the
+						current page, a 500ms delay is used to ensure that an image request is sent to
+						Adobe before the user leaves the page. This delay is only necessary when
+						leaving the page, but is typically present when the 
+						<wintitle>s.tl()</wintitle> function is called. If you want
+						to disable the delay, pass the keyword 'true' as the first parameter when
+						calling the 
+						<wintitle>s.tl()</wintitle> function. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry> linkType 
+				  </entry>
+              <entry>
+                <p>
+                  <codeblock outputclass="syntax javascript">s.tl(this,linkType,linkName, variableOverrides, doneAction)</codeblock>
+                </p>
+                <p>linkType has three possible values, depending on the type of
+						link that you want to capture. If the link is not a download or an exit link,
+						you should choose the Custom links option. 
+					 <table id="table_63B2354DD29A4F2CB3660C5BBAB969D2"><tgroup cols="2"><colspec colnum="1" colname="col1" colwidth="*" /><colspec colnum="2" colname="col2" colwidth="*" /><thead><row><entry> Type 
+								</entry><entry> linkType value 
+								</entry></row></thead><tbody><row><entry> File Downloads 
+								</entry><entry> 'd' 
+								</entry></row><row><entry> Exit Links 
+								</entry><entry> 'e' 
+								</entry></row><row><entry> Custom Links 
+								</entry><entry> 'o' 
+								</entry></row></tbody></tgroup></table></p>
+              </entry>
+            </row>
+            <row>
+              <entry>linkName 
+				  </entry>
+              <entry>This can be any custom value, up to 100 characters. This
+					 determines how the link is displayed in the appropriate report. 
+				  </entry>
+            </row>
+            <row>
+              <entry>variableOverrides 
+				  </entry>
+              <entry>(Optional, pass null if not using) This lets you change
+					 variable values for this single call, It is similar to other 
+					 <keyword>AppMeasurement</keyword> libraries. 
+				  </entry>
+            </row>
+            <row>
+              <entry> useForcedLinkTracking 
+				  </entry>
+              <entry>
+                <p>This flag is used to disable forced link tracking for some
+						browsers. Forced link tracking is enabled by default for FireFox 20+ and WebKit
+						browsers. 
+					 </p>
+                <p>
+                  <b> Default Value</b>
+                </p>
+                <p>true 
+					 </p>
+                <p>
+                  <b> Example</b>
+                </p>
+                <p>
+                  <codeblock outputclass="syntax javascript">s.useForcedLinkTracking = false</codeblock>
+                </p>
+              </entry>
+            </row>
+            <row>
+              <entry> forcedLinkTrackingTimeout 
+				  </entry>
+              <entry>
+                <p>The maximum number of milliseconds to wait for tracking to
+						finish before performing the 
+						<wintitle>doneAction</wintitle> that was passed into 
+						<filepath>s.tl 
+						</filepath>. This value specifies the maximum wait time. If
+						the track link call completes before this timeout, the 
+						<wintitle>doneAction</wintitle> is executed immediately. If
+						you notice that track link calls are not completing, you might need to increase
+						this timeout. 
+					 </p>
+                <p>
+                  <b> Default Value</b>
+                </p>
+                <p>250 
+					 </p>
+                <p>
+                  <b> Example</b>
+                </p>
+                <p>
+                  <codeblock outputclass="syntax javascript">s.forcedLinkTrackingTimeout = 500</codeblock>
+                </p>
+              </entry>
+            </row>
+            <row>
+              <entry> doneAction 
+				  </entry>
+              <entry>
+                <p>An optional parameter to specify a navigation action to
+						execute after the track link call completes when 
+						<codeph>useForcedLinkTracking</codeph> is enabled. 
+					 </p>
+                <p>
+                  <b> Syntax</b>
+                </p>
+                <p>
+                  <codeblock outputclass="syntax javascript">s.tl(linkObject,linkType,linkName,variableOverrides,doneAction)</codeblock>
+                </p>
+                <p>
+                  <b>
+                    <wintitle>doneAction</wintitle>
+                  </b> : (optional) Specifies the action to take after the link
+						track call is sent or has timed out, based on the value specified by: 
+						<codeblock outputclass="syntax javascript">s.forcedLinkTrackingTimeout</codeblock> The 
+						<wintitle>doneAction</wintitle> variable can be the string
+						navigate, which causes the method to set 
+						<filepath>document.location</filepath> to the href attribute
+						of 
+						<wintitle>linkObject</wintitle>. The 
+						<wintitle>doneAction</wintitle> variable can also be a
+						function allowing for advanced customization. 
+					 </p>
+                <p>If providing a value for 
+						<wintitle>doneAction</wintitle> in an anchor 
+						<wintitle>onClick</wintitle> event, you must return false
+						after the 
+						<filepath>s.tl</filepath> call to prevent the default browser
+						navigation. 
+					 </p>
+                <p>To mirror the default behavior and follow the URL specified
+						by the href attribute, provide a string of navigate as the 
+						<wintitle>doneAction</wintitle> . 
+					 </p>
+                <p>Optionally, you can provide your own function to handle the
+						navigation event by passing this function as the 
+						<wintitle>doneAction</wintitle>. 
+					 </p>
+                <p>
+                  <b> Examples</b>
+                </p>
+                <codeblock outputclass="syntax javascript">&lt;a href="..." onclick="s.tl(this,'o','MyLink',null,'navigate');return false"&gt;Click Here&lt;/a&gt; &lt;a href="#" onclick="s.tl(this,'o','MyLink',null,function(){if(confirm('Proceed?'))document.location=...});return false"&gt;Click Here&lt;/a&gt; </codeblock>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <sectiondiv>
+        <b>Example</b>
+      </sectiondiv>
+      <p> The following example of an 
+		  <wintitle>s.tl()</wintitle> function call uses the default 500 ms delay
+		  to ensure data is collected before leaving the page. 
+		</p>
+      <codeblock outputclass="syntax javascript">s.tl(this,'o','link name');</codeblock>
+      <p>The following example disables the 500 ms delay, if the user is not
+		  going to leave the page, or whenever the object being clicked has no HREF. 
+		</p>
+      <codeblock outputclass="syntax javascript">s.tl(true,'o','link name');</codeblock>
+      <p> The 500ms delay is a maximum delay. If the image requested returns in
+		  less than 500 ms, the delay stops immediately. This allows the visitor to move
+		  onto the next page or next action within the page. 
+		</p>
+      <p> The following examples are for handling custom links on WebKit
+		  browsers: 
+		</p>
+      <codeblock outputclass="syntax javascript">&lt;a href="..." onclick="s.tl(this,'o','MyLink',null,'navigate');return false"&gt;Click Here&lt;/a&gt;</codeblock>
+      <codeblock outputclass="syntax javascript">&lt;a href="#"  onclick="s.tl(this,'o','MyLink',null, 
+function(){if(confirm('Proceed?'))document.location=...});return false"&gt;Click Here&lt;/a&gt;</codeblock>
+      <p>
+        <note> Uses of custom link code are often very specific to your Web
+			 site and reporting needs. You can contact your Adobe Consultant or Customer
+			 Care before implementing custom link code to understand the possibilities
+			 available to you and how best to leverage this feature based on your business
+			 needs. 
+		  </note>
+      </p>
+      <p>The basic code to track a link using custom link code is shown in the
+		  following example: 
+		</p>
+      <codeblock outputclass="syntax javascript">&lt;a href="index.html" onClick="s.tl(this,'o','Link Name')"&gt;My Page&lt;/a&gt;</codeblock>
+      <p>
+        <note> The<wintitle> s_gi</wintitle> function must contain your report
+			 suite ID as a function parameter. Be sure to swap out 
+			 <filepath>rsid</filepath> for your unique report suite ID. 
+		  </note>
+      </p>
+      <p>
+        <note> If the link name parameter is not defined, the URL of the link
+			 (determined from the "this" object) is used as the link name. 
+		  </note>
+      </p>
+      <p>
+        <keyword>Analytics</keyword> variables can be defined as part of custom
+		  link code. 
+		</p>
+    </section>
+  </conbody>
+</concept>

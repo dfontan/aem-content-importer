@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_B5AC1D4372AA4A7D8C7871453A4F1215"> 
+  <title>Link Tracking Variables in doPlugins</title> 
+  <shortdesc>To help manage link tracking, these following variables are
+	 populated before the 
+	 <codeph>doPlugins</codeph> function runs. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Developer and implementation"/> 
+		<othermeta name="subtopic" content="JavaScript AppMeasurement"/>
+		</metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Inside of 
+		<codeph>doPlugins</codeph>, you can use the following values to modify
+		link tracking behavior. For example, you can abort tracking, or add additional
+		variables to tracking requests. 
+	 </p> 
+	 <table id="table_55CCF4F2BF474FD3B703C926B896B392"> 
+		<tgroup cols="3"> 
+		  <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+		  <colspec colnum="2" colname="col2" colwidth="3.99*"/> 
+		  <colspec colnum="3" colname="col3" colwidth="2.61*"/> 
+		  <thead> 
+			 <row> 
+				<entry colname="col1">Variable 
+				</entry> 
+				<entry colname="col2">Description 
+				</entry> 
+				<entry colname="col3">Impact 
+				</entry> 
+			 </row> 
+		  </thead> 
+		  <tbody> 
+			 <row> 
+				<entry colname="col1">linkType 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>Contains the automatically determined link type, if any. Can
+					 be set to one of the following: 
+				  </p> 
+				  <ul id="ul_81ACB5D00D774E86AFD22C61AD4D0E2C"> 
+					 <li id="li_52B6F2B124024DEFB422D1E9E97254C0">d (download) 
+					 </li> 
+					 <li id="li_E842C2E64F034181A364C639C30451FD">e (exit) 
+					 </li> 
+					 <li id="li_3263F378CE65407E81B6C5C597CED1E8">o (custom/other) 
+					 </li> 
+				  </ul> 
+				  <p>This is the 
+					 <codeph>pe</codeph> parameter in the image request. 
+				  </p> 
+				</entry> 
+				<entry colname="col3"> 
+				  <p>If set with 
+					 <codeph>linkURL</codeph> or 
+					 <codeph>linkName</codeph>, a server call is sent as a download,
+					 custom, or exit link. 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">linkName 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>The name that will appear in the custom, download or exit link
+					 report. Truncated at 100 characters. Can be set to any string. 
+				  </p> 
+				  <p>This is the 
+					 <codeph>pev2</codeph> parameter in the image request. 
+				  </p> 
+				</entry> 
+				<entry colname="col3"> 
+				  <p> If set with 
+					 <codeph>linkType</codeph> , an image request will be sent as a
+					 download, custom or exit link 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">linkURL 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>The URL of the link, which acts as the name if a linkName does
+					 not exist. Can be set to any URL string.<!-- Cache truncates (100 or 255 characters?) -check with Glen, are these cleaned up?-->
+				  </p> 
+				  <p>This is the 
+					 <codeph>pev1</codeph> parameter in the image request. 
+				  </p> 
+				</entry> 
+				<entry colname="col3"> 
+				  <p>If set with 
+					 <codeph>linkType</codeph>, an image request will be sent as a
+					 download, custom or exit link 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">linkObject 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>The clicked object for reference. This is read-only.<!--this is read-only-->
+				  </p> 
+				</entry> 
+				<entry colname="col3"> 
+				  <p>No direct impact on measurement. 
+				  </p> 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+	 <p><b> Example</b> 
+	 </p> 
+	 <codeblock outputclass="syntax javascript">function s_doPlugins(s) {
+    if (s.linkType == "d" &amp;&amp; s.linkURL.indexOf(".aspx?f=") {
+        //special tracking for .aspx file download script
+        s.eVar11 = s.linkURL.substring(s.linkURL.lastIndexOf("?f=") + 3, s.linkURL.length);
+    }
+ 
+    else if (s.linkType == "o" ) {
+        // note: linkType is set to "o" only if you make a custom call
+        // to s.tl() and set the link type to "o". Automatically tracked
+        // links are set to "d" or "e" only.
+        s.eVar10 = s.LinkURL;
+    }
+}</codeblock> 
+  </conbody> 
+</concept> 

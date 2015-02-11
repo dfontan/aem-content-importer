@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_464B4F783B7E46A9AD5F88D87B82B433">
+  <title>Windows Silverlight, .NET, IIS, XBOX</title>
+  <shortdesc>
+    <?xm-replace_text Short Description?>
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Release notes" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <note>To find the current library version, turn on debug logging. 
+	 </note>
+    <section id="section_2B70F52C4D214A43844CCEC6B45037F0">
+      <title>1.4.2</title>
+      <p>Release Date: 
+		  <b>August 2014</b></p>
+      <ul id="ul_7B102CB92C0248AA9528B63988A2D812">
+        <li id="li_C80100BAF684440F843915A409FEAF29">
+          <!--AN-89141-->Removed
+			 support for the Microsoft Silverlight Analytics Framework. Adobe is no longer
+			 supporting or distributing the Microsoft Silverlight Analytics Framework
+			 integration for AppMeasurement. 
+		  </li>
+        <li id="li_D6EF243AEF9E4C498E541D5F712609A3">Internal changes to
+			 support upcoming functionality. 
+		  </li>
+      </ul>
+    </section>
+    <section id="section_9134F77804BF472291DA7243FAC89C2B">
+      <title>1.4.1</title>
+      <p>Release Date: 
+		  <b>March 2013</b></p>
+      <ul id="ul_F1618E0E843546638C8306A6F4F562C2">
+        <li id="li_2EBB78D3E731401C8F9606DF3FE07251">
+          <!--108588-->Fixed
+			 exception with getting default referrer in Silverlight outside of a browser
+			 context and properly exposed SSL property in the Microsoft Silverlight
+			 Analytics Framework component. 
+		  </li>
+      </ul>
+    </section>
+    <section id="section_2F4ADA4628EC43B480177C3DDB3D1CFA">
+      <title>1.4</title>
+      <p>Release Date: 
+		  <b>February 2013</b></p>
+      <ul id="ul_EF2D7CD94C8E420197A70B0788B08AE4">
+        <li id="li_21F44C2948E446AE94FF8F394D67D018">Added support to send URLs
+			 longer than 255 bytes to support the expansion of the Page URL field in Adobe
+			 Data Collection servers. Page URLs longer than 255 bytes are split, with the
+			 first 255 bytes appearing in the 
+			 <codeph>g=</codeph> parameter, with the remaining bytes appearing
+			 later in the query sting in the 
+			 <codeph>-g=</codeph> query parameter. This helps prevent long URLs
+			 from taking precedence over other data in the case of browser truncation, but
+			 still enables capturing of long URLs. 
+		  </li>
+        <li id="li_ED5A7989E8F741978F9FE313BE8BF8E7">Added a new fallback
+			 visitor identification method. See 
+			 <xref href="https://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_identifying_unique_visitors" format="http" scope="external">Identifying Unique Visitors</xref>. 
+		  </li>
+        <li id="li_FE72252B85CE49E893BFF993475079CE"> Added a new 
+			 <codeph>abort</codeph> flag that can be set inside 
+			 <codeph>doPlugins</codeph>. Setting this flag to true causes the
+			 AppMeasurement library to not continue with that tracking call. The abort flag
+			 is reset with every tracking call, so if a subsequent tracking call also needs
+			 to be aborted the flag will need to be set again inside 
+			 <codeph>doPlugins</codeph>. 
+			 <codeblock outputclass="syntax javascript">s.doPlugins = function(s) {
+     s.campaign = s.getQueryParam("cid");
+     if ((!s.campaign) &amp;&amp; (!s.events)) {
+          s.abort = true;
+     }
+};</codeblock>This lets you centralize the logic you use to identify activity
+			 that you do not want to track, such as some custom links or external links in
+			 display ads. 
+		  </li>
+      </ul>
+    </section>
+    <section id="section_03089199E2DE4199B32F6821DDAED7BD">
+      <title>1.3.8</title>
+      <p>Release Date: 
+		  <b>September 2012</b></p>
+      <ul id="ul_1422B51F6A5E4344908CFF5D671AB554">
+        <li id="li_8DA24B0E3EC5436FA9C82A1A1C6F51C0">
+          <!--74160-->Fixed an issue that might cause the video complete event
+			 to not be sent when using a custom 
+			 <codeph>media.monitor</codeph> method that tracks the media close
+			 event: 
+			 <codeblock>If(media.event==”CLOSE”) {
+…
+}
+</codeblock></li>
+      </ul>
+    </section>
+    <section id="section_32AA8AE0CED4495496D25BF9246AE8AB">
+      <title>1.3.7</title>
+      <p>Release Date: 
+		  <b>April 2012</b></p>
+      <ul id="ul_0A1A628EBF014AFABB0F3EA58534CEA0">
+        <li id="li_1DA2A8DE4D3445BFB0BC13538B90D1BF">Added support for XBOX. 
+		  </li>
+      </ul>
+    </section>
+    <section id="section_9F2738FA31CD48C4877AB92281EC67A9">
+      <title>1.3.6</title>
+      <p>Release Date: 
+		  <b>February 2012</b></p>
+      <ul id="ul_E2C4AB53BD9447BBB9F957134BF14436">
+        <li id="li_7E6B90439CC444DBA009030717E5A8C2">Windows Phone 7: Fixed an
+			 issue that caused the offlineThrottleDelay to not apply correctly. 
+		  </li>
+        <li id="li_7437291EEF884A71986B4E307EC08763">Added time stamp to
+			 variables used with light tracking calls (trackLight). 
+		  </li>
+      </ul>
+    </section>
+    <section id="section_28BBDE7D187547A4AACCA60E5154DCD2">
+      <title>1.3.5</title>
+      <p>Release Date: 
+		  <b>January 2012</b></p>
+      <ul id="ul_0A3942C8B7DE46ACB98D199B5D559D28">
+        <li id="li_2A817AF5DB9B4EC5A7939EA27159FD9A">Updated video tracking
+			 with a new method to track complete video views. See 
+			 <xref href="https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/video/index.html" scope="external" format="html">Measuring Video in SiteCatalyst</xref>. 
+		  </li>
+      </ul>
+    </section>
+    <section id="section_43788EE6B57E4B2DBEED68BE6954D9CA">
+      <title>1.3.4</title>
+      <ul id="ul_C04DCF0EDB2C485FBDF0400DECDECDD5">
+        <li id="li_19767343708C4DBEBF701758B13C9C40">New support and build for
+			 Windows Phone platform including offline tracking. 
+		  </li>
+        <li id="li_08BA4A4BCB844DCA9276E2BF8CA649F3">Support for doRequest
+			 delegate to override how requests are sent out for tracking data. 
+		  </li>
+        <li id="li_4F57E0F6336046428417D384A89CC19C">Support for contextData
+			 that drives server-side processing rules (v15 only). 
+		  </li>
+        <li id="li_BF436B5292A647838FEC624FEE256350">Support for light server
+			 calls (currently in beta). 
+		  </li>
+        <li id="li_542B9C1C01DE41A29CBF17D2177C37E0">Support for assigning a
+			 value other than 1 to a counter event in the events list. 
+		  </li>
+        <li id="li_469E8689D9FC45859E2248705290F12C">Support for new method of
+			 tracking video using conversion eVars and events (currently in beta). 
+		  </li>
+      </ul>
+    </section>
+  </conbody>
+</concept>

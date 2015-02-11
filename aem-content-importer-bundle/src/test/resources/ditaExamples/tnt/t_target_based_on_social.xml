@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_B29D42232EC24F0BA0D5456B0717BDE1">
+  <title>Target Based on Social Media Sites</title>
+  <shortdesc>You can target based on the social media site a visitor access
+	 your site from. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <context id="context_54045F5A234445B793E83FB94923083B">
+      <p>For example, you can target visitors who come from Facebook or
+		  Twitter. 
+		</p>
+    </context>
+    <steps id="steps_D34D9DBB06C54CF5BF52B9B0F4D98930" class="- topic/ol task/steps ">
+      <step id="step_20EB86FDACAB4F7C8DC3EEAB35AD3B7F" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Target this
+				campaign</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_E1D2AFD089C2456B8F28DEBCD863D777" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Social</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_AE32B4CEB98A4BC2B439420FB067A3F5" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Choose the social media site from the
+			 Target drop-down. 
+		  </cmd>
+      </step>
+      <step id="step_DBAD95C43EAE4939826B65C117F3FEB1" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">If you want to use additional
+			 conditions, click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Add
+				Condition</uicontrol> and set the next condition. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">Multiple conditions are evaluated using And
+				logic. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_4DDE041B48DB4A409A6E43875012EF07" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Done</uicontrol>. 
+		  </cmd>
+      </step>
+    </steps>
+  </taskbody>
+</task>

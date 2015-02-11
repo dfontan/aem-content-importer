@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd" [              ]>
+<map id="map_0D5392DF49B0406ABB41B8DB2A677992">
+	<title>Adobe Analytics Implementation</title>
+	<topicref format="dita" href="implementation.xml" navtitle="Adobe Analytics Implementation" scope="local">
+		<topicmeta>
+			<navtitle/>
+		</topicmeta>
+	</topicref>
+	<topicref format="dita" href="js_implementation.xml" navtitle="JavaScript Implementation" scope="local">
+		<topicref format="dita" href="appmeasure_mjs_pagecode.xml" navtitle="Example Page Code and Global Configuration" scope="local"/>
+	</topicref><topicref format="html" href="http://microsite.omniture.com/t2/help/en_US/mcvid/" locktitle="yes" navtitle="Marketing Cloud Visitor ID Service" scope="external"/>
+	<topicref format="dita" href="appmeasure_mjs.xml" navtitle="About AppMeasurement for JavaScript" scope="local">
+		<topicref format="dita" href="appmeasure_mjs_migrate.xml" navtitle="Migrating to AppMeasurement for JavaScript" scope="local"/>
+		<topicref format="dita" href="plugins_support.xml" navtitle="AppMeasurement Plug-in Support" scope="local"/>
+	</topicref>
+	<topicref format="dita" href="libraries.xml" navtitle="Additional Web and Mobile Measurement Libraries" scope="local">
+		<topicref format="html" href="http://microsite.omniture.com/t2/help/en_US/sc/appmeasurement/release/" locktitle="yes" navtitle="Release History for Measurement Libraries" scope="external"/>
+		<topicref format="dita" href="implscwojs.xml" navtitle="Implementing Analytics without JavaScript" scope="local">
+			<topicmeta>
+				<navtitle>Implementing Analytics without JavaScript</navtitle>
+			</topicmeta>
+			<topicref format="dita" href="otherreq.xml" navtitle="Implementing without JavaScript Guidelines" scope="local">
+				<topicmeta>
+					<navtitle/>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="samplecode.xml" navtitle="Sample Code" scope="local">
+				<topicmeta>
+					<navtitle>Sample Code</navtitle>
+				</topicmeta>
+			</topicref>
+		</topicref>
+		<topicref format="dita" href="adobe_mobile_tracking.xml" navtitle="Mobile Tracking over WAP and I-Mode Protocols" scope="local">
+			<topicref format="dita" href="network_protocols.xml" navtitle="Mobile Network Protocols" scope="local"/>
+			<topicref format="dita" href="how_beacon_reaches_adobe.xml" navtitle="Mobile Protocol Network Gateway" scope="local"/>
+			<topicref format="dita" href="tagging_mobile_pages.xml" navtitle="Tagging Pages For Mobile Protocols" scope="local"/>
+			<topicref format="dita" href="reports_for_mobile_dev.xml" navtitle="Reports for Devices Using Mobile Protocols" scope="local"/>
+			<topicref format="dita" href="mobile_link_tracking.xml" navtitle="Custom Link Measurement on Mobile Protocols" scope="local"/>
+		</topicref>
+		<mapref format="ditamap" href="tagmanager.ditamap" navtitle="TagManager 2.0" scope="local"/>
+	</topicref>
+	<topicref format="dita" href="sc_variables.xml" navtitle="Analytics Variables" scope="local">
+		<topicmeta>
+			<navtitle>Analytics Variables</navtitle>
+		</topicmeta>
+		<topicref format="dita" href="vars_limitiations.xml" navtitle="Variables and Limitations" scope="local"/>
+		<topicref format="dita" href="vars_restrictions.xml" navtitle="Illegal JavaScript Characters" scope="local">
+			<topicmeta>
+				<navtitle>Illegal JavaScript Characters</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="s_account.xml" navtitle="s_account" scope="local">
+			<topicmeta>
+				<navtitle>s_account</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="browserheight.xml" navtitle="browserHeight" scope="local">
+			<topicmeta>
+				<navtitle>browserHeight</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="browserwidth.xml" navtitle="browserWidth" scope="local">
+			<topicmeta>
+				<navtitle>browserWidth</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="campaign.xml" navtitle="campaign" scope="local">
+			<topicmeta>
+				<navtitle>campaign</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="charset.xml" navtitle="charSet" scope="local">
+			<topicmeta>
+				<navtitle>charSet</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="channel.xml" navtitle="channel" scope="local">
+			<topicmeta>
+				<navtitle>channel</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="colordepth.xml" navtitle="colorDepth" scope="local">
+			<topicmeta>
+				<navtitle>colorDepth</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="conntype.xml" navtitle="connectionType" scope="local">
+			<topicmeta>
+				<navtitle>connectionType</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="cookiedomainperiods.xml" navtitle="cookieDomainPeriods" scope="local">
+			<topicmeta>
+				<navtitle>cookieDomainPeriods</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="cookielifetime.xml" navtitle="cookieLifetime" scope="local"/>
+		<topicref format="dita" href="cookiesenabled.xml" navtitle="cookiesEnabled" scope="local">
+			<topicmeta>
+				<navtitle>cookiesEnabled</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="currencycode.xml" navtitle="currencyCode" scope="local">
+			<topicmeta>
+				<navtitle>currencyCode</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="dc.xml" navtitle="dc" scope="local">
+			<topicmeta>
+				<navtitle>dc</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="doPlugins.xml" navtitle="doPlugins" scope="local">
+			<topicmeta>
+				<navtitle>doPlugins</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="dynamicAccountList.xml" navtitle="dynamicAccountList" scope="local">
+			<topicmeta>
+				<navtitle>dynamicAccountList</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="dynamicAccountMatch.xml" navtitle="dynamicAccountMatch" scope="local">
+			<topicmeta>
+				<navtitle>dynamicAccountMatch</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="dynamicAccountSelection.xml" navtitle="dynamicAccountSelection" scope="local">
+			<topicmeta>
+				<navtitle>dynamicAccountSelection</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="dynamicVariablePrefix.xml" navtitle="dynamicVariablePrefix" scope="local">
+			<topicmeta>
+				<navtitle>dynamicVariablePrefix</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="eVarN.xml" navtitle="eVarN" scope="local">
+			<topicmeta>
+				<navtitle>eVarN</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="events.xml" navtitle="events" scope="local">
+			<topicmeta>
+				<navtitle>events</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="fpCookieDomainPeriods.xml" navtitle="fpCookieDomainPeriods" scope="local">
+			<topicmeta>
+				<navtitle>fpCookieDomainPeriods</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="hierN.xml" navtitle="hierN" scope="local">
+			<topicmeta>
+				<navtitle>hierN</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="homepage.xml" navtitle="homepage" scope="local">
+			<topicmeta>
+				<navtitle>homepage</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="javaEnabled.xml" navtitle="javaEnabled" scope="local">
+			<topicmeta>
+				<navtitle>javaEnabled</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="javascriptVersion.xml" navtitle="javascriptVersion" scope="local">
+			<topicmeta>
+				<navtitle>javascriptVersion</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="linkDownloadFileTypes.xml" navtitle="linkDownloadFileTypes" scope="local"/>
+		<topicref format="dita" href="linkExternalFilters.xml" navtitle="linkExternalFilters" scope="local">
+			<topicmeta>
+				<navtitle>linkExternalFilters</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="linkInternalFilters.xml" navtitle="linkInternalFilters" scope="local">
+			<topicmeta>
+				<navtitle>linkInternalFilters</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="linkLeaveQueryString.xml" navtitle="linkLeaveQueryString" scope="local">
+			<topicmeta>
+				<navtitle>linkLeaveQueryString</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="linkName.xml" navtitle="linkName" scope="local">
+			<topicmeta>
+				<navtitle>linkName</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="linkTrackEvents.xml" navtitle="linkTrackEvents" scope="local">
+			<topicmeta>
+				<navtitle>linkTrackEvents</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="linkTrackVars.xml" navtitle="linkTrackVars" scope="local">
+			<topicmeta>
+				<navtitle>linkTrackVars</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="linkType.xml" navtitle="linkType" scope="local">
+			<topicmeta>
+				<navtitle>linkType</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="list_props.xml" navtitle="List Props" scope="local"/>
+		<topicref format="dita" href="listN.xml" navtitle="List Variable" scope="local"/>
+		<topicref format="dita" href="maxDelay.xml" navtitle="maxDelay" scope="local"/>
+		<topicref format="dita" href="mediaLength.xml" navtitle="mediaLength" scope="local">
+			<topicmeta>
+				<navtitle>mediaLength</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="mediaName.xml" navtitle="mediaName" scope="local">
+			<topicmeta>
+				<navtitle>mediaName</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="mediaPlayer.xml" navtitle="mediaPlayer" scope="local">
+			<topicmeta>
+				<navtitle>mediaPlayer</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="mediaSession.xml" navtitle="mediaSession" scope="local">
+			<topicmeta>
+				<navtitle>mediaSession</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="media_trackEvents.xml" navtitle="Media.trackEvents" scope="local">
+			<topicmeta>
+				<navtitle>Media.trackEvents</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="media_trackVars.xml" navtitle="Media.trackVars" scope="local">
+			<topicmeta>
+				<navtitle>Media.trackVars</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="mobile.xml" navtitle="mobile" scope="local">
+			<topicmeta>
+				<navtitle>mobile</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="pageName.xml" navtitle="pageName" scope="local">
+			<topicmeta>
+				<navtitle>pageName</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="pageType.xml" navtitle="pageType" scope="local">
+			<topicmeta>
+				<navtitle>pageType</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="pageURL.xml" navtitle="pageURL" scope="local">
+			<topicmeta>
+				<navtitle>pageURL</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="plugins.xml" navtitle="plugins" scope="local">
+			<topicmeta>
+				<navtitle>plugins</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="products.xml" navtitle="products" scope="local">
+			<topicmeta>
+				<navtitle>products</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="propN.xml" navtitle="propN" scope="local">
+			<topicmeta>
+				<navtitle>propN</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="purchaseID.xml" navtitle="purchaseID" scope="local">
+			<topicmeta>
+				<navtitle>purchaseID</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="referrer.xml" navtitle="referrer" scope="local">
+			<topicmeta>
+				<navtitle>referrer</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="resolution.xml" navtitle="resolution" scope="local">
+			<topicmeta>
+				<navtitle>resolution</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="s_objectID.xml" navtitle="s_objectID" scope="local">
+			<topicmeta>
+				<navtitle>s_objectID</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="server.xml" navtitle="server" scope="local">
+			<topicmeta>
+				<navtitle>server</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="state.xml" navtitle="state" scope="local">
+			<topicmeta>
+				<navtitle>state</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="timestamp.xml" navtitle="timestamp" scope="local">
+			<topicmeta>
+				<navtitle>timestamp</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="trackDownloadLinks.xml" navtitle="trackDownLoadLinks" scope="local">
+			<topicmeta>
+				<navtitle>trackDownLoadLinks</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="trackExternalLinks.xml" navtitle="trackExternalLinks" scope="local">
+			<topicmeta>
+				<navtitle>trackExternalLinks</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="trackingServer.xml" navtitle="trackingServer" scope="local">
+			<topicmeta>
+				<navtitle>trackingServer</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="trackingServerSecure.xml" navtitle="trackingServerSecure" scope="local">
+			<topicmeta>
+				<navtitle>trackingServerSecure</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="trackInlineStats.xml" navtitle="trackInlineStats" scope="local">
+			<topicmeta>
+				<navtitle>trackInlineStats</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="transactionID.xml" navtitle="transactionID" scope="local">
+			<topicmeta>
+				<navtitle>transactionID</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="s_usePlugins.xml" navtitle="s_usePlugins" scope="local">
+			<topicmeta>
+				<navtitle>s_usePlugins</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="visitorID.xml" navtitle="visitorID" scope="local">
+			<topicmeta>
+				<navtitle>visitorID</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="visitorNamespace.xml" navtitle="visitorNamespace" scope="local">
+			<topicmeta>
+				<navtitle>visitorNamespace</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="zip.xml" navtitle="zip" scope="local">
+			<topicmeta>
+				<navtitle>zip</navtitle>
+			</topicmeta>
+		</topicref>
+	</topicref>
+	<topicref format="dita" href="context_data_variables.xml" navtitle="Context Data Variables" scope="local">
+		<topicref format="dita" href="processing_rules.xml" navtitle="Processing Rules" scope="local">
+			<topicmeta>
+				<navtitle>Processing Rules</navtitle>
+			</topicmeta>
+		</topicref>
+	</topicref>
+	<topicref format="dita" href="dynvars_overview.xml" navtitle="Dynamic Variables" scope="local">
+		<topicref format="dita" href="dynvars_examples.xml" navtitle="Dynamic Variable Examples" scope="local"/>
+	</topicref>
+	<topicref format="dita" href="var_merchandising.xml" navtitle="Merchandising Variables" scope="local">
+		<topicref format="dita" href="var_merchandising_impl.xml" navtitle="Implementing a Merchandising Variable" scope="local"/>
+		<topicref format="dita" href="var_merchandising_instances.xml" navtitle="Instances on Merchandising Variables" scope="local"/>
+	</topicref>
+	<topicref format="dita" href="function_t.xml" navtitle="The s.t() Function - Page Tracking" scope="local">
+		<topicmeta>
+			<navtitle/>
+		</topicmeta>
+	</topicref>
+	<topicref format="dita" href="function_tl.xml" navtitle="The s.tl() Function - Link Tracking" scope="local">
+		<topicmeta>
+			<navtitle/>
+		</topicmeta>
+		<topicref format="dita" href="link_automatic.xml" navtitle="Automatic Tracking of Exit Links and File Downloads" scope="local">
+			<topicmeta>
+				<navtitle>Automatic Tracking of Exit Links and File Downloads</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="link_manual.xml" navtitle="Manual Link Tracking Using Custom Link Code" scope="local">
+			<topicmeta>
+				<navtitle>Manual Link Tracking Using Custom Link Code</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="link_img.xml" navtitle="Link Tracking Using an Image Request" scope="local">
+			<topicmeta>
+				<navtitle>Link Tracking Using an Image Request</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="link_variables.xml" navtitle="Setting Additional Variables for File Downloads, Exit Links, and   Custom Links" scope="local">
+			<topicmeta>
+				<navtitle>Setting Additional Variables for File Downloads, Exit Links, and Custom Links</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="link_functions.xml" navtitle="Using Function Calls with Custom Link Code" scope="local">
+			<topicmeta>
+				<navtitle>Using Function Calls with Custom Link Code</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="link_popups.xml" navtitle="Popup Windows with useForcedLinkTracking" scope="local"/>
+		<topicref format="dita" href="link_shortener.xml" navtitle="Links from URL Shorteners" scope="local"/>
+		<topicref format="dita" href="util_linkhandler.xml" navtitle="Link Tracking Variables in doPlugins" scope="local"/>
+		<topicref format="dita" href="downloads_validate.xml" navtitle="Validating File Downloads, Exit Links, and Custom Links" scope="local">
+			<topicmeta>
+				<navtitle>Validating File Downloads, Exit Links, and Custom Links</navtitle>
+			</topicmeta>
+		</topicref>
+	</topicref>
+	<topicref format="dita" href="function_sa.xml" navtitle="The s.sa() Function" scope="local">
+		<topicmeta>
+			<navtitle>The s.sa() Function</navtitle>
+		</topicmeta>
+	</topicref>
+	<topicref format="dita" href="function_clearVars.xml" navtitle="The s.clearVars() Function" scope="local"/>
+	<topicref format="dita" href="function_s_gi.xml" navtitle="The s_gi() Function" scope="local"/>
+	<topicref format="dita" href="util_cookieread.xml" navtitle="Util.cookieRead" scope="local"/><topicref format="dita" href="util_cookiewrite.xml" navtitle="Util.cookieWrite" scope="local"/><topicref format="dita" href="util_getqueryparam.xml" navtitle="Util.getQueryParam" scope="local"/><topicref format="dita" href="offline_tracking.xml" navtitle="Offline Tracking" scope="local"/>
+	<topicref format="dita" href="data_collection.xml" navtitle="Data Collection" scope="local">
+		<topicref format="dita" href="query_parameters.xml" navtitle="Data Collection Query Parameters" scope="local"/>
+		<topicref format="dita" href="http_headers.xml" navtitle="Data Collection HTTP Headers" scope="local"/>
+		<topicref format="dita" href="var_overrides.xml" navtitle="Variable Overrides" scope="local">
+			<topicmeta>
+				<navtitle>Variable Overrides</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="dynamic_accounts.xml" navtitle="Report Suite IDs - Dynamic Accounts" scope="local">
+			<topicref format="dita" href="common_errors.xml" navtitle="Common Errors" scope="local"/>
+		</topicref>
+		<topicref format="dita" href="data_elements.xml" navtitle="Collecting Data From Form Elements" scope="local">
+			<topicmeta>
+				<navtitle>Collecting Data From Form Elements</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="impl_tupes.xml" navtitle="Tracking Across Different Implementation Types" scope="local">
+			<topicmeta>
+				<navtitle>Tracking Across Different Implementation Types</navtitle>
+			</topicmeta>
+			<topicref format="dita" href="impl_guideliens.xml" navtitle="Implementation Guidelines" scope="local">
+				<topicmeta>
+					<navtitle>Implementation Guidelines</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="impl_examples.xml" navtitle="Implementation Example" scope="local">
+				<topicmeta>
+					<navtitle>Implementation Example</navtitle>
+				</topicmeta>
+			</topicref>
+		</topicref>
+		<topicref format="dita" href="impl_media_ajax.xml" navtitle="AJAX-Tracking Rich Media Applications" scope="local">
+			<topicref format="dita" href="impl_ajax.xml" navtitle="Implementing with AJAX" scope="local">
+				<topicmeta>
+					<navtitle/>
+				</topicmeta>
+			</topicref>
+		</topicref>
+		<topicref format="dita" href="email_external.xml" navtitle="External Email Tracking" scope="local"/>
+		<topicref format="dita" href="opt_out.xml" navtitle="Implementing Adobe Opt-Outs" scope="local">
+			<topicmeta>
+				<navtitle>Implementing Adobe Opt-Outs</navtitle>
+			</topicmeta>
+			<topicref format="dita" href="opt_out_link.xml" locktitle="yes" navtitle="Add an Opt-Out Link" scope="local"/>
+		</topicref></topicref>
+	<topicref format="dita" href="impl_testing.xml" navtitle="Testing and Validation" scope="local">
+		<topicref format="dita" href="impl_validation.xml" navtitle="Testing and Validation Process" scope="local">
+			<topicmeta>
+				<navtitle/>
+			</topicmeta>
+			<topicref format="dita" href="impl_testing_account.xml" navtitle="Identifying the s_account Variable in the DigitalPulse   Debugger" scope="local">
+				<topicmeta>
+					<navtitle>Identifying the s_account Variable in the DigitalPulse Debugger</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="impl_js_file.xml" navtitle="JavaScript JS File" scope="local">
+				<topicmeta>
+					<navtitle>JavaScript JS File</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="impl_code_updates.xml" navtitle="Code Modifications" scope="local">
+				<topicmeta>
+					<navtitle>Code Modifications</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="impl_var_values.xml" navtitle="Variables and Values" scope="local">
+				<topicmeta>
+					<navtitle>Variables and Values</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="impl_custom_vars.xml" navtitle="Custom Variables" scope="local">
+				<topicmeta>
+					<navtitle>Custom Variables</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="impl_acceptance.xml" navtitle="Implementation Acceptance" scope="local">
+				<topicmeta>
+					<navtitle>Implementation Acceptance</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="impl_data_accuracy.xml" navtitle="Data Accuracy Validation" scope="local">
+				<topicmeta>
+					<navtitle>Data Accuracy Validation</navtitle>
+				</topicmeta>
+			</topicref>
+		</topicref>
+		<topicref format="dita" href="debugger.xml" navtitle="Adobe Debugger" scope="local">
+			<topicref format="dita" href="debugger_install.xml" navtitle="Adobe Debugger Installation" scope="local">
+				<topicref format="dita" href="debugger_firefox.xml" navtitle="Mozilla Firefox" scope="local"/>
+				<topicref format="dita" href="debugger_chrome.xml" navtitle="Google Chrome" scope="local"/>
+				<topicref format="dita" href="debugger_ie.xml" navtitle="Microsoft Internet Explorer" scope="local"/>
+			</topicref>
+			<topicref format="dita" href="debuger_start.xml" navtitle="Launching DigitalPulse Debugger" scope="local"/>
+		</topicref>
+		<topicref format="dita" href="packet_monitor.xml" navtitle="Packet Analyzers" scope="local">
+			<topicref format="dita" href="debugger_ns_binding.xml" navtitle="NS_Binding_Aborted in Packet Monitors" scope="local">
+				<topicmeta>
+					<navtitle>NS_Binding_Aborted in Packet Monitors</navtitle>
+				</topicmeta>
+			</topicref>
+		</topicref>
+		<topicref format="dita" href="impl_troubleshooting.xml" navtitle="Common Syntax Mistakes" scope="local">
+			<topicref format="dita" href="impl_head_tag.xml" navtitle="Putting Analytics Code in the Head Tag" scope="local">
+				<topicmeta>
+					<navtitle>Putting Analytics Code in the Head Tag</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="link_track_vars_events.xml" navtitle="Using s.linkTrackVars and s.linkTrackEvents" scope="local">
+				<topicmeta>
+					<navtitle>Using s.linkTrackVars and s.linkTrackEvents</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="products_troubleshooting.xml" navtitle="Common Mistakes in the Products Variable" scope="local">
+				<topicmeta>
+					<navtitle>Common Mistakes in the Products Variable</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="pagetype_troubleshooting.xml" navtitle="Setting the PageType Variable Correctly" scope="local">
+				<topicmeta>
+					<navtitle>Setting the PageType Variable Correctly</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="impl_whitespace.xml" navtitle="Using White Space in Variable Values" scope="local">
+				<topicmeta>
+					<navtitle>Using White Space in Variable Values</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="impl_quotes.xml" navtitle="Using Quotes" scope="local">
+				<topicmeta>
+					<navtitle>Using Quotes</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="impl_update_code.xml" navtitle="Replacing Your Analytics Code" scope="local">
+				<topicmeta>
+					<navtitle>Replacing Your Analytics Code</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="impl_syntax_troubleshooting.xml" navtitle="Table of Common Syntax Mistakes" scope="local">
+				<topicmeta>
+					<navtitle>Table of Common Syntax Mistakes</navtitle>
+				</topicmeta>
+			</topicref>
+		</topicref>
+		<topicref format="dita" href="vulnerability_scanner.xml" navtitle="Vulnerability Scanner" scope="local">
+			<topicmeta>
+				<navtitle>Vulnerability Scanner</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="impl_optimization.xml" navtitle="Optimizing your Implementation" scope="local">
+			<topicmeta>
+				<navtitle>Optimizing your Analytics Implementation</navtitle>
+			</topicmeta>
+			<topicref format="dita" href="page_naming.xml" navtitle="Page Naming" scope="local">
+				<topicref format="dita" href="page_naming_strategies.xml" navtitle="Page Naming Strategies" scope="local"/>
+			</topicref>
+			<topicref format="dita" href="var_length.xml" navtitle="Variable Length" scope="local">
+				<topicmeta>
+					<navtitle>Variable Length</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="impl_html_snippet.xml" navtitle="HTML Code Snippet" scope="local">
+				<topicmeta>
+					<navtitle>HTML Code Snippet</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="impl_js_library.xml" navtitle="Javascript Library File" scope="local">
+				<topicmeta>
+					<navtitle>Javascript Library File</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="caching_directives.xml" navtitle="Caching Directives" scope="local">
+				<topicmeta>
+					<navtitle>Caching Directives</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="tables.xml" navtitle="Tables" scope="local">
+				<topicmeta>
+					<navtitle>Tables</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="impl_compression.xml" navtitle="File Compression" scope="local">
+				<topicmeta>
+					<navtitle>File Compression</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="secure_pages.xml" navtitle="Secure Pages" scope="local">
+				<topicmeta>
+					<navtitle>Secure Pages</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="cdn.xml" navtitle="Content Delivery Services/Networks" scope="local">
+				<topicmeta>
+					<navtitle>Content Delivery Services/Networks</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="impl_js_hosting.xml" navtitle="JavaScript File Location and Concurrency" scope="local">
+				<topicmeta>
+					<navtitle>JavaScript File Location and Concurrency</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="peering.xml" navtitle="Peering" scope="local">
+				<topicmeta>
+					<navtitle>Peering</navtitle>
+				</topicmeta>
+			</topicref>
+		</topicref>
+		<topicref format="dita" href="report_variable_mapping.xml" navtitle="Report to Variable Mapping" scope="local"/>
+		<topicref format="dita" href="var_report_mapping.xml" navtitle="Variable to Report Mapping" scope="local"/>
+	</topicref>
+	<topicref format="dita" href="impl_plugins.xml" navtitle="Implementation Plug-ins" scope="local">
+		<topicmeta>
+			<navtitle>Using Implementation Plug-ins</navtitle>
+		</topicmeta>
+		<topicref format="dita" href="plugins_calling.xml" navtitle="Calling Plug-ins with    doPlugins Function" scope="local">
+			<topicmeta>
+				<navtitle>Calling Plug-ins with doPlugins Function</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="abort.xml" navtitle="s.abort flag" scope="local"/>
+		<topicref format="dita" href="appendList.xml" navtitle="appendList" scope="local"/>
+		<topicref format="dita" href="function_doPlugins.xml" navtitle="doPlugins Function" scope="local"/>
+		<topicref format="dita" href="getAndPersistValue.xml" navtitle="getAndPersistValue" scope="local"/>
+		<topicref format="dita" href="getDaysSinceLastVisit.xml" navtitle="getDaysSinceLastVisit" scope="local"/>
+		<topicref format="dita" href="getLoadTime.xml" navtitle="getLoadTime" scope="local"/>
+		<topicref format="dita" href="getNewRepeat.xml" navtitle="getNewRepeat" scope="local"/>
+		<topicref format="dita" href="getPercentPageViewed.xml" navtitle="getPercentPageViewed" scope="local"/>
+		<topicref format="dita" href="getPreviousValue.xml" navtitle="getPreviousValue" scope="local"/>
+		<topicref format="dita" href="getQueryParam.xml" navtitle="getQueryParam" scope="local"/>
+		<topicref format="dita" href="getTimeParting.xml" navtitle="getTimeParting" scope="local"/>
+		<topicref format="dita" href="getValOnce.xml" navtitle="getValOnce" scope="local"/>
+		<topicref format="dita" href="getVisitNum.xml" navtitle="getVisitNum" scope="local"/>
+		<topicref format="dita" href="trackTNT.xml" navtitle="trackTNT" scope="local"/>
+	</topicref>
+	<topicref format="dita" href="props_eVars.xml" navtitle="Traffic props and Conversion eVars" scope="local">
+		<topicmeta>
+			<navtitle>Traffic props and Conversion eVars</navtitle>
+		</topicmeta>
+		<topicref format="dita" href="props_vs_eVars.xml" navtitle="Comparing Props and eVars" scope="local">
+			<topicmeta>
+				<navtitle>Using props vs. eVars</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="props_counter.xml" navtitle="Using props as Counters" scope="local">
+			<topicmeta>
+				<navtitle>Using props as Counters</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="content_hierarchies.xml" navtitle="Counting Content Hierarchies" scope="local">
+			<topicmeta>
+				<navtitle>Counting Content Hierarchies</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="event_predefined.xml" navtitle="What is a Predefined Event?" scope="local">
+			<topicmeta>
+				<navtitle>What is a Predefined Event?</navtitle>
+			</topicmeta>
+			<topicref format="dita" href="prodview_page.xml" navtitle="Detailed Product View Page" scope="local">
+				<topicmeta>
+					<navtitle>Detailed Product View Page</navtitle>
+				</topicmeta>
+			</topicref>
+		</topicref>
+		<topicref format="dita" href="event_custom.xml" navtitle="What is a Custom Event?" scope="local">
+			<topicmeta>
+				<navtitle>What is a Custom Event?</navtitle>
+			</topicmeta>
+		</topicref>
+	</topicref>
+	<topicref format="dita" href="pathing.xml" navtitle="Pathing" scope="local">
+		<topicref format="dita" href="pathing_prop.xml" navtitle="Enabling Pathing on a prop" scope="local">
+			<topicmeta>
+				<navtitle>Enabling Pathing on a prop</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="pathing_campaign.xml" navtitle="Pathing by Campaign or Tracking Code" scope="local">
+			<topicmeta>
+				<navtitle>Pathing by Campaign or Tracking Code</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="pathing_troubleshooting.xml" navtitle="Reasons Pathing may not be Recorded" scope="local">
+			<topicmeta>
+				<navtitle>Reasons Pathing may not be Recorded</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="pathing_section.xml" navtitle="Moving from Section to Section" scope="local">
+			<topicmeta>
+				<navtitle>Moving from Section to Section</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="pathing_pagetempalte.xml" navtitle="Moving from Page Template to Page Template" scope="local">
+			<topicmeta>
+				<navtitle>Moving from Page Template to Page Template</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="pathing_segments.xml" navtitle="Segmenting Paths by User Type" scope="local">
+			<topicmeta>
+				<navtitle>Segmenting Paths by User Type</navtitle>
+			</topicmeta>
+		</topicref>
+	</topicref>
+	<topicref format="dita" href="event_purchase.xml" navtitle="Purchase Events" scope="local">
+		<topicmeta>
+			<navtitle>Purchase Events</navtitle>
+		</topicmeta>
+	</topicref>
+	<topicref format="dita" href="event_serialization.xml" navtitle="Event Serialization" scope="local">
+		<topicref format="dita" href="event_serialization_impl.xml" navtitle="Methods of Event Serialization" scope="local">
+			<topicmeta>
+				<navtitle>Methods of Event Serialization</navtitle>
+			</topicmeta>
+		</topicref>
+	</topicref>
+	<topicref format="dita" href="visid_overview.xml" navtitle="Identifying Unique Visitors" scope="local">
+		<topicmeta>
+			<navtitle>Identifying Unique Visitors</navtitle>
+		</topicmeta>
+		<topicref format="dita" href="visid_custom.xml" navtitle="Custom Visitor ID" scope="local"/>
+		<topicref format="dita" href="visid_service.xml" navtitle="Marketing Cloud Visitor ID Service" scope="local"/><topicref format="dita" href="visid_analytics.xml" navtitle="Analytics Visitor ID" scope="local"/>
+		<topicref format="dita" href="visid_fallback.xml" navtitle="Fallback ID Methods" scope="local"/>
+		<topicref format="dita" href="visid_mobile.xml" navtitle="Identifying Mobile Devices" scope="local"/>
+	</topicref><topicref format="dita" href="xdevice_visid.xml" navtitle="Cross-Device Visitor Identification" scope="local">
+		<topicmeta>
+			<navtitle>Cross-Device Visitor Identification</navtitle>
+		</topicmeta>
+		<topicref format="dita" href="xdevice_connecting.xml" navtitle="Connecting Users Across Devices" scope="local"/>
+		<topicref format="dita" href="xdevice_data.xml" navtitle="Data Impact of Cross-Device Visitor Identification" scope="local"/>
+		<topicref format="dita" href="visit_example.xml" navtitle="Example Visit" scope="local"/>
+		<topicref format="dita" href="visitors.xml" navtitle="Visitors" scope="local"/>
+		<topicref format="dita" href="visits.xml" navtitle="Visits" scope="local"/>
+		<topicref format="dita" href="segments.xml" navtitle="Segments" scope="local"/>
+		<topicref format="dita" href="geo_data.xml" navtitle="Geo-Segmentation Data" scope="local"/>
+		<topicref format="dita" href="variable_persistence.xml" navtitle="Attribution and Persistence" scope="local"/>
+	</topicref>
+	<topicref format="dita" href="visitor_migration.xml" navtitle="Visitor Migration" scope="local"/>
+	<topicref format="dita" href="redirects_overview.xml" navtitle="Redirects and Aliases" scope="local">
+		<topicref format="dita" href="redirects_sc.xml" navtitle="Analytics and Redirects" scope="local"/>
+		<topicref format="dita" href="redirects_implement.xml" navtitle="Implementing Redirects" scope="local">
+			<topicref format="dita" href="redirects_js_override.xml" navtitle="Configure Referrer Override JavaScript Code" scope="local"/>
+			<topicref format="dita" href="redirects_modify_mechanism.xml" navtitle="Modify the Redirect Mechanism" scope="local"/>
+			<topicref format="dita" href="redirects_referrer.xml" navtitle="Capture the Original Referrer" scope="local"/>
+			<topicref format="dita" href="redirects_verify_referrer.xml" navtitle="Verify the Referrer with the Adobe Debugger" scope="local"/>
+		</topicref>
+	</topicref><topicref format="html" href="http://microsite.omniture.com/t2/help/en_US/whitepapers/redirects/" locktitle="yes" navtitle="Exit Link Tracking Redirects" scope="external"/><topicref format="dita" href="faq.xml" navtitle="FAQ" scope="local"/>
+	<topicref format="dita" href="contact_and_legal.xml" navtitle="Contact and Legal Information" scope="local"/>
+	<keydef keys="release-date" processing-role="resource-only">
+		<topicmeta>
+			<keywords>
+				<keyword>01282013</keyword>
+			</keywords>
+		</topicmeta>
+	</keydef>
+	<keydef keys="copyright-date" processing-role="resource-only">
+		<topicmeta>
+			<keywords>
+				<keyword>2013</keyword>
+			</keywords>
+		</topicmeta>
+	</keydef>
+</map>

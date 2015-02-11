@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_FBFA55E137E644A2BD97B41E92F6AFEF">
+  <title>transactionID</title>
+  <shortdesc>
+    <wintitle>Integration Data Sources</wintitle> use a 
+	 <wintitle>transaction ID</wintitle> to tie offline data to an online
+	 transaction (like a lead or purchase generated online). 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Variables" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p> Each unique 
+		<varname>transactionID</varname> sent to Adobe is recorded in preparation
+		for a 
+		<wintitle>Data Sources</wintitle> upload of offline information about
+		that transaction. See 
+		<xref href="https://marketing.adobe.com/resources/help/en_US/sc/datasources/" format="http" scope="external">Data Sources</xref>. 
+	 </p>
+    <table id="table_0157DAFFEF184F8AA0CD87ACFA8AEF93">
+      <tgroup cols="4">
+        <colspec colnum="1" colname="col1" colwidth="*" />
+        <colspec colnum="2" colname="col2" colwidth="*" />
+        <colspec colnum="3" colname="col3" colwidth="*" />
+        <colspec colnum="4" colname="col4" colwidth="*" />
+        <thead>
+          <row>
+            <entry> Max Size 
+				</entry>
+            <entry> Debugger Parameter 
+				</entry>
+            <entry> Reports Populated 
+				</entry>
+            <entry> Default Value 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry> 100 bytes 
+				</entry>
+            <entry> xact 
+				</entry>
+            <entry> n/a 
+				</entry>
+            <entry> "" 
+				</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <section id="section_0C18329203DC45E989DBAE70C0FB4801">
+      <title>
+        <b> Syntax and Possible Values</b>
+      </title>
+      <codeblock outputclass="syntax javascript">s.transactionID="unique_id"</codeblock>
+      <p> The 
+		  <varname>transactionID</varname> should contain only alphanumeric
+		  characters. If multiple 
+		  <wintitle>transactionIDs</wintitle> should be recorded in a single hit,
+		  you can use a comma to delimit multiple values. 
+		</p>
+    </section>
+    <section id="section_A4C1F0E54CB54AD7B86A22147E9B5FEF">
+      <title>Examples</title>
+      <codeblock outputclass="syntax javascript">s.transactionID="11123456"</codeblock>
+      <codeblock outputclass="syntax javascript">s.transactionID="lead_12345xyz"</codeblock>
+      <codeblock outputclass="syntax javascript">s.transactionID=s.purchaseID</codeblock>
+    </section>
+    <section id="section_3EA2C9DC9D4C4F0FBE4AB67981BCB52E">
+      <title>
+        <b> Configuration Settings</b>
+      </title>
+      <p>Before 
+		  <varname>transactionID</varname> values are recorded, 
+		  <varname>transactionID</varname> recording must be enabled by an Adobe
+		  representative. To see whether 
+		  <varname>transactionID</varname> recording is enabled for a report
+		  suite, go to reporting and analytics &gt; 
+		  <wintitle>Data Sources</wintitle> &gt; 
+		  <wintitle>Manage</wintitle>. 
+		</p>
+    </section>
+    <section id="section_4299BAD5D0154DBC88A9EF0E2C252BB4">
+      <title>
+        <b> Pitfalls, Questions, and Tips</b>
+      </title>
+      <ul id="ul_16B95199641543859A6F84E2BE5DDCB0">
+        <li id="li_316552EFA9D641B1A4E72BEB9F3FA677">If 
+			 <varname>transactionID</varname> recording is not enabled, 
+			 <varname>transactionID</varname> values will be discarded and
+			 unavailable for use with 
+			 <wintitle>Integration Data Sources</wintitle>. Make sure to set a
+			 conversion variable or event (an eVar or the events variable) on the page where
+			 
+			 <varname>transactionID</varname> is set. Otherwise, no data is
+			 recorded for the 
+			 <varname>transactionID</varname>. 
+		  </li>
+        <li id="li_EAE383CA980344DB8F9F1F8BB9D062CA">If you are recording 
+			 <wintitle>transactionIDs</wintitle> for multiple systems, such as
+			 purchases and leads, make sure the value in 
+			 <varname>transactionID</varname> is always unique. This can be
+			 accomplished by adding a prefix to the ID, such as lead_1234 and purchase_1234.
+			 
+			 <wintitle>Integration Data Sources</wintitle> do not function as
+			 expected (<wintitle>Data Source</wintitle> data will tie to the wrong data) if
+			 a unique 
+			 <varname>transactionID</varname> is seen twice. 
+		  </li>
+        <li id="li_A05455C7C4EB4EC9999F0BB0EEC5F119">By default, 
+			 <varname>transactionID</varname> values are remembered for 90 days.
+			 If your offline interaction process is longer than 90 days, contact Customer
+			 Care to have the limit extended. 
+		  </li>
+      </ul>
+      <p>
+        <note> The 
+			 <varname>transactionID</varname> variable can contain any character
+			 other than a comma. It should be in the same location where the character limit
+			 (100 bytes) is specified. If multi-byte characters are used, multi-byte
+			 character support must be enabled in order to avoid problems with unexpected
+			 characters in the 
+			 <varname>transactionID</varname>. 
+		  </note>
+      </p>
+    </section>
+  </conbody>
+</concept>

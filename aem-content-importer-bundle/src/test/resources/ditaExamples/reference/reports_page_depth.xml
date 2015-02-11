@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_58DB9CFE4F0042ADB43AB86EF3DC4A7B">
+  <title>Page Depth Report</title>
+  <shortdesc> Determines the average number of clicks it takes users to get to
+	 a certain page in the website. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports" />
+    </metadata>
+  </prolog>
+  <conbody></conbody>
+</concept>

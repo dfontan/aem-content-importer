@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_D22201EE34EE4AC080AE0E5CF0B6EA5E">
+  <title>Target This Campaign</title>
+  <shortdesc>You can target your campaign to include a specified number of
+	 visitors, to appear in certain locations, and to display for visitor segments
+	 that meet particular requirements.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>When you click 
+		<uicontrol>Target This Campaign</uicontrol>, the targeting options open.
+		Click it again to hide the options.
+	 </p>
+  </conbody>
+</concept>

@@ -1,0 +1,1512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_2E339DC832454E80B03BAC88A378A008"> 
+  <title> Data Warehouse Release Notes</title> 
+  <shortdesc>Cumulative release notes for data warehouse. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Data warehouse"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>For more recent data warehouse release notes, please refer to the 
+		<xref
+		 href="https://marketing.adobe.com/resources/help/en_US/whatsnew/index.html#Current%20Release%20Notes"
+		 format="https" scope="external">Marketing Cloud Release Notes</xref>. 
+	 </p> 
+	 <ul id="ul_17F74AA19CE64E00B21F1516CC4E23C4"> 
+		<li id="li_D4EF8958EADD4B19BBFB9B65AE57B662"><xref
+		  href="data_warehouse_rns.xml#concept_2E339DC832454E80B03BAC88A378A008/section_57AF8CBDD2EF4853B6169563ADA9123B"
+		  format="dita" scope="local">Data Warehouse (10/16/2014)</xref>
+		</li>
+		<li id="li_61C6D468F3754227AC5303C09F4DEC6C"><xref
+		  href="data_warehouse_rns.xml#concept_2E339DC832454E80B03BAC88A378A008/section_E6239A71CF5C4D53A0167E184BC60EB4"
+		  format="dita" scope="local">Data Warehouse (09/18/2014)</xref>
+		</li>
+		<li id="li_4154338993E544BEA74B3E96AF41282A"><xref
+		  href="data_warehouse_rns.xml#concept_2E339DC832454E80B03BAC88A378A008/section_246F51A786B44FABADB959E9310ADACD"
+		  format="dita" scope="local">Data Warehouse (08/21/2014)</xref>
+		</li>
+		<li id="li_EA20E6A8ED194CDC96C479CBFF31871E"><xref
+		  href="data_warehouse_rns.xml#concept_2E339DC832454E80B03BAC88A378A008/section_2BE2F9C969BC4C4EB67DFAF6EF0CAC69"
+		  format="dita" scope="local">Data Warehouse (07/17/2014)</xref>
+		</li>
+		<li id="li_516C5F42C8984191BCFF0F46AAAC5D82"><xref
+		  href="data_warehouse_rns.xml#concept_2E339DC832454E80B03BAC88A378A008/section_C74A54D2682E4FD2AC58F96EBD76AB18"
+		  format="dita" scope="local">Data Warehouse (06/19/2014)</xref>
+		</li>
+		<li id="li_58C9C1EBA5A249C0AA63C4D9F9ECD532"><xref
+		  href="data_warehouse_rns.xml#concept_2E339DC832454E80B03BAC88A378A008/section_022E7EB721C342DCA0C3B1F2616F6A12"
+		  format="dita" scope="local">Data Warehouse (05/22/2014)</xref>
+		</li>
+		<li id="li_392B9527B2AB49609F9B6F2850EFB1EF"><xref
+		  href="data_warehouse_rns.xml#concept_2E339DC832454E80B03BAC88A378A008/section_4167E3F89B6045B09302CF2C1DA8D45A"
+		  format="dita" scope="local">Data Warehouse (04/17/2014)</xref>
+		</li>
+		<li id="li_885131875F0D427A93995558A62C1C0C"><xref
+		  href="data_warehouse_rns.xml#concept_2E339DC832454E80B03BAC88A378A008/section_B3521A13D3F44503A2B816F1DDA01CEB"
+		  format="dita" scope="local">Data Warehouse (03/13/2014)</xref>
+		</li>
+		<li id="li_FDC19139ED7C4C189CE290682A36D8BF"><xref
+		  href="data_warehouse_rns.xml#concept_2E339DC832454E80B03BAC88A378A008/section_6382E780928E4E35ADF0061187800201"
+		  format="dita" scope="local">Data Warehouse (02/20/2014)</xref>
+		</li>
+		<li id="li_37246E1E684E49BE968E996B56771F7A"><xref
+		  href="data_warehouse_rns.xml#concept_2E339DC832454E80B03BAC88A378A008/section_101DB72BB6034B46A5A727B66EE1610C"
+		  format="dita" scope="local">Data Warehouse (01/16/2014)</xref>
+		</li>
+		<li id="li_8D74E53EE32D4FD88C514EC02C104CB8"><xref
+		  href="data_warehouse_rns.xml#concept_2E339DC832454E80B03BAC88A378A008/section_68419345D77746E4979324C837B21EB5"
+		  format="dita" scope="local">Data Warehouse (11/14/2013)</xref>
+		</li>
+		<li id="li_7BC82D359C6F4B3F9285ADB149E7A061"><xref
+		  href="data_warehouse_rns.xml#concept_2E339DC832454E80B03BAC88A378A008/section_522513F421FA4C3FAC43BBB8296CC135"
+		  format="dita" scope="local">Data Warehouse (10/17/2013)</xref>
+		</li>
+		<li id="li_3C9770D970F24E55B46A6D5265E4FE93"><xref
+		  href="data_warehouse_rns.xml#concept_2E339DC832454E80B03BAC88A378A008/section_44E1A3D1C34B4DDF963DB739DAF5802A"
+		  format="dita" scope="local">Data Warehouse (09/12/2013)</xref>
+		</li>
+		<li id="li_DFEB1171BECC42F3BA2A7D6E2DA523E8"><xref
+		  href="data_warehouse_rns.xml#concept_2E339DC832454E80B03BAC88A378A008/section_4EC3F05C6F91454E855BE36B4A61B196"
+		  format="dita" scope="local">Data Warehouse (08/15/2013)</xref>
+		</li>
+		<li id="li_1EC2E19E84574BF0865DFB2135E24496"><xref
+		  href="data_warehouse_rns.xml#concept_2E339DC832454E80B03BAC88A378A008/section_B815BA2DB1CF492DA8CF5BD11BD223B3"
+		  format="dita" scope="local">Data Warehouse (07/18/2013)</xref>
+		</li>
+		<li id="li_F17E2C7A9A8A422F8897F5AF5EB9064D"><xref
+		  href="data_warehouse_rns.xml#concept_2E339DC832454E80B03BAC88A378A008/section_05FF733708E54BFD89830A654D46AC42"
+		  format="dita" scope="local">Data Warehouse (06/20/2013)</xref>
+		</li>
+		<li id="li_DC7903E7010F477EB0FCEF092744FE45"><xref
+		  href="data_warehouse_rns.xml#concept_2E339DC832454E80B03BAC88A378A008/section_566D8805205B40389E0F5C539FBF40E7"
+		  format="dita" scope="local">Data Warehouse (05/23/2013)</xref>
+		</li>
+		<li id="li_7F746857D80C4144AEC6ABA72AED80EC"><xref
+		  href="data_warehouse_rns.xml#concept_2E339DC832454E80B03BAC88A378A008/section_397B1C2C837644A0B1CB0950D10C023D"
+		  format="dita" scope="local">Data Warehouse (04/18/2013)</xref>
+		</li>
+		<li id="li_F82E7969643D419EBE228730B503980C"><xref
+		  href="data_warehouse_rns.xml#concept_2E339DC832454E80B03BAC88A378A008/section_A5181CBBCD1547C4BAEE8E68C3B34D9E"
+		  format="dita" scope="local">Data Warehouse (03/21/2013)</xref>
+		</li>
+		<li id="li_4871DDA20A38439085BBA50B281AF9BC"><xref
+		  href="data_warehouse_rns.xml#concept_2E339DC832454E80B03BAC88A378A008/section_8999040934FD42E583C32C5C5ACA5105"
+		  format="dita" scope="local">Data Warehouse (02/21/2013)</xref>
+		</li>
+		<li id="li_BD8425621F414C94A7A8D63320DF4BD6"><xref
+		  href="data_warehouse_rns.xml#concept_2E339DC832454E80B03BAC88A378A008/section_268A91A714554389B916DD0F3F200566"
+		  format="dita" scope="local">Data Warehouse (11/08/2012)</xref>
+		</li>
+		<li id="li_BA6233BDE133422D9ADFCCBD968C9819"> 
+		  <xref
+			href="data_warehouse_rns.xml#concept_2E339DC832454E80B03BAC88A378A008/section_677A1DCAD84D438C9676F57421AE6312"
+			format="dita" scope="local"> <?xm-replace_text Data Warehouse (10/18/2012)?>
+		  </xref> 
+		</li> 
+		<li id="li_2B7DE340E0A24DF794FE47DDA66DFBEB"> 
+		  <xref
+			href="data_warehouse_rns.xml#concept_2E339DC832454E80B03BAC88A378A008/datawarehouse"
+			format="dita" scope="local"> <?xm-replace_text Data Warehouse (9/21/2012)?>
+		  </xref> 
+		</li> 
+		<li id="li_6F18ED81542E49A6ACF9F9A70E497EB6"> 
+		  <xref
+			href="data_warehouse_rns.xml#concept_2E339DC832454E80B03BAC88A378A008/section_61FAEB4A3C0A4D0BAF798B82F3B2B86E"
+			format="dita" scope="local"> <?xm-replace_text Data Warehouse (8/16/2012)?>
+		  </xref> 
+		</li> 
+		<li id="li_61508FD39E72418CB5B295DBCCB6CA96"> 
+		  <xref
+			href="data_warehouse_rns.xml#concept_2E339DC832454E80B03BAC88A378A008/section_E129CCA2289B4864895A4C0DEB38EC83"
+			format="dita" scope="local"> <?xm-replace_text Data Warehouse (7/19/2012)?>
+		  </xref> 
+		</li> 
+		<li id="li_62F320CA86B94E1C884D82BAB9A46420"> 
+		  <xref
+			href="data_warehouse_rns.xml#concept_2E339DC832454E80B03BAC88A378A008/section_BB98515A37B6468C99B4DB9B8618BE79"
+			format="dita" scope="local"> <?xm-replace_text Data Warehouse (4/26/2012)?>
+		  </xref> 
+		</li> 
+		<li id="li_1DE496F6B43A47F3B6DFC9BAB8D43F6E"> 
+		  <xref
+			href="data_warehouse_rns.xml#concept_2E339DC832454E80B03BAC88A378A008/section_C27C7BF226394C02A07DDEE902CF4285"
+			format="dita" scope="local"> <?xm-replace_text Data Warehouse (3/29/2012)?>
+		  </xref> 
+		</li> 
+		<li id="li_270C0D187E70439B9146F31ED27E6243"> 
+		  <xref
+			href="data_warehouse_rns.xml#concept_2E339DC832454E80B03BAC88A378A008/section_0E401DFBB573459BAF33CD17C762B888"
+			format="dita" scope="local"> <?xm-replace_text Data Warehouse (1/19/2012)?>
+		  </xref> 
+		</li> 
+		<li id="li_B87EB869768041238093F489A4EB67F8"> 
+		  <xref
+			href="data_warehouse_rns.xml#concept_2E339DC832454E80B03BAC88A378A008/section_D95D26AF3709467F9F682EF08571C9B3"
+			format="dita" scope="local"> <?xm-replace_text Data Warehouse (11/03/2011)?>
+		  </xref> 
+		</li> 
+		<li id="li_8CECC915605D4572A0D2E8DC2393B1E1"> 
+		  <xref
+			href="data_warehouse_rns.xml#concept_2E339DC832454E80B03BAC88A378A008/section_7809B4781A404FEE83A4060A37B835FB"
+			format="dita" scope="local"> <?xm-replace_text Data Warehouse (10/07/2011)?>
+		  </xref> 
+		</li> 
+		<li id="li_E984B45CE24B4E02B182557D8A5CC44F"> 
+		  <xref
+			href="data_warehouse_rns.xml#concept_2E339DC832454E80B03BAC88A378A008/section_64F2A42B93954551AABC58B5C0F7DA96"
+			format="dita" scope="local"> <?xm-replace_text Data Warehouse (9/20/2011)?>
+		  </xref> 
+		</li> 
+		<li id="li_73C2A2DAD1884AB984AD0E92565A74AA"> 
+		  <xref
+			href="data_warehouse_rns.xml#concept_2E339DC832454E80B03BAC88A378A008/section_4F6364CC85424CBCAEC43FF8A5952168"
+			format="dita" scope="local"> <?xm-replace_text Data Warehouse (8/2012)?>
+		  </xref> 
+		</li> 
+		<li id="li_DA86F6EE654547A7B2ACAC6B8344A113"> 
+		  <xref
+			href="data_warehouse_rns.xml#concept_2E339DC832454E80B03BAC88A378A008/section_103B99422219443A87B41786286DE6E0"
+			format="dita" scope="local"> <?xm-replace_text Data Warehouse (7/2011)?>
+		  </xref> 
+		</li> 
+		<li id="li_70B42A12847F4B4D921ED7E52A3D0A55"> 
+		  <xref
+			href="data_warehouse_rns.xml#concept_2E339DC832454E80B03BAC88A378A008/section_5A44CA88C02E4EC39733836324A796E7"
+			format="dita" scope="local"> <?xm-replace_text Data Warehouse (5/2011)?>
+		  </xref> 
+		</li> 
+		<li id="li_C1F5DF9522284C60B81C577120262E86"> 
+		  <xref
+			href="data_warehouse_rns.xml#concept_2E339DC832454E80B03BAC88A378A008/section_AC2F40F4106F4184A8AA919AAD399562"
+			format="dita" scope="local"> <?xm-replace_text Data Warehouse (4/2011)?>
+		  </xref> 
+		</li> 
+		<li id="li_1BFA340F02804C55BDB4267201BAE419"> 
+		  <xref
+			href="data_warehouse_rns.xml#concept_2E339DC832454E80B03BAC88A378A008/section_9DB99BF681544A0C980EB7C84909EF05"
+			format="dita" scope="local"> <?xm-replace_text Data Warehouse (1/2011)?>
+		  </xref> 
+		</li> 
+		<li id="li_91D65F60EED44A96AE32B31F285D4C36"> 
+		  <xref
+			href="data_warehouse_rns.xml#concept_2E339DC832454E80B03BAC88A378A008/section_9AD62DCC412F4DE89155A3C4ED6B3D49"
+			format="dita" scope="local"> <?xm-replace_text Data Warehouse (11/2010)?>
+		  </xref> 
+		</li> 
+	 </ul> 
+	 <section id="section_57AF8CBDD2EF4853B6169563ADA9123B">
+		<title>Data Warehouse (10/16/2014)</title>
+		<p>No fixes or new features were released at this time.
+		</p>
+	 </section>
+	 <section id="section_E6239A71CF5C4D53A0167E184BC60EB4">
+		<title>Data Warehouse (09/18/2014)</title>
+		<p>No fixes or new features were released at this time.
+		</p>
+	 </section>
+	 <section id="section_246F51A786B44FABADB959E9310ADACD">
+		<title>Data Warehouse (08/21/2014)</title>
+		<p><b>New Features</b> 
+		</p>
+		<table id="table_2CE8FA3A2A294A718F22761B6C6E8908"> 
+		  <tgroup cols="2"><colspec colnum="1" colname="col1"
+			 colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="2.95*"/><thead> 
+				<row> 
+				  <entry colname="col1">Feature 
+				  </entry> 
+				  <entry colname="col2">Description 
+				  </entry> 
+				</row></thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1">Support for "matches" and "does not match"
+					 in data warehouse segments 
+				  </entry> 
+				  <entry colname="col2">
+					 <p>Data warehouse now supports “matches” and “does not match”
+						in segment definitions. (Reports &amp; Analytics and Ad Hoc Analysis already
+						support this.)
+					 </p>
+					 <p>Segments that were previously incompatible with data
+						warehouse because data warehouse did not support “matches” and “does not match”
+						will become compatible after the release (assuming that’s the only reason the
+						segment was incompatible.) Additional segments may appear in the data warehouse
+						segment list after the release. 
+					 </p>
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table>
+		<p><b>Fixes</b>
+		</p>
+		<ul id="ul_986AD41F7CFF4298B55DDED47D618841">
+		  <li id="li_8F9B1E4D74EC4613867A3056705BDECA">Referrer report was
+			 incorrectly reporting internal referrers. 
+		  </li>
+		  <li id="li_4501915736DA4C318A9538DF3260D758">Running a data warehouse
+			 report on a currency metric with a visit-level breakdown resulted in incorrect
+			 data.
+		  </li>
+		</ul>
+	 </section>
+	 <section id="section_2BE2F9C969BC4C4EB67DFAF6EF0CAC69">
+		<title>Data Warehouse (07/17/2014)</title>
+		<p>No fixes or new features were released at this time.
+		</p>
+	 </section>
+	 <section id="section_C74A54D2682E4FD2AC58F96EBD76AB18">
+		<title>Data Warehouse (06/19/2014)</title>
+		<p><b>New Features</b> 
+		</p>
+		<table id="table_B526E9A3C3F0485697636C10F18768E8"> 
+		  <tgroup cols="2"><colspec colnum="1" colname="col1"
+			 colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="2.95*"/><thead> 
+				<row> 
+				  <entry colname="col1">Feature 
+				  </entry> 
+				  <entry colname="col2">Description 
+				  </entry> 
+				</row></thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1">New rules in data warehouse 
+				  </entry> 
+				  <entry colname="col2">Data warehouse now supports 'Event Exists'
+					 rules outside of Hit containers. 
+				  </entry> 
+				</row>
+				<row>
+				  <entry colname="col1">Nested containers in data warehouse 
+				  </entry>
+				  <entry colname="col2">Data warehouse now supports containers of
+					 equal scope to be embedded directly within one another. 
+				  </entry>
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table>
+		<p><b>Fixes</b>
+		</p>
+		<ul id="ul_97B2247B55984194BB8F364FC527A3F5">
+		  <li id="li_5CC43A676AEC439D995A592EA7FC55E8"> When using the same
+			 segment in both reports &amp; analytics and data warehouse for the Entry Page
+			 Report, the results were different.
+		  </li>
+		  <li id="li_3ED4FBE3D50146CD9205CFED575517E8"> Data warehouse was not
+			 reporting Search Keywords – Paid. 
+		  </li>
+		  <li id="li_427792F0A88C43D4B5C91AB17828ADAC"> Users were unable to see
+			 the variable Page URL from the data warehouse API. 
+		  </li>
+		  <li id="li_4DC25C8245A44DFF82CBA6BE79966EEC"> Segments with multiple
+			 nested Visit or Visitor containers were incompatible with data warehouse. 
+		  </li>
+		</ul>
+	 </section>
+	 <section id="section_022E7EB721C342DCA0C3B1F2616F6A12">
+		<title>Data Warehouse (05/22/2014)</title>
+		<p><b>New Features</b> 
+		</p>
+		<table id="table_B480318AC6F64500BBB75821E85A61DB"> 
+		  <tgroup cols="2"><colspec colnum="1" colname="col1"
+			 colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="2.95*"/><thead> 
+				<row> 
+				  <entry colname="col1">Feature 
+				  </entry> 
+				  <entry colname="col2">Description 
+				  </entry> 
+				</row></thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1">Unified segmentation management and
+					 creation across Analytics 
+				  </entry> 
+				  <entry colname="col2">
+					 <p>Segments are now created, managed, and used across Analytics
+						user interfaces and across report suites.
+					 </p>
+					 <p>A new Segment Builder interface lets you build simple,
+						nested, and sequential segments. You can now apply multiple segments to a
+						single report to prevent duplicating logic in multiple segments.
+					 </p>
+					 <p>A new Segment Manager lets you easily manage, approve,
+						share, and tag segments. Segments can be published to the Marketing Cloud for
+						Analytics-powered targeting.
+					 </p>
+					 <p>See<xref
+						href="http://marketing.adobe.com/resources/help/en_US/analytics/segment/seg_transition.html"
+						format="http" scope="external"> Unified Segmentation Transition Guide</xref>. 
+					 </p>
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table>
+		<p><b>Fixes</b>
+		</p>
+		<ul id="ul_5D56598CB3E44A2A854E66F405CD95F0">
+		  <li id="li_DB825AAD5AF746D1BA70204D34AC5002">Fixed an issue that caused
+			 Referring Domain dimension to not match reports &amp; analytics in some
+			 circumstances. 
+		  </li>
+		  <li id="li_C3E59C4257214DD8AB3DB871D1F611DE">Using Revenue
+			 Participation metric resulted in data returning different revenue results when
+			 pulled at different dates/times. 
+		  </li>
+		  <li id="li_D4DAD37F20DC4E0DA75BA9EA1FF66769">Non-Admin user was able to
+			 cancel scheduled data warehouse requests. 
+		  </li>
+		  <li id="li_EC1CB189C6114BABBF7AAE0E2630B665">Trying to access data
+			 warehouse caused a network acceleration timeout. 
+		  </li>
+		  <li id="li_2D3AE27DABD446C68361C2108D5EEE85">Data warehouse re-added
+			 classifications of 
+			 <i>post_tnt</i> (Campaign, Recipe, and Campaign &gt; Recipe) for
+			 reporting and segmentation. 
+		  </li>
+		</ul>
+		<note>Data warehouse access from Version 14 has been removed in this
+		  release. 
+		  <xref
+			href="http://marketing.adobe.com/resources/help/en_US/reference/whatsnew_segments.html"
+			format="http" scope="external">Learn more</xref>
+		</note>
+	 </section>
+	 <section id="section_4167E3F89B6045B09302CF2C1DA8D45A">
+		<title>Data Warehouse (04/17/2014)</title>
+		<p><b>Fixes</b>
+		</p>
+		<ul id="ul_972C7629196247F6AC5AFD345AE629E7">
+		  <li id="li_903E7E9692474EAE9D017A6F842FB217">Added the Marketing Cloud
+			 Visitor ID as a single breakdown column for reporting and segmenting. The
+			 column is called Marketing Cloud Visitor ID in the user interface. 
+		  </li>
+		  <li id="li_EBE3347F9CE04E1995721401A11F25DE"> Fixed an issue that
+			 caused Referrer Type metrics, and segments that are based on Referrer Type, to
+			 not match reports &amp; analytics. 
+		  </li>
+		  <li id="li_EB65E5F91CFB4ED2A60EF853035C72D7"> Fixed an issue in visitor
+			 container segments that caused some visitors to not be correctly included when
+			 visits are processed out-of-order. This might occur when offline data is
+			 enabled in a mobile app and a hits from an earlier visit are sent in after
+			 subsequent visits have already been collected. 
+		  </li>
+		  <li id="li_8882ED5022D34F6DB5377AFF4DC839EA"> Fixed an issue that
+			 caused some report requests to fail when they contained multiple referrer type
+			 breakdowns. 
+		  </li>
+		  <li id="li_A0AAE0A795444AB98A2D34C04C51792E"> Fixed an issue that
+			 caused the contains one of segment operator to not return data when applied to
+			 multi-valued dimensions (for example, list variables). 
+		  </li>
+		  <li id="li_FFF212659DB749E6BEF879CC4F3B8C06"> Fixed an issue that
+			 caused negative decimal values in events to be rounded incorrectly. Reporting
+			 for these events now matches reports &amp; analytics. 
+		  </li>
+		  <li id="li_5CF92D1CCE49408883D233E00ADE245A"> Fixed an issue that
+			 caused some large reports that have no metrics to not generate. 
+		  </li>
+		  <li id="li_89C8185A91824CB6BF97F186126E597E"> Fixed an issue that
+			 caused invalid values to appear in reports when displaying participation on
+			 non-string values. 
+		  </li>
+		  <li id="li_D6796A18A5DB4F41875F178D1577F075"> Fixed an issue that
+			 caused dash characters in scheduled report names to be changed to an
+			 underscore. These reports now correctly contain dashes. 
+		  </li>
+		</ul>
+		<note>Data warehouse access from Version 14 will be removed in an
+		  upcoming release. 
+		  <xref
+			href="http://marketing.adobe.com/resources/help/en_US/reference/whatsnew_segments.html"
+			format="http" scope="external">Learn more</xref>
+		</note>
+	 </section>
+	 <section id="section_B3521A13D3F44503A2B816F1DDA01CEB">
+		<title>Data Warehouse (03/13/2014)</title>
+		<p><b>Fixes</b>
+		</p>
+		<ul id="ul_6BAB86DD5E5D42F5AB5C937C4C7C2F9F">
+		  <li id="li_9D7F2324BEBD4FE08FD5DAB0A1B3B5BC"> Fixed an issue causing
+			 the audit log to show Complete, but no report was sent. 
+		  </li>
+		  <li id="li_D5B396EFC0AE43CD906C55EA6153FD90"> Fixed an issue causing
+			 the evaluator to not return data consistently between data warehouse and ad hoc
+			 analysis. 
+		  </li>
+		  <li id="li_BBCE344D425348B78280FCD230CEE5E2"> Fixed an issue causing
+			 segment rules using contains one or all of to not correctly process. 
+		  </li>
+		  <li id="li_FBED7A3DC25A455B9710678F2A3AD6D3"> Fixed a search keyword
+			 issue causing ::empty:: to display instead of keyword unavailable. 
+		  </li>
+		  <li id="li_4BE78BEE524B47B38091CA2ECE9AEFD0"> Fixed data discrepancy
+			 issues between ad hoc analysis and data warehouse requests. These issues
+			 occurred in participation revenue reporting and in the Customer Loyalty report.
+			 
+		  </li>
+		</ul>
+		<note>Data warehouse access from Version 14 will be removed in an
+		  upcoming release. 
+		  <xref
+			href="http://marketing.adobe.com/resources/help/en_US/reference/whatsnew_segments.html"
+			format="http" scope="external">Learn more</xref>
+		</note>
+	 </section>
+	 <section id="section_6382E780928E4E35ADF0061187800201">
+		<title>Data Warehouse (02/20/2014)</title>
+		<p><b>New Features</b> 
+		</p>
+		<table id="table_65F614E9B30A42C694FC82BBA1AC7BF0"> 
+		  <tgroup cols="2"><colspec colnum="1" colname="col1"
+			 colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="2.95*"/><thead> 
+				<row> 
+				  <entry colname="col1">Feature 
+				  </entry> 
+				  <entry colname="col2">Description 
+				  </entry> 
+				</row></thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1">Data warehouse hourly reports 
+				  </entry> 
+				  <entry colname="col2">Hourly reports that contain the previous
+					 hour of data can now be scheduled in data warehouse. 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table>
+		<p><b>Fixes</b>
+		</p>
+		<ul id="ul_CF0E8B7386664EFE95CD4DBA857F7A3E">
+		  <li id="li_CEBF0E30F966455782B2852BEF26EC46">
+			 <p> Fixed an issue that caused some Japanese characters to display
+				incorrectly when the UI language was set to English.
+			 </p> 
+		  </li>
+		</ul>
+	 </section>
+	 <section id="section_101DB72BB6034B46A5A727B66EE1610C">
+		<title>Data Warehouse (01/16/2014)</title>
+		<p><b>New Features</b> 
+		</p> 
+		<table id="table_F2631AA4C4C94FE2A455D5C4C21AA02F"> 
+		  <tgroup cols="2"><colspec colnum="1" colname="col1"
+			 colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="2.95*"/><thead> 
+				<row> 
+				  <entry colname="col1">Feature 
+				  </entry> 
+				  <entry colname="col2">Description 
+				  </entry> 
+				</row></thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1">New search engine reports in data warehouse
+					 
+				  </entry> 
+				  <entry colname="col2">
+					 <p>The following search engine reports are now available in
+						data warehouse:
+					 </p>
+					 <ul id="ul_F940AEFB32F243E69AD278260788DDB4">
+						<li id="li_24054A4A7F9D4B61B2DAD8263602EDA8">Search Engines -
+						  Paid
+						</li>
+						<li id="li_88EF3B155943473FBD29180DD20D7CFA">Search Engines -
+						  Natural
+						</li>
+						<li id="li_9EBFD41B0B484E239B6CD98BCFB50692">Search Keywords
+						  - Paid
+						</li>
+						<li id="li_BAFEC91167304FB182430C3ECDA32FFA"> Search Keywords
+						  - Natural
+						</li>
+					 </ul>
+				  </entry> 
+				</row>
+				<row>
+				  <entry colname="col1">Updated data warehouse reports 
+				  </entry>
+				  <entry colname="col2">
+					 <p>The following data warehouse reports were updated to match
+						the logic used by marketing reports &amp; analytics and ad hoc analysis:
+					 </p>
+					 <ul id="ul_D5980822CE4142349ED40123788320E4">
+						<li id="li_9798140F95CA457483F5B2A358A9182F"> Referrers
+						</li>
+						<li id="li_B76C6F1502A04333830C22846947E112">Referring
+						  domains
+						</li>
+						<li id="li_1C275DFC20B34B4B8BB39E8A78FF638F"> Referrer type
+						</li>
+						<li id="li_065FD15DF512427AA5DDE39B8D8E2E53">Search Engines -
+						  All
+						</li>
+						<li id="li_BC09A2ECC5984E2291B579FE9CF6FB59">Search Keywords
+						  - All
+						</li>
+						<li id="li_2F7CD57865E242CA85696BD643834937">These updated
+						  reports work with past date ranges, and all scheduled reports will be
+						  automatically switched over to use the new logic. 
+						</li>
+					 </ul>
+				  </entry>
+				</row>
+				<row>
+				  <entry colname="col1">Updated breakdowns in the data warehouse
+					 web services API 
+				  </entry>
+				  <entry colname="col2">In conjunction with the change described in
+					 Updated data warehouse reports, you must use new elements in your data
+					 warehouse web services API requests to report breakdowns that match the logic
+					 used by marketing reports &amp; analytics and ad hoc analysis. See data
+					 warehouse API on Developer Connection. 
+				  </entry>
+				</row>
+				<row>
+				  <entry colname="col1"> Tableau Integration with data warehouse 
+				  </entry>
+				  <entry colname="col2">
+					 <p> Data warehouse can now export data in Tableau TDE format.
+						To request a report in Tableau format:
+					 </p>
+					 <ol id="ol_59D3293352EB40B9BCAA9FB3AB61A3FA">
+						<li id="li_AAA0689AACC74503AB83EB67BB6A77A1">In
+						  the<uicontrol> Schedule Delivery 
+						  </uicontrol>section of a 
+						  <uicontrol>Data Warehouse Request</uicontrol>, click 
+						  <uicontrol>Advanced Delivery Options</uicontrol>.
+						</li>
+						<li id="li_9837E7BCC0A74A4CB7001F31D3C4BC2C"> Select 
+						  <uicontrol>Tableau Format (TDE)</uicontrol> as
+						  the<uicontrol> Report Format</uicontrol>.
+						</li>
+					 </ol>
+				  </entry>
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table>
+		<p><b>Fixes</b>
+		</p>
+		<ul id="ul_DADBF1CA67BB4E63AF6FB7851FB370FB">
+		  <li id="li_CA1CEAADF29B4E9C8525F65EDC86E08C"> Transactional data
+			 sources data (offline data uploaded using a transaction ID) is no longer
+			 included in the Visits-All Visitors and Visitors metrics. This was changed to
+			 match marketing reports &amp; analytics.
+		  </li>
+		  <li id="li_42CDA3A372C84209971207A3766ABE13"> Case sensitivity for page
+			 name-based dimensions (next page, previous page, and so on) now use the same
+			 case-sensitivity setting as page name (Page column in reports).
+		  </li>
+		  <li id="li_01059ECA03B64FB8B59488A65E6690B8"> A change was made to
+			 increase performance when reporting multi-valued variables. In reports, each
+			 value that is contained in a multiple-valued variable is broken down by every
+			 other value, which often results in extremely large data sets and was causing
+			 report delivery failure in some circumstances. This change limits the number of
+			 breakdowns returned for a list variable to 1000 per hit, instead of limiting
+			 the number of multi-valued variables that can be included on a report. 
+		  </li>
+		  <li id="li_0EC965F96CF845CC97F0E86A519B5BF7"> Added support for adding
+			 non-conversion breakdowns (such as props) to a report that includes
+			 participation metrics (either event participation or eVar instance
+			 participation.) This change matches ad hoc analysis. Previously, the metric
+			 reported in this type of report configuration was not a participation metric. 
+		  </li>
+		  <li id="li_32459AB41E044659B7ABDD8359EFCBA1"> When applying a segment
+			 based on a conversion classification that uses the is null and is not null
+			 operators, line items where a key value has been set but no classification
+			 value exists were incorrectly filtered. When the is not null filter was
+			 applied, these values were excluded. Wen the is null filter was applied, these
+			 values were included. These line items are now included and excluded as
+			 expected. 
+		  </li>
+		  <li id="li_F10B2F52B8AA47A1A3D8110EC80E7793"> When calculating Time
+			 Spent on Page, data warehouse now recognizes when a hit was received with an
+			 older timestamp than the previous hit (out-of-order). When this occurs, time
+			 spent is now considered to be 0 rather than a negative number. 
+		  </li>
+		</ul>
+	 </section>
+	 <section id="section_68419345D77746E4979324C837B21EB5">
+		<title>Data Warehouse (11/14/2013)</title>
+		<p>The DataWarehouse maintenance release (11/14/2013) includes the
+		  following changes: 
+		</p>
+		<p><b>Fixes</b>
+		</p>
+		<ul id="ul_008F0D8860354AEA9D2C5E6622B646AE">
+		  <li id="li_3490EC0F3B3E415393895D0516EBBF43"> When calculating Time
+			 Spent on Page, time spent is now calculated for the final page in a visit if a
+			 non-page view event or reload occurs on that page. This matches the logic used
+			 by marketing reports &amp; analytics. 
+		  </li>
+		  <li id="li_52E693B6B8E044319923540813839669"> Fixed an issue that
+			 caused a report generation error in some circumstances when processing
+			 breakdowns on variables that have a large number of unique values. 
+		  </li>
+		  <li id="li_A4E0601F3B2543EF83B5634CFFE8204A"> Fixed an issued that
+			 caused an invalid value to appear on reports where the selected dimension is
+			 Marketing Channel and the date range includes a date before the Marketing
+			 Channels existed.
+		  </li>
+		  <li id="li_1A624F64F16F471FB94AFF1E095371DC"> Fixed an issue that
+			 caused abnormally large values to appear in rare circumstances for some pathing
+			 metrics when reporting over long time frames. 
+		  </li>
+		  <li id="li_587D223C7AE04DDC8B2128E88E5F73AE"> Improved error messages
+			 to provide more descriptive messages. 
+		  </li>
+		  <li id="li_358F3C1ED99044C19ABB75C32F862EAF"> Fixed an issue where
+			 case-sensitivity was not being considered correctly on some dimensions when the
+			 report contained a date granularity.
+		  </li>
+		</ul>
+	 </section>
+	 <section id="section_522513F421FA4C3FAC43BBB8296CC135"> 
+		<title>Data Warehouse (10/17/2013)</title> 
+		<p>The DataWarehouse maintenance release (10/17/2013) includes the
+		  following changes: 
+		</p> 
+		<p><b>New Features</b> 
+		</p> 
+		<table id="table_4B3DE746BFDC4891805F6A9373BD2735"> 
+		  <tgroup cols="2"><colspec colnum="1" colname="col1"
+			 colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="2.95*"/><thead> 
+				<row> 
+				  <entry colname="col1">Feature 
+				  </entry> 
+				  <entry colname="col2">Description 
+				  </entry> 
+				</row></thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1">Participation metrics on solution variables
+				  </entry> 
+				  <entry colname="col2">You can now view participation reports for
+					 dedicated solution variables, which currently includes Social, Mobile, and
+					 Video metrics. 
+				  </entry> 
+				</row>
+				<row>
+				  <entry colname="col1">Stability and performance enhancements 
+				  </entry>
+				  <entry colname="col2">Several updates were made to improve
+					 general data warehouse performance. 
+				  </entry>
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<p><b>Fixes</b> 
+		</p> 
+		<ul id="ul_A916E418172C4C228DC05AD3C039E62E"> 
+		  <li id="li_73DEE4F5C13045248C77CC7265864266"> Fixed an issue that
+			 caused hourly time stamps to appear incorrectly formatted in some reports,
+			 which can cause issues with some automated parsing tools. These time stamps now
+			 appear in the standard hourly format. 
+		  </li> 
+		  <li id="li_5F13F3DD327E47559826957016E692F4"> Participation metrics in
+			 non-English did not correctly show the participation label, causing the
+			 non-participation version of the metric to appear twice. Participation metrics
+			 now correctly display the "(Participation)" label in non-English UI. 
+		  </li>
+		  <li id="li_D81DF3AA927A497DBAD91DF6A1F49E22"> Fixed an issue that
+			 caused data warehouse requests to fail with an "error9". If you were unable to
+			 complete a request due to this error, you can now reschedule the request. 
+		  </li> 
+		  <li id="li_C6739C8D9FE14E418E81F7F3B08226D7"> Exposed the 
+			 <codeph>cust_hit_time_gmt</codeph> breakdown field for reports
+			 generated using the 
+			 <codeph>DataWarehouse.Request 
+			 </codeph>web services API. This lets you sort the products returned
+			 for each recipient ID chronologically rather than alphabetically. 
+		  </li>
+		</ul> 
+	 </section> 
+	 <section id="section_44E1A3D1C34B4DDF963DB739DAF5802A"> 
+		<title>Data Warehouse (09/12/2013)</title> 
+		<p>The DataWarehouse maintenance release (09/12/2013) includes the
+		  following changes: 
+		</p> 
+		<p><b>New Features</b> 
+		</p> 
+		<table id="table_A23181A7C5EB47609022FF7976AE4D99"> 
+		  <tgroup cols="2"><colspec colnum="1" colname="col1"
+			 colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="3.15*"/><thead> 
+				<row> 
+				  <entry colname="col1">Feature 
+				  </entry> 
+				  <entry colname="col2">Description 
+				  </entry> 
+				</row></thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1">Segment name displays under the Request
+					 Description 
+				  </entry> 
+				  <entry colname="col2"> On the View Data Warehouse Request page,
+					 the Request Description area now displays the name of the segment that was
+					 applied to the request start date. 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<p><b>Fixes</b> 
+		</p> 
+		<ul id="ul_4823F8A36A7B43EC9893B06471BD62D0"> 
+		  <li id="li_D1459CAF20FC4F6689936795DE4D3810"> Fixed an issue that
+			 prevented page names from displaying on the Choose Page Name form when defining
+			 a segment in the Segment Builder. 
+		  </li> 
+		  <li id="li_BAE2F340432C4FF2A5E3EDDD2C73C518"> Fixed an issue that
+			 prevented the Date Complete from displaying in the same time zone as the Date
+			 Scheduled. 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_4EC3F05C6F91454E855BE36B4A61B196"> 
+		<title>Data Warehouse (08/15/2013)</title> 
+		<p>The DataWarehouse maintenance release (08/15/2013) includes the
+		  following changes: 
+		</p> 
+		<p><b>New Features</b> 
+		</p> 
+		<table id="table_C18D70D7CD0C4AC795BADEE18A8CFEF3"> 
+		  <tgroup cols="2"><colspec colnum="1" colname="col1"
+			 colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="3.15*"/><thead> 
+				<row> 
+				  <entry colname="col1">Feature 
+				  </entry> 
+				  <entry colname="col2">Description 
+				  </entry> 
+				</row></thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> Social and Mobile App metrics 
+				  </entry> 
+				  <entry colname="col2">Social and Mobile App metrics can now be
+					 reported in data warehouse. 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<p><b>Fixes</b> 
+		</p> 
+		<ul id="ul_A7DACCCD7FD54FEAAB66111D978E49F0"> 
+		  <li id="li_2660D1FDEC84412DA4CD0CF2DA30E099"> When the "Time Spent per
+			 Visit" metric was selected for a Data Warehouse report, the downloaded report
+			 incorrectly listed this column as "Time Spent on Site". The downloaded report
+			 now correctly labels this metric as "Time Spent per Visit". 
+		  </li> 
+		  <li id="li_C652632D85F447438412B4523FB64B7D"> Resolved an issue in data
+			 warehouse where the Visitor ID breakdown and visit/visitor counts were
+			 reporting incorrect values in conjunction with custom visitor IDs. 
+		  </li> 
+		  <li id="li_23C4C4B5D46B4E498F4F08D95D320920"> Resolved an issue in the
+			 data warehouse request manager where it was not properly displaying custom
+			 names for purchase and checkout events." 
+		  </li> 
+		  <li id="li_3361713B7CD447C891553135801A866C"> Removed the "TnT"
+			 breakdown since we recommend using the other Target breakdowns instead
+			 (campaign, campaign &gt; recipe, recipe, and so on). 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_B815BA2DB1CF492DA8CF5BD11BD223B3"> 
+		<title>Data Warehouse (07/18/2013)</title> 
+		<p>The DataWarehouse maintenance release (07/18/2013) includes the
+		  following changes: 
+		</p> 
+		<p><b>New Features</b> 
+		</p> 
+		<table id="table_162520E075F44B5DA8E7E87082089534"> 
+		  <tgroup cols="2"><colspec colnum="1" colname="col1"
+			 colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="3.15*"/><thead> 
+				<row> 
+				  <entry colname="col1">Feature 
+				  </entry> 
+				  <entry colname="col2">Description 
+				  </entry> 
+				</row></thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1">Segment using Social and Mobile App metrics
+					 
+				  </entry> 
+				  <entry colname="col2">Social and Mobile App metrics can now be
+					 included in segments created in reports and analytics, ad hoc analysis, and
+					 data warehouse. 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<p><b>Fixes</b> 
+		</p> 
+		<ul id="ul_5E52A4F6E6C844A68A724C23AAB600AB"> 
+		  <li id="li_712B36A82E374AF78A0781A218294B80"> Data warehouse requests
+			 can now report hourly granularity for reporting periods longer than 14 days. 
+		  </li> 
+		  <li id="li_0E4F0CB3BFC346E79B553CE5BE6995E8"> Report suites with custom
+			 calenders might see a change to the generation date for this reports with a
+			 preset of month or last month that are scheduled for a specific day of the
+			 month. On reports that use a preset of this or last month, previously the
+			 specific day of the month was calculated from the beginning of the calendar
+			 month. Now the day is calculated from the beginning of the custom calendar
+			 month. 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_05FF733708E54BFD89830A654D46AC42"> 
+		<title>Data Warehouse (06/20/2013)</title> 
+		<p>The DataWarehouse maintenance release (06/20/2013) includes the
+		  following changes: 
+		</p> 
+		<p><b>New Features</b> 
+		</p> 
+		<table id="table_DC78CCCEF4984EC7807AEBBF9E507380"> 
+		  <tgroup cols="2"><colspec colnum="1" colname="col1"
+			 colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="3.15*"/><thead> 
+				<row> 
+				  <entry colname="col1">Feature 
+				  </entry> 
+				  <entry colname="col2">Description 
+				  </entry> 
+				</row></thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1">eVar Participation Metrics 
+				  </entry> 
+				  <entry colname="col2">You can now request Participation Metrics
+					 in DataWarehouse reports. These metrics are displayed in the Metrics list under
+					 the Custom Insight heading. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> Reports now contain Numeric/Currency
+					 Events set outside of the products list 
+				  </entry> 
+				  <entry colname="col2">In March 2013, Analytics implementation
+					 support was added to Numeric/Currency Events set outside of the products list.
+					 These values can now be reported in DataWarehouse. 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<p><b>Fixes</b> 
+		</p> 
+		<ul id="ul_1337907F466A42CD8038743776E8EE00"> 
+		  <li id="li_CFB5412313CF4E98A5C5DF0DBD42FCEA">Segments based on events
+			 51-100 were not returning data. Existing segments that are based on events in
+			 this range must be re-created in DataWarehouse. 
+		  </li> 
+		  <li id="li_B4179037AF0D46F288A037F69CA36736">When a DataWarehouse
+			 segment that contains Time Spent per Visit is displayed in Discover, it is
+			 displayed as Seconds Spent per Visit. 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_566D8805205B40389E0F5C539FBF40E7"> 
+		<title>Data Warehouse (05/23/2013)</title> 
+		<p>The DataWarehouse maintenance release (05/23/2013) includes the
+		  following fix: 
+		</p> 
+		<ul id="ul_E0665E155EB94EE0BFA80E1CDF6CFCED"> 
+		  <li id="li_C801E3AD95DA4EC3958883126706EC9D"> 
+			 <p> When building a segment, fixed an issue that prevented negating
+				the "any" operation on variables from the product_list, list vars, mvvars, tnt,
+				and survey columns. 
+			 </p> 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_397B1C2C837644A0B1CB0950D10C023D"> 
+		<title>Data Warehouse (04/18/2013)</title> 
+		<p>The DataWarehouse maintenance release (04/18/2013) includes the
+		  following fixes: 
+		</p> 
+		<ul id="ul_6A45A961CF864702BDE5DBE25F75BFCD"> 
+		  <li id="li_509EB5BEAC7A4594A3B51BDB931D75EA"> Values that contained a
+			 double backslash were not being classified. This occurred in some environments
+			 where MySQL was escaping backslash characters with an additional backslash.
+			 These values are now classified correctly. 
+		  </li> 
+		  <li id="li_5453969EE77848AFAB911F78262F3473"> Fixed performance issues
+			 when loading large numbers of segments that caused the DataWarehouse UI to load
+			 slowly. 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_A5181CBBCD1547C4BAEE8E68C3B34D9E"> 
+		<title>Data Warehouse (03/21/2013)</title> 
+		<p>The DataWarehouse 15.4 maintenance release (03/21/2013) includes the
+		  following changes: 
+		</p> 
+		<p><b>New Features</b> 
+		</p> 
+		<table id="table_5AF282681F334CC98E99CC019D216B95"> 
+		  <tgroup cols="2"><colspec colnum="1" colname="col1"
+			 colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="3.15*"/><thead> 
+				<row> 
+				  <entry colname="col1">Feature 
+				  </entry> 
+				  <entry colname="col2">Description 
+				  </entry> 
+				</row></thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1">Page URL is now available in reports. 
+				  </entry> 
+				  <entry colname="col2">The Page URL is available for current and
+					 historical reports. 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<p><b>Fixes</b> 
+		</p> 
+		<ul id="ul_E5A79104F8F14F1F9786AE79A34D20EA"> 
+		  <li id="li_1883DB9AFD944B0AB56CD468E7A1620B">Row limit changes to
+			 existing jobs in the DataWarehouse UI were not being applied. If you recently
+			 changed a row limit for an existing job and the change was not applied, you can
+			 now apply the change and it will save correctly. 
+		  </li> 
+		  <li id="li_FE9113A330F9429FB0DBFF12524AD6F8"> Some large DataWarehouse
+			 requests were failing with a "Breakdown application crashed" error message. 
+		  </li> 
+		  <li id="li_0E047295F2264EB1967A49927B94ECB0"> Now replace "&amp;" with
+			 "&amp;" in segment rules. 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_8999040934FD42E583C32C5C5ACA5105"> 
+		<title>Data Warehouse (02/21/2013)</title> 
+		<p>The DataWarehouse maintenance release (02/21/2013) includes the
+		  following changes: 
+		</p> 
+		<ul id="ul_40195527A0FE41B8BE2DB0BE2ADE41D2"> 
+		  <li id="li_CBB138AE7CBC42718E04CE1E95B96BF9"> 
+			 <p> Fixed an issue in Geo Location Reports that caused the U.S. state
+				of Connecticut to be improperly classified as Australian Capital Territory.
+				This caused reports to not return data for Connecticut, and to return extra
+				data for the Australian Capital Territory. 
+			 </p> 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_268A91A714554389B916DD0F3F200566"> 
+		<title>Data Warehouse (11/08/2012)</title> 
+		<p>The DataWarehouse maintenance release (11/08/2012) includes the
+		  following enhancements and fixes: 
+		</p> 
+		<ul id="ul_BC3BA2120B044AE4B4BEB44AA11BBFC1"> 
+		  <li id="li_5B09B5BF547D487B96784073CF084EF1"> 
+			 <p> Corrected an issue with the JavaScript breakdown. In the past,
+				the dimension values for this breakdown were numerical values. Now the
+				dimension values are enabled or disabled as they are in SiteCatalyst. 
+			 </p> 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_677A1DCAD84D438C9676F57421AE6312"> 
+		<title> Data Warehouse (10/18/2012)</title> 
+		<p>The data warehouse maintenance release (10/18/12) includes the
+		  following enhancements and fixes: 
+		</p> 
+		<ul id="ul_CE4B503DF9E34ECBA1FB691AE9E36CE4"> 
+		  <li id="li_64B001E050EC44DCB85A4D185A81ACC3">
+          <!--100886-->Improved 
+			 <wintitle>Browser Type</wintitle> reporting in data warehouse to more
+			 closely match SiteCatalyst. Uncommon browsers will be reported as "Other" and
+			 cases where no browser was detected will be reported as an empty string (null).
+			 
+		  </li> 
+		  <li id="li_0E801F0A329D449CB01C206BBA3ABC9E">
+          <!-- 102303-->Corrected inconsistencies between data warehouse and
+			 SiteCatalyst related to case sensitivity and traffic variables. Unless traffic
+			 variables are configured to ignore case, data warehouse now treats the
+			 following variables as case-sensitive: page, channel, server, custom link,
+			 download link, exit link. 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="datawarehouse"> 
+		<title> Data Warehouse (9/21/2012)</title> 
+		<p>The following fixes and enhancements are available for data warehouse:
+		  
+		</p> 
+		<ul id="ul_E4566923C786401E8506AC2AC503D766"> 
+		  <li id="li_B0C15C22F86D4CED9515AD3AD0F3A79A">Resolved an issue where
+			 requests were being limited to 50 rows by default. 
+		  </li> 
+		  <li id="li_DBEE702B315A4C56B091E3B143E43781">Resolved a number of
+			 issues related to how data warehouse handles the following situations in the
+			 product list. Data warehouse matches marketing report rules for these
+			 situations: 
+			 <ul id="ul_DB59107E37164808AEFCF000BD8A1CEF"> 
+				<li id="li_2E1A8BD37A6C47BABC431F2FCD6A4512">Ignores empty
+				  products, such as a comma "," with no additional data. 
+				</li> 
+				<li id="li_F071BFF3445147A99244B36AE7E8BD8B"> Ignores product
+				  entities that are a single dash ("-"). 
+				</li> 
+				<li id="li_466566425027450888828B52F80AE289"> Properly parses
+				  product events that contain tabs or newline characters. 
+				</li> 
+				<li id="li_0D88B5C294ED488BB8275DE6DDD5E87E"> Ignores instances of
+				  event "0", but continues parsing the product list rather than terminating the
+				  parse. 
+				</li> 
+				<li id="li_944FB2EBE9F1477C9FE4329674A7FCF4"> Skips situations with
+				  event values where an equal sign is missing. Parsing now continues rather than
+				  terminating. 
+				</li> 
+				<li id="li_3020AC643015492F9B7FDE3A353E223D"> Trims only spaces
+				  rather than all whitespace characters. 
+				</li> 
+				<li id="li_F1215989D9B84F43AD6D8888A3963586"> No longer trims
+				  spaces if the space is preceded by a backslash. 
+				</li> 
+			 </ul> 
+		  </li> 
+		  <li id="li_AE39EF231DE44E50BD852165EFF1E7A5">Resolved an issue where
+			 using a classification as a segment criteria was not working properly if the
+			 classification was for a merchandising eVar. Specifically, segment criteria
+			 such as 
+			 <codeph>where classification is not null</codeph> was not working for
+			 merchandising eVars. 
+		  </li> 
+		  <li id="li_33FDFC89770E472CB05FB09B164A7BC2">Resolved an issue where
+			 using a classification as a segment criteria was not working properly, if the
+			 classification was for certain visit-reporting dimensions (such as Entry Page,
+			 Exit Page, and so on). 
+		  </li> 
+		  <li id="li_F06CABE34C494EFD88E7A62C06AF09F3"> Resolved an issue
+			 occurring when using multiple segment containers in a segment. The containers
+			 were not being connected correctly by 
+			 <i>OR</i> conditions. 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_61FAEB4A3C0A4D0BAF798B82F3B2B86E"> 
+		<title> Data Warehouse (8/16/2012)</title> 
+		<ul id="ul_7B25A552150D4521914CF83F633E9389"> 
+		  <li id="li_012701039F184D4884DEB8E946A6F920">
+          <!--79805-->Fixed an issue with the SiteCatalyst to Insight feed that
+			 can cause the Insight work node to crash when the data set contains invalid
+			 data. 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_E129CCA2289B4864895A4C0DEB38EC83"> 
+		<title> Data Warehouse (7/19/2012)</title> 
+		<p>The data warehouse release (07/19/12) includes the following
+		  enhancements and fixes: 
+		</p> 
+		<p> 
+		  <b>Mobile Carrier Report</b> 
+		</p> 
+		<p> Added support in data warehouse for the new 
+		  <wintitle>Mobile Carrier Report</wintitle>. 
+		</p> 
+		<p> 
+		  <b>Updated Connection Type Report</b> 
+		</p> 
+		<p>Updated the 
+		  <wintitle>Data warehouse Connection Type Report</wintitle> to match the
+		  new business logic of the Connection Type report. 
+		</p> 
+		<p> 
+		  <b>Conversion Variable Instances</b> 
+		</p> 
+		<p>Added support in data warehouse for conversion variable Instances
+		  metrics (i.e. evar1 Instances, eVar2 Instances, etc.). 
+		</p> 
+		<p> 
+		  <b>Fixes:</b> 
+		</p> 
+		<ul id="ul_6C26E74272E74B37B3384BB88E6C4A0A"> 
+		  <li id="li_BF88BFFCC1E1476B834592DC7DAC1F34">
+          <!-- 75360-->When running the 
+			 <wintitle>Entry Pages Report</wintitle>, data warehouse now reports
+			 the actual entry page for visits that start prior to the report date range and
+			 end within the report date range (i.e. visits that cross the start date
+			 boundary.) In the past, data warehouse would report the first page encountered
+			 during the report date range, not the actual entry page. 
+		  </li> 
+		  <li id="li_AB83E60B15544492B5442FB7B97D7F78">
+          <!--76568--> Resolved an issue in data warehouse where the 
+			 <wintitle>Referring Domains Report</wintitle> would sometimes include
+			 values that were URL-encoded strings that were not actual referring domains. 
+		  </li> 
+		  <li id="li_5231582BC52C42B386618713FF2A2007">
+          <!--78671-->Resolved an issue in data warehouse where the 
+			 <term>is not null</term> operator in the segment builder was not
+			 functioning properly with multi-value variables (e.g. the Products variable.) 
+		  </li> 
+		  <li id="li_10DE6946E7754FEC95B597CBAF734105">
+          <!--68600-->Resolved an issue in data warehouse where the 
+			 <term>less than !</term> operation in the segment builder was not
+			 functioning properly when applied to a classification. 
+		  </li> 
+		  <li id="li_5076BD7B9DB94177B4C0066A179D04B8">
+          <!--78778-->Resolved an issue where the 
+			 <term>Is NULL</term> operator in the segment builder was not
+			 functioning properly when applied to a classification. 
+		  </li> 
+		  <li id="li_662D27A2B2B540848420ED5C7E3C87C4">
+          <!--39906-->
+			 Data warehouse now supports publishing lists for emailing data
+			 warehouse reports. 
+		  </li> 
+		  <li id="li_A7DFC8DFD5D24BC5B9BBA0304AAE9D0F">
+          <!--79239-->Resolved an issue with the advanced scheduler in data
+			 warehouse. The advanced scheduler now supports limiting the number of rows
+			 returned in a data warehouse request. To retrieve all rows, enter 
+			 <term>0</term> (this is the default setting). 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_BB98515A37B6468C99B4DB9B8618BE79"> 
+		<title> Data Warehouse (4/26/2012)</title> 
+		<p>The data warehouse maintenance release (04/26/2012) includes the
+		  following enhancements and fixes: 
+		</p> 
+		<ul id="ul_68479942CFD6413F933EE4C398EE1B37"> 
+		  <li id="li_723291D2C1984360AD1871F290E0D84B">A new lookup file called 
+			 <filepath>column_headers.tsv</filepath> will be included in the files
+			 delivered as part of all raw clickstream data feeds. This new lookup file
+			 contains a single row comprising the list of column names for the data found in
+			 
+			 <filepath>hit_data.tsv</filepath>. 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_C27C7BF226394C02A07DDEE902CF4285"> 
+		<title> Data Warehouse (3/29/2012)</title> 
+		<p>The data warehouse maintenance release (03/29/2012) includes the
+		  following enhancements and fixes: 
+		</p> 
+		<ul id="ul_172603FC9FDA459095826A366544DFEB"> 
+		  <li id="li_7CC72CFDE1394BCBAE586655B25B951F"> Beginning April 26 2012,
+			 a new lookup file called 
+			 <filepath>column_headers.tsv</filepath> will be included in the files
+			 delivered as part of all raw clickstream data feeds. This new lookup file
+			 contains a single row comprising the list of column names for the data found in
+			 hit_data.tsv. 
+		  </li> 
+		  <li id="li_74C5C3DAC91B4198B87817404EF0D746"> Fixed ASI issue where,
+			 under some circumstances, ecommerce data would be zeroed. This issue caused
+			 data discrepancies between ASI segments and other identical Marketing Cloud
+			 segments. 
+		  </li> 
+		  <li id="li_E12DFD0A84734B1FAE6412E67D55B71D">Numeric and Currency
+			 events now report with 2 digit precision rather than truncating at the integer.
+			 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_0E401DFBB573459BAF33CD17C762B888"> 
+		<title> Data Warehouse (1/19/2012)</title> 
+		<p>The following data warehouse fixes are included in this release: 
+		</p> 
+		<ul id="ul_315CD6690C584D4D93C3456BB38AA2D1"> 
+		  <li id="li_AD3B20D38D124AE1BA7D036E9BF4BCBD">Resolved an issue where
+			 orders added to a merchandising eVar were not being de-duplicated properly. 
+		  </li> 
+		  <li id="li_653DAD65398A48DD92DD159AECB38EC6">Resolved an issue where
+			 linefeed characters were sometimes improperly inserted in the middle of rows. 
+		  </li> 
+		  <li id="li_8A9A1CFDE6474D21A9720B913E489EF4">Resolved an issue with ASI
+			 processing, where historical data loads were sometimes omitting part of the
+			 data (manifested most frequently when the historical data has few rows.) 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_D95D26AF3709467F9F682EF08571C9B3"> 
+		<title> Data Warehouse (11/03/2011)</title> 
+		<p>Added the ability for administrators to edit the schedule for data
+		  warehouse requests created by other users. 
+		</p> 
+	 </section> 
+	 <section id="section_7809B4781A404FEE83A4060A37B835FB"> 
+		<title> Data Warehouse (10/07/2011)</title> 
+		<p>The following fixes apply to this maintenance release: 
+		</p> 
+		<ul id="ul_07A7A48C52574B4DBB5C59A1C7AD0625"> 
+		  <li id="li_3FD912DC797B49CC9BE4A20032C9FA4C">Added Visitor ID as a
+			 breakdown. The Visitor ID breakdown is retroactively available and can be
+			 requested for dates earlier than this release (10/07/2011). 
+		  </li> 
+		  <li id="li_355AFB1099C94BF4BD14357609CB5A29">Added Total Time Spent as
+			 a metric. 
+		  </li> 
+		  <li id="li_2EF4AC892D724AAAA7513EB1F5631979">Added Mobile Device Type
+			 as a breakdown. 
+		  </li> 
+		  <li id="li_F443666566224435A25B2EAA377E3368">Fixed an issue where
+			 certain long-running data warehouse requests were not getting delivered. 
+		  </li> 
+		  <li id="li_4F7109F9873442A792F1E9897829C3B9">Resolved an issue where
+			 data warehouse was not handling custom calendars correctly. 
+		  </li> 
+		  <li id="li_9BBAFBC770644A2693C7F800DDC53D32">Resolved an issue where
+			 date presets such as "last week" were using incorrect date ranges when
+			 scheduled on the first day of the period. 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_64F2A42B93954551AABC58B5C0F7DA96"> 
+		<title> Data Warehouse (9/20/2011)</title> 
+		<ul id="ul_F76A06E43859411390F2234E7791D941"> 
+		  <li id="li_F3B94CADB1AA4874AF0DAF11D302B3D0">Added<varname> is
+				null</varname> and 
+			 <varname>is not null</varname> as new operators in the data warehouse
+			 segment builder. 
+		  </li> 
+		  <li id="li_47FBE9F8663F4FBE95ABFC87304A1168"> 
+			 <keyword>Data warehouse</keyword> now supports compression of files
+			 over 2GB. Most file compression software handles files of this size. If you
+			 experience problems, you might need to update your file compression software. 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_4F6364CC85424CBCAEC43FF8A5952168"> 
+		<title> Data Warehouse (8/2012)</title> 
+		<ul id="ul_B388F94CD8AB42E0AEF61B3FE6FA5D4B"> 
+		  <li id="li_6938FB0768BA4F2B906012CC13E56C71">Fixed an issue in which
+			 the 
+			 <uicontrol>starts with</uicontrol> and 
+			 <uicontrol>does not start with</uicontrol> operators in the segment
+			 builder were not always working correctly. 
+		  </li> 
+		  <li id="li_10067FE9B17943E790F0ABAC260D5923">Fixed an issue in which
+			 segments based on classifications of values in the product list worked
+			 incorrectly in some cases. 
+		  </li> 
+		  <li id="li_D4352217F6FD4C2FAAD866D241D52078">Fixed an issue where
+			 segments based on Exit Page were not always functioning correctly. 
+		  </li> 
+		  <li id="li_67B7F7CF262244C6BA86E56EF244753A">Added support in ASI for
+			 hits with user-defined timestamps. 
+		  </li> 
+		  <li id="li_4BA721ABF7744D0296E00B27FDBFFA04">Fixed an issue in which
+			 the currency exchange rate was not being taken into account for revenue
+			 reporting under certain circumstances. 
+		  </li> 
+		  <li id="li_62B4A9C8A27E4D869C95A092499716DE">Fixed an issue in which
+			 custom links, download links, and exit links were not calculated correctly. 
+		  </li> 
+		  <li id="li_73C6C5A627E64002A28D3EA6E3E87D58">Added support in data
+			 warehouse for reporting and segmentation based on mobile device attributes. 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_103B99422219443A87B41786286DE6E0"> 
+		<title> Data Warehouse (7/2011)</title> 
+		<p> 
+		<ul id="ul_2C0BD4D91FD042B4AB6CC1743FA61BEE"> 
+		  <li id="li_7D9B888F76A84289B7B21E8B5738FC4C"> Resolved an issue with
+			 the data warehouse API, where erroneous UTF8 byte order marks were included in
+			 SOAP/JSON RPC requests. 
+		  </li> 
+		  <li id="li_EFF55D2E170F43459D43BFED99105DCD">Resolved an issue with the
+			 data warehouse API, where requesting fields such as 
+			 <term>?browser</term> would return ID numbers rather than the string
+			 values of the field. 
+		  </li> 
+		  <li id="li_B92658C79E5C495C8590A5C217026437"> Resolved an issue with
+			 the data warehouse API, where the 
+			 <varname>CheckRequestStatus</varname> function would fail if the
+			 delivery method specified was FTP or email. 
+		  </li> 
+		  <li id="li_C2ABEB7A73E5428C848D4ABE8AEBBA00"> Added an option in the
+			 data warehouse API WSDL that allows you to create a segment via the API but not
+			 display the segment in the data warehouse interface. 
+		  </li> 
+		  <li id="li_023355E172FB44A79CA049F77B6C5662">Resolved an issue where
+			 the 
+			 <term>contains at least one of</term> and 
+			 <term>contains all of</term> segment operators in data warehouse were
+			 not working properly in certain situations. 
+		  </li> 
+		  <li id="li_011AD3F119A34EC2A4A4631A953DC0A8"> Resolved an issue where
+			 data warehouse breakdowns on classifications reported incorrectly when applying
+			 a visit-based segment. 
+		  </li> 
+		  <li id="li_9F9E8E0AF07B4867BA01741DD7259B33">Resolved an issue where
+			 data warehouse requests that include both a list property and a classification
+			 of that list property were failing. 
+		  </li> 
+		  <li id="li_4E24A2DD75AC45F980C22A17377568EC">Resolved an issue where
+			 custom links, download links, and exit links were not reporting correctly in
+			 data warehouse. 
+		  </li> 
+		  <li id="li_C9C7140F35E84D7E8E382630E39E0F16"> Resolved an issue where
+			 the 
+			 <uicontrol>Days Before First Purchase</uicontrol> breakdown in data
+			 warehouse reported spurious data in certain situations. 
+		  </li> 
+		  <li id="li_7B42C03FA55A44409E76CAEBFADA9AEF">Resolved an issue where
+			 duplicate rows of data were sometimes showing up in data warehouse reports. 
+		  </li> 
+		  <li id="li_EF48C532176146BE88BF96888E906DD8">Resolved an issue where
+			 visit-based segments on classifications of product and category were not
+			 working. 
+		  </li> 
+		  <li id="li_AC430343FDDC475B999E40CE23FE86F6">Resolved an issue where
+			 eVar fields were reporting incorrect data in certain data feeds created by
+			 Engineering Services. 
+		  </li> 
+		  <li id="li_752791786C124DE18650ACD90EB916BB"> Improved the information
+			 shown in the 
+			 <uicontrol>Status Description</uicontrol> field displayed in the 
+			 <wintitle>Data Warehouse Request Detail</wintitle> pane in the data
+			 warehouse interface. 
+		  </li> 
+		  <li id="li_E0D0C72C39364DA6B47BE39570541F81"> Improved scheduling
+			 algorithms. The result is that many data warehouse jobs will start processing
+			 earlier after midnight. 
+		  </li> 
+		  <li id="li_16073393505E4253B1FB1D9EEDE1D1DB" status="new">Resolved an
+			 issue where VISTA processing on the product list variable was not functioning
+			 properly. 
+		  </li> 
+		  <li id="li_0E991173B9BF43BAB199D38E3DF3B992" status="new">Resolved an
+			 issue where certain complex data warehouse requests with a high number of
+			 unique value combinations and many columns would fail. 
+		  </li> 
+		</ul> 
+		</p> 
+	 </section> 
+	 <section id="section_5A44CA88C02E4EC39733836324A796E7"> 
+		<title> Data Warehouse (5/2011)</title> 
+		<ul id="ul_5CFED602CC5146F38811DC02AACA2715"> 
+		  <li id="li_7EF2B58A7FB64FC6A057ABFD4C9A9E00">Made a change to the
+			 contents of the 
+			 <filepath>.fin</filepath> file for data feeds. A fourth line of text
+			 in the 
+			 <filepath>.fin</filepath> file now provides an MD5 checksum for the
+			 data feed file, providing customers a way to validate the file. 
+		  </li> 
+		  <li id="li_9F718D799BBD4C71BC50B55B81626263"> Fixed an issue with the 
+			 <wintitle>Data Warehouse Campaign Name Report</wintitle> (last touch
+			 detail) that caused the campaign name to be blank. 
+		  </li> 
+		  <li id="li_21D82B397AB844819EA3C78D9A4DE4EE"> Fixed an issue where the
+			 Site Title and Company values were swapped in the e-mail that accompanies data
+			 warehouse reports. 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_AC2F40F4106F4184A8AA919AAD399562"> 
+		<title> Data Warehouse (4/2011)</title> 
+		<p> 
+		<ul id="ul_E615CA681BF048ED9525DEBA80B0510A"> 
+		  <li id="li_4371F3EBD69146CEB14968599E7E3F62">Resolved an issue in the 
+			 <wintitle>Days Since Last Visit</wintitle> report where Group A
+			 results were being incorrectly included in Group H. 
+		  </li> 
+		  <li id="li_01A8B06F06BB41D791CB195C003CBB18">Resolved an issue where
+			 selecting 
+			 <uicontrol>Send Digital Files</uicontrol> under 
+			 <wintitle>Advanced Delivery Options</wintitle> caused data warehouse
+			 reports to fail. 
+		  </li> 
+		  <li id="li_0391014126FA466194299A6B13204A8A">Added support for Adobe
+			 Target reports. 
+		  </li> 
+		  <li id="li_4BEF7C9A5FFE47C88E03A821145C927F"> Added support for the
+			 SiteCatalystSurvey reports. 
+		  </li> 
+		</ul> 
+		</p> 
+	 </section> 
+	 <section id="section_9DB99BF681544A0C980EB7C84909EF05"> 
+		<title> Data Warehouse (1/2011)</title> 
+		<p> 
+		<ul id="ul_9A3CB8A8C3624137A7F729A150F222BC"> 
+		  <li id="li_D3B7F3B442A74E81BED75540E4BBB2D2">Fixed an issue with the
+			 time stamps used in scheduled data warehouse reports. 
+		  </li> 
+		  <li id="li_FAE15757A25E498FA68C2CAB96BD6D99"> The logic behind the
+			 Referring Domains breakdown has been updated so that it exactly matches the
+			 data reported in SiteCatalyst. 
+		  </li> 
+		  <li id="li_140D491367924395A682111D1DFFB896">Fixed an issue where the
+			 "Last 53 Weeks" preset date range was not working properly. 
+		  </li> 
+		  <li id="li_72913608610F4BA7A68AC91E6468EE95">Fixed an issue where data
+			 warehouse sometimes displayed incorrect dates in the "From" and "To" fields of
+			 a DW report. 
+		  </li> 
+		  <li id="li_5C65B514A213429192141D99D2758B62"> Fixed an issue where data
+			 warehouse sometimes counted custom event metrics incorrectly with Search Engine
+			 Keyword Reports. 
+		  </li> 
+		  <li id="li_432FDC235456401AB5F1BDD5AEAE24FE"> Fixed an issue where data
+			 warehouse sometimes calculated custom event metrics incorrectly for
+			 merchandising eVars. 
+		  </li> 
+		  <li id="li_64B05A95E2D24027AA2E8832A65C1E87"> Fixed an issue where data
+			 warehouse sometimes calculated custom event metrics incorrectly when segmenting
+			 based on a merchandising eVar. 
+		  </li> 
+		  <li id="li_A680CA6AC6F1402EA2462103C326749F"> Fixed an issue where data
+			 warehouse sometimes calculated visits and/or visitors incorrectly when multiple
+			 products are present in the product string. 
+		  </li> 
+		  <li id="li_F1F1E040455B4C4AAD0070C1DB52E112"> Fixed an issue where
+			 SearchCenter classifications were not available in data warehouse. 
+		  </li> 
+		  <li id="li_3EE8F2496C1D4BAFAABDE829CF93508E"> Fixed an issue where time
+			 zones were given the wrong sign in data warehouse. 
+		  </li> 
+		  <li id="li_09DFE7AD6BBB4C3690C751440C8834C2">Added support for time
+			 zones with a 30-minute offset. 
+		  </li> 
+		  <li id="li_88DCC12B09124935A64DE320E78FB9F3"> Fixed a bug where data
+			 warehouse would not process requests that included a classification without
+			 data in SiteCatalyst yet. 
+		  </li> 
+		</ul> 
+		</p> 
+	 </section> 
+	 <section id="section_9AD62DCC412F4DE89155A3C4ED6B3D49"> 
+		<title> Data Warehouse (11/2010)</title> 
+		<p> 
+		<ul id="ul_E3BA3157423C485990F322B9AF8AF5D0"> 
+		  <li id="li_2AFB75291C2948F18099373B0C026DBA"> Data warehouse now
+			 includes the Byte Order Mark (<codeph>EF BB BF</codeph>) at the beginning of
+			 CSV files for report suites with localization enabled. This improves the
+			 interpretation of non-Latin characters in the file. 
+		  </li> 
+		  <li id="li_965D0A1CC8BA4CF095256B20E0C7368F"> Data warehouse can now
+			 include the Referrer Type metric, and supports it for segmentation as well. 
+		  </li> 
+		  <li id="li_36791B2A40D947BB936A0688CB320A15">Resolved an issue where
+			 data warehouse VISTA rules were not working with props 51-75 and eVars 51-75. 
+		  </li> 
+		  <li id="li_E93FCDEE85F64D578CEF36BABD3B0164">Resolved an issue where
+			 data warehouse returned zero Revenue under certain circumstances when using a
+			 classification breakdown. 
+		  </li> 
+		  <li id="li_4AD71C1F7CDA4C929DF707AB6C842E4E">Fixed an issue where data
+			 warehouse did not correctly display non-Latin characters in delivered CSV
+			 files. 
+		  </li> 
+		</ul> 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept> 

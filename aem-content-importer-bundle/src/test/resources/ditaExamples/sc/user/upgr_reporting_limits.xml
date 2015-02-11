@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_43AF630970264C9A84D0C07114F94002">
+  <title>Improved Reporting Limits for Monthly Unique Values</title>
+  <shortdesc>When a report has a large number of unique values, 
+	 you can ensure that
+	 the most important values appear in your report. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports and analytics" />
+      <othermeta name="subtopic" content="Upgrading from V14" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>At the beginning of each calendar month, 
+		reports include the first 500,000 values
+		received for any single variable in reports. This includes page names, and
+		other traffic and commerce variables. For example, each unique page name on
+		your site counts toward this total. 
+	 </p>
+    <p>After 500,000 unique values are received, 
+		reports begin to optimize which values are
+		displayed. When new values are received after this threshold, 
+		reports initially group these values in a single
+		line item titled 
+		<wintitle>Uniques Exceeded</wintitle>. 
+	 </p>
+    <p>If one of these values begins to receive significant traffic, the value
+		is reported as a separate line item in 
+		along with the first 500,000 values for
+		the remainder of the month (the first 500,000 values are always reported
+		separately regardless of traffic). 
+	 </p>
+    <p>If the number of unique values exceed 1 million in a single month, a
+		second threshold is applied which requires more traffic before a value is
+		reported as a separate line item. For example, a new page that starts to
+		receive 100 hits per day is reported as a separate line item, but a new page
+		that receives fewer than 10 hits might not. 
+	 </p>
+    <p>
+      SiteCatalyst 14 and 
+		SiteCatalyst 15 have the same threshold limits before
+		management starts. These thresholds are 500,000 and 1 million unique values by
+		default. All values, including each unique value in 
+		<wintitle>Uniques Exceeded</wintitle>, are available in 
+		data warehouse reports. 
+	 </p>
+    <p>If you have a custom unique value limit, the following applies: 
+	 </p>
+    <ul id="ul_C31CBFE88A064CDEA82358048DE6DE05">
+      <li id="li_85F8C357AD874E919935B7B8BD359A05">If you have a uniques limit
+		  set to less than 500,000, your limit is used for both the lower and upper
+		  thresholds. 
+		</li>
+      <li id="li_8C68D48576A54A16A33561E61932AA05">If you have a uniques limit
+		  set between 500,000 and 1,000,000 today, your limit is used for the lower
+		  threshold and 1,000,000 for the upper threshold. 
+		</li>
+      <li id="li_F3D122BFD934462499205CE7C27F66CD">If you have a uniques limit
+		  set above 1,000,000 today, your limit is used for both the lower and upper
+		  thresholds. 
+		</li>
+    </ul>
+  </conbody>
+</concept>

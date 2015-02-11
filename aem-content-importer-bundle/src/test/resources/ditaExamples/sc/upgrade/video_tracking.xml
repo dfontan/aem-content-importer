@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_B74021902A1F446DA4BDB29F8BB69FDE"> 
+  <title>Upgrading Video Tracking for SiteCatalyst 15</title> 
+  <shortdesc><keyword>SiteCatalyst</keyword> version 15 requires an updated
+	 video measurement module.
+  </shortdesc> 
+  <conbody>
+	 <p>Complete details are available in the 
+		<xref
+		 href="http://microsite.omniture.com/t2/help/en_US/sc/appmeasurement/video/index.html#Measuring_Video_in_SiteCatalyst"
+		 format="http" scope="external">Measuring Video in SiteCatalyst guide</xref>.
+	 </p>
+  </conbody>
+</concept>

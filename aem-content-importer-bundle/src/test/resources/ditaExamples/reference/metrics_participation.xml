@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_8E6B39106A244CB49E055150B291B477"> 
+  <title>Participation</title> 
+  <shortdesc>Participation metrics assign full credit from success events to
+	 all values of an eVar that were passed during a visit. Participation metrics
+	 are useful to determine which pages, campaigns, or other custom variable values
+	 are contributing most to the success of your site. Participation is visit
+	 based. All eVar values in a visit prior to and including the hit when an event
+	 occurs receive participation credit regardless of the expiration setting. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Metrics"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>See 
+		<xref
+		 href="metrics_visitor_participation.xml#concept_ACBAE3626B224D9683257B5F73E0FB4A"
+		 format="dita" scope="local"><?xm-replace_text Visitor Participation - Ad Hoc Analysis?></xref>
+		for more information about how ad hoc analysis uses participation. 
+	 </p> 
+	 <p>Participation metrics have three settings per conversion event: 
+	 </p> 
+	 <ul id="ul_7D887E6CAC1344D184705005FCDC6765"> 
+		<li id="li_5CCCA013E0DA4930AE3E12BBA08FB70B"> 
+		  <b>Disabled</b>: The default state of each conversion event.
+		  Participation data will not be gathered for this event. 
+		</li> 
+		<li id="li_9B2D3E4C97EC4C0F95506975234F9997"> 
+		  <b>Enabled</b>: Participation data is collected for this event.
+		</li> 
+	 </ul> 
+	 <p>Once enabled, participation metrics are automatically available in all
+		conversion reports. However, participation metrics also can be viewed in
+		specific traffic reports at your request. You can optionally request
+		participation metrics be available in certain custom traffic reports. 
+	 </p> 
+	 <section id="section_DAB6C348201B454BB4ED01313AA777AF"> 
+		<title>Revenue Participation Example</title> 
+		<p>Assume the following sequence: 
+		</p> 
+		<p> 
+		<ol id="ol_0A0C929004D444F482BA0BCFE1D08ACA"> 
+		  <li id="li_93F5DF08F1E549FFA721E4162238473F">A user navigates to your
+			 site and searches for "shoes".
+		  </li>
+		  <li id="li_FB519F5CEF464092A915E906BEC10DBA">The user then searches for
+			 "tennis shoes".
+		  </li>
+		  <li id="li_4592AA6E7D6046BD869474192EAC8C18">The user clicks a links to
+			 the product page, adds the item to the cart, and makes a $120 purchase.
+		  </li> 
+		</ol> 
+		</p> 
+		<p>When displaying Revenue in the Internal Search Terms Report, you would
+		  see the following based on the selected allocation: 
+		</p> 
+		<ul id="ul_E745E6150EF043DDA0AB0E6512E16DC2"> 
+		  <li id="li_720EBC8EA3FF4DCCB0FA47578CFF1DA5"> 
+			 <b>First</b>: "shoes" would get credit for the $120. "tennis shoes"
+			 would get $0. 
+		  </li> 
+		  <li id="li_C2BE8CFDA642426F9E3418B10C667764"> 
+			 <b>Last</b>: "tennis shoes" would get credit for the $120. "shoes"
+			 would get $0. 
+		  </li> 
+		  <li id="li_F0045AFA21074CA5818DC58FA28FB501"> 
+			 <p><b>Linear</b>: Each campaign would get $60 credit.
+			 </p>
+			 <p>Participation is similar to linear allocation, except full credit
+				is given to all values. If you use Revenue (Participation) as the metric,
+				allocation is disregarded. Revenue (Participation) in this example would report
+				$120 for both search terms.
+			 </p>
+		  </li> 
+		</ul>
+		<p>
+		</p> 
+	 </section> 
+  </conbody> 
+  <related-links> 
+	 <link
+	  href="metrics_calculations.xml#concept_7442473CADCC4219924B8D850F1C67C8"
+	  format="dita" scope="local"> 
+		<linktext> <?xm-replace_text Metric Calculations?>
+		</linktext> 
+	 </link> 
+	 <link
+	  href="metrics_visitor_participation.xml#concept_ACBAE3626B224D9683257B5F73E0FB4A"
+	  format="dita" scope="local"> 
+		<linktext> <?xm-replace_text Visitor Participation - Ad Hoc Analysis?>
+		</linktext> 
+	 </link> 
+  </related-links> 
+</concept>

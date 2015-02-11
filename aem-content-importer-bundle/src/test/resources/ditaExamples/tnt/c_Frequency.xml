@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_8BCEBA6DFDA54251BE4E833BBA98C1D4" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic concept/concept ">
+  <title class="- topic/title ">Frequency</title>
+  <shortdesc class="- topic/shortdesc ">If user intent is demonstrated by
+	 action, then repeated action increases confidence in that intent. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody class="- topic/body  concept/conbody ">
+    <p class="- topic/p ">So why not deliver a different offer to a visitor who
+		has purchased five times rather than once? You can also gain insight by
+		measuring the frequency of certain clicks. For example, clicking repeatedly
+		into a high-heeled shoe category provides information about a user's gender,
+		valuable for targeted content. 
+	 </p>
+    <p class="- topic/p ">In the Profile Attributes list, write a script that
+		increments a counter whenever something notable occurs. This could be: 
+	 </p>
+    <p class="- topic/p ">
+      <ul id="ul_70BA12DBAA6342FDBF66F696A233783F" class="- topic/ul ">
+        <li id="li_0C2B13F05F7D450E856B433B17148362" class="- topic/li "> A
+		  purchase 
+		</li>
+        <li id="li_5083ED44FC6748C2961AF25EE5A4C111" class="- topic/li ">
+		  Uploading a picture or video 
+		</li>
+        <li id="li_13110F5EB21B4A24A5D86ADBDA19BAFA" class="- topic/li ">
+		  Clicking on a special category or section of the site 
+		</li>
+        <li id="li_1B41012C0BC84D8BB14D54505CFCF3D6" class="- topic/li "> Using
+		  the search box 
+		</li>
+      </ul>
+    </p>
+    <p class="- topic/p ">Here's a script that increments the counter whenever
+		an mbox called 
+		<codeph class="+ topic/ph pr-d/codeph ">orderConfirm</codeph> is seen: 
+	 </p>
+    <p class="- topic/p ">
+      <codeblock outputclass="syntax html">user.purchaseFrequency
+
+if (mbox.name == 'orderConfirm') {
+
+   return (user.get('purchaseFrequency') || 0) + 1;
+
+} </codeblock>
+    </p>
+    <p class="- topic/p ">Create some expression targets: 
+	 </p>
+    <p class="- topic/p ">
+      <codeblock outputclass="syntax html">buys_never:
+return typeof(user.get('purchaseFrequency')) == 'undefined';
+
+buys_sometimes:
+return user.get('purchaseFrequency') &gt; 0 &amp;&amp; user.get('purchaseFrequency') &lt; 3;
+
+buys_often:
+return user.get('purchaseFrequency') &gt;= 3 </codeblock>
+    </p>
+    <p class="- topic/p ">This one looks for the video upload page in the url: 
+	 </p>
+    <p class="- topic/p ">
+      <codeblock outputclass="syntax html">user.uploadFrequency
+
+if (page.url.indexOf('upload_video.html) &gt; -1) {
+
+   return (user.get('uploadFrequency') || 0) + 1;
+
+} </codeblock>
+    </p>
+    <p class="- topic/p ">Create some expression targets: 
+	 </p>
+    <p class="- topic/p ">
+      <codeblock outputclass="syntax html">uploads_never:
+return user.get('uploadFrequency') == 0;
+
+uploads_sometimes:
+return user.get('uploadFrequency') &gt; 0 &amp;&amp; user.get('uploadFrequency') &lt; 10;
+
+uploads_often:
+return user.get('uploadFrequency') &gt;= 10 </codeblock>
+    </p>
+    <p class="- topic/p ">These scripts determine a visitor's gender, giving a
+		higher weight to search results than category clicks, since a search term
+		implies heavy intent: 
+	 </p>
+    <p class="- topic/p ">
+      <codeblock outputclass="syntax html">user.femaleFrequency
+
+if (page.param('category').indexOf('blouses')) {
+
+   return (user.get('femaleFrequency') || 0) + 1;
+
+}
+
+else if (page.param('search_query').indexOf('blouse')) {
+
+   return (user.get('femaleFrequency') || 0) + 5;
+
+}
+
+user.maleFrequency
+
+if (page.param('category').indexOf('tuxedos')) {
+
+   return (user.get('maleFrequency') || 0) + 1;
+
+}
+
+else if (page.param('search_query').indexOf('tuxedo')) {
+
+   return (user.get('maleFrequency') || 0) + 5;
+
+} </codeblock>
+    </p>
+    <p class="- topic/p ">Create expression targets, which use a simple
+		heuristic to determine a visitor's gender. 
+	 </p>
+    <p class="- topic/p ">
+      <codeblock outputclass="syntax html">male:
+var maleFrequency = user.get('maleFrequency');
+return maleFrequency &amp;&amp; maleFrequency &gt; user.get('femaleFrequency') &amp;&amp; maleFrequency &gt; 10;
+
+female:
+var femaleFrequency = user.get('femaleFrequency');
+return femaleFrequency &amp;&amp; femaleFrequency &gt; user.get('maleFrequency') &amp;&amp; femaleFrequency &gt; 10;</codeblock>
+    </p>
+    <p>For more information, see the 
+		<xref href="http://marketing.adobe.com/resources/help/en_US/tnt/pdf/js_expression_cheat_sheet.pdf" format="http" scope="external">JavaScript Expression Cheat Sheet (PDF)</xref>. 
+	 </p>
+  </conbody>
+  <!--<related-links class="- topic/related-links ">
+    <link href="r_Behavioral_Targeting_Basic_Steps.xml#reference_26AAC9E3D2734CA7B48CF141A68D6030" type="reference" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Behavioral Targeting Basic Steps?>
+    </link>
+    <link href="c_Number_of_Visits.xml#concept_2F5EFE2725434BB2861545D38F3D40E5" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Number of Visits?>
+    </link>
+    <link scope="local" href="c_Recency_of_Purchase_Visit_Photo_Upload_Etc.xml#concept_E7B20E1D00E84E2AAA9520F35B6F9A2F" type="concept" format="dita" class="- topic/link ">
+      <?xm-replace_text Recency of Purchase, Visit, Photo Upload, Etc.?>
+    </link>
+    <link href="c_New_or_Returning_Visitor.xml#concept_5770B59C5C884CA2BE8554B4AD808EF9" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text New or Returning Visitor?>
+    </link>
+    <link href="c_Active_or_Passive_User.xml#concept_8FFD3C333196441EB0125C69B6D2564F" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Active or Passive User?>
+    </link>
+    <link href="c_Total_Amount_Purchased.xml#concept_BB18B8B9C1474930BFB460B30B410556" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Total Amount Purchased?>
+    </link>
+    <link href="c_Highest_Amount_Spent_in_a_Single_Order.xml#concept_79EF6AB3EE8645429D735830FF2B6057" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Highest Amount Spent in a Single Order?>
+    </link>
+    <link href="c_Time_of_Day_and_Day_of_Week.xml#concept_54D8899EB05B477895EB1309DB164438" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Time of Day and Day of Week?>
+    </link>
+  </related-links>
+-->
+</concept>

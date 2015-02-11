@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_E3D0FEC81E1F4987B39CC467F19FFCFF"> 
+  <title>Gauge Reportlet</title> 
+  <shortdesc>Gauge reportlets show the performance of a specific metric
+	 according to a custom-defined scale. You have the option to select a dial, bar,
+	 or bulb visualization type, set the scale (thresholds) you wish to use, and
+	 define other report details. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="subtopic" content="Glossary"/> </metadata>
+  </prolog> 
+  <conbody>
+  </conbody> 
+</concept>

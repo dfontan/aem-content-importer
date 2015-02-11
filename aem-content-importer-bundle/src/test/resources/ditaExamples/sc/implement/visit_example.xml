@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_E3B32B8E539F4FDC8E3FA872328B87BA"> 
+  <title>Example Visit</title> 
+  <shortdesc>Example containing a sample of server calls sent in a common
+	 customer interaction. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Developer and implementation"/> 
+		<othermeta name="subtopic" content="Visitors"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <table id="table_BD711278026C4F729119F1FDF4945087"> 
+		<tgroup cols="7"> 
+		  <colspec colnum="1" colname="col1" colwidth="*"/> 
+		  <colspec colnum="2" colname="col2" colwidth="*"/> 
+		  <colspec colnum="3" colname="col3" colwidth="*"/> 
+		  <colspec colnum="4" colname="col4" colwidth="*"/> 
+		  <colspec colnum="5" colname="col5" colwidth="*"/> 
+		  <colspec colnum="6" colname="col6" colwidth="*"/> 
+		  <colspec colnum="7" colname="col7" colwidth="*"/> 
+		  <thead> 
+			 <row> 
+				<entry> Server Call 
+				</entry> 
+				<entry> Action 
+				</entry> 
+				<entry> Visitor ID Cookie 
+				</entry> 
+				<entry> Visitor ID Variable 
+				</entry> 
+				<entry> Effective Visitor ID 
+				</entry> 
+				<entry> Visit Page Number 
+				</entry> 
+				<entry> Visit Number 
+				</entry> 
+			 </row> 
+		  </thead> 
+		  <tbody> 
+			 <row> 
+				<entry> 1 
+				</entry> 
+				<entry> A visitor clicks a link in a marketing email and visits
+				  your site from home computer. This visitor has visited your site 7 other times
+				  in the past. 
+				</entry> 
+				<entry> 1 
+				</entry> 
+				<entry> - 
+				</entry> 
+				<entry> 1 
+				</entry> 
+				<entry> 1 
+				</entry> 
+				<entry> 8 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 2-8 
+				</entry> 
+				<entry> Visits 7 additional pages on your site. 
+				</entry> 
+				<entry> 1 
+				</entry> 
+				<entry> - 
+				</entry> 
+				<entry> 1 
+				</entry> 
+				<entry> 2-8 
+				</entry> 
+				<entry> 8
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 9 
+				</entry> 
+				<entry> Authenticates on home computer. 
+				</entry> 
+				<entry> 1 
+				</entry> 
+				<entry> CID1 
+				</entry> 
+				<entry> CID1 
+				</entry> 
+				<entry> 1 
+				</entry> 
+				<entry> 1 
+				</entry> 
+			 </row>
+			 <row>
+				<entry>10
+				</entry>
+				<entry>Visits 1 additional page.
+				</entry>
+				<entry>1
+				</entry>
+				<entry>CID1
+				</entry>
+				<entry>CID1
+				</entry>
+				<entry>2
+				</entry>
+				<entry>1
+				</entry>
+			 </row> 
+			 <row> 
+				<entry> 11 
+				</entry> 
+				<entry> Opens site from laptop at office. This visitor has not
+				  visited your site before using this device.
+				</entry> 
+				<entry> 2 
+				</entry> 
+				<entry> - 
+				</entry> 
+				<entry> 2 
+				</entry> 
+				<entry> 1 
+				</entry> 
+				<entry> 1 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 12 
+				</entry> 
+				<entry> Authenticates on laptop. 
+				</entry> 
+				<entry> 2 
+				</entry> 
+				<entry> CID1 
+				</entry> 
+				<entry> CID1 
+				</entry> 
+				<entry> 1 
+				</entry> 
+				<entry> 9 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> 13 
+				</entry> 
+				<entry> Views 1 additional page. 
+				</entry> 
+				<entry> 2 
+				</entry> 
+				<entry> CID1 
+				</entry> 
+				<entry> CID1 
+				</entry> 
+				<entry> 2 
+				</entry> 
+				<entry> 9 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+  </conbody> 
+</concept>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_87289E487FFF4F10A9D69DCD38349757"> 
+  <title>Device Types Report</title> 
+  <shortdesc>Groups mobile devices into mobile phones, tablets, ereaders,
+	 gaming consoles, televisions, set-top boxes, media players and other high-level
+	 categories to let you see the distribution between mobile device types. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Reports"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>This dimension is also useful to define segments for phone and tablet
+		users by segmenting where Mobile Device Type equals "device type".
+	 </p> 
+	 <p><b>Dynamic Device Data</b>
+	 </p>
+	 <p>This report uses dynamic device data that is continually being updated
+		as new devices are released and identified. For example, a new tablet that is
+		released during the current month might be misidentified since it doesn't yet
+		exist in the device database. When the device database is updated with the new
+		device, any changes as a result are applied to all reporting dates. Therefore,
+		you might see slight variations on this report for historical dates over time.
+		As a general rule, the most current report will have the most accurate data for
+		any reporting period.
+	 </p>
+  </conbody> 
+</concept> 

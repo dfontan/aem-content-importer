@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_3B50D355B0AA48A58CFAB671CE3F82F4"> 
+  <title>Users</title> 
+  <shortdesc>Manage report users and groups on the 
+	 <wintitle>User Management</wintitle> page lets you manage users and groups,
+	 and control access to reports, tools and report suites. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Admin tools"/> 
+		<othermeta name="subtopic" content="Users and groups"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p><uicontrol>Analytics</uicontrol> &gt; 
+		<uicontrol>Admin</uicontrol> &gt; 
+		<uicontrol>User Management</uicontrol> &gt; 
+		<uicontrol>Edit Users</uicontrol> 
+	 </p> 
+	 <section id="section_14A7E169514A42A88E06387CC7C2E9AD"> 
+		<title>User Account Descriptions</title> 
+		<p> 
+		  <b>Contact Information</b> 
+		</p> 
+		<table id="table_7B1FD3E315684C4CB625A2D60078FDA3"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col1">Element 
+				  </entry> 
+				  <entry colname="col2">Description 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <wintitle>First Name</wintitle> 
+				  </entry> 
+				  <entry colname="col2">The user's given name. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <wintitle>Last Name</wintitle> 
+				  </entry> 
+				  <entry colname="col2">The user's surname. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <wintitle>Title</wintitle> 
+				  </entry> 
+				  <entry colname="col2">(Optional) The user's job title. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <wintitle>Phone Number</wintitle> 
+				  </entry> 
+				  <entry colname="col2">(Optional) The user's business phone
+					 number. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <wintitle>Email Address</wintitle> 
+				  </entry> 
+				  <entry colname="col2">The user's business email address. 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<p> 
+		  <b>Default Dashboards</b> 
+		</p> 
+		<p>Creates a default dashboard for a specified report suite. 
+		</p> 
+		<p> 
+		  <b>Login</b> 
+		</p> 
+		<table id="table_82A5A2F90029466BB4DDB63C3FB37B1B"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col1">Element 
+				  </entry> 
+				  <entry colname="col2">Description 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <wintitle>User Name</wintitle> 
+				  </entry> 
+				  <entry colname="col2">The username used to log in. This entry
+					 cannot be longer than 40 characters. Names longer than this limit are
+					 truncated. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <wintitle>Set Password</wintitle> 
+				  </entry> 
+				  <entry colname="col2">The default account password. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <wintitle>Confirm Password</wintitle> 
+				  </entry> 
+				  <entry colname="col2">The default account password. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <wintitle>Require user to change password</wintitle> 
+				  </entry> 
+				  <entry colname="col2">(Optional) When selected, the user must
+					 change his or her password at the next login. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <wintitle>Login Valid From</wintitle> 
+				  </entry> 
+				  <entry colname="col2">(Optional) The dates during which a
+					 temporary account is valid. 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<p> 
+		  <b>Access</b> 
+		</p> 
+		<table id="table_5CAF9AAAE7E648B4887CEB7D682292F2"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col1">Element 
+				  </entry> 
+				  <entry colname="col2">Description 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <wintitle>Administrator</wintitle> 
+				  </entry> 
+				  <entry colname="col2">Grants the user permissions to all company
+					 reports, sites and pages in analytics reports, as well as the ability to add,
+					 edit or delete other users. 
+					 <p>To 
+						<xref
+						href="http://marketing.adobe.com/resources/kb/en_US/analytics/kb/processing-rules-authorization.html"
+						format="http" scope="external">use processing rules</xref>, you must be
+						authorized by successfully taking a test. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <wintitle>User</wintitle> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p> Grants the user only the selected group permissions. Select
+						the desired groups in the 
+						<uicontrol>Available Groups</uicontrol> field (on the left),
+						then click 
+						<uicontrol>Add</uicontrol>. The assigned groups appear in the
+						
+						<uicontrol>Assigned Groups</uicontrol> field (on the right).
+						For information about creating and managing groups, see 
+						<xref
+						href="groups.xml#concept_6C565553DCE3417C909234B2F044A02F" format="dita"
+						scope="local">Groups</xref>. 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<p> 
+		  <b>Welcome Email</b> 
+		</p> 
+		<table id="table_F0F532D050644AF2B3C55A0C49EC6374"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col1">Element 
+				  </entry> 
+				  <entry colname="col2">Description 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <wintitle>Send Welcome Email 
+					 </wintitle> 
+				  </entry> 
+				  <entry colname="col2">Instructs the system to automatically send
+					 a message to the user's Email address with information about the new account. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <wintitle>Custom Message 
+					 </wintitle> 
+				  </entry> 
+				  <entry colname="col2">Adds additional content to the welcome
+					 message. The custom message field supports HTML, but you cannot include
+					 attachments. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <wintitle>Preview Email 
+					 </wintitle> 
+				  </entry> 
+				  <entry colname="col2">Displays the Welcome email in a separate
+					 browser window. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <wintitle>Set as default Welcome Message 
+					 </wintitle> 
+				  </entry> 
+				  <entry colname="col2">Modifies the default Welcome message to
+					 include the custom content specified in the Custom Message pane. 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </section> 
+  </conbody> 
+</concept> 

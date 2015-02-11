@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_F399A0ABAB544A51AE8E82CE4E20A4AA"> 
+  <title>Checkpoint Canvas</title> 
+  <shortdesc> A feature that holds pages that, when run, reports the drop-out
+	 rate during the conversion rates through specific processes on your site (such
+	 as a purchase or registration process). 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="subtopic" content="Glossary"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p> See 
+		<xref
+		 href="http://marketing.adobe.com/resources/help/en_US/sc/user/index.html?f=t_reports_fallout"
+		 format="http" scope="external">Run a Fallout Report</xref>. 
+	 </p> 
+  </conbody> 
+</concept>

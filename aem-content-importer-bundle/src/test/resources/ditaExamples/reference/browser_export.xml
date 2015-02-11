@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_3D930F03840A491D8B37FAAE9C90F5DF"> 
+  <title>Browser Export</title> 
+  <shortdesc>The browser export lets you export your classification data to a
+	 tab-delimited file. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Admin tools"/> 
+		<othermeta name="subtopic" content="Classifications"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p> 
+		<uicontrol>Admin Tools</uicontrol> &gt; 
+		<uicontrol>Classification Importer</uicontrol> 
+	 </p> 
+	 <p>The data set file is a tab-delimited data file
+		(<filepath>.tab</filepath> filename extension) that most spreadsheet
+		applications support. 
+	 </p> 
+	 <note>A 30-column limit exists for browser exports. 
+	 </note> 
+	 <section id="section_4E7A4FD1A6114B5DAC026A2987F7CF60"> 
+		<title>Browser Export - Field Descriptions</title> 
+		<table id="table_7FA3686251B54F2187909779A428EC38"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="2.55*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col1">Element 
+				  </entry> 
+				  <entry colname="col2">Description 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1">Select Report Suite 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p> Select the report suite from which you want to export the
+						report data. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">Data Set to be Classified 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p> From the menu, select the data set (report) that you want
+						to classify. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">Select Number of Rows 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p> Specify how many rows of data to export. Select 
+						<wintitle>All</wintitle> to download all report data (up to
+						50,000 rows). Select<wintitle> Limit Data Rows To</wintitle> if you want to
+						specify a specific number of rows to download. 
+					 </p> 
+					 <p>If you want to download more than 50,000 data rows, use the
+						FTP download option (see 
+						<xref
+						 href="t_downloading_saint_data_via_ftp.xml#task_4D70DDA45DCC4FD0940197AC6FFCD6F7"
+						 type="task" format="dita" scope="local"><?xm-replace_text Export classifications using FTP?></xref>).
+						
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">Filter by Date Received 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p> (Optional) Filter data by the date it was received. Specify
+						the date range for which you want to download data. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">Apply Data Filter 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p> (Optional) Filter the data set by data criteria. You can
+						filter the download to include data rows that include a specific value or data
+						rows with unassigned column (classification) values. 
+					 </p> 
+					 <p>Consider the following issues when applying data filters: 
+					 </p> 
+					 <p> 
+					 <ul id="ul_D14DA215DAE04E4C81CB70EE49EAD72C"> 
+						<li id="li_CAB8AC0D78444BEE83CD0631D275D034">You can use wild
+						  cards when defining the data filter. Use an asterisk (*) to match zero or more
+						  characters and a question mark (?) to match exactly one character. Use ?* to
+						  match one or more characters. 
+						</li> 
+						<li id="li_18E7BC3A9B4E47F38BDB4F17C35DD30D">Typically, when
+						  applying both types of data filters to a download, only rows that match both
+						  rules are downloaded. However, the following exceptions apply: 
+						  <p> 
+						  <ul id="ul_F18856C36B964778994857339B063C82"> 
+							 <li id="li_483F2D05AE7649FC87D0EBCBF79EABC7">If 
+								<wintitle>Rows with empty column = All
+								  Columns</wintitle>, then all columns except the column specified in the first
+								rule are checked for emptiness. This exception ensures that the system
+								downloads any row with a column that matches the first rule that also has all
+								other columns empty. 
+							 </li> 
+							 <li id="li_07FCE5A080924C0DA48D2518BC480881">When
+								downloading data rows based on empty columns, all columns except those
+								specified in the first rule are checked for emptiness. 
+							 </li> 
+							 <li id="li_673AAC78201348BBB04803D75F6C983A">If the same
+								column is specified for both filter rules (it is almost impossible to meet both
+								criteria) then only rows that match the first rule are downloaded. 
+							 </li> 
+						  </ul> 
+						  </p> 
+						</li> 
+					 </ul> 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">Date Filter 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p> (Optional) Filter data by campaign data. You can download
+						data only from active campaigns, or you can select campaigns that began (or
+						ended) in a specific date range. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">Export Numeric 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p> You can import numeric 2 classifications into the system
+						using the importer. Numeric 2 classifications are useful for variables that
+						change over time for different items, such as cost and budget values for the 
+						<wintitle>Marketing Channel</wintitle> report. See 
+						<xref
+						 href="c_numeric_2_classifications.xml#concept_71024B7B91DF4E909076062AB1380D8B"
+						 type="concept" format="dita" scope="local"><?xm-replace_text Numeric 2 Classifications?></xref>
+						for information about uploading data using numeric 2 classifications. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">Encoding 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Select the character encoding for the data file. The default
+						encoding format is either UTF-8 or ISO-8859-1, based on the encoding that was
+						uploaded for the classification. 
+					 </p> 
+					 <p>UTF-8 to UTF-16 converts your UTF-8 encoded classifications
+						to UTF-16 encoding. 
+					 </p> 
+					 <p>ISO-8859-1 to UTF-16 converts your ISO-8859-1 encoded
+						classifications to UTF-16 encoding. 
+					 </p> 
+					 <note>If you select to convert to UTF-16, the source encoding
+						must match the encoding of the original upload or you may get unexpected
+						results. We recommend encoding all uploaded files in UTF-8 without BOM. 
+					 </note> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">Quote Output 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p> Specifies version 2.1 for the classification file. This
+						setting places quotes around special characters to ensure that exports work in
+						Excel when a line break exists in the eVar values. 
+					 </p> 
+					 <p>You can identify whether a classification file is version
+						2.1 by opening the downloaded file. You will see v2.1 in the header. For
+						example: 
+					 </p> 
+					 <p> 
+						<codeblock>## SC	SiteCatalyst SAINT Import File	v:2.1</codeblock> 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </section> 
+  </conbody> 
+</concept> 

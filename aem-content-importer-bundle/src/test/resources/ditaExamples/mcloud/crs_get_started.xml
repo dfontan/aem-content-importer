@@ -1,0 +1,304 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_0A50A01A509841A087D0D7CC2AF098D9"> 
+  <title>FAQ and Implementation of Customer Attributes</title> 
+  <shortdesc>Learn how to start using the customer records service. 
+  </shortdesc> 
+  <conbody> 
+	 <ul id="ul_DE48EA92A74A499FB1413D796F0BC5D5"> 
+		<li id="li_7E53E467840C424F82D4C4BF1CBA8534"><xref
+		  href="crs_get_started.xml#concept_0A50A01A509841A087D0D7CC2AF098D9/section_8DCD4B24BFEC4A8FAD586340109EC9E9"
+		  format="dita" scope="local"><?xm-replace_text Implement Customer Records?></xref>
+		  (visitor ID service) 
+		</li> 
+		<li id="li_C84E9387AF924925A8BE16DE9D586700"><xref
+		  href="crs_get_started.xml#concept_0A50A01A509841A087D0D7CC2AF098D9/section_BAED41567D074136B3D0B32264C5908F"
+		  format="dita" scope="local"><?xm-replace_text Synching the Customer ID with your Analytics     Implementation?></xref>
+		  
+		</li> 
+		<li id="li_CC0567D72B3C4DCFAA19EA00BF3588B5"><xref
+		  href="crs_get_started.xml#concept_0A50A01A509841A087D0D7CC2AF098D9/section_16FD95B048844051BEE6D31BD76445A7"
+		  format="dita" scope="local"><?xm-replace_text Upload and Use the Data?></xref> 
+		</li> 
+		<li id="li_553D0B24B06145AFAF8D91797EADF471"><xref
+		  href="crs_get_started.xml#concept_0A50A01A509841A087D0D7CC2AF098D9/section_A3E99402580541A1BEE324C8F8F1BB09"
+		  format="dita" scope="local"><?xm-replace_text Frequently Asked Questions?></xref>
+		  
+		</li> 
+	 </ul> 
+	 <section id="section_356A922F2D60474F8C2BC9E4E05D40BF">
+		<title>Implement Customer Attributes</title>
+		<p>The recommended implementation is to use the latest Visitor ID service
+		  for the Marketing Cloud. (Alternatively, populate the customer ID into a prop
+		  or eVar.)
+		</p>
+		<note>If you implemented 
+		  <xref
+			href="https://marketing.adobe.com/resources/help/en_US/mcloud/audiences_getstarted.html"
+			format="https" scope="external">Marketing Cloud Audiences</xref>, you have
+		  already performed this step. 
+		</note>
+		<p>Required code versions for this feature: 
+		<ul id="ul_79AD34AAB19D49E0A9858C8F0E0DB3FB"> 
+		  <li id="li_0FA5EF8FE7844335B9CF9BEF67781389">Visitor API 1.3.1 
+		  </li> 
+		  <li id="li_17CAF57581284830BE9C309BB8A7ECBF">AppMeasurement 1.4 or
+			 H.27.3 
+		  </li> 
+		</ul> 
+		</p> 
+		<p>Use code from production in 
+		  <uicontrol>Admin Tools</uicontrol> &gt; 
+		  <uicontrol>Code Manager</uicontrol>. 
+		</p> 
+		<note type="important">See 
+		  <xref
+			href="attributes.xml#concept_ACFEE7C8B8E94875BA0825CDF4913AF1/section_BAED41567D074136B3D0B32264C5908F"
+			format="dita" scope="local"><?xm-replace_text Synching the Customer ID with your Analytics     Implementation?></xref>
+		  for information about passing the CRM ID to the 
+		  <keyword>Marketing Cloud</keyword>. 
+		</note>
+		<note>To simplify the implementation of the MAC Visitor ID service, use
+		  dynamic tag management. If you use dynamic tag management, a temporary
+		  work-around is required if you need to configure custom settings for
+		  sequencing. 
+		  <p>See 
+			 <xref
+			  href="https://marketing-beta-resource-help.s3.amazonaws.com/resources/help/crm/dtm-mc-id-settings-20140819.pdf"
+			  format="https" scope="external">Dynamic Tag Management MACID Custom
+				Settings</xref> (PDF). 
+		  </p> 
+		</note>
+	 </section>
+	 <section id="section_BAED41567D074136B3D0B32264C5908F"> 
+		<title>Synching the Customer ID with your Analytics
+		  Implementation</title> 
+		<p> When a visitor authenticates on your website or otherwise identifies
+		  himself, you must expose that person's CRM customer ID to your 
+		  <keyword>Analytics</keyword> implementation. This synchronization
+		  stores that visitor's CRM customer ID in the Marketing Cloud, and activates
+		  that customer's attributes for use in the Marketing Cloud. 
+		</p> 
+		<p> For example, assume that Bob has Customer ID 
+		  <codeph>52mc210tr42</codeph> in your CRM system. When Bob authenticates
+		  on your site, you must expose this ID on the page, and use the ID to
+		  synchronize it by one of two means: 
+		</p> 
+		<ul id="ul_8B68699F5E214285B84FE325E5F30524"> 
+		  <li id="li_2217FA2514724CCD86FE146D4E49DC3D">Call 
+			 <codeph>visitor.setCustomerIDs({"crm_id":"52mc210tr42"})</codeph>
+			 using the Visitor ID service. 
+			 <p>Or, 
+			 </p> 
+		  </li> 
+		  <li id="li_5D96F2DCB10C48BF8B8079F1F3D20FEA">Populate the 
+			 <term>Customer ID (52mc210tr42)</term> in a prop or eVar. 
+		  </li> 
+		</ul> 
+		<p> The Customer ID must be set on each 
+		  <keyword>Analytics</keyword> server call where the Customer ID is
+		  known. 
+		</p> 
+		<note>(For beta only.) Each customer ID uploaded to the CRS will likely
+		  have multiple visitor IDs in Analytics. Adobe has decided that if a customer ID
+		  has more than 500 unique visitor IDs, we will not process any of that customer
+		  ID's data into Analytics. If you store the customer ID in a prop or eVar, you
+		  can see the IDs that fall into this category by running the appropriate report
+		  and adding the Unique Visitors metric. 
+		</note> 
+	 </section> 
+	 <section id="section_A3E99402580541A1BEE324C8F8F1BB09"> 
+		<title>Frequently Asked Questions</title> 
+		<draft-comment> 
+		  <p>Add a when does data show up in AN? When users log in? Uploading
+			 does not send to AN. The subscription does. Verify. 
+		  </p> 
+		  <p>Get potential errors from upload from Trent. 
+		  </p> 
+		  <p>evar and prop numbers need to go to Ambria, for company setup.
+			 Customer Source ID. 
+		  </p> 
+		</draft-comment> 
+		<table id="table_88631069013B408EBB0A810657662B36"> 
+		  <tgroup cols="2"><colspec colnum="1" colname="col1"
+			 colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="1.77*"/><thead> 
+				<row> 
+				  <entry colname="col1">Question 
+				  </entry> 
+				  <entry colname="col2">Answer 
+				  </entry> 
+				</row></thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>When does the beta start? 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>We anticipate starting the beta in August 2014. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>How is this functionality different than what is provided in
+						Analytics premium? 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>In the past, customers interested in combining customer
+						attribute data with Analytics data have relied heavily on the data workbench
+						tool for this functionality. The customer attributes beta exposes this
+						functionality to a wider audience by providing customer attributes as
+						dimensions and metrics in reports &amp; analytics, ad hoc reporting, and report
+						builder. Analytics Standard customers will have access to customer attributes,
+						but with limited capabilities. The full capabilities will be available to
+						Analytics Premium customers. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Why does Adobe recommend migration to the Visitor ID
+						Service? 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Using the Visitor ID service enhances the functionality
+						opens the doors to using the latest and greatest Marketing Cloud functionality,
+						including real-time audiences, the Target/Analytics integration, and video
+						heartbeat tracking. 
+					 </p> 
+					 <p>For more details see 
+						<xref
+						 href="http://microsite.omniture.com/t2/help/en_US/mcvid/"
+						 format="nondita">Marketing Cloud Visitor ID Service</xref>. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Why is it preferable to use the Visitor ID service to set
+						the Customer ID instead of populating the Customer ID in a prop or eVar? 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Using the Visitor ID service offers a number of benefits: 
+					 </p> 
+					 <ul id="ul_5D3659604D43419F9CA5920B4F93728E"> 
+						<li id="li_BA2EF0715C5A47EFAFA7191CFAD088A4">If you do not
+						  set the Customer ID with the Visitor ID service, the customer records are
+						  available only to Adobe Analytics. If you want to use the customer records for
+						  real-time targeting, you must use the Visitor ID service. 
+						</li> 
+						<li id="li_228358684E474A298E39578D427BF932">Using the
+						  Visitor ID service to set the Customer ID reduces the time it takes to
+						  synchronize IDs with the Marketing Cloud. If you put the Customer ID in a prop
+						  or eVar, the Customer IDs are sent to the Marketing Cloud via back-end server
+						  synchronization that occurs in batches. The Visitor ID service synchronizes the
+						  Customer ID with the Marketing Cloud immediately. 
+						</li> 
+						<li id="li_BCF28219E4014FCF9F747C3D8D270526"> Using the
+						  Visitor ID service instead of a prop or eVar frees up that prop or eVar for
+						  other uses. 
+						</li> 
+						<li id="li_2264FA91BF88411D8481449AB884F050">We need to test
+						  the Visitor ID service with customer attributes during the beta test to ensure
+						  it will work properly, so we would appreciate your help in testing it where
+						  feasible. 
+						</li> 
+					 </ul> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>If I am already storing a customer ID in a prop or eVar, why
+						would I use this new functionality instead of classifying my prop or eVar with
+						CRM attributes? 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Props and eVars are subject to Uniques Exceeded limitations.
+						Using this new beta functionality you can bring in attribute data for an
+						unlimited number of customer IDs. Also, using the prop/eVar approach limits the
+						CRM information to Analytics. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Will DTM help? 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>If you are already taking advantage of dynamic tag manager,
+						implementing the visitor ID service is greatly simplified. 
+					 </p> 
+					 <draft-comment> 
+						<p>Link to section above. 
+						</p> 
+					 </draft-comment> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>How does this beta functionality relate to the Master
+						Marketing Profile? 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>During the beta, you will test a generic data on-boarding
+						tool for the Marketing Cloud that will feed attributes into the Master
+						Marketing Profile (stay tuned for more information). The Master Marketing
+						Profile is a consolidated profile of audience profile and attributes for each
+						visitor that is available for real time targeting use cases. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>How does the customer attribute functionality relate to
+						Adobe audience management? 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>While audience management can receive data to perform
+						audience identification, it cannot perform analytics functionality that ties
+						attributes to historical behavioral data or provide the reporting, analysis,
+						and segmentation capabilities that are available in Adobe Analytics. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>How will my CRM attributes appear in Adobe Analytics? 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>CRM attributes will be manifest in reports &amp; analytics,
+						ad hoc analysis reporting, the reporting API, and report builder. Text
+						attributes will appear as reports/dimensions. Numeric attributes will appear as
+						both dimensions and metrics. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Will the CRM data be available in data warehouse and in data
+						feeds? 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>The CRM data will not be available in data warehouse or data
+						feeds as a part of this beta or the initial release. These will be added at a
+						later time. 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </section> 
+  </conbody>
+</concept>

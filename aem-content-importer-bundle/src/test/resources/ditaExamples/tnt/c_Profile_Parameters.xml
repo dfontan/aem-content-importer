@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_01A30B4762D64CD5946B3AA38DC8A201">
+  <title>Profile Attributes</title>
+  <shortdesc>Profile attributes are parameters that are specific to the
+	 visitor. These attributes are stored in the visitor's profile to provide
+	 information about the visitor that can be used in your campaigns. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>As the visitor browses, or when the visitor returns for another session,
+		the saved profile attributes can be used to target content, or log information
+		for segment filtering. 
+	 </p>
+    <p>To set up profile attributes, click 
+		<uicontrol>Segments</uicontrol> &gt; 
+		<uicontrol>Profiles.</uicontrol></p>
+    <p>There are four types of profile attributes: 
+	 </p>
+    <p>
+      <table id="table_B82609FE1EC84FB194189F4FE07B0884">
+        <tgroup cols="2">
+          <colspec colnum="1" colname="col1" colwidth="1.00*" />
+          <colspec colnum="2" colname="col2" colwidth="3.37*" />
+          <thead>
+            <row>
+              <entry colname="col1">Parameter Type 
+				</entry>
+              <entry colname="col2">Description 
+				</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry colname="col1">
+                <p>In-mbox 
+				  </p>
+              </entry>
+              <entry colname="col2">
+                <p>Passed in directly through page code when creating the mbox. 
+				  </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <p>Script 
+				  </p>
+              </entry>
+              <entry colname="col2">
+                <p>Defined directly with a JavaScript code snippet. These can
+					 store running totals like total money spent by consumer and are executed on
+					 each mbox request. 
+				  </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <p>Smart Targeter 
+				  </p>
+              </entry>
+              <entry colname="col2">
+                <p>Similar to Script profile attributes, except predefined in
+					 Target. Currently includes the<codeph>categoryAffinity</codeph> attribute. More
+					 attributes will be added in the future. 
+				  </p>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <p>Session Expiry 
+				  </p>
+              </entry>
+              <entry colname="col2">
+                <p> Similar to Script profile attributes, but run at the
+					 expiration of the user's session. Set up by clicking 
+					 <uicontrol>Create Session Expiry Attribute</uicontrol> on the 
+					 <wintitle>Profile Attributes</wintitle> page. 
+				  </p>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </p>
+    <p>Profile attributes refresh automatically at pre-determined times. If you
+		want to refresh immediately, click the button.
+	 </p>
+    <p>For more information, view the 
+		<xref href="http://my.adobeconnect.com/p6zp5ff5gi9" format="http" scope="external">"Personalization with Profiles" webinar</xref>. This webinar
+		provides information about leveraging customer profiles to more effectively
+		personalize web experiences, increasing engagement, revenue, and brand loyalty.
+		
+	 </p>
+  </conbody>
+  <related-links>
+    <link href="r_Parameter_Types.xml#reference_2E9432AFE9724881950F66D45E96B6C5" type="reference" format="dita" scope="local">
+      <?xm-replace_text Parameter Types?>
+    </link>
+    <link href="t_Viewing_an_Mboxs_Passed-In_Parameter_Values.xml#task_22DC71B5D4E9497A858BC24FD633249F" format="dita" scope="local">
+      <linktext>
+        <?xm-replace_text View an Mbox's Passed-In Parameter   Values?>
+      </linktext>
+    </link>
+    <link href="r_Deciding_Which_Parameters_and_Values_You_Need.xml#reference_8C8CF60284FC4D33914635C29858AA09" type="reference" format="dita" scope="local">
+      <?xm-replace_text Deciding Which Parameters and Values You Need?>
+    </link>
+    <link href="c_Mbox-Specific_Parameters.xml#concept_B81F2D77D34E4B4E84D23F5A5B4EDDED" type="concept" format="dita" scope="local">
+      <?xm-replace_text Mbox-Specific Parameters?>
+    </link>
+    <link href="c_URL_Parameters.xml#concept_08C5CA0521D44C1DA3C0F89C28E15AC8" type="concept" format="dita" scope="local">
+      <?xm-replace_text URL Parameters?>
+    </link>
+    <link href="c_Referring_URL_Parameters.xml#concept_C19F6E2DD15D4526A00A4DDA28E9B89D" type="concept" format="dita" scope="local">
+      <?xm-replace_text Referring URL Parameters?>
+    </link>
+    <link href="c_Cost_and_Revenue_Reporting.xml#concept_A07BEDC4725F4887B6301C1B9FC3D1C8" type="concept" format="dita" scope="local">
+      <?xm-replace_text Cost and Revenue Reporting?>
+    </link>
+  </related-links>
+</concept>

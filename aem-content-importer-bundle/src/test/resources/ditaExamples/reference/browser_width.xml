@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_5354E211256B40C1B47599FCC48ABA18"> 
+  <title>Browser Width</title> 
+  <shortdesc>Metric that refers to the horizontal distance of the data in the
+	 browser window only. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Metrics"/> </metadata>
+  </prolog> 
+  <conbody>
+	 <p>Reports &amp; Analytics uses the browser height and width only from the
+		first hit of a visit. The rest of the hits do not get the attribution for the
+		same visit.
+	 </p>
+  </conbody>
+</concept>

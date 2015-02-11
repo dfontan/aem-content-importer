@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_7C53EA10EC994D208A1614E00C1DF19B"> 
+  <title>Create a Global Mbox</title> 
+  <shortdesc>You can use a global mbox on every page where you want to optimize
+	 your content. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Target"/> 
+		<othermeta name="topic" content="Advanced"/> </metadata>
+  </prolog> 
+  <taskbody> 
+	 <context id="context_262292D924CD4954B46786ABD83F3039"> 
+		<p> A global mbox is a term used in Adobe Target to describe an mbox that
+		  is coded at the top of the page and used to pull in offer code from Adobe
+		  Target to change content elsewhere on the page. It is not a "special" mbox in
+		  that there are no naming requirements or other rules, and it can be used for
+		  all kinds of content. The offers delivered in global mboxes typically use
+		  JQuery or other JavaScript to manipulate elements of the DOM outside of the
+		  global mbox. This means that content can be modified on the page even if it is
+		  not wrapped by its own mbox. 
+		</p> 
+		<p> 
+		  <note>If you plan to use a global mbox you created in Target Classic to
+			 run your Target Standard campaigns, see 
+			 <xref
+			  href="t_mbox_global_target_standard.xml#task_D9189CE28B2540B187CE6D6F4C590B39"
+			  format="dita" scope="local"><?xm-replace_text Setting Up a Global Mbox to Use with Target Standard...?></xref>
+			 after creating your mbox. 
+		  </note> 
+		</p> 
+		<p> To create a global mbox, insert the following code on every page you
+		  want to include in the test. Make sure the mbox has the same name on every
+		  page. 
+		</p> 
+		<p> 
+		  <codeblock>&lt;!--- Global mBox --&gt;
+&lt;div class="mboxDefault"&gt;&lt;/div&gt;
+&lt;script type="text/javascript"&gt;mboxCreate('<varname>GlobalMboxName</varname>');&lt;/script&gt;</codeblock> 
+		</p> 
+		<p>To minimize global mbox calls, you might want to deploy global mboxes
+		  at the template level, or on a strategic location for each section of your
+		  site. 
+		</p> 
+	 </context> 
+  </taskbody> 
+</task>

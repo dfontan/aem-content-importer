@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_FE6BEB3A1264493A9E9A4CFC5023CCA9">
+  <title>Create a Single Mbox</title>
+  <shortdesc>Many people place a single mbox on a page to display an offer. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <steps id="steps_13272BC879FA4609921ECD04680BAD7C">
+      <step id="step_2C17F06715854935A78B6CA7532FC48F">
+        <cmd>Make sure the Web page contains a 
+			 <xref href="t_Referencing_mboxjs.xml#task_4A321498EDAF4A048E3B9A74FD9E67E9" type="task" format="dita" scope="local">reference to 
+				<filepath>mbox.js</filepath></xref> in the head. 
+		  </cmd>
+      </step>
+      <step id="step_9F7C3103C5554B11ABE9B2BEFB5542D9">
+        <cmd>In the body of the HTML page where you want to insert an mbox,
+			 define the beginning and end of the 
+			 <xref href="c_About_Default_Content.xml#concept_EDDC6DA0DC6942A79393F63F27C29140" type="concept" format="dita" scope="local">default content</xref>. 
+		  </cmd>
+      </step>
+      <step id="step_B532C88FA954459A8EF326B70B52CB73">
+        <cmd>Immediately follow the default content 
+			 <codeph>&lt;/div&gt;</codeph> with the 
+			 <codeph>mboxCreate</codeph> function. 
+		  </cmd>
+        <info>
+          <p>
+            <note>Because the 
+				  <codeph>mboxCreate()</codeph> function locates the content it
+				  will replace by searching just above itself in the DOM for 
+				  <codeph>&lt;div class="mboxDefault"&gt;</codeph>, it is critical
+				  that no other HTML be inserted between the close 
+				  <codeph>&lt;/div&gt;</codeph> tag and the 
+				  <codeph>mboxCreate()</codeph> function. 
+				</note>
+          </p>
+        </info>
+      </step>
+      <step id="step_C4A4C9E28EE945509B970468B2284086">
+        <cmd>Give the mbox a unique name which makes sense for your campaign
+			 strategy and company procedures. 
+		  </cmd>
+        <stepresult>
+          <p>Mbox names can be up to 255 characters long. 
+			 </p>
+          <p>In the example below, the mbox is named myMbox. 
+			 </p>
+          <p>Example of Javascript for Basic Mbox: 
+			 </p>
+          <p>
+            <table id="table_839A240B5B2F4EF5996F24CCBC75B036">
+              <tgroup cols="2">
+                <colspec colname="col01" colnum="1" colwidth="1.00*" />
+                <colspec colnum="2" colname="col1" colwidth="1.17*" />
+                <thead>
+                  <row>
+                    <entry colname="col01">Before 
+						</entry>
+                    <entry colname="col1">After 
+						</entry>
+                  </row>
+                </thead>
+                <tbody>
+                  <row>
+                    <entry colname="col01">
+                      <p>
+                        <codeblock outputclass="syntax html">&lt;head&gt;
+
+ 
+
+&lt;/head&gt;
+
+&lt;body&gt;
+My existing page.
+Part that I'd like to overlay during a campaign or test.
+&lt;/body&gt;</codeblock>
+                      </p>
+                    </entry>
+                    <entry colname="col1">
+                      <p>
+                        <codeblock outputclass="syntax html">
+                          <codeph>&lt;head&gt;
+</codeph>
+&lt;script
+src="http://www.mycompany.com/​​​myfolder​/mbox.js"
+type="text/javascript"&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+ My existing page.​&lt;div class="mboxDefault"&gt;
+ Part that I'd like to overlay during a campaign or test.
+&lt;/div&gt;
+&lt;script type="text/javascript"&gt;
+ mboxCreate('myMbox');
+&lt;/script&gt;
+&lt;/body&gt;
+</codeblock>
+                      </p>
+                    </entry>
+                  </row>
+                </tbody>
+              </tgroup>
+            </table>
+          </p>
+          <p>
+            <b>Tips:</b>
+          </p>
+          <p>
+            <ul id="ul_E40E64A1301844629B16AF3EB03FF65E">
+              <li id="li_9BD66F756D95406188212D08954C8489"> When inserting an
+				  mbox, do not add or remove cells or rows from tables. Where possible, wrap only
+				  the contents of table cells or whole table. 
+				</li>
+              <li id="li_BC3DCF8235474F6B81E2B16D4CDDB42C"> Do not use mboxes to
+				  remove inputs from forms. Mboxes are only capable of hiding or showing content.
+				  They do not remove nodes from the DOM. 
+				</li>
+              <li id="li_E5B84093A22D4D2EAED2710E2143445C"> Where possible, wrap
+				  only paragraphs, not individual words. 
+				</li>
+              <li id="li_3FB7E1C3195846C981059196ABF9E90F"> Mbox names are case
+				  sensitive. Mymbox and myMbox will be recognized as two different mboxes. 
+				</li>
+            </ul>
+          </p>
+        </stepresult>
+      </step>
+      <step id="step_1B75F865E88A40A5AB75442CF6059FEF">
+        <cmd>Browse to the page with the mbox and ensure there are no errors. 
+		  </cmd>
+      </step>
+      <step id="step_4E4A2A44B24144D697F8B840ED31C1C6">
+        <cmd>
+          <xref href="t_Validating_an_Mbox.xml#task_4BB8E090CBBF4C56A39BB63BF1ADB964" type="task" format="dita" scope="local">Validate the mbox</xref>. 
+		  </cmd>
+      </step>
+      <step id="step_CB3EC84665224A5CA03117AFC5705772">
+        <cmd>Ensure the mbox is listed in the mbox list for your account. 
+		  </cmd>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links>
+    <link href="t_Placing_Multiple_Mboxes_on_a_Page.xml#task_FD9771D3457F4AB29061596F7A8ECF30" type="task" format="dita" scope="local">
+      <?xm-replace_text Placing Multiple Mboxes on a Page?>
+    </link>
+    <link href="t_Creating_a_Whole-Page_Mbox.xml#task_5E71B81283444DB3882D2E1EBFEE0B64" type="task" format="dita" scope="local">
+      <?xm-replace_text Creating a Whole-Page Mbox?>
+    </link>
+    <link href="t_Placing_an_Mbox_Around_a_Table.xml#task_A2819A92942D400880A62FFD86FE952B" type="task" format="dita" scope="local">
+      <?xm-replace_text Placing an Mbox Around a Table?>
+    </link>
+    <link href="t_Placing_an_Mbox_Around_a_Table_Cell.xml#task_3B5EAB62FC654E5086EB4FA65BD8738B" type="task" format="dita" scope="local">
+      <?xm-replace_text Placing an Mbox Around a Table Cell?>
+    </link>
+    <link href="t_Creating_a_Place_Order_Mbox.xml#task_0036D5F6C062442788BB55E872816D82" type="task" format="dita" scope="local">
+      <?xm-replace_text Creating an orderConfirmPage Mbox?>
+    </link>
+  </related-links>
+</task>

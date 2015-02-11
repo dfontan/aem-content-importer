@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_2C87E5739ED94DD388BCEE17EF915489">
+  <title>Report Menu Search</title>
+  <shortdesc>You can quickly locate reports, metrics, and dashboards, using the
+	 menu's 
+	 <wintitle>Search</wintitle> field in the left navigation. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports and analytics" />
+      <othermeta name="subtopic" content="Upgrading from V14" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Menus that you customize are also searchable. 
+	 </p>
+    <p>
+      <image href="graphics/menu_search.png" id="image_E8E5A56E997D4F5BB56A254E836602E7">
+        <?xm-replace_text Paragraph?>
+      </image>
+    </p>
+  </conbody>
+</concept>

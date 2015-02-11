@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_3C63466D6DF74BE4A2FD455C2181D87A" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Restrict the Order of Success Metrics</title>
+  <shortdesc class="- topic/shortdesc ">Restrict the order of success metrics
+	 when you are interested in reports only in cases where a certain sequence was
+	 followed. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <context id="context_36E64A0FEA1043FB90DDC45450292A41" class="- topic/section task/context ">
+      <p class="- topic/p ">
+        <note class="- topic/note ">Restricted order success metrics only
+			 restrict reports. Display is not impacted. To make a success metric a
+			 prerequisite for display, see 
+			 <xref href="t_Targeting_Display_to_a_Prerequisite_Success_Metric.xml#task_F5E24707BE2845549788C5D4BED03281" type="task" format="dita" scope="local" class="- topic/xref "><?xm-replace_text Targeting Display to a Prerequisite Success   Metric?></xref>.
+			 
+		  </note>
+      </p>
+      <p class="- topic/p ">For example, restricting the order of success
+		  metrics is useful in the following business scenarios: 
+		</p>
+      <p class="- topic/p ">
+        <ul id="ul_EBDAD64B94084C8C9FC4B0A98C574C58" class="- topic/ul ">
+          <li id="li_0C6CC1CC9A354A97B45AC4EC7F5A91CC" class="- topic/li ">
+			 Report visits to your subscription form, only if the visitor saw an incentive
+			 message. 
+		  </li>
+          <li id="li_F3A5731712CF45E9B4B3F9ADE8BB5FA2" class="- topic/li ">
+			 Report visits only if the visitor followed a set sequence of success metrics. 
+			 <p class="- topic/p "><image id="image_00BA596BBAC2484180824A500CA29C57" href="graphics/steps_restricted_concept.png" placement="inline" class="- topic/image "></image></p></li>
+        </ul>
+      </p>
+    </context>
+    <steps id="steps_BE7BED84430B405D893EE061AA8DD2A0" class="- topic/ol task/steps ">
+      <step id="step_EFB6317C9ED64C95A615C9C82CA9F55E" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Create a success metric following
+			 normal 
+			 <xref href="c_Managing_Success_Metrics.xml#concept_F2D06B8EDCC24EED9C494210C1415859" type="concept" format="dita" scope="local" class="- topic/xref ">success
+				metrics setup</xref>. 
+		  </cmd>
+      </step>
+      <step id="step_2E642BA1D8BC49A194D1DB5F64587BAD" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">For a subsequent success metric,
+			 select the target icon. 
+		  </cmd>
+      </step>
+      <step id="step_5BDA75BF18C54739A3F67C0F416038BB" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Select 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Display when "Success
+				Metric."</uicontrol></cmd>
+      </step>
+      <step id="step_6474AD962A35438A971BDC08C7C37447" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Select the prerequisite success
+			 metric. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">This restrains only your reports, not the
+				visitors' display. 
+			 </p>
+          <p class="- topic/p ">You have the option to select<uicontrol class="+ topic/ph ui-d/uicontrol "> landing mbox impression</uicontrol> if the
+				entry page (success metric) of your campaign is the only prerequisite. The mbox
+				you choose at the 
+				<xref href="c_Targeting_a_Campaign_or_Test.xml#concept_A782F8481A5041EBA75103CB26376522" type="concept" format="dita" scope="local" class="- topic/xref ">campaign level
+				  target</xref> is the prerequisite entry success metric. By default this is 
+				<uicontrol class="+ topic/ph ui-d/uicontrol ">any display
+				  mbox</uicontrol>. 
+			 </p>
+          <p class="- topic/p ">
+            <note class="- topic/note ">If the campaign level targeting is 
+				  <uicontrol class="+ topic/ph ui-d/uicontrol ">display
+					 mboxes</uicontrol> (the default setting) do not choose 
+				  <uicontrol class="+ topic/ph ui-d/uicontrol ">Landing Page
+					 Impression</uicontrol> as the prerequisite or no one will be tracked for that
+				  success metric. 
+				</note>
+          </p>
+        </stepresult>
+      </step>
+      <step id="step_C7801220776A43DABF6BF29D92879627" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Select the comparison type<uicontrol class="+ topic/ph ui-d/uicontrol "> has been</uicontrol> or 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">has not
+				been</uicontrol> seen. 
+		  </cmd>
+      </step>
+      <step id="step_3CBF9A74509B429FA6A8424BEF25A062" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd "> Click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">done</uicontrol>. 
+		  </cmd>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links class="- topic/related-links ">
+    <link href="t_Preparing_to_Add_Success_Metrics.xml#task_7FF06560309F44A68FD2B03137BC4116" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Prepare to Add Success Metrics?>
+    </link>
+    <link href="t_Setting_Up_Counters_and_Success_Metrics.xml#task_435710C77E0E4C9086BA7B841AF7B4BA" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Counters and Success Metrics?>
+    </link>
+    <link href="t_Using_Multiple_Mboxes_for_One_Success_Metric.xml#task_F11A536A429A4A1E804CBCD74645D146" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Multiple Mboxes for One Success Metric?>
+    </link>
+    <link href="t_Viewing_the_Success_Metrics_Report.xml#task_0FBB58B2F0BC41A3824B0BCB6167F7C8" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Viewing the Success Metrics Report?>
+    </link>
+    <link href="r_Success_Metric_Advanced_Options.xml#reference_03C2054D36E846DD9A7C9878E816E0C8" type="reference" format="dita" scope="local">
+      <?xm-replace_text Success Metric Advanced Options?>
+    </link>
+  </related-links>
+</task>

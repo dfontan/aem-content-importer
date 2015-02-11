@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_81F80DD0A0844C2287CB36B421B50D71">
+  <title>Identifying the s_account Variable in the DigitalPulse
+	 Debugger</title>
+  <shortdesc> When you run the 
+	 <wintitle>DigitalPulse Debugger</wintitle>, you may want to look for the 
+	 <varname>s_account</varname> variable.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>The following figure shows the location of the 
+		<varname>s_account</varname> variable.
+	 </p>
+    <p>
+      <image href="graphics/debugger_code.png" id="image_04077FB204694B77B9D22A2188AF4315">
+        <?xm-replace_text Paragraph?>
+      </image>
+    </p>
+  </conbody>
+</concept>

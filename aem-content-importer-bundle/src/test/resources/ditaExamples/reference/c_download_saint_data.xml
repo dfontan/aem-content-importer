@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_0F06847AD8D042F5BA818AE3C37E2417">
+  <title>Download Classifications Template</title>
+  <shortdesc>(Optional) Before importing classifications into marketing
+	 reports, you can download a template that helps you create a classifications
+	 data file. The data file uses your desired classifications as column headings,
+	 then organizes the reporting data set under the appropriate classification
+	 headings. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Admin tools" />
+      <othermeta name="subtopic" content="Classifications" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>
+      <uicontrol>Admin Tools</uicontrol> &gt; 
+		<uicontrol>Classification Importer</uicontrol>. 
+	 </p>
+    <table id="table_4AF5F6E3227E4FA1AD00FD817B70FBE3">
+      <tgroup cols="2">
+        <colspec colnum="1" colname="col1" colwidth="1.00*" />
+        <colspec colnum="2" colname="col2" colwidth="5.07*" />
+        <thead>
+          <row>
+            <entry colname="col1">Element 
+				</entry>
+            <entry colname="col2">Description 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry colname="col1">Select Report Suite 
+				</entry>
+            <entry colname="col2">Select the report suite to use in the
+				  template. The report suite and data set must match. 
+				</entry>
+          </row>
+          <row>
+            <entry colname="col1">Data Set to be Classified 
+				</entry>
+            <entry colname="col2">Select the type of data for the data file.
+				  The menu includes all reports in your report suites that are configured for
+				  classifications. 
+				</entry>
+          </row>
+          <row>
+            <entry colname="col1">Export Numeric 2 
+				</entry>
+            <entry colname="col2">You can import numeric 2 classifications into
+				  the system via the importer. Numeric 2 classifications are useful for variables
+				  that change over time for different items, such as cost and budget values for
+				  the 
+				  <wintitle>Marketing Channel</wintitle> report. See 
+				  <xref href="c_numeric_2_classifications.xml#concept_71024B7B91DF4E909076062AB1380D8B" type="concept" format="dita" scope="local"><?xm-replace_text Numeric 2 Classifications?></xref>
+				  for information about uploading data using numeric 2 classifications. 
+				</entry>
+          </row>
+          <row>
+            <entry colname="col1">Encoding 
+				</entry>
+            <entry colname="col2">Select the character encoding for the data
+				  file. The default encoding format is UTF-8. 
+				</entry>
+          </row>
+          <row>
+            <entry colname="col1">Download 
+				</entry>
+            <entry colname="col2">Downloads the template file. 
+				</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p>The template includes the currently defined classifications (column
+		headings) of a specific data set without including the data associated with
+		each classification. 
+	 </p>
+    <p>
+      <note>The Template method limits your classification data download to a
+		  single report suite. 
+		</note>
+    </p>
+    <p>For more information about the data file structure, see 
+		<xref href="c_saint_data_files.xml#concept_EBA7669C546040BE8162ADACA3548735" type="concept" format="dita" scope="local"><?xm-replace_text About Classification Data Files?></xref>.
+		
+	 </p>
+  </conbody>
+</concept>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_AB862B13F06F4B66AFBF7896340524DE">
+  <title>Post-Upgrade Notifications</title>
+  <shortdesc>After upgrading to 
+	 SiteCatalyst 15, the 
+	 interface provides recurring reminders about the
+	 changes to the data processing platform.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports and analytics" />
+      <othermeta name="subtopic" content="Upgrading from V14" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>For example, when a 
+		user generates a report with data that
+		spans the upgrade date, 
+		the system displays a message similar to the
+		following:
+	 </p>
+    <p>
+      <image href="graphics/sample_ui_message.png" id="image_BF20C417B75346119E4428130C08FB60"></image>
+    </p>
+  </conbody>
+</concept>

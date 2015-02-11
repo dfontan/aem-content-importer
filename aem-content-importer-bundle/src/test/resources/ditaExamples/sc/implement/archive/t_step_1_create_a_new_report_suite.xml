@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_AB8EA4BE3B864958A14E472018E05750">
+  <title>Step 1 - Create a New Report Suite</title>
+  <shortdesc> Create a report suite so 
+	 <keyword>Analytics</keyword> knows where to process and store your data.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <steps id="steps_AFB55B79CCFC4AF399B6BE50EA439EF9">
+      <step id="step_A2CF4DDDDB244D35B5A538C4927D720A">
+        <cmd>Login to 
+			 reporting and analytics, and then click 
+			 <uicontrol>Admin</uicontrol> &gt; 
+			 <uicontrol>Admin Console</uicontrol> &gt; 
+			 <uicontrol>Report Suites</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_50C60DA8B33B4BF39BED29B6499DEC1D">
+        <cmd> Click 
+			 <uicontrol>Create New</uicontrol> &gt; 
+			 <uicontrol>Report Suite</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_5DE30FC260784D339740A1178415AA1E">
+        <cmd>Leave template set to 
+			 <uicontrol>Default</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_7B3198410A3242FBB58A5EAB5A1484CF">
+        <cmd> Input the 
+			 <uicontrol>Report Suite ID</uicontrol> (Abbreviated RSID). 
+		  </cmd>
+        <info>
+          <p>This is how our database and your page code identifies your report
+				suite. It can be any string of alpha-numeric characters with a static prefix
+				that cannot be changed. Since this is going to be a test report suite, place
+				test or dev at the end of the RSID so it doesn't get mistaken for actual data.
+				It is not required to input the prefix in the RSID field. 
+				<keyword>Analytics</keyword> attaches the prefix for you. If you
+				type the prefix in the RSID, you end up with a report suite ID that contains a
+				duplicate prefix. 
+			 </p>
+        </info>
+      </step>
+      <step id="step_A9C5D8EAEF4D45938B8C34060B77CB14">
+        <cmd>Input the 
+			 <uicontrol>Site Title</uicontrol>. 
+		  </cmd>
+        <info>
+          <p>This is the friendly name, or what you see in reports. 
+			 </p>
+        </info>
+      </step>
+      <step id="step_E65EA9918198414693DE93CD59577F16">
+        <cmd>Input the 
+			 <uicontrol>Time Zone</uicontrol> and 
+			 <uicontrol>Go Live Date</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_137E2090A8144D4B923E7350650584C9">
+        <cmd>Input the 
+			 <uicontrol>Estimated Page Views per Day</uicontrol>. 
+		  </cmd>
+        <info>
+          <p>This is required so our network operations team knows
+				approximately how much resources they want to put towards this report suite. 
+			 </p>
+        </info>
+      </step>
+      <step id="step_D01FE475CFC34229B59A1974C0F1982E">
+        <cmd>Click 
+			 <uicontrol>Create Report Suite</uicontrol>. 
+		  </cmd>
+      </step>
+    </steps>
+  </taskbody>
+</task>

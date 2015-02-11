@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_311AD93787A442478079B669CCE91D6C" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic concept/concept ">
+  <title class="- topic/title ">Interpret Multiple Engagement Types</title>
+  <shortdesc class="- topic/shortdesc ">Typically, marketers analyze multiple
+	 engagement-related KPIs holistically. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody class="- topic/body  concept/conbody ">
+    <p class="- topic/p ">For example, an experience that has a much higher
+		score and page count might be a clear winner. However, what if the score was
+		high but the creative somehow cannibalized page count? Marketers use their
+		judgment to determine the meaning of success. 
+	 </p>
+  </conbody>
+  <related-links class="- topic/related-links ">
+    <link href="c_Understanding_Engagement_Tracking.xml#concept_6B068B25EF024832871186E91E87006E" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Engagement Tracking?>
+    </link>
+    <link href="t_Setting_Up_a_Campaign_to_Track_Engagement.xml#task_E428F2A6A41A40C29F4E235E0E92A79B" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Set Up a Campaign to Track Engagement?>
+    </link>
+    <link href="t_Analyzing_Engagement_in_the_Summary_Report.xml#task_8FAC771D628F4A768782D4452ACC103C" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Analyzing Engagement in the Summary   Report?>
+    </link>
+    <link href="r_Examples__Online_Newspaper.xml#reference_1CDAFBE90410478CA123055F402261DA" type="reference" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Examples: Online Newspaper?>
+    </link>
+  </related-links>
+</concept>

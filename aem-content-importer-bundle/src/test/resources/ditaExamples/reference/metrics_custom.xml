@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_F44638FC95A44B06AEBA3A6F9D008D27"> 
+  <title>Custom Metrics</title> 
+  <shortdesc>Custom metrics let you track additional success metrics on your
+	 site. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Metrics"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Custom metrics are captured using the 
+		<xref
+		 href="http://marketing.adobe.com/resources/help/en_US/sc/implement/?f=events#"
+		 format="dita" scope="local">events</xref> variable, and are available as one of
+		two types: 
+	 </p> 
+	 <ul id="ul_595551CABC7E4DBF9067C374C214DF0C"> 
+		<li id="li_47D71EE8D8D243BE8652A8FFB5E43E71">Events that count the number
+		  of times something occurs. Ad displays, checkouts, and similar events are
+		  tracked using this type of event. 
+		</li> 
+		<li id="li_6C16CB95C9F5473DAA620F8B2385C4DC">Events that store values
+		  that are often used for additional calculation. These events store numerical
+		  values, such as currency, that can be used to perform calculations in your
+		  report. For example, you might store the shipping cost for the purchase in a
+		  custom event. This lets you compare the amount collected for shipping with the
+		  actual cost paid to your shipping provider. 
+		</li> 
+	 </ul> 
+  </conbody> 
+</concept>

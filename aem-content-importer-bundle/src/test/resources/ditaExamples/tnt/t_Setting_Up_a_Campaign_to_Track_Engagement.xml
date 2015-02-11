@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_E428F2A6A41A40C29F4E235E0E92A79B" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Set Up a Campaign to Track Engagement</title>
+  <shortdesc class="- topic/shortdesc ">You can specify engagement tracking
+	 when creating or editing a campaign by capturing engagement on a success event.
+	 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <context id="context_CC36896E617F46A995F7E4812AB8583C" class="- topic/section task/context ">
+      <p class="- topic/p ">Best practices: 
+		</p>
+      <p class="- topic/p ">
+        <ul id="ul_B6FCAA19806546EA8F120C589FB62986" class="- topic/ul ">
+          <li id="li_D0CFBB50B31E43638D93626385016629" class="- topic/li "> Give
+			 the success metric a descriptive name that represents the engagement captured. 
+		  </li>
+          <li id="li_CAE27B52939D4058A045225034FD105E" class="- topic/li "> To
+			 capture multiple types of engagement, select multiple success metrics and
+			 associate each with a different engagement type. 
+		  </li>
+          <li id="li_327C86D3A0994E19A5EBFFBAA221B141" class="- topic/li "> Pick
+			 a location (or mbox) representing when the success metric should be fulfilled. 
+			 <p class="- topic/p ">As usual, you can pick multiple locations or
+				the 
+				<codeph class="+ topic/ph pr-d/codeph ">**any mbox**</codeph>
+				value, which captures engagement on every mbox. Note that targeting conditions
+				cannot be applied to the 
+				<codeph class="+ topic/ph pr-d/codeph ">**any mbox**</codeph>
+				value. 
+			 </p></li>
+          <li id="li_FD5F471A059D4649901FF4087C910F16" class="- topic/li ">
+			 Choose "any mbox" if you want the engagement metrics to increment on every mbox
+			 or page view. 
+			 <p class="- topic/p ">This is a typical selection. Select a specific
+				mbox or several mboxes to track engagement only within a section. (For example,
+				if you want to see how many articles visitors read in the "outdoors" section
+				vs. the "arts+crafts" section.) To track engagement separately by section, set
+				up targeted success metrics to each of those sections, perhaps based on URL
+				structure or URL parameter. 
+			 </p></li>
+        </ul>
+      </p>
+    </context>
+    <steps id="steps_15AA44548DFD49FBBF10367BE6CF78FB" class="- topic/ol task/steps ">
+      <step id="step_95208651288B4010A872547BB2B0AA81" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd "> Create a campaign, or select an
+			 existing campaign. 
+		  </cmd>
+      </step>
+      <step id="step_AE2A58A581C2411DBDF64CE6B8D125D0" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Edit</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_5CBCC54C8BDC4E469D1F9544C1E589E5" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">In the Choose Conversion and Other
+			 Success Metrics section of the edit page you chose, click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Measure
+				Engagement</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_DFC657C830B54A36BB347A6D9471946F" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Select the engagement type you want
+			 to capture. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">Your options are: 
+			 </p>
+          <p class="- topic/p ">
+            <b class="+ topic/ph hi-d/b ">Page Count per visit:</b> Tracks the
+				number of pages visitors view during a site visit. See 
+				<xref href="c_Page_Count.xml#concept_7269869F056B41EA8EB002997FF7FB67" type="concept" format="dita" scope="local" class="- topic/xref "><?xm-replace_text Page Count?></xref>.
+				
+			 </p>
+          <p class="- topic/p ">
+            <b class="+ topic/ph hi-d/b ">Time on Site per visit:</b> Tracks
+				the amount of time visitors spend on the site during a visit. See 
+				<xref href="c_Time_on_Site.xml#concept_089A2B22D71F4CA4970A4369691F6DA4" type="concept" format="dita" scope="local" class="- topic/xref "><?xm-replace_text Time on Site?></xref>.
+				
+			 </p>
+          <p class="- topic/p ">
+            <b class="+ topic/ph hi-d/b ">Score per visit:</b> Tracks the total
+				of the assigned score for each page viewed during a visit. See 
+				<xref href="c_Score.xml#concept_01D9429F07AC4698BFCADB1A973D3748" type="concept" format="dita" scope="local" class="- topic/xref "><?xm-replace_text Capture Score?></xref>.
+				
+			 </p>
+          <p class="- topic/p ">Success metrics capturing engagement can be
+				targeted like any other success metric, which has the effect of filtering the
+				engagement. For an example of how this might be useful, see 
+				<xref href="r_Examples__Online_Newspaper.xml#reference_1CDAFBE90410478CA123055F402261DA" type="reference" format="dita" scope="local" class="- topic/xref "><?xm-replace_text Examples: Online Newspaper?></xref>.
+				
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_A0215521F2824F899FB30174CC3FFA20" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Save</uicontrol> or 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Save &amp;
+				Approve</uicontrol>. 
+		  </cmd>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links class="- topic/related-links ">
+    <link href="c_Understanding_Engagement_Tracking.xml#concept_6B068B25EF024832871186E91E87006E" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Engagement Tracking?>
+    </link>
+    <link href="c_Interpreting_Multiple_Engagement_Types.xml#concept_311AD93787A442478079B669CCE91D6C" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Interpreting Multiple Engagement Types?>
+    </link>
+    <link href="t_Analyzing_Engagement_in_the_Summary_Report.xml#task_8FAC771D628F4A768782D4452ACC103C" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Analyzing Engagement in the Summary   Report?>
+    </link>
+    <link href="r_Examples__Online_Newspaper.xml#reference_1CDAFBE90410478CA123055F402261DA" type="reference" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Examples: Online Newspaper?>
+    </link>
+  </related-links>
+</task>

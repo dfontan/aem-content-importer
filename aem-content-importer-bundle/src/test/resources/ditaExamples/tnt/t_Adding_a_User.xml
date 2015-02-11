@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_D3A67400D4F14F00A2A234BEC917485A">
+  <title>Add a User</title>
+  <shortdesc>You can add users who are able to access your Target system, and
+	 assign them permissions based on their roles. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <steps id="steps_84DC8B0F1CB2459FB124846094EF9838">
+      <step id="step_E2C8CB6C24794F78B09A5FAF57EBECF9">
+        <cmd>Select 
+			 <uicontrol>Configuration</uicontrol> &gt; 
+			 <uicontrol> Users</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_1268DB2F69DA4AD6B1ACB3BABD3B8AFE">
+        <cmd>Select 
+			 <uicontrol>add new user</uicontrol>. 
+		  </cmd>
+        <!--<stepresult>
+          <p>
+            <image id="image_4C16E7467B014FC89AF924ED280E0DA5" href="graphics/add_user3.png"></image>
+          </p>
+        </stepresult>
+      -->
+      </step>
+      <step id="step_D7286E0198D048EA8314111DDB781F3C">
+        <cmd>Type in new user's e-mail, name, and password. 
+		  </cmd>
+        <stepresult>
+          <p>
+            <note>The new user can change the password after logging in. 
+				</note>
+          </p>
+        </stepresult>
+      </step>
+      <step id="step_F9F524936B9B4792AF97F58868D07A2B">
+        <cmd>Select a role. 
+		  </cmd>
+        <stepresult>
+          <p>By default, a new user is given the approver role. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_1FFF1120B71A4565A36C7FED52279FD5">
+        <cmd>Click 
+			 <uicontrol>Save</uicontrol>. 
+		  </cmd>
+      </step>
+    </steps>
+    <example id="example_F19AC702CFEE4DC591430B4CA7A6A759">
+      <p>
+        <table id="table_3B5EC3C6D1B84E128BBFC38C1ABAAD2B">
+          <tgroup cols="2">
+            <colspec colnum="1" colname="col1" colwidth="*" />
+            <colspec colnum="2" colname="col2" colwidth="*" />
+            <thead>
+              <row>
+                <entry colname="col1">Role 
+				  </entry>
+                <entry colname="col2">Privilege 
+				  </entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry colname="col1">
+                  <p>Read-only 
+					 </p>
+                </entry>
+                <entry colname="col2">
+                  <ul id="ul_5BAFD574A24742D7A165A78CAB64D984">
+                    <li id="li_2B9904398511425891293E08BFE2F2B8"> View campaigns
+						  and reports 
+						</li>
+                  </ul>
+                </entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <p>Editor 
+					 </p>
+                </entry>
+                <entry colname="col2">
+                  <ul id="ul_F5A09B1A507C48A8B6FD2F96B483351E">
+                    <li id="li_4CEF4B28662443009E300ED4619FEED0"> View campaigns
+						  and reports 
+						</li>
+                    <li id="li_35F5D6A5423B4C9FA49DDDD716D7FAF5"> Edit unapproved
+						  campaigns 
+						</li>
+                    <li id="li_387B492BEC1C4B43A95C924F967EA2C6"> Edit offers not
+						  in use by an approved campaign 
+						</li>
+                    <li id="li_EE813853CD624ED7B3CCC1A5E9C8F3E5"> Change host
+						  group setting to allow unapproved campaigns to be viewed 
+						</li>
+                  </ul>
+                </entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <p>Approver 
+					 </p>
+                </entry>
+                <entry colname="col2">
+                  <ul id="ul_76512E5009DC4556BF3A54E2C0AC5370">
+                    <li id="li_53E781CA784048B1A71E5382605E2B2D"> All editor
+						  privileges 
+						</li>
+                    <li id="li_D7DFF29624FA457F8930C7A437B4F744"> Edit any offers
+						  or campaigns 
+						</li>
+                    <li id="li_28220E6AFBB14AE1A70CB0ED3E60DD64"> Approve,
+						  deactivate, close campaigns 
+						</li>
+                    <li id="li_7A850EB44AC947199A279BB132E2CDEC"> Add and delete
+						  users and assign roles 
+						</li>
+                  </ul>
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </p>
+    </example>
+  </taskbody>
+  <related-links>
+    <link href="t_change_priv_pw.xml#task_E50BA95F952D416981B44503EDE7D44B" type="task" format="dita" scope="local">
+      <?xm-replace_text Changing a User's Role or Resetting a Password?>
+    </link>
+  </related-links>
+</task>

@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd"[]>
+<reference id="reference_26AAC9E3D2734CA7B48CF141A68D6030" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic       reference/reference ">
+  <title class="- topic/title ">Behavioral Targeting Basic Steps</title>
+  <shortdesc class="- topic/shortdesc ">The following steps outline the process
+	 of setting up behavioral targeting. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <refsyn id="refsyn_2672884A5E4C42E698C9379006CBABD2" class="- topic/section     reference/refsyn ">
+      <p class="- topic/p ">
+        <ol id="ol_5EBF2FE1C83C4680ACDD8AC1E5FC54C3" class="- topic/ol ">
+          <li id="li_1C53AE6B55F340E59B4362A9AD07E15E" class="- topic/li ">
+            <p class="- topic/p ">Define your business objective. 
+			 </p>
+            <p class="- topic/p ">
+              <ul id="ul_9EFAB81E680A44D6AA351B54FEF5E147" class="- topic/ul ">
+                <li id="li_F36FA74575E041FF911459E9741AB83F" class="- topic/li ">
+				  Clear out old inventory? 
+				</li>
+                <li id="li_8A2D45F1CD7940A79D9BAC8F152B5AD9" class="- topic/li ">
+				  Highlight a niche product? 
+				</li>
+                <li id="li_3FE3752C599846CF9BE669A6FEFEBB92" class="- topic/li ">
+				  Increase form completion from female visitors? 
+				</li>
+                <li id="li_51332B9E959546E29E21F299A457C587" class="- topic/li ">
+				  Map your customer segmentation to your Web content. 
+				</li>
+              </ul>
+            </p>
+          </li>
+          <li id="li_F703493793A742BEBE6965331E76224E" class="- topic/li ">
+            <p class="- topic/p ">Define the user most likely to help you. 
+			 </p>
+            <p class="- topic/p ">
+              <ul id="ul_6481F350CEBD49839B2B934FFB6803B0" class="- topic/ul ">
+                <li id="li_34CBB1C65A9949DCB96E894293F90B4D" class="- topic/li ">
+				  Who are these people? 
+				</li>
+                <li id="li_2735D08448A64427B2BE265FDA2B7886" class="- topic/li ">
+				  Start with simple, broad segments and refine them over time. 
+				</li>
+              </ul>
+            </p>
+          </li>
+          <li id="li_622C0FF4C5B442058AF8B9F1DB5BF9DC" class="- topic/li ">
+            <p class="- topic/p ">Define the behaviors the user is most likely to
+				exhibit. 
+			 </p>
+            <p class="- topic/p ">
+              <ul id="ul_1E15D90F9B674BE3B206145FDF8A55E3" class="- topic/ul ">
+                <li id="li_7E36375CD21D443FBCD37AF0E4551CBC" class="- topic/li ">
+				  Are they a return visitor? 
+				</li>
+                <li id="li_40C189A31509437EA9A67CD1B22B7156" class="- topic/li ">
+				  Are they a frequent visitor? 
+				</li>
+                <li id="li_B935FB7762B547BB90CE39B78C5E0CD9" class="- topic/li ">
+				  What pages do they visit? 
+				</li>
+                <li id="li_E5FEF145131141CFAAB7AAD2A765E9FD" class="- topic/li ">
+				  Have they filled out a form before? 
+				</li>
+                <li id="li_4A0F27DC4F1741C6B2ED942725976ABF" class="- topic/li ">
+				  Have they purchased something before? 
+				</li>
+                <li id="li_05EE27F7DD714EFAB5011A80FD6B6293" class="- topic/li ">
+				  Are they weekend shoppers? 
+				</li>
+                <li id="li_08430446E6F245418B430B7C8BF76370" class="- topic/li ">
+				  Did they come from specific search engines? Social referrers? 
+				</li>
+                <li id="li_AB06A9E4ACC341EE821DE5B475D1D176" class="- topic/li ">
+				  Do they come primarily from certain geographies? 
+				</li>
+              </ul>
+            </p>
+          </li>
+          <li id="li_1AB86AAEE5AE4A689F6E8FA8E823A9D7" class="- topic/li ">
+            <p class="- topic/p ">Capture relevant behaviors in profiles. 
+			 </p>
+            <p class="- topic/p ">
+              <ul id="ul_89F87BEEEDD14C40AC9CFA6FA0B52552" class="- topic/ul ">
+                <li id="li_E01C7D9A714B415B8332B463CEA0988F" class="- topic/li ">
+				  Custom created labels for your users 
+				</li>
+                <li id="li_457AC2089B1B4DEAB08A03470B4E66A7" class="- topic/li ">
+				  Stored in databases and associated with your visitor through a cookie 
+				</li>
+                <li id="li_EF2325828AC644BC8C4A2EA948F99DF0" class="- topic/li ">
+				  Two strategies: either 
+				  <xref href="c_Profile_Parameters.xml#concept_01A30B4762D64CD5946B3AA38DC8A201" type="concept" format="dita" scope="local" class="- topic/xref ">in-mbox
+					 profile parameters or script profile parameters</xref></li>
+                <li id="li_8941400E179E47F889D876BF6B1EC891" class="- topic/li ">
+				  In-mbox profile parameters are placed in the page's mboxCreate call: 
+				  <p class="- topic/p "><codeblock outputclass="syntax html">&lt;script type="text/javascript"&gt;
+
+   mboxCreate('myMbox', 'profile.name1=value1', 'profile.name2=value2');
+
+&lt;/script&gt;
+
+&lt;script type="text/javascript"&gt; mboxCreate('myMbox',
+
+'profile.name1=value1', 'profile.name2=value2'); &lt;/script&gt;</codeblock></p></li>
+                <li id="li_24E3CE9E57254F4FB12A301987E38E7A" class="- topic/li ">
+				  Script profile parameters are defined with JavaScript in the admin tool: 
+				  <ol id="ol_2AD9F8E27C1C4EB6A0DD966F879EE718" class="- topic/ol "><li id="li_6D46EA9F5CD4438986D873260F192891" class="- topic/li "> Select 
+						<uicontrol class="+ topic/ph ui-d/uicontrol ">Segments</uicontrol> &gt; 
+						<uicontrol class="+ topic/ph ui-d/uicontrol ">Profiles</uicontrol>. 
+						<p class="- topic/p "></p></li><li id="li_4020EB3C797244418313FE657E6C3825" class="- topic/li "> Clicking 
+						<uicontrol class="+ topic/ph ui-d/uicontrol ">add
+						  attribute</uicontrol> to add a new parameter. 
+					 </li><li id="li_9913A4E9A63843C2A92AA1E17FA735D1" class="- topic/li "> Name your profile and type the JavaScript code into the
+						text fields. 
+						<p class="- topic/p "></p></li><li id="li_0ACC7948A8F4437184B136BE7F853392" class="- topic/li "> Click 
+						<uicontrol class="+ topic/ph ui-d/uicontrol ">Start</uicontrol> to start the script. 
+					 </li></ol><p class="- topic/p ">The profile data is now available for use
+					 in campaigns. 
+				  </p></li>
+              </ul>
+            </p>
+          </li>
+          <li id="li_90F16165618047629AFB8A902F83D025" class="- topic/li ">
+			 Target content to those users based on their profiles. 
+			 <ul id="ul_DF1F3D6949DE49EDAF6FC9A8C482E539" class="- topic/ul "><li id="li_6B772F33672849B382CD1121AEBE12CE" class="- topic/li ">
+				  Create offers and use the 
+				  <xref href="c_Targeting_a_Campaign_or_Test.xml#concept_A782F8481A5041EBA75103CB26376522" type="concept" format="dita" scope="local" class="- topic/xref ">targeting
+					 features</xref> to send that content to specific users. 
+				</li></ul></li>
+        </ol>
+      </p>
+    </refsyn>
+  </refbody>
+  <!--<related-links class="- topic/related-links ">
+    <link href="r_Case_Studies.xml#reference_FB6A955B97D949F49BAB194743482835" type="reference" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Case Studies?>
+    </link>
+    <link href="c_Examples_and_Tips.xml#concept_4B15FDC3EA484294886F8BB00B34EACC" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Examples and Tips?>
+    </link>
+    <link scope="local" href="r_Webinars_Reports_Blogs_and_Demos.xml#reference_835CAB0E94654235A28F3FD64B2D3AE6" type="reference" format="dita" class="- topic/link ">
+      <?xm-replace_text Webinars, Reports, Blogs, and Demos?>
+    </link>
+  </related-links>
+-->
+</reference>

@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_3D8E6A5D30DC4D92982EFA34D4C7F81B">
+  <title>referrer</title>
+  <shortdesc> The 
+	 <varname>referrer</varname> variable can be used to restore lost referrer
+	 information. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Variables" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p> Server-side and JavaScript redirects are often used to route visitors
+		to proper locations. However, when a browser is redirected, the original
+		referring URL is lost. 
+	 </p>
+    <table id="table_8FC6096122F94FAD9C2C415B1ADD5F9D">
+      <tgroup cols="4">
+        <colspec colnum="1" colname="col1" colwidth="*" />
+        <colspec colnum="2" colname="col2" colwidth="*" />
+        <colspec colnum="3" colname="col3" colwidth="*" />
+        <colspec colnum="4" colname="col4" colwidth="*" />
+        <thead>
+          <row>
+            <entry> Max Size 
+				</entry>
+            <entry> Debugger Parameter 
+				</entry>
+            <entry> Reports Populated 
+				</entry>
+            <entry> Default Value 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry> 255 bytes 
+				</entry>
+            <entry> R 
+				</entry>
+            <entry> Traffic &gt; Finding Methods Conversion &gt; Finding
+				  Methods 
+				</entry>
+            <entry> document.referrer 
+				</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p>Many companies use redirects in many places throughout their websites.
+		For example, a visitor may be sent through a redirect from a search engine paid
+		search result. When a browser is redirected, the referrer is often lost. The 
+		<varname>referrer</varname> variable may be used to restore the
+		original 
+		<varname>referrer</varname> value on the first page after a redirect.
+		The 
+		<varname>referrer</varname> may be populated server-side, or via
+		JavaScript from the query string. 
+	 </p>
+    <p>For 
+		<keyword>Analytics</keyword> to record a referrer, it must be "well
+		formed," meaning that it must follow the standard URL format, with a protocol
+		and appropriate location. 
+	 </p>
+    <section id="section_A0365D76789C4F4A959E81FE5A9D491D">
+      <title>Syntax and Possible Values</title>
+      <codeblock outputclass="syntax javascript">s.referrer="URL"</codeblock>
+      <p>Only URL-compatible values should be in the 
+		  <varname>referrer</varname>. Make sure the string is URL encoded (no
+		  spaces). 
+		</p>
+    </section>
+    <section id="section_86FB1577670C4AA18BF3718F0832FCD4">
+      <title>Examples</title>
+      <codeblock outputclass="syntax javascript">s.referrer="http://www.google.com/search?q=search+string"
+s.referrer=&lt;%=referrerVar%&gt; // populated server-side 
+if(s.getQueryParam('ref')
+s.referrer=s.getQueryParam('ref')
+</codeblock>
+    </section>
+    <section id="section_7AAEF28A7CBC446984F32C0659EFBF8D">
+      <title>
+        Configuration Settings</title>
+      <p>None 
+		</p>
+    </section>
+    <section id="section_B42BF7FBA1094FF9805707FEA810CFE1">
+      <title>Pitfalls, Questions, and Tips</title>
+      <p>The 
+		  <varname>referrer</varname> must look like a standard URL and include
+		  a protocol. 
+		</p>
+    </section>
+  </conbody>
+</concept>

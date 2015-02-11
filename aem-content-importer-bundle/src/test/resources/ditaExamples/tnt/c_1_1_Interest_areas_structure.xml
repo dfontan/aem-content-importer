@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_196D37DD231E4F3187A952C8B561707D">
+  <title>Structure of Interest Areas</title>
+  <shortdesc>An interest area is a part of the website, or more specifically,
+	 several URLs from the total of all the pages. The URLs are gathered in such a
+	 manner that they are highly related to each other, usually gravitating around
+	 one notion or topic. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>There are two constituents of an interest area:
+	 </p>
+    <p>
+      <ul id="ul_29BF12AD8D9D45A0B3A3A73BB10D1AB4">
+        <li id="li_281BFE6899EC43199E3859629C8A70F4">The list of URLs
+		</li>
+        <li id="li_7EC30BCC4148451989232D144C280187">The topic which unites the
+		  URLs expressed by the interest area name
+		</li>
+      </ul>
+    </p>
+    <p>For example, a computer manufacturer might have the following interest
+		area:
+	 </p>
+    <p>name (topic): Laptops URLs:
+	 </p>
+    <p>
+      <ul id="ul_A14BEE618D97444AA77D81573E53AFC7">
+        <li id="li_0D9A04B2173F4E658DD9E67051206FFD">
+          <p> http://www.computercorp.com/us/computers.aspx
+		  </p>
+        </li>
+        <li id="li_E2747B6B78C2417488999B7F3E536758">
+          <p> http://www.computergamingcorp.com/laptops.aspx 
+		  </p>
+        </li>
+      </ul>
+    </p>
+    <p>Notice that there are two domains: computercorp.com and
+		computergamingcorp.com. In this case, an interest area is not just a site
+		compartment, because the topic can transcend several sites of the same client.
+		This cross-gathering is necessary because a user who seldom visits
+		computercorp.com, but is intensively browsing computergamingcorp.com laptop
+		related pages, will likely be more interested in laptops than desktops when she
+		visits the computercorp.com site.
+	 </p>
+    <p>The structure of an interest area is absolved of any logic regarding how
+		it was constructed or of the manner it is going to be used for generating model
+		variables. This completely separates the logic of discovering (constructing)
+		the interest areas and the one of computing variables.
+	 </p>
+    <p>Additionally, for performance reasons (due to memory constraints), a
+		hash value is generated for each URL. The hash takes the form of an 8-byte java
+		long value.
+	 </p>
+  </conbody>
+</concept>

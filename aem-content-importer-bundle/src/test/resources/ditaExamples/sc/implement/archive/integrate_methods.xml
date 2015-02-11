@@ -1,0 +1,400 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_1EC291B2932541268988CF6B24A24CBC"> 
+  <title>Methods</title> 
+  <shortdesc><?xm-replace_text Short Description?>
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta content="Analytics" name="solution"/> </metadata>
+  </prolog> 
+  <conbody>
+	 <p><?xm-replace_text Paragraph?>
+	 </p><!--add delay and ready - also a flag that lets you disable a partner. disabled = true disables the integration--><!--do plugins  is executed before set vars 1. do plugins. 2. set vars > call goes out to analytics to track 3. use vars (you'll have the final values, whatever was tracked) - use vars looks locally.-->
+	 <section id="section_80AADE7CD6B7445284D5178BAAFBAA83">
+		<title>useVars‌</title>
+		<p>The useVars method lets the client share SiteCatalyst variables with
+		  partner. The useVars method has the following syntax:
+		</p>
+		<codeblock outputclass="syntax javascript">s.Integrate.&lt;partner_name&gt;.useVars = function (s,p) { p.&lt;PVar1&gt; = s.&lt;SCVar1&gt;;
+p.&lt;PVar2&gt; = s.&lt;SCVar2&gt;;
+...
+p.&lt;PVarN&gt; = s.&lt;SCVarN&gt;;
+};</codeblock>
+		<table id="table_75D6F7AC111E41809D208ACDC46F7A03">
+		  <tgroup cols="2"><colspec colnum="1" colname="col1"
+			 colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="2.41*"/><thead>
+				<row>
+				  <entry colname="col1">Variable
+				  </entry>
+				  <entry colname="col2">Description
+				  </entry>
+				</row></thead>
+			 <tbody>
+				<row>
+				  <entry colname="col1">
+					 <p> partner_name 
+					 </p> 
+				  </entry>
+				  <entry colname="col2">
+					 <p>The name of the partner
+					 </p>
+					 <p>object previously created through the add method.
+					 </p>
+				  </entry>
+				</row>
+				<row>
+				  <entry colname="col1">
+					 <p>PVar<i>N</i> 
+					 </p>
+				  </entry>
+				  <entry colname="col2">
+					 <p>The name of the partner variable to receive the value from
+						the specified SiteCatalyst variable.
+					 </p>
+				  </entry>
+				</row>
+				<row>
+				  <entry colname="col1">
+					 <p>SCVar<i>N</i> 
+					 </p>
+				  </entry>
+				  <entry colname="col2">
+					 <p>The SiteCatalyst variable to share with partner.
+					 </p>
+				  </entry>
+				</row>
+			 </tbody>
+		  </tgroup>
+		</table>
+		<p>For example:
+		</p>
+		<codeblock>s.Integrate.Partner_name.useVars = function(s,p) { p.page = s.pageName;
+p.section = s.channel; p.beacon("api.mypartner.com/
+track?cID=[cID]&amp;aID=[aID]&amp;rnd=[RAND]&amp;page=[page]&amp;section=[section]") p.script("api.mypartner.com/
+script?cID=[cID]&amp;aID=[aID]&amp;rnd=[RAND]&amp;page=[page]&amp;section=[section]")</codeblock>
+	 </section>
+	 <section id="section_0ECD6CE3FA9C42B98BCCF79193187B30">
+		<title>setVars‌</title>
+		<p>The setVars method lets Client populate SiteCatalyst variables using
+		  Partner data stored in the partner object. The Partner data can be the result
+		  of a get method, a static assignment, or any other mechanism that populates the
+		  partner object with Partner data. The setVars method has the following syntax:
+		</p>
+		<codeblock outputclass="syntax javascript">s.Integrate.&lt;Partner_name&gt;.setVars = function (s,p) { s.&lt;SCVar1&gt; = p.&lt;PVar1&gt;;
+s.&lt;SCVar2&gt; = p.&lt;PVar2&gt;;
+...
+s.&lt;SCVarN&gt; = p.&lt;PVarN&gt;;
+};</codeblock>
+		<table id="table_F966CC4F6DDB4A0B9BDD5BCC6091009C">
+		  <tgroup cols="2"><colspec colnum="1" colname="col1"
+			 colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="2.41*"/><thead>
+				<row>
+				  <entry colname="col1">Variable
+				  </entry>
+				  <entry colname="col2">Description
+				  </entry>
+				</row></thead>
+			 <tbody>
+				<row>
+				  <entry colname="col1">
+					 <p> partner_name 
+					 </p> 
+				  </entry>
+				  <entry colname="col2">
+					 <p>The name of the partner
+					 </p>
+					 <p>object previously created through the add method.
+					 </p>
+				  </entry>
+				</row>
+				<row>
+				  <entry colname="col1">
+					 <p>PVar<i>N</i> 
+					 </p>
+				  </entry>
+				  <entry colname="col2">
+					 <p>The name of the partner variable to receive the value from
+						the specified SiteCatalyst variable.
+					 </p>
+				  </entry>
+				</row>
+				<row>
+				  <entry colname="col1">
+					 <p>SCVar<i>N</i> 
+					 </p>
+				  </entry>
+				  <entry colname="col2">
+					 <p>The SiteCatalyst variable to share with partner.
+					 </p>
+				  </entry>
+				</row>
+			 </tbody>
+		  </tgroup>
+		</table>
+		<p>For example:
+		</p>
+		<codeblock outputclass="syntax javascript">s.Integrate.partner1.setVars = function(s,p) { s.prop1 = p.cID;
+s.prop2 = p.aID;
+}</codeblock>
+	 </section>
+	 <section id="section_6B57598618364512AB4FA6C2544829D2">
+		<title>delay</title>
+		<p><?xm-replace_text Paragraph?>
+		</p>
+	 </section>
+	 <section id="section_CC7FAFF590904D72A55DCAE36B6F2886">
+		<title>ready</title>
+		<p><?xm-replace_text Paragraph?>
+		</p>
+	 </section>
+	 <section id="section_87BCBAA652A14D3485CE7975AB35563F">
+		<title>add‌</title>
+		<p>The add method instantiates a partner object, which serves as an
+		  intermediate store of variable data when sharing data between partner systems
+		  and SiteCatalyst. Client must add a separate partner object for each partner
+		  that they want to share data with. The add method has the following syntax:
+		</p>
+		<codeblock>s.Integrate.add("&lt;partner_name&gt;"</codeblock>
+		<table id="table_89C0D8E40C3642259BED06DB6A6778B1">
+		  <tgroup cols="2"><colspec colnum="1" colname="col1"
+			 colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="2.41*"/><thead>
+				<row>
+				  <entry colname="col1">Variable
+				  </entry>
+				  <entry colname="col2">Description
+				  </entry>
+				</row></thead>
+			 <tbody>
+				<row>
+				  <entry colname="col1">
+					 <p> partner_name 
+					 </p> 
+				  </entry>
+				  <entry colname="col2">
+					 <p>An alphanumeric identifier for the partner object. Do not
+						include spaces in the partner_name.
+					 </p>
+				  </entry>
+				</row>
+			 </tbody>
+		  </tgroup>
+		</table>
+	 </section>
+	 <section id="section_3B974BF915934DB2BB4863A5D3FA78C3">
+		<title>get</title>
+		<p>The get method lets Client import partner variables and store them in
+		  the partner object. Client can then assign this data to SiteCatalyst variables
+		  for inclusion in an Adobe Web beacon. The get method calls the specified
+		  partner URL, which points to an HTML &lt;script&gt; encapsulated JSON object
+		  that contains the variables that Partner and Client want to include in the
+		  Adobe Web beacon for. The get method has the following syntax:
+		</p>
+		<codeblock>s.Integrate.&lt;partner_name&gt;.get("&lt;URL to JSON object&gt;?
+&lt;pID=[val1]&gt;&amp;&lt;pID2=[val2]&gt;&amp;&lt;pIDN=[valN]&gt;&amp;&lt;var=[VAR]&gt;&amp;&lt;rnd=[RND]&gt;")</codeblock>
+		<table id="table_194F6BE087BE42C6AE0A759F42A4887E">
+		  <tgroup cols="2"><colspec colnum="1" colname="col1"
+			 colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="2.41*"/><thead>
+				<row>
+				  <entry colname="col1">Variable
+				  </entry>
+				  <entry colname="col2">Description
+				  </entry>
+				</row></thead>
+			 <tbody>
+				<row>
+				  <entry colname="col1">
+					 <p> partner_name 
+					 </p> 
+				  </entry>
+				  <entry colname="col2">
+					 <p>The name of the partner object previously created through
+						the add method.
+					 </p>
+				  </entry>
+				</row>
+				<row>
+				  <entry colname="col1">
+					 <p> URL to JSON object
+					 </p>
+				  </entry>
+				  <entry colname="col2">
+					 <p> A URL to a JSON object that contains the partner variables
+						to incorporate into the Adobe Web beacon.
+					 </p>
+				  </entry>
+				</row>
+				<row>
+				  <entry colname="col1">
+					 <p> pID 
+						<i>N</i>
+					 </p>
+				  </entry>
+				  <entry colname="col2">
+					 <p> Partner account information that identifies Client in the
+						Partner systems. Partner uses this information to identify the client data set.
+					 </p>
+				  </entry>
+				</row>
+				<row>
+				  <entry colname="col1">
+					 <p> var
+					 </p>
+				  </entry>
+				  <entry colname="col2">
+					 <p> Specifies the name of the JSON object that the Integrate
+						Module expects back from partner. The JSON object name must be dynamic to avoid
+						global variable collisions. The Integrate Module inserts this value
+						automatically.
+					 </p>
+				  </entry>
+				</row>
+				<row>
+				  <entry colname="col1">
+					 <p> rnd
+					 </p>
+				  </entry>
+				  <entry colname="col2">
+					 <p> A random number used to circumvent browser caching.
+					 </p>
+				  </entry>
+				</row>
+			 </tbody>
+		  </tgroup>
+		</table>
+		<codeblock>s.Integrate.partner1.get("api.partner1.com/ data?cid=[a123b456]&amp;aid=[9876dcba]&amp;var[VAR]&amp;RND[RAND]")</codeblock>
+		<p>The service returning the JavaScript must use a query-string variable
+		  to allow the Integrate module to provide a unique variable name. For example:
+		</p>
+		<codeblock>var s_5_Integrate_partner1_get_2 = { a:12345,b:54321,c:"Something"};</codeblock>
+	 </section>
+	 <section id="section_8BCAF60B42124DA0B33F04A6F7BA240A">
+		<title>beacon‌</title>
+		<p>The beacon method creates a Web beacon on the client Web page and
+		  points it to the specified URL. This lets partner create JavaScript beacons for
+		  page data they want to collect. The beacon method has the following syntax:
+		</p>
+		<codeblock>p.beacon("&lt;partner URL&gt;/track?&lt;qs1=val1&gt;&amp;&lt;qs2=val2&gt;&amp;&lt;qsN=valN&gt;&amp;&lt;rnd=[RAND]&gt;")</codeblock>
+		<table id="table_CB1ABBBACD4C4E6D8C02BAD74D90C31B">
+		  <tgroup cols="2"><colspec colnum="1" colname="col1"
+			 colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="2.41*"/><thead>
+				<row>
+				  <entry colname="col1">Variable
+				  </entry>
+				  <entry colname="col2">Description
+				  </entry>
+				</row></thead>
+			 <tbody>
+				<row>
+				  <entry colname="col1">
+					 <p> partner URL
+					 </p> 
+				  </entry>
+				  <entry colname="col2">
+					 <p> The URL where partner wants to receive page data from the
+						client site.
+					 </p>
+				  </entry>
+				</row>
+				<row>
+				  <entry colname="col1">
+					 <p> qs 
+						<i>N</i>
+					 </p>
+				  </entry>
+				  <entry colname="col2"> 
+					 <p> (Optional) A query string variable to send to the specified
+						partner URL
+					 </p>
+					 <p> . Each query string parameter contains a variable that
+						partner wants from the client site (previously stored in the partner object via
+						useVars.
+					 </p> 
+				  </entry>
+				</row>
+				<row>
+				  <entry colname="col1">
+					 <p> rnd
+					 </p>
+				  </entry>
+				  <entry colname="col2">
+					 <p> A random number used to circumvent browser caching.
+					 </p>
+				  </entry>
+				</row>
+			 </tbody>
+		  </tgroup>
+		</table>
+		<p>For example:
+		</p>
+		<codeblock>p.beacon("api.partner.com/ track?cID=123456&amp;aID=987654&amp;rnd=[RAND]&amp;page=[page]&amp;section=[section]")</codeblock>
+	 </section>
+	 <section id="section_E684880AFBCA44669A7A0B8FFD27A2C1">
+		<title>script</title>
+		<p>The script method let’s Partner use the Adobe Web beacon to call
+		  additional JavaScript from the partner site if certain conditions exist (for
+		  example, if a Campaign variable is set). The script method has the following
+		  syntax:
+		</p>
+		<codeblock>p.script("&lt;partner URL&gt;/script?&lt;qs1=val1&gt;&amp;&lt;qs2=val2&gt;&amp;&lt;qsN=valN&gt;&amp;&lt;rnd=[RAND]&gt;")</codeblock>
+		<table id="table_CA6EC044C6654764BBAA362DB2213AFC">
+		  <tgroup cols="2"><colspec colnum="1" colname="col1"
+			 colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="2.41*"/><thead>
+				<row>
+				  <entry colname="col1">Variable
+				  </entry>
+				  <entry colname="col2">Description
+				  </entry>
+				</row></thead>
+			 <tbody>
+				<row>
+				  <entry colname="col1">
+					 <p> partner URL
+					 </p> 
+				  </entry>
+				  <entry colname="col2">
+					 <p> The URL where partner wants to receive page data from the
+						client site.
+					 </p>
+				  </entry>
+				</row>
+				<row>
+				  <entry colname="col1">
+					 <p> qs 
+						<i>N</i>
+					 </p>
+				  </entry>
+				  <entry colname="col2"> 
+					 <p> (Optional) A query string variable to send to the specified
+						partner URL
+					 </p>
+					 <p> . Each query string parameter contains a variable that
+						partner wants from the client site (previously stored in the partner object via
+						useVars.
+					 </p> 
+				  </entry>
+				</row>
+				<row>
+				  <entry colname="col1">
+					 <p> rnd
+					 </p>
+				  </entry>
+				  <entry colname="col2">
+					 <p> A random number used to circumvent browser caching.
+					 </p>
+				  </entry>
+				</row>
+			 </tbody>
+		  </tgroup>
+		</table>
+		<p> For example:
+		</p>
+		<codeblock>p.script("api.partner1.com/ script?cID=12345&amp;aID=98765&amp;rnd=[RAND]&amp;page=[page]&amp;section=[section]")</codeblock>
+	 </section>
+	 <section id="section_3A8F352A83394D8B9C601A0F741648E1">
+		<title><?xm-replace_text Section Title?></title>
+		<p><?xm-replace_text Paragraph?>
+		</p>
+	 </section>
+  </conbody>
+</concept>

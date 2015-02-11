@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_D622F56247B94C34AB1DEBF382465BBB">
+  <title>Segmentation containers</title>
+  <shortdesc>Knowing the difference between the page view, visit, and visitor
+	 containers gives you much more control over your reporting. It also helps you
+	 understand what data is returned. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports,Reports and analytics" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Segmentation works by scanning through every hit within the time period
+		selected, checking to see if that image request matches your segmentation
+		rules. 
+	 </p>
+    <ul id="ul_79C937DB0E6A4F078CE7FD1E583CE9FA">
+      <li id="li_538FB2926FE643288ED37CF9A5272EB5">If it matches, then that hit
+		  is part of your segment (along with additional data, depending on the
+		  container). 
+		</li>
+      <li id="li_A3A3B0B0B33F49519809A75890A44B48">If it does not match, the
+		  hit is treated as if it didn't exist in context of the segmented report. 
+		</li>
+    </ul>
+    <p>To help illustrate the differences between each containers, consider the
+		following example: 
+	 </p>
+    <ul id="ul_18BF056754674AB399E0B6B6DAC2C59E">
+      <li id="li_48F89FC954A84C41A91AA46B10C16456">A customer comes to your
+		  site via Natural Search, views one of your products, then leaves. 
+		</li>
+      <li id="li_6E214C825B9C4013BEEA171BF1DA85B7">That same customer returns
+		  the next day via a bookmark, and purchases that item. 
+		</li>
+    </ul>
+    <section id="section_7AF52DADE8084B47A7CB27D130A53477">
+      <title>Page Views container</title>
+      <p>The Page Views container is the most narrow of the containers
+		  available. When a rule within a page view container matches a hit, only that
+		  individual hit is included in the segment. Unless other hits within an
+		  individual's visit also match the rule, all other hits are excluded. Using the
+		  above example, the following segment is used: 
+		</p>
+      <p>
+        <image placement="break" align="left" href="graphics/page_views.png" width="150px" id="image_AE1BE167AD944118A5902A47EDB3C673"></image>
+      </p>
+      <p>
+        <i> Include all hits where Referrer Type is Natural Search</i>. 
+		</p>
+      <p>This container includes only a single hit: the customer's first hit to
+		  your site. If you tried viewing the number of orders or product views with this
+		  segment, you would not see any data. The individual hit that actually made the
+		  purchase has a referrer of the billing information/checkout page. Since the
+		  purchase page's referrer is not considered Natural Search, it is not included
+		  in the subsequent report. 
+		</p>
+    </section>
+    <section id="section_2DFC8929865341CB80DDF54127404367">
+      <title>Visits container</title>
+      <p>The Visits container is the most commonly used segmentation container.
+		  Again, using the above as an example, the following segment is used: 
+		</p>
+      <p>
+        <image placement="break" align="left" href="graphics/visit.png" width="100px" id="image_ED9846B6D7864A9BB418467CAD595090"></image>
+      </p>
+      <p>
+        <i> Include all hits where Referrer Type is Natural Search.</i>
+      </p>
+      <p>This segment scans through all the hits on your site, and if one
+		  matches, all hits that occurred within that visit are included. Looking at
+		  product views using this segment would now display data. The hit that matched
+		  the rule set not only brought in the individual hit that matched, but the rest
+		  of that customer's visit. 
+		</p>
+      <p>Orders, however, would still not display data. Since the purchase
+		  event occurred on a different visit, this example's orders and revenue would
+		  still not be shown using this segment. 
+		</p>
+    </section>
+    <section id="section_D480F2E1B9454152AF7397341EA86B45">
+      <title>Visitors container</title>
+      <p>The Visitors container is the largest of the three available
+		  "buckets". Once it finds a hit that matches your rule, it pulls in all hits
+		  within that same visit. It also pulls all hits across all visits that
+		  individual generated. Using the same above example in context of a Visitors
+		  container: 
+		</p>
+      <p>
+        <image placement="break" align="left" href="graphics/visitors.png" width="100px" id="image_9C9842E2CFF040278F761DF0BF145911"></image>
+      </p>
+      <p>
+        <i> Include all hits where Referrer Type is Natural Search.</i>
+      </p>
+      <p>Since the same visitor that entered your site via Natural Search also
+		  eventually made a purchase, Adobe Analytics includes all hits in your segment. 
+		</p>
+    </section>
+    <section id="section_49135E944B524261A64F096ABD803C32">
+      <title>Pitfalls and Tips</title>
+      <p>It is important to understand that having a broader segment is not
+		  always necessarily better. If you wanted visits where Referrer Type was Natural
+		  Search, using a Visitors container would not return desired data. It would also
+		  include many other visits that did not begin with Natural Search. In this
+		  specific scenario, a Visits container would be best. 
+		</p>
+      <p>If you have questions about which container matches closest to the
+		  data you're looking for, contact one of your organization's supported users.
+		  They can provide advice based on your specific implementation. 
+		</p>
+    </section>
+  </conbody>
+</concept>

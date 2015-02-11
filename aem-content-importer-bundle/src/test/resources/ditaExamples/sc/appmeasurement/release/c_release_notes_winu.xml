@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_79EEB87B0FEC4F6DB11BE8ED417A970E"> 
+  <title>Windows 8.1 Universal App Store</title> 
+  <shortdesc><?xm-replace_text Short Description?>
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta content="Analytics" name="solution"/> </metadata>
+  </prolog> 
+  <conbody>
+	 <section id="section_57B75C70EE854678873657118E70E532">
+		<title>4.0</title>
+		<p>Release Date: 
+		  <b>January 15, 2015</b>
+		</p>
+		<p>Initial release.
+		</p>
+	 </section>
+  </conbody>
+</concept>

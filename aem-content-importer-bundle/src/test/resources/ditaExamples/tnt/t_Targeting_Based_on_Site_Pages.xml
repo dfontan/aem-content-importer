@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_61256378FA2D402E93856DCAA09BE3A4" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Target Based on Site Pages</title>
+  <shortdesc class="- topic/shortdesc ">You can target visitors who view any of
+	 several types of pages. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <context id="context_29F2014C7DE84607963538FDBB0EB002" class="- topic/section task/context ">
+      <p class="- topic/p ">
+        <ul id="ul_4C06A5C8A4B9440B86E072E1B24ABFCA" class="- topic/ul ">
+          <li id="li_130B3E8301D140E9BA4B353E232213A6" class="- topic/li ">
+			 Current page 
+			 <p class="- topic/p ">The page the user is currently on, which is the
+				page that contains an mbox in the campaign. If you target at the campaign
+				level, this could be a page with an mbox that you are using to define entry
+				conditions, or a page that displays content. If you are targeting by
+				experience, then the current page is the page that the display mbox is on. For
+				Success metric or conversion targeting, then it is the page that those mboxes
+				are on. 
+			 </p></li>
+          <li id="li_EC62EE237AF44B4F993FAB1A088BDCEC" class="- topic/li ">
+			 Previous page 
+			 <p class="- topic/p ">The page the user was on before clicking to the
+				current page. (The user has to click from the previous page to the current page
+				for the page to be tracked. The previous page is not tracked if the user types
+				a new URL in the browser.) The actual content of this page depends on the
+				design of your site. For example, if the current page displays information
+				about a specific product, the previous page might be a category page where the
+				visitor selects the specific item (such as a page displaying several cameras of
+				a certain type), or it might be the home page that leads to the final page. 
+			 </p></li>
+          <li id="li_5F7B6882D6EC4BAF8BBD7D3E52FB9CBE" class="- topic/li ">
+			 Landing Page 
+			 <p class="- topic/p ">The landing page is the first page the visitor
+				sees when accessing your site. For example, if the visitor clicks a link on
+				Google that leads to a category page, then the category page is the landing
+				page. If the link leads to your home page, then the home page is the landing
+				page. The landing page is remembered for the visitor's session. You can target
+				deeper in the site based on what the visitor's landing page was in this
+				session. 
+			 </p><p class="- topic/p "><note>The 
+				  <codeph>landing.url</codeph> object is reset on a subdomain
+				  change or direct URL replacement. 
+				</note></p></li>
+          <li id="li_4B602833D0BF426988D5456BE24BCD82" class="- topic/li "> Mbox 
+			 <p class="- topic/p ">The mbox you are targeting on. For example, if
+				you want to count orders with an order total of $100 or more, you would pass 
+				<codeph>orderTotal</codeph> as an mbox parameter with that
+				targeting specified here. 
+			 </p></li>
+        </ul>
+      </p>
+    </context>
+    <steps id="steps_D34D9DBB06C54CF5BF52B9B0F4D98930" class="- topic/ol task/steps ">
+      <step id="step_20EB86FDACAB4F7C8DC3EEAB35AD3B7F" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Target this
+				campaign</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_E1D2AFD089C2456B8F28DEBCD863D777" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Site Pages</uicontrol>.
+			 
+		  </cmd>
+      </step>
+      <step id="step_AE32B4CEB98A4BC2B439420FB067A3F5" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Choose the type of page. 
+		  </cmd>
+      </step>
+      <step id="step_E855BD8A40E640109377DE0EB7B4AA46" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">From the second dropdown list, select
+			 the parameter you want to use to identify the page. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">If you select 
+				<uicontrol class="+ topic/ph ui-d/uicontrol ">Mbox</uicontrol>,
+				choose from a list of mboxes. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_D48618F8A7D84ECA8BB58208097CB081" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Choose an evaluator. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">For example, if you want to target visitors
+				from pages with a domain name other than 
+				<filepath class="+ topic/ph sw-d/filepath ">mydomain.com</filepath>, select 
+				<uicontrol class="+ topic/ph ui-d/uicontrol ">Does not
+				  equal</uicontrol>. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_3E0CD8544CFF43D796FC800B54241FD3" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">In the field provided, type the text
+			 used to identify the page. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">For example, if you want to target visitors
+				from pages with a domain name other than 
+				<filepath class="+ topic/ph sw-d/filepath ">mydomain.com</filepath>, type 
+				<userinput class="+ topic/ph sw-d/userinput ">mydomain.com</userinput> after selecting 
+				<uicontrol class="+ topic/ph ui-d/uicontrol ">Does not
+				  equal</uicontrol>. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_DBAD95C43EAE4939826B65C117F3FEB1" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">If you want to use additional
+			 conditions, click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Add
+				Condition</uicontrol> and set the next condition. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">Multiple conditions are evaluated using And
+				logic. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_4DDE041B48DB4A409A6E43875012EF07" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Done</uicontrol>. 
+		  </cmd>
+      </step>
+    </steps>
+  </taskbody>
+  <!--<related-links class="- topic/related-links "> 
+	 <link href="t_Setting_the_Percentage_of_Visitors_Included_in_a_Campaign.xml#task_FDE0B7ED64684A3EB6D5F757F2750BD0" type="task" format="dita" scope="local" class="- topic/link "> <?xm-replace_text Set the Percentage of Visitors Included in a   Campaign?>
+	 </link> 
+	 <link href="t_Targeting_an_Mbox.xml#task_7C5D3CCD2C7D4A779471E746A0053057" type="task" format="dita" scope="local" class="- topic/link "> <?xm-replace_text Target an Mbox?>
+	 </link> 
+	 <link href="t_Targeting_Based_on_Visitor_Behavior.xml#task_3F60362313FF4532BAD61AB5DF70605A" type="task" format="dita" scope="local" class="- topic/link "> <?xm-replace_text Targeting Based on Visitor Behavior?>
+	 </link> 
+	 <link href="t_Targeting_Based_on_Traffic_Sources.xml#task_C64D238DA9DB425BB0017F14AD0F1820" type="task" format="dita" scope="local" class="- topic/link "> <?xm-replace_text Targeting Based on Traffic Sources?>
+	 </link> 
+	 <link href="t_target_based_on_social.xml#task_B29D42232EC24F0BA0D5456B0717BDE1" format="dita" scope="local"> <?xm-replace_text Target Based on Social Media Sites?>
+	 </link> 
+	 <link href="t_target_based_on_time_and_day.xml#task_A9AA42EC09A04B3982A77FE107572E5C" format="dita" scope="local"> <?xm-replace_text Target Based on Time and Day?>
+	 </link> 
+	 <link href="t_Targeting_Based_on_Geography.xml#task_E9A0CA13E74A49648F8E041081CA2064" type="task" format="dita" scope="local" class="- topic/link "> <?xm-replace_text Targeting Based on Geography?>
+	 </link> 
+	 <link href="t_Targeting_Based_on_Success_Metrics.xml#task_0464884E5F484FE2B2A21392953317DE" type="task" format="dita" scope="local" class="- topic/link "> <?xm-replace_text Targeting Based on Success Metrics?>
+	 </link> 
+	 <link href="t_Targeting_Based_on_Your_Saved_Target_Library.xml#task_F542F06596F94CEEBEF7025434737474" type="task" format="dita" scope="local" class="- topic/link "> <?xm-replace_text Targeting Based on Your Saved Target Library?>
+	 </link> 
+	 <link href="t_target_based_on_mobile_devices.xml#task_49E3A513A5B1464CA53BB5B7E75E657B" format="dita" scope="local"> <?xm-replace_text Target Based on Mobile Devices?>
+	 </link> 
+	 <link href="t_target_based_on_suite_segments.xml#task_A9D43290580D4066B234B09B9A0BB2C5" format="dita" scope="local"> <?xm-replace_text Target Based on Suite Segments?>
+	 </link> 
+  </related-links> 
+-->
+</task>

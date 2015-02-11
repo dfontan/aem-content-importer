@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd"[]>
+<reference id="reference_FAA5B3A0FE1542219E004263BF4015E3" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic       reference/reference ">
+  <title class="- topic/title ">Troubleshoot Mboxes</title>
+  <shortdesc class="- topic/shortdesc ">Use this troubleshooting information if
+	 you have difficulties with your mboxes. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <refsyn id="refsyn_E3DD321AC7874BC3ABAA7077D35753C8" class="- topic/section     reference/refsyn ">
+      <p class="- topic/p ">Follow the process for 
+		  <xref href="t_Validating_an_Mbox.xml#task_4BB8E090CBBF4C56A39BB63BF1ADB964" type="task" format="dita" scope="local" class="- topic/xref ">validating
+			 mboxes</xref>. 
+		</p>
+      <p class="- topic/p ">
+        <b class="+ topic/ph hi-d/b "> If the Debug window does not appear:</b>
+      </p>
+      <p class="- topic/p ">
+        <ul id="ul_AEA179DDE661480A80ED908B46996669" class="- topic/ul ">
+          <li id="li_6F56CDA72FA84AEAB9035B0258D7623F" class="- topic/li ">
+			 Confirm the 
+			 <filepath class="+ topic/ph sw-d/filepath ">mbox.js</filepath>
+			 reference exists on the page 
+		  </li>
+          <li id="li_F71EE80282964DB289ACA9FDA21242AA" class="- topic/li ">
+			 Confirm the 
+			 <filepath class="+ topic/ph sw-d/filepath ">mbox.js</filepath>
+			 reference is written correctly. 
+		  </li>
+          <li id="li_C2D23BAECE3147D2B8989BD8CC1A8DA5" class="- topic/li ">
+			 Confirm you have downloaded the<filepath class="+ topic/ph sw-d/filepath ">
+				mbox.js</filepath> into the referenced directory. 
+		  </li>
+          <li id="li_79482EA74C974553A0AA7FDA5B7DBDEE" class="- topic/li ">
+			 Confirm there are no JavaScript errors on the page. 
+		  </li>
+        </ul>
+      </p>
+      <p class="- topic/p ">
+        <b class="+ topic/ph hi-d/b "> If the Debug window appears but enabled
+			 = false:</b>
+      </p>
+      <p class="- topic/p ">This means the mbox cookie was not set properly to
+		  deliver content and track success. 
+		</p>
+      <p class="- topic/p ">
+        <ol id="ol_238EB8AC60B24503ADA1BD178A791F37" class="- topic/ol ">
+          <li id="li_9DA849FFDEB94EDF8AC513327685FE36" class="- topic/li ">
+			 Delete your cookies and clear the cache. 
+		  </li>
+          <li id="li_D670C0A3173F41988153F14432813BFD" class="- topic/li "> Close
+			 and reopen a browser and reload the page. 
+		  </li>
+          <li id="li_3F3D9BF6CCAC46F8B382CF25102515A4" class="- topic/li "> If 
+			 <codeph class="+ topic/ph pr-d/codeph ">enabled=false</codeph>
+			 persists, seek and remove JavaScript errors. 
+			 <p class="- topic/p ">Some common errors include: 
+			 </p><p class="- topic/p "><ul id="ul_0F4DF382693E427EBFEDFD28A6B787B5" class="- topic/ul "><li id="li_DDB17119B88648B99F48EAB8964D7C63" class="- topic/li ">
+				  Improper termination of quotes in mbox arguments 
+				</li><li id="li_A370DAF01FD14CE9A331F5E29ADDA6F2" class="- topic/li ">
+				  Spelling mistakes in your mbox functions 
+				</li><li id="li_BCF90245B3FE4DBCA99BDC31B6F13254" class="- topic/li ">
+				  Script tags that are not invoked or that are not closed 
+				</li></ul></p></li>
+          <li id="li_56D46C3F22854C72819FD93014876865" class="- topic/li ">
+			 If<codeph status="changed" class="+ topic/ph pr-d/codeph ">
+				enabled=false</codeph> persists, contact your account representative. 
+		  </li>
+        </ol>
+      </p>
+      <p class="- topic/p ">
+        <b class="+ topic/ph hi-d/b ">If the mboxes are not listed in the
+			 mboxDebug popup window, or if mboxes appear blank on the page, review your page
+			 code for the following:</b>
+      </p>
+      <p class="- topic/p ">
+        <ul id="ul_3CF858D1102642868858D5533A81EAA9" class="- topic/ul ">
+          <li id="li_FD38FB8BF9F143D380F3095F1313E0FC" class="- topic/li ">
+			 Confirm the 
+			 <filepath class="+ topic/ph sw-d/filepath ">mbox.js</filepath>
+			 reference is correct on all Web pages with the mboxes. 
+		  </li>
+          <li id="li_D3A4EB6E5ADC4413B59D60BDA306DFD0" class="- topic/li "> Check
+			 that the mbox default and 
+			 <codeph class="+ topic/ph pr-d/codeph ">mboxCreate</codeph> scripts
+			 are written correctly. 
+		  </li>
+          <li id="li_1EEA70F58BF94E63BE942B20C7642B01" class="- topic/li ">
+			 Confirm that any tag opened before the mbox script is closed after the mbox
+			 script. 
+		  </li>
+          <li id="li_DBC56972F82C49BFB4554A858BA6D951" class="- topic/li ">
+			 Remove JavaScript errors. 
+		  </li>
+        </ul>
+      </p>
+      <p class="- topic/p ">Mboxes insert new nodes into the DOM tree as the
+		  browser creates it. Since each brand of browser has its own implementation of
+		  the W3C DOM specification, mboxes can affect page rendering differently based
+		  on the browser type. Specify absolute sizes of table cells and images to help
+		  the browser more accurately display a page's HTML layout. 
+		</p>
+      <p>
+        <b>If you see mbox content delivery lag:</b>
+      </p>
+      <p>The content inside any mbox is hidden on the page until the mbox
+		  response returns from Target. This happens because the css class 
+		  <codeph>mboxDefault</codeph> is applied to the 
+		  <codeph>div</codeph> tag that surrounds content in an mbox. Even when
+		  default content is selected as the experience in a test, the content does not
+		  display until Target responds. Because of this, the only difference between the
+		  loading of default content and test content is the time it takes to actually
+		  execute the code in the offer delivered by Target. This is almost always so
+		  marginal that there is no benefit to recreating the default content experience
+		  as an offer.
+		</p>
+      <p> You may want to deliver both the test and default experiences in
+		  mboxes if you are delivering very complex code via the HTML offer or a dynamic
+		  offer. A redirect offer should not have an effect on performance, other than
+		  the actual refresh of the new page. If the pages on your site load slowly, then
+		  that could affect the test. In that case, you might choose to redirect the user
+		  regardless of the destination, to rule out any effect.
+		</p>
+    </refsyn>
+  </refbody>
+  <related-links class="- topic/related-links ">
+    <link href="c_About_Mboxes.xml#concept_E01933A6CEDE481BBAC25F95FE3C6FD9" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Mbox Concepts?>
+    </link>
+    <link href="c_Downloading_and_Setting_Up_MboxJs.xml#concept_9429FEF054734D3AA0CE7E3F25ED0B9E" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Download and Set Up mbox.js?>
+    </link>
+    <link href="c_Creating_and_Placing_Mboxes.xml#concept_B0EC432377C244B79DB47783B3170E22" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Create and Place Mboxes?>
+    </link>
+    <link href="c_Using_a_Redirector.xml#concept_451731358AA64789AD0DA3BAAF2DF72C" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Redirector?>
+    </link>
+    <link href="t_Validating_an_Mbox.xml#task_4BB8E090CBBF4C56A39BB63BF1ADB964" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Validate an Mbox?>
+    </link>
+    <link href="t_Deactivating_an_Mbox.xml#task_536C6C87631D4BC3B3829117DE4D55FE" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Deactivate an Mbox?>
+    </link>
+    <link href="t_Clearing_Deleting_an_Mbox.xml#task_26DA102117A24CDA8A642690366488D7" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Clear (Delete) an Mbox?>
+    </link>
+    <link href="t_Mbox_Troubleshooting_Matrix.xml#task_9EEE14582E5443278B1A39CC1E00D6B4" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Mbox Troubleshooting Matrix?>
+    </link>
+    <link href="t_Mbox_Reporting.xml#task_BF6F059DE4CA4769AD5408471731E206" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Mbox Request Report?>
+    </link>
+  </related-links>
+</reference>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_5EC2EE9677A44CC5B90A38ECF28152E7">
+  <title>Implementing Redirects</title>
+  <shortdesc>In order to capture 
+	 <keyword>Analytics</keyword> data from redirects, four minor alterations
+	 need to be made to the code that creates the redirect and the 
+	 AppMeasurement for JavaScript file. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Redirects" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Completing the following steps will retain the information that the
+		original referrer (for example, 
+		<filepath>http://www.google.com/search?hl=en&amp;ie=UTF-8&amp;q=discount+airline+tickets</filepath>
+		in the scenario above) passes to your site: 
+	 </p>
+  </conbody>
+</concept>

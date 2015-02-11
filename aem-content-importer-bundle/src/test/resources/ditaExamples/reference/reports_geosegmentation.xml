@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_1B9CB209CFD94398B09C913D11648802"> 
+  <title>GeoSegmentation Reports</title> 
+  <shortdesc>Displays data about visitor location. GeoSegmentation reports
+	 include Countries, Regions, Cities, U.S. States, and U.S. DMA (digital
+	 marketing area). 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Reports"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>All metrics that are available to you elsewhere in marketing reports
+		&amp; analytics 15 are automatically included in the Countries, Regions,
+		Cities, U.S. States, and DMA reports: conversion and visit-based metrics as
+		well as calculated metrics. For more information, see this Adobe 
+		<xref
+		 href="http://blogs.adobe.com/digitalmarketing/analytics/introducing-new-metrics-in-geosegmentation-and-more/"
+		 format="http" scope="external">blog</xref> post. 
+	 </p> 
+	 <table id="table_566CFFC82E1149D8BAFE6641627FCF1F"> 
+		<tgroup cols="2"> 
+		  <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+		  <colspec colnum="2" colname="col2" colwidth="4.14*"/> 
+		  <thead> 
+			 <row> 
+				<entry colname="col1">Report 
+				</entry> 
+				<entry colname="col2">Description 
+				</entry> 
+			 </row> 
+		  </thead> 
+		  <tbody> 
+			 <row> 
+				<entry colname="col1">Countries 
+				</entry> 
+				<entry colname="col2"> 
+				  <p> The largest geographic division. In addition to the standard
+					 Ranked and Trended views available on most reports, there is also a 
+					 <xref
+					  href="map_view.xml#concept_303D17CCEF944913926D2AE0E76C2F38" format="dita"
+					  scope="local">Map view</xref> that color-codes the countries according to their
+					 relative contribution to your total traffic. 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Regions 
+				</entry> 
+				<entry colname="col2"> 
+				  <p> A geographic area that is smaller than a country but larger
+					 than a city. In some countries, a region is a state, province, or prefecture.
+					 In other areas, it is a constituent country, department, or metropolitan
+					 region. To the right of each region shown, the country of the region is also
+					 shown in parentheses. 
+				  </p> 
+				  <p>In the table detail, click Run a Cities Report for this Region
+					 (the magnifying glass) to run a report that shows how the cities in a selected
+					 region performed compared to other cities in the region. 
+				  </p> 
+				  <p>See 
+					 <xref
+					  href="reports_geosegmentation_reference.xml#concept_F7D998B418544B39ACD8838B48B732F1"
+					  format="dita" scope="local"><?xm-replace_text GeoSegmentation Regions and Postal Code usage by Country?></xref>
+					 to see which countries use regions. 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Cities 
+				</entry> 
+				<entry colname="col2"> 
+				  <p> The smallest geographic division. 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">U.S. States 
+				</entry> 
+				<entry colname="col2"> 
+				  <p> A heat map showing visitors to each state of the United
+					 States. 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">U.S. DMA 
+				</entry> 
+				<entry colname="col2"> 
+				  <p> (Digital marketing area) Media market divisions for radio and
+					 television throughout the United States. You can filter the report to show only
+					 marketing areas within a particular state. This data is provided via a
+					 partnership between Adobe and Nielsen Media Research, Inc. 
+				  </p> 
+				  <note>The Unspecified entry in the U.S. DMA report indicates
+					 visitors that could not be associated with a specific DMA. 
+				  </note> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Report Accuracy 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>Adobe has partnered with Digital Envoy, a leading provider of
+					 IP intelligence and authentication solutions, to offer GeoSegmentation, a
+					 geographical measurement capability based on end users' IP addresses. While
+					 accuracy based on individual data sets may vary, generally Digital Envoy offers
+					 over 99% accuracy at the country level, over 97% accuracy at the region level,
+					 and over 90% accuracy at the city level. 
+				  </p> 
+				  <p>Some factors which may influence GeoSegmentation data include:
+					 
+				  </p> 
+				  <ul id="ul_1B05024AD5174232A8DB8145753FB09B"> 
+					 <li id="li_C3A21E7C1186490EB9A236634DB45E7F">IP addresses that
+						represent corporate proxies. These can appear as traffic coming through the
+						user's corporate network, which may actually be a different location if the
+						user is working remotely. 
+					 </li> 
+					 <li id="li_56FC36B3598C420F9246D4E8772822A7">Mobile IP
+						addresses. Mobile IP targeting works at varying levels depending on the
+						location and the network. A number of carriers backhaul IP traffic through
+						centralized or regional POPs. 
+					 </li> 
+					 <li id="li_C1EED854AE584489BCBC2A7AA20B8EF1">IP addresses
+						belonging to users of satellite ISPs. Identifying the specific location of
+						these users is difficult, as they usually appear to come from the location of
+						the uplink. 
+					 </li> 
+					 <li id="li_A735756F39554DF19E05D251CA614F02">Military and
+						government IPs. This often represents personnel traveling around the globe and
+						entering through their home location, rather than the base or office where they
+						are currently stationed. 
+					 </li> 
+				  </ul> 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+  </conbody> 
+</concept> 

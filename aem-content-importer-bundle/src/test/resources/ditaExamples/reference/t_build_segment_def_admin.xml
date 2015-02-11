@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_8F1F012F833244EDBBB97575EDD4F514">
+  <title>Build segment definitions - ASI slots</title>
+  <shortdesc>Steps that describe how to build segment definitions in Admin &gt;
+	 ASI Slots. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Admin tools" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <context id="context_6F78D3C701CA43F3B6D373138199E1A7">
+      <note>Advanced Segment Insight (ASI) is a legacy 
+		  version 14 feature that is replaced by the
+		  native segmentation in 
+		  Version 15. ASI slots are no longer process
+		  after you 
+		  <xref href="http://marketing.adobe.com/resources/help/en_US/sc/upgrade/SiteCatalyst_15_Upgrade.pdf" format="http" scope="external">upgrade</xref> to 
+		  Version 15. 
+		</note>
+    </context>
+    <steps id="steps_80EF1AE5287A40339F635E7CB6AC2BCA">
+      <step id="step_F85EDAC93C4E4445ABE71251DF2118C8">
+        <cmd>Log in to the Suite. 
+		  </cmd>
+      </step>
+      <step id="step_95B3BEA542834CE9AAB1B1441F3FE749">
+        <cmd>In the Suite header, click 
+			 <uicontrol>Admin</uicontrol> &gt; 
+			 <uicontrol>ASI Slots</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_4C9ABB69F6A84321A1BD386B7AE7D18F">
+        <cmd>On the 
+			 <uicontrol>ASI Slots</uicontrol> page, perform one of the following
+			 tasks, depending on your needs: 
+		  </cmd>
+        <stepresult>
+          <p>
+            <uicontrol>This is the first ASI Slot:</uicontrol> The ASI Slots
+				Manager opens directly to the Create Segment page where you can create the ASI
+				slot. 
+			 </p>
+          <p>
+            <uicontrol>There is one or more existing ASI slot:</uicontrol>
+				Click 
+				<uicontrol>Set Up</uicontrol> next to the unconfigured ASI slot
+				that you want to use. 
+			 </p>
+          <p>
+            <uicontrol>To reconfigure an existing ASI slot:</uicontrol> Click 
+				<uicontrol>Add Data</uicontrol> next to the ASI Slot that you want
+				to modify. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_99580A7C39C247E6BB6140EAA31B57C9">
+        <cmd>In the 
+			 <uicontrol>Step 2: Choose a Segment Definition</uicontrol> section,
+			 open the 
+			 <uicontrol>Segment Definition Builder</uicontrol> by clicking 
+			 <uicontrol>New</uicontrol>. 
+		  </cmd>
+        <info>
+          <p>Or 
+			 </p>
+          <p>Select an existing segment definition, then click 
+				<uicontrol>Edit</uicontrol>. 
+			 </p>
+        </info>
+      </step>
+      <step id="step_8C7E0D13ED68420D9FC8C3E222C9F73D">
+        <cmd>(Conditional) If you are creating a new segment definition,
+			 specify a segment name in the 
+			 <uicontrol>Title</uicontrol> field. 
+		  </cmd>
+      </step>
+      <step id="step_04412D7C45D24AC3B0875BE7F169D2D7">
+        <cmd>Click the 
+			 <uicontrol>Components</uicontrol> or 
+			 <uicontrol>Library</uicontrol> tab, as desired. 
+		  </cmd>
+        <info>
+          <p>For more information about the Library, see 
+				<xref href="t_segment_def_library_admin.xml#task_B5F4E39964564C9FA06F8BF0C0F85C21" type="task" format="dita" scope="local"><?xm-replace_text Adding Components to the Segment Definition Library?></xref>.
+				
+			 </p>
+        </info>
+      </step>
+      <step id="step_25E911B4C24949A4BC0568F3220C4CB5">
+        <cmd>Drag an item from either the 
+			 <uicontrol>Components</uicontrol> or the 
+			 <uicontrol>Library</uicontrol> tab to the 
+			 <uicontrol>Drag and Drop Here</uicontrol> field in the 
+			 <uicontrol>Include</uicontrol> tab. 
+		  </cmd>
+        <info>
+          <p>You can also click the 
+				<uicontrol>Exclude</uicontrol> tab and drag an item from either the
+				
+				<uicontrol>Components</uicontrol> or the 
+				<uicontrol>Library</uicontrol> tab to the 
+				<uicontrol>Drag and Drop Here</uicontrol> field. 
+			 </p>
+        </info>
+      </step>
+      <step id="step_9B48F8CFF2964A64BD54A3962A1010ED">
+        <cmd>Click the 
+			 <uicontrol>Define Rule</uicontrol> icon for each element you added to
+			 the canvas (you can also click the underlined element link). 
+		  </cmd>
+      </step>
+      <step id="step_555C8B3F3400445694F3D2C9BF5E41EC">
+        <cmd>Type a name for the canvas element in the 
+			 <uicontrol>Name</uicontrol> field. 
+		  </cmd>
+      </step>
+      <step id="step_AFBE800EBBA941668ECEC8E7F9E0AFBC">
+        <cmd>Select an item from the 
+			 <uicontrol>This Visit Must Match</uicontrol> drop-down list. 
+		  </cmd>
+        <stepresult>
+          <p>You can choose to have the element match either all or at least
+				one of the rules you set. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_EE140950AA754CCA8DF541CB38F2F808">
+        <cmd>Select an item from the Item drop-down list. 
+		  </cmd>
+      </step>
+      <step id="step_B2452CC0CCEC47D994DAA7554515DEC9">
+        <cmd>Select an operator value from the middle drop-down list: 
+		  </cmd>
+        <stepresult>
+          <table id="table_E48D50926E6B492183300CA58A886927">
+            <tgroup cols="2">
+              <colspec colnum="1" colname="col1" colwidth="1.00*" />
+              <colspec colnum="2" colname="col2" colwidth="2.36*" />
+              <thead>
+                <row>
+                  <entry colname="col1">
+                    <p>Operator 
+						  </p>
+                  </entry>
+                  <entry colname="col2">
+                    <p>Description 
+						  </p>
+                  </entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry colname="col1">
+                    <p> equals 
+						  </p>
+                  </entry>
+                  <entry colname="col2">
+                    <p>The selected item must exactly equal the value you
+							 enter. 
+						  </p>
+                  </entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <p>is greater than 
+						  </p>
+                  </entry>
+                  <entry colname="col2">
+                    <p>The value of selected item must be greater than the
+							 value you enter. 
+						  </p>
+                  </entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <p>is less than 
+						  </p>
+                  </entry>
+                  <entry colname="col2">
+                    <p>The value of the selected item must be less than value
+							 you enter. 
+						  </p>
+                  </entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <p>is greater than or equal to 
+						  </p>
+                  </entry>
+                  <entry colname="col2">
+                    <p>The selected item must equal or be greater than the
+							 value you enter. 
+						  </p>
+                  </entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <p>is less than or equal to 
+						  </p>
+                  </entry>
+                  <entry colname="col2">
+                    <p>The selected item must equal or be less than the value
+							 you enter. 
+						  </p>
+                  </entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <p> contains 
+						  </p>
+                  </entry>
+                  <entry colname="col2">
+                    <p>The item must contain the value you enter. 
+						  </p>
+                  </entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <p> contains all of 
+						  </p>
+                  </entry>
+                  <entry colname="col2">
+                    <p> The selected item must contain all of the values you
+							 enter. 
+						  </p>
+                  </entry>
+                </row>
+                <row>
+                  <entry colname="col1">
+                    <p>contains at least one of 
+						  </p>
+                  </entry>
+                  <entry colname="col2">
+                    <p>The selected item must contain all of the values you
+							 enter. 
+						  </p>
+                  </entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </stepresult>
+      </step>
+      <step id="step_8279DB502A654CEFB9A8DE9DD67C207B">
+        <cmd>Enter a value for the filter parameter in the 
+			 <uicontrol>Value</uicontrol> field. 
+		  </cmd>
+        <stepresult>
+          <p>Or 
+			 </p>
+          <p>Click 
+				<uicontrol>Select Item</uicontrol> to select from a list of values.
+				
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_65B7CD30264042E2A14C1C99FF7024BB">
+        <cmd>Click 
+			 <uicontrol>Add</uicontrol> to add the filter to the Filter list. 
+		  </cmd>
+      </step>
+      <step id="step_A2A09CBEB109418A81D494E91607814C">
+        <cmd>(Optional)Repeat Steps 11 through 14 for each filter parameter you
+			 want to specify. 
+		  </cmd>
+      </step>
+      <step id="step_B7B4ECD6027A4B9B973E0B4284F5D492">
+        <cmd>Click 
+			 <uicontrol>OK</uicontrol> &gt; 
+			 <uicontrol>Save</uicontrol> to save the new segment and to close the
+			 Segment Definition Builder. 
+		  </cmd>
+      </step>
+    </steps>
+    <postreq id="postreq_2B8870910C9F4E3F952E1E57C5212AA9">
+      <p>For example, to create a segment identifying visitors who purchased
+		  $300: 
+		</p>
+      <ol id="ol_64DF7B3A6145449DA64BB53581AD08B6">
+        <li id="li_FEE61FCEA33D4D5B88FBF90718090DE4">Add "Visitor" to the
+			 canvas. 
+		  </li>
+        <li id="li_CBF05451C71F4855B1A0F01384F558A1">Click the 
+			 <uicontrol>Visitor</uicontrol> link. 
+		  </li>
+        <li id="li_FBB595CBA8D64D4BB6AD948FB8F9937B">Select "Total Revenue"
+			 from the 
+			 <uicontrol>Item</uicontrol> field. 
+		  </li>
+        <li id="li_1C50E2F3944045D8B9746D7D23991839">Select "is greater than or
+			 equal" from the 
+			 <uicontrol>Operator</uicontrol> list. 
+		  </li>
+        <li id="li_926C3D4BA8554E52B19BB796F090E63E">Enter "300" in the 
+			 <uicontrol>Value</uicontrol> field. 
+		  </li>
+        <li id="li_D21987806E4548098B5893745A9B1240">Click 
+			 <uicontrol>Add</uicontrol>. 
+		  </li>
+        <li id="li_5F73FD4AA42242DFA0689233C6F13E91">Click 
+			 <uicontrol>OK</uicontrol>. 
+		  </li>
+        <li id="li_C5A4FBC0C79C4E5C8885E8488202396D">Click 
+			 <uicontrol>Save</uicontrol>. 
+		  </li>
+      </ol>
+    </postreq>
+  </taskbody>
+</task>

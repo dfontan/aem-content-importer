@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_0D0002A1EBDF420E9C50E2A46F36629B" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic concept/concept ">
+  <title class="- topic/title ">Confidence Level and Confidence
+	 Interval</title>
+  <shortdesc class="- topic/shortdesc ">For each experience, confidence level
+	 and confidence interval are displayed. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody class="- topic/body  concept/conbody ">
+    <p class="- topic/p ">
+      <b class="+ topic/ph hi-d/b ">Confidence Level</b>
+    </p>
+    <p class="- topic/p ">The 
+		<i class="+ topic/ph hi-d/i ">confidence level</i> is represented by the
+		filled-in bars in the confidence column for each experience. To see the exact
+		confidence level percentage, hover your mouse over the confidence column for
+		the experience. In the example below, the confidence level is four bars and
+		99.90%. 
+	 </p>
+    <p class="- topic/p ">
+      <image id="image_ACF75A2CE83D4E66A3F83EBA4AA9BDE4" href="graphics/Stat_significance.jpg" placement="inline" class="- topic/image " width="600px"></image>
+    </p>
+    <p class="- topic/p ">The confidence level, or statistical significance
+		indicates how likely it is that an experience's success was not due to chance.
+		A higher confidence level indicates: 
+	 </p>
+    <p class="- topic/p ">
+      <ul id="ul_AB6CC53871F24BC0B8707508B2E5668D" class="- topic/ul ">
+        <li id="li_1FF246594E324A458F80A72B74B1847C" class="- topic/li "> The
+		  experience is performing significantly different from control. 
+		</li>
+        <li id="li_185A53508AE04ACAA1C3C81E1107710F" class="- topic/li "> The
+		  experience performance is not just due to noise. 
+		</li>
+        <li id="li_DF7FFE158B074C93A6E6D5F68DFECCF5" class="- topic/li "> If you
+		  ran this test again, it is likely that you would see same results. 
+		</li>
+      </ul>
+    </p>
+    <p class="- topic/p ">If the confidence level is over 90% or 95%, then the
+		result can be considered statistically significant. Before making any business
+		decisions, try to wait until your sample size is large enough and that the 4
+		bars of confidence on one or more experiences stays consistent for a continuous
+		length of time to ensure the results are stable. 
+	 </p>
+    <p>
+      <note>The confidence rounds up to 100.00% when the confidence is greater
+		  than or equal to 99.995%.
+		</note>
+    </p>
+    <p class="- topic/p ">The following list shows the meaning of the number of
+		confidence bars: 
+	 </p>
+    <p class="- topic/p ">
+      <ul id="ul_8F957797C60045848AE7007F8FE1F941" class="- topic/ul ">
+        <li id="li_2EB1F467E3A04588918A13741C4DB96F" class="- topic/li "> One
+		  bar: significance &lt; 60% 
+		</li>
+        <li id="li_6C63F8A684BE41EFB02AFE1FD117058F" class="- topic/li "> Two
+		  bars: significance &lt; 75% 
+		</li>
+        <li id="li_F2AB86F31B194A07A433660A36417E21" class="- topic/li "> Three
+		  bars: significance &lt; 90% 
+		</li>
+        <li id="li_BB28BA0BA65E4992941F84F329DDD858" class="- topic/li "> Four
+		  bars: significance &gt;= 90% 
+		</li>
+      </ul>
+    </p>
+    <p class="- topic/p ">
+      <b class="+ topic/ph hi-d/b ">Confidence Interval</b>
+    </p>
+    <p class="- topic/p ">The 
+		<i class="+ topic/ph hi-d/i ">confidence interval</i> is a range within
+		which the true value can be found at a given confidence level. To view the
+		confidence interval, rollover the "Lift" column of any experience. In the
+		example above, the confidence interval for Experience B's lift is -10.15 to
+		68.82%. 
+	 </p>
+    <p class="- topic/p ">
+      <image href="graphics/confidence_interval.png" width="600px" id="image_EC26B25E4D0B44969FF014952F7C865F"></image>
+    </p>
+    <p class="- topic/p ">
+      <b class="+ topic/ph hi-d/b ">Example:</b> An experience's RPV is $10,
+		its confidence level is 95% and its 
+		<b class="+ topic/ph hi-d/b ">confidence interval</b> is $5 to $15. If we
+		ran this test multiple times, 95% of the time the RPV would be between $5 and
+		$15. 
+	 </p>
+    <p class="- topic/p ">
+      <b class="+ topic/ph hi-d/b ">What impacts the confidence interval?</b>
+		The formula follows standard statistical methods for calculating confidence
+		intervals. 
+	 </p>
+    <p class="- topic/p ">
+      <ul id="ul_69B87B6A9F6F47F183C4FB9108BC4960" class="- topic/ul ">
+        <li id="li_AE516384DE9B4F74BF577B4E1EC9D987" class="- topic/li ">
+          <b class="+ topic/ph hi-d/b ">Sample size:</b> As sample grows the
+		  interval will shrink or narrow. This is preferred as it means your reports are
+		  getting closer to the true value of the success metric. 
+		</li>
+        <li id="li_F6AAC94BE4B94D70BE50F74390522BA6" class="- topic/li ">
+          <b class="+ topic/ph hi-d/b ">Standard deviation smaller:</b> More
+		  similar results, such as similar AOVs or similar numbers or visitors converting
+		  each day, reduces the standard deviation. 
+		</li>
+      </ul>
+    </p>
+    <p class="- topic/p ">
+      <b class="+ topic/ph hi-d/b ">Additional Information</b>
+    </p>
+    <p class="- topic/p ">
+      <ul id="ul_57E9D98213354E759295B3C146F15390" class="- topic/ul ">
+        <li id="li_BC967FA535664845B08A786DBAD3F203" class="- topic/li ">
+          <xref href="http://marketing.adobe.com/resources/help/en_US/tnt/pdf/Test&amp;Target_reporting_calculations.pdf" scope="external" format="html" class="- topic/xref ">Reporting
+			 Calculations</xref>
+          <p class="- topic/p ">This PDF file shows the calculations used to
+			 calculate confidence. 
+		  </p>
+        </li>
+        <li id="li_858F0135678647289CB8A3CED1089C89" class="- topic/li ">
+          <xref href="http://marketing.adobe.com/resources/help/en_US/tnt/csv/Complete_Confidence_Calculator_w_AOV.xlsx" scope="external" format="html" class="- topic/xref ">Complete Confidence
+			 Calculator</xref>
+          <p class="- topic/p ">This spreadsheet allows you to paste the CSV
+			 download data and outputs confidence and lift data. 
+		  </p>
+        </li>
+      </ul>
+    </p>
+  </conbody>
+  <related-links class="- topic/related-links ">
+    <link href="c_Counting_Methodology.xml#concept_EC19BC897D66411BABAF2FA27BCE89AA" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Counting Methodology?>
+    </link>
+    <link href="c_Conversion_Success_Metric.xml#concept_307747A83CC64E80954B3DC66C6BB3C4" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Conversion Success Metric?>
+    </link>
+  </related-links>
+</concept>

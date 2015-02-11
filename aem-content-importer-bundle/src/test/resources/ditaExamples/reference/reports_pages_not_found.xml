@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_46A8DB85A4DE428A944C5711B2AE625B">
+  <title>Pages Not Found Report</title>
+  <shortdesc>Helps you identify pages that contain broken links and to measure
+	 traffic to pages that do not exist. These pages are commonly referred to as 404
+	 Pages. You can use this report to see where visitors are accessing these broken
+	 pages, as well as how often.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>
+      <b>Properties</b>
+    </p>
+    <ul id="ul_D491B48AF28143BE8D85A3D9E4E8C772">
+      <li id="li_C4AD72DD556445D8B2323991F11A8AD3">This report references data
+		  directly from the 
+		  <xref href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_pagetype" format="http" scope="external">pageType</xref> variable implemented on your
+		  website.
+		</li>
+      <li id="li_81E7AA2898D54132BA2869EC801D7AB1">This report can be viewed in
+		  both trended and ranked formats.
+		</li>
+      <li id="li_738418C7639C45A288707A3EF6BF453A">Clicking the magnifying
+		  glass icon shows you the top referrers to that specific page.
+		</li>
+    </ul>
+  </conbody>
+</concept>

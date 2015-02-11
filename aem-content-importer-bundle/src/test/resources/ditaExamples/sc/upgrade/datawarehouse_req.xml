@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_7E92B9E3CB094DEE8A9962EFCB2E5ADC"> 
+  <title>DataWarehouse Requests</title> 
+  <shortdesc>After you upgrade to 
+	 <keyword>SiteCatalyst</keyword> 15, 
+	 <keyword>VISTA</keyword> and processing rules are applied at data
+	 collection time, rather than at report run-time. 
+  </shortdesc> 
+  <conbody> 
+	 <p><keyword>DataWarehouse</keyword> data reflects native 
+		<keyword>SiteCatalyst</keyword> 
+		<keyword>VISTA</keyword> processing, and reports with 
+		<keyword>VISTA</keyword> rules applied run considerably faster. This
+		improvement can be enabled for 
+		<keyword>SiteCatalyst</keyword>14 as well. 
+	 </p> 
+  </conbody>
+</concept>

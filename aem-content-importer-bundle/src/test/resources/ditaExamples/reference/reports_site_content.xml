@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE dita PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd"[]>
+<dita>
+  <topic id="topic_FD13C8F186514D16A52275BC68084F41">
+    <title>Site Content Reports</title>
+    <shortdesc>Displays information about which pages and areas of your site
+		are most active and which servers are getting the most use. 
+	 </shortdesc>
+    <prolog>
+      <metadata>
+        <othermeta name="solution" content="Analytics" />
+        <othermeta name="topic" content="Reports" />
+      </metadata>
+    </prolog>
+    <body>
+      <p>
+        <b>Site Content Reports</b>
+      </p>
+      <ul id="ul_FCAB610501574EEF83838591FF603322">
+        <li id="li_F6A53F81D71345E18A4C92C071C4A9E9">
+          <xref href="reports_pages.xml#concept_0219136EA25745B58434D0C7E751D7D5" format="dita" scope="local">
+            <?xm-replace_text Pages Report?>
+          </xref>
+        </li>
+        <li id="li_4759C00D4D43460AA143C3CC5431DD28">
+          <xref href="reports_site_sections.xml#concept_39E550D7A9E34C9580E81F5F9E12BDDD" format="dita" scope="local">
+            <?xm-replace_text Site Sections Report?>
+          </xref>
+        </li>
+        <li id="li_F3E8316DC07D4753BE8E365647FB7696">
+          <xref href="reports_hierarchy.xml#concept_845DFC7699C54E4A81C89D7F5396136B" format="dita" scope="local">
+            <?xm-replace_text Hierarchy Report?>
+          </xref>
+        </li>
+        <li id="li_3BF54EFD562040B5996A6C7E449CFA91">
+          <xref href="reports_servers.xml#concept_A5CABE5BB44E4919BE27E7C4EAD8F6CE" format="dita" scope="local">
+            <?xm-replace_text Servers Report?>
+          </xref>
+        </li>
+        <li id="li_AE781855E742419686431EA7CF560203">
+          <xref href="reports_links.xml#concept_E6D8D3C5A834415C972CF4002D849281" format="dita" scope="local">
+            <?xm-replace_text Links Report?>
+          </xref>
+        </li>
+        <li id="li_554F389ECF5147A9B13B78E77096A0B8">
+          <xref href="reports_pages_not_found.xml#concept_46A8DB85A4DE428A944C5711B2AE625B" format="dita" scope="local">
+            <?xm-replace_text Pages Not Found Report?>
+          </xref>
+        </li>
+      </ul>
+    </body>
+  </topic>
+</dita>

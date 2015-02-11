@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_C63A7813F3384D699666330570CD84C6">
+  <title>Using s.linkTrackVars and s.linkTrackEvents</title>
+  <shortdesc>The key to a successful link tracking implementation is
+	 understanding the 
+	 <wintitle>s.linkTrackVars</wintitle> and 
+	 <wintitle>s.linkTrackEvents</wintitle> variables. This lets you pass custom
+	 variable values on user actions.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p> If you are implementing custom link tracking and are setting 
+		<wintitle>custom</wintitle> variables and 
+		<varname>events</varname>, make sure that your 
+		<wintitle>s.linkTrackVars</wintitle> variable contains a comma-separated
+		list of all variables that you are passing, including the 
+		<varname>events</varname> variable. Make sure that 
+		<wintitle>s.linkTrackEvents</wintitle> includes a comma-separated list of
+		all events that you are passing. 
+	 </p>
+    <p>Setting 
+		<wintitle>s.linkTrackVars</wintitle> and 
+		<wintitle>s.linkTrackEvents</wintitle> does not actually set these
+		variables/events, it only prepares the 
+		<keyword>Analytics</keyword> code to do so. You still need to set the
+		variables manually, as shown in the example below: 
+	 </p>
+    <codeblock outputclass="syntax javascript">&lt;script language="javascript"&gt;
+function customLinks () {
+	var s=s_gi('myreportsuite');
+	s.linkTrackVars="prop1,eVar7,products,events";
+	s.linkTrackEvents="event5,event9";
+	s.prop1="Link Click";
+	s.eVar7="my_page.html";
+	s.events="event5";
+	s.tl(true,'o','Custom Link Click');
+}
+&lt;/script&gt;
+&lt;a href="my_page.html" onclick="customLinks();"&gt;My Page&lt;/a&gt;
+</codeblock>
+    <p>Notice that events is listed in the 
+		<wintitle>s.linkTrackVars</wintitle> variable. The individual events that
+		may be passed are included in the 
+		<wintitle>s.linkTrackEvents</wintitle> variable and are also included
+		within 
+		<wintitle>s.events</wintitle> later in the function. Each of the
+		variables that are passed are listed in 
+		<wintitle>s.linkTrackVars</wintitle> before they are populated later in
+		the function. Also, "event9″ has been included in 
+		<wintitle>s.linkTrackEvents</wintitle>, but has not been included in 
+		<wintitle>s.events</wintitle>. It is not recorded, but could be recorded
+		if the user had chosen to set s.events="event5,event9." 
+	 </p>
+    <p>Automatic file download and 
+		<wintitle>Exit</wintitle> link tracking work differently. The 
+		<wintitle>s.linkTrackVars</wintitle> and 
+		<wintitle>s.linkTrackEvents</wintitle> are included in the standard 
+		<filepath>s_code.js</filepath> file, and both are set to none. These
+		variables are typically left set to none in the 
+		<filepath>s_code.js</filepath> file so that automatic link tracking,
+		unlike 
+		<wintitle>custom link tracking</wintitle>, uses the 
+		<wintitle>s.linkTrackVars</wintitle> and 
+		<wintitle>s.linkTrackEvents</wintitle> values that you set in the global
+		JavaScript file. They also pass whatever the existing values of those variables
+		are whenever a file download or 
+		<wintitle>Exit</wintitle> link is recorded. 
+	 </p>
+    <p>Consider the example where s.channel="Home" when the page loads, and
+		where s.linkTrackVars="channel" in your 
+		<filepath>s_code.js</filepath> file. If a user clicks to download a file,
+		automatic file download tracking passes data into 
+		<keyword>Analytics</keyword>, including the value of 
+		<wintitle>s.channel</wintitle> that was set on page load. "Home" is
+		passed a second time, leading to inflation in page view data for this value in
+		the 
+		<wintitle>Site Sections</wintitle> report. 
+	 </p>
+    <p>Adobe strongly recommends leaving the 
+		<wintitle>s.linkTrackVars</wintitle> and 
+		<wintitle>s.linkTrackEvents</wintitle> set to "none" in the global
+		JavaScript file and setting them explicitly as necessary with your 
+		<wintitle>custom link tracking</wintitle> implementation. 
+	 </p>
+  </conbody>
+</concept>

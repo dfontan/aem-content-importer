@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_07F5085D45534F8AAF85FC95473E5185">
+  <title>How Analytics Tracks Unique Visitors by Content Group</title>
+  <shortdesc>While Analytics tracks unique visitors for a report suite by
+	 hour, day, week, month, quarter, and year, Content Group must be enabled as a
+	 metric for each separate variable.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Metrics" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p> Contact Customer Care to enable the desired metric. Use the following
+		table as a guideline to determine which variables are available for the various
+		time frames.
+	 </p>
+    <table id="table_1FCB01F79E89437DA79373815EE91396">
+      <tgroup cols="6">
+        <colspec colnum="1" colname="col1" colwidth="*" />
+        <colspec colnum="2" colname="col2" colwidth="*" />
+        <colspec colnum="3" colname="col3" colwidth="*" />
+        <colspec colnum="4" colname="col4" colwidth="*" />
+        <colspec colnum="5" colname="col5" colwidth="*" />
+        <colspec colnum="6" colname="col6" colwidth="*" />
+        <tbody>
+          <row>
+            <entry colname="col1">
+              <p>Variable
+				  </p>
+            </entry>
+            <entry colname="col2">
+              <p>Visits
+				  </p>
+            </entry>
+            <entry colname="col3">
+              <p>Daily Uniques
+				  </p>
+            </entry>
+            <entry colname="col4">
+              <p>Weekly Uniques
+				  </p>
+            </entry>
+            <entry colname="col5">
+              <p>Monthly Uniques
+				  </p>
+            </entry>
+            <entry colname="col6">
+              <p>Quarterly Uniques
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <p>Page
+				  </p>
+            </entry>
+            <entry colname="col2">
+              <p>Included
+				  </p>
+            </entry>
+            <entry colname="col3">
+              <p>Y
+				  </p>
+            </entry>
+            <entry colname="col4">
+              <p>Y
+				  </p>
+            </entry>
+            <entry colname="col5">
+              <p>Y
+				  </p>
+            </entry>
+            <entry colname="col6">
+              <p>Y
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <p>Site Section
+				  </p>
+            </entry>
+            <entry colname="col2">
+              <p>Y
+				  </p>
+            </entry>
+            <entry colname="col3">
+              <p>Y
+				  </p>
+            </entry>
+            <entry colname="col4">
+              <p>Y
+				  </p>
+            </entry>
+            <entry colname="col5">
+              <p>Y
+				  </p>
+            </entry>
+            <entry colname="col6">
+              <p>Y
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <p>Server
+				  </p>
+            </entry>
+            <entry colname="col2">
+              <p>Y
+				  </p>
+            </entry>
+            <entry colname="col3">
+              <p>Y
+				  </p>
+            </entry>
+            <entry colname="col4">
+              <p>Y
+				  </p>
+            </entry>
+            <entry colname="col5">
+              <p>Y
+				  </p>
+            </entry>
+            <entry colname="col6">
+              <p>Y
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <p>Custom Insight 1 - 50 (Traffic)
+				  </p>
+            </entry>
+            <entry colname="col2">
+              <p>Y
+				  </p>
+            </entry>
+            <entry colname="col3">
+              <p>Y
+				  </p>
+            </entry>
+            <entry colname="col4">
+              <p>Y
+				  </p>
+            </entry>
+            <entry colname="col5">
+              <p>Y
+				  </p>
+            </entry>
+            <entry colname="col6">
+              <p>Y
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <p>Custom Links
+				  </p>
+            </entry>
+            <entry colname="col2">
+              <p>Y
+				  </p>
+            </entry>
+            <entry colname="col3">
+              <p>Y
+				  </p>
+            </entry>
+            <entry colname="col4">
+              <p>Y
+				  </p>
+            </entry>
+            <entry colname="col5">
+              <p>Y
+				  </p>
+            </entry>
+            <entry colname="col6">
+              <p>Y
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <p>Exit Links
+				  </p>
+            </entry>
+            <entry colname="col2">
+              <p>Y
+				  </p>
+            </entry>
+            <entry colname="col3">
+              <p>Y
+				  </p>
+            </entry>
+            <entry colname="col4">
+              <p>Y
+				  </p>
+            </entry>
+            <entry colname="col5">
+              <p>Y
+				  </p>
+            </entry>
+            <entry colname="col6">
+              <p>Y
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <p>File Downloads
+				  </p>
+            </entry>
+            <entry colname="col2">
+              <p>Y
+				  </p>
+            </entry>
+            <entry colname="col3">
+              <p>Y
+				  </p>
+            </entry>
+            <entry colname="col4">
+              <p>Y
+				  </p>
+            </entry>
+            <entry colname="col5">
+              <p>Y
+				  </p>
+            </entry>
+            <entry colname="col6">
+              <p>Y
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <p>Hierarchy
+				  </p>
+            </entry>
+            <entry colname="col2">
+              <p>Included
+				  </p>
+            </entry>
+            <entry colname="col3">
+              <p>Included
+				  </p>
+            </entry>
+            <entry colname="col4">
+              <p>Y
+				  </p>
+            </entry>
+            <entry colname="col5">
+              <p>Y
+				  </p>
+            </entry>
+            <entry colname="col6">
+              <p>Y
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <p>Conversion Reports (all)
+				  </p>
+            </entry>
+            <entry colname="col2">
+              <p>Y
+				  </p>
+            </entry>
+            <entry colname="col3">
+              <p>Y
+				  </p>
+            </entry>
+            <entry colname="col4">
+              <p>-
+				  </p>
+            </entry>
+            <entry colname="col5">
+              <p>-
+				  </p>
+            </entry>
+            <entry colname="col6">
+              <p>-
+				  </p>
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </conbody>
+</concept>

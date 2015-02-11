@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_1D0EA3DBDEF4412BB7A7D769EA3717C2"> 
+  <title>Processing Rules</title> 
+  <shortdesc>Processing rules simplify data collection and manage content as it
+	 is sent to reporting. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Admin tools"/> 
+		<othermeta name="subtopic" content="Processing rules"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p> Processing rules help simplify interaction with IT groups and Web
+		developers by providing an interface to: 
+	 </p> 
+	 <ul id="ul_EEC36230DEC04473B3FEDFBCD5349F6B"> 
+		<li id="li_F99064765C194C20AE02985EDE233F28"> Set an event on the product
+		  overview page 
+		</li> 
+		<li id="li_2AA65AFE36FB470C96DA2BD27956AB79"> Populate campaign with a
+		  query string parameter 
+		</li> 
+		<li id="li_77BCC9D033284EF89C6AE1C1C252AC34"> Concatenate category and
+		  page name in a prop for easier reporting 
+		</li> 
+		<li id="li_8EB1BE1B5C624CCEABE8374C00E08D8A"> Copy an eVar into a prop to
+		  see paths 
+		</li> 
+		<li id="li_572DA5F581E9404081A499A493E40FA9"> Clean up misspelled site
+		  sections 
+		</li> 
+		<li id="li_23A3F4CA471F4D77A6E7922CAC741148"> 
+		  <p otherprops="page" outputclass="body_indent1">Pull internal search
+			 terms or a campaign ID from the query string into an eVar 
+		  </p> 
+		</li> 
+	 </ul> 
+	 <section id="section_910724CF55C24C49B1268958E7DC2CBA">
+		<title>Processing Rules Overview</title>
+		<simpletable id="simpletable_6AE5EF1AF5174150B3E55F8B4C4E166E">
+		  <strow><stentry><xref href="http://tv.adobe.com/embed/1181/16506/"
+				format="http" scope="external"><image href="graphics/proc-rules-training.png"
+				  id="image_59F345A70A944CB1A1BE51C973B08648"></image></xref></stentry><stentry><xref
+				href="http://tv.adobe.com/embed/1181/16506/" format="http"
+				scope="external">Watch</xref> the Processing Rules overview and training from
+				Adobe Summit to learn why you should be using processing rules.</stentry>
+		  </strow>
+		</simpletable>
+	 </section>
+	 <section id="section_8A4846688050453784DAE4D89355169A">
+		<title>Get Authorized to Use Processing Rules</title>
+		<p>All users (including administrators) must be granted authorization to
+		  use processing rules by Adobe. The authorization process is described in 
+		  <xref
+			href="http://marketing.adobe.com/resources/kb/en_US/analytics/kb/processing-rules-authorization.html"
+			format="http" scope="external">Become authorized to use Processing
+			 Rules</xref>.
+		</p>
+		<p>We recommend that a limited group of administrators (usually 2-3) have
+		  access to processing rules, so that all requested changes are centrally
+		  managed. It’s best to have more than one processing rules user so there is a
+		  backup user in case urgent changes need to be made while one administrator is
+		  unavailable. Because processing rules permanently affect Analytics data, we
+		  strongly recommend that processing rules users be well trained in Adobe
+		  Analytics, and be familiar with all sources of data for your report suites
+		  (standard web sites, mobile sites, mobile apps, Data Insertion API, and so on).
+		  Knowledge of the context data variables and standard variables populated in
+		  various platforms will help prevent accidental deletion or alteration of data.
+		</p> 
+	 </section>
+	 <section id="section_09EEA03612D24C15839631AA9E9668D8"> 
+		<title>Use Context Data to Simplify Data Collection</title> 
+		<p>Context data variables are a new type of variable that are available
+		  only to processing rules. To use context data variables, key/value data pairs
+		  are sent in by your implementation, and processing rules are used to capture
+		  these values in standard Analytics variables. This frees programmers from
+		  understanding exactly which prop and/or eVar should contain which value. 
+		</p> 
+		<p> 
+		  <image align="center" id="image_AEDAD411E4FE4C3383A62EC5E731370C"
+			href="graphics/evar-context-map.png"></image> 
+		</p> 
+		<p>See 
+		  <xref
+			href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_context_data_variables"
+			format="http" scope="external">Context Data Variables</xref> in Implementation
+		  Help. 
+		</p> 
+	 </section> 
+	 <section id="section_8284E72E999244E091CD7FB1A22342B6"> 
+		<title>Use Processing Rules to Transform Hit Data and Trigger
+		  Events</title> 
+		<p>Processing rules can monitor incoming values to transform common typos
+		  and set events based on reported data. Props can be copied to eVars. Values can
+		  be concatenated for reports, and events can be set. 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept>

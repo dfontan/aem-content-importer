@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_85E01D9DD0B64BD3A138C2D3DB83BD57"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"
+ ditaarch:DITAArchVersion="1.1"
+ domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)"
+ class="- topic/topic concept/concept "> 
+  <title class="- topic/title ">About Mboxes</title> 
+  <shortdesc class="- topic/shortdesc ">In Target Classic, an mbox is an area
+	 on your Web page where content is displayed or user actions are tracked. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Target"/> 
+		<othermeta name="topic" content="Advanced"/> </metadata>
+  </prolog> 
+  <conbody class="- topic/body  concept/conbody "> 
+	 <p class="- topic/p ">An mbox is a "marketing box," a location on your Web
+		page that can be configured to show different content in different situations.
+		An mbox can also log the behavior of visitors to your site. Mboxes are defined
+		in the code for each Web page. 
+	 </p> 
+	 <p class="- topic/p ">Mboxes are essential to campaigns and tests. You
+		decide whether any mbox can do one, both, or none of the following: 
+	 </p> 
+	 <p class="- topic/p "> 
+	 <ul id="ul_3A0231020998417D842AAFCDD21E9538" class="- topic/ul "> 
+		<li id="li_5F48E2FC5F3D4A8EA4D147A8264015E3" class="- topic/li "> Display
+		  and swap content for visitors. 
+		</li> 
+		<li id="li_B06FCEF8E3434AF482406B164008215F" class="- topic/li "> Log
+		  visitor behavior in real-time. 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p class="- topic/p "> 
+		<b class="+ topic/ph hi-d/b "> Tip:</b> Prepare ahead for tests by
+		placing mboxes around all of your Web site's key elements and tracking
+		locations. 
+	 </p> 
+	 <p class="- topic/p ">For example, examine the following Web page: 
+	 </p> 
+	 <p class="- topic/p "> 
+		<image id="image_D9C021E547BD4BCC94360AD5EBD19DCD"
+		href="graphics/mboxexample.png" placement="inline"
+		class="- topic/image "></image> 
+	 </p> 
+	 <p class="- topic/p ">In this example, an mbox has been highlighted at the
+		top of the page. This mbox is set up to display a message customized by, or 
+		<i class="+ topic/ph hi-d/i ">targeted to</i>, the location of the
+		visitor. In this case, the visitor is from Utah, so the message displays
+		information about the shipping time to locations in Utah. If the visitor were
+		from California, the mbox might display the same offer customized to say "to
+		California" or it might show an entirely different offer for visitors from
+		California. 
+	 </p> 
+	 <p class="- topic/p ">This page contains several areas that could be
+		controlled with mboxes. For example, the area offering a tour to first time
+		visitors might not display if the visitor has been here before, or it might
+		only be hidden if the visitor has not only been here before but has also taken
+		the tour. 
+	 </p> 
+	 <p class="- topic/p ">If the visitor has been to the site before and has
+		purchased children's clothing, the main image on the page might show a child
+		instead of a woman, and the visitor might be invited to shop the selection of
+		children's apparel rather than women's apparel. Likewise, the rest of the page
+		might be changed to display other information that is useful for somebody who
+		buys children's clothing. 
+	 </p> 
+	 <p class="- topic/p ">Some mboxes do not display anything. They might track
+		a visitor's progress through your Web site, or might track whether the visitor
+		completes a specific success metric, such as adding an item to the shopping
+		cart or completing a purchase. One such type of mbox is a<i
+		class="+ topic/ph hi-d/i "> conversion mbox.</i>
+	 </p> 
+	 <p class="- topic/p ">An mbox is the area where an 
+		<i class="+ topic/ph hi-d/i "><xref
+		  href="c_Offers.xml#concept_40CA4EEBF72C430395ADB96C3A3D7DF4" type="concept"
+		  format="dita" scope="local" class="- topic/xref ">offer</xref></i> is
+		displayed. An offer is the actual content that is displayed in the mbox. When a
+		particular offer displays is controlled by an 
+		<i class="+ topic/ph hi-d/i "><xref
+		  href="c_Experiences.xml#concept_B91F0F36E9F24AA58A3C6BC0A02871E8"
+		  type="concept" format="dita" scope="local"
+		  class="- topic/xref ">experience</xref></i>. 
+	 </p> 
+	 <p>Mboxes are used differently in Target Standard than in Target Classic.
+		In Target Standard, an mbox is usually set up for the entire page, to track any
+		user actions or to target offers to specific visitors. See the 
+		<xref
+		 href="http://marketing.adobe.com/resources/help/en_US/target/gs/#Simplified_Implementation"
+		 format="http" scope="external">Target Standard Transition Guide</xref> for
+		information about the differences in mbox implementation between Target
+		Standard and Target Classic. 
+	 </p> 
+  </conbody> 
+  <related-links class="- topic/related-links "> 
+	 <link href="c_Managing_Mboxes.xml#concept_37B4E053E1244DD6B9D3CD8C4945B62D"
+	  type="concept" format="dita" scope="local" class="- topic/link "> <?xm-replace_text Managing Mboxes?>
+	 </link> 
+	 <link href="c_Offers.xml#concept_40CA4EEBF72C430395ADB96C3A3D7DF4"
+	  type="concept" format="dita" scope="local" class="- topic/link "> <?xm-replace_text About Offers?>
+	 </link> 
+	 <link href="c_Experiences.xml#concept_B91F0F36E9F24AA58A3C6BC0A02871E8"
+	  type="concept" format="dita" scope="local" class="- topic/link "> <?xm-replace_text About Experiences?>
+	 </link> 
+	 <link href="c_Campaigns.xml#concept_38D25CB81E8E4926A0ABC34042766DC3"
+	  format="dita" scope="local"> <?xm-replace_text About Tests?>
+	 </link> 
+  </related-links> 
+</concept>

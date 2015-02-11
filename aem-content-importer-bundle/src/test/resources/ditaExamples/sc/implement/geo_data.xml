@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_633DBA007E56453E8FC9C39ECEA975EF"> 
+  <title>Geo-Segmentation Data</title> 
+  <shortdesc> Geo-Segmentation data is recorded based on the first hit of the
+	 visit, and does not change for a single visit regardless of the device used. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Developer and implementation"/>
+		</metadata>
+  </prolog> 
+  <conbody> 
+	 <p> If a customer browses your site from his or her home computer, and then
+		from a mobile device within 30 minutes, the Geo-Segmentation data is not
+		changed. If you are using VISTA to populate an eVar with Geo-Segmentation data,
+		it is based on the IP address in each hit. This could result in multiple
+		Geo-Segmentation data values if the IP address changes for the same visit. 
+	 </p> 
+  </conbody> 
+</concept>

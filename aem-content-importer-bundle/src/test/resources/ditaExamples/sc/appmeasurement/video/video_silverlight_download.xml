@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_162506253C1349A58E6EF20C3F0AD010">
+  <title>Download the Media Module for Silverlight</title>
+  <shortdesc>The 
+	 <keyword>media module</keyword> is part of the standard AppMeasurement
+	 Libraries for Windows Phone, Silverlight, and .NET. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>media</keyword>
+        <keyword>milestone</keyword>
+        <keyword>sdk</keyword>
+        <keyword>video</keyword>
+      </keywords>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <context id="context_ECD264C5EEE9473B8E674ED6972CD62C">
+      <p> To add the 
+		  <keyword>media module</keyword> for Silverlight you download the
+		  component libraries and include them in your project. 
+		</p>
+    </context>
+    <steps id="steps_09E7F69DE81D4AA9A92176AD942FD942">
+      <step id="step_9760EAA29A674DB4A3551CD8D702A184">
+        <cmd>In the Adobe Marketing Cloud, click 
+			 <uicontrol>Admin</uicontrol> &gt; 
+			 <uicontrol>Admin Console</uicontrol> &gt; 
+			 <uicontrol>Code Manager</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_97B3B704C5A04A4388FFD4E2DB5A29D0">
+        <cmd>Select 
+			 <uicontrol>Windows Phone, Silverlight, and .NET</uicontrol>, provide
+			 the requested information, and then click 
+			 <uicontrol>Generate Code</uicontrol>. 
+		  </cmd>
+        <stepresult>
+          <?xm-replace_text Step Result?>
+        </stepresult>
+      </step>
+      <step id="step_C8AF2635BBD44FDFA3EABDD59719D553">
+        <cmd>From the 
+			 <uicontrol>C# Example</uicontrol> Tab, copy the sample to a text file
+			 and save it. This code can be copied to your Silverlight Project later. 
+		  </cmd>
+        <stepresult>
+          <?xm-replace_text Step Result?>
+        </stepresult>
+      </step>
+      <step id="step_232F7BDA0AD4422CA6D4E388D26AFCC8">
+        <cmd>From the 
+			 <uicontrol>Component Files</uicontrol> Tab, download 
+			 <filepath>AppMeasurement_Silverlight.dll</filepath> and 
+			 <filepath>AppMeasurement_Silverlight_Debug.dll</filepath>. 
+		  </cmd>
+        <stepresult></stepresult>
+      </step>
+    </steps>
+  </taskbody>
+</task>

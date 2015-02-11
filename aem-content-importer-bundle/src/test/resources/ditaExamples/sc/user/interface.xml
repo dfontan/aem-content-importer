@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_B0FEFF0F9607424883A0B11EFF9FD83E"> 
+  <title>Reports &amp; Analytics Interface Features</title> 
+  <shortdesc>Learn about the features of the marketing reports &amp; analytics
+	 interface. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Reports and analytics"/> 
+		<othermeta name="subtopic" content="Get started"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The marketing reports &amp; analytics interface provides quick access to
+		the reports, metrics, and segments that you use most. 
+	 </p> 
+	 <p> 
+		<image placement="break" align="center" href="graphics/ra_ui.png"
+		 width="672px" id="image_F2E1A01069BD44938F633974F30ED58A"></image> 
+	 </p> 
+	 <p> 
+		<b>1</b>: Click the toggle icon to access solutions from the 
+		<uicontrol>Adobe Analytics</uicontrol> and 
+		<uicontrol>Marketing Cloud</uicontrol> menus. When you log out, the
+		system remembers the product you last used. 
+	 </p> 
+	 <p> 
+		<b>2</b>: Set your landing page as a dashboard or the dynamically
+		generated 
+		<wintitle>Site Overview</wintitle> report. You can also configure the 
+		<wintitle>Site Overview</wintitle> as a dashboard, or set any report as a
+		landing page. 
+	 </p> 
+	 <p><b>3</b>: The 
+		<xref
+		 href="reports_descriptions.xml#concept_1D5D594266E244348334DE4E76CBB8B2"
+		 format="dita" scope="local">Reports menu</xref> lets you access favorite,
+		frequently viewed, and recently viewed reports, as well as all available
+		reports (View All Reports).
+	 </p>
+	 <p> 
+		<b>4</b>: Apply segments to a report or 
+		<xref href="dashboard.xml#concept_8CD3ACA2830A4994A68A31D8773B57E0"
+		 format="dita" scope="local">dashboard</xref> reportlet. Available segments
+		include those created by you, or by people in your company, or by Adobe
+		(templates). You can also publish designated segments to 
+		<keyword>Adobe Target</keyword>™ campaigns. 
+	 </p> 
+	 <p>For more information, see the 
+		<xref
+		 href="http://marketing.adobe.com/resources/help/en_US/analytics/segment/"
+		 format="http" scope="external">Segmentation Guide</xref>. 
+	 </p> 
+	 <p> 
+		<b>5</b>: Turn full reports into thumbnail reportlets and add them to
+		dashboards. You can apply report suite and date settings to individual
+		reportlets or to all reportlets in a dashboard. You can also send report cards
+		(thumbnails) to the 
+		<wintitle>Marketing Cloud Feed</wintitle>, for sharing and collaboration
+		with other users. 
+	 </p> 
+	 <p><b>6</b>: Click 
+		<uicontrol>Help</uicontrol> in the 
+		<wintitle>Marketing Cloud Feed</wintitle> for more information. 
+	 </p> 
+  </conbody> 
+</concept> 

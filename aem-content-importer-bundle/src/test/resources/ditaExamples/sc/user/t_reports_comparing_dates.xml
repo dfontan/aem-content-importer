@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_95155C3700774B709F5FB81AE96B0824"> 
+  <title>Compare dates</title> 
+  <shortdesc>Steps that describe how you can use the calendar to run date
+	 comparisons between ranked reports. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Reports and analytics"/> </metadata>
+  </prolog> 
+  <taskbody> 
+	 <context id="context_08762E40C34747E3B717490866FD3DC6"> 
+		<p>You cannot compare dates between trended reports. 
+		</p>
+		<note>If you want to perform a date comparison on key metrics in a
+		  dashboard, you can pull the data into 
+		  <xref href="http://marketing.adobe.com/resources/help/en_US/arb/"
+			format="http" scope="external">Report Builder</xref> using two separate
+		  requests. You then use custom formulas in Excel to analyze the difference
+		  between the two.
+		</note> 
+		<p>To compare dates between ranked reports in marketing reports &amp;
+		  analytics:
+		</p>
+	 </context> 
+	 <steps id="steps_F0B4AD26BA2A464C9009D1C42FA58E10"> 
+		<step id="step_A642220C31AB4530A23546E2C961600F"> 
+		  <cmd>Run a report. 
+		  </cmd> 
+		</step> 
+		<step id="step_226B634B2E51476D9A8FA810C0C7C442"> 
+		  <cmd>Click the calendar. 
+		  </cmd> 
+		</step> 
+		<step id="step_D800BE11F1AD49C3895988D670C351C9"> 
+		  <cmd>Click 
+			 <uicontrol>Compare Dates</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_40ED2A46D3114B02ADD7D92334383677"> 
+		  <cmd>Select the dates you want to use. 
+		  </cmd> 
+		</step> 
+		<step id="step_4893EACFFD6040688904685E7BCB5906"> 
+		  <cmd>Click 
+			 <uicontrol>Run Report</uicontrol>. 
+		  </cmd> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_C17677C543454FF2B06D10EA5652DFBC"> 
+  <title>Manage scheduled reports</title> 
+  <shortdesc>Information about managing scheduled reports. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Reports and analytics"/> 
+		<othermeta name="subtopic" content="Schedule"/> </metadata>
+  </prolog> 
+  <taskbody> 
+	 <context id="context_56A733E85D414002938CCC667ECED62C"> 
+		<p>In the 
+		  <wintitle>Schedule Reports Manager</wintitle>, you can edit and delete
+		  recurring report deliveries. You can create delivery schedules that send your
+		  reports via email or FTP to a specified address. You can configure these
+		  schedules to automatically send the reports at specified intervals for a
+		  duration of time or indefinitely, or stop the delivery of a recurring report. 
+		</p> 
+		<p>The 
+		  <wintitle>Schedule Report Manager</wintitle> shows the items that a
+		  specific user has created. If the user account is disabled in the application,
+		  all scheduled deliveries stop. 
+		</p> 
+	 </context> 
+	 <steps id="steps_E579A290747344CA853323AABCF6BB74"> 
+		<step id="step_881C29B00F6944388D40B58AC4A9CE00"> 
+		  <cmd>To access the manager, click 
+			 <uicontrol>Analytics</uicontrol> &gt; 
+			 <uicontrol>Components</uicontrol> &gt; 
+			 <uicontrol>Scheduled Reports</uicontrol>. 
+		  </cmd> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task>

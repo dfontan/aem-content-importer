@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_E47255E58E994BF3AA0795ED45DA50F3">
+  <title>Create or Edit a Campaign with Onsite</title>
+  <shortdesc>You can use Onsite to change your campaign in a visually intuitive
+	 way. Add new mboxes, add or remove experiences, and change offer content by
+	 surfing around your site. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <steps id="steps_78EE302783D14E5CB3DE199F5B1571B8">
+      <step id="step_96B5C592483340EC906CC8977A71B8C5">
+        <cmd>Open the campaign edit page. 
+		  </cmd>
+        <stepresult>
+          <p>Use one of the following methods: 
+			 </p>
+          <p>Click 
+				<uicontrol>New Campaign</uicontrol> or 
+				<uicontrol>Edit</uicontrol> while viewing a single campaign
+				preview. 
+			 </p>
+          <p>Or, create a new Onsite campaign by clicking 
+				<uicontrol>+ Onsite Campaign</uicontrol> on the campaign list page.
+				Target determines the best starting page. If it brings you to the wrong page,
+				type the url manually in the address bar. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_3222BB1822594E0D81C9B0688124EB09">
+        <cmd>Name the campaign. 
+		  </cmd>
+        <stepresult>
+          <p>Give your campaign a unique name by typing into the text input
+				field in the top header. We recommend you do this when first creating your
+				campaign in Onsite. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_3AC8E45D289A485AB788E41E5395AFF6">
+        <cmd>Add one or more mboxes to the campaign, as explained in 
+			 <xref href="t_Adding_Mboxes_to_a_Campaign_with_Onsite.xml#task_E0C11EE79DAD4FE89D7FD62B679BEE7F" type="task" format="dita" scope="local"><?xm-replace_text Adding Mboxes to a Campaign with Onsite?></xref>.
+			 
+		  </cmd>
+      </step>
+      <step id="step_DFF529DACF104B1C8D7755A3453CBBE3">
+        <cmd>Edit and upload offers. 
+		  </cmd>
+        <stepresult>
+          <p>Upload an image from your computer to be displayed in the mbox
+				area. Once saved, the offer is stored for future use. 
+			 </p>
+          <p>Type HTML that will be displayed in the mbox area. Once saved, the
+				offer is stored for future use. 
+			 </p>
+          <p>Select from a list of existing offers to choose what to display in
+				the mbox area. 
+			 </p>
+          <p>In each case, the new offer displays in the mbox on the page so
+				you can preview the content before saving it to the campaign. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_3EFB4ECB0A4E47678DA7928C7D11CEEF">
+        <cmd>Add an experience. 
+		  </cmd>
+        <stepresult>
+          <p>Add a new experience (or recipe) to a campaign by clicking 
+				<uicontrol>add</uicontrol> next to the experience slider in the top
+				green header so that you can present visitors with a different experience. Once
+				you've added an experience, you can add new offers to the mboxes already in
+				your campaign in order to test different combinations of content. 
+			 </p>
+          <p>You can remove an existing experience from a campaign by clicking 
+				<uicontrol>remove</uicontrol> next to the experience slider in the
+				top green header. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_8830CB5C69B04D32B780CE27D138EF04">
+        <cmd>View different experiences. 
+		  </cmd>
+        <stepresult>
+          <p>While surfing your site, toggle between experiences to preview or
+				edit different experiences. Click the left or right arrows in the experience
+				slider bar in the top green header. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_6A235AE87D0F420C947C3FAAF08A45C9">
+        <cmd>Name an experience. 
+		  </cmd>
+        <stepresult>
+          <p>Change the name of an experience to better describe the user
+				experience for the set of offers. For example, choose to change the name of
+				Experience A to "Control," Experience B to "blue images," and Experience C to
+				"red images." When you look at reports in the future, it will be more obvious
+				what set of content is winning. Name an experience by clicking the experience
+				name in the top green header. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_48FB3BC5EB474EEFABC9C51D6A3D5772">
+        <cmd>Save the campaign. 
+		  </cmd>
+        <stepresult>
+          <p>When you're done creating or editing your campaign, click 
+				<uicontrol>save</uicontrol>. Note that your campaign is deactivated
+				if it is already live (approved). If you'd like to keep it live, click 
+				<uicontrol>save and approve</uicontrol>. 
+			 </p>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links>
+    <link href="c_Previewing_a_Single_Campaign_with_Onsite.xml#concept_C39F1994F9764A45A15AE82E23C49E0B" type="concept" format="dita" scope="local">
+      <?xm-replace_text Preview a Single Campaign with Onsite?>
+    </link>
+    <link href="t_Previewing_Multiple_Campaigns_with_Onsite.xml#task_1A68F285DAF34198948D33467FC348BD" type="task" format="dita" scope="local">
+      <?xm-replace_text Preview Multiple Campaigns with Onsite?>
+    </link>
+    <link href="t_Adding_Mboxes_to_a_Campaign_with_Onsite.xml#task_E0C11EE79DAD4FE89D7FD62B679BEE7F" type="task" format="dita" scope="local">
+      <?xm-replace_text Adding Mboxes to a Campaign with Onsite?>
+    </link>
+    <link href="t_Previewing_an_Offer_with_Onsite.xml#task_7EC936CEED004DA7BA58200934E35411" type="task" format="dita" scope="local">
+      <?xm-replace_text Previewing an Offer with Onsite?>
+    </link>
+    <link href="t_Bookmarking_Onsite_from_Your_Web_Page.xml#task_C837F916F8D7464798F96F0FC454B4A4" type="task" format="dita" scope="local">
+      <?xm-replace_text Bookmarking Onsite from Your Web Page?>
+    </link>
+    <link href="t_Exiting_Onsite.xml#task_CB900909CE2B43AAA6BF30C1A35A13C4" type="task" format="dita" scope="local">
+      <?xm-replace_text Exiting Onsite?>
+    </link>
+    <link href="t_Turning_Off_Onsite_Help_Popups.xml#task_89206AA54DB944BFBAFCA721A26DCFFC" type="task" format="dita" scope="local">
+      <?xm-replace_text Turning Off Onsite Help Popups?>
+    </link>
+    <link href="r_Troubleshooting_Onsite.xml#reference_387DCA1A01014C9FAA9C022577644BE2" type="reference" format="dita" scope="local">
+      <?xm-replace_text Troubleshooting Onsite?>
+    </link>
+  </related-links>
+</task>

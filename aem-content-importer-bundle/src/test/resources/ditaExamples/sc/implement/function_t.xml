@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_40DB122EAA4D4781AAEC364540770D75">
+  <title>The s.t() Function - Page Tracking</title>
+  <!--kb10606-->
+  <shortdesc>The 
+	 <wintitle>s.t()</wintitle> function is what compiles all the variables
+	 defined on that page into an image request and sends it to our servers. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>track</keyword>
+      </keywords>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Functions" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <section id="section_DB1F3E216DCD4E12AE42BBDCD25B9626">
+      <title>Properties of the Function</title>
+      <ul id="ul_F2D35BD62E8D47688FEFC232AAB3145C">
+        <li id="li_CBA4993E42A542AD8F16766DB2E1F5B4">Removing the 
+			 <wintitle>s.t()</wintitle> call prevents any data from reaching 
+			 <keyword>Analytics</keyword>. Multiple 
+			 <wintitle>s.t()</wintitle> calls fires multiple image requests
+			 (doubling the reported traffic on your site). 
+		  </li>
+        <li id="li_EDBB9E2516BA477CBD20795EB3633C4B">If you wish to fire more
+			 than one image request on a single page load, using the 
+			 <wintitle>s.tl()</wintitle> function is recommended. 
+		  </li>
+        <li id="li_4AF09135BF04497B952BCA825D8214D4">Triggering this function
+			 always increases 
+			 <wintitle>pageviews</wintitle>and always include the 
+			 <wintitle>s.pageName</wintitle> variable. 
+		  </li>
+      </ul>
+    </section>
+    <section id="section_F75C7BD4A8954CD5BE066C6B88A4A01C">
+      <title>Implementation</title>
+      <p> Upon generating code within the 
+		  <wintitle>code manager</wintitle>, you are given the following at the
+		  bottom of the page code: 
+		</p>
+      <codeblock outputclass="syntax javascript">var s_code=s.t();if(s_code)document.write(s_code)//--&gt;&lt;/script&gt;
+&lt;script language="JavaScript" type="text/javascript"&gt;&lt;!--if(navigator.appVersion.indexOf('MSIE')&gt;=0)document.write(unescape('%3C')+'\!-'+'-')//--&gt;&lt;/script&gt;
+&lt;noscript&gt;&lt;img src="http://yournameserver.112.2o7.net/b/ss/yourreportsuiteid/1/H.23.6--NS/0" height="1" width="1" border="0" alt="" /&gt;&lt;/noscript&gt;
+</codeblock>
+      <p>Each line of code has a specific purpose: 
+		</p>
+      <codeblock outputclass="syntax javascript">var s_code=s.t();if(s_code)document.write(s_code)//--&gt;</codeblock>
+      <p> This line of code is what actually fires the Javascript function. The
+		  
+		  <wintitle>s_code</wintitle> variable and it's accompanying
+		  document.write method is for browsers that don't support image objects
+		  (Netscape browsers prior to version 3 and Internet Explorer prior to version 4;
+		  estimated less than .5% of all internet users). 
+		  <codeblock outputclass="syntax javascript">&lt;script language="JavaScript" type="text/javascript"&gt;&lt;!--if(navigator.appVersion.indexOf('MSIE')&gt;=0)document.write(unescape('%3C')+'\!-'+'-')//--&gt;&lt;/script&gt;
+&lt;noscript&gt;&lt;img 
+src="http://yournameserver.112.2o7.net/b/ss/yourreportsuiteid/1/H.23.6--NS/0" height="1" width="1" border="0" alt="" /&gt;</codeblock></p>
+      <p> For any additional questions about the 
+		  <wintitle>s.t()</wintitle> function, contact your organization's
+		  Account Manager. They can arrange a meeting with an Adobe Implementation
+		  Consultant, who can provide assistance. 
+		</p>
+    </section>
+  </conbody>
+</concept>

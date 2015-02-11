@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_D0B32D244F9B417084947AAFEE7B9481">
+  <title>Close a Campaign</title>
+  <shortdesc>Closing a campaign makes it unavailable to new users. A returning
+	 visitor continues to see the campaign content until he converts. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <steps id="steps_CD187D657F1F4A509B937A80F6C7FAD6">
+      <step id="step_B3D82CEE2CDA4260A841FBDC7A3F146F">
+        <cmd>Click 
+			 <uicontrol>close</uicontrol> to immediately close a campaign to new
+			 visitors. 
+		  </cmd>
+        <stepresult>
+          <p>New visitors do not see campaign content and are not counted in
+				reports. Returning visitors continue to see the campaign content until they
+				convert. 
+			 </p>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links>
+    <link href="c_Campaign_Quality_Assurance.xml#concept_B645EA1BB55149E4AB8328F9943AC86A" type="concept" format="dita" scope="local">
+      <?xm-replace_text Campaign Quality Assurance?>
+    </link>
+    <link href="t_Approving_a_Campaign.xml#task_64BD21C895CC437A9FEBA4D9EF9B24D7" type="task" format="dita" scope="local">
+      <?xm-replace_text Approve a Campaign?>
+    </link>
+    <link href="t_Deactivating_a_Campaign.xml#task_2D52E2DB4C1E4F319564B7C937769258" type="task" format="dita" scope="local">
+      <?xm-replace_text Deactivate a Campaign?>
+    </link>
+    <link href="t_Opening_a_Campaign.xml#task_02F485E75D3E450D92DCD3F32AEDD005" type="task" format="dita" scope="local">
+      <?xm-replace_text Opening a Campaign?>
+    </link>
+    <link href="r_Troubleshooting_Campaigns.xml#reference_692A6E67C05B4D9AAB5C01D76B7FAADF" type="reference" format="dita" scope="local">
+      <?xm-replace_text Troubleshooting Campaigns?>
+    </link>
+  </related-links>
+</task>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_39E550D7A9E34C9580E81F5F9E12BDDD"> 
+  <title>Site Sections Report</title> 
+  <shortdesc>Shows the areas of your site that are accessed most by your
+	 visitors. Site Sections can include groups of products, similar to categories,
+	 which you define. For example, you might have a Cameras group of pages, a
+	 Computers group, and so on. Data for the Conversion Site Sections Report is
+	 imported from the Site Section Report in the Traffic group, which receives its
+	 information from the 
+	 <varname>channel</varname> variable in the tracking code. You can use this
+	 report to identify the greatest impact on site statistics from items in varying
+	 site sections. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Reports"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <ul id="ul_4F40E4E03F414611B73C50BB3C6B2457"> 
+		<li id="li_0B75220EA12B4792B8B71E3469CA8147">This report references data
+		  directly from the 
+		  <xref
+			href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_channel"
+			format="http" scope="external">s.channel</xref> variable implemented on your
+		  website. 
+		</li> 
+		<li id="li_1DD91B76B5F247D695EB39F2891F064F">This report can be viewed in
+		  both trended and ranked formats. 
+		</li> 
+		<li id="li_5C62D8F48FCB4DB2976711F6D2DCA74D">This report can use a search
+		  filter to locate specific line items. 
+		</li> 
+		<li id="li_92238DFBC60348689F07AE8A9FCC6768"> Classifications can be used
+		  in this report, allowing you to rename and consolidate line items. 
+		</li> 
+		<li id="li_A6D5592C1DF74F3EAB3844D99B8943C7"> Correlations can be created
+		  with any other traffic variable via Admin Tools. 
+		</li> 
+		<li id="li_A0EFFCD14F8642758FC61A185407E819">This report can utilize the
+		  following metrics: 
+		  <ul id="ul_94854F37F8A24D55A119035B12D3CBE0">
+			 <li id="li_629450AE630A426E873F96BAF972CD9D"><b>Pageviews</b>: the
+				number of times the 
+				<xref
+				 href="http://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_pagename"
+				 format="http" scope="external">pageName</xref> variable or URL was defined (set
+				as the default metric) 
+			 </li>
+			 <li id="li_9204EB24980740F190504CB5E80CCC97"><b>All pathing
+				  metrics</b>: Visits, Average Page Depth, Average Time Spent on Page, Entries,
+				Exits, Reloads, and Single Access 
+			 </li>
+			 <li id="li_DC288636EEEC41F9BC0E23D573F30BB0">Depending on your
+				organization's and report suite settings: Daily, Weekly, Monthly and Quarterly
+				Unique Visitors can be enabled on this report. 
+			 </li>
+			 <li id="li_B340694863364972A46F2000A6975AC4"><b>All standard
+				  eCommerce metrics</b>: Revenue, Orders, Units, Carts, Cart Views, Checkouts,
+				Cart Additions, and Cart Removals 
+			 </li>
+			 <li id="li_A6B12101F8EB4D3CA7BE6DF7F58D1DE3"><b>All custom
+				  events</b>: Events 1-80, and Events 81-100 if on H22 code or higher. 
+			 </li>
+		  </ul>
+		</li> 
+	 </ul> 
+	 <p>All conversion events in the 
+		<wintitle>Site Sections Report</wintitle> use last allocation. You will
+		see conversion divided across pages that do not contain success events within
+		your implementation. This is different than the 
+		<xref href="reports_pages.xml#concept_0219136EA25745B58434D0C7E751D7D5"
+		format="dita" scope="local">Pages Report</xref>, which uses linear allocation. 
+	 </p> 
+	 <p> 
+		<b>Product Specific Information</b> 
+	 </p> 
+	 <table id="table_525FDF95C8ED4BF2A1E25BE2DA971EFB"> 
+		<tgroup cols="2"> 
+		  <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+		  <colspec colnum="2" colname="col2" colwidth="4.53*"/> 
+		  <thead> 
+			 <row> 
+				<entry colname="col1">Interface
+				</entry> 
+				<entry colname="col2">Description 
+				</entry> 
+			 </row> 
+		  </thead> 
+		  <tbody> 
+			 <row>
+				<entry colname="col1"> Version 15 
+				</entry>
+				<entry colname="col2"> 
+				  <p> 
+					 <uicontrol>Site Content</uicontrol> &gt; 
+					 <uicontrol>Site Sections</uicontrol>
+				  </p>
+				  <p>In addition to correlations, this report can utilize the
+					 following breakdowns:
+				  </p>
+				  <ul id="ul_9CD009D89B134C53807332E3C88D3C44">
+					 <li id="li_566417EB074D425C9A1F4FB28AA7FAB4"> 
+						<ul id="ul_3795C7AAE6DA4B7E96FCDC7F3211DFBB"> 
+						  <li id="li_50B295E961724CFB83D222DE9B4C7FF2">Any classified
+							 reports based on this report 
+						  </li> 
+						  <li id="li_697682892D8841BC8120BEC0E1AE9753"> 
+							 <wintitle>Tracking Codes Report</wintitle> 
+						  </li> 
+						  <li id="li_F6D893FCBA7A4B3EB04715833CA41022"> 
+							 <wintitle>Products</wintitle> and 
+							 <wintitle>Categories</wintitle> reports 
+						  </li> 
+						  <li id="li_9F379E61DB4F4753AE1FFFC8F9C17347"> 
+							 <wintitle>Customer Loyalty Report</wintitle> 
+						  </li> 
+						  <li id="li_64A6A06F9265410ABB425DA4AF50C440">Any
+							 fully-subrelated conversion variables 
+						  </li> 
+						  <li id="li_907DDFCC35AB48EEA5B169B4A2598FB1"> 
+							 <wintitle>Marketing Channels First and Last
+								Touch</wintitle> 
+						  </li> 
+						  <li id="li_B08A0DCB40154152AF1033B7629A5B5A"> 
+							 <uicontrol>Target</uicontrol> &gt; 
+							 <uicontrol>Campaigns</uicontrol> report (if enabled) 
+						  </li>
+						  <li id="li_6D4E65DD6E2B49C9A8C12181D23F185A">Time Spent per
+							 visit 
+						  </li> 
+						  <li id="li_C6D3AD5A534243A8A6E17C663FEBA6BA">SiteSections 
+						  </li> 
+						  <li id="li_E1F46EED5CE2425D83200A2FCB686EE5">Entry Pages 
+						  </li> 
+						  <li id="li_1201EE0EBF13476C9A9525E0700F30F3">Most Traffic
+							 Sources reports 
+						  </li> 
+						  <li id="li_563E07858FB1473BB22C2B191E8BE620">Visit Number 
+						  </li> 
+						  <li id="li_1CAD77ABA6A2454282A4DA7E88C047E8">Many Visitor
+							 Profile Reports 
+						  </li> 
+						  <li id="li_D3A04E4CD8EC4646AAB90BF19F0AFA8A">All conversion
+							 variables and list variables 
+						  </li> 
+						  <li id="li_01C194CE0F3E4C0694A34B4C6697F385">Visits as well
+							 as Daily, Weekly, Monthly, Quarterly, and Arbitrary Unique Visitors are
+							 available. 
+						  </li>
+						  <li id="li_3B4FFF35B5B64AC386E918787F8919DC">
+						  </li>
+						</ul> 
+					 </li> 
+				  </ul>
+				  <p>This report can utilize segments. 
+				  </p> 
+				</entry>
+			 </row>
+			 <row> 
+				<entry colname="col1"> Ad hoc analysis 
+				</entry> 
+				<entry colname="col2"> 
+				  <ul id="ul_DFF9BFC01FC1424B8905C2D2C0EFD156"> 
+					 <li id="li_65FDF1C165C84F729E0EE84FF671B5E4">Ad hoc analysis
+						can break down the Site Sections report by essentially all other reports within
+						the marketing report interface. 
+					 </li> 
+					 <li id="li_2159DE10C52D40AA89E4C934FC184641">In addition to all
+						previously mentioned events, can utilize all conversion and traffic metrics, as
+						well as use different allocation for all conversion metrics. 
+					 </li> 
+					 <li id="li_3A23C6286D314B5D814612469F4F77C5">This report can
+						utilize multiple highly advanced segments. 
+					 </li> 
+				  </ul> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> Version 14 
+				</entry> 
+				<entry colname="col2"> 
+				  <p> 
+					 <uicontrol>Site Content</uicontrol> &gt; 
+					 <uicontrol>Site Sections</uicontrol>
+				  </p> 
+				  <p>In addition to correlations, this report can utilize the
+					 following breakdowns: 
+				  </p> 
+				  <ul id="ul_1CB68983E613429DA449EA10F4CA36E0"> 
+					 <li id="li_DA79C169783B4ADAB9DE285B7CC7C73A">Any classified
+						reports based on this report 
+					 </li> 
+					 <li id="li_C840AE7C4BD0471DA89E4BEB617E4794"> 
+						<wintitle>Tracking Codes Report</wintitle> 
+					 </li> 
+					 <li id="li_7A8DF03028234807A9959F17EFB98336"> 
+						<wintitle>Products</wintitle> and 
+						<wintitle>Categories</wintitle> reports 
+					 </li> 
+					 <li id="li_AA047F78F0054796B8AF012701FDF340"> 
+						<wintitle>Customer Loyalty Report</wintitle> 
+					 </li> 
+					 <li id="li_930EC111E210454198B580285FBD715F">Any
+						fully-subrelated conversion variables 
+					 </li> 
+					 <li id="li_4477D2C5C5CB4AC7B7F799F71DD7CDBE"> 
+						<wintitle>Marketing Channels First and Last Touch</wintitle> 
+					 </li> 
+					 <li id="li_408581688CE0496FBFB5D2F6E91F54C6"> 
+						<uicontrol>Target</uicontrol> &gt; 
+						<uicontrol>Campaigns</uicontrol> report (if enabled) 
+					 </li> 
+				  </ul> 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+  </conbody> 
+</concept>

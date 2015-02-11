@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_5E1F2C1F581C42BF9D1397772C34C57B">
+  <title>Weekly Unique Visitors</title>
+  <shortdesc>A unique visitor refers to an individual who has visited a site
+	 the first time within a certain time period. For example, the unique visitor
+	 could have visited a site 10 times in a week, but if the time period specifies
+	 unique visitors for that week, a single unique visitor will only be counted
+	 once for that week. Once that week is over, that unique visitor can be counted
+	 again for a new specified time period. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Metrics" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <table id="table_0C9F1C0C66154AFCBBFCAA3AA957C781">
+      <tgroup cols="2">
+        <colspec colnum="1" colname="col1" colwidth="1.00*" />
+        <colspec colnum="2" colname="col2" colwidth="2.60*" />
+        <thead>
+          <row>
+            <entry colname="col1">Uses 
+				</entry>
+            <entry colname="col2">Description 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry colname="col1">Traffic 
+				</entry>
+            <entry colname="col2">Unique visitor that accesses your site for a
+				  single week. Multiple visits in one week count for a one 
+				  <wintitle>Weekly Unique Visitor</wintitle>. 
+				</entry>
+          </row>
+          <row>
+            <entry colname="col1">Conversion 
+				</entry>
+            <entry colname="col2">N/A 
+				</entry>
+          </row>
+          <row>
+            <entry colname="col1">Ad Hoc Analysis 
+				</entry>
+            <entry colname="col2">Unique visitor that accesses your site for a
+				  single week. Multiple visits in one week count for a one 
+				  <wintitle>Weekly Unique Visitor</wintitle>. 
+				</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </conbody>
+</concept>

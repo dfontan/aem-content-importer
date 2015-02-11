@@ -1,0 +1,1303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_789D184D6BC546F3AC70AC4B94A724AA">
+  <title>JavaScript H code (Legacy)</title>
+  <shortdesc>
+    <?xm-replace_text Short Description?>
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Release notes" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <note>To find the current library version, use 
+		<xref href="https://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=debugger_about" format="http" scope="external">DigitalPulse Debugger</xref>. 
+	 </note>
+    <section id="section_ED38D59E83B4417180877F7C10BE4582">
+      <title>27.4</title>
+      <p>Release Date: 
+		  <b>January 15, 2015</b></p>
+      <ul id="ul_9D154296A26440D9A6C1F9F5200AF456">
+        <li id="li_9A0152E49AE5447BB2A64CBE770A5DB3">The distribution zip was
+			 updated to include Visitor API 1.3.4.
+		  </li>
+      </ul>
+      <p>Release Date: 
+		  <b>September 18, 2014</b></p>
+      <ul id="ul_D7211D4CD16948F29072B42AAFE4E50C">
+        <li id="li_613B38ECEF344EA78881C1B1BC5C4A3D">
+          <p>
+            <!--AN-85554-->Added a 
+				<codeph>tagContainerMarker</codeph> variable that allows the
+				implementation to specify up to 4 characters that are appended to the version
+				string along with an additional dash character delimiter. This is used by
+				dynamic tag management. 
+			 </p>
+          <codeblock outputclass="syntax javascript">// JavaScript
+s.tagContainerMarker = "D1.0";
+ 
+// Data Collection request
+//.../b/ss/myrsid/1/JS-1.4.1-D1.0/s43317392037311?...</codeblock>
+        </li>
+      </ul>
+    </section>
+    <section id="section_B38C61EE3BEA49CAA7A664395C85E4CF">
+      <title>H.27.3</title>
+      <p>Release Date: 
+		  <b>August 21, 2014</b></p>
+      <ul id="ul_60B35BB026E34EF4B60F6454185BC183">
+        <li id="li_937D6AAC01154A3E9A3894CBBC5DF76F">Internal changes to
+			 support upcoming features. 
+		  </li>
+      </ul>
+    </section>
+    <section id="section_402A4142C4B846DE945FD59DAD9D9298">
+      <title>H.27.2</title>
+      <p>Release Date: 
+		  <b>June 19, 2014</b></p>
+      <ul id="ul_F40650E3E1B54299A499A147BC78B5EF">
+        <li id="li_34E49B8ACD6A4E2C983A31185F5F3AAB">
+          <!--AN-87392,AN-87569,AN-87645-->Fixed
+			 handling of done and waiting flags for Visitor API fields such as the legacy
+			 Analytics Visitor ID, that was causing errors. 
+		  </li>
+        <li id="li_3B732C7B42A244E893CAE327870CE4C7">Support for new features
+			 in visitor ID service 1.3. 
+		  </li>
+      </ul>
+    </section>
+    <section id="section_CC2556C734EE4BAAB71D6A93095DB38F">
+      <title>H.27.1</title>
+      <p>Release Date: 
+		  <b>June 11, 2014</b></p>
+      <ul id="ul_C6AABBD6CC384870AE8F0598510444A6">
+        <li id="li_DFEF085DFDBD48A7A51650C3AB0604D8">
+          <!--AN-87462-->Fixed an
+			 issue in the Analytics for Target integration that caused some hits to
+			 incorrectly be merged. 
+		  </li>
+      </ul>
+    </section>
+    <section id="section_023B6267C0DB424F99A23EBB732B8C69">
+      <title>H.27</title>
+      <p>Release Date: 
+		  <b>May 22, 2014</b></p>
+      <ul id="ul_51E10DC98D514D3D9BD044B5A211EE6C">
+        <li id="li_F3DDA4E0A485487CA49F3C0AF2089A4B">Support for the 
+			 <xref href="https://marketing.adobe.com/resources/help/en_US/mcvid/" format="http" scope="external">Marketing Cloud Visitor ID service</xref>. 
+		  </li>
+        <li id="li_9339B83914B34203976CE38F889DAEA3">Support for the 
+			 <xref href="https://marketing.adobe.com/resources/help/en_US/target/a4t/" format="http" scope="external">Analytics for Target integration</xref>. 
+		  </li>
+      </ul>
+    </section>
+    <section id="section_DE82C8BC7645400785E5B136565616F1">
+      <title>H.26.2</title>
+      <p>Release Date: 
+		  <b>October 17, 2013</b></p>
+      <ul id="ul_5C518877B2D647BAB187ED0434637745">
+        <li id="li_C56169C8DC2340A3A23B8070D5A9B12B">Added 
+			 <codeph>alt=""</codeph> to all Image objects to comply with
+			 Accessible Video and Communications Act. 
+		  </li>
+      </ul>
+    </section>
+    <section id="section_C3BDD9A19EF84467A8FDC283AEAE2DB5">
+      <title> H.26.1</title>
+      <p>Release Date: 
+		  <b>July 18, 2013</b></p>
+      <ul id="ul_E642553B768E4D92BD11E1C742511CC8">
+        <li id="li_DB43793B3D744C77B20695C0620A36FF">
+          <p>The hash/fragment is now ignored by automatic link tracking.
+				Previously the following URL was automatically tracked since the entire 
+				<codeph>href</codeph> ended in 
+				<codeph>.pdf</codeph>: 
+			 </p>
+          <codeblock outputclass="syntax javascipt">&lt;a href="index.htm#anchor.pdf"&gt;Test Link&lt;/a&gt;</codeblock>
+          <p>Now the hash/fragment is ignored so the link is tracked only when
+				the filename ends in an extension that matches. 
+			 </p>
+        </li>
+      </ul>
+    </section>
+    <section id="section_E25814ACC21E41718EE1741A85AE567B">
+      <title> H.26</title>
+      <p>Release Date: 
+		  <b>April 29, 2013</b></p>
+      <ul id="ul_DD6AE5DC44C24D3EBC1E4EA9380894E5">
+        <li id="li_0E53C84EDB9B4F7F88CA152AB9449FDC">
+          <!--112360--> the 
+			 <codeph>useForcedLinkTracking</codeph> option that is described in 
+			 <xref href="https://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_manuallinktrackcustomlink" format="http" scope="external">Manual Link Tracking Using Custom Link
+				Code</xref> now applies to Firefox 20+ (previously this applied to WebKit
+			 browsers only). 
+		  </li>
+        <li id="li_057F3771F25649D4B1F88AB5C0D607E8">
+          <!--110585-->Image object ID generation is now unique between
+			 instances. This prevents collisions when more than one instance is on the same
+			 page. 
+		  </li>
+      </ul>
+    </section>
+    <section id="section_A528D1D5E84146F9A56680E4427B2750">
+      <title> H.25.5</title>
+      <p>Release Date: 
+		  <b>April 19, 2013</b></p>
+      <ul id="ul_95B174DE02BE46CDA03616CD793603D9">
+        <li id="li_C375233A1313467683DF1FFD7D7E2A36">
+          <!--109677-->Fixed an issue in forced link tracking that caused a
+			 JavaScript error on some Android 2.2 Devices. 
+		  </li>
+        <li id="li_364F919ED952496099E0DDF74FE42131">
+          <!--109226-->In video auto tracking on Windows Media Player, fixed an
+			 issue in scrubbing that caused time played to not be tracked correctly. 
+		  </li>
+      </ul>
+    </section>
+    <section id="section_009AF895C8DD47CABC9A3776D27E8300">
+      <title>H.25.4</title>
+      <p>Release Date: 
+		  <b>February 2013</b></p>
+      <ul id="ul_49612BF7450145CC9B7FAECA6DB99109">
+        <li id="li_C42F16E1468649699B7F0C27FA23B555">Changed automatic exit
+			 link tracking to always ignore links with 
+			 <codeph>HREF</codeph> attributes that start with 
+			 <codeph>#</codeph>, 
+			 <codeph>about:</codeph>, or 
+			 <codeph>javascript:</codeph>. 
+		  </li>
+        <li id="li_6BEAAD27A9A6416A9BFD148C4D533D0D">
+          <!--107766-->Refined scope of click events affected by 
+			 <codeph>useForcedLinkTracking</codeph>. The automatic forced link
+			 tracking applies only to: 
+			 <ul id="ul_1094198044074C678836DD12C404D372"><li id="li_6FD7B70102814898B0D5EBFF3E7B071C"><codeph>&lt;A&gt;</codeph> and 
+				  <codeph>&lt;AREA&gt;</codeph> tags 
+				</li><li id="li_3ACBDD6A14C744C6977C5D23D1572119">The tag must have an 
+				  <codeph>HREF</codeph> attribute 
+				</li><li id="li_196DCF3636E04B9FBA5031B1F18C13D7">The 
+				  <codeph>HREF</codeph> can't start with 
+				  <codeph>#</codeph>, 
+				  <codeph>about:</codeph>, or 
+				  <codeph>javascript:</codeph></li><li id="li_4B8714C937774DB5B1324D957AB4823B">The 
+				  <codeph>TARGET</codeph> attribute must not be set, or the 
+				  <codeph>TARGET</codeph> needs to refer to the current window
+				  (<codeph>_self</codeph>, 
+				  <codeph>_top</codeph>, or the value of 
+				  <codeph>window.name</codeph>) 
+				</li></ul></li>
+      </ul>
+    </section>
+    <section id="section_FA6A6F9F5D64455DA5A54C007081341A">
+      <title>H.25.3</title>
+      <p>Release Date: 
+		  <b>January 2013</b></p>
+      <ul id="ul_DA1563E0C14642D0BE7AF23986A86F86">
+        <li id="li_21F44C2948E446AE94FF8F394D67D018">Added support to send URLs
+			 longer than 255 bytes to support the expansion of the Page URL field in Adobe
+			 Data Collection servers. Page URLs longer than 255 bytes are split, with the
+			 first 255 bytes appearing in the 
+			 <codeph>g=</codeph> parameter, with the remaining bytes appearing
+			 later in the query sting in the 
+			 <codeph>-g=</codeph> query parameter. This helps prevent long URLs
+			 from taking precedence over other data in the case of browser truncation, but
+			 still enables capturing of long URLs. 
+		  </li>
+        <li id="li_10EECD9CFAB449988A49DF906E103D43">
+          <!--106096-->Fixed handling URL decoding for strings that are encoded
+			 with a mixed use of 
+			 <codeph>escape</codeph> and 
+			 <codeph>encodeURIComponent</codeph>. 
+		  </li>
+        <li id="li_0D3B3F6B7F244DF1AA8CFAB09B2A198D">
+          <!--106916-->Fixed an issue in WebKit browsers where link tracking
+			 fails if the first server call on the page times out. 
+		  </li>
+        <li id="li_ED5A7989E8F741978F9FE313BE8BF8E7">Added a new fallback
+			 visitor identification method. See 
+			 <xref href="https://marketing.adobe.com/resources/help/en_US/sc/implement/index.html?f=c_identifying_unique_visitors" format="http" scope="external">Identifying Unique Visitors</xref>. 
+		  </li>
+        <li id="li_FE72252B85CE49E893BFF993475079CE"> Added a new 
+			 <codeph>abort</codeph> flag that can be set inside 
+			 <codeph>doPlugins</codeph>. Setting this flag to true causes the
+			 AppMeasurement library to not continue with that tracking call. The abort flag
+			 is reset with every tracking call, so if a subsequent tracking call also needs
+			 to be aborted the flag will need to be set again inside 
+			 <codeph>doPlugins</codeph>. 
+			 <codeblock outputclass="syntax javascript">s.doPlugins = function(s) {
+     s.campaign = s.getQueryParam("cid");
+     if ((!s.campaign) &amp;&amp; (!s.events)) {
+          s.abort = true;
+     }
+};</codeblock>This lets you centralize the logic you use to identify activity
+			 that you do not want to track, such as some custom links or external links in
+			 display ads. 
+		  </li>
+      </ul>
+    </section>
+    <section id="section_647D7638D0C04019B8C9986CD124914E">
+      <title>H25.2</title>
+      <p>Release Date: 
+		  <b>October 2012</b></p>
+      <ul id="ul_A9A5B4C8AE2D474F88BBA232B65D2F23">
+        <li id="li_0416DF5F428F40B1BF5367C615D53F1E">
+          <!--53325-->Added support for reporting an additional version number
+			 in the JavaScript version report. Previously this version was limited to 2
+			 characters (for example, 1.8). Support was added for a 3 character version
+			 number (for example, 1.8.5). 
+		  </li>
+        <li id="li_FEC316907B5C4FC2A891EBCBF3CCAD57">
+          <!--102091-->Fixed an issue with 
+			 <keyword>Tag Manager</keyword> that prevented repeated values in
+			 Dependant Code blocks from being sent. 
+		  </li>
+      </ul>
+    </section>
+    <section id="section_680CE31CFA9945978F42612B684DB831">
+      <title> H.25.1</title>
+      <p>Release Date: 
+		  <b>September 2012</b></p>
+      <ul id="ul_9D72F6AEA10B4293BB026AF327B4D3F6">
+        <li id="li_2A6A7FBF5AE84CD184EAF2323C4585CF">
+          <!--60129-->Forced URL encoding for the following characters: 
+			 <codeblock>~
+!
+*
+(
+)
+'</codeblock>This resolves issues with un-escaped characters being stored in the
+			 
+			 <keyword>ClickMap</keyword><codeph>s_sq</codeph> cookie. 
+		  </li>
+        <li id="li_8DA24B0E3EC5436FA9C82A1A1C6F51C0">
+          <!--74160-->Fixed an issue that might cause the video complete event
+			 to not be sent when using a custom 
+			 <codeph>media.monitor</codeph> method that tracks the media close
+			 event: 
+			 <codeblock>If(media.event==”CLOSE”) {
+…
+}
+</codeblock></li>
+      </ul>
+    </section>
+    <section id="section_BE76FEDFE03B44658808B0BDF779DE97">
+      <title>H.25</title>
+      <p>Release Date: 
+		  <b>July 2012</b></p>
+      <p>Made an update to ensure that link tracking completes successfully on
+		  WebKit browsers (Safari and Chrome). After this update, download and exit links
+		  that are automatically tracked (determined by 
+		  <codeph>s.trackDownloadLinks</codeph> and 
+		  <codeph>s.trackExternalLinks</codeph>) are tracked successfully. If you
+		  are tracking custom links using manual JavaScript calls, you need to modify how
+		  these calls are made. 
+		</p>
+      <p>For example, exit and download links are often tracked using code
+		  similar to the following: 
+		</p>
+      <codeblock outputclass="syntax javascript">&lt;a href="http://anothersite.com" onclick="s.tl(this,'o','link name',null)"&gt;</codeblock>
+      <p>FireFox and Internet Explorer execute the track link call and open the
+		  new page. However, WebKit browsers might cancel execution of the track link
+		  call when the new page opens. This often prevents track link calls from
+		  completing when using WebKit browsers. 
+		</p>
+      <p>To workaround this behavior, H.25 includes an overloaded track link
+		  method (<codeph>s.tl</codeph>) that forces WebKit browsers to wait for the
+		  track link call to complete. This new method executes the track link call and
+		  then handles the navigation event, instead of using the default browser action.
+		  This overloaded method requires an additional parameter, called 
+		  <codeph>doneAction</codeph>, to specify the action to take when the
+		  link tracking call completes. 
+		</p>
+      <p>To use this new method, update calls to 
+		  <codeph>s.tl</codeph> with an additional 
+		  <codeph>doneAction</codeph> parameter, similar to the following: 
+		</p>
+      <codeblock outputclass="syntax javascript">&lt;a href="http://anothersite.com" onclick="s.tl(this,'o','link name',null<codeph outputclass="syntax">,'navigate');return false</codeph>"&gt;</codeblock>
+      <p>Passing 'navigate' as the 
+		  <codeph>doneAction</codeph> mirrors the default browser behavior and
+		  opens the URL specified by the 
+		  <codeph>href</codeph> attribute when the tracking call completes. 
+		</p>
+      <p>The following table summarizes the configuration variables and updates
+		  made to H.25 to support this functionality. 
+		</p>
+      <table id="table_E67157D710874146B26EFB7D84762542">
+        <tgroup cols="2">
+          <colspec colnum="1" colname="col1" colwidth="1.00*" />
+          <colspec colnum="2" colname="col2" colwidth="2.83*" />
+          <thead>
+            <row>
+              <entry colname="col1">
+                <p>Variable 
+					 </p>
+              </entry>
+              <entry colname="col2">
+                <p>Description 
+					 </p>
+              </entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry colname="col1">
+                <p>useForcedLinkTracking 
+					 </p>
+              </entry>
+              <entry colname="col2">
+                <p>This flag is used to disable forced link tracking for WebKit
+						browsers. Forced link tracking is enabled by default for WebKit browsers and is
+						ignored by other browsers. 
+					 </p>
+                <p>
+                  <b>Default Value</b>
+                </p>
+                <p>
+                  <codeph>true</codeph>
+                </p>
+                <p>
+                  <b>Example</b>
+                </p>
+                <codeblock outputclass="syntax javascript">s.useForcedLinkTracking = false</codeblock>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">
+                <p>forcedLinkTrackingTimeout 
+					 </p>
+              </entry>
+              <entry colname="col2">
+                <p>The maximum number of milliseconds to wait for tracking to
+						finish before performing the 
+						<codeph>doneAction</codeph> that was passed into 
+						<codeph>s.tl</codeph>. This value specifies the maximum wait
+						time. If the track link call completes before this timeout the 
+						<codeph>doneAction</codeph> is executed immediately. If you
+						notice that track link calls are not completing you might need to increase this
+						timeout. 
+					 </p>
+                <p>
+                  <b>Default Value</b>
+                </p>
+                <p>250 
+					 </p>
+                <p>
+                  <b>Example</b>
+                </p>
+                <codeblock outputclass="syntax javascript">s.forcedLinkTrackingTimeout = 500</codeblock>
+              </entry>
+            </row>
+            <row>
+              <entry colname="col1">trackLink (<codeph>s.tl</codeph>) 
+				  </entry>
+              <entry colname="col2">
+                <p>Tracks exit, download, and custom links. Provides an
+						optional parameter to specify a navigation action to execute after the track
+						link call completes on WebKit browsers. 
+					 </p>
+                <p>
+                  <b>Syntax</b>
+                </p>
+                <codeblock outputclass="syntax javascript">s.tl(linkObject,linkType,linkName,variableOverrides,doneAction)</codeblock>
+                <p>
+                  <b>doneAction</b>: (optional) Specifies the action to take
+						after the link track call is sent or has timed out (based on the value
+						specified by 
+						<codeph>s.forcedLinkTrackingTimeout</codeph>). The 
+						<codeph>doneAction</codeph> can be the string 'navigate',
+						which causes the method to set 
+						<codeph>document.location</codeph> to the 
+						<codeph>href</codeph> attribute of 
+						<codeph>linkObject</codeph>. The 
+						<codeph>doneAction</codeph> can also be a function allowing
+						for advanced customization. 
+					 </p>
+                <p>If providing a value for 
+						<codeph>doneAction</codeph> in an anchor 
+						<codeph>onclick</codeph> event, you must return 
+						<codeph>false</codeph> after the 
+						<codeph>s.tl</codeph> call to prevent the default browser
+						navigation. 
+					 </p>
+                <p> To mirror the default behavior and follow the URL specified
+						by the 
+						<codeph>href</codeph> attribute, provide a string of
+						'navigate' as the 
+						<codeph>doneAction</codeph>. 
+					 </p>
+                <p>Optionally, you can provide your own function to handle the
+						navigation event by passing this function as the 
+						<codeph>doneAction</codeph>. 
+					 </p>
+                <p>
+                  <b>Examples</b>
+                </p>
+                <codeblock outputclass="syntax javascript">&lt;a href="..." onclick="s.tl(this,'o','MyLink',null,'navigate');return false"&gt;Click Here&lt;/a&gt;</codeblock>
+                <codeblock outputclass="syntax javascript">&lt;a href="#" onclick="s.tl(this,'o','MyLink',null,function(){if(confirm('Proceed?'))document.location=...});return false"&gt;Click Here&lt;/a&gt;</codeblock>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+    <section id="section_1989179F10A34E88968CA5A5290CF17C">
+      <title>H.24.4</title>
+      <p>Release Date: 
+		  <b>April 2012</b></p>
+      <p>This update is recommended for all customers. 
+		</p>
+      <ul id="ul_37B5E9E5A7D74F1C93AD0D6B5E23B18E">
+        <li id="li_479F9208581F4056927CCB3E53857A20">Made an enhancement to
+			 detect when a page is prerendered using Google Chrome Prerender (<xref href="https://developers.google.com/chrome/whitepapers/prerender" scope="external" format="html">https://developers.google.com/chrome/whitepapers/prerender</xref>).
+			 Since Prerender loads and executes JavaScript and other code, this could result
+			 in page views being sent before a user clicks to visit your site. The
+			 JavaScript library now waits until the user visits your site before sending
+			 server calls for these prerendered pages. 
+		  </li>
+        <li id="li_87A860EC92B84CA58BB8BD1B2C611C3E">Added the 
+			 <codeph>timestamp</codeph> variable to the JavaScript library for
+			 customers who want to customize timestamp data similar to other AppMeasurement
+			 libraries. 
+			 <codeblock outputclass="syntax javascript">s.timestamp=Math.round((new Date()).getTime()/1000);
+s.timestamp="2012-04-20T12:49:31-0700";</codeblock></li>
+      </ul>
+    </section>
+    <section id="section_F3D471B201F54C089320D3CE6D441DC0">
+      <title>H.24.3</title>
+      <p>Release Date: 
+		  <b>February 2012</b></p>
+      <ul id="ul_23B1728F0874434F9957A169FD1A2CF6">
+        <li id="li_D9F5170DBEDA43F88C25863663D4F0EA">Fixed an issue that caused
+			 extra data to be included in the image request for customers using Javascript 
+			 <codeph>Object.prototype</codeph> overrides. All 
+			 <codeph>Object.prototype</codeph> usage is now skipped when handling
+			 context data variables. 
+		  </li>
+        <li id="li_8E1121E46C3E405C8E52AABD61DD93D3">Fixed an issue that caused
+			 the 
+			 <codeph>pe</codeph> query parameter to be passed twice with the same
+			 value in some circumstances. 
+		  </li>
+        <li id="li_A773DC2C8505419BBDA4766DC7C9CA7D">Fix to 
+			 <keyword>ClickMap</keyword> tracking in JavaScript to ignore clicks
+			 to the body tag, even when the tag has an 
+			 <codeph>onClick</codeph> event handler. 
+		  </li>
+        <li id="li_FCED459829E14650BAE9E602DE9750DF">Added time stamp to
+			 variables used with light tracking calls (<codeph>trackLight</codeph>). 
+		  </li>
+      </ul>
+    </section>
+    <section id="section_91CF07C2BC9B4C8BA0235DFDFB95A4D9">
+      <title>H.24.2</title>
+      <p>Release Date: 
+		  <b>January 2012</b></p>
+      <ul id="ul_BF0007340AA444B9A60AF49C795BB82F">
+        <li id="li_7D009A2312D4439DBC0A880080BD05F1">Updated video tracking
+			 with a new method to track complete video views. See 
+			 <xref href="https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/video/index.html" scope="external" format="html">Measuring Video in SiteCatalyst</xref>. 
+		  </li>
+        <li id="li_EC233780BA5B447F9CB42F2FE52ED2FC">Fixed an issue that caused
+			 an "Attribute only valid on v:image" JavaScript error for 
+			 <codeph>OnClick</codeph> events on VML elements in IE. 
+		  </li>
+        <li id="li_92B8872C49A74CB2BF79C983AC0663BC"> Fixed a bug where context
+			 data variables were not included in link server calls, despite being referenced
+			 in 
+			 <codeph>linkTrackVars</codeph>. Context data variables are used with
+			 Processing Rules. 
+		  </li>
+      </ul>
+    </section>
+    <section id="section_967356D219FE4E9CAA110D03EDF4C8B1">
+      <title>H.24.1</title>
+      <p>Release Date: 
+		  <b>November 2011</b></p>
+      <ul id="ul_C73B34F3CE944036A09E3E9D4AB2FEAF">
+        <li id="li_A8FD56D02F804125A5666882CBED49D1">Updated video tracking to
+			 combine hits for segments and milestones that occur at the same time. 
+		  </li>
+      </ul>
+    </section>
+    <section id="section_78FF9B245643406BB7E9967E784A90AE">
+      <title>H.24</title>
+      <p>Release Date: 
+		  <b>November 2011</b></p>
+      <ul id="ul_8769A2CF263E4978B93A78AF6580AD11">
+        <li id="li_6343114F773E4EF58A20F959AB7F3A3D">Internal updates to
+			 support 
+			 <wintitle>Adobe Tag Manager</wintitle>. 
+		  </li>
+      </ul>
+    </section>
+    <section id="section_3834625A639A47428683E08A472359C7">
+      <title>H.23.9</title>
+      <p>Release Date: 
+		  <b>November 2011</b></p>
+      <ul id="ul_7D0872E12FB940DE8A76AAD4CE626253">
+        <li id="li_ACC9CDDD986D49A183DC9D37FB040B2C">Internal updates to
+			 support 
+			 <wintitle>Adobe Tag Manager</wintitle>. 
+		  </li>
+      </ul>
+    </section>
+    <section id="section_FF3CEEAB6C6744D6B5EE314A0B5841CA">
+      <title>H.23.8</title>
+      <p>Release Date: 
+		  <b>October 2011</b></p>
+      <ul id="ul_C08C0392884D4DE8950DC4562DEC7003">
+        <li id="li_42CC92A3B26446B798BF70F1CC9CF7A4">
+          <p>Fixed an issue that caused the 
+				<codeph>linkTrackVars=none</codeph> and 
+				<codeph>linkTrackEvents=none</codeph> settings to not apply when
+				using automatic exit link tracking. These settings now apply for automatic exit
+				links so that props, eVars, and events are not sent in with the exit link image
+				request. 
+			 </p>
+        </li>
+      </ul>
+    </section>
+    <section id="section_D9D0CF343EBF49D9844C6BDA0C3C7A2E">
+      <title>H.23.7</title>
+      <p>Release Date: 
+		  <b>September 2011</b></p>
+      <ul id="ul_A1D3E1B9AA42482CA3914E9F9AF19523">
+        <li id="li_F5F8FB4004A64C2CB352D4394B2F7E8E">Removed border attributes
+			 from image tags on mobile devices to comply with Wireless Markup Language (WML)
+			 standards. This fixes rendering issues on some mobile devices. 
+		  </li>
+      </ul>
+    </section>
+    <section id="section_461A208BE1B64EDDA87A8D7C4FD5456C">
+      <title>H.23.6</title>
+      <p>Release Date: 
+		  <b>August 2011</b></p>
+      <p>Fixed accuracy of percentage measurements in video tracking. 
+		</p>
+    </section>
+    <section id="section_FCE48EE33C9A42F08386FA30037BF4E0">
+      <title>H.23.5</title>
+      <p>Release Date: 
+		  <b>July 2011</b></p>
+      <ul id="ul_5DB0FB73974B45A0AC305797E4CFCC53">
+        <li id="li_A8DFF9730D8D41C981152C36F7CDDA40">Added support for 
+			 <wintitle>Adobe Tag Manager</wintitle>. 
+		  </li>
+      </ul>
+    </section>
+    <section id="section_E9152B4437C24107A68D264F70361930">
+      <title>H.23.4</title>
+      <p>Release Date: 
+		  <b>June 2011</b></p>
+      <ul id="ul_47EFC1A65B4748E4BE0A3DF77783302B">
+        <li id="li_0A0F544D39AE4829B47590721E7C2E29">Fixed an issue that caused
+			 JavaScript errors when accessing certain properties of Vector Markup Language
+			 (VML) shape elements. 
+		  </li>
+        <li id="li_3C8FA259C9944ED18BD19C84C55AD762">Referral strings that are
+			 over 255 characters are now truncated by shortening the path rather than the
+			 query string. This fixes issues were query string parameters were truncated and
+			 not collected. 
+		  </li>
+      </ul>
+    </section>
+    <section id="section_EAB0602E07EE4A5CA6521351F461D22D">
+      <title>H.23.3</title>
+      <p>Release Date: 
+		  <b>May 2011</b></p>
+      <ul id="ul_2FD8F040E7434DC1B2CE0D1AD4DBDD61">
+        <li id="li_3FF30A24BCF748F5AA24D3B35A45B4A6">Fixed an issue that
+			 prevented the video tracking (pev3) variable from being sent. 
+		  </li>
+        <li id="li_7C3C4F8F44E644BF9DFD502586D3E6C0">Fixed an issue that
+			 prevented the 
+			 <codeph>s_gi</codeph> call from enabling code to be compatible with
+			 both G and H code. When you pass a 1 as the second parameter to this call the
+			 code is now configured to be compatible with both versions. 
+		  </li>
+      </ul>
+    </section>
+    <section id="section_274143E83A8D42F1AD40CAE4326E99CE">
+      <title>H.23.2 - SiteCatalyst 15</title>
+      <p>Release Date: 
+		  <b>April 2011</b></p>
+      <ul id="ul_5BF419E27C4442EC91A77BA30D9C8B9F">
+        <li id="li_5680DB743CD84A1A9F8AF3D51724804D">Support for contextData
+			 that drives server-side processing rules (v15 only). 
+		  </li>
+        <li id="li_6312CCA2E406452EB9AEF933A02B63EA">Support for light server
+			 calls (v15 only). 
+		  </li>
+        <li id="li_2F0BE03ED8A14CD7AD9E4BB9E8A03537">Support for assigning a
+			 value other than 1 to a counter event in the events list. 
+		  </li>
+        <li id="li_BB628EA8070D4C91921EFBD9902C3E05">Support for new method of
+			 tracking video using conversion eVars and events (currently in beta). 
+		  </li>
+        <li id="li_C08B49AA4C3E4A57AAAE052C7EC349A2">Removed support for
+			 setting Media.trackWhilePlaying to false. It will always be true. 
+		  </li>
+        <li id="li_0F984D94B7F147BDA65B9FEFFFF43502">Added debugTracking flag
+			 to enable logging of requests send to Firebug console just like the other
+			 platforms. 
+		  </li>
+        <li id="li_D76D719D96E24A4781491C34310319AD">Make sure "+" is always
+			 URL-encoded regardless of browser. 
+		  </li>
+      </ul>
+    </section>
+    <section id="section_EE05A885FFB642B791E460F384AF737E">
+      <title>Pre-SiteCatalyst 15</title>
+      <p>
+        <b> H.22.1 
+		  </b>
+      </p>
+      <p>
+        <ul id="ul_0DBDBFFB71BD4FDAA96F2051E8278DD7">
+          <li id="li_E53EC4501BD64B68BC39FA7C2F060B6B">
+            <p>Added ability to disable partners in the Integrate module and
+				externaly force a delay on tracking. 
+			 </p>
+          </li>
+          <li id="li_35113638B9B74907B15BA048C78570C1">
+            <p>Fixed IE URL length check to always truncate to 2047 characters. 
+			 </p>
+          </li>
+        </ul>
+      </p>
+      <p>
+        <b> H.22 
+		  </b>
+      </p>
+      <p>
+        <ul id="ul_404802183C39471487F6525D7216CA9A">
+          <li id="li_1FB6DC60F11249D1986450EA9C8ED3CB">
+            <p>Added support for 25 more props and eVars. 
+			 </p>
+          </li>
+          <li id="li_3B4E4C26DAB143ECB5E26DC72DEE01CC">
+            <p>Fixed issue with doPlugins being called more than once for the
+				same tracking call. 
+			 </p>
+          </li>
+          <li id="li_B47DB90FB60046F283A6DC4559C12B89">
+            <p>Fixed issue with 1/2 second delay durring video tracking. 
+			 </p>
+          </li>
+        </ul>
+      </p>
+      <p>
+        <b> H.21.1 
+		  </b>
+      </p>
+      <p>
+        <ul id="ul_67ACAF05288F4812A4269288FC848396">
+          <li id="li_F59B297E37EC4724993CAA9DBF3FD003">
+            <p>Changed URL encoding and decoding to start using
+				encodeURIConponent and decodeURIComponent when availible. If this new method is
+				used and s.charSet is set s.charSet will be forced to UTF-8. 
+			 </p>
+          </li>
+          <li id="li_8FD11F90C93442A4B40D42680C0AC269">
+            <p>Changed the formatting of the query-string for ClickMap data to
+				take care of a bug with multi-suite tagging and using the back button. 
+			 </p>
+          </li>
+        </ul>
+      </p>
+      <p>
+        <b> H.21 
+		  </b>
+      </p>
+      <p>
+        <ul id="ul_DB741307F64748D184D0A7C4104DCE44">
+          <li id="li_33AEAF68065541A1BD4ED3D4FFA5FC70">
+            <p>Reworked support for cloning instance for exit surveys. 
+			 </p>
+          </li>
+          <li id="li_B564DBDDAAD14DA2BA3EC03319E64146">
+            <p>Added ClickMap support for button elements. 
+			 </p>
+          </li>
+        </ul>
+      </p>
+      <p>
+        <b> H.20.3 
+		  </b>
+      </p>
+      <p>
+        <ul id="ul_C1FABDE78F5648498380D4CDB7790D86">
+          <li id="li_E4155AE68EC4421D9CAE4A9630F65C09">
+            <p>Reorder query-string variables in Google referrers to keep "q",
+				"ie", "start", "search_key", "word", "kw", and "cd" the start of the
+				query-string to try and prevent truncation of these variables. 
+			 </p>
+          </li>
+        </ul>
+      </p>
+      <p>
+        <b> H.20.2 
+		  </b>
+      </p>
+      <p>
+        <ul id="ul_F5F8D57D262F42BDBC20A6B2E46E5279">
+          <li id="li_0FE0D115B2AC4780B4AC08F3F87958B2">
+            <p>Rolled back YouTube support to separate the media changes and core
+				JavaScript code changes. 
+			 </p>
+          </li>
+          <li id="li_B09DF8E48DF14CEAA7176EC9CFE7367F">
+            <p>Reworked loading of external modules to work in all browsers and
+				support timing out in all browsers. 
+			 </p>
+          </li>
+          <li id="li_558122626B5E49E8B7C0C3EDDD2F7190">
+            <p>Added cleaning of tracking server prefix (visitor namespace or
+				first repiort suite ID) to fix SSL cert matching and prevent messing with the
+				tracking server. 
+			 </p>
+          </li>
+          <li id="li_62C647567B2244E1B10821F6299C965E">
+            <p>Made JavaScript code compression optional. 
+			 </p>
+          </li>
+        </ul>
+      </p>
+      <p>
+        <b> H.20.1 
+		  </b>
+      </p>
+      <p>
+        <ul id="ul_5B1D16D8FEA546A2B2DA65DFDAEF1939">
+          <li id="li_3D20DFE143C84EC68EEE2F1561C900C1">
+            <p>Minor enhancements to module system to handle modules requesting
+				JSON objects better. 
+			 </p>
+          </li>
+          <li id="li_0F45097FC34D4306A563BC03E95886ED">
+            <p>New partner integration module. 
+			 </p>
+          </li>
+        </ul>
+      </p>
+      <p>
+        <b> H.20 
+		  </b>
+      </p>
+      <p>
+        <ul id="ul_5B3309748E5944709FD7FFB170DB7A2E">
+          <li id="li_FD8922C393EF404EB8B518E1396D3713">
+            <p>Huge speed improvements in core JavaScript code. 
+			 </p>
+          </li>
+          <li id="li_73A5CC9582454897A625BAED85A4DFFD">
+            <p>Media autotrack support for embeded YouTube video players. 
+			 </p>
+          </li>
+        </ul>
+      </p>
+      <p>
+        <b> H.19.4 
+		  </b>
+      </p>
+      <p>
+        <ul id="ul_5FA359FDADF64F1D8015EBBFB365BBD1">
+          <li id="li_A1DCCD5EDA034E6596BF3DCCE7081BFB">
+            <p>Fixed double URL-encoding with media tracking. 
+			 </p>
+          </li>
+        </ul>
+      </p>
+      <p>
+        <b> H.19.3 
+		  </b>
+      </p>
+      <p>
+        <ul id="ul_0597227F7866489CB23D8AF20CF2D887">
+          <li id="li_50DE5685E5F245AC82EEC96505595C6A">
+            <p>New "track while playing" media changes. Turn this on by setting
+				s.Media.trackWhilePlaying to true. You can set s.Media.trackSeconds to track
+				after every X seconds have passed. You can set s.Media.trackMilestones to a
+				list of percentages within the media item to track after they have passed. You
+				can call s.Media.track() to track the state of the media item now along with
+				any other variables you have set and are in s.Media.trackVars and/or
+				s.Media.trackEvents. Lastly you can setup a s.Media.monitor method that will be
+				called every 5 seconds with the state of the media item so you can make more
+				exact decisions for when to call s.Media.track(). 
+			 </p>
+          </li>
+        </ul>
+      </p>
+      <p>
+        <b> H.18 
+		  </b>
+      </p>
+      <p>
+        <ul id="ul_2D4B8A01638D433C92E96F18A46F350C">
+          <li id="li_10516E3433F244E39EE56EF30375A769">
+            <p>Added s.trackingServerBase variable that will allow a client to
+				start using omtrdc.net instead of 2o7.net. 
+			 </p>
+          </li>
+          <li id="li_16B71A71B6A647F181055A79CA77AF46">
+            <p>Changed s.dc to expect "d1" and "d2" instead of 112 and 122 to
+				support the new tracking domain design. 
+			 </p>
+          </li>
+          <li id="li_D3FDF86B04B84ECEA8CAE3617373E951">
+            <p>Changed s.vmk to s.visitorMigrationKey and added
+				s.visitorMigrationServer and s.visitorMigrationServerSecure to allow for
+				greater control over visitor migration. 
+			 </p>
+          </li>
+        </ul>
+      </p>
+      <p>
+        <b> H.17 
+		  </b>
+      </p>
+      <p>
+        <ul id="ul_50128A7CFC864340A475F71E21A17723">
+          <li id="li_9BC68404E4FD45F286A99285A9210F20">
+            <p>Change query-string truncation detection keys. 
+			 </p>
+          </li>
+          <li id="li_4865DCE32EC74376B4E82F9ABE6C35F4">
+            <p>Support for s.mobile flag to prefer mobile visitor identification.
+				
+			 </p>
+          </li>
+        </ul>
+      </p>
+      <p>
+        <b> H.16 
+		  </b>
+      </p>
+      <p>
+        <ul id="ul_9600B938F14C455C82953D56FADD2538">
+          <li id="li_332CD47AD23B407483DB763A1E3BBCD5">
+            <p>Automatic building of the page referrer will only happen with the
+				first tracking call on the page. Manualy setting the referrer must be done with
+				every tracking call because it is cleared once the tracking request is sent
+				off. 
+			 </p>
+          </li>
+          <li id="li_1EBAA8230CA042669559DA068E889B72">
+            <p>Fixed truncation of numbers to take care of Netscape 4 crash. 
+			 </p>
+          </li>
+          <li id="li_FCC342845AB24E42ABA6CF95C8AC72EC">
+            <p>Links with HREF starting with # will not be counted as an exit
+				link. 
+			 </p>
+          </li>
+          <li id="li_762E338DE6774B328114AD6BA346722E">
+            <p>Support for s.dynamicVariablePrefix. 
+			 </p>
+          </li>
+        </ul>
+      </p>
+      <p>
+        <b> H.15 
+		  </b>
+      </p>
+      <p>
+        <ul id="ul_6FB5EE28946049AE8D0C9757D286E33A">
+          <li id="li_F889394530F84598AC862DD287F2732D">
+            <p>Implemented new module system. Most new major functionality will
+				be implemented as modules. All plugins and universal tag plugins will be
+				migrated to modules. 
+			 </p>
+          </li>
+          <li id="li_D9B04A5862CC4AB5A15030E50C717187">
+            <p>Addition of media tracking module. A new cookie s_br was created
+				to support media tracking. 
+			 </p>
+          </li>
+          <li id="li_D416DE0ECC5F467BA5748070296CD862">
+            <p>Addition of survey module. 
+			 </p>
+          </li>
+          <li id="li_85A731ED0A354D1FB2A8C69591841EC8">
+            <p>You can now pass in a JavaScript object as the first argument to
+				s.t() and the fourth argument to s.tl() to give one time variables overrides.
+				This will help implementations with more AJAX heavy sites. 
+			 </p>
+          </li>
+          <li id="li_83E03F84ACAE4C3D8CAF075C724F9D48">
+            <p>Reworked code to remove use of eval(). 
+			 </p>
+          </li>
+          <li id="li_FE81F9607105495DBE4E209D441116DA">
+            <p>Reworked older browser code rewriting functions so they can be
+				used my module system to add support for older browsers. 
+			 </p>
+          </li>
+          <li id="li_99943C7F98304EDBA00E1CC944D7ACBD">
+            <p>G to H migration functions are not defined until an instance of
+				the tracking class is created. 
+			 </p>
+          </li>
+          <li id="li_7D96ACF1B4514D048AE6B5FE280046CA">
+            <p>Code is now formatted differently as a result of development time
+				savers added to the code generator and to make the code less scary. 
+			 </p>
+          </li>
+        </ul>
+      </p>
+      <p>
+        <b> H.14 
+		  </b>
+      </p>
+      <p>
+        <ul id="ul_705E4D0DC7BB4AE5BA7BD5CEADBCE9CA">
+          <li id="li_24CD5542AF7E430DA573D8213098FCAC">
+            <p>Fixed JavaScript error caused by image onload firing after page
+				has been left (tracking onunload). 
+			 </p>
+          </li>
+          <li id="li_493CC401C68C4278997A5336D6A85D6D">
+            <p>Changed ClickMap tracking to detect and ignore SHAPE objects. 
+			 </p>
+          </li>
+          <li id="li_7015FBC35A864DD1A12AFEB2F57A1521">
+            <p>Fixed problem with G to H migration functions. 
+			 </p>
+          </li>
+          <li id="li_B75CF31902D940A8B6809D441A7FBF9B">
+            <p>Added visitor sampling and dynamic account selection config
+				variables to those that are pulled in for G to H migration. 
+			 </p>
+          </li>
+          <li id="li_EEB6F84FD872471EBDF7919DF908B5A2">
+            <p>Global G to H migration functions are only defined if migration is
+				turned on. 
+			 </p>
+          </li>
+        </ul>
+      </p>
+      <p>
+        <b> H.13 
+		  </b>
+      </p>
+      <p>
+        <ul id="ul_85EACB534B7F442EA8CE54DD0649277F">
+          <li id="li_411A04BD47D94C30A1AB9B746A463464">
+            <p>purchaseID is not controlled by linkTrackVars. 
+			 </p>
+          </li>
+          <li id="li_885527F69EF64AD19C24154FC0E0537A">
+            <p>ClickMap cookie handling fixed for customers adding prototypes to
+				the base Object class. 
+			 </p>
+          </li>
+          <li id="li_DAC132B5A2DB46FFAFAFDD22484EFC1C">
+            <p>G to H migration will now declare the global versions of variables
+				as blank if they are undefined. 
+			 </p>
+          </li>
+          <li id="li_FE5D1F0F4E7A459B9EA047875B9899F5">
+            <p>G to H migration will now pull in linkTrackVars and
+				linkTrackEvents from the old globals. 
+			 </p>
+          </li>
+          <li id="li_56BF09C42FFB46A1B0DC17FD38EBAB37">
+            <p>Fixed bug in calling Universal Tag method si() multiple times. 
+			 </p>
+          </li>
+        </ul>
+      </p>
+      <p>
+        <b> H.12 
+		  </b>
+      </p>
+      <p>
+        <ul id="ul_649196CDE7184CE5812C8DFC22A30C8D">
+          <li id="li_7BC74E70ACD14F3AB709BBA25AB4B0BF">
+            <p>Screen resolution tracking is fixed. 
+			 </p>
+          </li>
+        </ul>
+      </p>
+      <p>
+        <b> H.11 
+		  </b>
+      </p>
+      <p>
+        <ul id="ul_791E4820284B4DE38CCA2466D87853AF">
+          <li id="li_82262DD6051E4D338B9AC7D7FE7799F8">
+            <p>Most of the JavaScript code is compressed now. 
+			 </p>
+          </li>
+          <li id="li_98AC5200E3DA4608BC09260410873196">
+            <p>Additional tracking requests for the same instance are queued up
+				until the first finishes. 
+			 </p>
+          </li>
+          <li id="li_47F196388E5A42C5BB561DCFD0598D0B">
+            <p>Each request is sent with a different image object to avoid
+				clobbering the last one. 
+			 </p>
+          </li>
+          <li id="li_CF021A6A78924F9DB1C5BBCF6C8EA4EE">
+            <p>Fixed handling of HREFs in some browsers where the toString method
+				does not give you a full URL. 
+			 </p>
+          </li>
+          <li id="li_704612FF7119404FAADAEBF983C76728">
+            <p>Added technology variables
+				(s.resolution,s.colorDepth,s.javascriptVersion,s.javaEnabled,s.cookiesEnabled,s.browserWidth,s.browserHeight,s.connectionType,s.homepage,s.plugins)
+				that can be read by plugins. 
+			 </p>
+          </li>
+          <li id="li_D535B605F3B74721BF78D711E0D0EC42">
+            <p>Fixed bug in finding an already created instance for a report
+				suite. 
+			 </p>
+          </li>
+          <li id="li_1199971C9E5F4C27A3B40AE7FAE355BA">
+            <p>All of the global functions besides s_gi() are defined compressed
+				or uncompressed in strings in s_gi(). 
+			 </p>
+          </li>
+        </ul>
+      </p>
+      <p>
+        <b> H.10 
+		  </b>
+      </p>
+      <p>
+        <ul id="ul_32DF7AB6C012469EB96DB922AB924F0E">
+          <li id="li_89E2FA499FC844F0B72B9125DE7B429B">
+            <p>Added support for setting s.charSet="Auto". This will try and
+				automaticaly handle different character sets by doing the URL encoding by hand
+				instead of letting the JavaScript engine do it using escape(). The URL encoding
+				will use the %u#### syntax for characters above 127. This will only work in
+				newer browsers that have the String.charCodeAt method. All older browsers will
+				just pass in ISO8859-1 as s.charSet and let the browser URL encode the strings
+				which could cause broken strings to show up in the reports if they are using
+				something other than ISO8859-1 and have visitors with older browsers. 
+			 </p>
+          </li>
+          <li id="li_DDC7519DD111447A81A5402730C66D8E">
+            <p>Added transactionID variable. 
+			 </p>
+          </li>
+          <li id="li_6F9B276AB9584833B01E9685CCFB0C31">
+            <p>The code will nolonger document.write() out an "anchor" image on
+				the page to keep setting the source of. The code will only use dynamic image
+				objects. 
+			 </p>
+          </li>
+          <li id="li_50E343FD49F5485A8451F16B298C56BD">
+            <p>Custom s.pageURL and s.referrer will not be truncated to 255
+				characters. 
+			 </p>
+          </li>
+          <li id="li_B227AA4E8A8F4000A091A3E78275E99A">
+            <p>JavaScript version is now based on checks for new functionality
+				added in each version of JavaScript defaulting to 1.0 and checking up to 1.7.
+				Previously the check was only based on navigator.appVersion and
+				navigator.userAgent which are nolonger enough to figure out the JavaScript
+				version. 
+			 </p>
+          </li>
+          <li id="li_0711F1FF67214EF4940D23D88A136B2F">
+            <p>New G.X compatibility functions are now in the code. These
+				functions are s_co(), s_gs(), and s_dc(). 
+			 </p>
+          </li>
+          <li id="li_C42C43F72F48403DA0588BE03CEE749A">
+            <p>IE ActiveX use to detect homepage and connection type are not
+				wrapped up in error catching to avoid JavaScript errors when ActiveX is turned
+				off. 
+			 </p>
+          </li>
+        </ul>
+      </p>
+      <p>
+        <b> H.9 
+		  </b>
+      </p>
+      <p>
+        <ul id="ul_B71F87C2DF53410EB6C847856EDA3455">
+          <li id="li_CB2F76E1AAA64639B0F064E46D8C00F8">
+            <p>Reworked Universal Tag (Partner Plugins) event listening to be
+				consistent between browsers. 
+			 </p>
+          </li>
+          <li id="li_8C32740DCA5347F68C558C5CA551CB38">
+            <p>Added new variables (dc, trackingServer, &amp;
+				trackingServerSecure) to control the tracking server. 
+			 </p>
+          </li>
+          <li id="li_BC089CF03E9843528C97B83002703C20">
+            <p>Added new variable visitorID to allow customers to pass in their
+				own visitor IDs. 
+			 </p>
+          </li>
+          <li id="li_C9430260A72A49578CA365BDA5441BD7">
+            <p>Reworked how existing instances are found in s_gi() to work better
+				with dynamic account selection and multi-suite tagging. The instance returned
+				is nolonger a copy. 
+			 </p>
+          </li>
+          <li id="li_25DE937BFEF643D6AC4F3C4097E7903E">
+            <p>Added a new s.sa() method to change the account(s) to use for the
+				instance. 
+			 </p>
+          </li>
+        </ul>
+      </p>
+      <p>
+        <b> H.8 
+		  </b>
+      </p>
+      <p>
+        <ul id="ul_EEC39AF3B5454601988B0B9AF3D7DC1E">
+          <li id="li_8250014EAB904386A11DD7AA08D64EA7">
+            <p>Added Universal Tag (Partner Plugins) support. 
+			 </p>
+          </li>
+        </ul>
+      </p>
+      <p>
+        <b> H.7 
+		  </b>
+      </p>
+      <p>
+        <ul id="ul_DA12F99D24054446AE4D440B520F0C84">
+          <li id="li_7D2A5F9A1DD248DD959150B159AD258A">
+            <p>Added check to make sure cookie domain has atleast one period in
+				it before using. 
+			 </p>
+          </li>
+        </ul>
+      </p>
+      <p>
+        <b> H.6 
+		  </b>
+      </p>
+      <p>
+        <ul id="ul_A9061CEDEB8042F4893111EED89CEAB4">
+          <li id="li_06C087197470467D9EF2BCACF5FD74F1">
+            <p>Changed to also use an image object to make requests if ss is set
+				because instances with ss set have not created an anchor and done the checks to
+				set ios. 
+			 </p>
+          </li>
+          <li id="li_DA74A90F84CA420C9B852964688FB5D7">
+            <p>Changed to use a fake target if the "clicked" object is not
+				something we would normaly track clicks for to turn off the 1/2 second delay. 
+			 </p>
+          </li>
+        </ul>
+      </p>
+      <p>
+        <b> H.5 
+		  </b>
+      </p>
+      <p>
+        <ul id="ul_CA07E2345FCC4B1DBE7B72DBD67521BB">
+          <li id="li_2B5738429F4849EBB2E93E7A41EA5005">
+            <p>Changed cookie setting to always set a domain even if it ends up
+				being the full hostname. This takes care of Firefox differentiating between no
+				domain and using the full hostname. 
+			 </p>
+          </li>
+        </ul>
+      </p>
+      <p>
+        <b> H.4 
+		  </b>
+      </p>
+      <p>
+        <ul id="ul_C90B66FCA9CB494A9347ECDFD0631304">
+          <li id="li_A89A01DFB80041CEBE98FE9449CB3C66">
+            <p>Body onclick will now validate the clicked object before trying to
+				track it. VML objects will not pass this validation so they will be ignored. 
+			 </p>
+          </li>
+          <li id="li_9C40F8C3FBD74711901480786BC01920">
+            <p>Addition of variableProvider variable to be used for DFA
+				integration. 
+			 </p>
+          </li>
+        </ul>
+      </p>
+      <p>
+        <b> H.3 
+		  </b>
+      </p>
+      <p>
+        <ul id="ul_8E914879254A4003968B8C2C2406D5BC">
+          <li id="li_3864DC6F90614764A73F746421E0FCF4">
+            <p>Enabled link tracking for Opera version 7 and up now that it
+				supports image objects. 
+			 </p>
+          </li>
+          <li id="li_A97D4F41FE7441998B58874F1248E870">
+            <p>Changed error trapping to use try-catch for all version 5 and up
+				browsers. 
+			 </p>
+          </li>
+          <li id="li_95980C97FBCC408FB879B7702D50781B">
+            <p>Changed when anchor image is added to the document so it supports
+				dynamic account selection. 
+			 </p>
+          </li>
+          <li id="li_45A8D6C6141E4BA68E273F892AB2F750">
+            <p>Added support for fpCookieDomainPeriods variable which if set will
+				be used instead of cookieDomainPeriods to build the first-party cookie domain. 
+			 </p>
+          </li>
+          <li id="li_0983D6A344024705A3B26A8C7719F981">
+            <p>Changed gv() method to be a little more warning friendly in
+				Firefox strict mode even thoug it does not matter. 
+			 </p>
+          </li>
+        </ul>
+      </p>
+      <p>
+        <b> H.2 
+		  </b>
+      </p>
+      <p>
+        <ul id="ul_1C45D552F0FA4E0090A6504CD91D17AE">
+          <li id="li_AAAB78E5AC9641388821250B4F145D3B">
+            <p>Addition of vmk to control visitor migration from 2O7.net to a
+				CNAME. 
+			 </p>
+          </li>
+        </ul>
+      </p>
+      <p>
+        <b> H.1 
+		  </b>
+      </p>
+      <p>
+        <ul id="ul_92EAAA4EAD8A4AE696D727ACE156CE2C">
+          <li id="li_084CAAF9989D4A6F87AAFA638F01EDD7">
+            <p>Made URL-encoding smarter by detecting how characters between 128
+				and 255 will be encoded. This may change the character-set passed along or
+				cause a special unicode character to be tacked onto the end of some variables. 
+			 </p>
+          </li>
+          <li id="li_AEAFB4DAD62B413CAA14695BBEB9C282">
+            <p>Made a couple changes to the tracking method that is called to
+				track the page view and every click to speed it up when the click does not need
+				to be tracked right away or not at all. 
+			 </p>
+          </li>
+          <li id="li_978F757810584D44B4343625BE5BE0E1">
+            <p>Fixed handling of linkTrackEvents for events that have a unique
+				ID. 
+			 </p>
+          </li>
+        </ul>
+      </p>
+    </section>
+  </conbody>
+</concept>

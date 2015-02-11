@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<concept id="concept_8A602BA4299B489488F25BEBF28A56D2"> 
+  <title>Content and Solution Owners</title> 
+  <shortdesc><?xm-replace_text Short Description?>
+  </shortdesc> 
+  <conbody>
+	 <p><?xm-replace_text Paragraph?>
+	 </p>
+	 <table id="table_1F7665F4E90C4173BC4602ADC9C8C593"> 
+		<tgroup cols="3"><colspec colnum="1" colname="col1"
+		  colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="2.07*"/><colspec
+		  colname="col3" colnum="3" colwidth="2.03*"/><thead> 
+			 <row> 
+				<entry colname="col1">Solution 
+				</entry> 
+				<entry colname="col2">Writer 
+				</entry> 
+				<entry colname="col3">Role 
+				</entry> 
+			 </row></thead> 
+		  <tbody> 
+			 <row> 
+				<entry colname="col1">AEM-CQ 
+				</entry> 
+				<entry colname="col2"> Stefan Spycher 
+				</entry> 
+				<entry colname="col3">Manager - AEM 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">AEM - S7 
+				</entry> 
+				<entry colname="col2">Rick Brough (lead) and Alva Ware-Bevacqui 
+				</entry> 
+				<entry colname="col3">Authors 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Analytics 
+				</entry> 
+				<entry colname="col2">Jacob Hammons 
+				</entry> 
+				<entry colname="col3">Manager - Analytics 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Target 
+				</entry> 
+				<entry colname="col2">Scott Rhoades 
+				</entry> 
+				<entry colname="col3">Author 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Social 
+				</entry> 
+				<entry colname="col2">Mark Talbot 
+				</entry> 
+				<entry colname="col3">Author 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Media Optimizer 
+				</entry> 
+				<entry colname="col2">Mary Carriger (Adv mgmt) Mark Talbot
+				  (Audience manager) 
+				</entry> 
+				<entry colname="col3">Authors 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Campaign 
+				</entry> 
+				<entry colname="col2">Alice Simonet Nkouka 
+				</entry> 
+				<entry colname="col3">Manager - Campaign 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">PrimeTime 
+				</entry> 
+				<entry colname="col2">Pamela Araki 
+				</entry> 
+				<entry colname="col3">Lead 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Dynamic tag management 
+				</entry> 
+				<entry colname="col2">Blake Frei 
+				</entry> 
+				<entry colname="col3">Manager - Tech Pubs 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table>
+  </conbody>
+</concept>

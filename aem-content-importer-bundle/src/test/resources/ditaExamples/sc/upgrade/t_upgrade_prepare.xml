@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_F23EC91E5ABD490C8AFBDB1CE88F2695"> 
+  <title>Preparing for Your Upgrade</title> 
+  <shortdesc> 
+	 <keyword>SiteCatalyst</keyword> 15 (v15) offers significant changes to
+	 features and in the way Adobe collects, processes, and stores data. Because of
+	 these changes, our goal is to upgrade clients in an orderly manner that ensures
+	 your upgrade is a success. Your upgrade requires planning and time. 
+  </shortdesc> 
+  <taskbody> 
+	 <context id="context_0CE0FD74BC1844D8881BD65CC41C1E6D"> 
+		<p>In preparation, Adobe recommends that you: 
+		</p> 
+	 </context> 
+	 <steps id="steps_4834A49C876049D1A5B44B028E1B28D3"> 
+		<step id="step_E79520B50440450D861E15480897986C"> 
+		  <cmd>Understand the new features: 
+		  </cmd> 
+		  <info> 
+			 <p>Identify places where new 
+				<xref
+				 href="feature_overview.xml#concept_C109789FA3C74B02B8AEB258E895219B"
+				 format="dita" scope="local">features</xref> reduces your workload and helps you
+				answer data questions that you previously could not answer. 
+			 </p> 
+		  </info> 
+		</step> 
+		<step id="step_828615AF633C4E81AEA7AA5403D513BF"> 
+		  <cmd>Understand the differences between 
+			 <keyword>SiteCatalyst</keyword> 14 and 15:v 
+		  </cmd> 
+		  <info> 
+			 <p>When you upgrade to version 15, your data is processed
+				differently. You need to understand the improvements and changes in metric
+				calculation. Knowing the differences helps you avoid unnecessary questions and
+				confusion that your organization might see in the reporting results. 
+			 </p> 
+			 <p>See 
+				<xref
+				 href="data_proc_dif.xml#concept_6C21A54B619E4920A9DB72F3A672B165" format="dita"
+				 scope="local">Data Differences between SiteCatalyst 14 and 15</xref>. 
+			 </p> 
+		  </info> 
+		</step> 
+		<step id="step_619B5C155603498CBB0CAE95B5559B4B"> 
+		  <cmd>Determine the amount of training that you and your organization
+			 needs. 
+		  </cmd> 
+		  <info> 
+			 <p>Before the upgrade, consider your 
+				<keyword>SiteCatalyst</keyword> user base and their level of
+				expertise with analytics. If you have novice users, you might need to hold
+				training sessions so that your organization understands and can use the new
+				features. 
+			 </p> 
+		  </info> 
+		</step> 
+		<step id="step_2EE98BBF605F4F1999C500D4880A9076"> 
+		  <cmd>Notify your Account Manager about the best time for an upgrade. 
+		  </cmd> 
+		</step> 
+		<step id="step_0EA6A63175964D5B8FCC9CB0C628B490"> 
+		  <cmd>Look for an e-mail from Adobe with instructions about selecting a
+			 final upgrade date. 
+		  </cmd> 
+		  <info>
+			 <note>All 
+				<keyword>SiteCatalyst</keyword> 15 upgrades occur on the first day
+				of the calendar month, or the first day of a custom calendar month (depending
+				on the calendar type you use in 
+				<keyword>SiteCatalyst</keyword>). 
+			 </note> 
+		  </info> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task>

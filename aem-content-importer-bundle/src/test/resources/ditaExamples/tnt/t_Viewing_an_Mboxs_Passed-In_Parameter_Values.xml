@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_22DC71B5D4E9497A858BC24FD633249F" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">View an Mbox's Passed-In Parameter
+	 Values</title>
+  <shortdesc class="- topic/shortdesc ">You might sometimes want to view the
+	 parameters associated with your mbox. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>mbox</keyword>
+      </keywords>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <steps id="steps_09453FE8CBD84E018B4666BD24B39868" class="- topic/ol task/steps ">
+      <step id="step_9E59F78E475047E2B335AC7CF720C94E" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Mouse over 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Locations</uicontrol>,
+			 then click<uicontrol class="+ topic/ph ui-d/uicontrol "> List</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_46FF2E2CBCDA4C3CBDDEB048990416EE" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Expand or shrink each mbox, parameter
+			 and parameter type. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">Only referring url, url and mbox (page)
+				parameters are shown. 
+			 </p>
+          <p class="- topic/p ">
+            <image id="image_0B8B9E7800024C6EBF7803F9694529E6" href="graphics/parameters.png" placement="inline" class="- topic/image "></image>
+          </p>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links class="- topic/related-links ">
+    <link href="r_Parameter_Types.xml#reference_2E9432AFE9724881950F66D45E96B6C5" type="reference" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Parameter Types?>
+    </link>
+    <link href="r_Deciding_Which_Parameters_and_Values_You_Need.xml#reference_8C8CF60284FC4D33914635C29858AA09" type="reference" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Deciding Which Parameters and Values You Need?>
+    </link>
+    <link href="c_Mbox-Specific_Parameters.xml#concept_B81F2D77D34E4B4E84D23F5A5B4EDDED" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Mbox-Specific Parameters?>
+    </link>
+    <link href="c_URL_Parameters.xml#concept_08C5CA0521D44C1DA3C0F89C28E15AC8" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text URL Parameters?>
+    </link>
+    <link href="c_Referring_URL_Parameters.xml#concept_C19F6E2DD15D4526A00A4DDA28E9B89D" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Referring URL Parameters?>
+    </link>
+    <link href="c_Profile_Parameters.xml#concept_01A30B4762D64CD5946B3AA38DC8A201" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Profile Attributes?>
+    </link>
+    <link href="c_Cost_and_Revenue_Reporting.xml#concept_A07BEDC4725F4887B6301C1B9FC3D1C8" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Cost and Revenue Reporting?>
+    </link>
+  </related-links>
+</task>

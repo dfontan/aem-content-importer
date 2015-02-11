@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_1D10D2834C9549C2A07932F0AB93305D"> 
+  <title> ASI Slots</title> 
+  <shortdesc> 
+	 <wintitle>Advanced Segment Insight</wintitle> (ASI) is a legacy version 14
+	 feature that is replaced by native segmentation in analytics reports. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Admin tools"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <note>The ASI interface is not available in marketing reports &amp;
+		analytics. 
+	 </note> 
+	 <p>ASI slots are no longer processing after you upgrade to Analytics.
+		However, most use cases should be resolved through segmentation. Here are a few
+		distinctions to be aware of: 
+	 </p> 
+	 <p> 
+		<b>Interface</b> 
+	 </p> 
+	 <p>For more information on the Analytics marketing reports segment
+		interface, see the 
+		<xref
+		 href="http://marketing.adobe.com/resources/help/en_US/analytics/segment/"
+		 format="http" scope="external">Analytics Segmentation Guide</xref>. 
+	 </p> 
+	 <p> 
+		<b>Data Availability</b> 
+	 </p> 
+	 <p>ASI processes from a specified date forward. Creating a segment for
+		historical data is possible but time consuming. 
+	 </p> 
+	 <p> Marketing report segments apply to all data on the new platform, as of
+		your upgrade date. After you create a segment, you can immediately apply it to
+		a report. 
+	 </p> 
+	 <p> 
+		<b>Processing vs. Filtering</b> 
+	 </p> 
+	 <p>ASI reprocesses data. This can cause some data discrepancies due to eVar
+		persistence and similar factors. As such, VISTA rules running on the ASI report
+		suite can change the data, rather than just filter out some traffic. 
+	 </p> 
+	 <p> Marketing report segments act as filters at the Visit, Visitor, or Hit
+		level. Rather than re-processing data, the filters remove data that falls
+		outside of the criteria. As such, VISTA rules cannot change the data in a
+		report segment. (If you need to re-process data after upgrading, contact
+		Engineering Services.) 
+	 </p> 
+	 <p> 
+		<b>Permissions</b> 
+	 </p> 
+	 <p>With ASI, users can be restricted to see just one or more ASI report
+		suites, if needed. 
+	 </p> 
+	 <p>Segment permissions in marketing reports differ between 
+		<xref
+		 href="http://marketing.adobe.com/resources/help/en_US/analytics/segment/seg_rights.html"
+		 format="http" scope="external"> Admin-level and non-Admin users</xref>. 
+	 </p> 
+  </conbody> 
+</concept> 

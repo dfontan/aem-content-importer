@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_8C531D94965743BFBED7A87FE5473FF0">
+  <title>Overview of the Reporting Interface</title>
+  <shortdesc> An overview of the reports and analytics landing page and a
+	 standard report.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports and analytics" />
+      <othermeta name="subtopic" content="Get started" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p> Reporting provides insights into your traditional web-based channels as
+		well as evolving channels like mobile, video, and social networking. Some
+		examples of marketing reports include: 
+	 </p>
+    <ul id="ul_B2390BB5BD734B85BC8150C1B160647B">
+      <li id="li_3BDA9DDA91B14F958AA34AA69B3098FD"> How many people visit your
+		  site 
+		</li>
+      <li id="li_952EFA3DE1A6488DB1CD231AD813312A"> How many of those visitors
+		  are unique visitors (counted only once) 
+		</li>
+      <li id="li_BAD078EE1AD74F39880C992CF69B15EF"> How they came to the site
+		  (such as whether they followed a link or came there directly) 
+		</li>
+      <li id="li_4DF68B04EA0F43EDB3C5EEDF7C457172"> What keywords visitors used
+		  to search site content 
+		</li>
+      <li id="li_CD98374127BF479191458284EE859AD9"> How long visitors stayed on
+		  a given page or on the entire site 
+		</li>
+      <li id="li_247A2531224E419F8A0C77E9CA99C4C6"> What links visitors
+		  clicked, and when they left the site 
+		</li>
+      <li id="li_C3C70317C52B477C9B1E5D63B08E0AFF"> Which marketing channels
+		  are most effective at generating revenue or conversion events 
+		</li>
+      <li id="li_122EFBA7B23F451B8480BC3FC86E6B90">How much time they spent
+		  watching a video 
+		</li>
+      <li id="li_482E1B08ECA94F0AAF941A49BCA2072B">Which browsers and devices
+		  they used to visit your site 
+		</li>
+    </ul>
+  </conbody>
+</concept>

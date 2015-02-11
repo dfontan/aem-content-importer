@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_E3D0FEC81E1F4987B39CC467F19FFCFF"> 
+  <title>Referring Domains Report</title> 
+  <shortdesc>Shows the domains that referred the customers that most impacted
+	 your site's success metrics. Referrers fall into two main categories: 
+	 <i>Domains</i> and 
+	 <i>URLs</i>. Domains refer to the domain name, and appear as the base
+	 domain without the query string or subdirectories attached. URLs include the
+	 base domain name, as well as any query strings or subdirectories. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Reports"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <section id="section_4D8CE5E111DD48FBBDCF9B5A1F16E92E"> 
+		<title>Allocation, Expiration, and Special Values</title> 
+		<table id="table_EC7423532C7E44DE97B7FC0321585A2B"> 
+		  <tgroup cols="4"><colspec colnum="1" colname="col1"
+			 colwidth="*"/><colspec colnum="2" colname="col2" colwidth="*"/><colspec
+			 colnum="3" colname="col3" colwidth="*"/><colspec colnum="4" colname="col4"
+			 colwidth="*"/><thead> 
+				<row> 
+				  <entry colname="col1"> 
+				  </entry> 
+				  <entry colname="col2">Marketing reports &amp; analytics
+					 (SiteCatalyst) 
+				  </entry> 
+				  <entry colname="col3">Ad hoc analytics 
+				  </entry> 
+				  <entry colname="col4">Data warehouse 
+				  </entry> 
+				</row></thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1">Metric Allocation 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Most Recent 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>Most Recent (can be changed to linear using the linear
+						version of a metic) 
+					 </p> 
+				  </entry> 
+				  <entry colname="col4"> 
+					 <p>Most Recent 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">Values Expire After 
+				  </entry> 
+				  <entry colname="col2"> Visit - can be shortened but not
+					 lengthened 
+				  </entry> 
+				  <entry colname="col3"> Visit 
+				  </entry> 
+				  <entry colname="col4"> Visit 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">Value Limits 
+				  </entry> 
+				  <entry colname="col2"> None 
+				  </entry> 
+				  <entry colname="col3">None 
+				  </entry> 
+				  <entry colname="col4">None 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">Special values 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>" Typed/Bookmarked": visits with no referring domain. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>" Typed/Bookmarked": visits with no referring domain. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col4"> 
+					 <p>" Typed/Bookmarked": visits with no referring domain. 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </section> 
+	 <section id="section_B83A3571D64E4E7792712FAF740D7955"> 
+		<title>Notes</title> 
+		<ul id="ul_2E5AC58083934027A27304810449AD37"> 
+		  <li id="li_52F53FDEAD30436BA0467255C34339DF">The referrer, referrer
+			 type, and referring domain are set on the first hit of the visit, or during a
+			 visit when the referrer is external (for example, if a visitor leaves your
+			 site, uses a search engine, then returns to your site before the first visit
+			 expires). These values are set at the same time and persist across the visit. 
+		  </li> 
+		  <li id="li_A1AA41292479474AB71CEEB1D2005F6F">The Typed/bookmarked line
+			 item does not include other referrer types such as no Javascript or inside your
+			 site. Therefore the line items won't match the total because of these
+			 omissions. 
+		  </li> 
+		  <li id="li_E61BADBA86F5443591E8227524EA3431"> Before July 2012, mobile
+			 traffic did not appear in this report. 
+		  </li> 
+		  <li id="li_9EC6663ECE4A436EA4346E76BFC9537A"> In Data Extract and Excel
+			 Client, when All Referring Domains is requested, v14 does NOT include
+			 Typed/Bookmarked in the total. v15 does include Typed/Bookmarked. 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_6C0FCEA9DAF04D97BA056E153B7E4628"> 
+		<title>Report History</title> 
+		<table id="table_9DFA79EC6A5A48648F2FB5418E1752DB"> 
+		  <tgroup cols="2"><colspec colnum="1" colname="col1"
+			 colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="4.87*"/><thead> 
+				<row> 
+				  <entry colname="col1">Date 
+				  </entry> 
+				  <entry colname="col2">Change 
+				  </entry> 
+				</row></thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1">1/16/2014 
+				  </entry> 
+				  <entry colname="col2">Data warehouse was updated to match the
+					 logic used by marketing reports &amp; analytics. Before this date, referring
+					 domains did not persist across the visit. 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </section> 
+  </conbody> 
+</concept> 

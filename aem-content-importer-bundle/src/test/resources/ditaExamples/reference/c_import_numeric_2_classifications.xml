@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_B8E3F93708BB441CB064182C6D57F4B2">
+  <title>Import Numeric 2 Classifications</title>
+  <shortdesc>The import and export file includes six columns for each numeric 2
+	 classification. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Admin tools" />
+      <othermeta name="subtopic" content="Classifications" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>The following definitions assume that your numeric 2 classification name
+		is MyCost. 
+	 </p>
+    <p>
+      <b>~MyCost:</b> A descriptive name for the row. 
+	 </p>
+    <p>
+      <b>~MyCost^~id~:</b> The ID for editing an existing row. When you add a
+		new row, this should be blank. An ID is automatically assigned when you export
+		from the Classification Manager. 
+	 </p>
+    <p>
+      <b>~MyCost^~value~: 
+		</b>The value for the row. If the rate column is fixed, then this is a
+		flat value distributed over the whole period. If the rate column is an event,
+		then this is the multiplier for that event. This entry should not contain
+		commas. 
+	 </p>
+    <p>
+      <b>~MyCost^~period~:</b> The period of time to which this row
+		corresponds. This must include a beginning and ending date, separated by a
+		dash. The dash must be enclosed in spaces. The definition should be formatted
+		as follows: 
+	 </p>
+    <p>YYYY/MM/DD - YYYY/MM/DD 
+	 </p>
+    <p>
+      <b>~MyCost^~rate~:</b> The event to multiply by the 
+		<wintitle>Value</wintitle> column. Valid values are: 
+	 </p>
+    <p>
+      <ul id="ul_7FE908A78D0D42B298A10689FCD89C76">
+        <li id="li_12920D084D954026BDF2C094D1EADD23">fixed - used to indicate
+		  that value is a flat value to be spread over the period. 
+		</li>
+        <li id="li_7B26750901EC48BEA4A6E41B80F888D0">revenue 
+		</li>
+        <li id="li_782AFF29F4C44C0396477C1B7D9D0887">order 
+		</li>
+        <li id="li_599094DD77E94D0F902D69FF6D1922AC">unit 
+		</li>
+        <li id="li_41DC4E4F2D0944668E8AD0B660A5E354">scopen 
+		</li>
+        <li id="li_277ED4B89A494F58BB11C3F0D0412810">scviews 
+		</li>
+        <li id="li_5F986CDEC93C4CBFBD9D318F6828605F">instance 
+		</li>
+        <li id="li_604F42E05B184CA8B0EFE5AE01932E6D">click 
+		</li>
+        <li id="li_B68670B1EFAD485EB613E65D200EA775">checkout 
+		</li>
+        <li id="li_21F388C15B73424DB53FF1BD049FFD8E">scadd 
+		</li>
+        <li id="li_F06AB2B93EBD4D6A8CC266AF70039731">scremove 
+		</li>
+        <li id="li_DB1A56801BA34F1986AC6FF083F14663">event 1 
+		</li>
+        <li id="li_ECA4C8338D51445C8CE0215BD40FEABD">event 2 
+		</li>
+        <li id="li_44902CE43B664142B333564C53232401">etc 
+		</li>
+      </ul>
+    </p>
+    <p>
+      <b>~MyCost^~hinge~:</b> The event to use to distribute the value during
+		a breakdown. This value is often the same as 
+		<wintitle>~MyCost^~rate~</wintitle>, unless you are using 
+		<wintitle>fixed</wintitle>. The valid values for this column are
+		identical to that of 
+		<wintitle>~MyCost^~rate~</wintitle>, with the addition of 
+		<wintitle>none</wintitle>. 
+	 </p>
+  </conbody>
+</concept>

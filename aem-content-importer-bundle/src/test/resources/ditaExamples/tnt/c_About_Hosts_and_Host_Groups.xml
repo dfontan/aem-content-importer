@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_A22F9D38D79546A98DF578E1B25FA585" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic concept/concept ">
+  <title class="- topic/title ">About Hosts and Host Groups</title>
+  <shortdesc class="- topic/shortdesc ">A host is any web server (or web
+	 domain) from where you serve content during any stage of your project. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody class="- topic/body  concept/conbody ">
+    <p class="- topic/p ">Any host serving an mbox is recognized. 
+	 </p>
+    <p class="- topic/p ">Hosts are bundled into host groups for ease of
+		management. For example, you might have dozens of hosts grouped in two or three
+		host groups. 
+	 </p>
+    <p class="- topic/p ">The preset host groups are production, staging, and
+		development. However, you can add new host groups and rename your host groups
+		anything you want. 
+	 </p>
+    <p class="- topic/p ">
+      <note class="- topic/note ">Sometimes domains from other sites appear in
+		  your host groups. A domain appears in the list if the domain makes a call to
+		  your<codeph class="+ topic/ph pr-d/codeph "> mbox.js</codeph>. For example, if
+		  somebody copies one of your web pages to their server, that domain appears in
+		  your host group. You might also see domains from spider engines, language
+		  translator sites, or local disk drives. 
+		</note>
+    </p>
+    <p class="- topic/p ">In cases where 
+		<codeph class="+ topic/ph pr-d/codeph ">mboxHost</codeph> is passed in an
+		API call, conversion is recorded for the host group that is passed in. If no
+		host group is passed, the host in the call defaults to Production. 
+	 </p>
+  </conbody>
+  <related-links>
+    <link href="c_Adding_a_Host_to_the_Host_List.xml#concept_DC1F216C714A4ACAA221AF9AF244A053" type="concept" format="dita" scope="local">
+      <?xm-replace_text Adding a Host to the Host List?>
+    </link>
+    <link href="t_Confirm_that_TestTarget_Recognizes_the_Host.xml#task_B850F92ADB1B41A4B74EA70F2CA67D69" type="task" format="dita" scope="local">
+      <?xm-replace_text Confirm that Test&Target Recognizes the Host?>
+    </link>
+    <link href="t_default_host_for_reporting.xml#task_9509C10526454DCBB68AC88FF4898715" format="dita" scope="local">
+      <?xm-replace_text Set the Default Host for Reporting?>
+    </link>
+    <link href="t_Setting_the_Default_Host_for_previewing.xml#task_0D4A896B9E5A4FDD9CDEDCA95A6DF200" type="task" format="dita" scope="local">
+      <?xm-replace_text Setting the Default Host for Previewing?>
+    </link>
+    <link href="t_Changing_the_Name_of_a_Host_Group.xml#task_6C683392C703447EB5327C767E133C26" type="task" format="dita" scope="local">
+      <?xm-replace_text Changing the Name of a Host Group?>
+    </link>
+    <link href="t_Moving_a_Host_to_a_Different_Host_Group.xml#task_BFA576AF3D6445E6B0F8AC3F57C07AAE" type="task" format="dita" scope="local">
+      <?xm-replace_text Moving a Host to a Different Host Group?>
+    </link>
+    <link href="t_Deleting_a_Host.xml#task_017A471F77D34D8891AE0EF8C7BD6161" type="task" format="dita" scope="local">
+      <?xm-replace_text Deleting a Host?>
+    </link>
+    <link href="t_Deleting_a_Host_Group.xml#task_0F1984C3646446D4945174E9518B5E91" type="task" format="dita" scope="local">
+      <?xm-replace_text Deleting a Host Group?>
+    </link>
+    <link href="r_Best_Practices.xml#reference_83EB8CF544214215BECB01C2B241A140" type="reference" format="dita" scope="local">
+      <?xm-replace_text Best Practices for Hosts?>
+    </link>
+    <link href="r_Troubleshooting_Hosts.xml#reference_B8A5B48087B6432596FFFF267566B785" type="reference" format="dita" scope="local">
+      <?xm-replace_text Troubleshooting Hosts?>
+    </link>
+  </related-links>
+</concept>

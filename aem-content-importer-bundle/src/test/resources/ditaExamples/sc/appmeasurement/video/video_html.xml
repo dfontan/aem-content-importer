@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_09A0AE0899804194974BF1C2247E3CA7">
+  <title>HTML 5 Video</title>
+  <shortdesc>HTML 5 video is measured using JavaScript. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>media</keyword>
+        <keyword>milestone</keyword>
+        <keyword>sdk</keyword>
+        <keyword>video</keyword>
+      </keywords>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>To measure HTML 5 video, follow the instructions provided in 
+		<xref href="video_js.xml#concept_BC13BBCAA737434996BD09238F6B6EBF" type="concept" format="dita" scope="local"><?xm-replace_text Using JavaScript to Track a Video Player?></xref>
+		to configure video tracking using JavaScript. For example, add the Media Module
+		to your 
+		<codeph>s_code</codeph> file, configure conversion variables, events, and
+		milestones, and so on. 
+	 </p>
+    <p>As described in 
+		<xref href="video_js_events.xml#concept_65FF1DB802D0437DAB672D89A279E49F" type="concept" format="dita" scope="local"><?xm-replace_text Track Video Player Events?></xref>,
+		you must manually track the HTML 5 video events. The HTML 5 specification
+		provides a large number of predefined event handlers you can use to manually
+		track HTML 5 video. The following site provides details on the HTML 5 video
+		events: 
+	 </p>
+    <p>
+      <xref href="http://www.w3.org/2010/05/video/mediaevents.html" scope="external" format="html">
+        <?xm-replace_text http://www.w3.org/2010/05/video/mediaevents.html?>
+      </xref>
+    </p>
+    <p>Using these event handlers, you can make calls to open, play, stop, and
+		close to measure video. The following code provides some examples of using the
+		HTML 5 video event handlers: 
+	 </p>
+    <codeblock>var video = document.getElementsByTagName('video')[0];
+
+video.play = function(e) {
+s.Media.play(mediaName,mediaOffset, segmentNum, segment, segmentLength);
+}
+
+video.pause = function(e) {
+s.Media.stop(mediaName,mediaOffset);
+}
+
+video.onended = function(e) {
+s.Media.close(mediaName);
+}
+</codeblock>
+  </conbody>
+</concept>

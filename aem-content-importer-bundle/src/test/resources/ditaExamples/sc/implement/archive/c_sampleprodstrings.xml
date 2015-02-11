@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_CDCAB4D0C8744816B8D9219ECC45FE11">
+  <title>Sample Product Strings</title>
+  <shortdesc>Each of the following examples shows the product string with a
+	 different configuration. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <ul id="ul_A0281F03CE8942D8ACDD3FD76BE7E06F">
+      <li id="li_21C3784949F5463E9BEC3497A13EB6FE">
+        <b>s.products=”;ABC123”</b>
+      </li>
+      <li id="li_2833F156CC70423BB320B3C168F47884">
+        <b>
+			 s.products=”;ABC123,;ABC456” 
+		  </b>
+      </li>
+      <li id="li_C4CD261CFF13419D93B29C9B7A9C8438">
+        <b>s.products=”;ABC123;1;10” 
+		  </b>
+      </li>
+      <li id="li_E57EBD23AE45415282F4EE68433981F7">
+        <b>
+			 s.products=”;ABC123;1;10,;ABC456;2;19.98”</b>
+      </li>
+      <li id="li_315A656303AD4C9DAD73B0663EF995D1">
+        <b> s.events=”event1” 
+		  </b>
+        <p>s.products=";ABC123;;;event1=1.99"
+		  </p>
+      </li>
+      <li id="li_D0503FB8BF5B410695AB3A837F1048EF">
+        <b> s.events=”event1”</b>
+        <p>s.products=";ABC123;1;10;event1=1.99" 
+		  </p>
+      </li>
+      <li id="li_0D245AC623A24B9D82F8CDDBCCB49284">
+        <b>s.events=”event1”</b>
+        <p>s.products=";ABC123;1;10;event1=1.99,;ABC123;2;19.98;event1=1.99"
+		  </p>
+      </li>
+      <li id="li_340210DD4E744CBBB6CFE47DB62155AD">
+        <b>s.events=”event1,event2”</b>
+        <p>s.products=";ABC123;1;10;event1=1.99|event2=25" 
+		  </p>
+      </li>
+      <li id="li_1A6030BDAFA742CEB2F8D26B0E906776">
+        <b>
+			 s.events=”event1,event2”</b>
+        <p>s.products=";ABC123;1;10;event1=1.99|event2=25;evar1=Super Fast
+			 Shipping" 
+		  </p>
+      </li>
+      <li id="li_E62825D8D76C40C7AA7D353362FD9F65">
+        <b>s.events=”event1,event2”</b>
+        <p>s.products=";ABC123;1;10;event1=1.99|event2=25;evar1=Super Fast
+			 Shipping|evar2=3 Stars"
+		  </p>
+      </li>
+      <li id="li_1B416EEBACEE43D49CCC2A3467EF50F3">
+        <b>s.events=”event1,event2”</b>
+        <p>s.products=";ABC123;1;10;event1=1.99|event2=25;evar1=Super Fast
+			 Shipping, ;ABC456;2;19.98;event1=1.99|event2=100;evar1=really slow shipping" 
+		  </p>
+      </li>
+      <li id="li_95F03C8FD56449BD848921A7033C86B9">
+        <b>s.events=”event1,event2,event3”</b>
+        <p>s.products=";ABC123;1;10;event1=1.99|event2=25;evar1=Super Fast
+			 Shipping,;ABC456;2;19.98;event1=1.99|event2=100;evar1=really slow
+			 shipping,;;;;event3=2.9;evar3=20% off" 
+		  </p>
+      </li>
+      <li id="li_6997DF3DA3314B41BA86867D34C65C85">
+        <b>s.events=”event1,event2,event3” 
+		  </b>
+        <p>s.products=";ABC123;,;ABC456;2;19.98;event1=1.99|event2=100;evar1=really
+			 slow shipping,;;;;event3=2.9;evar3=20% off" 
+		  </p>
+      </li>
+    </ul>
+  </conbody>
+</concept>

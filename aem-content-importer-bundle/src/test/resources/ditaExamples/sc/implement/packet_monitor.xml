@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_490DF35E06D44234A91B5FC57C0BF258"> 
+  <title>Packet Analyzers</title> 
+  <shortdesc> Packet analyzers let you view the data sent by your
+	 implementation to Adobe Data Collection Servers. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Developer and implementation"/> 
+		<othermeta name="subtopic" content="Debugger"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Simliar to the 
+		<keyword>DigitalPulse Debugger</keyword>, a packet monitor shows what
+		data parameters are being passed in an image request; however, packet monitors
+		provide added functionality: 
+	 </p> 
+	 <ul id="ul_B55D1E28750A48FB98C864A120D38332"> 
+		<li id="li_E036152DBD174F968BDFE908CE598D4D">View custom link tracking
+		  image requests 
+		</li> 
+		<li id="li_644273411D36484FA2223EF543D94968">View image requests using
+		  implementation methods other than JavaScript, such as hard-coded image requests
+		  or 
+		  <keyword>Appmeasurement</keyword>
+		</li> 
+	 </ul> 
+	 <p>To view Analytics requests, filter outgoing requests using "b/ss". 
+	 </p> 
+	 <p>In very rare cases, the debugger will report an image request although
+		no request makes it to Adobe's 
+		<keyword>Analytics</keyword> processing servers. Using a packet monitor
+		is a great way to be 100% sure that a specific image request is being fired
+		successfully. 
+	 </p> 
+	 <p>While Adobe does not provide an official packet monitor, there are a
+		wide range of them on the internet. The following are some packet monitors
+		others have found useful. 
+	 </p> 
+	 <p> 
+		<note>These lists are not meant to be comprehensive, but rather
+		  information on frequently used monitors. If you have a packet monitor you
+		  successfully use and find useful, feel free to provide feedback using the 
+		  <wintitle>Feedback</wintitle> button on the right side of this window. 
+		</note> 
+	 </p> 
+	 <table id="table_1C947B142A8247798687FA83B70CC3BC"> 
+		<tgroup cols="4"> 
+		  <colspec colnum="1" colname="col1" colwidth="*"/> 
+		  <colspec colnum="2" colname="col2" colwidth="*"/> 
+		  <colspec colnum="3" colname="col3" colwidth="*"/> 
+		  <colspec colnum="4" colname="col4" colwidth="*"/> 
+		  <thead> 
+			 <row> 
+				<entry colname="col1">Firefox 
+				</entry> 
+				<entry colname="col2">Internet Explorer 
+				</entry> 
+				<entry colname="col3">Chrome 
+				</entry> 
+				<entry colname="col4">Standalone Programs 
+				</entry> 
+			 </row> 
+		  </thead> 
+		  <tbody> 
+			 <row> 
+				<entry colname="col1"><xref
+				  href="http://www.observepoint.com/product#plugin" format="http"
+				  scope="external">Observe Point</xref> (tag viewer)
+				</entry> 
+				<entry colname="col2"> 
+				  <xref href="http://www.httpwatch.com/" scope="external"
+				  format="html">HttpWatch</xref> 
+				</entry> 
+				<entry colname="col3"><xref
+				  href="http://www.observepoint.com/product#plugin" format="http"
+				  scope="external">Observe Point</xref> (tag viewer)
+				</entry> 
+				<entry colname="col4"> 
+				  <xref href="http://www.charlesproxy.com/"
+				  scope="external" format="html">Charles</xref> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"><xref
+				  href="https://addons.mozilla.org/en-US/firefox/addon/httpfox/" scope="external"
+				  format="html">HttpFox</xref> 
+				</entry> 
+				<entry colname="col2">
+				</entry> 
+				<entry colname="col3"><xref
+				  href="http://code.google.com/chrome/devtools/docs/overview.html"
+				  scope="external" format="html">Chrome Developer Tools</xref> 
+				</entry> 
+				<entry colname="col4"> 
+				  <xref href="http://www.fiddler2.com/fiddler2/" scope="external"
+				  format="html">Fiddler</xref> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"><xref
+				  href="https://addons.mozilla.org/en-us/firefox/addon/tamper-data/"
+				  scope="external" format="html">Tamper Data</xref> 
+				</entry> 
+				<entry colname="col2">
+				</entry> 
+				<entry colname="col3"><xref
+				  href="https://chrome.google.com/webstore/detail/bmagokdooijbeehmkpknfglimnifench"
+				  scope="external" format="html">Firebug Lite</xref>
+				</entry> 
+				<entry colname="col4"> 
+				  <xref href="http://www.wireshark.org/" scope="external"
+				  format="html">Wireshark</xref> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"><xref href="http://www.httpwatch.com/"
+				  scope="external" format="html">HttpWatch</xref> 
+				</entry> 
+				<entry colname="col2">
+				</entry> 
+				<entry colname="col3">
+				</entry> 
+				<entry colname="col4">
+				</entry> 
+			 </row>
+			 <row>
+				<entry colname="col1"><xref href="http://getfirebug.com/"
+				  scope="external" format="html">Firebug</xref>
+				</entry>
+				<entry colname="col2">
+				</entry>
+				<entry colname="col3">
+				</entry>
+				<entry colname="col4">
+				</entry>
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+	 <p> 
+		<note>Adobe does NOT support or troubleshoot any issues you may
+		  experience with these packet monitors. Consult the packet monitor's originating
+		  site for assistance instead. 
+		</note> 
+	 </p> 
+  </conbody> 
+</concept>

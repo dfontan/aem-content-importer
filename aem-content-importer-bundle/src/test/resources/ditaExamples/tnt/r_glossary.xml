@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd"[]>
+<reference id="reference_2ED4321BF2C24FAC8E43A7515661A6DB">
+  <title>Glossary</title>
+  <shortdesc>Definitions of terms. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <refbody>
+    <refsyn id="refsyn_78B6720990D04A138AC13B2C37D9A145">
+      <p>
+        <ul id="ul_B6C339456636493A9E930BDDD789D1B9">
+          <li id="li_896C7F278B1E4BAFA174A474FC4F823A">
+            <xref href="t_Creating_an_A_B_Test.xml#concept_38D25CB81E8E4926A0ABC34042766DC3" format="dita" scope="local">A/B test</xref>
+            <p>Compares two or more versions of your Web site content to see
+				which best lifts your conversions, sales, or registrations. 
+			 </p>
+          </li>
+          <li id="li_D31D2A0FDBE84234B8B43EEE845C0919">
+            <xref href="c_Testing_Ads.xml#concept_C824F400EAA34B9489FF765F87FD6DBD" format="dita" scope="local">AdBox</xref>
+            <p>Useful for testing marketing from sites that do not have an mbox,
+				such as affiliates. 
+			 </p>
+          </li>
+          <li id="li_951196C6E82440659AE70B79BF2EBE9A">
+            <xref href="c_Testing_Ads.xml#concept_C824F400EAA34B9489FF765F87FD6DBD" format="dita" scope="local">behavioral ads</xref>
+            <p>Behavioral ads test and track visits to ads and other offsite
+				content. You can also use behavioral ads to identify the same user on and off
+				your site and deliver a consistent experience throughout their web experience. 
+			 </p>
+          </li>
+          <li id="li_74458C2396734C06A30165D8760EEACF">
+            <xref href="t_Viewing_Campaign_History.xml#task_D3010C3EC94941F79166DF5285647445" format="dita" scope="local">Campaign Change Log</xref>
+            <p>A record of who changed your campaigns and when the changes
+				occurred. 
+			 </p>
+          </li>
+          <li id="li_5367FAADC8794FC284F4F047571D1FDE">
+            <xref href="c_Using_the_Campaign_List_Page.xml#concept_30B4222387784C64A5DCC95E357F35C3" format="dita" scope="local">Campaign List</xref>
+            <p>Dashboard that displays a quick overview of campaign activity. 
+			 </p>
+          </li>
+          <li id="li_9172566F21744E22A5CA8746A25D9285">
+            <xref href="c_Score.xml#concept_01D9429F07AC4698BFCADB1A973D3748" format="dita" scope="local">capture score</xref>
+            <p>An engagement metric that calculates an aggregated score based on
+				the value assigned to pages visited on the site, from the point the visitor
+				first sees the campaign's first display mbox. 
+			 </p>
+          </li>
+          <li id="li_80306592813A4BA1977C1A158A98D1BD">
+            <xref href="c_Using_Category_Affinity.xml#concept_E51E078F49484B4EA0E52046E6F58E3C" format="dita" scope="local">category affinity</xref>
+            <p>Automatically captures the categories a user visits and calculates
+				the user's affinity for the category so it can be targeted and segmented on.
+				This helps to ensure that content is targeted to visitors who are most likely
+				to act on that information. 
+			 </p>
+          </li>
+          <li id="li_3578E4C151F9412AA2F9FD1240B77634">
+            <xref href="c_About_Conversion_Mboxes.xml#concept_890181F7D16A4352A789DB06B048D58A" format="dita" scope="local">conversion mbox</xref>
+            <p> Logs your test or campaign results, such as registrations,
+				orders, or sales. Typically, a conversion mbox displays nothing but merely
+				listens. Common locations for the conversion mbox are a registration completion
+				page, an order thank you page, or a click-through. You might also use a global
+				mbox to calculate conversion metrics. 
+			 </p>
+          </li>
+          <li id="li_859345C5129F4C078FE69EBD1401610C">
+            <xref href="c_About_Default_Content.xml#concept_EDDC6DA0DC6942A79393F63F27C29140" format="dita" scope="local">default content</xref>
+            <p>Displays if the visitor does not meet the requirements of the
+				test, or if default content is used as a control in the test. Every mbox must
+				contain default content to ensure a positive visitor experience. 
+			 </p>
+          </li>
+          <li id="li_F756A9E1B5074954B504B4A9F03F9A93">
+            <xref href="r_Understanding_the_Types_of_Campaigns_and_Tests.xml#reference_C22725717F40407FA424E957308E258F" format="dita" scope="local">display ad campaign</xref>
+            <p>Used for offsite Flash ad testing. 
+			 </p>
+          </li>
+          <li id="li_059C50A389954B20981C1A5818480F52">
+            <xref href="c_About_Dynamic_Content.xml#concept_657016A0E6174C22B89036E9C8A0170F" format="dita" scope="local">dynamic content</xref>
+            <p>Can be part of any type of test or campaign. No additional
+				programming is required. The visitor's session on your domain is preserved. 
+			 </p>
+          </li>
+          <li id="li_A0A7B9E0932D4E829AF86E53A48B96DF">
+            <xref href="c_About_Dynamic_Mboxes.xml#concept_062FE49B25A64AA49F3918340E4A587D" format="dita" scope="local">dynamic mbox</xref>
+            <p>Enables Rich Internet Applications (RIAs) to manipulate HTML after
+				the page has already loaded by using technologies like DHTML and AJAX. 
+			 </p>
+          </li>
+          <li id="li_A0AAE92F51A54683AB19183A5E06C951">
+            <xref href="c_How_Dynamic_Offers_Work.xml#concept_CC2A969420B34364A9FA78C1CE251818" format="dita" scope="local">dynamic offer</xref>
+            <p>Uses dynamic page technology to pass values to the offer. 
+			 </p>
+          </li>
+          <li id="li_FE57F938053A4775883774766F13E970">
+            <xref href="c_Capturing_Engagement.xml#concept_DB31E18F26EA426EB7A87EAE16A477A5" format="dita" scope="local">engagement</xref>
+            <p>The measurement of a visitors interest in a site, measured my time
+				on site, clicks, conversions, and other engagement metrics. 
+			 </p>
+          </li>
+          <li id="li_6E282775E4EA4CECAD8609F24B92AC56">
+            <xref href="c_Experiences.xml#concept_B91F0F36E9F24AA58A3C6BC0A02871E8" format="dita" scope="local">experience</xref>
+            <p>Defines the content (or offer) that displays in an mbox. Sometimes
+				called a recipe. 
+			 </p>
+          </li>
+          <li id="li_C01E3667FCBC489FA500BFB1107A226D">
+            <xref href="r_Understanding_the_Types_of_Campaigns_and_Tests.xml#reference_C22725717F40407FA424E957308E258F" format="dita" scope="local">flash campaign</xref>
+            <p>Used for onsite Flash testing. 
+			 </p>
+          </li>
+          <li id="li_A730692461804514A793A2F161E09B56">
+            <xref href="c_Testing_Ads.xml#concept_C824F400EAA34B9489FF765F87FD6DBD" format="dita" scope="local">Flashbox</xref>
+            <p>Returns content elements to a Flash file. 
+			 </p>
+          </li>
+          <li id="li_A6340270555A47FB8995C84ABFFE9E2A">
+            <xref href="r_Parameter_Types.xml#reference_2E9432AFE9724881950F66D45E96B6C5" format="dita" scope="local">geo location parameter</xref>
+            <p>Allows you to target campaigns and experiences based on your
+				visitors' geography. Also known as geo targeting parameter. 
+			 </p>
+          </li>
+          <li id="li_E4963EFDFC3D4FEAB9382BF58DA45DCE">
+            <xref href="c_About_Hosts_and_Host_Groups.xml#concept_A22F9D38D79546A98DF578E1B25FA585" format="dita" scope="local">host</xref>
+            <p>Any Web server (or Web domain) from where you serve content during
+				any stage of your project. 
+			 </p>
+          </li>
+          <li id="li_A74959D6C55247D391E8CBC2D2D9CE53">
+            <xref href="c_About_Hosts_and_Host_Groups.xml#concept_A22F9D38D79546A98DF578E1B25FA585" format="dita" scope="local">host group</xref>
+            <p>Hosts are bundled into host groups for ease of management. The
+				preset host groups are production, staging and development. However, you may
+				add new host groups and rename your existing host groups. 
+			 </p>
+          </li>
+          <li id="li_39FE8631827F4B08BC503CF1A6812CD6">
+            <xref href="r_Parameter_Types.xml#reference_2E9432AFE9724881950F66D45E96B6C5" format="dita" scope="local">In-mbox profile parameter</xref>
+            <p>Visitor-specific parameter passed to the visitor's cookie from the
+				mbox. Returning visitor is an example of an in-mbox profile parameter. 
+			 </p>
+          </li>
+          <li id="li_5388B9D941424DF98760078CF74E34AF">
+            <xref href="t_Creating_a_Landing_Page_Campaign.xml#concept_38D25CB81E8E4926A0ABC34042766DC3" format="dita" scope="local">landing page campaign</xref>
+            <p>A landing page campaign allows you to use targeting to display
+				different landing page content for different visits. Otherwise, the landing
+				page shows the same content for each visit. A landing page campaign compares
+				different versions of the page to help you see which version of the landing
+				page produces more successful results. 
+			 </p>
+          </li>
+          <li id="li_06D03B0FB963444A8BCA9054BC2AB344">
+            <xref href="c_Using_the_Campaign_Launch_Pad.xml#concept_632502DD0A6A44E9BC0E96150B531BED" format="dita" scope="local">Launch Pad</xref>
+            <p>Provides an overview of campaign performance and optimization. 
+			 </p>
+          </li>
+          <li id="li_D6DFABAD9C1E4A6E86076DF47F516CE2">
+            <xref href="c_Mboxes.xml#concept_85E01D9DD0B64BD3A138C2D3DB83BD57" format="dita" scope="local">mbox</xref>
+            <p>"Marketing box," the location on your Web page where content is
+				displayed and visitor behavior is recorded. Some mboxes do not display
+				anything. They might track a visitor's progress through your Web site, or might
+				track whether the visitor completes a specific success metric, such as adding
+				an item to the shopping cart or completing a purchase. One such type of mbox is
+				a conversion mbox. 
+			 </p>
+          </li>
+          <li id="li_5724CF1AA00C4E718A54E04D262ACC2D">
+            <xref href="r_Parameter_Types.xml#reference_2E9432AFE9724881950F66D45E96B6C5" format="dita" scope="local">mbox parameter</xref>
+            <p>Passed in the page, not the URL. Rendered uniquely for each
+				visitor, they are used to pass data from your database and to track sales data
+				or to run Adobe Recommendations. Also known as page parameter. 
+			 </p>
+          </li>
+          <li id="li_8CA6C8A9B57F4DF499DD32FF0DC7DB3B">
+            <xref href="r_Understanding_the_Types_of_Campaigns_and_Tests.xml#reference_C22725717F40407FA424E957308E258F" format="dita" scope="local">monitoring campaign</xref>
+            <p>Tracks the performance of a conversion, success metric, or segment
+				over time, independently of tests or campaigns run to affect it. 
+			 </p>
+          </li>
+          <li id="li_915762A1FDA042209E58622B63B13997">
+            <xref href="c_Using_a_Multivariate_Campaign.xml#concept_38D25CB81E8E4926A0ABC34042766DC3" format="dita" scope="local">multivariate test</xref>
+            <p>Tests many elements and variations with less traffic and fewer
+				combinations than A/B...N tests require. A balanced test design is generated. 
+			 </p>
+          </li>
+          <li id="li_E00421032438439BAC7549B1C445BA06">
+            <xref href="c_Offers.xml#concept_40CA4EEBF72C430395ADB96C3A3D7DF4" format="dita" scope="local">offer</xref>
+            <p>An offer is the content displayed within an mbox during campaigns
+				and tests. An experience determines which offer displays when particular
+				conditions are met. 
+			 </p>
+          </li>
+          <li id="li_121BAC1BEA3B4D7BA6594C1434CFACCD">
+            <xref href="t_Adding_an_Opt-Out_Link.xml#task_439452291D1E4F458F8EC46E7D996FCD" format="dita" scope="local">opt-out link</xref>
+            <p>Enables visitors to opt-out of all counting and content delivery. 
+			 </p>
+          </li>
+          <li id="li_AF29FCB4EC8A4807AFD20798518B4180">
+            <xref href="r_Understanding_the_Types_of_Campaigns_and_Tests.xml#reference_C22725717F40407FA424E957308E258F" format="dita" scope="local">optimizing campaign</xref>
+            <p>Ensures the most effective experiences are shown more often by
+				automatically distributing traffic to the best performing segments. 
+			 </p>
+          </li>
+          <li id="li_2466957B76BD445E80CDF38349C0DE10">
+            <xref href="c_Page_Count.xml#concept_7269869F056B41EA8EB002997FF7FB67" format="dita" scope="local">page count</xref>
+            <p>An engagement metric that measures the number of pages seen in a
+				visit from the point the visitor first sees the campaign's first display mbox. 
+			 </p>
+          </li>
+          <li id="li_335B82F8469C4CCBA9229A59543014E9">
+            <xref href="c_Experiences.xml#concept_B91F0F36E9F24AA58A3C6BC0A02871E8" format="dita" scope="local">recipe</xref>
+            <p>Deprecated term defining the content that displays in a location.
+				See 
+				<i>experience</i>. 
+			 </p>
+          </li>
+          <li id="li_504F2FE819174706A30C298B0D540414">
+            <xref href="c_Using_a_Redirector.xml#concept_451731358AA64789AD0DA3BAAF2DF72C" format="dita" scope="local">redirector</xref>
+            <p>Redirects a visitor to a different web page. Use this Redirector
+				similarly to how you use an mbox in your tests to track clicks from display ads
+				to your site, vary display ad destinations, and similar tasks. 
+			 </p>
+          </li>
+          <li id="li_2A2EB956A899454FA6906E9EBE3C0922">
+            <xref href="r_Parameter_Types.xml#reference_2E9432AFE9724881950F66D45E96B6C5" format="dita" scope="local">referring URL parameter</xref>
+            <p>Passes values to the destination page's mbox as referring URL
+				parameters and values. Use these to target on the visitor's source, for
+				example. 
+			 </p>
+          </li>
+          <li id="li_D34C1C8D640E4E8F88FBF9F56DB9A89C">
+            <xref href="t_Adding_a_User.xml#task_D3A67400D4F14F00A2A234BEC917485A" format="dita" scope="local">role</xref>
+            <p>A group of users with a specific set of privileges. 
+			 </p>
+          </li>
+          <li id="li_BAA886084A83471CA32566D7BC0307D8">
+            <xref href="r_Parameter_Types.xml#reference_2E9432AFE9724881950F66D45E96B6C5" format="dita" scope="local">script profile parameter</xref>
+            <p>Similar to in-mbox profile parameter, but defined with JavaScript
+				in Target itself rather than in the page code. 
+			 </p>
+          </li>
+          <li id="li_A289C34D02264D22AB3DF5868E801E67">
+            <xref href="c_about_segments.xml#concept_7CC998E8AC9C44F2926435D171361774" format="dita" scope="local">segment</xref>
+            <p>A specified set of criteria used for targeting a campaign. Only
+				visitors who meet the criteria see the content of a campaign targeted to that
+				segment. Some segments are reusable across multiple campaigns and other are
+				specific to a campaign. 
+			 </p>
+          </li>
+          <li id="li_C7668CED0D6E4F2B849755BE9ED7C1E7">
+            <xref href="c_Managing_Segment_Filters.xml#concept_DF9534D4168D46D4B109DD0D2FB57781" format="dita" scope="local">segment filter</xref>
+            <p>A report filter used to display reports related to a specific
+				segment. 
+			 </p>
+          </li>
+          <li id="li_8A77FA3D850D480CADC4C0071EE47263">
+            <xref href="r_Parameter_Types.xml#reference_2E9432AFE9724881950F66D45E96B6C5" format="dita" scope="local">smart targeter profile parameter</xref>
+            <p>Similar to script profile parameter, but predefined to provide
+				useful targeting functionality. 
+			 </p>
+          </li>
+          <li id="li_E6CC1F6923E940508A3C9D978394FC5B">
+            <xref href="c_Using_the_Campaign_Spotlight.xml#concept_B7F1D4C409D7489FB7A5F8E4FDCE2075" format="dita" scope="local">Spotlight</xref>
+            <p>Displays campaign performance and compares the campaign objectives
+				with the actual results. 
+			 </p>
+          </li>
+          <li id="li_1DCBE00CFA42442F8DDA57BEF2872CDB">
+            <xref href="c_Managing_Success_Metrics.xml#concept_F2D06B8EDCC24EED9C494210C1415859" format="dita" scope="local">success metrics</xref>
+            <p>Track visitor behavior between entry and conversion. Success
+				metrics enable you to perform funnel analysis. 
+			 </p>
+          </li>
+          <li id="li_5AF095971A5D45728E6BDB2E3244296D">
+            <xref href="c_Campaigns.xml#concept_38D25CB81E8E4926A0ABC34042766DC3" format="dita" scope="local">test</xref>
+            <p>A campaign that compares two or more experiences against the
+				success metrics you specify so you can choose the experience that is most
+				likely to provide the results you want. 
+			 </p>
+          </li>
+          <li id="li_8D14D4E293F2435B9BF745C1382C3085">
+            <xref href="c_Time_on_Site.xml#concept_089A2B22D71F4CA4970A4369691F6DA4" format="dita" scope="local">time on site</xref>
+            <p>An engagement type that represents the time spent in the visit (in
+				seconds) from the point the visitor sees the campaign's first display mbox to
+				the load of the final page in the session with an mbox. 
+			 </p>
+          </li>
+          <li id="li_07C7057E70EB4CE1953607AB55836C6D">
+            <xref href="r_Parameter_Types.xml#reference_2E9432AFE9724881950F66D45E96B6C5" format="dita" scope="local">URL parameters</xref>
+            <p>All referring page and page URL variables are automatically passed
+				to an mbox whenever the page with the mbox is viewed by any visitor. These URL
+				variables are then available to use through the for display targeting or
+				segment filters in reports. 
+			 </p>
+          </li>
+          <li id="li_8012645943B6485197913A848D886A83">
+            <xref href="t_Creating_a_Campaign_from_the_Winning_Experience.xml#task_2C2E297CD9C144D79FE269328556677A" format="dita" scope="local">winning experience</xref>
+            <p>The best performing experience in a test. 
+			 </p>
+          </li>
+        </ul>
+      </p>
+    </refsyn>
+  </refbody>
+</reference>

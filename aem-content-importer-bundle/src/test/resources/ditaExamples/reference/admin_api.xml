@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_E8FD1E7C04FC4CE58CE3D7A66DDE0A0F">
+  <title>Administration API</title>
+  <shortdesc>Adobe's Administration API lets you change report suite and user
+	 settings without the need to use Admin Tools. This feature is useful if you
+	 have a custom reporting interface, letting you make changes to the report suite
+	 without having to log in to the interface. There are no limitations to using
+	 this API, as compared to Admin Tools. Meaning, if a certain action can be done
+	 within Admin Tools, that same action can be done using the Administration API. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Admin tools" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>For additional information, see 
+		<xref href="https://developer.omniture.com/en_US/documentation/omniture-administration/c-admin-api" format="https" scope="external">Developer Connection</xref>.
+	 </p>
+    <p>Customer Care does not provide support for the Administration API. If
+		you require assistance regarding this, refer to the 
+		<xref href="https://developer.omniture.com/en_US/forum/administration" format="nondita" scope="external">developer connection forums</xref>. 
+	 </p>
+  </conbody>
+</concept>

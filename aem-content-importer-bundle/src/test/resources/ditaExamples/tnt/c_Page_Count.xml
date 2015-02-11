@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_7269869F056B41EA8EB002997FF7FB67">
+  <title>Page Count</title>
+  <shortdesc>The Page Count engagement type measures the number of pages seen
+	 in a visit from the point the visitor first sees the campaign's first display
+	 mbox. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>The following example shows how page count engagement is calculated in a
+		campaign that tests two experiences, one with a cat image, and one with a dog
+		image. 
+	 </p>
+    <p>
+      <image id="image_D5C9B75CAB0C4A58A1C512FEDBB85658" href="graphics/example_pagecount.png"></image>
+    </p>
+    <p>In this example, the first visitor experiences the cat experience.
+		Assuming the marketer has captured page count engagement on a success metric
+		associated with 
+		<codeph>**any mbox**</codeph>, the page counter starts as soon as the
+		display mbox around the cat image is seen. The second page is recorded as well,
+		and as the visitor leaves the site, the value 2 is logged. 
+	 </p>
+    <p>Another visitor views four pages on the site and so the average number
+		of pages for the cat experience is 3. 
+	 </p>
+    <p>Similarly, two visitors experience the dog experience and stay on the
+		site for three pages and six pages respectively, for an average of 4.5 pages.
+		The campaign receives enough visits so that one experience has, on average and
+		with statistical significance, a higher pages per visit count than the others.
+		Assuming the marketer is basing success on page count per visit, she will push
+		the winning experience. 
+	 </p>
+    <p>
+      <note>Only pages that make an mbox request are counted. Multiple mbox
+		  requests on the same page are still counted as a single page. AJAX requests
+		  (using 
+		  <codeph>mboxUpdate</codeph>) are counted as separate pages. Adbox
+		  requests are also counted as a page. 
+		</note>
+    </p>
+  </conbody>
+  <related-links>
+    <link href="c_Score.xml#concept_01D9429F07AC4698BFCADB1A973D3748" type="concept" format="dita" scope="local">
+      <?xm-replace_text Capture Score Engagement Metric?>
+    </link>
+    <link href="c_Time_on_Site.xml#concept_089A2B22D71F4CA4970A4369691F6DA4" type="concept" format="dita" scope="local">
+      <?xm-replace_text Time on Site?>
+    </link>
+  </related-links>
+</concept>

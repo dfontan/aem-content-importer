@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_B50F38D3A7664F628681FEA09DEF2954">
+  <title>Bot Traffic Filtering</title>
+  <shortdesc>Traffic from known bots and spiders can now be removed from report
+	 suites. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports and analytics" />
+      <othermeta name="subtopic" content="Upgrading from V14" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Bot traffic is collected separately and displayed in two new reports: 
+		<wintitle>Bots</wintitle> report and 
+		<wintitle>Bot Traffic</wintitle> report. 
+	 </p>
+    <p>See 
+		<xref href=" https://marketing.adobe.com/resources/help/en_US/reference/index.html?f=bot_rules" format=" https" scope="external">Bot Rules</xref> in the Analytics Reference
+		Help. 
+	 </p>
+  </conbody>
+</concept>

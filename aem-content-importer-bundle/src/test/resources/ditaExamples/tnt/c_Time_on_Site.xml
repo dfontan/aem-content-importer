@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_089A2B22D71F4CA4970A4369691F6DA4">
+  <title>Time on Site</title>
+  <shortdesc>The Time on Site engagement type represents the time spent in the
+	 visit (in seconds) from the point the visitor sees the campaign's first display
+	 mbox to the load of the final page with an mbox in the session. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>The calculation does not include the amount of time spent on the last
+		page. Pages between these actions do not need to contain mboxes or the 
+		<filepath>mbox.js</filepath> file. 
+	 </p>
+    <p>The following example shows how time on site engagement is calculated in
+		a campaign that tests two experiences, one with a cat image and one with a dog
+		image. 
+	 </p>
+    <p>
+      <image id="image_3360CC6D9DD947FCA68FE24C3304D941" href="graphics/example_timeonsite.png"></image>
+    </p>
+    <p>During the first and second visits, visitors experience the cat
+		experience for 90 and 80 seconds, an average of 85 seconds. On the third and
+		fourth visits, visitors experience the dog experience for an average of 90
+		seconds. 
+	 </p>
+    <p>If time on site is the KPI you're using to determine a winner, you'll
+		need to decide whether the successful experience is the one with the highest or
+		lowest time on site. For example, a high time on site might indicate that a
+		creative on a video site holds visitor attention. But a high time on site for a
+		support site might suggest a confusing creative that doesn't help visitors find
+		what they're looking for. 
+	 </p>
+    <p>
+      <note>Targeting a success metric capturing time on site engagement with
+		  it will not impact the logged value. For example, if an online newspaper
+		  targeted the success metric to pages in the sports section, the value would not
+		  be limited to the time spent in the sports section of the site, but rather
+		  would reflect the time of the entire session (after the visitor entered the
+		  campaign). 
+		</note>
+    </p>
+  </conbody>
+  <related-links>
+    <link href="c_Score.xml#concept_01D9429F07AC4698BFCADB1A973D3748" type="concept" format="dita" scope="local">
+      <?xm-replace_text Capture Score Engagement Metric?>
+    </link>
+    <link href="c_Page_Count.xml#concept_7269869F056B41EA8EB002997FF7FB67" type="concept" format="dita" scope="local">
+      <?xm-replace_text Page Count?>
+    </link>
+  </related-links>
+</concept>

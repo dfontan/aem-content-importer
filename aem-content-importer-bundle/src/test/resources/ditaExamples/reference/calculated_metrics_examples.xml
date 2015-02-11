@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_06D319E2A43649CF9CB0E02C0A0841C3"> 
+  <title>Examples of Calculated Metrics</title> 
+  <shortdesc>Calculated metrics are user defined metrics that are compiled
+	 using the values of standard metrics. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Metrics"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>After you create a calculated metric, you can use it in any of your
+		conversion reports (or you can use traffic calculated metrics in your traffic
+		reports). Because calculated metrics are user-defined, the following table is
+		not comprehensive. However, the examples show some of the popular calculated
+		metrics that are used by many Adobe customers. 
+	 </p> 
+	 <table id="table_62D6C7D589F14453984931AD56A9CC9A"> 
+	 <title>Traffic Calculated Metrics</title> 
+	 <tgroup cols="4"> 
+		<colspec colnum="1" colname="col1" colwidth="1.78*"/> 
+		<colspec colnum="2" colname="col2" colwidth="2.83*"/> 
+		<colspec colnum="3" colname="col3" colwidth="1.00*"/> 
+		<colspec colnum="4" colname="col4" colwidth="3.69*"/> 
+		<thead> 
+		  <row> 
+			 <entry colname="col1">Name 
+			 </entry> 
+			 <entry colname="col2">Formula 
+			 </entry> 
+			 <entry colname="col3">Metric Type 
+			 </entry> 
+			 <entry colname="col4">Description 
+			 </entry> 
+		  </row> 
+		</thead> 
+		<tbody> 
+		  <row> 
+			 <entry colname="col1">Weighted Bounce Rate 
+			 </entry> 
+			 <entry colname="col2">(Single Access/Entries) * (Page Views/Total
+				Page Views) 
+			 </entry> 
+			 <entry colname="col3">Percent 
+			 </entry> 
+			 <entry colname="col4">Same as Bounce Rate, but gives a higher value
+				to pages that are viewed more often on the site, thus pushing your most popular
+				pages with this problem to the top of the list. 
+			 </entry> 
+		  </row> 
+		  <row> 
+			 <entry colname="col1">Page Views per Visit 
+			 </entry> 
+			 <entry colname="col2">Page Views/Visits 
+			 </entry> 
+			 <entry colname="col3">Numeric 
+			 </entry> 
+			 <entry colname="col4">When applied at a site level: shows the average
+				number of pages per visit. When applied in the Most Popular Pages report: shows
+				the average number of times a specific page was viewed per visit. 
+			 </entry> 
+		  </row> 
+		  <row> 
+			 <entry colname="col1">Page Views per Visitor 
+			 </entry> 
+			 <entry colname="col2">Page Views/Daily Unique Visitors, etc. 
+			 </entry> 
+			 <entry colname="col3">Numeric 
+			 </entry> 
+			 <entry colname="col4">Shows the average number of pages per unique
+				visitor (daily uniques, weekly uniques, monthly uniques, and so on.) 
+			 </entry> 
+		  </row> 
+		  <row> 
+			 <entry colname="col1">Exit Rate 
+			 </entry> 
+			 <entry colname="col2">Exits/Visits 
+			 </entry> 
+			 <entry colname="col3">Percent 
+			 </entry> 
+			 <entry colname="col4">In the Most Popular Pages report, when a
+				certain page is part of a visit, shows how often it is an exit page. 
+			 </entry> 
+		  </row> 
+		  <row> 
+			 <entry colname="col1">Entry Rate 
+			 </entry> 
+			 <entry colname="col2">Entries/Visits 
+			 </entry> 
+			 <entry colname="col3">Percent 
+			 </entry> 
+			 <entry colname="col4">In the Most Popular Pages report, when a
+				certain page is part of a visit, shows how often it is an exit page. 
+			 </entry> 
+		  </row> 
+		  <row> 
+			 <entry colname="col1">Multi-Page Visit Entry Rate 
+			 </entry> 
+			 <entry colname="col2">(Entries - Single Access) / Entries 
+			 </entry> 
+			 <entry colname="col3">Percent 
+			 </entry> 
+			 <entry colname="col4">In the Most Popular Pages report, when a page
+				is the entry page, this shows how often it leads to at least one other page. 
+			 </entry> 
+		  </row> 
+		  <row> 
+			 <entry colname="col1">Visits per Visitors 
+			 </entry> 
+			 <entry colname="col2">Visits/Daily Unique Visitors, etc. 
+			 </entry> 
+			 <entry colname="col3">Numeric 
+			 </entry> 
+			 <entry colname="col4">Shows the average number of visits per unique
+				visitor (daily, weekly, monthly, and so on.) 
+			 </entry> 
+		  </row> 
+		  <row> 
+			 <entry colname="col1">Page Views/No Reloads 
+			 </entry> 
+			 <entry colname="col2">Page Views - Reloads 
+			 </entry> 
+			 <entry colname="col3">Numeric 
+			 </entry> 
+			 <entry colname="col4">shows how many page views a page gets counting
+				Back button or additional path views to the page, but not reloads. 
+			 </entry> 
+		  </row> 
+		  <row> 
+			 <entry colname="col1">Reload Percentage 
+			 </entry> 
+			 <entry colname="col2">Reloads/Page Views 
+			 </entry> 
+			 <entry colname="col3">Percent 
+			 </entry> 
+			 <entry colname="col4">Shows the percentage of the page views that
+				were reloads of that page. 
+			 </entry> 
+		  </row> 
+		</tbody> 
+	 </tgroup> 
+	 </table> 
+	 <table id="table_1A591DF1678B4EA3BC635995A88CE405"> 
+	 <title>Conversion Calculated Metrics</title> 
+	 <tgroup cols="4"> 
+		<colspec colnum="1" colname="col1" colwidth="1.73*"/> 
+		<colspec colnum="2" colname="col2" colwidth="2.84*"/> 
+		<colspec colnum="3" colname="col3" colwidth="1.00*"/> 
+		<colspec colnum="4" colname="col4" colwidth="3.59*"/> 
+		<thead> 
+		  <row> 
+			 <entry colname="col1">
+			 </entry> 
+			 <entry colname="col2">
+			 </entry> 
+			 <entry colname="col3">
+			 </entry> 
+			 <entry colname="col4">
+			 </entry> 
+		  </row> 
+		</thead> 
+		<tbody> 
+		  <row> 
+			 <entry colname="col1">Average Order Value 
+			 </entry> 
+			 <entry colname="col2">Revenue/Orders 
+			 </entry> 
+			 <entry colname="col3">Currency 
+			 </entry> 
+			 <entry colname="col4">Shows average revenue per order. 
+			 </entry> 
+		  </row> 
+		  <row> 
+			 <entry colname="col1">Order Conversion 
+			 </entry> 
+			 <entry colname="col2">Orders/Visits 
+			 </entry> 
+			 <entry colname="col3">Percent 
+			 </entry> 
+			 <entry colname="col4">Shows the percentage of visits that result in
+				an order. 
+			 </entry> 
+		  </row> 
+		  <row> 
+			 <entry colname="col1">Buyer Conversion 
+			 </entry> 
+			 <entry colname="col2">Orders/Visitor 
+			 </entry> 
+			 <entry colname="col3">Percent 
+			 </entry> 
+			 <entry colname="col4">Shows the percentage of visitors that place an
+				order. 
+			 </entry> 
+		  </row> 
+		  <row> 
+			 <entry colname="col1">Checkout Conversion Rate 
+			 </entry> 
+			 <entry colname="col2">Orders/Checkouts 
+			 </entry> 
+			 <entry colname="col3">Percent 
+			 </entry> 
+			 <entry colname="col4">Shows the percentage of checkouts that result
+				in an order. 
+			 </entry> 
+		  </row> 
+		  <row> 
+			 <entry colname="col1">Checkout Initiation Rate 
+			 </entry> 
+			 <entry colname="col2">Checkouts/Visits 
+			 </entry> 
+			 <entry colname="col3">Checkouts/Visits 
+			 </entry> 
+			 <entry colname="col4">Shows the percentage of visits that result in a
+				checkout. 
+			 </entry> 
+		  </row> 
+		  <row> 
+			 <entry colname="col1">Average Order Size 
+			 </entry> 
+			 <entry colname="col2">Units/Orders 
+			 </entry> 
+			 <entry colname="col3">Numeric 
+			 </entry> 
+			 <entry colname="col4">Shows how many items are purchased in an order
+				on average. 
+			 </entry> 
+		  </row> 
+		  <row> 
+			 <entry colname="col1">Event Conversion 
+			 </entry> 
+			 <entry colname="col2">Orders/Event 
+			 </entry> 
+			 <entry colname="col3">Percent 
+			 </entry> 
+			 <entry colname="col4">Usable for any custom conversion event; shows
+				the percentage of visits that result in that conversion event. (For example,
+				registrations per visit, form completion per visit, download per visit, and so
+				on.) 
+			 </entry> 
+		  </row> 
+		  <row> 
+			 <entry colname="col1">Product View Conversion 
+			 </entry> 
+			 <entry colname="col2">Orders/Product View 
+			 </entry> 
+			 <entry colname="col3">Percent 
+			 </entry> 
+			 <entry colname="col4">Available in the product reports only. Shows
+				the percentage of product views that result in an order. 
+			 </entry> 
+		  </row> 
+		  <row> 
+			 <entry colname="col1">Abandoned 
+			 </entry> 
+			 <entry colname="col2">Cart Adds - Orders 
+			 </entry> 
+			 <entry colname="col3">Numeric 
+			 </entry> 
+			 <entry colname="col4">Shows how many cart additions did not result in
+				an order. (Effective at a product level as well as a site level.) 
+			 </entry> 
+		  </row> 
+		  <row> 
+			 <entry colname="col1">Abandonment Rate 
+			 </entry> 
+			 <entry colname="col2">1 - (Orders/Cart Adds) 
+			 </entry> 
+			 <entry colname="col3">Percent 
+			 </entry> 
+			 <entry colname="col4">Shows the percentage of visitors who added an
+				item to their cart and then did not purchase it. 
+			 </entry> 
+		  </row> 
+		  <row> 
+			 <entry colname="col1">Abandoned Revenue 
+			 </entry> 
+			 <entry colname="col2">(Revenue/Orders) * (Cart Adds - Orders) 
+			 </entry> 
+			 <entry colname="col3">Currency 
+			 </entry> 
+			 <entry colname="col4">Shows the general amount of revenue loss due to
+				abandonment. (Revenue is based on the value of the average order.) 
+			 </entry> 
+		  </row> 
+		  <row> 
+			 <entry colname="col1">Custom eVar Conversion Rate 
+			 </entry> 
+			 <entry colname="col2">Orders/Instances 
+			 </entry> 
+			 <entry colname="col3">Percent 
+			 </entry> 
+			 <entry colname="col4">In a custom eVar report, shows the percentages
+				of instances (or setting the variable) that resulted in an order. For example,
+				when using a custom eVar to track internal searches, it can show the percentage
+				of searches on a keyword that resulted in an order. 
+			 </entry> 
+		  </row> 
+		  <row> 
+			 <entry colname="col1">Campaign Conversion Rate 
+			 </entry> 
+			 <entry colname="col2">Orders/Click-throughs 
+			 </entry> 
+			 <entry colname="col3">Percent 
+			 </entry> 
+			 <entry colname="col4">(Available in Campaign reports.) Shows the
+				percentage of click-throughs that resulted in an order. (Can also be used with
+				any conversion event, not just orders. When using Event 1 for registrations,
+				Event 1/Clickthroughs gives you the percentage of campaign click- throughs that
+				resulted in a registration). 
+			 </entry> 
+		  </row> 
+		  <row> 
+			 <entry colname="col1">Revenue per "Action" 
+			 </entry> 
+			 <entry colname="col2">Revenue/Instances 
+			 </entry> 
+			 <entry colname="col3">Currency 
+			 </entry> 
+			 <entry colname="col4">In an eVar report, when an eVar is set when
+				someone clicks something (like an internal promotion or specific navigation),
+				this metric shows the amount of revenue that was a direct result of the click. 
+			 </entry> 
+		  </row> 
+		  <row> 
+			 <entry colname="col1">Average Item Value 
+			 </entry> 
+			 <entry colname="col2">Revenue/Units 
+			 </entry> 
+			 <entry colname="col3">Currency 
+			 </entry> 
+			 <entry colname="col4">Shows the average revenue per item purchased. 
+			 </entry> 
+		  </row> 
+		  <row> 
+			 <entry colname="col1">Event to Event Ratio 
+			 </entry> 
+			 <entry colname="col2">Event to Event Ratio 
+			 </entry> 
+			 <entry colname="col3">Percent 
+			 </entry> 
+			 <entry colname="col4">Shows the percentage of custom events that
+				resulted in a different custom event. (For example, if you have a sign-in that
+				may lead to a download, and they were set to Event 1 and Event 2 respectively,
+				this shows you downloads per sign-in.) 
+			 </entry> 
+		  </row> 
+		  <row> 
+			 <entry colname="col1">"Unrounded" Revenue 
+			 </entry> 
+			 <entry colname="col2">"Unrounded" Revenue 
+			 </entry> 
+			 <entry colname="col3">Currency to the second decimal place 
+			 </entry> 
+			 <entry colname="col4">Revenue by default rounds to the dollar. If you
+				want to see Revenue to the cent, create a calculated metric with two decimal
+				places. 
+			 </entry> 
+		  </row> 
+		</tbody> 
+	 </tgroup> 
+	 </table> 
+  </conbody> 
+</concept>

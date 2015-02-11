@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_D776B25A2DBB440AAA734A863792F072">
+  <title>JavaScript Report</title>
+  <shortdesc>Shows metrics based on whether the device has JavaScript enabled,
+	 disabled, or whether it is counted as "unidentified".
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <note>Mobile devices are always listed as disabled/unidentified, even if
+		they support JavaScript. 
+	 </note>
+  </conbody>
+</concept>

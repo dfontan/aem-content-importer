@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_A4007F6307E4419DAA65E1668A8FEBA2"> 
+  <title>products</title> 
+  <shortdesc> The 
+	 <varname>products</varname> variable is used for tracking products and
+	 product categories as well as purchase quantity and purchase price. Products is
+	 typically set in conjunction with a cart event or a product view event. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Developer and implementation"/> 
+		<othermeta name="subtopic" content="Variables"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The 
+		<varname>products</varname> variable tracks how users interact with
+		products on your site. For instance, the products variable can track how many
+		times a product is viewed, added to the shopping cart, checked out, and
+		purchased. It can also track the relative effectiveness of merchandising
+		categories on your site. The scenarios below are common for using the products
+		variable. 
+	 </p> 
+	 <p> The 
+		<varname>products</varname> variable should always be set in conjunction
+		with a success event. 
+	 </p> 
+	 <table id="table_D5A11AFDDD364D0993D387906343DDF3"> 
+		<tgroup cols="4"> 
+		  <colspec colnum="1" colname="col1" colwidth="*"/> 
+		  <colspec colnum="2" colname="col2" colwidth="*"/> 
+		  <colspec colnum="3" colname="col3" colwidth="*"/> 
+		  <colspec colnum="4" colname="col4" colwidth="*"/> 
+		  <thead> 
+			 <row> 
+				<entry> Max Size 
+				</entry> 
+				<entry> Debugger Parameter 
+				</entry> 
+				<entry> Reports Populated 
+				</entry> 
+				<entry> Default Value 
+				</entry> 
+			 </row> 
+		  </thead> 
+		  <tbody> 
+			 <row> 
+				<entry> 
+				  <p>The "<wintitle>Product</wintitle>" and
+					 "<wintitle>Category</wintitle>" sections of products each have a limit of 100
+					 bytes. Adobe does not impose a size limit on products, though most browsers
+					 impose a size limit on the total URL length of image requests. 
+				  </p> 
+				</entry> 
+				<entry> products 
+				</entry> 
+				<entry> Products 
+				  <p>Categories (optional) 
+				  </p> 
+				  <p>Revenue (optional) 
+				  </p> 
+				  <p>Units (optional) 
+				  </p> 
+				  <p>Custom Events (optional) 
+				  </p> 
+				  <p>eVars (optional) 
+				  </p> 
+				</entry> 
+				<entry> " " 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+	 <section id="section_ABA3682985E540E6AA67A510176CCFFC"> 
+		<title>Syntax of the Products Variable</title> 
+		<codeblock outputclass="syntax javascript">"Category;Product;Quantity;Price;eventN=X[|eventN2=X2];eVarN=merch_category[|eVarN2=merch_category2]"</codeblock> 
+		<table id="table_09C53B42F6BA46C18C852B981D4829B1"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="4.67*"/> 
+			 <thead> 
+				<row> 
+				  <entry> Field 
+				  </entry> 
+				  <entry> Definition 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1">Category 
+				  </entry> 
+				  <entry colname="col2">Contains the associated product category.
+					 In version 15, products can be associated with multiple categories which fixes
+					 a limitation present in version 14. If you were previously not recording a
+					 product category, you are encouraged to start populating this field for report
+					 suites that are on version 15. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> Product 
+				  </entry> 
+				  <entry> (Required) The identifier used to track a product. This
+					 identifier is used to populate the 
+					 <wintitle>Products</wintitle> report. Be sure to use the same
+					 identifier through the checkout process. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> Quantity 
+				  </entry> 
+				  <entry> The number of units purchased. This field must be set
+					 with a 
+					 <wintitle>purchase</wintitle> event to be recorded. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> Price 
+				  </entry> 
+				  <entry> Refers to the combined cost of the total quantity
+					 purchased (units x individual unit price), not to the individual price. This
+					 field must be set with a 
+					 <wintitle>purchase</wintitle> event to be recorded. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> Events 
+				  </entry> 
+				  <entry> Currency events associated with the specified product.
+					 See 
+					 <xref
+					  href="products.xml#concept_A4007F6307E4419DAA65E1668A8FEBA2/section_F814DF053C0D463A97DA039E6323720C"
+					  format="dita" scope="local"><?xm-replace_text Product-Specific Currency Events?></xref>
+					 and 
+					 <xref
+					  href="products.xml#concept_A4007F6307E4419DAA65E1668A8FEBA2/section_D06F76A8A1F8498EB1BD6D8C8B9D5BE0"
+					  format="dita" scope="local"><?xm-replace_text Order-Wide Currency Events?></xref>.
+					 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> eVars 
+				  </entry> 
+				  <entry> Merchandising eVar values associated with a specific
+					 product. See 
+					 <xref
+					  href="var_merchandising.xml#concept_8B05F9352B354536999CE390E714F86B"
+					  format="dita" scope="local"><?xm-replace_text Merchandising Variables?></xref>.
+					 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<p>The values included in the 
+		  <varname>products</varname> variable are based on the type of event you
+		  are recording. The category/product delimiter (;) is required as a place holder
+		  when omitting Category. Other delimiters are required only if they are
+		  necessary to distinguish which parameter you are including, as shown in the
+		  examples on this page. 
+		</p> 
+	 </section> 
+	 <section id="section_D5E689D4AAE941EC851CA9B98328A4DE"> 
+		<title>Setting products with Non-Purchase Events</title> 
+		<p>The 
+		  <varname>products</varname> variable must be set in conjunction with a
+		  success event. 
+		</p> <sectiondiv> 
+		<b>Syntax</b> 
+		<codeblock outputclass="syntax javascript">s.events="prodView"
+s.products="Category;Product[,Category;Product]"
+</codeblock> 
+		<p>In the examples below, product attributes (category) are separated by
+		  semicolons. Multiple products are separated by commas. 
+		</p> </sectiondiv> <sectiondiv> 
+		<b>Example 1: Single Product</b> 
+		<codeblock outputclass="syntax javascript">s.events="prodView"
+s.products="Footwear;Running Shoes"
+</codeblock> </sectiondiv> <sectiondiv> 
+		<b>Example 2: Multiple Products</b> 
+		<codeblock outputclass="syntax javascript">s.events="prodView"
+s.products="Footwear;Running Shoes,;Running Socks"
+</codeblock> </sectiondiv> 
+	 </section> 
+	 <section id="section_618AAC96E7B541A7AABAA028E5F4E5C3"> 
+		<title>Setting products with a Purchase Event</title> 
+		<p>The 
+		  <varname>purchase</varname> event should be set on the final
+		  confirmation ("Thank You!") page of the order process. The product name,
+		  category, quantity, and price are all captured in the 
+		  <varname>products</varname> variable. Although the 
+		  <varname>purchaseID</varname> variable is not required, it is strongly
+		  recommended in order to prevent duplicate orders. 
+		</p> <sectiondiv> 
+		<b>Syntax</b> 
+		<codeblock outputclass="syntax javascript">s.events="purchase"
+s.products="Category;Product;Quantity;Price[,Category;Product;Quantity;Price]"
+s.purchaseID="1234567890"</codeblock> </sectiondiv> <sectiondiv> 
+		<b>Example 1: Single Product</b> 
+		<codeblock outputclass="syntax javascript">s.events="purchase"
+s.products="Footwear;Running Shoes;1;69.95"
+s.purchaseID="1234567890"</codeblock> </sectiondiv> <sectiondiv> 
+		<b>Example 2: Multiple Products</b> 
+		<codeblock outputclass="syntax javascript">s.events="purchase"
+s.products="Footwear;Running Shoes;1;69.95,Running Essentials;Running Socks;10;29.99"
+s.purchaseID="1234567890"
+</codeblock> 
+		<p> 
+		  <note> Price refers to the total price (unit price x units). For
+			 instance, 3 widgets purchased at 19.99 each would equal 59.97 (such as 
+			 <codeph>";Widget;3;59.97"</codeph> ). 
+		  </note> 
+		</p> </sectiondiv> 
+	 </section> 
+	 <section id="section_F814DF053C0D463A97DA039E6323720C"> 
+		<title>Product-Specific Currency Events </title> 
+		<p>If a currency event receives a value in the 
+		  <varname>products</varname> variable instead of the events variable, it
+		  applies only to that value. This is useful to track product-specific discounts,
+		  product shipping, and similar values. For example, if you configured event 1 to
+		  track product shipping, a product with a "4.50" shipping charge might appear
+		  similar to the following: 
+		</p> 
+		<codeblock outputclass="syntax javascript">s.events="event1"
+s.products="Footwear;Running Shoes;1;99.99;event1=4.50"</codeblock> 
+		<p>In this example, the value of 4.50 is associated directly with the
+		  "Running Shoes" product. If you add event1 to the products report, you'll see
+		  "4.50" listed for the "Running Shoes" line item. Similar to Price, this value
+		  should reflect the total for the quantity listed. If you have 2 items with a
+		  4.50 shipping charge each, event1 should be "9.00". 
+		</p> <sectiondiv> 
+		<b>Example 1: Single 
+		  <wintitle>Numeric/Currency</wintitle> Event</b> 
+		<codeblock outputclass="syntax javascript">s.events="purchase,event1"
+s.products="Footwear;Running Shoes;1;69.95;event1=7.59"
+</codeblock> </sectiondiv> <sectiondiv> 
+		<b>Example 2: Multiple 
+		  <wintitle>Numeric/Currency</wintitle> Events</b> 
+		<codeblock outputclass="syntax javascript">s.events="purchase,event1,event2"
+s.products="Footwear;Running Shoes;1;69.95;event1=7.59|event2=19.45"
+</codeblock> </sectiondiv> 
+	 </section> 
+	 <section id="section_D06F76A8A1F8498EB1BD6D8C8B9D5BE0"> 
+		<title>Order-Wide Currency Events</title> 
+		<p>If a currency event receives a value in the events list instead of the
+		  
+		  <varname>products</varname> variable, it applies to all products in the
+		  
+		  <varname>products</varname> variable. This is useful to track
+		  order-wide discounts, shipping, and similar values, without modifying the
+		  product price or by tracking it in the product list separately. 
+		</p> 
+		<p>For example, if you configured event10 to contain order-wide
+		  discounts, a purchase with a 10% discount might appear similar to the
+		  following: 
+		</p> 
+		<codeblock outputclass="syntax javascript">s.events="purchase,event10=9.95"
+s.products="Footwear;Running Shoes;1;69.95,Running Essentials;Running Socks;10;29.50"
+s.purchaseID="1234567890"</codeblock> 
+		<p>On currency event reports, the report total represents the
+		  de-duplicated event total (in this example, the total amount of discounts
+		  during the reporting period), not the sum of the event values for each product.
+		  For example, you would see "9.95" listed for both "Running Shoes" and "Running
+		  Socks", and the total would also be "9.95". 
+		</p> 
+		<note>if a value for the same Numeric/Currency Event is specified in the 
+		  <varname>products</varname> variable and in the 
+		  <varname>events</varname> variable, the value from the 
+		  <varname>events</varname> is used. 
+		</note> 
+	 </section> 
+	 <section id="section_A3B94C65B3EF4389AB00267D2F2688A1"> 
+		<title>Setting products with Merchandising eVars</title> 
+		<p>See 
+		  <xref
+		  href="var_merchandising.xml#concept_8B05F9352B354536999CE390E714F86B"
+		  format="dita" scope="local"><?xm-replace_text Merchandising Variables?></xref>.
+		  
+		</p> 
+	 </section> 
+	 <section id="section_D38FD0B79C0347B9AB4CF1632183DA2E"> 
+		<title>Pitfalls, Questions, and Tips</title> 
+		<ul id="ul_9163DC8209CD443D8A764BA0E0572B34"> 
+		  <li id="li_4F0D404ED97E4CC0A7AFAA78BDD4BCEF"> The 
+			 <varname>products</varname> variable should always be set in
+			 conjunction with a 
+			 <wintitle>success</wintitle> event (events). If no 
+			 <wintitle>success</wintitle> event is specified, the default event is
+			 
+			 <wintitle>prodView</wintitle>. 
+		  </li> 
+		  <li id="li_80EAF85FFCEC40CEB314983FF7ED49B2">Strip all commas and
+			 semicolons from product and category names before populating products. 
+		  </li> 
+		  <li id="li_2B89CA46A97142FCAB21C839311CA99F"> Strip all HTML characters
+			 (registered symbols, trademarks, and so forth). 
+		  </li> 
+		  <li id="li_0A6E3897D06F425F97A33F161F201343">Strip currency symbols ($)
+			 from the price. 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_FCC6EF43D3534ECB9A95CDB05820F564"> 
+		<title>Examples</title> 
+		<table id="table_6F1334E73CE048A5AC0CC28B561C1B2D"> 
+		  <tgroup cols="1"> 
+			 <colspec colnum="1" colname="col1" colwidth="*"/> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph>s.products=”Category;ABC123”</codeph> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph>s.products=”Category2;ABC123,;ABC456” 
+					 </codeph> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph>s.products=”Category3;ABC123;1;10” 
+					 </codeph> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph>s.products=”Category;ABC123;1;10,;ABC456;2;19.98”</codeph>
+					 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph>s.events=”event1”</codeph> 
+					 <p> 
+						<codeph>s.products="Category;ABC123;;;event1=1.99" 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph>s.events=”event1”</codeph> 
+					 <p> 
+						<codeph>s.products="Category;ABC123;1;10;event1=1.99" 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph>s.events=”event1”</codeph> 
+					 <p> 
+						<codeph>s.products="Category;ABC123;1;10;event1=1.99,;ABC123;2;19.98;event1=1.99"
+						  
+						</codeph> 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph>s.events=”event1,event2”</codeph> 
+					 <p> 
+						<codeph>s.products="Category;ABC123;1;10;event1=1.99|event2=25"</codeph>
+						
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph>s.events=”event1,event2”</codeph> 
+					 <p> 
+						<codeph>s.products="Category;ABC123;1;10;event1=1.99|event2=25;evar1=2
+						  Day Shipping" 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph>s.events=”event1,event2”</codeph> 
+					 <p> 
+						<codeph>s.products="Category;ABC123;1;10;event1=1.99|event2=25;evar1=2
+						  Day Shipping|evar2=3 Stars"</codeph> 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph>s.events=”event1,event2”</codeph> 
+					 <p> 
+						<codeph>s.products="Category;ABC123;1;10;event1=1.99|event2=25;evar1=2
+						  Day Shipping, ;ABC456;2;19.98;event1=1.99|event2=100;evar1=Ground Shipping" 
+						</codeph> 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph>s.events=”event1,event2,event3”</codeph> 
+					 <p> 
+						<codeph>s.products="Category;ABC123;1;10;event1=1.99|event2=25;evar1=2
+						  Day Shipping,;ABC456;2;19.98;event1=1.99|event2=100;evar1=Ground
+						  Shipping,;;;;event3=2.9;evar3=20% off"</codeph> 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <codeph>s.events=”event1,event2,event3=9.95”</codeph> 
+					 <p> 
+						<codeph>s.products="Category;ABC123;,;ABC456;2;19.98;event1=1.99|event2=100;evar1=Ground
+						  Shipping,;;;;event3=2.9;evar3=20% off"</codeph> 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </section> 
+  </conbody> 
+</concept> 

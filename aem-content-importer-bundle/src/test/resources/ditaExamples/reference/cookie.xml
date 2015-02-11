@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_51481377A7714695AF93C122FCEDF8ED"> 
+  <title>Cookie</title> 
+  <shortdesc>A cookie is a text file that uniquely identifies individuals and
+	 remembers user preferences. A cookie is stored in the user's browser. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="subtopic" content="Glossary"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p> Cookies to differentiate requests from different browsers and to store
+		helpful information that can be used by the application at a later time. In
+		particular, marketing reports uses cookies to anonymously define new visitors,
+		help analyze click-stream data, and track historical activity on the website
+		such as response to particular campaigns or the length of the sales cycle. 
+	 </p> 
+	 <p>See 
+		<xref
+		href="https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/fpcookies_overview.html"
+		format="https" scope="external">Implementing First-Party Cookies</xref>.
+	 </p>
+  </conbody> 
+</concept>

@@ -1,0 +1,1829 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_D8270F78C32B47E4B700853A640ED318">
+  <title>Version 14 Report Descriptions</title>
+  <shortdesc>Report descriptions for version 14. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <ul id="ul_A1514BC4719A44FD957534B12EB298F5">
+      <li id="li_AC7CE859843D4619ADA804908D1ABB8E">
+        <xref href="reports_sc14.xml#concept_D8270F78C32B47E4B700853A640ED318/section_13210D44FDF841EF92982FFB36557047" format="dita" scope="local">
+          <?xm-replace_text Site Metrics?>
+        </xref>
+      </li>
+      <li id="li_3D9D5E395F4E4DD7BA26B937DB779CB7">
+        <xref href="reports_sc14.xml#concept_D8270F78C32B47E4B700853A640ED318/section_73A98D5D3DF847228AA4CBB40F9265F9" format="dita" scope="local">
+          <?xm-replace_text Site Content?>
+        </xref>
+      </li>
+      <li id="li_4709585E65A44D7781A66C4AE0341772">
+        <xref href="reports_sc14.xml#concept_D8270F78C32B47E4B700853A640ED318/section_D70057FEF7574ADE88243115DFAAAC6C" format="dita" scope="local">
+          <?xm-replace_text Video?>
+        </xref>
+      </li>
+      <li id="li_F0AE31C7D94540CE90265AC0C1231745">
+        <xref href="reports_sc14.xml#concept_D8270F78C32B47E4B700853A640ED318/section_1CF3C32345B641F2B48723A5771CBC35" format="dita" scope="local">
+          <?xm-replace_text Mobile?>
+        </xref>
+      </li>
+      <li id="li_35291833EC794B6085B40C2452343791">
+        <xref href="reports_sc14.xml#concept_D8270F78C32B47E4B700853A640ED318/section_0622278718B14F37908218AADDCD9080" format="dita" scope="local">
+          <?xm-replace_text Paths?>
+        </xref>
+      </li>
+      <li id="li_13A9541A1E34484A8925BBE9993B61EC">
+        <xref href="reports_sc14.xml#concept_D8270F78C32B47E4B700853A640ED318/section_F38EC65C762C43B2B352213CE82680EF" format="dita" scope="local">
+          <?xm-replace_text Traffic Sources?>
+        </xref>
+      </li>
+      <li id="li_D1790D6F20904FE2BC82B35C3E930423">
+        <xref href="reports_sc14.xml#concept_D8270F78C32B47E4B700853A640ED318/section_285C979092C14854BE2B1EB5FFD8B695" format="dita" scope="local">
+          <?xm-replace_text Campaigns?>
+        </xref>
+      </li>
+      <li id="li_16DB647E1C5148F8A0DCD2133677ED9E">
+        <xref href="reports_sc14.xml#concept_D8270F78C32B47E4B700853A640ED318/section_BE239A9D389947AA9660F7EEC40970FC" format="dita" scope="local">
+          <?xm-replace_text Products?>
+        </xref>
+      </li>
+      <li id="li_98468B4CC3774C30B11134C757D43235">
+        <xref href="reports_sc14.xml#concept_D8270F78C32B47E4B700853A640ED318/section_A983AA3DAD7C44A6BA7288AC8839EB49" format="dita" scope="local">
+          <?xm-replace_text Visitor Retention?>
+        </xref>
+      </li>
+      <li id="li_E7E709A031474BA287A4F971A69FDF95">
+        <xref href="reports_sc14.xml#concept_D8270F78C32B47E4B700853A640ED318/section_8D9CD85538304F2B80340151316ED91B" format="dita" scope="local">
+          <?xm-replace_text Visitor Profile?>
+        </xref>
+      </li>
+    </ul>
+    <section id="section_13210D44FDF841EF92982FFB36557047">
+      <title>Site Metrics</title>
+      <table id="table_6A4A9D8CDD2C471B95181D758A3E9AAD">
+        <tgroup cols="2">
+          <colspec colnum="1" colname="col1" colwidth="*" />
+          <colspec colnum="2" colname="col2" colwidth="*" />
+          <tbody>
+            <row>
+              <entry>
+                <p> Page Views 
+					 </p>
+              </entry>
+              <entry>
+                <p>The Page Views report displays the number of times your Web
+						site pages were viewed for the selected time period (hour, day, week, month,
+						quarter or year). This report allows you to track page views for each
+						individual page on your site, as well as an aggregate of page views for your
+						website as a whole. 
+					 </p>
+                <p>See 
+						<xref href="reports_page_views.xml#concept_332C9BDFD6C1495C8362860478B9BA33" format="dita" scope="local"><?xm-replace_text Page Views Report?></xref>. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Visits 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Visits report displays the number of visits made to
+						your Web site during the selected time period. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Hourly Unique Visitors 
+					 </p>
+              </entry>
+              <entry>
+                <p> This report shows the number of unique visitors to your
+						site for a selected hour time frame. A unique visitor is counted the first time
+						he/she visits your site within the selected time frame. If a visitor returns
+						again to your site, they are not counted as a unique user again until the
+						selected time frame has passed. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Daily Unique Visitors 
+					 </p>
+              </entry>
+              <entry>
+                <p> This report shows the number of unique visitors to your
+						site for a selected daily time frame. A unique visitor is counted the first
+						time he/she visits your site within the selected time frame. If a visitor
+						returns again to your site, they are not counted as a unique user again until
+						the selected time frame has passed. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Weekly Unique Visitors 
+					 </p>
+              </entry>
+              <entry>
+                <p> This report shows the number of unique visitors to your
+						site for a selected weekly time frame. A unique visitor is counted the first
+						time he/she visits your site within the selected time frame. If a visitor
+						returns again to your site, they are not counted as a unique user again until
+						the selected time frame has passed. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Monthly Unique Visitors 
+					 </p>
+              </entry>
+              <entry>
+                <p> This report shows the number of unique visitors to your
+						site for a selected monthly time frame. A unique visitor is counted the first
+						time he/she visits your site within the selected time frame. If a visitor
+						returns again to your site, they are not counted as a unique user again until
+						the selected time frame has passed. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Quarterly Unique Visitors 
+					 </p>
+              </entry>
+              <entry>
+                <p> This report shows the number of unique visitors to your
+						site for a selected quarterly time frame. A unique visitor is counted the first
+						time he/she visits your site within the selected time frame. If a visitor
+						returns again to your site, they are not counted as a unique user again until
+						the selected time frame has passed. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Yearly Unique Visitors 
+					 </p>
+              </entry>
+              <entry>
+                <p> This report shows the number of unique visitors to your
+						site for a selected yearly time frame. A unique visitor is counted the first
+						time he/she visits your site within the selected time frame. If a visitor
+						returns again to your site, they are not counted as a unique user again until
+						the selected time frame has passed. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Time Spent per Visit 
+					 </p>
+              </entry>
+              <entry>
+                <p> This report reveals the length of time visitors spend
+						viewing your site as a whole during each visit. It also has an "Average Time
+						Spent on Site" statistic that shows the average time that was spent viewing
+						your site, taken across all visitors. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Purchase Conversion Funnel 
+					 </p>
+              </entry>
+              <entry>
+                <p>The Purchase Conversion Funnel Report shows summary data for
+						five metrics in the Purchases reporting group by default: Visits (Buying
+						Opportunities), Carts, Orders, Revenue and Units. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Revenue 
+					 </p>
+              </entry>
+              <entry>
+                <p>The reports in this section let you view information related
+						to standard purchasing metrics over selected time periods. Examples could
+						include revenue during the month of March, orders made last week or units sold
+						today. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Orders 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Orders report shows the number of orders made on your
+						Web site during the selected time period. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Units 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Units report shows the total units that were ordered
+						for the selected time period. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Custom Events 1-100 
+					 </p>
+              </entry>
+              <entry>
+                <p>The number of possibilities for using the Custom Event
+						Report is practically infinite. Since each marketing report is a little
+						different, this report is used differently for each client. However, just to
+						give a simple example of a common use, the Custom Event Report can be used as a
+						counter that shows the number of times an event occurs. For example, if event1
+						is set to count the number of times a document is downloaded, then the Custom
+						Event Report will show the total number of times the event (or download)
+						occurs. 
+					 </p>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+    <section id="section_73A98D5D3DF847228AA4CBB40F9265F9">
+      <title>Site Content</title>
+      <table id="table_397E5F7B52884122BD3E681ACA14041E">
+        <tgroup cols="2">
+          <colspec colnum="1" colname="col1" colwidth="*" />
+          <colspec colnum="2" colname="col2" colwidth="*" />
+          <tbody>
+            <row>
+              <entry>
+                <p> Pages 
+					 </p>
+              </entry>
+              <entry>
+                <p>The Pages Report ranks the pages on your site based on those
+						that receive the most traffic. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Site Sections 
+					 </p>
+              </entry>
+              <entry>
+                <p>The Site Sections Report shows the areas of your site that
+						were visited most by your site customers. Site Sections could include (but are
+						not limited to) groups of products, similar to Categories. Data for the
+						Conversion Site Sections report is imported from the Site Section report in the
+						Traffic group, which receives its information from the channel variable in the
+						tracking code. You can use this report to identify the greatest impact on site
+						statistics from items in varying site sections. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Site Hierarchy 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Site Hierarchy Report is populated as a result of
+						proper configuration of the hierN variable that is set on each page that you
+						want to take part in the hierarchy. The report will show you the hierarchical
+						layout of the pages on your Web site and display those pages in order based on
+						how they are configured in the variable. You will be able to see selected
+						metrics (unique visitors, etc.) for the hierarchy. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Servers 
+					 </p>
+              </entry>
+              <entry>
+                <p>You can group pages together that are being hosted by a
+						particular server. For example, if you have a web site that is hosted on two
+						different servers, you may want to see if one server is serving more
+						impressions than the other server. This report lists all of the servers of your
+						web site that are being tracked and tells you which servers are being accessed
+						the most. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Exit Links 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Exit Links report shows you the links that your
+						visitors click to leave your site and go to another site. Exit links are those
+						links that take your visitor to another site. Most common examples of exit
+						links are links to partners, affiliates, etc. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>File Downloads 
+					 </p>
+              </entry>
+              <entry>
+                <p> The File Downloads report is a new report that displays the
+						files that have been downloaded from your Web site. These files can be any type
+						of document you wish to track, including user manuals, presentations, audio, or
+						video files. This report requires that link tracking code to be installed on
+						the site you are tracking. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Custom Links 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Custom Links report is designed to show you the links
+						your site visitors prefer, helping you better understand the navigation
+						patterns within your site. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>ClickMap 
+					 </p>
+              </entry>
+              <entry>
+                <p>The Optimum Path ClickMap represents a whole new way of
+						viewing your web analytics. After installing the ClickMap browser plug-in you
+						can browse your site and see graphical information about how visitors are
+						interacting with your content superimposed over the pages of the site. Links on
+						the page will be highlighted-the greater the intensity of the color, the more
+						frequently the item is clicked on. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Pages Not Found 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Pages Not Found report lists the number of times a Page
+						Not Found (404- error) page is displayed to your site visitors and lists the
+						URLs of the pages that were not found. 
+					 </p>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+    <section id="section_D70057FEF7574ADE88243115DFAAAC6C">
+      <title>Video</title>
+      <table id="table_36F64EE040E5419AB9504E9A31791173">
+        <tgroup cols="2">
+          <colspec colnum="1" colname="col1" colwidth="*" />
+          <colspec colnum="2" colname="col2" colwidth="*" />
+          <tbody>
+            <row>
+              <entry>
+                <p> Video Views 
+					 </p>
+              </entry>
+              <entry>
+                <p>The Video Views Report is used to show the number of times a
+						video is viewed per time period. A single video view represents a single video
+						being watched by a visitor and may consist of multiple plays, stops, pauses,
+						and starts, but always consists of a visitor viewing some portion of the video.
+						
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Video Visits 
+					 </p>
+              </entry>
+              <entry>
+                <p>The Video Visits Report shows the number of visits that
+						contained a video view over a time period. When visitors view multiple videos
+						on a single visit, one video visit is counted. For example, let's say you are
+						tracking video views per day, and a visitor views two videos on Monday - only
+						one visit will be counted for viewing the videos. However, if the visitor
+						returns again on Tuesday, they will be counted again no matter how many videos
+						watched. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Daily Unique Video Visitors 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Daily Unique Video Visitors Report shows the number of
+						visitors that viewed a video in a single day. Each visitor is counted only once
+						per day no matter how many times they return in that day to view the video. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Videos 
+					 </p>
+              </entry>
+              <entry>
+                <p>The Videos Report lists videos and metrics associated with
+						them during the time period selected. It also reports on milestone events, such
+						as the number of views that were longer than 75%, for example. Conversion
+						metrics such as Revenue and Custom Events may be attributed to videos that
+						preceded the conversion event but were not actually viewed during the time
+						period selected. For example, if a video is viewed in November and a purchase
+						occurs in December, the video may receive credit for the December purchase.
+						Using breakdowns, this report allows you to see the relationship between video
+						views and other conversion and acquisition reports such as campaigns. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Next Video Flow 
+					 </p>
+              </entry>
+              <entry>
+                <p>The Next Video Flow Report shows the order in which videos
+						are viewed during a visit. You can select a video to see which videos were
+						viewed after that video. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Previous Video Flow 
+					 </p>
+              </entry>
+              <entry>
+                <p>The Previous Video Flow Report shows the order in which
+						videos are viewed during a visit. You can select a video and see which videos
+						were viewed before that video. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Video Segments Viewed 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Video Segments Viewed Report shows you the segments or
+						parts of a video that were viewed. For example, if your video is broken up by
+						chapter, you can see how many people viewed Chapter 1 as compared to Chapter 2,
+						etc. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Time Spent on Video 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Time Spent on Video Report shows you breakdowns of the
+						number of visitors and the amount of time spent viewing a video. For example,
+						11 visitors spent between 0 and 9 seconds viewing a video. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Video Players 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Video Players Report shows which video players were
+						most commonly used by people viewing your videos. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Videos by Player 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Videos by Player Report automatically correlates
+						between the Videos Report and the Video Players Report so you can see the
+						relationship between them; e.g. which videos were watched on which video
+						players. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Video Details by Player 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Video Details by Player Report filters the video
+						segments by video player. 
+					 </p>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+    <section id="section_1CF3C32345B641F2B48723A5771CBC35">
+      <title>Mobile</title>
+      <table id="table_5E46267002CC445E84D65110E1C953DE">
+        <tgroup cols="2">
+          <colspec colnum="1" colname="col1" colwidth="*" />
+          <colspec colnum="2" colname="col2" colwidth="*" />
+          <tbody>
+            <row>
+              <entry>
+                <p> Devices 
+					 </p>
+              </entry>
+              <entry>
+                <p>The Mobile Devices Report shows the number of visitors that
+						accessed your site using mobile devices - such as devices running the Palm OS
+						or Windows CE. This can help you understand the impact of mobile initiatives so
+						you can plan accordingly. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Manufacturer 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Manufacturer report groups mobile device hits to your
+						site by mobile device manufacturer. The report displays the type of
+						manufacturer, number of views for each manufacturer, and the corresponding
+						percentages. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Screen Size 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Screen Size report groups mobile device hits to your
+						site by the screen size of the device. The report shows each screen size, the
+						number of visitors to your site that used each screen size, and each screen
+						size percentage of the total views. The Screen Size report shows both the
+						height and width of the screen size as compared to the Screen Height report and
+						Screen Width report. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Screen Height 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Screen Height report shows the screen height only for
+						various mobile devices and the number of views for each screen height. You can
+						also view the Screen Size report to see both the screen height and width. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Screen Width 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Screen Width report shows the screen width only for
+						various mobile devices and the number of views for each screen width. You can
+						also view the Screen Size report to see both the screen height and width. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Cookie Support 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Cookie Support report groups mobile device hits by
+						whether they support cookies or not. Visitors are divided into supported and
+						not supported groups. The type of mobile device is identified in the user agent
+						string. Adobe maintains a list of mobile devices that are known to support
+						cookies. If the mobile device listed in the user agent string is also listed in
+						Adobe's list of mobile devices, then the Supported line item in the Cookie
+						Support report will be incremented by one. Otherwise, the Not Supported line
+						item in the report will be incremented by one. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Image Support 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Image Support report groups mobile devices based on the
+						types of images they support. For example, if your phone supports JPEG images,
+						and you access a site being tracked with your mobile phone, the Image Support
+						report will be incremented by at least one. If your phone supports more than
+						one image format, then a visit to a site may result in multiple increments for
+						that visit. In other words, if your phone supports JPEG, PNG, and GIF formats,
+						then each of those groups in the report will be incremented by one. As such,
+						the sum of the groups will be greater than the total shown at the bottom of the
+						report. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Color Depth 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Color Depth report groups mobile device hits by the
+						number of colors supported. The report shows the total number of visitors to
+						your site who used a mobile device, and breaks them into groups based on the
+						number of colors configured in their mobile devices. For example, if your
+						visitor's mobile phone supports 24 colors, and they come to your site, then the
+						report increments the line item corresponding to their number of colors by one.
+						
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Audio Support 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Audio Support report groups mobile devices based on the
+						types of audio formats they support. For example, if your phone supports MP3
+						formats, and you access a site being tracked with your mobile phone, the Audio
+						Support report will be incremented by at least one. If your phone supports more
+						than one audio format, then a visit to a site may result in multiple increments
+						for that visit. In other words, if your phone supports MP3, AAC, and AMR
+						formats, then each of those groups in the report will be incremented by one. As
+						such, the sum of the groups will be greater than the total shown at the bottom
+						of the report. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Video Support 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Video Support report groups mobile devices based on the
+						types of video formats they support. For example, if your phone supports MPEG4
+						formats, and you access a site being tracked with your mobile phone, the Video
+						Support report will be incremented by at least one. If your phone supports more
+						than one image format, then a visit to a site may result in multiple increments
+						for that visit. In other words, if your phone supports MPEG4, WMV, and 3GPP
+						formats, then each of those groups in the report will be incremented by one. As
+						such, the sum of the groups will be greater than the total shown at the bottom
+						of the report. 
+					 </p>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+    <section id="section_0622278718B14F37908218AADDCD9080">
+      <title>Paths</title>
+      <table id="table_C5C9DC43CD624CB6A10207FF1C48A059">
+        <tgroup cols="2">
+          <colspec colnum="1" colname="col1" colwidth="*" />
+          <colspec colnum="2" colname="col2" colwidth="*" />
+          <tbody>
+            <row>
+              <entry>
+                <p> Next Page Flow 
+					 </p>
+              </entry>
+              <entry>
+                <p>The Next Page Flow report graphically illustrates two levels
+						of the most popular pages that your visitors view after to the selected page.
+						The report also highlights when visitors enter your site. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Next Page 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Next Page report provides detailed site path analysis
+						by showing you the pages on your site that visitors viewed after seeing a
+						selected page on your site. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Previous Page Flow 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Previous Page Flow report graphically illustrates two
+						levels of the most popular pages that your visitors view prior to the selected
+						page. The report also highlights when visitors enter your site. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Previous Page 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Previous Page report provides detailed site path
+						analysis by showing you the pages on your site that visitors viewed prior to
+						seeing a selected page on your site. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Fallout 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Fallout Report shows the visit attrition and conversion
+						rates between each checkpoint you define. Steps are arranged top-to-bottom,
+						with raw numbers and percent shown on the left, and conversion and fall-out
+						percentages on the right. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Full Paths 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Full Paths report shows you the most popular paths
+						visitors take through your site. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Pathfinder 
+					 </p>
+              </entry>
+              <entry>
+                <p> The goal of the Pathfinder report is to help you further
+						dissect your full paths into fragments, yielding the precise patterns that are
+						instrumental to optimizing your site. The power of this report is in the Filter
+						wizard that allows you to specify selection criteria that will be used to
+						generate the report. Using the Filter capability, you can analyze the path
+						fragments, querying for ones that begin with a certain page, end with a certain
+						page, or even ones that begin with one page and end with another. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Path Length 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Path Length report shows you how deep visitors browse
+						into your site (both by percentage and by total count). In other words, the
+						report indicates how many pages the average visitor to your site views before
+						leaving. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Page Summary 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Page Summary report is, essentially, a
+						tell-me-everything-you-can-about-this page report. It collects and organizes
+						page-specific information about a single page and presents it in a single
+						report. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Reloads 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Reloads report shows the number of times individual
+						pages were reloaded by page visitors. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Page Depth 
+					 </p>
+              </entry>
+              <entry>
+                <p>This report identifies the depth at which each page within
+						your site is visited. Depth for a page is measured by counting the number of
+						pages viewed before that page. So, if your "About Us" page is the third page
+						visited by a given visitor, its depth for that visit is three. You can use this
+						report to identify which pages compel your visitors to travel the deepest into
+						your site and to optimize content and navigation to make key content more
+						accessible. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Time Spent on Page 
+					 </p>
+              </entry>
+              <entry>
+                <p> This report displays the length of time that visitors
+						browse individual pages in your site. The time spent is divided into ten
+						categories: less than 15 seconds, 15-30 seconds, 30-60 seconds, 1-3 minutes,
+						3-5 minutes, 5-10 minutes, 10-15 minutes, 15-20 minutes, 20-30 minutes and
+						greater than 30 minutes. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Clicks to Page 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Clicks to Page Report identifies the depth to which
+						each page within your site is visited. Depth for a page is measured by counting
+						the number of pages viewed before it. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Entry Pages 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Entry Page report shows you, by percentage and by total
+						visits, which pages on your site are the first ones seen by new visitors. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Original Entry Pages 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Original Entry Pages report shows the first page viewed
+						of the first-ever visit to your site. Each user is counted only once unless
+						they delete their cookies or are not being tracked with cookies. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Single Page Visits 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Single Page Visits Report shows pages that are most
+						often both the entry 
+					 </p>
+                <i> and</i>
+                <p> exit page for visitor browsing sessions. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Exit Pages 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Exit Page report shows you, by percentage and by total
+						visits, which pages on your site were the last pages visitors viewed before
+						leaving your site. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Longest Paths 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Longest Paths report displays the longest paths taken
+						by visitors to your site during the selected time period. 
+					 </p>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+    <section id="section_F38EC65C762C43B2B352213CE82680EF">
+      <title>Traffic Sources</title>
+      <table id="table_53D2C65031F74879B5E934217F37457A">
+        <tgroup cols="2">
+          <colspec colnum="1" colname="col1" colwidth="*" />
+          <colspec colnum="2" colname="col2" colwidth="*" />
+          <tbody>
+            <row>
+              <entry>
+                <p> Search Keywords - All 
+					 </p>
+              </entry>
+              <entry>
+                <p>The Search Keywords - All Report displays a breakdown of
+						each search keyword that has been used to find your site. You can sort this
+						list by page views or search keywords by clicking the column title above the
+						listing. Click on the blue magnifying glass next to each search keyword in
+						order to see the actual search results screens where your site was listed. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Search Keywords - Paid 
+					 </p>
+              </entry>
+              <entry>
+                <p>The Search Keywords - Paid Report displays a breakdown of
+						each search keyword that has been used to find your site. You can sort this
+						list by page views or search keywords by clicking the column title above the
+						listing. Click on the blue magnifying glass next to each search keyword in
+						order to see the actual search results screens where your site was listed. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Search Keywords - Natural 
+					 </p>
+              </entry>
+              <entry>
+                <p>The Search Keywords - Natural Report displays a breakdown of
+						each search keyword that has been used to find your site. You can sort this
+						list by page views or search keywords by clicking the column title above the
+						listing. Click on the blue magnifying glass next to each search keyword in
+						order to see the actual search results screens where your site was listed. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Search Engines - All 
+					 </p>
+              </entry>
+              <entry>
+                <p>The Search Engines - All Report helps you learn which search
+						engines people are using to find your web page. The graph shows you the
+						percentage breakdown of the search engines that have been used to find your
+						site. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Search Engines - Paid 
+					 </p>
+              </entry>
+              <entry>
+                <p>The Search Engines - Paid Report helps you learn which
+						search engines people are using to find your web page. The graph shows you the
+						percentage breakdown of the search engines that have been used to find your
+						site. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Search Engines - Natural 
+					 </p>
+              </entry>
+              <entry>
+                <p>The Search Engines - Natural Report helps you learn which
+						search engines people are using to find your web page. The graph shows you the
+						percentage breakdown of the search engines that have been used to find your
+						site. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>All Search Page Ranking 
+					 </p>
+              </entry>
+              <entry>
+                <p> The All Search Page Ranking report shows the results pages
+						on which your site links were located in the user's searches that were
+						performed. For example, a user who came to your site from a search engine may
+						have seen you on the third of one hundred pages of results. This can help you
+						quickly see and optimize search engine efforts. Data for this report may be
+						viewed for all but the "Hourly" time period. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Referring Domains 
+					 </p>
+              </entry>
+              <entry>
+                <p>The Referring Domains report shows the domains that referred
+						the customers that most impacted your site's Success Metrics. Referrers fall
+						into two main categories: Domains and URLs. Domains refer to the domain name,
+						and appear as the base domain without the query string or subdirectories
+						attached. URLs include the base domain name, as well as any query strings or
+						subdirectories. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Original Referring Domains 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Original Referring Domains report shows the original
+						referrers that produced the customers on your site. Customers can visit your
+						site multiple times, and have a different referrer for each visit. This report
+						shows how they were referred the first time they arrived at your site. 
+					 </p>
+                <p> This can help you see if they continued to use the same
+						referrer and view patterns in how customers are referred to your site. You can
+						view the number of visitors generated by an original referrer or discover how
+						much revenue each original referrer was responsible for producing. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Referrers 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Referrers report shows where your visitors came from
+						before they arrived at your site, the methods visitors use to find your Web
+						site, and the number of visits to your site that came from these referring
+						locations. 
+					 </p>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+    <section id="section_285C979092C14854BE2B1EB5FFD8B695">
+      <title>Campaigns</title>
+      <table id="table_D6088D6E4C784A4AB053289DF8AD9CAF">
+        <tgroup cols="2">
+          <colspec colnum="1" colname="col1" colwidth="*" />
+          <colspec colnum="2" colname="col2" colwidth="*" />
+          <tbody>
+            <row>
+              <entry>
+                <p> Campaign Conversion Funnel 
+					 </p>
+              </entry>
+              <entry>
+                <p>The (Campaigns) Conversion Funnel Report shows averages for
+						four metrics in the Campaigns reporting group by default: Click-throughs,
+						Checkouts, Orders and Revenue (a click-through occurs when a user clicks on a
+						link). Conversion Funnel Reports show key conversions between important data in
+						each reporting group and "standard" conversion metrics (revenue, orders, etc.).
+						The Overview section gives a visual summary of this conversion data. The Funnel
+						Section shows statistics for all events in the Overview section based on Orders
+						and up to two other metrics: Revenue and Units. You can add metrics and custom
+						events from other reporting groups to these reports by clicking the Selected
+						Events option in the Report Status and Navigation header. 
+					 </p>
+                <b>NOTE:</b>
+                <p> Because the current time periods are not yet completed when
+						you view data, the (Campaigns) Conversion Funnel Reports may accurately
+						indicate a downward trend from the previous to the current time period; e.g.,
+						there may be fewer visits today than yesterday, but only because the rest of
+						the time period's statistics have yet to occur. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Creative Elements 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Creative Elements Report allows you to report on
+						Creative Element performance, and shows how your advertising campaigns'
+						creative elements affect your site's various Success Metrics. This report is
+						created for all accounts. Creative Elements are specified using the campaign
+						management tools provided. One or more tracking codes are assigned to a
+						Creative Element in the Manage Campaigns tool. Additionally, you can break down
+						the Creative Elements by Tracking Code and other available items. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Campaigns 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Campaigns report shows how your advertising campaigns
+						affect your site's various Success Metrics. For example, you can find out which
+						campaigns are generating the most revenue or see which campaigns have the most
+						cart removals. In addition, you can directly associate attributes with your
+						Campaign data, providing very powerful reporting capabilities. For example, you
+						can now associate flight dates with your Campaigns, as well as any customizable
+						classifications or metrics. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Tracking Code 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Tracking Code Report is the equivalent of the Campaigns
+						Report in previous versions. As in previous versions, this report shows the
+						text passed into the JavaScript campaign variable on the web site's pages. This
+						report shows how your campaign tracking code elements affect your site's
+						various Success Metrics, and is available whether or not you have set up your
+						Campaigns or Creative Elements. 
+					 </p>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+    <section id="section_BE239A9D389947AA9660F7EEC40970FC">
+      <title>Products</title>
+      <table id="table_0F99A3AA222044B0AB9B5384F944AB5B">
+        <tgroup cols="2">
+          <colspec colnum="1" colname="col1" colwidth="*" />
+          <colspec colnum="2" colname="col2" colwidth="*" />
+          <tbody>
+            <row>
+              <entry>
+                <p> Products Conversion Funnel 
+					 </p>
+              </entry>
+              <entry>
+                <p> The (Products) Conversion Funnel Report shows averages for
+						the Product Views, Cart Additions, Orders, Units, and Revenue metrics. It also
+						shows key conversions between important data in each reporting group and
+						"standard" conversion metrics (revenue, orders, etc.). 
+					 </p>
+                <p> The Overview section gives a visual summary of this
+						conversion data. The Conversion Funnel section shows statistics for all events
+						in the Overview section based on Orders and up to two other metrics: Revenue
+						and Units. You can add metrics and custom events from other reporting groups to
+						these reports by clicking the Selected Events option in the Report Status and
+						Navigation header. 
+					 </p>
+                <p> NOTE: Because the current time periods are not yet
+						completed when you view data, this report may accurately indicate a downward
+						trend from the previous to the current time period; e.g., there may be fewer
+						visits today than yesterday, but only because the rest of the time period's
+						statistics have yet to occur. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Products 
+					 </p>
+              </entry>
+              <entry>
+                <p>These reports help you identify how individual products and
+						groups of products (categories) contribute to your various conversion metrics,
+						such as revenue or checkouts. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Cross Sell 
+					 </p>
+              </entry>
+              <entry>
+                <p> A Cross Sell Report that is broken down by Cross Sell shows
+						sales relationships between products. It answers the question, "If visitors
+						purchased Item A, what else did they purchase in the same order?" 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Categories 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Categories report shows how various product categories
+						affect your site's Success Metrics. 
+					 </p>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+    <section id="section_A983AA3DAD7C44A6BA7288AC8839EB49">
+      <title>Visitor Retention</title>
+      <table id="table_B19EB03502CA4AC3954BC706ADBAC1D2">
+        <tgroup cols="2">
+          <colspec colnum="1" colname="col1" colwidth="*" />
+          <colspec colnum="2" colname="col2" colwidth="*" />
+          <tbody>
+            <row>
+              <entry>
+                <p> Return Frequency 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Return Frequency report shows the number of visitors
+						who returned to your site within one of the following categories (representing
+						the time lapse between visits): less than 1 day, 1-3 days, 3-7 days, 8-14 days,
+						14 days to 1 month and longer than 1 month. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Return Visits 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Return Visits report shows how many individuals have
+						visited more than once since Adobe began tracking your site. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Daily Return Visits 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Daily Return Visits report displays the number of
+						visitors that visited your site more than once on a given day. A day is defined
+						as the last 24-hour period. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Visit Number 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Visit Number report provides yet another method for
+						gauging visitor loyalty by displaying the visit number for each visitor that
+						comes to your site. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Customer Loyalty 
+					 </p>
+              </entry>
+              <entry>
+                <p>These reports reveal purchasing patterns of customers within
+						three categories of loyalty (new, return and loyal). The Customer Loyalty
+						report shows how much new, returning and loyal customers contribute to the
+						standard Success Metrics. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Days Before First Purchase 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Days Before First Purchase report shows the number of
+						days that pass between the first time customers visit your site and when they
+						finally make a purchase. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Days Since Last Purchase 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Days Since Last Purchase report shows the most common
+						number of days that pass between customers' repeat purchases and allows you to
+						view the time periods that contributed most to your site's key success metrics,
+						such as revenue and orders. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Daily Unique Customer 
+					 </p>
+              </entry>
+              <entry>
+                <p>The Daily Unique Customers report identifies the number of
+						different people that make purchases from your site during one day. A daily
+						unique customer is a person who makes a purchase from your site for the first
+						time within one day (from 12:01 AM to 12:00 AM). While one person may make a
+						purchase from your site multiple times during a day, the Daily Unique Customers
+						report records that person as one "unique visitor" so you can tell exactly how
+						many individual people are coming to your site during the day. A daily unique
+						customer is only counted once per day for this particular report. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Weekly Unique Customers 
+					 </p>
+              </entry>
+              <entry>
+                <p>The Weekly Unique Customers report identifies the number of
+						different people that make purchases from your site during one week. A weekly
+						unique customer is a person who makes a purchase from your site for the first
+						time within one week. While one person may make a purchase from your site
+						multiple times during a week, the Weekly Unique Customers report records that
+						person as one "unique visitor" so you can tell exactly how many individual
+						people are coming to your site during the week. A customer is only counted once
+						per week for this particular report. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Monthly Unique Customers 
+					 </p>
+              </entry>
+              <entry>
+                <p>The Monthly Unique Customers report identifies the number of
+						different people that make purchases from your site during one day. A monthly
+						unique customer is a person who makes a purchase from your site for the first
+						time within one month. While one person may make a purchase from your site
+						multiple times during a month, the Monthly Unique Customers report records that
+						person as one "unique visitor" so you can tell exactly how many individual
+						people are coming to your site during the month. A customer can be counted only
+						once per month for this particular report. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Quarterly Unique Customers 
+					 </p>
+              </entry>
+              <entry>
+                <p>The Quarterly Unique Customers report identifies the number
+						of different people that make purchases from your site during one quarter. A
+						quarterly unique customer is a person who makes a purchase from your site for
+						the first time within one quarter. While one person may make a purchase from
+						your site multiple times during a quarter, the Quarterly Unique Customers
+						report records that person as one "unique visitor" so you can tell exactly how
+						many individual people are coming to your site during the quarter. A customer
+						can only be counted once per quarter for this particular report. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Yearly Unique Customers 
+					 </p>
+              </entry>
+              <entry>
+                <p>The Yearly Unique Customers report identifies the number of
+						different people that make purchases from your site during one year. A yearly
+						unique customer is a person who makes a purchase from your site for the first
+						time within one year. While one person may make a purchase from your site
+						multiple times during a year, the Yearly Unique Customers report records that
+						person as one "unique visitor" so you can tell exactly how many individual
+						people are coming to your site during the year. A customer is only counted once
+						per year for this particular report. 
+					 </p>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+    <section id="section_8D9CD85538304F2B80340151316ED91B">
+      <title>Visitor Profile</title>
+      <table id="table_C088008485A44A5FA70F30F4449B2598">
+        <tgroup cols="2">
+          <colspec colnum="1" colname="col1" colwidth="*" />
+          <colspec colnum="2" colname="col2" colwidth="*" />
+          <tbody>
+            <row>
+              <entry>
+                <p> Countries 
+					 </p>
+              </entry>
+              <entry>
+                <p>The Countries Report shows you the countries from which
+						visitors are accessing your site. In addition to the standard "Ranked" and
+						"Trended" views available on most reports, there is also a "Map" view that
+						color-codes the countries according to their relative contribution to your
+						total traffic-the more intense the color the greater the number of daily unique
+						visitors from that country that are visiting your site. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Regions 
+					 </p>
+              </entry>
+              <entry>
+                <p>The Regions Report shows you the regions from which visitors
+						are accessing your site. To the right of each region shown, the country of the
+						region is also shown in parentheses. Clicking the magnifying glass icon to the
+						left of the region will open the line item in the Cities Report. With this
+						report, you can see how a selected region performed compared to another on your
+						web site. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Cities 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Cities Report shows you the U.S. cities from which
+						visitors are accessing your site. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>U.S. States 
+					 </p>
+              </entry>
+              <entry>
+                <p> The U.S. States Report shows you the U.S. states from which
+						visitors are accessing your site. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>U.S. DMA 
+					 </p>
+              </entry>
+              <entry>
+                <p>The DMA (Designated Market Area) Report shows you the
+						marketing areas within the United States from which visitors are accessing your
+						site. By clicking the link next to State in the Report Status header, you may
+						optionally restrict the report to showing only marketing areas within a
+						particular state. This data is provided via a partnership between Adobe and
+						Nielsen Media Research, Inc. 
+					 </p>
+                <p>By clicking the Visitors Per Capita link next to Display in
+						the Report Status header, you can adjust the data by the relative population of
+						each marketing area. Enabling this option shows both the number of daily unique
+						site visitors per 10,000 people living in the market area as well as the
+						percent above or below the national average value. You can also generate a
+						Correlation report by clicking the Correlation icon next to one of the market
+						areas and selecting the item with which you want to correlate the data. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Visitor Home Page 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Visitor Home Page Report is used as another method for
+						gauging visitor loyalty and assessing the perceived value your visitors place
+						on your Web site's content. The report shows how often your visitors mark a
+						page on your Web site as their "Home Page" in their browser. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Languages 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Languages report displays your visitors' preferred
+						languages. The Languages Report captures the default browser language and
+						displays those most used by visitors to your site. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Time Zones 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Time Zones report displays the time zones your visitors
+						are located in when they view your site. This report superimposes a bar graph
+						(indicating the number of visitors) on a map of the world so you can quickly
+						see what part of the world your visitors are from. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Domains 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Domains report lists the organizations and ISPs your
+						visitors use to browse your site. This report differs from the Full Domains
+						report in that the Full Domains report registers the full ISP domain, whereas
+						this report lists the secondary domain. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Top Level Domains 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Top Level Domains report identifies world regions that
+						visitors come from, based on their originating domain extension, and shows how
+						many visitors come from these countries. Domains ending in Commercial (.com),
+						Network (.net), Education (.edu), Government (.gov) and Organization (.org) are
+						usually based in the United States, and are listed separately from the rest of
+						the domains. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Browsers 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Browsers report identifies the types and versions of
+						browsers that are used by each of your visitors. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Browser Types 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Browser Types Report classifies the browsers visiting
+						your site into their major families. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Mobile Devices 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Mobile Devices Report shows the number of visitors that
+						accessed your site using mobile devices - such as devices running the Palm OS
+						or Windows CE. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Browser Width 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Browser Width report shows you the most common widths
+						or heights of the browsers (in pixels) your visitors use to view your site. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Browser Height 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Browser Height report shows you the most common widths
+						or heights of the browsers (in pixels) your visitors use to view your site. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Operating Systems 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Operating Systems report shows you which operating
+						systems are being used by your site visitors. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Monitor Color Depth 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Monitor Color Depth report shows your visitors' most
+						popular color-depth settings as configured on their computer. Color-depth
+						refers to the number of colors that can be displayed on the screen. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Monitor Resolutions 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Monitor Resolution report shows the screen resolutions
+						visitors to your Web site most commonly use, as configured on their computers. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Netscape Plug-ins 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Netscape Plug-Ins report displays the plug-ins that
+						your visitors have enabled while they view your site. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Java 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Java Report shows you the percentage of visitors to
+						your site that make use of Java or have JavaScript turned on or off. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>JavaScript 
+					 </p>
+              </entry>
+              <entry>
+                <p> The JavaScript report shows you the percentage of visitors
+						to your site that make use of Java or have JavaScript turned on or off. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>JavaScript Version 
+					 </p>
+              </entry>
+              <entry>
+                <p> The JavaScript Version report displays the versions of
+						JavaScript your visitors' browsers use while viewing your site. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Cookies 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Cookies report shows you the percentage of your
+						visitors that prefer to use cookies while browsing. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Connection Types 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Connection Types Report displays the percentage of your
+						site's visitors that utilize high-speed Internet connections versus slower
+						dial-up connections. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Key Visitors 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Key Visitors report allows you to single out and
+						monitor up to five different visitor groups that visit your Web site. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Pages Viewed by Key Visitors 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Pages Viewed by Key Visitors Report lists all of your
+						site pages that have been visited by the key visitors you have specified, in
+						order of popularity. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Last 100 Visitors 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Last 100 Visitors report shows information for the last
+						100 visitors to your site. Information is presented in a table that displays
+						the date and time of the visit, and the visitors' domains and IP addresses. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Visitor Snapshot 
+					 </p>
+              </entry>
+              <entry>
+                <p>The Visitor Snapshot Report, by default, shows visitor
+						information for the last visitors to your site. Each visitor is defined by IP
+						address. Information collected for each visitor is presented in an easy to read
+						table with detail for five visitors listed on each page. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Visitor State 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Visitor State Report shows which states produced those
+						customers who had the greatest effect on success metrics such as revenue,
+						orders, checkouts, cart additions, etc. 
+					 </p>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <p>Visitor Zip/Postal Code 
+					 </p>
+              </entry>
+              <entry>
+                <p> The Visitor ZIP/Postal Codes report shows the zip and
+						postal codes that produced the customers that had the greatest effect on
+						purchase success metrics. 
+					 </p>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+  </conbody>
+</concept>

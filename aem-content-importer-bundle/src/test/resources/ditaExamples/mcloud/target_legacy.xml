@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_90D4021A9B6E409D8101FA1AFADE1215"> 
+  <title> Adobe Target Settings</title> 
+  <shortdesc>Information about deploying Adobe Target using dynamic tag
+	 management. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<keywords> 
+		  <keyword>dynamic tag management</keyword> 
+		</keywords> 
+		<othermeta name="solution" content="Marketing Cloud,Analytics,Target"/>
+		</metadata>
+  </prolog> 
+  <conbody> 
+	 <p> 
+		<menucascade><uicontrol>&lt;Web Property
+			 Name&gt;</uicontrol><uicontrol>Overview</uicontrol><uicontrol>Add a
+			 Tool</uicontrol><uicontrol> Adobe Target</uicontrol></menucascade> 
+	 </p> 
+	 <draft-comment> 
+		<p>Need to add per DTM-4394 
+		</p> 
+		<p>https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=ACS&amp;title=Synchronously+load+the+mbox.js+with+Adobe+Dynamic+Tag+Manager
+		  
+		</p> 
+		<p>Email on 9th. Docs done by oct 16th. Daniel Wright best practices
+		  (target perspective). The word doc from Daniel is "How to use DTM to deploy
+		  target." 
+		</p> 
+	 </draft-comment> 
+	 <table id="table_CA5DF97568E64EDEACC0859DA5CA7D7F"> 
+		<tgroup cols="2"> 
+		  <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+		  <colspec colnum="2" colname="col2" colwidth="4.81*"/> 
+		  <thead> 
+			 <row> 
+				<entry colname="col1">Setting 
+				</entry> 
+				<entry colname="col2">Description 
+				</entry> 
+			 </row> 
+		  </thead> 
+		  <tbody> 
+			 <row> 
+				<entry colname="col1">Tool Name 
+				</entry> 
+				<entry colname="col2">The name of this 
+				  <keyword>Adobe Target</keyword> instance (you may have more than
+				  one). 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <p>Load Adobe Target Library synchronously 
+				  </p> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>By default all new 
+					 <keyword>Adobe Target</keyword> tools have the synchronous
+					 checkbox enabled. 
+				  </p> 
+				  <p>Previously existing tools retain the disabled setting for
+					 backwards compatibility. Enable this setting to update your implementation. 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">mbox.js 
+				</entry> 
+				<entry colname="col2">There are two ways to host the 
+				  <filepath>mbox.js</filepath> file: 
+				  <ul id="ul_3690E98F1F8A451D9F0E5A259D12FC49"> 
+					 <li id="li_6FA7A5088AB246F5AFB8470312DBB0BE"><b>Managed</b>:
+						Lets you host the 
+						<filepath>mbox.js</filepath> file within dynamic tag
+						management. Click 
+						<uicontrol>Edit Code</uicontrol> to cut and paste the file
+						directly into the editor. 
+					 </li> 
+					 <li id="li_D4D3B50C07DB44C2AF783C76AE31A746"><b>URL</b>: If you
+						have a good 
+						<filepath>mbox.js</filepath> file and are happy with the
+						process of updating it, specify the URL here. Dynamic tag management then
+						consumes this mbox file for its implementation of 
+						<keyword>Adobe Target</keyword>. 
+					 </li> 
+				  </ul> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Open Editor 
+				</entry> 
+				<entry colname="col2">Lets you cut and paste the mbox file content
+				  into the editor. 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">Add a Note 
+				</entry> 
+				<entry colname="col2">Add any notes here regarding this
+				  implementation of 
+				  <keyword>Adobe Target</keyword>. 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+	 <p> 
+	 </p> 
+	 <p> 
+		<b>Dynamic Tag Management &amp; Adobe Target Integration Update</b> 
+	 </p> 
+	 <p>On October 16th Dynamic Tag Management will release an update to the
+		Adobe Target tool integration. The updated tool will include the following
+		features: 
+	 </p> 
+	 <p> 
+	 <ol id="ol_05AAB53926684310A0B573A864E1F9DF"> 
+		<li id="li_563793B210F146B2ACCF731C98562BC2"> ·<b>Adobe Target account
+			 synchronization:</b> The updated integration allows for automatic syncing of
+		  your Adobe Target account and mbox.js code via Marketing Cloud or the inclusion
+		  of the specific Target account Client Code. Once the accounts are connected,
+		  Dynamic Tag Management will pull the Adobe Target mbox.js code into the tool
+		  with the goal of optimizing the configuration process and increasing
+		  consistency between the two solutions. 
+		</li> 
+	 </ol> 
+	 </p> 
+	 <p> 
+	 <ol id="ol_8CC3C78BEE344F408575F96D50D51D21"> 
+		<li id="li_35CE9AE914814B38B1F9C1A487BE79CA"> ·<b>Adobe managed mbox.js
+			 code configuration option:</b> The updated integration continues to allow users
+		  to manually manage and customize their mbox.js code from within DTM, but will
+		  now also offer a "Managed by Adobe" option that will load the mbox.js code
+		  directly from Adobe. This update will optimize the configuration process when
+		  using a manual method as no more copy / pasting from the Adobe Target admin
+		  console is required. 
+		</li> 
+	 </ol> 
+	 </p> 
+	 <p> 
+	 <ol id="ol_6AFD7F5964064B9BBEC01218385FB30C"> 
+		<li id="li_3B3B9127448C42C19C3C09A8D24190DB"> ·<b>Global Parameter
+			 Configuration Options:</b> The updated integration allows for the configuration
+		  of global parameters to pass additional data to the global Target Mbox via the
+		  Target tool settings and also on a per page basis via page load rules. The
+		  parameters configured in DTM will not override any parameters already defined
+		  on the page, but instead will append and sequence in order to create maximum
+		  flexibility and customization on a per page basis. 
+		</li> 
+	 </ol> 
+	 </p> 
+  </conbody> 
+</concept> 

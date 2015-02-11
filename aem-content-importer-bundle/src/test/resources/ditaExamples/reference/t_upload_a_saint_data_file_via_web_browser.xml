@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_D7D51CB6FB35437AB68599B1B23FEAC1">
+  <title> Import classifications via the browser</title>
+  <shortdesc>Steps that describe how to upload classification data files via
+	 the web browser. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Admin tools" />
+      <othermeta name="subtopic" content="Classifications" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <context id="context_040C2312A59C4DA9AEC86E5661371BEE"></context>
+    <steps id="steps_5A2C796B6680481FBEBC4FF6B37D7698">
+      <step id="step_6F8ECD6EA1D74DBA834949FE7D30202E">
+        <cmd>Click 
+			 <uicontrol>Admin Tools</uicontrol> &gt; 
+			 <uicontrol>Classification Importer</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_94036EC61E8E44E4A3F176DEACAF4E33">
+        <cmd>Click 
+			 <uicontrol>Import File</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_6403307C37C9431BAE6E4BE6C3B9C17C">
+        <cmd>Configure the 
+			 <xref href="browser_export.xml#concept_3D930F03840A491D8B37FAAE9C90F5DF" format="dita" scope="local">Browser Import</xref> fields. 
+		  </cmd>
+      </step>
+      <step id="step_85F57CDB95944DEA902D30C3455EA0CD">
+        <cmd> Click 
+			 <uicontrol>Import File</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_285791CC657A49F4A1500D66D62A0E55">
+        <cmd>Watch the status window for processing messages. 
+		  </cmd>
+      </step>
+      <step id="step_92430F55E309497A8969069F16A9AE28">
+        <cmd>(Conditional) If you selected 
+			 <uicontrol>Automatically Download Classification File After Upload is
+				Complete</uicontrol>, specify where you want to store the resulting file when
+			 processing completes. 
+		  </cmd>
+      </step>
+    </steps>
+    <result id="result_78DB627A4252409A90646B8576EAAA8F">
+      <p>A successful import immediately displays the appropriate changes in an
+		  export. However, data changes in reports take up to four hours when using a
+		  browser import and up to 24 hours when using an FTP import. 
+		</p>
+    </result>
+  </taskbody>
+</task>

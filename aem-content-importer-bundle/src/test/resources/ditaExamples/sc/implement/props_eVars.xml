@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_C40AF2F180684ECF8B1D7316138E3D3A">
+  <title>Traffic props and Conversion eVars</title>
+  <shortdesc>
+    <wintitle>Custom traffic</wintitle> variables, also called props (s.prop)
+	 or 
+	 <wintitle>property</wintitle> variables, are counters that count the number
+	 of times each value is sent into 
+	 <keyword>Analytics</keyword>. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Props also let you correlate custom data with specific traffic-related
+		events. These variables are embedded in the 
+		<keyword>Analytics</keyword> code on each page of your website.
+		Through 
+		<wintitle>s.prop</wintitle> variables, 
+		<keyword>Analytics</keyword> lets you create custom reports, unique to
+		your organization, industry, and business objectives. 
+	 </p>
+    <p>For example, if you are an automobile manufacturer, you may be
+		interested in seeing "Most Popular Car Model" to complement your "Pages"
+		report. You can accomplish this by allocating one of your traffic properties to
+		represent car model. Then implement your code to pass in car model on the
+		appropriate pages. 
+	 </p>
+    <p>
+      <note>
+        <keyword>Analytics</keyword> supports up to 75 
+		  <wintitle>s.prop</wintitle> variables. 
+		</note>
+    </p>
+    <p>Props are used in pathing reports or in correlation reports. For
+		example, 
+		<wintitle>property</wintitle> variables can be used to show content type,
+		sub-section, or template name. The resulting 
+		<wintitle>Custom Traffic</wintitle> reports show which content type,
+		sub-section, or template is viewed most often. 
+	 </p>
+    <p>There are endless business questions that can be answered through the
+		custom traffic variables, depending on what you are capturing from your
+		website. The following list contains a few common goals and objectives: 
+	 </p>
+    <ul id="ul_9D22C9B46DDA4B60859D3903E8210E62">
+      <li id="li_18E996180B9B45DA93EB3BDC9765436E"> Understanding user
+		  navigation through the website 
+		</li>
+      <li id="li_A402F2621A6148C583C015145C33D74E">Understanding internal user
+		  search behavior 
+		</li>
+      <li id="li_1B2011C40AEE49898AEAD3EBE1158409"> Segmenting traffic by
+		  navigation or category 
+		</li>
+      <li id="li_6B2ABB7974624EECB94355A33ADC1F39"> Segmenting visitor behavior
+		  by demographics 
+		</li>
+    </ul>
+    <p>eVars (or 
+		<wintitle>Custom Conversion Insight</wintitle> variables) are used to
+		identify how well specific attributes or actions contribute to success events
+		on your site. For example, for a media site, eVars may be used to identify how
+		well internal promotions bring visitors to register. When a visitor clicks on
+		the internal promotion, an eVar can be used to store a unique identifier for
+		that promotion. When the same visitor completes registration and a custom
+		success event is fired, the original unique identifier receives credit for the
+		registration event. 
+	 </p>
+    <p>In a conversion site, eVars may be used to track how logged-in visitors
+		compare to non-logged in visitors in completing a purchase. When a visitor logs
+		in, an eVar is set to "logged in." When that visitor reaches the checkout page,
+		the checkout event is attributed to the "logged in" value. When a visitor
+		reaches the Thank You page after purchasing, the products and purchase amounts
+		are attributed to the "logged in" value. The resulting 
+		<wintitle>Custom eVar</wintitle> report shows the total number of
+		checkouts and orders for "logged in" and "non-logged in" visitors. 
+	 </p>
+  </conbody>
+</concept>

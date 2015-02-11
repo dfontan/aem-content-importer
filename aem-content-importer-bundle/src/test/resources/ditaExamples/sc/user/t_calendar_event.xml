@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_70CFFB7D649D46D4858BB496120B661D"> 
+  <title>Calendar Events</title> 
+  <shortdesc>Steps to add calendar events, and to manage shared events. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Reports and analytics"/> </metadata>
+  </prolog> 
+  <taskbody> 
+	 <context id="context_2D0ED4F177474C778069D582994D9CA3"> 
+		<p>For reports trended over time, you can graphically display events and
+		  see whether campaigns or other events have affected your site traffic, revenue,
+		  or any other metric. The process of setting up a calendar event involves naming
+		  the event, setting the dates, adding notes, and setting an icon. For example,
+		  if you use Social, you can create a calendar event to show that there was a
+		  correlation between an increase in site traffic and the mention of a product by
+		  a celebrity using Twitter. 
+		</p> 
+	 </context> 
+  </taskbody> 
+  <task id="task_98018C3EF9054422B91516C699F71CB7"> 
+	 <title>To add a calendar event</title> 
+	 <taskbody> 
+		<steps id="steps_0CE34ABB52234C4AA57455B75B05603C"> 
+		  <step id="step_DD4BDBC616F442A4B26777A81D051C7B"> 
+			 <cmd>Click 
+				<uicontrol>Analytics</uicontrol> &gt; 
+				<uicontrol>Components</uicontrol> &gt; 
+				<uicontrol>Calendar Events</uicontrol>. 
+			 </cmd> 
+		  </step> 
+		  <step id="step_3D65EC8405D0426980181160C2D9C4C9"> 
+			 <cmd>Click 
+				<uicontrol>Add New</uicontrol>. 
+			 </cmd> 
+			 <substeps id="substeps_AC68CE05AFB64588ADFC66292F5C497D"> 
+				<substep id="substep_40AF055125784CD580D87832B32344B7"> 
+				  <cmd>Under 
+					 <uicontrol>Title</uicontrol>, name the calendar event. 
+				  </cmd> 
+				</substep> 
+				<substep id="substep_C92F65F77EFC46A99599DD009017B5E0"> 
+				  <cmd>Specify the<uicontrol> Event Date</uicontrol>. 
+				  </cmd> 
+				</substep> 
+				<substep id="substep_0E1C8829C9BB4636AEDDBBE788A95B09"> 
+				  <cmd>Choose the 
+					 <uicontrol>Report Suite</uicontrol> to which this event
+					 applies. 
+				  </cmd> 
+				</substep> 
+				<substep id="substep_62AE9A89E78043F0B75C3A63DF95D093"> 
+				  <cmd>(Optional) Add any 
+					 <uicontrol>Note Text</uicontrol> for this event. 
+				  </cmd> 
+				</substep> 
+				<substep id="substep_F51448320E2E4D9BA1D6CBFD56387BD8"> 
+				  <cmd>Select a display icon and color. 
+				  </cmd> 
+				</substep> 
+				<substep id="substep_C918AB7FD0A34381BF2E3970C2521236"> 
+				  <cmd>Click 
+					 <uicontrol>Save</uicontrol>. 
+				  </cmd> 
+				</substep> 
+			 </substeps> 
+		  </step> 
+		  <step id="step_28B636D2B80849F588D671BDEA652156"> 
+			 <cmd>Calendar events are user specific unless shared. To share this
+				event, select 
+				<uicontrol>Share</uicontrol>. 
+			 </cmd> 
+		  </step> 
+		</steps> 
+	 </taskbody> 
+  </task> 
+  <task id="task_DD2B76FB66E04340A53AC9D5331D69BE"> 
+	 <title>To manage shared calendar events</title> 
+	 <taskbody> 
+		<steps id="steps_406B7AFC330F43A98929EEAD07624C35"> 
+		  <step id="step_E33CAAE518C44383A5F466069F9D9E7B"> 
+			 <cmd>Click 
+				<uicontrol>Favorites</uicontrol> &gt; 
+				<uicontrol>Calendar Events</uicontrol>. 
+			 </cmd> 
+		  </step> 
+		  <step id="step_BAA758FAF1934EB386117BB86CBBBF13"> 
+			 <cmd>Under Shared Calendar Events, specify one of these options: 
+			 </cmd> 
+			 <choicetable id="choicetable_DC4A47F6AAB440DFA0DC42F81C82EFA5"> 
+				<chhead><choptionhd>Option</choptionhd><chdeschd>Description</chdeschd>
+				  
+				</chhead> 
+				<chrow><choption>Copy Me</choption> 
+				  <chdesc>Adds a copy to your list of events, using the same name
+					 as the original. However, you cannot see any updates/changes made by the
+					 event's owner.</chdesc> 
+				</chrow> 
+				<chrow><choption>On Report</choption> 
+				  <chdesc>Lets you see changes/updates made by the event
+					 owner.</chdesc> 
+				</chrow> 
+				<chrow><choption>Unshare</choption> 
+				  <chdesc>Removes this event from your list of shared
+					 events.</chdesc> 
+				</chrow> 
+			 </choicetable> 
+		  </step> 
+		</steps> 
+	 </taskbody> 
+  </task> 
+</task> 

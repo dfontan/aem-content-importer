@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_F5D376BA5D7A49618FCDA23A59015570"> 
+  <title>Instances on Merchandising Variables</title> 
+  <shortdesc>Describes how instances are counted on merchandising variables. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta content="Analytics" name="solution"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p> Instances are not currently counted for merchandising variables that
+		use Product Syntax. If you have selected Product Syntax and have implemented
+		according to these directions, you should not see instances for this variable.
+		If instances are being counted, it indicates that the eVar is being set in some
+		locations outside of the products string, which is unnecessary. 
+	 </p> 
+	 <p>If you are using Conversion Variable Syntax, an instance is counted each
+		time the variable is set. However, the instance is attributed to "None" unless
+		the following occurs each time the variable is set: 
+	 </p> 
+	 <ul id="ul_63A447D114E2480B9DE1311D585E235E"> 
+		<li id="li_3BBA2CFBEE8548CA8667F26DF76A2CFB">A binding event is set. 
+		</li> 
+		<li id="li_F1250AAE4EAE4CC8AD255EF296E97102">The products variable is
+		  set. 
+		</li> 
+		<li id="li_3B23CB8633AF4F7695E3662CFED5CC6F">The merchandising eVar has a
+		  value. 
+		</li> 
+	 </ul> 
+	 <p>For example, the following instance of eVar1 is allocated to
+		"Outdoors:Ski Goggles": 
+	 </p> 
+	 <codeblock outputclass="syntax javascript">s.eVar1="Outdoors:Ski Goggles"
+s.events="prodView"
+s.products=";Fernie Snow Goggles"</codeblock> 
+	 <p>However, in the next example, the instance of eVar1 is allocated to
+		"None" since all conditions are not met when the eVar is set (there is no
+		binding event and the products variable is not set): 
+	 </p> 
+	 <p>Page 1 of the visit: 
+	 </p> 
+	 <codeblock outputclass="syntax javascript">s.eVar1="Outdoors:Ski Goggles"</codeblock> 
+	 <p>Page 2 of the visit: 
+	 </p> 
+	 <codeblock outputclass="syntax javascript">s.events="prodView"
+s.products=";Fernie Snow Goggles"</codeblock> 
+	 <p>Allocation to "None" occurs if you set a value for an eVar on a page
+		where no binding event occurs, or if you set the eVar value in the products
+		string without a binding event. 
+	 </p> 
+	 <note>The current functionality for counting instances on merchandising
+		variables is being reviewed and is scheduled to change in an upcoming release. 
+	 </note> 
+  </conbody>
+</concept>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_0063E987C17D4FA89476F988E7A50FBE">
+  <title>Detailed Product View Page</title>
+  <shortdesc> The 
+	 <varname>products</varname> variable is used for tracking products and
+	 product categories (as well as purchase quantity and purchase price). 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p> A success event should always be set in conjunction with the 
+		<varname>products</varname> variable. 
+	 </p>
+    <codeblock outputclass="syntax javascript">s.events="prodView"</codeblock>
+    <p>
+      <note> While 
+		  <wintitle>prodView</wintitle> is treated in implementation like an
+		  event, it does not have the same flexibility in the interface. The 
+		  <wintitle>prodView</wintitle> event is an instance of the product and
+		  is only available in the 
+		  <varname>products</varname> report. Adobe recommends you use a 
+		  <wintitle>custom</wintitle> event in addition to the 
+		  <wintitle>prodView</wintitle> event. This way, you can see the product
+		  view metrics alongside other metrics in other conversion reports. 
+		</note>
+    </p>
+    <codeblock outputclass="syntax javascript">s.products=";diamond earrings (54321)"</codeblock>
+    <p>
+      <note> The products string syntax must begin with a semi-colon. This is a
+		  legacy syntax requirement. It was previously used to delimit the
+		  category and product, but that creates a limitation within the interface should
+		  you ever want to change how you are classifying products. In order to have the
+		  maximum flexibility in your reporting, it is best to leave this blank and use 
+		  Classifications to set up categories. 
+		</note>
+    </p>
+    <section id="section_469B64F4150149DFB6B2C731279C0BC7">
+      <title>Shopping Cart Page (<wintitle>scOpen</wintitle>, 
+		  <wintitle>scAdd</wintitle>, 
+		  <wintitle>scRemove</wintitle>)</title>
+      <codeblock outputclass="syntax javascript">s.events="scOpen,scAdd"
+s.products=";SKU"
+</codeblock>
+    </section>
+    <section id="section_E15607A9AECB44F79631926C853CF64E">
+      <title>First Checkout Page</title>
+      <codeblock outputclass="syntax javascript">s.events="scCheckout"
+s.products=”;SKU"
+</codeblock>
+    </section>
+    <section id="section_E006943CD5FD42358086581CA44B9660">
+      <title>Confirmation Page</title>
+      <codeblock outputclass="syntax javascript">s.events="purchase"
+s.products=";SKU"
+</codeblock>
+      <p>
+        <note> While using the SKU in the product string may make the 
+			 <varname>products</varname> report less readable, it provides the
+			 maximum flexibility later when you want to classify your products. You can
+			 create categories from the SKU that indicate finish, manufacturer, category,
+			 and sub-category. 
+		  </note>
+      </p>
+      <p>When the 
+		  <varname>products</varname> variable is set in conjunction with the 
+		  <wintitle>purchase</wintitle> event, the purchase quantity and total
+		  purchase price are included in the products value as shown above. 
+		</p>
+    </section>
+  </conbody>
+</concept>

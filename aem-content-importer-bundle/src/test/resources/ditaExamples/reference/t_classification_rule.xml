@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_86F216DFD2534FA181E64ABDF306782B"> 
+  <title>Add a classification rule to a rule set</title> 
+  <shortdesc>Steps that describe how to add or edit a classification rule. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Admin tools"/> 
+		<othermeta name="subtopic" content="Classifications"/> </metadata>
+  </prolog> 
+  <taskbody> 
+	 <context id="context_E4271975B48F410F960E67AAFCEC3D3E"> 
+		<p>Add rules by matching a condition to a classification, and specifying
+		  the action. 
+		</p> 
+		<note>In this procedure, you must apply the rules to one or more report
+		  suites. The recommended number of rules per rule set is between 500 and 1000,
+		  although there are no limits. If you have over 100 rules, consider simplifying
+		  your rule set by using 
+		  <xref
+			href="c_sub-classifications.xml#concept_19EE5513A7DC43C38CC396E96F306CFE"
+			format="dita" scope="local">sub-classifications</xref>. 
+		</note> 
+	 </context> 
+	 <steps id="steps_73C8D5AD5C4242ADA1BE2305478EFFDF"> 
+		<step id="step_9833B61CE202408CA5065DA6A006AD5C"> 
+		  <cmd> 
+			 <xref
+			  href="t_classification_rule_set.xml#task_86F216DFD2534FA181E64ABDF306782B"
+			  format="dita" scope="local"> <?xm-replace_text Create a classification rule set?>
+			 </xref>. 
+		  </cmd> 
+		</step> 
+		<step id="step_FDCC42B050084BFFB248116B3BB952EF"> 
+		  <cmd>On the rule set page, click 
+			 <uicontrol>Add Rule</uicontrol>. 
+		  </cmd> 
+		  <stepresult> 
+			 <p> 
+				<image href="graphics/classification_rules_page.png"
+				 id="image_EF9503A0CD3E4D3BACFB0D908A8166CC"> <?xm-replace_text Step Result?>
+				</image> 
+			 </p> 
+		  </stepresult> 
+		</step> 
+		<step id="step_A210ABDBE6734B0D8DF710A30C17BC2F"> 
+		  <cmd>Next to 
+			 <uicontrol>Report Suites</uicontrol>, click 
+			 <uicontrol>Add Suites</uicontrol> to specify one or more report
+			 suites to assign to this rule set. 
+		  </cmd> 
+		  <info>
+			 <p>The 
+				<uicontrol>Select Report Suites</uicontrol> page displays.
+			 </p>
+			 <note>Report suites display on this page 
+				<term>only</term> when the following conditions are met:
+				<ul id="ul_EE79FE76D9214E79981A01269113666C">
+				  <li id="li_B8EB44E649514775A2C7AC4B8BC28339"> The report suites
+					 have at least one classification defined for that variable in 
+					 <wintitle>Admin Tools</wintitle>.
+					 <p>(See 
+						<term>Variable</term> in 
+						<xref
+						 href="classification_rule_set.xml#concept_CD3D510F5070486584F3BB535AE41524"
+						 format="dita" scope="local">Classification Rule Sets</xref> for an explanation
+						about this prerequisite.)
+					 </p>
+				  </li>
+				  <li id="li_FB6FD029482A4D77871EC4F25EB16BA1">You selected the
+					 report suite on the 
+					 <uicontrol>Available Report Suites</uicontrol> page, which
+					 displays after you click 
+					 <xref
+					  href="t_classification_rule_set.xml#task_86F216DFD2534FA181E64ABDF306782B"
+					  format="dita" scope="local">Add Rule Set</xref> to create the rule set.
+				  </li>
+				</ul>
+			 </note>
+		  </info>
+		</step> 
+		<step id="step_9D5BFDFF4A28461DBBAC3218B5742EFD"> 
+		  <cmd> 
+			 <xref
+			  href="classification_rule_definitions.xml#concept_6CAEFB1CA4564E2CA5808097C11EF468/section_4A5BF384EEEE4994B6DC888339833529"
+			  format="dita" scope="local">Define the rule or rules</xref>. 
+		  </cmd> 
+		  <stepresult> 
+			 <p>For examples of rules, see 
+				<xref
+				 href="classification_rule_builder.xml#concept_C1F219E622044D43852EF5168FF7192A"
+				 format="dita" scope="local"><?xm-replace_text Classifications Rule Builder?></xref>
+				and 
+				<xref
+				 href="regex_classification_rules.xml#concept_8A63F9BCF9484963962E14E6286D312D"
+				 format="dita" scope="local"><?xm-replace_text Regular Expressions in Classification Rules?></xref>.
+				
+			 </p> 
+			 <note>If a key matches multiple rules that set the same
+				classification (in the Set Classification column), the last rule that matches
+				the classification is used. See 
+				<xref
+				 href="rule_priority.xml#concept_93527FEB3C9B48FB96FB7DF857E5F980" format="dita"
+				 scope="local"><?xm-replace_text About Rule Priority?></xref> for more
+				information about sorting rules. 
+			 </note> 
+		  </stepresult> 
+		</step> 
+		<step id="step_1325CD4B486D433EB0ABAFCA35FF0807"> 
+		  <cmd> 
+			 <xref
+			  href="t_classifications_test_rule.xml#task_618A1E7CC8664E728F312250E8367158"
+			  format="dita" scope="local">Test your rule set</xref>. 
+		  </cmd> 
+		</step> 
+		<step id="step_D620E7A4EB0F4373AE0A1FEC1C4B0DC8"> 
+		  <cmd>After testing, click 
+			 <uicontrol>Active</uicontrol> to validate and activate the rule. 
+		  </cmd> 
+		  <stepresult> 
+			 <p>Activating a rule automatically builds the file and uploads it for
+				you. 
+			 </p> 
+			 <p>See 
+				<xref
+				 href="classification_rule_definitions.xml#concept_6CAEFB1CA4564E2CA5808097C11EF468"
+				 format="dita" scope="local">Classification Rule Builder</xref> for definitions
+				of interface options on this page. 
+			 </p> 
+		  </stepresult> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

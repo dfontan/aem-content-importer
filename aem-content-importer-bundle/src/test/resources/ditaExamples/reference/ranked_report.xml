@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_F4FA8D95FB0F41EB80E8EFCA9901BD3C">
+  <title>Ranked Report</title>
+  <shortdesc>Displays a table with ranked items, using numbers and percentages
+	 in metrics. For example, a Pages Report ranks the pages on your site based on
+	 traffic, and the detail table shows percentages and numbers for metrics like
+	 Page Views and Revenue. A horizontal bar chart is the default graph type.
+	 Graphs display a color for each metric. Ranked reports can display multiple
+	 metrics in a report. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Ranked graphs default to five items, but you can graph up to thirty
+		items in the chart options.
+	 </p>
+  </conbody>
+</concept>

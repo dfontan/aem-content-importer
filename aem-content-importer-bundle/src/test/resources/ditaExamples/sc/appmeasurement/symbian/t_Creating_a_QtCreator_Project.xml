@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_8DC46D308ABD4FDAB6A03B3899A6052E"> 
+  <title>Creating a QtCreator Project</title> 
+  <shortdesc><?xm-replace_text Short Description?>
+  </shortdesc> 
+  <taskbody> 
+	 <context id="context_E1D8AE812D2C454BAE5DC2764A14CFD4"> 
+		<p>
+		</p> 
+	 </context> 
+	 <steps id="steps_D6C3846345154B9989073D5008F5B5AF"> 
+		<step id="step_AB9264B12C474BE58748AA3B2D3C5303"> 
+		  <cmd>File &gt; new File or Project. 
+		  </cmd> 
+		  <stepresult><?xm-replace_text Step Result?>
+		  </stepresult> 
+		</step> 
+		<step id="step_3D4C15E3CF2942DAA634D5923AA5761E"> 
+		  <cmd>Select an Application Type. 
+		  </cmd> 
+		  <stepresult><?xm-replace_text Step Result?>
+		  </stepresult> 
+		</step> 
+		<step id="step_7D76312EBD1B457DAFD8CF242C830C47"> 
+		  <cmd>Target Setup. Select a Symbian Device and the Qt Simulator. 
+		  </cmd> 
+		  <stepresult><?xm-replace_text Step Result?>
+		  </stepresult> 
+		</step> 
+		<step id="step_B9B86EF821724B3DB6CF463069D08AAF"> 
+		  <cmd>Provide your UID3 and enable or disable network access. 
+		  </cmd> 
+		  <stepresult><?xm-replace_text Step Result?>
+		  </stepresult> 
+		</step> 
+		<step id="step_08561B39F32B440A87E2ABA3E3889739"> 
+		  <cmd>Build to make sure your project compiles and the basic settings
+			 work correctly. 
+		  </cmd> 
+		  <stepresult><?xm-replace_text Step Result?>
+		  </stepresult> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+  <task id="task_53F067F8B0C0492BB29350F11F00D431"> 
+	 <title>Copy the AppMeasurement Files to Your Project Folder</title> 
+	 <shortdesc><?xm-replace_text Short Description?>
+	 </shortdesc> 
+	 <taskbody> 
+		<steps id="steps_C6FF6B78CBAA42598BF390B284955535"> 
+		  <step id="step_6C6AE01893B445458A07811474967A05"> 
+			 <cmd>Copy the 
+				<filepath>AppMeasurement.lib</filepath> file to the libraries
+				folder on your development workstation: 
+			 </cmd> 
+			 <stepresult> 
+				<codeblock>C:\QtSDK\Symbian\SDKs\Symbian1Qt463\epoc32\release\armv5\urel</codeblock> 
+			 </stepresult> 
+		  </step> 
+		  <step id="step_90A1C9F3D51848BD97BF736966D118D0"> 
+			 <cmd>Copy the 
+				<filepath>AppMeasurement.h</filepath> and 
+				<filepath>LibAppMeasurement.a</filepath> files to a path within
+				your project. 
+			 </cmd> 
+		  </step> 
+		</steps> 
+	 </taskbody> 
+  </task>
+  <task id="task_1A6B16FC6589401587F1E3CE127E8154"> 
+	 <title>Open the Sample Project</title> 
+	 <shortdesc><?xm-replace_text Short Description?>
+	 </shortdesc> 
+	 <taskbody> 
+		<context id="context_7592CB33CBDE45598790C53D4E10A3F4"> 
+		  <p> 
+		  </p> 
+		  <p>A sample QtCreator project that implements the AppMeasurmement
+			 Libraries for Symbian is available at the following URL: 
+		  </p> 
+		  <p>Download and extract this project. The folder you select cannot
+			 contain any spaces in the entire path. After the sample project is extracted,
+			 complete the following to configure a basic project.
+		  </p>
+		</context> 
+		<steps id="steps_B167DE90EE9241D99BB6AEF48D680104"> 
+		  <step id="step_EB13F2A8DD2642A3A59823DD4ADAB1FC"> 
+			 <cmd>Right-click your project and select Add existing file. and
+				browse to the 
+				<filepath>AppMeasurement.h</filepath> file. 
+			 </cmd> 
+			 <stepresult><?xm-replace_text Step Result?>
+			 </stepresult> 
+		  </step> 
+		  <step id="step_3AA35BD1603542A8AEA4935715BED946"> 
+			 <cmd>Update the target capabilities by replacing the current 
+				<codeph>symbian:TARGET.CAPABILITY</codeph> values with the
+				following: 
+			 </cmd> 
+			 <stepresult> 
+				<codeblock>symbian:TARGET.CAPABILITY += LocalServices Location NetworkServices ReadUserData UserEnvironment WriteUserData PowerMgmt ProtServ ReadDeviceData SurroundingsDD SwEvent TrustedUI WriteDeviceData</codeblock> 
+				<p>Run qmake to apply the changes. 
+				</p> 
+			 </stepresult> 
+		  </step> 
+		  <step id="step_78A5C65690C24019AD437B6CE938EE26"> 
+			 <cmd><?xm-replace_text Step?>
+			 </cmd> 
+			 <stepresult> 
+				<codeblock>QT + next two other lines need to be added to the project as well. Then they run qmake and then compile and run. You should see the test hit go out in the Application Output.</codeblock> 
+			 </stepresult> 
+		  </step> 
+		</steps> 
+	 </taskbody> 
+  </task> 
+  <task id="task_839E202CEF3344AAA6E4D762044AD153"> 
+	 <title>Update main.cpp</title> 
+	 <shortdesc><?xm-replace_text Short Description?>
+	 </shortdesc> 
+	 <taskbody> 
+		<context id="context_960CC373DF9947DF8A2A77EB1E79480A"> 
+		  <p><?xm-replace_text Task Context?>
+		  </p> 
+		</context> 
+		<steps id="steps_87792565D3CD4BD6A5BC6F1755656606"> 
+		  <step id="step_A046DBA7FBFF48D0A86CB23BB9B82AEF"> 
+			 <cmd>Add the following to include the AppMeasurement header file: 
+			 </cmd> 
+			 <stepresult> 
+				<codeblock>#include "AppMeasurement.h"</codeblock> 
+			 </stepresult> 
+		  </step> 
+		  <step id="step_BF1EDE59762F46F49BA459E9DEF43B40"> 
+			 <cmd>As a test you can add a sample call in main.cpp. 
+			 </cmd> 
+			 <stepresult><?xm-replace_text Step Result?>
+			 </stepresult> 
+		  </step> 
+		</steps> 
+	 </taskbody> 
+  </task>
+</task>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_B1A5E9CC0AAE48E38FA19686548B3371" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Download mbox.js</title>
+  <shortdesc class="- topic/shortdesc ">Save the<filepath class="+ topic/ph sw-d/filepath "> mbox.js</filepath> file on all hosts
+	 (domains) serving mboxes. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <context id="context_D25528E757DF4629BC32E5ACC9B71FA8" class="- topic/section task/context ">
+      <p class="- topic/p ">You need only one copy on each host. All pages with
+		  mboxes must reference this file. 
+		</p>
+      <p class="- topic/p ">
+        <b class="+ topic/ph hi-d/b ">Tip:</b> Save the mbox.js in a directory
+		  at the root of your hosts, such as the 
+		  <filepath class="+ topic/ph sw-d/filepath ">js</filepath> directory,
+		  the includes directory, or a new directory named 
+		  <filepath class="+ topic/ph sw-d/filepath ">mbox</filepath>. 
+		</p>
+    </context>
+    <steps id="steps_27658A9A7A114FE19DED90D7B4B70CDA" class="- topic/ol task/steps ">
+      <step id="step_E462ED64C3DC414E919D6A0270499EDE" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Click 
+			 <uicontrol>Configuration</uicontrol> &gt; 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">mbox.js</uicontrol>
+			 &gt; 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Download</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_94860C7E1FE44F96871800656FA2DDA8" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Click 
+			 <uicontrol status="changed" class="+ topic/ph ui-d/uicontrol ">Download</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_5A69BC35638F41948879C8DEBAB02271" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Browse to your destination host
+			 folder, save the file and close the save dialog box. 
+		  </cmd>
+      </step>
+      <step id="step_4ADA9A1291554732BDAA7FE2D1C91CF6" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Copy your 
+			 <filepath class="+ topic/ph sw-d/filepath ">mbox.js</filepath> to one
+			 of your public hosts (domains). 
+		  </cmd>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links class="- topic/related-links ">
+    <link href="t_Validating_the_mboxjs_Download.xml#task_63B42113122E4ACFAE08E390CD99E872" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Validating the mbox.js Download?>
+    </link>
+    <link href="t_Referencing_mboxjs.xml#task_4A321498EDAF4A048E3B9A74FD9E67E9" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Referencing mbox.js?>
+    </link>
+    <link href="t_Setting_the_Default_Mbox_Timeout.xml#task_67683FF09AE14AD6B287D8A263E44977" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Setting the Default Mbox Timeout?>
+    </link>
+    <link>
+      <?xm-replace_text Advanced mbox.js Settings?>
+    </link>
+    <link href="t_Determining_Your_mboxjs_Version.xml#task_A6042554F8C7469E96A20003522F3C6D" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Determining Your mbox.js Version?>
+    </link>
+  </related-links>
+</task>

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_014BA87B314A42B68288764ACB1F55EB">
+  <title>Migrating to Integrated Video Tracking</title>
+  <shortdesc>If you are currently tracking video using the legacy pev3 method,
+	 this section contains the information you need to migrate to integrated video
+	 tracking. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>media</keyword>
+        <keyword>milestone</keyword>
+        <keyword>sdk</keyword>
+        <keyword>video</keyword>
+      </keywords>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <section id="section_DC7AA753C0F448A394D4DFFD59C0AFDA">
+      <title>About Integrated Video Tracking</title>
+      <p></p>
+      <p>Integrated video tracking collects video data using Custom Conversion
+		  Variables (eVars) and Events. Using these variables to collect video data lets
+		  you integrate video data with other reporting data on your reports (Legacy
+		  pev3 video data was collected using a custom variable that prevented
+		  integration). This change enhances your ability to analyze the impact of video
+		  on other aspects of your on-line marketing strategy. 
+		</p>
+      <p>You can implement integrated video tracking on version 14 in
+		  preparation for version 15 migration. Integrated video tracking can be
+		  implemented on version 14 or later, and is required by version 15. 
+		</p>
+      <p>The following list explains how integrated video tracking is affected
+		  as you migrate from version 14 to 15. 
+		</p>
+      <p>If you remain on version 14: 
+		</p>
+      <ul id="ul_408A17E95BCC429D9F394DBDB4A0667D">
+        <li id="li_57D58B89277143098B881E2BF1289E31"> You can use existing version 14
+			 video implementation for existing version 14 reports. 
+		  </li>
+        <li id="li_7414E404AE0C400EB84DDCE2FC4F81C2">You can upgrade video
+			 implementation before moving to version 15. (To upgrade, contact your Account
+			 Manager.) 
+		  </li>
+        <li id="li_472B10F51D3740B3A63C513849427771"> You will not have access
+			 to any of the new version 15 features, video or otherwise. 
+		  </li>
+      </ul>
+      <p>If you migrate to version 15 
+		</p>
+      <ul id="ul_6729808A42F6473C92F53B2F4C6DC5CA">
+        <li id="li_E2BBD585EF784EE99BA45FF223857AE3">To track/view any new
+			 video data, you must re-implement video module. 
+		  </li>
+        <li id="li_6B0ABD199C1C46DC97B12E86FC5CC5E1"> You can view previous
+			 video data by logging into version 14, but after the upgrade to v.15, no video data
+			 will be processed using version 14 platform. 
+		  </li>
+        <li id="li_8259B81675C6483B8E14D5444A356B03">No integration of version 14
+			 video data with new data collected in version 15. 
+		  </li>
+      </ul>
+      <p>Custom solutions created by Consulting Group 
+		</p>
+      <ul id="ul_FA733084444D4D22822B7150E306936D">
+        <li id="li_39824929850F4B079456CA675AE9DF27">Custom solutions might not
+			 require immediate re-implementation if moving to version 15, but re-implementation is
+			 required for all new features. 
+		  </li>
+      </ul>
+    </section>
+  </conbody>
+</concept>

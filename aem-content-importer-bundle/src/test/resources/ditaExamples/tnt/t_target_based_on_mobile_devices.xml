@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_49E3A513A5B1464CA53BB5B7E75E657B">
+  <title>Target Based on Mobile Devices</title>
+  <shortdesc>You can target based on information about a visitor's mobile
+	 device. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <context id="context_026D880216A24491BD1C745E9D76790E">
+      <p>You can target specific information to a mobile device from a
+		  particular vendor, to a particular device model, to a device with a certain
+		  operating system, or based on a variety of other device specifications. You can
+		  combine multiple device specifications to narrow your target. For example, you
+		  could target devices from HTC with a particular screen height, and that use a
+		  particular Android OS version. 
+		</p>
+      <p>Mobile targeting is delivered by 
+		  <xref href="http://deviceatlas.com/resourcecentre/explore+deviceatlas+data/devices" scope="external" format="http">DeviceAtlas</xref>, a service of DotMobi.
+		  DeviceAtlas is a comprehensive database of mobile devices built on data
+		  compiled from numerous sources, including manufacturers and network operators.
+		  This data is then verified, cross-referenced, and validated to build a large
+		  and accurate mobile device database available. 
+		</p>
+      <p>"False" in the Device Atlas data set is interpreted as 0. "True" is
+		  interpreted as 1. Use 0 and 1 when setting up targeting. There is a value for
+		  each attribute for every device (0 if it is false for that device). Therefore,
+		  parameter is present or value is present should not be used for mobile device
+		  targeting. 
+		</p>
+      <p>When configuring mobile targeting in a profile script, use the
+		  following syntax: 
+		</p>
+      <p>
+        <codeph>.add("targeting.mobile.displayWidth", "displayWidth",
+			 NUMBER)</codeph>
+      </p>
+      <p>"<codeph>displayWidth</codeph>" is the name of the attribute you can
+		  use in profile scripts. The value is a number. To use this, the value
+		  is<codeph> profile.mobile.displayWidth</codeph>. This is not available directly
+		  for token replace in an offer; instead, it must first be set as a profile
+		  script. 
+		</p>
+      <p>View the 
+		  <xref href="https://my.adobeconnect.com/p2gadkumugl/" scope="external" format="https">Mobile Testing &amp; Optimization Webinar Recording</xref> and
+		  the accompanying slide deck to learn about mobile testing and optimization best
+		  practices, and access links to tools that will help you develop your testing
+		  program for mobile website and applications. 
+		</p>
+      <p>For an up-to-date list values for mobile targeting, visit 
+		  <xref href="https://deviceatlas.com/device-data/explorer" format="https" scope="external">https://deviceatlas.com/device-data/explorer</xref> . To
+		  access the list, you must create a free account. 
+		</p>
+    </context>
+    <steps id="steps_D34D9DBB06C54CF5BF52B9B0F4D98930" class="- topic/ol task/steps ">
+      <step id="step_20EB86FDACAB4F7C8DC3EEAB35AD3B7F" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Target this
+				campaign</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_E1D2AFD089C2456B8F28DEBCD863D777" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Mobile</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_AE32B4CEB98A4BC2B439420FB067A3F5" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Choose the targeted specification
+			 from the Target drop-down. 
+		  </cmd>
+      </step>
+      <step id="step_93196E23F0C84974889A6D6F96F84B1A">
+        <cmd>Choose an evaluator. 
+		  </cmd>
+        <stepresult>
+          <p>
+            <note>Some specifications do not require an evaluator, in which
+				  case the evaluator drop-down does not display. 
+				</note>
+          </p>
+        </stepresult>
+      </step>
+      <step id="step_5EE273A51A80474598C698403E3971D5">
+        <cmd>Type the desired condition, or select it from the drop-down list,
+			 if available. 
+		  </cmd>
+        <stepresult>
+          <p>Some specifications provide a list of conditions. Others require
+				you to type the desired conditions. Boolean values are represented by 0=false
+				or 1=true. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_DBAD95C43EAE4939826B65C117F3FEB1" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">If you want to use additional
+			 conditions, click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Add
+				Condition</uicontrol> and set the next condition. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">Multiple conditions are evaluated using And
+				logic. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_4DDE041B48DB4A409A6E43875012EF07" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Done</uicontrol>. 
+		  </cmd>
+      </step>
+    </steps>
+    <postreq id="postreq_8FBACDAE49FD4D76920F9029685C5123">
+      <p>View the 
+		  <xref href="https://my.adobeconnect.com/p2gadkumugl/" format="https" scope="external">Mobile Testing &amp; Optimization Webinar Recording</xref> and
+		  the accompanying slide deck to learn about mobile testing and optimization best
+		  practices, and access links to tools that will help you develop your testing
+		  program for mobile website and applications. 
+		</p>
+    </postreq>
+  </taskbody>
+  <!--<related-links> 
+	 <link href="t_Setting_the_Percentage_of_Visitors_Included_in_a_Campaign.xml#task_FDE0B7ED64684A3EB6D5F757F2750BD0" type="task" format="dita" scope="local"> <?xm-replace_text Set the Percentage of Visitors Included in a   Campaign?>
+	 </link> 
+	 <link href="t_Targeting_an_Mbox.xml#task_7C5D3CCD2C7D4A779471E746A0053057" type="task" format="dita" scope="local"> <?xm-replace_text Target an Mbox?>
+	 </link> 
+	 <link href="t_Targeting_Based_on_Site_Pages.xml#task_61256378FA2D402E93856DCAA09BE3A4" type="task" format="dita" scope="local"> <?xm-replace_text Target Based on Site Pages?>
+	 </link> 
+	 <link href="t_Targeting_Based_on_Visitor_Behavior.xml#task_3F60362313FF4532BAD61AB5DF70605A" type="task" format="dita" scope="local" class="- topic/link "> <?xm-replace_text Targeting Based on Visitor Behavior?>
+	 </link> 
+	 <link href="t_Targeting_Based_on_Traffic_Sources.xml#task_C64D238DA9DB425BB0017F14AD0F1820" type="task" format="dita" scope="local" class="- topic/link "> <?xm-replace_text Targeting Based on Traffic Sources?>
+	 </link> 
+	 <link href="t_target_based_on_social.xml#task_B29D42232EC24F0BA0D5456B0717BDE1" format="dita" scope="local"> <?xm-replace_text Target Based on Social Media Sites?>
+	 </link> 
+	 <link href="t_target_based_on_time_and_day.xml#task_A9AA42EC09A04B3982A77FE107572E5C" format="dita" scope="local"> <?xm-replace_text Target Based on Time and Day?>
+	 </link> 
+	 <link href="t_Targeting_Based_on_Geography.xml#task_E9A0CA13E74A49648F8E041081CA2064" type="task" format="dita" scope="local" class="- topic/link "> <?xm-replace_text Targeting Based on Geography?>
+	 </link> 
+	 <link href="t_Targeting_Based_on_Your_Saved_Target_Library.xml#task_F542F06596F94CEEBEF7025434737474" type="task" format="dita" scope="local" class="- topic/link "> <?xm-replace_text Targeting Based on Your Saved Target Library?>
+	 </link> 
+	 <link href="t_Targeting_Based_on_Success_Metrics.xml#task_0464884E5F484FE2B2A21392953317DE" type="task" format="dita" scope="local" class="- topic/link "> <?xm-replace_text Targeting Based on Success Metrics?>
+	 </link> 
+	 <link href="t_target_based_on_suite_segments.xml#task_A9D43290580D4066B234B09B9A0BB2C5" format="dita" scope="local"> <?xm-replace_text Target Based on Suite Segments?>
+	 </link> 
+  </related-links> 
+-->
+</task>

@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_CDFDBF6913C4461583ACD92EF798AB6F">
+  <title>Classifications Example</title>
+  <shortdesc>An example classification mapping the Product ID, as captured in
+	 the Products eVar, to other data attributes. These attributes include SKU
+	 (key), product name, description, gender, size, and code. Additionally, each
+	 code has a child classification with the color name. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Admin tools" />
+      <othermeta name="subtopic" content="Classifications" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>
+      <image placement="inline" href="graphics/Sample Product Classifications.png" id="image_290A52C50871494699CE56B68AEB24D6">
+        <?xm-replace_text Paragraph?>
+      </image>
+    </p>
+    <p>
+      <note>Product classification data is limited to data attributes directly
+		  related to the product. The data is not limited to how the products are
+		  categorized or sold on the website. Data elements like sale categories, site
+		  browse nodes, or sale items are not product classification data. Rather, these
+		  elements are captured in report conversion variables. 
+		</note>
+    </p>
+    <p>When uploading data files for this product classification, you can
+		upload the classification data as a single file or as multiple files (see
+		below). By separating the color code in file 1 and the color name in file 2,
+		the color name data (which may only be a few rows) needs to be updated only
+		when new color codes are created. This eliminates the color name (CODE^COLOR)
+		field from the more frequently updated file 1 and reduces file size and
+		complexity when generating the data file. 
+	 </p>
+    <section id="section_E8C5E031869C449F9B636F5EB3BFEC17">
+      <title>Product Classification - Single File</title>
+      <table id="table_E0E68CBA404044C3930BB70565C43ED6">
+        <tgroup cols="7">
+          <colspec colnum="1" colname="col1" colwidth="*" />
+          <colspec colnum="2" colname="col2" colwidth="*" />
+          <colspec colnum="3" colname="col3" colwidth="*" />
+          <colspec colnum="4" colname="col4" colwidth="*" />
+          <colspec colnum="5" colname="col5" colwidth="*" />
+          <colspec colnum="6" colname="col6" colwidth="*" />
+          <colspec colnum="7" colname="col7" colwidth="*" />
+          <thead>
+            <row>
+              <entry colname="col1">KEY 
+				  </entry>
+              <entry colname="col2">PRODUCT NAME 
+				  </entry>
+              <entry colname="col3">PRODUCT DETAILS 
+				  </entry>
+              <entry colname="col4">GENDER 
+				  </entry>
+              <entry colname="col5">SIZE 
+				  </entry>
+              <entry colname="col6">CODE 
+				  </entry>
+              <entry colname="col7">CODE^COLOR 
+				  </entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry colname="col1">410390013 
+				  </entry>
+              <entry colname="col2">Polo-SS 
+				  </entry>
+              <entry colname="col3">Men's Polo Shirt, Short Sleeve (M,01) 
+				  </entry>
+              <entry colname="col4">M 
+				  </entry>
+              <entry colname="col5">M 
+				  </entry>
+              <entry colname="col6">01 
+				  </entry>
+              <entry colname="col7">Stone 
+				  </entry>
+            </row>
+            <row>
+              <entry colname="col1">410390014 
+				  </entry>
+              <entry colname="col2">Polo-SS 
+				  </entry>
+              <entry colname="col3">Men's Polo Shirt, Short Sleeve (L,03) 
+				  </entry>
+              <entry colname="col4">M 
+				  </entry>
+              <entry colname="col5">L 
+				  </entry>
+              <entry colname="col6">03 
+				  </entry>
+              <entry colname="col7">Heather 
+				  </entry>
+            </row>
+            <row>
+              <entry colname="col1">410390015 
+				  </entry>
+              <entry colname="col2">Polo-LS 
+				  </entry>
+              <entry colname="col3">Women's Polo Shirt, Long Sleeve (S,23) 
+				  </entry>
+              <entry colname="col4">F 
+				  </entry>
+              <entry colname="col5">S 
+				  </entry>
+              <entry colname="col6">23 
+				  </entry>
+              <entry colname="col7">Aqua 
+				  </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+    <section id="section_A99F7D0F145540069BA4EEC0597FF13F">
+      <title>Product Classification - Multiple Files (File 1)</title>
+      <table id="table_AAF50BB461DD44E898DA0677EDBDDB44">
+        <tgroup cols="6">
+          <colspec colnum="1" colname="col1" colwidth="*" />
+          <colspec colnum="2" colname="col2" colwidth="*" />
+          <colspec colnum="3" colname="col3" colwidth="*" />
+          <colspec colnum="4" colname="col4" colwidth="*" />
+          <colspec colnum="5" colname="col5" colwidth="*" />
+          <colspec colnum="6" colname="col6" colwidth="*" />
+          <thead>
+            <row>
+              <entry colname="col1">KEY 
+				  </entry>
+              <entry colname="col2">PRODUCT NAME 
+				  </entry>
+              <entry colname="col3">PRODUCT DETAILS 
+				  </entry>
+              <entry colname="col4">GENDER 
+				  </entry>
+              <entry colname="col5">SIZE 
+				  </entry>
+              <entry colname="col6">CODE 
+				  </entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry colname="col1">410390013 
+				  </entry>
+              <entry colname="col2">Polo-SS 
+				  </entry>
+              <entry colname="col3">Men's Polo Shirt, Short Sleeve (M,01) 
+				  </entry>
+              <entry colname="col4">M 
+				  </entry>
+              <entry colname="col5">M 
+				  </entry>
+              <entry colname="col6">01 
+				  </entry>
+            </row>
+            <row>
+              <entry colname="col1">410390014 
+				  </entry>
+              <entry colname="col2">Polo-SS 
+				  </entry>
+              <entry colname="col3">Men's Polo Shirt, Short Sleeve (L,03) 
+				  </entry>
+              <entry colname="col4">M 
+				  </entry>
+              <entry colname="col5">L 
+				  </entry>
+              <entry colname="col6">03 
+				  </entry>
+            </row>
+            <row>
+              <entry colname="col1">410390015 
+				  </entry>
+              <entry colname="col2">Polo-LS 
+				  </entry>
+              <entry colname="col3">Women's Polo Shirt, Long Sleeve (S,23) 
+				  </entry>
+              <entry colname="col4">F 
+				  </entry>
+              <entry colname="col5">S 
+				  </entry>
+              <entry colname="col6">23 
+				  </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+    <section id="section_19ED95C33B174A9687E81714568D56A3">
+      <title>Product Classification - Multiple Files (File 2)</title>
+      <table id="table_C60F7267E502485CA42561B2160CF996">
+        <tgroup cols="3">
+          <colspec colnum="1" colname="col1" colwidth="*" />
+          <colspec colnum="2" colname="col2" colwidth="*" />
+          <colspec colnum="3" colname="col3" colwidth="*" />
+          <thead>
+            <row>
+              <entry colname="col1">KEY 
+				  </entry>
+              <entry colname="col2">CODE 
+				  </entry>
+              <entry colname="col3">CODE^COLOR 
+				  </entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry colname="col1">* 
+				  </entry>
+              <entry colname="col2">01 
+				  </entry>
+              <entry colname="col3">Stone 
+				  </entry>
+            </row>
+            <row>
+              <entry colname="col1">* 
+				  </entry>
+              <entry colname="col2">03 
+				  </entry>
+              <entry colname="col3">Heather 
+				  </entry>
+            </row>
+            <row>
+              <entry colname="col1">* 
+				  </entry>
+              <entry colname="col2">23 
+				  </entry>
+              <entry colname="col3">Aqua 
+				  </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+  </conbody>
+</concept>

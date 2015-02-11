@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_D6A21256F7554066B8014F8F6CA22E88">
+  <title>Default Metrics on Reports</title>
+  <shortdesc>Administrators can apply default metrics at the report level. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports and analytics" />
+      <othermeta name="subtopic" content="Upgrading from V14" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>
+      <image href="graphics/default_metrics.png" id="image_EE871496FE5148DFA20540761F875BAC">
+        <?xm-replace_text Paragraph?>
+      </image>
+    </p>
+    <p>In a report, click 
+		<uicontrol>Add Metrics</uicontrol> &gt; 
+		<uicontrol>Set as Default</uicontrol>. 
+	 </p>
+  </conbody>
+</concept>

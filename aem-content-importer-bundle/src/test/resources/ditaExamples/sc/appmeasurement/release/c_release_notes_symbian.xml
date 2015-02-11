@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_9462D787F1A04B20B9439E64E69C33AE">
+  <title>Symbian</title>
+  <shortdesc>
+    <?xm-replace_text Short Description?>
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Release notes" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <note>To find the current library version, turn on debug logging.
+	 </note>
+    <section id="section_F7F055CEB8EA44369A718F800268174D">
+      <title>1.1</title>
+      <p>Symbian library updated to include the latest Symbian app developer
+		  code. 
+		</p>
+    </section>
+  </conbody>
+</concept>

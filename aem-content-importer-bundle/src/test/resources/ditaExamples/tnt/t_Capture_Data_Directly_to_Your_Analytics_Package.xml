@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_0B86F8B73A5649EA9413FAC8EC47E432">
+  <title>Capture Data Directly to Your Analytics Package</title>
+  <shortdesc>Your Web analytics package can also capture data about visits to a
+	 Target campaign or test. You can save the campaign name and experience name as
+	 variables that are recognized by your analytics vendor. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <context id="context_08213EB0494842FD85F33323CE7965EA">
+      <p>Follow these steps to save the campaign name and experience name as
+		  variables on your page: 
+		</p>
+    </context>
+    <steps id="steps_47C62409D6854539B731B5155AC3C25A">
+      <step id="step_DA4994061CEE4C289C064E627AA9CD52">
+        <cmd>Edit an offer that is displayed in the campaign that you want to
+			 send information about to your analytics vendor. 
+		  </cmd>
+      </step>
+      <step id="step_B41E375B772144DEB549B549E79D9274">
+        <cmd>Add the following JavaScript to your offer where 
+			 <codeph>sCampaignName</codeph> and 
+			 <codeph>sRecipeName</codeph> are variable names recognized by your
+			 analytics vendor: 
+		  </cmd>
+        <stepresult>
+          <p>
+            <codeblock outputclass="syntax html">&lt;script type="text/javascript"&gt;
+
+var sCampaignName = ${campaign.name};
+
+var sRecipeName = ${campaign.recipe.name};
+
+&lt;/script&gt;</codeblock>
+          </p>
+          <p>
+            <codeph>${campaign.name}</codeph> and 
+				<codeph>${campaign.recipe.name}</codeph> are server-side string
+				variables that are replaced with the campaign and experience name that visitor
+				is experiencing. 
+			 </p>
+          <p>You can use these variables in other JavaScript code as well. Work
+				with your account representative to determine the best implementation for your
+				site. 
+			 </p>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links>
+    <link href="r_About_TestTarget_Data_Variances.xml#reference_5455C81A69774A6389E3EA998DC1ACB9" type="reference" format="dita" scope="local">
+      <?xm-replace_text About Data Variances?>
+    </link>
+    <link href="t_Compare_TestTarget_Data_with_Analytics_Package_Data.xml#task_6C24E4C7932342D1A6B090A679A9FE95" type="task" format="dita" scope="local">
+      <?xm-replace_text Compare Test&Target Data with Analytics Package Data?>
+    </link>
+  </related-links>
+</task>

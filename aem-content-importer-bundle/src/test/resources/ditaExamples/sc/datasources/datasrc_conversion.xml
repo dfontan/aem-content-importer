@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_FA3B6557128649C0B662E95C6B617FA0"> 
+  <title>Conversion</title> 
+  <shortdesc>Data Sources supports the following conversion data dimensions and
+	 metrics for data types that are processed as conversion. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Developer and implementation"/> 
+		<othermeta name="subtopic" content="Data sources"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <section id="section_FA1731B232B246DABEDF5A5D84159084"> 
+		<title>Conversion Dimensions and Metrics</title> 
+		<p>If you specify a View event, you must also specify the corresponding
+		  data dimension (eVar). For example, if you include eVar2 views, then you must
+		  list eVar2 with a value. The number of custom events and eVar views supported
+		  by a report suite is contract-dependent, and varies between companies. 
+		</p> 
+		<p outputclass="head"> 
+		  <b>Conversion Dimensions</b> 
+		</p> 
+		<table id="table_7C7E5D97B33F4EE3988F8C032D74AFDF"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="2.07*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Column Name 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Description 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Tracking Code 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Tracking code name. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Date 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Use the following date format: 
+						<codeph>MM/DD/YYYY/HH/mm/SS</codeph> (for example, 
+						<codeph>01/01/2015/06/00/00</codeph>) 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Category 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Category name. 
+					 </p> 
+					 <p>If you specify a category, then you must also select a
+						product. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Channel 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Channel name. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>eVar<i>n</i>
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>eVar<i>n</i> name. Valid values for 
+						<i>n</i> are whole number 1 - 75. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Product 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Product name. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>State 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>State name. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Zip 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Zip name. 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<p outputclass="head"> 
+		  <b>Conversion Metrics</b> 
+		</p> 
+		<table id="table_F4F2F9CA4DF849BBB7FF04C32B298D08"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="2.01*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Column Name 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Description 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Clickthroughs 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Number of tracking code views. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Cart Adds 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Number of cart additions. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Cart Opens 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Number of cart opens. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Cart Removes 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Number of cart removals. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Cart Views 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Number of cart views. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Checkouts 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Number of checkouts. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Event 
+						<i>n</i>
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Number of times event 
+						<i>n</i> occurred. Valid values for 
+						<i>n</i> are whole number 1 - 100. 
+					 </p> 
+					 <p>If you specify a View event, you must also specify the
+						corresponding data dimension (eVar). For example, if you include eVar2 views,
+						then you must list eVar2 with a value. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>eVar<i>n</i> Views 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Number of times eVar 
+						<i>n</i> was viewed. Valid values for 
+						<i>n</i> are whole number 1 - 75. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Price 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Product price. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Orders 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Number of orders placed. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Product Views 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Number of product views. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p>Quantity 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>Number of units sold. 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </section> 
+  </conbody> 
+</concept>

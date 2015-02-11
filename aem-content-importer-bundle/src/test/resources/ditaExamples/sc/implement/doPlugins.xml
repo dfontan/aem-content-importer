@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_676EAE4FAFCF4B018876390FC874EFDA">
+  <title>doPlugins</title>
+  <shortdesc> The 
+	 <varname>doPlugins</varname> variable is a reference to the 
+	 <varname>s_doPlugins</varname> function, and allows the 
+	 <varname>s_doPlugins</varname> function to be called at the appropriate
+	 location within the JavaScript file. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Variables" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>The 
+		<varname>s_doPlugins</varname> function is called each time any of the
+		following occurs: 
+	 </p>
+    <ul id="ul_3993857C792842048E2DB6304469B06C">
+      <li id="li_BE59CAF7B6F74D15B689305CD5C35FB3">The 
+		  <varname>t()</varname> function is called 
+		</li>
+      <li id="li_04105ED4C4774DE6B6EB2A74EBCF8912">The 
+		  <varname>tl()</varname> function is called 
+		</li>
+      <li id="li_3D32985CFE404B41A391B1D743FD2D4D">An exit or download link is
+		  clicked 
+		</li>
+      <li id="li_A09E22C4F7BD4013B8E979E58A32A78C"> Any page element being
+		  tracked by 
+		  visitor click map is clicked 
+		</li>
+    </ul>
+    <p>The 
+		<varname>doPlugins</varname> function is used to run customized
+		routines to gather or alter data. If you are using an object name other than
+		"s," make sure that the 
+		<varname>s_doPlugins</varname> is renamed appropriately. For example,
+		if your object name is s_mc, the 
+		<varname>s_doPlugins</varname> function should be called
+		s_mc_doPlugins. 
+	 </p>
+    <section id="section_5CFB94598521455E80947964A306EA89">
+      <title>Syntax and Possible Values</title>
+      <p>The 
+		  <varname>s_doPlugins</varname> function should not be in quotes, and 
+		  <varname>doPlugins</varname> should always be assigned to the exact
+		  name of the 
+		  <varname>s_doPlugins</varname> function (if that function is
+		  renamed). 
+		</p>
+      <codeblock outputclass="syntax javascript">s.doPlugins=s_doPlugins;</codeblock>
+    </section>
+    <section id="section_A5CF0054C56745268A1313CCC7730022">
+      <title>Examples</title>
+      <codeblock outputclass="syntax javascript">s.doPlugins=s_doPlugins;</codeblock>
+      <codeblock outputclass="syntax javascript">s_mc.doPlugins=s_mc_doPlugins;</codeblock>
+    </section>
+    <section id="section_641F0EC55E3349E5A3F8671446797074">
+      <title>
+        Configuration Settings</title>
+      <p>None 
+		</p>
+    </section>
+    <section id="section_0C7FB61CF0C946EF8A7D1B686D36E6ED">
+      <title>Pitfalls, Questions, and Tips</title>
+      <ul id="ul_C23FD5414033463F9AFD4EB4BB29F6EA">
+        <li id="li_3803820485BE4597AD62C21B47806688">The only reason to change
+			 the object name (such as from s to s_mc) is if you share content with or pull
+			 content from other 
+			 customers. Renaming the 
+			 <varname>s_doPlugins</varname> function to 
+			 <wintitle>s_mc_doPlugins</wintitle> ensures that another client's
+			 JavaScript file does not overwrite your 
+			 <varname>doPlugins</varname> function. 
+		  </li>
+        <li id="li_93E69F6813FE4662A66ED32B9A68C4D8">If you unexpectedly start
+			 pulling in content from another Adobe customer, and your 
+			 <varname>s_doPlugins</varname> function is being overwritten, it is
+			 possible to simply rename the 
+			 <varname>s_doPlugins</varname> function without changing the object
+			 name. While the best solution is to use a different object name than other
+			 JavaScript files on the same page, doing so is not required. 
+		  </li>
+      </ul>
+    </section>
+  </conbody>
+</concept>

@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_FFD115543D54401B98FE683BD7D5B3FE">
+  <title>events</title>
+  <shortdesc>The 
+	 <varname>events</varname> variable is used to record common shopping cart
+	 success events as well as custom success events. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>event</keyword>
+      </keywords>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Variables" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <table id="table_9EB9D08C80544CD68C4B1A2012440472">
+      <tgroup cols="4">
+        <colspec colnum="1" colname="col1" colwidth="*" />
+        <colspec colnum="2" colname="col2" colwidth="*" />
+        <colspec colnum="3" colname="col3" colwidth="*" />
+        <colspec colnum="4" colname="col4" colwidth="*" />
+        <thead>
+          <row>
+            <entry> Max Size 
+				</entry>
+            <entry> Debugger Parameter 
+				</entry>
+            <entry> Reports Populated 
+				</entry>
+            <entry> Default Value 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry> No Limit 
+				</entry>
+            <entry> events 
+				</entry>
+            <entry>
+              <p>Shopping Cart Events 
+				  </p>
+              <p>Custom Events 
+				  </p>
+            </entry>
+            <entry> N/A 
+				</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p> An 
+		<wintitle>event</wintitle> should be considered a milestone within a
+		site. Success events are most commonly populated on the final confirmation page
+		of a process, such as a registration process or newsletter sign-up. Custom
+		events are defined by populating the events variable with the literal values
+		defined in the 
+		<xref href="events.xml#concept_FFD115543D54401B98FE683BD7D5B3FE/section_18395A3BEFEB4E9F8D7B2ED0001FBE4E" format="dita" scope="local">Possible Values</xref> section below. 
+	 </p>
+    <p>By default, success events are configured as 
+		<i>counter</i> events. Counter events count the number of times a success
+		event is set (x+1). Events can also be configured as 
+		<i>numeric</i> events. Numeric events allow you to specify the number to
+		increment (as might be necessary when counting dynamic or arbitrary values,
+		such as the number of results returned by an internal search). 
+	 </p>
+    <p>A final event type, 
+		<i>currency</i>, allows you to define the amount to be added (similar to
+		numeric events), but displays as currency in reports, and is subject to
+		currency conversions based on the s.<varname>currencyCode</varname> value and
+		the default currency setting for your report suite. For additional information
+		on using numeric and currency events, see 
+		<xref href="products.xml#concept_A4007F6307E4419DAA65E1668A8FEBA2" format="dita" scope="local">Products</xref>. 
+	 </p>
+    <section id="section_9195286C34C54B02B2598E2B856492C3">
+      <title>Configuring the Variable</title>
+      <p>The 
+		  <wintitle>s.events</wintitle> variable is enabled by default for all
+		  implementations. The seven pre-configured conversion events are automatically
+		  enabled for all new report suites. New custom events (event1-event100) can be
+		  enabled by any admin-level user by using the 
+		  <keyword>Admin Console</keyword>. 
+		</p>
+    </section>
+    <section id="section_18395A3BEFEB4E9F8D7B2ED0001FBE4E">
+      <title>Possible Values</title>
+      <p>The following is a list of possible values for the events variable: 
+		</p>
+      <table id="table_5D9FC0B9EC0C4C9C8B449BFED9CC9F73">
+        <tgroup cols="3">
+          <colspec colnum="1" colname="col1" colwidth="*" />
+          <colspec colnum="2" colname="col2" colwidth="*" />
+          <colspec colnum="3" colname="col3" colwidth="*" />
+          <thead>
+            <row>
+              <entry> Event 
+				  </entry>
+              <entry> Description 
+				  </entry>
+              <entry> Reports Populated 
+				  </entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry> prodView 
+				  </entry>
+              <entry> Product Views 
+				  </entry>
+              <entry> Products 
+				  </entry>
+            </row>
+            <row>
+              <entry> scOpen 
+				  </entry>
+              <entry> Open / Initialize a new shopping cart 
+				  </entry>
+              <entry> Carts 
+				  </entry>
+            </row>
+            <row>
+              <entry> scAdd 
+				  </entry>
+              <entry> Add item(s) to the shopping cart 
+				  </entry>
+              <entry> Cart Additions 
+				  </entry>
+            </row>
+            <row>
+              <entry> scRemove 
+				  </entry>
+              <entry> Remove item(s) from the shopping cart 
+				  </entry>
+              <entry> Cart Removals 
+				  </entry>
+            </row>
+            <row>
+              <entry> scView 
+				  </entry>
+              <entry> View shopping cart 
+				  </entry>
+              <entry> Cart Views 
+				  </entry>
+            </row>
+            <row>
+              <entry> scCheckout 
+				  </entry>
+              <entry> Beginning of the checkout process 
+				  </entry>
+              <entry> Checkouts 
+				  </entry>
+            </row>
+            <row>
+              <entry> purchase 
+				  </entry>
+              <entry> Completion of a purchase (order) 
+				  </entry>
+              <entry> Orders 
+				  </entry>
+            </row>
+            <row>
+              <entry> event1 - event100 
+				  </entry>
+              <entry> Custom events 
+				  </entry>
+              <entry> Custom Events 
+				  </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+    <section id="section_45A159DF00114066B8551DDEB15E084C">
+      <title>Syntax and Examples</title>
+      <sectiondiv>
+        <b> Counter Events</b>
+      </sectiondiv>
+      <p> Counter events are set by placing the desired events in the 
+		  <wintitle>s.events</wintitle> variable, in a comma-separated list (if
+		  multiple events are to be passed). 
+		</p>
+      <codeblock outputclass="syntax javascript">s.events="scAdd"</codeblock>
+      <codeblock outputclass="syntax javascript">s.events="scAdd,event1,event7"</codeblock>
+      <codeblock outputclass="syntax javascript">s.events="event5"</codeblock>
+      <codeblock outputclass="syntax javascript">s.events="purchase,event10"</codeblock>
+      <p>If on H23 code or higher, counter events can have integers greater
+		  than one assigned to them. 
+		</p>
+      <codeblock outputclass="syntax javascript">s.events="event1=10"</codeblock>
+      <codeblock outputclass="syntax javascript">s.events="scRemove=3,event6,event2=4"</codeblock>
+      <p>Implementing counter events with assigned integer values treat the
+		  event as if it fired multiple times within the image request. Counter events do
+		  not allow decimals- it is recommended to use numeric events instead if this
+		  functionality is required. 
+		</p>
+      <sectiondiv>
+        <b> Numeric/Currency Events</b>
+      </sectiondiv>
+      <p> Numeric and currency events must be included in the 
+		  <wintitle>s.events</wintitle> variable, though they typically receive
+		  their numerical value (e.g., 24.99) in the 
+		  <wintitle>s.products</wintitle> variable. This allows you to tie
+		  specific numeric and currency values to individual product entries. 
+		</p>
+      <sectiondiv>
+        <i> With Products</i>
+        <codeblock outputclass="syntax javascript">s.events="event1"
+s.products="Footwear;Running Shoes;1;99.99;event1=4.50"
+</codeblock>
+        <codeblock outputclass="syntax javascript">s.events="event1,event4"
+s.products="Footwear;Running Shoes;1;99.99;event1=4.50|event4=1.99"
+</codeblock>
+      </sectiondiv>
+      <sectiondiv>
+        <i> Without Products</i>
+        <p>You can also track these types of events by leaving the product and
+		  category fields blank. This was the process to measure data such as tax and
+		  shipping before support was added for decimal values outside of the products
+		  string. If you want to pass a numeric or currency value but do not want to tie
+		  these to an individual product (such as a discount applied to an entire order,
+		  or a value captured outside of the product view or shopping cart process), this
+		  can be done by using 
+		  <wintitle>s.products</wintitle> as shown below, but leaving the product
+		  and category fields blank. 
+		</p>
+        <codeblock outputclass="syntax javascript">s.events="event1"
+s.products=";;;;event1=4.50"
+</codeblock>
+        <codeblock outputclass="syntax javascript">s.events="event1,event4"
+s.products=";;;;event1=4.50|event4=1.99"
+</codeblock>
+      </sectiondiv>
+      <sectiondiv>
+        <i> In the Events List</i>
+        <p>Numeric/Currency Events that are given a value directly in events list
+		  apply to all products in the products list. 
+		</p>
+        <p>This is useful to track order-wide discounts, shipping, and similar
+		  values, without modifying the product price or by tracking it in the product
+		  list separately. For example, if you configured event10 to contain order-wide
+		  discounts, a purchase with a 10% discount might appear similar to the
+		  following: 
+		</p>
+        <codeblock outputclass="syntax javascript">s.events="purchase,event10=9.95"
+s.products="Footwear;Running Shoes;1;69.95,Running Essentials;Socks;10;29.50"
+</codeblock>
+        <p>On Numeric/Currency Event reports, the report total represents the
+		  de-duplicated event total (in this example, the total amount of discounts
+		  during the reporting period), not the sum of the event values for each product.
+		  
+		</p>
+        <note>if a value for a Numeric/Currency Event is specified in the
+		  products string and in the event string, the value from the event string is
+		  used. 
+		</note>
+      </sectiondiv>
+      <sectiondiv>
+        <b> Combining Counter Events and Numeric/Currency Events</b>
+        <p> Counter events can be passed along with numeric/currency events by
+		  passing all desired events in the 
+		  <wintitle>s.events</wintitle> variable, and then passing only the
+		  numeric/currency events in the 
+		  <wintitle>s.products</wintitle> variable. 
+		</p>
+      </sectiondiv>
+    </section>
+    <section id="section_A89488EF4471405AAFC4D6DD05E77621">
+      <title>Event Serialization</title>
+      <p>By default, an event is counted every time the event is set on your
+		  site. 
+		</p>
+      <p>See 
+		  <xref href="event_serialization.xml#concept_092B638D7FEE423D91F8A57EA8E09705" format="dita" scope="local"><?xm-replace_text Event Serialization?></xref> for
+		  more information. 
+		</p>
+    </section>
+    <section id="section_8559D42D3F344AF3BB3C0125F78C4989">
+      <title> Syntax</title>
+      <codeblock outputclass="syntax javascript">s.events="event1:3167fhjkah"</codeblock>
+    </section>
+    <section id="section_7B5B5728A59648ADB3E2548CDAD2C9D4">
+      <title>Examples</title>
+      <codeblock outputclass="syntax javascript">s.events="scAdd:003717174"</codeblock>
+      <codeblock outputclass="syntax javascript">s.events="scAdd:user228197,event1:577247280,event7:P7fhF8571"</codeblock>
+    </section>
+  </conbody>
+</concept>

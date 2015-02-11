@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_660F395EB6B2461D87D4066E75859841">
+  <title>Target Experiences Report</title>
+  <shortdesc>Shows the list of experiences (recipes) you have configured in
+	 Target. Requires that the Analytics for Target integration be enabled. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>An experience, sometimes called a recipe, defines the content that
+		displays in an mbox in Adobe Target.
+	 </p>
+  </conbody>
+</concept>

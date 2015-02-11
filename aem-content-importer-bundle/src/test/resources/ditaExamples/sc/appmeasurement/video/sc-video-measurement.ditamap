@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd" [          ]>
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<map id="map_B6E7C528B46F4E75B6C6796A411BA247">
+	<title>Measuring Video in Adobe Analytics</title>
+	<topicref format="dita" href="video_tracking.xml" navtitle="Measuring Video in Adobe Analytics" scope="local" type="concept"/>
+	<topicref format="dita" href="video_arch.xml" navtitle="How Video Measurement Works" scope="local" type="concept">
+		<topicref format="dita" href="video_arch_intervals.xml" navtitle="Video Metrics" scope="local" type="concept"/>
+	</topicref>
+	<topicref format="dita" href="video_analyst.xml" navtitle="Measuring Video for Web Analysts" scope="local" type="concept">
+		<topicref format="dita" href="video_reports.xml" navtitle="Video Reports" scope="local"><topicref format="dita" href="video_reports_overview.xml" navtitle="Video Overview Report" scope="local"/><topicref format="dita" href="video_reports_detail.xml" navtitle="Video Detail Report" scope="local"/><topicref format="dita" href="video_reports_daypart.xml" navtitle="Video Daypart" scope="local"/></topicref><topicref format="dita" href="video_config.xml" navtitle="Video Configuration" scope="local" type="task"/>
+		<topicref format="dita" href="video_worksheet.xml" navtitle="Video Implementation Worksheet" scope="local" type="concept"/>
+	</topicref>
+	<topicref format="dita" href="video_developer.xml" navtitle="Measuring Video for Developers" scope="local" type="concept">
+		<topicref format="dita" href="video_flash.xml" navtitle="Flash Video Playback" scope="local" type="task">
+			<topicref format="dita" href="video_flash_download.xml" navtitle="Download AppMeasurement for Flash" scope="local" type="task"/>
+			<topicref format="dita" href="video_flash_config.xml" navtitle="Add the AppMeasurement for Flash Library to a Project" scope="local" type="task"/><topicref format="dita" href="video_flash_config_core.xml" navtitle="Configure AppMeasurement" scope="local"/>
+			<topicref format="dita" href="video_flash_mapping.xml" navtitle="Map Analytics Variables and Events" scope="local" type="task"/>
+			<topicref format="dita" href="video_flash_milestones.xml" navtitle="Configure Milestones" scope="local" type="task"/>
+			<topicref format="dita" href="video_flash_autotrack.xml" navtitle="Track Player Events Using AutoTrack" scope="local" type="task"/>
+			<topicref format="dita" href="video_flash_test.xml" navtitle="Test Your Video Measurement Code" scope="local" type="task"/>
+			<topicref format="dita" href="video_flash_sample.xml" navtitle="ActionScript Sample Code" scope="local" type="concept"/>
+		</topicref>
+		<topicref format="dita" href="video_osmf.xml" navtitle="Open Source Media Framework (OSMF)" scope="local" type="concept">
+			<topicref format="dita" href="video_osmf_download.xml" navtitle="Download the Media Module for OSMF" scope="local" type="task"/>
+			<topicref format="dita" href="video_osmf_dynamic.xml" navtitle="Dynamic Implementation" scope="local" type="concept">
+				<topicref format="dita" href="video_osmf_troubleshooting.xml" navtitle="Troubleshooting a Dynamic OSMF Implementation" scope="local" type="concept"/>
+			</topicref>
+			<topicref format="dita" href="video_osmf_dynamic_custom.xml" navtitle="Custom Dynamic Implementation" scope="local" type="concept">
+				<topicref format="dita" href="video_osmf_metadata.xml" navtitle="OSMF Metadata" scope="local" type="concept"/>
+			</topicref>
+			<topicref format="dita" href="video_osmf_static.xml" navtitle="Static Implementation" scope="local" type="concept">
+				<topicref format="dita" href="video_flash_mapping.xml" navtitle="Map Analytics Variables and Events" scope="local" type="task"/>
+				<topicref format="dita" href="video_flash_milestones.xml" navtitle="Configure Milestones" scope="local" type="task"/>
+				<topicref format="dita" href="video_flash_autotrack.xml" navtitle="Track Player Events Using AutoTrack" scope="local" type="task"/>
+			</topicref>
+			<topicref format="dita" href="video_osmf_override_name.xml" navtitle="Using OSMF Metadata to Override a Video Name" scope="local" type="concept"/>
+		</topicref>
+		<topicref format="dita" href="video_ios.xml" navtitle="Apple iOS" scope="local">
+			<topicref format="dita" href="video_ios_download.xml" navtitle="Download the Media Module for iOS" scope="local"/>
+			<topicref format="dita" href="video_ios_config.xml" navtitle="Add the iOS Media Module to a Project" scope="local"/>
+			<topicref format="dita" href="video_ios_mapping.xml" navtitle="Map Conversion Variables and Events" scope="local"/>
+			<topicref format="dita" href="video_ios_milestones.xml" navtitle="Configure Milestones" scope="local"/>
+			<topicref format="dita" href="video_ios_autotrack.xml" navtitle="Track Player Events Using AutoTrack" scope="local"/>
+			<topicref format="dita" href="video_ios_sample.xml" navtitle="iOS Sample Code" scope="local"/>
+		</topicref>
+		<topicref format="dita" href="video_android.xml" navtitle="Android" scope="local">
+			<topicmeta>
+				<navtitle>Android</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="video_silverlight.xml" navtitle="Silverlight" scope="local" type="concept">
+			<topicref format="dita" href="video_silverlight_download.xml" navtitle="Download the Media Module for Silverlight" scope="local" type="task"/>
+			<topicref format="dita" href="video_silverlight_config.xml" navtitle="Add the Silverlight Media Module to a Project" scope="local" type="task"/>
+			<topicref format="dita" href="video_silverlight_mapping.xml" navtitle="Map Conversion Variables and Events" scope="local" type="task"/>
+			<topicref format="dita" href="video_silverlight_milestones.xml" navtitle="Configure Milestones" scope="local" type="task"/>
+			<topicref format="dita" href="video_silverlight_autotrack.xml" navtitle="Track Player Events Using AutoTrack" scope="local" type="task"/>
+			<topicref format="dita" href="video_sliverlight_setinterface.xml" navtitle="Using the setInterface Method" scope="local" type="concept"/>
+			<topicref format="dita" href="video_silverlight_sample.xml" navtitle="Silverlight Sample Code" scope="local" type="concept"/>
+		</topicref>
+		<topicref format="dita" href="video_js.xml" navtitle="Using JavaScript to Track a Video Player" scope="local" type="concept">
+			<topicref format="dita" href="video_js_download.xml" navtitle="Download the Media Module for JavaScript" scope="local" type="task"/>
+			<topicref format="dita" href="video_js_config.xml" navtitle="Add the JavaScript Media Module to a Web Page" scope="local" type="task"/>
+			<topicref format="dita" href="video_flash_mapping.xml" navtitle="Map Analytics Variables and Events" scope="local" type="task"/>
+			<topicref format="dita" href="video_flash_milestones.xml" navtitle="Configure Milestones" scope="local" type="task"/>
+			<topicref format="dita" href="video_js_events.xml" navtitle="Track Video Player Events" scope="local" type="concept"/>
+			<topicref format="dita" href="video_js_sample.xml" navtitle="JavaScript Sample Code" scope="local" type="concept"/>
+		</topicref>
+		<topicref format="dita" href="video_html.xml" navtitle="HTML 5 Video" scope="local" type="concept"/>
+		<topicref format="dita" href="video_other_players.xml" navtitle="Other Video Players" scope="local" type="concept"/>
+		<topicref format="dita" href="video_manual_track.xml" navtitle="Manually Tagging a Video Player" scope="local" type="concept"/>
+		<topicref format="dita" href="video_mediamonitor.xml" navtitle="Measuring Additional Metrics using Media.monitor" scope="local" type="concept"/>
+	</topicref>
+	<topicref format="dita" href="video_ref_variables.xml" navtitle="Media Module Variables" scope="local" type="concept"/>
+	<topicref format="dita" href="video_ref_methods.xml" navtitle="Media Module Methods" scope="local" type="concept"/>
+	<topicref format="dita" href="video_ads.xml" navtitle="VAST Video Ad Tracking" scope="local"/><topicref format="dita" href="video_ref_faq.xml" navtitle="Measuring Video FAQ" scope="local" type="concept"/>
+	<topicref format="dita" href="video_migrate.xml" navtitle="Migrating to Integrated Video Tracking" scope="local" type="concept">
+		<topicref format="dita" href="video_migrate_analyst.xml" navtitle="Migrating for Web Analysts" scope="local" type="concept"/>
+		<topicref format="dita" href="video_migrate_developer.xml" navtitle="Flash, Silverlight, and JavaScript Migration Guide" scope="local" type="task"/>
+		<topicref format="dita" href="video_migrate_developer_osmf.xml" navtitle="OSMF Migration Guide" scope="local" type="concept"/>
+	</topicref>
+</map>

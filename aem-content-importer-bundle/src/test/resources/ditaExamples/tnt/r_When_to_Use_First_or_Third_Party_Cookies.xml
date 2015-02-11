@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd"[]>
+<reference id="reference_42ED8874897F40369D296C3EF07D1C98">
+  <title>When to Use First or Third Party Cookies</title>
+  <shortdesc>Your site set up determines which cookies you want to use. It is
+	 helpful to understand how Target works when trying to understand first and
+	 third party cookies. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <refbody>
+    <refsyn id="refsyn_3A46D5C504B04A75B3DB94F0DE97A2C7">
+      <p>See 
+		  <xref href="c_How_TestTarget_Works.xml#concept_459AB4DEE7364A9290C2FD405DC29584" type="concept" format="dita" scope="local"><?xm-replace_text How Test&Target Works?></xref>
+		  for more information. 
+		</p>
+      <p>There are three main use cases for cookies: 
+		</p>
+      <ol id="ol_31D9BD2807AE4A8D9D0273F45BA5BA81">
+        <li id="li_223B2D8B08C7407DAE93FDF549E73A30"> One domain. 
+			 <p>All of your testing will take place within one top-level domain
+				(<filepath>www.domain.com</filepath>, 
+				<filepath>store.domain.com</filepath>, 
+				<filepath>anysub.domain.com</filepath>, etc.). 
+			 </p><p>Approach: Use only 1st party cookies. This is the default. 
+			 </p></li>
+        <li id="li_B5E5BCEBDA484C819B9163E84D63AC6E"> Users cross domains and
+			 you want to track and test their behavior across these domains. 
+			 <p>Example: A user comes to your site to shop but checks out through
+				Yahoo stores. Three approaches (work with your account representative to
+				determine the best approach): 
+			 </p><ul id="ul_7E655B3EDC4C4221B12D3225D96144F3"><li id="li_4ABBEB69612F4594AAF4887E771CECD2"> Enable 1st and 3rd
+				  party cookies. 
+				</li><li id="li_A5A0FF9EEEDE40DAB85EE84EBF317AD7"> Enable 3rd party only
+				  (very rare, but has the benefit of keeping mbox cookie out of your domain). 
+				</li><li id="li_B759409AC5044E5EAC9881C503D6FD0B"> Enable only 1st party
+				  cookies and pass 
+				  <codeph>mboxSession</codeph> parameter when crossing domain. 
+				  <p>The 
+					 <codeph>mboxSession</codeph> parameter must be passed to a
+					 landing page with 
+					 <filepath>mbox.js</filepath> referenced. It cannot be an
+					 intermediate redirector page. 
+				  </p></li></ul></li>
+        <li id="li_B4E3D6E7DA364F5080D196B74FB4BCEE">
+          <p>You are only using adboxes or Flashboxes on a 3rd party site. 
+			 </p>
+          <p>Two approaches (work with your client services manager to
+				determine the best approach): 
+			 </p>
+          <ul id="ul_F9420D7CD0BE425FA35272C0A55980F0">
+            <li id="li_DE55C5FDB3BA4216B7CEEDCB255725EE"> Enable 1st and 3rd
+				  party cookies. 
+				  <p>First and 3rd party cookies are required for Flashbox and
+					 dynamic creatives. 
+				  </p></li>
+            <li id="li_834F30D990284BFC84A000A4B8BBB482"> Enable only 3rd party
+				  cookies. 
+				  <p>This approach is only for the rare case where AdBox
+					 implementations are used without on-site targeting. 
+				  </p></li>
+          </ul>
+        </li>
+      </ol>
+    </refsyn>
+  </refbody>
+  <related-links>
+    <link href="r_Cookie_Settings.xml#reference_7E7DFBE2D7EA46838B4213360A722F24" type="reference" format="dita" scope="local">
+      <?xm-replace_text Cookie Settings?>
+    </link>
+    <link href="t_Deleting_the_Mbox_Cookie.xml#task_45D48ED5EBBC4C549D682C5CEB49F17B" type="task" format="dita" scope="local">
+      <?xm-replace_text Deleting the Mbox Cookie?>
+    </link>
+  </related-links>
+</reference>

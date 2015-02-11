@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_7FDF20A47C4F4C1081DCCF88C878C29D"> 
+  <title>Cross Product Login</title> 
+  <shortdesc>The 
+	 <wintitle>Cross Product Login</wintitle> tab is available only if you have
+	 an active Search&amp;Promote, Target account. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Admin tools"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <ol id="ol_8A6CD8F0C39340F2873CDF281295D38F"> 
+		<li id="li_84DAB9D3E5EB42FAB95435F8DB0B0E5F"> 
+		  <uicontrol>Analytics</uicontrol> &gt; 
+		  <uicontrol>Admin</uicontrol> &gt; 
+		  <uicontrol>Company Settings</uicontrol>
+		</li> 
+		<li id="li_6AE09979248B4123A2351879D6959F55"> Click the 
+		  <uicontrol>Cross Product Login</uicontrol> tab. 
+		</li> 
+		<li id="li_132C308C6F1040EAB61C4D06D36D3D5D">Enable the product, then
+		  click 
+		  <uicontrol>Save</uicontrol>. 
+		</li> 
+	 </ol> 
+  </conbody> 
+</concept>

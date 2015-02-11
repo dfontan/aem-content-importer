@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_E25D89C8B90A41FEB7DF4E936CACEE2B">
+  <title>Web Log</title>
+  <shortdesc>Web Log data sources let you import standard web server log files.
+	 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Data sources" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>The following common web server log types are supported: 
+	 </p>
+    <table id="table_50EDC9237759448A8471C42ABC8F79F8">
+      <tgroup cols="2">
+        <colspec colnum="1" colname="col1" colwidth="1.00*" />
+        <colspec colnum="2" colname="col2" colwidth="1.47*" />
+        <thead>
+          <row>
+            <entry colname="col1">
+              <p>Column Name 
+				  </p>
+            </entry>
+            <entry colname="col2">
+              <p> Description 
+				  </p>
+            </entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry colname="col1">
+              <p>NCSA Common Log 
+				  </p>
+            </entry>
+            <entry colname="col2">
+              <p>Apache Default 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <p>NCSA Extended (Combined) 
+				  </p>
+            </entry>
+            <entry colname="col2">
+              <p>Apache 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <p>W3C Extended Log 
+				  </p>
+            </entry>
+            <entry colname="col2">
+              <p>Used by IIS 4.0 and later 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <p>Microsoft IIS Log 
+				  </p>
+            </entry>
+            <entry colname="col2">
+              <p> Used by IIS 3.0 and earlier 
+				  </p>
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p>The primary log file fields that Data Sources processes include IP
+		Address, Date/Time of the request, and the URL. In a few cases, such as the
+		NCSA Extended format, Data Sources also processes the Referrer and the User
+		Agent fields. 
+	 </p>
+    <p>You can view web log data using standard marketing reports for Page
+		Views, Visits, and Visitors. Because report metrics are primarily based on
+		cookies, and web server logs are based on the IP address, Adobe recommends
+		importing the web server logs into a separate report suite specifically for
+		that purpose. 
+	 </p>
+    <p>For more information about your web server log files, consult your web
+		server documentation. 
+	 </p>
+    <section id="section_6F9F2E0CBF5A48BCA7748E200763882F" conref="datasrc_traffic.xml#concept_F50D3AC6A5544D06BB81EF1E279576BC/section_03DDBE1BB65942B5A3169912BBBB0E1C">
+      <title>
+        <?xm-replace_text Section Title?>
+      </title>
+      <p>
+        <?xm-replace_text Paragraph?>
+      </p>
+    </section>
+  </conbody>
+</concept>

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_982C32CC35CE44F8A3543DF9AD741C83">
+  <title>Static Implementation</title>
+  <shortdesc>The static implementation links
+	 AppMeasurement_Media_AutoTrackOSMF.swc into your Flash project before compiling
+	 it for use. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>media</keyword>
+        <keyword>milestone</keyword>
+        <keyword>sdk</keyword>
+        <keyword>video</keyword>
+      </keywords>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p> AppMeasurement_Media_AutoTrackOSMF.swc includes the bridge class
+		AutoTrackOSMF. 
+	 </p>
+    <p>For example, once you have linked both AppMeasurement and the
+		AppMeasurement plug-in for OSMF into the Flash project that includes an OSMF
+		player with a MediaFactory, the tracking code implementation might look like
+		the following: 
+	 </p>
+    <codeblock>import com.omniture.AppMeasurement; //1
+import com.omniture.media.AutoTrackOSMF; //2
+
+var s:AppMeasurement = new AppMeasurement();
+s.debugTracking = true;
+s.trackLocal = true;
+s.account = "jdoe";
+s.visitorNamespace = “corp1”;
+s.trackingServer = "corp1.d1.sc.omtrdc.net";
+s.pageName = "OSMF Player";
+
+s.Media.trackSeconds = 15;
+s.Media.addAutoTrackHandler(new AutoTrackOSMF()); //3
+s.Media.autoTrack = true;
+
+mediaFactory.loadPlugin(s.Media.AutoTrackOSMF.pluginResource); //4</codeblock>
+    <p>The highlighted code performs the linking of AppMeasurement to the OSMF
+		player, including: 
+	 </p>
+    <ol id="ol_976B6F6AD9554A04BD5C7CBA9013FDCC">
+      <li id="li_F3081B67D7404118A49F3FD02042A44A">Import the AppMeasurement
+		  class 
+		</li>
+      <li id="li_DABF3E89A74C4CDEB02DE776D38AF4DC">Import the AppMeasurement
+		  plug-in for OSMF class 
+		</li>
+      <li id="li_59F34F1D65AE4BF5B78B08F62BD86B0D">Add the auto-track support
+		  for OSMF to an instance of AppMeasurement 
+		</li>
+      <li id="li_60DFEA5B4EE34AC59BF44D36EE0067DB">Loading the reference
+		  plug-in into the OSMF MediaFactory. 
+		</li>
+    </ol>
+  </conbody>
+</concept>

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_3BEA2083FF8F42D485B4DF164739D95F">
+  <title>Allow Unapproved Campaigns to be Viewed from All Hosts in the Host
+	 Group</title>
+  <shortdesc>Only approved campaigns may be viewed from the default host group.
+	 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <context id="context_01386932920C42D6B7F0976A82621878">
+      <p>This is an option for staging and development hosts only. 
+		</p>
+    </context>
+    <steps id="steps_9492485D1F724D1BA0F44B6F04A49FD5">
+      <step id="step_25652A40A198402EB189AD32A4549EC7">
+        <cmd>From the mbox menu, select 
+			 <uicontrol>Manage Hosts</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_590C6B372113400780D1318B9F433996">
+        <cmd>On the Manage Hosts page, click 
+			 <uicontrol>Edit</uicontrol> for your host group. 
+		  </cmd>
+        <stepresult></stepresult>
+      </step>
+      <step id="step_D3DF4DC3652F44819EB14BB5A7922BB2">
+        <cmd>In the Active Campaign Mode drop down box, select 
+			 <uicontrol>Show Approved and Unapproved Campaigns</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_4DD64C9F58564CA69026D6DB23104999">
+        <cmd>Click 
+			 <uicontrol>Save</uicontrol>. 
+		  </cmd>
+        <stepresult></stepresult>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links>
+    <link href="t_Preventing_Unapproved_Campaigns_from_Being_Viewed_from_All_Hosts_in_the_Host_Group.xml#task_B6641EFBB43B45049D4424C512B4D37A" type="task" format="dita" scope="local">
+      <?xm-replace_text Preventing Unapproved Campaigns from Being Viewed from All Hosts in...?>
+    </link>
+    <link href="t_Using_Time_Offset_for_Viewing_Campaigns.xml#task_7050B221739949A598AF79E01816FA3E" type="task" format="dita" scope="local">
+      <?xm-replace_text Using Time Offset for Viewing Campaigns?>
+    </link>
+  </related-links>
+</task>

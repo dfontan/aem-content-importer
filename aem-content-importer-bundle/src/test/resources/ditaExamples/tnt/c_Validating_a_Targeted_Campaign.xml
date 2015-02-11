@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_804F9A67161447579091BF818BDF0A5E">
+  <title>Validating a Targeted Campaign</title>
+  <shortdesc>After you create a targeted campaign, you should verify that it
+	 works as expected. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Begin with the 
+		<xref href="c_Campaign_Quality_Assurance.xml#concept_B645EA1BB55149E4AB8328F9943AC86A" type="concept" format="dita" scope="local">Campaign Quality Assurance
+		  Process</xref>. 
+	 </p>
+    <p>For each experience mimic each type of targeting situation in your
+		campaign. This includes 
+		<b>meeting</b>, and 
+		<b>not meeting</b> the targeting conditions. 
+	 </p>
+  </conbody>
+  <!--<related-links>
+    <link href="c_Understanding_the_Targeting_Interface.xml#concept_43A2AB6859FC4395A5011D1875240358" type="concept" format="dita" scope="local">
+      <?xm-replace_text Understanding the Targeting Interface?>
+    </link>
+    <link href="c_Preparing_a_targeted_Campaign_or_Test.xml#concept_BFAD03148B5A4BD3A597689658ABBF39" type="concept" format="dita" scope="local">
+      <?xm-replace_text Preparing a Targeted Campaign or Test?>
+    </link>
+    <link href="t_Inserting_Target_Conditions.xml#task_EEB5E801586E434BA5806BE171BC68E9" type="task" format="dita" scope="local">
+      <?xm-replace_text Inserting Target Conditions?>
+    </link>
+    <link href="c_Targeting_Groups.xml#concept_897DFD2D38CF42BABCE2D038EB4B41C9" type="concept" format="dita" scope="local">
+      <?xm-replace_text Targeting Groups?>
+    </link>
+  </related-links>
+-->
+</concept>

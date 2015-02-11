@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_B00E2B15A2EF4F46A89FA887929FFCFD">
+  <title>Custom Dynamic Implementation</title>
+  <shortdesc>If you use a dynamic plug-in implementation to track an OSMF
+	 player, and also need to use a custom 
+	 <codeph>Media.monitor</codeph> method, you can build your own custom
+	 dynamic plug-in by subclassing the prebuilt dynamic plug-in. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>media</keyword>
+        <keyword>milestone</keyword>
+        <keyword>sdk</keyword>
+        <keyword>video</keyword>
+      </keywords>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Along with the prebuilt 
+		<filepath>AppMeasurementExtensionOSMF.swf</filepath>, you can also
+		download 
+		<codeph>AppMeasurementExtensionOSMF.swc</codeph>, which is a Flash
+		library that provides an AppMeasurementExtension class for subclassing to build
+		a custom dynamic plug-in. 
+	 </p>
+    <p>The custom dynamic plug-in should do the following. Once compiled, you
+		can use it like the pre-built dynamic plug-in. 
+	 </p>
+    <ol id="ol_25446111065445D3967792F2EF6D4EC5">
+      <li id="li_8683BB39B9C04AB58DEE57D85224E1F8">Import
+		  com.omniture.AppMeasurementExtension. 
+		</li>
+      <li id="li_F42F58E963EE42CD85B92652CED285C7">Define a class that will be
+		  the SWF that extends AppMeasurementExtension. 
+		</li>
+      <li id="li_2DDE27A3F0574B1DAF9FD9522893B4E0">Override the public function
+		  customizeExtension():void method. 
+		</li>
+      <li id="li_3324858091EF46469D603F3927EE94F8">Inside of your
+		  customizeExtension method, update the “s” member as needed. The “s” member is
+		  the instance of AppMeasurement inside of the AppMeasurementExtension. 
+		</li>
+      <li id="li_D1E0B7AC14C14E808A02C6D1BF63CB9B">Compile your custom SWF
+		  linking against AppMeasurementExtensionOSMF.swc. 
+		</li>
+    </ol>
+    <p>For example, the following ActionScript code for a custom dynamic
+		plug-in does the following: 
+	 </p>
+    <ol id="ol_7ECD8365614745E990C40CF85489AEE0">
+      <li id="li_8770B4BE80D8470797F836FAFB17F192">Overrides the video name
+		  tracked with the episodeID from the OSMF metadata. 
+		</li>
+      <li id="li_1E9DFF55D76F467D9023D2B18F1B29FF">In the Media.monitor method,
+		  sets eVar1 to the “series” key, eVar2 to the “season” key, and eVar3 to the
+		  “episode” key in the http://www.corp1.com/ namespace. 
+		</li>
+      <li id="li_284F388B2CAE4C6EA427F6C12C73BD4D">In the Media.monitor method,
+		  sends in custom events “event1” as video starts and “event2” as video stops. 
+		</li>
+    </ol>
+    <codeblock>package {
+    import com.omniture.AppMeasurementExtension;
+    public class CustomPlugin extends AppMeasurementExtension {
+        public function customizeExtension():void {
+            super();
+            s.Media.autoTrackMediaName = "{media.player.metadata(http://www.corp1.com/
+                ,episodeID)"
+            s.Media.monitor = function (s:Object,media:Object) {
+                s.trackVars = "events,eVar1,eVar2,eVar3";
+                s.trackEvents = "event1,event2";
+                s.eVar1 = media.player.metadata("http://www.corp1.com/","series");
+                s.eVar2 = media.player.metadata("http://www.corp1.com/","season");
+                s.eVar3 = media.player.metadata("http://www.corp1.com/","episode");
+                if (media.mediaEvent == "OPEN") {
+                    s.events = "event1";
+                    s.Media.track(media.name);
+                } else if (media.mediaEvent == "CLOSE") {
+                    s.events = "event2";
+                    s.Media.track(media.name);
+                }
+            }
+        }
+    }
+}</codeblock>
+  </conbody>
+</concept>

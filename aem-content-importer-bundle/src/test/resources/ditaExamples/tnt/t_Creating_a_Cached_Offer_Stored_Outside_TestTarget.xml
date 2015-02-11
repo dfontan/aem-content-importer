@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_83D85C26C67E4EDBAFA7AAED3194F590" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Create a Cached Offer Stored Outside
+	 Target</title>
+  <shortdesc class="- topic/shortdesc ">Offers stored outside Target are
+	 cached, meaning that the content is taken from your site and served to your
+	 visitors directly for maximum performance. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <context id="context_E4AAA5BFF95946DE85AD8FFA97F72EB1" class="- topic/section task/context ">
+      <p class="- topic/p ">Examples of offers stored outside Target include: 
+		</p>
+      <p class="- topic/p ">
+        <ul id="ul_645FFFFF0B55479C9BCDA5308B5A98F9" class="- topic/ul ">
+          <li id="li_A55B1A5BC5FD4CCA8BA9C8742DAB3060" class="- topic/li ">
+			 Content from an ad server updated a few times a week 
+		  </li>
+          <li id="li_A2F787C8E4D64013AFD20DBC9EC50DD7" class="- topic/li ">
+			 Content, such as images, served by a third party server 
+		  </li>
+          <li id="li_846C6E12F05A488CBB8CA84C21542439" class="- topic/li "> Form
+			 supported by script self-contained within the Web page 
+		  </li>
+          <li id="li_5EE08080135C4E4682D58EA27A544C47" class="- topic/li "> HTML
+			 code stored by a third party 
+		  </li>
+          <li id="li_1AEA2A24AF6C4FD783A1AC1550993A41" class="- topic/li ">
+			 Output with fewer variations, or smaller volume outputs stored on a third party
+			 site 
+		  </li>
+        </ul>
+      </p>
+      <p class="- topic/p ">To create a cached offer that is stored outside
+		  Target: 
+		</p>
+    </context>
+    <steps id="steps_F6F3175F24494B2097588CB97C39D86F" class="- topic/ol task/steps ">
+      <step id="step_B1BE0A55D5E943AFBB82F92CA135540F" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Ensure you need an outside offer. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">See 
+				<xref href="c_About_Dynamic_Content.xml#concept_657016A0E6174C22B89036E9C8A0170F" type="concept" format="dita" scope="local" class="- topic/xref "><?xm-replace_text About Dynamic Content?></xref>
+				to help you guide your decision. 
+			 </p>
+          <p class="- topic/p ">
+            <note class="- topic/note ">Do not use the outside offer if you are
+				  making use of dynamic content. 
+				</note>
+          </p>
+        </stepresult>
+      </step>
+      <step id="step_5A91B090BF4644D2BC1EEF2591305100" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Select 
+			 <uicontrol>Offers</uicontrol> &gt; 
+			 <uicontrol>Create</uicontrol> &gt; 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Offers Outside
+				Test&amp;Target</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_99B6F5D4B17E4E7B8A881F4B082AB250" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Name your offer. 
+		  </cmd>
+      </step>
+      <step id="step_0F3EF211C2064C1DAD503CF08761500C" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Select the folder where the offer
+			 will be stored. 
+		  </cmd>
+      </step>
+      <step id="step_BB73852412F547BEA8E3790067313AD4" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Enter a link to the code snippet
+			 stored outside Target. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">This can be an absolute URL. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_F6C153A2F41743BEA6B986CAC4248ECC" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Save</uicontrol>. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p "> The new offer shows up in the offers list. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_C376B721D25E4EEE8334B238471F1145" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Use the new offer in a campaign or
+			 test. 
+		  </cmd>
+      </step>
+      <step id="step_9E29E9368F114275865C89C34ABDA30C" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">
+          <xref href="c_Validating_Offers.xml#concept_60E81920A21A42ABA6980AF60697B260" type="concept" format="dita" scope="local" class="- topic/xref ">Validate the
+				offer</xref>. 
+		  </cmd>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links class="- topic/related-links ">
+    <link href="c_How_Dynamic_Offers_Work.xml#concept_CC2A969420B34364A9FA78C1CE251818" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text How Dynamic Offers Work?>
+    </link>
+    <link href="t_Using_Styles_to_Test_Dynamic_Content.xml#task_E12C10C6F80B4B268DCD6E1CD53C4CA5" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Use Styles to Test Dynamic Content?>
+    </link>
+    <link href="t_Creating_a_Dynamic_Offer_Stored_on_Your_Site.xml#task_207ACC941A4B421C8566105DA29F6E21" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Create a Dynamic Offer Stored on Your   Site?>
+    </link>
+    <link href="t_Creating_a_Cached_Offer_Stored_on_Your_Site.xml#task_464E401A0E534E599BAB0B3242DC150C" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Create a Cached Offer Stored on Your   Site?>
+    </link>
+    <link href="r_Dynamic_Offer_Selection_Matrix.xml#reference_B23BEDD29DDD47709A7651AFD27E776B" type="reference" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Dynamic Offer Selection Matrix?>
+    </link>
+  </related-links>
+</task>

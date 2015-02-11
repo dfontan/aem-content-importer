@@ -20,6 +20,7 @@ import javax.jcr.SimpleCredentials;
 
 
 
+
 import org.apache.jackrabbit.commons.JcrUtils;
 import org.apache.sling.commons.json.JSONObject;
 import org.junit.AfterClass;
@@ -27,6 +28,7 @@ import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import com.adobe.aem.importer.exception.AemImporterException.AEM_IMPORTER_EXCEPTION_TYPE;
 import com.adobe.aem.importer.test.utils.HttpClientUtils;
 
 public class ValidationIntegrationTest extends AbstractIntegrationTest {
@@ -37,7 +39,7 @@ public class ValidationIntegrationTest extends AbstractIntegrationTest {
 	public static void init() {
 		try {
 			ClassLoader classLoader = DITAIntegrationTest.class.getClassLoader();
-			zipFileWrongStructure = createZipFileWithFolder(classLoader.getResource("exampleDITA").getFile(), System.currentTimeMillis() + ".zip", "exampleDITA/example");
+			zipFileWrongStructure = createZipFileWithFolder(classLoader.getResource("ditaExamples/mcloud").getFile(), System.currentTimeMillis() + ".zip", "exampleDITA/example");
 			
 			Repository repo = JcrUtils.getRepository(URL_REPO);
 			
@@ -59,8 +61,6 @@ public class ValidationIntegrationTest extends AbstractIntegrationTest {
 		}
 	}
 	
-	//TODO: Develop some test checking error params, filling out form parameters and config file inside zip file, missing config file, etc.
-	
 	/*
 	 * Test for checking an exception when zip file has an invalid structure
 	 */
@@ -70,7 +70,7 @@ public class ValidationIntegrationTest extends AbstractIntegrationTest {
 		try {
 			jsonResult = HttpClientUtils.post(POST_URL, USERNAME, PASSWORD,
 					null, zipFileWrongStructure);
-			Assert.assertEquals("true", (String)jsonResult.get("error"));
+			Assert.assertEquals(AEM_IMPORTER_EXCEPTION_TYPE.INVALID_ZIP_FILE.name(), (String)jsonResult.get("errorType"));
 		} catch (Exception e) {
 			e.printStackTrace();
 			System.out.println(e.getMessage());

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_40CF9C2D10B94E82819BC65A232F05C3"> 
+  <title>Referrers Report</title> 
+  <shortdesc>Displays the domain or URL where your visitors came from before
+	 they arrived at your site, the methods visitors use to find your website, and
+	 the number of visits to your site that came from these referring locations. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Reports"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>For example, if a visitor clicks a link from Site A and arrives at your
+		site, Site A is the referrer if it is not defined as part of your domain.
+		During implementation, your implementation consultant can help you to define
+		the domains and URLs that are part of your website. (This change can be done
+		after implementation.) 
+	 </p> 
+	 <p>Domains or URLs that are not part of those defined domains and URLs are
+		considered referrers. For example, web page A and web page B are added to the
+		internal URL filter, but web page C is not. In this case, web page C is
+		considered a referrer. 
+	 </p> 
+	 <p>See 
+		<xref
+		 href="http://marketing.adobe.com/resources/help/en_US/admin/index.html#Internal URL Filters"
+		 scope="external" format="html">Internal URL Filters</xref> in Admin Tools help
+		for more information. 
+	 </p> 
+	 <section id="section_4D8CE5E111DD48FBBDCF9B5A1F16E92E"> 
+		<title>Allocation, Expiration, and Special Values</title> 
+		<table id="table_EC7423532C7E44DE97B7FC0321585A2B"> 
+		  <tgroup cols="4"><colspec colnum="1" colname="col1"
+			 colwidth="*"/><colspec colnum="2" colname="col2" colwidth="*"/><colspec
+			 colnum="3" colname="col3" colwidth="*"/><colspec colnum="4" colname="col4"
+			 colwidth="*"/><thead> 
+				<row> 
+				  <entry colname="col1"> 
+				  </entry> 
+				  <entry colname="col2">Marketing reports &amp; analytics
+					 (SiteCatalyst) 
+				  </entry> 
+				  <entry colname="col3">Ad hoc analytics 
+				  </entry> 
+				  <entry colname="col4">Data warehouse 
+				  </entry> 
+				</row></thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1">Metric Allocation 
+				  </entry> 
+				  <entry colname="col2"> Most Recent 
+				  </entry> 
+				  <entry colname="col3"> Most Recent 
+				  </entry> 
+				  <entry colname="col4"> Most Recent 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">Values Expire After 
+				  </entry> 
+				  <entry colname="col2"> Visit 
+				  </entry> 
+				  <entry colname="col3">Visit 
+				  </entry> 
+				  <entry colname="col4">Visit 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">Value Limits 
+				  </entry> 
+				  <entry colname="col2"> No limits (might change in a future
+					 release) 
+				  </entry> 
+				  <entry colname="col3"> No limits (might change in a future
+					 release) 
+				  </entry> 
+				  <entry colname="col4">none 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">Special values 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>"None": site wide totals that did not have a referrer during
+						the visit. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col3"> 
+					 <p>"None": site wide totals that did not have a referrer during
+						the visit. 
+					 </p> 
+				  </entry> 
+				  <entry colname="col4"> 
+					 <p> Empty - equivalent of "None", site wide totals that did not
+						have a referrer during the visit. 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </section> 
+	 <section id="section_B83A3571D64E4E7792712FAF740D7955"> 
+		<title>Notes</title> 
+		<ul id="ul_2E5AC58083934027A27304810449AD37"> 
+		  <li id="li_E3C64B805D93494E84DB0E0BBA931700">The referrer, referrer
+			 type, and referring domain are set on the first hit of the visit, or during a
+			 visit when the referrer is external (for example, if a visitor leaves your
+			 site, uses a search engine, then returns to your site before the first visit
+			 expires). These values are set at the same time and persist across the visit. 
+		  </li> 
+		  <li id="li_9EC6663ECE4A436EA4346E76BFC9537A"> Internal URLs are
+			 filtered. Only referrers that do not match the internal URL filters are in this
+			 report. 
+		  </li> 
+		  <li id="li_A55EE32AFC024CC2949A28E542C32ABD"> The corresponding metric
+			 is called Referrer Instance in ad hoc analysis. 
+		  </li> 
+		  <li id="li_E61BADBA86F5443591E8227524EA3431"> Typed/Bookmarked values
+			 are not included on Referrers Report. This means that site wide Visits don't
+			 match visits on this report. 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_6C0FCEA9DAF04D97BA056E153B7E4628"> 
+		<title>Report History</title> 
+		<table id="table_9DFA79EC6A5A48648F2FB5418E1752DB"> 
+		  <tgroup cols="2"><colspec colnum="1" colname="col1"
+			 colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="4.87*"/><thead> 
+				<row> 
+				  <entry colname="col1">Date 
+				  </entry> 
+				  <entry colname="col2">Change 
+				  </entry> 
+				</row></thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1">1/16/2014 
+				  </entry> 
+				  <entry colname="col2">Data warehouse was updated to match the
+					 logic used by marketing reports &amp; analytics. Before this date, search
+					 keywords did not persist across the visit. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">6/19/2012 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p> Before July 2012, "None" includes all mobile traffic,
+						Typed/Bookmarked, and visits with no JavaScript. After July 2012, "None"
+						includes only hits with no JavaScript on the first page of visit. 
+					 </p> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </section> 
+  </conbody> 
+</concept> 

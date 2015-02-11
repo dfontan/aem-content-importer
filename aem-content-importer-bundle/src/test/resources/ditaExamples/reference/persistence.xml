@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_ACAC301531F84BC6B818314E64D6AF8C">
+  <title>Persistence</title>
+  <shortdesc>Persistence refers to the ability of conversion variables to
+	 retain their value from one page to the next. You can choose how long a
+	 conversion variable retains its value, whether for a specified duration of
+	 time, or until a specific success event takes place. Traffic variables are not
+	 persistent.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+    </metadata>
+  </prolog>
+</concept>

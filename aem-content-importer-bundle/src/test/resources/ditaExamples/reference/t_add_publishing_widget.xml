@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_D547D64AAFF64483AB9D1CCF4413CC26"> 
+  <title>Add a publishing Widget</title> 
+  <shortdesc>Steps that describe how to add a 
+	 <wintitle>Publishing Widget</wintitle>
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Admin tools"/> </metadata>
+  </prolog> 
+  <taskbody> 
+	 <steps id="steps_8A8BF7233F52492AB3D5EE3E59C185FF"> 
+		<step id="step_EE58E0DD627945A49A02D712DD29563F"> 
+		  <cmd>Click 
+			 <uicontrol>Analytics</uicontrol> &gt; 
+			 <uicontrol>Admin</uicontrol> &gt; 
+			 <uicontrol>Publishing Widgets</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_2B72F46B354445A4845829E182A9A91E"> 
+		  <cmd>Review the warning text in the 
+			 <wintitle>Overview</wintitle> section and click the help icons to
+			 review more information. 
+		  </cmd> 
+		</step> 
+		<step id="step_D2555420F5664CBF84EF79F2086F1132"> 
+		  <cmd>Click 
+			 <uicontrol>Add New</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_3401062095DB48F49E3655E891F57810"> 
+		  <cmd>Complete the fields and options described in 
+			 <xref
+			  href="publishing_widgets_admin.xml#concept_BFDF798031FC42A381565F93065D4AEC/section_D67478AECCA946B19A3E4C7071EB4871"
+			  format="dita" scope="local"><?xm-replace_text Publishing Widgets Descriptions?></xref>
+		  </cmd> 
+		</step> 
+		<step id="step_359A6E5B02F14A7C849DE65537C2F94F"> 
+		  <cmd>Click 
+			 <uicontrol>Preview</uicontrol> to display the widget in a new browser
+			 tab. 
+		  </cmd> 
+		</step> 
+		<step id="step_FBBE63C38CAB45AA925BBAB2408F18EB"> 
+		  <cmd>Click 
+			 <uicontrol>Save</uicontrol>. 
+		  </cmd> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task>

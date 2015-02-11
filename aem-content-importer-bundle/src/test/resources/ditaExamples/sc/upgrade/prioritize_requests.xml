@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_4738FAB2A3404AF6A999D0D49E551035"> 
+  <title>Prioritize Requests</title> 
+  <shortdesc>You can prioritize requests using a drag-and-drop interface.
+  </shortdesc> 
+  <conbody>
+	 <p><image href="graphics/dw_priority.png"
+		id="image_063207D0A5E24133B684C0762BB970EC"><?xm-replace_text Paragraph?></image>
+	 </p>
+  </conbody>
+</concept>

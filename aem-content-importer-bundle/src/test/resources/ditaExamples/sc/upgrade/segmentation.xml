@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_B6AFBB2D54FE4931922F1059796BDD62"> 
+  <title>Segmentation</title> 
+  <shortdesc>Segmentation lets you define custom data subsets and generate
+	 reports using that data subset. 
+  </shortdesc> 
+  <conbody> 
+	 <p><keyword>SiteCatalyst</keyword> 15 provides real-time segmentation using
+		custom personal and global segments, segments shared from 
+		<keyword>Discover</keyword>, and pre-defined segments. You can also
+		export segments that are listed in the Suite Segments section to 
+		<keyword>Test&amp;Target</keyword> for building a campaign. 
+	 </p> 
+	 <p><image href="graphics/segment_add_menu.png"
+		id="image_4F7D4D38978943748ECE4A2A1A9062BA"><?xm-replace_text Paragraph?></image>
+		
+	 </p> 
+	 <p>See 
+		<xref
+		 href="r_man_segments.xml#reference_B602C82274A1400CAD96F8F87548C457"
+		 format="dita" scope="local">Managing Segments</xref> for details. 
+	 </p> 
+  </conbody>
+</concept>

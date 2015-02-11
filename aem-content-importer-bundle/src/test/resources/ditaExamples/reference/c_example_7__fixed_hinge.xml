@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_7DFD1B516D8042DCA9926CCAF1E267C3">
+  <title>Example 7: Fixed/Hinge</title>
+  <shortdesc>Instead of putting none as the value of 
+	 <wintitle>hinge</wintitle>, you can distribute the value by orders when
+	 breaking down products. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Admin tools" />
+      <othermeta name="subtopic" content="Classifications" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>In this case, you would import the following data: 
+	 </p>
+    <table id="table_84DC0D25298D4137BE22FE6674AD2E94">
+      <tgroup cols="5">
+        <colspec colnum="1" colname="col1" colwidth="*" />
+        <colspec colnum="2" colname="col2" colwidth="*" />
+        <colspec colnum="3" colname="col3" colwidth="*" />
+        <colspec colnum="4" colname="col4" colwidth="*" />
+        <colspec colnum="5" colname="col5" colwidth="*" />
+        <thead>
+          <row>
+            <entry colname="col1">Key 
+				</entry>
+            <entry colname="col2">MyText 
+				</entry>
+            <entry colname="col3">~MyCost 
+				</entry>
+            <entry colname="col4">~MyCost^~id~ 
+				</entry>
+            <entry colname="col5"> ~MyCost^~value~ 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry colname="col1">Product1 
+				</entry>
+            <entry colname="col2"> Text1 
+				</entry>
+            <entry colname="col3">Cost1_mar_fixed 
+				</entry>
+            <entry colname="col4"></entry>
+            <entry colname="col5">3000.00 
+				</entry>
+          </row>
+          <row>
+            <entry colname="col1">Product2 
+				</entry>
+            <entry colname="col2"> Text2 
+				</entry>
+            <entry colname="col3">Cost2_mar_fixed 
+				</entry>
+            <entry colname="col4"></entry>
+            <entry colname="col5"> 2000.00 
+				</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <table id="table_09EF3D97161A44DB99440E048B0D4928">
+      <tgroup cols="3">
+        <colspec colnum="1" colname="col1" colwidth="*" />
+        <colspec colnum="2" colname="col2" colwidth="*" />
+        <colspec colnum="3" colname="col3" colwidth="*" />
+        <thead>
+          <row>
+            <entry colname="col1">~MyCost^~period~ 
+				</entry>
+            <entry colname="col2">~MyCost^~rate~ 
+				</entry>
+            <entry colname="col3">~MyCost^~hinge~ 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry colname="col1">2010/03/01 - 2010/03/31 
+				</entry>
+            <entry colname="col2">fixed 
+				</entry>
+            <entry colname="col3">revenue 
+				</entry>
+          </row>
+          <row>
+            <entry colname="col1">2010/03/01 - 2010/03/31 
+				</entry>
+            <entry colname="col2">fixed 
+				</entry>
+            <entry colname="col3">revenue 
+				</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <section id="section_5953BB6FD0CE4EF69D1D60B8B1203431">
+      <title>Result</title>
+      <p>An example of output from the report is shown here: 
+		</p>
+      <p>Period: Mar 2010 
+		</p>
+      <p>Report: Products by Page 
+		</p>
+      <table id="table_D24ED72BE9844A2D8EF99AED49966558">
+        <tgroup cols="3">
+          <colspec colnum="1" colname="col1" colwidth="*" />
+          <colspec colnum="2" colname="col2" colwidth="*" />
+          <colspec colnum="3" colname="col3" colwidth="*" />
+          <thead>
+            <row>
+              <entry colname="col1">Products by Page 
+				  </entry>
+              <entry colname="col2">Orders 
+				  </entry>
+              <entry colname="col3">MyCost 
+				  </entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry colname="col1">Product1 
+				  </entry>
+              <entry colname="col2">1000 
+				  </entry>
+              <entry colname="col3">$3000.00 
+				  </entry>
+            </row>
+            <row>
+              <entry colname="col1" outputclass="para_indent1">Home Page 
+				  </entry>
+              <entry colname="col2" outputclass="para_indent1">600 
+				  </entry>
+              <entry colname="col3" outputclass="para_indent1">$1800.00 
+				  </entry>
+            </row>
+            <row>
+              <entry colname="col1" outputclass="para_indent1">Shopping Cart 
+				  </entry>
+              <entry colname="col2" outputclass="para_indent1">400 
+				  </entry>
+              <entry colname="col3" outputclass="para_indent1">$1200.00 
+				  </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+  </conbody>
+</concept>

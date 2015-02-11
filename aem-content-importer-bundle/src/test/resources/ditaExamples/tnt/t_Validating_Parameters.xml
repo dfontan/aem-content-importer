@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_AE1D5342AA114066A64CD4FD88B3EAAA">
+  <title>Validate Mbox Parameters</title>
+  <shortdesc>After you associate parameters with an mbox, you should validate
+	 them. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <steps id="steps_97132B2DC80648D4BE7DC13B19DBAA4E">
+      <step id="step_2C700DFF2B844F749D4931AA14A9E958">
+        <cmd>Mouse over 
+			 <uicontrol>Locations</uicontrol> and click 
+			 <uicontrol>List</uicontrol>. 
+		  </cmd>
+        <stepresult>
+          <p>The parameters will be listed beside your mbox. Mbox-specific
+				parameters are at the top of the list. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_AD5AECA005644F74905566E10BAD000F">
+        <cmd>If the parameters do not appear, browse to the page with your mbox
+			 and refresh the page. 
+		  </cmd>
+        <stepresult>
+          <p>Return to the 
+				<uicontrol>List</uicontrol> page and click 
+				<uicontrol>refresh</uicontrol>. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_BB3A4D9061664E89BAFA5CF8D2293E8F">
+        <cmd>Click on the parameter label to see the last 10 values loaded. 
+		  </cmd>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links>
+    <link href="t_Associating_Mbox-Specific_Parameters.xml#task_1490B2E462404C8F98ACED3B2C37628D" type="task" format="dita" scope="local">
+      <?xm-replace_text Associate Mbox-Specific Parameters?>
+    </link>
+  </related-links>
+</task>

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_7050B221739949A598AF79E01816FA3E" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Time Offset for Viewing Campaigns</title>
+  <shortdesc class="- topic/shortdesc ">Time offset enables you to view your
+	 site as it looked at a specified time in the past or will look in the future. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <context id="context_01386932920C42D6B7F0976A82621878" class="- topic/section task/context ">
+      <p class="- topic/p ">For example, you can see what your site looked like
+		  last week when you had five campaigns running for a big promotion. Or, you
+		  could see how your site will look when the test you set up to start next week
+		  is launched. 
+		</p>
+    </context>
+    <steps id="steps_9492485D1F724D1BA0F44B6F04A49FD5" class="- topic/ol task/steps ">
+      <step id="step_25652A40A198402EB189AD32A4549EC7" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">In the host management page, click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">edit</uicontrol> for
+			 your host group. 
+		  </cmd>
+      </step>
+      <step id="step_590C6B372113400780D1318B9F433996" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">In the Set Default Campaign Viewing
+			 Date drop down, select the offset. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">
+            <ul id="ul_A26BD67CE22942389D26045F7FA3E73B" class="- topic/ul ">
+              <li id="li_5F268D6907004F1FA1E3C1A234C21631" class="- topic/li ">
+				  To view 
+				  <xref href="c_1st-Party_Cookie_Behavior.xml#concept_63BE914DF7C648FF97CDB5683FD1C57C" type="concept" format="dita" scope="local" class="- topic/xref ">campaigns</xref> that start in the future, select 1 week,
+				  1 month, etc. 
+				</li>
+              <li id="li_F53D422D7E774005973F6D9105D27D58" class="- topic/li ">
+				  To view campaigns as they appeared in the past, select -1 week, -1 month, etc. 
+				</li>
+            </ul>
+          </p>
+        </stepresult>
+      </step>
+    </steps>
+    <result id="result_2436E857688547C5A88DA69C6409331C" class="- topic/section task/result ">
+      <p class="- topic/p ">
+        <b class="+ topic/ph hi-d/b ">Example:</b> A new
+		  campaign has a start date of March 15. On March 12, you wish to view it as it
+		  will appear on March 15. Select a time offset of 1 week. 
+		</p>
+    </result>
+  </taskbody>
+  <related-links class="- topic/related-links ">
+    <link href="t_Allowing_Unapproved_Campaigns_to_be_Viewed_from_All_Hosts_in_the_Host_Group.xml#task_3BEA2083FF8F42D485B4DF164739D95F" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Allow Unapproved Campaigns to be Viewed from All Hosts in...?>
+    </link>
+    <link href="t_Preventing_Unapproved_Campaigns_from_Being_Viewed_from_All_Hosts_in_the_Host_Group.xml#task_B6641EFBB43B45049D4424C512B4D37A" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Prevent Unapproved Campaigns from Being Viewed from All Hosts in...?>
+    </link>
+  </related-links>
+</task>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_FD86C1E2D10F4C119B0EB41A446D5F98"> 
+  <title>Google Chrome</title> 
+  <shortdesc>Instructions to create a bookmark for the Adobe Debugger
+	 (previously DigitalPulse Debugger) from within Google Chrome. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Developer and implementation"/> 
+		<othermeta name="subtopic" content="Debugger"/> </metadata>
+  </prolog> 
+  <taskbody> 
+	 <steps id="steps_0D0C706F780E40F09F5FE9526FE03582"> 
+		<step id="step_19351A533C434D1CB69C452FD6FB919C"> 
+		  <cmd>Right-click the 
+			 <wintitle>Bookmarks</wintitle> bar (depending on your Chrome settings
+			 the 
+			 <wintitle>Bookmarks</wintitle> bar might be on the<wintitle> New
+				Tab</wintitle> page), then click 
+			 <uicontrol>Add Page</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_AE7EB20D445A44CFAEE6D76764E58F92"> 
+		  <cmd>In the 
+			 <uicontrol>Name</uicontrol> field, specify "Adobe Debugger" as the
+			 name for the new bookmark. 
+		  </cmd> 
+		</step> 
+		<step id="step_EAB8A70DCF7B4862AADE177D600A939F"> 
+		  <cmd>In the 
+			 <uicontrol>URL</uicontrol> field, paste the code that you copied to
+			 your clipboard as explained in 
+			 <xref
+			  href="debugger_install.xml#task_8DB4DB56982C4EB6B599F99B02A9AD3B" type="task"
+			  format="dita" scope="local"><?xm-replace_text Manual Setup?></xref>. 
+		  </cmd> 
+		</step> 
+		<step id="step_E8FF049666B24BFC9E7DF278E5DCEDEA"> 
+		  <cmd>Browse to and specify the location you want to save the bookmark. 
+		  </cmd> 
+		</step> 
+		<step id="step_141A54250F2C44D5AB45C48FC62B92FF"> 
+		  <cmd>Click 
+			 <uicontrol>OK</uicontrol>. 
+		  </cmd> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task>

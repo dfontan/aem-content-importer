@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_78579922D0B840308D90CA3C0F002857">
+  <title>Anomaly</title>
+  <shortdesc>An anomaly is detected using statistical modeling to automatically
+	 find unexpected trends in your data. The model analyzes metrics and determines
+	 a lower bound, upper bound, and expected range of values. When an unexpected
+	 spike or drop occurs, the system alerts you to the anomaly in the report. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+    </metadata>
+  </prolog>
+</concept>

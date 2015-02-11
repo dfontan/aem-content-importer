@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_539B8C5468424D31B55FC6EB39C5061F">
+  <title>Report Suite Templates</title>
+  <shortdesc>Report Suite templates configure the most common settings for
+	 several types of report suites.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Admin tools" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>To save time when creating a new report suite, you can select a template
+		that is similar the report suite configuration you have designed. Selecting a
+		report suite template does not limit your implementation in any way. Any
+		configuration made by a report suite template can be changed after the report
+		suite is created.
+	 </p>
+    <p></p>
+  </conbody>
+</concept>

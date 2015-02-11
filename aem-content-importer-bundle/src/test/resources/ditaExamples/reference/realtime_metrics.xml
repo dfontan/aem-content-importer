@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_B86D8DF89AD448839332AD84B1DF2AE7">
+  <title>Supported Real-Time Metrics and Dimensions</title>
+  <shortdesc>Lists metrics and dimensions supported by Real-Time reports.
+	 Classifications are also supported, if you have defined them.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <section id="section_514ED8B382494C47BFC0657894D1AF94">
+      <title>Supported Metrics</title>
+      <ul id="ul_5F2CFBAB39A04383940BE1C952048997">
+        <li id="li_E8828D54582C4DFE8D0C3F76ACEF8E4D">Revenue 
+		  </li>
+        <li id="li_FB6C79A7BD894C1AA2308BA984B47F0E">Orders 
+		  </li>
+        <li id="li_7BFA9D88FE4A440C90547C6A3741C0E5">Units 
+		  </li>
+        <li id="li_8429457D37D24BF6A1EDF8FA19345E31">Carts 
+		  </li>
+        <li id="li_5BB0BAE7BC43499C9C6BC56A8F22F679">Cart Views 
+		  </li>
+        <li id="li_3D9435B276534B14A7163C162F6BEF76">Checkouts 
+		  </li>
+        <li id="li_DC5DCF36181F412BB18955125B67B89C">Cart Additions 
+		  </li>
+        <li id="li_2A661189950D464DA4348475906D55DE">Cart Removals 
+		  </li>
+        <li id="li_CAEAA8FA51BC4993A37840C333CE6169">Instances 
+		  </li>
+        <li id="li_1235209B864C40ADB0F427F2F0D563CC">Custom events 1-100 (if
+			 enabled in the report suite) 
+		  </li>
+      </ul>
+    </section>
+    <section id="section_9F4A8D6EF94F4ED29B77C2F54FC08520">
+      <title>Supported Dimensions</title>
+      <ul id="ul_64998985A6474F2D9BB8BD837D0B19EC">
+        <li id="li_F30527DC756549F6A839E6F42EAEA41D">Page 
+		  </li>
+        <li id="li_2CC9D8BCBD0F48008A2A9F67FCAC7AB3">Search Keyword 
+		  </li>
+        <li id="li_C8A03C679F0645E997BD3CDC410A9A81">Search Engine 
+		  </li>
+        <li id="li_8382A0A754CD4B34B8F29639D068C704">Referring Domain 
+		  </li>
+        <li id="li_EA0C7E4A5C794C45B0EA760E6B61F8A3">Geosegmentation Country 
+		  </li>
+        <li id="li_F58934326E8246D9809F26A76097551C">Geosegmentation Region 
+		  </li>
+        <li id="li_6572AD3243C0458AB8DBFC6CA4FEF699">Geosegmentation City 
+		  </li>
+        <li id="li_BABD518EEBE94C83BFF41D199A0184CB">Geosegmentation U.S. DMA 
+		  </li>
+        <li id="li_D32B84BBED754C56A820A914DD6939A1">Product 
+		  </li>
+        <li id="li_8569AF6BB6194C68BF0B089B0DB60B28">Server 
+		  </li>
+        <li id="li_2F0FC060815247B888D8E4E0130A0C3B">Site Section 
+		  </li>
+        <li id="li_C048C4A21C9F4E66ABE264D0377E9CD9">Tracking Code 
+		  </li>
+        <li id="li_DABEE553FEAE43B18F0AB893A01CAE6E">Custom Link 
+		  </li>
+        <li id="li_0B69463139944B4892324EC305EDC8BD">File Download 
+		  </li>
+        <li id="li_99643CF83A4A4270B31AEAF817735B8E">Exit Link 
+		  </li>
+        <li id="li_CFEFD6A13A8348D5B13E845029853D42">Custom Insight variables
+			 (props) 1-75 (if enabled in the report suite) 
+		  </li>
+      </ul>
+    </section>
+  </conbody>
+</concept>

@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_180F6F1C25B84920842366B7499D48C4">
+  <title>Custom Events (Counter)</title>
+  <shortdesc>The number of times an event occurs. For example, if event1 is set
+	 to count the number of times a document is downloaded, then the 
+	 <wintitle>Custom Event</wintitle> report for Event 1 shows the total number
+	 of times the event (or download) occurs. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Metrics" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <table id="table_F68E5D19862844159D8CC14400A6EC4A">
+      <tgroup cols="2">
+        <colspec colnum="1" colname="col1" colwidth="1.00*" />
+        <colspec colnum="2" colname="col2" colwidth="2.34*" />
+        <thead>
+          <row>
+            <entry colname="col1">Uses 
+				</entry>
+            <entry colname="col2">Description 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry colname="col1">Traffic 
+				</entry>
+            <entry colname="col2">Each time an event is set, an instance is
+				  counted for the event. Uses allocation only. 
+				</entry>
+          </row>
+          <row>
+            <entry colname="col1">Conversion 
+				</entry>
+            <entry colname="col2">Each time an event is set, an instance is
+				  counted for the event. Does not use allocation. 
+				</entry>
+          </row>
+          <row>
+            <entry colname="col1">Ad Hoc Analysis 
+				</entry>
+            <entry colname="col2">Each time an event is set, an instance is
+				  counted for the event. All allocation metrics are available for each event. 
+				</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </conbody>
+  <related-links>
+    <link href="reports_custom_events.xml#concept_9337B2FB8A3F417BA8689FE7FD64629F" format="dita" scope="local">
+      <linktext>
+        <?xm-replace_text Custom Events Report?>
+      </linktext>
+    </link>
+  </related-links>
+</concept>

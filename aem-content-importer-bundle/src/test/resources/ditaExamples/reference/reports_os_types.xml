@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_8B7E64546B5641DC896DC4013093DBFE"> 
+  <title>Operating System Types Report</title> 
+  <shortdesc>Rolls up the specific versions from the Operating Systems report
+	 in the Operating Systems Report into major operating system types for
+	 simplified reporting and segmentation. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Reports"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>For example: 
+	 </p> 
+	 <table id="table_6199D14609A84F84A0FE69A83A49D440"> 
+		<tgroup cols="1"> 
+		  <colspec colnum="1" colname="col1" colwidth="*"/> 
+		  <tbody> 
+			 <row> 
+				<entry> Microsoft Windows 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Apple Macintosh 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Apple iOS 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> Google Android 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry> GNU/Linux 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+	 <p><b>Dynamic Device Data</b> 
+	 </p> 
+	 <p>This report uses dynamic device data that is continually being updated
+		as new devices are released and identified. For example, a new tablet that is
+		released during the current month might be misidentified since it doesn't yet
+		exist in the device database. When the device database is updated with the new
+		device, any changes as a result are applied to all reporting dates. Therefore,
+		you might see slight variations on this report for historical dates over time.
+		As a general rule, the most current report will have the most accurate data for
+		any reporting period. 
+	 </p>
+	 <section id="section_B028CE3DDDC4401FA0609F908885A5DD"> 
+		<title>Changes</title> 
+		<table id="table_82084301B1044103BB3B293595BC86BD"> 
+		  <tgroup cols="2"><colspec colnum="1" colname="col1"
+			 colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="5.63*"/><thead> 
+				<row> 
+				  <entry colname="col1">Date 
+				  </entry> 
+				  <entry colname="col2">Change 
+				  </entry> 
+				</row></thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1">May 22, 2014 
+				  </entry> 
+				  <entry colname="col2">This report was added in marketing reports
+					 &amp; analytics. Historical data is available before this date since this
+					 report is based on existing data in the Operating Systems report. 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </section> 
+  </conbody> 
+</concept> 

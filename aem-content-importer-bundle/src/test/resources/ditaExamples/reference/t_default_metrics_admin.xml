@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_ECEE782F8F254755BE8D23212E72695C"> 
+  <title>Specify default metrics</title> 
+  <shortdesc>Steps that describe how to select default metrics for conversion
+	 reports. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Admin tools"/> </metadata>
+  </prolog> 
+  <taskbody> 
+	 <steps id="steps_431DEFFFDF594DE8965AC8660B27D0FB"> 
+		<step id="step_96CB3DD8012E4FB493C76ABEE295ABB5"> 
+		  <cmd>Click 
+			 <uicontrol>Analytics</uicontrol> &gt; 
+			 <uicontrol>Admin</uicontrol> &gt; 
+			 <uicontrol>Report Suites</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_B2AEB72CBAB64036BE2ED419CFDC13B6"> 
+		  <cmd>Select a report suite. 
+		  </cmd> 
+		</step> 
+		<step id="step_A326345ED8BE49738A22657FB55ADF8E"> 
+		  <cmd>Click 
+			 <uicontrol>Edit Settings</uicontrol> &gt; 
+			 <uicontrol>Individual Report Suite Settings</uicontrol> &gt; 
+			 <uicontrol>Default Metrics</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_E627FB82D7E9440F83C7F695834B7364"> 
+		  <cmd>Specify the desired metrics, then click 
+			 <uicontrol>Save</uicontrol>. 
+		  </cmd> 
+		</step> 
+	 </steps> 
+	 <result id="result_FABD60CFFB70427D949D427B2A592FD9"> 
+		<p> 
+		  <note>If you select a currency-based metric, the value passed into
+			 currency events is converted from the page currency to the report suite's base
+			 currency upon receipt. 
+		  </note> 
+		</p> 
+	 </result> 
+  </taskbody> 
+</task>

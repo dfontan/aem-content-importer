@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_ECA3C44FA6D540C89CC04BA3C49E63BF"> 
+  <title>Configure subscriptions</title> 
+  <shortdesc> 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<keywords> 
+		  <keyword>customer attributes</keyword> 
+		</keywords> 
+		<othermeta name="solution" content="Marketing Cloud"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p> 
+		<menucascade> 
+		  <uicontrol>Customer Attribute Source</uicontrol> 
+		  <uicontrol>Create New Customer Attribute Source</uicontrol> 
+		  <uicontrol>New</uicontrol> 
+		</menucascade> 
+	 </p> 
+	 <p>Ensure that you activate the subscription on this page. 
+	 </p> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_EDA777770D5F4C5D89FB6FC2826819E9">
+  <title>Clicks-to-Page</title>
+  <shortdesc>The number of clicks from a link on one page to access another
+	 page. For example, you click a link on the Home Page to access the Products
+	 Overview Page. In this instance, there are two clicks to navigate from the Home
+	 Page to the Product Page. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="subtopic" content="Glossary" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p></p>
+  </conbody>
+</concept>

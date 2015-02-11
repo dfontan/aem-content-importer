@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_BA6EACA3039C40AEA5605E1D8C76E646"> 
+  <title>Create a custom report</title> 
+  <shortdesc>Steps that describe how to save a report's current configuration
+	 as a new custom report for all users to see. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Reports and analytics"/> </metadata>
+  </prolog> 
+  <taskbody> 
+	 <context id="context_AF48FD4A460B4ADAAF0ED4267D89E4CB"> 
+		<p>Only administrators can create a custom report. When you create a
+		  custom report, it is added to the main reporting menu next to the report on
+		  which it is based. 
+		</p> 
+		<p> 
+		  <b>To create a custom report</b> 
+		</p> 
+	 </context> 
+	 <steps id="steps_628D85CC4D664F7BA2DDC6C675EBA60B"> 
+		<step id="step_0C0A69562248441888325DBCCBCC8EFC"> 
+		  <cmd>Run a report and configure it as necessary. 
+		  </cmd> 
+		</step> 
+		<step id="step_028D9F28D4B248F2886D855190948BBF"> 
+		  <cmd>Click 
+			 <uicontrol>More</uicontrol> &gt; 
+			 <uicontrol>Create Custom Report</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_570715C14846480BB8C7657401397594"> 
+		  <cmd>Name the report, then click 
+			 <uicontrol>Save.</uicontrol> 
+		  </cmd> 
+		  <info>Ensure that you do not duplicate an existing report name. 
+		  </info> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+  <related-links> 
+	 <link
+	 href="http://marketing.adobe.com/resources/help/en_US/reference/index.html?f=customize_menus"
+	 scope="external" format="http"> 
+		<linktext>Menu Customizing 
+		</linktext> 
+	 </link> 
+  </related-links> 
+</task> 

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_5770B59C5C884CA2BE8554B4AD808EF9" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic concept/concept ">
+  <title class="- topic/title ">New or Returning Visitor</title>
+  <shortdesc class="- topic/shortdesc ">Each visitor is counted as either a new
+	 or returning visitor. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody class="- topic/body  concept/conbody ">
+    <p> A visitor is included in the "Visitor: New" segment if it is the
+		visitor's first time visiting the site, the first time since clearing cookies,
+		the first time since the 
+		<filepath>mbox.js</filepath> file was installed, or if it has been two
+		weeks since the last visit. (For information about extending the two-week
+		profile lifetime, see 
+		<xref href="c_visitor_profile_lifetime.xml#concept_D9F21B416F1F49159F03036BA2DD54FD" format="dita" scope="local"><?xm-replace_text Visitor Profile Lifetime?></xref>.)
+		
+	 </p>
+    <p> The visitor is included in the "Visitor: Returning" segment if the user
+		previously visited the site, left for at least 30 minutes, and returned to the
+		site again with the same cookies. As long as a visitor returns within 14 days,
+		they will be a returning visitor. 
+	 </p>
+    <p>The count of users in the new segment and return segment do not always
+		add up to the total number of visitors. A visitor can be counted as new, then
+		return and get counted as a return visitor. That visitor is still counted as
+		only a single visitor in the visitor count. 
+	 </p>
+    <p>
+      <!--For more information, see the 
+		<xref href="http://marketing.adobe.com/resources/help/en_US/tnt/pdf/js_expression_cheat_sheet.pdf" format="http" scope="external">JavaScript Expression Cheat Sheet (PDF)</xref>.-->
+    </p>
+  </conbody>
+  <!--<related-links class="- topic/related-links "> 
+	 <link href="r_Behavioral_Targeting_Basic_Steps.xml#reference_26AAC9E3D2734CA7B48CF141A68D6030" type="reference" format="dita" scope="local" class="- topic/link "> <?xm-replace_text Behavioral Targeting Basic Steps?>
+	 </link> 
+	 <link href="c_Number_of_Visits.xml#concept_2F5EFE2725434BB2861545D38F3D40E5" type="concept" format="dita" scope="local" class="- topic/link "> <?xm-replace_text Number of Visits?>
+	 </link> 
+	 <link scope="local" href="c_Recency_of_Purchase_Visit_Photo_Upload_Etc.xml#concept_E7B20E1D00E84E2AAA9520F35B6F9A2F" type="concept" format="dita" class="- topic/link "> <?xm-replace_text Recency of Purchase, Visit, Photo Upload, Etc.?>
+	 </link> 
+	 <link href="c_Frequency.xml#concept_8BCEBA6DFDA54251BE4E833BBA98C1D4" type="concept" format="dita" scope="local" class="- topic/link "> <?xm-replace_text Frequency?>
+	 </link> 
+	 <link href="c_Active_or_Passive_User.xml#concept_8FFD3C333196441EB0125C69B6D2564F" type="concept" format="dita" scope="local" class="- topic/link "> <?xm-replace_text Active or Passive User?>
+	 </link> 
+	 <link href="c_Total_Amount_Purchased.xml#concept_BB18B8B9C1474930BFB460B30B410556" type="concept" format="dita" scope="local" class="- topic/link "> <?xm-replace_text Total Amount Purchased?>
+	 </link> 
+	 <link href="c_Highest_Amount_Spent_in_a_Single_Order.xml#concept_79EF6AB3EE8645429D735830FF2B6057" type="concept" format="dita" scope="local" class="- topic/link "> <?xm-replace_text Highest Amount Spent in a Single Order?>
+	 </link> 
+	 <link href="c_Time_of_Day_and_Day_of_Week.xml#concept_54D8899EB05B477895EB1309DB164438" type="concept" format="dita" scope="local" class="- topic/link "> <?xm-replace_text Time of Day and Day of Week?>
+	 </link> 
+  </related-links> 
+-->
+</concept>

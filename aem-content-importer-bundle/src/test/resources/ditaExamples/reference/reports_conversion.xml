@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_92C3439FC08345CB82B0E350419149B0">
+  <title>Conversion Reports</title>
+  <shortdesc>Provide comprehensive, accurate, and detailed analysis of customer
+	 activity. Metrics such as campaign management, sales cycle, customer fallout,
+	 and customer conversion let you measure e-commerce transactions, sources of
+	 sales, advertising effectiveness, customer loyalty, and more. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>For example, if you want to see what type of internal campaigns on your
+		home page might result in purchases, you first must capture the internal
+		tracking codes and set persistence to a period of one visit for the 
+		<varname>s.eVar</varname> that captures internal campaigns. When a
+		success event is completed (like purchase), the credit for that success is
+		given to any Conversion Variables that are persistent on the visitor, such as
+		Internal Campaign ID. By running the 
+		<wintitle>Internal Campaign Report</wintitle>, you can see which campaign
+		generated the most onsite conversion. 
+	 </p>
+    <p>Some out-of-the-box reports contain both Traffic and Conversion metrics
+		(such as the 
+		<wintitle>Search Engine</wintitle> reports). However, 
+		<wintitle>Traffic</wintitle> and 
+		<wintitle>Conversion</wintitle> reports are unique to your organization
+		and are displayed in the 
+		<uicontrol>Traffic</uicontrol> and 
+		<uicontrol>Conversion</uicontrol> menus. 
+	 </p>
+    <p>
+      <b>Report Properties</b>
+    </p>
+    <ul id="ul_034C74CFEEDB4E609D4FBEFD47F175BD">
+      <li id="li_0D6C17D432784A2AA5903CD20B2E6376">
+        <wintitle>Custom Conversion</wintitle> reports are based on eVars
+		  (conversion variables). 
+		</li>
+      <li id="li_C32FF3F9C9BE44C2AB2B3778D279D66B">Conversion variables can
+		  persist beyond the page view and be associated with metrics within its
+		  specified expiration. 
+		</li>
+      <li id="li_6046A34413534384AF42721B8075174F">The reports' default metrics
+		  are revenue. To change default metrics, see 
+		  <xref href="http://marketing.adobe.com/resources/help/en_US/sc/user/index.html?f=t_metrics_set_default" scope="external" format="html">Selecting Default Report Metrics</xref>. 
+		</li>
+      <li id="li_803EC2A4F82544E3AF533D2D96E43F7E">View these reports in both
+		  trended and ranked formats. 
+		</li>
+      <li id="li_C144B2523B3B444EAFDCD022E40B41F9"> You can use SAINT
+		  Classifications in these reports, to rename and consolidate line items. 
+		</li>
+      <li id="li_872D0B5D1D2B43A7B8FF87C290D2648C">These reports can be broken
+		  down by the following if basic subrelations are enabled: 
+		  <ul id="ul_30400F33D156451FAD4E2F336D335065"><li id="li_FFC5BAAE84C44D558EBC6AAD06E34AB7"> Campaigns and Products,
+				with all related classifications 
+			 </li><li id="li_B4A6E47AE2A84388BD5342E93F31F032"> Customer Loyalty 
+			 </li><li id="li_514E8EBB50E3476DBB3D22E082E2EBB6">All fully-subrelated
+				eVars 
+			 </li></ul></li>
+      <li id="li_CE2A7841F1464C2ABF1D9D1B5C4BCD16">Additional reports are
+		  available to break down when full subrelations are enabled: 
+		  <ul id="ul_F820152A38854897B8C7FD82F9F9989D"><li id="li_0C925FCC4C2D4E5FAE587F6C4ADB891E"> Time Spent per Visit 
+			 </li><li id="li_7D54CB80951344CEAC53DDC137D37BD3"> Pages and Site
+				Sections, with all related classifications 
+			 </li><li id="li_3EE5C0C255C84F5E8A4074FC757199CB"> Entry Pages 
+			 </li><li id="li_64634C88524E4BE589127FAC09A0E853">Almost all Traffic
+				Sources reports 
+			 </li><li id="li_96C3453857FA4ECB9A8322C0FD599398"> Visit Number 
+			 </li><li id="li_B373D074768448ABA8ECF82F815D1B3F">Many Visitor Profile and
+				Technology reports 
+			 </li><li id="li_D57EE352FCF14418B53E96303E1214D6">All other eVars 
+			 </li><li id="li_B75356A0C3184ADEAB0F949DF1BC13EE">Marketing Channels First
+				and Last Touch 
+			 </li></ul></li>
+      <li id="li_2D5C84C896EE4B80BB1BC779F09477EC">The following events can be
+		  used as metrics: 
+		  <ul id="ul_AFAAF007BCC04F728D6E3119798207FC"><li id="li_8825A00F8F7A4CA286D8F512BA8C6002">Instances, the number of
+				times the eVar was defined 
+			 </li><li id="li_AC1B179A716A4E9F8E4AFE80F6EE93EA">All standard eCommerce
+				metrics: Revenue, Orders, Units, Carts, Cart Views, Checkouts, Cart Additions,
+				Cart Removals. 
+			 </li><li id="li_13BC14AD09EF4FDBA28B10306B2D4572">All custom events:
+				Events 1-80, and Events 81-100 if on H22 code or higher 
+			 </li><li id="li_16759A7D09DF4391BDE1C3F5E0F11CD5"> Visits and Visitors:
+				Available depending on organization and report suite. Contact your Account
+				Manager for additional details 
+			 </li></ul></li>
+      <li id="li_B575A4603723410FA32E3EFDB92BB5A2">The location of each 
+		  <wintitle>Custom Conversion</wintitle> report varies depending on the
+		  eVar's numeric assigned value. Generally they can be found under 
+		  <b>Conversion</b> &gt; 
+		  <b>Custom Evars</b> in version 13.5 or the 
+		  <wintitle>Custom Conversion</wintitle> folder in version 14 and 15
+		  (provided the menu is not customized). 
+		</li>
+    </ul>
+  </conbody>
+</concept>

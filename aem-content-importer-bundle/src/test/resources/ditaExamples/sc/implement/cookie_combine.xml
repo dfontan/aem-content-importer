@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_6BFBEC0050E94DD4BE21B22B9DBC3D90">
+  <title>Cookie Combining Utility</title>
+  <shortdesc>Utility that reduces the number of cookies set by Adobe code. Data
+	 for all cookies are stored within one session cookie and one persistent cookie.
+	 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Plug-ins" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>
+      <?xm-replace_text Paragraph?>
+    </p>
+  </conbody>
+</concept>

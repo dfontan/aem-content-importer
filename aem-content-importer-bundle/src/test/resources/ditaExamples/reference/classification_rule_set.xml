@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_CD3D510F5070486584F3BB535AE41524"> 
+  <title>Classification Rule Sets</title> 
+  <shortdesc>A rule set is a group of classification rules for a specific
+	 variable. You apply a variable to the rule set. If you want to create multiple
+	 rule sets for one variable, you must apply each rule set to multiple report
+	 suites. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Admin tools"/> 
+		<othermeta name="subtopic" content="Classifications"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <section id="section_C60B0888C76D49C596EF19F11808B718"> 
+		<title>Classification Rule Builder Page</title> 
+		<p><menucascade><uicontrol>Analytics</uicontrol><uicontrol>Admin
+				Tools</uicontrol><uicontrol>Classifications</uicontrol><uicontrol>Rule
+				Builder</uicontrol></menucascade> 
+		</p> 
+		<p>The following fields and options are available on the 
+		  <wintitle>Classifications Rule Builder</wintitle>. 
+		</p> 
+		<table id="table_A5D92409969747E39E041216A5AA32CD"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="3.61*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col1">Element 
+				  </entry> 
+				  <entry colname="col2">Description 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1"> 
+					 <p> 
+						<xref
+						 href="t_classification_rule_set.xml#task_86F216DFD2534FA181E64ABDF306782B"
+						 format="dita" scope="local">Add Rule Set</xref> 
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">Creates a rules set, where you can select
+					 the variable to apply to the rule set. 
+				  </entry> 
+				</row>
+				<row>
+				  <entry colname="col1">
+					 <p>Select Available Report Suites
+					 </p>
+				  </entry>
+				  <entry colname="col2">
+					 <p>Displays the 
+						<wintitle>Available Report Suites</wintitle> page, where you
+						can select one or more available report suites to use for all your rule sets.
+						(This page also displays when you first run the 
+						<wintitle>Classification Rule Builder</wintitle>.)
+					 </p>
+					 <p>This feature is intended to help reduce report suite load
+						time, in the event that you have hundreds of available report suites.
+					 </p>
+					 <p>The report suites you select here are made available at the
+						rule level, when you click 
+						<uicontrol>Add Suites</uicontrol> when 
+						<xref
+						 href="t_classification_rule.xml#task_86F216DFD2534FA181E64ABDF306782B"
+						 format="dita" scope="local">creating a rule.</xref>.
+					 </p>
+					 <note>A report suite becomes available 
+						<term>only</term> when the report suites have at least one
+						classification defined for the variable in 
+						<wintitle>Admin Tools</wintitle>.
+						<p>(See 
+						  <term>Variable</term> in 
+						  <xref
+							href="classification_rule_set.xml#concept_CD3D510F5070486584F3BB535AE41524"
+							format="dita" scope="local">Classification Rule Sets</xref> for an explanation
+						  about this prerequisite.) 
+						</p>
+					 </note>
+				  </entry>
+				</row> 
+				<row> 
+				  <entry colname="col1">
+					 <p>Variable
+					 </p> 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>You can apply only one variable when creating a
+						classification rule set. If you want to create multiple rule sets for one
+						variable, you must apply each rule set to multiple report suites. 
+					 </p> 
+					 <note>You can use only the variables you have access to in your
+						report suites. Variables will display in the 
+						<wintitle>New Rule Set</wintitle> panel only after they have
+						at least one classification defined for that variable. 
+					 </note> 
+					 <p>For example, to make 
+						<term>Pages</term> available as a variable to the rule set,
+						ensure that the report suite has 
+						<xref
+						 href="http://marketing.adobe.com/resources/help/en_US/reference/traffic_classifications.html"
+						 format="http" scope="external">traffic classifications</xref> implemented for 
+						<term>Page</term>. 
+					 </p> 
+					 <p> You can create classifications on a variable in 
+						<uicontrol>Admin</uicontrol> &gt; 
+						<uicontrol>Report Suites</uicontrol> &gt; 
+						<uicontrol>Traffic</uicontrol> &gt; 
+						<uicontrol>Traffic Classifications</uicontrol> (or 
+						<uicontrol>Conversion</uicontrol> &gt; 
+						<uicontrol>Conversion Classifications</uicontrol>). Then
+						select the variable, then click 
+						<uicontrol>Add Classification</uicontrol>. 
+					 </p> 
+					 <p>See 
+						<xref
+						 href="https://marketing.adobe.com/resources/help/en_US/reference/index.html?f=traffic_classification_admin"
+						 format="https" scope="external">Traffic Classifications</xref> and 
+						<xref
+						 href="https://marketing.adobe.com/resources/help/en_US/reference/index.html?f=conversion_classifications"
+						 format="https" scope="external">Conversion Classifications</xref> in Admin
+						Tools Help. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">
+					 <p>Report Suites 
+					 </p>
+				  </entry> 
+				  <entry colname="col2"> 
+					 <p>On the 
+						<wintitle>Classification Rule Builder</wintitle>, this value
+						is the number of report suites to which the rule set applies. 
+					 </p> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">
+					 <p>Rules
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">Displays the number of rules contained in
+					 the set. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">
+					 <p>Status
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">Displays the activity status of the rule
+					 set, such as Draft or Active. Active rules process daily, examining
+					 classification data going back typically one month. The rules automatically
+					 check for new values and upload the classifications. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">
+					 <p>Last Changed 
+					 </p>
+				  </entry> 
+				  <entry colname="col2">Indicates when the rule set was edited. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">
+					 <p>Duplicate
+					 </p> 
+				  </entry> 
+				  <entry colname="col2">Duplicates (copies) a rule set, so that you
+					 can apply the rule set to another variable, or to the same variable in a
+					 different report suite. 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+	 </section> 
+  </conbody> 
+</concept> 

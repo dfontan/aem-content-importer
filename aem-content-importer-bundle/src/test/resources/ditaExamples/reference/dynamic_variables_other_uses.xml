@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_C61F768602354780B62005B89EF07B24">
+  <title>Other Uses for Dynamic Variables</title>
+  <shortdesc>A primary use for dynamic variables is the capture of HTTP
+	 headers, including the values of cookies passed along with them. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation,Reports" />
+      <othermeta name="subtopic" content="Variables" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>For example: 
+	 </p>
+    <codeblock outputclass="syntax javascript">s.prop1="D=User-Agent" // captures the user-agent string in
+prop1</codeblock>
+    <codeblock outputclass="syntax javascript">s.prop25="D=s_vi" // captures the s_vi (visitor ID) cookie value in prop25</codeblock>
+    <p>Using dynamic variables in this manner does not cause any parsing of
+		header or cookie values. Whatever is present in these fields is what you get in
+		your reporting. Any other header can also be captured using the header name
+		(for example, 
+		<wintitle>Referer</wintitle>, 
+		<wintitle>Accept-Language</wintitle>, and so forth). 
+	 </p>
+    <p>
+      <note>Capturing the visitor ID may have limited usefulness in many cases.
+		  If you receive more than 500,000 monthly unique visitors, you will exceed the
+		  maximum number of unique values allowed for whatever variable you choose to
+		  receive this data. 
+		</note>
+    </p>
+    <p>Being able to capture cookied values can be helpful in CNAME
+		(first-party cookie) 
+		implementations where you have your own
+		site cookies to capture for reporting. For example, if you capture a campaign
+		ID and store it in a cookie named 
+		<codeph>mktg_camp</codeph> using JavaScript, you can then read that
+		cookie and set the value of the cookie into eVar1 by putting the following on
+		each page: 
+		<codeblock outputclass="syntax javascript">s.eVar1="D=mktg_camp"</codeblock></p>
+    <p>This causes the campaign ID, found in the 
+		<codeph>mktg_camp</codeph> cookie to be passed into 
+		reporting on each page. 
+	 </p>
+  </conbody>
+</concept>

@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_AFC4E421CE534880BECA7DFBCF84686B">
+  <title>Breakdown and segmentation containers</title>
+  <shortdesc>Understanding how segmentation works on various breakdowns is key
+	 to interpreting the data it returns. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports,Reports and analytics" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <section id="section_D0604748F2794327B8C668617A31EC18">
+      <title>Breakdown Scopes</title>
+      <p>Every breakdown has a scope to which it applies (as do some metrics).
+		  Most breakdowns are page-view based, however there are several that are
+		  different. Using these breakdowns with the same segmentation container returns
+		  expected data. Using these breakdowns with a different segmentation container
+		  returns much different data. 
+		</p>
+      <table id="table_9D2E24B2AB5B43C1978C822948933525">
+        <tgroup cols="4">
+          <colspec colnum="1" colname="col1" colwidth="*" />
+          <colspec colnum="2" colname="col2" colwidth="*" />
+          <colspec colnum="3" colname="col3" colwidth="*" />
+          <colspec colnum="4" colname="col4" colwidth="*" />
+          <thead>
+            <row>
+              <entry colname="col1">Subhit 
+				  </entry>
+              <entry colname="col2">Page View 
+				  </entry>
+              <entry colname="col3">Visit 
+				  </entry>
+              <entry colname="col4">Visitor 
+				  </entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry colname="col1">Multiple values can occur in a single page
+					 view. 
+					 <ul id="ul_48468F0198B24F7298CD077F531577AF"><li id="li_7D912846931246C7B8B220C186467DF0">Products 
+						</li><li id="li_17BA4E1947DE426B823A43F049378C44">List Props 
+						</li><li id="li_ED27247AD38B481AAFBED04023B323EE">List Vars 
+						</li><li id="li_714816E129D7427CA6BADA403F1473B3">Merchandising
+						  eVars (in context of events) 
+						</li></ul></entry>
+              <entry colname="col2">Multiple values can occur in a single
+					 visit. 
+					 <ul id="ul_9963C1893A7F4C04A6D008DBF355745F"><li id="li_87E22BAA6493474EB14E80D5C3B99D49">All other
+						  breakdowns not listed, including Pages, Props, and eVars 
+						</li></ul></entry>
+              <entry colname="col3">Only a single value can occur in a visit. 
+					 <ul id="ul_5D30DC845F774ACCAB8A42D55171A3E7"><li id="li_FE6BAA795B71447DBD107CF4474E8A6D">Visit Number 
+						</li><li id="li_7E6C9C0AA5F2445EAD6BCCC6E0C9679A">Entry Page 
+						</li><li id="li_FBB42DBFB85B431EBEE502622788EABD">Return Frequency
+						  
+						</li><li id="li_4A028A4AB58F4CADBEFB2222F08ADE7F">Participation
+						  Metrics 
+						</li><li id="li_B676A263F07B443D9842346DDD0FF874">Linearly
+						  allocated metrics 
+						</li></ul></entry>
+              <entry colname="col4">Only a single value can occur for that
+					 entire visitor's lifetime. 
+					 <ul id="ul_F7BC96D53EAA447FA5EE49A0D3C19B24"><li id="li_1F0B05015C704730A31A18B7B1EA04AE">Days Before
+						  First Purchase 
+						</li><li id="li_3E96155E86174B90BDB6A5C3EAB70E6D">Original Entry
+						  Page 
+						</li><li id="li_D2D5B69EB4424D3EAACDAB3B851BA269">Original
+						  Referring Domains 
+						</li></ul></entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <p>Use the following two visits for each of the examples below: 
+		</p>
+      <ul id="ul_1DB9FC81BE804A289431C8F83ADB9831">
+        <li id="li_ECF2DCCD948445E3A7E426CDA0756FF9">
+          <b>Visit 1</b>: Home Page
+			 → Product Page → Checkout Page → Purchase Page ($10) 
+		  </li>
+        <li id="li_1E30349EDE4A42D49C116CEF5E11C99A">
+          <b>Visit 2</b>: Product
+			 Page → Home Page → Product Page 
+		  </li>
+      </ul>
+    </section>
+    <section id="section_FD04E4A350DE4F55A0129A41B74D53E9">
+      <title>Segmentation container equal to breakdown scope</title>
+      <p>Using the same breakdown scope as a segment container brings expected
+		  results: just the line items that matched the segment rule. 
+		</p>
+      <ul id="ul_2FCBAB5F833E4931B00AB41569E8EE6A">
+        <li id="li_1B7C5AAAC8BC4659AEC84CBDB5F397E1">
+          <b>Page View container
+				where page equals Home Page</b>: Viewing a pages report with this segment only
+			 returns the values equaling Home Page. All other pages are excluded from
+			 reporting. 
+		  </li>
+        <li id="li_A53E80DB300049C6879CCE57BBB01A51">
+          <b>Visit container where
+				entry page equals Product Page</b>: Viewing an entry pages report only returns
+			 the second visit, since its entry page matched the segment rule. 
+		  </li>
+        <li id="li_5C6EFA7B8F9840688EA7ABE7C66CFBF5">
+          <b>Visit container where
+				visit number equals 1</b>: All hits from the first visit are included in
+			 reporting, since it matched the segment rule. 
+		  </li>
+      </ul>
+    </section>
+    <section id="section_C346B0FD2ECB404BB69BDD8B0A066E63">
+      <title>Segmentation container larger than a breakdown scope</title>
+      <p>This situation occurs fairly commonly, as many segment rules are
+		  hit-based in visit containers. The entire segment container is used, even if
+		  only a single hit matched the rule. 
+		</p>
+      <ul id="ul_C22883B44B444C3481020AA9534BBD6F">
+        <li id="li_88AE5CDBCC9F4EE492015B789D0AAF4B">
+          <b>Visit container where
+				page equals Product Page</b>: Viewing a pages report with this segment displays
+			 all data, since both visits contained 'Product Page. If a page matches the
+			 segment rule, bring in not only that hit, but all other hits associated with
+			 that visit. 
+		  </li>
+        <li id="li_8F236D3E877645969EB20A20BBE81EB2">
+          <b>Visit container where
+				page equals Purchase Page</b>: Viewing a pages report with this segment only
+			 displays all data from the first visit, since the second visit does not have a
+			 Purchase Page. 
+		  </li>
+        <li id="li_FDEFA39F07AB4D8081D86F823B68776A">
+          <b>Visitor container where
+				entry page equals Product Page</b>: This segment retrieves all data from both
+			 visits. Because one visit had an entry page of Product Page, all visits from
+			 this visitor are included in the segment. 
+		  </li>
+      </ul>
+    </section>
+    <section id="section_9CCC6AFF87EE47F2BC1095E954EB0187">
+      <title>Segmentation container smaller than the breakdown scope</title>
+      <p>Using segments with a smaller container than the breakdown scope
+		  returns unexpected data. Using a smaller breakdown still pulls in all hits from
+		  that scope. 
+		</p>
+      <ul id="ul_23F2CE85FC2A4737B47E94980CA908CF">
+        <li id="li_0D769E20AEEE41D09C1F40F19806ED66">
+          <b>Page View container
+				where entry page equals Product Page</b>: Every page associates with the
+			 visit's entry page, making it a visit-based breakdown. Using this segment not
+			 only pulls in the entry page Product Page, but also all hits in that visit as
+			 well. 
+		  </li>
+        <li id="li_41055214FCB84FDEB4E0679851233508">
+          <b>Page View container
+				where List Var 1 contains ValueA</b>: If multiple values were defined on the
+			 same hit as the list var, all variable values are included in the segment.
+			 There is no way to separate values that occur in the same hit, as the smallest
+			 segment container is Page View. 
+		  </li>
+        <li id="li_BD2767E3522D49599E834654A7A4BA3B">
+          <b>Page View container
+				where Page equals Purchase Page</b>: If using page views as a metric, only the
+			 purchase page is displayed (as expected). If using Revenue Participation, all
+			 pages in the first visit receive $10, since participation metrics are
+			 visit-based. 
+		  </li>
+        <li id="li_3FDFA73B7220424C9FD415D8C539B558">
+          <b>Page View container
+				where Page equals Checkout Page</b>: If using page views as a metric, only the
+			 checkout page is displayed (as expected). If using Revenue participation, no
+			 pages receive credit. The hit that actually made the purchase is not included
+			 in the segment, so no revenue participation is given to any item. 
+		  </li>
+      </ul>
+    </section>
+  </conbody>
+</concept>

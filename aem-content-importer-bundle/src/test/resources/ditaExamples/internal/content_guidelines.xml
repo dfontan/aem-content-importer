@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_FB0BDE669037413E8E6C39BA74A61810"> 
+  <title>PLACEHOLDER - Content Guidelines for DITA XML Authoring</title> 
+  <shortdesc>Hidden from TOC
+  </shortdesc> 
+  <conbody>
+	 <p><?xm-replace_text Paragraph?>
+	 </p>
+  </conbody>
+</concept>

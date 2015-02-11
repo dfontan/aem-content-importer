@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE dita PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd"[]>
+<dita>
+  <topic id="topic_4F9A8F264B1D49A285CCDD8A0AA09111">
+    <title>Custom Report</title>
+    <shortdesc>Administrators can configure a report with specific metrics and
+		a specific date range, and then save it to the report menus for everyone to
+		use. 
+	 </shortdesc>
+    <prolog>
+      <metadata>
+        <othermeta name="solution" content="Analytics" />
+        <othermeta name="topic" content="Reports" />
+      </metadata>
+    </prolog>
+    <body>
+      <p>Custom reports can bring increased value to you as an analyst. If you
+		  see reports in your SiteCatalyst interface that don't match someone else's
+		  (such as in Training), your administrator may have set up some of these custom
+		  reports. 
+		</p>
+      <p>Additionally, you can save reports that are important to you. These
+		  reports are called bookmarks. You can also put several reports onto one canvas
+		  to get a quick look at your most important reports. These are called dashboards
+		  and are also user-specific. The interface displays a bar above the graph
+		  listing your bookmarks and dashboards. 
+		</p>
+      <p>See 
+		  <xref href="https://marketing.adobe.com/resources/help/en_US/sc/user/index.html?f=c_bookmarks" format="https" scope="external">Bookmarks</xref> and 
+		  <xref href="https://marketing.adobe.com/resources/help/en_US/sc/user/index.html?f=c_dashboard" format="https" scope="external">Dashboards and Reportlets</xref> for more
+		  information. 
+		</p>
+    </body>
+  </topic>
+</dita>

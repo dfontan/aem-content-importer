@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_378FB18E8C7244CDA8C1D029DBACBAEE">
+  <title>Validate Targeting to URL or Referring URL Parameters</title>
+  <shortdesc>Follow these steps to validate targeting to a URL or referring URL
+	 parameters. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <steps id="steps_F9F6CD7DD9204E65997458D64D91D587">
+      <step id="step_730A4509EE2147C584FE2497AE75896C">
+        <cmd>Append the targeting parameters and values to the end of the URL,
+			 or referring page URL. 
+		  </cmd>
+        <stepresult>
+          <p>The example below shows an appended target condition where your
+				targeting condition is met when the keyword equals "chairs": 
+			 </p>
+          <p>
+            <filepath>http://www.yourcompany.com/asp/feature_item.asp?​keyword=chair&amp;categoryId=45</filepath>
+          </p>
+        </stepresult>
+      </step>
+      <step id="step_E2719A6E5FC74D7DA26DFAF11D3A1A4D">
+        <cmd>Confirm that you see the correct content for the targeting
+			 condition. 
+		  </cmd>
+      </step>
+      <step id="step_9BFA402DC0BA4E5794B3BBC43F8E08DB">
+        <cmd>Delete cookies and confirm you do not see the content when you do
+			 not meet the targeting condition. 
+		  </cmd>
+      </step>
+      <step id="step_4456277ED4174497B88496F16FD84E36">
+        <cmd>If segments filters are set, confirm reports correctly capture the
+			 URL parameter values. 
+		  </cmd>
+      </step>
+    </steps>
+  </taskbody>
+  <!--<related-links>
+    <link href="t_Validate_Targeting_to_New_or_Returning_Visitors.xml#task_C9BF77B62B4943A7BF1DC37AA752001C" type="task" format="dita" scope="local">
+      <?xm-replace_text Validate Targeting to New or Returning Visitors?>
+    </link>
+    <link href="t_Validate_Targeting_to_Profile_Parameters.xml#task_FEE3A70A4F944B35958CF4B5DA82EB0D" type="task" format="dita" scope="local">
+      <?xm-replace_text Validate Targeting to Profile Parameters?>
+    </link>
+  </related-links>
+-->
+</task>

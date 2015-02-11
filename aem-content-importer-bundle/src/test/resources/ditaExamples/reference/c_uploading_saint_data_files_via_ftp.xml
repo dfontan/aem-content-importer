@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_2F965BE873254546A61FB755F25299FD">
+  <title>FTP Import</title>
+  <shortdesc>Steps that describe how to upload data files via FTP. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Admin tools" />
+      <othermeta name="subtopic" content="Classifications" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>
+      <uicontrol>Admin Tools</uicontrol> &gt; 
+		<uicontrol>Classification Importer</uicontrol>.
+	 </p>
+    <p>The following recommended limits are important: 
+	 </p>
+    <p>
+      <ul id="ul_A004EF4EA7344D7DB0B17E979693689C">
+        <li id="li_D8CB70A2E6FF4A99B31A4E51560BE422">If the upload applies to one
+		  report suite only, the upload cannot be larger than 30 MB. 
+		</li>
+        <li id="li_C61A4C2355E34990885E4983613A838B">If the upload applies to
+		  fewer than two to four report suites, the initial bulk upload cannot be larger
+		  than 15 MB. Subsequent delta (update) files cannot be larger than 3 MB. 
+		</li>
+        <li id="li_B771B3A208E745C0B02E79371A8C1D16">If the upload applies to
+		  five or more report suites, an initial setup file cannot be larger than 5 MB.
+		  Subsequent delta files cannot be larger than 2 MB. 
+		</li>
+        <li id="li_12D25EC9DC0346F49BDE0C601FAA5FCE">The FTP limit is 50 MB.
+		  (Meaning, you can upload a 30 MB and 20 MB file at the same time, but you
+		  cannot upload two 30 MB files.) 
+		</li>
+      </ul>
+    </p>
+    <p>The initial setup populates the classifications database with a large
+		set of original data, or restructures the classifications, rather than
+		reclassifying a few rows or adding rows. 
+	 </p>
+    <p>Following an initial upload in a report suite (for a given variable or
+		report), Adobe recommends uploading only new and updated rows in subsequent
+		imports. Rows that are not being changed should be omitted from future uploads.
+		
+	 </p>
+    <p> Each new key value you upload counts against your uniques for that
+		variable for the month. 
+	 </p>
+    <p>If you have exceeded your uniques for the month, you will not see the
+		corresponding classifications data for the uniques exceeded values in
+		reporting. You can see those classifications in either data warehouse or ad hoc
+		analysis. 
+	 </p>
+    <p>
+      <note>The time required to process a classification data file varies on
+		  the size of the file and the current number of files already being processed by
+		  Adobe’s servers. Processing of data files usually takes no longer than 72
+		  hours. 
+		</note>
+    </p>
+    <p>Before uploading data via FTP, create an FTP account. For more
+		information, see 
+		<xref href="t_create_an_ftp_account.xml#task_C019268E6C934C7C95F4326F42A22CCF" type="task" format="dita" scope="local"><?xm-replace_text Create an FTP Account?></xref>.
+		
+	 </p>
+  </conbody>
+</concept>

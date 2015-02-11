@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_51E19A4D0E89445D945A2873C7782012">
+  <title>Report Suites</title>
+  <shortdesc>The 
+	 <wintitle>Report Suites</wintitle> page lets you view and configure company
+	 report suites. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Admin tools" />
+      <othermeta name="subtopic" content="Users and groups" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>
+      Analytics manages report suite access through
+		group membership. For first-time setup, create the needed groups (assigning
+		report suites to each group), then assign user accounts to the appropriate 
+		<xref href="groups.xml#concept_6C565553DCE3417C909234B2F044A02F" format="dita" scope="local">groups</xref>. 
+	 </p>
+  </conbody>
+</concept>

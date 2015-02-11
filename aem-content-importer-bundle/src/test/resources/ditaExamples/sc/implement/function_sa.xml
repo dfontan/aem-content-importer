@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_FBA9172BCDE44449A8032DC2539517BD"> 
+  <title>The s.sa() Function</title>
+  <!--kb12866-->
+  <shortdesc> The 
+	 <wintitle>s.sa() function</wintitle> lets you dynamically change a report
+	 suite at any time on the page, before or after an image request fires. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Developer and implementation"/> 
+		<othermeta name="subtopic" content="Functions"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p> If your organization wants to send data to different report suites
+		without a page reload, using this function is strongly recommended. 
+	 </p> 
+	 <p> This information is suited for advanced users who are well-versed in
+		both reporting and implementation. Do not attempt to make any edits to your
+		implementation without complete knowledge of its consequences. If you require
+		implementation changes, contact your organization's Account Manager. 
+	 </p> 
+	 <section id="section_E10CB41A0CF749F4A24C8377958E3671"> 
+		<title> 
+		<b> Properties of the Function</b> </title> 
+		<p> Setting this function takes all previously defined variables and lets
+		  them be used in a different report suite. 
+		</p> 
+	 </section> 
+	 <section id="section_14B0B8C853244D5F82B08B995773640C"> 
+		<title> 
+		<b> Implementation Examples</b> </title>
+		<p>Sending video data to one report suite while sending the rest to
+		  another:
+		</p>
+		<codeblock outputclass="syntax javascript">// Set in the core JS file by default
+var s=s_gi('prodrsid');
+
+// Define this when a user interacts with a video
+s.sa('videorsid');
+s.t(); // Sends an image request</codeblock>
+		<p>Using s.sa() and multi-suite tagging:
+		</p>
+		<codeblock outputclass="syntax javascript">// Set in the core JS file by default
+var s=s_gi('rsid1');
+
+// Call the function when you wish to change report suites
+s.sa('rsid1,rsid2');
+s.t();</codeblock> 
+	 </section> 
+  </conbody> 
+</concept>

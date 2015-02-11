@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_32A5FE000BDB4E0D98C5697A27BD24C0"> 
+  <title>Implementation Guidelines</title> 
+  <shortdesc>Following these guidelines results in using the same cookie
+	 domains, which lets visits be tracked between various types of implementations.
+	 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Developer and implementation"/>
+		</metadata>
+  </prolog> 
+  <conbody> 
+	 <ul id="ul_2335F23B010D435EB95C452420E69979"> 
+		<li id="li_60FC317F77DC4849A6BE89B9823AD311"> 
+		  <b> RSID:</b> The 
+		  <wintitle>report suite ID</wintitle> 
+		</li> 
+		<li id="li_C8252A42CE58424CA5E8BF86ADA883B2"> 
+		  <b> VNS:</b> Visitor name space, the subdomain of 
+		  <filepath>2o7.net</filepath> or 
+		  <filepath>omtrdc.net</filepath> used to store the 
+		  <wintitle>visitor ID</wintitle> cookie 
+		</li> 
+		<li id="li_797118A6B29745B3B146E1C149CAC78D"> 
+		  <b> COOKIEDOMAIN:</b> Your VNS + trackingServer. Depending on your data
+		  center and RDC configuration, these can greatly vary. See 
+		  <xref
+			href="https://marketing.adobe.com/resources/kb/en_US/analytics/kb/determining-data-center.html"
+			format="http" scope="external">Correctly populate the trackingServer and
+			 trackingServerSecure variable</xref> or 
+		  <xref
+			href="contact_and_legal.xml#concept_34A1CA16F2244D42930BB77846A5ABBB"
+			format="dita" scope="local">contact Client Care</xref> if you are unsure about
+		  you data collection domain. 
+		</li> 
+	 </ul> 
+	 <p> 
+		<b>Javascript:</b> 
+	 </p> 
+	 <codeblock outputclass="syntax javascript">var s_account="RSID"
+s.visitorNamespace="VNS"
+s.trackingServer="VNS.COOKIEDOMAIN.net"
+<b>Hardcoded image request:</b></codeblock> 
+	 <p> 
+		<b>AppMeasurement:</b> 
+	 </p> 
+	 <codeblock outputclass="syntax javascript">var s_account="RSID"
+s.visitorNamespace="VNS"
+s.trackingServer="VNS.COOKIEDOMAIN.net"
+<b>Hardcoded image request:</b></codeblock> 
+	 <p> 
+		<b>Hardcoded image request:</b> 
+	 </p> 
+	 <codeblock outputclass="syntax html">&lt;img border="0" alt="" src="https://VNS.COOKIEDOMAIN.net/b/ss/RSID/5?ns=VNS" width="1" height="1" /&gt;
+&lt;!-- Note that the visitor namespace is defined twice in hardcoded image requests; once in the http subdomain, and another using the ns= query string parameter! --&gt;
+</codeblock> 
+	 <p> If using a first-party cookie implementation, 
+		<filepath>VNS.COOKIEDOMAIN.net</filepath> can be replaced with the
+		first-party cookie domain used. For example, first-party cookies on 
+		<filepath>adobe.com</filepath> would be replaced with something similar
+		to 
+		<filepath>metrics.adobe.com</filepath>. 
+	 </p> 
+  </conbody> 
+</concept> 

@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_3911ED0C5BEB4239A86C706F83C532B8">
+  <title>Version 14 Unique Visitor Reports</title>
+  <shortdesc>Describes the types of available Unique Visitor Reports.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Metrics" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <table id="table_72AE08AC9D7946C58DEA8516857FDAA5">
+      <tgroup cols="2">
+        <colspec colnum="1" colname="col1" colwidth="*" />
+        <colspec colnum="2" colname="col2" colwidth="*" />
+        <thead>
+          <row>
+            <entry colname="col1">Report
+				</entry>
+            <entry colname="col2">Description
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry colname="col1">
+              <p>Hourly Unique Visitors
+				  </p>
+            </entry>
+            <entry colname="col2">
+              <p>Displays how many unique visitors visited your site during
+					 this hour.
+				  </p>
+              <p>A visitor counts as an hourly unique visitor if this is the
+					 first time in the present hour they are visiting the site. For example,
+					 visiting a site once at 10:05, again at 10:45 and then again at 11:10, will
+					 show one hourly unique visitor during 10:00 and one hourly unique visitor
+					 during 11:00.
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <p>Daily Unique Visitors
+				  </p>
+            </entry>
+            <entry colname="col2">
+              <p>Displays how many unique visitors visited your site during the
+					 current day.
+				  </p>A visitor counts as a daily unique visitor if this is the
+				  first time today he or she visited the site.
+				</entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <p>Weekly Unique Visitors
+				  </p>
+            </entry>
+            <entry colname="col2">
+              <p>Displays how many people visited your site during the current
+					 week.
+				  </p>
+              <p>A visitor counts as a weekly unique visitor if this is the
+					 first time during the week that he or she visited the site. 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <p>Monthly Unique Visitors
+				  </p>
+            </entry>
+            <entry colname="col2">
+              <p>Displays how many individuals visited your site during the
+					 current month.
+				  </p>
+              <p>A visitor counts as a monthly unique visitor if this is the
+					 first time in the month that he or she is visiting the site.
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <p>Quarterly Unique Visitors
+				  </p>
+            </entry>
+            <entry colname="col2">
+              <p>Displays how many individuals visited your site during the
+					 current quarter.
+				  </p>
+              <p>A visitor counts as a quarterly unique visitor if this is the
+					 first time in the quarter that he or she is visiting the site.
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <p>Yearly Unique Visitors
+				  </p>
+            </entry>
+            <entry colname="col2">
+              <p>Displays how many individuals visited your site this year.
+				  </p>
+              <p>A visitor counts as a yearly unique visitor if this is the
+					 first time in the current year that he or she visited the site. If a visitor
+					 does not support cookies, he is not tracked in this report.
+				  </p>
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </conbody>
+</concept>

@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_95868D8564564E6A996163335C119806">
+  <title>Upload bot rules</title>
+  <shortdesc>To bulk import bot rules, you can upload a CSV file that defines
+	 the rules. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Admin tools" />
+      <othermeta name="subtopic" content="Bot rules" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <context id="context_EFF58996801644D4B3D88A14FCA9D7AB">
+      <p>Create a CSV file with the following columns in the order presented: 
+		</p>
+      <table id="table_770891EF9E4A49F695977BB6446736B5">
+        <tgroup cols="6">
+          <colspec colnum="1" colname="col1" colwidth="*" />
+          <colspec colnum="2" colname="col2" colwidth="*" />
+          <colspec colnum="3" colname="col3" colwidth="*" />
+          <colspec colnum="4" colname="col4" colwidth="*" />
+          <colspec colnum="5" colname="col5" colwidth="*" />
+          <colspec colnum="6" colname="col6" colwidth="*" />
+          <tbody>
+            <row>
+              <entry colname="col1">
+                <p>
+                  <codeph>Bot Name</codeph>
+                </p>
+              </entry>
+              <entry colname="col2">
+                <p>
+                  <codeph>IP Start 
+						</codeph>
+                </p>
+              </entry>
+              <entry colname="col3">
+                <p>
+                  <codeph>IP End 
+						</codeph>
+                </p>
+              </entry>
+              <entry colname="col4">
+                <p>
+                  <codeph>Agent Match Rule (contains or starts with)</codeph>
+                </p>
+              </entry>
+              <entry colname="col5">
+                <p>
+                  <codeph>Agent Include (100 char limit)</codeph>
+                </p>
+              </entry>
+              <entry colname="col6">
+                <p>
+                  <codeph>Agent Exclude (255 char limit)</codeph>
+                </p>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <p>You can define three types of bot rules: 
+		</p>
+      <ul id="ul_055DE7A8E6FD408197539CB7C7390BB8">
+        <li id="li_834C7B19098746A8B6A1EDB0EFF0BE7D">User agent contains or
+			 starts with 
+		  </li>
+        <li id="li_DFD55B1DA0DD445A97447D0411BD62C4">Single IP address or
+			 wildcard match 
+		  </li>
+        <li id="li_B7EEB2D85B974B3FBF2EE6D55B970A3B">IP range match 
+		  </li>
+      </ul>
+      <p>Each row in the import file can contain only one of the following bot
+		  definitions: 
+		</p>
+      <ul id="ul_C41A4548AFA14CA5900B0B69B43D7179">
+        <li id="li_BF59EE823AA54F2E9330D6367FA16290">
+          <b>User agent contains or starts with</b>: Provide a single user
+			 agent string to match in the Agent Include column. Specify the type of match
+			 you want performed by placing 
+			 <i>contains</i> or 
+			 <i>starts with</i> in the Agent Match Rule field. An optional value
+			 can be included in the Agent Exclude column that defines one or more
+			 pipe-delimited ( 
+			 <codeph>|</codeph> ) strings that the Agent does not contain. String
+			 matches are case-insensitive. Both the IP Start and IP End columns must be
+			 empty. 
+		  </li>
+        <li id="li_32E0CBC10B1441769CE2E0A05C479DE9">
+          <b>Single IP address or wildcard match</b>: To match a single IP
+			 address (<codeph>10.10.10.1</codeph>) or wildcard IP address
+			 (<codeph>10.10.*.*</codeph>), place the same value in both the IP Start and IP
+			 End columns. Match Rule, Agent Include, and Agent Exclude must be empty. 
+		  </li>
+        <li id="li_002F32668A8E45CBA5818632754160ED">
+          <b>IP range match</b>: Define a range of IP addresses using the IP
+			 Start and IP End columns. Wildcards can be used to match IP ranges, for example
+			 
+			 <codeph>10.10.10.*</codeph> to 
+			 <codeph>10.10.20.*</codeph>. Match Rule, Agent Include, and Agent
+			 Exclude must be empty. 
+		  </li>
+      </ul>
+      <p>
+        <b>Multiple Rules Combined with OR</b>
+      </p>
+      <p>To match a bot using a combination of rules joined with an OR (for
+		  example, user agent or IP address), provide an identical name for all rules
+		  that you want to combine in the bot name field. AND matches are not supported. 
+		</p>
+      <p>
+        <b>Overwrite All Rules with an Upload File</b>
+      </p>
+      <p>Select the 
+		  <uicontrol>Overwrite existing rules</uicontrol> checkbox to delete all
+		  existing rules and replace them with the rules defined in the upload file. 
+		</p>
+      <p>
+        <b>Exporting Rules</b>
+      </p>
+      <p>The 
+		  <uicontrol>Export Uploaded Bot File</uicontrol> button exports all
+		  rules defined in the UI in a CSV format. 
+		</p>
+    </context>
+  </taskbody>
+</task>

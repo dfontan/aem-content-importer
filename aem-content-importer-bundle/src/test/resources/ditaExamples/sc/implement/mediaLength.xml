@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_F52B1670122C4461824223E525307060">
+  <title>mediaLength</title>
+  <shortdesc>The 
+	 <varname>mediaLenght</varname> variable specifies the total length of the
+	 media being played. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Variables" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <table id="table_B1AE8A9DF9D545C2965CDB2DB6C2969B">
+      <tgroup cols="4">
+        <colspec colnum="1" colname="col1" colwidth="*" />
+        <colspec colnum="2" colname="col2" colwidth="*" />
+        <colspec colnum="3" colname="col3" colwidth="*" />
+        <colspec colnum="4" colname="col4" colwidth="*" />
+        <thead>
+          <row>
+            <entry> Max Size 
+				</entry>
+            <entry> Debugger Parameter 
+				</entry>
+            <entry> Reports Populated 
+				</entry>
+            <entry> Default Value 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry> No max size for entire pev3 request - size is limited to
+				  the browser's URL length limit. 
+				</entry>
+            <entry> pev3 
+				</entry>
+            <entry> Time Spent on Video; 
+				  <p>Video Segments Viewed 
+				  </p></entry>
+            <entry> None 
+				</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <section id="section_FEC1B01FDD234ACEB63C0558BEEB5CBC">
+      <title>Syntax and Possible Values</title>
+      <p>
+        <b> autoTrack Method: 
+		  </b>
+      </p>
+      <p>If using 
+		  <wintitle>s.Media.autoTrack</wintitle>, the 
+		  <wintitle>mediaLength</wintitle> variable does not need to be
+		  implemented explicitly. It is determined automatically by the 
+		  AppMeasurement for JavaScript code. 
+		</p>
+      <p>
+        <b>Manual Tracking Method:</b>
+      </p>
+      <p>Syntax: 
+		  <codeblock outputclass="syntax javascript">s.Media.open(mediaName,mediaLength,mediaPlayerName)</codeblock></p>
+      <p>Possible Values: 
+		  <codeblock outputclass="syntax javascript">s.Media.open("de_bofr_1045Making_400k", "414","Windows Media Player 11.0.5721.5230")</codeblock></p>
+    </section>
+    <section id="section_048B2D31BB584647A5D335AE94E5A599">
+      <title>Examples </title>
+      <codeblock outputclass="syntax javascript">s.Media.open("de_bofr_1045Making_400k", "414","Windows Media Player 11.0.5721.5230")</codeblock>
+      <codeblock outputclass="syntax javascript">Resulting pev3 parameter syntax: pev3= [Asset Name]--**--[Total length of asset]--**--[Player name]--**--[Total seconds consumed]--**--[Timestamp]--**--[Chronological record of all starts and stops along with accompanying markers] 
+		</codeblock>
+      <codeblock outputclass="syntax javascript">Possible pev3 values: pev3=de_bofr_1045Making_400k--**--414--**--Windows Media Player 11.0.5721.5230--**--288--**--1207893838--**--S0E0S0E256S0E32</codeblock>
+    </section>
+    <section id="section_1CEDC78FEF4940E9BC02A2AF1EE2FB01">
+      <title>Pitfalls, Questions, and Tips</title>
+      <ul id="ul_7CC3691A80614CFEB6BD9CE817314EC9">
+        <li id="li_7A398001367B4339A55852DA6E695F17">You must call the media
+			 tracking methods only if the player cannot be tracked using 
+			 <wintitle>s.Media.autoTrack</wintitle> = true.
+		  </li>
+        <li id="li_49581734FF314E6E81D7E26D91ED7277">If not tracking using 
+			 <wintitle>autoTrack</wintitle>, be sure to set the length in seconds.
+			 
+		  </li>
+      </ul>
+    </section>
+  </conbody>
+</concept>

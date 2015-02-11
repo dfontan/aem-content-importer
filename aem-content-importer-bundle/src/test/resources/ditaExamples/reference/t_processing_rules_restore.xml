@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_A7456C93BE444872A837FB8C8CDBFC34"> 
+  <title>Restore processing rules</title> 
+  <shortdesc>Processing rules can be restored from history. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Admin tools"/> 
+		<othermeta name="subtopic" content="Processing rules"/> </metadata>
+  </prolog> 
+  <taskbody> 
+	 <steps id="steps_E4B8F71859FE4D199CD94738B8971A7B"> 
+		<step id="step_96CB3DD8012E4FB493C76ABEE295ABB5"> 
+		  <cmd>Click 
+			 <uicontrol>Analytics</uicontrol> &gt; 
+			 <uicontrol>Admin</uicontrol> &gt; 
+			 <uicontrol>Report Suites</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_B2AEB72CBAB64036BE2ED419CFDC13B6"> 
+		  <cmd>Select a report suite. 
+		  </cmd> 
+		</step> 
+		<step id="step_A326345ED8BE49738A22657FB55ADF8E"> 
+		  <cmd>Click 
+			 <uicontrol>Edit Settings</uicontrol> &gt; 
+			 <uicontrol>General</uicontrol> &gt; 
+			 <uicontrol>Processing Rules</uicontrol>. 
+		  </cmd> 
+		  <stepresult>
+		  </stepresult> 
+		</step> 
+		<step id="step_876498A01A0244E3A4B23266FC0F7B2F"> 
+		  <cmd>On the 
+			 <uicontrol>Processing Rules</uicontrol> page, click the 
+			 <uicontrol>View History</uicontrol> tab. 
+		  </cmd> 
+		</step> 
+		<step id="step_D8CF4834A10144D7BC6F19FB5341D62D"> 
+		  <cmd>Select the last known working rule set, and click 
+			 <uicontrol>Copy to Current Ruleset</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_D0055F8817A6453F99BC6C0C8FA2B17B"> 
+		  <cmd>Click 
+			 <uicontrol>Save</uicontrol>. 
+		  </cmd> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task>

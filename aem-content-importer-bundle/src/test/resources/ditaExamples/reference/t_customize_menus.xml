@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_8DDE2C474FDA4B4B86D5C2446EB4461C"> 
+  <title>Customize the marketing reports menu</title> 
+  <shortdesc>Steps that describe how to customize a marketing reports menu. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Admin tools"/> </metadata>
+  </prolog> 
+  <taskbody> 
+	 <steps id="steps_5EF23FAA3412434E8539C732EF08BD54"> 
+		<step id="step_96CB3DD8012E4FB493C76ABEE295ABB5"> 
+		  <cmd>Click 
+			 <uicontrol>Analytics</uicontrol> &gt;<uicontrol>Admin</uicontrol>
+			 &gt; 
+			 <uicontrol>Report Suites</uicontrol> to open the 
+			 <wintitle>Report Suite Manager</wintitle>. 
+		  </cmd> 
+		</step> 
+		<step id="step_B2AEB72CBAB64036BE2ED419CFDC13B6"> 
+		  <cmd>Select a report suite. 
+		  </cmd> 
+		</step> 
+		<step id="step_A326345ED8BE49738A22657FB55ADF8E"> 
+		  <cmd>Click 
+			 <uicontrol>Edit Settings</uicontrol> &gt; 
+			 <uicontrol>General</uicontrol> &gt; 
+			 <uicontrol>Customize Menus</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_C3F69BB0F64D46E2A57D7BFE058FB597"> 
+		  <cmd>Locate a desired menu item. 
+		  </cmd> 
+		  <stepresult> 
+			 <p>You can reorder the menu by dragging items to a new location in
+				the menu. 
+			 </p> 
+			 <p>See 
+				<xref
+				 href="customize_menus.xml#concept_26EBD206909D4E4EB0F4C14D77C52562"
+				 format="dita" scope="local"><?xm-replace_text Menu Customizing?></xref> for
+				descriptions of UI elements. 
+			 </p> 
+		  </stepresult> 
+		</step> 
+		<step id="step_1215177FADF24014A399006967AD6A9F"> 
+		  <cmd>Use the toolbar to modify the menu as desired. 
+		  </cmd> 
+		  <stepresult> 
+			 <p> 
+				<note>Based on the currently selected item, some tools can be
+				  disabled. 
+				</note> 
+			 </p> 
+		  </stepresult> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task>

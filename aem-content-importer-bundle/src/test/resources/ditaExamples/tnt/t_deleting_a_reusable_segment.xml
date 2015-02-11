@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_CDCFA159D1DF4DC991A006300C7B2580">
+  <title>Deleting a Reusable Segment</title>
+  <shortdesc>Deleting a reusable segment deletes the segment from the targeting
+	 system. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <context id="context_9701455D17A34A47902A784B28EFDB4B">
+      <p>When a segment is deleted, it is removed from the Segments list and
+		  from any campaign that targets that segment. Be careful when deleting a segment
+		  so you don't accidentally remove important targeting criteria from an active
+		  campaign. 
+		</p>
+    </context>
+    <steps id="steps_D1EBCFC3D9AD4A79BA303A4BAA0C2BB5">
+      <step id="step_39D1E07B42FA423F8D717BE09B13B3D9">
+        <cmd>Click 
+			 <uicontrol>Segments</uicontrol> &gt; 
+			 <uicontrol>Segment List</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_F25557F0020C4EA09D98A2DAD38C71FE">
+        <cmd>Click 
+			 <uicontrol>Delete</uicontrol>. 
+		  </cmd>
+        <stepresult>
+          <?xm-replace_text Step Result?>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+</task>

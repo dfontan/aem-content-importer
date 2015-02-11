@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_BFA576AF3D6445E6B0F8AC3F57C07AAE">
+  <title>Move a Host to a Different Host Group</title>
+  <shortdesc>You can move a host from one host group to another. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <steps id="steps_039D752F873A4C7C9D94B0AA1B8A44D6">
+      <step id="step_EB3403D54D8D430BA0C3BFE5BDB1EAB7">
+        <cmd>In the Host Group Administration page, to the right of your host
+			 name, select a new host group from the choose alternate group drop down box. 
+		  </cmd>
+        <stepresult>
+          <?xm-replace_text Step Result?>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links>
+    <link href="c_About_Hosts_and_Host_Groups.xml#concept_A22F9D38D79546A98DF578E1B25FA585" type="concept" format="dita" scope="local">
+      <?xm-replace_text About Hosts and Host Groups?>
+    </link>
+    <link href="c_Adding_a_Host_to_the_Host_List.xml#concept_DC1F216C714A4ACAA221AF9AF244A053" type="concept" format="dita" scope="local">
+      <?xm-replace_text Add a Host to the Host List?>
+    </link>
+    <link href="t_Confirm_that_TestTarget_Recognizes_the_Host.xml#task_B850F92ADB1B41A4B74EA70F2CA67D69" type="task" format="dita" scope="local">
+      <?xm-replace_text Confirm that Test&Target Recognizes the Host?>
+    </link>
+    <link href="t_default_host_for_reporting.xml#task_9509C10526454DCBB68AC88FF4898715" format="dita" scope="local">
+      <?xm-replace_text Set the Default Host for Reporting?>
+    </link>
+    <link href="t_Setting_the_Default_Host_for_previewing.xml#task_0D4A896B9E5A4FDD9CDEDCA95A6DF200" type="task" format="dita" scope="local">
+      <?xm-replace_text Set the Default Host for Previewing?>
+    </link>
+    <link href="t_Changing_the_Name_of_a_Host_Group.xml#task_6C683392C703447EB5327C767E133C26" type="task" format="dita" scope="local">
+      <?xm-replace_text Change the Name of a Host Group?>
+    </link>
+    <link href="t_Deleting_a_Host.xml#task_017A471F77D34D8891AE0EF8C7BD6161" type="task" format="dita" scope="local">
+      <?xm-replace_text Deleting a Host?>
+    </link>
+    <link href="t_Deleting_a_Host_Group.xml#task_0F1984C3646446D4945174E9518B5E91" type="task" format="dita" scope="local">
+      <?xm-replace_text Deleting a Host Group?>
+    </link>
+    <link href="r_Best_Practices.xml#reference_83EB8CF544214215BECB01C2B241A140" type="reference" format="dita" scope="local">
+      <?xm-replace_text Best Practices for Hosts?>
+    </link>
+    <link href="r_Troubleshooting_Hosts.xml#reference_B8A5B48087B6432596FFFF267566B785" type="reference" format="dita" scope="local">
+      <?xm-replace_text Troubleshooting Hosts?>
+    </link>
+  </related-links>
+</task>

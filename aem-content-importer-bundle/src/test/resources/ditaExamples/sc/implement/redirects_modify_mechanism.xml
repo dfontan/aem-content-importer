@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_AA1D14056BBD4C69971779E53146747A"> 
+  <title>Modify the Redirect Mechanism</title> 
+  <shortdesc>Modify the Redirect Mechanism XE "Redirect Mechanism" 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Developer and implementation"/> 
+		<othermeta name="subtopic" content="Redirects"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Because the browser strips referring URL, you must configure the
+		mechanism that handles the redirect (for example, the web server, server-side
+		code, client-side code) to pass along the original referrer information. If you
+		would also like to record the alias link URL, this must also be passed along to
+		the ultimate landing page. Use the 
+		<varname>s_pageURL</varname> variable to override the current URL. 
+	 </p> 
+	 <p>Because there are many ways to implement a redirect, you should check
+		with your web operations group or your online advertising partner to identify
+		the specific mechanisms that execute redirects on your website. 
+	 </p> 
+  </conbody> 
+</concept>

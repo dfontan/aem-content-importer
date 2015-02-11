@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_45D48ED5EBBC4C549D682C5CEB49F17B" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Delete the Mbox Cookie</title>
+  <shortdesc class="- topic/shortdesc ">Delete your mbox browser cookies so
+	 that you can validate all of your experiences. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <context id="context_00795D66CFCD4936ABB2F9165B3686B2" class="- topic/section task/context ">
+      <p class="- topic/p ">If there is no cookie, you are considered a new
+		  visitor and shown a new experience. There are several ways to delete your mbox
+		  cookie without deleting all of your browser cookies. 
+		</p>
+      <p class="- topic/p ">
+        <b class="+ topic/ph hi-d/b ">To delete mbox cookie
+			 from Internet Explorer:</b>
+      </p>
+    </context>
+    <steps id="steps_CDF1A4F8F5D84C74AA9A2B7279589A38" class="- topic/ol task/steps ">
+      <step id="step_7D3B139E83264CD9A3A2091D919F26C1" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd "> From the Tools menu in Internet
+			 Explorer, select<uicontrol class="+ topic/ph ui-d/uicontrol "> Internet
+				Options</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_7EC99CAAFBC3427DA5408B0BBB343333" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Open the General
+			 tab, then in the 
+			 <wintitle class="+ topic/keyword ui-d/wintitle ">Browsing
+				History</wintitle> section, click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Settings</uicontrol>
+			 &gt; 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">View files</uicontrol>.
+			 
+		  </cmd>
+      </step>
+      <step id="step_CDE6615F73BD4AC4A609CE2C7EAAC9E8" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Select the mbox cookie. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <?xm-replace_text Step Result?>
+        </stepresult>
+      </step>
+      <step id="step_26344279154F4E05975298A3AB406DF7" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">From the File menu,
+			 select 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Delete</uicontrol>, or
+			 select the file and press 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Delete</uicontrol>. 
+		  </cmd>
+      </step>
+    </steps>
+    <postreq id="postreq_9F61E54104414AE6921CE23637848EAD" class="- topic/section task/postreq ">
+      <p class="- topic/p ">
+        <b class="+ topic/ph hi-d/b ">To delete mbox cookie
+			 from Firefox:</b>
+      </p>
+      <ol id="ol_DCD73C5C58F74D77A61CA4A85A6CBABD" class="- topic/ol ">
+        <li id="li_1F24760057E045D1BFDEF131D95466E8" class="- topic/li ">
+			 Select 
+			 <b class="+ topic/ph hi-d/b ">Tools</b> &gt; 
+			 <b class="+ topic/ph hi-d/b ">Options</b>&gt; 
+			 <b class="+ topic/ph hi-d/b ">Privacy</b>. 
+		  </li>
+        <li id="li_0E65A1C7014D459885B5032FE69DA0F6" class="- topic/li "> Click
+			 
+			 <b class="+ topic/ph hi-d/b ">View Cookies</b>. 
+		  </li>
+        <li id="li_DBC5C014CD1047BFAE4089C3771CF8C1" class="- topic/li "> Sort
+			 by cookie name to find the mbox cookies. 
+		  </li>
+        <li id="li_045BA5BBC5984F80A6FBF3D216FFE8C1" class="- topic/li ">
+			 Select the mbox cookies for the sites you are previewing, then click 
+			 <b class="+ topic/ph hi-d/b ">Remove Cookie</b>. 
+		  </li>
+      </ol>
+    </postreq>
+  </taskbody>
+  <related-links class="- topic/related-links ">
+    <link href="r_Cookie_Settings.xml#reference_7E7DFBE2D7EA46838B4213360A722F24" type="reference" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Cookie Settings?>
+    </link>
+    <link href="r_When_to_Use_First_or_Third_Party_Cookies.xml#reference_42ED8874897F40369D296C3EF07D1C98" type="reference" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text When to Use First or Third Party Cookies?>
+    </link>
+  </related-links>
+</task>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_8B9823AF2E4D4055AC088B8ADFC195BF"> 
+  <title>Unavailable Dimensions</title> 
+  <shortdesc>This section contains a list of dimensions that are not available
+	 to read or write using processing rules. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Admin tools"/> 
+		<othermeta name="subtopic" content="Processing rules"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <ul id="ul_6BE6839F01144128B4E2D997EEA8DEFD"> 
+		<li id="li_B79A119B2D1E42E2BA2E1185DE1960DB">Link Type, such as Custom,
+		  Download or Exit. 
+		</li> 
+		<li id="li_7D3CA48FF3204F01A1EA0E8C4738D3B5">Hit type, such as page view,
+		  link click, video. 
+		</li> 
+		<li id="li_F80EE144FA034367A4FC1D470F8713A5">Custom tracked links do not
+		  contain a page URL, query string, or page name. 
+		</li> 
+		<li id="li_051D9CA539404181B89ED50423717492">Object ID. This value used
+		  by ClickMap to uniquely identify a link. 
+		</li> 
+		<li id="li_77DA719CF9014711A7003CF31C869374">Cookies cannot be access by
+		  processing rules directly. To use cookie data in a processing rule, you can
+		  read the value and store it in an attribute or context data variable. 
+		</li> 
+		<li id="li_2127F65E8AC541CABD0DF4F64C45970A">Product variable. 
+		</li> 
+		<li id="li_25EAD1E316254D71B10CDAD2CCF11E95">Adding a serialization ID to
+		  an event (for example, setting an event to 
+		  <codeph>1:abc123</codeph> to prevent recording the event twice). 
+		</li> 
+		<li id="li_8E2CA5DA395546249E0693E3D83F6967">Processing rules cannot read
+		  eVar values from the product list. eVars used by processing rules must be
+		  populated directly on the page (for example s.eVar1="news") or by using a
+		  processing rule earlier in the processing order.
+		</li>
+	 </ul> 
+  </conbody> 
+</concept> 

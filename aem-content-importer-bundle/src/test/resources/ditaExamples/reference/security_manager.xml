@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_E3D0FEC81E1F4987B39CC467F19FFCFF"> 
+  <title>Security Manager</title> 
+  <shortdesc>Enables you to control access to reporting data. Options include
+	 strong passwords, password expiration, IP login restrictions, and email domain
+	 restrictions. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Admin tools"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p> 
+		<uicontrol>Analytics</uicontrol> &gt; 
+		<uicontrol>Admin</uicontrol> &gt; 
+		<uicontrol>Company Settings</uicontrol> &gt; 
+		<uicontrol>Security</uicontrol> 
+	 </p> 
+	 <table id="table_F1AD9DE5094A4FC2B9DA8D01198F944B"> 
+		<tgroup cols="2"> 
+		  <colspec colnum="1" colname="col1" colwidth="*"/> 
+		  <colspec colnum="2" colname="col2" colwidth="*"/> 
+		  <thead> 
+			 <row> 
+				<entry colname="col1">Element 
+				</entry> 
+				<entry colname="col2">Description 
+				</entry> 
+			 </row> 
+		  </thead> 
+		  <tbody> 
+			 <row> 
+				<entry colname="col1"> 
+				  <wintitle>Require Strong Passwords 
+				  </wintitle> 
+				</entry> 
+				<entry colname="col2">Forces users to create more secure passwords
+				  that adhere to the following rules: 
+				  <ul id="ul_100CC57EB4374DAA87B2074BA8B46F26"> 
+					 <li id="li_4D9102C361044FADBC14402A8398F2F3">Must be at least
+						eight characters in length. 
+					 </li> 
+					 <li id="li_AFE9568C14894E93BFDFDC84DCD2838D">Has at least one
+						symbol/number character between the first and last characters. 
+					 </li> 
+					 <li id="li_ECA05BEF7BFD4430B09D4A953B41D2A6">Has at least one
+						alpha character. 
+					 </li> 
+					 <li id="li_6928045588E94E28851BB15991C8D51E">Cannot be found in
+						a dictionary or contain words from a dictionary (English). 
+					 </li> 
+					 <li id="li_C3DD4608CA6F43E4B1E4FCFC6D116371">May not include
+						any three (3) consecutive characters from the login username. 
+					 </li> 
+					 <li id="li_687838CA01B94EE29EF4C09F485C5537">Must be different
+						than the previous 10 passwords. 
+					 </li> 
+				  </ul> 
+				  <note>This feature is enforced on new passwords going forward. It
+					 does not check existing passwords, or force users to change existing passwords.
+					 For this reason, consider enabling password expiration to force users to change
+					 their passwords and adhere to the strong password rules. 
+				  </note> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <wintitle>Password Expiration</wintitle> 
+				</entry> 
+				<entry colname="col2">Forces users to regularly change their user
+				  account password. You can specify the interval at which you want passwords to
+				  expire, and force passwords to expire immediately. 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <wintitle>Enforce IP Login Restrictions</wintitle> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>Limits report access to specific IP addresses or IP address
+					 ranges. 
+				  </p> 
+				  <p>You can add up to 100 entries in the IP Address Filter list,
+					 and each entry can be a specific address or a range of addresses. 
+				  </p> 
+				  <p> 
+					 <wintitle>Enforce IP Login Restrictions</wintitle> is not
+					 enforced until there is at least one entry in the IP Address Filter list. 
+				  </p> 
+				  <p> 
+					 <uicontrol>Accepted IP Address</uicontrol>: To specify an IP
+					 address range, enclose the range in brackets (for example, 
+					 <userinput>192.168.10.[20-240]</userinput>). You can also use
+					 wildcards (*) to specify any number from 0 to 255 (for example, 
+					 <userinput>192.168.[10-14].*</userinput>) 
+				  </p> 
+				  <p>Failed logins are logged and viewable from the 
+					 <xref
+					  href="logs.xml#concept_8C55FE944C0C4D0E963645366A0DCFDE/section_6FBAF92D9EA244809C45A78A2F0A7232"
+					  format="dita" scope="local">Usage and Access Log</xref>. 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <wintitle>Enforce Email Domain Restrictions</wintitle> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>Filters the email addresses and domains where Analytics sends
+					 bookmarks, downloadable reports, and alerts. 
+				  </p> 
+				  <p>The email filter list supports up to 100 entries, and each
+					 entry can be an email address or an entire email domain. 
+				  </p> 
+				  <p>If a scheduled report has an unapproved email destination,
+					 Analytics sends an email notification of the problem, and a link to unschedule
+					 the report. 
+				  </p> 
+				  <p> 
+					 <wintitle>Enforce Email Domain Restrictions</wintitle> is not
+					 enforced until there is at least one entry in the 
+					 <wintitle>Accepted Email Domain Filter</wintitle> list. 
+				  </p> 
+				  <p> 
+					 <uicontrol>Accepted Email Address and Domains</uicontrol>: To
+					 specify an IP address range, enclose the range in brackets (for example, 
+					 <userinput>192.168.10.[20-240]</userinput>). You can also use
+					 wildcards (*) to specify any number from 0 to 255 (for example, 
+					 <userinput>192.168.[10-14].*</userinput>) 
+				  </p> 
+				</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1"> 
+				  <wintitle>Password Recovery Notification</wintitle> 
+				</entry> 
+				<entry colname="col2"> 
+				  <p>Notifies the specified administrators when a user attempts to
+					 reset a user account password. 
+				  </p> 
+				  <p> 
+					 <uicontrol>Available Admins</uicontrol>: Displays all
+					 administrators. You can Ctrl+click and Shift+click to select multiple
+					 administrators. 
+				  </p> 
+				  <p> 
+					 <uicontrol> Email Members</uicontrol>: Displays the currently
+					 defined email group. 
+				  </p> 
+				</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+  </conbody> 
+</concept> 

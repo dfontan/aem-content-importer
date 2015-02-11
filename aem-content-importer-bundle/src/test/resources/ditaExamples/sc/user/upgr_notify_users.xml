@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_045EE1B134AE4E6585DABFA1BB1424D8">
+  <title>Notifying Users About the Upgrade</title>
+  <shortdesc>As part of your upgrade, it is critical that you effectively
+	 communicate the impact of the upgrade to your users. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports and analytics" />
+      <othermeta name="subtopic" content="Upgrading from V14" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Your Adobe Account Manager is available to help you organize and prepare
+		upgrade materials and training specific to your organization’s needs. Contact
+		your Account Manager for more information. 
+	 </p>
+  </conbody>
+</concept>

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_2D295A6FB7DB4845A83E6D6F0F6B6F51">
+  <title>Create a tag container</title>
+  <shortdesc>A tag container is associated with a digital property. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Tag management" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <context id="context_E5D54ACEE7EC4B939208CE2D0CECFBF3">
+      <note>Tag Containers cannot be deleted or renamed after they are created.
+		  
+		</note>
+    </context>
+    <steps id="steps_01397AE902E44CFC8178089F3F3F35F1">
+      <step id="step_D8F06AAD92744CB1971C8047DAE34106">
+        <cmd>Start 
+			 <keyword>tag management</keyword>. 
+		  </cmd>
+        <stepresult>
+          <p>
+            <image href="graphics/tag_menu.png" id="image_53173DFFE50F46D4B1524ED2675E3703" align="center" placement="break">
+              <?xm-replace_text Paragraph?>
+            </image>
+          </p>
+        </stepresult>
+      </step>
+      <step id="step_83C4FAB8A3994294BFB4D234725C14AC">
+        <cmd>Click 
+			 <uicontrol>Create New Container</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_A2F0069516284A0F981A5F8FFA33A13C">
+        <cmd>(Optional) Assign group access to the new container. All
+			 groups that have tag management 
+			 <uicontrol>Environment Privileges</uicontrol> are displayed in the 
+			 <uicontrol>Container Groups Access</uicontrol> list. If a group is
+			 selected, the container is added to the list of containers to which the users
+			 in that group receive the access defined by 
+			 <uicontrol>Environment Privileges</uicontrol>. For example, if the
+			 "TM Devs" group has Development privileges and that group is selected on this
+			 screen, members are granted Development access to the new tag container. 
+		  </cmd>
+        <stepresult>Container access can be assigned or modified at any time.
+			 See 
+			 <xref href="tm_permissions.xml#concept_CCDE7D40C9A8472B8ED6008EAB4B1C47" format="dita" scope="local"><?xm-replace_text TagManager Permissions?></xref>. 
+		  </stepresult>
+      </step>
+      <step id="step_94049EF58E75450485A89177C6336546">
+        <cmd>On the 
+			 <wintitle>Container Environment Overview</wintitle> page, click 
+			 <uicontrol>Create</uicontrol> to create an initial version in the
+			 Development environment. 
+		  </cmd>
+        <stepresult>See 
+			 <xref href="tm_environments.xml#concept_641973B03E6341EEA74710491E60DE97" format="dita" scope="local"><?xm-replace_text Tag Container Environments?></xref>.
+			 
+		  </stepresult>
+      </step>
+      <step id="step_58B2CD8AADE14115B4CDB9D75B779324">
+        <cmd>On the Edit Tags page, define tags to deploy Marketing Cloud
+			 products. 
+		  </cmd>
+        <stepresult>See 
+			 <xref href="tm_cloud.xml#concept_CF04A6083C17410BAA4714356D15E75F" format="dita" scope="local"><?xm-replace_text Marketing Cloud Deployment?></xref>.
+			 
+		  </stepresult>
+      </step>
+      <step id="step_6B46541D0DAF476CA723015BDD63DE53">
+        <cmd>Click 
+			 <uicontrol>Save and Deploy</uicontrol>, or click 
+			 <uicontrol>Save</uicontrol> and deploy the container at a later time
+			 from the 
+			 <wintitle>Container Environment Overview</wintitle> page. 
+		  </cmd>
+        <stepresult>Check the 
+			 <uicontrol>Status</uicontrol> column for confirmation that the
+			 container was deployed. 
+		  </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+</task>

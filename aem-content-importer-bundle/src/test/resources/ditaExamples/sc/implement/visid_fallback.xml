@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_EBCBF9EB390E45A2BA20DB6BE931C505"> 
+  <title>Fallback ID Methods</title> 
+  <shortdesc>If other visitor ID methods fail, Adobe sets a fallback cookie or
+	 uses a combination of IP address and user agent to identify the visitor. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta content="Analytics" name="solution"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <section id="section_2BA15E4FA6034C3EBF43859406343EB6"> 
+		<title>Fallback Visitor Identification Method</title> 
+		<p>AppMeasurement for JavaScript 1.x and JavaScript H.25.3 (released
+		  January 2013) contain a new fallback visitor identification method for visitors
+		  whose browser blocks the cookie set by Adobe’s data collection servers (called 
+		  <codeph>s_vi</codeph>). Previously, if a cookie could not be set,
+		  visitors were identified using a combination of the IP address and user agent
+		  string during data collection. 
+		</p> 
+		<p>With this update, if the standard 
+		  <codeph>s_vi</codeph> cookie is unavailable, a fallback cookie is
+		  created on the domain of the website with a randomly generated unique ID. This
+		  cookie, named 
+		  <codeph>s_fid</codeph>, is set with a 2 year expiration and is used as
+		  the fallback identification method going forward. This change should result in
+		  increased accuracy in visit and visitor counts in situations where the primary
+		  cookie (<codeph>AMCV_</codeph> or 
+		  <codeph>s_vi</codeph>) cannot be set. 
+		</p> 
+		<p> Visits total includes all visitors that are identified by the 
+		  <codeph>s_vi</codeph> cookie or by using a fallback method. 
+		</p> 
+	 </section> 
+	 <section id="section_104819D74C594ECE879144FCC5DEF4BF"> 
+		<title>IP Address, User Agent, Gateway IP Address</title> 
+		<p>. If the 
+		  <codeph>AMCV_</codeph> or 
+		  <codeph>s_vi</codeph> and the 
+		  <codeph>s_fid</codeph> cookies cannot be set, visitors are identified
+		  using a combination of IP address and User Agent. 
+		</p> 
+	 </section> 
+  </conbody>
+</concept>

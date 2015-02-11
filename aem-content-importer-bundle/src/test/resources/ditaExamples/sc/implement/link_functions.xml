@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_DB662C93B3ED415DB72C80270502BE5D"> 
+  <title>Using Function Calls with Custom Link Code</title> 
+  <shortdesc> Due to the complex nature of custom link code, you can
+	 consolidate the code into a self-contained JavaScript function (defined on the
+	 page or in a linked JavaScript file) and make calls to the function within the 
+	 <wintitle>onClick</wintitle> handler. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Developer and implementation"/> 
+		<othermeta name="subtopic" content="Link tracking"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>For example, you could insert the following two functions in your 
+		<codeph>AppMeasurement.js</codeph> file, just below the 
+		<codeph>s_doPlugins()</codeph> function, and then use them throughout
+		your site:
+	 </p> 
+	 <codeblock outputclass="syntax javascript">/* Set Click Interaction values (with timeout – H25 code and higher*/
+
+function trackClickInteraction(name){
+				var s=s_gi('rsid');
+    s.linkTrackVars='prop42,prop35';
+    s.prop42=name;
+    s.prop35=s.pageName;
+    s.tl(true,'o','track interaction',null,'navigate');
+}</codeblock>
+	 <codeblock outputclass="syntax javascript">/* Set Click Interaction values (without timeout – pre H25 code*/
+
+function trackClickInteraction(name){
+				var s=s_gi('rsid');
+    s.linkTrackVars='prop42,prop35';
+    s.prop42=name;
+    s.prop35=s.pageName;
+    s.tl(true,'o','track interaction');
+}</codeblock> 
+	 <p> 
+		<note>If needed, you can pass the link type and link name as additional
+		  parameters for the JavaScript function. 
+		</note> 
+	 </p> 
+	 <p>You can use code similar to the following to call these functions:
+	 </p>
+	 <codeblock outputclass="syntax html">&lt;a href=”http://www.your-site.com/some_page.php” onclick=”trackClickInteraction('this.href');”&gt;Link Text&lt;/a&gt;</codeblock>
+	 <section id="section_9C3F73DE758F4727943439DED110543C">
+		<title>Avoiding Duplicate Link Counts</title>
+		<p>It is possible for the link to be double-counted in situations where
+		  the link is normally captured by automatic file download or exit link tracking.
+		  
+		</p>
+		<p>For example, if you are tracking PDF downloads automatically, the
+		  following code results in a duplicate download count:
+		</p>
+		<codeblock outputclass="syntax javascript">function trackDownload(obj) {
+	var s=s_gi('rsid');
+	s.linkTrackVars='None';
+	s.linkTrackEvents='None';
+	s.tl(obj,'d','PDF Document');
+}</codeblock>
+		<p>To ensure link double counting does not occur, use the following
+		  modified JavaScript function:
+		</p> 
+		<codeblock outputclass="syntax javascript">&lt;script language=JavaScript&gt;
+function linkCode(obj) {
+	var s=s_gi('rsid');
+	s.linkTrackVars='None';
+	s.linkTrackEvents='None';
+	var lt=obj.href!=null?s.lt(obj.href):"";
+	if (lt=="") { s.tl(obj,'d','PDF Document'); }
+}</codeblock> 
+		<p>The last two lines of the code above modify the behavior of custom
+		  link code so only the automatic tracking behavior occurs, eliminating any
+		  possible double counting. 
+		</p>
+	 </section>
+  </conbody> 
+</concept>

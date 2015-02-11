@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_79E5C207A4AF40B1B5DD7A6E386D93A9" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic concept/concept ">
+  <title class="- topic/title ">Success Metrics for Automated Decisioning
+	 Campaigns</title>
+  <shortdesc class="- topic/shortdesc "> Automated decisioning campaigns can
+	 include intermediary success metrics like all Target campaign types. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody class="- topic/body  concept/conbody ">
+    <p class="- topic/p "> Marketers can monitor how their traffic performs at
+		various success points before their defined final conversion. 
+	 </p>
+    <p class="- topic/p ">
+      <note class="- topic/note ">The final conversion point as specified in
+		  the campaign is the metric used for modeling. 
+		</note>
+    </p>
+    <p class="- topic/p ">To model to a click or intermediary metric but
+		monitor activity past that point, create a companion 
+		<xref href="t_Creating_a_Monitoring_Campaign.xml#task_833A68CC388044FFA3AA3FED3276389D" type="task" format="dita" scope="local" class="- topic/xref ">monitoring
+		  campaign</xref>. 
+	 </p>
+    <p class="- topic/p "> In other campaign types, advanced options are
+		available for success metrics, to change the way visitors see content and get
+		counted on each success metric. These options do not make sense for automated
+		decisioning campaigns because the model drives the content delivery, and the
+		content area is constantly targeted to visitors, even if they convert and
+		return at a later time. 
+	 </p>
+  </conbody>
+  <related-links class="- topic/related-links ">
+    <link href="c_1_1_Campaign_Priority.xml#concept_B343B8BE8CFC4A5889889A66366528F9" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text 1:1 Campaign Priority?>
+    </link>
+    <link href="c_1_1_Campaign_Entry_Targeting.xml#concept_F6A177F23DED41F28D2B616FD43EBFD9" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text 1:1 Campaign Entry Targeting?>
+    </link>
+    <link href="c_1_1_Optimizing_Metric.xml#concept_3EAF5FFCC5AB40889AD505B184637AEF" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text 1:1 Optimizing Metric?>
+    </link>
+    <link href="c_1_1_Traffic_Requirements.xml#concept_7AC16256BA4D4BCF847972E0B8C6E5DE" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text 1:1 Traffic Requirements?>
+    </link>
+    <link href="c_1_1_Modeling_Groups.xml#concept_398B250EC2BD4B24ADF0A6316D1DCF9F" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text 1:1 Modeling Groups?>
+    </link>
+    <link href="c_1_1_Business_Rules.xml#concept_142D81096B134555A729C94B2F2A4278" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text 1:1 Business Rules?>
+    </link>
+  </related-links>
+</concept>

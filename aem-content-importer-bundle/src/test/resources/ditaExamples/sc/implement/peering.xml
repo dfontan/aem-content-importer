@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_9F14467967254F3C939F9E9B3A1AC7C8">
+  <title>Peering</title>
+  <shortdesc> Private Network Peering enables data to pass from an ISP's
+	 network to the 
+	 <keyword>Analytics</keyword> network more efficiently.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Troubleshooting" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Peering is simply the agreement to interconnect and exchange routing
+		information without the need of the public network. Please contact Adobe
+		Engineering if an ISP is interested in establishing a peering relationship.
+	 </p>
+    <p>Although peering may provide some benefits to Adobe ISP customers,
+		optimizing the HTML snippet and the Web servers caching directives likely have
+		a much greater impact. High-volume ISP customers realize the most benefit from
+		peering.
+	 </p>
+  </conbody>
+</concept>

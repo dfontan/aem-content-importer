@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_F2ADD5BB5BCC4011A8817F46D56651BA"> 
+  <title>Expiration Trigger</title> 
+  <shortdesc>Sets the lifetime of a variable value by letting you tell the
+	 system when to expire the variable’s value. Expiration triggers can be dates,
+	 time periods, or conversion events. It's the event or action that occurs that
+	 expires the value of a variable. A campaign variable could be set to expire on
+	 purchase. An internal search term can be set to expire with a visit.
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="subtopic" content="Glossary"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>
+	 </p> 
+  </conbody> 
+</concept>

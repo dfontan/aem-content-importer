@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_4C531C2C96574F438AF3255EAA4D531C">
+  <title>Debugging Tools</title>
+  <shortdesc>URL parameters are associated with an mbox. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <context id="context_DB6909F1E34C42EEBD1747F9CE240228">
+      <p>The following table contains information about mbox-related URL
+		  parameters. 
+		</p>
+      <p>
+        <table id="table_A39547BF527643BCBD168B7B2085D881">
+          <tgroup cols="2">
+            <colspec colnum="1" colname="col1" colwidth="*" />
+            <colspec colnum="2" colname="col2" colwidth="*" />
+            <thead>
+              <row>
+                <entry colname="col1">URL Parameters 
+				  </entry>
+                <entry colname="col2">Purpose 
+				  </entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry colname="col1">
+                  <p>
+                    <codeph>mboxDebug=1</codeph>
+                  </p>
+                </entry>
+                <entry colname="col2">
+                  <p>Debugger 
+					 </p>
+                  <p>Adding this parameter to any URL with mboxes defined opens a
+						pop-up window with valuable debugging details. Cookie information, PCid and
+						Session ID values are written out, and all of the mbox URLs are visible. Click
+						on a mbox URL to show the response for that mbox. More details are available in
+						
+						<xref href="https://marketing.adobe.com/resources/help/en_US/tnt/pdf/mbox_debug.pdf" scope="external" format="html">mbox_debug.pdf</xref>. 
+					 </p>
+                </entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <p>
+                    <codeph>mboxDebug=x-cookie</codeph>
+                  </p>
+                </entry>
+                <entry colname="col2">
+                  <p>Modify the cookie 
+					 </p>
+                </entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <p>
+                    <codeph>mboxDisable=1</codeph>
+                  </p>
+                </entry>
+                <entry colname="col2">
+                  <p>Disable mboxes on the page 
+					 </p>
+                </entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <p>
+                    <codeph>mboxDebug=x-profile</codeph>
+                  </p>
+                </entry>
+                <entry colname="col2">
+                  <p>View profiles set. (Does not work in Chrome.) 
+					 </p>
+                </entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <p>
+                    <codeph>mboxDebug=x-time</codeph>
+                  </p>
+                </entry>
+                <entry colname="col2">
+                  <p>Show response time for each mbox request 
+					 </p>
+                </entry>
+              </row>
+              <row>
+                <entry colname="col1">
+                  <p>
+                    <codeph>mboxOverride.browserIp=<varname>Insert IP
+							 address</varname></codeph>
+                  </p>
+                </entry>
+                <entry colname="col2">
+                  <p>Test geotargeting 
+					 </p>
+                  <p>Test geotargeting with this URL parameter. Type an IP
+						address as the value for this attribute, and Test&amp;Target's geotargeting
+						evaluates that IP address to match against any geotargeting or segmentation set
+						in a campaign. 
+					 </p>
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </p>
+    </context>
+    <steps id="steps_DF3AC72ADBEB4C22AD7DA3546DB6F29B">
+      <step id="step_FDE4BA16B48C41BB8C3CD476318805AD">
+        <cmd>Browse to page with the mbox. 
+		  </cmd>
+      </step>
+      <step id="step_8ADB3D161E104A26A1053AD4E9BCEA6D">
+        <cmd>At the end of the URL, append 
+			 <codeph>?parameter=value</codeph>. 
+		  </cmd>
+        <stepresult>
+          <?xm-replace_text Step Result?>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links>
+    <link href="t_Validating_URL_Parameters.xml#task_6F612CA1710244EFBD3D44100C7A7438" type="task" format="dita" scope="local">
+      <?xm-replace_text Validating URL Parameters?>
+    </link>
+    <link href="t_Targeting_Content_to_URL_Parameters_and_Values.xml#task_1D5BFB0247584B3F839C26DC45BDE174" type="task" format="dita" scope="local">
+      <?xm-replace_text Targeting Content to URL Parameters and Values?>
+    </link>
+  </related-links>
+</task>

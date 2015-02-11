@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_55DDE23F4AD04A909D9082BAB580D0B7">
+  <title>DRM Report</title>
+  <shortdesc> Groups mobile devices based on the type of Digital Rights
+	 Management (DRM) they support. DRM groups include 
+	 <term>Forward Lock</term>, 
+	 <term>Combined Delivery</term>, 
+	 <term>Separate Delivery</term>, and 
+	 <term>Unknown</term>.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>
+      <?xm-replace_text Paragraph?>
+    </p>
+  </conbody>
+</concept>

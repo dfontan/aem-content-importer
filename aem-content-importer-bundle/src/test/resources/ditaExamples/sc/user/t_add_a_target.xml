@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_94915391E26E4F808F2538AA92BC7E71"> 
+  <title>Add a Target</title> 
+  <shortdesc>Steps that describe how to add a target. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Reports and analytics"/> </metadata>
+  </prolog> 
+  <taskbody> 
+	 <steps id="steps_3108D4E589E34329802C540AD0FE3643"> 
+		<step id="step_CCA45701DB464446922EDF79E5DFA256"> 
+		  <cmd>Click 
+			 <uicontrol>Analytics</uicontrol> &gt; 
+			 <uicontrol>Components</uicontrol> &gt; 
+			 <uicontrol>Manage Targets</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_593A644B45F8450FB4B334D17B5C00A6"> 
+		  <cmd>On the 
+			 <wintitle>Target Manager</wintitle> page, click 
+			 <uicontrol>Add New</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_1ADE64FDD6784D24B8FFC00758E666F9"> 
+		  <cmd>Configure the options described in 
+			 <xref
+			  href="targets.xml#concept_6516E81923E845198B7FC5D8F81DC35C/section_44DFFB4A7AC54D65BC2345411686B2AD"
+			  format="dita" scope="local"><?xm-replace_text Target Field Descriptions?></xref>.
+			 
+		  </cmd> 
+		</step> 
+		<step id="step_4FA59E288B254E07A15B31580798AD04"> 
+		  <cmd>Click 
+			 <uicontrol>OK</uicontrol>. 
+		  </cmd> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+  <task id="task_946C558D2ECC4922ABD4A5A6183A095A"> 
+	 <title>Edit a Target</title> 
+	 <shortdesc> <?xm-replace_text Short Description?>
+	 </shortdesc> 
+	 <taskbody> 
+		<steps id="steps_7CA1E8E6283043D9BA7049D4BFC4D1FC"> 
+		  <step id="step_BF7EF03005D94194903413C7AA5784EB"> 
+			 <cmd>Click 
+				<uicontrol>Analytics</uicontrol> &gt; 
+				<uicontrol>Components</uicontrol> &gt; 
+				<uicontrol>Manage Targets</uicontrol>. 
+			 </cmd> 
+		  </step> 
+		  <step id="step_F44FB00D11FE4D7180DB4CA9849552A9"> 
+			 <cmd>In the 
+				<uicontrol>Manage</uicontrol> column, click the 
+				<uicontrol>Edit</uicontrol> icon. 
+			 </cmd> 
+		  </step> 
+		  <step id="step_06D688D6DAA647E28656E205EF783539"> 
+			 <cmd>Configure the options described in 
+				<xref
+				 href="targets.xml#concept_6516E81923E845198B7FC5D8F81DC35C/section_44DFFB4A7AC54D65BC2345411686B2AD"
+				 format="dita" scope="local"><?xm-replace_text Target Field Descriptions?></xref>.
+				
+			 </cmd> 
+		  </step> 
+		  <step id="step_F7E7CBE1460A45F8BFED8968710EEA70"> 
+			 <cmd>Click 
+				<uicontrol>OK</uicontrol>. 
+			 </cmd> 
+		  </step> 
+		</steps> 
+	 </taskbody> 
+  </task> 
+</task> 

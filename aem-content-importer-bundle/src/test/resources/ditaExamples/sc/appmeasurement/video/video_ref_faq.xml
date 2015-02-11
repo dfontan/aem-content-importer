@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_2209A170CE424C94986E01631BF7FC6A">
+  <title>Measuring Video FAQ</title>
+  <shortdesc>This topic provides answers to common questions. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>media</keyword>
+        <keyword>milestone</keyword>
+        <keyword>sdk</keyword>
+        <keyword>video</keyword>
+      </keywords>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <section id="section_734551C1360F4A53B8E4DA7584196E78">
+      <title>What is Autotrack?</title>
+      <p>To effectively measure video, the 
+		  media module needs a way to find out what is
+		  happening in your player. For example, when a user starts playing a video, the 
+		  media module needs to start counting seconds viewed.
+		  If the user pauses the video, the 
+		  media module must also pause the count as well. 
+		</p>
+      <p>If AutoTrack is supported for your player, it means that the code to
+		  monitor what is happening in your player is already present in the 
+		  media module. For a developer, this means that you
+		  do not need to call open, play, stop, or close since the 
+		  media module can already track these events. 
+		</p>
+      <p>If AutoTrack is not supported for your player, it means you need to
+		  add code that tells the 
+		  media module when events occur in your player (using
+		  the open, play, stop, and close methods). When a user starts playing a video,
+		  you need to call the play method so the 
+		  media module starts counting seconds viewed. If the
+		  user pauses the video, you need to call stop so the count is paused. This is
+		  typically performed using event handlers that are exposed by your player.
+		  Additional details are provided on how to do this in the Implementation Guides
+		  for video players that do not support autotrack. 
+		</p>
+    </section>
+    <section id="section_6B2D872ADFB44DBE951EE4548F09DCB8">
+      <title>What is the Media Module? Is it different from
+		  AppMeasurement?</title>
+      <p>The 
+		  media module refers to the Media class that is part
+		  of the AppMeasurement libraries. All video measurement functionality is part of
+		  the 
+		  media module, meaning that you reference video
+		  measurement variables and methods using the Media prefix. For example, If s is
+		  the name of your JavaScript object or AppMeasurement instance, reference 
+		  media module components using the s.Media prefix. 
+		</p>
+      <p>For JavaScript, the 
+		  media module must be downloaded and included
+		  separately. For all other languages the 
+		  media module is part of the core AppMeasurement
+		  library. 
+		</p>
+      <p>The 
+		  media module is implemented to be as identical as
+		  possible across all AppMeasurement libraries. 
+		</p>
+    </section>
+    <section id="section_E8796F8CDB3A46DEB935B20038ACA019">
+      <title>What is Media.monitor?</title>
+      <p>Media monitor lets you send additional metrics and perform other
+		  actions during playback. To use 
+		  <codeph>Media.monitor</codeph>, you define a function that is
+		  automatically called: 
+		</p>
+      <ul id="ul_2821128D7F464671A314AD6F873727FA">
+        <li id="li_FC915A11D7F74651B065C0386E7C83C6">Every second while the
+			 video is playing. 
+		  </li>
+        <li id="li_D3785F89E26A477D97192AF12816FD7D">When an autoTrack
+			 implementation, such as the OSMF plug-in, captures a player event like
+			 scrubbing, pausing or resuming, end of video playback, etc. 
+		  </li>
+        <li id="li_45F33DA9FA114869B2C55DD6E76557F3">When a non-autoTrack
+			 (manual) implementation calls 
+			 <codeph>Media.open</codeph>, 
+			 <codeph>Media.play</codeph>, 
+			 <codeph>Media.stop</codeph>, or 
+			 <codeph>Media.close</codeph>. 
+		  </li>
+      </ul>
+      <p>Your function is provided a media object that contains details about
+		  the video state, including the event that triggered the call, where playback is
+		  occurring, and so on. You can then send additional metrics based on this
+		  information. For details see 
+		  <xref href="video_mediamonitor.xml#concept_6B10C4127F844D84A1FD0F59D818054F" type="concept" format="dita" scope="local"><?xm-replace_text Measuring Additional Metrics using Media.monitor?></xref>.
+		  
+		</p>
+    </section>
+    <section id="section_F8C606A5851C45D297F981AA2D9CBF8A">
+      <title>Can I a set video complete before the video reaches 100%?</title>
+      <p>Yes. For example, if you show credits at the end of your video, you
+		  might want to count a complete view before the end of the video file. To do
+		  this, specify a value for 
+		  <codeph>s.Media.completeCloseOffsetThreshold</codeph> equal to the
+		  number of seconds before the end that you want to send a complete event. For
+		  example, if you show 10 seconds of credits at the end of your video, you could
+		  set 
+		  <codeph>s.Media.completeCloseOffsetThreshold = 10</codeph>.
+		</p>
+      <p>For live events and video streams that do not have a defined end, you
+		  can call complete manually. See 
+		  <xref href="video_ref_methods.xml#concept_30874334BCB54B6D8A8D49388D7F06FF" type="concept" format="dita" scope="local"><?xm-replace_text Media Module Methods?></xref>.
+		</p>
+    </section>
+    <section id="section_3FEF7DE0876A4BF4BA6E3412F84AAE4A">
+      <title>Do I have to dedicate a custom event to each milestone?</title>
+      <p>At a minimum, you should dedicate a custom event for video complete.
+		  Whether you send an event with the other milestones depends on what you want to
+		  track. 
+		</p>
+      <p>If you want to view fallout for a single video, the Video Detail
+		  report is populated with the segment eVar and Segment View event. This lets you
+		  see fallout without sending events for each milestone. 
+		</p>
+      <p>Sending in an event with each milestone lets you measure if a
+		  milestone is reached across multiple videos in one report. If you want to view
+		  data about a milestone in other reports or across multiple videos, you should
+		  send an event. If you are interested in viewing fallout for each video
+		  individually you typically don't need to send events for each milestone. 
+		</p>
+    </section>
+  </conbody>
+</concept>

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_C318D1EDA2824C1BA2C1A325F359F85F">
+  <title>Download the Media Module for OSMF</title>
+  <shortdesc>You can access the AppMeasurement plug-in for OSMF from the
+	 SiteCatalyst Admin Console. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>media</keyword>
+        <keyword>milestone</keyword>
+        <keyword>sdk</keyword>
+        <keyword>video</keyword>
+      </keywords>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <steps id="steps_1528918718C0443584BEB91C278945C4">
+      <step id="step_9305D2FD0EB8473FAC3AC5DB95D1CC10">
+        <cmd>In the Adobe Marketing Cloud, click 
+			 <uicontrol>Admin</uicontrol> &gt; 
+			 <uicontrol>Admin Console</uicontrol> &gt; 
+			 <uicontrol>Code Manager</uicontrol>. 
+		  </cmd>
+        <stepresult>
+          <?xm-replace_text Step Result?>
+        </stepresult>
+      </step>
+      <step id="step_31979842DA8746DBA45B948024052FCF">
+        <cmd>In the Select the type of code to generate field, select 
+			 <uicontrol>ActionScript (Flash/Flex)</uicontrol>, provide the
+			 requested information, and then click 
+			 <uicontrol>Generate Code</uicontrol>. 
+		  </cmd>
+        <stepresult>
+          <?xm-replace_text Step Result?>
+        </stepresult>
+      </step>
+      <step id="step_4DD256F9FCC4466698E946A3DB4AA99F">
+        <cmd>Select the 
+			 <uicontrol>Component Files</uicontrol> Tab, then save the necessary
+			 AppMeasurement component files to your local system: 
+		  </cmd>
+        <choicetable id="choicetable_FB3C4A5BE2E0405AABAD963D4A2F3B31">
+          <chhead>
+            <choptionhd>Option</choptionhd>
+            <chdeschd>Description</chdeschd>
+          </chhead>
+          <chrow>
+            <choption>Dynamic Implementation</choption>
+            <chdesc>
+              <ul id="ul_168F709F3EA040A4A158042648562ADE">
+                <li id="li_196391A59A3343A4BD4E74C51EB4207F">
+						AppMeasurementExtensionOSMF.swf 
+					 </li>
+              </ul>
+            </chdesc>
+          </chrow>
+          <chrow>
+            <choption>Custom Dynamic Implementation</choption>
+            <chdesc>
+              <ul id="ul_E3802EB82FF74F95A272168A6BF8DB5B">
+                <li id="li_C393DDB9ACC9469FB2FF59E1895F25AC">AppMeasurementExtensionOSMF.swc 
+					 </li>
+              </ul>
+            </chdesc>
+          </chrow>
+          <chrow>
+            <choption>Static Implementation</choption>
+            <chdesc>
+              <ul id="ul_D06E3DAC32154B2986DA841D4B0762DC">
+                <li id="li_20A5C1D4DE7F4108A77175829DD82886">AppMeasurement_Media_AutoTrackOSMF.swc
+						
+					 </li>
+                <li id="li_109CF8A3358E404EAA3E2E258EA6FE8F">AppMeasurement.swc
+						
+					 </li>
+              </ul>
+            </chdesc>
+          </chrow>
+        </choicetable>
+      </step>
+    </steps>
+  </taskbody>
+</task>

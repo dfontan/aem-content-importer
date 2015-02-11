@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_4DB49CCB1D764483907BC33A5CEB7315"> 
+  <title>Add or Edit a Traffic Classification</title> 
+  <shortdesc>Steps that describe how to add or edit classifications for the
+	 selected report suites. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Admin tools"/> 
+		<othermeta name="subtopic" content="Classifications"/> </metadata>
+  </prolog> 
+  <taskbody> 
+	 <steps id="steps_15F138E5E0FD49FEA231BCFBAABC0FAA"> 
+		<step id="step_96CB3DD8012E4FB493C76ABEE295ABB5"> 
+		  <cmd>Click 
+			 <uicontrol>Admin</uicontrol> &gt;<uicontrol>Report Suites</uicontrol>
+			 in the Suite header. 
+		  </cmd> 
+		</step> 
+		<step id="step_B2AEB72CBAB64036BE2ED419CFDC13B6"> 
+		  <cmd>Select a report suite. 
+		  </cmd> 
+		</step> 
+		<step id="step_A326345ED8BE49738A22657FB55ADF8E"> 
+		  <cmd>Click 
+			 <uicontrol>Edit Settings</uicontrol> &gt; 
+			 <uicontrol>Traffic</uicontrol> &gt; 
+			 <uicontrol>Traffic Classifications</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_7A90C8891CAC4441845D13EAE06AE941"> 
+		  <cmd>In the 
+			 <uicontrol>Select Classification Type</uicontrol> field, select the
+			 variable where you want to add a classification. 
+		  </cmd> 
+		</step> 
+		<step id="step_0E855ADC3C574EFAA89BC7DF889738C8"> 
+		  <cmd>Mouse over the Edit Classification icon, then select 
+			 <uicontrol>Add Classification</uicontrol> or 
+			 <uicontrol>Edit Classification</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_AD81E6107D7F41A9AF892BB9D0241355"> 
+		  <cmd>In the 
+			 <uicontrol>Text Classification</uicontrol> dialog box, configure the
+			 classification as desired: 
+		  </cmd> 
+		  <stepresult> 
+			 <p> 
+				<uicontrol>Name:</uicontrol> Specify the classification name. 
+			 </p>
+			 <p><uicontrol>Description</uicontrol>: Provide a more detailed
+				description.
+			 </p> 
+		  </stepresult> 
+		</step> 
+		<step id="step_CBA76B7EC7BA4B44BDAEC775131B9D61">
+		  <cmd>In the 
+			 <uicontrol>Dropdown List</uicontrol> dialog box, add or remove
+			 options. Adding 
+			 <uicontrol>Options</uicontrol> creates a list of classification
+			 values available for this classification. You can use this option with Campaign
+			 variables to provide users with a list of supported values for the
+			 classification in the Campaign Manager. Use this for classification dimensions
+			 where you have a small number of allowed values that rarely or never change.
+			 For example, you might run different campaigns aimed at different levels of
+			 customer loyalty: Silver, Gold, and Platinum. You could then use the drop-down
+			 list to ensure that the only values that are accepted are those that match your
+			 three levels. If anyone tries to use a different value, it gets discarded. 
+		  </cmd>
+		</step>
+		<step id="step_5D79330FB48047528C41819D5B183E4F"> 
+		  <cmd>Click 
+			 <uicontrol>Save</uicontrol>. 
+		  </cmd> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task>

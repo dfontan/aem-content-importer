@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_77F0A880A6BA4A919A233DAF9D0D6FB5">
+  <title>Segments</title>
+  <shortdesc> You can create a segment whenever an association occurs for a
+	 given 
+	 <wintitle>visitor ID</wintitle> cookie. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Based on the 
+		<xref href="visit_example.xml#concept_E3B32B8E539F4FDC8E3FA872328B87BA" format="dita" scope="local">previous table</xref>, if you created a segment
+		where visit number equals 9, it would include server calls 11 and 12. Even
+		through server call 10 was technically part of the same visit, the historical
+		data for that server call is not altered and the visit number remains
+		unchanged. 
+	 </p>
+  </conbody>
+</concept>

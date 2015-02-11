@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_B0EBE666FBCD4005997399D0F97AB9D3">
+  <title>Variables and Values</title>
+  <shortdesc> Ensure that the variables that are populated from server
+	 scripting or code cannot output any quotation marks that interfere with the
+	 values. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p> For instance: 
+	 </p>
+    <codeblock outputclass="syntax javascript">s.pageName="Article: "Article Name""
+s.pageName='Company's Information'
+</codeblock>
+    <p>Ensure that the values of the variables do not exceed their maximum
+		limits, specified in this document. Additional characters are cropped at the
+		data collection servers. They may interfere with the total length, increase
+		bandwidth unnecessarily, and may cause other issues. 
+	 </p>
+    <p>Do not use $, ™, ®, ©, or commas (,) in the products variable.
+		Generally, these are not useful in any 
+		<keyword>Analytics</keyword> variables and may interfere with the
+		ability to interpret or export fields. The best practice is to limit characters
+		to the first 127 ASCII characters. 
+	 </p>
+    <p>Ensure that the events variable is populated with an appropriate value
+		(<wintitle>prodView</wintitle>, 
+		<wintitle>purchase</wintitle>, 
+		<wintitle>scAdd</wintitle>, 
+		<wintitle>scRemove</wintitle>, 
+		<wintitle>scOpen</wintitle>, or event1-event5) whenever 
+		<varname>products</varname> is populated. Ensure that the case of all 
+		<keyword>Analytics</keyword> variables and functions are maintained,
+		as shown below. 
+	 </p>
+    <codeblock outputclass="syntax javascript">s.pageName
+s.server
+s.channel
+s.pageType
+s.prop1 – s.prop20
+s.campaign
+s.state
+s.zip
+s.events
+s.products
+s.purchaseID
+s.eVar1 – s.eVar20
+var s_code=s.t();if(s_code)document.write(s_code)//--&gt;
+</codeblock>
+    <p>Page names are case sensitive, and differences create additional page
+		records. "Home" and "home" are two different pages within 
+		<keyword>Analytics</keyword>. 
+	 </p>
+    <p>
+      <note> Multiple page records cannot be combined within 
+		  reports. 
+		</note>
+    </p>
+    <p>Validate that links are reported in the 
+		<wintitle>Custom Links</wintitle> report. Ensure that the correct
+		parameters are passed to the 
+		<wintitle>tl</wintitle> function. For more information on 
+		<wintitle>custom links</wintitle>, see 
+		<xref href="function_tl.xml#concept_EA13689CB8EE4F308FC89A1293046D5E" format="dita" scope="local"><?xm-replace_text Link Tracking?></xref>. 
+	 </p>
+  </conbody>
+</concept>

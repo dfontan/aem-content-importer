@@ -11,6 +11,7 @@ import java.util.Properties;
 import java.util.Map.Entry;
 
 import com.adobe.aem.importer.XMLTransformerHelper;
+import com.adobe.aem.importer.exception.AemImporterException;
 import com.adobe.aem.importer.xml.utils.Utils;
 import com.adobe.granite.workflow.WorkflowException;
 import com.adobe.granite.workflow.WorkflowSession;
@@ -69,15 +70,18 @@ public class TransformerWorkflowProcess implements WorkflowProcess  {
           	// Check Source Node
           	String src = configFile.getProperty(XMLTransformerHelper.CONFIG_PARAM_SRC,"");
           	if (src.trim().equals("") || !session.itemExists(src))
-          		throw new Exception("Configuration error: Source folder doesn't exist --> "+src);
+          		throw new WorkflowException("Configuration error: Source folder doesn't exist --> "+src);
           	
           	// Start Transform process
           	XMLTransformerHelper.getXMLTransformer(xmlTransformerClass).transform(session.getNode(src), configFile);;
           }
+        } catch (AemImporterException e) {
+        	log.error(e.getMessage(),e.getException());
+        	throw new WorkflowException(e.getMessage(), e.getException());
         } catch (Exception e) {
         	log.error(e.getMessage(),e);
         	throw new WorkflowException(e.getMessage(), e);
-				}
+		}
     }
 	}
 	

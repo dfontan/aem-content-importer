@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_9AF952FFAB474D33970D59AB15C72E3B">
+  <title>Changing the Date Range</title>
+  <shortdesc>By default, the date range is set to the last two months. Change
+	 the range by changing the to and from dates, or select the time range pre-sets.
+	 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <steps id="steps_3F47E4649B9E496DA7B8876C98EC7C6F">
+      <step id="step_A8244DCB10DB489F8DFDDC2119F7E2A0">
+        <cmd>Click 
+			 <uicontrol>show</uicontrol> to refresh the display. 
+		  </cmd>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links>
+    <link href="c_About_the_Data.xml#concept_2D9FEDE8F94A485DAC86D611BFBDC844" type="concept" format="dita" scope="local">
+      <?xm-replace_text About the Data?>
+    </link>
+    <link href="t_Changing_the_Control_Experience.xml#task_0600985520EA4C42A03353A7AA9AB18F" type="task" format="dita" scope="local">
+      <?xm-replace_text Changing the Control Experience?>
+    </link>
+    <link href="t_Changing_the_Comparison_Column.xml#task_AE54E96BAD32457295018542151DEB75" type="task" format="dita" scope="local">
+      <?xm-replace_text Changing the Comparison Column?>
+    </link>
+    <link href="t_Selecting_the_Host_Group.xml#task_1644EEFA401A42E1B76225311BAB3E8F" type="task" format="dita" scope="local">
+      <?xm-replace_text Selecting the Host Group?>
+    </link>
+    <link href="t_Excluding_Extreme_Orders.xml#task_A50092998F1241508FE8C15276146E46" type="task" format="dita" scope="local">
+      <?xm-replace_text Excluding Extreme Orders?>
+    </link>
+    <link href="t_Setting_the_Weekday_Filter.xml#task_8D15814511004DE0AA3B385DB5E81CB3" type="task" format="dita" scope="local">
+      <?xm-replace_text Setting the Weekday Filter?>
+    </link>
+    <link href="t_Remembering_Report_Settings.xml#task_D50311361809443E883C1184B1A20F77" type="task" format="dita" scope="local">
+      <?xm-replace_text Remembering Report Settings?>
+    </link>
+    <link href="t_Downloading_Data_in_a_CSV_File.xml#task_D91406C042C340D2B0A235E51F259DBD" type="task" format="dita" scope="local">
+      <?xm-replace_text Downloading Data in a CSV File?>
+    </link>
+    <link href="t_Pushing_a_Winner.xml#task_F7D69D4BA9FD47B1B37A2BB0AEFE9C3C" type="task" format="dita" scope="local">
+      <?xm-replace_text Pushing a Winner?>
+    </link>
+  </related-links>
+</task>

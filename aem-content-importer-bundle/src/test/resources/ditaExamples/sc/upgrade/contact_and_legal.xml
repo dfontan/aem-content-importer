@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_34A1CA16F2244D42930BB77846A5ABBB"> 
+  <title>Contact and Legal Information</title> 
+  <shortdesc>Information to help you contact Adobe and to understand the legal
+	 issues concerning your use of this product and documentation. 
+  </shortdesc> 
+  <conbody> 
+	 <section id="section_354AC2658BA84A2A96E64C5B2C43B73B"> 
+		<title>Account Support</title> 
+		<p>The Adobe support team is here to: 
+		</p> 
+		<ul id="ul_44D041CBF70F4EC7AB0DC946279B48BB"> 
+		  <li id="li_34FF19FE9E9B4FB4B5ACA5C14E032787"> 
+			 <p>Answer specific product questions 
+			 </p> 
+		  </li> 
+		  <li id="li_59915E7BAC88481B8D3147E7DAF6BFF7"> 
+			 <p>Ensure that you can use the product to its maximum capacity 
+			 </p> 
+		  </li> 
+		  <li id="li_66F95C4F63924C92A1F8EC6F0337202C"> 
+			 <p>Help resolve any technical difficulties you might have 
+			 </p> 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_FA4F5274FDFE4DF7BB079E575877DFC2"> 
+		<title>Service and Billing Information</title> 
+		<p>Depending on your service level, some options described in this manual
+		  might not be available to you. Because each account is unique, refer to your
+		  contract for pricing, due dates, terms, and conditions. If you would like to
+		  add to or otherwise change your service level, or if you have questions
+		  regarding your current service, please contact your Account Support Manager. 
+		</p> 
+	 </section> 
+	 <section id="section_8154D6D712054220A90D85FA8E92933E"> 
+		<title>Feedback</title> 
+		<p>We welcome any suggestions or feedback. Please send comments about the
+		  product to your Account Support Manager. For comments about this manual, use
+		  the 
+		  <uicontrol>Feedback</uicontrol> button on each help topic. 
+		</p> 
+	 </section> 
+	 <section id="section_494D319DFD714DF7BE0326384FC0E5D0"> 
+		<title>Contact Information</title> 
+		<p><b>Corporate address</b> 
+		</p> 
+		<sl> 
+		  <sli>Adobe Systems Inc. 
+		  </sli> 
+		  <sli>3900 Adobe Way
+		  </sli> 
+		  <sli>Lehi, UT 84043
+		  </sli> 
+		</sl> 
+		<p><b>Phone:</b> 1.385.345.0000 
+		</p> 
+		<p><b>Fax:</b> 1.385.345.0001 
+		</p> 
+		<p><b>Toll Free:</b> 1.877.722.7088 (support, billing, and sales) 
+		</p> 
+		<p><b>Support email:</b> clientcare@omniture.com 
+		</p> 
+		<p><b>Sales e-mail:</b> sales@omniture.com 
+		</p> 
+		<p><b>Information email:</b> info@omniture.com 
+		</p> 
+		<p><b>Corporate URL:</b> 
+		  <xref href="http://www.omniture.com" scope="external"
+			format="html">http://www.omniture.com</xref> 
+		</p> 
+		<p><b>Log-in URL: 
+		  </b><xref href="http://my.omniture.com" scope="external"
+		  format="html">http://my.omniture.com</xref> 
+		</p> 
+	 </section> 
+	 <section id="section_A6E1844D4AC2485CADBF6D05116E3D59"> 
+		<title>Legal Information</title> 
+		<sl> 
+		  <sli>© 2012, Adobe 
+		  </sli> 
+		  <sli>All rights reserved. 
+		  </sli> 
+		  <sli>Published by Adobe Systems Inc. 
+		  </sli> 
+		</sl> 
+		<p><xref href="https://my.omniture.com/p/l10n/1.0/terms.html"
+		  scope="external" format="html">Terms of Use</xref> | 
+		  <xref href="http://www.omniture.com/en/privacy"
+			scope="external" format="html">Privacy Center</xref> 
+		</p> 
+		<p>A trademark symbol (®, ™, etc.) denotes an Adobe trademark. 
+		</p> 
+		<p>All third-party trademarks are the property of their respective
+		  owners. Updated Information/Additional Third Party Code Information available
+		  at 
+		  <xref href="http://www.adobe.com/go/thirdparty"
+			scope="external" format="html"><?xm-replace_text http://www.adobe.com/go/thirdparty?></xref>.
+		  
+		</p> 
+		<p>11292012 <!--Replace with publishing date: MMDDYEAR-->
+		</p> 
+	 </section> 
+  </conbody>
+</concept>

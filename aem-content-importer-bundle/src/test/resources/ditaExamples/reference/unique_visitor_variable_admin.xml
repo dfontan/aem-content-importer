@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_A95E9CD508354AB5BBDB4D7141A2F6FF">
+  <title>Unique Visitor Variable</title>
+  <shortdesc>Designates an eVar to contain your unique visitor identifier. This
+	 variable lets you report on customer activity using your own unique identifier.
+	 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Admin tools" />
+    </metadata>
+  </prolog>
+</concept>

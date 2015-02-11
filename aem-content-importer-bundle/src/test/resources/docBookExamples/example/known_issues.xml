@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_A1105FE2EDCC4F9EBC1BC17BF884F3E5">
+  <title>Known Issues in Marketing Cloud and Creative Cloud Asset
+	 Sharing</title>
+  <shortdesc>BETA PROGRAM - Known issues in Marketing Cloud - Creative Cloud
+	 asset sharing.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>asset sharing</keyword>
+        <keyword>Creative Cloud</keyword>
+      </keywords>
+      <othermeta name="solution" content="Marketing Cloud" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>
+      <xref href="https://issues.adobe.com/browse/MAC-20248?jql=labels%20%3D%20mac-cc-testing" format="https" scope="external">Issues</xref> link (internal)
+	 </p>
+    <ul id="ul_7C500B07276C45B1844D728FECBCF29C">
+      <li id="li_903BE5DF645E4233A3665999540A5CEE">
+        <p>
+          <!--https://issues.adobe.com/browse/MAC-20248 MAC-->Moving a shared
+			 folder inside an unshared folder removes the MAC/CC share
+		  </p>
+      </li>
+      <li id="li_2C8B61FE8C9C41F0BD7ACA9E07EA5AC1">
+        <p>
+          <!--<xref href="https://issues.adobe.com/browse/MAC-19844">https://issues.adobe.com/browse/MAC-19844</xref>-->
+			 Moving content from a shared folder into another shared folder is not synced in
+			 the Marketing Cloud.
+		  </p>
+      </li>
+      <li id="li_BF231C89A66E46248DA963849129B6F9">
+        <p>
+          <!--<xref href="https://issues.adobe.com/browse/CQ-21213">https://issues.adobe.com/browse/CQ-21213</xref>-->
+			 MAC - Asset Move Wizard scrolling issue. Resize the browser window until the
+			 grid layout takes enough space to get a vertical scroll bar. Then you can
+			 scroll down and trigger loading of next page.
+		  </p>
+      </li>
+      <li id="li_E55C56AEAAAE4F4EB915382E6AFAE8E4">
+        <p>
+          <!--<xref href="https://issues.adobe.com/browse/CQ-21153">https://issues.adobe.com/browse/CQ-21153</xref>-->
+			 MAC - Asset Move wizard broken when selecting destination.
+		  </p>
+      </li>
+      <li id="li_396ED9600F764850AD5AE128BF6F85A1">
+        <p>
+          <!--<xref href="https://issues.adobe.com/browse/MAC-19733">https://issues.adobe.com/browse/MAC-19733</xref>-->
+			 MAC and CC sharing - cannot share assets with special characters in the
+			 filename.
+		  </p>
+      </li>
+      <li id="li_4A97E311361A49D7B36CC8774FE569E5">
+        <p>MAC - Adding a comment to a shared asset from MAC results in the
+			 comment duplicated (2 or 3 times) on MAC and CC.
+		  </p>
+      </li>
+      <li id="li_0D379531220648C09CE3ACE1761207DD">
+        <p>MAC - cannot edit (crop/rotate) or annotate a shared asset (404s).
+		  </p>
+      </li>
+      <li id="li_A6414FB96E614EF98B83B2A75F41BAE3">
+        <p>MAC - folder/assets deleted when revoking MAC/CC share on a folder.
+		  </p>
+      </li>
+    </ul>
+  </conbody>
+</concept>

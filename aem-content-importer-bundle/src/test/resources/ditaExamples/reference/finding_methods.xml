@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_97B9C67BBAF1453EA7585451A40DB361"> 
+  <title>Finding Methods</title> 
+  <shortdesc>The Finding Methods page identifies how various finding methods
+	 reports receive credit for conversion success events on your site. For example,
+	 if a search engine refers a visitor to your site who makes a purchase, Finding
+	 Methods specify how the search engine receives credit for the referral. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Admin tools"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>
+	 </p> 
+	 <p> 
+		<uicontrol>Analytics</uicontrol> &gt; 
+		<uicontrol>Admin</uicontrol> &gt; 
+		<uicontrol>Report Suites</uicontrol> &gt; 
+		<uicontrol>Edit Settings</uicontrol> &gt; 
+		<uicontrol>Conversion</uicontrol> &gt; 
+		<uicontrol>Finding Methods</uicontrol>. 
+	 </p> 
+	 <section id="section_8B6278DB75224EAB9F49D89A86274E8A"> 
+		<title>Finding Methods Descriptions</title> 
+		<table id="table_8ABC1C9BD63F419082E4C4C69E401526"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="6.76*"/> 
+			 <thead> 
+				<row> 
+				  <entry colname="col1">Element 
+				  </entry> 
+				  <entry colname="col2">Description 
+				  </entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row> 
+				  <entry colname="col1">Name 
+				  </entry> 
+				  <entry colname="col2">The finding method you want to modify 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">Allocation 
+				  </entry> 
+				  <entry colname="col2">Specifies how to apply credit for a
+					 referral. Supported allocation options include: 
+					 <p><uicontrol>Most Recent (Last):</uicontrol> Gives all credit
+						to the last referrer (default). 
+					 </p>
+					 <p><uicontrol>Original Value:</uicontrol> Gives all credit to
+						the first referrer. 
+					 </p>
+					 <p><uicontrol>Linear: 
+						</uicontrol>Divides credit among all referrers equally. 
+					 </p>
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry colname="col1">Expire After 
+				  </entry> 
+				  <entry colname="col2"> 
+					 <ul id="ul_95EB224CAD164E9997B148E08AFA5F9B"> 
+						<li id="li_C240460C21E14AA498D2EA62B9354710"> 
+						  <uicontrol>Visit:</uicontrol> After a specified period of
+						  inactivity; usually about 30 minutes. 
+						</li> 
+						<li id="li_A3AE5438919E44B68DF99BEEA60C44EE"> 
+						  <uicontrol>Page View:</uicontrol> As soon as any page on
+						  your site opens. 
+						</li> 
+						<li id="li_D5E20FEF313E4C5B99E7097CA175761A"> 
+						  <uicontrol>Minute:</uicontrol> After 1 minute of
+						  inactivity. 
+						</li> 
+						<li id="li_7315AA3EDDBB47A2BEA3C173881378A1"> 
+						  <uicontrol>Purchase:</uicontrol> At the time of purchase. 
+						</li> 
+						<li id="li_C0CF07581654472C9C9EC944E6F18164"> 
+						  <uicontrol>Product View:</uicontrol> When a visitor views a
+						  product web page. 
+						</li> 
+						<li id="li_A1B04065150B407491D2EC78EC0DBDF5"> 
+						  <uicontrol>Cart Open:</uicontrol> When a visitor opens a
+						  new online shopping cart. 
+						</li> 
+						<li id="li_2AA50C6B9CB14500B67909CDF2AA700C"> 
+						  <uicontrol>Cart Checkout:</uicontrol> When a visitor checks
+						  out using an online shopping cart. 
+						</li> 
+						<li id="li_F58CE6FB8DCE4BE4927FFCB35A6D8E31"> 
+						  <uicontrol>Cart Add:</uicontrol> When a visitor adds a
+						  product to an online shopping cart. 
+						</li> 
+						<li id="li_AD7C846F46604FC48E0919ACB7515E14"> 
+						  <uicontrol>Cart Remove:</uicontrol> When a visitor removes
+						  a product from an online shopping cart. 
+						</li> 
+						<li id="li_EB66E0563F564C9F985BE922DABD0A56"> 
+						  <uicontrol>Cart Open:</uicontrol> When a visitor views the
+						  contents of an online shopping cart. 
+						</li> 
+					 </ul> 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+		<note>All Finding Methods expire when the visit ends. If you choose to
+		  Expire After a different event (for example, Cart Checkout), the Finding Method
+		  expires when Cart Checkout occurs during the visit. If a Cart Checkout does not
+		  occur during the visit, the Finding Method still expires when the visit ends. 
+		</note> 
+	 </section> 
+  </conbody> 
+</concept>

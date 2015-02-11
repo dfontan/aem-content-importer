@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_1B1D029FECD7411AB4AD85F1F5891017" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Move an Offer to a Different Folder</title>
+  <shortdesc class="- topic/shortdesc ">You can move an offer from one folder
+	 to another. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <steps id="steps_A11C1DD5589642B790B9C680788CB423" class="- topic/ol task/steps ">
+      <step id="step_CCBEB8C8D629426BB852FE338B678273" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Select 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Offers</uicontrol> &gt;
+			 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">List</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_1E57CFAEC23548B2BF7E64F5199CA43C" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Select the folder or offer you want
+			 to move. 
+		  </cmd>
+      </step>
+      <step id="step_2C48AC14970640EB865043A86FAFF5E4" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Drag the offer and drop it on the
+			 folder where you want to put it. 
+		  </cmd>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links class="- topic/related-links ">
+    <link href="t_Searching_for_an_Offer.xml#task_81F885D644CD42ACAABB652C351ED987" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Search for an Offer?>
+    </link>
+    <link href="t_Creating_an_Offer_Folder.xml#task_1DD43B0BEDB546F4B33353117F3EBDD9" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Create an Offer Folder?>
+    </link>
+    <link href="t_Deleting_a_Folder_or_Offer.xml#task_C1EFBC54577A468296F0B3AD631CAC2D" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Delete a Folder or Offer?>
+    </link>
+    <link href="t_Copying_an_Offer.xml#task_A924809751D44F1C96B00FEDC5F7ED8E" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Copying an Offer?>
+    </link>
+    <link href="t_Editing_an_Offer.xml#task_8689B6D5BAEC41C2BB33D7AC21C2396A" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Editing an Offer?>
+    </link>
+  </related-links>
+</task>

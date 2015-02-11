@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_FDE0B7ED64684A3EB6D5F757F2750BD0" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Set the Percentage of Visitors Included in a
+	 Campaign</title>
+  <shortdesc class="- topic/shortdesc ">The percentage of visitors to be
+	 included in the campaign or test defines the total percentage of your
+	 qualifying visitors who will see one of the experiences of this campaign. The
+	 remaining percentage of users will see the default content for the mbox. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <context id="context_7F5E6FA44C42441DA8D424A820894B36" class="- topic/section task/context ">
+      <p class="- topic/p ">For example, if you set percentage to 70%, and 100
+		  customers qualify for the targeting conditions of this campaign. 
+		</p>
+      <p class="- topic/p ">
+        <ul id="ul_EC5C9AF079AF49529CD7327465696ACB" class="- topic/ul ">
+          <li id="li_12F3A7D8FAAC43A49B6928619BB60D88" class="- topic/li "> 70
+			 customers will see the one of the experiences (either offer A, B, C, etc.) 
+		  </li>
+          <li id="li_EEDF79B2D1E94B40ADCCA57713FA5B66" class="- topic/li "> 30
+			 customers will see default content. 
+		  </li>
+        </ul>
+      </p>
+      <p class="- topic/p ">
+        <note class="- topic/note ">When you create a new campaign or test, the
+			 default setting is for 100% of visitors to included. 
+		  </note>
+      </p>
+      <p class="- topic/p ">Visitors excluded from the campaign are excluded
+		  from that particular campaign for the duration of that session and all future
+		  sessions. 
+		</p>
+      <p class="- topic/p ">You might also choose to target a percentage of
+		  your traffic to an experience. At the experience level, click on the population
+		  target icon. An option to choose percentage appears. 
+		</p>
+    </context>
+    <steps id="steps_712EDF2A4B484B21B5CE0EA2913FA7BF" class="- topic/ol task/steps ">
+      <step id="step_612B6FAFE7854D8EAA53165BD126C81D" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Edit or create the campaign whose
+			 percentage you want to set. 
+		  </cmd>
+      </step>
+      <step id="step_C708C4692AD842428A2E95CD74538FC0" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Target this
+				campaign</uicontrol>. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p "></p>
+        </stepresult>
+      </step>
+      <step id="step_FADEB68133834152B5B88D909DAC5206" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Set the percentage of visitors to
+			 include in the test. 
+		  </cmd>
+      </step>
+      <step id="step_E0247D4CA78240CA9B1B57D67703F5F6" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Save</uicontrol> or 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Save &amp;
+				Approve</uicontrol>. 
+		  </cmd>
+      </step>
+    </steps>
+  </taskbody>
+</task>

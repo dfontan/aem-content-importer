@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_A833FCB79D0746EB891CA50B82C3DF38">
+  <title>Category Section of the Product String</title>
+  <shortdesc>If you provided a category section in your product string, version
+	 14 made a 1:1 association between the product and category. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports and analytics" />
+      <othermeta name="subtopic" content="Upgrading from V14" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>For example: 
+	 </p>
+    <p>
+      <codeph>s.products=category;product;quantity;price;...</codeph>
+    </p>
+    <p>In Version 14, the first category associated with a product in a
+		calendar month would be tied to that product for the entire month. 
+	 </p>
+    <p>Version 15 allows multiple categories per product. If you have products
+		in multiple categories in the product string, you might see different values in
+		the category report than you did before. 
+	 </p>
+  </conbody>
+</concept>

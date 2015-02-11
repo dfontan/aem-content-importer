@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_52E7EF6F65BD49E780084622D0420C00">
+  <title>Optimizing your Implementation</title>
+  <shortdesc>
+    <keyword>Analytics</keyword> deployment is organized into three major
+	 steps. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Troubleshooting" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <ol id="ol_7B1D03D7A7D64AEC9457C35EE58655A2">
+      <li id="li_3F8619EAE17B4EB985EC1A27686C8ADD">This involves pasting a
+		  snippet of HTML code onto each page (or page template) of a website. The HTML
+		  code snippet is very small (400 to 1,000 bytes) and contains JavaScript
+		  variables and other identifiers that facilitate the data collection process. 
+		</li>
+      <li id="li_D745DD3B95F543CBAF124EAAC1847E58"> The code snippet calls a
+		  JavaScript library file, which contains JavaScript functions specific to 
+		  <keyword>Analytics</keyword> used during metrics collection. If the 
+		  <keyword>Analytics</keyword> code is implemented correctly, the time
+		  required for the browser to execute the JavaScript library file is usually
+		  negligible. 
+		</li>
+      <li id="li_B567EEB6F131473DBD153EF32EEDD99C">The library file makes an
+		  image request to an Adobe data collection server. The server collects the data
+		  being submitted and returns a 1x1 transparent image to the visitor's browser.
+		  This third step adds an insignificant increment to the total page download
+		  time. 
+		</li>
+    </ol>
+    <p>
+      <note> Customers can take additional steps to minimize 
+		  <keyword>Analytics</keyword> overhead. 
+		</note>
+    </p>
+  </conbody>
+</concept>

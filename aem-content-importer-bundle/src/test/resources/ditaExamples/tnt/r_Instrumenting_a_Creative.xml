@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_55FBE27263584B0182CC08743B0E852A"
+ xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"
+ ditaarch:DITAArchVersion="1.1"
+ domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)"
+ class="- topic/topic       reference/reference "> 
+  <title class="- topic/title ">Instrument a Creative</title> 
+  <shortdesc class="- topic/shortdesc ">You must instrument the creative you
+	 want to show in your ad. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Target"/> 
+		<othermeta name="topic" content="Advanced"/> </metadata>
+  </prolog> 
+  <refbody class="- topic/body        reference/refbody "> 
+	 <refsyn id="refsyn_172F533045A6413C9F08289808BF6E57"
+	  class="- topic/section     reference/refsyn "> 
+		<p class="- topic/p ">To get you started, starter FLAs explain how to
+		  develop dynamic ads. An example of their use is available from the download
+		  link under the Display Ad Campaign menu. If you do not see this menu, contact
+		  your account representative. 
+		</p> 
+		<p class="- topic/p ">This section contains code examples that show
+		  different aspects when implementing dynamic creative. The code snippets are
+		  included for illustration purposes only. Refer to the example FLA for the
+		  supported version. 
+		</p> 
+		<p class="- topic/p "> 
+		  <b class="+ topic/ph hi-d/b ">Privacy</b> 
+		</p> 
+		<p class="- topic/p ">Consumer privacy is an important consideration when
+		  using targeted advertising. An opt-out ad template is provided to comply with
+		  the DAA Self Regulatory principles. To use this template, you must purchase
+		  rights from the DAA. Please refer to DAA.com for more details. For a
+		  comprehensive implementation of Opt Out, you should use a DAA compliant vendor
+		  such as Evidon, Truste or DoubleVerify. To show you how your customers would be
+		  able to opt out of behavioral advertising within this template, here is an
+		  example. 
+		</p> 
+		<p class="- topic/p ">Within the provided FLA template, the following
+		  snippet of code includes the power-I icon. 
+		</p> 
+		<p class="- topic/p "> 
+		  <codeblock outputclass="syntax html">/ Add opt out option to right-click menu.
+
+function callOptOutMethod() {
+
+myConnection.optOut();
+
+}
+
+var myMenu:ContextMenu = new ContextMenu();
+
+var optOutOption:ContextMenuItem = new ContextMenuItem("Opt out of Behavioral Advertising", 
+callOptOutMethod);
+
+myMenu.customItems.push(optOutOption);
+
+_root.menu = myMenu;</codeblock> 
+		</p> 
+		<p class="- topic/p "> 
+		  <b class="+ topic/ph hi-d/b ">Default Content</b> 
+		</p> 
+		<p class="- topic/p ">If the server cannot be contacted for some reason
+		  (very rare) or if your Display Campaign is deactivated while your tags are live
+		  on the web, your ad needs to be able to serve up default content. This is
+		  accomplished using the function below. 
+		</p> 
+		<p class="- topic/p "> 
+		  <codeblock outputclass="syntax html">//Set the default XML property.
+
+var myDefaultXML:String =
+
+"&lt;offer&gt;\n" +
+
+"  &lt;sub_copy&gt;FALL PREVIEW&lt;/sub_copy&gt;\n" +
+
+"  &lt;show_women_image&gt;image1​&lt;/show_women_image&gt;\n" +
+
+"  &lt;landing_page&gt;http://www.jjesquire.com&lt;​/landing_page&gt;\n" +
+
+"&lt;/offer&gt;";
+
+myFlashbox.defaultXML = new XML(myDefaultXML);</codeblock> 
+		</p> 
+		<p class="- topic/p "> 
+		  <b class="+ topic/ph hi-d/b ">Dynamic Creative</b> 
+		</p> 
+		<p class="- topic/p ">Your FLA defines a XML schema that represents the
+		  customizable attributes in the ad. This schema is read when you upload your
+		  FLA. It then allows you to define variants. The visitor is matched to the
+		  appropriate variant and returns that to the ad for rendering. 
+		</p> 
+		<p class="- topic/p "> 
+		  <codeblock outputclass="syntax html">// Define a function that will be used to consume the XML returned from Test&amp;Target.
+
+function renderDisplayAd(xmlResponse:XML) {
+
+var _xmlOffer:XMLNode = xmlResponse.firstChild;
+
+var _subCopy:String = _xmlOffer.childNodes[0]​.childNodes[0].nodeValue.toString();
+
+subCopy._visible = true;
+
+subCopy.text = _subCopy;</codeblock> 
+		</p> 
+		<p class="- topic/p "> 
+		  <b class="+ topic/ph hi-d/b ">Registering Clicks</b> 
+		</p> 
+		<p class="- topic/p ">The number of impressions (via the flashbox) and
+		  conversions are reported as part of the campaign setup. To report on clicks and
+		  other success metrics, register another flashbox for the click. 
+		</p> 
+		<p class="- topic/p "> 
+		  <codeblock outputclass="syntax html">//Create a flashbox to capture the impression and another to capture the click.
+
+// Create the Flashbox with "Flashbox_example" as the mbox name.
+
+var myFlashbox:Flashbox = myConnection.addFlashbox("jjesquiredemo1flashbox");
+
+var myFlashbox_Click:Flashbox = myConnection.addFlashbox​("jjesquiredemo1flashbox_click”);</codeblock> 
+		</p> 
+		<p class="- topic/p "> 
+		  <b class="+ topic/ph hi-d/b "> Registering Clicks with Ad Server</b> 
+		</p> 
+		<p class="- topic/p ">When 3rd party ad servers receive an ad request
+		  from a 1st party ad server (publisher or network), the ad request looks up the
+		  advertiser and creative that is appropriate for the current request. The
+		  advertiser and the creative chosen can depend on a number of factors such as
+		  yield optimization and audience targeting. When the ad server returns the
+		  requisite SWF that is used for the ad, it is possible to configure the ad
+		  server to pass a flashvar called clickTAG into the SWF. Passing this clickTAG
+		  is required to register the click with the ad server and redirect the request
+		  to a requisite landing page. Begin this process with the following code: 
+		</p> 
+		<p class="- topic/p "> 
+		  <codeblock outputclass="syntax html">//Insert ClickTags into flashbox.
+
+if (_landingPage.indexOf("http") == 0) {
+
+_root.clickTag = myFlashbox.getModifiedClickTagURL​(_root.clickTag, _landingPage);
+
+}</codeblock> 
+		</p> 
+		<p class="- topic/p "> 
+		  <b class="+ topic/ph hi-d/b ">Create a Display Ad Campaign in
+			 Test&amp;Target</b> 
+		</p> 
+		<p class="- topic/p ">To create a display ad campaign, see 
+		  <xref
+		  href="t_Creating_a_Display_Ad_Campaign.xml#task_D0E8E3D39FBC434BB0FD823BBFF3EDC5"
+		  type="task" format="dita" scope="local" class="- topic/xref ">Creating a
+			 Display Ad Campaign</xref>. Each section of the campaign setup is addressed
+		  below: 
+		</p> 
+		<p class="- topic/p "> 
+		<ol id="ol_78A6815DC260477F84A64C5A5EF07725" class="- topic/ol "> 
+		  <li id="li_73B2444754164AE885976073BD9A4206" class="- topic/li ">
+			 Upload SWF. 
+			 <p class="- topic/p ">Upload the SWF files (one per ad size) you
+				created using the instrumentation techniques described into the Display Ad
+				campaign. You only have to target once to target across various ad sizes. 
+			 </p>
+		  </li> 
+		  <li id="li_54FBE34FB2FC4FEDA009A2AB94E1E698" class="- topic/li "> Pick
+			 locations. 
+			 <p class="- topic/p ">In the Pick Locations section, be sure to
+				choose the mboxes on your site that have a creative that should to be
+				synchronized with the creative in the offer. This typically leads to a better
+				conversion rate because the messaging is synchronized across channels. Be sure
+				to include the mbox that identifies the visitor as a candidate for retargeting,
+				as well as an 
+				<codeph class="+ topic/ph pr-d/codeph ">orderConfirmMbox</codeph>. 
+			 </p>
+		  </li> 
+		  <li id="li_A9E04335162E49C4A57088C4C57BD9D2" class="- topic/li ">
+			 Create experiences. 
+			 <p class="- topic/p ">You can use token replace syntax in the dynamic
+				fields. For example, the 
+				<wintitle class="+ topic/keyword ui-d/wintitle ">subCopy</wintitle>
+				field can take the syntax 
+				<codeph class="+ topic/ph pr-d/codeph ">${user.testAttribute
+				  default="seafoam green" show_blank="true"}</codeph>. This technique uses
+				behavioral data for dynamic ads instead of hard coding the variations. 
+			 </p>
+			 <p class="- topic/p ">For a retargeting campaign, choose the audience
+				that you want to find on the network or exchange. To do this, set up an mbox on
+				the site that reflects a point in your funnel where your audience is considered
+				to be in-market for your products. Map an offer that contains a retargeting
+				pixel for the ad network to this location. When the visitor visits the mbox,
+				the browser receives a cookie from the ad network that tracks the visitor as he
+				browses the web. Consequently, your 
+				<codeph class="+ topic/ph pr-d/codeph ">orderConfirmMbox</codeph>
+				calls the ad network 
+				<codeph class="+ topic/ph pr-d/codeph ">unpixel</codeph> function
+				so an ad is not shown to a converted visitor. 
+			 </p>
+		  </li> 
+		  <li id="li_57A567B6CC8041B69E560C056BD2749E" class="- topic/li "> Set
+			 conversion metrics. 
+			 <p class="- topic/p ">In the Conversion Metrics section, use the
+				impression and click<uicontrol class="+ topic/ph ui-d/uicontrol ">
+				  flashboxes</uicontrol> to implement your attribution rules. For example, you
+				might want to see a report that shows the number of times a user viewed your ad
+				and the number of times that user clicked your ad. This could be combined with
+				conversion data to provide your analysis team more insight into how your
+				advertising was consumed. 
+			 </p>
+		  </li> 
+		  <li id="li_A9E9E7028DF64ECE96306C2537B14CFF" class="- topic/li ">
+			 Define segments. 
+			 <p class="- topic/p ">In the segments section, set up reporting
+				segments that match your goals. For example, you might want a report filtered
+				by Geo, Demo, or Intent behavior. Geo and Demo information might be captured
+				using 1st party data (passed using mbox or captured using profile scripts) or
+				3rd party data (either built into the tool, such as Digital Envoy, or passed in
+				using the REST based profile passing API). Or, perhaps you’d like to see
+				whether the ad size or publisher affected the ad consumption and conversion
+				passed using the flashbox APIs. In all cases, you need to make sure that the
+				data you want to segment on has been captured. 
+			 </p>
+			 <p class="- topic/p ">As an example, consider capturing ad size or
+				publisher name. This type of data can be passed from the ad during ad
+				impression time using flashbox APIs. To pass ad size and network data into the
+				flashbox as parameters, you can add an mbox parameter to a segment to filter it
+				within the report: 
+			 </p>
+			 <p class="- topic/p ">
+				<codeblock outputclass="syntax html">var myFlashbox:Flashbox = myConnection.addFlashbox("jjesquiredemo1flashbox");
+
+My_Flashbox.addParameter(“size”, “300x250”);
+
+var myFlashbox_Click:Flashbox = myConnection.addFlashbox("jjesquiredemo1flashbox");
+
+My_Flashbox_Click.addParameter(“network”, “Rubicon Project”);</codeblock>
+			 </p>
+			 <p class="- topic/p ">Using this technique necessitates additional
+				SWF creation for each publisher and size combination, instead of just size. 
+			 </p>
+		  </li> 
+		</ol> 
+		</p> 
+	 </refsyn> 
+  </refbody> 
+  <related-links class="- topic/related-links "> 
+	 <link
+	 href="c_Traficking.xml#concept_7349260CB0704569A205772740204663" type="concept"
+	 format="dita" scope="local" class="- topic/link "> <?xm-replace_text Trafficking?>
+	 </link> 
+	 <link
+	 href="r_Ad_Ecosystem_Compatibility.xml#reference_D0B418E9310F4CFCBA900CC0E4978EE0"
+	 type="reference" format="dita" scope="local" class="- topic/link "> <?xm-replace_text Ad Ecosystem Compatibility?>
+	 </link> 
+	 <link href="c_Reporting.xml#concept_530661BAB559477AB3A1F8DCC0DB185F"
+	 type="concept" format="dita" scope="local" class="- topic/link "> <?xm-replace_text Reporting About Dynamic Ads?>
+	 </link> 
+  </related-links> 
+</reference>

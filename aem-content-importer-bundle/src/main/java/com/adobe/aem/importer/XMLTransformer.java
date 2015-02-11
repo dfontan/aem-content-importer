@@ -11,6 +11,8 @@ import java.util.Properties;
 
 import javax.jcr.Node;
 
+import com.adobe.aem.importer.exception.AemImporterException;
+
 /**
  * XML Transformer Interface
  */
@@ -40,6 +42,6 @@ public interface XMLTransformer {
 	 * @param properties custom properties configuration
 	 * @throws Exception
 	 */
-	public void transform(Node srcPath, Properties properties) throws Exception;
+	public void transform(Node srcPath, Properties properties) throws AemImporterException;
 	
 }

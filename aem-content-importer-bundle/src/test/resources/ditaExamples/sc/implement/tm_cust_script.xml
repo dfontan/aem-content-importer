@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_03942644B9A14BF8AE57AE5042418882">
+  <title>Remote Script</title>
+  <shortdesc>Remote scripts are loaded by providing the full URL to the script.
+	 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Tag management" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Remote Scripts can be loaded synchronously or asynchronously. If you are
+		loading frameworks, such as jQuery, that you want to use throughout the page,
+		we recommending loading these scripts synchronously. This ensures that any
+		functions defined are available to other elements on the page. 
+	 </p>
+    <p>Functions and other code defined in script tags cannot be used in the 
+		<codeph>&lt;head&gt;</codeph> element on the page since that loads before
+		the page code. 
+	 </p>
+  </conbody>
+</concept>

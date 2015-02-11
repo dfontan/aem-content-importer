@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_3CBBE252279C43069030EFBBD7D26376">
+  <title>New Report Suite</title>
+  <shortdesc>You can create a new report suite by selecting either a
+	 pre-defined template, or use one of your existing report suites to serve as a
+	 general model. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Admin tools" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Descriptions of the elements used when 
+		<xref href="t_create_a_report_suite.xml#task_67033B9710CB49F9B71A4DE374A538A0" format="dita" scope="local">creating a report suite</xref>. 
+	 </p>
+    <table id="table_F739FBD8DB8D409E916F12F61C5953D0">
+      <tgroup cols="2">
+        <colspec colnum="1" colname="col1" colwidth="*" />
+        <colspec colnum="2" colname="col2" colwidth="*" />
+        <thead>
+          <row>
+            <entry colname="col1">Element 
+				</entry>
+            <entry colname="col2">Description 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry colname="col1">
+              <wintitle>Report Suite ID 
+				  </wintitle>
+            </entry>
+            <entry colname="col2">
+              <p>Specifies a unique ID that can contain only alphanumeric
+					 characters. This ID cannot be changed after it is created. Adobe sets the
+					 required ID prefix. Contact your account manager or Customer Care to change the
+					 prefix value. 
+				  </p>
+              <p>When creating multiple report suites, ensure that the naming
+					 convention you use guarantees unique report suite IDs. 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <wintitle>Site Title</wintitle>
+            </entry>
+            <entry colname="col2">Identifies the report suite in 
+				  <wintitle>Admin Tools</wintitle>. This title is also used in the 
+				  <wintitle>Report Suite</wintitle> drop-down list in the suite
+				  header. 
+				</entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <wintitle>Time Zone</wintitle>
+            </entry>
+            <entry colname="col2">Schedules events and time stamp data. 
+				</entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <wintitle>Base URL</wintitle>
+            </entry>
+            <entry colname="col2">(Optional) Defines the base domain for the
+				  report suite. This URL functions as an internal URL filter if you do not
+				  explicitly define internal URL filters for the report suite. 
+				</entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <wintitle>Default Page</wintitle>
+            </entry>
+            <entry colname="col2">
+              <p>(Optional) Strips occurrences of the 
+					 <wintitle>Default Page</wintitle> value from URLs it
+					 encounters. If your 
+					 <wintitle>Most Popular Pages</wintitle> report contains URLs
+					 rather than page names, this setting prevents multiple URLs for the same web
+					 page. 
+				  </p>
+              <p>For example, the URLs<filepath> http://mysite.com</filepath>
+					 and 
+					 <filepath>http://mysite.com/index.html</filepath> are typically
+					 the same page. 
+					 You can remove extraneous
+					 filenames so that both these URLs show up as 
+					 <filepath>http://mysite.com</filepath> in your reports. 
+				  </p>
+              <p>If you do not set this value, 
+					 Analytics automatically removes the
+					 following filenames from URLs: 
+					 <filepath>index.htm</filepath>, 
+					 <filepath>index.html</filepath>, 
+					 <filepath>index.cgi</filepath>, 
+					 <filepath>index.asp</filepath>, 
+					 <filepath>default.htm</filepath>, 
+					 <filepath>default.html</filepath>, 
+					 <filepath>default.cgi</filepath>, 
+					 <filepath>default.asp</filepath>, 
+					 <filepath>home.htm</filepath>, 
+					 <filepath>home.html</filepath>, 
+					 <filepath>home.cgi</filepath>, and<filepath>
+						home.asp</filepath>. 
+				  </p>
+              <p>To disable filename stripping, specify a Default Page value
+					 that never occurs in your URLs. 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <p>Go Live Date 
+				  </p>
+            </entry>
+            <entry colname="col2">Informs Adobe the date that you expect this
+				  report suite to become active. If your deployment schedule changes, provide an
+				  updated traffic estimate using the 
+				  <wintitle>Permanent Expected Traffic</wintitle> tool in 
+				  <xref href="traffic_management.xml#concept_8BD651EE8B84434CB4D6308BC6C01B79" format="dita" scope="local">Traffic Management</xref>. 
+				</entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <wintitle>Estimated Page Views Per Day</wintitle>
+            </entry>
+            <entry colname="col2">Identifies the estimated number of page views
+				  you expect this report suite to support in a day. Large traffic volumes require
+				  a longer approval process. To avoid processing delays, be as accurate as
+				  possible with this estimate. 
+				</entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <wintitle>Base Currency</wintitle>
+            </entry>
+            <entry colname="col2">
+              <p>Specifies the default currency used to store all monetary
+					 data. 
+					 Analytics reporting converts transactions in
+					 other currencies to the base currency, using the current conversion rate at the
+					 time it receives the data. 
+				  </p>
+              <p> 
+					 Analytics reporting uses the 
+					 <varname>currencyCode</varname> JavaScript variable to identify
+					 the currency of a given transaction. 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <wintitle>Disable Multi-byte Character Support 
+				  </wintitle>
+            </entry>
+            <entry colname="col2">
+              <p>Disables multibyte character support for the report suite. If
+					 you disable multibyte character support, the system assumes that data is in
+					 ISO-8859-1 format. Web pages must specify their character set in the 
+					 <varname>charSet</varname> JavaScript variable. 
+				  </p>
+              <p>Multibyte character support stores characters in the report
+					 suite using UTF-8. Upon receipt, the system converts data from your web page's
+					 character set to the UTF-8 character set, so you can use any language in your
+					 marketing reports. 
+				  </p>
+              <p>Contact your Account Manager or Customer Care to change the
+					 multibyte character support for an existing report suite. 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <wintitle>Activate Ad Hoc Analysis for this suite</wintitle>
+            </entry>
+            <entry colname="col2">Enables viewing this report suite when you
+				  perform ad hoc analysis. 
+				</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </conbody>
+</concept>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_8ABA90D4266B4F60992356D9272460D2">
+  <title>Conversions and Averages Report</title>
+  <shortdesc>
+    Displays revenue based on
+	 specified events, and shows drop-out average from event to event. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports" />
+    </metadata>
+  </prolog>
+  <conbody></conbody>
+</concept>

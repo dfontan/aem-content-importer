@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_3090D1DBC136417496FD11CFAEB40BF4">
+  <title>Exit Link</title>
+  <shortdesc>Any link that takes a visitor away from your site.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="subtopic" content="Glossary" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Related definitions:
+	 </p>
+    <p>
+      <b>Exit Page</b>: The page that contains the exit link.
+	 </p>
+    <p>
+      <b>Exit Point</b>: The page from which a visitor leaves your site.
+	 </p>
+    <p>
+      <b>Exit Site Sections</b>: The site section from which a visitor leaves
+		your site.
+	 </p>
+  </conbody>
+</concept>

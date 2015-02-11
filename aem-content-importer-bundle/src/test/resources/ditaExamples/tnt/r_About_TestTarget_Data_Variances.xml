@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd"[]>
+<reference id="reference_5455C81A69774A6389E3EA998DC1ACB9" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic       reference/reference ">
+  <title class="- topic/title ">About Data Variances</title>
+  <shortdesc class="- topic/shortdesc ">Target data may vary from data reported
+	 by analytics software such as Adobe Analytics and Clicktracks. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <refsyn id="refsyn_C8AA408126B74413825ECE2E833F02E1" class="- topic/section     reference/refsyn ">
+      <p class="- topic/p ">Reasons for data variance include: 
+		</p>
+      <p class="- topic/p ">
+        <ul id="ul_924CF392EE5B4ADEBC3F45C28FACDD32" class="- topic/ul ">
+          <li id="li_6927D736836F433A8F16085B15197398" class="- topic/li ">
+			 Target does not include a visitor in campaign data if the visitor's browser has
+			 cookies disabled, or JavaScript is disabled. 
+			 <p class="- topic/p ">Each visitors browser may vary in acceptance of
+				cookies and JavaScript and cookies. For example, in Internet Explorer the
+				default when privacy settings are set to high, is to disable JavaScript
+				preventing the visitor from seeing the campaign or being counted. 
+			 </p></li>
+          <li id="li_E7C3A4AC722D409DA94C30E68D70A07D" class="- topic/li ">
+			 Target does not report on visitors who fail to enter the campaign because they
+			 do not meet a targeting condition. 
+		  </li>
+          <li id="li_AE4AC22F7F7A4A83895C8BB2317D526D" class="- topic/li "> Once
+			 converted, a returning visitor will be counted as a new visitor in Target
+			 reports. This allows him or her to convert again, giving you a more accurate
+			 picture of an experience's impact on total conversions. 
+		  </li>
+        </ul>
+      </p>
+      <p class="- topic/p ">For additional information about using Target data
+		  in Analytics, see 
+		  <xref href="c_Viewing_Campaigns_and_Experiences_in_SiteCatalyst_Reports.xml#concept_943F805CC80848649FF8D64A193BAFC2" type="concept" format="dita" scope="local" class="- topic/xref "><?xm-replace_text Viewing Campaigns and Experiences in SiteCatalyst Reports?></xref>.
+		  
+		</p>
+    </refsyn>
+  </refbody>
+  <related-links class="- topic/related-links ">
+    <link href="c_Understanding_Expected_Data_Variances.xml#concept_C624EC0C0BDE40A79546BE9D86F80C5D" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Understanding Expected Data Variances?>
+    </link>
+    <link href="t_Compare_TestTarget_Data_with_Analytics_Package_Data.xml#task_6C24E4C7932342D1A6B090A679A9FE95" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Compare Test&Target Data with Analytics Package Data?>
+    </link>
+    <link href="t_Capture_Data_Directly_to_Your_Analytics_Package.xml#task_0B86F8B73A5649EA9413FAC8EC47E432" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Capture Data Directly to Your Analytics Package?>
+    </link>
+  </related-links>
+</reference>

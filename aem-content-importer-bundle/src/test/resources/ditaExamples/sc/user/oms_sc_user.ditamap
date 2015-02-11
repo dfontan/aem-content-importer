@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd" [                                                          ]>
+<!-- Created with XMetaL (http://www.xmetal.com) -->
+<map id="map_14AFAA9D6B894C09A6D8EFC1D60BD22F" scope="local">
+	<title>Marketing Reports and Analytics Help</title>
+	<topicref format="dita" href="home.xml" navtitle="Marketing Reports and Analytics Interface Help" scope="local"/>
+	<topicref format="dita" href="getting_started.xml" navtitle="Getting Started" scope="local" type="concept">
+		<topicref format="dita" href="requirements.xml" locktitle="no" navtitle="Browser and System Requirements" scope="local"/>
+		<topicref format="dita" href="login.xml" navtitle="Logging In to Marketing Reports and Analytics" scope="local" type="concept">
+			<topicref format="dita" href="t_login_standard.xml" navtitle="Logging In Using a Standard Login" scope="local" type="task"/>
+			<topicref format="dita" href="t_login_sso.xml" navtitle="Logging In Using Single Sign-On" scope="local" type="task"/>
+		</topicref>
+		<topicref format="dita" href="t_running_report.xml" navtitle="Run a report" scope="local" type="task"/>
+		<topicref format="dita" href="t_acct_info.xml" navtitle="Edit a user's account settings" scope="local" type="topic"/>
+		<topicref format="dita" href="t_changing_language.xml" navtitle="Change the interface language" scope="local" type="task"/>
+	</topicref>
+	<topicref format="dita" href="overview.xml" navtitle="Overview of the Reporting Interface" scope="local" type="concept">
+		<topicref format="dita" href="overview_data_collection.xml" navtitle="About Data Collection" scope="local" type="concept"/>
+		<topicref format="dita" href="interface.xml" navtitle="Reports &amp; Analytics Interface Features" scope="local" type="concept"/>
+		<topicref format="dita" href="reports_descriptions.xml" navtitle="Reports Menu" scope="local" type="concept"/><topicref format="dita" href="c_improved_navigation.xml" navtitle="Marketing Cloud Menu" scope="local"><topicmeta><navtitle/></topicmeta></topicref>
+		<topicref format="dita" href="report_overview.xml" navtitle="Report Features" scope="local"/>
+		<topicref format="dita" href="overview_common_terms.xml" navtitle="Common Terms" scope="local" type="concept"/>
+		<topicref format="dita" href="app_ios.xml" navtitle="Adobe Analytics for iOS" scope="local" type="concept"/>
+	</topicref>
+	<topicref format="dita" href="reports.xml" navtitle="Report Types" scope="local" type="concept">
+		<topicref format="dita" href="t_reports_ranked.xml" navtitle="Run a ranked report" scope="local" type="task"/>
+		<topicref format="dita" href="t_reports_trended.xml" navtitle="Run a trended report" scope="local" type="task"/>
+		<topicref format="dita" href="t_reports_conversion_funnel.xml" navtitle="Run a Conversion Funnel report" scope="local" type="task"/>
+		<topicref format="dita" href="t_reports_fallout.xml" navtitle="Run a Fallout report" scope="local" type="task"/>
+		<topicref format="dita" href="t_reports_page_flow.xml" navtitle="Run a Page Flow report" scope="local" type="task"/>
+		<topicref format="dita" href="t_reports_funnel.xml" navtitle="Run a Funnel report" scope="local" type="task"/>
+		<topicref format="dita" href="t_reports_marketing_channel.xml" navtitle="Run a marketing channel report" scope="local" type="task"/>
+		<topicref format="dita" href="t_anomaly_view.xml" navtitle="Run an Anomaly Detection report" scope="local">
+			<topicref format="dita" href="t_anomaly_config.xml" navtitle="Setting up Anomaly Detection" scope="local"/>
+		</topicref>
+		<topicref format="dita" href="reports_realtime.xml" navtitle="Run a Real-Time report" scope="local"/>
+	</topicref>
+	<topicref format="dita" href="reports_customize.xml" navtitle="Customizing Reports" scope="local" type="concept">
+		<topicref format="dita" href="t_reports_custom.xml" navtitle="Create a custom report" scope="local" type="task"/>
+		<topicref format="dita" href="t_reports_graphs.xml" navtitle="Change report graphs" scope="local" type="task"/>
+		<topicref format="dita" href="t_reports_copygraph.xml" navtitle="Copy a report graph" scope="local" type="task"/>
+		<topicref format="dita" href="t_reports_edit_overview.xml" navtitle="Configure an overview report" scope="local" type="task"/>
+		<topicref format="dita" href="t_reports_select_date.xml" navtitle="Select a date or date range" scope="local" type="task"/>
+		<topicref format="dita" href="breakdowns.xml" navtitle="Breakdowns" scope="local">
+			<topicref format="dita" href="t_reports_breakdown.xml" navtitle="Run a breakdown report" scope="local" type="task"/>
+		</topicref>
+		<topicref format="dita" href="subrelations.xml" navtitle="Subrelations" scope="local" type="concept"/>
+		<topicref format="dita" href="t_reports_filter_options.xml" navtitle="Filtering Report Data" scope="local" type="task">
+			<topicref format="dita" href="t_reports_filter_specific.xml" navtitle="Create report-specific filters" scope="local" type="task"/>
+			<topicref format="dita" href="t_reports_correlation_filter.xml" navtitle="Add a correlation filter" scope="local" type="task"/>
+		</topicref>
+		<topicref format="dita" href="t_reports_comparing_dates.xml" navtitle="Compare dates" scope="local" type="task"/>
+		<topicref format="dita" href="t_reports_graph_percent.xml" navtitle="Display a percent as a graph" scope="local" type="task"/>
+		<topicref format="dita" href="t_reports_normalize.xml" navtitle="Normalize report data" scope="local" type="task"/>
+		<topicref format="dita" href="t_reports_select_page.xml" navtitle="Select a page for a report" scope="local" type="task"/>
+		<topicref format="dita" href="t_reports_compare_suites.xml" navtitle="Compare report suites" scope="local" type="task"/>
+		<topicref format="dita" href="t_reports_granularity.xml" navtitle="Specify report granularity" scope="local" type="task"/>
+		<topicref format="dita" href="t_reports_day_of_week.xml" navtitle="Run a day-of-week report" scope="local" type="task"/>
+	</topicref>
+	<topicref format="dita" href="segments.xml" navtitle="Analytics Segmentation" scope="local" type="concept">
+		<topicmeta><navtitle>Analytics Segmentation</navtitle></topicmeta></topicref><topicref format="dita" href="bookmarks.xml" navtitle="Bookmark Manager" scope="local" type="concept">
+		<topicref format="dita" href="t_bookmarks_creating.xml" navtitle="Create a bookmark" scope="local" type="task"/>
+		<topicref format="dita" href="t_bookmarks_managing.xml" navtitle="Manage bookmarks" scope="local" type="task"/>
+	</topicref>
+	<topicref format="dita" href="dashboard.xml" navtitle="Dashboards and Reportlets" scope="local" type="concept">
+		<topicref format="dita" href="t_dashboard_add.xml" navtitle="Create a dashboard" scope="local" type="task"/>
+		<topicref format="dita" href="t_dashboard_add_report.xml" navtitle="Create a reportlet" scope="local" type="task"/>
+		<topicref format="dita" href="t_dashboard_content.xml" navtitle="Add content to a dashboard" scope="local" type="task"/>
+		<topicref format="dita" href="t_dashboard_edit.xml" navtitle="Edit dashboard and reportlet data" scope="local" type="task"/>
+		<topicref format="dita" href="t_dashboard_branding.xml" navtitle="Co-brand a dashboard" scope="local" type="task"/>
+		<topicref format="dita" href="dashboard_manage.xml" navtitle="Dashboard Manager" scope="local" type="concept">
+			<topicref format="dita" href="t_dashboard_copy.xml" navtitle="Manage shared dashboards" scope="local" type="task">
+				<topicmeta>
+					<navtitle>Manage shared dashboards</navtitle>
+				</topicmeta>
+			</topicref>
+			<topicref format="dita" href="t_dashboard_migrate_legacy.xml" navtitle="Migrate a legacy dashboard" scope="local" type="task"/>
+			<topicref format="dita" href="t_dashboard_share.xml" navtitle="Share a dashboard" scope="local" type="task"/>
+			<topicref format="dita" href="t_dashboard_delivery.xml" navtitle="Schedule a dashboard for delivery" scope="local" type="task"/>
+			<topicref format="dita" href="t_dashboard_archive.xml" navtitle="Archive a dashboard" scope="local" type="task"/>
+		</topicref>
+	</topicref>
+	<topicref format="dita" href="data_extract.xml" navtitle="Data Extract" scope="local">
+		<topicref format="dita" href="t_data_extract.xml" navtitle="Extract data from a report" scope="local" type="task"/>
+	</topicref>
+	<topicref format="dita" href="data_viewers.xml" navtitle="Report Data Viewers" scope="local" type="concept">
+		<topicref format="dita" href="app_visualize.xml" navtitle="Adobe Analytics for iOS" scope="local" type="concept"/>
+	</topicref>
+	<topicref format="dita" href="metrics.xml" navtitle="Metrics" scope="local" type="concept">
+		<topicref format="dita" href="t_metrics_set_default.xml" navtitle="Select default report metrics" scope="local" type="task"/>
+	</topicref>
+	<topicref format="dita" href="targets.xml" navtitle="Targets" scope="local" type="concept">
+		<topicref format="dita" href="t_add_a_target.xml" navtitle="Add a Target" scope="local" type="task"/>
+	</topicref>
+	<topicref format="dita" href="alerts.xml" navtitle="Alerts" scope="local" type="concept">
+		<topicref format="dita" href="t_add_an_alert.xml" navtitle="Add an Alert" scope="local" type="task"/>
+	</topicref>
+	<topicref format="dita" href="t_calendar_event.xml" navtitle="Calendar Events" scope="local" type="task"/>
+	<topicref format="dita" href="scheduling.xml" navtitle="Report Schedule and Distribution" scope="local" type="concept">
+		<topicref format="dita" href="t_send_report.xml" navtitle="Send a report" scope="local" type="task"/>
+		<topicref format="dita" href="t_reports_print.xml" navtitle="Print a report" scope="local" type="task"/>
+		<topicref format="dita" href="t_schedule_manage.xml" navtitle="Manage scheduled reports" scope="local" type="task"/>
+		<topicref format="dita" href="t_reports_share_link.xml" navtitle="Share a report link" scope="local" type="task"/>
+	</topicref>
+	<topicref format="dita" href="report_settings.xml" navtitle="Report Display Settings" scope="local">
+		<topicref format="dita" href="nav_menu.xml" navtitle="Navigation Menu" scope="local">
+			<topicmeta>
+				<navtitle>Navigation Menu</navtitle>
+			</topicmeta>
+		</topicref>
+	</topicref>
+	<topicref format="dita" href="clickmap.xml" navtitle="Visitor Click Map" scope="local">
+		<topicmeta>
+			<navtitle>Visitor Click Map</navtitle>
+		</topicmeta>
+		<topicref format="dita" href="t_clickmap_install.xml" navtitle="Install Visitor Click Map" scope="local">
+			<topicmeta>
+				<navtitle>Install Visitor Click Map</navtitle>
+			</topicmeta>
+		</topicref>
+		<topicref format="dita" href="clickmap_get_started.xml" navtitle="Getting started with Visitor Click Map" scope="local">
+			<topicmeta>
+				<navtitle>Getting started with Visitor Click Map</navtitle>
+			</topicmeta>
+		</topicref>
+	</topicref>
+	<topicref format="dita" href="data_warehouse.xml" navtitle="Data Warehouse Requests" scope="local" type="concept"/>
+	<mapref format="ditamap" href="SiteCatalyst_15_Upgrade.ditamap" navtitle="SiteCatalyst 15 Upgrade Guide" scope="local">
+		<topicmeta>
+			<navtitle>Upgrading from SiteCatalyst 14</navtitle>
+		</topicmeta>
+	</mapref>
+	<topicref format="dita" href="whatsnew.xml" navtitle="Marketing Reports &amp; Analytics Release History" scope="local">
+		<topicref format="dita" href="whatsnew_sc14.xml" navtitle="SiteCatalyst 14 Release History" scope="local"/>
+	</topicref>
+	<topicref format="dita" href="contact_and_legal.xml" navtitle="Contact and Legal Information" scope="local"/>
+</map>

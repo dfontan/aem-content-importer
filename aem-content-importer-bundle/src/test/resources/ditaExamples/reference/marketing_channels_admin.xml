@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_A7426A275CF74AC997E6B5FACBAF8BA6"> 
+  <title>Marketing Channels</title> 
+  <shortdesc>Marketing Channels are commonly used to provide insight on how
+	 visitors arrive on your site. You can create and customize 
+	 <wintitle>Marketing Channel Processing Rules</wintitle> based on what
+	 channels you want to track, and how you want to track them. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Admin tools"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p> 
+		<uicontrol>Analytics</uicontrol> &gt; 
+		<uicontrol>Admin</uicontrol> &gt; 
+		<uicontrol>Report Suites</uicontrol> &gt; 
+		<uicontrol>Edit Settings</uicontrol> &gt; 
+		<uicontrol>Marketing Channels</uicontrol>. 
+	 </p> 
+	 <p>See 
+		<xref
+		 href="http://marketing.adobe.com/resources/help/en_US/mchannel/index.html"
+		 format="http" scope="external">Marketing Channels</xref>. 
+	 </p> 
+  </conbody> 
+</concept>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_19EE5513A7DC43C38CC396E96F306CFE">
+  <title>Sub-Classifications</title>
+  <shortdesc>Marketing reports support both single-level and
+	 multiple-level classifications models. A classification hierarchy allows you to
+	 apply a classification to 
+	 <i>a classification</i>. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Admin tools" />
+      <othermeta name="subtopic" content="Classifications" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>
+      <note>Sub-classification refers to the ability to create classifications
+		  of classifications. However, this is not the same as a 
+		  <wintitle>Classification Hierarchy</wintitle> used to create 
+		  <wintitle>Hierarchy</wintitle> reports. For more information about
+		  Classification hierarchies, see 
+		  <xref href="https://marketing.adobe.com/resources/help/en_US/reference/index.html?f=classification_hierarchies" scope="external" format="https">Classification Hierarchies</xref> in the 
+		  <i>Administration Help</i>. 
+		</note>
+    </p>
+    <draft-comment>
+      <p>Removed sub-classifications in rule builder. Preserve subclass files
+		  in project for future reference.
+		</p>
+    </draft-comment>
+  </conbody>
+</concept>

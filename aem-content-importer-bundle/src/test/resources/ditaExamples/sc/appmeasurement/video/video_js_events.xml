@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_65FF1DB802D0437DAB672D89A279E49F">
+  <title>Track Video Player Events</title>
+  <shortdesc>You can track media players by creating functions attached to the
+	 video player event handlers 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>media</keyword>
+        <keyword>milestone</keyword>
+        <keyword>sdk</keyword>
+        <keyword>video</keyword>
+      </keywords>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p> This lets you call 
+		<codeph>Media.open</codeph>, 
+		<codeph>Media.play</codeph>, 
+		<codeph>Media.stop</codeph>, and 
+		<codeph>Media.close</codeph> at the appropriate times. For example: 
+	 </p>
+    <p>
+      <b>Load</b>: Call 
+		<codeph>Media.open</codeph> and 
+		<codeph>Media.play</codeph></p>
+    <p>
+      <b>Pause</b>: Call 
+		<codeph>Media.stop</codeph>. For example, if a user pauses a video after
+		15 seconds, call 
+		<codeph>s.Media.stop("Video1",15)</codeph></p>
+    <p>
+      <b>Buffer</b>: Call 
+		<codeph>Media.stop</codeph> while the video buffers. Call 
+		<codeph>Media.play</codeph> when playback resumes. 
+	 </p>
+    <p>
+      <b>Resume</b>: Call 
+		<codeph>Media.play</codeph>. For example, when a user resumes a video
+		after initially playing 15 seconds of the video, call 
+		<codeph>s.Media.play("Video1",15)</codeph>. 
+	 </p>
+    <p>
+      <b>Scrub (slider)</b>: When the user drags the video slider, call 
+		<codeph>Media.stop</codeph>. When the user releases the video slider,
+		call 
+		<codeph>Media.play</codeph>. 
+	 </p>
+    <p>
+      <b>End</b>: Call 
+		<codeph>Media.stop</codeph>, then 
+		<codeph>Media.close</codeph>. For example, at the end of a 100-second
+		video, call 
+		<codeph>s.Media.stop("Video1",100)</codeph>, then 
+		<codeph>s.Media.close("Video1")</codeph>. 
+	 </p>
+    <p>To accomplish this,you can define four custom functions that you can
+		call from the media player event handlers. The various parameters passed into 
+		<codeph>Media.open</codeph>, 
+		<codeph>Media.play</codeph>, 
+		<codeph>Media.stop</codeph>, and 
+		<codeph>Media.close</codeph> come from the player. The following
+		pseudocode demonstrates how this might be done: 
+	 </p>
+    <codeblock>/*Call on video load*/
+function startMovie(){	
+	s.Media.open(mediaName,mediaLength,mediaPlayerName);
+	playMovie();	
+}
+
+/*Call on video resume from pause and slider release*/
+function playMovie(){
+	s.Media.play(mediaName,mediaOffset, segmentNum, segment, segmentLength);
+}
+
+/*Call on video pause and slider grab*/
+function stopMovie(){
+	s.Media.stop(mediaName,mediaOffset);
+}
+
+/*Call on video end*/
+function endMovie(){
+	stopMovie();
+	s.Media.close(mediaName);
+}</codeblock>
+    <section id="section_9CF7793ECA7E4CF68FE8D4942C1643B3">
+      <title>JavaScript AutoTrack</title>
+      <p>The JavaScript 
+		  media module for identifies all 
+		  <codeph>&lt;embed&gt;</codeph> or 
+		  <codeph>&lt;object&gt;</codeph> tags in the page HTML. It then searches
+		  the data in each tag to determine which media player, if any, is being used. If
+		  the player is Windows Media Player, Quicktime, or Real Player, 
+		  <codeph>autoTrack</codeph> can be used, though autoTrack for Windows
+		  media player works only with Internet Explorer. Manual tracking for Windows
+		  Media Player is required to support all other browsers. 
+		</p>
+      <p>You must have the 
+		  <codeph>classid</codeph> attribute set on the object you want to track.
+		  The 
+		  <codeph>classid</codeph> is required to expose the event handlers used
+		  by the Media Module to automatically track the video.
+		</p>
+      <codeblock>s.Media.autoTrack = true</codeblock>
+    </section>
+  </conbody>
+</concept>

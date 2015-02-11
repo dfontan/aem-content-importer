@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_C411E8C408B04B66945CDBB8AB8C0057"> 
+  <title>Requirements</title> 
+  <shortdesc>Learn about the libraries and tools required to use AppMeasurement
+	 for Symbian. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics,Developer"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>You can download the AppMeasurement software from the 
+		<xref
+		 href="https://marketing.adobe.com/resources/help/en_US/reference/code_manager_admin.html"
+		 format="http" scope="external">Code Manager</xref>. 
+	 </p> 
+	 <section id="section_C8ABC8F2B73E45E39271514CD2C0A974"> 
+		<title>Symbian Device Library</title> 
+		<p>The following files are required to use the AppMeasurement library on
+		  Symbian devices: 
+		</p> 
+		<p> 
+		  <b>AppMeasurement.h:</b> The Symbian C++ header file. This file can be
+		  placed in your project folder. 
+		</p> 
+		<p> 
+		  <b>AppMeasurement.lib</b>: Library designed for use on the Symbian
+		  device. Use this library for development and testing directly on the device,
+		  and include it with your shipping application. During development we recommend
+		  placing this file in the 
+		  <filepath>C:\QtSDK\Symbian\SDKs\Symbian1Qt463\epoc32\release\armv5\urel</filepath>
+		  folder. 
+		</p> 
+	 </section> 
+	 <section id="section_847F8CF4913745168F432C15F1B7E380"> 
+		<title>Symbian Emulator Library</title> 
+		<p>When testing development using the Symbian Library, use the following
+		  file in place of the AppMeasurement.lib file: 
+		</p> 
+		<p> 
+		  <b>LibAppMeasurement.a: 
+		  </b>Library designed for use with the Windows* Symbian emulator. Use
+		  this library while developing your Symbian application. This file can be placed
+		  in your project folder. 
+		</p> 
+	 </section> 
+	 <section id="section_E8169DF656614CC8B565C615521BEDBC"> 
+		<title>Development Tools</title> 
+		<p>The following tools and versions were used to develop the
+		  AppMeasurement Libraries for Symbian: 
+		</p> 
+		<ul id="ul_1790F7A9F85D48EAB0EE687D7DF401A9"> 
+		  <li id="li_B3191D8BA1A4422FB36713375439C5DF">4.6.3 framework 
+		  </li> 
+		  <li id="li_42D35CCFD428427C830126EEF39F4BF9">Latest available version
+			 of QtCreator 
+		  </li> 
+		</ul> 
+	 </section> 
+	 <section id="section_0A8135B61A84472F98C7C20CC932031A"> 
+		<title>About Multi-Threaded Applications</title> 
+		<p>AppMeasurement for Symbian is not thread-safe. You can use it in a
+		  multi-threaded application, but you cannot access it from multiple threads. 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept>

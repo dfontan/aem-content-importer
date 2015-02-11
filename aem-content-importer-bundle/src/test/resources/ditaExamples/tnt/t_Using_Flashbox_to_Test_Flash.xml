@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_DB0A61C0E1A949A78AB8CDE38B4C572D" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Use Flashbox to Test Flash</title>
+  <shortdesc class="- topic/shortdesc ">There are multiple ways to test and
+	 target Flash content. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <context id="context_78D072D57861440789602217E149FDB7" class="- topic/section task/context ">
+      <p class="- topic/p ">
+        <!--Target is pre-integrated with Flash CS5, and
+		  g-->Generic ActionScript classes can be used to "instrument" any Flash file
+		  with targeting capabilities. <!--A Target extension panel is available for Flash CS5.
+		  With this panel, you can choose elements within your Flash file to change with
+		  Target. You can choose text, images, movie clips and more and then create
+		  different versions to test or target to different populations.--></p>
+      <!--<p class="- topic/p ">Get the extension here: 
+		  <xref href="http://www.adobe.com/products/creativesuite/omniture/" scope="external" format="html" class="- topic/xref ">http://www.adobe.com/products/creativesuite/omniture/</xref>.
+		  
+		</p> 
+		<p class="- topic/p ">View the detailed documentation about the extension
+		  here: 
+		  <xref href="http://help.adobe.com/en_US/Extensions/TestTarget/index.html" scope="external" format="html" class="- topic/xref ">http://help.adobe.com/en_US/Extensions/TestTarget/index.html</xref>.
+		  
+		</p>-->
+      <p class="- topic/p ">You can learn more about Flashbox by following the
+		  Flash Integration tutorial here: 
+		  <xref href="http://www.adobe.com/devnet/flash/articles/fl_tnt_overview.html" scope="external" format="html" class="- topic/xref "><?xm-replace_text http://www.adobe.com/devnet/flash/articles/fl_tnt_overview.html?></xref>.
+		  
+		</p>
+      <p class="- topic/p ">To change more than just static elements in Flash,
+		  <!--or if you are using an earlier version than Flash CS5, then -->you can
+		  use the Flash ActionScript classes available for Target. With these classes you
+		  can create Flashboxes that work quite similarly to mboxes to return different
+		  content to the Flash file to change the viewer's experience. 
+		</p>
+      <p class="- topic/p ">
+        <note class="- topic/note ">Flashbox developer documentation is
+			 available by clicking 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Display Ads</uicontrol>
+			 &gt; 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Flashbox
+				classes</uicontrol>. Contact your support professional for more information. 
+		  </note>
+      </p>
+      <p class="- topic/p ">The process for creating an AdBox for a Flash file
+		  is the same as for an image Adbox (see 
+		  <xref href="t_Creating_an_Adbox_for_an_Image.xml#task_286391F93E4A44BE801B67A9A52404FA" type="task" format="dita" scope="local" class="- topic/xref ">Creating an AdBox
+			 for an Image</xref>), with these differences: 
+		</p>
+    </context>
+    <steps id="steps_57C198553EE44C6F9E94E6509C0105FD" class="- topic/ol task/steps ">
+      <step id="step_D46C19F85AD3498F9B63D356F7CFC438" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Use page as the content type and make
+			 the default link to your swf file. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">
+            <codeph class="+ topic/ph pr-d/codeph ">http://myClientCode.tt.omtrdc.net/m2/​myClientCode/ubox/page?mbox=adflash_abc_320x200​&amp;mboxDefault=
+				  http%3A%2F%2Fwww%2Eyourcompany%2Ecom%2F​img%2Flogo%2Eswf</codeph>
+          </p>
+        </stepresult>
+      </step>
+      <step id="step_485A815596AA4876B523B39721610464" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">To complete QA, use the embed src tag
+			 on the dummy page as you would a Flash file. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">
+            <codeph class="+ topic/ph pr-d/codeph ">&lt;embed
+				  src=http://myClientCode.tt.omtrdc.net/m2/​myClientCode/ubox/page​
+				  ?mbox=ad123&amp;mboxDefault=​
+				  http%3A%2F%2Fwww%2Eyourcompany%2Ecom%2Fimg%2Flogo%2Eswf&gt; 
+				</codeph>
+          </p>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links class="- topic/related-links ">
+    <link href="t_Creating_an_Adbox_for_an_Image.xml#task_286391F93E4A44BE801B67A9A52404FA" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Create an Adbox for an Image?>
+    </link>
+    <link href="t_Testing_an_Email_Image_Adbox.xml#task_47D47E16051D4EF398D91FD84C07645D" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Test an Email Image Adbox?>
+    </link>
+  </related-links>
+</task>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_043D7F703D3E40F4B8CC35E524A8D43D">
+  <title>Campaigns Report</title>
+  <shortdesc>Displays information about the effectiveness of your advertising
+	 efforts. You can see which types advertising efforts give you the most traffic
+	 and which of your employees is responsible for driving those efforts. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>These reports are usually customized and thus different for every
+		analyst. 
+	 </p>
+    <p>See 
+		<xref href="http://marketing.adobe.com/resources/help/en_US/admin/index.html?f=t_Managing_Campaigns" scope="external" format="html">Managing Campaigns</xref> in admin help. 
+	 </p>
+    <p>
+      <b>Related Reports</b>
+    </p>
+    <p>
+      <xref href="reports_campaign_conversion_funnel.xml#concept_DEF0050F45F74EC8BB08CDA03BB03A59" format="dita" scope="local">
+        <?xm-replace_text Campaign Conversion Funnel?>
+      </xref>
+    </p>
+    <p>
+      <xref href="reports_tracking_codes.xml#concept_CBCAE87060BC4BE1A335DDCA6F4396FB" format="dita" scope="local">
+        <?xm-replace_text Tracking Codes Report?>
+      </xref>
+    </p>
+    <p>
+      <xref href="reports_creative_elements.xml#concept_C5D0B6C664134E6F89D8731731F02FF7" format="dita" scope="local">
+        <?xm-replace_text Creative Element?>
+      </xref>
+    </p>
+  </conbody>
+</concept>

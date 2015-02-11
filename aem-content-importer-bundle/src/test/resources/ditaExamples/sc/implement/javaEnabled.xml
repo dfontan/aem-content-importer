@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_F24A3536F1F0453DA214B16BAA5A6F67">
+  <title>javaEnabled</title>
+  <shortdesc> The 
+	 <varname> javaEnabled</varname> variable indicates whether Java is enabled
+	 on the browser. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Variables" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>This variable is populated after the page code and before doPlugins is
+		run. 
+	 </p>
+    <p>
+      <note> This variable should only be read and never set. 
+		</note>
+    </p>
+    <p>You may read these values and copy them into 
+		<filepath>props/eVars</filepath>, but you should never alter them. This
+		variable is introduced with version H.11 of the JavaScript file. 
+	 </p>
+    <table id="table_9971DE31495D4D2987BDA887EB8CE0B6">
+      <tgroup cols="4">
+        <colspec colnum="1" colname="col1" colwidth="*" />
+        <colspec colnum="2" colname="col2" colwidth="*" />
+        <colspec colnum="3" colname="col3" colwidth="*" />
+        <colspec colnum="4" colname="col4" colwidth="*" />
+        <thead>
+          <row>
+            <entry> Query Param 
+				</entry>
+            <entry> Value 
+				</entry>
+            <entry> Example 
+				</entry>
+            <entry> Reports Affected 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry> v 
+				</entry>
+            <entry> Y or N 
+				</entry>
+            <entry> Y 
+				</entry>
+            <entry> Traffic &gt; Technology &gt; Java 
+				</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </conbody>
+</concept>

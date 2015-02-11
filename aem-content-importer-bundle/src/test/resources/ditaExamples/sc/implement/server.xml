@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_BF77952603BA454BAFC9A0A81D06A7D2">
+  <title>server</title>
+  <shortdesc>The 
+	 <varname>server</varname> variable is used to show either the domain of a
+	 web page (to show which domains people come to) or the server serving the page
+	 (for a load balancing quick reference). 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Variables" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <table id="table_57B3C59FAE444243854C95466C0DB7B5">
+      <tgroup cols="4">
+        <colspec colnum="1" colname="col1" colwidth="*" />
+        <colspec colnum="2" colname="col2" colwidth="*" />
+        <colspec colnum="3" colname="col3" colwidth="*" />
+        <colspec colnum="4" colname="col4" colwidth="*" />
+        <thead>
+          <row>
+            <entry> Max Size 
+				</entry>
+            <entry> Debugger Parameter 
+				</entry>
+            <entry> Reports Populated 
+				</entry>
+            <entry> Default Value 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry> 100 bytes 
+				</entry>
+            <entry> server 
+				</entry>
+            <entry> Servers 
+				</entry>
+            <entry> "" 
+				</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p>If your site has more than one domain serving the same content, the 
+		<varname>server</varname> variable can be used to track which of those
+		domains visitors are using. The following JavaScript will populate the domain
+		of the page into the server variable. 
+	 </p>
+    <codeblock outputclass="syntax javascript">s.server=window.location.hostname</codeblock>
+    <p>If you are using the server variable to give a quick guide to load
+		balancing, you could put a server name or number into the server variable. See
+		the following example: 
+	 </p>
+    <codeblock outputclass="syntax javascript">s.server="server 14"</codeblock>
+    <p>While the 
+		<wintitle>Most Popular Servers</wintitle> report may be used as a load
+		balancing quick reference, it is not a precise measure of server load. For
+		example, back-button traffic does not increase server load, but is shown in 
+		reports. The report does not show which servers are
+		serving images or large downloads. 
+	 </p>
+    <section id="section_48E4B9BFEBFF4409A246D86EC0C0FB13">
+      <title>Syntax and Possible Values</title>
+      <codeblock outputclass="syntax javascript">s.server="server_name"</codeblock>
+      <p>There are no limitations on the 
+		  <varname>server</varname> variable outside of the standard variable
+		  limitations. 
+		</p>
+    </section>
+    <section id="section_78B9EE3C27FB491384869E3D0BD503D6">
+      <title>Examples</title>
+      <codeblock outputclass="syntax javascript">s.server="server 18"
+s.server=window.location.hostname
+</codeblock>
+    </section>
+    <section id="section_969DB379D5BD469FBEE8D505D3000E49">
+      <title>
+        Configuration Settings</title>
+      <p>None 
+		</p>
+    </section>
+    <section id="section_42A28F9B01574F38891D9D54B411D8FE">
+      <title>Pitfalls, Questions, and Tips</title>
+      <p>The 
+		  <varname>server</varname> variable can be used to show which domains
+		  are most popular or which servers are serving the most pages. 
+		</p>
+    </section>
+  </conbody>
+</concept>

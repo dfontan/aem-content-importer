@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_8A8FA7C3983249B1A82C3B9E456FB29F">
+  <title>3rd-Party and 1st-Party Cookie Behavior</title>
+  <shortdesc>The 3rd-party cookie is stored in 
+	 <filepath>clientcode.tt.omtrdc.net</filepath> and the 1st-party cookie is
+	 stored in 
+	 <filepath>clientdomain.com</filepath>, where 
+	 <codeph>clientdomain</codeph> is your domain. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>
+      <filepath>Mbox.js</filepath> generates an 
+		<codeph>mboxSession ID</codeph>. The first mbox request returns HTTP
+		response headers that attempt to set 3rd-party cookies named 
+		<codeph>mboxSession</codeph> and 
+		<codeph>mboxPC</codeph>, and a redirect request is sent back with an
+		extra parameter (<codeph>mboxXDomainCheck=true</codeph>). 
+	 </p>
+    <p>If the browser accepts 3rd-party cookies, the redirect request includes
+		those cookies, and the offer is returned. 
+	 </p>
+    <!--<p>If the browser rejects 3rd-party cookies, the redirect request does not
+		include those cookies, and JavaScript is returned that stores a disable key in
+		the 1st-party mbox cookie. This causes the visitor to be served default content
+		for all mbox requests for the next 24 hours.
+	 </p>
+	 -->
+    <p>Some browsers reject 3rd-party cookies. If the 3rd-party cookie is
+		blocked, the 1st-party cookie still works. Target attempts to set the 3rd-party
+		cookie, and if it cannot, then Target can only track on the client's specific
+		domain. Cross-domain tracking does not work if the 3rd-party is blocked, unless
+		the 
+		<codeph>mboxSession</codeph> is appended in the link that crosses
+		domains. In this case, another 1st-party cookie is set and synched with the
+		prior domain's 1st party cookie. 
+	 </p>
+    <!--<p> 
+		<image id="image_A211BF10FA87484D868695D21A276191" href="graphics/cookie1-3.png"></image> 
+	 </p> 
+  -->
+  </conbody>
+  <related-links>
+    <link href="c_1st-Party_Cookie_Behavior.xml#concept_63BE914DF7C648FF97CDB5683FD1C57C" type="concept" format="dita" scope="local">
+      <?xm-replace_text 1st-Party Cookie Behavior?>
+    </link>
+    <link href="c_3rd-Party_Cookie_Behavior.xml#concept_FC36636D1CAC41A58A0E23FC7F968E52" type="concept" format="dita" scope="local">
+      <?xm-replace_text 3rd-Party Cookie Behavior?>
+    </link>
+  </related-links>
+</concept>

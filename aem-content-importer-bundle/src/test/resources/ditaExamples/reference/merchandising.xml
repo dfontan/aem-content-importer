@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_E3D0FEC81E1F4987B39CC467F19FFCFF"> 
+  <title>Merchandising eVar</title> 
+  <shortdesc>Cross-category merchandising allows you to compare the relative
+	 effectiveness of multiple product categories. Typical eVars hold a single value
+	 at a time. Merchandising variables let you configure an eVar to hold multiple
+	 values. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="subtopic" content="Glossary"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Merchandising eVars let you answer questions like: 
+	 </p> 
+	 <ul id="ul_D8945D40C3634BC6B8252751B8CA7006"> 
+		<li id="li_03402F4C56434BA49222CBC027434D64">Which product categories or
+		  search terms have the highest or lowest conversion? 
+		</li> 
+		<li id="li_161D4D4CC05E49DCAEA2D1B785170619">Does a specific product sell
+		  better under one category versus another? 
+		</li> 
+	 </ul> 
+	 <p>See 
+		<xref
+		 href="http://marketing.adobe.com/resources/help/en_US/sc/implement/?f=var_merchandising.html"
+		 scope="external" format="html">Merchandising Variables</xref> for
+		implementation information. 
+	 </p> 
+  </conbody> 
+</concept>

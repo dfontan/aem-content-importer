@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_320777558B7F45C5AEC2D548BA2E380D" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic concept/concept ">
+  <title class="- topic/title ">Using Regular Expressions in Targeting
+	 Groups</title>
+  <shortdesc class="- topic/shortdesc ">A regular expression is a set of
+	 letters, numbers, and special characters that together specify a pattern of
+	 text. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody class="- topic/body  concept/conbody ">
+    <p class="- topic/p ">Using regular expressions to match text patterns is
+		very similar to wildcard searching, but far more powerful and flexible. For
+		example: 
+	 </p>
+    <p class="- topic/p ">
+      <b class="+ topic/ph hi-d/b ">Regular Expression:</b>
+      <codeph class="+ topic/ph pr-d/codeph ">google\.com/\?.*q=([^&amp;]*)</codeph>
+    </p>
+    <p class="- topic/p ">
+      <b class="+ topic/ph hi-d/b ">Matches:</b>
+      <codeph class="+ topic/ph pr-d/codeph ">http://www.<b class="+ topic/ph hi-d/b ">google.com</b>/search?hl=en​&amp;q=my+product</codeph>
+    </p>
+    <p class="- topic/p ">Using the regular expression in our example, we can
+		match any Referring URL that comes from a Google search query containing "<b class="+ topic/ph hi-d/b ">adobe.com/</b>" 
+		<i class="+ topic/ph hi-d/i ">and</i> "<b class="+ topic/ph hi-d/b ">?</b>" 
+		<i class="+ topic/ph hi-d/i ">and</i> "<b class="+ topic/ph hi-d/b ">="</b> even with unspecified text in between. 
+	 </p>
+    <p class="- topic/p ">For more information on regular expressions, see 
+		<xref href="r_Regular_Expression_and_JavaScript_References.xml#reference_3CB56C733F1E42B1B47C5961DD09DBF8" type="reference" format="dita" scope="local" class="- topic/xref ">Regular
+		  Expression and JavaScript References</xref>. 
+	 </p>
+  </conbody>
+  <!--<related-links class="- topic/related-links ">
+    <link href="t_Expressions_Targets.xml#task_32DD2FC06FC84FD1B6D9011FE2009AAA" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Expression Targets?>
+    </link>
+    <link href="t_expression_target_generator.xml#task_ADBA6658ABD745669E321E211EF9E119" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Test&Target Expression Target   Generator?>
+    </link>
+    <link href="r_Regular_Expression_and_JavaScript_References.xml#reference_3CB56C733F1E42B1B47C5961DD09DBF8" type="reference" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Regular Expression and JavaScript   References?>
+    </link>
+  </related-links>
+-->
+</concept>

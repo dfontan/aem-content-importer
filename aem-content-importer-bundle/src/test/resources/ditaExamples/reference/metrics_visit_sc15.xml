@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_8B9C7CB7EAE74AFF9A31ACB68EC16B8D">
+  <title>Visits in Version 15 and Ad Hoc Analysis</title>
+  <shortdesc>Describes updates to Visits when upgrading to 
+	 Version 15.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Metrics" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>Visits in 
+		Version 15 are processed the same as they are in
+		version 14, with the following differences:
+	 </p>
+    <ul id="ul_BF6FD49B5199472EA0EDA7D68D38C231">
+      <li id="li_6798E5C3B9B14C83A1C8CC58431D1A38">
+        <xref href="metrics_visit_sc15.xml#concept_8B9C7CB7EAE74AFF9A31ACB68EC16B8D/section_7B938B1072E945C39759B9ED20F0BB1C" type="section" format="dita" scope="local">
+          <?xm-replace_text Visits Metric Includes Non-cookie Visitors?>
+        </xref>
+      </li>
+      <li id="li_501F85DE87954322ACB8130032ED9218">
+        <xref href="metrics_visit_sc15.xml#concept_8B9C7CB7EAE74AFF9A31ACB68EC16B8D/section_F115216639F54601A939B5638F27FB4C" type="section" format="dita" scope="local">
+          <?xm-replace_text Updated Visits Metric for Typed Bookmarked in Referring Domains     Report...?>
+        </xref>
+      </li>
+    </ul>
+    <section id="section_7B938B1072E945C39759B9ED20F0BB1C">
+      <title>Visits Metric Includes Non-cookie Visitors</title>
+      <p>To calculate the Visits metric, version 14 reported only on
+		  visitors who accepted a tracking cookie. Version 15 more accurately
+		  measures Visits by including visitors who do not accept a tracking cookie. As a
+		  result, the Visits metric in most cases reports a larger value when compared to
+		  previous versions under the same circumstances.
+		</p>
+      <p>This change affects any report that uses the Visits metric, including
+		  Path reports and calculated metrics. Calculated metric values can increase or
+		  decrease, depending on whether 
+		  <i>Visits</i> is the denominator or numerator in the calculation. For
+		  example, in an 
+		  <i>Orders / Visit</i> calculation the value is likely to decrease. In
+		  Visits / Visitor, the value is likely to increase. 
+		</p>
+      <p>To see the percentage of users who do not accept persistent cookies:
+		</p>
+      <p>1. Click 
+		  <uicontrol>Site Metrics</uicontrol> &gt; 
+		  <uicontrol>Visitors</uicontrol> &gt; 
+		  <uicontrol>Unique Visitors</uicontrol>.
+		</p>
+      <p>2. Click 
+		  <uicontrol>Filter: Persistent Cookies</uicontrol>.
+		</p>
+      <p>The non-persistent cookie visitors are added to the results. You can
+		  download the report to CSV or Excel and divide the non-persistent cookie
+		  visitors by total visitors. This represents the percent by which the visits
+		  will increase after you upgrade to Version 15. This increase ranges from
+		  0.2% (for report suites fed entirely by first party cookies) to 11-14% for
+		  report suites entirely on third party cookies.
+		</p>
+    </section>
+    <section id="section_F115216639F54601A939B5638F27FB4C">
+      <title>Updated Visits Metric for Typed Bookmarked in Referring Domains
+		  Report </title>
+      <p>If you had the Visits metric enabled on the Referring Domains report
+		  in v14, you will notice a change to the Visit count on this report after
+		  upgrading to v15.
+		</p>
+      <p>In v14, Typed/Bookmarked was counted anytime a visit contained a
+		  server call with no referrer specified, regardless of where the server call
+		  occurred during the visit.
+		</p>
+      <p>Since the referrer can often be empty mid-visit due to actions such as
+		  Flash navigation and redirects, v15 was improved to count Typed/Bookmarked only
+		  when a visit starts with a server call with no referrer specified. 
+		</p>
+      <p>With this change, in v15 Instances of Typed/Bookmarked should match
+		  Visits, whereas, in v14, Instances were typically lower than Visits.
+		</p>
+    </section>
+  </conbody>
+</concept>

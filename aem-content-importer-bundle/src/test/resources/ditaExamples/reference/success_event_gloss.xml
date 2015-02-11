@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_F12DB8A63BE1465699C75B55A46B39F2">
+  <title>Success Event</title>
+  <shortdesc>Success events are actions that can be tracked. You determine what
+	 a success event is. For example, if a visitor purchases an item, the purchase
+	 event could be considered the success event. Other examples include media
+	 subscriptions, self-service tool usage, searches, downloads, checkouts, etc.
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+    </metadata>
+  </prolog>
+</concept>

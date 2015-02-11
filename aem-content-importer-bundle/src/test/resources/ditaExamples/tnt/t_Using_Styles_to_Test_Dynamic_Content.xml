@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_E12C10C6F80B4B268DCD6E1CD53C4CA5" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Use Styles to Test Dynamic Content</title>
+  <shortdesc class="- topic/shortdesc ">You can test your dynamic content using
+	 styles. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <context id="context_D021F2592EF646378DB1DC973079E272" class="- topic/section task/context ">
+      <p class="- topic/p "> Ensure you need a dynamic offer. See 
+		  <xref href="c_About_Dynamic_Content.xml#concept_657016A0E6174C22B89036E9C8A0170F" type="concept" format="dita" scope="local" class="- topic/xref "><?xm-replace_text About Dynamic Content?></xref>
+		  to help guide your decision. There are several methods for testing experiences
+		  with dynamic content. 
+		</p>
+      <p class="- topic/p ">Use styles if you plan to test only the appearance
+		  of your existing dynamic content, use styles in an offer to hide, show, or
+		  reformat existing elements of your dynamic content. 
+		</p>
+    </context>
+    <steps id="steps_69057B5C82FE4264817F384466E84F19" class="- topic/ol task/steps ">
+      <step id="step_7F42D2C1F0E54533837BF79880C798FE" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Create a stylesheet for each
+			 experience, which changes the formatting of elements, or makes some elements
+			 invisible. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult "></stepresult>
+      </step>
+      <step id="step_982E9967ADF44FC19D1B484C9526CED9" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Create offers referring to the new
+			 stylesheets. 
+		  </cmd>
+      </step>
+      <step id="step_62CE349C83834C06A1448BE984FAFB81" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Position an mbox in your dynamic
+			 page, to override any standard page styles. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">The last style referenced will control the
+				appearance of the elements after it. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_3E4168EB9A614EF888298FE07E8D5D95" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Now create an A/B/…N, Multivariate or
+			 Landing Page campaign or test, and load the offers into the mbox for each
+			 experience. 
+		  </cmd>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links class="- topic/related-links ">
+    <link href="c_How_Dynamic_Offers_Work.xml#concept_CC2A969420B34364A9FA78C1CE251818" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text How Dynamic Offers Work?>
+    </link>
+    <link href="t_Creating_a_Dynamic_Offer_Stored_on_Your_Site.xml#task_207ACC941A4B421C8566105DA29F6E21" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Creating a Dynamic Offer Stored on Your   Site?>
+    </link>
+    <link href="t_Creating_a_Cached_Offer_Stored_on_Your_Site.xml#task_464E401A0E534E599BAB0B3242DC150C" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Creating a Cached Offer Stored on Your   Site?>
+    </link>
+    <link href="t_Creating_a_Cached_Offer_Stored_Outside_TestTarget.xml#task_83D85C26C67E4EDBAFA7AAED3194F590" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Creating a Cached Offer Stored Outside   Test&Target?>
+    </link>
+    <link href="r_Dynamic_Offer_Selection_Matrix.xml#reference_B23BEDD29DDD47709A7651AFD27E776B" type="reference" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Dynamic Offer Selection Matrix?>
+    </link>
+  </related-links>
+</task>

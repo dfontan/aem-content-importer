@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_6AEC5A6C707B46B790C1A79E72F9A339">
+  <title>Shopping Cart Report</title>
+  <shortdesc>Displays the number of shopping carts that are opened during the
+	 specified time period. You can run reports to analyze cart views, additions,
+	 removals, and checkouts. A shopping cart is usually opened when a customer
+	 selects an item for purchase, but can occur without an item as well. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>You can use the 
+		<wintitle>Carts Report</wintitle> to:
+	 </p>
+    <ul id="ul_2F5F2BAED87F4821A4E65228DC712E7F">
+      <li id="li_D098FC955E1649E9BFDB565F6BEF5ABE">
+        <p>Determine patterns, highs, or lows in the number of carts opened on
+			 your site. 
+		  </p>
+      </li>
+      <li id="li_68D4BB02638A41B5BF0AC3A318F311EA">
+        <p>Examine specific time periods learn more information about the
+			 metrics that specifically contributed to the opening of the cart. 
+		  </p>
+      </li>
+    </ul>
+  </conbody>
+</concept>

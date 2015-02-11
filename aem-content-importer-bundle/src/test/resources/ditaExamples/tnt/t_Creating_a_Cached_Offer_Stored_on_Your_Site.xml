@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_464E401A0E534E599BAB0B3242DC150C" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Create a Cached Offer Stored on Your
+	 Site</title>
+  <shortdesc class="- topic/shortdesc ">There are several types of cached
+	 offers you can store on your site. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <context id="context_CDFF7C0A74F64739BF3382C30BCCC69C" class="- topic/section task/context ">
+      <p class="- topic/p ">Some examples of offers stored on your site
+		  (cached) include: 
+		</p>
+      <p class="- topic/p ">
+        <ul id="ul_BCB007903FD743C186CA8904B3936669" class="- topic/ul ">
+          <li id="li_A1BFC90CF371464693CD19A822ED18CB" class="- topic/li ">
+			 Content, such as images, served by your site 
+		  </li>
+          <li id="li_DF4B19FEA3EF4501A5C9E19E7BFF5B14" class="- topic/li "> Form
+			 supported by script self-contained within the Web page that you serve from your
+			 site 
+		  </li>
+          <li id="li_09F6C9C7817F4F4C9C8282A9E052A3D1" class="- topic/li "> HTML
+			 code stored on the same site your adboxes are on 
+		  </li>
+          <li id="li_4A0912A7E7694261923C18847EC6AE43" class="- topic/li ">
+			 Output with fewer variations, or smaller volume outputs 
+		  </li>
+        </ul>
+      </p>
+      <p class="- topic/p ">To create a cached offer: 
+		</p>
+    </context>
+    <steps id="steps_1D738B7A34914832A6638644022DD490" class="- topic/ol task/steps ">
+      <step id="step_C8ACEDBFCD7A48EF990121F6D957AD81" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Make sure you do not need to serve
+			 dynamic content. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">See 
+				<xref href="c_About_Dynamic_Content.xml#concept_657016A0E6174C22B89036E9C8A0170F" type="concept" format="dita" scope="local" class="- topic/xref "><?xm-replace_text About Dynamic Content?></xref>
+				to help you guide your decision. This option does not support dynamic content
+				but allows you to switch servers without requiring you to input the URL for the
+				offer again. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_F034B485F3CA443791EB488DEB5A88F6" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Select 
+			 <uicontrol>Offers</uicontrol> &gt; 
+			 <uicontrol>Create</uicontrol> &gt; 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Offer on your
+				site</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_5CE7CD55954F46D583256B52106724C1" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Name your offer. 
+		  </cmd>
+      </step>
+      <step id="step_543E87F3AF894860AA8AE65C3DE7AC5D" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Select the folder where the offer
+			 will be stored. 
+		  </cmd>
+      </step>
+      <step id="step_9EFEC66A131B459599A0AC15539C7170" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Enter a relative URL pointing to a
+			 code snippet stored on your site (on the same domain the mbox that will contain
+			 this offer is served from). 
+		  </cmd>
+      </step>
+      <step id="step_A110586612694FA4BCF0C784FB20F3BF" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">save</uicontrol>. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">The new offer shows up in the offers list. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_C989256B1D3B4CC4A09C8B131D166833" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Use the new offer in a campaign or
+			 test. 
+		  </cmd>
+      </step>
+      <step id="step_9C9AFF199231428CB874C1E55E5DA1A7" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">
+          <xref href="c_Validating_Offers.xml#concept_60E81920A21A42ABA6980AF60697B260" type="concept" format="dita" scope="local" class="- topic/xref ">Validate the
+				offer</xref>. 
+		  </cmd>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links class="- topic/related-links ">
+    <link href="c_How_Dynamic_Offers_Work.xml#concept_CC2A969420B34364A9FA78C1CE251818" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text How Dynamic Offers Work?>
+    </link>
+    <link href="t_Using_Styles_to_Test_Dynamic_Content.xml#task_E12C10C6F80B4B268DCD6E1CD53C4CA5" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Use Styles to Test Dynamic Content?>
+    </link>
+    <link href="t_Creating_a_Dynamic_Offer_Stored_on_Your_Site.xml#task_207ACC941A4B421C8566105DA29F6E21" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Create a Dynamic Offer Stored on Your   Site?>
+    </link>
+    <link href="t_Creating_a_Cached_Offer_Stored_Outside_TestTarget.xml#task_83D85C26C67E4EDBAFA7AAED3194F590" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Creating a Cached Offer Stored Outside   Test&Target?>
+    </link>
+    <link href="r_Dynamic_Offer_Selection_Matrix.xml#reference_B23BEDD29DDD47709A7651AFD27E776B" type="reference" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Dynamic Offer Selection Matrix?>
+    </link>
+  </related-links>
+</task>

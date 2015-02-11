@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_DEBB0632411D4CA8AA0B3BA267A5B35F"> 
+  <title>Create report-specific filters</title> 
+  <shortdesc>Steps that describe how to create filters for reports. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Reports and analytics"/> </metadata>
+  </prolog> 
+  <taskbody> 
+	 <context id="context_EF5837F179DF43E7AB9BCD3F18C3401C"> 
+		<p>Certain reports contain a filter that is specific to that report. For
+		  example, a 
+		  <wintitle>Purchase Conversion Funnel Report</wintitle> lets you filter
+		  by web pages. A 
+		  <wintitle>Geosegmentation Report</wintitle> lets you filter by
+		  geographical region. Additional reports have other filters specific to those
+		  reports. 
+		</p> 
+		<p>When you access these filters, you can see report metrics for the
+		  items specified in the list. 
+		</p> 
+		<p> 
+		  <b>To create report-specific filters</b> 
+		</p> 
+	 </context> 
+	 <steps id="steps_F43F1CDC72DC4D2DB8ABCA27A0CA9642"> 
+		<step id="step_7FDF4F3CC1A645FE8667E1EEB053AFD5"> 
+		  <cmd>Generate a report, such as a 
+			 <wintitle>Purchase Report</wintitle> (<uicontrol>Site
+				Metrics</uicontrol> &gt; 
+			 <uicontrol>Purchases</uicontrol> &gt; 
+			 <uicontrol>Purchase Conversion Funnel</uicontrol>). 
+		  </cmd> 
+		</step> 
+		<step id="step_F6A4765FDBF94DF386C8110E593C2A01"> 
+		  <cmd>In the report header, click the 
+			 <uicontrol>Filter</uicontrol> link. 
+		  </cmd> 
+		</step> 
+		<step id="step_788C3946A50A451C8B605C2C0C6ECD43"> 
+		  <cmd>On the 
+			 <wintitle>Filter Selector</wintitle> page, click 
+			 <uicontrol>Apply a Filter</uicontrol>, then select a filter type. 
+		  </cmd> 
+		</step> 
+		<step id="step_5DA3517C35634DF5B986A245D9E682B4"> 
+		  <cmd>To search for an item, type a character string in the 
+			 <uicontrol>Search</uicontrol> field. 
+		  </cmd> 
+		</step> 
+		<step id="step_80CDCE8673994C95AEB41355113E158D"> 
+		  <cmd>Click 
+			 <uicontrol>OK</uicontrol>. 
+		  </cmd> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task>

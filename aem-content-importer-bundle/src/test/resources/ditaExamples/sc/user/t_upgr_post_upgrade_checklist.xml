@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_9A07AEBD6507484F8AE760276591823C">
+  <title>Post-Upgrade Checklist</title>
+  <shortdesc>The following list contains tasks to verify your 
+	 SiteCatalyst 15. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports and analytics" />
+      <othermeta name="subtopic" content="Upgrading from V14" />
+    </metadata>
+  </prolog>
+  <taskbody>
+    <context id="context_19D7BBE293D54CF7A4A576FEB1EFFDB4">
+      <p>These should be performed after your scheduled upgrade date. 
+		</p>
+    </context>
+    <steps id="steps_3FD83CD0FEDC44F59D1DEA1B767DC387">
+      <step id="step_977EBC26E1454143B2FDD2DF31367DCA">
+        <cmd>Run a report that spans the upgrade date and look for a message
+			 that indicates that some of the data was processed by a previous platform. This
+			 is the message that appears in 
+			 SiteCatalyst 15 when you view data that was
+			 collected by 
+			 SiteCatalyst 14. 
+		  </cmd>
+      </step>
+      <step id="step_A729707D33714583BE7E799383F4ABC2">
+        <cmd>Verify that segments appear in the drop-down. If you see
+			 unexpected segments or if you would like to change the list of segments that
+			 appear, review 
+			 <xref href="r_upgr_man_segments.xml#reference_B602C82274A1400CAD96F8F87548C457" format="dita" scope="local">Managing Segments</xref>. 
+		  </cmd>
+      </step>
+      <step id="step_EAC10586A2C14E3287DF9BF92DFADC42">
+        <cmd>Check the 
+			 <wintitle>Visits</wintitle> metric to ensure the increases is similar
+			 to what was expected. 
+		  </cmd>
+      </step>
+    </steps>
+  </taskbody>
+</task>

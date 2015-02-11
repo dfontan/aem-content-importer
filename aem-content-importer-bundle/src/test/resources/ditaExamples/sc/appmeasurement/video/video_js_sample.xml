@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_7B17ACCC514C4B8A9847AB799A2E29F4">
+  <title>JavaScript Sample Code</title>
+  <shortdesc> This section contains a sample implementation in JavaScript. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>media</keyword>
+        <keyword>milestone</keyword>
+        <keyword>sdk</keyword>
+        <keyword>video</keyword>
+      </keywords>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <codeblock outputclass="syntax javascript">s.usePlugins=true
+function s_doPlugins(s) {
+
+    /* Add manual calls to modules and plugins here */
+}
+s.doPlugins=s_doPlugins
+
+/*********Media Module Calls**************/
+s.loadModule("Media")
+
+/*Configure Media Module Functions */
+s.Media.autoTrack= true;
+s.Media.trackVars="events,prop2,eVar1,eVar2,eVar3";
+s.Media.trackEvents="event1,event2,event3,event4,event5,event6,event7"
+s.Media.trackMilestones="25,50,75";
+s.Media.playerName="My Media Player";
+s.Media.segmentByMilestones = true;
+s.Media.trackUsingContextData = true;
+s.Media.contextDataMapping = {
+  "a.media.name":"eVar2,prop2",
+  "a.media.segment":"eVar3",
+  "a.contentType":"eVar1",
+  "a.media.timePlayed":"event3",
+  "a.media.view":"event1",
+  "a.media.segmentView":"event2",
+  "a.media.complete":"event7",
+  "a.media.milestones":{
+     25:"event4",
+     50:"event5",
+     75:"event6"
+  }
+}
+    
+  s.Media.monitor = function (s,media){ //If Needed
+  }
+
+  /* Turn on and configure debugging here */
+  s.debugTracking = true;
+  s.trackLocal = true;
+
+  /* WARNING: Changing any of the below variables will cause drastic changes to how your visitor data is collected.  Changes should only be made     when instructed to do so by your account manager.*/
+  s.visitorNamespace = "yourNamespace";
+  s.trackingServer="metrics.mysite.com" //Use only if using first party cookies
+  s.trackingServerSecure="smetrics.mysite.com" //Use only if useing first party cookies in conjunction with SSL
+  s.dc = '122';
+
+  /************************** PLUGINS SECTION *************************/
+  /* Insert any plugins code you want to use here. */
+
+  /****************************** MODULES *****************************/
+  /* Insert the media module tracking code here. */</codeblock>
+  </conbody>
+</concept>

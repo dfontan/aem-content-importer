@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_00D1DC69EFF644BC914C6DE311411DBA"> 
+  <title>Sequence</title> 
+  <shortdesc>A contiguous series of server calls starting with a first server
+	 call and ending after 30 minutes of activity. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="subtopic" content="Glossary"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>[rename to visit] The sequence ends when a variable value (such as 
+		<varname>page name = Sports Home</varname>) is overwritten by another
+		variable value (such as 
+		<varname>page name = Money Home</varname>). 
+	 </p> 
+	 <p> 
+		<image placement="inline" href="graphics/visit_sequence.png"
+		 id="image_61F4989489924F109F5806F1CB593808"> <?xm-replace_text Paragraph?>
+		</image> 
+	 </p> 
+	 <p>In this example, viewing the Sports Home page begins the sequence, and
+		viewing the Money Home ends it. Server calls, such file downloads or video
+		views, do not interrupt the sequence. 
+	 </p> 
+  </conbody> 
+</concept>

@@ -31,6 +31,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.xml.sax.XMLReader;
 
+import com.adobe.aem.importer.exception.AemImporterException;
+import com.adobe.aem.importer.exception.AemImporterException.AEM_IMPORTER_EXCEPTION_TYPE;
+
 public abstract class AbstractXmlTransformer {
 	
 	/* log */
@@ -57,11 +60,11 @@ public abstract class AbstractXmlTransformer {
 	 * @return
 	 * @throws Exception
 	 */
-	protected String getMandatoryProperty(Properties properties, String key) throws Exception {
+	protected String getMandatoryProperty(Properties properties, String key) throws AemImporterException {
 		final String xslt = properties.getProperty(key);
 		log.debug("Get mandatory property {}: {}",key,xslt);
 		if (xslt==null)
-			throw new Exception("Mandatory property "+key+" not supplied");
+			throw new AemImporterException(AEM_IMPORTER_EXCEPTION_TYPE.ERROR_PARAMS, "Mandatory property "+key+" not supplied");
 		return xslt;
 	}
 	

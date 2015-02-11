@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_27209903B4C9419A8E18022C7C68C577"> 
+  <title>Implement Measurement Library (PHP)</title> 
+  <shortdesc>Once installed, Measurement Library (PHP) provides several
+	 variables and methods for configuring event tracking on your website. 
+  </shortdesc> 
+  <conbody> 
+	 <p> 
+	 <ul id="ul_2764C125A2C44979B5689A08EE9B5118"> 
+		<li id="li_9F52B897972642D7BAD9B0BE8C65F8AF"><xref
+		  href="c_app_cfg_var.xml#concept_E2BA72F3BADD4A85A043688475458CD5" format="dita"
+		  scope="local"><?xm-replace_text Application Config Variables?></xref> 
+		</li> 
+		<li id="li_FE149ADF6A784220BC3FC59B6B5B9CCA"><xref
+		  href="c_trck_cfg_var.xml#concept_B56FB2A8BFAE4CC5BEF21D4C62E055B2"
+		  format="dita" scope="local"><?xm-replace_text Track Config Variables?></xref> 
+		</li> 
+		<li id="li_E6DD8B5B95E140E08B389014D21BEDC2"><xref
+		  href="c_mthds.xml#concept_DB9D9C99B9AA486F835F475F1B768A62"
+		  format="dita" scope="local"><?xm-replace_text Methods?></xref> 
+		</li> 
+		<li id="li_20E51E2BE76640F8B0C3DE346E22D56F"><xref
+		  href="c_plg_arch.xml#concept_2272336DC9B542F181C922CAAE763FDA" format="dita"
+		  scope="local"><?xm-replace_text Plug-In Architecture (Optional)?></xref> 
+		</li> 
+		<li id="li_F11F9F96404F40A0BCAA4CD60A0CF490"><xref
+		  href="c_imp_ex.xml#concept_3F02CEBFF4B748B29003652A50A89CDC" format="dita"
+		  scope="local"><?xm-replace_text Implementation Examples?></xref> 
+		</li> 
+	 </ul> 
+	 </p> 
+	 <p> 
+		<note>When you set a variable directly on the object, the value acts as
+		  the default value until you change it on the object. However, you can use the
+		  variable overrides parameter to set a one-time-use value that persists only for
+		  the current track call, then resets to the default value. You cannot unset
+		  variables with variable overrides. For information about using variable
+		  overrides, see 
+		  <xref href="c_imp_ex.xml#concept_3F02CEBFF4B748B29003652A50A89CDC"
+			format="dita" scope="local"><?xm-replace_text Implementation Examples?></xref>.
+		  
+		</note> 
+	 </p> 
+  </conbody>
+</concept>

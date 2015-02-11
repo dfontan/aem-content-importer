@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_603BDE7700B945699AF5514C2DEB81F7"> 
+  <title>Co-brand a dashboard</title> 
+  <shortdesc>Steps that describe how to upload an image to display in a
+	 dashboard. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Reports and analytics"/> 
+		<othermeta name="subtopic" content="Dashboards"/> </metadata>
+  </prolog> 
+  <taskbody> 
+	 <steps id="steps_1AA4B79597554AD88177F9A61E31F0DF"> 
+		<step id="step_4A89D9B4B6934E6F985B023E8657B905"> 
+		  <cmd><uicontrol>Analytics</uicontrol> &gt; 
+			 <uicontrol>Admin</uicontrol> &gt; 
+			 <uicontrol>Company Settings</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_B75E769F2BAE4CF98D10D1904B4C4814"> 
+		  <cmd>On the 
+			 <wintitle>Company Settings</wintitle> page, click 
+			 <uicontrol>Co-Brand the Adobe Marketing Cloud</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_1B6370C15756466A834FEA482B5A2EA2"> 
+		  <cmd>Click 
+			 <uicontrol>Enable Co-Branding</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_7C6F1EF5DD344903BC842D646A7435DE"> 
+		  <cmd>Browse to upload the image, then click 
+			 <uicontrol>Save.</uicontrol> 
+		  </cmd> 
+		  <info> 
+			 <p>For best results when viewing the image in a browser, upload a
+				100px by 30px image. For best results in PDF output, upload a 417px by 125px
+				(300 dpi) image. Oversized images are shrunk to size, while preserving aspect
+				ratio. 
+			 </p> 
+		  </info> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task> 

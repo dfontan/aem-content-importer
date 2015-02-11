@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_150181407D6F449CBACD701A8D90262D"> 
+  <title>Create processing rules</title> 
+  <shortdesc>Processing rules are set on report suites. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Admin tools"/> 
+		<othermeta name="subtopic" content="Processing rules"/> </metadata>
+  </prolog> 
+  <taskbody> 
+	 <steps id="steps_4489954B69394105B5C95160BA0E61A7"> 
+		<step id="step_96CB3DD8012E4FB493C76ABEE295ABB5"> 
+		  <cmd>Click 
+			 <uicontrol>Analytics</uicontrol> &gt; 
+			 <uicontrol>Admin</uicontrol> &gt;<uicontrol>Report
+				Suites</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_B2AEB72CBAB64036BE2ED419CFDC13B6"> 
+		  <cmd>Select a Report Suite. 
+		  </cmd> 
+		</step> 
+		<step id="step_A326345ED8BE49738A22657FB55ADF8E"> 
+		  <cmd>Click 
+			 <uicontrol>Edit Settings</uicontrol> &gt; 
+			 <uicontrol>General</uicontrol> &gt; 
+			 <uicontrol>Processing Rules</uicontrol>. 
+		  </cmd> 
+		  <stepresult>
+		  </stepresult> 
+		</step> 
+		<step id="step_4C3E44DE879247169C9AE45544304171"> 
+		  <cmd>On the 
+			 <uicontrol>Processing Rules</uicontrol> page, click 
+			 <uicontrol>Add Rule</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_87E2C94247B24F008D5C098DBE098519"> 
+		  <cmd>Click 
+			 <uicontrol>Add Condition</uicontrol> and then select when the rule
+			 applies. 
+		  </cmd> 
+		  <info> 
+			 <p>If you add more than one condition, click the 
+				<uicontrol>All</uicontrol> drop down box to select which conditions
+				must match for the rule to apply. If you do not add any conditions, the defined
+				action is always executed. 
+			 </p> 
+		  </info> 
+		</step> 
+		<step id="step_2F628086B0314895BBAEAE43213C71B9"> 
+		  <cmd>Click 
+			 <uicontrol>Add Action</uicontrol> and then select the action you want
+			 performed when the conditions match. 
+		  </cmd> 
+		  <info>
+		  </info> 
+		</step> 
+		<step id="step_35F544475DDC46FC83C9CC99222749ED"> 
+		  <cmd>Add an note that contains details on the rule and then click 
+			 <uicontrol>Save</uicontrol>. 
+		  </cmd> 
+		  <info> 
+			 <p>If you have multiple rules drag and drop them on the page to
+				change the processing order. 
+			 </p> 
+		  </info> 
+		  <info>See 
+			 <xref
+			  href="processing_rules_examples.xml#concept_92527719A66849058108300DAE8A506B"
+			  format="dita" scope="local"><?xm-replace_text Examples of Processing Rules?></xref>
+			 for information about the kinds of rules you can create. 
+		  </info> 
+		</step> 
+	 </steps> 
+  </taskbody> 
+</task>

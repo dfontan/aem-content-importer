@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_4F67EF42EA5341DAA64081AFA23D9F11"> 
+  <title>Share a Marketing Cloud folder </title> 
+  <shortdesc> Share a 
+	 <keyword>Marketing Cloud</keyword> folder with 
+	 <keyword>Creative Cloud</keyword> users. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<keywords> 
+		  <keyword>asset sharing</keyword> 
+		  <keyword>Creative Cloud</keyword> 
+		</keywords> 
+		<othermeta name="solution" content="Marketing Cloud"/> </metadata>
+  </prolog> 
+  <taskbody> 
+	 <context id="context_8B9AC90773154E7CA8E501209CA3C9C0"> 
+		<draft-comment> 
+		  <p>Alternative path: click Enter Selection Mode, click a folder, then
+			 click the CC icon 
+		  </p> 
+		  <p><image href="graphics/cc_enter_selection_mode.png"
+			 id="image_6E783EF18AC04FB3B77ECE797A74F0EE"><?xm-replace_text Paragraph?></image>
+			 
+		  </p> 
+		</draft-comment> 
+	 </context> 
+	 <steps id="steps_1E4402C8D7014757AF82AFD2E7640075"> 
+		<step id="step_A6E8689722AE4F138F3DBC387235DC8E"> 
+		  <cmd> 
+			 <xref href="t_sign_in.xml#task_1BFE87E20DCB44078CAC82F3CD44B985"
+			  format="dita" scope="local"> <?xm-replace_text Sign in to the Adobe Marketing Cloud?>
+			 </xref>. 
+		  </cmd> 
+		</step> 
+		<step id="step_0400EB425BFE44F59B35B0C3D62B0B20"> 
+		  <cmd> Click 
+			 <uicontrol>Assets</uicontrol>, then click 
+			 <uicontrol>Add Folder</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_29B205D7953242E4A7E9C35BE6C78C30"> 
+		  <cmd>On the new folder, click 
+			 <uicontrol>Share Using Creative Cloud</uicontrol>. 
+		  </cmd> 
+		  <stepresult> 
+			 <p> 
+				<image href="graphics/share_using_cc.png"
+				 id="image_BD778F44BEFC414DB09F39903E086303"> <?xm-replace_text Step Result?>
+				</image> 
+			 </p> 
+			 <p>Alternatively, click 
+				<uicontrol>Enter Selection Mode</uicontrol>, click a folder, then
+				click the 
+				<keyword>Creative Cloud</keyword> icon: 
+			 </p> 
+			 <p><image href="graphics/cc_enter_selection_mode.png"
+				id="image_7EF7532A905B4F1EB728CA79C9D2B1DD"><?xm-replace_text Paragraph?></image>
+				
+			 </p> 
+		  </stepresult> 
+		</step> 
+		<step id="step_BA17CFA185284641A9B878BA29551996"> 
+		  <cmd>On the 
+			 <wintitle>Share to Creative Cloud</wintitle> page, select a user,
+			 then click 
+			 <uicontrol>Add</uicontrol>. 
+		  </cmd> 
+		</step> 
+		<step id="step_5EF58430E9CF443C9037F9823A1ADA6D"> 
+		  <cmd>Click 
+			 <uicontrol>Share</uicontrol>. 
+		  </cmd> 
+		  <info> 
+			 <p>A shared asset on the 
+				<wintitle>Marketing Cloud Asset</wintitle> page is identified by
+				the 
+				<keyword>Creative Cloud</keyword> logo on the folder. 
+			 </p> 
+			 <p><image href="graphics/creative_cloud_shared_folder.png"
+				id="image_88CCF9AD95164E1E998B62FCD81BCFDB"><?xm-replace_text Paragraph?></image>
+				
+			 </p> 
+		  </info> 
+		</step> 
+		<step id="step_1233631ADEEF425E8C559D4416DF6923"> 
+		  <cmd>Launch the 
+			 <keyword>Creative Cloud</keyword> desktop (or navigate to the 
+			 <wintitle>Creative Cloud Files</wintitle> page in a browser) and look
+			 for the request notification. 
+		  </cmd> 
+		  <stepresult> 
+			 <p><image href="graphics/cc_share_request.png"
+				id="image_21892E4EA7054CE7819D105B5832323B"><?xm-replace_text Paragraph?></image>
+				
+			 </p> 
+		  </stepresult> 
+		</step> 
+		<step id="step_DD0BA26E6EB045BAA9EE5ABAE9838EF2"> 
+		  <cmd>Open the request, then click 
+			 <uicontrol>Accept</uicontrol>. 
+		  </cmd> 
+		  <stepresult> 
+			 <p><image href="graphics/cc_share_accept.png"
+				id="image_FC73ECDA02BD413692BDED3EEA164B04"><?xm-replace_text Step Result?></image>
+				
+			 </p> 
+		  </stepresult> 
+		</step> 
+		<step id="step_16D315D9C4FF4905A960B106A1A8CDA1"> 
+		  <cmd>To access folder contents, click 
+			 <uicontrol>Open Folder</uicontrol> (or 
+			 <uicontrol>View on Web</uicontrol>). 
+		  </cmd> 
+		  <stepresult> 
+			 <p><image href="graphics/creative_cloud_open_folder.png"
+				id="image_DB6AA34474C94828BAC98B8D9D3A052D"><?xm-replace_text Step Result?></image>
+				
+			 </p> 
+		  </stepresult> 
+		</step> 
+		<step id="step_4DCFFAA2DE7F4185B3FA7C0557858165"> 
+		  <cmd>Continue by adding comments on the shared asset:
+		  </cmd> 
+		  <stepresult> 
+			 <p>In Creative Cloud, you can click into an image, then click 
+				<uicontrol>Activity</uicontrol> to add a comment on the image.
+				Comments are synced on the assets in the 
+				<keyword>Creative Cloud</keyword> and 
+				<keyword>Marketing Cloud</keyword>.
+			 </p>
+			 <p><image href="graphics/asset_comment_cc.png"
+				id="image_254BA8E4214B4FD89130144A5E507C30"><?xm-replace_text Paragraph?></image>
+			 </p>
+			 <p>In the Marketing Cloud, click into an image, then click the
+				time-line icon to add a comment on the image. Comments are synced on the assets
+				in the Creative Cloud and Marketing Cloud.
+			 </p>
+			 <p><image href="graphics/asset_comment_mac.png"
+				id="image_2EF228587A4C4EF9A8B5EC36E0237CB9"><?xm-replace_text Paragraph?></image>
+			 </p> 
+			 <draft-comment> 
+				<p> 
+				</p> 
+				<p>You can unshare a folder. On Share to Creative Cloud, click
+				  Remove, then click Update. The blue creative cloud icon disappears. Tasks:
+				  Accept invitations, share, unshare, add comments. 
+				</p> 
+				<p>Turn assets into cards for annotation (tie into that MAC
+				  feature). 
+				</p> 
+			 </draft-comment> 
+			 <draft-comment> 
+				<p>Integrations: 
+				</p> 
+				<p>In 
+				  <b>Social</b>, (Asset Selector) and publish a social post to FB
+				  or twitter, go to Publisher, the Import from Assets brings a page overlay of
+				  MAC assets. You can search for a particular folder, browse to it, and attach
+				  the asset to a post. 
+				</p> 
+				<p><b>Target integration</b>: Launch Target (bullseye), Create
+				  Activity, name it, click Continue, specify activity URL, then Swap Image,
+				  Target has a similar asset selector and replace an image in a Target
+				  Activity/experience. (Or Insert Element to load a shared/MAC asset to Target.)
+				  When creating activities in 
+				  <keyword>Adobe Target</keyword>, you can load or swap shared
+				  assets from the 
+				  <xref
+					href="https://marketing.adobe.com/resources/help/en_US/target/target/c_manage_content.html"
+					format="https" scope="external">Content Library</xref>. 
+				</p> 
+			 </draft-comment> 
+		  </stepresult> 
+		</step> 
+		<step id="step_4E1608DC7B604D7AB64DEA06A1F6F18B">
+		  <cmd>To un-share a folder, click 
+			 <uicontrol>Share Using Creative Cloud</uicontrol> (similar to 
+			 <xref
+			  href="t_share_creative_cloud.xml#task_4F67EF42EA5341DAA64081AFA23D9F11/step_BA17CFA185284641A9B878BA29551996"
+			  format="dita" scope="local">Step 3</xref>), then remove users by clicking X,
+			 then click 
+			 <uicontrol>Share</uicontrol>.
+		  </cmd>
+		  <stepresult>
+			 <p><image href="graphics/asset_remove_user.png"
+				id="image_03204CE06406491CBB6136E771920CD4"><?xm-replace_text Paragraph?></image>
+			 </p>
+			 <p>Once you have removed all Creative Cloud Users, the folder is
+				un-shared and the Creative Cloud users no longer has access.
+			 </p>
+		  </stepresult>
+		</step>
+	 </steps> 
+	 <postreq id="postreq_3D155CEF75E84802B6AA7DE3E526EB82">
+
+		<p>Additional ways to use a shared asset include:
+		</p>
+		<ul id="ul_6DC3D27EB3774DDD80C27D991B47AB18"> 
+		  <li id="li_672B1100C24A4DBB823423A2F07569F9">Use assets in the 
+			 <wintitle>Asset Selector</wintitle> in 
+			 <keyword>Adobe Social</keyword> for social posts. See 
+			 <xref
+			  href="https://marketing.adobe.com/resources/help/en_US/social/c_pub_publisher.html"
+			  format="https" scope="external">Publisher Page</xref>. 
+		  </li> 
+		  <li id="li_690E140F696D409FB7C9DB1F2089C036">Load or swap assets in the
+			 
+			 <xref
+			  href="https://marketing.adobe.com/resources/help/en_US/target/target/c_manage_content.html"
+			  format="https" scope="external">Content Library</xref> in 
+			 <keyword>Adobe Target</keyword> for images in activities. 
+		  </li> 
+		</ul>
+	 </postreq>
+  </taskbody> 
+  <related-links> 
+	 <link href="http://helpx.adobe.com/creative-cloud/help/sync-files.html"
+	  format="http" scope="external"> 
+		<linktext>Creative Cloud Help - Manage and sync files 
+		</linktext> 
+	 </link> 
+	 <link
+	  href="http://helpx.stage.adobe.com/creative-cloud/help/collaboration.html"
+	  format="http" scope="external"> 
+		<linktext>Creative Cloud Help - Collaborate with others 
+		</linktext> 
+	 </link> 
+	 <link
+	  href="http://helpx.stage.adobe.com/creative-cloud/help/collaboration-faq.html"
+	  format="http" scope="external"> 
+		<linktext>Creative Cloud Help - Collaboration FAQ 
+		</linktext> 
+	 </link> 
+  </related-links> 
+</task> 

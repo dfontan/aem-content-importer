@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_4F541AA2328C474B804320BB134BC28D">
+  <title>Tag management Quick Start</title>
+  <shortdesc>This section contains an overview of the tasks required to deploy
+	 tag management. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Tag management" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <table id="table_9B1261E3593649109F0B8020D7837B62">
+      <tgroup cols="4">
+        <colspec colnum="1" colname="col1" colwidth="1.00*" />
+        <colspec colnum="2" colname="col2" colwidth="2.93*" />
+        <colspec colname="col03" colnum="3" colwidth="1.78*" />
+        <colspec colname="col3" colnum="4" colwidth="3.91*" />
+        <thead>
+          <row>
+            <entry colname="col1">Step 
+				</entry>
+            <entry colname="col2">Task 
+				</entry>
+            <entry colname="col03">Location 
+				</entry>
+            <entry colname="col3">Description 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry colname="col1">
+              <b>Step 1</b>
+            </entry>
+            <entry colname="col2">
+              <xref href="tm_quickstart.xml#concept_4F541AA2328C474B804320BB134BC28D/section_111DF162AAB346B3921E5C22E005CF22" format="dita" scope="local">
+                <?xm-replace_text Create a New Container?>
+              </xref>
+            </entry>
+            <entry colname="col03">
+              <p>Tag management UI 
+				  </p>
+            </entry>
+            <entry colname="col3">Define a tag container to provide analytics
+				  on your website. 
+				</entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <b>Step 2</b>
+            </entry>
+            <entry colname="col2">
+              <xref href="tm_quickstart.xml#concept_4F541AA2328C474B804320BB134BC28D/section_DF52C653A55F46EC9204FBF6DB944EE3" format="dita" scope="local">
+                <?xm-replace_text Define Tags?>
+              </xref>
+            </entry>
+            <entry colname="col03">
+              <p>Tag management UI 
+				  </p>
+            </entry>
+            <entry colname="col3">Add support for products, Genesis
+				  integrations, and affiliate beacons to the tag container. 
+				</entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <b>Step 3</b>
+            </entry>
+            <entry colname="col2">
+              <xref href="tm_quickstart.xml#concept_4F541AA2328C474B804320BB134BC28D/section_6434A567A15B47D880300306613CF0D1" format="dita" scope="local">
+                <?xm-replace_text Copy Environment Bookmarklets?>
+              </xref>
+            </entry>
+            <entry colname="col03">
+              <p>Tag management UI 
+				  </p>
+            </entry>
+            <entry colname="col3">Save bookmarklets that let you switch between
+				  the dev, state, and live environments to test your tag container. 
+				</entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <b>Step 4</b>
+            </entry>
+            <entry colname="col2">
+              <xref href="tm_quickstart.xml#concept_4F541AA2328C474B804320BB134BC28D/section_FA7BB6E746F14BBE99EF081F6BDC26D9" format="dita" scope="local">
+                <?xm-replace_text Include the Loader on Site Pages?>
+              </xref>
+            </entry>
+            <entry colname="col03">
+              <p>Your website 
+				  </p>
+            </entry>
+            <entry colname="col3">Add tag management page code to each page on your
+				  website. 
+				</entry>
+          </row>
+          <row>
+            <entry colname="col1">
+              <b>Step 5</b>
+            </entry>
+            <entry colname="col2">
+              <xref href="tm_quickstart.xml#concept_4F541AA2328C474B804320BB134BC28D/section_FAD41BCEA2FA44938DCC9E10AB6F24A6" format="dita" scope="local">
+                <?xm-replace_text Test and Promote Revisions?>
+              </xref>
+            </entry>
+            <entry colname="col03">
+              <p>Tag management UI 
+				  </p>
+            </entry>
+            <entry colname="col3">Set up your workflow to test and promote tag
+				  container versions. 
+				</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <section id="section_111DF162AAB346B3921E5C22E005CF22">
+      <title>Create a New Container</title>
+      <p>The first step is to define a tag container in the Admin interface. A
+		  tag container is associated with a digital property. 
+		</p>
+      <p>
+        <image href="graphics/tag_menu.png" id="image_53173DFFE50F46D4B1524ED2675E3703" align="center" placement="break">
+          <?xm-replace_text Paragraph?>
+        </image>
+      </p>
+      <p>See 
+		  <xref href="t_tm_create_container.xml#task_2D295A6FB7DB4845A83E6D6F0F6B6F51" format="dita" scope="local"><?xm-replace_text Create a tag container?></xref>
+		  for detailed instructions.
+		</p>
+    </section>
+    <section id="section_DF52C653A55F46EC9204FBF6DB944EE3">
+      <title>Define Tags</title>
+      <p>After you create a new tag container, the 
+		  <wintitle>Edit Tags</wintitle> page displays. This page is where you
+		  add product tags and add any custom code. 
+		</p>
+      <p>Keep the following key concepts in mind as you create and deploy a tag
+		  container: 
+		</p>
+      <ul id="ul_1DD977F00FD44AD881A6E6A25D3636B7">
+        <li id="li_D2D9D4F89AB44D65850F5FDA3BD2C7E8">Tag containers are hosted
+			 on a CDN. Each time a new revision is deployed it takes several minutes to
+			 propagate to the edge nodes. 
+		  </li>
+        <li id="li_FA6C039260C1458BAA10D01C65F3F080">Tag Containers are
+			 optimized to use asynchronous loading where possible to improve performance. If
+			 variables are not being populated or resources are not being found, make sure
+			 the code is inserted in the correct location or if necessary, switch to
+			 synchronous loading. 
+		  </li>
+        <li id="li_AC934197CEE242ECB436FAD2FDB3AEFC">Each tag container has a
+			 dev, stage, and live environment. New tag containers are created with a dev
+			 version only. You must set a cookie to load the dev version. See 
+			 <xref href="tm_environments.xml#concept_641973B03E6341EEA74710491E60DE97" type="concept" format="dita" scope="local"><?xm-replace_text Tag Container Environments?></xref>.
+			 
+		  </li>
+      </ul>
+      <p>For details on product deployment, see 
+		  <xref href="tm_cloud.xml#concept_CF04A6083C17410BAA4714356D15E75F" format="dita" scope="local"><?xm-replace_text Marketing Cloud Deployment?></xref>.
+		  
+		</p>
+      <p>If you are an existing 
+		  <keyword>Analytics</keyword>, Target, or Media Optimizer
+		  customer migrating to 
+		  <keyword>tag management</keyword>, see 
+		  <xref href="tm_migrate_std.xml#concept_32BCAA24D277424DA66D9FFA530BF4A9" type="concept" format="dita" scope="local"><?xm-replace_text Migrating to TagManager 2.0 from a Legacy Implementation?></xref>.
+		  
+		</p>
+      <p>If you are an existing tag management 1.0 customer migrating to tag management
+		  2.0, see 
+		  <xref href="tm_migrate_v1.xml#concept_B17A13674AA74D53BDFD5064A4418F62" format="dita" scope="local"><?xm-replace_text Migrating to TagManager 2.0 from TagManager 1.0?></xref>.
+		</p>
+    </section>
+    <section id="section_6434A567A15B47D880300306613CF0D1">
+      <title>Copy Environment Bookmarklets</title>
+      <p> To test each version of the tag as it moves from dev, stage, and
+		  live, copy the bookmarklets from the 
+		  <wintitle>Environment Overview</wintitle> page. See<xref href="tm_environments.xml#concept_641973B03E6341EEA74710491E60DE97" type="concept" format="dita" scope="local"><?xm-replace_text Tag Container Environments?></xref>
+		  for additional details. 
+		</p>
+      <p>
+        <image href="graphics/tag_bookmarklets.png" id="image_A0C52F81164645888A86DBA7A5449369" align="center">
+          <?xm-replace_text Paragraph?>
+        </image>
+      </p>
+    </section>
+    <section id="section_FA7BB6E746F14BBE99EF081F6BDC26D9">
+      <title>Include the Page Code on Site Pages</title>
+      <p>Place the page code directly after the 
+		  <codeph>&lt;body&gt;</codeph> tag on site pages. 
+		</p>
+      <p>Variables and other properties are set in the UI in the Tag Code or in
+		  the On Load section of the tag container. If you include code that is dependent
+		  on tag code outside of the tag manager interface, code must be wrapped in 
+		  <xref href="tm_amc_on.xml#concept_FBECA315D8904A5E931B4040AD51978A" format="dita" scope="local"><?xm-replace_text Tag Event Callbacks?></xref>. 
+		</p>
+      <codeblock outputclass="syntax javascript">&lt;!-- example, do not copy - each tag container has unique page code  -- &gt;
+&lt;!-- Adobe Marketing Cloud Tag Loader Code
+Copyright 1996-2013 Adobe, Inc. All Rights Reserved
+More info available at http://www.adobe.com/solutions/digital-marketing.html --&gt;
+&lt;script type="text/javascript"&gt;//&lt;![CDATA[
+var amc=amc||{};if(!amc.on){amc.on=amc.call=function(){}};
+document.write("&lt;scr"+"ipt type=\"text/javascript\" src=\"http://www.adobetag.com/d1/v2/amc.js\"&gt;&lt;/sc"+"ript&gt;");
+//]]&gt;&lt;/script&gt;
+&lt;!-- End Adobe Marketing Cloud Tag Loader Code --&gt;</codeblock>
+      <p>The custom page code for each Tag Container is available in the
+		  interface by clicking 
+		  <uicontrol>Get Page Code</uicontrol>. 
+		</p>
+    </section>
+    <section id="section_FAD41BCEA2FA44938DCC9E10AB6F24A6">
+      <title>Test and Promote Revisions</title>
+      <p>When you are ready, use the links in the Actions column to copy a
+		  revision to the next environment. The current version in 
+		  <uicontrol>Live Environment</uicontrol> is sent to users when they view
+		  a page that includes the tag loader. 
+		</p>
+    </section>
+  </conbody>
+</concept>

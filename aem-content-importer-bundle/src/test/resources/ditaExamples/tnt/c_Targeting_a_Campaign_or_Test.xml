@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_A782F8481A5041EBA75103CB26376522" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic concept/concept ">
+  <title class="- topic/title ">Target a Campaign or Test</title>
+  <shortdesc class="- topic/shortdesc ">Targeting allows you to display
+	 different content and different campaigns to different customer segments. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody class="- topic/body  concept/conbody ">
+    <p class="- topic/p ">If you want to show the same content to everyone but
+		break out report data by group, use 
+		<xref href="c_Managing_Segment_Filters.xml#concept_DF9534D4168D46D4B109DD0D2FB57781" type="concept" format="dita" scope="local" class="- topic/xref ">segment
+		  filters</xref> instead of targeting. 
+	 </p>
+    <p>When a visitor lands on a page where you have set up a campaign, Target
+		determines whether the visitor qualifies as a member of an audience that has
+		been identified for the test. If the visitor cannot be identified as a member
+		of a target segment, that visitor is shown default content and is not included
+		in the reports for the campaign. 
+	 </p>
+    <p>If the user is identified as part of a target audience, then Target
+		determines which experience to display, based on the criteria established when
+		the campaign was created. 
+	 </p>
+    <p> In most cases, it is better to analyze visits than visitors. If you use
+		visits, you get a more narrow view than you would with visitors, because
+		everything happens within one session. With visitors, you are including
+		people's actions who entered or originally saw the test content before the
+		current session and are only acting now. Viewing by visitor is important in
+		cases where you hypothesize that the changes will have longer-term impact on a
+		user's behavior, or if it typically takes your customers multiple visits to
+		convert.
+	 </p>
+    <p class="- topic/p ">Before targeting a campaign or test, do the
+		following: 
+	 </p>
+    <p class="- topic/p ">
+      <ul id="ul_918653A0170844078C0FE546451EEF66" class="- topic/ul ">
+        <li id="li_303E9C9A465C4D9ABBB4A7160FA2F0AB" class="- topic/li "> To help
+		  you choose the right campaign or test type, see 
+		  <xref href="r_Understanding_the_Types_of_Campaigns_and_Tests.xml#reference_C22725717F40407FA424E957308E258F" type="reference" format="dita" scope="local" class="- topic/xref ">Understanding the Types of Campaigns and Tests</xref>. 
+		</li>
+        <li id="li_1382DC45D637491CA2EDEBADF062B050" class="- topic/li ">
+		  Complete<xref href="t_Setting_Up_Your_Site.xml#task_8C450FFC11344C58B59F092521D71EF7" type="task" format="dita" scope="local" class="- topic/xref "> Setting Up Your
+			 Site</xref> and ensure you have associated the right parameters to your
+		  relevant mboxes. 
+		</li>
+      </ul>
+    </p>
+  </conbody>
+  <related-links class="- topic/related-links ">
+    <link href="t_Setting_Targeting_Rules.xml#task_75C6702BE0AC45E9A0B9DB26FDBB18B2" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Targeting Rules?>
+    </link>
+    <link href="t_Creating_an_Optimizing_Auto-Targeted_Campaign.xml#task_2E714111F87C4F0FBE969B899732BEA3" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Create an Optimizing (Auto-Targeted)   Campaign?>
+    </link>
+    <link href="t_Creating_a_Campaign_from_the_Winning_Experience.xml#task_2C2E297CD9C144D79FE269328556677A" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Create a Campaign from the Winning   Experience?>
+    </link>
+    <link href="c_Using_TestTarget_Onsite.xml#concept_51871D12D7F44B6C9BC51C3A00034105" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Test&Target Onsite?>
+    </link>
+  </related-links>
+</concept>

@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_8C450FFC11344C58B59F092521D71EF7" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Set Up Your Site</title>
+  <shortdesc class="- topic/shortdesc ">Before you can use A/B and multivariate
+	 testing to display targeted content on your site, you must set up your Web
+	 pages. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <context id="context_B7499CE0629542D9B4F33C7E41A7B3AA" class="- topic/section task/context ">
+      <p class="- topic/p ">Consider both the design of your page and the
+		  strategy of your campaigns, including how offers will be targeted and
+		  displayed, and which metrics will be used to measure success. 
+		</p>
+      <p class="- topic/p ">Once your strategy and design are defined and your
+		  pages created, take the following steps to prepare your Web sites. Start by
+		  reading the 
+		  <xref href="http://marketing.adobe.com/resources/help/en_US/tnt/pdf/testandtarget_integration.pdf" scope="external" format="html" class="- topic/xref ">Test&amp;Target
+			 Integration Guide</xref>. 
+		</p>
+    </context>
+    <steps id="steps_8AE005F3E8E54D858981B05161326F30" class="- topic/ol task/steps ">
+      <step id="step_A9465F4C826348C38DA2C7EFF4143AE6" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Download the 
+			 <filepath class="+ topic/ph sw-d/filepath ">mbox.js</filepath> to
+			 each of your hosts that will serve content for the campaign or tests. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">
+            <xref href="c_Downloading_and_Setting_Up_MboxJs.xml#concept_9429FEF054734D3AA0CE7E3F25ED0B9E" type="concept" format="dita" scope="local" class="- topic/xref ">More
+				  information</xref>
+          </p>
+        </stepresult>
+      </step>
+      <step id="step_98403492535B4CE787D953C6F221B3DC" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Set up host groups (domains) to serve
+			 development, staging and, production content. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">
+            <xref href="c_Managing_Hosts.xml#concept_BDF83A0B965A4CD486B16DAEA2F87BA7" type="concept" format="dita" scope="local" class="- topic/xref ">More
+				  information</xref>
+          </p>
+        </stepresult>
+      </step>
+      <step id="step_F276A9D2F6624744B0FF0A64900D34CA" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Add the user accounts for your team
+			 members who will create offers, create campaigns, or view reports. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">
+            <xref href="c_Managing_users_and_Roles.xml#concept_4DB925AA849C496C9761699D6EB47CFE" type="concept" format="dita" scope="local" class="- topic/xref ">More
+				  information</xref>
+          </p>
+        </stepresult>
+      </step>
+      <step id="step_A6898DEE6E8C4ACCA6E650368304BAB2" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">On all Web pages that will have
+			 mboxes, insert a reference to the 
+			 <filepath class="+ topic/ph sw-d/filepath ">mbox.js</filepath>. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">
+            <xref href="t_Referencing_mboxjs.xml#concept_9429FEF054734D3AA0CE7E3F25ED0B9E" type="concept" format="dita" scope="local" class="- topic/xref ">More
+				  information</xref>
+          </p>
+        </stepresult>
+      </step>
+      <step id="step_C2D69B83917446B3BEFFBF201DA4F5DA" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Insert the mboxes on the Web pages,
+			 according to your strategy and design. This includes defining default content
+			 for all mboxes. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">
+            <xref href="c_About_Mboxes.xml#concept_E01933A6CEDE481BBAC25F95FE3C6FD9" type="concept" format="dita" scope="local" class="- topic/xref ">More
+				  information</xref>
+          </p>
+        </stepresult>
+      </step>
+      <step id="step_D5D7EBBD1BE64796AA5C7578DD8691A9" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Run a non-display campaign for a few
+			 days to compare your 
+			 <xref href="c_Working_with_Analytics_Packages.xml#concept_1160021CC3F54E3193973FCF93E2545F" type="concept" format="dita" scope="local" class="- topic/xref ">Analytics
+				metrics</xref> reports with Target's reports. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">There can be discrepancy's between Target data
+				and data in other analytics tools, such as SiteCatalyst. For more information,
+				see 
+				<xref href="c_Understanding_Expected_Data_Variances.xml#concept_C624EC0C0BDE40A79546BE9D86F80C5D" type="concept" format="dita" scope="local" class="- topic/xref ">Understanding
+				  Expected Data Variances</xref>. 
+			 </p>
+        </stepresult>
+      </step>
+      <step id="step_3EF2583B1898400B8088A6DECDA4FB2E" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">If you are using targeting, Reserved
+			 Name mboxes, or Segment Filters, or tracking orders or sales, ensure all needed
+			 parameters are associated with the mboxes in your campaign or test. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">
+            <xref href="c_Parameters_and_Values.xml#concept_DB5AB8E9682D41DDA5621FFE856C6336" type="concept" format="dita" scope="local" class="- topic/xref ">More
+				  information</xref>
+          </p>
+        </stepresult>
+      </step>
+      <step id="step_ED89349FA48D4D79B0AD79C088AD28FA" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">You are now ready to 
+			 <xref href="c_Managing_Offers.xml#concept_C5EFA3E2C8B44D95A19AA782E2D064DE" type="concept" format="dita" scope="local" class="- topic/xref ">create
+				offers</xref> and set up a campaign or test. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">Offer content
+			 can be managed outside Target, using a URL to reference this content. If you
+			 use this kind of 
+			 <xref href="c_About_Dynamic_Content.xml#concept_657016A0E6174C22B89036E9C8A0170F" type="concept" format="dita" scope="local" class="- topic/xref ">dynamic
+				offers</xref>, prepare the dynamic snippets on your host. 
+		  </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+</task>

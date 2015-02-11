@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_50EE6629F61A478BB67781408FBA04BD"> 
+  <title>The s_gi() Function</title> 
+  <shortdesc>The 
+	 <codeph>s_gi()</codeph> function is used to create or find your instance of
+	 AppMeasurement by report suite ID. Internally, AppMeasurement keeps track of
+	 every instance created, and 
+	 <codeph>s_gi()</codeph> returns the existing instance for a report suite if
+	 one exists. If an instance does not exist, a new instance is created and
+	 returned.
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta content="Analytics" name="solution"/> </metadata>
+  </prolog> 
+  <conbody>
+	 <p>We recommend calling 
+		<codeph>s_gi()</codeph> before setting variables and making tracking
+		calls throughout your page code. This ensures that the correct object is used
+		to make the tracking call in the case that the s variable is inadvertently
+		overwritten. 
+	 </p>
+	 <section id="section_F2F3B76E7AFD4B4B91CDC8BBEB34BBC5">
+		<title>Using Multiple Report Suites</title>
+		<p>The object returned varies based on the report suite ID(s) passed. For
+		  example, if you make the following initial call to 
+		  <codeph>s_gi()</codeph>:
+		</p>
+		<codeblock>var s=s_gi('rsid1,rsid2')</codeblock>
+		<p>The following table outlines what is returned by subsequent calls:
+		</p>
+		<table id="table_95CB8873BE184A52921D251C93B63D3F"> 
+		  <tgroup cols="2"> 
+			 <colspec colnum="1" colname="col1" colwidth="1.00*"/> 
+			 <colspec colnum="2" colname="col2" colwidth="1.44*"/> 
+			 <tbody> 
+				<row> 
+				  <entry> 
+					 <b> Subsequent Call to s_gi</b> 
+				  </entry> 
+				  <entry> 
+					 <b> Description of Object Returned</b> 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <codeph>s=s_gi('rsid1,rsid2')</codeph>
+				  </entry> 
+				  <entry> The same object referenced earlier.
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <codeph>s=s_gi('rsid1')</codeph> 
+				  </entry> 
+				  <entry> A copy of the object created earlier, but not the
+					 original.
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <codeph>s=s_gi('rsid1,rsid3')</codeph> 
+				  </entry> 
+				  <entry> A copy of the object created earlier, but not the
+					 original. 
+				  </entry> 
+				</row> 
+				<row> 
+				  <entry> 
+					 <codeph>s=s_gi('rsid3')</codeph>
+				  </entry> 
+				  <entry> A new, empty object, with no config variables set (e.g.
+					 linkTrackVars is empty, as is linkDownloadFileTypes). 
+				  </entry> 
+				</row> 
+			 </tbody> 
+		  </tgroup> 
+		</table>
+	 </section>
+  </conbody>
+</concept>

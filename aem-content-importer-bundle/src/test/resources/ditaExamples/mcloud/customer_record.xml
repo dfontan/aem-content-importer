@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_D165A3A2C6A34846AB491602758085ED"> 
+  <title>Customer Record Sources</title> 
+  <shortdesc>Learn about managing customer attribute data, creating customer
+	 record sources, and uploading the data. Information about the configuring
+	 customer attribute data files, creating the customer record sources, configure
+	 FTP attribute data files, and validating the schema. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<keywords> 
+		  <keyword>customer attributes</keyword> 
+		</keywords> 
+		<othermeta name="solution" content="Marketing Cloud"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <draft-comment>
+		<p>DELETE?
+		</p>
+	 </draft-comment>
+	 <p> In the Marketing Cloud, click 
+		<uicontrol>Customer Attributes 
+		</uicontrol>. 
+	 </p> 
+	 <p>The 
+		<wintitle>Customer Record Sources</wintitle> page displays the attributes
+		from the data file uploaded from your customer resource management source. 
+	 </p> 
+	 <p> 
+		<image href="graphics/crs_home.png"
+		 id="image_E569E48C37494069921D5EF611B0B812"> <?xm-replace_text Paragraph?>
+		</image> 
+	 </p> 
+	 <p>On the Customer Record Sources page, you can: 
+	 </p> 
+	 <ol id="ol_C5A4ACB65ABD42ADB0A4E0CE3D662A55"> 
+		<li id="li_BCE9564DDD5A4DFB8C26B747F3B7CE0D">Create customer record
+		  sources. 
+		</li> 
+		<li id="li_ED19AAA3414149CD8F4328126606910C">Configure the FTP details. 
+		</li> 
+		<li id="li_87692AADED1741FA812B2B0A85B542C5">Validate the schema and
+		  activate the record. 
+		</li> 
+		<li id="li_E5EB9C311F274FC9AD35B3FB9CBD5B4C">Configure subscriptions. 
+		</li> 
+	 </ol> 
+  </conbody> 
+</concept>

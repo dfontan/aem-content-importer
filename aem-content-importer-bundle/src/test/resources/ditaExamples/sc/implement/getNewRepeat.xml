@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_E3D0FEC81E1F4987B39CC467F19FFCFF"> 
+  <title>getNewRepeat</title> 
+  <shortdesc>Determines whether a visitor is a new visitor or a repeat visitor,
+	 and captures this information in a 
+	 <keyword>Analytics</keyword> variable. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Developer and implementation"/> 
+		<othermeta name="subtopic" content="Plug-ins"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>Use this plug-in to answer the following questions: 
+	 </p> 
+	 <ul id="ul_93F0F51236CE401FB6ADEC03EBC2D213"> 
+		<li id="li_1B5D09E2EFF64CBFA09A27CA0886F2C9">What percentage of my
+		  visitors are new (as opposed to repeat) visitors? 
+		</li> 
+		<li id="li_09B9A7BD06AD4E0BAB3D72CF69DC19DA">Do return visitors generate
+		  higher conversion per capita than new visitors? What is this ratio? 
+		</li> 
+		<li id="li_0ECF67CA3A924EE581DFCF92069F8B5C">Do my marketing campaigns
+		  cause persistence across visits? For example, do users who click through my
+		  campaigns then return later? 
+		</li> 
+	 </ul> 
+	 <note>The following instructions require you to alter the data collection
+		code on your site. This can affect data collection on your site, and should
+		only be done by a developer with experience using and implementing 
+		<keyword>Analytics</keyword>. 
+	 </note> 
+	 <section id="section_92E94A96A4764113B5588F1B83E3DE2C"> 
+		<title>Plug-in Code and Implementation</title> 
+		<p> 
+		  <b>CONFIG SECTION</b>: No changes required for this section. 
+		</p> 
+		<p> 
+		  <b>Plug-in Configuration</b> 
+		</p> 
+		<p>Place the following code within the 
+		  <varname>s_doPlugins()</varname> function, which is located in the area
+		  of the 
+		  <varname>s_code.js</varname> file labeled 
+		  <i>Plugin Config</i>. Choose one Custom Traffic (s.prop) variable or
+		  one Custom Conversion (s.eVar) variable for use in capturing persisted value
+		  data. This should be a variable that has been enabled using the Admin Console,
+		  but which is not currently in use for any other purpose. You can use the
+		  following example and update it based on your requirements. 
+		</p> 
+		<p> 
+		  <codeph>s.prop1=s.getNewRepeat(30,'s_getNewRepeat');</codeph> 
+		</p> 
+		<p> 
+		  <varname>s.getNewRepeat</varname> has two optional arguments: 
+		</p> 
+		<ol id="ol_2B8B7A54792B49218485493AB7CDF265"> 
+		  <li id="li_12A61EE402DC4478B224CD90DCD4EDC7">The first optional
+			 argument is the number of days that the cookie should last. The default value
+			 if this argument is omitted is 30 days. 
+		  </li> 
+		  <li id="li_D60A766A60E84B4DB5B700249ACF7324">The second optional
+			 argument is the cookie name. A default value is used if this argument is
+			 omitted. 
+		  </li> 
+		</ol> 
+		<p> 
+		  <b>PLUGINS SECTION</b>: Add the following code to the area of the 
+		  <filepath>s_code.js</filepath> file labeled PLUGINS SECTION. Do not
+		  make any changes to this portion of the plug-in code. 
+		</p> 
+		<codeblock outputclass="syntax javascript">/*
+ * Plugin: getNewRepeat 1.2 - Returns whether user is new or repeat
+ */
+s.getNewRepeat=new Function("d","cn",""
++"var s=this,e=new Date(),cval,sval,ct=e.getTime();d=d?d:30;cn=cn?cn:"
++"'s_nr';e.setTime(ct+d*24*60*60*1000);cval=s.c_r(cn);if(cval.length="
++"=0){s.c_w(cn,ct+'-New',e);return'New';}sval=s.split(cval,'-');if(ct"
++"-sval[0]&lt;30*60*1000&amp;&amp;sval[1]=='New'){s.c_w(cn,ct+'-New',e);return'N"
++"ew';}else{s.c_w(cn,ct+'-Repeat',e);return'Repeat';}");
+/*
+* Utility Function: split v1.5 (JS 1.0 compatible)
+*/
+s.split=new Function("l","d",""
++"var i,x=0,a=new Array;while(l){i=l.indexOf(d);i=i&gt;-1?i:l.length;a[x"
++"++]=l.substring(0,i);l=l.substring(i+d.length);}return a");</codeblock> 
+		<p>Always test plug-in installations extensively to ensure that data
+		  collection is as expected before deploying in a production environment. 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept>

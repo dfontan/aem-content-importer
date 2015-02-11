@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_D50311361809443E883C1184B1A20F77" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Remembering Report Settings</title>
+  <shortdesc class="- topic/shortdesc ">When you remember report settings, your
+	 report setting will be shown the next time you or anyone else in your account
+	 views reports for the campaign. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <steps id="steps_649580383C0D41139D8D8D6A5EE4A9BF" class="- topic/ol task/steps ">
+      <step id="step_8519276E0F254579B918BD6B7A37C78E" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Remember Report
+				Settings</uicontrol>. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">
+            <note class="- topic/note ">Changes to date range, control
+				  experience and comparison column will also affect the leading experience on the
+				  Campaign Home Page. 
+				</note>
+          </p>
+          <p class="- topic/p ">Because 
+				<uicontrol class="+ topic/ph ui-d/uicontrol ">Remember Report
+				  Settings</uicontrol> affects all users of the account, it is not available to
+				read-only users.
+			 </p>
+        </stepresult>
+      </step>
+    </steps>
+  </taskbody>
+  <related-links class="- topic/related-links ">
+    <link href="c_About_the_Data.xml#concept_2D9FEDE8F94A485DAC86D611BFBDC844" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text About the Data?>
+    </link>
+    <link href="t_Changing_the_Control_Experience.xml#task_0600985520EA4C42A03353A7AA9AB18F" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Changing the Control Experience?>
+    </link>
+    <link href="t_Changing_the_Comparison_Column.xml#task_AE54E96BAD32457295018542151DEB75" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Changing the Comparison Column?>
+    </link>
+    <link href="t_Selecting_the_Host_Group.xml#task_1644EEFA401A42E1B76225311BAB3E8F" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Selecting the Host Group?>
+    </link>
+    <link href="t_Excluding_Extreme_Orders.xml#task_A50092998F1241508FE8C15276146E46" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Excluding Extreme Orders?>
+    </link>
+    <link href="t_Changing_the_Date_Range.xml#task_9AF952FFAB474D33970D59AB15C72E3B" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Changing the Date Range?>
+    </link>
+    <link href="t_Setting_the_Weekday_Filter.xml#task_8D15814511004DE0AA3B385DB5E81CB3" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Setting the Weekday Filter?>
+    </link>
+    <link href="t_Downloading_Data_in_a_CSV_File.xml#task_D91406C042C340D2B0A235E51F259DBD" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Downloading Data in a CSV File?>
+    </link>
+    <link href="t_Pushing_a_Winner.xml#task_F7D69D4BA9FD47B1B37A2BB0AEFE9C3C" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Pushing a Winner?>
+    </link>
+  </related-links>
+</task>

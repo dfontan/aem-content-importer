@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_BFAD03148B5A4BD3A597689658ABBF39" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic concept/concept ">
+  <title class="- topic/title ">Preparing a Targeted Campaign or Test</title>
+  <shortdesc class="- topic/shortdesc ">Tests or campaigns can be targeted in
+	 many different ways to achieve different results. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <conbody class="- topic/body  concept/conbody ">
+    <p class="- topic/p ">You can target a campaign so only certain people
+		enter the campaign, or include everyone in a campaign and direct them to
+		different experiences based on the targeting criteria. You can also add
+		targeting criteria to mboxes to show content only some of the times an mbox is
+		loaded on a page. 
+	 </p>
+    <p class="- topic/p "> Choose the level of the content to target by
+		clicking 
+		<uicontrol class="+ topic/ph ui-d/uicontrol ">Target
+		  this</uicontrol><varname class="+ topic/keyword sw-d/varname ">&lt;level&gt;</varname> on the Edit page.
+		
+	 </p>
+    <p class="- topic/p ">Campaign level and experience level are the most
+		commonly used. 
+	 </p>
+    <p>Details on each type are described below. 
+	 </p>
+    <p>
+      <xref href="c_Preparing_a_targeted_Campaign_or_Test.xml#concept_BFAD03148B5A4BD3A597689658ABBF39/section_8303EF718F724346ABCBB16790933BF4" format="dita" scope="local">
+        <?xm-replace_text Campaign-Level Target?>
+      </xref>
+    </p>
+    <p>
+      <xref href="c_Preparing_a_targeted_Campaign_or_Test.xml#concept_BFAD03148B5A4BD3A597689658ABBF39/section_615AFDBD0D2E4C1ABF35F3903077795F" format="dita" scope="local">
+        <?xm-replace_text Experience-Level Target?>
+      </xref>
+    </p>
+    <p>
+      <xref href="c_Preparing_a_targeted_Campaign_or_Test.xml#concept_BFAD03148B5A4BD3A597689658ABBF39/section_B1E8CCF14F5E4E69AA71D70D295DBAC9" format="dita" scope="local">
+        <?xm-replace_text Location/Mbox-Level Target?>
+      </xref>
+    </p>
+    <p>
+      <xref href="c_Preparing_a_targeted_Campaign_or_Test.xml#concept_BFAD03148B5A4BD3A597689658ABBF39/section_CAA76CDA663446DFBEB1DC81909FBAAA" format="dita" scope="local">
+        <?xm-replace_text Other Target Levels?>
+      </xref>
+    </p>
+    <p>
+      <xref href="c_Preparing_a_targeted_Campaign_or_Test.xml#concept_BFAD03148B5A4BD3A597689658ABBF39/section_8E073D372D9F4A7CA49364C013CA5FE1" format="dita" scope="local">
+        <?xm-replace_text Order of Targeting Execution?>
+      </xref>
+    </p>
+    <section id="section_8303EF718F724346ABCBB16790933BF4">
+      <title>Campaign-Level Target</title>
+      <p class="- topic/p ">Target at the campaign level to determine which
+		  people to allow or disallow into the entire campaign. Users have equal
+		  opportunity to see any experience if no other targeting conditions are set.
+		</p>
+      <p class="- topic/p ">If not allowed in, the visitor sees default content
+		  or can be included in other campaigns approved for the same mbox locations. See
+		  the 
+		  <xref href="http://marketing.adobe.com/resources/help/en_US/tnt/pdf/campaign_entry_process.png" scope="external" format="html">Campaign Entry Process flowchart</xref> for
+		  information about how visitors are chosen for a campaign. 
+		</p>
+      <p class="- topic/p ">Campaign Level Target Options: 
+		</p>
+      <p class="- topic/p ">Choose 
+		  <uicontrol class="+ topic/ph ui-d/uicontrol ">**display
+			 mboxes**</uicontrol> to allow a visitor to enter the campaign at any display
+		  mbox in the entire campaign. The visitor's first view of any display mbox in
+		  the campaign causes him to be counted as a visitor in reports. A display mbox
+		  is any mbox that displays offer content in the campaign. 
+		</p>
+      <p class="- topic/p ">Choose an individual mbox to require a visitor's
+		  first visit to the campaign to be this mbox. If the visitor does not view this
+		  mbox, he is not accepted into the campaign. 
+		</p>
+      <p class="- topic/p ">Targeting to multiple mboxes at the Campaign level
+		  creates an 
+		  <xref href="c_Or_and_And_Target_Rules.xml#concept_C7F197A3D399447E9E143599A3715099" type="concept" format="dita" scope="local" class="- topic/xref ">"or
+			 condition"</xref> for entry into the campaign. You can target to multiple
+		  mboxes by first choosing an mbox from the dropdown, then clicking<uicontrol class="+ topic/ph ui-d/uicontrol "> add targeting location</uicontrol> under
+		  the set of targeting categories. 
+		</p>
+      <p class="- topic/p ">
+        <b class="+ topic/ph hi-d/b ">Warning!</b> Do not use success metric
+		  targeting at the campaign level. The result is an infinite loop that locks the
+		  visitor out of the campaign. 
+		</p>
+    </section>
+    <section id="section_615AFDBD0D2E4C1ABF35F3903077795F">
+      <title>Experience-Level Target</title>
+      <p> Target at the experience level to determine who sees the experience
+		  of the people who are already allowed into the campaign. By default, Target
+		  performs randomization so each experience is shown an equal number of times
+		  across all visitors to the campaign. Experience-level targeting overrides this
+		  default randomization, because you are applying criteria that define who is
+		  allowed to see any given experience.
+		</p>
+      <p class="- topic/p ">Experience-level targeting is typically used with a
+		  landing page 
+		  <xref href="t_Creating_a_Landing_Page_Campaign.xml#task_1B12DDB4D4E64EF8B47113DFBE1EF0BC" type="task" format="dita" scope="local" class="- topic/xref ">Landing Page
+			 campaign</xref>. With targeting rules on each experience, you can show relevant
+		  content to different groups in the same mbox on your site. For example, you
+		  might want to "welcome" visitors from each of your affiliates. You can set up a
+		  landing page campaign that shows a different welcome message in an mbox based
+		  on which affiliate a visitor reached your site from. This can all be managed in
+		  one campaign. As your list of affiliates change, you can remove or add new
+		  experiences targeted to that affiliate source (using the Traffic Sources
+		  category) and choose an offer for each experience that uses that affiliate's
+		  logo or special offer. 
+		</p>
+      <p class="- topic/p "> You can also choose to target a percentage of your
+		  traffic to an experience. At the experience level, click on the population
+		  target icon. An option to choose percentage appears. 
+		</p>
+      <p>
+        <note>For an A/B test, there is only one chance to enter the campaign.
+			 If a visitor is included in the 50% that gets into the campaign, that visitor
+			 is in the campaign. If the visitor is not included, that visitor is not
+			 evaluated for the campaign again. For a landing page campaign, the percent
+			 evaluation happens for every session instead of once per cookie life. 
+		  </note>
+      </p>
+      <p class="- topic/p ">Targeting experiences to specific visitor segments
+		  overrides the default randomization which shows each experience an equal number
+		  of times. 
+		</p>
+      <p class="- topic/p ">
+        <b class="+ topic/ph hi-d/b ">Tip:</b> It is recommended that, if you
+		  want to change percentages or greatly affect the flow of people into each
+		  experience, you should create or copy a new campaign. Otherwise, if you change
+		  the percentages on different experiences, it will take a few days for the data
+		  to normalize again if many purchasers are return visitors. For example, if your
+		  A/B test is split 50/50, and then you change the split to 80/20, for the first
+		  few days after that change, the results might look skewed. If the average time
+		  to conversion is high, meaning it takes someone several hours or even days to
+		  make a purchase, then these delayed conversions can affect the reports. So, in
+		  that first experience where the number went from 50 to 80, and the average time
+		  to conversion is two days, only people from the 50% of the population are
+		  converting on the first day of the test, although today 80% of the population
+		  is entering the experience. This makes it look like the conversion rate
+		  plummeted, but it will normalize again after these 80% of people have the two
+		  days to convert. 
+		</p>
+    </section>
+    <section id="section_B1E8CCF14F5E4E69AA71D70D295DBAC9">
+      <title>Location/Mbox-Level Target</title>
+      <p>Target at the mbox level to determine whether to show specific content
+		  to visitors who are allowed into the campaign and who get to see this
+		  experience. If the visitor does not meet the targeting conditions for a given
+		  mbox, default content is shown. 
+		</p>
+      <p class="- topic/p ">Mbox-level targeting gives you the ability to show
+		  content in an mbox only when the visitor meets certain real-time conditions.
+		  This is most often used when an mbox is on every page of a site (the logo for
+		  example) or on a templated page like a category or product page. You can
+		  uniquely identify specific instances of those mboxes (one instance of an mbox
+		  on a template page, or one instance of the global mbox) so that you can display
+		  specific content in it. For example, if you wanted to promote a special offer
+		  on all women's products but not on any men's products, you would either need a
+		  specially named mbox on the women's pages, or you can use mbox-level targeting
+		  to limit when the content in the campaign actually displays. For example, if
+		  the women's pages all share the same URL structure, you could target on the
+		  word "women" existing in the current page URL. 
+		</p>
+      <p class="- topic/p ">Mbox-level targeting is checked first. In other
+		  words, a visitor must match the mbox-level targeting before being considered to
+		  see a display mbox, and therefore be eligible for the campaign. 
+		</p>
+      <p>When you target at the mbox level, targeting criteria is evaluated
+		  each time the mbox is requested. So, if a visitor navigates to category 1, 5,
+		  and 20, in that order, the visitor would see content for category 1, the
+		  special offer for category 5, and then the default content for category 20.
+		  Browsing to category 5, enters the visitor into the campaign, so even if
+		  default content is displayed for category 20 next, the visitor is still in this
+		  campaign.
+		</p>
+      <p>Targeting at the mbox level is not used nearly as often as targeting
+		  at the campaign or experience level, but is useful for situations in which you
+		  want to ensure that certain visitors continue to see content that makes sense,
+		  in the context of global mboxes.
+		</p>
+      <p>
+        <note>Mbox-level targeting takes precedence over other levels, For
+			 example, if there is a conflict between an experience-level target and an
+			 mbox-level target, the mbox-level target will win.
+		  </note>
+      </p>
+    </section>
+    <section id="section_CAA76CDA663446DFBEB1DC81909FBAAA">
+      <title>Other Target Levels</title>
+      <p class="- topic/p ">
+        <ul id="ul_B37066722A7D4040A6D4676F8F0CE4B6" class="- topic/ul ">
+          <li id="li_0B557AF0B1B34E23A60DB47E58AD0CCE" class="- topic/li ">
+			 Conversion Level Target 
+			 <p class="- topic/p ">Target on conversion if you want to limit what
+				counts as a conversion beyond merely reaching an mbox. Conversion-level
+				targeting could be used for something like only tracking conversions if the
+				user spent over $100, or signed up for a particular offer or product. 
+			 </p></li>
+          <li id="li_AB80E7BB6C2341ADB32C8E383EF2BDB1" class="- topic/li ">
+			 Target Display to a Success Metric 
+			 <p class="- topic/p "><xref href="t_Targeting_Display_to_a_Prerequisite_Success_Metric.xml#task_F5E24707BE2845549788C5D4BED03281" type="task" format="dita" scope="local" class="- topic/xref ">Target Display on
+				  a Success Metric</xref> if you want to only count visitors who might have, or
+				have not seen a previous success metric. By default, success metrics are not
+				consecutive, meaning you do not have to reach success metric 1 to be counted on
+				success metric 2. This targeting allows you to override that default. This can
+				be used to track people's progress through a strict order or registration
+				funnel. For example, people are only counted on a "billing page" success metric
+				if they have first gone through the "shipping page" success metric. In the
+				targeting widget, select 
+				<uicontrol class="+ topic/ph ui-d/uicontrol ">success
+				  metrics</uicontrol>, the name of the previous success metric, and then 
+				<uicontrol class="+ topic/ph ui-d/uicontrol ">has been
+				  seen</uicontrol> from the next dropdown. 
+			 </p></li>
+        </ul>
+      </p>
+    </section>
+    <section id="section_8E073D372D9F4A7CA49364C013CA5FE1">
+      <title>Order of Targeting Execution</title>
+      <p class="- topic/p ">A campaign can have targeted experiences and
+		  non-targeted experiences. To determine which experience a visitor sees, Target
+		  first tries to match the visitor to one of the targeted experiences. Each
+		  experience is attempted in order: the one listed top in the campaign is
+		  attempted first, and so on. The visitor sees the first experience that matches.
+		  If the visitor does not match any experience's targeting criteria, then that
+		  visitor sees a non-targeted experience, if there is one. If there is more than
+		  one non-targeted experience, then the non-targeted traffic is split evenly
+		  across all of the experiences. If there is no non-targeted experience, then the
+		  visitor is not included in the campaign. 
+		</p>
+      <p>See 
+		  <xref href="c_target_whoseeswhat.xml#concept_014AB6795D2D4B6EB5E45A226A4FF7E9" format="dita" scope="local"><?xm-replace_text How Target Decides Who Sees What Content?></xref>.
+		  
+		</p>
+    </section>
+  </conbody>
+  <!--<related-links class="- topic/related-links "> 
+	 <link href="c_Understanding_the_Targeting_Interface.xml#concept_43A2AB6859FC4395A5011D1875240358" type="concept" format="dita" scope="local" class="- topic/link "> <?xm-replace_text Understanding the Targeting Interface?>
+	 </link> 
+	 <link href="t_Inserting_Target_Conditions.xml#task_EEB5E801586E434BA5806BE171BC68E9" type="task" format="dita" scope="local" class="- topic/link "> <?xm-replace_text Inserting Target Conditions?>
+	 </link> 
+	 <link href="c_Validating_a_Targeted_Campaign.xml#concept_804F9A67161447579091BF818BDF0A5E" type="concept" format="dita" scope="local" class="- topic/link "> <?xm-replace_text Validating a Targeted Campaign?>
+	 </link> 
+	 <link href="c_Targeting_Groups.xml#concept_897DFD2D38CF42BABCE2D038EB4B41C9" type="concept" format="dita" scope="local" class="- topic/link "> <?xm-replace_text Targeting Groups?>
+	 </link> 
+  </related-links> 
+-->
+</concept>

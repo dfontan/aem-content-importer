@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_D6BB8358DB7643F0B13E5DC9B7607998">
+  <title>Internal URL Filters</title>
+  <shortdesc>Internal URL filters identify the referrers that you consider
+	 internal to your site. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Admin tools" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>A referrer, or referring page, is typically the page from which a
+		visitor entered your site. To avoid skewing data, you can filter out internal
+		referrers. 
+		Reports exclude filtered referrers from the 
+		<xref href="reports_referrers.xml#concept_40CF9C2D10B94E82819BC65A232F05C3" format="dita" scope="local">Referrers Report</xref>, the 
+		<xref href="reports_referring_domains.xml#concept_E3D0FEC81E1F4987B39CC467F19FFCFF" format="dita" scope="local">Referring Domains Report</xref>, and other Finding
+		Methods reports. 
+	 </p>
+  </conbody>
+</concept>

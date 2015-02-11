@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_DF078C5C1B004695B3B7C4536C99D4B2"> 
+  <title>Automatic Tracking of Exit Links and File Downloads</title> 
+  <shortdesc> The JavaScript file can be configured to automatically track file
+	 downloads and exit links based on parameters that define file download file
+	 types and exit links. 
+  </shortdesc> 
+  <prolog> 
+	 <metadata> 
+		<othermeta name="solution" content="Analytics"/> 
+		<othermeta name="topic" content="Developer and implementation"/> 
+		<othermeta name="subtopic" content="Link tracking"/> </metadata>
+  </prolog> 
+  <conbody> 
+	 <p>The parameters that control automatic tracking are as follows: 
+	 </p> 
+	 <codeblock outputclass="syntax javascript">s.trackDownloadLinks=true
+s.trackExternalLinks=true
+s.linkDownloadFileTypes="exe,zip,wav,mp3,mov,mpg,avi,doc,pdf,xls"
+s.linkInternalFilters="javascript:,mysite.com,[more filters here]"
+s.linkLeaveQueryString=false
+</codeblock> 
+	 <p> The parameters 
+		<varname>trackDownloadLinks</varname> and 
+		<varname>trackExternalLinks</varname> determine if automatic file
+		download and exit link tracking are enabled. When enabled, any link with a file
+		type matching one of the values in 
+		<varname>linkDownloadFileTypes</varname> is automatically tracked as a
+		file download. Any link with a URL that does not contain one of the values in 
+		<varname>linkInternalFilters</varname> is automatically tracked as an
+		exit link. 
+	 </p> 
+	 <p>In JavaScript H.25.4 (released February 2013), automatic exit link
+		tracking was updated to always ignore links with 
+		<codeph>HREF</codeph> attributes that start with 
+		<codeph>#</codeph>, 
+		<codeph>about:</codeph>, or 
+		<codeph>javascript:</codeph>. 
+	 </p> 
+	 <section id="section_504D163608E14B25A8B4CA9D615C6735"> 
+		<title>Example 1</title> 
+		<p> The file types 
+		  <filepath>jpg</filepath> and 
+		  <filepath>aspx</filepath> are not included in 
+		  <varname>linkDownloadFileTypes</varname> above, therefore no clicks on
+		  them are automatically tracked and reported as file downloads. 
+		</p> 
+		<p> The parameter 
+		  <varname>linkLeaveQueryString</varname> modifies the logic used to
+		  determine exit links. When 
+		  <varname>linkLeaveQueryString</varname>=false, exit links are
+		  determined using only the domain, path, and file portion of the link URL. When 
+		  <varname>linkLeaveQueryString</varname>=true, the query string portion
+		  of the link URL is also used to determine an exit link. 
+		</p> 
+	 </section> 
+	 <section id="section_25660B64E28248A0BC982B2AF5603C0E"> 
+		<title>Example 2</title> 
+		<p>With the following settings, the example below will be counted as an
+		  exit link: 
+		</p> 
+		<codeblock outputclass="syntax javascript">//JS file	
+s.linkInternalFilters="javascript:,mysite.com"
+s.linkLeaveQueryString=false
+
+//HTML file
+&lt;a href='http://othersite.com/index.html?r=mysite.com'&gt;Visit Other Site!&lt;/a&gt;
+</codeblock> 
+	 </section> 
+	 <section id="section_2A78D05162D640169844A7D1E9799BAA"> 
+		<title>Example 3</title> 
+		<p>With the following settings, the link below is not counted as an exit
+		  link: 
+		</p> 
+		<codeblock outputclass="syntax javascript">//JS file	
+s.linkInternalFilters="javascript:,mysite.com"
+s.linkLeaveQueryString=true
+
+//HTML	
+&lt;a href='http://othersite.com/index.html?r=mysite.com'&gt;Visit Other Site&lt;/a&gt;
+</codeblock> 
+		<p> 
+		  <note>A single link can be tracked only as a file download or exit
+			 link, with file download taking priority. If a link is both an exit link and
+			 file download based on the parameters 
+			 <varname>linkDownloadFileTypes</varname> and 
+			 <varname>linkInternalFilters</varname>, it is tracked and reported as
+			 a file download and not an exit link. The following table summarizes the
+			 automatic tracking of file downloads and exit links. 
+		  </note> 
+		</p> 
+	 </section> 
+  </conbody> 
+</concept>

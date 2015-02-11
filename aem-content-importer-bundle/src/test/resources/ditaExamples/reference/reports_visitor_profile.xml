@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_E3D0FEC81E1F4987B39CC467F19FFCFF">
+  <title>Visitor Profile Report</title>
+  <shortdesc> Reports that help you see purchasing patterns of customers from
+	 various profile categories, including countries, states, ZIP/postal codes and
+	 domains. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Reports" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <table id="table_B09EA999973A4646BF66DF5D7BEA0820">
+      <tgroup cols="2">
+        <colspec colnum="1" colname="col1" colwidth="1.00*" />
+        <colspec colnum="2" colname="col2" colwidth="2.81*" />
+        <thead>
+          <row>
+            <entry colname="col1">Reports
+				</entry>
+            <entry colname="col2">Description
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry colname="col1">Languages
+				</entry>
+            <entry colname="col2">
+              <p> Displays your visitors’ preferred languages, captures the
+					 default browser language, and displays the languages that visitors use most
+					 often on your site. 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">Domains
+				</entry>
+            <entry colname="col2">
+              <p> Lists the organizations and ISPs your visitors use to access
+					 your site. This report differs from the 
+					 <wintitle>Full Domains</wintitle> report in that the 
+					 <wintitle>Full Domains</wintitle> report registers the full ISP
+					 domain, whereas this report lists the secondary domain. 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">Top Level Domains
+				</entry>
+            <entry colname="col2">
+              <p> Identifies world regions that visitors come from based on
+					 their originating domain extension, and shows how many visitors come from these
+					 countries. Domains ending in Commercial (.com), Network (.net), Education
+					 (.edu), Government (.gov) and Organization (.org) are usually based in the
+					 United States, and are listed separately from the rest of the domains. 
+				  </p>
+            </entry>
+          </row>
+          <row>
+            <entry colname="col1">Visitor ZIP/Postal Code
+				</entry>
+            <entry colname="col2">
+              <p> Displays the zip and postal codes that produced the customers
+					 that had the greatest effect on purchase success metrics. 
+				  </p>
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p>
+      <xref href="reports_geosegmentation.xml#concept_1B9CB209CFD94398B09C913D11648802" format="dita" scope="local">
+        <?xm-replace_text GeoSegmentation Reports?>
+      </xref>
+    </p>
+    <p>
+      <xref href="reports_technology.xml#concept_BD66B540E4AE49D999289B48445A9AFE" format="dita" scope="local">
+        <?xm-replace_text Technology Reports?>
+      </xref>
+    </p>
+  </conbody>
+</concept>

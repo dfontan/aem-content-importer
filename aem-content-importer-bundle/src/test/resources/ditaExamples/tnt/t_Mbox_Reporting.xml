@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd"[]>
+<task id="task_BF6F059DE4CA4769AD5408471731E206" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic task/task ">
+  <title class="- topic/title ">Mbox Request Report</title>
+  <shortdesc class="- topic/shortdesc ">The<wintitle> Mbox Request</wintitle>
+	 report shows the number of mbox requests for each mbox over a specified time
+	 period so you can determine which mboxes are getting the most traffic. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <taskbody class="- topic/body task/taskbody ">
+    <context id="context_613F6ACEF6AF46D28E3A07D6D04910BA" class="- topic/section task/context ">
+      <p class="- topic/p ">The 
+		  <wintitle>Mbox Request</wintitle> report helps you: 
+		</p>
+      <p class="- topic/p ">
+        <ul id="ul_23F0D00A36AE45B6AAF233084E2E3D8B" class="- topic/ul ">
+          <li id="li_E001984906AE40A5896FBC974FE9D897" class="- topic/li ">Understand which mboxes are creating the most requests 
+		  </li>
+          <li id="li_6A088EE92ED249FBA6E0B45646C501B8" class="- topic/li ">See
+			 which mboxes are not generating requests so you can improve, activate, or
+			 remove them 
+		  </li>
+          <li id="li_6D1036A2BBEF431DB75C09D7AE318C3D" class="- topic/li ">See
+			 which mboxes are creating a lot of requests that you are not using so you can
+			 deactivate or remove them 
+		  </li>
+        </ul>
+      </p>
+    </context>
+    <steps id="steps_2E7E6B6F427C4FE0B7540DEA598899A1" class="- topic/ol task/steps ">
+      <step id="step_EB92EE2EBE66455AA88176F7106DB6F6" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Locations</uicontrol>
+			 &gt; 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Usage</uicontrol> &gt; 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Mbox
+				Requests</uicontrol>. 
+		  </cmd>
+      </step>
+      <step id="step_121A381CE87346A184F86D7F1AB0569D" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Select the type of mboxes you want to
+			 list. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p ">You can choose from: 
+			 </p>
+          <p class="- topic/p ">
+            <ul id="ul_FC5C96F4C0504393A7A5C912B3542BED" class="- topic/ul ">
+              <li id="li_F935B7874A834C348730A4A46EC1FA8D" class="- topic/li ">All 
+				</li>
+              <li id="li_5D751B7F3E9447C3B4D831132B3D62E0" class="- topic/li ">SiteCatalyst Plug-In 
+				</li>
+              <li id="li_3FEDDFAE29A547AAA9F7E6E9A34496DB" class="- topic/li ">1:1 Campaign 
+				</li>
+              <li id="li_DF6F03C53F2F4EF0BEFE77CF971F2F6C" class="- topic/li ">Flashbox 
+				</li>
+            </ul>
+          </p>
+        </stepresult>
+      </step>
+      <step id="step_0B72044624AA426CAA08245C8365FCD7" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Select whether to show the mbox
+			 requests for the last 31 days or the last six months. 
+		  </cmd>
+      </step>
+      <step id="step_FDB2BE3B18704B23B50172F98CE7EC0C" class="- topic/li task/step ">
+        <cmd class="- topic/ph task/cmd ">Select whether to display requests
+			 for all mboxes or per mbox. 
+		  </cmd>
+        <stepresult class="- topic/itemgroup task/stepresult ">
+          <p class="- topic/p "> If you select to show requests per mbox for
+				the last six months, the report shows the number of requests for each month. 
+			 </p>
+          <p>
+            <note>"Last Six Months" does not include the current month. 
+				</note>
+          </p>
+        </stepresult>
+      </step>
+      <step class="- topic/li task/step " id="step_3D177F1737AE48E58AA1FC6CB0C4A44C">
+        <cmd class="- topic/ph task/cmd ">(Optional) Click 
+			 <uicontrol class="+ topic/ph ui-d/uicontrol ">Download
+				CSV</uicontrol> to download the report as a CSV file. 
+		  </cmd>
+      </step>
+    </steps>
+    <result id="result_B1536DA55BD84D69BED109609D7159AE" class="- topic/section task/result ">
+      <p class="- topic/p ">You can sort the report by any column by clicking
+		  the column header. 
+		</p>
+    </result>
+  </taskbody>
+  <related-links class="- topic/related-links ">
+    <link href="c_About_Mboxes.xml#concept_E01933A6CEDE481BBAC25F95FE3C6FD9" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Using Mboxes?>
+    </link>
+    <link href="c_Downloading_and_Setting_Up_MboxJs.xml#concept_9429FEF054734D3AA0CE7E3F25ED0B9E" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Downloading and Setting Up mbox.js?>
+    </link>
+    <link href="c_Creating_and_Placing_Mboxes.xml#concept_B0EC432377C244B79DB47783B3170E22" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Creating and Placing Mboxes?>
+    </link>
+    <link href="c_Using_a_Redirector.xml#concept_451731358AA64789AD0DA3BAAF2DF72C" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Using a Redirector?>
+    </link>
+    <link href="t_Validating_an_Mbox.xml#task_4BB8E090CBBF4C56A39BB63BF1ADB964" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Validating an Mbox?>
+    </link>
+    <link href="t_Deactivating_an_Mbox.xml#task_536C6C87631D4BC3B3829117DE4D55FE" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Deactivating an Mbox?>
+    </link>
+    <link href="t_Clearing_Deleting_an_Mbox.xml#task_26DA102117A24CDA8A642690366488D7" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Clearing (Deleting) an Mbox?>
+    </link>
+    <link href="r_Troubleshooting_Mboxes.xml#reference_FAA5B3A0FE1542219E004263BF4015E3" type="reference" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Troubleshooting Mboxes?>
+    </link>
+    <link href="t_Mbox_Troubleshooting_Matrix.xml#task_9EEE14582E5443278B1A39CC1E00D6B4" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Mbox Troubleshooting Matrix?>
+    </link>
+  </related-links>
+</task>

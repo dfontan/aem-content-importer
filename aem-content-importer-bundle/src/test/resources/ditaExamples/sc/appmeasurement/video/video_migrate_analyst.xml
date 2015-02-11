@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_10355AE1B4A747DC9F7C67AFE56F8223">
+  <title>Migrating for Web Analysts</title>
+  <shortdesc>
+    <?xm-replace_text Short Description?>
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>media</keyword>
+        <keyword>milestone</keyword>
+        <keyword>sdk</keyword>
+        <keyword>video</keyword>
+      </keywords>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>For a Web analyst, migrating to integrated video tracking is similar to
+		defining a new implementation. Complete the instructions defined in 
+		<xref href="video_analyst.xml#concept_4425679F462942889CB194A5B114823E" type="concept" format="dita" scope="local"><?xm-replace_text Measuring Video for Web Analysts?></xref>
+		and then fill out the 
+		<xref href="video_worksheet.xml#concept_0A7B2FAC52B04AE6BFD8747B57D56222" type="concept" format="dita" scope="local"><?xm-replace_text Video Implementation Worksheet?></xref>
+		to give to your developer. You developer can use the information in this
+		worksheet to migrate your existing implementation.
+	 </p>
+  </conbody>
+</concept>

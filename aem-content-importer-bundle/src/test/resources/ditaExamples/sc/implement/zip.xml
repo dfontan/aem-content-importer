@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd"[]>
+<concept id="concept_C1DF93083553410DA36EAB61FBFDF69A">
+  <title>zip</title>
+  <shortdesc> The 
+	 <varname>state</varname> and 
+	 <varname>zip</varname> variables are conversion variables. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Analytics" />
+      <othermeta name="topic" content="Developer and implementation" />
+      <othermeta name="subtopic" content="Variables" />
+    </metadata>
+  </prolog>
+  <conbody>
+    <p> They are like eVars in that they capture events, but unlike eVars, they
+		don't persist. The 
+		<varname>zip</varname> and 
+		<varname>state</varname> variables are like eVars that expire
+		immediately. 
+	 </p>
+    <table id="table_E13CE4EBFB6D4760B7681F0D3E4606F5">
+      <tgroup cols="4">
+        <colspec colnum="1" colname="col1" colwidth="*" />
+        <colspec colnum="2" colname="col2" colwidth="*" />
+        <colspec colnum="3" colname="col3" colwidth="*" />
+        <colspec colnum="4" colname="col4" colwidth="*" />
+        <thead>
+          <row>
+            <entry> Max Size 
+				</entry>
+            <entry> Debugger Parameter 
+				</entry>
+            <entry> Reports Populated 
+				</entry>
+            <entry> Default Value 
+				</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry> 50 bytes 
+				</entry>
+            <entry> zip 
+				</entry>
+            <entry> Conversion &gt; Visitor Profile &gt; ZIP/Postal Codes 
+				</entry>
+            <entry> "" 
+				</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p>Since the 
+		<varname>state</varname> and 
+		<varname>zip</varname> variables expire immediately, the only events
+		associated with them are events fired on the same page that are populated. For
+		example, if you are using 
+		<varname>zip</varname> to compare conversion rates by Zip Code, you
+		should populate 
+		<varname>zip</varname> on every page of the checkout process. Adobe
+		recommends using the billing address as the source for the Zip Code. You may
+		choose to use the shipping address instead (assuming there is only one shipping
+		address for the order). A media site may choose to use 
+		<varname>zip</varname> and 
+		<varname>state</varname> for registration or ad click-through tracking.
+		
+	 </p>
+    <section id="section_5EDCFCAC8FC241D1B4CC777996858CD7">
+      <title>Syntax and Possible Values</title>
+      <codeblock outputclass="syntax javascript">s.zip="zip_code"</codeblock>
+      <p>The 
+		  <varname>zip</varname> variable does not impose any value or format
+		  restrictions. There are no limitations on 
+		  <varname>zip</varname> outside of the standard variable limitations. 
+		</p>
+    </section>
+    <section id="section_F25C0D0CC3C04B81892A662CD605C593">
+      <title>Examples</title>
+      <codeblock outputclass="syntax javascript">s.zip="92806"</codeblock>
+      <codeblock outputclass="syntax javascript">s.zip="92806-4115"</codeblock>
+    </section>
+    <section id="section_7987084EECC34DD38B643B94F82385CA">
+      <title>Configuration Settings</title>
+      <p>None 
+		</p>
+    </section>
+    <section id="section_E86774D5CE8B40EFA36353CDEE3A84D0">
+      <title>Pitfalls, Questions, and Tips</title>
+      <ul id="ul_EA768A4CFD434EA1827DAE7BF1E8E1FE">
+        <li id="li_9C39634CA83C4B61A871EF2762536074">Populate 
+			 <wintitle>zip 
+			 </wintitle>on every page in which a relevant event is fired (such as
+			 each page of the checkout process). 
+		  </li>
+        <li id="li_26674060E8434A3C8E9ABFABE1A41A1A">The 
+			 <varname>zip</varname> and 
+			 <varname>state</varname> variables act like eVars that expire on
+			 the Page View. 
+		  </li>
+      </ul>
+    </section>
+  </conbody>
+</concept>

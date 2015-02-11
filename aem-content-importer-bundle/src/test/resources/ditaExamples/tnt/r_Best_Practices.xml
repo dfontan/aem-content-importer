@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd"[]>
+<reference id="reference_83EB8CF544214215BECB01C2B241A140" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" ditaarch:DITAArchVersion="1.1" domains="(topic ui-d) (topic hi-d) (topic pr-d) (topic sw-d)                          (topic ut-d) (topic indexing-d)" class="- topic/topic       reference/reference ">
+  <title class="- topic/title ">Best Practices for Hosts</title>
+  <shortdesc class="- topic/shortdesc ">When setting up and managing your
+	 hosts, keep these best practices in mind. 
+  </shortdesc>
+  <prolog>
+    <metadata>
+      <othermeta name="solution" content="Target" />
+      <othermeta name="topic" content="Advanced" />
+    </metadata>
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <refsyn id="refsyn_81B1388495894B9E8E930CE41884CA63" class="- topic/section     reference/refsyn ">
+      <p class="- topic/p ">
+        <ul id="ul_03EDA4F1AA6C406D88F76CE924C257DA" class="- topic/ul ">
+          <li id="li_53DA973DDDB64764AC38965F9FFE8B16" class="- topic/li "> Make
+			 sure the style sheets, file structure, and scripts in the development
+			 environment match the production environment as closely as possible. 
+		  </li>
+          <li id="li_AEEAE0D9B6FD4720942C64345631F81F" class="- topic/li "> Make
+			 sure the hosts are in the correct environment (host group). 
+		  </li>
+        </ul>
+      </p>
+    </refsyn>
+  </refbody>
+  <related-links class="- topic/related-links ">
+    <link href="c_About_Hosts_and_Host_Groups.xml#concept_A22F9D38D79546A98DF578E1B25FA585" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text About Hosts and Host Groups?>
+    </link>
+    <link href="c_Adding_a_Host_to_the_Host_List.xml#concept_DC1F216C714A4ACAA221AF9AF244A053" type="concept" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Adding a Host to the Host List?>
+    </link>
+    <link href="t_Confirm_that_TestTarget_Recognizes_the_Host.xml#task_B850F92ADB1B41A4B74EA70F2CA67D69" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Confirm that Test&Target Recognizes the Host?>
+    </link>
+    <link href="t_default_host_for_reporting.xml#task_9509C10526454DCBB68AC88FF4898715" format="dita" scope="local">
+      <?xm-replace_text Set the Default Host for Reporting?>
+    </link>
+    <link href="t_Setting_the_Default_Host_for_previewing.xml#task_0D4A896B9E5A4FDD9CDEDCA95A6DF200" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Setting the Default Host for Previewing?>
+    </link>
+    <link href="t_Changing_the_Name_of_a_Host_Group.xml#task_6C683392C703447EB5327C767E133C26" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Changing the Name of a Host Group?>
+    </link>
+    <link href="t_Moving_a_Host_to_a_Different_Host_Group.xml#task_BFA576AF3D6445E6B0F8AC3F57C07AAE" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Moving a Host to a Different Host Group?>
+    </link>
+    <link href="t_Deleting_a_Host.xml#task_017A471F77D34D8891AE0EF8C7BD6161" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Deleting a Host?>
+    </link>
+    <link href="t_Deleting_a_Host_Group.xml#task_0F1984C3646446D4945174E9518B5E91" type="task" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Deleting a Host Group?>
+    </link>
+    <link href="r_Troubleshooting_Hosts.xml#reference_B8A5B48087B6432596FFFF267566B785" type="reference" format="dita" scope="local" class="- topic/link ">
+      <?xm-replace_text Troubleshooting Hosts?>
+    </link>
+  </related-links>
+</reference>
