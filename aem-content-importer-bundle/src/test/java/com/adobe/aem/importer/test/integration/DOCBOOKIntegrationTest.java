@@ -14,15 +14,10 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.util.Properties;
 
-import javax.jcr.AccessDeniedException;
 import javax.jcr.Node;
 import javax.jcr.Repository;
-import javax.jcr.RepositoryException;
 import javax.jcr.Session;
 import javax.jcr.SimpleCredentials;
-import javax.jcr.lock.LockException;
-import javax.jcr.nodetype.ConstraintViolationException;
-import javax.jcr.version.VersionException;
 
 import org.apache.jackrabbit.commons.JcrUtils;
 import org.apache.sling.commons.json.JSONObject;
