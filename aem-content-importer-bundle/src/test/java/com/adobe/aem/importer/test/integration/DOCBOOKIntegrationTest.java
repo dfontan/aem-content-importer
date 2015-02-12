@@ -40,42 +40,42 @@ public class DOCBOOKIntegrationTest extends AbstractIntegrationTest {
 	private static File zipFileWithoutFolder = null;
 	private static File configExpectedParams = null;
 	private static Session session = null;
-	
+
 	private final String TEXT_CONTENT = "The Marketing Cloud is an integrated family of digital marketing";
-	
+
 	private static Logger log = LoggerFactory
 			.getLogger(DOCBOOKIntegrationTest.class);
-	
+
 	@BeforeClass
 	public static void init()  {
 		try {
 			ClassLoader classLoader = DOCBOOKIntegrationTest.class.getClassLoader();
-			
+
 			String zipNameWithOutFolder = System.currentTimeMillis() + ".zip";
-			
+
 			ZipHelper.zipDir(classLoader.getResource("docBookExamples/example").getFile(), zipNameWithOutFolder);
-			
+
 			zipFileWithoutFolder = new File(zipNameWithOutFolder);
 			zipFileWithFolder = createZipFileWithFolder(classLoader.getResource("docBookExamples/example").getFile(), System.currentTimeMillis() + ".zip", "exampleDOCBOOK");
-			
+
 			configExpectedParams = new File(classLoader.getResource(
 					"docBookExamples/example/0_config_params.xml").getFile());
 
 			Repository repo = JcrUtils.getRepository(URL_REPO);
-			
+
 			SimpleCredentials creds = new SimpleCredentials(USERNAME,
 					PASSWORD.toCharArray());
 			session = repo.login(creds, "crx.default");
-			
-			
+
+
 			if (!session.itemExists(PATH_NODE)) {
 				Node page = JcrUtils.getOrCreateByPath(PATH_NODE, "cq:Page", session);
 				Node jcrContent = page.addNode("jcr:content", "cq:PageContent");
 				jcrContent.setProperty("sling:resourceType", SLING_RESOURCETYPE);
 				session.save();
 			}
-			
-			
+
+
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -83,7 +83,7 @@ public class DOCBOOKIntegrationTest extends AbstractIntegrationTest {
 		}
 
 	}
-	
+
 	/**
 	 * Test creation config file to make a transformation by filling out a POST to upload component
 	 */
@@ -98,9 +98,9 @@ public class DOCBOOKIntegrationTest extends AbstractIntegrationTest {
 			config.setSrc("/var/aem-importer/importTest1");
 			config.setMasterFile("mcloud.ditamap");
 			config.setTarget("/content/pando");
-			config.setTransformer("com.adobe.aem.importer.impl.XMLTransformerDOCBOOKImpl");
+			config.setTransformer("com.adobe.aem.importer.impl.XMLTransformerDocBookImpl");
 			config.setCustomProps("xslt-transformer=net.sf.saxon.TransformerFactoryImpl\r\nxslt-file=/apps/aem-importer/resources/docbook-to-content.xsl\r\ntempFolder=/var/aem-importer/tmp\r\npackageTpl=/apps/aem-importer/resources/package-tpl\r\ngraphicFolders=images,graphics,Graphics");
-			
+
 			Properties expectedProperties = createExpectedProperties(config);
 
 			jsonResult = HttpClientUtils.post(POST_URL, USERNAME,
@@ -113,8 +113,8 @@ public class DOCBOOKIntegrationTest extends AbstractIntegrationTest {
 			assertTrue(false);
 		}
 	}
-	
-	
+
+
 	/**
 	 * Test creation config file to make a transformation by uploading a zip file with all necessary files at root to upload component
 	 */
@@ -131,22 +131,22 @@ public class DOCBOOKIntegrationTest extends AbstractIntegrationTest {
 			jsonResult = HttpClientUtils.post(POST_URL, USERNAME, PASSWORD,
 					null, zipFileWithFolder);
 
-			
+
 			if("false".equalsIgnoreCase((String)jsonResult.get("error"))) {
 				Properties properties = retrieveConfigPropertiesFromJCR(jsonResult);
 				assertTrue(checkProperties(expectedProperties,properties));
 			} else {
 				assertTrue(false);
 			}
-			
+
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 			assertTrue(false);
 		}
 	}
 
-	
-	
+
+
 	/**
 	 * Test creation config file to make a transformation by uploading a zip file with all necessary files at root to upload component and filling out some parameters two.
 	 * Configuration inside zipfile will have priority from that parameters.
@@ -163,11 +163,11 @@ public class DOCBOOKIntegrationTest extends AbstractIntegrationTest {
 			expectedProperties.loadFromXML(fis);
 
 			Config config = new Config();
-			
+
 			config.setSrc("/var/aem-importer/importTest2");
 			config.setMasterFile("mcloud.ditamap");
 			config.setTarget("/content/pando");
-			config.setTransformer("com.adobe.aem.importer.impl.XMLTransformerDOCBOOKImpl");
+			config.setTransformer("com.adobe.aem.importer.impl.XMLTransformerDocBookImpl");
 			config.setCustomProps("xslt-transformer=net.sf.saxon.TransformerFactoryImpl\r\nxslt-file=/apps/aem-importer/resources/docbook-to-content.xsl\r\ntempFolder=/var/aem-importer/tmp\r\npackageTpl=/apps/aem-importer/resources/package-tpl\r\ngraphicFolders=images,graphics,Graphics");
 
 			jsonResult = HttpClientUtils.post(POST_URL, USERNAME, PASSWORD,
@@ -179,7 +179,7 @@ public class DOCBOOKIntegrationTest extends AbstractIntegrationTest {
 			assertTrue(false);
 		}
 	}
-	
+
 	/**
 	 * Test creation config file to make a transformation by uploading a zip file with all necessary files inside a folder to upload component.
 	 */
@@ -196,20 +196,20 @@ public class DOCBOOKIntegrationTest extends AbstractIntegrationTest {
 			jsonResult = HttpClientUtils.post(POST_URL, USERNAME, PASSWORD,
 					null, zipFileWithFolder);
 
-			
+
 			if("false".equalsIgnoreCase((String)jsonResult.get("error"))) {
 				Properties properties = retrieveConfigPropertiesFromJCR(jsonResult);
 				assertTrue(checkProperties(expectedProperties,properties));
 			} else {
 				assertTrue(false);
 			}
-			
+
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 			assertTrue(false);
 		}
 	}
-	
+
 	/**
 	 * Test creation content page made by transformation process, filling out form parameters.
 	 */
@@ -226,23 +226,23 @@ public class DOCBOOKIntegrationTest extends AbstractIntegrationTest {
 			config.setTarget("/content/docbook-import-test");
 			config.setTransformer("com.adobe.aem.importer.impl.XMLTransformerDocbookImpl");
 			config.setCustomProps("xslt-transformer=net.sf.saxon.TransformerFactoryImpl\r\nxslt-file=/apps/aem-importer/resources/docbook-to-content.xsl\r\ntempFolder=/var/aem-importer/tmp\r\npackageTpl=/apps/aem-importer/resources/package-tpl\r\ngraphicFolders=images,graphics,Graphics");
-			
+
 			jsonResult = HttpClientUtils.post(POST_URL, USERNAME,
 					PASSWORD, config, null);
-			
+
 			if("false".equalsIgnoreCase((String)jsonResult.get("error"))) {
 				//2 seconds sleeping execution to finish workflow process with the content page to be generated
 				Thread.sleep(MILLISECONDS);
-				
+
 				String target = config.getTarget();
-				
+
 				JSONObject nodeInfo = retrieveNodeInfoFromJCR(target + "/home/_jcr_content/par/text.json");
-				
+
 				String text = nodeInfo.getString("text");
-				
+
 				if (text != null) {
 					assertTrue(text.contains(TEXT_CONTENT));
-					
+
 				} else {
 					assertTrue(false);
 				}
@@ -255,7 +255,7 @@ public class DOCBOOKIntegrationTest extends AbstractIntegrationTest {
 			assertTrue(false);
 		}
 	}
-	
+
 	/**
 	 * Test creation content page made by transformation process, uploading a zip file.
 	 */
@@ -263,54 +263,54 @@ public class DOCBOOKIntegrationTest extends AbstractIntegrationTest {
 	public void testContentPageByZipFile() {
 		log.info("Executing test: testContentPageByZipFile");
 		JSONObject jsonResult = null;
-		
+
 		try {
 			jsonResult = HttpClientUtils.post(POST_URL, USERNAME, PASSWORD,
 					null, zipFileWithoutFolder);
-			
+
 			if("false".equalsIgnoreCase((String)jsonResult.get("error"))) {
-				
+
 				Properties configProperties = retrieveConfigPropertiesFromJCR(jsonResult);
-				
+
 				//2 seconds sleeping execution to finish workflow process with the content page to be generated
 				Thread.sleep(MILLISECONDS);
-				
+
 				String target = configProperties.getProperty(TARGET_PROP);
-				
+
 				JSONObject nodeInfo = retrieveNodeInfoFromJCR(target + "/home/_jcr_content/par/text.json");
-				
+
 				String text = nodeInfo.getString("text");
-				
+
 				if (text != null) {
 					assertTrue(text.contains(TEXT_CONTENT));
-					
+
 				} else {
 					assertTrue(false);
 				}
-				
-				
-				
-				
+
+
+
+
 			} else {
 				assertTrue(false);
 			}
-			
+
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 			assertTrue(false);
 		}
 	}
-	
+
 	@AfterClass
 	public static void finish() {
 		if (zipFileWithFolder != null) {
 			zipFileWithFolder.delete();
 		}
-		
+
 		if (zipFileWithoutFolder != null) {
 			zipFileWithoutFolder.delete();
 		}
-		
+
 	}
-	
+
 }
