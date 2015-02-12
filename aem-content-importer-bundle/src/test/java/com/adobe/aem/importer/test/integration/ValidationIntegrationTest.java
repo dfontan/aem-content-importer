@@ -28,39 +28,39 @@ import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import com.adobe.aem.importer.exception.AemImporterException.AEM_IMPORTER_EXCEPTION_TYPE;
+import com.adobe.aem.importer.exception.ImporterException.AEM_IMPORTER_EXCEPTION_TYPE;
 import com.adobe.aem.importer.test.utils.HttpClientUtils;
 
 public class ValidationIntegrationTest extends AbstractIntegrationTest {
 	private static File zipFileWrongStructure = null;
 	private static Session session = null;
-	
+
 	@BeforeClass
 	public static void init() {
 		try {
 			ClassLoader classLoader = DITAIntegrationTest.class.getClassLoader();
 			zipFileWrongStructure = createZipFileWithFolder(classLoader.getResource("ditaExamples/mcloud").getFile(), System.currentTimeMillis() + ".zip", "exampleDITA/example");
-			
+
 			Repository repo = JcrUtils.getRepository(URL_REPO);
-			
+
 			SimpleCredentials creds = new SimpleCredentials(USERNAME,
 					PASSWORD.toCharArray());
 			session = repo.login(creds, "crx.default");
-			
-			
+
+
 			if (!session.itemExists(PATH_NODE)) {
 				Node page = JcrUtils.getOrCreateByPath(PATH_NODE, "cq:Page", session);
 				Node jcrContent = page.addNode("jcr:content", "cq:PageContent");
 				jcrContent.setProperty("sling:resourceType", SLING_RESOURCETYPE);
 				session.save();
 			}
-			
+
 		} catch (Exception e) {
 			e.printStackTrace();
 			System.out.println(e.getMessage());
 		}
 	}
-	
+
 	/*
 	 * Test for checking an exception when zip file has an invalid structure
 	 */
@@ -77,16 +77,16 @@ public class ValidationIntegrationTest extends AbstractIntegrationTest {
 			assertTrue(false);
 		}
 	}
-	
+
 	@AfterClass
 	public static void finish() {
 		if (zipFileWrongStructure != null) {
 			zipFileWrongStructure.delete();
 		}
-		
+
 	}
-	
-	
-	
-	
+
+
+
+
 }
