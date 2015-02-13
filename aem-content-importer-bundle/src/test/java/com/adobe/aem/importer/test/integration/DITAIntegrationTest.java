@@ -318,7 +318,7 @@ public class DITAIntegrationTest extends AbstractIntegrationTest {
 	@Test
 	public void testContentPageReference() {
 		log.info("Executing test: testContentPageReference");
-		assertTrue(postContent("ditaExamples/reference", "/contact_and_legal/jcr:content/par/text.json", "text", "Help & Technical Support", 5000L));
+		assertTrue(postContent("ditaExamples/reference", "/contact_and_legal/jcr:content/par/text.json", "text", "Help & Technical Support", 30000L));
 	}
 
 	@Test
@@ -410,6 +410,7 @@ public class DITAIntegrationTest extends AbstractIntegrationTest {
 
 				String target = configProperties.getProperty(TARGET_PROP);
 
+				
 				JSONObject nodeInfo = retrieveNodeInfoFromJCR(target
 						+ urlToCheck);
 
@@ -422,7 +423,6 @@ public class DITAIntegrationTest extends AbstractIntegrationTest {
 			}
 			
 			//Waiting 2 seconds between each test, giving up permeating AEM
-			Thread.sleep(3000L);
 		} catch (Exception e) {
 			e.printStackTrace();
 			System.out.println(e.getMessage());

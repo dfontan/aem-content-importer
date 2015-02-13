@@ -40,8 +40,8 @@ import com.adobe.aem.importer.AbstractXmlTransformer;
 import com.adobe.aem.importer.exception.AemImporterException;
 import com.adobe.aem.importer.exception.AemImporterException.AEM_IMPORTER_EXCEPTION_TYPE;
 import com.adobe.aem.importer.xml.FilterXmlBuilder;
+import com.adobe.aem.importer.xml.RejectingEntityResolver;
 import com.day.cq.commons.jcr.JcrUtil;
-import com.day.jcr.vault.util.RejectingEntityResolver;
 
 @Component
 @Service(value=XMLTransformer.class)
