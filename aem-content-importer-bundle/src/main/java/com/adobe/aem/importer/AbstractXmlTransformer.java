@@ -31,11 +31,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.xml.sax.XMLReader;
 
-import com.adobe.aem.importer.exception.AemImporterException;
-import com.adobe.aem.importer.exception.AemImporterException.AEM_IMPORTER_EXCEPTION_TYPE;
+import com.adobe.aem.importer.exception.ImporterException;
+import com.adobe.aem.importer.exception.ImporterException.AEM_IMPORTER_EXCEPTION_TYPE;
 
 public abstract class AbstractXmlTransformer {
-	
+
 	/* log */
 	private final Logger log = LoggerFactory.getLogger(this.getClass());
 
@@ -44,15 +44,15 @@ public abstract class AbstractXmlTransformer {
 	protected static final String 		CONFIG_PARAM_TEMP_FOLDER					= "tempFolder";
 	protected static final String 		CONFIG_PARAM_PACKAGE_TPL 					= "packageTpl";
 	protected static final String 		CONFIG_PARAM_GRAPHIC_FOLDERS			= "graphicFolders";
-	
+
 	protected static final String 	DEFAULT_TEMP_FOLDER								= "/var/aem-importer/tmp";
 	protected static final String[] DEFAULT_GRAPHIC_FOLDERS						= {"images", "graphics", "Graphics"};
 	protected static final String 	PACKAGE_FOLDER 										= "package";
 	protected static final String 	PACKAGE_VAULT 										= "META-INF/vault/";
 	protected static final String 	FILTER_XML_FILE 									= "filter.xml";
 	protected static final String 	CONTENT_XML_MIME									= "application/xml";
-	
-	
+
+
 	/**
 	 * Get Mandatory property
 	 * @param properties
@@ -60,14 +60,14 @@ public abstract class AbstractXmlTransformer {
 	 * @return
 	 * @throws Exception
 	 */
-	protected String getMandatoryProperty(Properties properties, String key) throws AemImporterException {
+	protected String getMandatoryProperty(Properties properties, String key) throws ImporterException {
 		final String xslt = properties.getProperty(key);
 		log.debug("Get mandatory property {}: {}",key,xslt);
 		if (xslt==null)
-			throw new AemImporterException(AEM_IMPORTER_EXCEPTION_TYPE.ERROR_PARAMS, "Mandatory property "+key+" not supplied");
+			throw new ImporterException(AEM_IMPORTER_EXCEPTION_TYPE.ERROR_PARAMS, "Mandatory property "+key+" not supplied");
 		return xslt;
 	}
-	
+
 	/**
 	 * Initialize XSLT Transformer
 	 * @param className
@@ -91,10 +91,10 @@ public abstract class AbstractXmlTransformer {
 		} else
 			throw new ClassNotFoundException("Class "+className+" is not an instance of "+TransformerFactoryImpl.class.getName());
 	}
-	
-	
+
+
 	/**
-	 * 
+	 *
 	 * Create Archive & import contents
 	 * @param packageNode
 	 * @throws IOException
@@ -107,21 +107,21 @@ public abstract class AbstractXmlTransformer {
 		log.debug("Create the archive on node {}", packageNode.getPath());
     JcrArchive archive = new JcrArchive(packageNode, "/");
     archive.open(true);
-    
+
     // Run importer
     Importer importer = new Importer();
     importer.getOptions().setImportMode(ImportMode.MERGE);
     importer.getOptions().setAccessControlHandling(AccessControlHandling.MERGE);
-    
+
     log.debug("Run the archive importer");
     importer.run(archive, packageNode.getSession().getNode("/"));
-    
+
     // Save all
     packageNode.getSession().save();
 	}
 
 	/**
-	 * 
+	 *
 	 * Get XML Filter content file
 	 * @param paths
 	 * @return

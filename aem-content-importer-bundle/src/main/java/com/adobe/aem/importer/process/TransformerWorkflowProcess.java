@@ -11,7 +11,7 @@ import java.util.Properties;
 import java.util.Map.Entry;
 
 import com.adobe.aem.importer.XMLTransformerHelper;
-import com.adobe.aem.importer.exception.AemImporterException;
+import com.adobe.aem.importer.exception.ImporterException;
 import com.adobe.aem.importer.xml.utils.Utils;
 import com.adobe.granite.workflow.WorkflowException;
 import com.adobe.granite.workflow.WorkflowSession;
@@ -39,9 +39,9 @@ import org.slf4j.LoggerFactory;
 	@Property(name = Constants.SERVICE_DESCRIPTION, value = "Adobe - XML Transformer Process"),
 	@Property(name = Constants.SERVICE_VENDOR, value = "Adobe") })
 public class TransformerWorkflowProcess implements WorkflowProcess  {
-	
+
 	private static final Logger log = LoggerFactory.getLogger(TransformerWorkflowProcess.class);
-	
+
 	/* (non-Javadoc)
 	 * @see com.adobe.granite.workflow.exec.WorkflowProcess#execute(com.adobe.granite.workflow.exec.WorkItem, com.adobe.granite.workflow.WorkflowSession, com.adobe.granite.workflow.metadata.MetaDataMap)
 	 */
@@ -61,21 +61,21 @@ public class TransformerWorkflowProcess implements WorkflowProcess  {
       			overrideConfiParam(configFile, meta);
           	if (log.isDebugEnabled())
           		debugTraceConfig(configFile);
-          	
+
           	// Check DITA Transformer
           	String xmlTransformerClass = configFile.getProperty(XMLTransformerHelper.CONFIG_PARAM_TRANSFORMER, "");
           	if (xmlTransformerClass.equals(""))
           		throw new WorkflowException("Configuration error: Transformer property cannot be null");
-          	
+
           	// Check Source Node
           	String src = configFile.getProperty(XMLTransformerHelper.CONFIG_PARAM_SRC,"");
           	if (src.trim().equals("") || !session.itemExists(src))
           		throw new WorkflowException("Configuration error: Source folder doesn't exist --> "+src);
-          	
+
           	// Start Transform process
           	XMLTransformerHelper.getXMLTransformer(xmlTransformerClass).transform(session.getNode(src), configFile);;
           }
-        } catch (AemImporterException e) {
+        } catch (ImporterException e) {
         	log.error(e.getMessage(),e.getException());
         	throw new WorkflowException(e.getMessage(), e.getException());
         } catch (Exception e) {
@@ -84,7 +84,7 @@ public class TransformerWorkflowProcess implements WorkflowProcess  {
 		}
     }
 	}
-	
+
 	/**
 	 * debugTraceConfig
 	 * @param configFile
@@ -95,7 +95,7 @@ public class TransformerWorkflowProcess implements WorkflowProcess  {
 			log.debug(entry.getKey().toString()+": "+entry.getValue().toString());
 		log.debug("*************************");
 	}
-	
+
 	/**
 	 * overrideConfiParam
 	 * @param configProp
@@ -118,9 +118,9 @@ public class TransformerWorkflowProcess implements WorkflowProcess  {
 		String customProp = meta.get("customProperties","");
 		if (!customProp.trim().equals(""))
 			Utils.appendCustomProperties(configProp, customProp);
-		
+
 		return configProp;
 	}
 
-	
+
 }

@@ -31,43 +31,43 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.adobe.aem.importer.XMLTransformerHelper;
-import com.adobe.aem.importer.exception.AemImporterException;
-import com.adobe.aem.importer.exception.AemImporterException.AEM_IMPORTER_EXCEPTION_TYPE;
+import com.adobe.aem.importer.exception.ImporterException;
+import com.adobe.aem.importer.exception.ImporterException.AEM_IMPORTER_EXCEPTION_TYPE;
 import com.day.cq.commons.jcr.JcrUtil;
 
 public class ZipHelper {
-	
+
 	private static final int BUFFER_SIZE = 4096;
-	
+
 	private static Logger log = LoggerFactory
 			.getLogger(ZipHelper.class);
-	
+
 	/*
-	 * UNZIP A FOLDER METHODS 
+	 * UNZIP A FOLDER METHODS
 	 */
-	
+
 	/**
 	 * Unzip file and upload content to the repository
 	 * @param encoding
 	 * @throws Exception
 	 */
-	public static String unzipAndUploadJCR(String encoding, SlingHttpServletRequest request, InputStream zipFile) throws AemImporterException {
+	public static String unzipAndUploadJCR(String encoding, SlingHttpServletRequest request, InputStream zipFile) throws ImporterException {
 		log.debug("Unzipping and uploading files to repository");
-		
+
 		ZipInputStream source = new ZipInputStream(zipFile);
-		
+
 		String nameConfigFile = "";
 		ZipEntry entry;
 		try {
 			entry = source.getNextEntry();
-			
+
 			String folder = "";
-			
+
 			if (entry.isDirectory()) {
 				folder = entry.getName();
 				entry = source.getNextEntry();
 			}
-			
+
 			ByteArrayInputStream configFile = null;
 			StringBuilder src = new StringBuilder();
 			// First file of zip must to be the config file
@@ -76,13 +76,13 @@ public class ZipHelper {
 					configFile = extractConfigFile(src, source,encoding);
 					entry = source.getNextEntry();
 				} catch (Exception e) {
-					AemImporterException aie = new AemImporterException(AEM_IMPORTER_EXCEPTION_TYPE.INVALID_ZIP_FILE, "Invalid zip file format. It is expected a config file as first in the root of zip or inside a folder");
+					ImporterException aie = new ImporterException(AEM_IMPORTER_EXCEPTION_TYPE.INVALID_ZIP_FILE, "Invalid zip file format. It is expected a config file as first in the root of zip or inside a folder");
 					throw aie;
 				}
-				
+
 			}
-			
-			
+
+
 			Resource resources = request.getResourceResolver().getResource(src.toString());
 			Session jcrSession = request.getResourceResolver().adaptTo(Session.class);
 			Node srcNode = null;
@@ -92,19 +92,19 @@ public class ZipHelper {
 				srcNode = JcrUtil.createPath(src.toString(), "nt:folder", jcrSession);
 				jcrSession.save();
 			}
-			
+
 			Session session = srcNode.getSession();
 			MimetypesFileTypeMap mimeTypesMap = new MimetypesFileTypeMap();
 			while (entry != null) {
 				String entryName = entry.getName().replace(folder, "");
-				
+
 				String name[] = entryName.split("/");
-				
+
 				if (name.length > 1) {
 					Node n = srcNode;
 					for (int i = 0; i <= (name.length - 1); i++) {
 						if (i == (name.length - 1)) {
-							
+
 							if (entryName.endsWith("/")) {
 								String path = n.getPath() + "/" + name[i];
 								if (!jcrSession.itemExists(path)) {
@@ -118,7 +118,7 @@ public class ZipHelper {
 								JcrUtils.putFile(n, name[i], mimeType,
 										extractFile(source));
 							}
-							
+
 						} else {
 							String path = n.getPath() + "/" + name[i];
 							if (!jcrSession.itemExists(path)) {
@@ -139,36 +139,36 @@ public class ZipHelper {
 						JcrUtil.createPath(path, "nt:folder", jcrSession);
 						jcrSession.save();
 					}
-					
+
 				}
-				
+
 				entry = source.getNextEntry();
 			}
-			
+
 			Node workflowNode = JcrUtil.createPath(XMLTransformerHelper.DEFAULT_CONFIG_PARAM_SRC, "nt:folder", request.getResourceResolver().adaptTo(Session.class));
-			
+
 			nameConfigFile = System.currentTimeMillis()+".xml";
 			JcrUtils.putFile(workflowNode, nameConfigFile, "text/xml",
 					configFile);
-			
+
 			session.save();
-			
+
 			source.close();
-			
+
 			return workflowNode.getPath() + "/" +nameConfigFile;
-		} catch (AemImporterException e) {
+		} catch (ImporterException e) {
 			throw e;
 		} catch (Exception e) {
-			throw new AemImporterException(AEM_IMPORTER_EXCEPTION_TYPE.UNEXPECTED, e.getMessage());
+			throw new ImporterException(AEM_IMPORTER_EXCEPTION_TYPE.UNEXPECTED, e.getMessage());
 		}
-		
+
 	}
-	
-	
-	
+
+
+
 	/**
 	 * extractFile
-	 * 
+	 *
 	 * @param zipIn
 	 * @return
 	 * @throws IOException
@@ -187,11 +187,11 @@ public class ZipHelper {
 
 		return new ByteArrayInputStream(baout.toByteArray());
 	}
-	
-	
+
+
 	/**
 	 * extractConfigFile
-	 * 
+	 *
 	 * @param configFile
 	 * @param encoding
 	 * @return
@@ -227,12 +227,12 @@ public class ZipHelper {
 		return bytesConfigFile;
 
 	}
-	
-	
+
+
 	/*
-	 * ZIP A FOLDER METHODS 
+	 * ZIP A FOLDER METHODS
 	 */
-	
+
 	/**
 	 * Compress a folder in a zip file
 	 * @param dirName
@@ -274,7 +274,7 @@ public class ZipHelper {
 		}
 	}
 
-	
+
 	/**
 	 * Add file to a zip
 	 * @param path
@@ -295,7 +295,7 @@ public class ZipHelper {
 				} else {
 					addFolderToZip(path + "/" + resource.getName(), srcFile, zip);
 				}
-				
+
 			} else {
 				byte[] buf = new byte[1024];
 				int len;
@@ -307,7 +307,7 @@ public class ZipHelper {
 					} else {
 						zip.putNextEntry(new ZipEntry(path + "/" + resource.getName()));
 					}
-					
+
 					while ((len = in.read(buf)) > 0) {
 						zip.write(buf, 0, len);
 					}

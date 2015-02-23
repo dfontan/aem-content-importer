@@ -27,7 +27,7 @@ import org.osgi.framework.Constants;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.adobe.aem.importer.exception.AemImporterException;
+import com.adobe.aem.importer.exception.ImporterException;
 import com.adobe.aem.importer.xml.Config;
 import com.adobe.aem.importer.xml.utils.Utils;
 import com.adobe.aem.importer.xml.utils.ZipHelper;
@@ -41,7 +41,7 @@ public class UploadContentServlet extends SlingAllMethodsServlet {
 	private static final long serialVersionUID = -6981132289425368170L;
 	private static Logger log = LoggerFactory
 			.getLogger(UploadContentServlet.class);
-	
+
 	@Override
 	protected void doPost(SlingHttpServletRequest request,
 			SlingHttpServletResponse response) throws ServletException,
@@ -55,11 +55,11 @@ public class UploadContentServlet extends SlingAllMethodsServlet {
 
 	/**
 	 * doLogic
-	 * 
+	 *
 	 * @param request
 	 * @param response
-	 * @throws IOException 
-	 * @throws JSONException 
+	 * @throws IOException
+	 * @throws JSONException
 	 * @throws Exception
 	 */
 	private void doLogic(SlingHttpServletRequest request,
@@ -75,12 +75,12 @@ public class UploadContentServlet extends SlingAllMethodsServlet {
 		String configPathResult = "";
 
 		boolean uploadZip = false;
-		
+
 		JSONObject result = new JSONObject();
-		
+
 		try {
 			if (isMultipart) {
-				
+
 				Map<String, RequestParameter[]> params = request
 						.getRequestParameterMap();
 				for (final Map.Entry<String, RequestParameter[]> pairs : params
@@ -138,21 +138,21 @@ public class UploadContentServlet extends SlingAllMethodsServlet {
 					configPathResult = Utils.putConfigFileToJCR(request,
 							configFileXml, "UTF-8");
 				}
-				
+
 				result.put("error", "false");
 				result.put("configPathResult", configPathResult);
 
 			}
 
-		} catch (AemImporterException e) {
+		} catch (ImporterException e) {
 			log.error(e.getMessage(), e.getException());
 			result.put("error", "true");
 			result.put("errorType", e.getType().name());
 		}
-		
-		
+
+
 		response.getOutputStream().write(result.toString().getBytes());
 		response.getOutputStream().close();
-		
+
 	}
 }
