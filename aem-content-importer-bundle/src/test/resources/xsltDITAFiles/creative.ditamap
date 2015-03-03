@@ -1,4 +1,0 @@
-<?xml version="1.0"?>
-<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
-<!-- Created with XMetaL (http://www.xmetal.com) -->
-<map id="map_B928A98254F04D018031B959DDD8A1AB"><title>Creative Cloud Asset Sharing</title><topicref format="dita" href="creative_cloud.xml" navtitle="Creative Cloud Asset Sharing in Marketing Cloud" scope="local" toc="yes"><topicref format="dita" href="terms.xml" navtitle="Terminology Introduction" scope="local"/><topicref format="dita" href="t_admin_add_cc_user.xml" navtitle="Add a Creative Cloud user" scope="local" toc="yes"/><topicref format="dita" href="t_share_creative_cloud.xml" navtitle="Share a Marketing Cloud folder to the Creative Cloud" scope="local" toc="yes"/><topicref format="dita" href="known_issues.xml" navtitle="Known Issues in Marketing Cloud and Creative Cloud Asset   Sharing..." scope="local"/></topicref></map>

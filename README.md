@@ -31,7 +31,7 @@ Go to the upload page: `http://<host>:<port>/content/resources/importer-tool.htm
 You have two options:
 
 * Fill out form parameters:
-    * *Transformer*: Select from list (currently only one, `XMLTransformerDITA`). The value saved it'll be the whole package(`com.adobe.aem.importer.impl.XMLTransformerDITAImpl`).
+    * *Transformer*: Select from list (currently only one, `XMLTransformerDITA`). The value saved it'll be the whole package(`com.adobe.aem.importer.impl.DocImporterImpl`).
 	* *Source folder*: Specify the source path in the repository. The folder must be already created and populated with
 	  all the source files (including the `ditamap` file), for example, through dragging and dropping the files into
 	  the repository using a WebDAV client. A typical location for the source directory is `/var/aem-importer/import`.
@@ -48,7 +48,7 @@ You have two options:
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
- <entry key="xml-transformer">com.adobe.aem.importer.impl.XMLTransformerDITAImpl</entry>
+ <entry key="xml-transformer">com.adobe.aem.importer.impl.DocImporterImpl</entry>
  <entry key="src">/var/aem-importer/import2</entry>
  <entry key="target">/content/pando</entry>
  <entry key="masterFile">mcloud.ditamap</entry>
@@ -86,7 +86,7 @@ An example of `config_params.xml` containing XMLTransformerDITA properties also:
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
- <entry key="xml-transformer">com.adobe.aem.importer.impl.XMLTransformerDITAImpl</entry>
+ <entry key="xml-transformer">com.adobe.aem.importer.impl.DocImporterImpl</entry>
  <entry key="src">/var/aem-importer/import2</entry>
  <entry key="target">/content/pando</entry>
  <entry key="masterFile">mcloud.ditamap</entry>
@@ -180,5 +180,5 @@ file to execute inside project folder `aem-content-importer\tools-files`.
 An example:
 
 ````
-java -jar aem-content-importer-cmd-0.0.1-SNAPSHOT.jar -src /var/aem-importer/import1 -transformer com.adobe.aem.importer.impl.XMLTransformerDITAImpl -masterFile mcloud.ditamap -target /content/pando -customProps xslt-transformer=net.sf.saxon.TransformerFactoryImpl#xslt-file=/apps/aem-importer/resources/dita-to-content.xsl#tempFolder=/var/aem-importer/tmp#packageTpl=/apps/aem-importer/resources/package-tpl#graphicFolders=images,graphics,Graphics
+java -jar aem-content-importer-cmd-0.0.1-SNAPSHOT.jar -src /var/aem-importer/import1 -transformer com.adobe.aem.importer.impl.DocImporterImpl -masterFile mcloud.ditamap -target /content/pando -customProps xslt-transformer=net.sf.saxon.TransformerFactoryImpl#xslt-file=/apps/aem-importer/resources/dita-to-content.xsl#tempFolder=/var/aem-importer/tmp#packageTpl=/apps/aem-importer/resources/package-tpl#graphicFolders=images,graphics,Graphics
 ````

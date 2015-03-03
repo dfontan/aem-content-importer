@@ -1,4 +1,0 @@
-#Example 1: Post using curl command only with form parameters
-java -jar aem-content-importer-cmd-0.0.1-SNAPSHOT.jar -src /var/aem-importer/import1 -transformer com.adobe.aem.importer.impl.XMLTransformerDITAImpl -masterFile mcloud.ditamap -target /content/pando -customProps xslt-transformer=net.sf.saxon.TransformerFactoryImpl#xslt-file=/apps/aem-importer/resources/dita-to-content.xsl#tempFolder=/var/aem-importer/tmp#packageTpl=/apps/aem-importer/resources/package-tpl#graphicFolders=images,graphics,Graphics
-#Example 2: Post using curl command only with a zip file
-#java -jar aem-content-importer-cmd-0.0.1-SNAPSHOT.jar -sources example.zip

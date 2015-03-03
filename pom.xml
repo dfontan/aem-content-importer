@@ -26,9 +26,9 @@
   <packaging>pom</packaging>
   <name>Adobe AEM Content Importer Reactor</name>
   <description>The Unified Help Project</description>
-  
+
   <inceptionYear>2014</inceptionYear>
-  
+
   <properties>
   		<project.folder>aem-importer</project.folder>
       <crx.host>localhost</crx.host>
@@ -42,11 +42,10 @@
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
       <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
   </properties>
-    
+
   <modules>
   	<module>aem-content-importer-bundle</module>
   	<module>aem-content-importer-content</module>
-  	<module>aem-content-importer-cmd</module>
   </modules>
-  
+
 </project>

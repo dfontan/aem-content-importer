@@ -1,4 +1,4 @@
-<%@page import="com.adobe.aem.importer.XMLTransformerHelper"%>
+<%@page import="com.adobe.aem.importer.DocImporterHelper"%>
 <%@page import="org.apache.sling.commons.json.io.JSONWriter"%>
 <%@page import="java.util.Set"%>
 <%@page contentType="text/html; charset=utf-8"%>
@@ -7,7 +7,7 @@
 <%
 	response.setContentType("application/json");
 response.setCharacterEncoding("utf-8");
-Set<Class<?>> transformers = XMLTransformerHelper.getAvailableTransformers();
+Set<Class<?>> transformers = DocImporterHelper.getAvailableTransformers();
 JSONWriter w = new JSONWriter(response.getWriter());
 w.array();
 for(Class<?> transformer : transformers) {

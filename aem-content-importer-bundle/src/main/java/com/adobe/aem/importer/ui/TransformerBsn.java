@@ -6,39 +6,34 @@
 ******************************************************************************/
 package com.adobe.aem.importer.ui;
 
-import java.util.Set;
-
-import com.adobe.aem.importer.XMLTransformerHelper;
 import com.adobe.cq.sightly.WCMUse;
 
 public class TransformerBsn extends WCMUse{
-	
-	private Transformer[] list = {};
+
+	private Transformer[] list;
 
 	@Override
 	public void activate() throws Exception {
-		Set<Class<?>> items = XMLTransformerHelper.getAvailableTransformers();
-		
-		list = new Transformer[items.size()];
-		int i = 0;
-		for (Class<?> item : items) {
-			Transformer transformer = new Transformer();
-			transformer.setName(item.getName());
-			transformer.setSimpleName(item.getSimpleName().replace("Impl", ""));
-			list[i++] = transformer;
-		}
-		
-	}
 
-	
+		list = new Transformer[2];
+
+        list[0] = new Transformer();
+        list[0].setName("DITA");
+        list[0].setSimpleName("DITA");
+
+        list[1] = new Transformer();
+        list[1].setName("DocBook");
+        list[1].setSimpleName("DocBook");
+    }
+
 	public Transformer[] getList() {
 		return list;
 	}
-	
+
 	public class Transformer {
 		String name;
 		String simpleName;
-		
+
 		public String getName() {
 			return name;
 		}
