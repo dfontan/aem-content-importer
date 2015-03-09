@@ -14,9 +14,7 @@ import com.adobe.aem.importer.xml.FilterXmlBuilder;
 import com.adobe.aem.importer.xml.RejectingEntityResolver;
 import com.day.cq.commons.jcr.JcrUtil;
 import net.sf.saxon.TransformerFactoryImpl;
-import org.apache.felix.scr.annotations.Component;
-import org.apache.felix.scr.annotations.Property;
-import org.apache.felix.scr.annotations.Service;
+import org.apache.felix.scr.annotations.*;
 import org.apache.jackrabbit.commons.JcrUtils;
 import org.apache.jackrabbit.vault.fs.api.ImportMode;
 import org.apache.jackrabbit.vault.fs.config.ConfigurationException;
@@ -42,14 +40,15 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Properties;
 
 @Component
-@Service(value = DocImporter.class)
 @org.apache.felix.scr.annotations.Properties({
     @Property(name = Constants.SERVICE_DESCRIPTION, value = "Adobe - XSLT Transformer Service"),
     @Property(name = Constants.SERVICE_VENDOR, value = "Adobe")})
+@Service(value = DocImporter.class)
 public class DocImporterImpl implements DocImporter {
 
     private static final Logger log = LoggerFactory.getLogger(DocImporterImpl.class);
@@ -59,6 +58,7 @@ public class DocImporterImpl implements DocImporter {
     private String graphicsFolder;
     private String targetPath;
 
+    /*
     public DocImporterImpl(){
 
         // Default format is DITA therefore the default xsltFile is dita-to-content.xsl
@@ -73,6 +73,30 @@ public class DocImporterImpl implements DocImporter {
         // Default targetPath
         this.targetPath = DocImporter.DEFAULT_TARGET_PATH;
     }
+    */
+
+    @Activate
+    protected final void activate(final Map<String, String> properties) throws Exception {
+
+        // Default format is DITA therefore the default xsltFile is dita-to-content.xsl
+        this.xsltFile = DocImporter.DEFAULT_XSLT_PATH;
+
+        // Default masterFile
+        this.masterFile = DocImporter.DEFAULT_MASTER_FILE;
+
+        // Default graphicsFolders
+        this.graphicsFolder = DocImporter.DEFAULT_GRAPHICS_FOLDER;
+
+        // Default targetPath
+        this.targetPath = DocImporter.DEFAULT_TARGET_PATH;
+    }
+
+    @Deactivate
+    protected final void deactivate(final Map<String, String> properties) {
+        // Remove method is not used
+    }
+
+
 
     public void doImport(Node sourcePathNode, Properties properties) throws DocImporterException {
 
@@ -190,4 +214,6 @@ public class DocImporterImpl implements DocImporter {
             }
         }
     }
+
+
 }
