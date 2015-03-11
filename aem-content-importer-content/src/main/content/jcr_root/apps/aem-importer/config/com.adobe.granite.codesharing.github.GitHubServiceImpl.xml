@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
-    jcr:primaryType="sling:OsgiConfig"
-    github.apiurl="http://git.corp.adobe.com/api/v3"
-    github.username=""
-    github.password=""
-    github.oauthToken="e9de0bb35caa987aa2799507551caaa514d9a6f2"/>
