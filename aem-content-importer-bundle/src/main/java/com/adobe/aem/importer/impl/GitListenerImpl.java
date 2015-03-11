@@ -6,23 +6,33 @@
  ******************************************************************************/
 package com.adobe.aem.importer.impl;
 
+import com.adobe.aem.importer.DocImporter;
 import com.adobe.aem.importer.GitListener;
+import com.adobe.granite.codesharing.File;
 import com.adobe.granite.codesharing.Project;
 import com.adobe.granite.codesharing.github.GitHubPushEvent;
+import com.day.cq.commons.jcr.JcrUtil;
+import org.apache.commons.io.IOUtils;
 import org.apache.felix.scr.annotations.*;
-//import org.apache.sling.api.resource.LoginException;
-//import org.apache.sling.api.resource.Resource;
-//import org.apache.sling.api.resource.ResourceResolver;
+import org.apache.felix.scr.annotations.Properties;
+import org.apache.jackrabbit.commons.JcrUtils;
+import org.apache.sling.api.resource.Resource;
+import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.api.resource.ResourceResolverFactory;
+import org.apache.sling.jcr.api.SlingRepository;
+import org.apache.sling.jcr.resource.JcrResourceConstants;
 import org.osgi.service.event.Event;
 import org.osgi.service.event.EventConstants;
 import com.adobe.granite.codesharing.github.GitHubPushConstants;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-//import javax.jcr.Node;
+import javax.jcr.Node;
+import javax.jcr.Session;
 import java.io.IOException;
-import java.util.List;
+import java.io.InputStream;
+import java.util.*;
+import java.util.zip.InflaterInputStream;
 
 
 @Component(
@@ -46,47 +56,54 @@ public class GitListenerImpl implements GitListener {
 
     private static Logger log = LoggerFactory.getLogger(GitListenerImpl.class);
 
+    private static final String DOC_IMPORTER_USER = "doc-importer-user";
+
+    @Reference
+    private SlingRepository repository;
+
     @Reference
     private ResourceResolverFactory resourceResolverFactory;
 
+    @Reference
+    private DocImporter docImporter;
+
+
     public void handleEvent(final Event osgiEvent) {
+        Session session;
+        ResourceResolver resourceResolver;
+
         Project project = (Project)osgiEvent.getProperty(GitHubPushConstants.EVT_PROJECT);
         GitHubPushEvent event = (GitHubPushEvent)osgiEvent.getProperty(GitHubPushConstants.EVT_GHEVENT);
-        //ResourceResolver resourceResolver;
 
-        List<String> modifiedFileNames = event.getModifiedFileNames();
-        List<String> addedFileNames = event.getAddedFileNames();
-        List<String> deletedFileNames = event.getDeletedFileNames();
+        List<String> changed = event.getModifiedFileNames();
+        changed.addAll(event.getAddedFileNames());
+
+        List<String> deleted = event.getDeletedFileNames();
 
         try {
-            //resourceResolver = resourceResolverFactory.getResourceResolver(null);
+            session = repository.loginService(DOC_IMPORTER_USER, null);
 
-            log.info("Modified File Names");
-            for (String fileName : modifiedFileNames){
-                log.info(fileName);
+            for (String path : changed){
+                File gitFile = project.getFile(path);
 
-                //project.getFile(fileName);
-                //Resource resource = resourceResolver.getResource(fileName);
-                //Node node = resource.adaptTo(Node.class);
+                String[] split = path.split("/");
+                String fileName = split[split.length - 1];
+                String parentPath = DocImporter.ROOT_TEMP_PATH + "/" + path.substring(0, path.lastIndexOf("/"));
+
+                Node parentNode = JcrUtils.getOrCreateByPath(parentPath,"nt:folder", "nt:folder", session, true);
+                InputStream in = IOUtils.toInputStream(gitFile.getContent(), "UTF-8");
+                JcrUtils.putFile(parentNode, fileName, "application/xml", in);
             }
 
-            log.info("Added File Names");
-            for (String fileName : addedFileNames){
-                log.info(fileName);
-
-                //project.getFile(fileName);
+            for (String path : deleted){
+                session.getNode(DocImporter.ROOT_TEMP_PATH + "/" + path).remove();
+                session.save();
             }
 
-            log.info("Deleted File Names");
-            for (String fileName : deletedFileNames){
-                log.info(fileName);
-                project.getFile(fileName);
-            }
+            // docImporter.doImport(session.getNode(DocImporter.DEFAULT_SOURCE_PATH, properties);
 
-    //    } catch (LoginException e){
-    //        log.error("Login error", e);
-        } catch (IOException e){
-            log.error("IO error", e);
+        } catch (Exception e){
+            log.error("error", e);
         }
     }
 }
