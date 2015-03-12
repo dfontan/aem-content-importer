@@ -84,18 +84,31 @@ public class GitListenerImpl implements GitListener {
             session = repository.loginService(DOC_IMPORTER_USER, null);
 
             for (String path : changed){
+                log.info("Changed...");
+                log.info("path: " + path);
+
                 File gitFile = project.getFile(path);
+                log.info("gitFile: " + gitFile.getContent());
 
                 String[] split = path.split("/");
+                log.info("split: " + split.toString());
+
                 String fileName = split[split.length - 1];
+                log.info("fileName: " + fileName);
+
                 String parentPath = DocImporter.ROOT_TEMP_PATH + "/" + path.substring(0, path.lastIndexOf("/"));
+                log.info("parentPath: " + parentPath);
 
                 Node parentNode = JcrUtils.getOrCreateByPath(parentPath,"nt:folder", "nt:folder", session, true);
+                log.info("parentNode: " + parentNode.toString());
+
                 InputStream in = IOUtils.toInputStream(gitFile.getContent(), "UTF-8");
                 JcrUtils.putFile(parentNode, fileName, "application/xml", in);
             }
 
             for (String path : deleted){
+                log.info("Deleted...");
+                log.info("path: " + path);
                 session.getNode(DocImporter.ROOT_TEMP_PATH + "/" + path).remove();
                 session.save();
             }
