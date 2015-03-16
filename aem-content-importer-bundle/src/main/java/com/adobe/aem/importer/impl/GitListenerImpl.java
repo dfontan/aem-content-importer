@@ -11,16 +11,12 @@ import com.adobe.aem.importer.GitListener;
 import com.adobe.granite.codesharing.File;
 import com.adobe.granite.codesharing.Project;
 import com.adobe.granite.codesharing.github.GitHubPushEvent;
-import com.day.cq.commons.jcr.JcrUtil;
 import org.apache.commons.io.IOUtils;
 import org.apache.felix.scr.annotations.*;
 import org.apache.felix.scr.annotations.Properties;
 import org.apache.jackrabbit.commons.JcrUtils;
-import org.apache.sling.api.resource.Resource;
-import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.api.resource.ResourceResolverFactory;
 import org.apache.sling.jcr.api.SlingRepository;
-import org.apache.sling.jcr.resource.JcrResourceConstants;
 import org.osgi.service.event.Event;
 import org.osgi.service.event.EventConstants;
 import com.adobe.granite.codesharing.github.GitHubPushConstants;
@@ -29,11 +25,9 @@ import org.slf4j.LoggerFactory;
 
 import javax.jcr.Node;
 import javax.jcr.Session;
-import java.io.IOException;
 import java.io.InputStream;
-import java.util.*;
-import java.util.zip.InflaterInputStream;
-
+import java.util.Arrays;
+import java.util.List;
 
 @Component(
     label = "Document Importer Git Listener",
@@ -56,7 +50,7 @@ public class GitListenerImpl implements GitListener {
 
     private static Logger log = LoggerFactory.getLogger(GitListenerImpl.class);
 
-    private static final String DOC_IMPORTER_USER = "doc-importer-user";
+    private static final String DOC_IMPORTER = "doc-importer";
 
     @Reference
     private SlingRepository repository;
@@ -70,50 +64,74 @@ public class GitListenerImpl implements GitListener {
 
     public void handleEvent(final Event osgiEvent) {
         Session session;
-        ResourceResolver resourceResolver;
 
         Project project = (Project)osgiEvent.getProperty(GitHubPushConstants.EVT_PROJECT);
-        GitHubPushEvent event = (GitHubPushEvent)osgiEvent.getProperty(GitHubPushConstants.EVT_GHEVENT);
+        GitHubPushEvent gitHubPushEvent = (GitHubPushEvent)osgiEvent.getProperty(GitHubPushConstants.EVT_GHEVENT);
 
-        List<String> changed = event.getModifiedFileNames();
-        changed.addAll(event.getAddedFileNames());
+        List<String> added = gitHubPushEvent.getAddedFileNames();
+        log.info("Added files: " + Arrays.toString(added.toArray()));
 
-        List<String> deleted = event.getDeletedFileNames();
+        List<String> modified = gitHubPushEvent.getModifiedFileNames();
+        log.info("Modified files: " + Arrays.toString(modified.toArray()));
+
+        List<String> deleted = gitHubPushEvent.getDeletedFileNames();
+        log.info("Deleted files: " + Arrays.toString(deleted.toArray()));
+
+        modified.addAll(added);
+        log.info("Added or modified files: " + Arrays.toString(modified.toArray()));
 
         try {
-            session = repository.loginService(DOC_IMPORTER_USER, null);
+            // Use loginAdministrative until in-content principal config is figured out
+            session = repository.loginAdministrative(null);
+            //session = repository.loginService(DOC_IMPORTER, null);
 
-            for (String path : changed){
+
+            for (String path : modified){
                 log.info("Changed...");
-                log.info("path: " + path);
+                log.info("git file path: " + path);
 
                 File gitFile = project.getFile(path);
-                log.info("gitFile: " + gitFile.getContent());
+                String gitFileContent = gitFile.getContent();
+                log.info("git file content: \n" + gitFileContent);
 
                 String[] split = path.split("/");
-                log.info("split: " + split.toString());
+                log.info("split: " + Arrays.toString(split));
 
                 String fileName = split[split.length - 1];
-                log.info("fileName: " + fileName);
+                log.info("git file name: " + fileName);
 
-                String parentPath = DocImporter.ROOT_TEMP_PATH + "/" + path.substring(0, path.lastIndexOf("/"));
+                int lastForwardSlashPos = path.lastIndexOf("/");
+                log.info("lastForwardSlashPos: " + lastForwardSlashPos);
+
+                String parentPath = DocImporter.ROOT_TEMP_PATH;
+                if (lastForwardSlashPos > 0) {
+                    parentPath = parentPath + "/" + path.substring(0, lastForwardSlashPos);
+                }
                 log.info("parentPath: " + parentPath);
 
                 Node parentNode = JcrUtils.getOrCreateByPath(parentPath,"nt:folder", "nt:folder", session, true);
                 log.info("parentNode: " + parentNode.toString());
 
-                InputStream in = IOUtils.toInputStream(gitFile.getContent(), "UTF-8");
+                InputStream in = IOUtils.toInputStream(gitFileContent, "UTF-8");
                 JcrUtils.putFile(parentNode, fileName, "application/xml", in);
+                session.save();
             }
 
             for (String path : deleted){
                 log.info("Deleted...");
-                log.info("path: " + path);
+                log.info("git file path: " + path);
+
                 session.getNode(DocImporter.ROOT_TEMP_PATH + "/" + path).remove();
                 session.save();
             }
 
-            // docImporter.doImport(session.getNode(DocImporter.DEFAULT_SOURCE_PATH, properties);
+            /*
+            Node sourcePathNode = parentNode.getNode(DocImporter.SOURCE_DOC_FOLDER);
+            Node configNode = sourcePathNode.getNode(DocImporter.CONFIG_FILE_NAME + "/jcr:content");
+            java.util.Properties properties = new java.util.Properties();
+            properties.loadFromXML(JcrUtils.readFile(configNode));
+            docImporter.doImport(session.getNode(DocImporter.SOURCE_DOC_PATH, properties);
+            */
 
         } catch (Exception e){
             log.error("error", e);
