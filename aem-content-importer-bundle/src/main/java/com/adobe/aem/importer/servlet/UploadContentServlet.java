@@ -91,11 +91,7 @@ public class UploadContentServlet extends SlingAllMethodsServlet {
                 },
                 null);
 
-            Node sourcePathNode = parentNode.getNode(DocImporter.SOURCE_DOC_FOLDER);
-            Node configNode = sourcePathNode.getNode(DocImporter.CONFIG_FILE_NAME + "/jcr:content");
-            Properties properties = new Properties();
-            properties.loadFromXML(JcrUtils.readFile(configNode));
-            docImporter.doImport(sourcePathNode, properties);
+            docImporter.doImport();
 
         } catch (RepositoryException e) {
             log.error(e.getMessage(), e);

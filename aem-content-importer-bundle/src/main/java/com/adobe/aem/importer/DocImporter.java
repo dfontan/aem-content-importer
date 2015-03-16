@@ -57,5 +57,5 @@ public interface DocImporter {
 	 * Initialize and execute import of content
 	 * @throws Exception
 	 */
-	public void doImport(Node sourcePathNode, Properties properties) throws DocImporterException;
+	public void doImport() throws DocImporterException;
 }

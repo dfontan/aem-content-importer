@@ -15,6 +15,7 @@ import org.apache.commons.io.IOUtils;
 import org.apache.felix.scr.annotations.*;
 import org.apache.felix.scr.annotations.Properties;
 import org.apache.jackrabbit.commons.JcrUtils;
+import org.apache.jackrabbit.webdav.util.EncodeUtil;
 import org.apache.sling.api.resource.ResourceResolverFactory;
 import org.apache.sling.jcr.api.SlingRepository;
 import org.osgi.service.event.Event;
@@ -69,16 +70,16 @@ public class GitListenerImpl implements GitListener {
         GitHubPushEvent gitHubPushEvent = (GitHubPushEvent)osgiEvent.getProperty(GitHubPushConstants.EVT_GHEVENT);
 
         List<String> added = gitHubPushEvent.getAddedFileNames();
-        log.info("Added files: " + Arrays.toString(added.toArray()));
+        log.info("added files: " + Arrays.toString(added.toArray()));
 
         List<String> modified = gitHubPushEvent.getModifiedFileNames();
-        log.info("Modified files: " + Arrays.toString(modified.toArray()));
+        log.info("modified files: " + Arrays.toString(modified.toArray()));
 
         List<String> deleted = gitHubPushEvent.getDeletedFileNames();
-        log.info("Deleted files: " + Arrays.toString(deleted.toArray()));
+        log.info("deleted files: " + Arrays.toString(deleted.toArray()));
 
         modified.addAll(added);
-        log.info("Added or modified files: " + Arrays.toString(modified.toArray()));
+        log.info("added or modified files: " + Arrays.toString(modified.toArray()));
 
         try {
             // Use loginAdministrative until in-content principal config is figured out
@@ -87,12 +88,14 @@ public class GitListenerImpl implements GitListener {
 
 
             for (String path : modified){
-                log.info("Changed...");
+                log.info("added or modified...");
                 log.info("git file path: " + path);
 
-                File gitFile = project.getFile(path);
+                String escapedPath = EncodeUtil.escapePath(path);
+                log.info("escaped git file path: " + escapedPath);
+
+                File gitFile = project.getFile(escapedPath);
                 String gitFileContent = gitFile.getContent();
-                log.info("git file content: \n" + gitFileContent);
 
                 String[] split = path.split("/");
                 log.info("split: " + Arrays.toString(split));
@@ -101,37 +104,37 @@ public class GitListenerImpl implements GitListener {
                 log.info("git file name: " + fileName);
 
                 int lastForwardSlashPos = path.lastIndexOf("/");
-                log.info("lastForwardSlashPos: " + lastForwardSlashPos);
+                log.info("last forward slash pos: " + lastForwardSlashPos);
 
                 String parentPath = DocImporter.ROOT_TEMP_PATH;
                 if (lastForwardSlashPos > 0) {
                     parentPath = parentPath + "/" + path.substring(0, lastForwardSlashPos);
                 }
-                log.info("parentPath: " + parentPath);
+                log.info("parent path: " + parentPath);
 
                 Node parentNode = JcrUtils.getOrCreateByPath(parentPath,"nt:folder", "nt:folder", session, true);
-                log.info("parentNode: " + parentNode.toString());
+                log.info("parent node: " + parentNode.toString());
 
                 InputStream in = IOUtils.toInputStream(gitFileContent, "UTF-8");
-                JcrUtils.putFile(parentNode, fileName, "application/xml", in);
+                Node node = JcrUtils.putFile(parentNode, fileName, "application/xml", in);
                 session.save();
+                log.info("file: " + path + " written to node:" + node.getPath());
             }
 
             for (String path : deleted){
-                log.info("Deleted...");
+                log.info("deleted...");
                 log.info("git file path: " + path);
 
-                session.getNode(DocImporter.ROOT_TEMP_PATH + "/" + path).remove();
-                session.save();
+                String deleteNodePath = DocImporter.ROOT_TEMP_PATH + "/" + path;
+                if (session.nodeExists(deleteNodePath)){
+                    session.getNode(deleteNodePath).remove();
+                    session.save();
+                    log.info("removal of file: " + path + "caused removal of node: " + deleteNodePath);
+                }
+                log.info("removal of file: " + path + "caused no change. No node found at: " + deleteNodePath);
             }
 
-            /*
-            Node sourcePathNode = parentNode.getNode(DocImporter.SOURCE_DOC_FOLDER);
-            Node configNode = sourcePathNode.getNode(DocImporter.CONFIG_FILE_NAME + "/jcr:content");
-            java.util.Properties properties = new java.util.Properties();
-            properties.loadFromXML(JcrUtils.readFile(configNode));
-            docImporter.doImport(session.getNode(DocImporter.SOURCE_DOC_PATH, properties);
-            */
+            docImporter.doImport();
 
         } catch (Exception e){
             log.error("error", e);

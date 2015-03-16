@@ -21,6 +21,7 @@ import org.apache.jackrabbit.vault.fs.config.ConfigurationException;
 import org.apache.jackrabbit.vault.fs.io.AccessControlHandling;
 import org.apache.jackrabbit.vault.fs.io.Importer;
 import org.apache.jackrabbit.vault.fs.io.JcrArchive;
+import org.apache.sling.jcr.api.SlingRepository;
 import org.osgi.framework.Constants;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -46,34 +47,20 @@ import java.util.Properties;
 
 @Component
 @org.apache.felix.scr.annotations.Properties({
-    @Property(name = Constants.SERVICE_DESCRIPTION, value = "Adobe - XSLT Transformer Service"),
+    @Property(name = Constants.SERVICE_DESCRIPTION, value = "AEM Content Importer"),
     @Property(name = Constants.SERVICE_VENDOR, value = "Adobe")})
 @Service(value = DocImporter.class)
 public class DocImporterImpl implements DocImporter {
 
     private static final Logger log = LoggerFactory.getLogger(DocImporterImpl.class);
 
+    @Reference
+    private SlingRepository slingRepository;
+
     private String xsltFile;
     private String masterFile;
     private String graphicsFolder;
     private String targetPath;
-
-    /*
-    public DocImporterImpl(){
-
-        // Default format is DITA therefore the default xsltFile is dita-to-content.xsl
-        this.xsltFile = DocImporter.DEFAULT_XSLT_PATH;
-
-        // Default masterFile
-        this.masterFile = DocImporter.DEFAULT_MASTER_FILE;
-
-        // Default graphicsFolders
-        this.graphicsFolder = DocImporter.DEFAULT_GRAPHICS_FOLDER;
-
-        // Default targetPath
-        this.targetPath = DocImporter.DEFAULT_TARGET_PATH;
-    }
-    */
 
     @Activate
     protected final void activate(final Map<String, String> properties) throws Exception {
@@ -96,26 +83,30 @@ public class DocImporterImpl implements DocImporter {
         // Remove method is not used
     }
 
-
-
-    public void doImport(Node sourcePathNode, Properties properties) throws DocImporterException {
-
-        String sourceFormat = properties.getProperty(DocImporter.CONFIG_PARAM_SOURCE_FORMAT, DocImporter.DEFAULT_SOURCE_FORMAT);
-        if (sourceFormat.equalsIgnoreCase(DocImporter.SOURCE_FORMAT_DITA)) {
-            this.xsltFile = DocImporter.DITA_XSLT_PATH;
-        } else if (sourceFormat.equalsIgnoreCase(DocImporter.SOURCE_FORMAT_DOCBOOK)) {
-            this.xsltFile = DocImporter.DOCBOOK_XSLT_PATH;
-        }
-        this.masterFile = properties.getProperty(DocImporter.CONFIG_PARAM_MASTER_FILE, DocImporter.DEFAULT_SOURCE_FORMAT);
-        this.graphicsFolder = properties.getProperty(DocImporter.CONFIG_PARAM_GRAPHICS_FOLDER, DocImporter.DEFAULT_SOURCE_FORMAT);
-        this.targetPath = properties.getProperty(DocImporter.CONFIG_PARAM_TARGET_PATH, DocImporter.DEFAULT_SOURCE_FORMAT);
-
+    public void doImport() throws DocImporterException {
         try {
-            // Check that the master file exists
-            if (!sourcePathNode.hasNode(masterFile)) throw new DocImporterException(AEM_IMPORTER_EXCEPTION_TYPE.ERROR_PARAMS, "Master File " + masterFile + " not available in the folder " + sourcePathNode.getPath());
+            Session session = slingRepository.loginAdministrative(null);
+            Node sourcePathNode = session.getNode(DocImporter.SOURCE_DOC_FOLDER);
+            Node configNode = sourcePathNode.getNode(DocImporter.CONFIG_FILE_NAME + "/jcr:content");
+            Properties properties = new Properties();
+            properties.loadFromXML(JcrUtils.readFile(configNode));
+            String sourceFormat = properties.getProperty(DocImporter.CONFIG_PARAM_SOURCE_FORMAT, DocImporter.DEFAULT_SOURCE_FORMAT);
 
-            // Get the JCR session
-            Session session = sourcePathNode.getSession();
+            if (sourceFormat.equalsIgnoreCase(DocImporter.SOURCE_FORMAT_DITA)) {
+                this.xsltFile = DocImporter.DITA_XSLT_PATH;
+            } else if (sourceFormat.equalsIgnoreCase(DocImporter.SOURCE_FORMAT_DOCBOOK)) {
+                this.xsltFile = DocImporter.DOCBOOK_XSLT_PATH;
+            }
+
+            this.masterFile = properties.getProperty(DocImporter.CONFIG_PARAM_MASTER_FILE, DocImporter.DEFAULT_SOURCE_FORMAT);
+            this.graphicsFolder = properties.getProperty(DocImporter.CONFIG_PARAM_GRAPHICS_FOLDER, DocImporter.DEFAULT_SOURCE_FORMAT);
+            this.targetPath = properties.getProperty(DocImporter.CONFIG_PARAM_TARGET_PATH, DocImporter.DEFAULT_SOURCE_FORMAT);
+
+            // Check that the master file exists
+            if (!sourcePathNode.hasNode(masterFile)) {
+                log.info("Master File " + masterFile + " not available in the folder " + sourcePathNode.getPath());
+                return;
+            }
 
             // Get the XSLT file node
             Node xsltNode = session.getNode(xsltFile);
