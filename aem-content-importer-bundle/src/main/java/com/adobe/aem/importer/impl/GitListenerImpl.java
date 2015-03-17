@@ -106,7 +106,7 @@ public class GitListenerImpl implements GitListener {
                 int lastForwardSlashPos = path.lastIndexOf("/");
                 log.info("last forward slash pos: " + lastForwardSlashPos);
 
-                String parentPath = DocImporter.SOURCE_DOC_PATH;
+                String parentPath = DocImporter.SOURCE_FOLDER_PATH;
                 if (lastForwardSlashPos > 0) {
                     parentPath = parentPath + "/" + path.substring(0, lastForwardSlashPos);
                 }

@@ -7,12 +7,10 @@
 package com.adobe.aem.importer.servlet;
 
 import com.adobe.aem.importer.DocImporter;
-import com.adobe.aem.importer.exception.DocImporterException;
 import com.day.cq.commons.jcr.JcrUtil;
 import org.apache.felix.scr.annotations.Property;
 import org.apache.felix.scr.annotations.Reference;
 import org.apache.felix.scr.annotations.sling.SlingServlet;
-import org.apache.jackrabbit.commons.JcrUtils;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.SlingHttpServletResponse;
 import org.apache.sling.api.resource.Resource;
@@ -29,7 +27,6 @@ import javax.jcr.Session;
 import javax.servlet.ServletException;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Properties;
 
 
 @SlingServlet(
@@ -61,7 +58,7 @@ public class UploadContentServlet extends SlingAllMethodsServlet {
 
             this.contentImporter.importContent(
                 parentNode,
-                DocImporter.SOURCE_DOC_FOLDER + ".zip",
+                DocImporter.SOURCE_FOLDER_NAME + ".zip",
                 is,
                 new ImportOptions() {
                     @Override
@@ -94,8 +91,6 @@ public class UploadContentServlet extends SlingAllMethodsServlet {
             docImporter.doImport();
 
         } catch (RepositoryException e) {
-            log.error(e.getMessage(), e);
-        } catch (DocImporterException e) {
             log.error(e.getMessage(), e);
         }
     }

@@ -7,12 +7,6 @@
 
 package com.adobe.aem.importer;
 
-import java.util.Properties;
-
-import javax.jcr.Node;
-
-import com.adobe.aem.importer.exception.DocImporterException;
-
 /**
  * XML Transformer Interface
  */
@@ -44,18 +38,18 @@ public interface DocImporter {
     final static String DEFAULT_XSLT_PATH = DITA_XSLT_PATH;
 
     // Package template location
-    final static String PACKAGE_TEMPLATE_PATH = "/apps/aem-importer/resources/package-tpl";
+    final static String CONTENT_PACKAGE_TEMPLATE_PATH = "/apps/aem-importer/resources/package-tpl";
 
     // Temporary repository locations
     final static String ROOT_TEMP_PATH = "/var/doc-importer";
-    final static String OUTPUT_PACKAGE_FOLDER = "tmp";
-    final static String OUTPUT_PACKAGE_PATH = ROOT_TEMP_PATH + "/" + OUTPUT_PACKAGE_FOLDER;
-    final static String SOURCE_DOC_FOLDER = "src";
-    final static String SOURCE_DOC_PATH = ROOT_TEMP_PATH + "/" + SOURCE_DOC_FOLDER;
+    final static String CONTENT_PACKAGE_NAME = "package";
+    final static String CONTENT_PACKAGE_PATH = ROOT_TEMP_PATH + "/" + CONTENT_PACKAGE_NAME;
+    final static String SOURCE_FOLDER_NAME = "source";
+    final static String SOURCE_FOLDER_PATH = ROOT_TEMP_PATH + "/" + SOURCE_FOLDER_NAME;
 
     /**
 	 * Initialize and execute import of content
 	 * @throws Exception
 	 */
-	public void doImport() throws DocImporterException;
+	public void doImport();
 }
