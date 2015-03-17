@@ -8,8 +8,6 @@
 package com.adobe.aem.importer.impl;
 
 import com.adobe.aem.importer.DocImporter;
-import com.adobe.aem.importer.exception.DocImporterException;
-import com.adobe.aem.importer.exception.DocImporterException.AEM_IMPORTER_EXCEPTION_TYPE;
 import com.adobe.aem.importer.xml.FilterXmlBuilder;
 import com.adobe.aem.importer.xml.RejectingEntityResolver;
 import com.day.cq.commons.jcr.JcrUtil;
@@ -83,30 +81,57 @@ public class DocImporterImpl implements DocImporter {
         // Remove method is not used
     }
 
-    public void doImport() throws DocImporterException {
+    public void doImport() {
         try {
+            log.info("Starting doImport()...");
+
+            // Get a session
             Session session = slingRepository.loginAdministrative(null);
-            Node sourcePathNode = session.getNode(DocImporter.SOURCE_DOC_FOLDER);
-            Node configNode = sourcePathNode.getNode(DocImporter.CONFIG_FILE_NAME + "/jcr:content");
-            Properties properties = new Properties();
-            properties.loadFromXML(JcrUtils.readFile(configNode));
-            String sourceFormat = properties.getProperty(DocImporter.CONFIG_PARAM_SOURCE_FORMAT, DocImporter.DEFAULT_SOURCE_FORMAT);
+            log.info("Session: " + session.toString());
 
-            if (sourceFormat.equalsIgnoreCase(DocImporter.SOURCE_FORMAT_DITA)) {
-                this.xsltFile = DocImporter.DITA_XSLT_PATH;
-            } else if (sourceFormat.equalsIgnoreCase(DocImporter.SOURCE_FORMAT_DOCBOOK)) {
-                this.xsltFile = DocImporter.DOCBOOK_XSLT_PATH;
-            }
-
-            this.masterFile = properties.getProperty(DocImporter.CONFIG_PARAM_MASTER_FILE, DocImporter.DEFAULT_SOURCE_FORMAT);
-            this.graphicsFolder = properties.getProperty(DocImporter.CONFIG_PARAM_GRAPHICS_FOLDER, DocImporter.DEFAULT_SOURCE_FORMAT);
-            this.targetPath = properties.getProperty(DocImporter.CONFIG_PARAM_TARGET_PATH, DocImporter.DEFAULT_SOURCE_FORMAT);
-
-            // Check that the master file exists
-            if (!sourcePathNode.hasNode(masterFile)) {
-                log.info("Master File " + masterFile + " not available in the folder " + sourcePathNode.getPath());
+            // Get the source doc folder node
+            if(!session.nodeExists(DocImporter.SOURCE_DOC_PATH)) {
+                log.info("No source folder");
                 return;
             }
+            Node sourceDocPathNode = session.getNode(DocImporter.SOURCE_DOC_PATH);
+
+            // Get the configuration properties
+            String configJcrContentPath = DocImporter.CONFIG_FILE_NAME + "/jcr:content";
+            if(!sourceDocPathNode.hasNode(configJcrContentPath)) {
+                log.info("No config file");
+                return;
+            }
+            Node configJcrContentNode = sourceDocPathNode.getNode(configJcrContentPath);
+            log.info("configNode: " + configJcrContentNode.getPath());
+            Properties properties = new Properties();
+            properties.loadFromXML(JcrUtils.readFile(configJcrContentNode));
+
+            // Set the master file
+            this.masterFile = properties.getProperty(DocImporter.CONFIG_PARAM_MASTER_FILE, DocImporter.DEFAULT_SOURCE_FORMAT);
+            log.info("masterFile: " + this.masterFile);
+            if (!sourceDocPathNode.hasNode(masterFile)) {
+                log.info("Master File " + masterFile + " not available in the folder " + sourceDocPathNode.getPath());
+                return;
+            }
+
+            // Set the graphics folder
+            this.graphicsFolder = properties.getProperty(DocImporter.CONFIG_PARAM_GRAPHICS_FOLDER, DocImporter.DEFAULT_SOURCE_FORMAT);
+            log.info("graphicsFolder: " + this.graphicsFolder);
+
+            // Set the target path
+            this.targetPath = properties.getProperty(DocImporter.CONFIG_PARAM_TARGET_PATH, DocImporter.DEFAULT_SOURCE_FORMAT);
+            log.info("targetPath: " + this.targetPath);
+
+            // Set the XSLT file
+            String sourceFormat = properties.getProperty(DocImporter.CONFIG_PARAM_SOURCE_FORMAT, DocImporter.DEFAULT_SOURCE_FORMAT);
+            log.info("sourceFormat: " + sourceFormat);
+            if (sourceFormat.equalsIgnoreCase(DocImporter.SOURCE_FORMAT_DOCBOOK)) {
+                this.xsltFile = DocImporter.DOCBOOK_XSLT_PATH;
+            } else {
+                this.xsltFile = DocImporter.DITA_XSLT_PATH;
+            }
+            log.info("xsltFile: " + this.xsltFile);
 
             // Get the XSLT file node
             Node xsltNode = session.getNode(xsltFile);
@@ -119,7 +144,7 @@ public class DocImporterImpl implements DocImporter {
             xmlReader.setEntityResolver(new RejectingEntityResolver());
 
             // Create a custom URIResolver for JCR content
-            URIResolver uriResolver = new DocImporterURIResolver(xsltNode, sourcePathNode, xmlReader);
+            URIResolver uriResolver = new DocImporterURIResolver(xsltNode, sourceDocPathNode, xmlReader);
 
             // Create the XSLT transformer
             TransformerFactory transformerFactory = new TransformerFactoryImpl();
@@ -136,12 +161,12 @@ public class DocImporterImpl implements DocImporter {
 
             // Create a temporary location
             Node tmpPathNode = JcrUtil.createPath(DocImporter.SOURCE_DOC_PATH, "nt:folder", "nt:folder", session, true);
-            tmpPathNode = JcrUtil.createUniqueNode(tmpPathNode, sourcePathNode.getName(), "nt:folder", session);
+            tmpPathNode = JcrUtil.createUniqueNode(tmpPathNode, sourceDocPathNode.getName(), "nt:folder", session);
             session.save();
 
             // Run the XSLT transformation
             final ByteArrayOutputStream output = new ByteArrayOutputStream();
-            transformer.transform(new SAXSource(xmlReader, new InputSource(JcrUtils.readFile(sourcePathNode.getNode(masterFile)))), new StreamResult(output));
+            transformer.transform(new SAXSource(xmlReader, new InputSource(JcrUtils.readFile(sourceDocPathNode.getNode(masterFile)))), new StreamResult(output));
 
             // Copy transformed output stream to an input stream
             InputStream result = new ByteArrayInputStream(output.toByteArray());
@@ -150,11 +175,11 @@ public class DocImporterImpl implements DocImporter {
             Node packageFolderNode = JcrUtil.copy(session.getNode(DocImporter.PACKAGE_TEMPLATE_PATH), tmpPathNode, "package");
 
             // Create content.xml file containing xslt result
-            Node contentXMLNode = JcrUtil.createPath(packageFolderNode.getPath() + "/jcr_root" + targetPath, "nt:folder", "nt:folder", sourcePathNode.getSession(), true);
+            Node contentXMLNode = JcrUtil.createPath(packageFolderNode.getPath() + "/jcr_root" + targetPath, "nt:folder", "nt:folder", sourceDocPathNode.getSession(), true);
             JcrUtils.putFile(contentXMLNode, ".content.xml", "application/xml", result);
 
             // Copy graphic resources
-            JcrUtil.copy(sourcePathNode.getNode(graphicsFolder), contentXMLNode, graphicsFolder);
+            JcrUtil.copy(sourceDocPathNode.getNode(graphicsFolder), contentXMLNode, graphicsFolder);
             JcrUtils.putFile(packageFolderNode.getNode("META-INF/vault/"), "filter.xml", "application/xml", FilterXmlBuilder.fromRoot(targetPath + "/").toStream(graphicsFolder));
 
             // Import the prepared content package into 'real' content using FileVault
@@ -170,16 +195,16 @@ public class DocImporterImpl implements DocImporter {
 
             // Save all
             session.save();
-        } catch (RepositoryException e) {
-            throw new DocImporterException(AEM_IMPORTER_EXCEPTION_TYPE.UNEXPECTED, e.getMessage(), e);
+        } catch(RepositoryException e) {
+            log.error(e.toString());
         } catch (TransformerException e) {
-            throw new DocImporterException(AEM_IMPORTER_EXCEPTION_TYPE.UNEXPECTED, e.getMessage(), e);
+            log.error(e.toString());
         } catch (SAXException e){
-            throw new DocImporterException(AEM_IMPORTER_EXCEPTION_TYPE.UNEXPECTED, e.getMessage(), e);
+            log.error(e.toString());
         } catch (IOException e) {
-            throw new DocImporterException(AEM_IMPORTER_EXCEPTION_TYPE.UNEXPECTED, e.getMessage(), e);
+            log.error(e.toString());
         } catch (ConfigurationException e){
-            throw new DocImporterException(AEM_IMPORTER_EXCEPTION_TYPE.UNEXPECTED, e.getMessage(), e);
+            log.error(e.toString());
         }
     }
 
@@ -205,6 +230,4 @@ public class DocImporterImpl implements DocImporter {
             }
         }
     }
-
-
 }

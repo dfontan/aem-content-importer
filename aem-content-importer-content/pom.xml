@@ -135,7 +135,7 @@
         <dependency>
             <groupId>org.kohsuke</groupId>
             <artifactId>github-api-osgi</artifactId>
-            <version>1.60-DOCS</version>
+            <version>1.63-DOCS-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
 	</dependencies>
