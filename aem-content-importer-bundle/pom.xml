@@ -198,7 +198,6 @@
             <scope>provided</scope>
         </dependency>
 
-
 		<!-- TEST -->
 		<dependency>
 			<groupId>net.sf.saxon</groupId>
@@ -243,96 +242,4 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
-
-	<profiles>
-		<profile>
-			<id>distribution</id>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>org.apache.sling</groupId>
-						<artifactId>maven-sling-plugin</artifactId>
-						<executions>
-							<execution>
-								<phase>none</phase>
-							</execution>
-						</executions>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-
-		<profile>
-			<id>integration-tests</id>
-			<build>
-				<plugins>
-<!-- <plugin> -->
-<!-- 						<groupId>com.adobe.granite.maven</groupId> -->
-<!-- 						<artifactId>quickstart-maven-plugin</artifactId> -->
-<!-- 						<version>1.15.0</version> -->
-<!-- 						<configuration> -->
-<!-- 							<quickstartReadyTimeOutSec>1200</quickstartReadyTimeOutSec> -->
-<!-- 							<quickstartConfigurations> -->
-<!-- 								<quickstartConfiguration> -->
-<!-- 									<runmode>author</runmode> -->
-<!-- 									<port>4502</port> -->
-<!-- 								</quickstartConfiguration> -->
-<!-- 							</quickstartConfigurations> -->
-<!-- 							<quickstartDependency> -->
-<!-- 								<groupId>com.day.cq</groupId> -->
-<!-- 								<artifactId>cq-quickstart</artifactId> -->
-<!-- 								<version>6.1</version> -->
-<!-- 							</quickstartDependency> -->
-<!-- 						</configuration> -->
-<!-- 						<executions> -->
-<!-- 							<execution> -->
-<!-- 								<id>start-cq-quickstart</id> -->
-<!-- 								<phase>generate-resources</phase> -->
-<!-- 								<goals> -->
-<!-- 									<goal>start-multiple</goal> -->
-<!-- 								</goals> -->
-<!-- 								<configuration> -->
-<!-- 									<testBundles> -->
-<!-- 										<bundle> -->
-<!-- 											<groupId>com.adobe.aem.importer</groupId> -->
-<!-- 											<artifactId>aem-content-importer</artifactId> -->
-<!-- 											<version>0.0.1-SNAPSHOT</version> -->
-<!-- 										</bundle> -->
-<!-- 									</testBundles> -->
-<!-- 								</configuration> -->
-<!-- 							</execution> -->
-<!-- 							<execution> -->
-<!-- 								<id>stop-cq-quickstart</id> -->
-<!-- 								<phase>package</phase> -->
-<!-- 								<goals> -->
-<!-- 									<goal>stop-multiple</goal> -->
-<!-- 								</goals> -->
-<!-- 							</execution> -->
-<!-- 						</executions> -->
-<!-- 					</plugin> -->
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-failsafe-plugin</artifactId>
-						<version>2.18.1</version>
-						<configuration>
-							<includes>
-								<include>**/*IntegrationTest.java</include>
-							</includes>
-						</configuration>
-						<executions>
-							<execution>
-								<id>failsafe-integration-tests</id>
-								<phase>integration-test</phase>
-								<goals>
-									<goal>integration-test</goal>
-								</goals>
-							</execution>
-						</executions>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-	</profiles>
-
 </project>
