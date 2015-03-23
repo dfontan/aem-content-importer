@@ -60,7 +60,7 @@ public class DocImporterImpl implements DocImporter {
     private String graphicsFolder;
     private String targetPath;
 
-    private Node sourceFolderNode;
+    private Node sourceNode;
     private Properties properties;
 
     @Activate
@@ -84,22 +84,22 @@ public class DocImporterImpl implements DocImporter {
         // Remove method is not used
     }
 
-    private boolean initImport(Session session){
+    private boolean initImport(String sourcePath, Session session){
         try {
             // Get the source folder node
-            if (!session.nodeExists(DocImporter.SOURCE_FOLDER_PATH)) {
+            if (!session.nodeExists(sourcePath)) {
                 log.info("No source folder");
                 return false;
             }
-            this.sourceFolderNode = session.getNode(DocImporter.SOURCE_FOLDER_PATH);
+            this.sourceNode = session.getNode(sourcePath);
 
             // Get the configuration properties
             String configJcrContentPath = DocImporter.CONFIG_FILE_NAME + "/jcr:content";
-            if (!this.sourceFolderNode.hasNode(configJcrContentPath)) {
+            if (!this.sourceNode.hasNode(configJcrContentPath)) {
                 log.info("No config file");
                 return false;
             }
-            Node configJcrContentNode = sourceFolderNode.getNode(configJcrContentPath);
+            Node configJcrContentNode = this.sourceNode.getNode(configJcrContentPath);
             log.info("configNode: " + configJcrContentNode.getPath());
             this.properties = new Properties();
             this.properties.loadFromXML(JcrUtils.readFile(configJcrContentNode));
@@ -107,8 +107,8 @@ public class DocImporterImpl implements DocImporter {
             // Set the master file
             this.masterFile = properties.getProperty(DocImporter.CONFIG_PARAM_MASTER_FILE, DocImporter.DEFAULT_MASTER_FILE);
             log.info("masterFile: " + this.masterFile);
-            if (!sourceFolderNode.hasNode(this.masterFile)) {
-                log.info("Master File " + masterFile + " not available in the folder " + sourceFolderNode.getPath());
+            if (!this.sourceNode.hasNode(this.masterFile)) {
+                log.info("Master File " + masterFile + " not available in the folder " + this.sourceNode.getPath());
                 return false;
             }
 
@@ -137,7 +137,7 @@ public class DocImporterImpl implements DocImporter {
         return true;
     }
 
-    public void doImport() {
+    public void doImport(String sourcePath) {
         try {
             log.info("Starting doImport()...");
 
@@ -145,7 +145,7 @@ public class DocImporterImpl implements DocImporter {
             Session session = slingRepository.loginAdministrative(null);
             log.info("Session: " + session.toString());
 
-            if(!initImport(session)){
+            if(!initImport(sourcePath, session)){
                 log.info("Import aborted. Source location, config file or master file missing or malformed.");
                 return;
             }
@@ -161,7 +161,7 @@ public class DocImporterImpl implements DocImporter {
             xmlReader.setEntityResolver(new RejectingEntityResolver());
 
             // Create a custom URIResolver for JCR content
-            URIResolver uriResolver = new DocImporterURIResolver(xsltNode, sourceFolderNode, xmlReader);
+            URIResolver uriResolver = new DocImporterURIResolver(xsltNode, this.sourceNode, xmlReader);
 
             // Create the XSLT transformer
             TransformerFactory transformerFactory = new TransformerFactoryImpl();
@@ -178,7 +178,7 @@ public class DocImporterImpl implements DocImporter {
 
             // Run the XSLT transformation
             ByteArrayOutputStream output = new ByteArrayOutputStream();
-            transformer.transform(new SAXSource(xmlReader, new InputSource(JcrUtils.readFile(sourceFolderNode.getNode(masterFile)))), new StreamResult(output));
+            transformer.transform(new SAXSource(xmlReader, new InputSource(JcrUtils.readFile(this.sourceNode.getNode(masterFile)))), new StreamResult(output));
             InputStream result = new ByteArrayInputStream(output.toByteArray());
 
             // Create the folder for the content package
@@ -193,7 +193,7 @@ public class DocImporterImpl implements DocImporter {
             JcrUtils.putFile(contentXMLNode, ".content.xml", "application/xml", result);
 
             // Copy graphic resources to package
-            JcrUtil.copy(sourceFolderNode.getNode(graphicsFolder), contentXMLNode, graphicsFolder);
+            JcrUtil.copy(this.sourceNode.getNode(graphicsFolder), contentXMLNode, graphicsFolder);
 
             // Add filter.xml to package
             JcrUtils.putFile(vaultNode, "filter.xml", "application/xml", FilterXmlBuilder.fromRoot(targetPath + "/").toStream(graphicsFolder));

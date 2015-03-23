@@ -40,16 +40,19 @@ public interface DocImporter {
     // Package template location
     final static String CONTENT_PACKAGE_TEMPLATE_PATH = "/apps/aem-importer/resources/package-tpl";
 
-    // Temporary repository locations
-    final static String ROOT_TEMP_PATH = "/var/doc-importer";
+    // Working locations
+    final static String ROOT_WORKING_PATH = "/var/doc-importer";
     final static String CONTENT_PACKAGE_NAME = "package";
-    final static String CONTENT_PACKAGE_PATH = ROOT_TEMP_PATH + "/" + CONTENT_PACKAGE_NAME;
-    final static String SOURCE_FOLDER_NAME = "source";
-    final static String SOURCE_FOLDER_PATH = ROOT_TEMP_PATH + "/" + SOURCE_FOLDER_NAME;
+    final static String CONTENT_PACKAGE_PATH = ROOT_WORKING_PATH + "/" + CONTENT_PACKAGE_NAME;
+    final static String GIT_REPOS_FOLDER_NAME = "git-repos";
+    final static String GIT_REPOS_FOLDER_PATH = ROOT_WORKING_PATH + "/" + GIT_REPOS_FOLDER_NAME;
+    final static String ZIP_UPLOAD_FOLDER_NAME = "zips";
+    final static String ZIP_UPLOAD_FOLDER_PATH = ROOT_WORKING_PATH + "/" + ZIP_UPLOAD_FOLDER_NAME;
+    final static String ZIP_FILE_NAME = "tmp.zip";
 
     /**
 	 * Initialize and execute import of content
 	 * @throws Exception
 	 */
-	public void doImport();
+	public void doImport(String sourceRoot);
 }

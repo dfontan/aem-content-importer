@@ -27,6 +27,7 @@ import org.slf4j.LoggerFactory;
 import javax.jcr.Node;
 import javax.jcr.Session;
 import java.io.InputStream;
+import java.net.URI;
 import java.util.Arrays;
 import java.util.List;
 
@@ -66,8 +67,15 @@ public class GitListenerImpl implements GitListener {
     public void handleEvent(final Event osgiEvent) {
         Session session;
 
-        Project project = (Project)osgiEvent.getProperty(GitHubPushConstants.EVT_PROJECT);
+        Project gitProject = (Project)osgiEvent.getProperty(GitHubPushConstants.EVT_PROJECT);
+        log.info("GitHubProject.getName(): " + gitProject.getName());
+        log.info("GitHubProject.getHomepage(): " + gitProject.getHomepage());
+        log.info("GitHubProject.getDownloadLink(): " + gitProject.getDownloadLink());
+
         GitHubPushEvent gitHubPushEvent = (GitHubPushEvent)osgiEvent.getProperty(GitHubPushConstants.EVT_GHEVENT);
+        URI gitRepoUrl = gitHubPushEvent.getRepoUrl();
+        String sourcePath = DocImporter.GIT_REPOS_FOLDER_PATH + "/" + gitRepoUrl.getHost() + gitRepoUrl.getPath();
+        log.info("sourcePath: " + sourcePath);
 
         List<String> added = gitHubPushEvent.getAddedFileNames();
         log.info("added files: " + Arrays.toString(added.toArray()));
@@ -86,7 +94,6 @@ public class GitListenerImpl implements GitListener {
             session = repository.loginAdministrative(null);
             //session = repository.loginService(DOC_IMPORTER, null);
 
-
             for (String path : modified){
                 log.info("added or modified...");
                 log.info("git file path: " + path);
@@ -94,7 +101,10 @@ public class GitListenerImpl implements GitListener {
                 String escapedPath = EncodeUtil.escapePath(path);
                 log.info("escaped git file path: " + escapedPath);
 
-                File gitFile = project.getFile(escapedPath);
+                File gitFile = gitProject.getFile(escapedPath);
+                log.info("GitHubFile.getUrl(): " + gitFile.getUrl());
+                log.info("GitHubFile.getPath(): " + gitFile.getPath());
+
                 String gitFileContent = gitFile.getContent();
 
                 String[] split = path.split("/");
@@ -106,7 +116,7 @@ public class GitListenerImpl implements GitListener {
                 int lastForwardSlashPos = path.lastIndexOf("/");
                 log.info("last forward slash pos: " + lastForwardSlashPos);
 
-                String parentPath = DocImporter.SOURCE_FOLDER_PATH;
+                String parentPath = sourcePath;
                 if (lastForwardSlashPos > 0) {
                     parentPath = parentPath + "/" + path.substring(0, lastForwardSlashPos);
                 }
@@ -125,17 +135,16 @@ public class GitListenerImpl implements GitListener {
                 log.info("deleted...");
                 log.info("git file path: " + path);
 
-                String deleteNodePath = DocImporter.ROOT_TEMP_PATH + "/" + path;
+                String deleteNodePath = sourcePath + "/" + path;
                 if (session.nodeExists(deleteNodePath)){
                     session.getNode(deleteNodePath).remove();
                     session.save();
-                    log.info("removal of file: " + path + "caused removal of node: " + deleteNodePath);
+                    log.info("removal of file: " + path + " caused removal of node: " + deleteNodePath);
+                } else {
+                    log.info("removal of file: " + path + " caused no change. No node found at: " + deleteNodePath);
                 }
-                log.info("removal of file: " + path + "caused no change. No node found at: " + deleteNodePath);
             }
-
-            docImporter.doImport();
-
+            docImporter.doImport(sourcePath);
         } catch (Exception e){
             log.error("error", e);
         }

@@ -54,11 +54,16 @@ public class UploadContentServlet extends SlingAllMethodsServlet {
             Resource resource = request.getResource();
             Node resourceNode = resource.adaptTo(Node.class);
             Session session = resourceNode.getSession();
-            Node parentNode = JcrUtil.createPath(DocImporter.ROOT_TEMP_PATH, "nt:folder", "nt:folder", session, true);
+
+            if(session.itemExists(DocImporter.ZIP_UPLOAD_FOLDER_PATH)){
+                session.removeItem(DocImporter.ZIP_UPLOAD_FOLDER_PATH);
+                session.save();
+            }
+            Node parentNode = JcrUtil.createPath(DocImporter.ZIP_UPLOAD_FOLDER_PATH, "nt:folder", "nt:folder", session, true);
 
             this.contentImporter.importContent(
                 parentNode,
-                DocImporter.SOURCE_FOLDER_NAME + ".zip",
+                DocImporter.ZIP_FILE_NAME,
                 is,
                 new ImportOptions() {
                     @Override
@@ -88,7 +93,7 @@ public class UploadContentServlet extends SlingAllMethodsServlet {
                 },
                 null);
 
-            docImporter.doImport();
+            docImporter.doImport(DocImporter.GIT_REPOS_FOLDER_NAME);
 
         } catch (RepositoryException e) {
             log.error(e.getMessage(), e);
