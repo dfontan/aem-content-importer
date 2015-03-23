@@ -193,7 +193,9 @@ public class DocImporterImpl implements DocImporter {
             JcrUtils.putFile(contentXMLNode, ".content.xml", "application/xml", result);
 
             // Copy graphic resources to package
-            JcrUtil.copy(this.sourceNode.getNode(graphicsFolder), contentXMLNode, graphicsFolder);
+            if(graphicsFolder != null && session.nodeExists(graphicsFolder)) {
+                JcrUtil.copy(this.sourceNode.getNode(graphicsFolder), contentXMLNode, graphicsFolder);
+            }
 
             // Add filter.xml to package
             JcrUtils.putFile(vaultNode, "filter.xml", "application/xml", FilterXmlBuilder.fromRoot(targetPath + "/").toStream(graphicsFolder));
