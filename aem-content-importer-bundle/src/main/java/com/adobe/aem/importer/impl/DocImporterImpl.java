@@ -39,6 +39,7 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Arrays;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Properties;
@@ -49,86 +50,84 @@ import java.util.Properties;
     @Property(name = Constants.SERVICE_VENDOR, value = "Adobe")})
 @Service(value = DocImporter.class)
 public class DocImporterImpl implements DocImporter {
-
     private static final Logger log = LoggerFactory.getLogger(DocImporterImpl.class);
+    private Session session;
+
+    private String xsltFilePath;
+    private String masterFileName;
+    private String graphicsFolderName;
+    private String targetPath;
+
+    private Node importRootNode;
+    private Node sourceFolderNode;
+    private Properties properties;
 
     @Reference
     private SlingRepository slingRepository;
 
-    private String xsltFile;
-    private String masterFile;
-    private String graphicsFolder;
-    private String targetPath;
-
-    private Node sourceNode;
-    private Properties properties;
-
     @Activate
-    protected final void activate(final Map<String, String> properties) throws Exception {
-
-        // Default format is DITA therefore the default xsltFile is dita-to-content.xsl
-        this.xsltFile = DocImporter.DEFAULT_XSLT_PATH;
-
-        // Default masterFile
-        this.masterFile = DocImporter.DEFAULT_MASTER_FILE;
-
-        // Default graphicsFolders
-        this.graphicsFolder = DocImporter.DEFAULT_GRAPHICS_FOLDER;
-
-        // Default targetPath
-        this.targetPath = DocImporter.DEFAULT_TARGET_PATH;
-    }
+    protected final void activate(final Map<String, String> properties) throws Exception {}
 
     @Deactivate
-    protected final void deactivate(final Map<String, String> properties) {
-        // Remove method is not used
-    }
+    protected final void deactivate(final Map<String, String> properties) {}
 
-    private boolean initImport(String sourcePath, Session session){
+    private boolean initImport(String importRootPath){
+        log.info("importRootPath:" + importRootPath);
         try {
-            // Get the source folder node
-            if (!session.nodeExists(sourcePath)) {
-                log.info("No source folder");
-                return false;
-            }
-            this.sourceNode = session.getNode(sourcePath);
+            this.session = slingRepository.loginAdministrative(null);
+            log.info("this.session:" + this.session);
 
-            // Get the configuration properties
-            String configJcrContentPath = DocImporter.CONFIG_FILE_NAME + "/jcr:content";
-            if (!this.sourceNode.hasNode(configJcrContentPath)) {
-                log.info("No config file");
+            if (!this.session.nodeExists(importRootPath)){
+                log.info("importRootPath " + importRootPath + " not found!");
                 return false;
             }
-            Node configJcrContentNode = this.sourceNode.getNode(configJcrContentPath);
-            log.info("configNode: " + configJcrContentNode.getPath());
+            this.importRootNode = this.session.getNode(importRootPath);
+            log.info("this.importRootNode: " + this.importRootNode);
+
+            if (!this.importRootNode.hasNode(DocImporter.CONFIG_FILE_NAME))
+            {
+                log.info("config file " + DocImporter.CONFIG_FILE_NAME + " not found!");
+                return false;
+            }
+
             this.properties = new Properties();
-            this.properties.loadFromXML(JcrUtils.readFile(configJcrContentNode));
+            this.properties.loadFromXML(JcrUtils.readFile(this.importRootNode.getNode(DocImporter.CONFIG_FILE_NAME)));
+            log.info("this.properties: " + Arrays.deepToString(this.properties.values().toArray()));
 
-            // Set the master file
-            this.masterFile = properties.getProperty(DocImporter.CONFIG_PARAM_MASTER_FILE, DocImporter.DEFAULT_MASTER_FILE);
-            log.info("masterFile: " + this.masterFile);
-            if (!this.sourceNode.hasNode(this.masterFile)) {
-                log.info("Master File " + masterFile + " not available in the folder " + this.sourceNode.getPath());
+            String sourceFolder = properties.getProperty(DocImporter.CONFIG_PARAM_SOURCE_FOLDER, DocImporter.DEFAULT_SOURCE_FOLDER);
+            log.info("sourceFolder: " + sourceFolder);
+
+            if (!this.importRootNode.hasNode(sourceFolder)) {
+                log.info("sourceFolder " + sourceFolder + " not found!");
+                return false;
+            }
+            this.sourceFolderNode = importRootNode.getNode(sourceFolder);
+            log.info("this.sourceFolderNode: " + this.sourceFolderNode);
+
+            this.masterFileName = properties.getProperty(DocImporter.CONFIG_PARAM_MASTER_FILE, DocImporter.DEFAULT_MASTER_FILE);
+            log.info("this.masterFileName: " + this.masterFileName);
+
+            if (!this.sourceFolderNode.hasNode(this.masterFileName)){
+                log.info("masterFileName " + this.masterFileName + " not found!");
                 return false;
             }
 
-            // Set the graphics folder
-            this.graphicsFolder = properties.getProperty(DocImporter.CONFIG_PARAM_GRAPHICS_FOLDER, DocImporter.DEFAULT_GRAPHICS_FOLDER);
-            log.info("graphicsFolder: " + this.graphicsFolder);
+            this.graphicsFolderName = properties.getProperty(DocImporter.CONFIG_PARAM_GRAPHICS_FOLDER, DocImporter.DEFAULT_GRAPHICS_FOLDER);
+            log.info("this.graphicsFolderName: " + this.graphicsFolderName);
 
-            // Set the target path
             this.targetPath = properties.getProperty(DocImporter.CONFIG_PARAM_TARGET_PATH, DocImporter.DEFAULT_TARGET_PATH);
-            log.info("targetPath: " + this.targetPath);
+            log.info("this.targetPath: " + this.targetPath);
 
-            // Set the XSLT file
             String sourceFormat = this.properties.getProperty(DocImporter.CONFIG_PARAM_SOURCE_FORMAT, DocImporter.DEFAULT_SOURCE_FORMAT);
             log.info("sourceFormat: " + sourceFormat);
+
             if (sourceFormat.equalsIgnoreCase(DocImporter.SOURCE_FORMAT_DOCBOOK)) {
-                this.xsltFile = DocImporter.DOCBOOK_XSLT_PATH;
+                this.xsltFilePath = DocImporter.DOCBOOK_XSLT_PATH;
             } else {
-                this.xsltFile = DocImporter.DITA_XSLT_PATH;
+                this.xsltFilePath = DocImporter.DITA_XSLT_PATH;
             }
-            log.info("xsltFile: " + this.xsltFile);
+            log.info("this.xsltFilePath: " + this.xsltFilePath);
+
         } catch(RepositoryException e) {
             log.error(e.toString());
         } catch (IOException e) {
@@ -137,82 +136,73 @@ public class DocImporterImpl implements DocImporter {
         return true;
     }
 
-    public void doImport(String sourcePath) {
+    public void doImport(String importRootPath) {
         try {
-            log.info("Starting doImport()...");
-
-            // Get a session
-            Session session = slingRepository.loginAdministrative(null);
-            log.info("Session: " + session.toString());
-
-            if(!initImport(sourcePath, session)){
-                log.info("Import aborted. Source location, config file or master file missing or malformed.");
+            if (!initImport(importRootPath)){
+                log.info("initImport failed!");
                 return;
             }
 
-            // Get the XSLT file node
-            Node xsltNode = session.getNode(xsltFile);
+            Node xsltNode = this.session.getNode(xsltFilePath);
+            log.info("xsltNode: " + xsltNode);
 
-            // Create the XML reader (the SAX parser)
             XMLReader xmlReader = XMLReaderFactory.createXMLReader();
+            log.info("xmlReader: " + xmlReader);
 
-            // Set the entity resolver to a RejectingEntityResolver.
-            // todo: this won't work for docbook, which depends on entity references
             xmlReader.setEntityResolver(new RejectingEntityResolver());
+            URIResolver uriResolver = new DocImporterURIResolver(xsltNode, this.sourceFolderNode, xmlReader);
+            log.info("uriResolver: " + uriResolver);
 
-            // Create a custom URIResolver for JCR content
-            URIResolver uriResolver = new DocImporterURIResolver(xsltNode, this.sourceNode, xmlReader);
-
-            // Create the XSLT transformer
             TransformerFactory transformerFactory = new TransformerFactoryImpl();
+            log.info("transformerFactory: " + transformerFactory);
+
             transformerFactory.setURIResolver(uriResolver);
             Transformer transformer = transformerFactory.newTransformer(new StreamSource(JcrUtils.readFile(xsltNode)));
+            log.info("transformer: " + transformer);
 
-            // Pass all properties to XSLT transformer
             for (Entry<Object, Object> entry : properties.entrySet()) {
                 transformer.setParameter(entry.getKey().toString(), entry.getValue());
+                log.info("transformer.setParameter: " + entry.getKey().toString() + " = " + entry.getValue());
             }
+            transformer.setParameter("xsltFilePath", this.xsltFilePath);
+            log.info("transformer.setParameter: xsltFilePath = " + this.xsltFilePath);
 
-            // Pass own XSLT path to the XSLT
-            transformer.setParameter("xsltFile", this.xsltFile);
-
-            // Run the XSLT transformation
             ByteArrayOutputStream output = new ByteArrayOutputStream();
-            transformer.transform(new SAXSource(xmlReader, new InputSource(JcrUtils.readFile(this.sourceNode.getNode(masterFile)))), new StreamResult(output));
+            transformer.transform(new SAXSource(xmlReader, new InputSource(JcrUtils.readFile(this.sourceFolderNode.getNode(masterFileName)))), new StreamResult(output));
             InputStream result = new ByteArrayInputStream(output.toByteArray());
+            log.info("result: " + result);
 
-            // Create the folder for the content package
-            Node contentPackageNode = JcrUtils.getOrCreateByPath(DocImporter.CONTENT_PACKAGE_PATH, "nt:folder", "nt:folder", session, true);
-
-            // Copy META-INF from package template to content package folder and get vault node
-            session.getWorkspace().copy(DocImporter.CONTENT_PACKAGE_TEMPLATE_PATH + "/META-INF", contentPackageNode.getPath() + "/META-INF");
-            Node vaultNode = contentPackageNode.getNode("META-INF/vault");
-
-            // Create content.xml file containing xslt result
-            Node contentXMLNode = JcrUtil.createPath(contentPackageNode.getPath() + "/jcr_root" + targetPath, "nt:folder", "nt:folder", session, true);
-            JcrUtils.putFile(contentXMLNode, ".content.xml", "application/xml", result);
-
-            // Copy graphic resources to package
-            if(graphicsFolder != null && session.nodeExists(graphicsFolder)) {
-                JcrUtil.copy(this.sourceNode.getNode(graphicsFolder), contentXMLNode, graphicsFolder);
+            if (this.session.itemExists(DocImporter.CONTENT_PACKAGE_PATH)){
+                this.session.removeItem(DocImporter.CONTENT_PACKAGE_PATH);
+                this.session.save();
+                log.info("old package removed");
             }
+            Node contentPackageNode = JcrUtils.getOrCreateByPath(DocImporter.CONTENT_PACKAGE_PATH, "nt:folder", "nt:folder", this.session, true);
+            this.session.getWorkspace().copy(DocImporter.CONTENT_PACKAGE_TEMPLATE_PATH + "/META-INF", contentPackageNode.getPath() + "/META-INF");
+            log.info("new package created");
 
-            // Add filter.xml to package
-            JcrUtils.putFile(vaultNode, "filter.xml", "application/xml", FilterXmlBuilder.fromRoot(targetPath + "/").toStream(graphicsFolder));
+            Node vaultNode = contentPackageNode.getNode("META-INF/vault");
+            Node contentXMLNode = JcrUtil.createPath(contentPackageNode.getPath() + "/jcr_root" + targetPath, "nt:folder", "nt:folder", this.session, true);
+            JcrUtils.putFile(contentXMLNode, ".content.xml", "application/xml", result);
+            log.info("content.xml written");
 
-            // Import the prepared content package into 'real' content using FileVault
+            if (this.graphicsFolderName != null && this.sourceFolderNode.hasNode(this.graphicsFolderName)) {
+                JcrUtil.copy(this.sourceFolderNode.getNode(graphicsFolderName), contentXMLNode, this.graphicsFolderName);
+            }
+            JcrUtils.putFile(vaultNode, "filter.xml", "application/xml", FilterXmlBuilder.fromRoot(this.targetPath + "/").toStream(this.graphicsFolderName));
+            log.info("filter.xml written");
+
             JcrArchive archive = new JcrArchive(contentPackageNode, "/");
             archive.open(true);
             Importer importer = new Importer();
             importer.getOptions().setImportMode(ImportMode.MERGE);
             importer.getOptions().setAccessControlHandling(AccessControlHandling.MERGE);
             importer.run(archive, contentPackageNode.getSession().getNode("/"));
+            log.info("content.xml imported");
 
-            // Delete the temporary content package
-            contentPackageNode.remove();
-
-            // Save all
-            session.save();
+            //contentPackageNode.remove();
+            this.session.save();
+            log.info("session saved.");
 
         } catch(RepositoryException e) {
             log.error(e.toString());
