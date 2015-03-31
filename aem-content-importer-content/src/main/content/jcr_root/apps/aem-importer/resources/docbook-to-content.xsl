@@ -8,7 +8,6 @@
         xmlns:cq="http://www.day.com/jcr/cq/1.0"
         xmlns:jcr="http://www.jcp.org/jcr/1.0"
         xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
-        xmlns:pd="http://www.adobe.com/pando/1.0"
         xmlns:saxon="http://saxon.sf.net"
         xmlns:d="data:,dpc"
         version="3.0">
@@ -25,7 +24,7 @@ java -jar saxon9he.jar email_n.xml docbook-to-content.xsl -o:out.xml
 The HTML files are stored in a "html" folder
 -->
 
-<xsl:import href="htmlparse.xsl"/>
+<!--<xsl:import href="htmlparse.xsl"/> -->
 <xsl:output method="xml" indent="yes"/>
 <xsl:strip-space elements="*"/>
 
@@ -37,7 +36,6 @@ The HTML files are stored in a "html" folder
           xmlns:cq="http://www.day.com/jcr/cq/1.0"
           xmlns:jcr="http://www.jcp.org/jcr/1.0"
           xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
-          xmlns:pd="http://www.adobe.com/pando/1.0"
           jcr:primaryType="cq:Page">
 	  	<jcr:content jcr:primaryType="nt:unstructured" jcr:title="Adobe Campaign" sling:resourceType="wcm/foundation/components/page">
 			<par jcr:primaryType="nt:unstructured" sling:resourceType="wcm/foundation/components/parsys">
@@ -131,11 +129,13 @@ The HTML files are stored in a "html" folder
     </output:serialization-parameters>
 	</xsl:variable>
 
+    <!--
 	<xsl:for-each select="d:htmlparse(unparsed-text($fullPath,'UTF-8'))">
 		<xsl:for-each select="descendant::xhtml:body">
 			<xsl:copy-of select="serialize(.,$output/output:serialization-parameters)"/>
 		</xsl:for-each>
 	</xsl:for-each>
+	-->
 
 </xsl:template>
 
