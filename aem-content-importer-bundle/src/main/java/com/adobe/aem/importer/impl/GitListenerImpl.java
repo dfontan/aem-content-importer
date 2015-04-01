@@ -97,7 +97,7 @@ public class GitListenerImpl implements GitListener {
             }
             docImporter.doImport(sourcePath);
         } catch (Exception e){
-            log.error("error", e);
+            log.error("Exception", e);
         }
     }
 }

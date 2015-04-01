@@ -24,7 +24,7 @@ java -jar saxon9he.jar email_n.xml docbook-to-content.xsl -o:out.xml
 The HTML files are stored in a "html" folder
 -->
 
-<!--<xsl:import href="htmlparse.xsl"/> -->
+<xsl:import href="htmlparse.xsl"/>
 <xsl:output method="xml" indent="yes"/>
 <xsl:strip-space elements="*"/>
 
@@ -129,13 +129,12 @@ The HTML files are stored in a "html" folder
     </output:serialization-parameters>
 	</xsl:variable>
 
-    <!--
+
 	<xsl:for-each select="d:htmlparse(unparsed-text($fullPath,'UTF-8'))">
 		<xsl:for-each select="descendant::xhtml:body">
 			<xsl:copy-of select="serialize(.,$output/output:serialization-parameters)"/>
 		</xsl:for-each>
 	</xsl:for-each>
-	-->
 
 </xsl:template>
 
