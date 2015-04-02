@@ -80,8 +80,7 @@
 					<instructions>
 						<Bundle-Category>${project.groupId}</Bundle-Category>
 						<Bundle-SymbolicName>${project.groupId}.${project.artifactId}</Bundle-SymbolicName>
-						<Private-Package>net.sf.saxon.*,com.adobe.aem.importer.*</Private-Package>
-						<Import-Package>org.apache.xml.*;resolution:=optional,*</Import-Package>
+						<Private-Package>com.adobe.aem.importer.*</Private-Package>
 					</instructions>
 				</configuration>
 			</plugin>

@@ -93,6 +93,11 @@
                             <artifactId>github-api-osgi</artifactId>
                             <target>/apps/${project.folder}/install</target>
                         </embedded>
+                        <embedded>
+                            <groupId>net.sf.saxon</groupId>
+                            <artifactId>saxon-all.osgi</artifactId>
+                            <target>/apps/${project.folder}/install</target>
+                        </embedded>
                     </embeddeds>
                 </configuration>
                 <executions>
@@ -148,6 +153,11 @@
             <artifactId>github-api-osgi</artifactId>
             <version>1.63-DOCS-SNAPSHOT</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>net.sf.saxon</groupId>
+            <artifactId>saxon-all.osgi</artifactId>
+            <version>8.9.0.4</version>
         </dependency>
 	</dependencies>
 </project>
