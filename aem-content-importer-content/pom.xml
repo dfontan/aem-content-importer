@@ -94,10 +94,23 @@
                             <target>/apps/${project.folder}/install</target>
                         </embedded>
                         <embedded>
+                            <groupId>org.apache.servicemix.bundles</groupId>
+                            <artifactId>org.apache.servicemix.bundles.saxon</artifactId>
+                            <target>/apps/${project.folder}/install</target>
+                        </embedded>
+                        <embedded>
+                            <groupId>org.apache.servicemix.bundles</groupId>
+                            <artifactId>org.apache.servicemix.bundles.xmlresolver</artifactId>
+                            <target>/apps/${project.folder}/install</target>
+                        </embedded>
+
+                        <!--
+                        <embedded>
                             <groupId>net.sf.saxon</groupId>
                             <artifactId>saxon-all.osgi</artifactId>
                             <target>/apps/${project.folder}/install</target>
                         </embedded>
+                        -->
                     </embeddeds>
                 </configuration>
                 <executions>
@@ -148,16 +161,39 @@
             <version>0.2.0-DOCS-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
+
         <dependency>
             <groupId>org.kohsuke</groupId>
             <artifactId>github-api-osgi</artifactId>
             <version>1.63-DOCS-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
+
+        <dependency>
+            <groupId>org.apache.servicemix.bundles</groupId>
+            <artifactId>org.apache.servicemix.bundles.saxon</artifactId>
+            <version>9.6.0-4_1</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.servicemix.bundles</groupId>
+            <artifactId>org.apache.servicemix.bundles.xmlresolver</artifactId>
+            <version>1.2_5</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>net.sf.saxon</groupId>
+            <artifactId>Saxon-HE</artifactId>
+            <version>9.6.0-4</version>
+        </dependency>
+        <!--
         <dependency>
             <groupId>net.sf.saxon</groupId>
             <artifactId>saxon-all.osgi</artifactId>
             <version>8.9.0.4</version>
         </dependency>
+        -->
 	</dependencies>
 </project>

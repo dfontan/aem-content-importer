@@ -11,8 +11,17 @@ import com.adobe.aem.importer.DocImporter;
 import com.adobe.aem.importer.xml.FilterXmlBuilder;
 import com.adobe.aem.importer.xml.RejectingEntityResolver;
 import com.day.cq.commons.jcr.JcrUtil;
+import net.sf.saxon.Configuration;
+import net.sf.saxon.jaxp.TransformerImpl;
 import net.sf.saxon.TransformerFactoryImpl;
-import org.apache.felix.scr.annotations.*;
+import net.sf.saxon.lib.UnparsedTextURIResolver;
+import org.apache.commons.io.IOUtils;
+import org.apache.felix.scr.annotations.Activate;
+import org.apache.felix.scr.annotations.Component;
+import org.apache.felix.scr.annotations.Deactivate;
+import org.apache.felix.scr.annotations.Property;
+import org.apache.felix.scr.annotations.Reference;
+import org.apache.felix.scr.annotations.Service;
 import org.apache.jackrabbit.commons.JcrUtils;
 import org.apache.jackrabbit.vault.fs.api.ImportMode;
 import org.apache.jackrabbit.vault.fs.config.ConfigurationException;
@@ -27,18 +36,18 @@ import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
 import org.xml.sax.helpers.XMLReaderFactory;
-
 import javax.jcr.Node;
 import javax.jcr.RepositoryException;
 import javax.jcr.Session;
-import javax.xml.transform.*;
+import javax.xml.transform.Source;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.URIResolver;
 import javax.xml.transform.sax.SAXSource;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
+import java.net.URI;
 import java.util.Arrays;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -150,14 +159,20 @@ public class DocImporterImpl implements DocImporter {
             log.info("xmlReader: " + xmlReader);
 
             xmlReader.setEntityResolver(new RejectingEntityResolver());
+
             URIResolver uriResolver = new DocImporterURIResolver(xsltNode, this.sourceFolderNode, xmlReader);
             log.info("uriResolver: " + uriResolver);
 
-            TransformerFactory transformerFactory = new TransformerFactoryImpl();
-            log.info("transformerFactory: " + transformerFactory);
+            TransformerFactoryImpl transformerFactoryImpl = new TransformerFactoryImpl();
+            log.info("transformerFactoryImpl: " + transformerFactoryImpl);
 
-            transformerFactory.setURIResolver(uriResolver);
-            Transformer transformer = transformerFactory.newTransformer(new StreamSource(JcrUtils.readFile(xsltNode)));
+
+            transformerFactoryImpl.setURIResolver(uriResolver);
+
+            Transformer transformer = transformerFactoryImpl.newTransformer(new StreamSource(JcrUtils.readFile(xsltNode)));
+
+            TransformerImpl transformerImpl = (TransformerImpl) transformer;
+            transformerImpl.getUnderlyingController().setUnparsedTextURIResolver(new DocImporterUnparsedTextURIResolver(this.sourceFolderNode));
             log.info("transformer: " + transformer);
 
             for (Entry<Object, Object> entry : properties.entrySet()) {
@@ -228,14 +243,44 @@ public class DocImporterImpl implements DocImporter {
             this.xmlReader = xmlReader;
         }
 
-        @Override
         public Source resolve(String href, String base) throws TransformerException {
             try {
                 final Node node = (href.endsWith("xsl") ? this.xsltNode.getParent().getNode(href) : this.srcNode.getNode(href));
-                DocImporterImpl.log.debug("Resolving resource {}", node.getPath());
                 return new SAXSource(this.xmlReader, new InputSource(JcrUtils.readFile(node)));
             } catch (RepositoryException e) {
                 throw new TransformerException("Cannot resolve " + href + " in either [parent of " + this.xsltNode + " or " + this.srcNode + "]");
+            }
+        }
+    }
+
+    private class DocImporterUnparsedTextURIResolver implements UnparsedTextURIResolver {
+        private Node srcNode;
+
+        public DocImporterUnparsedTextURIResolver(Node srcNode) {
+            this.srcNode = srcNode;
+        }
+
+        public Reader resolve(URI absoluteURI, String encoding, Configuration config) throws net.sf.saxon.trans.XPathException {
+            String absolutePath = absoluteURI.getPath();
+            InputStreamReader isr;
+
+            // Hardcoded hack, requires that HTML files are always in the html/ subdir of the src/ dir
+            int pos = absolutePath.lastIndexOf("html/");
+            String relativePath = absolutePath.substring(pos);
+
+            try {
+                if(this.srcNode.hasNode(relativePath)) {
+                    isr = new InputStreamReader(JcrUtils.readFile(this.srcNode.getNode(relativePath)));
+                } else {
+                    String message = "<html><body><h2>HTML file " + relativePath + " not found<h2></body></html>";
+                    isr = new InputStreamReader(IOUtils.toInputStream(message, "UTF-8"));
+                    log.info("HTML file " + relativePath + " not found");
+                }
+                return isr;
+            } catch (RepositoryException e) {
+                throw new net.sf.saxon.trans.XPathException("Oops...", e);
+            } catch (IOException e) {
+                throw new net.sf.saxon.trans.XPathException("Oops...", e);
             }
         }
     }

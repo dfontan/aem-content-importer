@@ -13,7 +13,6 @@
 
     <xsl:output method="xml" indent="yes"/>
     <xsl:strip-space elements="*"/>
-
     <xsl:variable name="ditamapUri" select="base-uri()"/>
 
     <!-- Templates -->
