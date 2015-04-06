@@ -39,7 +39,7 @@ The HTML files are stored in the "html" folder
                 <par jcr:primaryType="nt:unstructured" sling:resourceType="wcm/foundation/components/parsys">
                     <sitemap jcr:primaryType="nt:unstructured"
                              sling:resourceType="foundation/components/sitemap"
-                             rootPath="/content/docbook-import"/>
+                             rootPath="/content/imported/docbook-example"/>
                 </par>
             </jcr:content>
             <xsl:call-template name="chapterCreation">
@@ -120,14 +120,57 @@ The HTML files are stored in the "html" folder
             </output:serialization-parameters>
         </xsl:variable>
 
+        <!-- old no need for loops
         <xsl:for-each select="d:htmlparse(unparsed-text($fullPath,'UTF-8'))">
             <xsl:for-each select="descendant::xhtml:body">
                 <xsl:copy-of select="serialize(.,$output/output:serialization-parameters)"/>
             </xsl:for-each>
         </xsl:for-each>
+        -->
 
+        <!-- debug
+        <xsl:result-document
+            method="html"
+            href="{concat('/home/ppiegaze/out/', $HTMLfileName)}">
+            <xsl:variable name="x" select="d:htmlparse(unparsed-text($fullPath,'UTF-8'))"/>
+            <xsl:variable name="y" select="$x/descendant::xhtml:body"/>
+            <xsl:variable name="z">
+                <xsl:apply-templates select="$y" mode="cleanDisplay"/>
+            </xsl:variable>
+            <xsl:copy-of select="$z"/>
+        </xsl:result-document>
+        -->
+
+        <xsl:variable name="parsedHtml" select="d:htmlparse(unparsed-text($fullPath,'UTF-8'))"/>
+        <xsl:variable name="parsedBody" select="$parsedHtml/descendant::xhtml:body"/>
+        <xsl:variable name="parsedBodyDisplayInline">
+            <xsl:apply-templates select="$parsedBody" mode="cleanDisplay"/>
+        </xsl:variable>
+        <xsl:variable name="serialized" select="serialize($parsedBodyDisplayInline,$output/output:serialization-parameters)"/>
+        <xsl:copy-of select="$serialized"/>
     </xsl:template>
 
+    <!-- Convert all attributes style="display:none;" to style="display:inline" -->
+    <xsl:template match="@*|node()" mode="cleanDisplay">
+        <xsl:copy>
+            <xsl:apply-templates select="@*|node()" mode="cleanDisplay"/>
+        </xsl:copy>
+    </xsl:template>
+
+    <xsl:template match="@style" mode="cleanDisplay">
+        <xsl:choose>
+            <xsl:when test=".='display:none;'">
+                <xsl:attribute name="style">
+                    <xsl:value-of select="'display:inline;'"/>
+                </xsl:attribute>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:attribute name="style">
+                    <xsl:value-of select="."/>
+                </xsl:attribute>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
 
     <!-- Template to transform title tags in clean HTML filename (same as in the legacy XML2HTML transformation)-->
     <xsl:template name="cleanName">

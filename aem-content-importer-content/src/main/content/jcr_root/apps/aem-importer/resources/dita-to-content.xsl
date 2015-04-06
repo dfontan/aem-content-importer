@@ -33,7 +33,7 @@
                     <sitemap
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="foundation/components/sitemap"
-                            rootPath="/content/dita-import"/>
+                            rootPath="/content/importer/dita-example"/>
                 </par>
             </jcr:content>
             <xsl:apply-templates select="topicref | mapref" mode="subpage">
