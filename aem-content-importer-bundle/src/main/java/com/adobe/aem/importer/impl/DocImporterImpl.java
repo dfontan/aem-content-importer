@@ -84,14 +84,12 @@ public class DocImporterImpl implements DocImporter {
         log.info("importRootPath:" + importRootPath);
         try {
             this.session = slingRepository.loginAdministrative(null);
-            log.info("this.session:" + this.session);
 
             if (!this.session.nodeExists(importRootPath)){
                 log.info("importRootPath " + importRootPath + " not found!");
                 return false;
             }
             this.importRootNode = this.session.getNode(importRootPath);
-            log.info("this.importRootNode: " + this.importRootNode);
 
             if (!this.importRootNode.hasNode(DocImporter.CONFIG_FILE_NAME))
             {
@@ -101,20 +99,16 @@ public class DocImporterImpl implements DocImporter {
 
             this.properties = new Properties();
             this.properties.loadFromXML(JcrUtils.readFile(this.importRootNode.getNode(DocImporter.CONFIG_FILE_NAME)));
-            log.info("this.properties: " + Arrays.deepToString(this.properties.values().toArray()));
 
             String sourceFolder = properties.getProperty(DocImporter.CONFIG_PARAM_SOURCE_FOLDER, DocImporter.DEFAULT_SOURCE_FOLDER);
-            log.info("sourceFolder: " + sourceFolder);
 
             if (!this.importRootNode.hasNode(sourceFolder)) {
                 log.info("sourceFolder " + sourceFolder + " not found!");
                 return false;
             }
             this.sourceFolderNode = importRootNode.getNode(sourceFolder);
-            log.info("this.sourceFolderNode: " + this.sourceFolderNode);
 
             this.masterFileName = properties.getProperty(DocImporter.CONFIG_PARAM_MASTER_FILE, DocImporter.DEFAULT_MASTER_FILE);
-            log.info("this.masterFileName: " + this.masterFileName);
 
             if (!this.sourceFolderNode.hasNode(this.masterFileName)){
                 log.info("masterFileName " + this.masterFileName + " not found!");
@@ -122,21 +116,14 @@ public class DocImporterImpl implements DocImporter {
             }
 
             this.graphicsFolderName = properties.getProperty(DocImporter.CONFIG_PARAM_GRAPHICS_FOLDER, DocImporter.DEFAULT_GRAPHICS_FOLDER);
-            log.info("this.graphicsFolderName: " + this.graphicsFolderName);
-
             this.targetPath = properties.getProperty(DocImporter.CONFIG_PARAM_TARGET_PATH, DocImporter.DEFAULT_TARGET_PATH);
-            log.info("this.targetPath: " + this.targetPath);
-
             String sourceFormat = this.properties.getProperty(DocImporter.CONFIG_PARAM_SOURCE_FORMAT, DocImporter.DEFAULT_SOURCE_FORMAT);
-            log.info("sourceFormat: " + sourceFormat);
 
             if (sourceFormat.equalsIgnoreCase(DocImporter.SOURCE_FORMAT_DOCBOOK)) {
                 this.xsltFilePath = DocImporter.DOCBOOK_XSLT_PATH;
             } else {
                 this.xsltFilePath = DocImporter.DITA_XSLT_PATH;
             }
-            log.info("this.xsltFilePath: " + this.xsltFilePath);
-
         } catch(RepositoryException e) {
             log.error(e.toString());
         } catch (IOException e) {
@@ -153,69 +140,47 @@ public class DocImporterImpl implements DocImporter {
             }
 
             Node xsltNode = this.session.getNode(xsltFilePath);
-            log.info("xsltNode: " + xsltNode);
-
             XMLReader xmlReader = XMLReaderFactory.createXMLReader();
-            log.info("xmlReader: " + xmlReader);
-
             xmlReader.setEntityResolver(new RejectingEntityResolver());
-
             URIResolver uriResolver = new DocImporterURIResolver(xsltNode, this.sourceFolderNode, xmlReader);
-            log.info("uriResolver: " + uriResolver);
-
             TransformerFactoryImpl transformerFactoryImpl = new TransformerFactoryImpl();
-            log.info("transformerFactoryImpl: " + transformerFactoryImpl);
-
-
             transformerFactoryImpl.setURIResolver(uriResolver);
-
             Transformer transformer = transformerFactoryImpl.newTransformer(new StreamSource(JcrUtils.readFile(xsltNode)));
-
             TransformerImpl transformerImpl = (TransformerImpl) transformer;
             transformerImpl.getUnderlyingController().setUnparsedTextURIResolver(new DocImporterUnparsedTextURIResolver(this.sourceFolderNode));
-            log.info("transformer: " + transformer);
 
             for (Entry<Object, Object> entry : properties.entrySet()) {
                 transformer.setParameter(entry.getKey().toString(), entry.getValue());
                 log.info("transformer.setParameter: " + entry.getKey().toString() + " = " + entry.getValue());
             }
             transformer.setParameter("xsltFilePath", this.xsltFilePath);
-            log.info("transformer.setParameter: xsltFilePath = " + this.xsltFilePath);
 
             ByteArrayOutputStream output = new ByteArrayOutputStream();
             transformer.transform(new SAXSource(xmlReader, new InputSource(JcrUtils.readFile(this.sourceFolderNode.getNode(masterFileName)))), new StreamResult(output));
             InputStream result = new ByteArrayInputStream(output.toByteArray());
-            log.info("result: " + result);
 
             if (this.session.itemExists(DocImporter.CONTENT_PACKAGE_PATH)){
                 this.session.removeItem(DocImporter.CONTENT_PACKAGE_PATH);
                 this.session.save();
-                log.info("old package removed");
             }
+
             Node contentPackageNode = JcrUtils.getOrCreateByPath(DocImporter.CONTENT_PACKAGE_PATH, "nt:folder", "nt:folder", this.session, true);
             this.session.getWorkspace().copy(DocImporter.CONTENT_PACKAGE_TEMPLATE_PATH + "/META-INF", contentPackageNode.getPath() + "/META-INF");
-            log.info("new package created");
-
             Node vaultNode = contentPackageNode.getNode("META-INF/vault");
             Node contentXMLNode = JcrUtil.createPath(contentPackageNode.getPath() + "/jcr_root" + targetPath, "nt:folder", "nt:folder", this.session, true);
             JcrUtils.putFile(contentXMLNode, ".content.xml", "application/xml", result);
-            log.info("content.xml written");
 
             if (this.graphicsFolderName != null && this.sourceFolderNode.hasNode(this.graphicsFolderName)) {
                 JcrUtil.copy(this.sourceFolderNode.getNode(graphicsFolderName), contentXMLNode, this.graphicsFolderName);
             }
-            JcrUtils.putFile(vaultNode, "filter.xml", "application/xml", FilterXmlBuilder.fromRoot(this.targetPath + "/").toStream(this.graphicsFolderName));
-            log.info("filter.xml written");
 
+            JcrUtils.putFile(vaultNode, "filter.xml", "application/xml", FilterXmlBuilder.fromRoot(this.targetPath + "/").toStream(this.graphicsFolderName));
             JcrArchive archive = new JcrArchive(contentPackageNode, "/");
             archive.open(true);
             Importer importer = new Importer();
             importer.getOptions().setImportMode(ImportMode.MERGE);
             importer.getOptions().setAccessControlHandling(AccessControlHandling.MERGE);
             importer.run(archive, contentPackageNode.getSession().getNode("/"));
-            log.info("content.xml imported");
-
-            //contentPackageNode.remove();
             this.session.save();
             log.info("session saved.");
 

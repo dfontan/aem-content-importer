@@ -152,13 +152,13 @@
         <dependency>
             <groupId>com.adobe.granite</groupId>
             <artifactId>com.adobe.granite.codesharing.api</artifactId>
-            <version>0.1.1-DOCS</version>
+            <version>1.0.0-DOCS-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.adobe.granite</groupId>
             <artifactId>com.adobe.granite.codesharing.github</artifactId>
-            <version>0.2.0-DOCS-SNAPSHOT</version>
+            <version>1.0.0-DOCS-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
 

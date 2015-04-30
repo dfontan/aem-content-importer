@@ -72,24 +72,27 @@ public class GitListenerImpl implements GitListener {
         try {
             session = repository.loginAdministrative(null);
             for (String path : modified){
-                String[] split = path.split("/");
-                String fileName = split[split.length - 1];
-                int lastForwardSlashPos = path.lastIndexOf("/");
+                String fileName = getFileName(path);
+                String parentPath = getParentPath(sourcePath, path);
+                String escapedPath = EncodeUtil.escapePath(path);
 
-                String parentPath = sourcePath;
-                if (lastForwardSlashPos > 0) {
-                    parentPath = parentPath + "/" + path.substring(0, lastForwardSlashPos);
+                long size = gitProject.getFileSize(path);
+                log.error("Modified: " + path + " Escaped: " + escapedPath + " Size: " + size);
+                if(size < 1000000) {
+                    File gitFile = gitProject.getFile(escapedPath);
+                    Node parentNode = JcrUtils.getOrCreateByPath(parentPath, "nt:folder", "nt:folder", session, true);
+                    InputStream in = IOUtils.toInputStream(gitFile.getContent(), "UTF-8");
+                    JcrUtils.putFile(parentNode, fileName, "application/xml", in);
+                    session.save();
+                } else {
+                    log.error("Could not retrieve file " + path + ". Size exceeds GitHUb API limit of 1 MB", path);
                 }
-
-                File gitFile = gitProject.getFile(EncodeUtil.escapePath(path));
-                Node parentNode = JcrUtils.getOrCreateByPath(parentPath,"nt:folder", "nt:folder", session, true);
-                InputStream in = IOUtils.toInputStream(gitFile.getContent(), "UTF-8");
-                JcrUtils.putFile(parentNode, fileName, "application/xml", in);
-                session.save();
             }
 
             for (String path : deleted){
                 String deleteNodePath = sourcePath + "/" + path;
+                log.error("Deleted: " + path);
+
                 if (session.nodeExists(deleteNodePath)){
                     session.getNode(deleteNodePath).remove();
                     session.save();
@@ -99,5 +102,20 @@ public class GitListenerImpl implements GitListener {
         } catch (Exception e){
             log.error("Exception", e);
         }
+    }
+
+    private String getParentPath(String sourcePath, String path) {
+        int lastForwardSlashPos = path.lastIndexOf("/");
+
+        String parentPath = sourcePath;
+        if (lastForwardSlashPos > 0) {
+            parentPath = parentPath + "/" + path.substring(0, lastForwardSlashPos);
+        }
+        return parentPath;
+    }
+
+    private String getFileName(String path) {
+        String[] split = path.split("/");
+        return split[split.length - 1];
     }
 }
