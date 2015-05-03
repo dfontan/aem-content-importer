@@ -113,7 +113,7 @@
 	<!-- D E P E N D E N C I E S -->
 	<!-- ====================================================================== -->
 	<dependencies>
-		<dependency>
+        <dependency>
 			<groupId>com.adobe.aem</groupId>
 			<artifactId>aem-api</artifactId>
 			<version>6.0.0.1</version>

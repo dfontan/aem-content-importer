@@ -268,17 +268,32 @@
 
     <xsl:function name="pd:replaceNonAlphanum">
         <xsl:param name="name"/>
+        <xsl:message select="concat('replaceNonAlphaNum name: ',$name)"/>
         <xsl:variable name="alphanum" select="'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz_0123456789'"/>
         <xsl:variable name="underscores" select="'_____________________________________'"/>
         <xsl:variable name="xmlName" select="translate($name, translate($name, $alphanum, ''), $underscores)"/>
-        <xsl:if test="$xmlName=''">
-            <xsl:value-of select="'_dummy'"/>
-        </xsl:if>
-        <xsl:value-of select="$xmlName"/>
+        <xsl:message select="concat('original xmlName: ',$xmlName)"/>
+        <xsl:choose>
+            <xsl:when test="$xmlName=''">
+                <xsl:variable name="out" select="'_dummy'"/>
+                <xsl:message select="concat('returned xmlName: ', $out)"/>
+                <xsl:value-of select="$out"/>
+            </xsl:when>
+            <xsl:when test="contains('0123456789', substring($xmlName, 1, 1))">
+                <xsl:variable name="out" select="concat('_', $xmlName)"/>
+                <xsl:message select="concat('returned xmlName: ', $out)"/>
+                <xsl:value-of select="$out"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:message select="concat('returned xmlName: ', $xmlName)"/>
+                <xsl:value-of select="$xmlName"/>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:function>
 
     <xsl:function name="pd:pathToXMLElementName">
         <xsl:param name="path"/>
+        <xsl:message select="concat('pathToXMLElementName path: ',$path)"/>
         <xsl:value-of select="pd:replaceNonAlphanum(pd:removeExtension(pd:pathToFileName($path)))"/>
     </xsl:function>
 
