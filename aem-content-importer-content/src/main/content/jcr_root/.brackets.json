@@ -1,0 +1,6 @@
+{
+    "sly.serverUrl": "http://importer.corp.adobe.com:4502",
+    "sly.remoteUser": "admin",
+    "sly.remoteUserPassword": "admin",
+    "sly.acceptSelfSignedCertificates": false
+}
